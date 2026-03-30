@@ -1,0 +1,187 @@
+{
+  "metadata": {
+    "title": "Amani Limousines — Premium Private Chauffeur Service in Paris",
+    "description": "Luxury private chauffeur service in Paris. Airport transfers CDG, Orly, Le Bourget. Sedans, VIP vans, convoys. Available 24/7."
+  },
+  "nav": {
+    "services": "Services",
+    "events": "Events",
+    "fleet": "Our Fleet",
+    "booking": "Book Now",
+    "contact": "Contact",
+    "phone": "+33 6 62 02 73 44",
+    "available": "24/7 availability"
+  },
+  "hero": {
+    "tag": "Premium private chauffeur service in Paris",
+    "title_1": "The excellence of private transport,",
+    "title_2": "serving the most",
+    "title_em": "demanding",
+    "title_3": "expectations",
+    "subtitle": "Airport transfers, hourly hire, official delegations. Over 300 premium vehicles. Multilingual chauffeurs. Available 24/7.",
+    "cta": "Get an instant quote",
+    "from_label": "PICK UP",
+    "to_label": "DROP OFF",
+    "from_placeholder": "Airport, hotel, address…",
+    "to_placeholder": "Your destination…",
+    "popular": "Popular routes"
+  },
+  "services": {
+    "tag": "Our services",
+    "title": "A",
+    "title_em": "bespoke",
+    "items": {
+      "disposition": {
+        "title": "Hourly hire",
+        "subtitle": "Mise à disposition",
+        "desc": "Your private chauffeur in Paris stays at your disposal for however long you need. Half-day, full day, multi-day — the vehicle and chauffeur adapt to your schedule in real time."
+      },
+      "transfer": {
+        "title": "Private transfer",
+        "subtitle": "Transfert privé",
+        "desc": "Door-to-door transfer between any two addresses. Airports, train stations, hotels, meeting venues. The price is fixed in advance — no meter, no surprises."
+      },
+      "meetgreet": {
+        "title": "Meet and Greet",
+        "subtitle": "VIP welcome",
+        "desc": "Personalised welcome at the arrivals area with a name board. Luggage assistance, escort to the vehicle. Fast Track option available at CDG and Orly."
+      },
+      "convoy": {
+        "title": "Vehicle convoy",
+        "subtitle": "Convoi de véhicules",
+        "desc": "Coordination of multiple vehicles for delegations, diplomatic missions and large-scale events. Centralised dispatch, radio communication between drivers."
+      },
+      "security": {
+        "title": "Close protection",
+        "subtitle": "Sécurité rapprochée",
+        "desc": "Secure transport with escort for public figures, diplomats and executives. Lead vehicles, follow cars, drivers trained in defensive driving."
+      },
+      "excursion": {
+        "title": "Private excursion",
+        "subtitle": "Excursion privée",
+        "desc": "Versailles, Champagne, Normandy, Loire Valley, Giverny. Your chauffeur knows the routes and can arrange custom stops along the way. Culinary guide available."
+      },
+      "longdistance": {
+        "title": "Long distance",
+        "subtitle": "Longue distance",
+        "desc": "Paris–Deauville, Paris–Brussels, Paris–Lyon, Paris–Côte d'Azur. Our sedans and VIP vans are fitted for long journeys: Wi-Fi, power outlets, workspace."
+      }
+    }
+  },
+  "events": {
+    "tag": "Events",
+    "title": "Transport for your",
+    "title_em": "events",
+    "items": {
+      "fashionweek": { "title": "Paris Fashion Week", "period": "February & September" },
+      "airshow": { "title": "Paris Air Show", "period": "Le Bourget Salon" },
+      "rolandgarros": { "title": "Roland Garros", "period": "May — June" },
+      "cannes": { "title": "Cannes Film Festival", "period": "May" },
+      "sports": { "title": "Sporting events", "period": "Grand Prix, races" },
+      "salons": { "title": "Trade fairs", "period": "Nautic, Première Vision, M&O" }
+    }
+  },
+  "fleet": {
+    "tag": "Our fleet",
+    "title": "Vehicles of",
+    "title_em": "distinction",
+    "subtitle": "Over 300 vehicles, renewed every year",
+    "vehicles": {
+      "classe_e": {
+        "name": "Mercedes E-Class",
+        "category": "Business Sedan",
+        "pax": "3 passengers",
+        "bags": "2 suitcases",
+        "from": "From €125",
+        "features": ["Premium Wi-Fi", "Leather interior", "Dual-zone climate", "USB-C chargers"]
+      },
+      "classe_s": {
+        "name": "Mercedes S-Class",
+        "category": "Executive Sedan",
+        "pax": "3 passengers",
+        "bags": "2 suitcases",
+        "from": "From €225",
+        "features": ["Massage seats", "LCD screens", "Enhanced insulation", "On-board bar"]
+      },
+      "classe_v": {
+        "name": "Mercedes V-Class",
+        "category": "Luxury Minivan",
+        "pax": "7 passengers",
+        "bags": "6 suitcases",
+        "from": "From €125",
+        "features": ["Lounge layout", "Meeting space", "High-speed Wi-Fi", "XXL luggage"]
+      },
+      "bmw_i7": {
+        "name": "BMW i7",
+        "category": "Prestige Sedan",
+        "pax": "3 passengers",
+        "bags": "2 suitcases",
+        "from": "From €250",
+        "features": ["Fully electric", "31\" cinema screen", "Ambient lighting", "Absolute silence"]
+      },
+      "sprinter": {
+        "name": "Mercedes Sprinter VIP",
+        "category": "Luxury Minibus",
+        "pax": "16 passengers",
+        "bags": "16 suitcases",
+        "from": "From €350",
+        "features": ["Captain seats", "Premium sound", "Zoned climate", "Ideal for delegations"]
+      }
+    }
+  },
+  "booking": {
+    "tag": "Your quote",
+    "title": "Choose your",
+    "title_em": "vehicle",
+    "fixed_price": "Fixed all-inclusive price",
+    "summary": "Summary",
+    "departure": "Pick up",
+    "arrival": "Drop off",
+    "distance": "Distance",
+    "duration": "Estimated time",
+    "vehicle": "Vehicle",
+    "included": "Included",
+    "included_items": "VIP welcome · Flight tracking · Water",
+    "total": "Total fixed price",
+    "book_now": "Book now",
+    "or_call": "Or call +33 6 62 02 73 44 · WhatsApp available",
+    "change_vehicle": "← Change vehicle"
+  },
+  "trust": {
+    "items": [
+      "Embassies & consulates",
+      "Family offices",
+      "Premium travel agencies",
+      "Parisian palaces",
+      "Official delegations",
+      "Private aviation"
+    ]
+  },
+  "cta": {
+    "title": "Contact",
+    "title_em": "our team",
+    "subtitle": "Available 24/7 for bookings, custom quotes and delegation requests. Guaranteed response within 30 minutes.",
+    "whatsapp": "WhatsApp"
+  },
+  "footer": {
+    "col1_title": "Amani Limousines",
+    "col1_links": ["Private chauffeur Paris", "CDG airport transfer", "Orly airport transfer", "Le Bourget transfer"],
+    "col2_title": "Services",
+    "col2_links": ["Hourly hire", "Convoy & delegations", "Close protection", "Private excursion"],
+    "col3_title": "Events",
+    "col3_links": ["Paris Fashion Week", "Paris Air Show", "Roland Garros", "Trade fairs"],
+    "col4_title": "Information",
+    "col4_links": ["Legal notice", "Terms & conditions", "Privacy policy"],
+    "copyright": "© 2026 AMANI LIMOUSINES — PREMIUM PRIVATE CHAUFFEUR SERVICE IN PARIS"
+  },
+  "routes": {
+    "popular": [
+      { "from": "CDG", "to": "Paris Centre", "km": 32, "time": "45 min" },
+      { "from": "CDG", "to": "La Défense", "km": 35, "time": "40 min" },
+      { "from": "CDG", "to": "Disneyland", "km": 45, "time": "40 min" },
+      { "from": "Orly", "to": "Paris Centre", "km": 18, "time": "30 min" },
+      { "from": "Le Bourget", "to": "Paris Centre", "km": 15, "time": "25 min" },
+      { "from": "CDG", "to": "Versailles", "km": 55, "time": "55 min" }
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    @apply bg-white text-gray-900;
+    font-family: 'DM Serif Display', Georgia, serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  [dir='rtl'] { font-family: 'Inter', 'Noto Sans Arabic', sans-serif; }
+  :lang(zh) { font-family: 'Inter', 'Noto Sans SC', sans-serif; }
+}
+
+@layer components {
+  .sf { font-family: 'Inter', sans-serif; }
+  .text-gold { color: #8a7340; }
+  .bg-warm { background: #faf8f5; }
+
+  .tag {
+    @apply sf text-[0.68rem] font-semibold tracking-[0.3em] uppercase;
+    color: #8a7340;
+  }
+  .heading {
+    font-family: 'DM Serif Display', Georgia, serif;
+    @apply text-gray-900 font-normal;
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+  }
+  .heading em { @apply italic; color: #8a7340; }
+
+  .field-luxury {
+    @apply sf w-full py-3.5 px-4 pl-[82px] rounded-xl text-sm font-normal outline-none transition-all;
+    background: #f8f6f2; border: 1.5px solid #e8e4dc; color: #111;
+  }
+  .field-luxury:focus { border-color: #8a7340; background: #fff; }
+  .field-luxury::placeholder { color: #aaa; }
+
+  .btn-primary {
+    @apply sf w-full py-3.5 px-6 rounded-xl text-sm font-semibold uppercase tracking-wider cursor-pointer transition-all;
+    background: #111; color: #fff; border: none;
+  }
+  .btn-primary:hover { background: #333; transform: translateY(-1px); }
+
+  .btn-outline {
+    @apply sf px-5 py-2.5 rounded-lg text-sm font-medium cursor-pointer transition-all;
+    background: none; border: 1.5px solid #ddd; color: #777;
+  }
+  .btn-outline:hover { border-color: #8a7340; color: #8a7340; }
+
+  .card {
+    @apply p-6 rounded-2xl cursor-pointer transition-all;
+    background: #fff; border: 1.5px solid #eee;
+  }
+  .card:hover { border-color: #8a7340; transform: translateY(-3px); box-shadow: 0 8px 30px rgba(0,0,0,0.06); }
+  .card.selected { border-color: #8a7340; background: #fdfbf7; }
+
+  /* ===== Classes dark-theme pour homepage & CTA ===== */
+
+  /* Titre de section sur fond sombre */
+  .heading-section {
+    font-family: 'DM Serif Display', Georgia, serif;
+    @apply text-stone-100 font-normal;
+    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  }
+  .heading-section em { @apply italic; color: #8a7340; }
+
+  /* Séparateur de section (footer) */
+  .section-divider {
+    border-top: 1px solid rgba(138, 115, 64, 0.15);
+    background: #060504;
+  }
+
+  /* Halo or subtil sur les sections foncées */
+  .gold-glow::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 60% 40% at 50% 50%, rgba(138,115,64,0.06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+}
+
+::selection { background: rgba(138,115,64,0.15); }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f5f3ef; }
+::-webkit-scrollbar-thumb { background: #ddd; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #bbb; }
