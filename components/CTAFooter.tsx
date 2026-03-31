@@ -80,9 +80,9 @@ export function CTA({ t }: CTAProps) {
           {t?.cta?.subtitle}
         </p>
         <div className="flex flex-wrap justify-center gap-4">
-          <a href={`tel:${phone}`}
+          <a href={`tel:${phone}`} dir="ltr"
             className="px-6 py-3 border border-gold-400/20 rounded-xl font-sans text-sm text-gold-400 hover:bg-gold-400/[0.06] hover:border-gold-400/40 transition-all">
-            ✆ {t?.nav?.phone ?? ''}
+            ✆ <span dir="ltr">{t?.nav?.phone ?? ''}</span>
           </a>
           <a href="mailto:contact@amani-limousines.com"
             className="px-6 py-3 border border-gold-400/20 rounded-xl font-sans text-sm text-gold-400 hover:bg-gold-400/[0.06] hover:border-gold-400/40 transition-all">

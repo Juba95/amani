@@ -26,7 +26,8 @@
     "to_placeholder": "وجهتك…",
     "popular": "الرحلات الشائعة",
     "form_title": "عرض سعرك الفوري",
-    "form_subtitle": "سعر ثابت · بلا مفاجآت"
+    "form_subtitle": "سعر ثابت · بلا مفاجآت",
+    "trust_signals": ["سعر ثابت", "تتبع الرحلة", "24/7"]
   },
   "services": {
     "tag": "خدماتنا",

@@ -26,7 +26,8 @@
     "to_placeholder": "Your destination…",
     "popular": "Popular routes",
     "form_title": "Your instant quote",
-    "form_subtitle": "Fixed price · No surprises"
+    "form_subtitle": "Fixed price · No surprises",
+    "trust_signals": ["Fixed price", "Flight tracking", "24/7"]
   },
   "services": {
     "tag": "Our services",

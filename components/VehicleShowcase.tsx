@@ -1,26 +1,19 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import {
-  MercedesClasseE,
-  MercedesClasseS,
-  MercedesClasseV,
-  BMWi7,
-  MercedesSprinter,
-} from '@/components/VehicleIllustration';
+import Image from 'next/image';
 
 interface VehicleShowcaseProps {
   t: any;
 }
 
-const VEHICLE_KEYS = ['classe_e', 'classe_s', 'classe_v', 'bmw_i7', 'sprinter'];
+const VEHICLE_KEYS = ['classe_e', 'classe_s', 'classe_v', 'bmw_i7'];
 
-const VEHICLE_ILLUSTRATIONS: Record<string, React.FC<{ className?: string }>> = {
-  classe_e: MercedesClasseE,
-  classe_s: MercedesClasseS,
-  classe_v: MercedesClasseV,
-  bmw_i7: BMWi7,
-  sprinter: MercedesSprinter,
+const VEHICLE_IMAGES: Record<string, string> = {
+  classe_e: '/vehicles/mercedes-classe-e.png',
+  classe_s: '/vehicles/mercedes-classe-s.png',
+  classe_v: '/vehicles/mercedes-classe-v.png',
+  bmw_i7:   '/vehicles/bmw-i7.png',
 };
 
 export default function VehicleShowcase({ t }: VehicleShowcaseProps) {
@@ -33,26 +26,26 @@ export default function VehicleShowcase({ t }: VehicleShowcaseProps) {
       setTimeout(() => {
         setIdx((i) => (i + 1) % VEHICLE_KEYS.length);
         setFade(true);
-      }, 250);
+      }, 300);
     }, 5000);
     return () => clearInterval(timer);
   }, []);
 
   const handleDot = (i: number) => {
     setFade(false);
-    setTimeout(() => { setIdx(i); setFade(true); }, 200);
+    setTimeout(() => { setIdx(i); setFade(true); }, 250);
   };
 
   const key = VEHICLE_KEYS[idx];
   const vehicle = t?.fleet?.vehicles?.[key];
-  const Illustration = VEHICLE_ILLUSTRATIONS[key];
+  const imgSrc = VEHICLE_IMAGES[key];
 
   if (!vehicle) return null;
 
   return (
     <section
       id="fleet"
-      className="relative py-20 px-6 md:px-10 text-center section-divider gold-glow overflow-hidden"
+      className="relative py-20 px-6 md:px-10 text-center section-divider overflow-hidden"
       style={{ background: '#faf8f5' }}
     >
       <div className="relative z-10">
@@ -65,19 +58,28 @@ export default function VehicleShowcase({ t }: VehicleShowcaseProps) {
           {t?.fleet?.subtitle}
         </p>
 
-        {/* Vehicle illustration */}
+        {/* Vehicle photo — mix-blend-mode: multiply removes white background */}
         <div
-          className="relative max-w-xl mx-auto mb-8 h-48 md:h-64 flex items-center justify-center transition-opacity duration-300"
-          style={{ opacity: fade ? 1 : 0 }}
+          className="relative max-w-2xl mx-auto mb-8 flex items-center justify-center transition-opacity duration-300"
+          style={{
+            opacity: fade ? 1 : 0,
+            height: 'clamp(180px, 28vw, 320px)',
+          }}
         >
-          {Illustration && (
-            <Illustration className="w-full h-full drop-shadow-lg" />
-          )}
+          <Image
+            src={imgSrc}
+            alt={vehicle.name}
+            fill
+            sizes="(max-width: 768px) 90vw, 600px"
+            className="object-contain"
+            style={{ mixBlendMode: 'multiply' }}
+            priority={idx === 0}
+          />
         </div>
 
         {/* Vehicle name */}
         <h3
-          className="text-2xl font-normal mb-1 text-gray-900 transition-all duration-500"
+          className="text-2xl font-normal mb-1 text-gray-900 transition-opacity duration-300"
           style={{ opacity: fade ? 1 : 0 }}
         >
           {vehicle.name}
@@ -92,7 +94,7 @@ export default function VehicleShowcase({ t }: VehicleShowcaseProps) {
           {vehicle.pax} · {vehicle.bags} · {vehicle.from}
         </p>
 
-        {/* Features */}
+        {/* Feature tags */}
         {vehicle.features && (
           <div className="flex flex-wrap justify-center gap-2 max-w-md mx-auto mb-8">
             {vehicle.features.map((f: string, i: number) => (
@@ -107,16 +109,17 @@ export default function VehicleShowcase({ t }: VehicleShowcaseProps) {
           </div>
         )}
 
-        {/* Dots nav */}
+        {/* Dot navigation */}
         <div className="flex gap-2 justify-center">
           {VEHICLE_KEYS.map((_, i) => (
             <button
               key={i}
               onClick={() => handleDot(i)}
+              aria-label={`Vehicle ${i + 1}`}
               className="h-1.5 rounded-full transition-all duration-300"
               style={{
                 width: i === idx ? '1.25rem' : '0.375rem',
-                background: i === idx ? '#8a7340' : 'rgba(138,115,64,0.2)',
+                background: i === idx ? '#8a7340' : 'rgba(138,115,64,0.25)',
               }}
             />
           ))}

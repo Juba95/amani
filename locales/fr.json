@@ -26,7 +26,8 @@
     "to_placeholder": "Votre destination…",
     "popular": "Trajets fréquents",
     "form_title": "Votre devis instantané",
-    "form_subtitle": "Prix fixe · Pas de surprise"
+    "form_subtitle": "Prix fixe · Pas de surprise",
+    "trust_signals": ["Prix fixe", "Suivi de vol", "24h/24"]
   },
   "services": {
     "tag": "Nos prestations",

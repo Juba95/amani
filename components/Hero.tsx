@@ -63,6 +63,7 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
               {(t?.routes?.popular ?? []).map((route: any, i: number) => (
                 <button key={i}
                   onClick={() => handleQuickRoute(route)}
+                  dir="ltr"
                   className="px-3.5 py-1.5 rounded-full font-sans text-[0.72rem] font-light text-stone-500 bg-warm-50 border border-warm-300 hover:border-gold-400 hover:text-gold-400 transition-all tracking-wide">
                   {route.from} → {route.to}
                 </button>
@@ -122,7 +123,7 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
 
             {/* Trust signals under form */}
             <div className="mt-5 flex justify-around">
-              {['Prix fixe', 'Suivi de vol', '24h/24'].map((item) => (
+              {(t?.hero?.trust_signals ?? ['Prix fixe', 'Suivi de vol', '24h/24']).map((item: string) => (
                 <div key={item} className="text-center">
                   <p className="font-sans text-[0.6rem] tracking-[0.1em] uppercase text-stone-400">{item}</p>
                 </div>
