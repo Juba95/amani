@@ -72,7 +72,49 @@
     "tag": "أسطولنا",
     "title": "مركبات",
     "title_em": "استثنائية",
-    "subtitle": "أكثر من 300 مركبة، تتجدد كل عام"
+    "subtitle": "أكثر من 300 مركبة، تتجدد كل عام",
+    "vehicles": {
+      "classe_e": {
+        "name": "Mercedes Classe E",
+        "category": "Berline Business",
+        "pax": "3 passagers",
+        "bags": "2 valises",
+        "from": "À partir de 125 €",
+        "features": ["Wi-Fi premium", "Intérieur cuir", "Climatisation bi-zone", "Chargeurs USB-C"]
+      },
+      "classe_s": {
+        "name": "Mercedes Classe S",
+        "category": "Berline Executive",
+        "pax": "3 passagers",
+        "bags": "2 valises",
+        "from": "À partir de 225 €",
+        "features": ["Sièges massants", "Écrans LCD", "Insonorisation renforcée", "Bar à bord"]
+      },
+      "classe_v": {
+        "name": "Mercedes Classe V",
+        "category": "Minivan Luxe",
+        "pax": "7 passagers",
+        "bags": "6 valises",
+        "from": "À partir de 125 €",
+        "features": ["Configuration salon", "Espace réunion", "Wi-Fi haut débit", "Bagages XXL"]
+      },
+      "bmw_i7": {
+        "name": "BMW i7",
+        "category": "Berline Prestige",
+        "pax": "3 passagers",
+        "bags": "2 valises",
+        "from": "À partir de 250 €",
+        "features": ["100% électrique", "Écran cinéma 31\"", "Ambiance lumineuse", "Silence absolu"]
+      },
+      "sprinter": {
+        "name": "Mercedes Sprinter VIP",
+        "category": "Minibus Luxe",
+        "pax": "16 passagers",
+        "bags": "16 valises",
+        "from": "À partir de 350 €",
+        "features": ["Sièges capitaine", "Sono premium", "Climatisation zone", "Idéal délégations"]
+      }
+    }
   },
   "booking": {
     "tag": "عرض السعر",
@@ -107,6 +149,16 @@
     "title_em": "فريقنا",
     "subtitle": "متاحون على مدار الساعة للحجوزات وعروض الأسعار المخصصة وطلبات الوفود. رد مضمون خلال 30 دقيقة.",
     "whatsapp": "واتساب"
+  },
+  "routes": {
+    "popular": [
+      { "from": "CDG", "to": "Paris Centre", "km": 32, "time": "45 min" },
+      { "from": "CDG", "to": "La Défense", "km": 35, "time": "40 min" },
+      { "from": "CDG", "to": "Disneyland", "km": 45, "time": "40 min" },
+      { "from": "Orly", "to": "Paris Centre", "km": 18, "time": "30 min" },
+      { "from": "Le Bourget", "to": "Paris Centre", "km": 15, "time": "25 min" },
+      { "from": "CDG", "to": "Versailles", "km": 55, "time": "55 min" }
+    ]
   },
   "footer": {
     "copyright": "© 2026 أماني ليموزين — خدمة سائق خاص فاخرة في باريس"

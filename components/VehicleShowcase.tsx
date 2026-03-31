@@ -26,7 +26,7 @@ export default function VehicleShowcase({ t }: VehicleShowcaseProps) {
   }, []);
 
   const key = VEHICLE_KEYS[idx];
-  const vehicle = t.fleet.vehicles[key];
+  const vehicle = t.fleet?.vehicles?.[key];
   const imgUrl = VEHICLE_IMAGES[key];
 
   if (!vehicle) return null;
