@@ -1,10 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import dynamic from 'next/dynamic';
 import PlacesInput from '@/components/PlacesInput';
-
-const RouteMap = dynamic(() => import('@/components/RouteMap'), { ssr: false });
 
 interface HeroProps {
   t: any;
@@ -14,12 +11,9 @@ interface HeroProps {
   setFrom: (v: string) => void;
   setTo: (v: string) => void;
   loading?: boolean;
-  showMap?: boolean;
-  distance?: number | null;
-  duration?: string | null;
 }
 
-export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = false, showMap = false, distance = null, duration = null }: HeroProps) {
+export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = false }: HeroProps) {
   const [ready, setReady] = useState(false);
   useEffect(() => { setTimeout(() => setReady(true), 150); }, []);
 
@@ -126,15 +120,6 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
                 t?.hero?.cta ?? 'Obtenir un devis instantané'
               )}
             </button>
-
-            {/* Route map — appears after search */}
-            <RouteMap
-              from={from}
-              to={to}
-              distance={distance}
-              duration={duration}
-              visible={showMap}
-            />
 
             {/* Trust signals under form */}
             <div className="mt-5 flex justify-around">

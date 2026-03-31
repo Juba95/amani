@@ -102,13 +102,16 @@ export default function Navbar({ t, locale }: NavbarProps) {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  const contactHref = locale === 'fr' ? '/contact' : `/${locale}/contact`;
+
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-10 py-4 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-10 py-4 transition-all duration-300 border-b ${
         scrolled
-          ? 'bg-white shadow-sm border-b border-stone-100'
-          : 'bg-white/95 backdrop-blur-sm'
+          ? 'bg-white shadow-sm border-stone-150'
+          : 'border-stone-100'
       }`}
+      style={{ background: scrolled ? '#fff' : '#faf8f5' }}
     >
       {/* Logo */}
       <Link
@@ -133,10 +136,11 @@ export default function Navbar({ t, locale }: NavbarProps) {
           className="font-sans text-xs text-gray-600 hover:text-gold-400 tracking-wide transition-colors">
           {t?.nav?.events}
         </a>
-        <a href={anchorHref('contact')}
-          className="font-sans text-xs text-gray-600 hover:text-gold-400 tracking-wide transition-colors">
+        <Link href={contactHref}
+          className="font-sans text-xs tracking-wide transition-colors px-3.5 py-1.5 rounded-md border border-stone-200 hover:border-gold-400 hover:text-gold-400"
+          style={{ color: pathname === contactHref ? '#8a7340' : undefined }}>
           {t?.nav?.contact}
-        </a>
+        </Link>
       </div>
 
       {/* Right: phone + lang switcher */}
@@ -203,10 +207,10 @@ export default function Navbar({ t, locale }: NavbarProps) {
               className="font-sans text-sm text-gray-700 hover:text-gold-400">
               {t?.nav?.events}
             </a>
-            <a href={anchorHref('contact')} onClick={() => setMenuOpen(false)}
+            <Link href={contactHref} onClick={() => setMenuOpen(false)}
               className="font-sans text-sm text-gray-700 hover:text-gold-400">
               {t?.nav?.contact}
-            </a>
+            </Link>
             <a
               href={`tel:${t?.nav?.phone?.replace(/\s/g, '') ?? ''}`}
               className="font-sans text-sm font-semibold"

@@ -1,6 +1,9 @@
 'use client';
 
+import dynamic from 'next/dynamic';
 import { VEHICLES, calculatePrice } from '@/lib/vehicles';
+
+const RouteMap = dynamic(() => import('@/components/RouteMap'), { ssr: false });
 
 interface BookingResultsProps {
   t: any;
@@ -40,6 +43,9 @@ export default function BookingResults({
             <span><strong className="text-gold-400 font-medium">{duration}</strong></span>
           </div>
         </div>
+
+        {/* Route map */}
+        <RouteMap from={from} to={to} distance={distance} duration={duration} visible={true} />
 
         {/* Vehicle grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3.5">

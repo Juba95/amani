@@ -37,6 +37,10 @@ COPY --from=builder /app/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
+# Répertoire de données persistant pour les contacts (volume Coolify : /app/data)
+# Doit être créé AVANT USER nextjs pour que l'utilisateur non-root puisse y écrire
+RUN mkdir -p /app/data && chown -R nextjs:nodejs /app/data
+
 USER nextjs
 
 EXPOSE 3000
