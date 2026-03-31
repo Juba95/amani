@@ -33,7 +33,7 @@ export default function VehicleShowcase({ t }: VehicleShowcaseProps) {
 
   return (
     <section id="fleet" className="relative py-20 px-6 md:px-10 text-center section-divider gold-glow overflow-hidden"
-      style={{ background: 'linear-gradient(180deg, #060504, #0c0a08, #060504)' }}>
+      style={{ background: '#faf8f5' }}>
       <div className="relative z-10">
         <p className="tag-gold mb-3">{t?.fleet?.tag}</p>
         <h2 className="heading-section mb-1.5">

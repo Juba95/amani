@@ -9,9 +9,7 @@ import EventsGrid from '@/components/EventsGrid';
 import TrustStrip from '@/components/TrustStrip';
 import BookingResults from '@/components/BookingResults';
 import { CTA, Footer } from '@/components/CTAFooter';
-import { PREDEFINED_ROUTES } from '@/lib/vehicles';
 
-// Import traductions FR par défaut
 import fr from '@/locales/fr.json';
 
 export default function HomePage() {
@@ -24,71 +22,43 @@ export default function HomePage() {
   const [duration, setDuration] = useState<string | null>(null);
   const [selectedVehicle, setSelectedVehicle] = useState<string | null>(null);
   const [showResults, setShowResults] = useState(false);
+  const [searchLoading, setSearchLoading] = useState(false);
   const resultsRef = useRef<HTMLDivElement>(null);
 
-  const handleSearch = (fromVal: string, toVal: string) => {
+  const handleSearch = async (fromVal: string, toVal: string) => {
     if (!fromVal || !toVal) return;
 
-    // Chercher dans les routes prédéfinies
-    const fromLower = fromVal.toLowerCase();
-    const toLower = toVal.toLowerCase();
-
-    let foundKm: number | null = null;
-    let foundMin: number | null = null;
-
-    for (const [key, route] of Object.entries(PREDEFINED_ROUTES)) {
-      const parts = key.split('-');
-      const routeFrom = parts.slice(0, Math.ceil(parts.length / 2)).join('-');
-      const routeTo = parts.slice(Math.ceil(parts.length / 2)).join('-');
-
-      if (
-        (fromLower.includes(routeFrom) || routeFrom.includes(fromLower.slice(0, 4))) &&
-        (toLower.includes(routeTo) || routeTo.includes(toLower.slice(0, 4)))
-      ) {
-        foundKm = route.km;
-        foundMin = route.minutes;
-        break;
-      }
-    }
-
-    // Aussi vérifier les routes populaires du JSON
-    if (!foundKm) {
-      const popular = t?.routes?.popular?.find(
-        (r: any) =>
-          fromLower.includes(r.from.toLowerCase()) &&
-          toLower.includes(r.to.toLowerCase())
-      );
-      if (popular) {
-        foundKm = popular.km;
-        setDuration(popular.time);
-      }
-    }
-
-    // Fallback : distance aléatoire réaliste
-    if (!foundKm) {
-      foundKm = Math.floor(Math.random() * 45) + 15;
-    }
-
-    setDistance(foundKm);
-    if (!duration && foundMin) {
-      setDuration(`${foundMin} min`);
-    } else if (!duration) {
-      setDuration(`${Math.floor(foundKm * 1.3)} min`);
-    }
-
-    setShowResults(true);
+    setSearchLoading(true);
+    setShowResults(false);
     setSelectedVehicle(null);
 
-    // Scroll vers les résultats
-    setTimeout(() => {
-      resultsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }, 200);
+    try {
+      const res = await fetch('/api/distance', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ origin: fromVal, destination: toVal }),
+      });
+      const data = await res.json();
+
+      setDistance(data.km);
+      setDuration(data.duration);
+      setShowResults(true);
+
+      setTimeout(() => {
+        resultsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 200);
+    } catch {
+      setDistance(35);
+      setDuration('45 min');
+      setShowResults(true);
+    } finally {
+      setSearchLoading(false);
+    }
   };
 
   const handleSelectVehicle = (id: string) => {
     setSelectedVehicle(id || null);
     if (id) {
-      // Scroll vers le résumé
       setTimeout(() => {
         resultsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' });
       }, 100);
@@ -96,9 +66,9 @@ export default function HomePage() {
   };
 
   return (
-    <main className="min-h-screen bg-dark-500 text-stone-200">
+    <main className="min-h-screen bg-white text-gray-900">
       <Navbar t={t} locale={locale} />
-      
+
       <Hero
         t={t}
         from={from}
@@ -106,6 +76,7 @@ export default function HomePage() {
         setFrom={setFrom}
         setTo={setTo}
         onSearch={handleSearch}
+        loading={searchLoading}
       />
 
       <VehicleShowcase t={t} />

@@ -19,7 +19,7 @@ const SERVICE_ICONS: Record<string, string> = {
 export default function ServicesGrid({ t }: ServicesGridProps) {
   return (
     <section id="services" className="py-20 px-6 md:px-10 text-center"
-      style={{ background: 'linear-gradient(180deg, #060504, #080706)' }}>
+      style={{ background: '#fff' }}>
       <p className="tag-gold mb-3">{t?.services?.tag}</p>
       <h2 className="heading-section mb-10">
         {t?.services?.title} <em>{t?.services?.title_em}</em>
@@ -30,7 +30,7 @@ export default function ServicesGrid({ t }: ServicesGridProps) {
           const service = t?.services?.items?.[key];
           if (!service) return null;
           return (
-            <div key={key} className="bg-dark-500 p-7 text-center hover:bg-gold-400/[0.03] transition-all cursor-pointer group">
+            <div key={key} className="bg-white p-7 text-center hover:bg-gold-400/[0.03] transition-all cursor-pointer group">
               <div className="text-xl text-gold-400 mb-4 group-hover:scale-110 transition-transform">
                 {SERVICE_ICONS[key]}
               </div>
