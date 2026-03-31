@@ -38,21 +38,21 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo }: HeroProp
         {/* Tag */}
         <p className={`tag-gold mb-5 transition-all duration-[1200ms] ease-out ${ready ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}
           style={{ transitionDelay: '300ms' }}>
-          {t.hero.tag}
+          {t?.hero?.tag}
         </p>
 
         {/* Title */}
         <h1 className={`heading-section leading-[1.12] mb-5 max-w-[680px] transition-all duration-[1200ms] ease-out ${ready ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
           style={{ transitionDelay: '500ms', fontSize: 'clamp(2.4rem, 5.5vw, 4.2rem)' }}>
-          {t.hero.title_1}<br />
-          {t.hero.title_2} <em>{t.hero.title_em}</em><br />
-          {t.hero.title_3}
+          {t?.hero?.title_1}<br />
+          {t?.hero?.title_2} <em>{t?.hero?.title_em}</em><br />
+          {t?.hero?.title_3}
         </h1>
 
         {/* Subtitle */}
         <p className={`font-sans text-sm text-stone-600 font-light leading-relaxed max-w-[480px] mb-10 transition-all duration-[1200ms] ease-out ${ready ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}
           style={{ transitionDelay: '700ms' }}>
-          {t.hero.subtitle}
+          {t?.hero?.subtitle}
         </p>
 
         {/* Booking form */}
@@ -61,12 +61,12 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo }: HeroProp
           <div className="flex flex-col gap-2.5 mb-3">
             <div className="relative">
               <span className="absolute left-4 top-1/2 -translate-y-1/2 font-sans text-[0.65rem] font-medium tracking-[0.1em] text-gold-400">
-                {t.hero.from_label}
+                {t?.hero?.from_label}
               </span>
               <input
                 type="text"
                 className="field-luxury !pl-[5.5rem]"
-                placeholder={t.hero.from_placeholder}
+                placeholder={t?.hero?.from_placeholder ?? ''}
                 value={from}
                 onChange={(e) => setFrom(e.target.value)}
                 onKeyDown={(e) => e.key === 'Enter' && onSearch(from, to)}
@@ -74,12 +74,12 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo }: HeroProp
             </div>
             <div className="relative">
               <span className="absolute left-4 top-1/2 -translate-y-1/2 font-sans text-[0.65rem] font-medium tracking-[0.1em] text-gold-400">
-                {t.hero.to_label}
+                {t?.hero?.to_label}
               </span>
               <input
                 type="text"
                 className="field-luxury !pl-[5.5rem]"
-                placeholder={t.hero.to_placeholder}
+                placeholder={t?.hero?.to_placeholder ?? ''}
                 value={to}
                 onChange={(e) => setTo(e.target.value)}
                 onKeyDown={(e) => e.key === 'Enter' && onSearch(from, to)}
@@ -87,16 +87,16 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo }: HeroProp
             </div>
           </div>
           <button className="btn-gold" onClick={() => onSearch(from, to)}>
-            {t.hero.cta}
+            {t?.hero?.cta}
           </button>
         </div>
 
         {/* Popular routes */}
         <div className={`mt-8 max-w-[520px] transition-all duration-[1200ms] ease-out ${ready ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
           style={{ transitionDelay: '1100ms' }}>
-          <p className="tag-gold mb-2.5">{t.hero.popular}</p>
+          <p className="tag-gold mb-2.5">{t?.hero?.popular}</p>
           <div className="flex flex-wrap gap-1.5">
-          {(t.routes?.popular ?? []).map((route: any, i: number) => (
+          {(t?.routes?.popular ?? []).map((route: any, i: number) => (
               <button key={i}
                 onClick={() => handleQuickRoute(route)}
                 className="px-3.5 py-1.5 rounded-full font-sans text-[0.72rem] font-light text-stone-500 bg-gold-400/[0.05] border border-gold-400/[0.08] hover:bg-gold-400/[0.12] hover:border-gold-400/25 hover:text-gold-400 transition-all tracking-wide">

@@ -15,8 +15,8 @@ export async function generateMetadata({ params }: { params: { lang: string } })
   const t = meta[params.lang] || en;
 
   return {
-    title: t.metadata.title,
-    description: t.metadata.description,
+    title: t?.metadata?.title ?? '',
+    description: t?.metadata?.description ?? '',
     // Toutes les homepages (EN, AR, ZH) sont indexées — clientèle internationale
     robots: { index: true, follow: true },
   };

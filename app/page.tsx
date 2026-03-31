@@ -53,7 +53,7 @@ export default function HomePage() {
 
     // Aussi vérifier les routes populaires du JSON
     if (!foundKm) {
-      const popular = t.routes.popular.find(
+      const popular = t?.routes?.popular?.find(
         (r: any) =>
           fromLower.includes(r.from.toLowerCase()) &&
           toLower.includes(r.to.toLowerCase())

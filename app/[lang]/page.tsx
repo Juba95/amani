@@ -36,7 +36,7 @@ export default function LocalePage() {
 
   const handleSearch = (fromVal: string, toVal: string) => {
     if (!fromVal || !toVal) return;
-    const popular = t.routes?.popular?.find(
+    const popular = t?.routes?.popular?.find(
       (r: any) =>
         fromVal.toLowerCase().includes(r.from.toLowerCase()) &&
         toVal.toLowerCase().includes(r.to.toLowerCase())

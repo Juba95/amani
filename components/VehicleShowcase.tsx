@@ -26,7 +26,7 @@ export default function VehicleShowcase({ t }: VehicleShowcaseProps) {
   }, []);
 
   const key = VEHICLE_KEYS[idx];
-  const vehicle = t.fleet?.vehicles?.[key];
+  const vehicle = t?.fleet?.vehicles?.[key];
   const imgUrl = VEHICLE_IMAGES[key];
 
   if (!vehicle) return null;
@@ -35,11 +35,12 @@ export default function VehicleShowcase({ t }: VehicleShowcaseProps) {
     <section id="fleet" className="relative py-20 px-6 md:px-10 text-center section-divider gold-glow overflow-hidden"
       style={{ background: 'linear-gradient(180deg, #060504, #0c0a08, #060504)' }}>
       <div className="relative z-10">
-        <p className="tag-gold mb-3">{t.fleet.tag}</p>
+        <p className="tag-gold mb-3">{t?.fleet?.tag}</p>
         <h2 className="heading-section mb-1.5">
-          {t.fleet.title}<em>{t.fleet.title_em}</em>
+          {t?.fleet?.title}
+          <em>{t?.fleet?.title_em}</em>
         </h2>
-        <p className="font-sans text-sm text-stone-600 font-light mb-12">{t.fleet.subtitle}</p>
+        <p className="font-sans text-sm text-stone-600 font-light mb-12">{t?.fleet?.subtitle}</p>
 
         {/* Vehicle image */}
         <div className="relative max-w-lg mx-auto mb-8 h-48 md:h-64 flex items-center justify-center">

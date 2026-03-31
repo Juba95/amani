@@ -68,6 +68,19 @@
       }
     }
   },
+  "events": {
+    "tag": "Événements",
+    "title": "Transport pour vos",
+    "title_em": "événements",
+    "items": {
+      "fashionweek": { "title": "Paris Fashion Week", "period": "Février & Septembre" },
+      "airshow": { "title": "Paris Air Show", "period": "Salon du Bourget" },
+      "rolandgarros": { "title": "Roland Garros", "period": "Mai — Juin" },
+      "cannes": { "title": "Festival de Cannes", "period": "Mai" },
+      "sports": { "title": "Compétitions sportives", "period": "Grand Prix, courses" },
+      "salons": { "title": "Salons professionnels", "period": "Nautic, Première Vision, M&O" }
+    }
+  },
   "fleet": {
     "tag": "أسطولنا",
     "title": "مركبات",
@@ -161,6 +174,14 @@
     ]
   },
   "footer": {
+    "col1_title": "Amani Limousines",
+    "col1_links": ["Chauffeur privé Paris", "Transfert aéroport CDG", "Transfert aéroport Orly", "Transfert Le Bourget"],
+    "col2_title": "Prestations",
+    "col2_links": ["Mise à disposition", "Convoi & délégations", "Sécurité rapprochée", "Excursion privée"],
+    "col3_title": "Événements",
+    "col3_links": ["Paris Fashion Week", "Paris Air Show", "Roland Garros", "Salons professionnels"],
+    "col4_title": "Informations",
+    "col4_links": ["Mentions légales", "CGV", "Politique de confidentialité"],
     "copyright": "© 2026 أماني ليموزين — خدمة سائق خاص فاخرة في باريس"
   }
 }
