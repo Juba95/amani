@@ -7,14 +7,18 @@ interface VehicleShowcaseProps {
   t: any;
 }
 
-const VEHICLE_KEYS = ['classe_e', 'classe_s', 'classe_v', 'bmw_i7'];
+const VEHICLE_KEYS = ['classe_e', 'classe_s', 'classe_v', 'bmw_i7', 'sprinter'];
 
 const VEHICLE_IMAGES: Record<string, string> = {
   classe_e: '/vehicles/mercedes-classe-e.png',
   classe_s: '/vehicles/mercedes-classe-s.png',
   classe_v: '/vehicles/mercedes-classe-v.png',
   bmw_i7:   '/vehicles/bmw-i7.png',
+  sprinter: '/vehicles/mercedes-sprinter.png',
 };
+
+// Le Sprinter a un fond sombre → pas de mix-blend-mode multiply
+const DARK_BG_VEHICLES = ['sprinter'];
 
 export default function VehicleShowcase({ t }: VehicleShowcaseProps) {
   const [idx, setIdx] = useState(0);
@@ -39,6 +43,7 @@ export default function VehicleShowcase({ t }: VehicleShowcaseProps) {
   const key = VEHICLE_KEYS[idx];
   const vehicle = t?.fleet?.vehicles?.[key];
   const imgSrc = VEHICLE_IMAGES[key];
+  const isDarkBg = DARK_BG_VEHICLES.includes(key);
 
   if (!vehicle) return null;
 
@@ -58,12 +63,16 @@ export default function VehicleShowcase({ t }: VehicleShowcaseProps) {
           {t?.fleet?.subtitle}
         </p>
 
-        {/* Vehicle photo — mix-blend-mode: multiply removes white background */}
+        {/* Vehicle photo */}
         <div
           className="relative max-w-2xl mx-auto mb-8 flex items-center justify-center transition-opacity duration-300"
           style={{
             opacity: fade ? 1 : 0,
             height: 'clamp(180px, 28vw, 320px)',
+            // Fond sombre pour le Sprinter (fond noir sur la photo)
+            background: isDarkBg ? 'linear-gradient(135deg, #1a1a1a, #0f0f0f)' : 'transparent',
+            borderRadius: isDarkBg ? '1rem' : '0',
+            overflow: 'hidden',
           }}
         >
           <Image
@@ -72,7 +81,7 @@ export default function VehicleShowcase({ t }: VehicleShowcaseProps) {
             fill
             sizes="(max-width: 768px) 90vw, 600px"
             className="object-contain"
-            style={{ mixBlendMode: 'multiply' }}
+            style={{ mixBlendMode: isDarkBg ? 'normal' : 'multiply' }}
             priority={idx === 0}
           />
         </div>

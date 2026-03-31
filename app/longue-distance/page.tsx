@@ -7,6 +7,10 @@ export const metadata: Metadata = {
     'Transferts longue distance avec chauffeur privé depuis Paris. Paris–Deauville, Paris–Bruxelles, Paris–Lyon, Paris–Cannes. Berlines et vans VIP équipés Wi-Fi.',
   alternates: {
     canonical: 'https://www.amani-limousines.com/longue-distance',
+    languages: {
+      en: 'https://www.amani-limousines.com/en/long-distance',
+      'x-default': 'https://www.amani-limousines.com/longue-distance',
+    },
   },
 };
 

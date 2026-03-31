@@ -7,6 +7,10 @@ export const metadata: Metadata = {
     'Service Meet and Greet à Paris. Accueil avec pancarte nominative, assistance bagages, Fast Track CDG et Orly. Transfert VIP depuis les salles d\'arrivée.',
   alternates: {
     canonical: 'https://www.amani-limousines.com/meet-and-greet',
+    languages: {
+      en: 'https://www.amani-limousines.com/en/meet-and-greet',
+      'x-default': 'https://www.amani-limousines.com/meet-and-greet',
+    },
   },
 };
 

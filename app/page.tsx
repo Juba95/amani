@@ -86,7 +86,7 @@ export default function HomePage() {
       <StatsRow t={t} />
 
       {/* Services */}
-      <ServicesGrid t={t} />
+      <ServicesGrid t={t} locale={locale} />
 
       {/* Why choose us + Google reviews + FAQ */}
       <WhyUs t={t} />

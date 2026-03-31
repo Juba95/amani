@@ -7,6 +7,10 @@ export const metadata: Metadata = {
     'Louez un chauffeur privé à l\'heure à Paris. Demi-journée, journée complète, plusieurs jours. Compteur arrêté pendant les attentes. Berlines Mercedes et vans VIP.',
   alternates: {
     canonical: 'https://www.amani-limousines.com/mise-a-disposition',
+    languages: {
+      en: 'https://www.amani-limousines.com/en/hourly-hire',
+      'x-default': 'https://www.amani-limousines.com/mise-a-disposition',
+    },
   },
   openGraph: {
     title: 'Mise à Disposition Chauffeur Privé Paris | Amani Limousines',

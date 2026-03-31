@@ -7,6 +7,10 @@ export const metadata: Metadata = {
     'Service de sécurité rapprochée et transport sécurisé à Paris. Escorte pour personnalités, dirigeants et diplomates. Véhicules banalisés, chauffeurs formés.',
   alternates: {
     canonical: 'https://www.amani-limousines.com/securite-rapprochee',
+    languages: {
+      en: 'https://www.amani-limousines.com/en/close-protection',
+      'x-default': 'https://www.amani-limousines.com/securite-rapprochee',
+    },
   },
 };
 

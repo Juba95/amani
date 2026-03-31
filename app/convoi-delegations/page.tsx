@@ -7,6 +7,10 @@ export const metadata: Metadata = {
     'Transport de délégations officielles à Paris. Convois de 2 à 30 véhicules, missions diplomatiques, ambassades. Chauffeurs formés, coordination centralisée, disponible 24h/24.',
   alternates: {
     canonical: 'https://www.amani-limousines.com/convoi-delegations',
+    languages: {
+      en: 'https://www.amani-limousines.com/en/delegation-transport',
+      'x-default': 'https://www.amani-limousines.com/convoi-delegations',
+    },
   },
 };
 

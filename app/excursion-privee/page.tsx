@@ -7,6 +7,10 @@ export const metadata: Metadata = {
     'Excursions privées en voiture avec chauffeur depuis Paris. Versailles, Champagne, Giverny, Normandie, Loire. Journées sur mesure, guide culinaire disponible.',
   alternates: {
     canonical: 'https://www.amani-limousines.com/excursion-privee',
+    languages: {
+      en: 'https://www.amani-limousines.com/en/private-excursion',
+      'x-default': 'https://www.amani-limousines.com/excursion-privee',
+    },
   },
 };
 

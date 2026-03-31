@@ -7,6 +7,10 @@ export const metadata: Metadata = {
     'Transfert privé à Paris avec chauffeur. Prix fixe garanti, sans compteur. Aéroports, gares, hôtels et adresses personnalisées. Réservation immédiate.',
   alternates: {
     canonical: 'https://www.amani-limousines.com/transfert-prive',
+    languages: {
+      en: 'https://www.amani-limousines.com/en/cdg-airport-transfer',
+      'x-default': 'https://www.amani-limousines.com/transfert-prive',
+    },
   },
 };
 

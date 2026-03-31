@@ -12,9 +12,12 @@ const FOOTER_LINKS_FR: Record<string, { label: string; href: string }[]> = {
   ],
   col2: [
     { label: 'Mise à disposition',           href: '/mise-a-disposition' },
+    { label: 'Transfert privé',              href: '/transfert-prive' },
+    { label: 'Meet and Greet',               href: '/meet-and-greet' },
     { label: 'Convoi & délégations',         href: '/convoi-delegations' },
     { label: 'Sécurité rapprochée',          href: '/securite-rapprochee' },
     { label: 'Excursion privée',             href: '/excursion-privee' },
+    { label: 'Longue distance',              href: '/longue-distance' },
   ],
   col3: [
     { label: 'Paris Fashion Week',           href: '/evenements/paris-fashion-week' },
@@ -38,9 +41,12 @@ const FOOTER_LINKS_EN: Record<string, { label: string; href: string }[]> = {
   ],
   col2: [
     { label: 'Hourly hire',                  href: '/en/hourly-hire' },
+    { label: 'Private transfer',             href: '/en/cdg-airport-transfer' },
+    { label: 'Meet & Greet',                 href: '/en/meet-and-greet' },
     { label: 'Convoy & delegations',         href: '/en/delegation-transport' },
     { label: 'Close protection',             href: '/en/close-protection' },
     { label: 'Private excursion',            href: '/en/private-excursion' },
+    { label: 'Long distance',                href: '/en/long-distance' },
   ],
   col3: [
     { label: 'Paris Fashion Week',           href: '/en/events' },
