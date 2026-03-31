@@ -93,6 +93,9 @@ export default function LocalePage() {
         setTo={setTo}
         onSearch={handleSearch}
         loading={searchLoading}
+        showMap={showResults}
+        distance={distance}
+        duration={duration}
       />
 
       {/* Stats */}

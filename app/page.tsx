@@ -80,6 +80,9 @@ export default function HomePage() {
         setTo={setTo}
         onSearch={handleSearch}
         loading={searchLoading}
+        showMap={showResults}
+        distance={distance}
+        duration={duration}
       />
 
       {/* Stats: 500+ transferts, 4.9★, 15 ans, 300+ véhicules */}

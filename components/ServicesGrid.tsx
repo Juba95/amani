@@ -70,8 +70,7 @@ export default function ServicesGrid({ t, locale = 'fr' }: ServicesGridProps) {
             <Link
               key={key}
               href={getServiceHref(key, locale)}
-              className="bg-white p-7 text-center hover:bg-gold-400/[0.03] transition-all group block"
-              style={isLastAndAlone ? { gridColumn: '2 / span 1' } : undefined}
+              className={`bg-white p-7 text-center hover:bg-gold-400/[0.03] transition-all group block${isLastAndAlone ? ' lg:col-start-2' : ''}`}
             >
               <div className="text-xl text-gold-400 mb-4 group-hover:scale-110 transition-transform">
                 {SERVICE_ICONS[key]}
