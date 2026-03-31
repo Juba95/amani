@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Mode standalone — REQUIS pour Docker/Coolify
+  output: 'standalone',
+
   images: {
     remotePatterns: [
       { protocol: 'https', hostname: 'www.amani-limousines.com', pathname: '/wp-content/uploads/**' },
