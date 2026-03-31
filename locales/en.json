@@ -24,7 +24,9 @@
     "to_label": "DROP OFF",
     "from_placeholder": "Airport, hotel, address…",
     "to_placeholder": "Your destination…",
-    "popular": "Popular routes"
+    "popular": "Popular routes",
+    "form_title": "Your instant quote",
+    "form_subtitle": "Fixed price · No surprises"
   },
   "services": {
     "tag": "Our services",
@@ -68,10 +70,66 @@
       }
     }
   },
+  "stats": {
+    "transfers_label": "transfers per month",
+    "rating_label": "Google rating",
+    "experience_label": "years of experience",
+    "vehicles_label": "premium vehicles"
+  },
+  "process": {
+    "tag": "How it works",
+    "title": "Book in",
+    "title_em": "4 simple steps",
+    "steps": [
+      { "num": "01", "title": "Request your quote", "desc": "Enter your itinerary online or call us. Instant quote, fixed price guaranteed from confirmation." },
+      { "num": "02", "title": "Instant confirmation", "desc": "You receive a confirmation by email and SMS with your chauffeur's name and photo." },
+      { "num": "03", "title": "VIP pick-up", "desc": "Your chauffeur arrives 15 minutes early. If your flight is delayed, they adapt automatically at no extra charge." },
+      { "num": "04", "title": "Travel in comfort", "desc": "Enjoy the journey in a premium vehicle. Wi-Fi, water, chargers — everything is included." }
+    ]
+  },
+  "whyus": {
+    "tag": "Why choose us",
+    "title": "A service that makes",
+    "title_em": "the difference",
+    "items": [
+      { "title": "Guaranteed fixed price", "desc": "Your fare is confirmed at booking. No surcharges, no bad surprises regardless of traffic or journey length." },
+      { "title": "Elite chauffeurs", "desc": "All our chauffeurs are certified, trained in defensive driving and multilingual — French, English, Arabic, Mandarin." },
+      { "title": "Real-time flight tracking", "desc": "We monitor your flight in real time. If your plane is delayed, your chauffeur adapts automatically at no extra cost." },
+      { "title": "Renewed premium fleet", "desc": "Over 300 vehicles renewed every year — Mercedes, BMW, Sprinter. All less than 3 years old, inspected daily." },
+      { "title": "30-minute response", "desc": "Our team replies to any quote request within 30 minutes, 24/7, by phone, email or WhatsApp." },
+      { "title": "Absolute discretion", "desc": "Total confidentiality for diplomatic, corporate and VIP clients. Our chauffeurs operate under the strictest non-disclosure." }
+    ]
+  },
+  "reviews": {
+    "tag": "Client reviews",
+    "title": "What our",
+    "title_em": "clients say",
+    "google_link": "See all reviews on Google",
+    "items": [
+      { "name": "James W.", "rating": 5, "text": "Flawless service. Chauffeur on time, immaculate vehicle, and available outside regular hours. Highly recommended for all your professional transfers in Paris.", "role": "CEO, London" },
+      { "name": "Sophie L.", "rating": 5, "text": "I have used Amani Limousines for all my airport transfers for 3 years. Perfect punctuality, top-of-the-range vehicles, always courteous chauffeurs. A true 5-star service.", "role": "International consultant" },
+      { "name": "Mohammed A.", "rating": 5, "text": "Outstanding coordination for an official delegation of 12 people. Perfect logistics, impeccable vehicle synchronisation. We will absolutely use their services again.", "role": "Diplomatic attaché" },
+      { "name": "Claire M.", "rating": 5, "text": "CDG–Paris transfer at 5am, the chauffeur was there and smiling. The flight tracking actually works — he already knew about the delay. Very professional, highly recommend.", "role": "Project manager" }
+    ]
+  },
+  "faq": {
+    "tag": "Frequently asked questions",
+    "title": "Everything you",
+    "title_em": "need to know",
+    "items": [
+      { "q": "How does the fixed price work?", "a": "Your price is calculated and confirmed at the time of booking, based on your route and chosen vehicle. It includes all taxes, tolls and parking. No surcharges or surprises." },
+      { "q": "What happens if my flight is delayed?", "a": "We monitor your flight in real time. If your flight is delayed, your chauffeur adapts automatically at no extra charge. You don't need to do anything — our team handles everything." },
+      { "q": "What types of vehicles do you offer?", "a": "Our fleet includes executive sedans (Mercedes E-Class, S-Class, BMW i7), luxury vans (Mercedes V-Class) and VIP minibuses (Mercedes Sprinter). All vehicles are under 3 years old." },
+      { "q": "Do you offer services for delegations?", "a": "Yes, we coordinate multi-vehicle convoys for official delegations, diplomatic missions and corporate events. Centralised dispatch, radio communication between drivers." },
+      { "q": "What is your coverage area?", "a": "We cover Paris and the Île-de-France region, with transfers to and from all airports (CDG, Orly, Le Bourget). We also cover long distances: Deauville, Lyon, Brussels, Côte d'Azur and across Europe." },
+      { "q": "How do I book?", "a": "Via our online quote form, by phone on +33 6 62 02 73 44, by email at contact@amani-limousines.com, or via WhatsApp. Our team responds within 30 minutes, 24/7." }
+    ]
+  },
   "events": {
     "tag": "Events",
     "title": "Transport for your",
     "title_em": "events",
+    "subtitle": "VIP transport for Paris's most prestigious events",
     "items": {
       "fashionweek": { "title": "Paris Fashion Week", "period": "February & September" },
       "airshow": { "title": "Paris Air Show", "period": "Le Bourget Salon" },
