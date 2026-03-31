@@ -2,32 +2,63 @@
 
 import Link from 'next/link';
 
-// URLs des liens du footer — centralisées ici
-const FOOTER_LINKS: Record<string, { label: string; href: string }[]> = {
+// ── Liens footer par locale ──────────────────────────────────────────────────
+const FOOTER_LINKS_FR: Record<string, { label: string; href: string }[]> = {
   col1: [
-    { label: 'Chauffeur privé Paris',      href: '/' },
-    { label: 'Transfert aéroport CDG',     href: '/transfert-aeroport-cdg' },
-    { label: 'Transfert aéroport Orly',    href: '/transfert-aeroport-orly' },
-    { label: 'Transfert Le Bourget',       href: '/transfert-le-bourget' },
+    { label: 'Chauffeur privé Paris',        href: '/' },
+    { label: 'Transfert aéroport CDG',       href: '/transfert-aeroport-cdg' },
+    { label: 'Transfert aéroport Orly',      href: '/transfert-aeroport-orly' },
+    { label: 'Transfert Le Bourget',         href: '/transfert-le-bourget' },
   ],
   col2: [
-    { label: 'Mise à disposition',         href: '/mise-a-disposition' },
-    { label: 'Convoi & délégations',       href: '/convoi-delegations' },
-    { label: 'Sécurité rapprochée',        href: '/securite-rapprochee' },
-    { label: 'Excursion privée',           href: '/excursion-privee' },
+    { label: 'Mise à disposition',           href: '/mise-a-disposition' },
+    { label: 'Convoi & délégations',         href: '/convoi-delegations' },
+    { label: 'Sécurité rapprochée',          href: '/securite-rapprochee' },
+    { label: 'Excursion privée',             href: '/excursion-privee' },
   ],
   col3: [
-    { label: 'Paris Fashion Week',         href: '/evenements/paris-fashion-week' },
-    { label: 'Paris Air Show',             href: '/evenements/paris-air-show' },
-    { label: 'Roland Garros',             href: '/evenements/roland-garros' },
-    { label: 'Salons professionnels',      href: '/evenements' },
+    { label: 'Paris Fashion Week',           href: '/evenements/paris-fashion-week' },
+    { label: 'Paris Air Show',               href: '/evenements/paris-air-show' },
+    { label: 'Roland Garros',                href: '/evenements/roland-garros' },
+    { label: 'Salons professionnels',        href: '/evenements' },
   ],
   col4: [
-    { label: 'Mentions légales',           href: '/mentions-legales' },
-    { label: 'CGV',                        href: '/mentions-legales' },
+    { label: 'Mentions légales',             href: '/mentions-legales' },
+    { label: 'CGV',                          href: '/mentions-legales' },
     { label: 'Politique de confidentialité', href: '/mentions-legales' },
   ],
 };
+
+const FOOTER_LINKS_EN: Record<string, { label: string; href: string }[]> = {
+  col1: [
+    { label: 'Private chauffeur Paris',      href: '/en' },
+    { label: 'CDG airport transfer',         href: '/en/cdg-airport-transfer' },
+    { label: 'Orly airport transfer',        href: '/en/orly-airport-transfer' },
+    { label: 'Le Bourget transfer',          href: '/en/cdg-airport-transfer' },
+  ],
+  col2: [
+    { label: 'Hourly hire',                  href: '/en/hourly-hire' },
+    { label: 'Convoy & delegations',         href: '/en/delegation-transport' },
+    { label: 'Close protection',             href: '/en/close-protection' },
+    { label: 'Private excursion',            href: '/en/private-excursion' },
+  ],
+  col3: [
+    { label: 'Paris Fashion Week',           href: '/en/events' },
+    { label: 'Paris Air Show',               href: '/en/events' },
+    { label: 'Roland Garros',                href: '/en/events' },
+    { label: 'Trade fairs',                  href: '/en/events' },
+  ],
+  col4: [
+    { label: 'Legal notice',                 href: '/en/contact' },
+    { label: 'Terms & conditions',           href: '/en/contact' },
+    { label: 'Privacy policy',               href: '/en/contact' },
+  ],
+};
+
+function getFooterLinks(locale: string) {
+  if (locale === 'en') return FOOTER_LINKS_EN;
+  return FOOTER_LINKS_FR;
+}
 
 interface CTAProps {
   t: any;
@@ -69,14 +100,16 @@ export function CTA({ t }: CTAProps) {
 
 interface FooterProps {
   t: any;
+  locale?: string;
 }
 
-export function Footer({ t }: FooterProps) {
+export function Footer({ t, locale = 'fr' }: FooterProps) {
+  const links = getFooterLinks(locale);
   const cols = [
-    { title: t?.footer?.col1_title ?? 'Amani Limousines', links: FOOTER_LINKS.col1 },
-    { title: t?.footer?.col2_title ?? 'Prestations',      links: FOOTER_LINKS.col2 },
-    { title: t?.footer?.col3_title ?? 'Événements',       links: FOOTER_LINKS.col3 },
-    { title: t?.footer?.col4_title ?? 'Informations',     links: FOOTER_LINKS.col4 },
+    { title: t?.footer?.col1_title ?? 'Amani Limousines', links: links.col1 },
+    { title: t?.footer?.col2_title ?? 'Prestations',      links: links.col2 },
+    { title: t?.footer?.col3_title ?? 'Événements',       links: links.col3 },
+    { title: t?.footer?.col4_title ?? 'Informations',     links: links.col4 },
   ];
 
   return (

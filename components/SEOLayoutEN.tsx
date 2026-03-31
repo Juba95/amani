@@ -16,7 +16,7 @@ export default function SEOLayoutEN({ children }: SEOLayoutENProps) {
       <Navbar t={en} locale="en" />
       <main>{children}</main>
       <CTA t={en} />
-      <Footer t={en} />
+      <Footer t={en} locale="en" />
     </div>
   );
 }

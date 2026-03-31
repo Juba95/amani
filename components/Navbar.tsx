@@ -92,6 +92,7 @@ export default function Navbar({ t, locale }: NavbarProps) {
         <a
           href={`tel:${t?.nav?.phone?.replace(/\s/g, '') ?? ''}`}
           className="hidden sm:block font-sans text-xs text-gray-700 tracking-wide hover:text-gold-400 transition-colors font-medium"
+          dir="ltr"
         >
           {t?.nav?.phone ?? ''}
         </a>
@@ -166,6 +167,7 @@ export default function Navbar({ t, locale }: NavbarProps) {
               href={`tel:${t?.nav?.phone?.replace(/\s/g, '') ?? ''}`}
               className="font-sans text-sm font-semibold"
               style={{ color: '#8a7340' }}
+              dir="ltr"
             >
               {t?.nav?.phone ?? ''}
             </a>
