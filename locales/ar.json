@@ -27,7 +27,11 @@
     "popular": "الرحلات الشائعة",
     "form_title": "عرض سعرك الفوري",
     "form_subtitle": "سعر ثابت · بلا مفاجآت",
-    "trust_signals": ["سعر ثابت", "تتبع الرحلة", "24/7"]
+    "trust_signals": [
+      "سعر ثابت",
+      "تتبع الرحلة",
+      "24/7"
+    ]
   },
   "services": {
     "tag": "خدماتنا",
@@ -83,10 +87,26 @@
     "title": "احجز في",
     "title_em": "4 خطوات بسيطة",
     "steps": [
-      { "num": "01", "title": "اطلب عرض سعرك", "desc": "أدخل مسارك عبر الإنترنت أو اتصل بنا. عرض سعر فوري وسعر ثابت مضمون." },
-      { "num": "02", "title": "تأكيد فوري", "desc": "ستتلقى تأكيداً عبر البريد الإلكتروني والرسائل النصية مع اسم وصورة سائقك." },
-      { "num": "03", "title": "استقبال VIP", "desc": "يصل سائقك قبل 15 دقيقة من الموعد المحدد. في حالة تأخر رحلتك، يتكيف تلقائياً." },
-      { "num": "04", "title": "سافر بأمان وراحة", "desc": "استمتع برحلتك في مركبة فاخرة. Wi-Fi، مياه معدنية، شواحن — كل شيء متضمن." }
+      {
+        "num": "01",
+        "title": "اطلب عرض سعرك",
+        "desc": "أدخل مسارك عبر الإنترنت أو اتصل بنا. عرض سعر فوري وسعر ثابت مضمون."
+      },
+      {
+        "num": "02",
+        "title": "تأكيد فوري",
+        "desc": "ستتلقى تأكيداً عبر البريد الإلكتروني والرسائل النصية مع اسم وصورة سائقك."
+      },
+      {
+        "num": "03",
+        "title": "استقبال VIP",
+        "desc": "يصل سائقك قبل 15 دقيقة من الموعد المحدد. في حالة تأخر رحلتك، يتكيف تلقائياً."
+      },
+      {
+        "num": "04",
+        "title": "سافر بأمان وراحة",
+        "desc": "استمتع برحلتك في مركبة فاخرة. Wi-Fi، مياه معدنية، شواحن — كل شيء متضمن."
+      }
     ]
   },
   "whyus": {
@@ -94,12 +114,30 @@
     "title": "خدمة تصنع",
     "title_em": "الفارق",
     "items": [
-      { "title": "سعر ثابت مضمون", "desc": "يُحدد سعرك عند الحجز ولا تغييرات، بغض النظر عن حركة المرور أو مدة الرحلة." },
-      { "title": "سائقون نخبة", "desc": "جميع سائقينا معتمدون ومتعددو اللغات — الفرنسية والإنجليزية والعربية والصينية." },
-      { "title": "تتبع الرحلات الجوية", "desc": "نتابع رحلتك الجوية لحظة بلحظة. في حالة التأخير، يتكيف سائقك تلقائياً وبدون رسوم." },
-      { "title": "أسطول حديث متجدد", "desc": "أكثر من 300 مركبة يتم تجديدها سنوياً. جميعها أقل من 3 سنوات وتخضع لفحص يومي." },
-      { "title": "رد خلال 30 دقيقة", "desc": "فريقنا يرد على أي طلب عرض سعر خلال 30 دقيقة، على مدار الساعة طوال أيام الأسبوع." },
-      { "title": "سرية تامة", "desc": "سرية كاملة لعملائنا الدبلوماسيين والمؤسسيين وكبار الشخصيات. تقديرنا للخصوصية لا حدود له." }
+      {
+        "title": "سعر ثابت مضمون",
+        "desc": "يُحدد سعرك عند الحجز ولا تغييرات، بغض النظر عن حركة المرور أو مدة الرحلة."
+      },
+      {
+        "title": "سائقون نخبة",
+        "desc": "جميع سائقينا معتمدون ومتعددو اللغات — الفرنسية والإنجليزية والعربية والصينية."
+      },
+      {
+        "title": "تتبع الرحلات الجوية",
+        "desc": "نتابع رحلتك الجوية لحظة بلحظة. في حالة التأخير، يتكيف سائقك تلقائياً وبدون رسوم."
+      },
+      {
+        "title": "أسطول حديث متجدد",
+        "desc": "أكثر من 300 مركبة يتم تجديدها سنوياً. جميعها أقل من 3 سنوات وتخضع لفحص يومي."
+      },
+      {
+        "title": "رد خلال 30 دقيقة",
+        "desc": "فريقنا يرد على أي طلب عرض سعر خلال 30 دقيقة، على مدار الساعة طوال أيام الأسبوع."
+      },
+      {
+        "title": "سرية تامة",
+        "desc": "سرية كاملة لعملائنا الدبلوماسيين والمؤسسيين وكبار الشخصيات. تقديرنا للخصوصية لا حدود له."
+      }
     ]
   },
   "reviews": {
@@ -108,10 +146,30 @@
     "title_em": "عملاؤنا",
     "google_link": "عرض جميع التقييمات على Google",
     "items": [
-      { "name": "جيمس و.", "rating": 5, "text": "خدمة لا تشوبها شائبة. السائق في الموعد، المركبة نظيفة ومثالية. أنصح بشدة بهذه الخدمة لجميع تنقلاتك المهنية في باريس.", "role": "مدير عام، لندن" },
-      { "name": "سوفي ل.", "rating": 5, "text": "أستخدم أماني ليموزين لجميع نقلاتي من وإلى المطار منذ 3 سنوات. دقة في المواعيد، مركبات فاخرة، وسائقون محترمون دائماً.", "role": "مستشارة دولية" },
-      { "name": "محمد أ.", "rating": 5, "text": "تنسيق ممتاز لوفد رسمي مؤلف من 12 شخصاً. لوجستية مثالية وتنسيق لا تشوبه شائبة بين المركبات.", "role": "ملحق دبلوماسي" },
-      { "name": "كلير م.", "rating": 5, "text": "نقل من CDG إلى باريس في الساعة الخامسة صباحاً، والسائق كان حاضراً ومبتسماً. نظام تتبع الرحلات يعمل فعلاً.", "role": "مديرة مشروع" }
+      {
+        "name": "جيمس و.",
+        "rating": 5,
+        "text": "خدمة لا تشوبها شائبة. السائق في الموعد، المركبة نظيفة ومثالية. أنصح بشدة بهذه الخدمة لجميع تنقلاتك المهنية في باريس.",
+        "role": "مدير عام، لندن"
+      },
+      {
+        "name": "سوفي ل.",
+        "rating": 5,
+        "text": "أستخدم أماني ليموزين لجميع نقلاتي من وإلى المطار منذ 3 سنوات. دقة في المواعيد، مركبات فاخرة، وسائقون محترمون دائماً.",
+        "role": "مستشارة دولية"
+      },
+      {
+        "name": "محمد أ.",
+        "rating": 5,
+        "text": "تنسيق ممتاز لوفد رسمي مؤلف من 12 شخصاً. لوجستية مثالية وتنسيق لا تشوبه شائبة بين المركبات.",
+        "role": "ملحق دبلوماسي"
+      },
+      {
+        "name": "كلير م.",
+        "rating": 5,
+        "text": "نقل من CDG إلى باريس في الساعة الخامسة صباحاً، والسائق كان حاضراً ومبتسماً. نظام تتبع الرحلات يعمل فعلاً.",
+        "role": "مديرة مشروع"
+      }
     ]
   },
   "faq": {
@@ -119,12 +177,30 @@
     "title": "كل ما تحتاج",
     "title_em": "معرفته",
     "items": [
-      { "q": "كيف يعمل السعر الثابت؟", "a": "يُحسب سعرك ويُؤكد وقت الحجز بناءً على المسار والمركبة المختارة. يشمل جميع الضرائب والرسوم. لا مفاجآت." },
-      { "q": "ماذا يحدث إذا تأخرت رحلتي؟", "a": "نتابع رحلتك الجوية لحظة بلحظة. في حالة التأخير، يتكيف سائقك تلقائياً وبدون رسوم إضافية." },
-      { "q": "ما أنواع المركبات المتاحة؟", "a": "أسطولنا يشمل سيارات السيدان التنفيذية (مرسيدس E وS وBMW i7)، السيارات الكبيرة الفاخرة (V-Class)، وحافلات VIP (Sprinter)." },
-      { "q": "هل تقدمون خدمات للوفود الرسمية؟", "a": "نعم، ننسق قوافل من عدة مركبات للوفود الرسمية والبعثات الدبلوماسية والفعاليات المؤسسية." },
-      { "q": "ما نطاق تغطيتكم الجغرافية؟", "a": "نغطي باريس وإيل دو فرانس، مع نقل من وإلى جميع المطارات. كما نوفر خدمات المسافات الطويلة في أوروبا." },
-      { "q": "كيف أحجز الخدمة؟", "a": "عبر نموذج طلب العرض على الإنترنت، بالهاتف، بالبريد الإلكتروني، أو عبر WhatsApp. فريقنا يرد خلال 30 دقيقة." }
+      {
+        "q": "كيف يعمل السعر الثابت؟",
+        "a": "يُحسب سعرك ويُؤكد وقت الحجز بناءً على المسار والمركبة المختارة. يشمل جميع الضرائب والرسوم. لا مفاجآت."
+      },
+      {
+        "q": "ماذا يحدث إذا تأخرت رحلتي؟",
+        "a": "نتابع رحلتك الجوية لحظة بلحظة. في حالة التأخير، يتكيف سائقك تلقائياً وبدون رسوم إضافية."
+      },
+      {
+        "q": "ما أنواع المركبات المتاحة؟",
+        "a": "أسطولنا يشمل سيارات السيدان التنفيذية (مرسيدس E وS وBMW i7)، السيارات الكبيرة الفاخرة (V-Class)، وحافلات VIP (Sprinter)."
+      },
+      {
+        "q": "هل تقدمون خدمات للوفود الرسمية؟",
+        "a": "نعم، ننسق قوافل من عدة مركبات للوفود الرسمية والبعثات الدبلوماسية والفعاليات المؤسسية."
+      },
+      {
+        "q": "ما نطاق تغطيتكم الجغرافية؟",
+        "a": "نغطي باريس وإيل دو فرانس، مع نقل من وإلى جميع المطارات. كما نوفر خدمات المسافات الطويلة في أوروبا."
+      },
+      {
+        "q": "كيف أحجز الخدمة؟",
+        "a": "عبر نموذج طلب العرض على الإنترنت، بالهاتف، بالبريد الإلكتروني، أو عبر WhatsApp. فريقنا يرد خلال 30 دقيقة."
+      }
     ]
   },
   "events": {
@@ -133,12 +209,30 @@
     "title_em": "المميزة",
     "subtitle": "نقل VIP لأبرز المناسبات الباريسية",
     "items": {
-      "fashionweek": { "title": "Paris Fashion Week", "period": "Février & Septembre" },
-      "airshow": { "title": "Paris Air Show", "period": "Salon du Bourget" },
-      "rolandgarros": { "title": "Roland Garros", "period": "Mai — Juin" },
-      "cannes": { "title": "Festival de Cannes", "period": "Mai" },
-      "sports": { "title": "Compétitions sportives", "period": "Grand Prix, courses" },
-      "salons": { "title": "Salons professionnels", "period": "Nautic, Première Vision, M&O" }
+      "fashionweek": {
+        "title": "Paris Fashion Week",
+        "period": "Février & Septembre"
+      },
+      "airshow": {
+        "title": "Paris Air Show",
+        "period": "Salon du Bourget"
+      },
+      "rolandgarros": {
+        "title": "Roland Garros",
+        "period": "Mai — Juin"
+      },
+      "cannes": {
+        "title": "Festival de Cannes",
+        "period": "Mai"
+      },
+      "sports": {
+        "title": "Compétitions sportives",
+        "period": "Grand Prix, courses"
+      },
+      "salons": {
+        "title": "Salons professionnels",
+        "period": "Nautic, Première Vision, M&O"
+      }
     }
   },
   "fleet": {
@@ -153,7 +247,12 @@
         "pax": "3 passagers",
         "bags": "2 valises",
         "from": "À partir de 125 €",
-        "features": ["Wi-Fi premium", "Intérieur cuir", "Climatisation bi-zone", "Chargeurs USB-C"]
+        "features": [
+          "Wi-Fi premium",
+          "Intérieur cuir",
+          "Climatisation bi-zone",
+          "Chargeurs USB-C"
+        ]
       },
       "classe_s": {
         "name": "Mercedes Classe S",
@@ -161,7 +260,12 @@
         "pax": "3 passagers",
         "bags": "2 valises",
         "from": "À partir de 225 €",
-        "features": ["Sièges massants", "Écrans LCD", "Insonorisation renforcée", "Bar à bord"]
+        "features": [
+          "Sièges massants",
+          "Écrans LCD",
+          "Insonorisation renforcée",
+          "Bar à bord"
+        ]
       },
       "classe_v": {
         "name": "Mercedes Classe V",
@@ -169,15 +273,25 @@
         "pax": "7 passagers",
         "bags": "6 valises",
         "from": "À partir de 125 €",
-        "features": ["Configuration salon", "Espace réunion", "Wi-Fi haut débit", "Bagages XXL"]
+        "features": [
+          "Configuration salon",
+          "Espace réunion",
+          "Wi-Fi haut débit",
+          "Bagages XXL"
+        ]
       },
-      "bmw_i7": {
-        "name": "BMW i7",
-        "category": "Berline Prestige",
-        "pax": "3 passagers",
-        "bags": "2 valises",
-        "from": "À partir de 250 €",
-        "features": ["100% électrique", "Écran cinéma 31\"", "Ambiance lumineuse", "Silence absolu"]
+      "classe_g": {
+        "name": "مرسيدس الفئة G",
+        "category": "سيارة SUV فاخرة",
+        "pax": "4 ركاب",
+        "bags": "3 حقائب",
+        "from": "ابتداءً من 200 €",
+        "features": [
+          "أيقونة الطرق الوعرة",
+          "مقصورة AMG جلدية",
+          "نظام صوت Burmester®",
+          "حضور لا مثيل له"
+        ]
       },
       "sprinter": {
         "name": "Mercedes Sprinter VIP",
@@ -185,7 +299,12 @@
         "pax": "16 passagers",
         "bags": "16 valises",
         "from": "À partir de 350 €",
-        "features": ["Sièges capitaine", "Sono premium", "Climatisation zone", "Idéal délégations"]
+        "features": [
+          "Sièges capitaine",
+          "Sono premium",
+          "Climatisation zone",
+          "Idéal délégations"
+        ]
       }
     }
   },
@@ -225,23 +344,72 @@
   },
   "routes": {
     "popular": [
-      { "from": "CDG", "to": "Paris Centre", "km": 32, "time": "45 min" },
-      { "from": "CDG", "to": "La Défense", "km": 35, "time": "40 min" },
-      { "from": "CDG", "to": "Disneyland", "km": 45, "time": "40 min" },
-      { "from": "Orly", "to": "Paris Centre", "km": 18, "time": "30 min" },
-      { "from": "Le Bourget", "to": "Paris Centre", "km": 15, "time": "25 min" },
-      { "from": "CDG", "to": "Versailles", "km": 55, "time": "55 min" }
+      {
+        "from": "CDG",
+        "to": "Paris Centre",
+        "km": 32,
+        "time": "45 min"
+      },
+      {
+        "from": "CDG",
+        "to": "La Défense",
+        "km": 35,
+        "time": "40 min"
+      },
+      {
+        "from": "CDG",
+        "to": "Disneyland",
+        "km": 45,
+        "time": "40 min"
+      },
+      {
+        "from": "Orly",
+        "to": "Paris Centre",
+        "km": 18,
+        "time": "30 min"
+      },
+      {
+        "from": "Le Bourget",
+        "to": "Paris Centre",
+        "km": 15,
+        "time": "25 min"
+      },
+      {
+        "from": "CDG",
+        "to": "Versailles",
+        "km": 55,
+        "time": "55 min"
+      }
     ]
   },
   "footer": {
     "col1_title": "Amani Limousines",
-    "col1_links": ["Chauffeur privé Paris", "Transfert aéroport CDG", "Transfert aéroport Orly", "Transfert Le Bourget"],
+    "col1_links": [
+      "Chauffeur privé Paris",
+      "Transfert aéroport CDG",
+      "Transfert aéroport Orly",
+      "Transfert Le Bourget"
+    ],
     "col2_title": "Prestations",
-    "col2_links": ["Mise à disposition", "Convoi & délégations", "Sécurité rapprochée", "Excursion privée"],
+    "col2_links": [
+      "Mise à disposition",
+      "Convoi & délégations",
+      "Sécurité rapprochée",
+      "Excursion privée"
+    ],
     "col3_title": "Événements",
-    "col3_links": ["Paris Fashion Week", "Paris Air Show", "Roland Garros", "Salons professionnels"],
+    "col3_links": [
+      "Paris Fashion Week",
+      "Paris Air Show",
+      "Roland Garros",
+      "Salons professionnels"
+    ],
     "col4_title": "Informations",
-    "col4_links": ["Mentions légales", "CGV", "Politique de confidentialité"],
+    "col4_links": [
+      "Mentions légales",
+      "CGV",
+      "Politique de confidentialité"
+    ],
     "copyright": "© 2026 أماني ليموزين — خدمة سائق خاص فاخرة في باريس"
   }
 }

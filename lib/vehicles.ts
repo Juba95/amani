@@ -18,39 +18,39 @@ export const VEHICLES: Vehicle[] = [
   {
     id: 'classe_e',
     nameKey: 'classe_e',
-    image: 'https://www.amani-limousines.com/wp-content/uploads/2017/02/mercedes_benz_classe_e_hr-dvpu.png',
+    image: '/vehicles/mercedes-classe-e.png',
     pax: 3, bags: 2,
-    basePrice: 80,
-    pricePerKm: 2.50,    // Classe E / EQE = 2,5€/km
+    basePrice: 100,
+    pricePerKm: 3.00,    // Classe E = 3€/km, minimum 100€
   },
   {
     id: 'classe_s',
     nameKey: 'classe_s',
-    image: 'https://www.amani-limousines.com/wp-content/uploads/2017/02/s-Class-1-600x380.jpg',
+    image: '/vehicles/mercedes-classe-s.png',
     pax: 3, bags: 2,
-    basePrice: 96,
-    pricePerKm: 3.00,    // Classe S = 3€/km
+    basePrice: 150,
+    pricePerKm: 5.00,    // Classe S = 5€/km, minimum 150€
   },
   {
     id: 'classe_v',
     nameKey: 'classe_v',
-    image: 'https://www.amani-limousines.com/wp-content/uploads/2017/02/PngItem_816085-600x380.png',
+    image: '/vehicles/mercedes-classe-v.png',
     pax: 7, bags: 6,
-    basePrice: 80,
-    pricePerKm: 2.50,    // Classe V = 2,5€/km
+    basePrice: 100,
+    pricePerKm: 3.00,    // Classe V = 3€/km, minimum 100€
   },
   {
-    id: 'bmw_7',
-    nameKey: 'bmw_7',
-    image: 'https://www.amani-limousines.com/wp-content/uploads/2023/06/bmwI7-redim.jpg',
-    pax: 3, bags: 2,
-    basePrice: 96,
-    pricePerKm: 3.00,    // BMW Série 7 = 3€/km
+    id: 'classe_g',
+    nameKey: 'classe_g',
+    image: '/vehicles/mercedes-classe-g.png',
+    pax: 4, bags: 3,
+    basePrice: 200,
+    pricePerKm: 4.00,    // Classe G = 4€/km, minimum 200€
   },
   {
     id: 'sprinter',
     nameKey: 'sprinter',
-    image: 'https://www.amani-limousines.com/wp-content/uploads/2023/07/sprinter-vip.jpg',
+    image: '/vehicles/mercedes-sprinter.png',
     pax: 16, bags: 16,
     basePrice: 200,
     pricePerKm: 4.00,    // Sprinter VIP = 4€/km

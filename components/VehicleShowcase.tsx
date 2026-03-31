@@ -7,13 +7,13 @@ interface VehicleShowcaseProps {
   t: any;
 }
 
-const VEHICLE_KEYS = ['classe_e', 'classe_s', 'classe_v', 'bmw_i7', 'sprinter'];
+const VEHICLE_KEYS = ['classe_e', 'classe_s', 'classe_v', 'classe_g', 'sprinter'];
 
 const VEHICLE_IMAGES: Record<string, string> = {
   classe_e: '/vehicles/mercedes-classe-e.png',
   classe_s: '/vehicles/mercedes-classe-s.png',
   classe_v: '/vehicles/mercedes-classe-v.png',
-  bmw_i7:   '/vehicles/bmw-i7.png',
+  classe_g: '/vehicles/mercedes-classe-g.png',
   sprinter: '/vehicles/mercedes-sprinter.png',
 };
 

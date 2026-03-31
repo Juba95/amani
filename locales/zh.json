@@ -27,7 +27,11 @@
     "popular": "热门路线",
     "form_title": "即时报价",
     "form_subtitle": "固定价格 · 无隐藏费用",
-    "trust_signals": ["固定价格", "航班追踪", "24/7"]
+    "trust_signals": [
+      "固定价格",
+      "航班追踪",
+      "24/7"
+    ]
   },
   "services": {
     "tag": "我们的服务",
@@ -83,10 +87,26 @@
     "title": "四步轻松",
     "title_em": "完成预订",
     "steps": [
-      { "num": "01", "title": "申请报价", "desc": "在线填写行程信息或致电我们，即刻获得固定价格报价。" },
-      { "num": "02", "title": "即时确认", "desc": "您将收到包含司机姓名和照片的电子邮件及短信确认。" },
-      { "num": "03", "title": "VIP接送", "desc": "您的司机提前15分钟到达。如航班延误，将自动调整，无需额外费用。" },
-      { "num": "04", "title": "舒适出行", "desc": "在豪华车辆中享受旅程。Wi-Fi、矿泉水、充电器——一切尽在其中。" }
+      {
+        "num": "01",
+        "title": "申请报价",
+        "desc": "在线填写行程信息或致电我们，即刻获得固定价格报价。"
+      },
+      {
+        "num": "02",
+        "title": "即时确认",
+        "desc": "您将收到包含司机姓名和照片的电子邮件及短信确认。"
+      },
+      {
+        "num": "03",
+        "title": "VIP接送",
+        "desc": "您的司机提前15分钟到达。如航班延误，将自动调整，无需额外费用。"
+      },
+      {
+        "num": "04",
+        "title": "舒适出行",
+        "desc": "在豪华车辆中享受旅程。Wi-Fi、矿泉水、充电器——一切尽在其中。"
+      }
     ]
   },
   "whyus": {
@@ -94,12 +114,30 @@
     "title": "与众不同的",
     "title_em": "服务品质",
     "items": [
-      { "title": "价格固定有保障", "desc": "预订时即确认价格，无论路况如何均不加收额外费用，透明无隐患。" },
-      { "title": "精英司机团队", "desc": "所有司机均持证上岗，接受过安全驾驶培训，能流利使用法语、英语、阿拉伯语和普通话。" },
-      { "title": "实时航班追踪", "desc": "我们实时监控您的航班。如有延误，您的司机将自动调整接机时间，无需额外付费。" },
-      { "title": "每年更新的豪华车队", "desc": "300余辆车辆每年更新——奔驰、宝马、Sprinter。所有车辆使用不超过3年，每日检查。" },
-      { "title": "30分钟响应", "desc": "我们的团队全天候7天24小时响应报价请求，电话、邮件或WhatsApp均可。" },
-      { "title": "绝对保密", "desc": "为外交、商务及VIP客户提供全面保密服务。我们的司机恪守最严格的保密原则。" }
+      {
+        "title": "价格固定有保障",
+        "desc": "预订时即确认价格，无论路况如何均不加收额外费用，透明无隐患。"
+      },
+      {
+        "title": "精英司机团队",
+        "desc": "所有司机均持证上岗，接受过安全驾驶培训，能流利使用法语、英语、阿拉伯语和普通话。"
+      },
+      {
+        "title": "实时航班追踪",
+        "desc": "我们实时监控您的航班。如有延误，您的司机将自动调整接机时间，无需额外付费。"
+      },
+      {
+        "title": "每年更新的豪华车队",
+        "desc": "300余辆车辆每年更新——奔驰、宝马、Sprinter。所有车辆使用不超过3年，每日检查。"
+      },
+      {
+        "title": "30分钟响应",
+        "desc": "我们的团队全天候7天24小时响应报价请求，电话、邮件或WhatsApp均可。"
+      },
+      {
+        "title": "绝对保密",
+        "desc": "为外交、商务及VIP客户提供全面保密服务。我们的司机恪守最严格的保密原则。"
+      }
     ]
   },
   "reviews": {
@@ -108,10 +146,30 @@
     "title_em": "客户的声音",
     "google_link": "在Google上查看所有评价",
     "items": [
-      { "name": "James W.", "rating": 5, "text": "服务无可挑剔。司机准时，车辆一尘不染，即使在非正常时间也随时待命。强烈推荐用于巴黎商务出行。", "role": "总裁，伦敦" },
-      { "name": "Sophie L.", "rating": 5, "text": "三年来，我所有的机场接送都选择Amani Limousines。准时率完美，车辆高端，司机始终彬彬有礼。真正的五星级服务。", "role": "国际顾问" },
-      { "name": "Mohammed A.", "rating": 5, "text": "为12人官方代表团提供了出色的接待服务。物流完美，车辆协调无懈可击。我们一定会再次合作。", "role": "外交随员" },
-      { "name": "Claire M.", "rating": 5, "text": "凌晨5点CDG到巴黎的接送，司机面带笑容准时等候。航班追踪系统真的有效——他已经知道航班延误了。", "role": "项目经理" }
+      {
+        "name": "James W.",
+        "rating": 5,
+        "text": "服务无可挑剔。司机准时，车辆一尘不染，即使在非正常时间也随时待命。强烈推荐用于巴黎商务出行。",
+        "role": "总裁，伦敦"
+      },
+      {
+        "name": "Sophie L.",
+        "rating": 5,
+        "text": "三年来，我所有的机场接送都选择Amani Limousines。准时率完美，车辆高端，司机始终彬彬有礼。真正的五星级服务。",
+        "role": "国际顾问"
+      },
+      {
+        "name": "Mohammed A.",
+        "rating": 5,
+        "text": "为12人官方代表团提供了出色的接待服务。物流完美，车辆协调无懈可击。我们一定会再次合作。",
+        "role": "外交随员"
+      },
+      {
+        "name": "Claire M.",
+        "rating": 5,
+        "text": "凌晨5点CDG到巴黎的接送，司机面带笑容准时等候。航班追踪系统真的有效——他已经知道航班延误了。",
+        "role": "项目经理"
+      }
     ]
   },
   "faq": {
@@ -119,12 +177,30 @@
     "title": "您需要了解的",
     "title_em": "一切信息",
     "items": [
-      { "q": "固定价格是如何运作的？", "a": "您的价格在预订时根据路线和所选车辆计算并确认，包含所有税费和通行费。无附加费用。" },
-      { "q": "如果我的航班延误怎么办？", "a": "我们实时追踪您的航班。如航班延误，您的司机将自动调整，无需额外付费。" },
-      { "q": "你们提供哪些车型？", "a": "我们的车队包括行政轿车（奔驰E级、S级、宝马i7）、豪华商务车（奔驰V级）和VIP巴士（奔驰Sprinter）。" },
-      { "q": "你们是否提供代表团服务？", "a": "是的，我们为官方代表团、外交使团和企业活动协调多车护送服务，提供集中调度。" },
-      { "q": "你们的服务范围是哪里？", "a": "我们覆盖巴黎及法兰西岛地区，提供所有机场（CDG、奥利、勒布尔热）的接送服务，以及欧洲各地的长途服务。" },
-      { "q": "如何预订服务？", "a": "通过我们的在线报价表、电话+33 6 62 02 73 44、电子邮件或WhatsApp预订。我们的团队全天候30分钟内回复。" }
+      {
+        "q": "固定价格是如何运作的？",
+        "a": "您的价格在预订时根据路线和所选车辆计算并确认，包含所有税费和通行费。无附加费用。"
+      },
+      {
+        "q": "如果我的航班延误怎么办？",
+        "a": "我们实时追踪您的航班。如航班延误，您的司机将自动调整，无需额外付费。"
+      },
+      {
+        "q": "你们提供哪些车型？",
+        "a": "我们的车队包括行政轿车（奔驰E级、S级、宝马i7）、豪华商务车（奔驰V级）和VIP巴士（奔驰Sprinter）。"
+      },
+      {
+        "q": "你们是否提供代表团服务？",
+        "a": "是的，我们为官方代表团、外交使团和企业活动协调多车护送服务，提供集中调度。"
+      },
+      {
+        "q": "你们的服务范围是哪里？",
+        "a": "我们覆盖巴黎及法兰西岛地区，提供所有机场（CDG、奥利、勒布尔热）的接送服务，以及欧洲各地的长途服务。"
+      },
+      {
+        "q": "如何预订服务？",
+        "a": "通过我们的在线报价表、电话+33 6 62 02 73 44、电子邮件或WhatsApp预订。我们的团队全天候30分钟内回复。"
+      }
     ]
   },
   "events": {
@@ -133,12 +209,30 @@
     "title_em": "活动护航",
     "subtitle": "巴黎重大活动VIP专属接送",
     "items": {
-      "fashionweek": { "title": "Paris Fashion Week", "period": "Février & Septembre" },
-      "airshow": { "title": "Paris Air Show", "period": "Salon du Bourget" },
-      "rolandgarros": { "title": "Roland Garros", "period": "Mai — Juin" },
-      "cannes": { "title": "Festival de Cannes", "period": "Mai" },
-      "sports": { "title": "Compétitions sportives", "period": "Grand Prix, courses" },
-      "salons": { "title": "Salons professionnels", "period": "Nautic, Première Vision, M&O" }
+      "fashionweek": {
+        "title": "Paris Fashion Week",
+        "period": "Février & Septembre"
+      },
+      "airshow": {
+        "title": "Paris Air Show",
+        "period": "Salon du Bourget"
+      },
+      "rolandgarros": {
+        "title": "Roland Garros",
+        "period": "Mai — Juin"
+      },
+      "cannes": {
+        "title": "Festival de Cannes",
+        "period": "Mai"
+      },
+      "sports": {
+        "title": "Compétitions sportives",
+        "period": "Grand Prix, courses"
+      },
+      "salons": {
+        "title": "Salons professionnels",
+        "period": "Nautic, Première Vision, M&O"
+      }
     }
   },
   "fleet": {
@@ -153,7 +247,12 @@
         "pax": "3 passagers",
         "bags": "2 valises",
         "from": "À partir de 125 €",
-        "features": ["Wi-Fi premium", "Intérieur cuir", "Climatisation bi-zone", "Chargeurs USB-C"]
+        "features": [
+          "Wi-Fi premium",
+          "Intérieur cuir",
+          "Climatisation bi-zone",
+          "Chargeurs USB-C"
+        ]
       },
       "classe_s": {
         "name": "Mercedes Classe S",
@@ -161,7 +260,12 @@
         "pax": "3 passagers",
         "bags": "2 valises",
         "from": "À partir de 225 €",
-        "features": ["Sièges massants", "Écrans LCD", "Insonorisation renforcée", "Bar à bord"]
+        "features": [
+          "Sièges massants",
+          "Écrans LCD",
+          "Insonorisation renforcée",
+          "Bar à bord"
+        ]
       },
       "classe_v": {
         "name": "Mercedes Classe V",
@@ -169,15 +273,25 @@
         "pax": "7 passagers",
         "bags": "6 valises",
         "from": "À partir de 125 €",
-        "features": ["Configuration salon", "Espace réunion", "Wi-Fi haut débit", "Bagages XXL"]
+        "features": [
+          "Configuration salon",
+          "Espace réunion",
+          "Wi-Fi haut débit",
+          "Bagages XXL"
+        ]
       },
-      "bmw_i7": {
-        "name": "BMW i7",
-        "category": "Berline Prestige",
-        "pax": "3 passagers",
-        "bags": "2 valises",
-        "from": "À partir de 250 €",
-        "features": ["100% électrique", "Écran cinéma 31\"", "Ambiance lumineuse", "Silence absolu"]
+      "classe_g": {
+        "name": "梅赛德斯G级",
+        "category": "豪华SUV",
+        "pax": "4名乘客",
+        "bags": "3件行李",
+        "from": "起价200欧元",
+        "features": [
+          "标志性越野",
+          "AMG皮革内饰",
+          "Burmester®音响",
+          "无与伦比的气场"
+        ]
       },
       "sprinter": {
         "name": "Mercedes Sprinter VIP",
@@ -185,7 +299,12 @@
         "pax": "16 passagers",
         "bags": "16 valises",
         "from": "À partir de 350 €",
-        "features": ["Sièges capitaine", "Sono premium", "Climatisation zone", "Idéal délégations"]
+        "features": [
+          "Sièges capitaine",
+          "Sono premium",
+          "Climatisation zone",
+          "Idéal délégations"
+        ]
       }
     }
   },
@@ -225,23 +344,72 @@
   },
   "routes": {
     "popular": [
-      { "from": "CDG", "to": "Paris Centre", "km": 32, "time": "45 min" },
-      { "from": "CDG", "to": "La Défense", "km": 35, "time": "40 min" },
-      { "from": "CDG", "to": "Disneyland", "km": 45, "time": "40 min" },
-      { "from": "Orly", "to": "Paris Centre", "km": 18, "time": "30 min" },
-      { "from": "Le Bourget", "to": "Paris Centre", "km": 15, "time": "25 min" },
-      { "from": "CDG", "to": "Versailles", "km": 55, "time": "55 min" }
+      {
+        "from": "CDG",
+        "to": "Paris Centre",
+        "km": 32,
+        "time": "45 min"
+      },
+      {
+        "from": "CDG",
+        "to": "La Défense",
+        "km": 35,
+        "time": "40 min"
+      },
+      {
+        "from": "CDG",
+        "to": "Disneyland",
+        "km": 45,
+        "time": "40 min"
+      },
+      {
+        "from": "Orly",
+        "to": "Paris Centre",
+        "km": 18,
+        "time": "30 min"
+      },
+      {
+        "from": "Le Bourget",
+        "to": "Paris Centre",
+        "km": 15,
+        "time": "25 min"
+      },
+      {
+        "from": "CDG",
+        "to": "Versailles",
+        "km": 55,
+        "time": "55 min"
+      }
     ]
   },
   "footer": {
     "col1_title": "Amani Limousines",
-    "col1_links": ["Chauffeur privé Paris", "Transfert aéroport CDG", "Transfert aéroport Orly", "Transfert Le Bourget"],
+    "col1_links": [
+      "Chauffeur privé Paris",
+      "Transfert aéroport CDG",
+      "Transfert aéroport Orly",
+      "Transfert Le Bourget"
+    ],
     "col2_title": "Prestations",
-    "col2_links": ["Mise à disposition", "Convoi & délégations", "Sécurité rapprochée", "Excursion privée"],
+    "col2_links": [
+      "Mise à disposition",
+      "Convoi & délégations",
+      "Sécurité rapprochée",
+      "Excursion privée"
+    ],
     "col3_title": "Événements",
-    "col3_links": ["Paris Fashion Week", "Paris Air Show", "Roland Garros", "Salons professionnels"],
+    "col3_links": [
+      "Paris Fashion Week",
+      "Paris Air Show",
+      "Roland Garros",
+      "Salons professionnels"
+    ],
     "col4_title": "Informations",
-    "col4_links": ["Mentions légales", "CGV", "Politique de confidentialité"],
+    "col4_links": [
+      "Mentions légales",
+      "CGV",
+      "Politique de confidentialité"
+    ],
     "copyright": "© 2026 AMANI LIMOUSINES — 巴黎豪华私人司机服务"
   }
 }

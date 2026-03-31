@@ -27,7 +27,11 @@
     "popular": "Popular routes",
     "form_title": "Your instant quote",
     "form_subtitle": "Fixed price · No surprises",
-    "trust_signals": ["Fixed price", "Flight tracking", "24/7"]
+    "trust_signals": [
+      "Fixed price",
+      "Flight tracking",
+      "24/7"
+    ]
   },
   "services": {
     "tag": "Our services",
@@ -83,10 +87,26 @@
     "title": "Book in",
     "title_em": "4 simple steps",
     "steps": [
-      { "num": "01", "title": "Request your quote", "desc": "Enter your itinerary online or call us. Instant quote, fixed price guaranteed from confirmation." },
-      { "num": "02", "title": "Instant confirmation", "desc": "You receive a confirmation by email and SMS with your chauffeur's name and photo." },
-      { "num": "03", "title": "VIP pick-up", "desc": "Your chauffeur arrives 15 minutes early. If your flight is delayed, they adapt automatically at no extra charge." },
-      { "num": "04", "title": "Travel in comfort", "desc": "Enjoy the journey in a premium vehicle. Wi-Fi, water, chargers — everything is included." }
+      {
+        "num": "01",
+        "title": "Request your quote",
+        "desc": "Enter your itinerary online or call us. Instant quote, fixed price guaranteed from confirmation."
+      },
+      {
+        "num": "02",
+        "title": "Instant confirmation",
+        "desc": "You receive a confirmation by email and SMS with your chauffeur's name and photo."
+      },
+      {
+        "num": "03",
+        "title": "VIP pick-up",
+        "desc": "Your chauffeur arrives 15 minutes early. If your flight is delayed, they adapt automatically at no extra charge."
+      },
+      {
+        "num": "04",
+        "title": "Travel in comfort",
+        "desc": "Enjoy the journey in a premium vehicle. Wi-Fi, water, chargers — everything is included."
+      }
     ]
   },
   "whyus": {
@@ -94,12 +114,30 @@
     "title": "A service that makes",
     "title_em": "the difference",
     "items": [
-      { "title": "Guaranteed fixed price", "desc": "Your fare is confirmed at booking. No surcharges, no bad surprises regardless of traffic or journey length." },
-      { "title": "Elite chauffeurs", "desc": "All our chauffeurs are certified, trained in defensive driving and multilingual — French, English, Arabic, Mandarin." },
-      { "title": "Real-time flight tracking", "desc": "We monitor your flight in real time. If your plane is delayed, your chauffeur adapts automatically at no extra cost." },
-      { "title": "Renewed premium fleet", "desc": "Over 300 vehicles renewed every year — Mercedes, BMW, Sprinter. All less than 3 years old, inspected daily." },
-      { "title": "30-minute response", "desc": "Our team replies to any quote request within 30 minutes, 24/7, by phone, email or WhatsApp." },
-      { "title": "Absolute discretion", "desc": "Total confidentiality for diplomatic, corporate and VIP clients. Our chauffeurs operate under the strictest non-disclosure." }
+      {
+        "title": "Guaranteed fixed price",
+        "desc": "Your fare is confirmed at booking. No surcharges, no bad surprises regardless of traffic or journey length."
+      },
+      {
+        "title": "Elite chauffeurs",
+        "desc": "All our chauffeurs are certified, trained in defensive driving and multilingual — French, English, Arabic, Mandarin."
+      },
+      {
+        "title": "Real-time flight tracking",
+        "desc": "We monitor your flight in real time. If your plane is delayed, your chauffeur adapts automatically at no extra cost."
+      },
+      {
+        "title": "Renewed premium fleet",
+        "desc": "Over 300 vehicles renewed every year — Mercedes, BMW, Sprinter. All less than 3 years old, inspected daily."
+      },
+      {
+        "title": "30-minute response",
+        "desc": "Our team replies to any quote request within 30 minutes, 24/7, by phone, email or WhatsApp."
+      },
+      {
+        "title": "Absolute discretion",
+        "desc": "Total confidentiality for diplomatic, corporate and VIP clients. Our chauffeurs operate under the strictest non-disclosure."
+      }
     ]
   },
   "reviews": {
@@ -108,10 +146,30 @@
     "title_em": "clients say",
     "google_link": "See all reviews on Google",
     "items": [
-      { "name": "James W.", "rating": 5, "text": "Flawless service. Chauffeur on time, immaculate vehicle, and available outside regular hours. Highly recommended for all your professional transfers in Paris.", "role": "CEO, London" },
-      { "name": "Sophie L.", "rating": 5, "text": "I have used Amani Limousines for all my airport transfers for 3 years. Perfect punctuality, top-of-the-range vehicles, always courteous chauffeurs. A true 5-star service.", "role": "International consultant" },
-      { "name": "Mohammed A.", "rating": 5, "text": "Outstanding coordination for an official delegation of 12 people. Perfect logistics, impeccable vehicle synchronisation. We will absolutely use their services again.", "role": "Diplomatic attaché" },
-      { "name": "Claire M.", "rating": 5, "text": "CDG–Paris transfer at 5am, the chauffeur was there and smiling. The flight tracking actually works — he already knew about the delay. Very professional, highly recommend.", "role": "Project manager" }
+      {
+        "name": "James W.",
+        "rating": 5,
+        "text": "Flawless service. Chauffeur on time, immaculate vehicle, and available outside regular hours. Highly recommended for all your professional transfers in Paris.",
+        "role": "CEO, London"
+      },
+      {
+        "name": "Sophie L.",
+        "rating": 5,
+        "text": "I have used Amani Limousines for all my airport transfers for 3 years. Perfect punctuality, top-of-the-range vehicles, always courteous chauffeurs. A true 5-star service.",
+        "role": "International consultant"
+      },
+      {
+        "name": "Mohammed A.",
+        "rating": 5,
+        "text": "Outstanding coordination for an official delegation of 12 people. Perfect logistics, impeccable vehicle synchronisation. We will absolutely use their services again.",
+        "role": "Diplomatic attaché"
+      },
+      {
+        "name": "Claire M.",
+        "rating": 5,
+        "text": "CDG–Paris transfer at 5am, the chauffeur was there and smiling. The flight tracking actually works — he already knew about the delay. Very professional, highly recommend.",
+        "role": "Project manager"
+      }
     ]
   },
   "faq": {
@@ -119,12 +177,30 @@
     "title": "Everything you",
     "title_em": "need to know",
     "items": [
-      { "q": "How does the fixed price work?", "a": "Your price is calculated and confirmed at the time of booking, based on your route and chosen vehicle. It includes all taxes, tolls and parking. No surcharges or surprises." },
-      { "q": "What happens if my flight is delayed?", "a": "We monitor your flight in real time. If your flight is delayed, your chauffeur adapts automatically at no extra charge. You don't need to do anything — our team handles everything." },
-      { "q": "What types of vehicles do you offer?", "a": "Our fleet includes executive sedans (Mercedes E-Class, S-Class, BMW i7), luxury vans (Mercedes V-Class) and VIP minibuses (Mercedes Sprinter). All vehicles are under 3 years old." },
-      { "q": "Do you offer services for delegations?", "a": "Yes, we coordinate multi-vehicle convoys for official delegations, diplomatic missions and corporate events. Centralised dispatch, radio communication between drivers." },
-      { "q": "What is your coverage area?", "a": "We cover Paris and the Île-de-France region, with transfers to and from all airports (CDG, Orly, Le Bourget). We also cover long distances: Deauville, Lyon, Brussels, Côte d'Azur and across Europe." },
-      { "q": "How do I book?", "a": "Via our online quote form, by phone on +33 6 62 02 73 44, by email at contact@amani-limousines.com, or via WhatsApp. Our team responds within 30 minutes, 24/7." }
+      {
+        "q": "How does the fixed price work?",
+        "a": "Your price is calculated and confirmed at the time of booking, based on your route and chosen vehicle. It includes all taxes, tolls and parking. No surcharges or surprises."
+      },
+      {
+        "q": "What happens if my flight is delayed?",
+        "a": "We monitor your flight in real time. If your flight is delayed, your chauffeur adapts automatically at no extra charge. You don't need to do anything — our team handles everything."
+      },
+      {
+        "q": "What types of vehicles do you offer?",
+        "a": "Our fleet includes executive sedans (Mercedes E-Class, S-Class, BMW i7), luxury vans (Mercedes V-Class) and VIP minibuses (Mercedes Sprinter). All vehicles are under 3 years old."
+      },
+      {
+        "q": "Do you offer services for delegations?",
+        "a": "Yes, we coordinate multi-vehicle convoys for official delegations, diplomatic missions and corporate events. Centralised dispatch, radio communication between drivers."
+      },
+      {
+        "q": "What is your coverage area?",
+        "a": "We cover Paris and the Île-de-France region, with transfers to and from all airports (CDG, Orly, Le Bourget). We also cover long distances: Deauville, Lyon, Brussels, Côte d'Azur and across Europe."
+      },
+      {
+        "q": "How do I book?",
+        "a": "Via our online quote form, by phone on +33 6 62 02 73 44, by email at contact@amani-limousines.com, or via WhatsApp. Our team responds within 30 minutes, 24/7."
+      }
     ]
   },
   "events": {
@@ -133,12 +209,30 @@
     "title_em": "events",
     "subtitle": "VIP transport for Paris's most prestigious events",
     "items": {
-      "fashionweek": { "title": "Paris Fashion Week", "period": "February & September" },
-      "airshow": { "title": "Paris Air Show", "period": "Le Bourget Salon" },
-      "rolandgarros": { "title": "Roland Garros", "period": "May — June" },
-      "cannes": { "title": "Cannes Film Festival", "period": "May" },
-      "sports": { "title": "Sporting events", "period": "Grand Prix, races" },
-      "salons": { "title": "Trade fairs", "period": "Nautic, Première Vision, M&O" }
+      "fashionweek": {
+        "title": "Paris Fashion Week",
+        "period": "February & September"
+      },
+      "airshow": {
+        "title": "Paris Air Show",
+        "period": "Le Bourget Salon"
+      },
+      "rolandgarros": {
+        "title": "Roland Garros",
+        "period": "May — June"
+      },
+      "cannes": {
+        "title": "Cannes Film Festival",
+        "period": "May"
+      },
+      "sports": {
+        "title": "Sporting events",
+        "period": "Grand Prix, races"
+      },
+      "salons": {
+        "title": "Trade fairs",
+        "period": "Nautic, Première Vision, M&O"
+      }
     }
   },
   "fleet": {
@@ -153,7 +247,12 @@
         "pax": "3 passengers",
         "bags": "2 suitcases",
         "from": "From €125",
-        "features": ["Premium Wi-Fi", "Leather interior", "Dual-zone climate", "USB-C chargers"]
+        "features": [
+          "Premium Wi-Fi",
+          "Leather interior",
+          "Dual-zone climate",
+          "USB-C chargers"
+        ]
       },
       "classe_s": {
         "name": "Mercedes S-Class",
@@ -161,7 +260,12 @@
         "pax": "3 passengers",
         "bags": "2 suitcases",
         "from": "From €225",
-        "features": ["Massage seats", "LCD screens", "Enhanced insulation", "On-board bar"]
+        "features": [
+          "Massage seats",
+          "LCD screens",
+          "Enhanced insulation",
+          "On-board bar"
+        ]
       },
       "classe_v": {
         "name": "Mercedes V-Class",
@@ -169,15 +273,25 @@
         "pax": "7 passengers",
         "bags": "6 suitcases",
         "from": "From €125",
-        "features": ["Lounge layout", "Meeting space", "High-speed Wi-Fi", "XXL luggage"]
+        "features": [
+          "Lounge layout",
+          "Meeting space",
+          "High-speed Wi-Fi",
+          "XXL luggage"
+        ]
       },
-      "bmw_i7": {
-        "name": "BMW i7",
-        "category": "Prestige Sedan",
-        "pax": "3 passengers",
-        "bags": "2 suitcases",
-        "from": "From €250",
-        "features": ["Fully electric", "31\" cinema screen", "Ambient lighting", "Absolute silence"]
+      "classe_g": {
+        "name": "Mercedes G-Class",
+        "category": "Luxury SUV",
+        "pax": "4 passengers",
+        "bags": "3 luggage",
+        "from": "From 200 €",
+        "features": [
+          "Iconic 4x4",
+          "AMG leather interior",
+          "Burmester® sound",
+          "Unmatched presence"
+        ]
       },
       "sprinter": {
         "name": "Mercedes Sprinter VIP",
@@ -185,7 +299,12 @@
         "pax": "16 passengers",
         "bags": "16 suitcases",
         "from": "From €350",
-        "features": ["Captain seats", "Premium sound", "Zoned climate", "Ideal for delegations"]
+        "features": [
+          "Captain seats",
+          "Premium sound",
+          "Zoned climate",
+          "Ideal for delegations"
+        ]
       }
     }
   },
@@ -225,23 +344,72 @@
   },
   "footer": {
     "col1_title": "Amani Limousines",
-    "col1_links": ["Private chauffeur Paris", "CDG airport transfer", "Orly airport transfer", "Le Bourget transfer"],
+    "col1_links": [
+      "Private chauffeur Paris",
+      "CDG airport transfer",
+      "Orly airport transfer",
+      "Le Bourget transfer"
+    ],
     "col2_title": "Services",
-    "col2_links": ["Hourly hire", "Convoy & delegations", "Close protection", "Private excursion"],
+    "col2_links": [
+      "Hourly hire",
+      "Convoy & delegations",
+      "Close protection",
+      "Private excursion"
+    ],
     "col3_title": "Events",
-    "col3_links": ["Paris Fashion Week", "Paris Air Show", "Roland Garros", "Trade fairs"],
+    "col3_links": [
+      "Paris Fashion Week",
+      "Paris Air Show",
+      "Roland Garros",
+      "Trade fairs"
+    ],
     "col4_title": "Information",
-    "col4_links": ["Legal notice", "Terms & conditions", "Privacy policy"],
+    "col4_links": [
+      "Legal notice",
+      "Terms & conditions",
+      "Privacy policy"
+    ],
     "copyright": "© 2026 AMANI LIMOUSINES — PREMIUM PRIVATE CHAUFFEUR SERVICE IN PARIS"
   },
   "routes": {
     "popular": [
-      { "from": "CDG", "to": "Paris Centre", "km": 32, "time": "45 min" },
-      { "from": "CDG", "to": "La Défense", "km": 35, "time": "40 min" },
-      { "from": "CDG", "to": "Disneyland", "km": 45, "time": "40 min" },
-      { "from": "Orly", "to": "Paris Centre", "km": 18, "time": "30 min" },
-      { "from": "Le Bourget", "to": "Paris Centre", "km": 15, "time": "25 min" },
-      { "from": "CDG", "to": "Versailles", "km": 55, "time": "55 min" }
+      {
+        "from": "CDG",
+        "to": "Paris Centre",
+        "km": 32,
+        "time": "45 min"
+      },
+      {
+        "from": "CDG",
+        "to": "La Défense",
+        "km": 35,
+        "time": "40 min"
+      },
+      {
+        "from": "CDG",
+        "to": "Disneyland",
+        "km": 45,
+        "time": "40 min"
+      },
+      {
+        "from": "Orly",
+        "to": "Paris Centre",
+        "km": 18,
+        "time": "30 min"
+      },
+      {
+        "from": "Le Bourget",
+        "to": "Paris Centre",
+        "km": 15,
+        "time": "25 min"
+      },
+      {
+        "from": "CDG",
+        "to": "Versailles",
+        "km": 55,
+        "time": "55 min"
+      }
     ]
   }
 }

@@ -66,3 +66,12 @@ export function updateContactStatus(id: string, status: ContactStatus): boolean 
   writeContacts(contacts);
   return true;
 }
+
+export function updateContact(id: string, fields: Partial<Omit<Contact, 'id' | 'createdAt'>>): Contact | null {
+  const contacts = readContacts();
+  const idx = contacts.findIndex((c) => c.id === id);
+  if (idx === -1) return null;
+  contacts[idx] = { ...contacts[idx], ...fields };
+  writeContacts(contacts);
+  return contacts[idx];
+}

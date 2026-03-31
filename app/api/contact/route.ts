@@ -113,7 +113,7 @@ export async function POST(req: NextRequest) {
                 ${message.replace(/\n/g, '<br/>')}
               </div>
               <div style="margin-top:28px;text-align:center;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
-                <a href="${siteUrl}/admin" style="display:inline-block;background:#0a0908;color:#c9a84c;padding:12px 28px;font-family:sans-serif;font-size:12px;letter-spacing:.15em;text-transform:uppercase;text-decoration:none;border-radius:6px;">
+                <a href="${siteUrl}/adminos" style="display:inline-block;background:#0a0908;color:#c9a84c;padding:12px 28px;font-family:sans-serif;font-size:12px;letter-spacing:.15em;text-transform:uppercase;text-decoration:none;border-radius:6px;">
                   Voir dans le backoffice
                 </a>
                 <a href="${waReply}" target="_blank" style="display:inline-block;background:#25D366;color:#fff;padding:12px 28px;font-family:sans-serif;font-size:12px;letter-spacing:.15em;text-transform:uppercase;text-decoration:none;border-radius:6px;">
