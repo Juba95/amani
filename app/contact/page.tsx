@@ -100,7 +100,13 @@ function ContactForm() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
       });
-      if (!res.ok) throw new Error();
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        // Affiche l'erreur serveur précise si dispo
+        setPhoneError(data?.error || '');
+        setStatus('error');
+        return;
+      }
       setSubmittedForm({ ...form });
       setStatus('success');
       setForm({ name: '', email: '', phone: '', service: '', date: '', passengers: '', message: '' });
