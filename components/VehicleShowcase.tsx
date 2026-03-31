@@ -1,7 +1,13 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Image from 'next/image';
+import {
+  MercedesClasseE,
+  MercedesClasseS,
+  MercedesClasseV,
+  BMWi7,
+  MercedesSprinter,
+} from '@/components/VehicleIllustration';
 
 interface VehicleShowcaseProps {
   t: any;
@@ -9,39 +15,37 @@ interface VehicleShowcaseProps {
 
 const VEHICLE_KEYS = ['classe_e', 'classe_s', 'classe_v', 'bmw_i7', 'sprinter'];
 
-// Images: PNGs with transparent bg, JPEGs use mix-blend-mode: multiply to remove white bg
-const VEHICLE_IMAGES: Record<string, { src: string; isJpeg?: boolean }> = {
-  classe_e: {
-    src: 'https://www.amani-limousines.com/wp-content/uploads/2017/02/mercedes_benz_classe_e_hr-dvpu.png',
-  },
-  classe_s: {
-    // High-quality S-Class PNG with transparent background
-    src: 'https://www.pngmart.com/files/6/Mercedes-Benz-S-Class-PNG-Free-Download.png',
-  },
-  classe_v: {
-    src: 'https://www.amani-limousines.com/wp-content/uploads/2017/02/PngItem_816085-600x380.png',
-  },
-  bmw_i7: {
-    src: 'https://www.amani-limousines.com/wp-content/uploads/2023/06/bmwI7-redim.jpg',
-    isJpeg: true,
-  },
-  sprinter: {
-    // Mercedes Sprinter PNG
-    src: 'https://www.pngmart.com/files/13/Mercedes-Sprinter-PNG-HD.png',
-  },
+const VEHICLE_ILLUSTRATIONS: Record<string, React.FC<{ className?: string }>> = {
+  classe_e: MercedesClasseE,
+  classe_s: MercedesClasseS,
+  classe_v: MercedesClasseV,
+  bmw_i7: BMWi7,
+  sprinter: MercedesSprinter,
 };
 
 export default function VehicleShowcase({ t }: VehicleShowcaseProps) {
   const [idx, setIdx] = useState(0);
+  const [fade, setFade] = useState(true);
 
   useEffect(() => {
-    const timer = setInterval(() => setIdx((i) => (i + 1) % VEHICLE_KEYS.length), 5000);
+    const timer = setInterval(() => {
+      setFade(false);
+      setTimeout(() => {
+        setIdx((i) => (i + 1) % VEHICLE_KEYS.length);
+        setFade(true);
+      }, 250);
+    }, 5000);
     return () => clearInterval(timer);
   }, []);
 
+  const handleDot = (i: number) => {
+    setFade(false);
+    setTimeout(() => { setIdx(i); setFade(true); }, 200);
+  };
+
   const key = VEHICLE_KEYS[idx];
   const vehicle = t?.fleet?.vehicles?.[key];
-  const imgData = VEHICLE_IMAGES[key];
+  const Illustration = VEHICLE_ILLUSTRATIONS[key];
 
   if (!vehicle) return null;
 
@@ -61,33 +65,27 @@ export default function VehicleShowcase({ t }: VehicleShowcaseProps) {
           {t?.fleet?.subtitle}
         </p>
 
-        {/* Vehicle image */}
-        <div className="relative max-w-lg mx-auto mb-8 h-48 md:h-64 flex items-center justify-center">
-          {imgData?.src ? (
-            <Image
-              key={key}
-              src={imgData.src}
-              alt={vehicle.name}
-              width={540}
-              height={300}
-              className="object-contain max-h-full transition-all duration-700"
-              style={{
-                // mix-blend-mode: multiply removes white backgrounds on light pages
-                mixBlendMode: 'multiply',
-                filter: 'drop-shadow(0 16px 40px rgba(138,115,64,0.12))',
-              }}
-              unoptimized
-            />
-          ) : (
-            <div className="text-7xl opacity-30">🚐</div>
+        {/* Vehicle illustration */}
+        <div
+          className="relative max-w-xl mx-auto mb-8 h-48 md:h-64 flex items-center justify-center transition-opacity duration-300"
+          style={{ opacity: fade ? 1 : 0 }}
+        >
+          {Illustration && (
+            <Illustration className="w-full h-full drop-shadow-lg" />
           )}
         </div>
 
         {/* Vehicle name */}
-        <h3 className="text-2xl font-normal mb-1 text-gray-900 transition-all duration-500">
+        <h3
+          className="text-2xl font-normal mb-1 text-gray-900 transition-all duration-500"
+          style={{ opacity: fade ? 1 : 0 }}
+        >
           {vehicle.name}
         </h3>
-        <p className="font-sans text-xs tracking-[0.2em] uppercase font-normal mb-1.5" style={{ color: '#8a7340' }}>
+        <p
+          className="font-sans text-xs tracking-[0.2em] uppercase font-normal mb-1.5"
+          style={{ color: '#8a7340' }}
+        >
           {vehicle.category}
         </p>
         <p className="font-sans text-sm text-stone-500 font-light mb-5">
@@ -114,13 +112,12 @@ export default function VehicleShowcase({ t }: VehicleShowcaseProps) {
           {VEHICLE_KEYS.map((_, i) => (
             <button
               key={i}
-              onClick={() => setIdx(i)}
-              className={`h-1.5 rounded-full transition-all duration-300 ${
-                i === idx
-                  ? 'w-5 bg-gold-400'
-                  : 'w-1.5 hover:bg-gold-400/30'
-              }`}
-              style={{ background: i === idx ? '#8a7340' : 'rgba(138,115,64,0.15)' }}
+              onClick={() => handleDot(i)}
+              className="h-1.5 rounded-full transition-all duration-300"
+              style={{
+                width: i === idx ? '1.25rem' : '0.375rem',
+                background: i === idx ? '#8a7340' : 'rgba(138,115,64,0.2)',
+              }}
             />
           ))}
         </div>

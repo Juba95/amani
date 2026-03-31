@@ -31,13 +31,17 @@ export default function PlacesInput({
 }: PlacesInputProps) {
   const inputRef = useRef<HTMLInputElement>(null);
   const autocompleteRef = useRef<google.maps.places.Autocomplete | null>(null);
-  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
+
+  // Récupère la clé — NEXT_PUBLIC_ est résolu au build time
+  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? '';
 
   useEffect(() => {
-    if (!apiKey) return;
+    // Ne rien faire sans clé valide (évite l'erreur Google Maps)
+    if (!apiKey || apiKey.length < 10) return;
 
     const initAutocomplete = () => {
       if (!inputRef.current || !window.google?.maps?.places) return;
+      if (autocompleteRef.current) return; // déjà initialisé
 
       autocompleteRef.current = new window.google.maps.places.Autocomplete(
         inputRef.current,
@@ -59,13 +63,12 @@ export default function PlacesInput({
       initAutocomplete();
     } else {
       loadGoogleMapsScript(apiKey);
-      // Attendre que le script soit chargé
       const interval = setInterval(() => {
         if (window.google?.maps?.places) {
           initAutocomplete();
           clearInterval(interval);
         }
-      }, 200);
+      }, 300);
       return () => clearInterval(interval);
     }
   }, [apiKey, onChange]);
