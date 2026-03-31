@@ -12,6 +12,68 @@ const LANGS: { code: Locale; label: string; flag: string }[] = [
   { code: 'zh', label: '中文', flag: '🇨🇳' },
 ];
 
+// ── Mapping FR ↔ EN pour le switcher de langue ──────────────────────────────
+const FR_TO_EN: Record<string, string> = {
+  '/':                          '/en',
+  '/mise-a-disposition':        '/en/hourly-hire',
+  '/transfert-prive':           '/en/cdg-airport-transfer',
+  '/meet-and-greet':            '/en/meet-and-greet',
+  '/convoi-delegations':        '/en/delegation-transport',
+  '/securite-rapprochee':       '/en/close-protection',
+  '/excursion-privee':          '/en/private-excursion',
+  '/longue-distance':           '/en/long-distance',
+  '/transfert-aeroport-cdg':    '/en/cdg-airport-transfer',
+  '/transfert-aeroport-orly':   '/en/orly-airport-transfer',
+  '/transfert-le-bourget':      '/en/cdg-airport-transfer',
+  '/notre-flotte':              '/en/our-fleet',
+  '/evenements':                '/en/events',
+  '/evenements/paris-fashion-week': '/en/events',
+  '/evenements/paris-air-show': '/en/events',
+  '/evenements/roland-garros':  '/en/events',
+  '/evenements/festival-de-cannes': '/en/events',
+  '/contact':                   '/en/contact',
+  '/a-propos':                  '/en',
+};
+
+const EN_TO_FR: Record<string, string> = {
+  '/en':                        '/',
+  '/en/hourly-hire':            '/mise-a-disposition',
+  '/en/cdg-airport-transfer':   '/transfert-aeroport-cdg',
+  '/en/orly-airport-transfer':  '/transfert-aeroport-orly',
+  '/en/meet-and-greet':         '/meet-and-greet',
+  '/en/delegation-transport':   '/convoi-delegations',
+  '/en/close-protection':       '/securite-rapprochee',
+  '/en/private-excursion':      '/excursion-privee',
+  '/en/long-distance':          '/longue-distance',
+  '/en/our-fleet':              '/notre-flotte',
+  '/en/events':                 '/evenements',
+  '/en/contact':                '/contact',
+};
+
+function getLocalizedPath(pathname: string, targetLocale: string): string {
+  // AR et ZH → toujours leur homepage (pas de pages dédiées par service)
+  if (targetLocale === 'ar') return '/ar';
+  if (targetLocale === 'zh') return '/zh';
+
+  // Vers FR
+  if (targetLocale === 'fr') {
+    if (pathname.startsWith('/en')) return EN_TO_FR[pathname] ?? '/';
+    if (pathname.startsWith('/ar') || pathname.startsWith('/zh')) return '/';
+    return pathname; // déjà en FR
+  }
+
+  // Vers EN
+  if (targetLocale === 'en') {
+    if (pathname.startsWith('/ar') || pathname.startsWith('/zh')) return '/en';
+    if (pathname.startsWith('/en')) return pathname; // déjà en EN
+    return FR_TO_EN[pathname] ?? '/en'; // FR → EN
+  }
+
+  return '/';
+}
+
+// ────────────────────────────────────────────────────────────────────────────
+
 interface NavbarProps {
   t: any;
   locale: Locale;
@@ -25,14 +87,12 @@ export default function Navbar({ t, locale }: NavbarProps) {
 
   const currentLang = LANGS.find((l) => l.code === locale) || LANGS[0];
 
-  // Determine if we are on the homepage for this locale
-  const homePrefix = locale === 'fr' ? '' : `/${locale}`;
   const isHome =
     pathname === '/' ||
     pathname === `/${locale}` ||
     pathname === `/${locale}/`;
 
-  // Build anchor href: same page → #anchor, other page → /[prefix]#anchor
+  const homePrefix = locale === 'fr' ? '' : `/${locale}`;
   const anchorHref = (id: string) =>
     isHome ? `#${id}` : `${homePrefix}/#${id}`;
 
@@ -61,33 +121,25 @@ export default function Navbar({ t, locale }: NavbarProps) {
 
       {/* Desktop nav */}
       <div className="hidden md:flex items-center gap-8">
-        <a
-          href={anchorHref('services')}
-          className="font-sans text-xs text-gray-600 hover:text-gold-400 tracking-wide transition-colors"
-        >
+        <a href={anchorHref('services')}
+          className="font-sans text-xs text-gray-600 hover:text-gold-400 tracking-wide transition-colors">
           {t?.nav?.services}
         </a>
-        <a
-          href={anchorHref('fleet')}
-          className="font-sans text-xs text-gray-600 hover:text-gold-400 tracking-wide transition-colors"
-        >
+        <a href={anchorHref('fleet')}
+          className="font-sans text-xs text-gray-600 hover:text-gold-400 tracking-wide transition-colors">
           {t?.nav?.fleet}
         </a>
-        <a
-          href={anchorHref('events')}
-          className="font-sans text-xs text-gray-600 hover:text-gold-400 tracking-wide transition-colors"
-        >
+        <a href={anchorHref('events')}
+          className="font-sans text-xs text-gray-600 hover:text-gold-400 tracking-wide transition-colors">
           {t?.nav?.events}
         </a>
-        <a
-          href={anchorHref('contact')}
-          className="font-sans text-xs text-gray-600 hover:text-gold-400 tracking-wide transition-colors"
-        >
+        <a href={anchorHref('contact')}
+          className="font-sans text-xs text-gray-600 hover:text-gold-400 tracking-wide transition-colors">
           {t?.nav?.contact}
         </a>
       </div>
 
-      {/* Right side: phone + lang */}
+      {/* Right: phone + lang switcher */}
       <div className="flex items-center gap-4">
         <a
           href={`tel:${t?.nav?.phone?.replace(/\s/g, '') ?? ''}`}
@@ -110,8 +162,12 @@ export default function Navbar({ t, locale }: NavbarProps) {
               {LANGS.map((l) => (
                 <a
                   key={l.code}
-                  href={l.code === 'fr' ? '/' : `/${l.code}`}
-                  className="flex items-center gap-2 px-4 py-2.5 text-xs font-sans text-gray-600 hover:bg-stone-50 hover:text-gold-400 transition-all"
+                  href={getLocalizedPath(pathname, l.code)}
+                  className={`flex items-center gap-2 px-4 py-2.5 text-xs font-sans transition-all ${
+                    l.code === locale
+                      ? 'text-gold-400 bg-stone-50'
+                      : 'text-gray-600 hover:bg-stone-50 hover:text-gold-400'
+                  }`}
                   onClick={() => setLangOpen(false)}
                 >
                   {l.flag} {l.label}
@@ -121,7 +177,7 @@ export default function Navbar({ t, locale }: NavbarProps) {
           )}
         </div>
 
-        {/* Mobile menu button */}
+        {/* Mobile menu toggle */}
         <button
           className="md:hidden text-gray-700 text-lg"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -135,32 +191,20 @@ export default function Navbar({ t, locale }: NavbarProps) {
       {menuOpen && (
         <div className="absolute top-full left-0 right-0 bg-white border-b border-stone-100 shadow-md py-6 px-6 md:hidden">
           <div className="flex flex-col gap-4">
-            <a
-              href={anchorHref('services')}
-              onClick={() => setMenuOpen(false)}
-              className="font-sans text-sm text-gray-700 hover:text-gold-400"
-            >
+            <a href={anchorHref('services')} onClick={() => setMenuOpen(false)}
+              className="font-sans text-sm text-gray-700 hover:text-gold-400">
               {t?.nav?.services}
             </a>
-            <a
-              href={anchorHref('fleet')}
-              onClick={() => setMenuOpen(false)}
-              className="font-sans text-sm text-gray-700 hover:text-gold-400"
-            >
+            <a href={anchorHref('fleet')} onClick={() => setMenuOpen(false)}
+              className="font-sans text-sm text-gray-700 hover:text-gold-400">
               {t?.nav?.fleet}
             </a>
-            <a
-              href={anchorHref('events')}
-              onClick={() => setMenuOpen(false)}
-              className="font-sans text-sm text-gray-700 hover:text-gold-400"
-            >
+            <a href={anchorHref('events')} onClick={() => setMenuOpen(false)}
+              className="font-sans text-sm text-gray-700 hover:text-gold-400">
               {t?.nav?.events}
             </a>
-            <a
-              href={anchorHref('contact')}
-              onClick={() => setMenuOpen(false)}
-              className="font-sans text-sm text-gray-700 hover:text-gold-400"
-            >
+            <a href={anchorHref('contact')} onClick={() => setMenuOpen(false)}
+              className="font-sans text-sm text-gray-700 hover:text-gold-400">
               {t?.nav?.contact}
             </a>
             <a
@@ -171,6 +215,23 @@ export default function Navbar({ t, locale }: NavbarProps) {
             >
               {t?.nav?.phone ?? ''}
             </a>
+            {/* Mobile language switcher */}
+            <div className="border-t border-stone-100 pt-4 flex gap-3 flex-wrap">
+              {LANGS.map((l) => (
+                <a
+                  key={l.code}
+                  href={getLocalizedPath(pathname, l.code)}
+                  className={`font-sans text-xs px-3 py-1.5 rounded-md border transition-all ${
+                    l.code === locale
+                      ? 'border-gold-400 text-gold-400'
+                      : 'border-stone-200 text-gray-600 hover:border-gold-400 hover:text-gold-400'
+                  }`}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {l.flag} {l.label}
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       )}

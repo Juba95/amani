@@ -61,8 +61,68 @@ const FOOTER_LINKS_EN: Record<string, { label: string; href: string }[]> = {
   ],
 };
 
+const FOOTER_LINKS_AR: Record<string, { label: string; href: string }[]> = {
+  col1: [
+    { label: 'شوفير خاص — باريس',         href: '/ar' },
+    { label: 'نقل مطار CDG',               href: '/ar#services' },
+    { label: 'نقل مطار أورلي',             href: '/ar#services' },
+    { label: 'نقل لو بورجيه',              href: '/ar#services' },
+  ],
+  col2: [
+    { label: 'تأجير بالساعة',             href: '/ar#services' },
+    { label: 'نقل خاص',                   href: '/ar#services' },
+    { label: 'استقبال وترحيب',            href: '/ar#services' },
+    { label: 'قافلة مركبات',              href: '/ar#services' },
+    { label: 'حماية أمنية',               href: '/ar#services' },
+    { label: 'رحلة خاصة',                 href: '/ar#services' },
+    { label: 'مسافات طويلة',              href: '/ar#services' },
+  ],
+  col3: [
+    { label: 'Paris Fashion Week',         href: '/ar#events' },
+    { label: 'Paris Air Show',             href: '/ar#events' },
+    { label: 'Roland Garros',             href: '/ar#events' },
+    { label: 'Salons professionnels',      href: '/ar#events' },
+  ],
+  col4: [
+    { label: 'ذكر قانوني',                href: '/mentions-legales' },
+    { label: 'الشروط والأحكام',           href: '/mentions-legales' },
+    { label: 'سياسة الخصوصية',            href: '/mentions-legales' },
+  ],
+};
+
+const FOOTER_LINKS_ZH: Record<string, { label: string; href: string }[]> = {
+  col1: [
+    { label: '巴黎私人司机',               href: '/zh' },
+    { label: '戴高乐机场接送',             href: '/zh#services' },
+    { label: '奥利机场接送',               href: '/zh#services' },
+    { label: '勒布尔热接送',               href: '/zh#services' },
+  ],
+  col2: [
+    { label: '包时服务',                   href: '/zh#services' },
+    { label: '私人接送',                   href: '/zh#services' },
+    { label: '贵宾迎接',                   href: '/zh#services' },
+    { label: '车队护送',                   href: '/zh#services' },
+    { label: '安全护卫',                   href: '/zh#services' },
+    { label: '私人游览',                   href: '/zh#services' },
+    { label: '长途出行',                   href: '/zh#services' },
+  ],
+  col3: [
+    { label: 'Paris Fashion Week',         href: '/zh#events' },
+    { label: 'Paris Air Show',             href: '/zh#events' },
+    { label: 'Roland Garros',             href: '/zh#events' },
+    { label: '专业展览',                   href: '/zh#events' },
+  ],
+  col4: [
+    { label: '法律声明',                   href: '/mentions-legales' },
+    { label: '条款与条件',                 href: '/mentions-legales' },
+    { label: '隐私政策',                   href: '/mentions-legales' },
+  ],
+};
+
 function getFooterLinks(locale: string) {
   if (locale === 'en') return FOOTER_LINKS_EN;
+  if (locale === 'ar') return FOOTER_LINKS_AR;
+  if (locale === 'zh') return FOOTER_LINKS_ZH;
   return FOOTER_LINKS_FR;
 }
 
