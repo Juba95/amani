@@ -96,7 +96,7 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo }: HeroProp
           style={{ transitionDelay: '1100ms' }}>
           <p className="tag-gold mb-2.5">{t.hero.popular}</p>
           <div className="flex flex-wrap gap-1.5">
-            {t.routes.popular.map((route: any, i: number) => (
+          {(t.routes?.popular ?? []).map((route: any, i: number) => (
               <button key={i}
                 onClick={() => handleQuickRoute(route)}
                 className="px-3.5 py-1.5 rounded-full font-sans text-[0.72rem] font-light text-stone-500 bg-gold-400/[0.05] border border-gold-400/[0.08] hover:bg-gold-400/[0.12] hover:border-gold-400/25 hover:text-gold-400 transition-all tracking-wide">
