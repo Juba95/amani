@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import PlacesInput from '@/components/PlacesInput';
 
 interface HeroProps {
   t: any;
@@ -79,20 +80,14 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
             <p className="font-sans text-xs text-stone-400 font-light mb-6">{t?.hero?.form_subtitle ?? 'Prix fixe · Pas de surprise'}</p>
 
             <div className="flex flex-col gap-3 mb-4">
-              {/* FROM */}
-              <div className="relative">
-                <span className="absolute left-4 top-1/2 -translate-y-1/2 font-sans text-[0.62rem] font-semibold tracking-[0.12em] uppercase text-gold-400">
-                  {t?.hero?.from_label}
-                </span>
-                <input
-                  type="text"
-                  className="field-luxury"
-                  placeholder={t?.hero?.from_placeholder ?? 'Aéroport CDG, Paris...'}
-                  value={from}
-                  onChange={(e) => setFrom(e.target.value)}
-                  onKeyDown={(e) => e.key === 'Enter' && onSearch(from, to)}
-                />
-              </div>
+              {/* FROM — avec autocomplete Google Places */}
+              <PlacesInput
+                label={t?.hero?.from_label ?? 'DÉPART'}
+                placeholder={t?.hero?.from_placeholder ?? 'Aéroport CDG, Paris...'}
+                value={from}
+                onChange={setFrom}
+                onEnter={() => onSearch(from, to)}
+              />
 
               {/* Swap arrow */}
               <div className="flex items-center justify-center">
@@ -101,20 +96,14 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
                 <div className="h-px flex-1 bg-warm-300" />
               </div>
 
-              {/* TO */}
-              <div className="relative">
-                <span className="absolute left-4 top-1/2 -translate-y-1/2 font-sans text-[0.62rem] font-semibold tracking-[0.12em] uppercase text-gold-400">
-                  {t?.hero?.to_label}
-                </span>
-                <input
-                  type="text"
-                  className="field-luxury"
-                  placeholder={t?.hero?.to_placeholder ?? 'Hôtel, adresse, gare...'}
-                  value={to}
-                  onChange={(e) => setTo(e.target.value)}
-                  onKeyDown={(e) => e.key === 'Enter' && onSearch(from, to)}
-                />
-              </div>
+              {/* TO — avec autocomplete Google Places */}
+              <PlacesInput
+                label={t?.hero?.to_label ?? 'ARRIVÉE'}
+                placeholder={t?.hero?.to_placeholder ?? 'Hôtel, adresse, gare...'}
+                value={to}
+                onChange={setTo}
+                onEnter={() => onSearch(from, to)}
+              />
             </div>
 
             <button
