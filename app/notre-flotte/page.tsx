@@ -19,7 +19,6 @@ const vehicules = [
     categorie: 'Berline Business',
     pax: '3 passagers',
     bagages: '2 valises',
-    prix: 'À partir de 100 €',
     image: '/vehicles/mercedes-classe-e.png',
     details: 'La plus polyvalente de notre flotte. La Classe E combine un niveau de confort élevé avec des dimensions adaptées à Paris intra-muros. Idéale pour les transferts aéroport solo ou en binôme, et pour les mises à disposition dans le centre de Paris.',
     equipements: ['Wi-Fi 4G inclus', 'Cuir Nappa', 'Climatisation bi-zone', 'Chargeur sans fil', 'Eau minérale'],
@@ -30,7 +29,6 @@ const vehicules = [
     categorie: 'Berline Business Électrique',
     pax: '3 passagers',
     bagages: '2 valises',
-    prix: 'À partir de 150 €',
     image: '/vehicles/mercedes-eqe.png',
     details: 'La version 100 % électrique de notre gamme business. La EQS offre le même niveau de confort que la Classe E avec zéro émission. Silence de fonctionnement absolu, parfaite pour les clients sensibles à l\'impact environnemental.',
     equipements: ['100% électrique', 'Silence absolu', 'Cuir premium', 'Climatisation bi-zone', 'Chargeur USB-C'],
@@ -41,7 +39,6 @@ const vehicules = [
     categorie: 'Berline Executive',
     pax: '3 passagers',
     bagages: '2 valises',
-    prix: 'À partir de 150 €',
     image: '/vehicles/mercedes-classe-s.png',
     details: 'La référence absolue du transport de prestige. La Classe S est la voiture des présidents, des PDG et des délégations de premier rang. Insonorisation renforcée, sièges massants arrière, écrans LCD et une isolation acoustique qui transforme l\'habitacle en espace de travail silencieux.',
     equipements: ['Sièges massants', 'Écrans LCD arrière', 'Bar à bord', 'Burmester® 4D', 'Ambiance lumineuse'],
@@ -52,7 +49,6 @@ const vehicules = [
     categorie: 'Berline Ultra-Prestige',
     pax: '3 passagers',
     bagages: '2 valises',
-    prix: 'À partir de 200 €',
     image: '/vehicles/mercedes-classe-s-maybach.png',
     details: 'Le summum du luxe automobile. La Maybach offre un empattement allongé, des sièges arrière inclinables à 43,5°, un réfrigérateur à champagne intégré et une isolation phonique de classe supérieure. Réservée aux clients qui exigent l\'excellence absolue.',
     equipements: ['Sièges inclinables 43,5°', 'Réfrigérateur champagne', 'Séparation vitrage', 'Burmester® 4D', 'Ambiance première classe'],
@@ -63,7 +59,6 @@ const vehicules = [
     categorie: 'SUV Premium',
     pax: '3 passagers',
     bagages: '2 valises',
-    prix: 'À partir de 200 €',
     image: '/vehicles/range-rover-evoque.png',
     details: 'L\'alternative SUV de notre flotte. Le Range Rover Evoque combine une position de conduite surélevée avec un intérieur raffiné. Idéal pour les transferts vers les stations de ski, les domaines viticoles ou tout trajet nécessitant un véhicule haut de gamme plus robuste.',
     equipements: ['Transmission intégrale', 'Cuir Windsor', 'Système Meridian™', 'Terrain Response', 'Position surélevée'],
@@ -74,7 +69,6 @@ const vehicules = [
     categorie: 'Minivan Luxe',
     pax: '7 passagers',
     bagages: '6 valises',
-    prix: 'À partir de 100 €',
     image: '/vehicles/mercedes-classe-v.png',
     details: 'La solution pour les familles, les groupes de collègues et les délégations de taille moyenne. La Classe V peut être configurée en salon (sièges face à face) ou en configuration standard. L\'espace de chargement accepte des bagages volumineux sans compromettre le confort des passagers.',
     equipements: ['Configuration salon possible', 'Wi-Fi haut débit', 'Espace bagages XXL', 'Stores occultants', '7 ceintures homologuées'],
@@ -85,7 +79,6 @@ const vehicules = [
     categorie: 'SUV Prestige',
     pax: '4 passagers',
     bagages: '3 valises',
-    prix: 'À partir de 250 €',
     image: '/vehicles/mercedes-classe-g.png',
     details: 'Icône du luxe tout-terrain, le Classe G allie une présence imposante à un intérieur digne d\'une berline de prestige. Choix de prédilection pour les événements de prestige, les mariages et les clients qui souhaitent faire une entrée remarquée.',
     equipements: ['Transmission intégrale', 'Cuir Nappa designo', 'Burmester® surround', 'Ambiance lumineuse 64 couleurs', 'Présence iconique'],
@@ -96,7 +89,6 @@ const vehicules = [
     categorie: 'Minibus Luxe',
     pax: '16 passagers',
     bagages: '16 valises',
-    prix: 'À partir de 300 €',
     image: '/vehicles/mercedes-sprinter.png',
     details: 'Le Sprinter VIP est la solution pour les groupes importants, les délégations officielles et les navettes d\'événements. Aménagement intérieur luxe avec sièges capitaine en cuir, sono premium, éclairage d\'ambiance et climatisation multi-zones. Peut transporter 16 personnes avec leurs bagages.',
     equipements: ['Sièges capitaine cuir', 'Sono premium', 'Climatisation zones', 'Galerie bagages', 'Communication radio'],
@@ -176,113 +168,68 @@ export default function NotreFlottePage() {
                     </span>
                   ))}
                 </div>
-                <p className="sf font-semibold mt-4" style={{ color: '#8a7340' }}>{v.prix}</p>
               </div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Grille tarifaire */}
+      {/* Forfaits aéroports */}
       <section className="py-14 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Nos tarifs</h2>
-          <p className="sf text-stone-500 mt-3 mb-8 text-sm">Prix fixes, tout compris — pas de compteur, pas de surprise.</p>
-
-          {/* Transferts aéroports */}
-          <h3 className="font-serif text-lg text-gray-900 mb-4">Forfaits transferts aéroports <span className="sf text-sm text-stone-400">(CDG, Orly, Le Bourget)</span></h3>
-          <div className="overflow-x-auto mb-10">
-            <table className="w-full sf text-sm text-left border-collapse">
-              <thead>
-                <tr className="border-b border-stone-200">
-                  <th className="py-3 pr-4 text-stone-400 font-normal">Véhicule</th>
-                  <th className="py-3 px-4 text-stone-400 font-normal">Forfait aéroport</th>
-                </tr>
-              </thead>
-              <tbody>
-                {[
-                  ['Mercedes Classe E', '150 €'],
-                  ['Mercedes EQS Électrique', '200 €'],
-                  ['Mercedes Classe V', '160 €'],
-                  ['Mercedes Classe S', '200 €'],
-                  ['Mercedes Classe S Maybach', '250 €'],
-                  ['Range Rover Evoque', '250 €'],
-                  ['Mercedes Classe G', '250 €'],
-                  ['Mercedes Sprinter VIP', '350 €'],
-                ].map(([v, p]) => (
-                  <tr key={v} className="border-b border-stone-100">
-                    <td className="py-3 pr-4 text-gray-900">{v}</td>
-                    <td className="py-3 px-4 font-semibold" style={{ color: '#8a7340' }}>{p}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-
-          {/* Tarifs ville */}
-          <h3 className="font-serif text-lg text-gray-900 mb-4">Courses en ville <span className="sf text-sm text-stone-400">(tarif minimum)</span></h3>
-          <div className="overflow-x-auto mb-10">
-            <table className="w-full sf text-sm text-left border-collapse">
-              <thead>
-                <tr className="border-b border-stone-200">
-                  <th className="py-3 pr-4 text-stone-400 font-normal">Véhicule</th>
-                  <th className="py-3 px-4 text-stone-400 font-normal">Tarif minimum</th>
-                  <th className="py-3 px-4 text-stone-400 font-normal">Prix / km</th>
-                </tr>
-              </thead>
-              <tbody>
-                {[
-                  ['Mercedes Classe E', '100 €', '3 €/km'],
-                  ['Mercedes EQS Électrique', '150 €', '4 €/km'],
-                  ['Mercedes Classe V', '100 €', '3 €/km'],
-                  ['Mercedes Classe S', '150 €', '4 €/km'],
-                  ['Mercedes Classe S Maybach', '200 €', '5 €/km'],
-                  ['Range Rover Evoque', '200 €', '5 €/km'],
-                  ['Mercedes Classe G', '250 €', '5 €/km'],
-                  ['Mercedes Sprinter VIP', '300 €', '5 €/km'],
-                ].map(([v, p, km]) => (
-                  <tr key={v} className="border-b border-stone-100">
-                    <td className="py-3 pr-4 text-gray-900">{v}</td>
-                    <td className="py-3 px-4 font-semibold" style={{ color: '#8a7340' }}>{p}</td>
-                    <td className="py-3 px-4 text-stone-500">{km}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-
-          {/* Mise à disposition */}
-          <h3 className="font-serif text-lg text-gray-900 mb-4">Mise à disposition <span className="sf text-sm text-stone-400">(tarif horaire)</span></h3>
-          <div className="overflow-x-auto">
-            <table className="w-full sf text-sm text-left border-collapse">
-              <thead>
-                <tr className="border-b border-stone-200">
-                  <th className="py-3 pr-4 text-stone-400 font-normal">Véhicule</th>
-                  <th className="py-3 px-4 text-stone-400 font-normal">Tarif / heure</th>
-                  <th className="py-3 px-4 text-stone-400 font-normal">Minimum</th>
-                </tr>
-              </thead>
-              <tbody>
-                {[
-                  ['Mercedes Classe E', '95 €/h', '4 heures'],
-                  ['Mercedes EQS Électrique', '130 €/h', '4 heures'],
-                  ['Mercedes Classe V', '95 €/h', '4 heures'],
-                  ['Mercedes Classe S', '130 €/h', '4 heures'],
-                  ['Mercedes Classe S Maybach', '220 €/h', '5 heures'],
-                  ['Range Rover Evoque', '190 €/h', '5 heures'],
-                  ['Mercedes Classe G', '190 €/h', '5 heures'],
-                  ['Sprinter VIP 12 places', '120 €/h', '5 heures'],
-                  ['Sprinter VIP 16 places', '140 €/h', '5 heures'],
-                  ['Sprinter VIP 20 places', '160 €/h', '5 heures'],
-                ].map(([v, p, min]) => (
-                  <tr key={v} className="border-b border-stone-100">
-                    <td className="py-3 pr-4 text-gray-900">{v}</td>
-                    <td className="py-3 px-4 font-semibold" style={{ color: '#8a7340' }}>{p}</td>
-                    <td className="py-3 px-4 text-stone-500">{min}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <h2 className="heading">Nos forfaits aéroports</h2>
+          <p className="sf text-stone-500 mt-3 mb-8 text-sm">
+            Prix fixes, tout compris — pas de compteur, pas de surprise. Accueil personnalisé, suivi du vol en temps réel.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {[
+              {
+                route: 'Paris \u2194 CDG',
+                description: 'Roissy Charles de Gaulle \u2194 Paris centre, La Défense, Neuilly',
+                duree: '~45 min',
+                icon: '\u2708',
+              },
+              {
+                route: 'Paris \u2194 Orly',
+                description: 'Aéroport d\'Orly \u2194 Paris centre, Montparnasse, Saint-Germain',
+                duree: '~30 min',
+                icon: '\u2708',
+              },
+              {
+                route: 'Paris \u2194 Le Bourget',
+                description: 'Aviation privée Le Bourget \u2194 Paris centre, Champs-Élysées',
+                duree: '~25 min',
+                icon: '\u2708',
+              },
+              {
+                route: 'CDG \u2194 La Défense',
+                description: 'Roissy CDG \u2194 quartier d\'affaires de La Défense',
+                duree: '~40 min',
+                icon: '\ud83c\udfe2',
+              },
+              {
+                route: 'CDG \u2194 Disneyland',
+                description: 'Roissy CDG \u2194 Disneyland Paris, Val d\'Europe',
+                duree: '~40 min',
+                icon: '\ud83c\udff0',
+              },
+              {
+                route: 'Paris \u2194 Beauvais',
+                description: 'Aéroport de Beauvais-Tillé \u2194 Paris centre',
+                duree: '~1h15',
+                icon: '\u2708',
+              },
+            ].map((f) => (
+              <div key={f.route} className="bg-warm-50 rounded-xl border border-stone-200 p-6 hover:border-gold-400 transition-all group">
+                <span className="text-2xl">{f.icon}</span>
+                <p className="font-serif text-lg text-gray-900 mt-3">{f.route}</p>
+                <p className="sf text-xs text-stone-500 mt-2 leading-relaxed">{f.description}</p>
+                <p className="sf text-xs mt-3" style={{ color: '#8a7340' }}>{f.duree}</p>
+                <a href="/devis" className="inline-block mt-4 sf text-xs font-medium tracking-wide uppercase hover:underline" style={{ color: '#8a7340' }}>
+                  Obtenir un devis &rarr;
+                </a>
+              </div>
+            ))}
           </div>
         </div>
       </section>

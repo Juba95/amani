@@ -26,9 +26,11 @@ const FOOTER_LINKS_FR: Record<string, { label: string; href: string }[]> = {
     { label: 'Salons professionnels',        href: '/evenements' },
   ],
   col4: [
+    { label: 'Nous contacter',              href: '/contact' },
     { label: 'Mentions légales',             href: '/mentions-legales' },
     { label: 'CGV',                          href: '/mentions-legales' },
     { label: 'Politique de confidentialité', href: '/mentions-legales' },
+    { label: 'Plan du site',                href: '/plan-du-site' },
   ],
 };
 
@@ -58,6 +60,7 @@ const FOOTER_LINKS_EN: Record<string, { label: string; href: string }[]> = {
     { label: 'Legal notice',                 href: '/en/contact' },
     { label: 'Terms & conditions',           href: '/en/contact' },
     { label: 'Privacy policy',               href: '/en/contact' },
+    { label: 'Sitemap',                      href: '/plan-du-site' },
   ],
 };
 

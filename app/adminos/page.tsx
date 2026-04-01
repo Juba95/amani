@@ -3,6 +3,17 @@
 import { useState, useEffect, useCallback } from 'react';
 import type { Contact, ContactStatus } from '@/lib/contacts';
 
+interface ContentBlock {
+  id: string;
+  label: string;
+  page: string;
+  field: string;
+  value: string;
+  updatedAt: string;
+}
+
+type Tab = 'demandes' | 'contenus';
+
 const STATUS_CONFIG: Record<ContactStatus, { label: string; color: string; bg: string }> = {
   new:         { label: 'Nouveau',   color: '#1d4ed8', bg: '#eff6ff' },
   in_progress: { label: 'En cours', color: '#92400e', bg: '#fffbeb' },
@@ -40,6 +51,15 @@ export default function AdminPage() {
   const [saving, setSaving]       = useState(false);
   const [saveMsg, setSaveMsg]     = useState('');
 
+  // Tabs & Content
+  const [tab, setTab] = useState<Tab>('demandes');
+  const [contentBlocks, setContentBlocks] = useState<ContentBlock[]>([]);
+  const [contentLoading, setContentLoading] = useState(false);
+  const [contentEditing, setContentEditing] = useState<string | null>(null);
+  const [contentDraft, setContentDraft] = useState('');
+  const [contentSaving, setContentSaving] = useState(false);
+  const [contentMsg, setContentMsg] = useState('');
+
   const fetchContacts = useCallback(async (k: string) => {
     setLoading(true);
     setError('');
@@ -61,10 +81,39 @@ export default function AdminPage() {
     }
   }, []);
 
+  const fetchContent = useCallback(async (k: string) => {
+    setContentLoading(true);
+    try {
+      const res = await fetch('/api/adminos/content', { headers: { 'x-admin-key': k } });
+      if (res.ok) setContentBlocks(await res.json());
+    } catch { /* ignore */ }
+    finally { setContentLoading(false); }
+  }, []);
+
+  const saveContent = async (id: string, value: string) => {
+    setContentSaving(true);
+    setContentMsg('');
+    try {
+      const res = await fetch('/api/adminos/content', {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json', 'x-admin-key': key },
+        body: JSON.stringify({ id, value }),
+      });
+      if (res.ok) {
+        setContentBlocks(bs => bs.map(b => b.id === id ? { ...b, value, updatedAt: new Date().toISOString() } : b));
+        setContentEditing(null);
+        setContentMsg('Contenu enregistré');
+        setTimeout(() => setContentMsg(''), 2500);
+      }
+    } catch { setContentMsg('Erreur de sauvegarde'); }
+    finally { setContentSaving(false); }
+  };
+
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
     setKey(inputKey);
     fetchContacts(inputKey);
+    fetchContent(inputKey);
   };
 
   const updateStatus = async (id: string, status: ContactStatus) => {
@@ -160,27 +209,118 @@ export default function AdminPage() {
   return (
     <div className="min-h-screen bg-stone-50">
       {/* Header */}
-      <div className="bg-white border-b border-stone-200 px-6 py-4 flex items-center justify-between sticky top-0 z-10">
-        <div className="flex items-center gap-4">
-          <p className="font-serif tracking-[0.25em] uppercase text-sm" style={{ color: '#8a7340' }}>
-            Amani Limousines
-          </p>
-          <span className="text-stone-300">|</span>
-          <p className="font-sans text-sm text-gray-600">Backoffice — Demandes</p>
+      <div className="bg-white border-b border-stone-200 px-6 py-4 sticky top-0 z-10">
+        <div className="flex items-center justify-between mb-3">
+          <div className="flex items-center gap-4">
+            <p className="font-serif tracking-[0.25em] uppercase text-sm" style={{ color: '#8a7340' }}>
+              Amani Limousines
+            </p>
+            <span className="text-stone-300">|</span>
+            <p className="font-sans text-sm text-gray-600">Backoffice</p>
+          </div>
+          <div className="flex items-center gap-3">
+            <button onClick={() => { fetchContacts(key); fetchContent(key); }}
+              className="font-sans text-xs text-stone-500 hover:text-gold-400 transition-colors">
+              ↺ Actualiser
+            </button>
+            <button onClick={() => { setKey(''); setContacts([]); setSelected(null); setEditMode(false); setContentBlocks([]); }}
+              className="font-sans text-xs text-stone-400 hover:text-red-400 transition-colors">
+              Déconnexion
+            </button>
+          </div>
         </div>
-        <div className="flex items-center gap-3">
-          <button onClick={() => fetchContacts(key)}
-            className="font-sans text-xs text-stone-500 hover:text-gold-400 transition-colors">
-            ↺ Actualiser
-          </button>
-          <button onClick={() => { setKey(''); setContacts([]); setSelected(null); setEditMode(false); }}
-            className="font-sans text-xs text-stone-400 hover:text-red-400 transition-colors">
-            Déconnexion
-          </button>
+        {/* Onglets */}
+        <div className="flex gap-6">
+          {([['demandes', 'Demandes'], ['contenus', 'Contenus']] as const).map(([t, label]) => (
+            <button key={t} onClick={() => setTab(t)}
+              className={`font-sans text-xs tracking-wide pb-2 border-b-2 transition-all ${
+                tab === t ? 'border-gold-400 font-medium' : 'border-transparent text-stone-400 hover:text-stone-600'
+              }`}
+              style={tab === t ? { color: '#8a7340' } : undefined}>
+              {label}
+            </button>
+          ))}
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-6 py-8">
+        {/* ── Onglet CONTENUS ── */}
+        {tab === 'contenus' && (
+          <div>
+            <h2 className="font-serif text-xl font-normal text-gray-900 mb-2">Gestion des contenus</h2>
+            <p className="font-sans text-xs text-stone-400 mb-6">
+              Modifiez les textes du site. Les changements sont appliqués après rechargement de la page concernée.
+            </p>
+            {contentMsg && (
+              <p className="font-sans text-xs text-green-600 mb-4">{contentMsg}</p>
+            )}
+            {contentLoading ? (
+              <p className="font-sans text-sm text-stone-400 py-10 text-center">Chargement…</p>
+            ) : contentBlocks.length === 0 ? (
+              <p className="font-sans text-sm text-stone-400 py-10 text-center">Aucun contenu éditable configuré</p>
+            ) : (
+              <div className="space-y-4">
+                {/* Regrouper par page */}
+                {Array.from(new Set(contentBlocks.map(b => b.page))).map(page => (
+                  <div key={page} className="bg-white rounded-xl border border-stone-200 p-5">
+                    <h3 className="font-sans text-xs font-semibold tracking-[0.12em] uppercase mb-4"
+                      style={{ color: '#8a7340' }}>
+                      {page === 'accueil' ? 'Page d\'accueil' :
+                       page === 'flotte' ? 'Page flotte' :
+                       page === 'contact' ? 'Page contact' :
+                       page === 'global' ? 'Informations générales' : page}
+                    </h3>
+                    <div className="space-y-4">
+                      {contentBlocks.filter(b => b.page === page).map(block => (
+                        <div key={block.id}>
+                          <div className="flex items-center justify-between mb-1">
+                            <label className={lbl}>{block.label}</label>
+                            <p className="font-sans text-[0.55rem] text-stone-300">
+                              {new Date(block.updatedAt).toLocaleDateString('fr-FR', { day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' })}
+                            </p>
+                          </div>
+                          {contentEditing === block.id ? (
+                            <div>
+                              <textarea
+                                rows={block.value.length > 100 ? 4 : 2}
+                                className={`${inp} resize-none`}
+                                value={contentDraft}
+                                onChange={e => setContentDraft(e.target.value)}
+                              />
+                              <div className="flex gap-2 mt-2">
+                                <button
+                                  onClick={() => saveContent(block.id, contentDraft)}
+                                  disabled={contentSaving}
+                                  className="px-4 py-2 rounded-lg font-sans text-xs font-medium text-white transition-all disabled:opacity-60"
+                                  style={{ background: '#0a0908' }}>
+                                  {contentSaving ? 'Enregistrement…' : 'Enregistrer'}
+                                </button>
+                                <button
+                                  onClick={() => { setContentEditing(null); setContentDraft(''); }}
+                                  className="px-4 py-2 rounded-lg font-sans text-xs border border-stone-200 text-gray-600 hover:border-stone-300 transition-all">
+                                  Annuler
+                                </button>
+                              </div>
+                            </div>
+                          ) : (
+                            <div
+                              onClick={() => { setContentEditing(block.id); setContentDraft(block.value); }}
+                              className="bg-stone-50 rounded-lg p-3 font-sans text-sm text-gray-700 leading-relaxed border border-stone-100 cursor-pointer hover:border-gold-400 transition-all min-h-[2.5rem]">
+                              {block.value || <span className="text-stone-300 italic">Vide — cliquez pour éditer</span>}
+                            </div>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* ── Onglet DEMANDES ── */}
+        {tab === 'demandes' && <>
         {/* Stats */}
         <div className="grid grid-cols-4 gap-4 mb-8">
           {(['all', 'new', 'in_progress', 'done'] as const).map((k) => {
@@ -395,6 +535,7 @@ export default function AdminPage() {
             </div>
           </div>
         )}
+        </>}
       </div>
     </div>
   );
