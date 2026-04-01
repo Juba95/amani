@@ -55,6 +55,30 @@ export const VEHICLES: Vehicle[] = [
     basePrice: 200,
     pricePerKm: 4.00,    // Sprinter VIP = 4€/km
   },
+  {
+    id: 'range_rover_evoque',
+    nameKey: 'range_rover_evoque',
+    image: '/vehicles/range-rover-evoque.png',
+    pax: 3, bags: 2,
+    basePrice: 150,
+    pricePerKm: 5.00,    // Range Rover Evoque = même tarif que Classe S
+  },
+  {
+    id: 'classe_s_maybach',
+    nameKey: 'classe_s_maybach',
+    image: '/vehicles/mercedes-classe-s-maybach.png',
+    pax: 3, bags: 2,
+    basePrice: 300,
+    pricePerKm: 3.00,    // Classe S Maybach = 3€/km, minimum 300€
+  },
+  {
+    id: 'eqe',
+    nameKey: 'eqe',
+    image: '/vehicles/mercedes-eqe.png',
+    pax: 3, bags: 2,
+    basePrice: 100,
+    pricePerKm: 3.00,    // Mercedes EQE = même tarif que Classe E
+  },
 ];
 
 export function calculatePrice(vehicle: Vehicle, distanceKm: number): number {

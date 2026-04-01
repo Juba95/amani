@@ -5,7 +5,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Marseille Airport Transfer — Private Chauffeur from Paris | Amani Limousines',
   description:
-    'Private chauffeur Paris to Marseille and Marseille-Provence airport. 780 km, fixed rate. Cannes, Nice and the Côte d'Azur also covered.',
+    'Private chauffeur Paris to Marseille and Marseille-Provence airport. 780 km, fixed rate. Cannes, Nice and the Côte d\u2019Azur also covered.',
   alternates: {
     canonical: 'https://www.amani-limousines.com/en/marseille-airport-transfer',
     languages: { fr: 'https://www.amani-limousines.com/transfert-marseille' },
@@ -22,9 +22,9 @@ const jsonLd = {
   '@type': 'Service',
   name: 'Private chauffeur Paris to Marseille',
   provider: { '@type': 'LocalBusiness', name: 'Amani Limousines' },
-  areaServed: 'Paris, Marseille, Marseille-Provence Airport, Côte d'Azur',
+  areaServed: 'Paris, Marseille, Marseille-Provence Airport, Côte d\u2019Azur',
   description:
-    'Private transfer service from Paris to Marseille and Marseille-Provence airport. 780 km, fixed price, door-to-door, Côte d'Azur extensions available.',
+    'Private transfer service from Paris to Marseille and Marseille-Provence airport. 780 km, fixed price, door-to-door, Côte d\u2019Azur extensions available.',
   offers: [
     { '@type': 'Offer', name: 'Mercedes E-Class — Paris–Marseille', price: '280', priceCurrency: 'EUR' },
     { '@type': 'Offer', name: 'Mercedes S-Class — Paris–Marseille', price: '340', priceCurrency: 'EUR' },

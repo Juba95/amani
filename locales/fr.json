@@ -305,6 +305,45 @@
           "Climatisation zone",
           "Idéal délégations"
         ]
+      },
+      "range_rover_evoque": {
+        "name": "Range Rover Evoque",
+        "category": "SUV Premium",
+        "pax": "3 passagers",
+        "bags": "2 valises",
+        "from": "À partir de 225 €",
+        "features": [
+          "SUV britannique",
+          "Intérieur cuir",
+          "Technologie Terrain Response",
+          "Design avant-gardiste"
+        ]
+      },
+      "classe_s_maybach": {
+        "name": "Mercedes Classe S Maybach",
+        "category": "Berline Ultra-Luxe",
+        "pax": "3 passagers",
+        "bags": "2 valises",
+        "from": "À partir de 300 €",
+        "features": [
+          "Le summum Mercedes",
+          "Sièges First Class arrière",
+          "Isolation phonique maximale",
+          "Minibar & tablettes"
+        ]
+      },
+      "eqe": {
+        "name": "Mercedes EQE",
+        "category": "Berline Électrique",
+        "pax": "3 passagers",
+        "bags": "2 valises",
+        "from": "À partir de 125 €",
+        "features": [
+          "100% électrique",
+          "Zéro émission",
+          "Recharge rapide",
+          "Conduite silencieuse"
+        ]
       }
     }
   },

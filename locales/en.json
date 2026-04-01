@@ -305,6 +305,45 @@
           "Zoned climate",
           "Ideal for delegations"
         ]
+      },
+      "range_rover_evoque": {
+        "name": "Range Rover Evoque",
+        "category": "Premium SUV",
+        "pax": "3 passengers",
+        "bags": "2 suitcases",
+        "from": "From €225",
+        "features": [
+          "British SUV",
+          "Leather interior",
+          "Terrain Response",
+          "Avant-garde design"
+        ]
+      },
+      "classe_s_maybach": {
+        "name": "Mercedes S-Class Maybach",
+        "category": "Ultra-Luxury Saloon",
+        "pax": "3 passengers",
+        "bags": "2 suitcases",
+        "from": "From €300",
+        "features": [
+          "The Mercedes pinnacle",
+          "First Class rear seats",
+          "Maximum soundproofing",
+          "Minibar & tablets"
+        ]
+      },
+      "eqe": {
+        "name": "Mercedes EQE",
+        "category": "Electric Saloon",
+        "pax": "3 passengers",
+        "bags": "2 suitcases",
+        "from": "From €125",
+        "features": [
+          "100% electric",
+          "Zero emissions",
+          "Fast charging",
+          "Silent ride"
+        ]
       }
     }
   },

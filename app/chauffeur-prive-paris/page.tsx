@@ -16,10 +16,10 @@ export const metadata: Metadata = {
 };
 
 const zones = [
-  { zone: '1er – 8ème arrondissement', note: 'Triangle d'or, Opéra, Louvre, palaces' },
+  { zone: '1er – 8ème arrondissement', note: 'Triangle d\u2019or, Opéra, Louvre, palaces' },
   { zone: 'La Défense', note: 'Tours CNIT, Grande Arche, sièges sociaux' },
   { zone: 'CDG & Orly', note: 'Transferts aéroport avec suivi des vols' },
-  { zone: 'Le Bourget', note: 'Paris Air Show, aviation d'affaires' },
+  { zone: 'Le Bourget', note: 'Paris Air Show, aviation d\u2019affaires' },
   { zone: 'Versailles & banlieue ouest', note: 'Château, Saint-Cloud, Neuilly, Levallois' },
   { zone: 'Île-de-France complète', note: 'Disneyland, Roissy, Marne-la-Vallée' },
 ];

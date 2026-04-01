@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar';
 import { CTA, Footer } from '@/components/CTAFooter';
+import BookingWidget from '@/components/BookingWidget';
 import fr from '@/locales/fr.json';
 
 interface SEOLayoutProps {
@@ -8,13 +9,14 @@ interface SEOLayoutProps {
 
 /**
  * Layout partagé pour toutes les pages SEO francophones.
- * Intègre la Navbar fixe, le bloc CTA et le Footer.
+ * Intègre la Navbar fixe, le module de devis, le bloc CTA et le Footer.
  */
 export default function SEOLayout({ children }: SEOLayoutProps) {
   return (
     <div className="min-h-screen bg-white text-gray-900">
       <Navbar t={fr} locale="fr" />
       <main>{children}</main>
+      <BookingWidget t={fr} locale="fr" />
       <CTA t={fr} />
       <Footer t={fr} />
     </div>

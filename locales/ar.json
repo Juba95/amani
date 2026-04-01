@@ -295,15 +295,54 @@
       },
       "sprinter": {
         "name": "Mercedes Sprinter VIP",
-        "category": "Minibus Luxe",
-        "pax": "16 passagers",
-        "bags": "16 valises",
-        "from": "À partir de 350 €",
+        "category": "ميني باص فاخر",
+        "pax": "16 راكباً",
+        "bags": "16 حقيبة",
+        "from": "ابتداءً من 350 €",
         "features": [
-          "Sièges capitaine",
-          "Sono premium",
-          "Climatisation zone",
-          "Idéal délégations"
+          "مقاعد كابتن",
+          "نظام صوتي متطور",
+          "تكييف متعدد المناطق",
+          "مثالي للوفود"
+        ]
+      },
+      "range_rover_evoque": {
+        "name": "رينج روفر إيفوك",
+        "category": "سيارة SUV فاخرة",
+        "pax": "3 ركاب",
+        "bags": "2 حقيبة",
+        "from": "ابتداءً من 225 €",
+        "features": [
+          "SUV بريطانية أصيلة",
+          "مقاعد جلدية",
+          "تقنية Terrain Response",
+          "تصميم عصري"
+        ]
+      },
+      "classe_s_maybach": {
+        "name": "مرسيدس Classe S مايباخ",
+        "category": "سيدان فائقة الفخامة",
+        "pax": "3 ركاب",
+        "bags": "2 حقيبة",
+        "from": "ابتداءً من 300 €",
+        "features": [
+          "قمة مرسيدس",
+          "مقاعد درجة أولى خلفية",
+          "عزل صوتي أقصى",
+          "ميني بار وشاشات"
+        ]
+      },
+      "eqe": {
+        "name": "مرسيدس EQE",
+        "category": "سيدان كهربائية",
+        "pax": "3 ركاب",
+        "bags": "2 حقيبة",
+        "from": "ابتداءً من 125 €",
+        "features": [
+          "كهربائية 100%",
+          "صفر انبعاثات",
+          "شحن سريع",
+          "قيادة هادئة"
         ]
       }
     }

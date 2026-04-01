@@ -295,15 +295,54 @@
       },
       "sprinter": {
         "name": "Mercedes Sprinter VIP",
-        "category": "Minibus Luxe",
-        "pax": "16 passagers",
-        "bags": "16 valises",
-        "from": "À partir de 350 €",
+        "category": "豪华中巴",
+        "pax": "16位乘客",
+        "bags": "16件行李",
+        "from": "起价350欧元",
         "features": [
-          "Sièges capitaine",
-          "Sono premium",
-          "Climatisation zone",
-          "Idéal délégations"
+          "船长座椅",
+          "高级音响",
+          "分区空调",
+          "适合代表团"
+        ]
+      },
+      "range_rover_evoque": {
+        "name": "路虎揽胜极光",
+        "category": "高端SUV",
+        "pax": "3位乘客",
+        "bags": "2件行李",
+        "from": "起价225欧元",
+        "features": [
+          "英国SUV",
+          "皮革内饰",
+          "地形响应技术",
+          "前卫设计"
+        ]
+      },
+      "classe_s_maybach": {
+        "name": "梅赛德斯S级迈巴赫",
+        "category": "顶级豪华轿车",
+        "pax": "3位乘客",
+        "bags": "2件行李",
+        "from": "起价300欧元",
+        "features": [
+          "梅赛德斯巅峰之作",
+          "后排头等舱座椅",
+          "极致隔音",
+          "迷你吧与平板"
+        ]
+      },
+      "eqe": {
+        "name": "梅赛德斯EQE",
+        "category": "纯电动轿车",
+        "pax": "3位乘客",
+        "bags": "2件行李",
+        "from": "起价125欧元",
+        "features": [
+          "100%纯电动",
+          "零排放",
+          "快速充电",
+          "安静驾乘"
         ]
       }
     }

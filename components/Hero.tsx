@@ -13,14 +13,39 @@ interface HeroProps {
   loading?: boolean;
 }
 
+const hasGoogleMapsKey = !!(process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY?.length ?? 0 > 10);
+
 export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = false }: HeroProps) {
   const [ready, setReady] = useState(false);
+  const [fromConfirmed, setFromConfirmed] = useState(false);
+  const [toConfirmed, setToConfirmed]     = useState(false);
+  const [submitError, setSubmitError]     = useState('');
+
   useEffect(() => { setTimeout(() => setReady(true), 150); }, []);
+
+  // Reset confirmations quand les champs changent manuellement
+  const handleFromChange = (v: string) => { setFrom(v); if (!v) setFromConfirmed(false); setSubmitError(''); };
+  const handleToChange   = (v: string) => { setTo(v);   if (!v) setToConfirmed(false);   setSubmitError(''); };
 
   const handleQuickRoute = (route: any) => {
     setFrom(route.from);
     setTo(route.to);
+    setFromConfirmed(true);
+    setToConfirmed(true);
+    setSubmitError('');
     onSearch(route.from, route.to);
+  };
+
+  const handleSearch = () => {
+    // Si la clé Google Maps est disponible, vérifier que les adresses ont été sélectionnées
+    const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? '';
+    const needsValidation = apiKey.length >= 10;
+    if (needsValidation && (!fromConfirmed || !toConfirmed)) {
+      setSubmitError('Veuillez sélectionner les adresses dans la liste de suggestions');
+      return;
+    }
+    setSubmitError('');
+    onSearch(from, to);
   };
 
   return (
@@ -84,10 +109,11 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
               {/* FROM — avec autocomplete Google Places */}
               <PlacesInput
                 label={t?.hero?.from_label ?? 'DÉPART'}
-                placeholder={t?.hero?.from_placeholder ?? 'Aéroport CDG, Paris...'}
+                placeholder={t?.hero?.from_placeholder ?? 'ex : 8 rue de Rivoli, Paris'}
                 value={from}
-                onChange={setFrom}
-                onEnter={() => onSearch(from, to)}
+                onChange={handleFromChange}
+                onEnter={handleSearch}
+                onPlaceSelected={(a) => { setFrom(a); setFromConfirmed(true); }}
               />
 
               {/* Swap arrow */}
@@ -100,16 +126,22 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
               {/* TO — avec autocomplete Google Places */}
               <PlacesInput
                 label={t?.hero?.to_label ?? 'ARRIVÉE'}
-                placeholder={t?.hero?.to_placeholder ?? 'Hôtel, adresse, gare...'}
+                placeholder={t?.hero?.to_placeholder ?? 'ex : Aéroport CDG, Terminal 2E'}
                 value={to}
-                onChange={setTo}
-                onEnter={() => onSearch(from, to)}
+                onChange={handleToChange}
+                onEnter={handleSearch}
+                onPlaceSelected={(a) => { setTo(a); setToConfirmed(true); }}
               />
             </div>
 
+            {submitError && (
+              <p className="text-center font-sans text-[0.7rem] text-amber-600 mb-2 leading-snug">
+                {submitError}
+              </p>
+            )}
             <button
               className="btn-primary flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed"
-              onClick={() => onSearch(from, to)}
+              onClick={handleSearch}
               disabled={loading}>
               {loading ? (
                 <>
