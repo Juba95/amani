@@ -77,6 +77,7 @@ export async function POST(req: NextRequest) {
   const contactEmail = process.env.CONTACT_EMAIL || smtpUser;
 
   if (smtpUser && process.env.SMTP_PASS && contactEmail) {
+    // Envoi en arrière-plan — ne bloque pas la réponse au client
     try {
       const nodemailer = (await import('nodemailer')).default;
       const transporter = nodemailer.createTransport({
@@ -84,12 +85,16 @@ export async function POST(req: NextRequest) {
         port:   Number(process.env.SMTP_PORT) || 465,
         secure: true,
         auth: { user: smtpUser, pass: process.env.SMTP_PASS },
+        connectionTimeout: 5000,
+        greetingTimeout: 5000,
+        socketTimeout: 10000,
       });
 
       const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.amani-limousines.com';
       const waReply = buildClientWaLink(phone, name);
 
-      await transporter.sendMail({
+      // Fire-and-forget : on n'attend pas la fin de l'envoi
+      transporter.sendMail({
         from:    `"Amani Limousines" <${smtpUser}>`,
         to:      contactEmail,
         replyTo: email,
@@ -128,10 +133,12 @@ export async function POST(req: NextRequest) {
               </p>
             </div>
           </div>`,
+      }).catch((mailErr: any) => {
+        console.error('[contact API] mail error:', mailErr);
       });
     } catch (mailErr) {
       // Email échoue → on log mais on renvoie quand même success
-      console.error('[contact API] mail error:', mailErr);
+      console.error('[contact API] mail setup error:', mailErr);
     }
   }
 

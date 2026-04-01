@@ -109,15 +109,17 @@ function ensureDir() {
 }
 
 export function readContent(): ContentBlock[] {
-  ensureDir();
-  if (!fs.existsSync(DATA_FILE)) {
-    // Première utilisation : écrire les contenus par défaut
-    writeContent(DEFAULT_CONTENT);
-    return DEFAULT_CONTENT;
-  }
   try {
-    return JSON.parse(fs.readFileSync(DATA_FILE, 'utf-8'));
+    ensureDir();
+    if (!fs.existsSync(DATA_FILE)) {
+      // Première utilisation : écrire les contenus par défaut
+      try { writeContent(DEFAULT_CONTENT); } catch { /* permissions */ }
+      return DEFAULT_CONTENT;
+    }
+    const raw = JSON.parse(fs.readFileSync(DATA_FILE, 'utf-8'));
+    return Array.isArray(raw) && raw.length > 0 ? raw : DEFAULT_CONTENT;
   } catch {
+    // Si tout échoue (permissions, parsing…), renvoyer les contenus par défaut
     return DEFAULT_CONTENT;
   }
 }

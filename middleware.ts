@@ -52,6 +52,26 @@ const VALID_ROOT_SEGMENTS = new Set([
   'chauffeur-prive-megeve',
   'chauffeur-prive-haute-savoie',
   'transfert-aeroport-economique',
+  // Nouvelles pages SEO villes/niches
+  'chauffeur-prive-bordeaux',
+  'chauffeur-prive-lyon',
+  'chauffeur-prive-nice',
+  'chauffeur-prive-cannes',
+  'chauffeur-prive-monaco',
+  'chauffeur-prive-deauville',
+  'chauffeur-prive-marseille',
+  'chauffeur-prive-saint-tropez',
+  'garde-du-corps',
+  'chauffeur-fashion-week',
+  'chauffeur-mariage',
+  'chauffeur-mariage-paris',
+  'chauffeur-diplomatique',
+  'taxi-moto',
+  'chauffeur-evenements-sportifs',
+  'transfert-hotel-luxe-paris',
+  // Devis, plan du site
+  'devis',
+  'plan-du-site',
 ]);
 
 export function middleware(req: NextRequest) {

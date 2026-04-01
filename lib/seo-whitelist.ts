@@ -120,6 +120,8 @@ export const FR_INDEXED_SLUGS = new Set([
   'contact',
   'a-propos',
   'mentions-legales',
+  'plan-du-site',
+  'devis',
 ]);
 
 /**
