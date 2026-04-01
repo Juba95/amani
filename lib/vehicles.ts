@@ -10,7 +10,8 @@ export interface Vehicle {
   image: string;
   pax: number;
   bags: number;
-  basePrice: number;
+  basePrice: number;       // prix minimum en ville
+  airportPrice: number;    // forfait aéroport IDF (CDG, Orly, Le Bourget)
   pricePerKm: number;
 }
 
@@ -21,7 +22,8 @@ export const VEHICLES: Vehicle[] = [
     image: '/vehicles/mercedes-classe-e.png',
     pax: 3, bags: 2,
     basePrice: 100,
-    pricePerKm: 3.00,    // Classe E = 3€/km, minimum 100€
+    airportPrice: 150,     // Forfait aéroport Classe E
+    pricePerKm: 3.00,
   },
   {
     id: 'classe_s',
@@ -29,7 +31,8 @@ export const VEHICLES: Vehicle[] = [
     image: '/vehicles/mercedes-classe-s.png',
     pax: 3, bags: 2,
     basePrice: 150,
-    pricePerKm: 4.00,    // Classe S = 4€/km, minimum 150€
+    airportPrice: 200,     // Forfait aéroport Classe S
+    pricePerKm: 4.00,
   },
   {
     id: 'classe_v',
@@ -37,7 +40,8 @@ export const VEHICLES: Vehicle[] = [
     image: '/vehicles/mercedes-classe-v.png',
     pax: 7, bags: 6,
     basePrice: 100,
-    pricePerKm: 3.00,    // Classe V = 3€/km, minimum 100€
+    airportPrice: 160,     // Forfait aéroport Classe V
+    pricePerKm: 3.00,
   },
   {
     id: 'classe_g',
@@ -45,7 +49,8 @@ export const VEHICLES: Vehicle[] = [
     image: '/vehicles/mercedes-classe-g.png',
     pax: 4, bags: 3,
     basePrice: 250,
-    pricePerKm: 5.00,    // Classe G = 5€/km, minimum 250€
+    airportPrice: 250,     // Forfait aéroport Classe G
+    pricePerKm: 5.00,
   },
   {
     id: 'sprinter',
@@ -53,7 +58,8 @@ export const VEHICLES: Vehicle[] = [
     image: '/vehicles/mercedes-sprinter.png',
     pax: 16, bags: 16,
     basePrice: 300,
-    pricePerKm: 5.00,    // Sprinter VIP = 5€/km, minimum 300€
+    airportPrice: 350,     // Forfait aéroport Sprinter VIP
+    pricePerKm: 5.00,
   },
   {
     id: 'range_rover_evoque',
@@ -61,7 +67,8 @@ export const VEHICLES: Vehicle[] = [
     image: '/vehicles/range-rover-evoque.png',
     pax: 3, bags: 2,
     basePrice: 200,
-    pricePerKm: 5.00,    // Range Rover Evoque = 5€/km, minimum 200€
+    airportPrice: 250,     // Forfait aéroport Range Rover
+    pricePerKm: 5.00,
   },
   {
     id: 'classe_s_maybach',
@@ -69,21 +76,51 @@ export const VEHICLES: Vehicle[] = [
     image: '/vehicles/mercedes-classe-s-maybach.png',
     pax: 3, bags: 2,
     basePrice: 200,
-    pricePerKm: 5.00,    // Classe S Maybach = 5€/km, minimum 200€
+    airportPrice: 250,     // Forfait aéroport Maybach
+    pricePerKm: 5.00,
   },
   {
     id: 'eqs',
     nameKey: 'eqs',
     image: '/vehicles/mercedes-eqe.png',
     pax: 3, bags: 2,
-    basePrice: 100,
-    pricePerKm: 3.00,    // Mercedes EQS = même tarif que Classe E
+    basePrice: 150,
+    airportPrice: 200,     // Forfait aéroport EQS = même que Classe S
+    pricePerKm: 4.00,
   },
 ];
 
-export function calculatePrice(vehicle: Vehicle, distanceKm: number): number {
-  const calculated = vehicle.pricePerKm * distanceKm;
-  return Math.max(Math.round(calculated), vehicle.basePrice);
+// ── Détection transfert aéroport IDF ────────────────────────────────────────
+const AIRPORT_KEYWORDS = [
+  'cdg', 'charles de gaulle', 'roissy',
+  'orly',
+  'bourget', 'le bourget',
+  'beauvais',
+];
+
+/**
+ * Détecte si le trajet est un transfert aéroport IDF.
+ * Retourne true si le départ OU l'arrivée contient un mot-clé aéroport.
+ */
+export function isAirportTransfer(from: string, to: string): boolean {
+  const f = from.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  const t = to.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  return AIRPORT_KEYWORDS.some(kw => f.includes(kw) || t.includes(kw));
+}
+
+/**
+ * Calcule le prix d'un trajet.
+ *
+ * Logique :
+ * - Transfert aéroport IDF : prix = max(forfaitAéroport, distance × €/km)
+ *   → Le forfait est le prix minimum garanti. Si la distance fait dépasser
+ *     (ex: destination au fond du 77), on passe au prix/km.
+ * - Trajet ville classique : prix = max(prixMinimumVille, distance × €/km)
+ */
+export function calculatePrice(vehicle: Vehicle, distanceKm: number, airport = false): number {
+  const kmPrice = vehicle.pricePerKm * distanceKm;
+  const minimum = airport ? vehicle.airportPrice : vehicle.basePrice;
+  return Math.max(Math.round(kmPrice), minimum);
 }
 
 export const PREDEFINED_ROUTES: Record<string, { km: number; minutes: number }> = {

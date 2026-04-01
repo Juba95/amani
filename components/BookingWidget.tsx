@@ -7,8 +7,8 @@
  */
 
 import { useState, useRef } from 'react';
+import { useRouter } from 'next/navigation';
 import PlacesInput from '@/components/PlacesInput';
-import BookingResults from '@/components/BookingResults';
 
 interface BookingWidgetProps {
   t: any;
@@ -16,17 +16,13 @@ interface BookingWidgetProps {
 }
 
 export default function BookingWidget({ t, locale = 'fr' }: BookingWidgetProps) {
+  const router = useRouter();
   const [from,            setFrom]            = useState('');
   const [to,              setTo]              = useState('');
   const [fromConfirmed,   setFromConfirmed]   = useState(false);
   const [toConfirmed,     setToConfirmed]     = useState(false);
-  const [distance,        setDistance]        = useState<number | null>(null);
-  const [duration,        setDuration]        = useState<string | null>(null);
-  const [selectedVehicle, setSelectedVehicle] = useState<string | null>(null);
-  const [showResults,     setShowResults]     = useState(false);
   const [loading,         setLoading]         = useState(false);
   const [submitError,     setSubmitError]     = useState('');
-  const resultsRef = useRef<HTMLDivElement>(null);
 
   const handleFromChange = (v: string) => { setFrom(v); if (!v) setFromConfirmed(false); setSubmitError(''); };
   const handleToChange   = (v: string) => { setTo(v);   if (!v) setToConfirmed(false);   setSubmitError(''); };
@@ -49,8 +45,6 @@ export default function BookingWidget({ t, locale = 'fr' }: BookingWidgetProps) 
     }
 
     setLoading(true);
-    setShowResults(false);
-    setSelectedVehicle(null);
     setSubmitError('');
 
     try {
@@ -60,16 +54,23 @@ export default function BookingWidget({ t, locale = 'fr' }: BookingWidgetProps) 
         body: JSON.stringify({ origin: from, destination: to }),
       });
       const data = await res.json();
-      setDistance(data.km);
-      setDuration(data.duration);
-      setShowResults(true);
-      setTimeout(() => {
-        resultsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }, 200);
+      // Redirection vers la page devis dédiée avec les paramètres
+      const params = new URLSearchParams({
+        from, to,
+        km: String(data.km),
+        dur: data.duration,
+        lang: locale,
+      });
+      router.push(`/devis?${params.toString()}`);
     } catch {
-      setDistance(35);
-      setDuration('45 min');
-      setShowResults(true);
+      // Fallback : on redirige quand même avec une estimation
+      const params = new URLSearchParams({
+        from, to,
+        km: '35',
+        dur: '45 min',
+        lang: locale,
+      });
+      router.push(`/devis?${params.toString()}`);
     } finally {
       setLoading(false);
     }
@@ -151,21 +152,44 @@ export default function BookingWidget({ t, locale = 'fr' }: BookingWidgetProps) 
           </div>
         </div>
 
-        {/* Results */}
-        {showResults && distance !== null && duration && (
-          <div className="mt-6">
-            <BookingResults
-              t={t}
-              from={from}
-              to={to}
-              distance={distance}
-              duration={duration}
-              selectedVehicle={selectedVehicle}
-              onSelect={(id) => setSelectedVehicle(id)}
-              resultsRef={resultsRef}
-            />
+        {/* Trajets fréquents — raccourcis aéroport */}
+        <div className="mt-6">
+          <p className="font-sans text-[0.65rem] tracking-[0.15em] uppercase text-stone-400 mb-3 text-center">
+            {locale === 'en' ? '✈ Popular airport routes' : '✈ Forfaits aéroport IDF'}
+          </p>
+          <div className="flex flex-wrap justify-center gap-2">
+            {(locale === 'en' ? [
+              { label: 'CDG → Paris',         f: 'Aéroport CDG, Roissy', t: 'Paris centre' },
+              { label: 'Orly → Paris',        f: 'Aéroport Orly',        t: 'Paris centre' },
+              { label: 'CDG → La Défense',    f: 'Aéroport CDG, Roissy', t: 'La Défense' },
+              { label: 'CDG → Disneyland',    f: 'Aéroport CDG, Roissy', t: 'Disneyland Paris' },
+              { label: 'CDG → Versailles',    f: 'Aéroport CDG, Roissy', t: 'Château de Versailles' },
+              { label: 'Le Bourget → Paris',  f: 'Aéroport Le Bourget',  t: 'Paris centre' },
+            ] : [
+              { label: 'CDG → Paris',         f: 'Aéroport CDG, Roissy', t: 'Paris centre' },
+              { label: 'Orly → Paris',        f: 'Aéroport Orly',        t: 'Paris centre' },
+              { label: 'CDG → La Défense',    f: 'Aéroport CDG, Roissy', t: 'La Défense' },
+              { label: 'CDG → Disneyland',    f: 'Aéroport CDG, Roissy', t: 'Disneyland Paris' },
+              { label: 'CDG → Versailles',    f: 'Aéroport CDG, Roissy', t: 'Château de Versailles' },
+              { label: 'Le Bourget → Paris',  f: 'Aéroport Le Bourget',  t: 'Paris centre' },
+              { label: 'CDG → Gare du Nord',  f: 'Aéroport CDG, Roissy', t: 'Gare du Nord, Paris' },
+              { label: 'CDG → Gare de Lyon',  f: 'Aéroport CDG, Roissy', t: 'Gare de Lyon, Paris' },
+            ]).map((r) => (
+              <button
+                key={r.label}
+                onClick={() => {
+                  setFrom(r.f); setTo(r.t);
+                  setFromConfirmed(true); setToConfirmed(true);
+                }}
+                className="font-sans text-[0.68rem] px-3.5 py-1.5 rounded-full border transition-all hover:border-gold-400 hover:text-gold-400"
+                style={{ borderColor: '#e5e2db', color: '#888' }}
+              >
+                {r.label}
+              </button>
+            ))}
           </div>
-        )}
+        </div>
+
       </div>
     </section>
   );

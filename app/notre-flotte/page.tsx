@@ -30,7 +30,7 @@ const vehicules = [
     categorie: 'Berline Business Électrique',
     pax: '3 passagers',
     bagages: '2 valises',
-    prix: 'À partir de 100 €',
+    prix: 'À partir de 150 €',
     image: '/vehicles/mercedes-eqe.png',
     details: 'La version 100 % électrique de notre gamme business. La EQS offre le même niveau de confort que la Classe E avec zéro émission. Silence de fonctionnement absolu, parfaite pour les clients sensibles à l\'impact environnemental.',
     equipements: ['100% électrique', 'Silence absolu', 'Cuir premium', 'Climatisation bi-zone', 'Chargeur USB-C'],
@@ -201,12 +201,13 @@ export default function NotreFlottePage() {
               </thead>
               <tbody>
                 {[
-                  ['Mercedes Classe E / Classe V', '150 €'],
-                  ['Mercedes EQS Électrique', '150 €'],
+                  ['Mercedes Classe E', '150 €'],
+                  ['Mercedes EQS Électrique', '200 €'],
+                  ['Mercedes Classe V', '160 €'],
                   ['Mercedes Classe S', '200 €'],
                   ['Mercedes Classe S Maybach', '250 €'],
                   ['Range Rover Evoque', '250 €'],
-                  ['Mercedes Classe G', '300 €'],
+                  ['Mercedes Classe G', '250 €'],
                   ['Mercedes Sprinter VIP', '350 €'],
                 ].map(([v, p]) => (
                   <tr key={v} className="border-b border-stone-100">
@@ -231,8 +232,9 @@ export default function NotreFlottePage() {
               </thead>
               <tbody>
                 {[
-                  ['Mercedes Classe E / Classe V', '100 €', '3 €/km'],
-                  ['Mercedes EQS Électrique', '100 €', '3 €/km'],
+                  ['Mercedes Classe E', '100 €', '3 €/km'],
+                  ['Mercedes EQS Électrique', '150 €', '4 €/km'],
+                  ['Mercedes Classe V', '100 €', '3 €/km'],
                   ['Mercedes Classe S', '150 €', '4 €/km'],
                   ['Mercedes Classe S Maybach', '200 €', '5 €/km'],
                   ['Range Rover Evoque', '200 €', '5 €/km'],
@@ -262,8 +264,9 @@ export default function NotreFlottePage() {
               </thead>
               <tbody>
                 {[
-                  ['Mercedes Classe E / Classe V', '95 €/h', '4 heures'],
-                  ['Mercedes EQS Électrique', '95 €/h', '4 heures'],
+                  ['Mercedes Classe E', '95 €/h', '4 heures'],
+                  ['Mercedes EQS Électrique', '130 €/h', '4 heures'],
+                  ['Mercedes Classe V', '95 €/h', '4 heures'],
                   ['Mercedes Classe S', '130 €/h', '4 heures'],
                   ['Mercedes Classe S Maybach', '220 €/h', '5 heures'],
                   ['Range Rover Evoque', '190 €/h', '5 heures'],

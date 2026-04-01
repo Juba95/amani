@@ -10,8 +10,8 @@ module.exports = {
         dark: { 50: '#1a1714', 100: '#141210', 200: '#0f0d0b', 300: '#0c0a09', 400: '#090807', 500: '#060504' },
       },
       fontFamily: {
-        serif: ['DM Serif Display', 'Georgia', 'serif'],
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        serif: ['var(--font-dm-serif)', 'DM Serif Display', 'Georgia', 'serif'],
+        sans: ['var(--font-inter)', 'Inter', 'system-ui', 'sans-serif'],
       },
     },
   },

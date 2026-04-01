@@ -28,7 +28,7 @@ const vehicles = [
     name: 'Mercedes EQS',
     cat: 'Electric Business Saloon',
     pax: '3 passengers · 2 bags',
-    price: 'From €100',
+    price: 'From €150',
     img: '/vehicles/mercedes-eqe.png',
     desc: 'The fully electric version of our business range. The EQS offers the same comfort level as the E-Class with zero emissions. Absolute silence, perfect for environmentally conscious clients.',
     eq: ['100% electric', 'Absolute silence', 'Premium leather', 'Dual-zone climate', 'USB-C chargers'],
@@ -189,12 +189,13 @@ export default function OurFleetEN() {
               </thead>
               <tbody>
                 {[
-                  ['Mercedes E-Class / V-Class', '€150'],
-                  ['Mercedes EQS Electric', '€150'],
+                  ['Mercedes E-Class', '€150'],
+                  ['Mercedes EQS Electric', '€200'],
+                  ['Mercedes V-Class', '€160'],
                   ['Mercedes S-Class', '€200'],
                   ['Mercedes S-Class Maybach', '€250'],
                   ['Range Rover Evoque', '€250'],
-                  ['Mercedes G-Class', '€300'],
+                  ['Mercedes G-Class', '€250'],
                   ['Mercedes Sprinter VIP', '€350'],
                 ].map(([v, p]) => (
                   <tr key={v} className="border-b border-stone-100">
@@ -219,8 +220,9 @@ export default function OurFleetEN() {
               </thead>
               <tbody>
                 {[
-                  ['Mercedes E-Class / V-Class', '€100', '€3/km'],
-                  ['Mercedes EQS Electric', '€100', '€3/km'],
+                  ['Mercedes E-Class', '€100', '€3/km'],
+                  ['Mercedes EQS Electric', '€150', '€4/km'],
+                  ['Mercedes V-Class', '€100', '€3/km'],
                   ['Mercedes S-Class', '€150', '€4/km'],
                   ['Mercedes S-Class Maybach', '€200', '€5/km'],
                   ['Range Rover Evoque', '€200', '€5/km'],
@@ -250,8 +252,9 @@ export default function OurFleetEN() {
               </thead>
               <tbody>
                 {[
-                  ['Mercedes E-Class / V-Class', '€95/h', '4 hours'],
-                  ['Mercedes EQS Electric', '€95/h', '4 hours'],
+                  ['Mercedes E-Class', '€95/h', '4 hours'],
+                  ['Mercedes EQS Electric', '€130/h', '4 hours'],
+                  ['Mercedes V-Class', '€95/h', '4 hours'],
                   ['Mercedes S-Class', '€130/h', '4 hours'],
                   ['Mercedes S-Class Maybach', '€220/h', '5 hours'],
                   ['Range Rover Evoque', '€190/h', '5 hours'],

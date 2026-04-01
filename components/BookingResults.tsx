@@ -1,7 +1,7 @@
 'use client';
 
 import dynamic from 'next/dynamic';
-import { VEHICLES, calculatePrice } from '@/lib/vehicles';
+import { VEHICLES, calculatePrice, isAirportTransfer } from '@/lib/vehicles';
 
 const RouteMap = dynamic(() => import('@/components/RouteMap'), { ssr: false });
 
@@ -21,6 +21,7 @@ export default function BookingResults({
 }: BookingResultsProps) {
   const formatPrice = (p: number) => Math.round(p).toLocaleString('fr-FR') + ' €';
 
+  const airport = isAirportTransfer(from, to);
   const selected = VEHICLES.find((v) => v.id === selectedVehicle);
 
   return (
@@ -38,6 +39,11 @@ export default function BookingResults({
           <span className="font-sans text-sm font-light">{from}</span>
           <span className="text-gold-400">→</span>
           <span className="font-sans text-sm font-light">{to}</span>
+          {airport && (
+            <span className="font-sans text-[0.6rem] px-2.5 py-1 rounded-full bg-gold-400/10 text-gold-400 font-medium uppercase tracking-wider">
+              ✈ Forfait aéroport
+            </span>
+          )}
           <div className="ml-auto flex gap-5 font-sans text-sm text-stone-500">
             <span><strong className="text-gold-400 font-medium">{distance} km</strong></span>
             <span><strong className="text-gold-400 font-medium">{duration}</strong></span>
@@ -51,7 +57,7 @@ export default function BookingResults({
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3.5">
           {VEHICLES.map((v) => {
             const vehicleT = t?.fleet?.vehicles?.[v.nameKey];
-            const price = calculatePrice(v, distance);
+            const price = calculatePrice(v, distance, airport);
             return (
               <div key={v.id}
                 onClick={() => onSelect(v.id)}
@@ -98,12 +104,12 @@ export default function BookingResults({
             <div className="flex justify-between items-baseline pt-5 mt-2 border-t border-gold-400/15">
               <span className="font-sans text-sm text-stone-500 font-light">{t?.booking?.total}</span>
               <span className="text-3xl font-medium text-gold-400">
-                {formatPrice(calculatePrice(selected, distance))}
+                {formatPrice(calculatePrice(selected, distance, airport))}
               </span>
             </div>
 
             <button className="btn-gold mt-6">
-              {t?.booking?.book_now} — {formatPrice(calculatePrice(selected, distance))}
+              {t?.booking?.book_now} — {formatPrice(calculatePrice(selected, distance, airport))}
             </button>
 
             <p className="font-sans text-center text-[0.72rem] text-stone-700 font-light mt-3">
