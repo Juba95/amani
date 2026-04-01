@@ -64,7 +64,6 @@ const VALID_ROOT_SEGMENTS = new Set([
   'garde-du-corps',
   'chauffeur-fashion-week',
   'chauffeur-mariage',
-  'chauffeur-mariage-paris',
   'chauffeur-diplomatique',
   'taxi-moto',
   'chauffeur-evenements-sportifs',
