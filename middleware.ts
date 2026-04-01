@@ -68,6 +68,15 @@ const VALID_ROOT_SEGMENTS = new Set([
   'taxi-moto',
   'chauffeur-evenements-sportifs',
   'transfert-hotel-luxe-paris',
+  // Chauffeur Speaker (langues)
+  'chauffeur-anglophone',
+  'chauffeur-arabophone',
+  'chauffeur-hispanophone',
+  'chauffeur-germanophone',
+  'chauffeur-mandarin',
+  'chauffeur-coreen',
+  'chauffeur-japonais',
+  'chauffeur-russophone',
   // Devis, plan du site
   'devis',
   'plan-du-site',

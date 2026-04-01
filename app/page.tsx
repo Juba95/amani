@@ -86,9 +86,6 @@ export default function HomePage() {
       {/* Process / How it works */}
       <ProcessSection t={t} />
 
-      {/* Video section */}
-      <VideoSection t={t} />
-
       {/* Events */}
       <EventsGrid t={t} />
 
@@ -99,46 +96,6 @@ export default function HomePage() {
       <CTA t={t} />
       <Footer t={t} />
     </main>
-  );
-}
-
-// ── Video section ──────────────────────────────────────────────────────────
-function VideoSection({ t }: { t: any }) {
-  return (
-    <section className="py-20 px-6 md:px-10" style={{ background: '#0a0908' }}>
-      <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-10">
-          <p className="tag-gold mb-3" style={{ color: '#8a7340' }}>
-            {t?.video?.tag ?? 'Découvrez notre service'}
-          </p>
-          <h2
-            className="font-serif font-normal"
-            style={{ color: '#f5f3ef', fontSize: 'clamp(1.8rem, 3.5vw, 2.8rem)' }}
-          >
-            {t?.video?.title ?? "L'excellence du transport privé"}{' '}
-            <em className="italic" style={{ color: '#8a7340' }}>
-              {t?.video?.title_em ?? 'à Paris'}
-            </em>
-          </h2>
-        </div>
-
-        {/* YouTube embed — responsive 16:9 */}
-        <div
-          className="relative w-full overflow-hidden rounded-2xl shadow-2xl"
-          style={{ paddingBottom: '56.25%', background: '#111' }}
-        >
-          <iframe
-            src="https://www.youtube.com/embed/Tgd6gZt9DvQ?rel=0&modestbranding=1&color=white"
-            title="Amani Limousines — Service de chauffeur privé à Paris"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-            loading="lazy"
-            className="absolute inset-0 w-full h-full"
-            style={{ border: 'none' }}
-          />
-        </div>
-      </div>
-    </section>
   );
 }
 

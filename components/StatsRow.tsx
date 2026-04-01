@@ -26,18 +26,11 @@ function useCountUp(target: number, duration = 1800, start = false) {
 export default function StatsRow({ t }: StatsRowProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
-  const [loadVideo, setLoadVideo] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true);
-          // Lazy-load YouTube video only when section is in viewport
-          setLoadVideo(true);
-        }
-      },
-      { threshold: 0.1, rootMargin: '200px' }
+      ([entry]) => { if (entry.isIntersecting) setVisible(true); },
+      { threshold: 0.3 }
     );
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
@@ -58,53 +51,17 @@ export default function StatsRow({ t }: StatsRowProps) {
     <div
       ref={ref}
       className="relative overflow-hidden"
-      style={{ minHeight: '220px', background: '#0a0908' }}
+      style={{
+        background: 'linear-gradient(135deg, #0a0908 0%, #141210 50%, #0a0908 100%)',
+      }}
     >
-      {/* ── YouTube background video — lazy-loaded ── */}
-      {loadVideo && (
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 pointer-events-none"
-          style={{ zIndex: 0 }}
-        >
-          <iframe
-            src="https://www.youtube.com/embed/Tgd6gZt9DvQ?autoplay=1&mute=1&loop=1&playlist=Tgd6gZt9DvQ&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playsinline=1&enablejsapi=0"
-            title="background"
-            allow="autoplay; encrypted-media"
-            allowFullScreen={false}
-            loading="lazy"
-            style={{
-              position: 'absolute',
-              top: '50%',
-              left: '50%',
-              transform: 'translate(-50%, -50%)',
-              width: 'max(100%, 177.78vh)',
-              height: 'max(100%, 56.25vw)',
-              border: 'none',
-              pointerEvents: 'none',
-            }}
-          />
-          {/* Dark cinematic overlay */}
-          <div
-            className="absolute inset-0"
-            style={{
-              background: 'linear-gradient(to bottom, rgba(8,7,6,0.72) 0%, rgba(8,7,6,0.60) 50%, rgba(8,7,6,0.72) 100%)',
-            }}
-          />
-          <div
-            className="absolute inset-0"
-            style={{
-              background: 'radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.25) 100%)',
-            }}
-          />
-        </div>
-      )}
+      {/* Subtle gold accent lines */}
+      <div className="absolute inset-0 pointer-events-none" style={{
+        background: 'radial-gradient(ellipse at 30% 50%, rgba(138,115,64,0.06) 0%, transparent 60%), radial-gradient(ellipse at 70% 50%, rgba(138,115,64,0.04) 0%, transparent 50%)',
+      }} />
 
-      {/* ── Stats content ── */}
-      <div
-        className="relative py-16 px-6 md:px-10"
-        style={{ zIndex: 1 }}
-      >
+      {/* Stats content */}
+      <div className="relative py-16 px-6 md:px-10" style={{ zIndex: 1 }}>
         <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {stats.map((s, i) => (
             <div key={i}>
@@ -116,7 +73,7 @@ export default function StatsRow({ t }: StatsRowProps) {
               </p>
               <p
                 className="font-sans text-xs font-light tracking-widest uppercase"
-                style={{ color: 'rgba(245,240,230,0.75)' }}
+                style={{ color: 'rgba(245,240,230,0.6)' }}
               >
                 {s.label}
               </p>

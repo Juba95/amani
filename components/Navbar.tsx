@@ -132,6 +132,29 @@ function getEventsMenu(locale: Locale): DropdownItem[] {
   ];
 }
 
+function getSpeakerMenu(locale: Locale): DropdownItem[] {
+  if (locale === 'en') return [
+    { label: '🇬🇧 English-speaking',     href: '/chauffeur-anglophone' },
+    { label: '🇸🇦 Arabic-speaking',      href: '/chauffeur-arabophone' },
+    { label: '🇪🇸 Spanish-speaking',     href: '/chauffeur-hispanophone' },
+    { label: '🇩🇪 German-speaking',      href: '/chauffeur-germanophone' },
+    { label: '🇨🇳 Mandarin-speaking',    href: '/chauffeur-mandarin' },
+    { label: '🇰🇷 Korean-speaking',      href: '/chauffeur-coreen' },
+    { label: '🇯🇵 Japanese-speaking',    href: '/chauffeur-japonais' },
+    { label: '🇷🇺 Russian-speaking',     href: '/chauffeur-russophone' },
+  ];
+  return [
+    { label: '🇬🇧 Chauffeur anglophone',   href: '/chauffeur-anglophone' },
+    { label: '🇸🇦 Chauffeur arabophone',    href: '/chauffeur-arabophone' },
+    { label: '🇪🇸 Chauffeur hispanophone',  href: '/chauffeur-hispanophone' },
+    { label: '🇩🇪 Chauffeur germanophone',  href: '/chauffeur-germanophone' },
+    { label: '🇨🇳 Chauffeur mandarin',      href: '/chauffeur-mandarin' },
+    { label: '🇰🇷 Chauffeur coréen',        href: '/chauffeur-coreen' },
+    { label: '🇯🇵 Chauffeur japonais',      href: '/chauffeur-japonais' },
+    { label: '🇷🇺 Chauffeur russophone',    href: '/chauffeur-russophone' },
+  ];
+}
+
 function getDestinationsMenu(locale: Locale): DropdownItem[] {
   if (locale === 'en') return [
     { label: 'Private chauffeur Paris',  href: '/en/private-chauffeur-paris' },
@@ -219,6 +242,7 @@ export default function Navbar({ t, locale }: NavbarProps) {
   const [servicesOpen, setServicesOpen]     = useState(false);
   const [destinationsOpen, setDestinationsOpen] = useState(false);
   const [eventsOpen, setEventsOpen]       = useState(false);
+  const [speakerOpen, setSpeakerOpen]   = useState(false);
   const [scrolled, setScrolled]   = useState(false);
   const pathname = usePathname();
 
@@ -244,9 +268,11 @@ export default function Navbar({ t, locale }: NavbarProps) {
   const servicesItems     = getServicesMenu(locale, homePrefix);
   const destinationsItems = getDestinationsMenu(locale);
   const eventsItems       = getEventsMenu(locale);
+  const speakerItems      = getSpeakerMenu(locale);
 
   const servicesLabel     = locale === 'en' ? 'Services'     : 'Services';
   const destinationsLabel = locale === 'en' ? 'Destinations' : 'Destinations';
+  const speakerLabel      = locale === 'en' ? 'Languages'    : 'Langues';
   const fleetLabel        = t?.nav?.fleet ?? (locale === 'en' ? 'Fleet' : 'Flotte');
   const fleetHref         = locale === 'en' ? '/en/our-fleet' : '/notre-flotte';
 
@@ -269,14 +295,14 @@ export default function Navbar({ t, locale }: NavbarProps) {
       </Link>
 
       {/* Desktop nav */}
-      <div className="hidden md:flex items-center gap-8">
+      <div className="hidden md:flex items-center gap-6">
         {/* Services dropdown */}
         {(locale === 'fr' || locale === 'en') && (
           <DropdownMenu
             label={servicesLabel}
             items={servicesItems}
             isOpen={servicesOpen}
-            onToggle={() => { setServicesOpen(!servicesOpen); setDestinationsOpen(false); setEventsOpen(false); }}
+            onToggle={() => { setServicesOpen(!servicesOpen); setDestinationsOpen(false); setEventsOpen(false); setSpeakerOpen(false); }}
             onClose={() => setServicesOpen(false)}
           />
         )}
@@ -293,7 +319,7 @@ export default function Navbar({ t, locale }: NavbarProps) {
             label={destinationsLabel}
             items={destinationsItems}
             isOpen={destinationsOpen}
-            onToggle={() => { setDestinationsOpen(!destinationsOpen); setServicesOpen(false); setEventsOpen(false); }}
+            onToggle={() => { setDestinationsOpen(!destinationsOpen); setServicesOpen(false); setEventsOpen(false); setSpeakerOpen(false); }}
             onClose={() => setDestinationsOpen(false)}
           />
         )}
@@ -310,7 +336,7 @@ export default function Navbar({ t, locale }: NavbarProps) {
             label={t?.nav?.events ?? (locale === 'en' ? 'Events' : 'Événements')}
             items={eventsItems}
             isOpen={eventsOpen}
-            onToggle={() => { setEventsOpen(!eventsOpen); setServicesOpen(false); setDestinationsOpen(false); }}
+            onToggle={() => { setEventsOpen(!eventsOpen); setServicesOpen(false); setDestinationsOpen(false); setSpeakerOpen(false); }}
             onClose={() => setEventsOpen(false)}
           />
         )}
@@ -319,6 +345,17 @@ export default function Navbar({ t, locale }: NavbarProps) {
             className="font-sans text-xs text-gray-600 hover:text-gold-400 tracking-wide transition-colors">
             {t?.nav?.events}
           </a>
+        )}
+
+        {/* Chauffeur Speaker / Languages dropdown */}
+        {(locale === 'fr' || locale === 'en') && (
+          <DropdownMenu
+            label={speakerLabel}
+            items={speakerItems}
+            isOpen={speakerOpen}
+            onToggle={() => { setSpeakerOpen(!speakerOpen); setServicesOpen(false); setDestinationsOpen(false); setEventsOpen(false); }}
+            onClose={() => setSpeakerOpen(false)}
+          />
         )}
 
         {/* Contact */}
@@ -342,7 +379,7 @@ export default function Navbar({ t, locale }: NavbarProps) {
         {/* Language switcher */}
         <div className="relative">
           <button
-            onClick={() => { setLangOpen(!langOpen); setServicesOpen(false); setDestinationsOpen(false); setEventsOpen(false); }}
+            onClick={() => { setLangOpen(!langOpen); setServicesOpen(false); setDestinationsOpen(false); setEventsOpen(false); setSpeakerOpen(false); }}
             className="flex items-center gap-1.5 px-3 py-1.5 border border-stone-200 rounded-md font-sans text-xs text-gray-700 hover:border-gold-400 hover:text-gold-400 transition-all"
           >
             {currentLang.flag} {locale.toUpperCase()}
@@ -428,6 +465,25 @@ export default function Navbar({ t, locale }: NavbarProps) {
                   {t?.nav?.events ?? (locale === 'en' ? 'Events' : 'Événements')}
                 </p>
                 {eventsItems.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    onClick={() => setMenuOpen(false)}
+                    className="font-sans text-sm text-gray-700 hover:text-gold-400 py-1.5"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </>
+            )}
+
+            {/* Languages / Speaker section */}
+            {(locale === 'fr' || locale === 'en') && (
+              <>
+                <p className="font-sans text-xs font-semibold tracking-[0.15em] uppercase text-stone-400 mt-4 mb-2">
+                  {speakerLabel}
+                </p>
+                {speakerItems.map((item) => (
                   <Link
                     key={item.href}
                     href={item.href}

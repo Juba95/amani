@@ -116,6 +116,16 @@ export const FR_INDEXED_SLUGS = new Set([
   'chauffeur-evenements-sportifs',
   'transfert-hotel-luxe-paris',
 
+  // ── Chauffeur Speaker (langues) ─────────────────────────────────
+  'chauffeur-anglophone',
+  'chauffeur-arabophone',
+  'chauffeur-hispanophone',
+  'chauffeur-germanophone',
+  'chauffeur-mandarin',
+  'chauffeur-coreen',
+  'chauffeur-japonais',
+  'chauffeur-russophone',
+
   // ── Institutionnelles ─────────────────────────────────────────
   'contact',
   'a-propos',
