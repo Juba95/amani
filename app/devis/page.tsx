@@ -1,8 +1,6 @@
 'use client';
 
-export const dynamic = 'force-dynamic';
-
-import { useState, useEffect } from 'react';
+import { Suspense, useState, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Navbar from '@/components/Navbar';
 import { CTA, Footer } from '@/components/CTAFooter';
@@ -18,7 +16,7 @@ function toLocale(v: string | null): Locale {
   return 'fr';
 }
 
-export default function DevisPage() {
+function DevisContent() {
   const params = useSearchParams();
   const from = params.get('from') || '';
   const to = params.get('to') || '';
@@ -29,7 +27,6 @@ export default function DevisPage() {
   const t = locales[lang] || fr;
   const [selectedVehicle, setSelectedVehicle] = useState<string | null>(null);
 
-  // Scroll to top on mount
   useEffect(() => { window.scrollTo(0, 0); }, []);
 
   return (
@@ -74,5 +71,17 @@ export default function DevisPage() {
       <CTA t={t} />
       <Footer t={t} />
     </div>
+  );
+}
+
+export default function DevisPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-white flex items-center justify-center">
+        <p className="sf text-stone-400 text-sm">Chargement…</p>
+      </div>
+    }>
+      <DevisContent />
+    </Suspense>
   );
 }
