@@ -1,20 +1,24 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'convoi-delegations';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Convoi de Véhicules Paris — Transport Délégation & Mission Diplomatique | Amani',
-  description:
-    'Transport de délégations officielles à Paris. Convois de 2 à 30 véhicules, missions diplomatiques, ambassades. Chauffeurs formés, coordination centralisée, disponible 24h/24.',
+  description: 'Transport de délégations officielles à Paris. Convois de 2 à 30 véhicules, missions diplomatiques, ambassades. Chauffeurs formés, coordination centralisée, disponible 24h/24.',
+  canonical: 'https://www.amani-limousines.com/convoi-delegations',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/convoi-delegations',
     languages: {
       en: 'https://www.amani-limousines.com/en/delegation-transport',
       'x-default': 'https://www.amani-limousines.com/convoi-delegations',
     },
   },
-};
+});
 
 export default function ConvoiDelegationsPage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -22,16 +26,10 @@ export default function ConvoiDelegationsPage() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Convoi & délégations officielles</p>
           <h1 className="heading mt-3">
-            <strong>Convoi de véhicules et transport de délégation à Paris</strong> —{' '}
-            <em>coordination sans faille</em>
+            {c('h1', 'Convoi de véhicules et transport de délégation à Paris — coordination sans faille')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Certaines missions nécessitent plus d'un véhicule. Une délégation ministérielle,
-            une visite d'État, un summit corporate, un groupe de dirigeants en tournée : dans ces
-            situations, la coordination entre plusieurs voitures est aussi importante que le
-            confort de chacune. Le <strong>transport de délégation à Paris</strong> d'Amani
-            Limousines repose sur un dispatching centralisé, une communication radio continue
-            entre les chauffeurs et un chef de convoi disponible sur le terrain.
+            {c('intro', 'Certaines missions nécessitent plus d\'un véhicule. Une délégation ministérielle, une visite d\'État, un summit corporate, un groupe de dirigeants en tournée : dans ces situations, la coordination entre plusieurs voitures est aussi importante que le confort de chacune. Le transport de délégation à Paris d\'Amani Limousines repose sur un dispatching centralisé, une communication radio continue entre les chauffeurs et un chef de convoi disponible sur le terrain.')}
           </p>
         </div>
       </section>

@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
 import Link from 'next/link';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
-  title: 'Chauffeur Privé Nice / Côte d\'Azur — Cannes, Monaco, Saint-Tropez | Amani Limousines',
-  description:
-    'Chauffeur privé Nice et Côte d\'Azur : transferts aéroport Nice, Cannes, Monaco, Saint-Tropez. Service haut de gamme en Mercedes, tarif fixe, disponible 7j/7.',
-  alternates: {
-    canonical: 'https://www.amani-limousines.com/chauffeur-prive-nice',
-  },
-};
+const SLUG = 'chauffeur-prive-nice';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
+  title: 'Chauffeur Privé Nice / Côte d\',
+  description: 'Chauffeur privé Nice et Côte d\'Azur : transferts aéroport Nice, Cannes, Monaco, Saint-Tropez. Service haut de gamme en Mercedes, tarif fixe, disponible 7j/7.',
+  canonical: 'https://www.amani-limousines.com/chauffeur-prive-nice',
+});
 
 const zones = [
   { zone: 'Aéroport Nice Côte d\'Azur', note: 'Terminaux 1 et 2, accueil personnalisé' },
@@ -45,6 +45,8 @@ const occasions = [
 ];
 
 export default function ChauffeurPriveNice() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -52,16 +54,10 @@ export default function ChauffeurPriveNice() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Nice — Côte d'Azur</p>
           <h1 className="heading mt-3">
-            <strong>Chauffeur privé Nice</strong> —{' '}
-            <em>Côte d'Azur, Cannes, Monaco</em>
+            {c('h1', 'Chauffeur privé Nice — Côte d\'Azur, Cannes, Monaco')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            La Côte d'Azur est un littoral de 120 kilomètres où chaque déplacement dépend
-            de la saison, de l'événement en cours et de l'état de la circulation sur
-            l'autoroute A8. Un <strong>chauffeur privé à Nice</strong> vous épargne les
-            embouteillages chroniques entre l'aéroport, Cannes et Monaco. Amani Limousines
-            couvre l'ensemble du littoral azuréen avec des Mercedes récentes, un tarif fixe
-            et des chauffeurs qui connaissent chaque raccourci.
+            {c('intro', 'La Côte d\'Azur est un littoral de 120 kilomètres où chaque déplacement dépend de la saison, de l\'événement en cours et de l\'état de la circulation sur l\'autoroute A8. Un chauffeur privé à Nice vous épargne les embouteillages chroniques entre l\'aéroport, Cannes et Monaco. Amani Limousines couvre l\'ensemble du littoral azuréen avec des Mercedes récentes, un tarif fixe et des chauffeurs qui connaissent chaque raccourci.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

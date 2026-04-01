@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
 import Link from 'next/link';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'chauffeur-germanophone';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Germanophone Paris — Chauffeur Privé Parlant Allemand | Amani Limousines',
-  description:
-    'Chauffeur privé parlant allemand à Paris. Industrie automobile, conventions professionnelles, tourisme. Communication en allemand. Disponible 24h/24.',
-  alternates: {
-    canonical: 'https://www.amani-limousines.com/chauffeur-germanophone',
-  },
-};
+  description: 'Chauffeur privé parlant allemand à Paris. Industrie automobile, conventions professionnelles, tourisme. Communication en allemand. Disponible 24h/24.',
+  canonical: 'https://www.amani-limousines.com/chauffeur-germanophone',
+});
 
 const services = [
   {
@@ -45,6 +45,8 @@ const situations = [
 ];
 
 export default function ChauffeurGermanophonePage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -52,15 +54,10 @@ export default function ChauffeurGermanophonePage() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Chauffeur Germanophone</p>
           <h1 className="heading mt-3">
-            Chauffeur privé <em>germanophone</em> à <strong>Paris</strong>
+            {c('h1', 'Chauffeur privé germanophone à Paris')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            On va être direct : si vous venez d'Allemagne, d'Autriche ou de Suisse pour
-            bosser à Paris, vous avez besoin d'un chauffeur ponctuel, qui parle allemand,
-            et qui ne perd pas votre temps. C'est exactement ce qu'on propose. Un{' '}
-            <strong>chauffeur germanophone</strong> qui connaît le périph, les gares,
-            les quartiers d'affaires, et qui communique dans votre langue sans
-            approximation. Dispo 24h/24, partout en Île-de-France.
+            {c('intro', 'On va être direct : si vous venez d\'Allemagne, d\'Autriche ou de Suisse pour bosser à Paris, vous avez besoin d\'un chauffeur ponctuel, qui parle allemand, et qui ne perd pas votre temps. C\'est exactement ce qu\'on propose. Un chauffeur germanophone qui connaît le périph, les gares, les quartiers d\'affaires, et qui communique dans votre langue sans approximation. Dispo 24h/24, partout en Île-de-France.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

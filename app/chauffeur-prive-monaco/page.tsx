@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
 import Link from 'next/link';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'chauffeur-prive-monaco';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Privé Monaco — Monte-Carlo, Grand Prix & Yacht Show | Amani Limousines',
-  description:
-    'Chauffeur privé à Monaco : Monte-Carlo, Port Hercule, Grand Prix, Yacht Show. Service Mercedes haut de gamme, discrétion garantie, tarif fixe.',
-  alternates: {
-    canonical: 'https://www.amani-limousines.com/chauffeur-prive-monaco',
-  },
-};
+  description: 'Chauffeur privé à Monaco : Monte-Carlo, Port Hercule, Grand Prix, Yacht Show. Service Mercedes haut de gamme, discrétion garantie, tarif fixe.',
+  canonical: 'https://www.amani-limousines.com/chauffeur-prive-monaco',
+});
 
 const zones = [
   { zone: 'Monte-Carlo', note: 'Casino, Hôtel de Paris, Hermitage, Métropole' },
@@ -44,6 +44,8 @@ const occasions = [
 ];
 
 export default function ChauffeurPriveMonaco() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -51,16 +53,10 @@ export default function ChauffeurPriveMonaco() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Monaco — Principauté</p>
           <h1 className="heading mt-3">
-            <strong>Chauffeur privé Monaco</strong> —{' '}
-            <em>Monte-Carlo, Grand Prix et prestige</em>
+            {c('h1', 'Chauffeur privé Monaco — Monte-Carlo, Grand Prix et prestige')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Monaco est un territoire de deux kilomètres carrés où la moindre fermeture
-            de rue paralyse la circulation. Un <strong>chauffeur privé à Monaco</strong>{' '}
-            connaît chaque virage, chaque tunnel et chaque accès réservé de la Principauté.
-            Amani Limousines assure vos déplacements à Monaco et entre Monaco et l'aéroport
-            de Nice en Mercedes, avec un tarif fixe et une discrétion adaptée au standing
-            monégasque.
+            {c('intro', 'Monaco est un territoire de deux kilomètres carrés où la moindre fermeture de rue paralyse la circulation. Un chauffeur privé à Monaco connaît chaque virage, chaque tunnel et chaque accès réservé de la Principauté. Amani Limousines assure vos déplacements à Monaco et entre Monaco et l\'aéroport de Nice en Mercedes, avec un tarif fixe et une discrétion adaptée au standing monégasque.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

@@ -1,20 +1,24 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'meet-and-greet';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Meet and Greet Paris — Accueil VIP Aéroport CDG & Orly | Amani Limousines',
-  description:
-    'Service Meet and Greet à Paris. Accueil avec pancarte nominative, assistance bagages, Fast Track CDG et Orly. Transfert VIP depuis les salles d\'arrivée.',
+  description: 'Service Meet and Greet à Paris. Accueil avec pancarte nominative, assistance bagages, Fast Track CDG et Orly. Transfert VIP depuis les salles d\'arrivée.',
+  canonical: 'https://www.amani-limousines.com/meet-and-greet',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/meet-and-greet',
     languages: {
       en: 'https://www.amani-limousines.com/en/meet-and-greet',
       'x-default': 'https://www.amani-limousines.com/meet-and-greet',
     },
   },
-};
+});
 
 export default function MeetAndGreetPage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -22,15 +26,10 @@ export default function MeetAndGreetPage() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Accueil VIP aéroport</p>
           <h1 className="heading mt-3">
-            Service <strong>Meet and Greet Paris</strong> —{' '}
-            <em>l'accueil qui fait la différence</em>
+            {c('h1', 'Service Meet and Greet Paris — l\'accueil qui fait la différence')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Le <strong>service Meet and Greet à Paris</strong> comble l'espace entre la sortie
-            de l'avion et l'intérieur du véhicule. Un assistant dédié vous attend en zone d'arrivée —
-            après la douane — avec une pancarte à votre nom, prend en charge vos bagages et vous
-            conduit directement au véhicule sans que vous ayez à chercher votre chauffeur dans
-            une foule de dizaines de pancartes.
+            {c('intro', 'Le service Meet and Greet à Paris comble l\'espace entre la sortie de l\'avion et l\'intérieur du véhicule. Un assistant dédié vous attend en zone d\'arrivée — après la douane — avec une pancarte à votre nom, prend en charge vos bagages et vous conduit directement au véhicule sans que vous ayez à chercher votre chauffeur dans une foule de dizaines de pancartes.')}
           </p>
         </div>
       </section>

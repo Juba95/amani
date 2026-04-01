@@ -1,20 +1,17 @@
 import type { Metadata } from 'next';
 import SEOLayoutEN from '@/components/SEOLayoutEN';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'en/cdg-airport-transfer';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Private Driver CDG Airport Paris — Charles de Gaulle Transfer | Amani Limousines',
-  description:
-    'Book a private driver at CDG airport Paris. Fixed price, flight tracking, VIP meet & greet. Mercedes S-Class and vans available 24/7. From €125.',
+  description: 'Book a private driver at CDG airport Paris. Fixed price, flight tracking, VIP meet & greet. Mercedes S-Class and vans available 24/7. From €125.',
+  canonical: 'https://www.amani-limousines.com/en/cdg-airport-transfer',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/en/cdg-airport-transfer',
     languages: { fr: 'https://www.amani-limousines.com/transfert-aeroport-cdg' },
   },
-  openGraph: {
-    title: 'Private Driver CDG Airport Paris | Amani Limousines',
-    description: 'CDG airport transfer with private driver. Fixed price, flight tracking.',
-    url: 'https://www.amani-limousines.com/en/cdg-airport-transfer',
-  },
-};
+});
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -30,6 +27,8 @@ const jsonLd = {
 };
 
 export default function CDGAirportTransferEN() {
+  const c = content(SLUG);
+
   return (
     <SEOLayoutEN>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
@@ -39,15 +38,10 @@ export default function CDGAirportTransferEN() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Charles de Gaulle Airport</p>
           <h1 className="heading mt-3">
-            <strong>Private driver CDG airport Paris</strong> —{' '}
-            <em>fixed price, no surprises</em>
+            {c('h1', 'Private driver CDG airport Paris — fixed price, no surprises')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Charles de Gaulle handles over 67 million passengers a year. Finding a reliable{' '}
-            <strong>private chauffeur at CDG Paris</strong> who actually knows the terminal layout
-            — and is there when you land — makes all the difference. Amani Limousines covers
-            all CDG terminals seven days a week, around the clock, at a price agreed before
-            your flight takes off.
+            {c('intro', 'Charles de Gaulle handles over 67 million passengers a year. Finding a reliable private chauffeur at CDG Paris who actually knows the terminal layout — and is there when you land — makes all the difference. Amani Limousines covers all CDG terminals seven days a week, around the clock, at a price agreed before your flight takes off.')}
           </p>
         </div>
       </section>

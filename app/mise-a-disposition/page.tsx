@@ -1,23 +1,20 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
-  title: 'Mise à Disposition Chauffeur Privé Paris — À l\'Heure | Amani Limousines',
-  description:
-    'Louez un chauffeur privé à l\'heure à Paris. Demi-journée, journée complète, plusieurs jours. Compteur arrêté pendant les attentes. Berlines Mercedes et vans VIP.',
+const SLUG = 'mise-a-disposition';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
+  title: 'Mise à Disposition Chauffeur Privé Paris — À l\',
+  description: 'Louez un chauffeur privé à l\'heure à Paris. Demi-journée, journée complète, plusieurs jours. Compteur arrêté pendant les attentes. Berlines Mercedes et vans VIP.',
+  canonical: 'https://www.amani-limousines.com/mise-a-disposition',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/mise-a-disposition',
     languages: {
       en: 'https://www.amani-limousines.com/en/hourly-hire',
       'x-default': 'https://www.amani-limousines.com/mise-a-disposition',
     },
   },
-  openGraph: {
-    title: 'Mise à Disposition Chauffeur Privé Paris | Amani Limousines',
-    description: 'Chauffeur privé à l\'heure à Paris. Flexible, prix fixe à l\'heure.',
-    url: 'https://www.amani-limousines.com/mise-a-disposition',
-  },
-};
+});
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -29,6 +26,8 @@ const jsonLd = {
 };
 
 export default function MiseADispositionPage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       <script
@@ -41,16 +40,10 @@ export default function MiseADispositionPage() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Chauffeur à l'heure</p>
           <h1 className="heading mt-3">
-            Mise à disposition d'un{' '}
-            <strong>chauffeur privé à Paris</strong> —{' '}
-            <em>votre agenda, notre flexibilité</em>
+            {c('h1', 'Mise à disposition d\'un chauffeur privé à Paris — votre agenda, notre flexibilité')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Contrairement au transfert point A–point B, la mise à disposition place un
-            <strong> chauffeur privé à Paris</strong> à votre service pour toute une durée déterminée.
-            Le véhicule reste à votre disposition entre chaque rendez-vous — garé à proximité,
-            disponible en deux minutes — ce qui transforme une journée de réunions en Île-de-France
-            en quelque chose de beaucoup plus gérable.
+            {c('intro', 'Contrairement au transfert point A–point B, la mise à disposition place un chauffeur privé à Paris à votre service pour toute une durée déterminée. Le véhicule reste à votre disposition entre chaque rendez-vous — garé à proximité, disponible en deux minutes — ce qui transforme une journée de réunions en Île-de-France en quelque chose de beaucoup plus gérable.')}
           </p>
         </div>
       </section>

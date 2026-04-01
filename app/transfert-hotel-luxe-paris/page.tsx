@@ -1,19 +1,21 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
 import Link from 'next/link';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'transfert-hotel-luxe-paris';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Transfert Hôtel de Luxe Paris — Chauffeur Palace & Conciergerie | Amani Limousines',
-  description:
-    'Transfert chauffeur privé vers les palaces parisiens : Ritz, George V, Plaza Athénée, Bristol, Meurice, Shangri-La, Peninsula, Lutetia. Service conciergerie et accueil aéroport.',
+  description: 'Transfert chauffeur privé vers les palaces parisiens : Ritz, George V, Plaza Athénée, Bristol, Meurice, Shangri-La, Peninsula, Lutetia. Service conciergerie et accueil aéroport.',
+  canonical: 'https://www.amani-limousines.com/transfert-hotel-luxe-paris',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/transfert-hotel-luxe-paris',
     languages: {
       en: 'https://www.amani-limousines.com/en/luxury-hotel-transfer-paris',
       'x-default': 'https://www.amani-limousines.com/transfert-hotel-luxe-paris',
     },
   },
-};
+});
 
 const hotels = [
   { nom: 'Hôtel Ritz Paris', note: 'Place Vendôme, 1er arrondissement' },
@@ -50,6 +52,8 @@ const services = [
 ];
 
 export default function TransfertHotelLuxeParis() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -57,16 +61,10 @@ export default function TransfertHotelLuxeParis() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Palaces — Paris</p>
           <h1 className="heading mt-3">
-            <strong>Transfert hôtel de luxe à Paris</strong> —{' '}
-            <em>de l'aéroport à votre palace, sans transition</em>
+            {c('h1', 'Transfert hôtel de luxe à Paris — de l\'aéroport à votre palace, sans transition')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            L'expérience d'un séjour dans un <strong>palace parisien</strong> commence dès
-            l'aéroport. Un chauffeur qui vous attend avec votre nom, une berline impeccable,
-            un trajet calme jusqu'à la porte de votre hôtel — c'est le premier contact avec
-            le niveau de service que vous attendez. Amani Limousines travaille avec les
-            concierges des plus grands hôtels de Paris pour garantir une arrivée et un départ
-            à la hauteur de l'établissement.
+            {c('intro', 'L\'expérience d\'un séjour dans un palace parisien commence dès l\'aéroport. Un chauffeur qui vous attend avec votre nom, une berline impeccable, un trajet calme jusqu\'à la porte de votre hôtel — c\'est le premier contact avec le niveau de service que vous attendez. Amani Limousines travaille avec les concierges des plus grands hôtels de Paris pour garantir une arrivée et un départ à la hauteur de l\'établissement.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

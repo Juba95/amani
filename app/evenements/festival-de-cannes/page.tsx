@@ -1,16 +1,18 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'evenements/festival-de-cannes';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Privé Festival de Cannes — Transport Nice-Cannes VIP | Amani',
-  description:
-    'Transport VIP pour le Festival de Cannes. Transferts Nice CDG, accès Croisette, Red Carpet. Chauffeur privé Cannes disponible toute la durée du festival.',
-  alternates: {
-    canonical: 'https://www.amani-limousines.com/evenements/festival-de-cannes',
-  },
-};
+  description: 'Transport VIP pour le Festival de Cannes. Transferts Nice CDG, accès Croisette, Red Carpet. Chauffeur privé Cannes disponible toute la durée du festival.',
+  canonical: 'https://www.amani-limousines.com/evenements/festival-de-cannes',
+});
 
 export default function FestivalDeCannesPage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -18,16 +20,10 @@ export default function FestivalDeCannesPage() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Événement — Mai</p>
           <h1 className="heading mt-3">
-            <strong>Chauffeur privé Festival de Cannes</strong> —{' '}
-            <em>Croisette, Red Carpet, yachts</em>
+            {c('h1', 'Chauffeur privé Festival de Cannes — Croisette, Red Carpet, yachts')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Cannes en mai, c'est deux semaines où la Côte d'Azur concentre plus de personnalités
-            au mètre carré que n'importe quel autre endroit au monde. Le transport y est une
-            affaire de positionnement, de timing et de discrétion. Amani Limousines déploie
-            une équipe dédiée pendant toute la durée du festival pour les transferts{' '}
-            <strong>Nice–Cannes avec chauffeur privé</strong>, les navettes Croisette et les
-            accès réservés aux projections et soirées.
+            {c('intro', 'Cannes en mai, c\'est deux semaines où la Côte d\'Azur concentre plus de personnalités au mètre carré que n\'importe quel autre endroit au monde. Le transport y est une affaire de positionnement, de timing et de discrétion. Amani Limousines déploie une équipe dédiée pendant toute la durée du festival pour les transferts Nice–Cannes avec chauffeur privé, les navettes Croisette et les accès réservés aux projections et soirées.')}
           </p>
         </div>
       </section>

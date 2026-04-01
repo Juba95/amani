@@ -1,14 +1,14 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'transfert-orly-paris';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Transfert Orly Paris Centre — Chauffeur Privé Aéroport Orly | Amani Limousines',
-  description:
-    'Transfert entre l\'aéroport Orly et Paris centre avec chauffeur privé. 18 km, 25–35 min. Prix fixe à partir de 80 €. Tous terminaux couverts, disponible 24h/24.',
-  alternates: {
-    canonical: 'https://www.amani-limousines.com/transfert-orly-paris',
-  },
-};
+  description: 'Transfert entre l\'aéroport Orly et Paris centre avec chauffeur privé. 18 km, 25–35 min. Prix fixe à partir de 80 €. Tous terminaux couverts, disponible 24h/24.',
+  canonical: 'https://www.amani-limousines.com/transfert-orly-paris',
+});
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -22,6 +22,8 @@ const jsonLd = {
 };
 
 export default function TransfertOrlyParisPage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
@@ -31,15 +33,10 @@ export default function TransfertOrlyParisPage() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Orly ↔ Paris Centre</p>
           <h1 className="heading mt-3">
-            <strong>Chauffeur privé Orly Paris</strong> —{' '}
-            <em>18 km, le trajet aéroport le plus rapide de la capitale</em>
+            {c('h1', 'Chauffeur privé Orly Paris — 18 km, le trajet aéroport le plus rapide de la capitale')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Orly est l'aéroport géographiquement le plus proche du cœur de Paris. 18 kilomètres
-            séparent Orly 4 de la Place d'Italie — une distance que l'on avale en 25 à 35 minutes
-            par l'A6B, hors heures de pointe. Avec un <strong>chauffeur privé Orly Paris centre</strong>,
-            vous êtes dans votre hôtel ou votre domicile bien avant que vos bagages aient eu le
-            temps de vous peser.
+            {c('intro', 'Orly est l\'aéroport géographiquement le plus proche du cœur de Paris. 18 kilomètres séparent Orly 4 de la Place d\'Italie — une distance que l\'on avale en 25 à 35 minutes par l\'A6B, hors heures de pointe. Avec un chauffeur privé Orly Paris centre, vous êtes dans votre hôtel ou votre domicile bien avant que vos bagages aient eu le temps de vous peser.')}
           </p>
         </div>
       </section>

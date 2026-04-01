@@ -1,16 +1,18 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'a-propos';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'À Propos — Amani Limousines | Service de Chauffeur Privé de Prestige à Paris',
-  description:
-    'Amani Limousines, service de chauffeur privé de prestige à Paris. Notre histoire, nos valeurs, notre flotte de 300+ véhicules. Ambassades, palaces, aviation privée.',
-  alternates: {
-    canonical: 'https://www.amani-limousines.com/a-propos',
-  },
-};
+  description: 'Amani Limousines, service de chauffeur privé de prestige à Paris. Notre histoire, nos valeurs, notre flotte de 300+ véhicules. Ambassades, palaces, aviation privée.',
+  canonical: 'https://www.amani-limousines.com/a-propos',
+});
 
 export default function AProposPage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -18,14 +20,10 @@ export default function AProposPage() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Notre histoire</p>
           <h1 className="heading mt-3">
-            Amani Limousines — <em>service de</em>{' '}
-            <strong>chauffeur privé de prestige à Paris</strong>
+            {c('h1', 'Amani Limousines — service de chauffeur privé de prestige à Paris')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Amani Limousines est un prestataire de transport de prestige basé à Paris,
-            spécialisé dans le service aux ambassades, aux États étrangers, aux family offices,
-            aux palaces parisiens et à l'aviation privée. Nous opérons 24 heures sur 24,
-            365 jours par an, avec une flotte de plus de 300 véhicules de moins de trois ans.
+            {c('intro', 'Amani Limousines est un prestataire de transport de prestige basé à Paris, spécialisé dans le service aux ambassades, aux États étrangers, aux family offices, aux palaces parisiens et à l\'aviation privée. Nous opérons 24 heures sur 24, 365 jours par an, avec une flotte de plus de 300 véhicules de moins de trois ans.')}
           </p>
         </div>
       </section>

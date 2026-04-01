@@ -1,19 +1,21 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
 import Link from 'next/link';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'chauffeur-mariage';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Mariage France — Voiture avec Chauffeur pour Mariage | Amani Limousines',
-  description:
-    'Chauffeur mariage partout en France : Paris, Deauville, Côte d\'Azur, châteaux, vignobles. Voiture des mariés, navettes invités, coordination jour J. Mercedes Classe S, Classe G, Maybach.',
+  description: 'Chauffeur mariage partout en France : Paris, Deauville, Côte d\'Azur, châteaux, vignobles. Voiture des mariés, navettes invités, coordination jour J. Mercedes Classe S, Classe G, Maybach.',
+  canonical: 'https://www.amani-limousines.com/chauffeur-mariage',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/chauffeur-mariage',
     languages: {
       en: 'https://www.amani-limousines.com/en/wedding-chauffeur',
       'x-default': 'https://www.amani-limousines.com/chauffeur-mariage',
     },
   },
-};
+});
 
 const services = [
   {
@@ -48,6 +50,8 @@ const destinations = [
 ];
 
 export default function ChauffeurMariage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -55,16 +59,10 @@ export default function ChauffeurMariage() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Mariage — France entière</p>
           <h1 className="heading mt-3">
-            <strong>Chauffeur mariage en France</strong> —{' '}
-            <em>de Paris aux vignobles, un transport à la hauteur du jour J</em>
+            {c('h1', 'Chauffeur mariage en France — de Paris aux vignobles, un transport à la hauteur du jour J')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Un mariage ne se déroule pas toujours à Paris. Il a lieu dans un château en Touraine,
-            un mas en Provence, un domaine viticole à Saint-Émilion ou une villa face à la
-            Méditerranée. Amani Limousines assure le transport des mariés et des invités partout
-            en France, avec des véhicules à la mesure de l'événement : Mercedes Classe S,
-            Classe G ou Maybach. Le chauffeur porte le costume, connaît le programme et reste
-            disponible du matin jusqu'au bout de la nuit.
+            {c('intro', 'Un mariage ne se déroule pas toujours à Paris. Il a lieu dans un château en Touraine, un mas en Provence, un domaine viticole à Saint-Émilion ou une villa face à la Méditerranée. Amani Limousines assure le transport des mariés et des invités partout en France, avec des véhicules à la mesure de l\'événement : Mercedes Classe S, Classe G ou Maybach. Le chauffeur porte le costume, connaît le programme et reste disponible du matin jusqu\'au bout de la nuit.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
 import Link from 'next/link';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'chauffeur-russophone';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Russophone Paris — Chauffeur Privé Parlant Russe | Amani Limousines',
-  description:
-    'Chauffeur privé parlant russe à Paris. Tourisme de luxe, shopping, événements mondains. Communication en russe. Disponible 24h/24.',
-  alternates: {
-    canonical: 'https://www.amani-limousines.com/chauffeur-russophone',
-  },
-};
+  description: 'Chauffeur privé parlant russe à Paris. Tourisme de luxe, shopping, événements mondains. Communication en russe. Disponible 24h/24.',
+  canonical: 'https://www.amani-limousines.com/chauffeur-russophone',
+});
 
 const services = [
   {
@@ -46,6 +46,8 @@ const situations = [
 ];
 
 export default function ChauffeurRussophonePage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -53,16 +55,10 @@ export default function ChauffeurRussophonePage() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Chauffeur Russophone</p>
           <h1 className="heading mt-3">
-            Chauffeur privé <em>russophone</em> à <strong>Paris</strong>
+            {c('h1', 'Chauffeur privé russophone à Paris')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Paris a toujours attiré la clientèle russophone. Shopping sur les
-            Champs-Élysées, expos au Grand Palais, soirées dans les palaces du 8e.
-            Avoir un <strong>chauffeur qui parle russe</strong>, c'est pouvoir
-            dire exactement où vous voulez aller, demander un détour par la rue
-            de la Paix, ou changer de programme à la dernière minute — sans que
-            ça devienne compliqué. Nos chauffeurs russophones connaissent Paris
-            par coeur et sont dispo jour et nuit.
+            {c('intro', 'Paris a toujours attiré la clientèle russophone. Shopping sur les Champs-Élysées, expos au Grand Palais, soirées dans les palaces du 8e. Avoir un chauffeur qui parle russe, c\'est pouvoir dire exactement où vous voulez aller, demander un détour par la rue de la Paix, ou changer de programme à la dernière minute — sans que ça devienne compliqué. Nos chauffeurs russophones connaissent Paris par coeur et sont dispo jour et nuit.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

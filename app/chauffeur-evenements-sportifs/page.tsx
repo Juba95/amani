@@ -1,19 +1,21 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
 import Link from 'next/link';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'chauffeur-evenements-sportifs';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Événements Sportifs — Transport VIP Compétitions | Amani Limousines',
-  description:
-    'Chauffeur privé pour événements sportifs : Roland-Garros, Grand Prix Monaco, 24h du Mans, Tour de France, courses hippiques. VIP hospitality, navettes équipes, transferts athlètes.',
+  description: 'Chauffeur privé pour événements sportifs : Roland-Garros, Grand Prix Monaco, 24h du Mans, Tour de France, courses hippiques. VIP hospitality, navettes équipes, transferts athlètes.',
+  canonical: 'https://www.amani-limousines.com/chauffeur-evenements-sportifs',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/chauffeur-evenements-sportifs',
     languages: {
       en: 'https://www.amani-limousines.com/en/sports-events-chauffeur',
       'x-default': 'https://www.amani-limousines.com/chauffeur-evenements-sportifs',
     },
   },
-};
+});
 
 const evenements = [
   { nom: 'Roland-Garros', note: 'Loges VIP, transferts joueurs, navettes partenaires' },
@@ -48,6 +50,8 @@ const services = [
 ];
 
 export default function ChauffeurEvenementsSportifs() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -55,16 +59,10 @@ export default function ChauffeurEvenementsSportifs() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Sport — France & Monaco</p>
           <h1 className="heading mt-3">
-            <strong>Chauffeur pour événements sportifs</strong> —{' '}
-            <em>transport VIP pour les grandes compétitions</em>
+            {c('h1', 'Chauffeur pour événements sportifs — transport VIP pour les grandes compétitions')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Les grands <strong>événements sportifs</strong> génèrent une logistique de transport
-            complexe : accès restreints, routes fermées, affluence massive, horaires imprévisibles.
-            Amani Limousines intervient sur les plus grandes compétitions sportives en France et
-            à Monaco, avec des chauffeurs qui connaissent les sites, les protocoles d'accès et
-            les itinéraires de repli. Que vous soyez athlète, sponsor, organisateur ou spectateur
-            VIP, le transport ne doit jamais être un sujet de préoccupation le jour J.
+            {c('intro', 'Les grands événements sportifs génèrent une logistique de transport complexe : accès restreints, routes fermées, affluence massive, horaires imprévisibles. Amani Limousines intervient sur les plus grandes compétitions sportives en France et à Monaco, avec des chauffeurs qui connaissent les sites, les protocoles d\'accès et les itinéraires de repli. Que vous soyez athlète, sponsor, organisateur ou spectateur VIP, le transport ne doit jamais être un sujet de préoccupation le jour J.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

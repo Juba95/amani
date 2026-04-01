@@ -1,20 +1,17 @@
 import type { Metadata } from 'next';
 import SEOLayoutEN from '@/components/SEOLayoutEN';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'en/private-chauffeur-bordeaux';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Private Chauffeur Bordeaux — Paris to Bordeaux Transfer | Amani Limousines',
-  description:
-    'Private chauffeur service Paris to Bordeaux. Driver available in Bordeaux for business and leisure. Fixed price, Mercedes fleet.',
+  description: 'Private chauffeur service Paris to Bordeaux. Driver available in Bordeaux for business and leisure. Fixed price, Mercedes fleet.',
+  canonical: 'https://www.amani-limousines.com/en/private-chauffeur-bordeaux',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/en/private-chauffeur-bordeaux',
     languages: { fr: 'https://www.amani-limousines.com/longue-distance' },
   },
-  openGraph: {
-    title: 'Private Chauffeur Bordeaux | Amani Limousines',
-    description: 'Private driver Paris–Bordeaux transfer. Fixed pricing, 5h30 by road.',
-    url: 'https://www.amani-limousines.com/en/private-chauffeur-bordeaux',
-  },
-};
+});
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -31,6 +28,8 @@ const jsonLd = {
 };
 
 export default function PrivateChauffeurBordeauxPage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayoutEN>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
@@ -40,11 +39,10 @@ export default function PrivateChauffeurBordeauxPage() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Long distance — Paris ↔ Bordeaux</p>
           <h1 className="heading mt-3">
-            <strong>Private chauffeur Paris–Bordeaux</strong> —{' '}
-            <em>and Bordeaux area</em>
+            {c('h1', 'Private chauffeur Paris–Bordeaux — and Bordeaux area')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Bordeaux sits 580 km southwest of Paris on the A10. By TGV it is two hours, but the train leaves you at Saint-Jean station, not at the Château Pichon Baron or the conference centre at Bordeaux Lac. A private driver covers the last mile — and the first one. The journey itself takes around 5 hours 30 minutes by road, which for some clients is enough time to work through a set of documents or a few calls without the constraints of a train carriage.
+            {c('intro', 'Bordeaux sits 580 km southwest of Paris on the A10. By TGV it is two hours, but the train leaves you at Saint-Jean station, not at the Château Pichon Baron or the conference centre at Bordeaux Lac. A private driver covers the last mile — and the first one. The journey itself takes around 5 hours 30 minutes by road, which for some clients is enough time to work through a set of documents or a few calls without the constraints of a train carriage.')}
           </p>
         </div>
       </section>

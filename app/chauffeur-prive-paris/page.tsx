@@ -1,19 +1,21 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
 import Link from 'next/link';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'chauffeur-prive-paris';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Privé Paris — Service 24h/24, Flotte Mercedes | Amani Limousines',
-  description:
-    "Chauffeur privé à Paris pour transferts aéroport, mise à disposition et longue distance. Flotte Mercedes Classe E, S et V. Tarif fixe, ponctualité garantie.",
+  description: "Chauffeur privé à Paris pour transferts aéroport, mise à disposition et longue distance. Flotte Mercedes Classe E, S et V. Tarif fixe, ponctualité garantie.",
+  canonical: 'https://www.amani-limousines.com/chauffeur-prive-paris',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/chauffeur-prive-paris',
     languages: {
       en: 'https://www.amani-limousines.com/en/private-chauffeur-paris',
       'x-default': 'https://www.amani-limousines.com/chauffeur-prive-paris',
     },
   },
-};
+});
 
 const zones = [
   { zone: '1er – 8ème arrondissement', note: 'Triangle d\u2019or, Opéra, Louvre, palaces' },
@@ -48,6 +50,8 @@ const occasions = [
 ];
 
 export default function ChauffeurPriveParis() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -55,15 +59,10 @@ export default function ChauffeurPriveParis() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Paris — Île-de-France</p>
           <h1 className="heading mt-3">
-            <strong>Chauffeur privé à Paris</strong> —{' '}
-            <em>disponible 24h/24, sept jours sur sept</em>
+            {c('h1', 'Chauffeur privé à Paris — disponible 24h/24, sept jours sur sept')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Paris est une ville où le temps de trajet peut basculer d'une demi-heure à deux
-            heures selon l'heure et l'itinéraire. Un <strong>chauffeur privé à Paris</strong>{' '}
-            connaît ces variations, les contourne et vous livre à l'heure. Amani Limousines
-            opère dans toute l'Île-de-France depuis 2012 : aéroports, palaces, sièges sociaux,
-            événements. Tarifs fixes, flotte Mercedes, disponibilité sept jours sur sept.
+            {c('intro', "Paris est une ville où le temps de trajet peut basculer d'une demi-heure à deux heures selon l'heure et l'itinéraire. Un chauffeur privé à Paris connaît ces variations, les contourne et vous livre à l'heure. Amani Limousines opère dans toute l'Île-de-France depuis 2012 : aéroports, palaces, sièges sociaux, événements. Tarifs fixes, flotte Mercedes, disponibilité sept jours sur sept.")}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

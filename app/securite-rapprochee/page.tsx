@@ -1,20 +1,24 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'securite-rapprochee';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Sécurité Rapprochée Paris — Transport Sécurisé & Garde du Corps | Amani Limousines',
-  description:
-    'Service de sécurité rapprochée et transport sécurisé à Paris. Escorte pour personnalités, dirigeants et diplomates. Véhicules banalisés, chauffeurs formés.',
+  description: 'Service de sécurité rapprochée et transport sécurisé à Paris. Escorte pour personnalités, dirigeants et diplomates. Véhicules banalisés, chauffeurs formés.',
+  canonical: 'https://www.amani-limousines.com/securite-rapprochee',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/securite-rapprochee',
     languages: {
       en: 'https://www.amani-limousines.com/en/close-protection',
       'x-default': 'https://www.amani-limousines.com/securite-rapprochee',
     },
   },
-};
+});
 
 export default function SecuriteRapprochee() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -22,16 +26,10 @@ export default function SecuriteRapprochee() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Close protection — Paris</p>
           <h1 className="heading mt-3">
-            <strong>Sécurité rapprochée et transport sécurisé à Paris</strong> —{' '}
-            <em>discrétion avant tout</em>
+            {c('h1', 'Sécurité rapprochée et transport sécurisé à Paris — discrétion avant tout')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            La sécurité rapprochée dans un contexte urbain comme Paris n'est pas qu'une affaire
-            de véhicules blindés. C'est surtout une question d'anticipation, de discrétion et
-            de choix d'itinéraires. Nos chauffeurs dédiés aux missions de{' '}
-            <strong>protection rapprochée à Paris</strong> sont formés à la conduite de sécurité,
-            à la lecture de l'environnement urbain et aux protocoles de communication avec les
-            équipes de protection.
+            {c('intro', 'La sécurité rapprochée dans un contexte urbain comme Paris n\'est pas qu\'une affaire de véhicules blindés. C\'est surtout une question d\'anticipation, de discrétion et de choix d\'itinéraires. Nos chauffeurs dédiés aux missions de protection rapprochée à Paris sont formés à la conduite de sécurité, à la lecture de l\'environnement urbain et aux protocoles de communication avec les équipes de protection.')}
           </p>
         </div>
       </section>

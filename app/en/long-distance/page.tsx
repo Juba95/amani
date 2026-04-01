@@ -1,15 +1,17 @@
 import type { Metadata } from 'next';
 import SEOLayoutEN from '@/components/SEOLayoutEN';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'en/long-distance';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Long Distance Private Driver from Paris — France & Europe | Amani Limousines',
-  description:
-    'Long distance chauffeur service from Paris. Paris–Deauville, Paris–Brussels, Paris–Lyon, Paris–Monaco. Wi-Fi equipped Mercedes and VIP vans. Fixed price.',
+  description: 'Long distance chauffeur service from Paris. Paris–Deauville, Paris–Brussels, Paris–Lyon, Paris–Monaco. Wi-Fi equipped Mercedes and VIP vans. Fixed price.',
+  canonical: 'https://www.amani-limousines.com/en/long-distance',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/en/long-distance',
     languages: { fr: 'https://www.amani-limousines.com/longue-distance' },
   },
-};
+});
 
 const routes = [
   { route: 'Paris → Deauville', km: '200 km', time: '2h30', note: 'Weekends, horse races, film festival' },
@@ -23,21 +25,18 @@ const routes = [
 ];
 
 export default function LongDistanceEN() {
+  const c = content(SLUG);
+
   return (
     <SEOLayoutEN>
       <section className="pt-36 pb-16 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
           <p className="tag">Long distance — France & Europe</p>
           <h1 className="heading mt-3">
-            <strong>Long distance private driver from Paris</strong> —{' '}
-            <em>your rolling office</em>
+            {c('h1', 'Long distance private driver from Paris — your rolling office')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            The train doesn't always reach your destination. The plane forces airports that are
-            often far from where you actually need to be. For journeys between 150 and 1,000 km,
-            a <strong>long distance private chauffeur from Paris</strong> offers something neither
-            the TGV nor an aircraft can match: a working environment where you control the schedule,
-            the stops and the pace. Wi-Fi, 220V sockets, individual air conditioning, silence.
+            {c('intro', 'The train doesn\'t always reach your destination. The plane forces airports that are often far from where you actually need to be. For journeys between 150 and 1,000 km, a long distance private chauffeur from Paris offers something neither the TGV nor an aircraft can match: a working environment where you control the schedule, the stops and the pace. Wi-Fi, 220V sockets, individual air conditioning, silence.')}
           </p>
         </div>
       </section>

@@ -1,21 +1,18 @@
 import type { Metadata } from 'next';
 import SEOLayoutEN from '@/components/SEOLayoutEN';
 import Link from 'next/link';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'en/marseille-airport-transfer';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Marseille Airport Transfer — Private Chauffeur from Paris | Amani Limousines',
-  description:
-    'Private chauffeur Paris to Marseille and Marseille-Provence airport. 780 km, fixed rate. Cannes, Nice and the Côte d\u2019Azur also covered.',
+  description: 'Private chauffeur Paris to Marseille and Marseille-Provence airport. 780 km, fixed rate. Cannes, Nice and the Côte d\u2019Azur also covered.',
+  canonical: 'https://www.amani-limousines.com/en/marseille-airport-transfer',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/en/marseille-airport-transfer',
     languages: { fr: 'https://www.amani-limousines.com/transfert-marseille' },
   },
-  openGraph: {
-    title: 'Marseille Airport Transfer — Private Chauffeur from Paris | Amani Limousines',
-    description: 'Private chauffeur Paris to Marseille. Fixed rates, Mediterranean coast.',
-    url: 'https://www.amani-limousines.com/en/marseille-airport-transfer',
-  },
-};
+});
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -33,6 +30,8 @@ const jsonLd = {
 };
 
 export default function MarseilleAirportTransferEN() {
+  const c = content(SLUG);
+
   return (
     <SEOLayoutEN>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
@@ -42,14 +41,10 @@ export default function MarseilleAirportTransferEN() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Long distance — Paris ↔ Marseille & Côte d'Azur</p>
           <h1 className="heading mt-3">
-            <strong>Private chauffeur Paris–Marseille</strong> — 780 km along the A6 and A7
+            {c('h1', 'Private chauffeur Paris–Marseille — 780 km along the A6 and A7')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Marseille-Provence (MRS) serves the whole western Mediterranean coast. It's also 780
-            km from Paris — close to 8 hours by road, which makes it a full working day in the
-            car. Most clients who make this journey have a reason: a superyacht, a real estate
-            deal, or a property in the hills above Cassis. The drive is manageable in a single
-            stretch, or you can break it in Lyon (halfway).
+            {c('intro', 'Marseille-Provence (MRS) serves the whole western Mediterranean coast. It\'s also 780 km from Paris — close to 8 hours by road, which makes it a full working day in the car. Most clients who make this journey have a reason: a superyacht, a real estate deal, or a property in the hills above Cassis. The drive is manageable in a single stretch, or you can break it in Lyon (halfway).')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

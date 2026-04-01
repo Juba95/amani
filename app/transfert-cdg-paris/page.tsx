@@ -1,31 +1,28 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'transfert-cdg-paris';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Transfert CDG Paris Centre — Chauffeur Privé Charles de Gaulle | Amani',
-  description:
-    'Transfert entre l\'aéroport CDG et Paris centre avec chauffeur privé. 32 km, 45 minutes. Prix fixe à partir de 125 €. Suivi de vol, disponible 24h/24.',
-  alternates: {
-    canonical: 'https://www.amani-limousines.com/transfert-cdg-paris',
-  },
-};
+  description: 'Transfert entre l\'aéroport CDG et Paris centre avec chauffeur privé. 32 km, 45 minutes. Prix fixe à partir de 125 €. Suivi de vol, disponible 24h/24.',
+  canonical: 'https://www.amani-limousines.com/transfert-cdg-paris',
+});
 
 export default function TransfertCDGParisPage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       <section className="pt-36 pb-16 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
           <p className="tag">CDG ↔ Paris Centre</p>
           <h1 className="heading mt-3">
-            <strong>Transfert CDG Paris</strong> avec chauffeur privé —{' '}
-            <em>32 km, prix fixe</em>
+            {c('h1', 'Transfert CDG Paris avec chauffeur privé — 32 km, prix fixe')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Le trajet entre l'aéroport Charles de Gaulle et Paris intra-muros est l'un des
-            plus empruntés d'Île-de-France. 32 kilomètres séparent le Terminal 2E de Notre-Dame
-            de Paris. En conditions normales, comptez 40 à 50 minutes. Avec un{' '}
-            <strong>chauffeur privé CDG Paris</strong> Amani, le prix est fixé à l'avance
-            et ne varie pas selon la durée réelle du trajet.
+            {c('intro', 'Le trajet entre l\'aéroport Charles de Gaulle et Paris intra-muros est l\'un des plus empruntés d\'Île-de-France. 32 kilomètres séparent le Terminal 2E de Notre-Dame de Paris. En conditions normales, comptez 40 à 50 minutes. Avec un chauffeur privé CDG Paris Amani, le prix est fixé à l\'avance et ne varie pas selon la durée réelle du trajet.')}
           </p>
         </div>
       </section>

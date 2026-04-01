@@ -1,19 +1,21 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
 import Link from 'next/link';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'taxi-moto';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Taxi Moto Paris — Moto Taxi Premium & Rapide | Amani Limousines',
-  description:
-    'Taxi moto à Paris : transport rapide en deux-roues pour éviter les embouteillages. Idéal pour aéroports, gares et rendez-vous urgents. Équipement premium, pilotes expérimentés.',
+  description: 'Taxi moto à Paris : transport rapide en deux-roues pour éviter les embouteillages. Idéal pour aéroports, gares et rendez-vous urgents. Équipement premium, pilotes expérimentés.',
+  canonical: 'https://www.amani-limousines.com/taxi-moto',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/taxi-moto',
     languages: {
       en: 'https://www.amani-limousines.com/en/motorcycle-taxi',
       'x-default': 'https://www.amani-limousines.com/taxi-moto',
     },
   },
-};
+});
 
 const occasions = [
   {
@@ -62,6 +64,8 @@ const faq = [
 ];
 
 export default function TaxiMoto() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -69,16 +73,10 @@ export default function TaxiMoto() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Moto taxi — Paris</p>
           <h1 className="heading mt-3">
-            <strong>Taxi moto à Paris</strong> —{' '}
-            <em>le moyen le plus rapide de traverser la capitale</em>
+            {c('h1', 'Taxi moto à Paris — le moyen le plus rapide de traverser la capitale')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Paris aux heures de pointe, c'est en moyenne 1h10 pour traverser la ville en voiture.
-            En <strong>taxi moto</strong>, c'est 25 minutes. Nos pilotes vous transportent
-            en toute sécurité sur des motos premium, avec un équipement complet fourni. Le
-            service est pensé pour les professionnels pressés qui ne peuvent pas se permettre
-            d'arriver en retard : transferts aéroport express, enchaînement de rendez-vous,
-            déplacements urgents dans tout Paris et l'Île-de-France.
+            {c('intro', 'Paris aux heures de pointe, c\'est en moyenne 1h10 pour traverser la ville en voiture. En taxi moto, c\'est 25 minutes. Nos pilotes vous transportent en toute sécurité sur des motos premium, avec un équipement complet fourni. Le service est pensé pour les professionnels pressés qui ne peuvent pas se permettre d\'arriver en retard : transferts aéroport express, enchaînement de rendez-vous, déplacements urgents dans tout Paris et l\'Île-de-France.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

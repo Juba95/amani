@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
 import Link from 'next/link';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'chauffeur-mandarin';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Mandarin Paris — Chauffeur Privé Parlant Chinois | Amani Limousines',
-  description:
-    'Chauffeur privé parlant mandarin à Paris. Shopping de luxe, tourisme en groupe, délégations d\'affaires chinoises. Communication en chinois. Disponible 24h/24.',
-  alternates: {
-    canonical: 'https://www.amani-limousines.com/chauffeur-mandarin',
-  },
-};
+  description: 'Chauffeur privé parlant mandarin à Paris. Shopping de luxe, tourisme en groupe, délégations d\'affaires chinoises. Communication en chinois. Disponible 24h/24.',
+  canonical: 'https://www.amani-limousines.com/chauffeur-mandarin',
+});
 
 const services = [
   {
@@ -46,6 +46,8 @@ const situations = [
 ];
 
 export default function ChauffeurMandarinPage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -53,16 +55,10 @@ export default function ChauffeurMandarinPage() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Chauffeur Mandarin</p>
           <h1 className="heading mt-3">
-            Chauffeur privé parlant <em>mandarin</em> à <strong>Paris</strong>
+            {c('h1', 'Chauffeur privé parlant mandarin à Paris')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Paris attire énormément de visiteurs chinois, et on le voit tous les jours.
-            Le problème, c'est que la barrière de la langue peut vite devenir un vrai
-            casse-tête ici. Avec un{' '}
-            <strong>chauffeur qui parle mandarin</strong>, tout se simplifie. Il connaît
-            les adresses que la clientèle chinoise aime, il sait comment fonctionne
-            Paris, et il parle votre langue. Nos chauffeurs sinophones sont dispo
-            24h/24, à Paris comme en province.
+            {c('intro', 'Paris attire énormément de visiteurs chinois, et on le voit tous les jours. Le problème, c\'est que la barrière de la langue peut vite devenir un vrai casse-tête ici. Avec un chauffeur qui parle mandarin, tout se simplifie. Il connaît les adresses que la clientèle chinoise aime, il sait comment fonctionne Paris, et il parle votre langue. Nos chauffeurs sinophones sont dispo 24h/24, à Paris comme en province.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

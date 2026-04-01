@@ -1,16 +1,18 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'transfert-cdg-gare-de-lyon';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Privé CDG Gare de Lyon — Transfert Aéroport Paris | Amani Limousines',
-  description:
-    'Transfert entre l\'aéroport CDG et la Gare de Lyon avec chauffeur privé. 35 km, 45 min. TGV Lyon, Marseille, Cannes. Prix fixe, disponible 24h/24.',
-  alternates: {
-    canonical: 'https://www.amani-limousines.com/transfert-cdg-gare-de-lyon',
-  },
-};
+  description: 'Transfert entre l\'aéroport CDG et la Gare de Lyon avec chauffeur privé. 35 km, 45 min. TGV Lyon, Marseille, Cannes. Prix fixe, disponible 24h/24.',
+  canonical: 'https://www.amani-limousines.com/transfert-cdg-gare-de-lyon',
+});
 
 export default function TransfertCDGGareLyonPage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -18,16 +20,10 @@ export default function TransfertCDGGareLyonPage() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">CDG ↔ Gare de Lyon · 35 km</p>
           <h1 className="heading mt-3">
-            <strong>Chauffeur privé CDG Gare de Lyon</strong> —{' '}
-            <em>TGV Sud, correspondance directe</em>
+            {c('h1', 'Chauffeur privé CDG Gare de Lyon — TGV Sud, correspondance directe')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            La Gare de Lyon dessert Lyon, Marseille, Montpellier, Cannes, Nice, Genève et
-            l'Italie. Depuis CDG, elle est à 35 km — traversant Paris du nord au sud-est.
-            Ce trajet est particulièrement utilisé par les voyageurs internationaux qui arrivent
-            à Charles de Gaulle et poursuivent vers le sud de la France ou la Côte d'Azur en TGV.
-            Un <strong>chauffeur privé CDG Gare de Lyon</strong> rend cette correspondance
-            fiable, même avec des bagages importants.
+            {c('intro', 'La Gare de Lyon dessert Lyon, Marseille, Montpellier, Cannes, Nice, Genève et l\'Italie. Depuis CDG, elle est à 35 km — traversant Paris du nord au sud-est. Ce trajet est particulièrement utilisé par les voyageurs internationaux qui arrivent à Charles de Gaulle et poursuivent vers le sud de la France ou la Côte d\'Azur en TGV. Un chauffeur privé CDG Gare de Lyon rend cette correspondance fiable, même avec des bagages importants.')}
           </p>
         </div>
       </section>

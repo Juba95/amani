@@ -1,19 +1,21 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
 import Link from 'next/link';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'transfert-aeroport-economique';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Transfert Aéroport Paris — Prix Fixe Sans Surprises | Amani Limousines',
-  description:
-    'Transfert aéroport Paris CDG, Orly et Beauvais en voiture avec chauffeur. Prix fixe annoncé avant la réservation. Sans compteur, sans supplément heure de pointe.',
+  description: 'Transfert aéroport Paris CDG, Orly et Beauvais en voiture avec chauffeur. Prix fixe annoncé avant la réservation. Sans compteur, sans supplément heure de pointe.',
+  canonical: 'https://www.amani-limousines.com/transfert-aeroport-economique',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/transfert-aeroport-economique',
     languages: {
       en: 'https://www.amani-limousines.com/en/economical-airport-transfer',
       'x-default': 'https://www.amani-limousines.com/transfert-aeroport-economique',
     },
   },
-};
+});
 
 const tarifs = [
   {
@@ -66,6 +68,8 @@ const avantages = [
 ];
 
 export default function TransfertAeroportEconomique() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -73,14 +77,10 @@ export default function TransfertAeroportEconomique() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">CDG · Orly · Beauvais</p>
           <h1 className="heading mt-3">
-            <strong>Transfert aéroport Paris</strong> —{' '}
-            <em>prix fixe, sans compteur</em>
+            {c('h1', 'Transfert aéroport Paris — prix fixe, sans compteur')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Un taxi depuis CDG peut coûter 55 € ou 110 € selon la circulation,
-            l'heure et l'humeur du compteur. Avec un chauffeur Amani, vous avez un
-            prix annoncé avant de monter dans le véhicule, et ce prix ne change pas.
-            CDG, Orly et Beauvais, 24h/24, 7j/7.
+            {c('intro', 'Un taxi depuis CDG peut coûter 55 € ou 110 € selon la circulation, l\'heure et l\'humeur du compteur. Avec un chauffeur Amani, vous avez un prix annoncé avant de monter dans le véhicule, et ce prix ne change pas. CDG, Orly et Beauvais, 24h/24, 7j/7.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

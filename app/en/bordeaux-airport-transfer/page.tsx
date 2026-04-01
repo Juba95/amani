@@ -1,21 +1,18 @@
 import type { Metadata } from 'next';
 import SEOLayoutEN from '@/components/SEOLayoutEN';
 import Link from 'next/link';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'en/bordeaux-airport-transfer';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Bordeaux Airport Transfer — Private Chauffeur from Paris | Amani Limousines',
-  description:
-    'Private chauffeur from Paris to Bordeaux and Bordeaux-Mérignac airport. Mercedes fleet, fixed price. Paris to Bordeaux in 5h30 or airport pickup on your schedule.',
+  description: 'Private chauffeur from Paris to Bordeaux and Bordeaux-Mérignac airport. Mercedes fleet, fixed price. Paris to Bordeaux in 5h30 or airport pickup on your schedule.',
+  canonical: 'https://www.amani-limousines.com/en/bordeaux-airport-transfer',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/en/bordeaux-airport-transfer',
     languages: { fr: 'https://www.amani-limousines.com/transfert-bordeaux' },
   },
-  openGraph: {
-    title: 'Bordeaux Airport Transfer — Private Chauffeur from Paris | Amani Limousines',
-    description: 'Private chauffeur Paris to Bordeaux. Mercedes fleet, fixed rates.',
-    url: 'https://www.amani-limousines.com/en/bordeaux-airport-transfer',
-  },
-};
+});
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -33,6 +30,8 @@ const jsonLd = {
 };
 
 export default function BordeauxAirportTransferEN() {
+  const c = content(SLUG);
+
   return (
     <SEOLayoutEN>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
@@ -42,13 +41,10 @@ export default function BordeauxAirportTransferEN() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Long distance — Paris ↔ Bordeaux</p>
           <h1 className="heading mt-3">
-            <strong>Private chauffeur Paris–Bordeaux</strong> — 580 km, fixed price
+            {c('h1', 'Private chauffeur Paris–Bordeaux — 580 km, fixed price')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Bordeaux-Mérignac (BOD) is 580 km from Paris. By train it's fast, but the TGV drops
-            you at Saint-Jean station, not at your client's office in the Mériadeck district or a
-            winery in the Médoc. A private chauffeur covers door to door. Paris to Bordeaux in
-            approximately 5 hours 30 minutes, depending on traffic at the Orléans junction.
+            {c('intro', 'Bordeaux-Mérignac (BOD) is 580 km from Paris. By train it\'s fast, but the TGV drops you at Saint-Jean station, not at your client\'s office in the Mériadeck district or a winery in the Médoc. A private chauffeur covers door to door. Paris to Bordeaux in approximately 5 hours 30 minutes, depending on traffic at the Orléans junction.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

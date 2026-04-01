@@ -1,14 +1,14 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'transfert-cdg-hotel-george-v';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Privé CDG Four Seasons George V — Transfert Aéroport Avenue George V | Amani',
-  description:
-    'Transfert CDG vers le Four Seasons Hotel George V avec chauffeur privé. 32 km, 45 min. Mercedes Classe S ou BMW i7. Prix fixe, accueil VIP. Réservation 24h/24.',
-  alternates: {
-    canonical: 'https://www.amani-limousines.com/transfert-cdg-hotel-george-v',
-  },
-};
+  description: 'Transfert CDG vers le Four Seasons Hotel George V avec chauffeur privé. 32 km, 45 min. Mercedes Classe S ou BMW i7. Prix fixe, accueil VIP. Réservation 24h/24.',
+  canonical: 'https://www.amani-limousines.com/transfert-cdg-hotel-george-v',
+});
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -23,6 +23,8 @@ const jsonLd = {
 };
 
 export default function TransfertCDGGeorgeVPage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
@@ -32,15 +34,10 @@ export default function TransfertCDGGeorgeVPage() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">CDG → Four Seasons George V · 8ème arrondissement</p>
           <h1 className="heading mt-3">
-            <strong>Chauffeur privé CDG Four Seasons George V</strong> —{' '}
-            <em>avenue George V, 32 km</em>
+            {c('h1', 'Chauffeur privé CDG Four Seasons George V — avenue George V, 32 km')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Le Four Seasons Hotel George V est situé au 31, avenue George V, à quelques pas des
-            Champs-Élysées. Depuis Charles de Gaulle, le trajet couvre 32 km. Un{' '}
-            <strong>chauffeur privé CDG George V Paris</strong> en Classe S ou BMW i7 garantit
-            une arrivée en accord avec le niveau du palace — l'entrée principale du George V
-            dispose d'un dépose-minute couvert, à l'abri des regards.
+            {c('intro', 'Le Four Seasons Hotel George V est situé au 31, avenue George V, à quelques pas des Champs-Élysées. Depuis Charles de Gaulle, le trajet couvre 32 km. Un chauffeur privé CDG George V Paris en Classe S ou BMW i7 garantit une arrivée en accord avec le niveau du palace — l\'entrée principale du George V dispose d\'un dépose-minute couvert, à l\'abri des regards.')}
           </p>
         </div>
       </section>

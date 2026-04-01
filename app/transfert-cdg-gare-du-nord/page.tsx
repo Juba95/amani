@@ -1,16 +1,18 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'transfert-cdg-gare-du-nord';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Privé CDG Gare du Nord — Transfert Aéroport Charles de Gaulle | Amani',
-  description:
-    'Transfert entre l\'aéroport CDG et la Gare du Nord avec chauffeur privé. 28 km, 35 min. Correspondance Eurostar, Thalys, TGV. Prix fixe à partir de 125 €.',
-  alternates: {
-    canonical: 'https://www.amani-limousines.com/transfert-cdg-gare-du-nord',
-  },
-};
+  description: 'Transfert entre l\'aéroport CDG et la Gare du Nord avec chauffeur privé. 28 km, 35 min. Correspondance Eurostar, Thalys, TGV. Prix fixe à partir de 125 €.',
+  canonical: 'https://www.amani-limousines.com/transfert-cdg-gare-du-nord',
+});
 
 export default function TransfertCDGGareNordPage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -18,16 +20,10 @@ export default function TransfertCDGGareNordPage() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">CDG ↔ Gare du Nord · 28 km</p>
           <h1 className="heading mt-3">
-            <strong>Chauffeur privé CDG Gare du Nord</strong> —{' '}
-            <em>Eurostar, Thalys, correspondances sans stress</em>
+            {c('h1', 'Chauffeur privé CDG Gare du Nord — Eurostar, Thalys, correspondances sans stress')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            La Gare du Nord est à 28 km de l'aéroport Charles de Gaulle — le trajet le plus
-            court parmi tous les grands nœuds ferroviaires parisiens. En conditions normales,
-            comptez 30 à 40 minutes. Pour les voyageurs qui enchaînent un vol international
-            et un Eurostar vers Londres, un Thalys vers Bruxelles ou Amsterdam, ou un TGV
-            vers Lille, un <strong>chauffeur privé CDG Gare du Nord</strong> supprime le RER B
-            avec les valises et garantit l'heure de correspondance.
+            {c('intro', 'La Gare du Nord est à 28 km de l\'aéroport Charles de Gaulle — le trajet le plus court parmi tous les grands nœuds ferroviaires parisiens. En conditions normales, comptez 30 à 40 minutes. Pour les voyageurs qui enchaînent un vol international et un Eurostar vers Londres, un Thalys vers Bruxelles ou Amsterdam, ou un TGV vers Lille, un chauffeur privé CDG Gare du Nord supprime le RER B avec les valises et garantit l\'heure de correspondance.')}
           </p>
         </div>
       </section>

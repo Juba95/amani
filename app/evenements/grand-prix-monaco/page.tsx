@@ -1,19 +1,23 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'evenements/grand-prix-monaco';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Privé Grand Prix de Monaco — Transport VIP Monaco | Amani Limousines',
-  description:
-    'Transport privé pour le Grand Prix de Monaco. Paris–Monaco en berline de prestige ou Sprinter VIP pour les groupes. Accès paddock, tribunes, yachts en Méditerranée.',
+  description: 'Transport privé pour le Grand Prix de Monaco. Paris–Monaco en berline de prestige ou Sprinter VIP pour les groupes. Accès paddock, tribunes, yachts en Méditerranée.',
+  canonical: 'https://www.amani-limousines.com/evenements/grand-prix-monaco',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/evenements/grand-prix-monaco',
     languages: {
       en: 'https://www.amani-limousines.com/en/events',
     },
   },
-};
+});
 
 export default function GrandPrixMonacoPage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -21,15 +25,10 @@ export default function GrandPrixMonacoPage() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Événement — Monaco, mai</p>
           <h1 className="heading mt-3">
-            <strong>Chauffeur privé pour le Grand Prix de Monaco</strong> —{' '}
-            <em>940 km depuis Paris</em>
+            {c('h1', 'Chauffeur privé pour le Grand Prix de Monaco — 940 km depuis Paris')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Monaco en mai, c'est 940 km depuis Paris, environ neuf heures de route — ou deux heures
-            d'avion jusqu'à Nice, suivies d'un transfert de 25 km vers la Principauté. La plupart
-            des clients qui font le déplacement pour le Grand Prix mixent les deux : vol jusqu'à Nice,
-            puis chauffeur pour Monaco et les jours autour. D'autres font le trajet complet en voiture
-            quand la taille du groupe ou les bagages le justifient.
+            {c('intro', 'Monaco en mai, c\'est 940 km depuis Paris, environ neuf heures de route — ou deux heures d\'avion jusqu\'à Nice, suivies d\'un transfert de 25 km vers la Principauté. La plupart des clients qui font le déplacement pour le Grand Prix mixent les deux : vol jusqu\'à Nice, puis chauffeur pour Monaco et les jours autour. D\'autres font le trajet complet en voiture quand la taille du groupe ou les bagages le justifient.')}
           </p>
         </div>
       </section>

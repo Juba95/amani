@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
 import Link from 'next/link';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'chauffeur-prive-cannes';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Privé Cannes — Festival, MIPIM & Croisette | Amani Limousines',
-  description:
-    'Chauffeur privé à Cannes pour le Festival, le MIPIM, Cannes Lions et vos déplacements sur la Croisette. Mercedes haut de gamme, tarif fixe, service 7j/7.',
-  alternates: {
-    canonical: 'https://www.amani-limousines.com/chauffeur-prive-cannes',
-  },
-};
+  description: 'Chauffeur privé à Cannes pour le Festival, le MIPIM, Cannes Lions et vos déplacements sur la Croisette. Mercedes haut de gamme, tarif fixe, service 7j/7.',
+  canonical: 'https://www.amani-limousines.com/chauffeur-prive-cannes',
+});
 
 const zones = [
   { zone: 'Palais des Festivals', note: 'Accès privilégié, dépose Croisette, montée des marches' },
@@ -44,6 +44,8 @@ const occasions = [
 ];
 
 export default function ChauffeurPriveCannes() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -51,16 +53,10 @@ export default function ChauffeurPriveCannes() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Cannes — Côte d'Azur</p>
           <h1 className="heading mt-3">
-            <strong>Chauffeur privé Cannes</strong> —{' '}
-            <em>Festival, salons et Croisette</em>
+            {c('h1', 'Chauffeur privé Cannes — Festival, salons et Croisette')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Cannes est une ville compacte mais saturée dès qu'un événement majeur s'y
-            installe. La Croisette devient piétonne, les parkings sont pleins, les VTC
-            classiques débordés. Un <strong>chauffeur privé à Cannes</strong> connaît les
-            accès alternatifs, les dépose-minutes et les horaires de fermeture des rues.
-            Amani Limousines vous conduit partout à Cannes et dans ses environs, en Mercedes,
-            au tarif fixe convenu avant votre arrivée.
+            {c('intro', 'Cannes est une ville compacte mais saturée dès qu\'un événement majeur s\'y installe. La Croisette devient piétonne, les parkings sont pleins, les VTC classiques débordés. Un chauffeur privé à Cannes connaît les accès alternatifs, les dépose-minutes et les horaires de fermeture des rues. Amani Limousines vous conduit partout à Cannes et dans ses environs, en Mercedes, au tarif fixe convenu avant votre arrivée.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

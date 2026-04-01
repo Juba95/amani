@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
 import Link from 'next/link';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'chauffeur-anglophone';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Anglophone Paris — Chauffeur Privé Parlant Anglais | Amani Limousines',
-  description:
-    'Chauffeur privé parlant anglais à Paris. Transferts aéroports, rendez-vous d\'affaires, tourisme de luxe. Communication fluide en anglais. Disponible 24h/24.',
-  alternates: {
-    canonical: 'https://www.amani-limousines.com/chauffeur-anglophone',
-  },
-};
+  description: 'Chauffeur privé parlant anglais à Paris. Transferts aéroports, rendez-vous d\'affaires, tourisme de luxe. Communication fluide en anglais. Disponible 24h/24.',
+  canonical: 'https://www.amani-limousines.com/chauffeur-anglophone',
+});
 
 const services = [
   {
@@ -45,6 +45,8 @@ const situations = [
 ];
 
 export default function ChauffeurAnglophonePage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -52,15 +54,10 @@ export default function ChauffeurAnglophonePage() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Chauffeur Anglophone</p>
           <h1 className="heading mt-3">
-            Chauffeur privé <em>anglophone</em> à <strong>Paris</strong>
+            {c('h1', 'Chauffeur privé anglophone à Paris')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Ça change tout d'avoir un chauffeur qui parle votre langue. Plus besoin
-            de montrer l'adresse sur votre téléphone ou de répéter trois fois le nom
-            de l'hôtel. Vous montez, vous expliquez ce dont vous avez besoin, et c'est
-            réglé. On a des <strong>chauffeurs qui parlent couramment anglais</strong>,
-            dispo jour et nuit, qui connaissent Paris comme leur poche. Que vous soyez
-            là pour le boulot ou en vacances, c'est juste plus simple comme ça.
+            {c('intro', 'Ça change tout d\'avoir un chauffeur qui parle votre langue. Plus besoin de montrer l\'adresse sur votre téléphone ou de répéter trois fois le nom de l\'hôtel. Vous montez, vous expliquez ce dont vous avez besoin, et c\'est réglé. On a des chauffeurs qui parlent couramment anglais, dispo jour et nuit, qui connaissent Paris comme leur poche. Que vous soyez là pour le boulot ou en vacances, c\'est juste plus simple comme ça.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

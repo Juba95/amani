@@ -1,16 +1,18 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'evenements/salons-professionnels';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Privé Salons Professionnels Paris — Première Vision, MIF, Paris Air Show | Amani Limousines',
-  description:
-    'Transport privé pour salons et foires professionnels à Paris. Paris Air Show, Première Vision, Maison et Objet, MIF Expo. Navette hôtel–stand, mise à disposition chauffeur.',
-  alternates: {
-    canonical: 'https://www.amani-limousines.com/evenements/salons-professionnels',
-  },
-};
+  description: 'Transport privé pour salons et foires professionnels à Paris. Paris Air Show, Première Vision, Maison et Objet, MIF Expo. Navette hôtel–stand, mise à disposition chauffeur.',
+  canonical: 'https://www.amani-limousines.com/evenements/salons-professionnels',
+});
 
 export default function SalonsProfessionnelsPage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -18,14 +20,10 @@ export default function SalonsProfessionnelsPage() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Événements professionnels — Paris & Le Bourget</p>
           <h1 className="heading mt-3">
-            <strong>Chauffeur privé pour salons professionnels à Paris</strong>
+            {c('h1', 'Chauffeur privé pour salons professionnels à Paris')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Les grands salons parisiens — Paris Air Show, Première Vision, Maison et Objet, MIF Expo —
-            attirent des acheteurs, des dirigeants et des délégations du monde entier. La plupart
-            descendent dans des hôtels du 8ème ou du 16ème, et passent leurs journées entre plusieurs
-            halls d'exposition. Un chauffeur dédié au salon supprime les trajets en taxi et les
-            attentes aux arrêts.
+            {c('intro', 'Les grands salons parisiens — Paris Air Show, Première Vision, Maison et Objet, MIF Expo — attirent des acheteurs, des dirigeants et des délégations du monde entier. La plupart descendent dans des hôtels du 8ème ou du 16ème, et passent leurs journées entre plusieurs halls d\'exposition. Un chauffeur dédié au salon supprime les trajets en taxi et les attentes aux arrêts.')}
           </p>
         </div>
       </section>

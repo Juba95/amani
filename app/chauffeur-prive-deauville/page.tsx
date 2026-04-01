@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
 import Link from 'next/link';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'chauffeur-prive-deauville';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Privé Deauville — Hippodrome, Planches & Événements | Amani Limousines',
-  description:
-    'Chauffeur privé à Deauville pour les courses hippiques, mariages, Festival du cinéma américain et week-ends sur la côte normande. Mercedes, tarif fixe.',
-  alternates: {
-    canonical: 'https://www.amani-limousines.com/chauffeur-prive-deauville',
-  },
-};
+  description: 'Chauffeur privé à Deauville pour les courses hippiques, mariages, Festival du cinéma américain et week-ends sur la côte normande. Mercedes, tarif fixe.',
+  canonical: 'https://www.amani-limousines.com/chauffeur-prive-deauville',
+});
 
 const zones = [
   { zone: 'Hippodrome de Deauville', note: 'Courses, ventes de yearlings, Galop' },
@@ -45,6 +45,8 @@ const occasions = [
 ];
 
 export default function ChauffeurPriveDeauville() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -52,15 +54,10 @@ export default function ChauffeurPriveDeauville() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Deauville — Côte Fleurie</p>
           <h1 className="heading mt-3">
-            <strong>Chauffeur privé Deauville</strong> —{' '}
-            <em>courses, festivals et côte normande</em>
+            {c('h1', 'Chauffeur privé Deauville — courses, festivals et côte normande')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Deauville est à deux heures de Paris par l'autoroute, mais la ville n'a ni
-            gare TGV directe ni aéroport commercial. Pour y arriver sereinement, un{' '}
-            <strong>chauffeur privé depuis Paris</strong> est souvent la meilleure option.
-            Amani Limousines assure les transferts Paris–Deauville et les déplacements
-            sur la Côte Fleurie en Mercedes, avec un tarif fixe communiqué à la réservation.
+            {c('intro', 'Deauville est à deux heures de Paris par l\'autoroute, mais la ville n\'a ni gare TGV directe ni aéroport commercial. Pour y arriver sereinement, un chauffeur privé depuis Paris est souvent la meilleure option. Amani Limousines assure les transferts Paris–Deauville et les déplacements sur la Côte Fleurie en Mercedes, avec un tarif fixe communiqué à la réservation.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

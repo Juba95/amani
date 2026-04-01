@@ -1,19 +1,21 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
 import Link from 'next/link';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'chauffeur-diplomatique';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Diplomatique Paris — Transport Officiel & Protocole | Amani Limousines',
-  description:
-    'Transport diplomatique à Paris : convois officiels, ambassades, sommets internationaux. Chauffeurs habilités, véhicules blindés, protocole respecté. Discrétion et multilinguisme.',
+  description: 'Transport diplomatique à Paris : convois officiels, ambassades, sommets internationaux. Chauffeurs habilités, véhicules blindés, protocole respecté. Discrétion et multilinguisme.',
+  canonical: 'https://www.amani-limousines.com/chauffeur-diplomatique',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/chauffeur-diplomatique',
     languages: {
       en: 'https://www.amani-limousines.com/en/diplomatic-chauffeur',
       'x-default': 'https://www.amani-limousines.com/chauffeur-diplomatique',
     },
   },
-};
+});
 
 const services = [
   {
@@ -39,6 +41,8 @@ const services = [
 ];
 
 export default function ChauffeurDiplomatique() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -46,16 +50,10 @@ export default function ChauffeurDiplomatique() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Diplomatique — Paris & France</p>
           <h1 className="heading mt-3">
-            <strong>Chauffeur diplomatique à Paris</strong> —{' '}
-            <em>protocole, discrétion et sécurité</em>
+            {c('h1', 'Chauffeur diplomatique à Paris — protocole, discrétion et sécurité')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Le <strong>transport diplomatique à Paris</strong> obéit à des règles que la plupart
-            des sociétés de VTC ne connaissent pas. Ordre protocolaire des véhicules, itinéraires
-            validés par les services de sécurité, communication chiffrée entre chauffeurs,
-            ponctualité à la seconde — ce sont les standards auxquels nous nous conformons.
-            Amani Limousines travaille avec des ambassades, des organisations internationales
-            et des délégations étrangères en visite à Paris.
+            {c('intro', 'Le transport diplomatique à Paris obéit à des règles que la plupart des sociétés de VTC ne connaissent pas. Ordre protocolaire des véhicules, itinéraires validés par les services de sécurité, communication chiffrée entre chauffeurs, ponctualité à la seconde — ce sont les standards auxquels nous nous conformons. Amani Limousines travaille avec des ambassades, des organisations internationales et des délégations étrangères en visite à Paris.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

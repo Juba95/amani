@@ -1,20 +1,24 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'transfert-prive';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Transfert Privé Paris — Prix Fixe Porte à Porte | Amani Limousines',
-  description:
-    'Transfert privé à Paris avec chauffeur. Prix fixe garanti, sans compteur. Aéroports, gares, hôtels et adresses personnalisées. Réservation immédiate.',
+  description: 'Transfert privé à Paris avec chauffeur. Prix fixe garanti, sans compteur. Aéroports, gares, hôtels et adresses personnalisées. Réservation immédiate.',
+  canonical: 'https://www.amani-limousines.com/transfert-prive',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/transfert-prive',
     languages: {
       en: 'https://www.amani-limousines.com/en/cdg-airport-transfer',
       'x-default': 'https://www.amani-limousines.com/transfert-prive',
     },
   },
-};
+});
 
 export default function TransfertPrivePage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -22,15 +26,10 @@ export default function TransfertPrivePage() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Transfert point à point</p>
           <h1 className="heading mt-3">
-            <strong>Transfert privé à Paris</strong> —{' '}
-            <em>prix fixe garanti</em>, porte à porte
+            {c('h1', 'Transfert privé à Paris — prix fixe garanti, porte à porte')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Le transfert privé est la prestation la plus simple d'Amani Limousines :
-            un point de départ, un point d'arrivée, un prix annoncé à l'avance.
-            Pas de compteur, pas de majoration d'embouteillage, pas de surprise au moment de
-            régler. Le montant que vous voyez dans le devis est celui que vous payez,
-            qu'il y ait des travaux sur le périphérique ou non.
+            {c('intro', 'Le transfert privé est la prestation la plus simple d\'Amani Limousines : un point de départ, un point d\'arrivée, un prix annoncé à l\'avance. Pas de compteur, pas de majoration d\'embouteillage, pas de surprise au moment de régler. Le montant que vous voyez dans le devis est celui que vous payez, qu\'il y ait des travaux sur le périphérique ou non.')}
           </p>
         </div>
       </section>

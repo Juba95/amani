@@ -1,19 +1,21 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
 import Link from 'next/link';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'chauffeur-prive-haute-savoie';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Privé Haute-Savoie — Paris vers Chamonix, Megève, Annecy | Amani Limousines',
-  description:
-    'Chauffeur privé Paris vers toute la Haute-Savoie : Chamonix, Megève, Annecy, Thonon, Évian. Prix fixe, Mercedes récente. Depuis CDG, Orly ou Paris intramuros.',
+  description: 'Chauffeur privé Paris vers toute la Haute-Savoie : Chamonix, Megève, Annecy, Thonon, Évian. Prix fixe, Mercedes récente. Depuis CDG, Orly ou Paris intramuros.',
+  canonical: 'https://www.amani-limousines.com/chauffeur-prive-haute-savoie',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/chauffeur-prive-haute-savoie',
     languages: {
       en: 'https://www.amani-limousines.com/en/haute-savoie-chauffeur',
       'x-default': 'https://www.amani-limousines.com/chauffeur-prive-haute-savoie',
     },
   },
-};
+});
 
 const destinations = [
   {
@@ -78,6 +80,8 @@ const pourquoi = [
 ];
 
 export default function ChauffeurPriveHauteSavoie() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -85,15 +89,10 @@ export default function ChauffeurPriveHauteSavoie() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Département 74 — Haute-Savoie</p>
           <h1 className="heading mt-3">
-            <strong>Chauffeur privé Haute-Savoie</strong> —{' '}
-            <em>Chamonix, Megève, Annecy et au-delà</em>
+            {c('h1', 'Chauffeur privé Haute-Savoie — Chamonix, Megève, Annecy et au-delà')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            La Haute-Savoie regroupe des destinations que le train dessert mal :
-            Chamonix, Megève, Morzine, la rive française du lac Léman. Amani Limousines
-            couvre l'ensemble du département depuis Paris, CDG et Orly, en Mercedes
-            récentes avec prix fixe. Le trajet fait entre 5h et 7h selon la destination,
-            sans correspondance ni navette locale à coordonner à l'arrivée.
+            {c('intro', 'La Haute-Savoie regroupe des destinations que le train dessert mal : Chamonix, Megève, Morzine, la rive française du lac Léman. Amani Limousines couvre l\'ensemble du département depuis Paris, CDG et Orly, en Mercedes récentes avec prix fixe. Le trajet fait entre 5h et 7h selon la destination, sans correspondance ni navette locale à coordonner à l\'arrivée.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

@@ -1,13 +1,15 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import SEOLayout from '@/components/SEOLayout';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'plan-du-site';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Plan du site — Amani Limousines | Chauffeur privé Paris',
-  description:
-    'Plan du site Amani Limousines. Retrouvez toutes les pages : services, transferts aéroports, destinations, événements et informations.',
-  alternates: { canonical: 'https://www.amani-limousines.com/plan-du-site' },
-};
+  description: 'Plan du site Amani Limousines. Retrouvez toutes les pages : services, transferts aéroports, destinations, événements et informations.',
+  canonical: 'https://www.amani-limousines.com/plan-du-site',
+});
 
 interface SitemapSection {
   title: string;
@@ -130,15 +132,19 @@ const sections: SitemapSection[] = [
 ];
 
 export default function PlanDuSitePage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
       <section className="pt-36 pb-12 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
           <p className="tag">Navigation</p>
-          <h1 className="heading mt-3">Plan du site</h1>
+          <h1 className="heading mt-3">
+            {c('h1', 'Plan du site')}
+          </h1>
           <p className="sf text-stone-500 mt-4 text-sm">
-            Retrouvez l'ensemble des pages du site Amani Limousines.
+            {c('intro', 'Retrouvez l\'ensemble des pages du site Amani Limousines.')}
           </p>
         </div>
       </section>

@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
 import Link from 'next/link';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'chauffeur-hispanophone';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Hispanophone Paris — Chauffeur Privé Parlant Espagnol | Amani Limousines',
-  description:
-    'Chauffeur privé parlant espagnol à Paris. Tourisme, affaires, visites diplomatiques. Communication fluide en español. Disponible 24h/24.',
-  alternates: {
-    canonical: 'https://www.amani-limousines.com/chauffeur-hispanophone',
-  },
-};
+  description: 'Chauffeur privé parlant espagnol à Paris. Tourisme, affaires, visites diplomatiques. Communication fluide en español. Disponible 24h/24.',
+  canonical: 'https://www.amani-limousines.com/chauffeur-hispanophone',
+});
 
 const services = [
   {
@@ -45,6 +45,8 @@ const situations = [
 ];
 
 export default function ChauffeurHispanophonePage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -52,16 +54,10 @@ export default function ChauffeurHispanophonePage() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Chauffeur Hispanophone</p>
           <h1 className="heading mt-3">
-            Chauffeur privé <em>hispanophone</em> à <strong>Paris</strong>
+            {c('h1', 'Chauffeur privé hispanophone à Paris')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Il y a énormément de visiteurs hispanophones à Paris — des touristes
-            mexicains, des hommes d'affaires espagnols, des diplomates colombiens,
-            des familles argentines. Le point commun : quand on a un{' '}
-            <strong>chauffeur qui parle espagnol</strong>, tout devient plus facile.
-            Les instructions sont claires, l'ambiance est détendue, et on peut
-            vraiment profiter de la ville au lieu de galérer avec la langue.
-            Nos chauffeurs hispanophones sont là 24h/24.
+            {c('intro', 'Il y a énormément de visiteurs hispanophones à Paris — des touristes mexicains, des hommes d\'affaires espagnols, des diplomates colombiens, des familles argentines. Le point commun : quand on a un chauffeur qui parle espagnol, tout devient plus facile. Les instructions sont claires, l\'ambiance est détendue, et on peut vraiment profiter de la ville au lieu de galérer avec la langue. Nos chauffeurs hispanophones sont là 24h/24.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

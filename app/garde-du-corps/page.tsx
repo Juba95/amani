@@ -1,19 +1,21 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
 import Link from 'next/link';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'garde-du-corps';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Garde du Corps Paris — Protection Rapprochée & Bodyguard Privé | Amani Limousines',
-  description:
-    'Garde du corps et protection rapprochée à Paris. Bodyguard privé pour personnalités, dirigeants et événements. Agents formés, discrétion totale, intervention 24h/24.',
+  description: 'Garde du corps et protection rapprochée à Paris. Bodyguard privé pour personnalités, dirigeants et événements. Agents formés, discrétion totale, intervention 24h/24.',
+  canonical: 'https://www.amani-limousines.com/garde-du-corps',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/garde-du-corps',
     languages: {
       en: 'https://www.amani-limousines.com/en/bodyguard',
       'x-default': 'https://www.amani-limousines.com/garde-du-corps',
     },
   },
-};
+});
 
 const services = [
   {
@@ -62,6 +64,8 @@ const faq = [
 ];
 
 export default function GardeduCorps() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -69,16 +73,10 @@ export default function GardeduCorps() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Bodyguard — Paris & France</p>
           <h1 className="heading mt-3">
-            <strong>Garde du corps et protection rapprochée à Paris</strong> —{' '}
-            <em>agents formés, discrétion absolue</em>
+            {c('h1', 'Garde du corps et protection rapprochée à Paris — agents formés, discrétion absolue')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Un <strong>garde du corps à Paris</strong> ne se résume pas à une silhouette imposante
-            derrière vous. C'est un professionnel qui évalue les risques en amont, repère les
-            points de vulnérabilité dans chaque lieu que vous fréquentez et adapte le dispositif
-            en temps réel. Amani Limousines met à votre disposition des agents de protection
-            rapprochée expérimentés, capables d'intervenir dans des contextes variés : déplacements
-            professionnels, événements mondains, séjours privés ou missions longue durée.
+            {c('intro', 'Un garde du corps à Paris ne se résume pas à une silhouette imposante derrière vous. C\'est un professionnel qui évalue les risques en amont, repère les points de vulnérabilité dans chaque lieu que vous fréquentez et adapte le dispositif en temps réel. Amani Limousines met à votre disposition des agents de protection rapprochée expérimentés, capables d\'intervenir dans des contextes variés : déplacements professionnels, événements mondains, séjours privés ou missions longue durée.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

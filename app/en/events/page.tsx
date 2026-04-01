@@ -1,15 +1,17 @@
 import type { Metadata } from 'next';
 import SEOLayoutEN from '@/components/SEOLayoutEN';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'en/events';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'VIP Event Transport Paris — Fashion Week, Air Show, Roland Garros | Amani',
-  description:
-    'VIP transport for Paris events. Fashion Week, Paris Air Show, Roland Garros, Cannes Film Festival, trade shows. Dedicated fleet, on-site coordinator.',
+  description: 'VIP transport for Paris events. Fashion Week, Paris Air Show, Roland Garros, Cannes Film Festival, trade shows. Dedicated fleet, on-site coordinator.',
+  canonical: 'https://www.amani-limousines.com/en/events',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/en/events',
     languages: { fr: 'https://www.amani-limousines.com/evenements' },
   },
-};
+});
 
 const events = [
   { name: 'Paris Fashion Week', period: 'February & September', desc: 'Shuttles between fashion houses, Triangle d\'Or hotels and Marais showrooms.' },
@@ -21,21 +23,18 @@ const events = [
 ];
 
 export default function EventsEN() {
+  const c = content(SLUG);
+
   return (
     <SEOLayoutEN>
       <section className="pt-36 pb-16 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
           <p className="tag">Event transport</p>
           <h1 className="heading mt-3">
-            VIP transport for your <em>events</em>{' '}
-            <strong>in Paris</strong>
+            {c('h1', 'VIP transport for your events in Paris')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Paris hosts the world's most prestigious events. Fashion Week, Air Show, Roland
-            Garros, Cannes Film Festival — each generates intense transport demand that only
-            teams experienced with those specific constraints can absorb. Amani Limousines
-            deploys for every major edition with dedicated fleets, on-site coordinators
-            and vehicles reserved well in advance.
+            {c('intro', 'Paris hosts the world\'s most prestigious events. Fashion Week, Air Show, Roland Garros, Cannes Film Festival — each generates intense transport demand that only teams experienced with those specific constraints can absorb. Amani Limousines deploys for every major edition with dedicated fleets, on-site coordinators and vehicles reserved well in advance.')}
           </p>
         </div>
       </section>

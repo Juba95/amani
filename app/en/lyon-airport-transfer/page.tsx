@@ -1,21 +1,18 @@
 import type { Metadata } from 'next';
 import SEOLayoutEN from '@/components/SEOLayoutEN';
 import Link from 'next/link';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'en/lyon-airport-transfer';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Lyon Airport Transfer — Private Driver from Paris | Amani Limousines',
-  description:
-    'Private driver Paris to Lyon and Lyon-Saint Exupéry airport. Mercedes fleet, fixed rates. Paris–Lyon in 4h30 or Lyon airport pickup.',
+  description: 'Private driver Paris to Lyon and Lyon-Saint Exupéry airport. Mercedes fleet, fixed rates. Paris–Lyon in 4h30 or Lyon airport pickup.',
+  canonical: 'https://www.amani-limousines.com/en/lyon-airport-transfer',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/en/lyon-airport-transfer',
     languages: { fr: 'https://www.amani-limousines.com/transfert-lyon' },
   },
-  openGraph: {
-    title: 'Lyon Airport Transfer — Private Driver from Paris | Amani Limousines',
-    description: 'Private driver Paris to Lyon airport. Fixed rates, flight tracking.',
-    url: 'https://www.amani-limousines.com/en/lyon-airport-transfer',
-  },
-};
+});
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -33,6 +30,8 @@ const jsonLd = {
 };
 
 export default function LyonAirportTransferEN() {
+  const c = content(SLUG);
+
   return (
     <SEOLayoutEN>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
@@ -42,13 +41,10 @@ export default function LyonAirportTransferEN() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Long distance — Paris ↔ Lyon</p>
           <h1 className="heading mt-3">
-            <strong>Private chauffeur Paris–Lyon</strong> — 465 km, door to door
+            {c('h1', 'Private chauffeur Paris–Lyon — 465 km, door to door')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Lyon-Saint Exupéry (LYS) is served by direct flights from London, Amsterdam, Frankfurt
-            and elsewhere in Europe. The airport is 25 km east of the city center — not exactly
-            walking distance. A private transfer from Paris covers the full journey or just the
-            airport leg. The A6 motorway is direct, and traffic around Lyon is predictable.
+            {c('intro', 'Lyon-Saint Exupéry (LYS) is served by direct flights from London, Amsterdam, Frankfurt and elsewhere in Europe. The airport is 25 km east of the city center — not exactly walking distance. A private transfer from Paris covers the full journey or just the airport leg. The A6 motorway is direct, and traffic around Lyon is predictable.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

@@ -1,19 +1,21 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
 import Link from 'next/link';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'chauffeur-prive-megeve';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Privé Megève — Transfert Paris Megève | Amani Limousines',
-  description:
-    'Transfert en voiture avec chauffeur Paris–Megève. 640 km, prix fixe. Départ depuis CDG, Orly ou votre adresse. Mercedes récente, disponible 7j/7.',
+  description: 'Transfert en voiture avec chauffeur Paris–Megève. 640 km, prix fixe. Départ depuis CDG, Orly ou votre adresse. Mercedes récente, disponible 7j/7.',
+  canonical: 'https://www.amani-limousines.com/chauffeur-prive-megeve',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/chauffeur-prive-megeve',
     languages: {
       en: 'https://www.amani-limousines.com/en/megeve-chauffeur',
       'x-default': 'https://www.amani-limousines.com/chauffeur-prive-megeve',
     },
   },
-};
+});
 
 const itineraires = [
   {
@@ -48,6 +50,8 @@ const quartiers = [
 ];
 
 export default function ChauffeurPriveMegeve() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -55,15 +59,10 @@ export default function ChauffeurPriveMegeve() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Haute-Savoie — Massif du Mont-Blanc</p>
           <h1 className="heading mt-3">
-            <strong>Chauffeur privé Megève</strong> —{' '}
-            <em>depuis Paris et les aéroports</em>
+            {c('h1', 'Chauffeur privé Megève — depuis Paris et les aéroports')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Megève est à 640 km de Paris, 6h30 de route avec un chauffeur, et aucune
-            correspondance à gérer. Amani Limousines couvre ce trajet depuis Paris, CDG
-            et Orly en Mercedes récentes, avec prix fixe confirmé avant le départ.
-            L'accès à la station en voiture privée reste la solution la plus directe pour
-            les clients avec des bagages de ski ou plusieurs membres d'un groupe.
+            {c('intro', 'Megève est à 640 km de Paris, 6h30 de route avec un chauffeur, et aucune correspondance à gérer. Amani Limousines couvre ce trajet depuis Paris, CDG et Orly en Mercedes récentes, avec prix fixe confirmé avant le départ. L\'accès à la station en voiture privée reste la solution la plus directe pour les clients avec des bagages de ski ou plusieurs membres d\'un groupe.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

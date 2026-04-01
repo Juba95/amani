@@ -1,19 +1,23 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'evenements/hippodrome-deauville';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Privé Hippodrome de Deauville — Transfert Paris Deauville | Amani Limousines',
-  description:
-    'Transport privé pour l\'hippodrome de Deauville. Paris–Deauville en 2h30 en Mercedes. Accès loges, tribunes VIP, arrivées en voitures. Chauffeur disponible à la journée.',
+  description: 'Transport privé pour l\'hippodrome de Deauville. Paris–Deauville en 2h30 en Mercedes. Accès loges, tribunes VIP, arrivées en voitures. Chauffeur disponible à la journée.',
+  canonical: 'https://www.amani-limousines.com/evenements/hippodrome-deauville',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/evenements/hippodrome-deauville',
     languages: {
       en: 'https://www.amani-limousines.com/en/events',
     },
   },
-};
+});
 
 export default function HippodromeDeauvillePage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -21,14 +25,10 @@ export default function HippodromeDeauvillePage() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Événement — Calvados, Normandie</p>
           <h1 className="heading mt-3">
-            <strong>Chauffeur privé pour l'hippodrome de Deauville</strong> —{' '}
-            <em>Paris–Deauville en 2h30</em>
+            {c('h1', 'Chauffeur privé pour l\'hippodrome de Deauville — Paris–Deauville en 2h30')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Deauville, c'est 200 km depuis Paris, deux heures trente sur l'A13 selon la circulation.
-            L'hippodrome reste le rendez-vous mondain que les Parisiens font encore, en particulier en août
-            pour les Yearling Sales et le Grand Prix de Deauville. On y vient souvent à plusieurs,
-            on repart tard, et la route du retour en nocturne mérite d'avoir un chauffeur.
+            {c('intro', 'Deauville, c\'est 200 km depuis Paris, deux heures trente sur l\'A13 selon la circulation. L\'hippodrome reste le rendez-vous mondain que les Parisiens font encore, en particulier en août pour les Yearling Sales et le Grand Prix de Deauville. On y vient souvent à plusieurs, on repart tard, et la route du retour en nocturne mérite d\'avoir un chauffeur.')}
           </p>
         </div>
       </section>

@@ -1,16 +1,18 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'evenements/roland-garros';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Privé Roland Garros Paris — Transport Loges VIP | Amani Limousines',
-  description:
-    'Transport VIP pour Roland Garros. Transferts Porte d\'Auteuil, accès loges et hospitalités corporate. Chauffeur privé Paris disponible pendant tout le tournoi.',
-  alternates: {
-    canonical: 'https://www.amani-limousines.com/evenements/roland-garros',
-  },
-};
+  description: 'Transport VIP pour Roland Garros. Transferts Porte d\'Auteuil, accès loges et hospitalités corporate. Chauffeur privé Paris disponible pendant tout le tournoi.',
+  canonical: 'https://www.amani-limousines.com/evenements/roland-garros',
+});
 
 export default function RolandGarrosPage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -18,15 +20,10 @@ export default function RolandGarrosPage() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Événement — Mai & Juin</p>
           <h1 className="heading mt-3">
-            <strong>Chauffeur privé Roland Garros Paris</strong> —{' '}
-            <em>transferts et hospitalités VIP</em>
+            {c('h1', 'Chauffeur privé Roland Garros Paris — transferts et hospitalités VIP')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Deux semaines, 500 000 spectateurs, des loges corporate parmi les plus convoitées
-            du sport mondial. Roland Garros génère chaque printemps un besoin de transport
-            VIP intense autour de la Porte d'Auteuil. Un <strong>chauffeur privé Roland
-            Garros</strong> bien positionné fait toute la différence entre une expérience
-            fluide et une heure de queue dans les embouteillages du 16ème.
+            {c('intro', 'Deux semaines, 500 000 spectateurs, des loges corporate parmi les plus convoitées du sport mondial. Roland Garros génère chaque printemps un besoin de transport VIP intense autour de la Porte d\'Auteuil. Un chauffeur privé Roland Garros bien positionné fait toute la différence entre une expérience fluide et une heure de queue dans les embouteillages du 16ème.')}
           </p>
         </div>
       </section>

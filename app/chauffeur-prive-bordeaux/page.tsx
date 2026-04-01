@@ -1,19 +1,21 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
 import Link from 'next/link';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'chauffeur-prive-bordeaux';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Privé Bordeaux — Vignobles, Aéroport & Événements | Amani Limousines',
-  description:
-    'Chauffeur privé à Bordeaux pour transferts aéroport Mérignac, circuits dans les vignobles de Saint-Émilion et du Médoc, mariages et événements. Flotte Mercedes, tarif fixe.',
+  description: 'Chauffeur privé à Bordeaux pour transferts aéroport Mérignac, circuits dans les vignobles de Saint-Émilion et du Médoc, mariages et événements. Flotte Mercedes, tarif fixe.',
+  canonical: 'https://www.amani-limousines.com/chauffeur-prive-bordeaux',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/chauffeur-prive-bordeaux',
     languages: {
       en: 'https://www.amani-limousines.com/en/private-chauffeur-bordeaux',
       'x-default': 'https://www.amani-limousines.com/chauffeur-prive-bordeaux',
     },
   },
-};
+});
 
 const zones = [
   { zone: 'Aéroport Bordeaux-Mérignac', note: 'Accueil en terminal, suivi des vols en temps réel' },
@@ -48,6 +50,8 @@ const occasions = [
 ];
 
 export default function ChauffeurPriveBordeaux() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -55,16 +59,10 @@ export default function ChauffeurPriveBordeaux() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Bordeaux — Nouvelle-Aquitaine</p>
           <h1 className="heading mt-3">
-            <strong>Chauffeur privé Bordeaux</strong> —{' '}
-            <em>vignobles, aéroport et événements</em>
+            {c('h1', 'Chauffeur privé Bordeaux — vignobles, aéroport et événements')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Bordeaux se parcourt en voiture : les châteaux du Médoc sont à quarante minutes
-            du centre, Saint-Émilion à une heure, Arcachon à cinquante minutes. Un{' '}
-            <strong>chauffeur privé à Bordeaux</strong> transforme chaque déplacement en moment
-            de calme. Amani Limousines vous conduit dans toute la Gironde avec des Mercedes
-            récentes, un tarif fixe communiqué avant la réservation et une ponctualité
-            sans négociation.
+            {c('intro', 'Bordeaux se parcourt en voiture : les châteaux du Médoc sont à quarante minutes du centre, Saint-Émilion à une heure, Arcachon à cinquante minutes. Un chauffeur privé à Bordeaux transforme chaque déplacement en moment de calme. Amani Limousines vous conduit dans toute la Gironde avec des Mercedes récentes, un tarif fixe communiqué avant la réservation et une ponctualité sans négociation.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

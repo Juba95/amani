@@ -1,32 +1,31 @@
 import type { Metadata } from 'next';
 import SEOLayoutEN from '@/components/SEOLayoutEN';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'en/meet-and-greet';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Meet and Greet Service Paris — VIP Airport Welcome CDG & Orly | Amani',
-  description:
-    'Meet and greet service at Paris airports. Name board welcome in arrivals, baggage assistance, Fast Track option at CDG and Orly. Available 24/7.',
+  description: 'Meet and greet service at Paris airports. Name board welcome in arrivals, baggage assistance, Fast Track option at CDG and Orly. Available 24/7.',
+  canonical: 'https://www.amani-limousines.com/en/meet-and-greet',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/en/meet-and-greet',
     languages: { fr: 'https://www.amani-limousines.com/meet-and-greet' },
   },
-};
+});
 
 export default function MeetAndGreetEN() {
+  const c = content(SLUG);
+
   return (
     <SEOLayoutEN>
       <section className="pt-36 pb-16 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
           <p className="tag">VIP airport welcome</p>
           <h1 className="heading mt-3">
-            <strong>Meet and greet Paris airports</strong> —{' '}
-            <em>from the gate to the car, seamlessly</em>
+            {c('h1', 'Meet and greet Paris airports — from the gate to the car, seamlessly')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            The <strong>meet and greet service in Paris</strong> fills the gap between stepping
-            off the aircraft and settling into the vehicle. A dedicated assistant meets your
-            passenger in the arrivals zone — after passport control — with a name board, takes
-            charge of luggage, and guides them directly to the waiting Mercedes without having
-            to scan a crowd of signs or navigate unfamiliar terminal corridors.
+            {c('intro', 'The meet and greet service in Paris fills the gap between stepping off the aircraft and settling into the vehicle. A dedicated assistant meets your passenger in the arrivals zone — after passport control — with a name board, takes charge of luggage, and guides them directly to the waiting Mercedes without having to scan a crowd of signs or navigate unfamiliar terminal corridors.')}
           </p>
         </div>
       </section>

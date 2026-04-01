@@ -1,18 +1,20 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'excursion-privee';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Excursion Privée au Départ de Paris — Versailles, Champagne, Normandie | Amani',
-  description:
-    'Excursions privées en voiture avec chauffeur depuis Paris. Versailles, Champagne, Giverny, Normandie, Loire. Journées sur mesure, guide culinaire disponible.',
+  description: 'Excursions privées en voiture avec chauffeur depuis Paris. Versailles, Champagne, Giverny, Normandie, Loire. Journées sur mesure, guide culinaire disponible.',
+  canonical: 'https://www.amani-limousines.com/excursion-privee',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/excursion-privee',
     languages: {
       en: 'https://www.amani-limousines.com/en/private-excursion',
       'x-default': 'https://www.amani-limousines.com/excursion-privee',
     },
   },
-};
+});
 
 const excursions = [
   {
@@ -48,6 +50,8 @@ const excursions = [
 ];
 
 export default function ExcursionPriveePage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -55,15 +59,10 @@ export default function ExcursionPriveePage() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Journées & excursions</p>
           <h1 className="heading mt-3">
-            <strong>Excursion privée au départ de Paris</strong> —{' '}
-            <em>avec chauffeur, à votre rythme</em>
+            {c('h1', 'Excursion privée au départ de Paris — avec chauffeur, à votre rythme')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Paris est à deux heures de Versailles, des vignobles champenois, des plages du
-            Débarquement et des châteaux de la Loire. Un <strong>chauffeur privé Paris
-            excursion</strong> permet de sortir de la capitale sans horaires imposés, sans
-            train à attraper, sans parking à gérer à destination. Vous arrivez reposé,
-            vous repartez quand vous voulez.
+            {c('intro', 'Paris est à deux heures de Versailles, des vignobles champenois, des plages du Débarquement et des châteaux de la Loire. Un chauffeur privé Paris excursion permet de sortir de la capitale sans horaires imposés, sans train à attraper, sans parking à gérer à destination. Vous arrivez reposé, vous repartez quand vous voulez.')}
           </p>
         </div>
       </section>

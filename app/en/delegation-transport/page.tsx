@@ -1,32 +1,31 @@
 import type { Metadata } from 'next';
 import SEOLayoutEN from '@/components/SEOLayoutEN';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'en/delegation-transport';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Delegation Transport Paris — Vehicle Convoy & Diplomatic Missions | Amani',
-  description:
-    'Vehicle convoy and delegation transport in Paris. 2 to 30 vehicles coordinated, diplomatic missions, embassies. Centralised dispatch, 24/7 availability.',
+  description: 'Vehicle convoy and delegation transport in Paris. 2 to 30 vehicles coordinated, diplomatic missions, embassies. Centralised dispatch, 24/7 availability.',
+  canonical: 'https://www.amani-limousines.com/en/delegation-transport',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/en/delegation-transport',
     languages: { fr: 'https://www.amani-limousines.com/convoi-delegations' },
   },
-};
+});
 
 export default function DelegationTransportEN() {
+  const c = content(SLUG);
+
   return (
     <SEOLayoutEN>
       <section className="pt-36 pb-16 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
           <p className="tag">Convoys & official delegations</p>
           <h1 className="heading mt-3">
-            <strong>Delegation transport and vehicle convoy in Paris</strong> —{' '}
-            <em>coordinated, flawless</em>
+            {c('h1', 'Delegation transport and vehicle convoy in Paris — coordinated, flawless')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            A ministerial visit, a state arrival, a corporate summit or a group of executives
-            on a Paris tour: these situations require more than a single vehicle. The{' '}
-            <strong>delegation transport service in Paris</strong> from Amani Limousines is built
-            around centralised dispatch, continuous radio communication between drivers and a
-            field coordinator available on site throughout the mission.
+            {c('intro', 'A ministerial visit, a state arrival, a corporate summit or a group of executives on a Paris tour: these situations require more than a single vehicle. The delegation transport service in Paris from Amani Limousines is built around centralised dispatch, continuous radio communication between drivers and a field coordinator available on site throughout the mission.')}
           </p>
         </div>
       </section>

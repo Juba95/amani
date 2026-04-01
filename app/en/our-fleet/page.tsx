@@ -1,16 +1,18 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import SEOLayoutEN from '@/components/SEOLayoutEN';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'en/our-fleet';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Our Fleet — Prestige Vehicles Paris | Mercedes, Range Rover, Sprinter VIP | Amani',
-  description:
-    'Discover Amani Limousines\' fleet of prestige vehicles in Paris. Mercedes E-Class, EQS, S-Class, Maybach, V-Class, G-Class, Range Rover Evoque and Sprinter VIP. 300+ vehicles, renewed annually.',
+  description: 'Discover Amani Limousines\' fleet of prestige vehicles in Paris. Mercedes E-Class, EQS, S-Class, Maybach, V-Class, G-Class, Range Rover Evoque and Sprinter VIP. 300+ vehicles, renewed annually.',
+  canonical: 'https://www.amani-limousines.com/en/our-fleet',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/en/our-fleet',
     languages: { fr: 'https://www.amani-limousines.com/notre-flotte' },
   },
-};
+});
 
 const vehicles = [
   {
@@ -119,19 +121,18 @@ const faq = [
 ];
 
 export default function OurFleetEN() {
+  const c = content(SLUG);
+
   return (
     <SEOLayoutEN>
       <section className="pt-36 pb-16 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
           <p className="tag">Our fleet</p>
           <h1 className="heading mt-3">
-            Prestige vehicles <em>in Paris</em> — over 300 units
+            {c('h1', 'Prestige vehicles in Paris — over 300 units')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            At Amani Limousines, the fleet is renewed annually to guarantee that passengers
-            travel in recent vehicles. No ageing models kept because they still run. Our{' '}
-            <strong>prestige vehicles in Paris</strong> average under three years old and are
-            maintained to manufacturer specifications at every service interval.
+            {c('intro', 'At Amani Limousines, the fleet is renewed annually to guarantee that passengers travel in recent vehicles. No ageing models kept because they still run. Our prestige vehicles in Paris average under three years old and are maintained to manufacturer specifications at every service interval.')}
           </p>
         </div>
       </section>

@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
 import Link from 'next/link';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'chauffeur-prive-saint-tropez';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Privé Saint-Tropez — Prestige, Yachting & Pampelonne | Amani Limousines',
-  description:
-    'Chauffeur privé à Saint-Tropez : transferts depuis Nice ou La Môle, plages de Pampelonne, yachting et soirées privées. Mercedes haut de gamme, tarif fixe.',
-  alternates: {
-    canonical: 'https://www.amani-limousines.com/chauffeur-prive-saint-tropez',
-  },
-};
+  description: 'Chauffeur privé à Saint-Tropez : transferts depuis Nice ou La Môle, plages de Pampelonne, yachting et soirées privées. Mercedes haut de gamme, tarif fixe.',
+  canonical: 'https://www.amani-limousines.com/chauffeur-prive-saint-tropez',
+});
 
 const zones = [
   { zone: 'Port de Saint-Tropez', note: 'Quai Jean-Jaurès, yachts, Sénéquier, place des Lices' },
@@ -38,6 +38,8 @@ const occasions = [
 ];
 
 export default function ChauffeurPriveSaintTropez() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -45,17 +47,10 @@ export default function ChauffeurPriveSaintTropez() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Saint-Tropez — Golfe de Saint-Tropez</p>
           <h1 className="heading mt-3">
-            <strong>Chauffeur privé Saint-Tropez</strong> —{' '}
-            <em>prestige, plages et soirées</em>
+            {c('h1', 'Chauffeur privé Saint-Tropez — prestige, plages et soirées')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Saint-Tropez est un village de 4 000 habitants qui accueille 80 000 personnes
-            par jour en été. La route départementale qui y mène est à voie unique sur
-            plusieurs kilomètres, et les bouchons du week-end peuvent durer deux heures.
-            Un <strong>chauffeur privé à Saint-Tropez</strong> connaît les créneaux, les
-            raccourcis par Grimaud et les accès par la route des plages. Amani Limousines
-            vous y conduit depuis Nice, l'aéroport de La Môle ou votre yacht, en Mercedes,
-            au tarif fixe.
+            {c('intro', 'Saint-Tropez est un village de 4 000 habitants qui accueille 80 000 personnes par jour en été. La route départementale qui y mène est à voie unique sur plusieurs kilomètres, et les bouchons du week-end peuvent durer deux heures. Un chauffeur privé à Saint-Tropez connaît les créneaux, les raccourcis par Grimaud et les accès par la route des plages. Amani Limousines vous y conduit depuis Nice, l\'aéroport de La Môle ou votre yacht, en Mercedes, au tarif fixe.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

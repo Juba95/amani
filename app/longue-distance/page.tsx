@@ -1,18 +1,20 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'longue-distance';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Privé Longue Distance depuis Paris — France & Europe | Amani Limousines',
-  description:
-    'Transferts longue distance avec chauffeur privé depuis Paris. Paris–Deauville, Paris–Bruxelles, Paris–Lyon, Paris–Cannes. Berlines et vans VIP équipés Wi-Fi.',
+  description: 'Transferts longue distance avec chauffeur privé depuis Paris. Paris–Deauville, Paris–Bruxelles, Paris–Lyon, Paris–Cannes. Berlines et vans VIP équipés Wi-Fi.',
+  canonical: 'https://www.amani-limousines.com/longue-distance',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/longue-distance',
     languages: {
       en: 'https://www.amani-limousines.com/en/long-distance',
       'x-default': 'https://www.amani-limousines.com/longue-distance',
     },
   },
-};
+});
 
 const routes = [
   { route: 'Paris → Deauville', km: '200 km', duree: '2h30', note: 'Week-ends, Coupes d\'Amérique, Festival du film' },
@@ -26,6 +28,8 @@ const routes = [
 ];
 
 export default function LongueDistancePage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -33,16 +37,10 @@ export default function LongueDistancePage() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Longue distance — France & Europe</p>
           <h1 className="heading mt-3">
-            <strong>Chauffeur privé longue distance</strong> depuis Paris —{' '}
-            <em>votre bureau roulant</em>
+            {c('h1', 'Chauffeur privé longue distance depuis Paris — votre bureau roulant')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Le train n'arrive pas toujours à destination, l'avion impose des aéroports souvent
-            excentrés. Pour les trajets de 150 à 1 000 km, un{' '}
-            <strong>chauffeur privé longue distance Paris</strong> offre une alternative que
-            ni le TGV ni l'avion ne peuvent concurrencer sur le critère du confort de travail.
-            Wi-Fi, prises 220V, climatisation individuelle, silence : vous travaillez ou vous
-            dormez, le chauffeur gère.
+            {c('intro', 'Le train n\'arrive pas toujours à destination, l\'avion impose des aéroports souvent excentrés. Pour les trajets de 150 à 1 000 km, un chauffeur privé longue distance Paris offre une alternative que ni le TGV ni l\'avion ne peuvent concurrencer sur le critère du confort de travail. Wi-Fi, prises 220V, climatisation individuelle, silence : vous travaillez ou vous dormez, le chauffeur gère.')}
           </p>
         </div>
       </section>

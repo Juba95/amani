@@ -1,14 +1,14 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'transfert-cdg-hotel-bristol';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Privé CDG Hôtel Le Bristol Paris — Transfert Faubourg Saint-Honoré | Amani',
-  description:
-    'Transfert CDG vers l\'Hôtel Le Bristol Paris avec chauffeur privé. 30 km, 40–50 min. Mercedes Classe S. Prix fixe tout compris. Suivi de vol, disponible 24h/24.',
-  alternates: {
-    canonical: 'https://www.amani-limousines.com/transfert-cdg-hotel-bristol',
-  },
-};
+  description: 'Transfert CDG vers l\'Hôtel Le Bristol Paris avec chauffeur privé. 30 km, 40–50 min. Mercedes Classe S. Prix fixe tout compris. Suivi de vol, disponible 24h/24.',
+  canonical: 'https://www.amani-limousines.com/transfert-cdg-hotel-bristol',
+});
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -22,6 +22,8 @@ const jsonLd = {
 };
 
 export default function TransfertCDGBristolPage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
@@ -31,16 +33,10 @@ export default function TransfertCDGBristolPage() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">CDG → Hôtel Le Bristol Paris · Faubourg Saint-Honoré</p>
           <h1 className="heading mt-3">
-            <strong>Chauffeur privé CDG Hôtel Le Bristol Paris</strong> —{' '}
-            <em>Rue du Faubourg, 30 km</em>
+            {c('h1', 'Chauffeur privé CDG Hôtel Le Bristol Paris — Rue du Faubourg, 30 km')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Le Bristol Paris est au 112, rue du Faubourg Saint-Honoré, dans le 8ème. À 30 km de
-            Charles de Gaulle, ce trajet prend entre 40 et 50 minutes selon la circulation.
-            Le <strong>transfert CDG Le Bristol Paris avec chauffeur privé</strong> est le
-            standard que la clientèle de ce palace attend : véhicule haut de gamme, chauffeur
-            en tenue, pancarte nominative en zone d'arrivée, bagages pris en charge dès la sortie
-            du tapis roulant.
+            {c('intro', 'Le Bristol Paris est au 112, rue du Faubourg Saint-Honoré, dans le 8ème. À 30 km de Charles de Gaulle, ce trajet prend entre 40 et 50 minutes selon la circulation. Le transfert CDG Le Bristol Paris avec chauffeur privé est le standard que la clientèle de ce palace attend : véhicule haut de gamme, chauffeur en tenue, pancarte nominative en zone d\'arrivée, bagages pris en charge dès la sortie du tapis roulant.')}
           </p>
         </div>
       </section>

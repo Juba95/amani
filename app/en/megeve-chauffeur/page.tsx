@@ -1,19 +1,21 @@
 import type { Metadata } from 'next';
 import SEOLayoutEN from '@/components/SEOLayoutEN';
 import Link from 'next/link';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'en/megeve-chauffeur';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur to Megève — Paris to Megève Private Transfer | Amani Limousines',
-  description:
-    'Private chauffeur from Paris to Megève. 640 km, fixed price. Departures from CDG, Orly or any address. Mercedes vehicles, 7 days a week, year-round.',
+  description: 'Private chauffeur from Paris to Megève. 640 km, fixed price. Departures from CDG, Orly or any address. Mercedes vehicles, 7 days a week, year-round.',
+  canonical: 'https://www.amani-limousines.com/en/megeve-chauffeur',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/en/megeve-chauffeur',
     languages: {
       fr: 'https://www.amani-limousines.com/chauffeur-prive-megeve',
       'x-default': 'https://www.amani-limousines.com/en/megeve-chauffeur',
     },
   },
-};
+});
 
 const routes = [
   {
@@ -48,6 +50,8 @@ const areas = [
 ];
 
 export default function MegeveChauffeur() {
+  const c = content(SLUG);
+
   return (
     <SEOLayoutEN>
       {/* Hero */}
@@ -55,14 +59,10 @@ export default function MegeveChauffeur() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Haute-Savoie — Mont-Blanc Massif</p>
           <h1 className="heading mt-3">
-            <strong>Chauffeur to Megève</strong> —{' '}
-            <em>from Paris and the airports</em>
+            {c('h1', 'Chauffeur to Megève — from Paris and the airports')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Megève has no direct train link from Paris. The closest station is Sallanches,
-            12 km from the resort, with a change at Geneva or Annecy. For a group with ski
-            bags, a private car from Paris is often faster and always more direct. Amani
-            Limousines covers this route year-round with a fixed price confirmed before departure.
+            {c('intro', 'Megève has no direct train link from Paris. The closest station is Sallanches, 12 km from the resort, with a change at Geneva or Annecy. For a group with ski bags, a private car from Paris is often faster and always more direct. Amani Limousines covers this route year-round with a fixed price confirmed before departure.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

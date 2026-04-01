@@ -1,19 +1,21 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
 import Link from 'next/link';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'chauffeur-prive-marseille';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Privé Marseille — Aéroport Provence, Calanques & Affaires | Amani Limousines',
-  description:
-    'Chauffeur privé à Marseille : transferts aéroport Marseille-Provence, croisières au Vieux-Port, déplacements vers Aix-en-Provence et les Calanques. Mercedes, tarif fixe.',
+  description: 'Chauffeur privé à Marseille : transferts aéroport Marseille-Provence, croisières au Vieux-Port, déplacements vers Aix-en-Provence et les Calanques. Mercedes, tarif fixe.',
+  canonical: 'https://www.amani-limousines.com/chauffeur-prive-marseille',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/chauffeur-prive-marseille',
     languages: {
       en: 'https://www.amani-limousines.com/en/marseille-airport-transfer',
       'x-default': 'https://www.amani-limousines.com/chauffeur-prive-marseille',
     },
   },
-};
+});
 
 const zones = [
   { zone: 'Aéroport Marseille-Provence', note: 'Accueil terminal, suivi des vols, Marignane' },
@@ -42,6 +44,8 @@ const occasions = [
 ];
 
 export default function ChauffeurPriveMarseille() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -49,16 +53,10 @@ export default function ChauffeurPriveMarseille() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Marseille — Provence</p>
           <h1 className="heading mt-3">
-            <strong>Chauffeur privé Marseille</strong> —{' '}
-            <em>aéroport, croisières et Provence</em>
+            {c('h1', 'Chauffeur privé Marseille — aéroport, croisières et Provence')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Marseille est une ville immense qui s'étire sur 57 kilomètres de littoral.
-            De l'aéroport de Marignane au Vieux-Port, de la gare Saint-Charles aux
-            Calanques, les distances sont trompeuses et la circulation imprévisible. Un{' '}
-            <strong>chauffeur privé à Marseille</strong> vous fait gagner du temps et de
-            la sérénité. Amani Limousines couvre Marseille, Aix-en-Provence, Cassis et
-            l'ensemble des Bouches-du-Rhône en Mercedes, au tarif fixe.
+            {c('intro', 'Marseille est une ville immense qui s\'étire sur 57 kilomètres de littoral. De l\'aéroport de Marignane au Vieux-Port, de la gare Saint-Charles aux Calanques, les distances sont trompeuses et la circulation imprévisible. Un chauffeur privé à Marseille vous fait gagner du temps et de la sérénité. Amani Limousines couvre Marseille, Aix-en-Provence, Cassis et l\'ensemble des Bouches-du-Rhône en Mercedes, au tarif fixe.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

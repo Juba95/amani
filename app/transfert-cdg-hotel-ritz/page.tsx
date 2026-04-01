@@ -1,19 +1,14 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'transfert-cdg-hotel-ritz';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Privé CDG Hôtel Ritz Paris — Transfert Aéroport Place Vendôme | Amani',
-  description:
-    'Transfert CDG vers l\'Hôtel Ritz Paris (Place Vendôme) avec chauffeur privé. 30 km, 40 min. Mercedes Classe S, accueil VIP, bagagiste à bord. Prix fixe 225 €.',
-  alternates: {
-    canonical: 'https://www.amani-limousines.com/transfert-cdg-hotel-ritz',
-  },
-  openGraph: {
-    title: 'Chauffeur Privé CDG → Hôtel Ritz Paris | Amani Limousines',
-    description: 'Transfert aéroport CDG vers le Ritz Paris. Mercedes Classe S, prix fixe.',
-    url: 'https://www.amani-limousines.com/transfert-cdg-hotel-ritz',
-  },
-};
+  description: 'Transfert CDG vers l\'Hôtel Ritz Paris (Place Vendôme) avec chauffeur privé. 30 km, 40 min. Mercedes Classe S, accueil VIP, bagagiste à bord. Prix fixe 225 €.',
+  canonical: 'https://www.amani-limousines.com/transfert-cdg-hotel-ritz',
+});
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -29,6 +24,8 @@ const jsonLd = {
 };
 
 export default function TransfertCDGRitzPage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
@@ -38,17 +35,10 @@ export default function TransfertCDGRitzPage() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">CDG → Hôtel Ritz Paris · Place Vendôme</p>
           <h1 className="heading mt-3">
-            <strong>Chauffeur privé CDG Hôtel Ritz Paris</strong> —{' '}
-            <em>Place Vendôme, 30 km, 40 minutes</em>
+            {c('h1', 'Chauffeur privé CDG Hôtel Ritz Paris — Place Vendôme, 30 km, 40 minutes')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Le Ritz Paris est situé au 15, place Vendôme, dans le 1er arrondissement. Depuis
-            l'aéroport Charles de Gaulle, le trajet couvre environ 30 km par l'A1 puis la
-            traversée de Paris jusqu'à la Rue de la Paix. Un{' '}
-            <strong>chauffeur privé CDG Hôtel Ritz Paris</strong> en Mercedes Classe S ou BMW i7
-            est la seule arrivée cohérente avec le niveau du palace. L'entrée principale
-            de l'hôtel dispose d'un espace dépose-minute réservé aux véhicules de prestige —
-            votre chauffeur le connaît.
+            {c('intro', 'Le Ritz Paris est situé au 15, place Vendôme, dans le 1er arrondissement. Depuis l\'aéroport Charles de Gaulle, le trajet couvre environ 30 km par l\'A1 puis la traversée de Paris jusqu\'à la Rue de la Paix. Un chauffeur privé CDG Hôtel Ritz Paris en Mercedes Classe S ou BMW i7 est la seule arrivée cohérente avec le niveau du palace. L\'entrée principale de l\'hôtel dispose d\'un espace dépose-minute réservé aux véhicules de prestige — votre chauffeur le connaît.')}
           </p>
         </div>
       </section>

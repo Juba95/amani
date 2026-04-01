@@ -1,19 +1,21 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
 import Link from 'next/link';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'chauffeur-prive-chamonix';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Privé Chamonix — Transfert Paris Chamonix | Amani Limousines',
-  description:
-    'Chauffeur privé Paris Chamonix en Mercedes. 600 km, prix fixe sans compteur. Départ CDG, Orly ou Paris intramuros. Disponible 7j/7, toute l\'année.',
+  description: 'Chauffeur privé Paris Chamonix en Mercedes. 600 km, prix fixe sans compteur. Départ CDG, Orly ou Paris intramuros. Disponible 7j/7, toute l\'année.',
+  canonical: 'https://www.amani-limousines.com/chauffeur-prive-chamonix',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/chauffeur-prive-chamonix',
     languages: {
       en: 'https://www.amani-limousines.com/en/chamonix-chauffeur',
       'x-default': 'https://www.amani-limousines.com/chauffeur-prive-chamonix',
     },
   },
-};
+});
 
 const itineraires = [
   {
@@ -58,6 +60,8 @@ const vehicules = [
 ];
 
 export default function ChauffeurPriveChamonix() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -65,14 +69,10 @@ export default function ChauffeurPriveChamonix() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Haute-Savoie — Massif du Mont-Blanc</p>
           <h1 className="heading mt-3">
-            <strong>Chauffeur privé Chamonix</strong> —{' '}
-            <em>depuis Paris et les aéroports</em>
+            {c('h1', 'Chauffeur privé Chamonix — depuis Paris et les aéroports')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Paris–Chamonix en voiture avec chauffeur : 600 km de trajet, prix fixe annoncé avant
-            la réservation, aucun supplément. Amani Limousines couvre ce trajet toute l'année,
-            saison de ski comme saison estivale, avec des véhicules Mercedes récents et des
-            chauffeurs habitués aux routes de montagne.
+            {c('intro', 'Paris–Chamonix en voiture avec chauffeur : 600 km de trajet, prix fixe annoncé avant la réservation, aucun supplément. Amani Limousines couvre ce trajet toute l\'année, saison de ski comme saison estivale, avec des véhicules Mercedes récents et des chauffeurs habitués aux routes de montagne.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

@@ -1,19 +1,21 @@
 import type { Metadata } from 'next';
 import SEOLayoutEN from '@/components/SEOLayoutEN';
 import Link from 'next/link';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'en/haute-savoie-chauffeur';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Haute-Savoie Chauffeur — Paris to Chamonix, Megève, Annecy | Amani Limousines',
-  description:
-    'Private chauffeur from Paris to all of Haute-Savoie: Chamonix, Megève, Annecy, Thonon, Évian. Fixed price. From CDG, Orly or any Paris address.',
+  description: 'Private chauffeur from Paris to all of Haute-Savoie: Chamonix, Megève, Annecy, Thonon, Évian. Fixed price. From CDG, Orly or any Paris address.',
+  canonical: 'https://www.amani-limousines.com/en/haute-savoie-chauffeur',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/en/haute-savoie-chauffeur',
     languages: {
       fr: 'https://www.amani-limousines.com/chauffeur-prive-haute-savoie',
       'x-default': 'https://www.amani-limousines.com/en/haute-savoie-chauffeur',
     },
   },
-};
+});
 
 const destinations = [
   {
@@ -55,6 +57,8 @@ const destinations = [
 ];
 
 export default function HauteSavoieChauffeur() {
+  const c = content(SLUG);
+
   return (
     <SEOLayoutEN>
       {/* Hero */}
@@ -62,15 +66,10 @@ export default function HauteSavoieChauffeur() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Département 74 — Haute-Savoie</p>
           <h1 className="heading mt-3">
-            <strong>Haute-Savoie chauffeur</strong> —{' '}
-            <em>Chamonix, Megève, Annecy and beyond</em>
+            {c('h1', 'Haute-Savoie chauffeur — Chamonix, Megève, Annecy and beyond')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Haute-Savoie includes destinations that the train serves poorly: Chamonix,
-            Megève, Morzine, the French shore of Lake Geneva. Amani Limousines covers
-            the whole department from Paris, CDG and Orly in recent Mercedes, with a
-            fixed price. The drive is between 5 and 7 hours depending on the destination,
-            with no connections or local shuttles to coordinate on arrival.
+            {c('intro', 'Haute-Savoie includes destinations that the train serves poorly: Chamonix, Megève, Morzine, the French shore of Lake Geneva. Amani Limousines covers the whole department from Paris, CDG and Orly in recent Mercedes, with a fixed price. The drive is between 5 and 7 hours depending on the destination, with no connections or local shuttles to coordinate on arrival.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

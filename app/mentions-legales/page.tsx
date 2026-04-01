@@ -1,20 +1,26 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'mentions-legales';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Mentions Légales — Amani Limousines',
   description: 'Mentions légales d\'Amani Limousines, service de chauffeur privé de prestige à Paris.',
-  alternates: { canonical: 'https://www.amani-limousines.com/mentions-legales' },
-  robots: { index: false, follow: false },
-};
+  canonical: 'https://www.amani-limousines.com/mentions-legales',
+});
 
 export default function MentionsLegalesPage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       <section className="pt-36 pb-20 px-6 md:px-10 bg-white">
         <div className="max-w-3xl mx-auto">
           <p className="tag">Informations légales</p>
-          <h1 className="heading mt-3">Mentions légales</h1>
+          <h1 className="heading mt-3">
+            {c('h1', 'Mentions légales')}
+          </h1>
 
           <div className="mt-10 space-y-10 sf text-stone-600 leading-relaxed">
             <div>

@@ -1,31 +1,28 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'transfert-cdg-la-defense';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Transfert CDG La Défense — Chauffeur Privé Aéroport Paris | Amani Limousines',
-  description:
-    'Transfert entre CDG et La Défense avec chauffeur privé. 35 km, 40 minutes. Tour Total, KPMG, Société Générale, Areva. Prix fixe, disponible 24h/24.',
-  alternates: {
-    canonical: 'https://www.amani-limousines.com/transfert-cdg-la-defense',
-  },
-};
+  description: 'Transfert entre CDG et La Défense avec chauffeur privé. 35 km, 40 minutes. Tour Total, KPMG, Société Générale, Areva. Prix fixe, disponible 24h/24.',
+  canonical: 'https://www.amani-limousines.com/transfert-cdg-la-defense',
+});
 
 export default function TransfertCDGLaDefensePage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       <section className="pt-36 pb-16 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
           <p className="tag">CDG ↔ La Défense</p>
           <h1 className="heading mt-3">
-            <strong>Transfert CDG La Défense</strong> avec chauffeur privé —{' '}
-            <em>quartier d'affaires, service corporate</em>
+            {c('h1', 'Transfert CDG La Défense avec chauffeur privé — quartier d\'affaires, service corporate')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            La Défense est le premier quartier d'affaires européen. Total, LVMH, Société Générale,
-            Areva, KPMG, Deloitte : leurs sièges y sont tous. Les cadres et délégations qui arrivent
-            à CDG et rejoignent La Défense constituent l'une de nos clientèles les plus régulières.
-            Un <strong>chauffeur privé CDG La Défense</strong> évite les correspondances RER B
-            puis ligne 1 avec les bagages de voyage d'affaires.
+            {c('intro', 'La Défense est le premier quartier d\'affaires européen. Total, LVMH, Société Générale, Areva, KPMG, Deloitte : leurs sièges y sont tous. Les cadres et délégations qui arrivent à CDG et rejoignent La Défense constituent l\'une de nos clientèles les plus régulières. Un chauffeur privé CDG La Défense évite les correspondances RER B puis ligne 1 avec les bagages de voyage d\'affaires.')}
           </p>
         </div>
       </section>

@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
 import Link from 'next/link';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'chauffeur-coreen';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Coréen Paris — Chauffeur Privé Parlant Coréen | Amani Limousines',
-  description:
-    'Chauffeur privé parlant coréen à Paris. K-beauty, mode, tourisme, événements corporate. Communication en coréen. Disponible 24h/24.',
-  alternates: {
-    canonical: 'https://www.amani-limousines.com/chauffeur-coreen',
-  },
-};
+  description: 'Chauffeur privé parlant coréen à Paris. K-beauty, mode, tourisme, événements corporate. Communication en coréen. Disponible 24h/24.',
+  canonical: 'https://www.amani-limousines.com/chauffeur-coreen',
+});
 
 const services = [
   {
@@ -46,6 +46,8 @@ const situations = [
 ];
 
 export default function ChauffeurCoreenPage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -53,17 +55,10 @@ export default function ChauffeurCoreenPage() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Chauffeur Coréen</p>
           <h1 className="heading mt-3">
-            Chauffeur privé parlant <em>coréen</em> à <strong>Paris</strong>
+            {c('h1', 'Chauffeur privé parlant coréen à Paris')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Les Coréens à Paris, on en voit de plus en plus. Acheteurs mode pendant
-            la Fashion Week, touristes passionnés par la culture française, cadres
-            des grands groupes en déplacement pro. Le point commun de tous ces
-            voyageurs : avoir un{' '}
-            <strong>chauffeur qui parle coréen</strong> rend le séjour tellement
-            plus simple. Plus besoin de galérer avec Google Translate pour donner
-            une adresse. Le chauffeur est là, il parle votre langue, il connaît
-            Paris. C'est tout.
+            {c('intro', 'Les Coréens à Paris, on en voit de plus en plus. Acheteurs mode pendant la Fashion Week, touristes passionnés par la culture française, cadres des grands groupes en déplacement pro. Le point commun de tous ces voyageurs : avoir un chauffeur qui parle coréen rend le séjour tellement plus simple. Plus besoin de galérer avec Google Translate pour donner une adresse. Le chauffeur est là, il parle votre langue, il connaît Paris. C\'est tout.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

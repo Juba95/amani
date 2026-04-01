@@ -1,19 +1,21 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
 import Link from 'next/link';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'chauffeur-prive-lyon';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Privé Lyon — Aéroport Saint Exupéry & Affaires | Amani Limousines',
-  description:
-    'Chauffeur privé à Lyon : transferts aéroport Saint Exupéry, salons Eurexpo, déplacements d\'affaires à la Part-Dieu et mise à disposition. Mercedes, tarif fixe.',
+  description: 'Chauffeur privé à Lyon : transferts aéroport Saint Exupéry, salons Eurexpo, déplacements d\'affaires à la Part-Dieu et mise à disposition. Mercedes, tarif fixe.',
+  canonical: 'https://www.amani-limousines.com/chauffeur-prive-lyon',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/chauffeur-prive-lyon',
     languages: {
       en: 'https://www.amani-limousines.com/en/lyon-airport-transfer',
       'x-default': 'https://www.amani-limousines.com/chauffeur-prive-lyon',
     },
   },
-};
+});
 
 const zones = [
   { zone: 'Aéroport Lyon-Saint Exupéry', note: 'Accueil terminal, suivi des vols, parking couvert' },
@@ -48,6 +50,8 @@ const occasions = [
 ];
 
 export default function ChauffeurPriveLyon() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -55,15 +59,10 @@ export default function ChauffeurPriveLyon() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Lyon — Auvergne-Rhône-Alpes</p>
           <h1 className="heading mt-3">
-            <strong>Chauffeur privé Lyon</strong> —{' '}
-            <em>aéroport, affaires et gastronomie</em>
+            {c('h1', 'Chauffeur privé Lyon — aéroport, affaires et gastronomie')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Lyon mêle quartiers d'affaires, patrimoine UNESCO et tables étoilées. Se déplacer
-            entre la Presqu'île, la Part-Dieu et Saint Exupéry demande un chauffeur qui connaît
-            les raccourcis et les horaires de bouchon. Amani Limousines assure vos transferts
-            dans toute l'agglomération lyonnaise avec des véhicules Mercedes, un tarif fixe
-            et une ponctualité rigoureuse.
+            {c('intro', 'Lyon mêle quartiers d\'affaires, patrimoine UNESCO et tables étoilées. Se déplacer entre la Presqu\'île, la Part-Dieu et Saint Exupéry demande un chauffeur qui connaît les raccourcis et les horaires de bouchon. Amani Limousines assure vos transferts dans toute l\'agglomération lyonnaise avec des véhicules Mercedes, un tarif fixe et une ponctualité rigoureuse.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

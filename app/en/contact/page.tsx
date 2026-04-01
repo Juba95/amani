@@ -1,30 +1,31 @@
 import type { Metadata } from 'next';
 import SEOLayoutEN from '@/components/SEOLayoutEN';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'en/contact';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Contact — Amani Limousines | Private Driver Paris 24/7',
-  description:
-    'Contact Amani Limousines for your private driver in Paris. Phone, WhatsApp, email. Response within 30 minutes. Available 24/7, 365 days a year.',
+  description: 'Contact Amani Limousines for your private driver in Paris. Phone, WhatsApp, email. Response within 30 minutes. Available 24/7, 365 days a year.',
+  canonical: 'https://www.amani-limousines.com/en/contact',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/en/contact',
     languages: { fr: 'https://www.amani-limousines.com/contact' },
   },
-};
+});
 
 export default function ContactEN() {
+  const c = content(SLUG);
+
   return (
     <SEOLayoutEN>
       <section className="pt-36 pb-16 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
           <p className="tag">Get in touch</p>
           <h1 className="heading mt-3">
-            Contact our <em>team</em> —{' '}
-            <strong>private driver Paris</strong> 24/7
+            {c('h1', 'Contact our team — private driver Paris 24/7')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Our team is available around the clock, every day of the year, for bookings,
-            bespoke quotes and logistics questions. We respond within 30 minutes,
-            including overnight and on public holidays.
+            {c('intro', 'Our team is available around the clock, every day of the year, for bookings, bespoke quotes and logistics questions. We respond within 30 minutes, including overnight and on public holidays.')}
           </p>
         </div>
       </section>

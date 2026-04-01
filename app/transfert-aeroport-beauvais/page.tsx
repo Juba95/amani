@@ -1,20 +1,17 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'transfert-aeroport-beauvais';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Transfert Aéroport Beauvais-Tillé Paris — Chauffeur Privé | Amani Limousines',
-  description:
-    'Transfert depuis et vers l\'aéroport de Beauvais-Tillé (BVA). Navette privée vers Paris, 85 km en Mercedes. Tarif fixe, suivi des vols, disponible 24h/24.',
+  description: 'Transfert depuis et vers l\'aéroport de Beauvais-Tillé (BVA). Navette privée vers Paris, 85 km en Mercedes. Tarif fixe, suivi des vols, disponible 24h/24.',
+  canonical: 'https://www.amani-limousines.com/transfert-aeroport-beauvais',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/transfert-aeroport-beauvais',
     languages: { en: 'https://www.amani-limousines.com/en/cdg-airport-transfer' },
   },
-  openGraph: {
-    title: 'Transfert Aéroport Beauvais-Tillé | Amani Limousines',
-    description: 'Chauffeur privé depuis Beauvais vers Paris. 85 km, tarif fixe, suivi des vols.',
-    url: 'https://www.amani-limousines.com/transfert-aeroport-beauvais',
-  },
-};
+});
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -30,6 +27,8 @@ const jsonLd = {
 };
 
 export default function TransfertAeroportBeauvaisPage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
@@ -39,11 +38,10 @@ export default function TransfertAeroportBeauvaisPage() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Transfert aéroport — Beauvais-Tillé (BVA)</p>
           <h1 className="heading mt-3">
-            <strong>Transfert aéroport Beauvais-Tillé</strong> —{' '}
-            <em>navette privée vers Paris en Mercedes</em>
+            {c('h1', 'Transfert aéroport Beauvais-Tillé — navette privée vers Paris en Mercedes')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            L'aéroport de Beauvais-Tillé est à 85 km au nord de Paris. Les compagnies low-cost — Ryanair en tête — en font un point de départ pour toute l'Île-de-France. Problème : les navettes officielles mettent une heure et demie et ne vont qu'aux portes Maillot ou Persier. Un chauffeur privé depuis Beauvais vous dépose à votre adresse, pas à un arrêt de bus.
+            {c('intro', 'L\'aéroport de Beauvais-Tillé est à 85 km au nord de Paris. Les compagnies low-cost — Ryanair en tête — en font un point de départ pour toute l\'Île-de-France. Problème : les navettes officielles mettent une heure et demie et ne vont qu\'aux portes Maillot ou Persier. Un chauffeur privé depuis Beauvais vous dépose à votre adresse, pas à un arrêt de bus.')}
           </p>
         </div>
       </section>

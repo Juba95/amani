@@ -1,17 +1,19 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'evenements';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Transport Événementiel Paris — Salons, Fashion Week, Compétitions | Amani Limousines',
-  description:
-    'Transport VIP pour vos événements à Paris. Fashion Week, Paris Air Show, Roland Garros, Festival de Cannes, Salon Nautic, Maison & Objet. Flotte dédiée, coordination sur site.',
+  description: 'Transport VIP pour vos événements à Paris. Fashion Week, Paris Air Show, Roland Garros, Festival de Cannes, Salon Nautic, Maison & Objet. Flotte dédiée, coordination sur site.',
+  canonical: 'https://www.amani-limousines.com/evenements',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/evenements',
     languages: {
       en: 'https://www.amani-limousines.com/en/events',
     },
   },
-};
+});
 
 const evenements = [
   { titre: 'Paris Fashion Week', periode: 'Février & Septembre', slug: 'paris-fashion-week', desc: 'Navettes entre les maisons de couture, les hôtels du Triangle d\'Or et les showrooms du Marais.' },
@@ -25,6 +27,8 @@ const evenements = [
 ];
 
 export default function EvenementsPage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -32,16 +36,10 @@ export default function EvenementsPage() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Transport événementiel</p>
           <h1 className="heading mt-3">
-            Transport VIP pour vos{' '}
-            <em>événements</em>{' '}
-            <strong>à Paris</strong>
+            {c('h1', 'Transport VIP pour vos événements à Paris')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Paris est la capitale mondiale des événements de prestige. Fashion Week, Air Show,
-            Roland Garros, Festival de Cannes : chaque grand rendez-vous génère des flux de
-            transport intenses que seules des équipes rodées à ces contraintes spécifiques
-            peuvent absorber. Amani Limousines intervient sur chaque édition avec des flotte
-            dédiées, des coordinateurs sur site et une réservation des véhicules bien en amont.
+            {c('intro', 'Paris est la capitale mondiale des événements de prestige. Fashion Week, Air Show, Roland Garros, Festival de Cannes : chaque grand rendez-vous génère des flux de transport intenses que seules des équipes rodées à ces contraintes spécifiques peuvent absorber. Amani Limousines intervient sur chaque édition avec des flotte dédiées, des coordinateurs sur site et une réservation des véhicules bien en amont.')}
           </p>
         </div>
       </section>

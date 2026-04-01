@@ -1,31 +1,28 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'transfert-cdg-versailles';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Transfert CDG Versailles — Chauffeur Privé Charles de Gaulle Versailles | Amani',
-  description:
-    'Transfert entre l\'aéroport CDG et Versailles avec chauffeur privé. 55 km, 55 minutes. Château de Versailles, Trianon, hôtels. Prix fixe tout compris.',
-  alternates: {
-    canonical: 'https://www.amani-limousines.com/transfert-cdg-versailles',
-  },
-};
+  description: 'Transfert entre l\'aéroport CDG et Versailles avec chauffeur privé. 55 km, 55 minutes. Château de Versailles, Trianon, hôtels. Prix fixe tout compris.',
+  canonical: 'https://www.amani-limousines.com/transfert-cdg-versailles',
+});
 
 export default function TransfertCDGVersaillesPage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       <section className="pt-36 pb-16 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
           <p className="tag">CDG ↔ Versailles</p>
           <h1 className="heading mt-3">
-            <strong>Transfert CDG Versailles</strong> avec chauffeur privé —{' '}
-            <em>55 km, sans changement</em>
+            {c('h1', 'Transfert CDG Versailles avec chauffeur privé — 55 km, sans changement')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Versailles attire chaque année des millions de visiteurs internationaux qui arrivent
-            majoritairement à Charles de Gaulle. En transports en commun, le trajet CDG–Versailles
-            implique au moins deux correspondances et plus d'une heure trente. Avec un{' '}
-            <strong>chauffeur privé CDG Versailles</strong>, vous êtes devant le Château en
-            55 minutes environ, directement depuis le terminal, sans rupture de charge.
+            {c('intro', 'Versailles attire chaque année des millions de visiteurs internationaux qui arrivent majoritairement à Charles de Gaulle. En transports en commun, le trajet CDG–Versailles implique au moins deux correspondances et plus d\'une heure trente. Avec un chauffeur privé CDG Versailles, vous êtes devant le Château en 55 minutes environ, directement depuis le terminal, sans rupture de charge.')}
           </p>
         </div>
       </section>

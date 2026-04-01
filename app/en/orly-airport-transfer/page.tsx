@@ -1,17 +1,21 @@
 import type { Metadata } from 'next';
 import SEOLayoutEN from '@/components/SEOLayoutEN';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'en/orly-airport-transfer';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Private Driver Orly Airport Paris — ORY Transfer | Amani Limousines',
-  description:
-    'Private chauffeur at Orly airport Paris. Terminals 1–4 covered. Fixed price from €80, flight tracking, 24/7 availability. Closest airport to Paris centre.',
+  description: 'Private chauffeur at Orly airport Paris. Terminals 1–4 covered. Fixed price from €80, flight tracking, 24/7 availability. Closest airport to Paris centre.',
+  canonical: 'https://www.amani-limousines.com/en/orly-airport-transfer',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/en/orly-airport-transfer',
     languages: { fr: 'https://www.amani-limousines.com/transfert-aeroport-orly' },
   },
-};
+});
 
 export default function OrlyAirportTransferEN() {
+  const c = content(SLUG);
+
   return (
     <SEOLayoutEN>
       {/* Hero */}
@@ -19,14 +23,10 @@ export default function OrlyAirportTransferEN() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Paris-Orly Airport</p>
           <h1 className="heading mt-3">
-            <strong>Private driver Orly airport Paris</strong> —{' '}
-            <em>18 km from the centre, the shortest airport run</em>
+            {c('h1', 'Private driver Orly airport Paris — 18 km from the centre, the shortest airport run')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Orly sits just 18 kilometres south of central Paris — closer than CDG by a long margin.
-            In normal traffic, the drive from Orly 4 to the Place d'Italie takes 25 to 30 minutes.
-            A <strong>private chauffeur at Orly airport</strong> skips the OrlyVal tram, the RER B
-            connection and the stairs — you go straight from the arrivals hall to your Mercedes.
+            {c('intro', 'Orly sits just 18 kilometres south of central Paris — closer than CDG by a long margin. In normal traffic, the drive from Orly 4 to the Place d\'Italie takes 25 to 30 minutes. A private chauffeur at Orly airport skips the OrlyVal tram, the RER B connection and the stairs — you go straight from the arrivals hall to your Mercedes.')}
           </p>
         </div>
       </section>

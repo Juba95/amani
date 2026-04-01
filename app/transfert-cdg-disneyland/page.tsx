@@ -1,31 +1,28 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'transfert-cdg-disneyland';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Transfert CDG Disneyland Paris — Chauffeur Privé Marne-la-Vallée | Amani',
-  description:
-    'Transfert aéroport CDG vers Disneyland Paris avec chauffeur privé. 45 km, 40 minutes. Familles et groupes bienvenus. Mercedes Classe V disponible. Prix fixe.',
-  alternates: {
-    canonical: 'https://www.amani-limousines.com/transfert-cdg-disneyland',
-  },
-};
+  description: 'Transfert aéroport CDG vers Disneyland Paris avec chauffeur privé. 45 km, 40 minutes. Familles et groupes bienvenus. Mercedes Classe V disponible. Prix fixe.',
+  canonical: 'https://www.amani-limousines.com/transfert-cdg-disneyland',
+});
 
 export default function TransfertCDGDisneylandPage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       <section className="pt-36 pb-16 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
           <p className="tag">CDG ↔ Disneyland Paris</p>
           <h1 className="heading mt-3">
-            <strong>Transfert CDG Disneyland Paris</strong> avec chauffeur privé —{' '}
-            <em>familles et groupes</em>
+            {c('h1', 'Transfert CDG Disneyland Paris avec chauffeur privé — familles et groupes')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Marne-la-Vallée et Disneyland Paris sont à 45 km de Charles de Gaulle — bien plus
-            proche que Paris intra-muros, et en direction opposée. La Navette officielle Disney
-            Express existe, mais avec des bagages de famille, de jeunes enfants et des horaires
-            décalés, un <strong>chauffeur privé CDG Disneyland</strong> en Classe V (7 passagers)
-            ou en Sprinter (16 passagers) reste la solution la plus confortable.
+            {c('intro', 'Marne-la-Vallée et Disneyland Paris sont à 45 km de Charles de Gaulle — bien plus proche que Paris intra-muros, et en direction opposée. La Navette officielle Disney Express existe, mais avec des bagages de famille, de jeunes enfants et des horaires décalés, un chauffeur privé CDG Disneyland en Classe V (7 passagers) ou en Sprinter (16 passagers) reste la solution la plus confortable.')}
           </p>
         </div>
       </section>

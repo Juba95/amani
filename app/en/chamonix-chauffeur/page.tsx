@@ -1,19 +1,21 @@
 import type { Metadata } from 'next';
 import SEOLayoutEN from '@/components/SEOLayoutEN';
 import Link from 'next/link';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'en/chamonix-chauffeur';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur to Chamonix — Paris to Chamonix Private Transfer | Amani Limousines',
-  description:
-    'Private chauffeur from Paris to Chamonix. 600 km, fixed price. Departure from CDG, Orly or any Paris address. Recent Mercedes, available year-round.',
+  description: 'Private chauffeur from Paris to Chamonix. 600 km, fixed price. Departure from CDG, Orly or any Paris address. Recent Mercedes, available year-round.',
+  canonical: 'https://www.amani-limousines.com/en/chamonix-chauffeur',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/en/chamonix-chauffeur',
     languages: {
       fr: 'https://www.amani-limousines.com/chauffeur-prive-chamonix',
       'x-default': 'https://www.amani-limousines.com/en/chamonix-chauffeur',
     },
   },
-};
+});
 
 const routes = [
   {
@@ -69,6 +71,8 @@ const fleet = [
 ];
 
 export default function ChamonixChauffeur() {
+  const c = content(SLUG);
+
   return (
     <SEOLayoutEN>
       {/* Hero */}
@@ -76,14 +80,10 @@ export default function ChamonixChauffeur() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Haute-Savoie — Mont-Blanc Massif</p>
           <h1 className="heading mt-3">
-            <strong>Chauffeur to Chamonix</strong> —{' '}
-            <em>from Paris and the airports</em>
+            {c('h1', 'Chauffeur to Chamonix — from Paris and the airports')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Paris to Chamonix is 600 km and about 6 hours by road. There is no direct
-            train. Amani Limousines covers this route year-round from Paris, CDG and
-            Orly in recent Mercedes vehicles, with a fixed price agreed before the booking
-            is confirmed. No meter, no surprises at the end of a long drive.
+            {c('intro', 'Paris to Chamonix is 600 km and about 6 hours by road. There is no direct train. Amani Limousines covers this route year-round from Paris, CDG and Orly in recent Mercedes vehicles, with a fixed price agreed before the booking is confirmed. No meter, no surprises at the end of a long drive.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

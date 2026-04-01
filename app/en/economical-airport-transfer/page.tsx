@@ -1,19 +1,21 @@
 import type { Metadata } from 'next';
 import SEOLayoutEN from '@/components/SEOLayoutEN';
 import Link from 'next/link';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'en/economical-airport-transfer';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Economical Airport Transfer Paris — Fixed Price, No Meter | Amani Limousines',
-  description:
-    'Airport transfer from Paris CDG, Orly and Beauvais with fixed price. No meter, no peak surcharges. Know your fare before you book. Available 24/7.',
+  description: 'Airport transfer from Paris CDG, Orly and Beauvais with fixed price. No meter, no peak surcharges. Know your fare before you book. Available 24/7.',
+  canonical: 'https://www.amani-limousines.com/en/economical-airport-transfer',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/en/economical-airport-transfer',
     languages: {
       fr: 'https://www.amani-limousines.com/transfert-aeroport-economique',
       'x-default': 'https://www.amani-limousines.com/en/economical-airport-transfer',
     },
   },
-};
+});
 
 const rates = [
   {
@@ -66,6 +68,8 @@ const advantages = [
 ];
 
 export default function EconomicalAirportTransfer() {
+  const c = content(SLUG);
+
   return (
     <SEOLayoutEN>
       {/* Hero */}
@@ -73,14 +77,10 @@ export default function EconomicalAirportTransfer() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">CDG · Orly · Beauvais</p>
           <h1 className="heading mt-3">
-            <strong>Airport transfer Paris</strong> —{' '}
-            <em>fixed price, no meter</em>
+            {c('h1', 'Airport transfer Paris — fixed price, no meter')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            A Paris taxi from CDG can cost €55 or €110 depending on traffic, time
-            of day and how fast the meter runs. With an Amani driver, you have a price
-            before you get in the car, and that price does not change. CDG, Orly and
-            Beauvais, 24 hours a day, seven days a week.
+            {c('intro', 'A Paris taxi from CDG can cost €55 or €110 depending on traffic, time of day and how fast the meter runs. With an Amani driver, you have a price before you get in the car, and that price does not change. CDG, Orly and Beauvais, 24 hours a day, seven days a week.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

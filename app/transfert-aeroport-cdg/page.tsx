@@ -1,22 +1,19 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'transfert-aeroport-cdg';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Privé Aéroport CDG Paris — Transfert Charles de Gaulle | Amani Limousines',
-  description:
-    'Réservez votre chauffeur privé à l\'aéroport Charles de Gaulle. Prix fixe, suivi de vol, accueil en salle d\'arrivée. Berlines Mercedes et vans VIP disponibles 24h/24.',
+  description: 'Réservez votre chauffeur privé à l\'aéroport Charles de Gaulle. Prix fixe, suivi de vol, accueil en salle d\'arrivée. Berlines Mercedes et vans VIP disponibles 24h/24.',
+  canonical: 'https://www.amani-limousines.com/transfert-aeroport-cdg',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/transfert-aeroport-cdg',
     languages: {
       en: 'https://www.amani-limousines.com/en/cdg-airport-transfer',
     },
   },
-  openGraph: {
-    title: 'Chauffeur Privé CDG Paris | Amani Limousines',
-    description: 'Transfert aéroport CDG avec chauffeur privé. Prix fixe, suivi de vol, Meet & Greet.',
-    url: 'https://www.amani-limousines.com/transfert-aeroport-cdg',
-  },
-};
+});
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -33,6 +30,8 @@ const jsonLd = {
 };
 
 export default function TransfertCDGPage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       <script
@@ -45,15 +44,10 @@ export default function TransfertCDGPage() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Aéroport Charles de Gaulle</p>
           <h1 className="heading mt-3">
-            <strong>Chauffeur privé CDG Paris</strong> —{' '}
-            <em>transfert aéroport</em> sans attente
+            {c('h1', 'Chauffeur privé CDG Paris — transfert aéroport sans attente')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Chaque année, plus de 67 millions de passagers transitent par Roissy–Charles de Gaulle.
-            Trouver un <strong>chauffeur privé à l'aéroport CDG</strong> fiable, à l'heure, et qui connaît
-            réellement les terminaux fait toute la différence. Chez Amani Limousines,
-            nous assurons des transferts depuis et vers CDG sept jours sur sept, de nuit comme de jour,
-            sans compteur ni surprise sur la note.
+            {c('intro', 'Chaque année, plus de 67 millions de passagers transitent par Roissy–Charles de Gaulle. Trouver un chauffeur privé à l\'aéroport CDG fiable, à l\'heure, et qui connaît réellement les terminaux fait toute la différence. Chez Amani Limousines, nous assurons des transferts depuis et vers CDG sept jours sur sept, de nuit comme de jour, sans compteur ni surprise sur la note.')}
           </p>
         </div>
       </section>

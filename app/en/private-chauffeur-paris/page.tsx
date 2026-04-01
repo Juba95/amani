@@ -1,19 +1,21 @@
 import type { Metadata } from 'next';
 import SEOLayoutEN from '@/components/SEOLayoutEN';
 import Link from 'next/link';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'en/private-chauffeur-paris';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Private Chauffeur Paris — 24/7 Mercedes Fleet | Amani Limousines',
-  description:
-    'Private chauffeur service in Paris for airport transfers, hourly hire and long distance. Mercedes E, S and V Class. Fixed rates, flight tracking included.',
+  description: 'Private chauffeur service in Paris for airport transfers, hourly hire and long distance. Mercedes E, S and V Class. Fixed rates, flight tracking included.',
+  canonical: 'https://www.amani-limousines.com/en/private-chauffeur-paris',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/en/private-chauffeur-paris',
     languages: {
       fr: 'https://www.amani-limousines.com/chauffeur-prive-paris',
       'x-default': 'https://www.amani-limousines.com/en/private-chauffeur-paris',
     },
   },
-};
+});
 
 const services = [
   {
@@ -62,6 +64,8 @@ const whyAmani = [
 ];
 
 export default function PrivateChauffeurParis() {
+  const c = content(SLUG);
+
   return (
     <SEOLayoutEN>
       {/* Hero */}
@@ -69,16 +73,10 @@ export default function PrivateChauffeurParis() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Paris — Île-de-France</p>
           <h1 className="heading mt-3">
-            <strong>Private chauffeur in Paris</strong> —{' '}
-            <em>available 24 hours a day</em>
+            {c('h1', 'Private chauffeur in Paris — available 24 hours a day')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Paris traffic is not the same at 8am and 10am. The difference can be an hour.
-            A <strong>private chauffeur in Paris</strong> who knows the city plans around
-            that — not around an app's optimistic estimate. Amani Limousines has been
-            operating in Paris and the Île-de-France region since 2012: airports, business
-            districts, hotels, private addresses. Fixed prices, Mercedes fleet, available
-            seven days a week.
+            {c('intro', 'Paris traffic is not the same at 8am and 10am. The difference can be an hour. A private chauffeur in Paris who knows the city plans around that — not around an app\'s optimistic estimate. Amani Limousines has been operating in Paris and the Île-de-France region since 2012: airports, business districts, hotels, private addresses. Fixed prices, Mercedes fleet, available seven days a week.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

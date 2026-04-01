@@ -1,16 +1,18 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import SEOLayout from '@/components/SEOLayout';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'notre-flotte';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Flotte de Véhicules de Prestige Paris — Mercedes, Range Rover, Sprinter VIP | Amani',
-  description:
-    'Découvrez notre flotte de véhicules de prestige à Paris. Mercedes Classe E, EQS, S, Maybach, V, G, Range Rover Evoque et Sprinter VIP. Plus de 300 véhicules renouvelés chaque année.',
+  description: 'Découvrez notre flotte de véhicules de prestige à Paris. Mercedes Classe E, EQS, S, Maybach, V, G, Range Rover Evoque et Sprinter VIP. Plus de 300 véhicules renouvelés chaque année.',
+  canonical: 'https://www.amani-limousines.com/notre-flotte',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/notre-flotte',
     languages: { en: 'https://www.amani-limousines.com/en/our-fleet' },
   },
-};
+});
 
 const vehicules = [
   {
@@ -119,6 +121,8 @@ const faq = [
 ];
 
 export default function NotreFlottePage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -126,15 +130,10 @@ export default function NotreFlottePage() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Notre flotte</p>
           <h1 className="heading mt-3">
-            Véhicules de <em>prestige</em>{' '}
-            <strong>à Paris</strong> — plus de 300 unités
+            {c('h1', 'Véhicules de prestige à Paris — plus de 300 unités')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Chez Amani Limousines, la flotte est renouvelée chaque année pour garantir que vos
-            passagers voyagent dans des véhicules récents. Pas de modèles vieillissants tolérés
-            sous prétexte qu'ils sont encore en état de marche. Nos <strong>véhicules de
-            prestige à Paris</strong> ont moins de trois ans en moyenne, et sont entretenus
-            selon les préconisations constructeur à chaque intervention.
+            {c('intro', 'Chez Amani Limousines, la flotte est renouvelée chaque année pour garantir que vos passagers voyagent dans des véhicules récents. Pas de modèles vieillissants tolérés sous prétexte qu\'ils sont encore en état de marche. Nos véhicules de prestige à Paris ont moins de trois ans en moyenne, et sont entretenus selon les préconisations constructeur à chaque intervention.')}
           </p>
         </div>
       </section>

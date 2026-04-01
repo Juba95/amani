@@ -1,22 +1,19 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'transfert-aeroport-orly';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Privé Aéroport Orly Paris — Transfert ORY | Amani Limousines',
-  description:
-    'Transfert avec chauffeur privé à l\'aéroport d\'Orly. Terminaux 1, 2, 3 et 4 couverts. Prix fixe, suivi de vol, accueil personnalisé. Réservation 24h/24.',
+  description: 'Transfert avec chauffeur privé à l\'aéroport d\'Orly. Terminaux 1, 2, 3 et 4 couverts. Prix fixe, suivi de vol, accueil personnalisé. Réservation 24h/24.',
+  canonical: 'https://www.amani-limousines.com/transfert-aeroport-orly',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/transfert-aeroport-orly',
     languages: {
       en: 'https://www.amani-limousines.com/en/orly-airport-transfer',
     },
   },
-  openGraph: {
-    title: 'Chauffeur Privé Orly Paris | Amani Limousines',
-    description: 'Transfert aéroport Orly avec chauffeur privé. Prix fixe, disponible 24h/24.',
-    url: 'https://www.amani-limousines.com/transfert-aeroport-orly',
-  },
-};
+});
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -32,6 +29,8 @@ const jsonLd = {
 };
 
 export default function TransfertOrlyPage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       <script
@@ -44,16 +43,10 @@ export default function TransfertOrlyPage() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Aéroport Paris-Orly</p>
           <h1 className="heading mt-3">
-            <strong>Chauffeur privé Orly Paris</strong> —{' '}
-            <em>18 km du centre</em>, zéro stress
+            {c('h1', 'Chauffeur privé Orly Paris — 18 km du centre, zéro stress')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Orly est l'aéroport le plus proche de Paris intra-muros. Dix-huit kilomètres séparent
-            le terminal 4 de la Place d'Italie — soit 25 à 35 minutes selon la circulation.
-            Pourtant, sans <strong>chauffeur privé à l'aéroport Orly</strong>, ces vingt minutes
-            peuvent facilement devenir une heure entre la queue taxi, le rechargement de compte
-            Navigo et un Orlyval parfois bondé. Amani Limousines couvre les quatre terminaux d'Orly
-            avec le même niveau de service que Charles de Gaulle.
+            {c('intro', 'Orly est l\'aéroport le plus proche de Paris intra-muros. Dix-huit kilomètres séparent le terminal 4 de la Place d\'Italie — soit 25 à 35 minutes selon la circulation. Pourtant, sans chauffeur privé à l\'aéroport Orly, ces vingt minutes peuvent facilement devenir une heure entre la queue taxi, le rechargement de compte Navigo et un Orlyval parfois bondé. Amani Limousines couvre les quatre terminaux d\'Orly avec le même niveau de service que Charles de Gaulle.')}
           </p>
         </div>
       </section>

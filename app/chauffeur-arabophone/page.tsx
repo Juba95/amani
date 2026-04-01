@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
 import Link from 'next/link';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'chauffeur-arabophone';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Arabophone Paris — Chauffeur Privé Parlant Arabe | Amani Limousines',
-  description:
-    'Chauffeur privé parlant arabe à Paris. Accueil délégations du Golfe, shopping de luxe, tourisme médical. Communication en arabe. Disponible 24h/24.',
-  alternates: {
-    canonical: 'https://www.amani-limousines.com/chauffeur-arabophone',
-  },
-};
+  description: 'Chauffeur privé parlant arabe à Paris. Accueil délégations du Golfe, shopping de luxe, tourisme médical. Communication en arabe. Disponible 24h/24.',
+  canonical: 'https://www.amani-limousines.com/chauffeur-arabophone',
+});
 
 const services = [
   {
@@ -46,6 +46,8 @@ const situations = [
 ];
 
 export default function ChauffeurArabophonePage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -53,16 +55,10 @@ export default function ChauffeurArabophonePage() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Chauffeur Arabophone</p>
           <h1 className="heading mt-3">
-            Chauffeur privé <em>arabophone</em> à <strong>Paris</strong>
+            {c('h1', 'Chauffeur privé arabophone à Paris')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            On reçoit beaucoup de familles et de voyageurs du monde arabe à Paris.
-            Ce qu'ils nous disent souvent : le plus important, c'est d'avoir quelqu'un
-            qui parle leur langue et qui connaît la ville. Un{' '}
-            <strong>chauffeur arabophone</strong>, ça veut dire zéro galère pour
-            expliquer où vous allez, ce dont vous avez besoin, ou comment organiser
-            la journée. Il connaît les bonnes adresses, il sait comment ça marche
-            à Paris, et il est dispo quand vous en avez besoin.
+            {c('intro', 'On reçoit beaucoup de familles et de voyageurs du monde arabe à Paris. Ce qu\'ils nous disent souvent : le plus important, c\'est d\'avoir quelqu\'un qui parle leur langue et qui connaît la ville. Un chauffeur arabophone, ça veut dire zéro galère pour expliquer où vous allez, ce dont vous avez besoin, ou comment organiser la journée. Il connaît les bonnes adresses, il sait comment ça marche à Paris, et il est dispo quand vous en avez besoin.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

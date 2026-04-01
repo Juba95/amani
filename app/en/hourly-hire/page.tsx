@@ -1,17 +1,21 @@
 import type { Metadata } from 'next';
 import SEOLayoutEN from '@/components/SEOLayoutEN';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'en/hourly-hire';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Hourly Hire Private Driver Paris — Chauffeur by the Hour | Amani Limousines',
-  description:
-    'Hire a private driver in Paris by the hour. Half-day, full day or multi-day. Vehicle waits during meetings — no meter running. Mercedes fleet, 24/7 availability.',
+  description: 'Hire a private driver in Paris by the hour. Half-day, full day or multi-day. Vehicle waits during meetings — no meter running. Mercedes fleet, 24/7 availability.',
+  canonical: 'https://www.amani-limousines.com/en/hourly-hire',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/en/hourly-hire',
     languages: { fr: 'https://www.amani-limousines.com/mise-a-disposition' },
   },
-};
+});
 
 export default function HourlyHireEN() {
+  const c = content(SLUG);
+
   return (
     <SEOLayoutEN>
       {/* Hero */}
@@ -19,14 +23,10 @@ export default function HourlyHireEN() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">As-directed hire</p>
           <h1 className="heading mt-3">
-            <strong>Private driver Paris by the hour</strong> —{' '}
-            <em>your schedule, our flexibility</em>
+            {c('h1', 'Private driver Paris by the hour — your schedule, our flexibility')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Hourly hire places a <strong>private chauffeur in Paris</strong> at your service for
-            a set duration. The vehicle stays nearby between each stop — parked, reachable in
-            two minutes — turning a full day of meetings across the city into something
-            considerably more manageable than chasing taxis between appointments.
+            {c('intro', 'Hourly hire places a private chauffeur in Paris at your service for a set duration. The vehicle stays nearby between each stop — parked, reachable in two minutes — turning a full day of meetings across the city into something considerably more manageable than chasing taxis between appointments.')}
           </p>
         </div>
       </section>

@@ -1,16 +1,18 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'transfert-le-bourget';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Privé Le Bourget — Transfert Aviation Privée | Amani Limousines',
-  description:
-    'Chauffeur privé à l\'aéroport du Bourget. Accueil FBO, jets privés, délégations officielles. 15 km de Paris. Disponible 24h/24, flotte Mercedes et vans VIP.',
-  alternates: {
-    canonical: 'https://www.amani-limousines.com/transfert-le-bourget',
-  },
-};
+  description: 'Chauffeur privé à l\'aéroport du Bourget. Accueil FBO, jets privés, délégations officielles. 15 km de Paris. Disponible 24h/24, flotte Mercedes et vans VIP.',
+  canonical: 'https://www.amani-limousines.com/transfert-le-bourget',
+});
 
 export default function TransfertLeBourgetPage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -18,15 +20,10 @@ export default function TransfertLeBourgetPage() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Aviation Privée — Le Bourget</p>
           <h1 className="heading mt-3">
-            <strong>Chauffeur privé Le Bourget Paris</strong> —{' '}
-            <em>transferts jets et hélicoptères</em>
+            {c('h1', 'Chauffeur privé Le Bourget Paris — transferts jets et hélicoptères')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            L'aéroport du Bourget est la principale plateforme d'aviation d'affaires en France,
-            et l'une des plus fréquentées d'Europe. Dassault Falcon, Bombardier Global,
-            Gulfstream G700 : les appareils qui se posent ici transportent des dirigeants,
-            des délégations gouvernementales et des familles qui n'ont pas de marge sur les horaires.
-            Le <strong>transfert chauffeur privé Le Bourget</strong> doit être à la hauteur de l'appareil.
+            {c('intro', 'L\'aéroport du Bourget est la principale plateforme d\'aviation d\'affaires en France, et l\'une des plus fréquentées d\'Europe. Dassault Falcon, Bombardier Global, Gulfstream G700 : les appareils qui se posent ici transportent des dirigeants, des délégations gouvernementales et des familles qui n\'ont pas de marge sur les horaires. Le transfert chauffeur privé Le Bourget doit être à la hauteur de l\'appareil.')}
           </p>
         </div>
       </section>

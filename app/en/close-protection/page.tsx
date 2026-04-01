@@ -1,32 +1,31 @@
 import type { Metadata } from 'next';
 import SEOLayoutEN from '@/components/SEOLayoutEN';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'en/close-protection';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Close Protection Paris — Secure Transport & Bodyguard Driver | Amani Limousines',
-  description:
-    'Close protection and secure transport in Paris. Discreet vehicles, security-trained drivers, principal and follow cars. Available for VIPs, executives and diplomats.',
+  description: 'Close protection and secure transport in Paris. Discreet vehicles, security-trained drivers, principal and follow cars. Available for VIPs, executives and diplomats.',
+  canonical: 'https://www.amani-limousines.com/en/close-protection',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/en/close-protection',
     languages: { fr: 'https://www.amani-limousines.com/securite-rapprochee' },
   },
-};
+});
 
 export default function CloseProtectionEN() {
+  const c = content(SLUG);
+
   return (
     <SEOLayoutEN>
       <section className="pt-36 pb-16 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
           <p className="tag">Secure transport — Paris</p>
           <h1 className="heading mt-3">
-            <strong>Close protection and secure transport in Paris</strong> —{' '}
-            <em>discretion above all</em>
+            {c('h1', 'Close protection and secure transport in Paris — discretion above all')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Urban close protection in Paris is primarily about anticipation, route selection
-            and discretion. Our drivers assigned to <strong>secure transport missions in Paris</strong>
-            are trained in defensive driving, urban threat awareness and communication protocols
-            with protection teams. They know the alternative routes, the rapid egress points
-            and the access roads that most drivers never use.
+            {c('intro', 'Urban close protection in Paris is primarily about anticipation, route selection and discretion. Our drivers assigned to secure transport missions in Paris are trained in defensive driving, urban threat awareness and communication protocols with protection teams. They know the alternative routes, the rapid egress points and the access roads that most drivers never use.')}
           </p>
         </div>
       </section>

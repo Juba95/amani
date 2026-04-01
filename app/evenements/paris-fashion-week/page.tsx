@@ -1,16 +1,18 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'evenements/paris-fashion-week';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Privé Paris Fashion Week — Transport Défilés & Showrooms | Amani',
-  description:
-    'Transport VIP pour la Paris Fashion Week. Navettes entre les défilés Chanel, Dior, Louis Vuitton. Chauffeur privé Paris disponible 24h/24 pendant la fashion week.',
-  alternates: {
-    canonical: 'https://www.amani-limousines.com/evenements/paris-fashion-week',
-  },
-};
+  description: 'Transport VIP pour la Paris Fashion Week. Navettes entre les défilés Chanel, Dior, Louis Vuitton. Chauffeur privé Paris disponible 24h/24 pendant la fashion week.',
+  canonical: 'https://www.amani-limousines.com/evenements/paris-fashion-week',
+});
 
 export default function ParisFashionWeekPage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -18,16 +20,10 @@ export default function ParisFashionWeekPage() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Événement — Février & Septembre</p>
           <h1 className="heading mt-3">
-            <strong>Chauffeur privé Paris Fashion Week</strong> —{' '}
-            <em>entre chaque défilé, sans attente</em>
+            {c('h1', 'Chauffeur privé Paris Fashion Week — entre chaque défilé, sans attente')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            La Fashion Week parisienne concentre en une semaine les adresses les plus disputées
-            de la capitale. Palais Royal, Grand Palais Éphémère, Trocadéro, Marais, 8ème
-            arrondissement : les défilés se déroulent dans des lieux hétéroclites, souvent peu
-            accessibles aux taxis ordinaires. Un <strong>chauffeur privé Paris Fashion Week</strong>
-            dédié reste à votre disposition entre chaque défilé, stationné à proximité,
-            prêt à vous déposer à l'entrée VIP suivante.
+            {c('intro', 'La Fashion Week parisienne concentre en une semaine les adresses les plus disputées de la capitale. Palais Royal, Grand Palais Éphémère, Trocadéro, Marais, 8ème arrondissement : les défilés se déroulent dans des lieux hétéroclites, souvent peu accessibles aux taxis ordinaires. Un chauffeur privé Paris Fashion Week dédié reste à votre disposition entre chaque défilé, stationné à proximité, prêt à vous déposer à l\'entrée VIP suivante.')}
           </p>
         </div>
       </section>

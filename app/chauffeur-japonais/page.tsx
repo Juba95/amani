@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
 import Link from 'next/link';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'chauffeur-japonais';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Japonais Paris — Chauffeur Privé Parlant Japonais | Amani Limousines',
-  description:
-    'Chauffeur privé parlant japonais à Paris. Haute couture, restaurants étoilés, affaires. Communication en japonais. Disponible 24h/24.',
-  alternates: {
-    canonical: 'https://www.amani-limousines.com/chauffeur-japonais',
-  },
-};
+  description: 'Chauffeur privé parlant japonais à Paris. Haute couture, restaurants étoilés, affaires. Communication en japonais. Disponible 24h/24.',
+  canonical: 'https://www.amani-limousines.com/chauffeur-japonais',
+});
 
 const services = [
   {
@@ -46,6 +46,8 @@ const situations = [
 ];
 
 export default function ChauffeurJaponaisPage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -53,16 +55,10 @@ export default function ChauffeurJaponaisPage() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Chauffeur Japonais</p>
           <h1 className="heading mt-3">
-            Chauffeur privé parlant <em>japonais</em> à <strong>Paris</strong>
+            {c('h1', 'Chauffeur privé parlant japonais à Paris')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Quand un voyageur japonais arrive à Paris, il s'attend à un certain
-            niveau de service. On le sait. C'est pour ça qu'on a des{' '}
-            <strong>chauffeurs qui parlent japonais</strong> et qui connaissent les
-            codes : la ponctualité à la minute, la propreté du véhicule, la discrétion.
-            Pas de blabla inutile, pas de retard, pas d'à-peu-près. Le chauffeur
-            est là quand il faut, où il faut, et il parle votre langue.
-            Dispo 24h/24, tous les jours.
+            {c('intro', 'Quand un voyageur japonais arrive à Paris, il s\'attend à un certain niveau de service. On le sait. C\'est pour ça qu\'on a des chauffeurs qui parlent japonais et qui connaissent les codes : la ponctualité à la minute, la propreté du véhicule, la discrétion. Pas de blabla inutile, pas de retard, pas d\'à-peu-près. Le chauffeur est là quand il faut, où il faut, et il parle votre langue. Dispo 24h/24, tous les jours.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

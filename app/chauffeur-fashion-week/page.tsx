@@ -1,19 +1,21 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
 import Link from 'next/link';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'chauffeur-fashion-week';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Fashion Week Paris — Transport VIP Mode & Luxe | Amani Limousines',
-  description:
-    'Chauffeur privé pour la Fashion Week de Paris, Milan et Londres. Transport mannequins, designers, acheteurs. Shows, showrooms, afterparties. Flotte Mercedes.',
+  description: 'Chauffeur privé pour la Fashion Week de Paris, Milan et Londres. Transport mannequins, designers, acheteurs. Shows, showrooms, afterparties. Flotte Mercedes.',
+  canonical: 'https://www.amani-limousines.com/chauffeur-fashion-week',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/chauffeur-fashion-week',
     languages: {
       en: 'https://www.amani-limousines.com/en/chauffeur-fashion-week',
       'x-default': 'https://www.amani-limousines.com/chauffeur-fashion-week',
     },
   },
-};
+});
 
 const occasions = [
   {
@@ -48,6 +50,8 @@ const fashionWeeks = [
 ];
 
 export default function ChauffeurFashionWeek() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -55,16 +59,10 @@ export default function ChauffeurFashionWeek() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Mode & Luxe — Paris</p>
           <h1 className="heading mt-3">
-            <strong>Chauffeur Fashion Week Paris</strong> —{' '}
-            <em>transport sur mesure pour le monde de la mode</em>
+            {c('h1', 'Chauffeur Fashion Week Paris — transport sur mesure pour le monde de la mode')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            La <strong>Fashion Week de Paris</strong> impose un rythme que les transports
-            classiques ne suivent pas. Quatre shows dans la journée, un dîner le soir, un
-            afterparty ensuite — et chaque lieu est à l'autre bout de Paris. Amani Limousines
-            accompagne maisons de couture, acheteurs, mannequins et presse depuis plusieurs
-            saisons. Nos chauffeurs connaissent les lieux, les accès réservés et les horaires
-            réels, pas ceux du programme officiel.
+            {c('intro', 'La Fashion Week de Paris impose un rythme que les transports classiques ne suivent pas. Quatre shows dans la journée, un dîner le soir, un afterparty ensuite — et chaque lieu est à l\'autre bout de Paris. Amani Limousines accompagne maisons de couture, acheteurs, mannequins et presse depuis plusieurs saisons. Nos chauffeurs connaissent les lieux, les accès réservés et les horaires réels, pas ceux du programme officiel.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

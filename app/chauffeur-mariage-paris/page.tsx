@@ -1,19 +1,23 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
+import { content, contentMetadata } from '@/lib/get-content';
 
-export const metadata: Metadata = {
+const SLUG = 'chauffeur-mariage-paris';
+
+export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Privé Mariage Paris — Mercedes Classe S et Classe E | Amani Limousines',
-  description:
-    'Chauffeur privé pour mariage à Paris et Île-de-France. Mercedes Classe E et Classe S pour les mariés, Sprinter VIP pour les convois. Tarif à la journée ou demi-journée.',
+  description: 'Chauffeur privé pour mariage à Paris et Île-de-France. Mercedes Classe E et Classe S pour les mariés, Sprinter VIP pour les convois. Tarif à la journée ou demi-journée.',
+  canonical: 'https://www.amani-limousines.com/chauffeur-mariage-paris',
   alternates: {
-    canonical: 'https://www.amani-limousines.com/chauffeur-mariage-paris',
     languages: {
       en: 'https://www.amani-limousines.com/en',
     },
   },
-};
+});
 
 export default function ChauffeurMariageParisPage() {
+  const c = content(SLUG);
+
   return (
     <SEOLayout>
       {/* Hero */}
@@ -21,15 +25,10 @@ export default function ChauffeurMariageParisPage() {
         <div className="max-w-4xl mx-auto">
           <p className="tag">Mariage — Paris & Île-de-France</p>
           <h1 className="heading mt-3">
-            <strong>Chauffeur privé pour mariage à Paris</strong> —{' '}
-            <em>véhicule pour les mariés et les convois</em>
+            {c('h1', 'Chauffeur privé pour mariage à Paris — véhicule pour les mariés et les convois')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Le transport du mariage, c'est souvent la dernière chose à laquelle on pense et la
-            première à poser problème. Le chauffeur des mariés arrive en retard, le cortège se
-            disperse, quelqu'un doit garder un œil sur les horaires. On s'occupe de tout ça.
-            Flotte Mercedes, disponibilité à la demi-journée ou à la journée, coordination avec
-            votre maître de cérémonie si nécessaire.
+            {c('intro', 'Le transport du mariage, c\'est souvent la dernière chose à laquelle on pense et la première à poser problème. Le chauffeur des mariés arrive en retard, le cortège se disperse, quelqu\'un doit garder un œil sur les horaires. On s\'occupe de tout ça. Flotte Mercedes, disponibilité à la demi-journée ou à la journée, coordination avec votre maître de cérémonie si nécessaire.')}
           </p>
         </div>
       </section>
