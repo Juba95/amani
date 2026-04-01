@@ -58,11 +58,10 @@ const nextConfig = {
       'lorgues','maisons-alfort',
     ];
 
-    const cityRedirects = deletedCities.map(city => ({
-      source: `/${city}/`,
-      destination: '/longue-distance',
-      permanent: true,
-    }));
+    const cityRedirects = deletedCities.flatMap(city => [
+      { source: `/${city}/`, destination: '/longue-distance', permanent: true },
+      { source: `/${city}`, destination: '/longue-distance', permanent: true },
+    ]);
 
     // Hôtels palaces — redirections vers pages dédiées (les 3 prioritaires)
     // ou vers la page hub CDG pour les autres
@@ -83,16 +82,14 @@ const nextConfig = {
     ];
 
     const hotelRedirects = [
-      ...hotelPrioritaires.map(({ slug, dest }) => ({
-        source: `/${slug}/`,
-        destination: dest,
-        permanent: true,
-      })),
-      ...hotelAutres.map(slug => ({
-        source: `/${slug}/`,
-        destination: '/transfert-aeroport-cdg',
-        permanent: true,
-      })),
+      ...hotelPrioritaires.flatMap(({ slug, dest }) => [
+        { source: `/${slug}/`, destination: dest, permanent: true },
+        { source: `/${slug}`, destination: dest, permanent: true },
+      ]),
+      ...hotelAutres.flatMap(slug => [
+        { source: `/${slug}/`, destination: '/transfert-aeroport-cdg', permanent: true },
+        { source: `/${slug}`, destination: '/transfert-aeroport-cdg', permanent: true },
+      ]),
     ];
 
     return [
@@ -100,34 +97,58 @@ const nextConfig = {
       { source: '/mise-a-disposition/', destination: '/mise-a-disposition', permanent: true },
       { source: '/transfert-prive/', destination: '/transfert-prive', permanent: true },
       { source: '/meet-and-greet-services/', destination: '/meet-and-greet', permanent: true },
+      { source: '/meet-and-greet-services', destination: '/meet-and-greet', permanent: true },
       { source: '/convoi-de-vehicule-delegations-mission-diplomatique-ambassade/', destination: '/convoi-delegations', permanent: true },
+      { source: '/convoi-de-vehicule-delegations-mission-diplomatique-ambassade', destination: '/convoi-delegations', permanent: true },
       { source: '/protection-et-securite-nos-services-de-garde-du-corps-chez-amani-limousines/', destination: '/securite-rapprochee', permanent: true },
+      { source: '/protection-et-securite-nos-services-de-garde-du-corps-chez-amani-limousines', destination: '/securite-rapprochee', permanent: true },
       { source: '/excursion-privee-france/', destination: '/excursion-privee', permanent: true },
+      { source: '/excursion-privee-france', destination: '/excursion-privee', permanent: true },
       { source: '/prestation-de-guide-culinaire/', destination: '/excursion-privee', permanent: true },
+      { source: '/prestation-de-guide-culinaire', destination: '/excursion-privee', permanent: true },
       { source: '/transfert-longue-distance/', destination: '/longue-distance', permanent: true },
+      { source: '/transfert-longue-distance', destination: '/longue-distance', permanent: true },
 
       // === Événements ===
       { source: '/paris-fashion-week/', destination: '/evenements/paris-fashion-week', permanent: true },
+      { source: '/paris-fashion-week', destination: '/evenements/paris-fashion-week', permanent: true },
       { source: '/paris-air-show-siae-salon-le-bourget/', destination: '/evenements/paris-air-show', permanent: true },
+      { source: '/paris-air-show-siae-salon-le-bourget', destination: '/evenements/paris-air-show', permanent: true },
       { source: '/roland-gaross-tennis-paris/', destination: '/evenements/roland-garros', permanent: true },
+      { source: '/roland-gaross-tennis-paris', destination: '/evenements/roland-garros', permanent: true },
       { source: '/retrospective-des-festivals-de-cannes/', destination: '/evenements/festival-de-cannes', permanent: true },
+      { source: '/retrospective-des-festivals-de-cannes', destination: '/evenements/festival-de-cannes', permanent: true },
       { source: '/jo-2024/', destination: '/evenements', permanent: true },
+      { source: '/jo-2024', destination: '/evenements', permanent: true },
       { source: '/debarquement-normandie-80-eme-anniversaire/', destination: '/evenements', permanent: true },
+      { source: '/debarquement-normandie-80-eme-anniversaire', destination: '/evenements', permanent: true },
       { source: '/competitions-sportive/', destination: '/evenements', permanent: true },
+      { source: '/competitions-sportive', destination: '/evenements', permanent: true },
       { source: '/grand-prix-du-golf-lisle-adam/', destination: '/evenements', permanent: true },
+      { source: '/grand-prix-du-golf-lisle-adam', destination: '/evenements', permanent: true },
       { source: '/grand-prix-damerique-hippodrome-de-vincennes/', destination: '/evenements', permanent: true },
+      { source: '/grand-prix-damerique-hippodrome-de-vincennes', destination: '/evenements', permanent: true },
       { source: '/grand-prix-de-larc-de-triomphe-hippodrome-de-longchamp/', destination: '/evenements', permanent: true },
+      { source: '/grand-prix-de-larc-de-triomphe-hippodrome-de-longchamp', destination: '/evenements', permanent: true },
       { source: '/grand-prix-de-monaco/', destination: '/evenements/grand-prix-monaco', permanent: true },
+      { source: '/grand-prix-de-monaco', destination: '/evenements/grand-prix-monaco', permanent: true },
       { source: '/salon-nautic-salon-porte-de-versailles-nautique/', destination: '/evenements', permanent: true },
+      { source: '/salon-nautic-salon-porte-de-versailles-nautique', destination: '/evenements', permanent: true },
       { source: '/premiere-vision/', destination: '/evenements/salons-professionnels', permanent: true },
+      { source: '/premiere-vision', destination: '/evenements/salons-professionnels', permanent: true },
       { source: '/maison-et-objet-salon-villepinte-parc-des-expositions/', destination: '/evenements/salons-professionnels', permanent: true },
+      { source: '/maison-et-objet-salon-villepinte-parc-des-expositions', destination: '/evenements/salons-professionnels', permanent: true },
 
       // === Trajets stratégiques ===
       { source: '/paris/', destination: '/transfert-cdg-paris', permanent: true },
       { source: '/la-defense/', destination: '/transfert-cdg-la-defense', permanent: true },
+      { source: '/la-defense', destination: '/transfert-cdg-la-defense', permanent: true },
       { source: '/versailles/', destination: '/transfert-cdg-versailles', permanent: true },
+      { source: '/versailles', destination: '/transfert-cdg-versailles', permanent: true },
       { source: '/disneyland/', destination: '/transfert-cdg-disneyland', permanent: true },
+      { source: '/disneyland', destination: '/transfert-cdg-disneyland', permanent: true },
       { source: '/disneyland-paris/', destination: '/transfert-cdg-disneyland', permanent: true },
+      { source: '/disneyland-paris', destination: '/transfert-cdg-disneyland', permanent: true },
 
       // === Fleet (toutes les anciennes pages véhicules) ===
       { source: '/fleet/mercedes-classe-e/', destination: '/notre-flotte', permanent: true },
@@ -144,43 +165,74 @@ const nextConfig = {
 
       // === Pages EN existantes ===
       { source: '/en/provision/', destination: '/en/hourly-hire', permanent: true },
+      { source: '/en/provision', destination: '/en/hourly-hire', permanent: true },
       { source: '/en/paris-airport-transfer/', destination: '/en/cdg-airport-transfer', permanent: true },
+      { source: '/en/paris-airport-transfer', destination: '/en/cdg-airport-transfer', permanent: true },
       { source: '/en/our-fleet-of-vehicles/', destination: '/en/our-fleet', permanent: true },
+      { source: '/en/our-fleet-of-vehicles', destination: '/en/our-fleet', permanent: true },
 
       // === Pages EN manquantes — ajoutées depuis audit Google Search Console ===
       // Prestations
       { source: '/en/meet-and-greet-services/', destination: '/en/meet-and-greet', permanent: true },
+      { source: '/en/meet-and-greet-services', destination: '/en/meet-and-greet', permanent: true },
       { source: '/en/convoy-of-vehicles/', destination: '/en/delegation-transport', permanent: true },
+      { source: '/en/convoy-of-vehicles', destination: '/en/delegation-transport', permanent: true },
       { source: '/en/private-transfer/', destination: '/en/cdg-airport-transfer', permanent: true },
+      { source: '/en/private-transfer', destination: '/en/cdg-airport-transfer', permanent: true },
       { source: '/en/long-distance-transfer/', destination: '/en/long-distance', permanent: true },
+      { source: '/en/long-distance-transfer', destination: '/en/long-distance', permanent: true },
       { source: '/en/protection-et-securite-nos-services-de-garde-du-corps-chez-amani-limousines/', destination: '/en/close-protection', permanent: true },
+      { source: '/en/protection-et-securite-nos-services-de-garde-du-corps-chez-amani-limousines', destination: '/en/close-protection', permanent: true },
       { source: '/en/private-excursion/', destination: '/en/private-excursion', permanent: true },
+      { source: '/en/private-excursion', destination: '/en/private-excursion', permanent: true },
       // Aéroports régionaux → pages dédiées
       { source: '/en/airport-transfer-lyon/', destination: '/en/lyon-airport-transfer', permanent: true },
+      { source: '/en/airport-transfer-lyon', destination: '/en/lyon-airport-transfer', permanent: true },
       { source: '/en/airport-transfer-marseille/', destination: '/en/marseille-airport-transfer', permanent: true },
+      { source: '/en/airport-transfer-marseille', destination: '/en/marseille-airport-transfer', permanent: true },
       { source: '/en/airport-transfer-bordeaux/', destination: '/en/bordeaux-airport-transfer', permanent: true },
+      { source: '/en/airport-transfer-bordeaux', destination: '/en/bordeaux-airport-transfer', permanent: true },
       // Événements EN
       { source: '/en/paris-fashion-week/', destination: '/en/events', permanent: true },
+      { source: '/en/paris-fashion-week', destination: '/en/events', permanent: true },
       { source: '/en/paris-air-show/', destination: '/en/events', permanent: true },
+      { source: '/en/paris-air-show', destination: '/en/events', permanent: true },
       { source: '/en/sports-competitions/', destination: '/en/events', permanent: true },
+      { source: '/en/sports-competitions', destination: '/en/events', permanent: true },
       { source: '/en/roland-gaross/', destination: '/en/events', permanent: true },
+      { source: '/en/roland-gaross', destination: '/en/events', permanent: true },
       { source: '/en/maison-objet/', destination: '/en/events', permanent: true },
+      { source: '/en/maison-objet', destination: '/en/events', permanent: true },
       { source: '/en/mif-trade-show/', destination: '/en/events', permanent: true },
+      { source: '/en/mif-trade-show', destination: '/en/events', permanent: true },
       { source: '/en/nautic-show/', destination: '/en/events', permanent: true },
+      { source: '/en/nautic-show', destination: '/en/events', permanent: true },
       { source: '/en/first-vision/', destination: '/en/events', permanent: true },
+      { source: '/en/first-vision', destination: '/en/events', permanent: true },
       { source: '/en/grand-prix-de-larc-de-triomphe/', destination: '/en/events', permanent: true },
+      { source: '/en/grand-prix-de-larc-de-triomphe', destination: '/en/events', permanent: true },
       { source: '/en/grand-prix-of-america/', destination: '/en/events', permanent: true },
+      { source: '/en/grand-prix-of-america', destination: '/en/events', permanent: true },
       { source: '/en/grand-prix-of-the-golf-of-lisle-adam/', destination: '/en/events', permanent: true },
+      { source: '/en/grand-prix-of-the-golf-of-lisle-adam', destination: '/en/events', permanent: true },
       { source: '/en/the-monaco-grand-prix/', destination: '/en/events', permanent: true },
+      { source: '/en/the-monaco-grand-prix', destination: '/en/events', permanent: true },
       { source: '/en/grand-prix-damerique-hippodrome-de-vincennes/', destination: '/en/events', permanent: true },
+      { source: '/en/grand-prix-damerique-hippodrome-de-vincennes', destination: '/en/events', permanent: true },
       // Chauffeurs privés EN → page dédiée
       { source: '/en/private-chauffeur-in-paris/', destination: '/en/private-chauffeur-paris', permanent: true },
+      { source: '/en/private-chauffeur-in-paris', destination: '/en/private-chauffeur-paris', permanent: true },
       { source: '/en/private-chauffeur-in-bordeaux/', destination: '/en/private-chauffeur-bordeaux', permanent: true },
+      { source: '/en/private-chauffeur-in-bordeaux', destination: '/en/private-chauffeur-bordeaux', permanent: true },
       // Pages institutionnelles EN
       { source: '/en/legal-notice/', destination: '/en/contact', permanent: true },
+      { source: '/en/legal-notice', destination: '/en/contact', permanent: true },
       { source: '/en/gtc-general-terms-and-conditions-of-sale/', destination: '/en/contact', permanent: true },
+      { source: '/en/gtc-general-terms-and-conditions-of-sale', destination: '/en/contact', permanent: true },
       { source: '/en/about-us-i/', destination: '/en', permanent: true },
+      { source: '/en/about-us-i', destination: '/en', permanent: true },
       { source: '/en/booking/', destination: '/reservation', permanent: true },
+      { source: '/en/booking', destination: '/reservation', permanent: true },
       // Fleet pages EN
       { source: '/en/fleet/:model*', destination: '/en/our-fleet', permanent: true },
       // Pages blog/archives WordPress EN → homepage EN
@@ -193,28 +245,42 @@ const nextConfig = {
       // === Pages FR manquantes — ajoutées depuis audit Google Search Console ===
       // Chauffeurs privés dans d'autres villes
       { source: '/chauffeur-prive-a-paris/', destination: '/chauffeur-prive-paris', permanent: true },
+      { source: '/chauffeur-prive-a-paris', destination: '/chauffeur-prive-paris', permanent: true },
       { source: '/chauffeur-prive-a-bordeaux/', destination: '/chauffeur-prive-bordeaux', permanent: true },
-      { source: '/chauffeur-prive-anglophone-expertise-et-efficacite/', destination: '/', permanent: true },
+      { source: '/chauffeur-prive-a-bordeaux', destination: '/chauffeur-prive-bordeaux', permanent: true },
+      { source: '/chauffeur-prive-anglophone-expertise-et-efficacite/', destination: '/chauffeur-anglophone', permanent: true },
+      { source: '/chauffeur-prive-anglophone-expertise-et-efficacite', destination: '/chauffeur-anglophone', permanent: true },
       { source: '/chauffeur-prive-nice-chantilly/', destination: '/chauffeur-prive-nice', permanent: true },
+      { source: '/chauffeur-prive-nice-chantilly', destination: '/chauffeur-prive-nice', permanent: true },
       { source: '/private-driver-nice-:slug*', destination: '/chauffeur-prive-nice', permanent: true },
       { source: '/private-driver-:slug*', destination: '/chauffeur-prive-paris', permanent: true },
       // Aéroports FR manquants
       { source: '/aeroports-idf/', destination: '/transfert-aeroport-cdg', permanent: true },
+      { source: '/aeroports-idf', destination: '/transfert-aeroport-cdg', permanent: true },
+      { source: '/aeroport-de-paris-charles-de-gaulle-cdg-a-dauville/', destination: '/longue-distance', permanent: true },
       { source: '/aeroport-de-paris-charles-de-gaulle-cdg-a-dauville', destination: '/longue-distance', permanent: true },
       { source: '/hippodrome-de-deauville/', destination: '/evenements/hippodrome-deauville', permanent: true },
       { source: '/hippodrome-de-deauville', destination: '/evenements/hippodrome-deauville', permanent: true },
+      { source: '/aeroport-de-beauvais-tille-bva-a-dauville/', destination: '/longue-distance', permanent: true },
       { source: '/aeroport-de-beauvais-tille-bva-a-dauville', destination: '/longue-distance', permanent: true },
       { source: '/aeroport-de-paris-beauvais-tille/', destination: '/transfert-aeroport-beauvais', permanent: true },
+      { source: '/aeroport-de-paris-beauvais-tille', destination: '/transfert-aeroport-beauvais', permanent: true },
       { source: '/aeroport-de-paris-orly/', destination: '/transfert-aeroport-orly', permanent: true },
+      { source: '/aeroport-de-paris-orly', destination: '/transfert-aeroport-orly', permanent: true },
       { source: '/aeroport-de-pontoise-cormeilles-en-vexin/', destination: '/transfert-aeroport-cdg', permanent: true },
+      { source: '/aeroport-de-pontoise-cormeilles-en-vexin', destination: '/transfert-aeroport-cdg', permanent: true },
+      { source: '/aeroport-de-pontoise-cormeilles-en-vexin-pox-a-dauville/', destination: '/transfert-aeroport-cdg', permanent: true },
       { source: '/aeroport-de-pontoise-cormeilles-en-vexin-pox-a-dauville', destination: '/transfert-aeroport-cdg', permanent: true },
       // Transferts FR manquants
       { source: '/transfert-nationaux-internationaux/', destination: '/longue-distance', permanent: true },
+      { source: '/transfert-nationaux-internationaux', destination: '/longue-distance', permanent: true },
       { source: '/transfert-aeroport-bordeaux/', destination: '/chauffeur-prive-bordeaux', permanent: true },
+      { source: '/transfert-aeroport-bordeaux', destination: '/chauffeur-prive-bordeaux', permanent: true },
       { source: '/transfert-aeroport-nice/', destination: '/chauffeur-prive-nice', permanent: true },
+      { source: '/transfert-aeroport-nice', destination: '/chauffeur-prive-nice', permanent: true },
       // Flotte
       { source: '/flotte/', destination: '/notre-flotte', permanent: true },
-      { source: '/fleet/land-rover-range-rover/', destination: '/notre-flotte', permanent: true },
+      { source: '/flotte', destination: '/notre-flotte', permanent: true },
       // Villes sans slash (certaines indexées sans trailing slash)
       { source: '/reims', destination: '/longue-distance', permanent: true },
       { source: '/nimes', destination: '/longue-distance', permanent: true },
@@ -224,15 +290,21 @@ const nextConfig = {
       { source: '/le-havre', destination: '/longue-distance', permanent: true },
       // Pages diverses FR
       { source: '/team-building/', destination: '/mise-a-disposition', permanent: true },
+      { source: '/team-building', destination: '/mise-a-disposition', permanent: true },
       { source: '/transport-oeuvre-dart/', destination: '/', permanent: true },
+      { source: '/transport-oeuvre-dart', destination: '/', permanent: true },
       { source: '/service-de-transport-chat-dans-toute-leurope/', destination: '/', permanent: true },
+      { source: '/service-de-transport-chat-dans-toute-leurope', destination: '/', permanent: true },
       { source: '/besoin-dun-deplacement-professionnel-avec-un-chauffeur-prive-qui-vous-merite/', destination: '/', permanent: true },
+      { source: '/besoin-dun-deplacement-professionnel-avec-un-chauffeur-prive-qui-vous-merite', destination: '/', permanent: true },
       { source: '/aeroport-de-toussus-le-noble/', destination: '/transfert-aeroport-cdg', permanent: true },
+      { source: '/aeroport-de-toussus-le-noble', destination: '/transfert-aeroport-cdg', permanent: true },
       // Archives WordPress FR
       { source: '/2043/', destination: '/', permanent: true },
+      { source: '/2043', destination: '/', permanent: true },
       { source: '/test/', destination: '/', permanent: true },
+      { source: '/test', destination: '/', permanent: true },
       { source: '/zh-hans/author/:slug*', destination: '/zh', permanent: true },
-      { source: '/en/author/:slug*', destination: '/en', permanent: true },
 
       // === Langues supprimées : ES, ZH-Hans (pages anciennes) ===
       { source: '/es/:path*', destination: '/', permanent: true },
@@ -242,6 +314,7 @@ const nextConfig = {
       { source: '/service-de-chauffeur-prive-pour-mariage-amani-limousine/', destination: '/chauffeur-mariage-paris', permanent: true },
       { source: '/service-de-chauffeur-prive-pour-mariage-amani-limousine', destination: '/chauffeur-mariage-paris', permanent: true },
       { source: '/booking/', destination: '/reservation', permanent: true },
+      { source: '/booking', destination: '/reservation', permanent: true },
 
       // === Pages indexées sans slash − présentes dans Google Search Console ===
       // Hôtels palaces manquants (slug différent ou absent de la liste)
@@ -309,7 +382,6 @@ const nextConfig = {
       { source: '/le-cannet-2', destination: '/longue-distance', permanent: true },
       { source: '/six-fours-les-plages-2/', destination: '/longue-distance', permanent: true },
       { source: '/six-fours-les-plages-2', destination: '/longue-distance', permanent: true },
-      { source: '/frejus-2', destination: '/longue-distance', permanent: true },
 
       // === Venues / Stades ===
       { source: '/groupama-stadium/', destination: '/chauffeur-prive-lyon', permanent: true },
@@ -344,16 +416,20 @@ const nextConfig = {
       { source: '/salon-du-livre-de-paris-livre-paris/', destination: '/evenements/salons-professionnels', permanent: true },
       { source: '/salon-du-livre-de-paris-livre-paris', destination: '/evenements/salons-professionnels', permanent: true },
 
-      // === Pages EN manquantes (various) ===
-      { source: '/en/national-international-transfers/', destination: '/en/long-distance', permanent: true },
-      { source: '/en/service-de-transport-scolaire-et-de-colonies-de-vacances-pour-enfants-en-toute-securite/', destination: '/en', permanent: true },
-      { source: '/en/private-chauffeur-cdg-charles-de-gaule-:slug*', destination: '/en/cdg-airport-transfer', permanent: true },
-
-      // === Misc FR pages ===
+      // === Misc FR sans slash manquants ===
       { source: '/chauffeur-prive-personnel-avion-aerien/', destination: '/mise-a-disposition', permanent: true },
       { source: '/chauffeur-prive-personnel-avion-aerien', destination: '/mise-a-disposition', permanent: true },
       { source: '/transport-tpmr-handisport-avec-amani-limousines-accessibilite-et-confort-optimal/', destination: '/', permanent: true },
       { source: '/transport-tpmr-handisport-avec-amani-limousines-accessibilite-et-confort-optimal', destination: '/', permanent: true },
+
+      // === Pages EN manquantes (various) ===
+      { source: '/en/national-international-transfers/', destination: '/en/long-distance', permanent: true },
+      { source: '/en/national-international-transfers', destination: '/en/long-distance', permanent: true },
+      { source: '/en/service-de-transport-scolaire-et-de-colonies-de-vacances-pour-enfants-en-toute-securite/', destination: '/en', permanent: true },
+      { source: '/en/service-de-transport-scolaire-et-de-colonies-de-vacances-pour-enfants-en-toute-securite', destination: '/en', permanent: true },
+      { source: '/en/private-chauffeur-cdg-charles-de-gaule-:slug*', destination: '/en/cdg-airport-transfer', permanent: true },
+
+      // === Misc FR pages ===
       { source: '/transfert-marignane/', destination: '/chauffeur-prive-marseille', permanent: true },
       { source: '/transfert-marignane', destination: '/chauffeur-prive-marseille', permanent: true },
       { source: '/aeroport-bourget/', destination: '/transfert-le-bourget', permanent: true },
@@ -362,7 +438,6 @@ const nextConfig = {
       { source: '/aeroport-de-paris-charles-de-gaulle-roissy', destination: '/transfert-aeroport-cdg', permanent: true },
       { source: '/transfert-aeroport-lyon/', destination: '/chauffeur-prive-lyon', permanent: true },
       { source: '/transfert-aeroport-lyon', destination: '/chauffeur-prive-lyon', permanent: true },
-      { source: '/transfert-aeroport-nice', destination: '/chauffeur-prive-nice', permanent: true },
       { source: '/heliport-de-meaux-esbly', destination: '/transfert-aeroport-cdg', permanent: true },
       { source: '/heliport-de-meaux-esbly/', destination: '/transfert-aeroport-cdg', permanent: true },
       { source: '/chateau-musee/', destination: '/excursion-privee', permanent: true },

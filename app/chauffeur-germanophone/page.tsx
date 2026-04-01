@@ -13,35 +13,35 @@ export const metadata: Metadata = {
 
 const services = [
   {
-    titre: 'Transferts aéroports et gares',
+    titre: 'Transferts gares et aéroports',
     texte:
-      "Accueil en allemand à CDG, Orly ou à la Gare de l'Est — point d'arrivée des ICE et Thalys depuis Francfort, Munich et Cologne. Nos chauffeurs germanophones assurent une prise en charge ponctuelle et professionnelle, avec un niveau de service qui correspond aux standards attendus par la clientèle d'affaires allemande.",
+      "Vous descendez de l'ICE Gare de l'Est après trois heures depuis Francfort, ou vous atterrissez à CDG depuis Munich. Le chauffeur est là, à l'heure, il parle allemand, et il ne va pas vous faire attendre dix minutes pendant qu'il cherche où il s'est garé. Prise en charge rapide, pas de bavardage inutile, et un trajet direct vers votre destination.",
   },
   {
-    titre: 'Déplacements professionnels et industriels',
+    titre: 'Déplacements business et salons industriels',
     texte:
-      "L'Allemagne est le premier partenaire commercial de la France. Nos chauffeurs germanophones accompagnent les cadres et dirigeants allemands lors de leurs rendez-vous à Paris — sièges sociaux, cabinets de conseil, salons professionnels comme le Mondial de l'Auto ou Equip Auto. Ils comprennent le vocabulaire des affaires et assurent une communication fluide.",
+      "La France et l'Allemagne, c'est le duo économique de l'Europe. On transporte régulièrement des ingénieurs de chez BMW ou Siemens qui enchaînent les rendez-vous entre La Défense et le parc des expos de Villepinte. Le chauffeur parle allemand, comprend quand vous dites que le rendez-vous de 14h est passé à 14h30, et ajuste le planning en conséquence.",
   },
   {
-    titre: 'Tourisme culturel en allemand',
+    titre: 'Tourisme pour visiteurs germanophones',
     texte:
-      "Les visiteurs germanophones apprécient la richesse culturelle de Paris. Votre chauffeur peut vous orienter vers les expositions du moment, les quartiers historiques et les adresses gastronomiques. Il échange avec vous en allemand sur l'histoire et l'architecture des lieux traversés, rendant chaque trajet informatif.",
+      "Les Allemands, les Autrichiens, les Suisses alémaniques — ils aiment Paris mais ils aiment aussi qu'on soit carré. Votre chauffeur connaît les expos du moment au Grand Palais, le meilleur itinéraire pour éviter les bouchons autour de l'Opéra, et deux ou trois bistrots où la cuisine vaut le détour. En allemand, sans tourner autour du pot.",
   },
   {
-    titre: 'Mise à disposition pour conventions et salons',
+    titre: 'Conventions et forums franco-allemands',
     texte:
-      "Pour les grandes conventions professionnelles réunissant des participants germanophones — salons de l'industrie, congrès médicaux, forums économiques franco-allemands — nous déployons une flotte de véhicules avec chauffeurs parlant allemand. Organisation centralisée, ponctualité irréprochable.",
+      "Quand il y a un grand salon à Paris-Nord Villepinte ou un forum économique franco-allemand, on déploie plusieurs voitures avec des chauffeurs germanophones. Chacun a son planning, chacun sait où déposer et récupérer ses passagers. C'est de la logistique, et on aime bien ça.",
   },
 ];
 
 const situations = [
-  'Cadres de l\'industrie automobile en déplacement à Paris',
-  'Conventions et salons professionnels franco-allemands',
-  'Tourisme culturel pour visiteurs d\'Allemagne, d\'Autriche et de Suisse',
-  'Réunions d\'affaires dans les quartiers financiers de Paris',
-  'Transferts Gare de l\'Est pour arrivées en ICE depuis Francfort',
-  'Délégations industrielles visitant les sites de production en Île-de-France',
-  'Séjours gastronomiques et oenotouristiques en Champagne',
+  'Ingénieurs et cadres de l\'industrie automobile en déplacement à Paris',
+  'Salons industriels à Villepinte — Mondial de l\'Auto, Equip Auto, JEC World',
+  'Visiteurs d\'Allemagne, d\'Autriche ou de Suisse en séjour culturel',
+  'Arrivées en ICE Gare de l\'Est depuis Francfort, Stuttgart ou Cologne',
+  'Délégations industrielles visitant des usines en Île-de-France',
+  'Forums économiques franco-allemands et rendez-vous à la CCI',
+  'Week-ends gastronomiques et excursions en Champagne depuis Paris',
 ];
 
 export default function ChauffeurGermanophonePage() {
@@ -55,11 +55,12 @@ export default function ChauffeurGermanophonePage() {
             Chauffeur privé <em>germanophone</em> à <strong>Paris</strong>
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Les échanges franco-allemands sont au coeur de l'économie européenne, et Paris
-            reçoit en permanence des visiteurs germanophones pour affaires ou tourisme.
-            Un <strong>chauffeur parlant allemand</strong> garantit une communication directe
-            et efficace, sans malentendu, à chaque étape de votre séjour.
-            Nos chauffeurs germanophones sont disponibles 24h/24 à Paris et en région.
+            On va être direct : si vous venez d'Allemagne, d'Autriche ou de Suisse pour
+            bosser à Paris, vous avez besoin d'un chauffeur ponctuel, qui parle allemand,
+            et qui ne perd pas votre temps. C'est exactement ce qu'on propose. Un{' '}
+            <strong>chauffeur germanophone</strong> qui connaît le périph, les gares,
+            les quartiers d'affaires, et qui communique dans votre langue sans
+            approximation. Dispo 24h/24, partout en Île-de-France.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
@@ -82,10 +83,10 @@ export default function ChauffeurGermanophonePage() {
       {/* Services */}
       <section className="py-14 px-6 md:px-10 bg-warm-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Nos services en allemand</h2>
+          <h2 className="heading">Ce qu'on fait, en allemand</h2>
           <p className="sf text-stone-500 mt-4 mb-10 leading-relaxed">
-            Un transport premium pensé pour la clientèle germanophone,
-            avec la rigueur et la ponctualité que vous attendez.
+            Gare, aéroport, salons pro, tourisme. Ponctuel, efficace,
+            et en allemand du début à la fin.
           </p>
           <div className="grid md:grid-cols-2 gap-8">
             {services.map((s) => (
@@ -101,7 +102,7 @@ export default function ChauffeurGermanophonePage() {
       {/* Situations */}
       <section className="py-14 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Situations idéales</h2>
+          <h2 className="heading">Pour qui, concrètement</h2>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
             {situations.map((s) => (
               <div key={s} className="flex items-start gap-3 p-4 rounded-xl bg-warm-50 border border-warm-200">
@@ -118,7 +119,7 @@ export default function ChauffeurGermanophonePage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="heading mb-4">Réservez votre chauffeur germanophone</h2>
           <p className="sf text-stone-500 mb-8">
-            Disponible 24h/24, 7j/7 — confirmation sous 30 minutes.
+            Dispo 24h/24, 7j/7. Confirmation en moins de 30 minutes.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link

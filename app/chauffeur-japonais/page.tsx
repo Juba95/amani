@@ -13,36 +13,36 @@ export const metadata: Metadata = {
 
 const services = [
   {
-    titre: 'Accueil aéroport aux standards japonais',
+    titre: 'Accueil aéroport à la japonaise',
     texte:
-      "Nos chauffeurs japonophones vous accueillent à CDG ou Orly avec la courtoisie et l'attention au détail que vous attendez. Panneau nominatif, salut approprié, prise en charge immédiate des bagages, véhicule impeccable avec eau fraîche et serviettes rafraîchissantes. Chaque détail compte, et nous le savons.",
+      "On sait que pour un voyageur japonais, les détails comptent. Le chauffeur est là cinq minutes en avance, le véhicule est impeccable, il y a de l'eau fraîche à bord. Il vous accueille en japonais, s'incline comme il faut, et prend vos bagages sans qu'on ait besoin de demander. Le trajet jusqu'à l'hôtel se fait dans le calme, sauf si vous avez envie de discuter.",
   },
   {
-    titre: 'Haute couture et maisons de luxe',
+    titre: 'Haute couture et ateliers parisiens',
     texte:
-      "Les visiteurs japonais entretiennent une relation privilégiée avec la haute couture parisienne. Votre chauffeur japonophone vous conduit aux défilés, aux showrooms privés et aux boutiques historiques des grandes maisons — Chanel, Hermès, Louis Vuitton, Dior. Il connaît les adresses, les horaires et peut coordonner vos rendez-vous en japonais.",
+      "Les Japonais ont un rapport unique avec la mode parisienne. Le chauffeur connaît les ateliers de la rue Cambon chez Chanel, les showrooms privés de Saint-Germain, les boutiques Hermès du Faubourg. Il vous y conduit, vous dépose devant la porte, et revient vous chercher quand vous avez fini. En japonais, pas de quiproquo sur l'heure ou l'adresse.",
   },
   {
-    titre: 'Gastronomie et restaurants étoilés',
+    titre: 'Restaurants étoilés et gastronomie',
     texte:
-      "Paris et Tokyo partagent le plus grand nombre de restaurants étoilés au monde. Nos chauffeurs parlant japonais connaissent les tables les plus prisées — des trois étoiles classiques aux bistronomies d'avant-garde — et peuvent vous y conduire en vous donnant le contexte nécessaire sur le chef et la carte.",
+      "Paris et Tokyo se disputent le titre de capitale mondiale de la gastronomie. Le chauffeur connaît les adresses — le Guy Savoy à la Monnaie de Paris, le Cinq au George V, les bistronomies cachées du 11e. Il vous y amène pile à l'heure de la réservation, parce qu'arriver en retard dans un trois-étoiles, c'est pas le genre de la maison.",
   },
   {
-    titre: 'Voyages d\'affaires et déplacements corporate',
+    titre: 'Déplacements d\'affaires pour cadres japonais',
     texte:
-      "Les entreprises japonaises implantées en France — automobile, électronique, finance — ont besoin de chauffeurs fiables et ponctuels pour leurs cadres en déplacement. Nos chauffeurs japonophones comprennent les codes professionnels japonais : ponctualité absolue, discrétion, anticipation des besoins.",
+      "Toyota, Sony, Mitsubishi, les banques japonaises — beaucoup ont des bureaux à Paris. Quand un dirigeant arrive de Tokyo pour une semaine de rendez-vous, le chauffeur est là chaque matin à l'heure convenue. Il parle japonais, comprend que la ponctualité n'est pas une option, et connaît le quartier de l'Opéra — le Little Tokyo parisien — comme sa poche.",
   },
 ];
 
 const situations = [
-  'Haute couture : défilés, showrooms privés et ateliers parisiens',
-  'Gastronomie : parcours des restaurants étoilés Michelin de Paris',
-  'Voyages d\'affaires pour cadres et dirigeants japonais',
-  'Tourisme culturel : impressionnisme à Giverny, Versailles, Louvre',
-  'Lune de miel et séjours romantiques à Paris',
-  'Salons professionnels : Maison & Objet, Paris Photo, SIAL',
-  'Excursions viticoles en Bourgogne et en Champagne',
-  'Accueil de délégations officielles japonaises',
+  'Haute couture — défilés, ateliers et showrooms du Triangle d\'Or',
+  'Parcours gastronomique des étoilés Michelin parisiens',
+  'Cadres et dirigeants japonais en déplacement d\'affaires',
+  'Quartier Opéra et ses adresses japonaises — restos, librairies, épiceries',
+  'Lune de miel à Paris pour couples japonais',
+  'Salons pro — Maison & Objet, Paris Photo, SIAL',
+  'Excursions à Giverny, Versailles et en Bourgogne',
+  'Délégations officielles et accueil protocolaire',
 ];
 
 export default function ChauffeurJaponaisPage() {
@@ -56,12 +56,13 @@ export default function ChauffeurJaponaisPage() {
             Chauffeur privé parlant <em>japonais</em> à <strong>Paris</strong>
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Les Japonais qui visitent Paris recherchent l'excellence dans chaque détail —
-            et le transport n'échappe pas à cette exigence. Un{' '}
-            <strong>chauffeur parlant japonais</strong> offre bien plus qu'une simple
-            traduction : il comprend les codes culturels, anticipe les besoins et assure
-            un service irréprochable. Nos chauffeurs japonophones sont disponibles 24h/24
-            pour accompagner votre séjour à Paris et en France.
+            Quand un voyageur japonais arrive à Paris, il s'attend à un certain
+            niveau de service. On le sait. C'est pour ça qu'on a des{' '}
+            <strong>chauffeurs qui parlent japonais</strong> et qui connaissent les
+            codes : la ponctualité à la minute, la propreté du véhicule, la discrétion.
+            Pas de blabla inutile, pas de retard, pas d'à-peu-près. Le chauffeur
+            est là quand il faut, où il faut, et il parle votre langue.
+            Dispo 24h/24, tous les jours.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
@@ -84,10 +85,10 @@ export default function ChauffeurJaponaisPage() {
       {/* Services */}
       <section className="py-14 px-6 md:px-10 bg-warm-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Nos services en japonais</h2>
+          <h2 className="heading">Ce qu'on fait, en japonais</h2>
           <p className="sf text-stone-500 mt-4 mb-10 leading-relaxed">
-            Un service de transport pensé pour la clientèle japonaise,
-            avec l'attention au détail et la ponctualité que vous exigez.
+            Accueil aéroport, haute couture, gastronomie, affaires.
+            Toujours en japonais, toujours à l'heure.
           </p>
           <div className="grid md:grid-cols-2 gap-8">
             {services.map((s) => (
@@ -103,7 +104,7 @@ export default function ChauffeurJaponaisPage() {
       {/* Situations */}
       <section className="py-14 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Situations idéales</h2>
+          <h2 className="heading">Pour qui, concrètement</h2>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
             {situations.map((s) => (
               <div key={s} className="flex items-start gap-3 p-4 rounded-xl bg-warm-50 border border-warm-200">
@@ -120,7 +121,7 @@ export default function ChauffeurJaponaisPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="heading mb-4">Réservez votre chauffeur parlant japonais</h2>
           <p className="sf text-stone-500 mb-8">
-            Disponible 24h/24, 7j/7 — confirmation sous 30 minutes.
+            Dispo 24h/24, 7j/7. Confirmation en moins de 30 minutes.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link

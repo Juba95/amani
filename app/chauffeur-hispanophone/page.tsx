@@ -13,35 +13,35 @@ export const metadata: Metadata = {
 
 const services = [
   {
-    titre: 'Transferts aéroports avec accueil en espagnol',
+    titre: 'Transferts aéroport en espagnol',
     texte:
-      "Votre chauffeur hispanophone vous attend à CDG, Orly ou Le Bourget avec un panneau à votre nom. Il vous accueille en espagnol, prend en charge vos bagages et vous briefe sur le trajet jusqu'à votre hôtel. Pour les groupes venant d'Espagne ou d'Amérique latine, nous coordonnons l'arrivée de plusieurs véhicules si nécessaire.",
+      "Vous arrivez d'un vol depuis Mexico, Madrid ou Buenos Aires, et votre chauffeur vous attend à CDG avec un panneau. Il parle espagnol, il vous aide avec les bagages, et pendant le trajet jusqu'à l'hôtel il vous explique le temps qu'il fait, les travaux sur l'A1, et combien de temps ça va prendre. Simple, direct, en español.",
   },
   {
-    titre: 'Accompagnement touristique en espagnol',
+    titre: 'Découvrir Paris avec un local qui parle votre langue',
     texte:
-      "Les visiteurs hispanophones représentent une part importante du tourisme parisien. Nos chauffeurs connaissent les incontournables comme les adresses moins connues, et peuvent échanger avec vous en espagnol sur l'histoire des quartiers, les meilleures tables et les événements en cours. Un vrai compagnon de voyage, pas un simple conducteur.",
+      "Les touristes hispanophones adorent Paris — et il y a de quoi. Mais entre un plan Google Maps et un chauffeur qui vous raconte l'histoire du passage du Grand-Cerf ou qui vous amène dans un bistrot du 11e que personne ne connaît, y'a pas photo. Le nôtre parle espagnol, connaît ses classiques et ses coins cachés.",
   },
   {
-    titre: 'Rendez-vous professionnels et diplomatiques',
+    titre: 'Rendez-vous d\'affaires et diplomatie',
     texte:
-      "Pour les entreprises espagnoles et latino-américaines implantées à Paris ou en visite, nos chauffeurs hispaniques facilitent la logistique des journées de rendez-vous. Ils connaissent les sièges sociaux des grands groupes, les institutions européennes et les ambassades d'Amérique latine à Paris.",
+      "Entreprises espagnoles, ambassades latino-américaines, Maison de l'Amérique latine boulevard Saint-Germain... Votre chauffeur connaît le quartier des ambassades, sait se garer près de l'OCDE, et gère le timing entre vos rendez-vous. Tout se passe en espagnol, y compris les appels de dernière minute pour décaler un meeting.",
   },
   {
-    titre: 'Mise à disposition pour groupes et délégations',
+    titre: 'Groupes et délégations hispanophones',
     texte:
-      "Qu'il s'agisse d'une délégation commerciale mexicaine, d'un groupe de touristes argentins ou d'une équipe espagnole en déplacement, nous organisons un dispositif complet avec plusieurs véhicules et chauffeurs hispanophones. Coordination centralisée et communication en espagnol tout au long du séjour.",
+      "Une délégation commerciale mexicaine de douze personnes, un groupe d'argentins en tour gastronomique, une équipe espagnole pour un salon à Villepinte. On organise plusieurs véhicules avec des chauffeurs qui parlent espagnol, et on coordonne le tout pour que personne ne se perde et que tout le monde arrive à l'heure.",
   },
 ];
 
 const situations = [
-  'Groupes touristiques hispanophones en visite à Paris',
-  'Délégations commerciales d\'Espagne et d\'Amérique latine',
-  'Visites diplomatiques — ambassades d\'Amérique latine à Paris',
-  'Congrès et salons avec participation hispanophone importante',
-  'Séjours culturels : musées, spectacles, gastronomie française',
-  'Transferts entre Paris et les régions viticoles (Bordeaux, Champagne)',
-  'Événements sportifs : Roland-Garros, Coupe du monde de rugby',
+  'Groupes touristiques d\'Amérique latine qui veulent voir le vrai Paris',
+  'Diplomates et fonctionnaires en rendez-vous près de la Maison de l\'Amérique latine',
+  'Entreprises espagnoles en déplacement à Paris pour des salons pro',
+  'Familles en vacances depuis le Mexique, la Colombie ou l\'Argentine',
+  'Excursions vers les vignobles de Bordeaux ou de Champagne',
+  'Roland-Garros et événements sportifs pour fans hispanophones',
+  'Séjours culturels — Louvre, Orsay, spectacles, restos du quartier latin',
 ];
 
 export default function ChauffeurHispanophonePage() {
@@ -55,12 +55,13 @@ export default function ChauffeurHispanophonePage() {
             Chauffeur privé <em>hispanophone</em> à <strong>Paris</strong>
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            L'espagnol est la deuxième langue la plus parlée au monde, et les visiteurs
-            hispanophones affluent à Paris depuis l'Espagne, le Mexique, la Colombie,
-            l'Argentine et bien d'autres pays. Un{' '}
-            <strong>chauffeur parlant espagnol</strong> rend chaque déplacement plus simple
-            et plus agréable — de la première prise en charge à l'aéroport jusqu'au
-            dernier transfert. Nos chauffeurs hispanophones sont disponibles 24h/24.
+            Il y a énormément de visiteurs hispanophones à Paris — des touristes
+            mexicains, des hommes d'affaires espagnols, des diplomates colombiens,
+            des familles argentines. Le point commun : quand on a un{' '}
+            <strong>chauffeur qui parle espagnol</strong>, tout devient plus facile.
+            Les instructions sont claires, l'ambiance est détendue, et on peut
+            vraiment profiter de la ville au lieu de galérer avec la langue.
+            Nos chauffeurs hispanophones sont là 24h/24.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
@@ -83,10 +84,10 @@ export default function ChauffeurHispanophonePage() {
       {/* Services */}
       <section className="py-14 px-6 md:px-10 bg-warm-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Nos services en espagnol</h2>
+          <h2 className="heading">Ce qu'on fait, en espagnol</h2>
           <p className="sf text-stone-500 mt-4 mb-10 leading-relaxed">
-            Un service de transport haut de gamme entièrement en espagnol,
-            adapté aux voyageurs d'affaires comme aux touristes.
+            Aéroport, tourisme, business, groupes — on s'en occupe,
+            et tout se passe en español.
           </p>
           <div className="grid md:grid-cols-2 gap-8">
             {services.map((s) => (
@@ -102,7 +103,7 @@ export default function ChauffeurHispanophonePage() {
       {/* Situations */}
       <section className="py-14 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Situations idéales</h2>
+          <h2 className="heading">Pour qui, concrètement</h2>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
             {situations.map((s) => (
               <div key={s} className="flex items-start gap-3 p-4 rounded-xl bg-warm-50 border border-warm-200">
@@ -119,7 +120,7 @@ export default function ChauffeurHispanophonePage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="heading mb-4">Réservez votre chauffeur hispanophone</h2>
           <p className="sf text-stone-500 mb-8">
-            Disponible 24h/24, 7j/7 — confirmation sous 30 minutes.
+            Dispo 24h/24, 7j/7. Confirmation en moins de 30 minutes.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link

@@ -15,33 +15,33 @@ const services = [
   {
     titre: 'Transferts aéroports avec accueil en anglais',
     texte:
-      "Accueil personnalisé à CDG, Orly ou Le Bourget avec un chauffeur parfaitement anglophone. Panneau nominatif, assistance bagages, briefing sur le trajet et les conditions de circulation — tout se fait dans votre langue. Idéal pour les voyageurs d'affaires internationaux qui atterrissent à Paris sans parler français.",
+      "Vous atterrissez à CDG après un vol depuis JFK ou Heathrow, vous êtes crevé, et la dernière chose dont vous avez envie c'est de mimer votre adresse à un chauffeur qui ne parle pas anglais. Le nôtre vous attend avec un panneau, récupère vos valises, et vous briefe sur le temps de trajet jusqu'au Ritz ou au Bristol. Tout ça en anglais, sans effort de votre côté.",
   },
   {
-    titre: 'Rendez-vous d\'affaires et événements corporate',
+    titre: 'Rendez-vous d\'affaires entre La Défense et le 8e',
     texte:
-      "Votre chauffeur anglophone connaît les quartiers d'affaires parisiens — La Défense, Opéra, Saint-Lazare — et peut coordonner un programme de rendez-vous sur la journée. Il communique avec vos interlocuteurs, gère les imprévus et vous tient informé en anglais de l'état du trafic et des délais.",
+      "Vous enchaînez trois meetings dans la journée — un à La Défense, un boulevard Haussmann, un dernier rue de Rivoli. Votre chauffeur connaît les raccourcis, sait que le tunnel de l'Étoile est bouché à 18h, et vous prévient en anglais quand il faut partir pour être à l'heure. Pas de stress, pas de malentendu sur le planning.",
   },
   {
-    titre: 'Tourisme et découverte de Paris',
+    titre: 'Visiter Paris sans la barrière de la langue',
     texte:
-      "Pour les visiteurs anglophones souhaitant découvrir Paris au-delà des circuits classiques, nos chauffeurs connaissent l'histoire des quartiers, les bonnes adresses et les itinéraires les plus agréables. Ils peuvent recommander des restaurants, des galeries et des expériences authentiques — en anglais, naturellement.",
+      "Montmartre le matin, Saint-Germain pour déjeuner, le Marais l'après-midi. Votre chauffeur connaît les coins que les touristes ratent — la petite place Dauphine, le passage des Panoramas, les quais de Seine côté 5e. Il vous en parle en anglais, vous donne ses adresses perso, et adapte le parcours à vos envies du moment.",
   },
   {
-    titre: 'Mise à disposition longue durée',
+    titre: 'Mise à disposition sur plusieurs jours',
     texte:
-      "Pour les séjours prolongés, les tournées de conférences ou les délégations en visite, nous proposons un chauffeur anglophone dédié à la journée ou à la semaine. Un interlocuteur unique qui connaît vos habitudes, vos horaires et vos préférences.",
+      "Pour un séjour d'une semaine, une série de conférences ou une délégation qui débarque de New York, on vous attribue un chauffeur dédié. Il retient vos habitudes dès le deuxième jour — l'heure de votre café, le journal que vous lisez, le fait que vous préférez le silence le matin. Un vrai confort.",
   },
 ];
 
 const situations = [
-  'Voyages d\'affaires avec planning serré de rendez-vous à Paris',
-  'Séjour touristique de luxe pour visiteurs américains ou britanniques',
-  'Congrès et salons internationaux (OECD, UNESCO, Paris Expo)',
-  'Transferts entre aéroports et hôtels pour clientèle corporate',
-  'Road-shows investisseurs et tournées de présentations',
-  'Séminaires d\'entreprise et team-building en Île-de-France',
-  'Accueil de cadres dirigeants en déplacement depuis Londres ou New York',
+  'Banquiers de la City ou de Wall Street avec un agenda serré à Paris',
+  'Touristes américains ou britanniques en séjour au Ritz, au Bristol ou au Meurice',
+  'Conférences tech et salons pro — VivaTech, OECD, UNESCO',
+  'Road-shows investisseurs entre Paris, Londres et Francfort',
+  'Cadres dirigeants en déplacement depuis New York ou Singapour',
+  'Séminaires et team-building en Île-de-France pour équipes internationales',
+  'Familles anglophones en vacances qui veulent voir plus que la Tour Eiffel',
 ];
 
 export default function ChauffeurAnglophonePage() {
@@ -55,12 +55,12 @@ export default function ChauffeurAnglophonePage() {
             Chauffeur privé <em>anglophone</em> à <strong>Paris</strong>
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Paris reste la première destination européenne pour les voyageurs anglophones,
-            qu'ils viennent pour affaires ou pour le plaisir. Avoir un{' '}
-            <strong>chauffeur parlant couramment anglais</strong> supprime la barrière
-            linguistique et transforme chaque trajet en moment productif ou agréable.
-            Nos chauffeurs anglophones sont disponibles 24h/24 pour tous vos déplacements
-            à Paris et en Île-de-France.
+            Ça change tout d'avoir un chauffeur qui parle votre langue. Plus besoin
+            de montrer l'adresse sur votre téléphone ou de répéter trois fois le nom
+            de l'hôtel. Vous montez, vous expliquez ce dont vous avez besoin, et c'est
+            réglé. On a des <strong>chauffeurs qui parlent couramment anglais</strong>,
+            dispo jour et nuit, qui connaissent Paris comme leur poche. Que vous soyez
+            là pour le boulot ou en vacances, c'est juste plus simple comme ça.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
@@ -83,10 +83,10 @@ export default function ChauffeurAnglophonePage() {
       {/* Services */}
       <section className="py-14 px-6 md:px-10 bg-warm-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Nos services en anglais</h2>
+          <h2 className="heading">Ce qu'on fait, en anglais</h2>
           <p className="sf text-stone-500 mt-4 mb-10 leading-relaxed">
-            De l'accueil à l'aéroport à la mise à disposition sur plusieurs jours,
-            chaque prestation est assurée par un chauffeur maîtrisant parfaitement l'anglais.
+            Aéroport, rendez-vous, tourisme, mise à dispo longue durée — tout
+            se passe en anglais, du premier SMS à la dernière course.
           </p>
           <div className="grid md:grid-cols-2 gap-8">
             {services.map((s) => (
@@ -102,7 +102,7 @@ export default function ChauffeurAnglophonePage() {
       {/* Situations */}
       <section className="py-14 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Situations idéales</h2>
+          <h2 className="heading">Pour qui, concrètement</h2>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
             {situations.map((s) => (
               <div key={s} className="flex items-start gap-3 p-4 rounded-xl bg-warm-50 border border-warm-200">
@@ -119,7 +119,7 @@ export default function ChauffeurAnglophonePage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="heading mb-4">Réservez votre chauffeur anglophone</h2>
           <p className="sf text-stone-500 mb-8">
-            Disponible 24h/24, 7j/7 — confirmation sous 30 minutes.
+            Dispo 24h/24, 7j/7. On vous confirme en moins de 30 minutes.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link

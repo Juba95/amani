@@ -15,34 +15,34 @@ const services = [
   {
     titre: 'Accueil VIP et transferts aéroports',
     texte:
-      "Accueil en arabe dès votre arrivée à Roissy-CDG, Orly ou au terminal d'aviation privée du Bourget. Nos chauffeurs arabophones maîtrisent les codes d'hospitalité et assurent un accueil chaleureux conforme aux usages du Moyen-Orient. Prise en charge des bagages, coordination avec votre assistant personnel et transfert vers votre hôtel ou résidence.",
+      "Votre avion se pose à Roissy ou au Bourget, et quelqu'un vous attend qui parle arabe. Pas un traducteur, un vrai chauffeur qui connaît Paris et qui sait accueillir comme il faut. Il s'occupe des bagages, coordonne avec votre assistant si besoin, et vous emmène directement à votre hôtel ou résidence. L'accueil est chaleureux, c'est naturel chez nous.",
   },
   {
-    titre: 'Shopping et adresses de luxe',
+    titre: 'Journées shopping avenue Montaigne et Vendôme',
     texte:
-      "Paris est une destination incontournable pour le shopping de luxe. Votre chauffeur arabophone vous accompagne avenue Montaigne, rue du Faubourg-Saint-Honoré, place Vendôme et dans les grands magasins. Il connaît les horaires, les accès VIP et peut coordonner vos rendez-vous avec les personal shoppers des maisons de couture.",
+      "Avenue Montaigne, Faubourg-Saint-Honoré, place Vendôme, Galeries Lafayette... Votre chauffeur connaît toutes ces adresses par coeur. Il sait quand les boutiques ouvrent, où se garer sans perdre de temps, et il peut appeler un personal shopper chez Dior ou Chanel pour annoncer votre arrivée. Vous n'avez qu'à choisir ce qui vous plaît.",
   },
   {
-    titre: 'Tourisme médical et bien-être',
+    titre: 'Tourisme médical et rendez-vous spécialisés',
     texte:
-      "De nombreux visiteurs arabophones viennent à Paris pour des consultations médicales spécialisées ou des séjours de bien-être. Votre chauffeur assure les transferts entre l'hôtel, les cliniques et les centres de soins, et peut servir de relais linguistique avec le personnel d'accueil.",
+      "Beaucoup de familles du Golfe viennent à Paris pour des consultations médicales pointues. Le chauffeur fait les allers-retours entre l'hôtel et la clinique, il connaît les établissements du 16e et du 8e, et il peut servir de relais en arabe avec l'accueil si vous en avez besoin. C'est un souci en moins dans un moment déjà stressant.",
   },
   {
-    titre: 'Délégations et séjours prolongés',
+    titre: 'Familles et séjours longue durée',
     texte:
-      "Pour les délégations officielles ou les familles en séjour long, nous mettons à disposition un ou plusieurs chauffeurs arabophones dédiés. Coordination des plannings, gestion des imprévus, flexibilité totale — votre chauffeur s'adapte à votre rythme et à vos besoins.",
+      "Quand une famille arrive pour trois semaines l'été, il faut un chauffeur qui s'adapte. Les enfants veulent Disneyland, madame veut le Bon Marché, monsieur a des rendez-vous dans le 8e. On met à disposition un ou deux chauffeurs arabophones dédiés, qui connaissent vite les habitudes de la famille et s'organisent en fonction.",
   },
 ];
 
 const situations = [
-  'Délégations officielles des pays du Golfe en visite à Paris',
-  'Séjours shopping de luxe — avenue Montaigne, Place Vendôme',
-  'Tourisme médical : transferts cliniques et hôpitaux parisiens',
-  'Familles en séjour estival à Paris et en Île-de-France',
-  'Investisseurs immobiliers en tournée de visites',
-  'Événements culturels et religieux de la communauté arabophone',
-  'Accueil de personnalités lors de salons et conférences internationales',
-  'Voyages combinés Paris – Côte d\'Azur – Londres',
+  'Familles du Golfe en séjour estival à Paris',
+  'Journées shopping de luxe — Montaigne, Vendôme, Galeries Lafayette',
+  'Consultations médicales dans les cliniques parisiennes du 16e',
+  'Investisseurs immobiliers qui visitent des biens dans l\'Ouest parisien',
+  'Délégations officielles du Moyen-Orient',
+  'Voyages combinés Paris, Côte d\'Azur et Londres',
+  'Événements privés — mariages, réceptions dans les palaces',
+  'Accompagnement de personnalités lors de salons et conférences',
 ];
 
 export default function ChauffeurArabophonePage() {
@@ -56,11 +56,13 @@ export default function ChauffeurArabophonePage() {
             Chauffeur privé <em>arabophone</em> à <strong>Paris</strong>
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Paris accueille chaque année des milliers de visiteurs du monde arabe — délégations
-            du Golfe, familles en vacances, investisseurs et patients en tourisme médical.
-            Un <strong>chauffeur parlant arabe</strong> facilite chaque étape du séjour,
-            du transfert aéroport aux courses dans les maisons de luxe. Nos chauffeurs
-            arabophones sont à votre disposition 24h/24 à Paris et partout en France.
+            On reçoit beaucoup de familles et de voyageurs du monde arabe à Paris.
+            Ce qu'ils nous disent souvent : le plus important, c'est d'avoir quelqu'un
+            qui parle leur langue et qui connaît la ville. Un{' '}
+            <strong>chauffeur arabophone</strong>, ça veut dire zéro galère pour
+            expliquer où vous allez, ce dont vous avez besoin, ou comment organiser
+            la journée. Il connaît les bonnes adresses, il sait comment ça marche
+            à Paris, et il est dispo quand vous en avez besoin.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
@@ -83,10 +85,10 @@ export default function ChauffeurArabophonePage() {
       {/* Services */}
       <section className="py-14 px-6 md:px-10 bg-warm-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Nos services en arabe</h2>
+          <h2 className="heading">Ce qu'on fait, en arabe</h2>
           <p className="sf text-stone-500 mt-4 mb-10 leading-relaxed">
-            Un accompagnement sur mesure pour la clientèle arabophone,
-            du premier contact à l'aéroport jusqu'au dernier transfert.
+            De l'atterrissage au dernier trajet, tout se fait dans votre langue.
+            Shopping, médical, tourisme — on gère.
           </p>
           <div className="grid md:grid-cols-2 gap-8">
             {services.map((s) => (
@@ -102,7 +104,7 @@ export default function ChauffeurArabophonePage() {
       {/* Situations */}
       <section className="py-14 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Situations idéales</h2>
+          <h2 className="heading">Pour qui, concrètement</h2>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
             {situations.map((s) => (
               <div key={s} className="flex items-start gap-3 p-4 rounded-xl bg-warm-50 border border-warm-200">
@@ -119,7 +121,7 @@ export default function ChauffeurArabophonePage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="heading mb-4">Réservez votre chauffeur arabophone</h2>
           <p className="sf text-stone-500 mb-8">
-            Disponible 24h/24, 7j/7 — confirmation sous 30 minutes.
+            Dispo 24h/24, 7j/7. On vous confirme en moins de 30 minutes.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link

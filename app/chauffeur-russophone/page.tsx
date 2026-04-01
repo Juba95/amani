@@ -15,34 +15,34 @@ const services = [
   {
     titre: 'Transferts aéroport et accueil en russe',
     texte:
-      "Accueil personnalisé en russe à CDG, Orly ou au terminal d'aviation privée du Bourget. Votre chauffeur russophone vous attend avec un panneau nominatif, prend en charge vos bagages et vous conduit à votre destination dans un véhicule premium. Communication fluide en russe du début à la fin du trajet.",
+      "Vous arrivez à CDG ou au Bourget, le chauffeur est déjà là. Il parle russe, il a suivi votre vol, et il sait si vous avez du retard. Panneau à votre nom, bagages pris en charge, véhicule premium garé au plus près. Le trajet jusqu'à votre hôtel des Champs-Élysées ou du 16e se fait tranquillement, en russe.",
   },
   {
-    titre: 'Shopping de luxe et adresses exclusives',
+    titre: 'Shopping — Faubourg-Saint-Honoré, Vendôme, rue de la Paix',
     texte:
-      "Paris est une destination de choix pour le shopping haut de gamme. Votre chauffeur russophone connaît les boutiques de la rue du Faubourg-Saint-Honoré, l'avenue Montaigne, la Place Vendôme et les joailliers de la rue de la Paix. Il vous accompagne d'adresse en adresse, gère le stationnement et peut coordonner avec les personal shoppers.",
+      "On ne va pas se mentir : Paris et le shopping de luxe, c'est une combinaison que la clientèle russophone connaît bien. Le chauffeur sait exactement où se trouvent les joailliers de la place Vendôme, les boutiques du Faubourg, et les corners exclusifs du Bon Marché. Il vous dépose devant la porte, gère le stationnement, et revient vous chercher avec les sacs.",
   },
   {
-    titre: 'Événements mondains et soirées',
+    titre: 'Soirées, galas et vie mondaine parisienne',
     texte:
-      "Galas, premières à l'Opéra Garnier, vernissages, soirées privées dans les hôtels particuliers du 8e — la vie mondaine parisienne attire une clientèle russophone exigeante. Votre chauffeur assure les arrivées et départs avec ponctualité et élégance, et reste joignable en russe tout au long de la soirée.",
+      "Un vernissage au Palais de Tokyo, une première à l'Opéra Garnier, un gala dans un hôtel particulier du 7e. Le chauffeur vous dépose à l'entrée pile à l'heure, reste joignable en russe toute la soirée, et vient vous récupérer quand vous le décidez. Pas de taxi à chercher à minuit dans une rue mal éclairée.",
   },
   {
-    titre: 'Séjours prolongés et mise à disposition',
+    titre: 'Séjours longue durée et mise à disposition',
     texte:
-      "Pour les séjours de plusieurs jours ou semaines, nous mettons à disposition un chauffeur russophone dédié qui s'adapte à votre rythme. Visites de biens immobiliers, rendez-vous médicaux, sorties culturelles, excursions hors de Paris — un seul interlocuteur qui parle votre langue et connaît vos préférences.",
+      "Pour un séjour de deux semaines ou plus, on vous attribue un chauffeur russophone dédié. Il apprend vite vos habitudes : le restaurant où vous allez déjeuner, l'heure à laquelle vous sortez, vos adresses préférées. Visites immobilières dans le 16e, rendez-vous médicaux, excursions à Monaco ou sur la Côte d'Azur — il gère tout.",
   },
 ];
 
 const situations = [
-  'Tourisme de luxe et découverte de Paris en toute sérénité',
-  'Shopping haut de gamme — joaillerie, haute couture, maroquinerie',
-  'Soirées et événements mondains à Paris',
-  'Séjours immobiliers : visites d\'appartements et résidences',
-  'Tourisme médical et rendez-vous dans les cliniques parisiennes',
-  'Excursions vers la Côte d\'Azur, Courchevel et les stations alpines',
-  'Transferts pour événements privés : mariages, anniversaires',
-  'Accompagnement de familles en vacances scolaires à Paris',
+  'Séjours shopping luxe — Champs-Élysées, Vendôme, Faubourg-Saint-Honoré',
+  'Vernissages, galas et soirées privées dans les beaux quartiers',
+  'Visites d\'appartements et investissements immobiliers à Paris',
+  'Rendez-vous médicaux dans les cliniques du 16e et du 8e',
+  'Voyages combinés Paris, Côte d\'Azur et Monaco',
+  'Vacances en famille pendant les fêtes ou l\'été',
+  'Événements privés — mariages, anniversaires, réceptions',
+  'Transferts vers Courchevel et les stations alpines en hiver',
 ];
 
 export default function ChauffeurRussophonePage() {
@@ -56,12 +56,13 @@ export default function ChauffeurRussophonePage() {
             Chauffeur privé <em>russophone</em> à <strong>Paris</strong>
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            Paris exerce une fascination durable sur la clientèle russophone, qu'il
-            s'agisse de tourisme de luxe, de shopping ou d'événements mondains.
-            Un <strong>chauffeur parlant russe</strong> vous permet de profiter pleinement
-            de votre séjour sans barrière linguistique — il connaît les adresses,
-            les usages et la ville sur le bout des doigts. Nos chauffeurs russophones
-            sont à votre service 24h/24 à Paris et dans toute la France.
+            Paris a toujours attiré la clientèle russophone. Shopping sur les
+            Champs-Élysées, expos au Grand Palais, soirées dans les palaces du 8e.
+            Avoir un <strong>chauffeur qui parle russe</strong>, c'est pouvoir
+            dire exactement où vous voulez aller, demander un détour par la rue
+            de la Paix, ou changer de programme à la dernière minute — sans que
+            ça devienne compliqué. Nos chauffeurs russophones connaissent Paris
+            par coeur et sont dispo jour et nuit.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
@@ -84,10 +85,10 @@ export default function ChauffeurRussophonePage() {
       {/* Services */}
       <section className="py-14 px-6 md:px-10 bg-warm-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Nos services en russe</h2>
+          <h2 className="heading">Ce qu'on fait, en russe</h2>
           <p className="sf text-stone-500 mt-4 mb-10 leading-relaxed">
-            Un service de transport sur mesure pour la clientèle russophone,
-            alliant luxe, discrétion et communication dans votre langue.
+            Aéroport, shopping, soirées, séjours longue durée.
+            Tout en russe, sans prise de tête.
           </p>
           <div className="grid md:grid-cols-2 gap-8">
             {services.map((s) => (
@@ -103,7 +104,7 @@ export default function ChauffeurRussophonePage() {
       {/* Situations */}
       <section className="py-14 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Situations idéales</h2>
+          <h2 className="heading">Pour qui, concrètement</h2>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
             {situations.map((s) => (
               <div key={s} className="flex items-start gap-3 p-4 rounded-xl bg-warm-50 border border-warm-200">
@@ -120,7 +121,7 @@ export default function ChauffeurRussophonePage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="heading mb-4">Réservez votre chauffeur russophone</h2>
           <p className="sf text-stone-500 mb-8">
-            Disponible 24h/24, 7j/7 — confirmation sous 30 minutes.
+            Dispo 24h/24, 7j/7. Confirmation en moins de 30 minutes.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
