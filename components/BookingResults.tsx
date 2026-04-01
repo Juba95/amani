@@ -1,5 +1,6 @@
 'use client';
 
+import { useRouter } from 'next/navigation';
 import dynamic from 'next/dynamic';
 import { VEHICLES, calculatePrice, isAirportTransfer } from '@/lib/vehicles';
 
@@ -19,10 +20,22 @@ interface BookingResultsProps {
 export default function BookingResults({
   t, from, to, distance, duration, selectedVehicle, onSelect, resultsRef,
 }: BookingResultsProps) {
+  const router = useRouter();
   const formatPrice = (p: number) => Math.round(p).toLocaleString('fr-FR') + ' €';
 
   const airport = isAirportTransfer(from, to);
   const selected = VEHICLES.find((v) => v.id === selectedVehicle);
+
+  const goToReservation = () => {
+    if (!selected) return;
+    const params = new URLSearchParams({
+      from, to,
+      vehicle: selected.id,
+      km: String(distance),
+      dur: duration,
+    });
+    router.push(`/reservation?${params.toString()}`);
+  };
 
   return (
     <div ref={resultsRef}>
@@ -108,8 +121,8 @@ export default function BookingResults({
               </span>
             </div>
 
-            <button className="btn-gold mt-6">
-              {t?.booking?.book_now} — {formatPrice(calculatePrice(selected, distance, airport))}
+            <button className="btn-gold mt-6" onClick={goToReservation}>
+              {t?.booking?.book_now || 'Réserver'} — {formatPrice(calculatePrice(selected, distance, airport))}
             </button>
 
             <p className="font-sans text-center text-[0.72rem] text-stone-700 font-light mt-3">

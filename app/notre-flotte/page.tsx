@@ -174,62 +174,102 @@ export default function NotreFlottePage() {
         </div>
       </section>
 
-      {/* Forfaits aéroports */}
+      {/* Forfaits Transferts */}
       <section className="py-14 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Nos forfaits aéroports</h2>
-          <p className="sf text-stone-500 mt-3 mb-8 text-sm">
+          <h2 className="heading">Nos forfaits transferts</h2>
+          <p className="sf text-stone-500 mt-3 mb-10 text-sm">
             Prix fixes, tout compris — pas de compteur, pas de surprise. Accueil personnalisé, suivi du vol en temps réel.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {[
-              {
-                route: 'Paris \u2194 CDG',
-                description: 'Roissy Charles de Gaulle \u2194 Paris centre, La Défense, Neuilly',
-                duree: '~45 min',
-                icon: '\u2708',
-              },
-              {
-                route: 'Paris \u2194 Orly',
-                description: 'Aéroport d\'Orly \u2194 Paris centre, Montparnasse, Saint-Germain',
-                duree: '~30 min',
-                icon: '\u2708',
-              },
-              {
-                route: 'Paris \u2194 Le Bourget',
-                description: 'Aviation privée Le Bourget \u2194 Paris centre, Champs-Élysées',
-                duree: '~25 min',
-                icon: '\u2708',
-              },
-              {
-                route: 'CDG \u2194 La Défense',
-                description: 'Roissy CDG \u2194 quartier d\'affaires de La Défense',
-                duree: '~40 min',
-                icon: '\ud83c\udfe2',
-              },
-              {
-                route: 'CDG \u2194 Disneyland',
-                description: 'Roissy CDG \u2194 Disneyland Paris, Val d\'Europe',
-                duree: '~40 min',
-                icon: '\ud83c\udff0',
-              },
-              {
-                route: 'Paris \u2194 Beauvais',
-                description: 'Aéroport de Beauvais-Tillé \u2194 Paris centre',
-                duree: '~1h15',
-                icon: '\u2708',
-              },
-            ].map((f) => (
-              <div key={f.route} className="bg-warm-50 rounded-xl border border-stone-200 p-6 hover:border-gold-400 transition-all group">
-                <span className="text-2xl">{f.icon}</span>
-                <p className="font-serif text-lg text-gray-900 mt-3">{f.route}</p>
-                <p className="sf text-xs text-stone-500 mt-2 leading-relaxed">{f.description}</p>
-                <p className="sf text-xs mt-3" style={{ color: '#8a7340' }}>{f.duree}</p>
-                <a href="/devis" className="inline-block mt-4 sf text-xs font-medium tracking-wide uppercase hover:underline" style={{ color: '#8a7340' }}>
-                  Obtenir un devis &rarr;
-                </a>
-              </div>
-            ))}
+
+          {/* Forfaits Aéroports */}
+          <div className="mb-12">
+            <h3 className="font-serif text-xl text-gray-900 mb-1">Forfaits Aéroports</h3>
+            <p className="sf text-xs text-stone-400 uppercase tracking-wider mb-5">CDG · Orly · Le Bourget</p>
+            <div className="overflow-x-auto">
+              <table className="w-full text-left border-collapse">
+                <thead>
+                  <tr className="border-b-2 border-warm-300">
+                    <th className="sf text-xs text-stone-400 uppercase tracking-wider py-3 pr-4">Véhicule</th>
+                    <th className="sf text-xs text-stone-400 uppercase tracking-wider py-3 text-right">Forfait</th>
+                  </tr>
+                </thead>
+                <tbody className="sf text-sm">
+                  <tr className="border-b border-warm-200">
+                    <td className="py-3.5 pr-4 text-gray-800">Mercedes Classe E / Classe V</td>
+                    <td className="py-3.5 text-right font-medium" style={{ color: '#8a7340' }}>150 € / 160 €</td>
+                  </tr>
+                  <tr className="border-b border-warm-200">
+                    <td className="py-3.5 pr-4 text-gray-800">Mercedes Classe S</td>
+                    <td className="py-3.5 text-right font-medium" style={{ color: '#8a7340' }}>200 €</td>
+                  </tr>
+                  <tr className="border-b border-warm-200">
+                    <td className="py-3.5 pr-4 text-gray-800">Mercedes Classe S Maybach</td>
+                    <td className="py-3.5 text-right font-medium" style={{ color: '#8a7340' }}>350 €</td>
+                  </tr>
+                  <tr className="border-b border-warm-200">
+                    <td className="py-3.5 pr-4 text-gray-800">Range Rover Evoque</td>
+                    <td className="py-3.5 text-right font-medium" style={{ color: '#8a7340' }}>250 €</td>
+                  </tr>
+                  <tr className="border-b border-warm-200">
+                    <td className="py-3.5 pr-4 text-gray-800">Mercedes Classe G</td>
+                    <td className="py-3.5 text-right font-medium" style={{ color: '#8a7340' }}>250 €</td>
+                  </tr>
+                  <tr className="border-b border-warm-200">
+                    <td className="py-3.5 pr-4 text-gray-800">Mercedes Sprinter VIP</td>
+                    <td className="py-3.5 text-right font-medium" style={{ color: '#8a7340' }}>350 €</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* Forfaits Ville */}
+          <div className="mb-10">
+            <h3 className="font-serif text-xl text-gray-900 mb-1">Forfaits Ville</h3>
+            <p className="sf text-xs text-stone-400 uppercase tracking-wider mb-5">Tarif minimum — Paris &amp; Île-de-France</p>
+            <div className="overflow-x-auto">
+              <table className="w-full text-left border-collapse">
+                <thead>
+                  <tr className="border-b-2 border-warm-300">
+                    <th className="sf text-xs text-stone-400 uppercase tracking-wider py-3 pr-4">Véhicule</th>
+                    <th className="sf text-xs text-stone-400 uppercase tracking-wider py-3 text-right">Tarif minimum</th>
+                  </tr>
+                </thead>
+                <tbody className="sf text-sm">
+                  <tr className="border-b border-warm-200">
+                    <td className="py-3.5 pr-4 text-gray-800">Mercedes Classe E / Classe V</td>
+                    <td className="py-3.5 text-right font-medium" style={{ color: '#8a7340' }}>100 € / 110 €</td>
+                  </tr>
+                  <tr className="border-b border-warm-200">
+                    <td className="py-3.5 pr-4 text-gray-800">Mercedes Classe S</td>
+                    <td className="py-3.5 text-right font-medium" style={{ color: '#8a7340' }}>150 €</td>
+                  </tr>
+                  <tr className="border-b border-warm-200">
+                    <td className="py-3.5 pr-4 text-gray-800">Mercedes Classe S Maybach</td>
+                    <td className="py-3.5 text-right font-medium" style={{ color: '#8a7340' }}>250 €</td>
+                  </tr>
+                  <tr className="border-b border-warm-200">
+                    <td className="py-3.5 pr-4 text-gray-800">Range Rover Evoque</td>
+                    <td className="py-3.5 text-right font-medium" style={{ color: '#8a7340' }}>200 €</td>
+                  </tr>
+                  <tr className="border-b border-warm-200">
+                    <td className="py-3.5 pr-4 text-gray-800">Mercedes Classe G</td>
+                    <td className="py-3.5 text-right font-medium" style={{ color: '#8a7340' }}>200 €</td>
+                  </tr>
+                  <tr className="border-b border-warm-200">
+                    <td className="py-3.5 pr-4 text-gray-800">Mercedes Sprinter VIP</td>
+                    <td className="py-3.5 text-right font-medium" style={{ color: '#8a7340' }}>300 €</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <a href="/devis" className="btn-primary inline-block">
+              Obtenir un devis instantané
+            </a>
           </div>
         </div>
       </section>
