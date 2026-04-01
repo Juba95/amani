@@ -46,7 +46,11 @@ export function readSiteContent(): SiteContent {
 export function writeSiteContent(data: SiteContent) {
   ensureDir();
   data._meta = { version: '1', updatedAt: new Date().toISOString() };
-  fs.writeFileSync(DATA_FILE, JSON.stringify(data, null, 2), 'utf-8');
+  const json = JSON.stringify(data, null, 2);
+  // Écriture atomique : on écrit dans un fichier temporaire puis on renomme
+  const tmpFile = DATA_FILE + '.tmp';
+  fs.writeFileSync(tmpFile, json, 'utf-8');
+  fs.renameSync(tmpFile, DATA_FILE);
 }
 
 /**

@@ -7,6 +7,7 @@ export interface PageField {
   key: string;
   label: string;
   type: 'text' | 'textarea';
+  defaultValue?: string;
 }
 
 export interface PageEntry {

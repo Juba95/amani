@@ -15,6 +15,7 @@ interface PageEntry {
   category: string;
   fields: PageField[];
   content: Record<string, string>;
+  defaults: Record<string, string>;
   hasOverrides: boolean;
 }
 
@@ -80,7 +81,12 @@ export default function AdminPage() {
   /* ─── Load draft when selecting a page ─── */
   useEffect(() => {
     if (selectedPage) {
-      setDraft({ ...selectedPage.content });
+      // Merge : si un override existe on le prend, sinon on prend la valeur par défaut
+      const merged: Record<string, string> = {};
+      for (const field of selectedPage.fields) {
+        merged[field.key] = selectedPage.content[field.key] ?? selectedPage.defaults[field.key] ?? '';
+      }
+      setDraft(merged);
       setHasChanges(false);
       setSaveMsg('');
     }
@@ -124,7 +130,8 @@ export default function AdminPage() {
         headers: { 'Content-Type': 'application/json', 'x-admin-key': key },
         body: JSON.stringify({ slug: selectedSlug, content: draft }),
       });
-      if (res.ok) {
+      const data = await res.json().catch(() => ({}));
+      if (res.ok && data.success) {
         // Mettre à jour la page localement
         setPages(ps => ps.map(p =>
           p.slug === selectedSlug
@@ -135,10 +142,11 @@ export default function AdminPage() {
         setSaveMsg('Enregistré avec succès');
         setTimeout(() => setSaveMsg(''), 3000);
       } else {
-        setSaveMsg('Erreur lors de la sauvegarde');
+        const detail = data.detail || data.error || `HTTP ${res.status}`;
+        setSaveMsg(`Erreur : ${detail}`);
       }
-    } catch {
-      setSaveMsg('Erreur réseau');
+    } catch (err: any) {
+      setSaveMsg(`Erreur réseau : ${err?.message || 'connexion impossible'}`);
     } finally {
       setSaving(false);
     }
@@ -368,31 +376,47 @@ export default function AdminPage() {
 
                 {/* Fields */}
                 <div className="space-y-5">
-                  {selectedPage.fields.map(field => (
-                    <div key={field.key} className="bg-white rounded-xl border border-stone-200 p-5">
-                      <label className={lbl}>{field.label}</label>
-                      {field.type === 'textarea' ? (
-                        <textarea
-                          rows={4}
-                          className={`${inp} resize-y`}
-                          value={draft[field.key] || ''}
-                          onChange={e => updateField(field.key, e.target.value)}
-                          placeholder="Laissez vide pour garder la valeur par défaut"
-                        />
-                      ) : (
-                        <input
-                          type="text"
-                          className={inp}
-                          value={draft[field.key] || ''}
-                          onChange={e => updateField(field.key, e.target.value)}
-                          placeholder="Laissez vide pour garder la valeur par défaut"
-                        />
-                      )}
-                      <p className="font-sans text-[0.55rem] text-stone-300 mt-1.5">
-                        Clé : <code className="bg-stone-50 px-1 py-0.5 rounded text-stone-400">{field.key}</code>
-                      </p>
-                    </div>
-                  ))}
+                  {selectedPage.fields.map(field => {
+                    const isDefault = !selectedPage.content[field.key] && !!selectedPage.defaults[field.key];
+                    const defaultVal = selectedPage.defaults[field.key] || '';
+                    return (
+                      <div key={field.key} className="bg-white rounded-xl border border-stone-200 p-5">
+                        <div className="flex items-center justify-between mb-1.5">
+                          <label className={lbl} style={{ marginBottom: 0 }}>{field.label}</label>
+                          {isDefault && !hasChanges && (
+                            <span className="font-sans text-[0.55rem] text-amber-500 bg-amber-50 px-2 py-0.5 rounded-full">
+                              valeur par défaut
+                            </span>
+                          )}
+                          {selectedPage.content[field.key] && (
+                            <span className="font-sans text-[0.55rem] text-green-600 bg-green-50 px-2 py-0.5 rounded-full">
+                              personnalisé
+                            </span>
+                          )}
+                        </div>
+                        {field.type === 'textarea' ? (
+                          <textarea
+                            rows={4}
+                            className={`${inp} resize-y`}
+                            value={draft[field.key] || ''}
+                            onChange={e => updateField(field.key, e.target.value)}
+                            placeholder={defaultVal || 'Entrez une valeur…'}
+                          />
+                        ) : (
+                          <input
+                            type="text"
+                            className={inp}
+                            value={draft[field.key] || ''}
+                            onChange={e => updateField(field.key, e.target.value)}
+                            placeholder={defaultVal || 'Entrez une valeur…'}
+                          />
+                        )}
+                        <p className="font-sans text-[0.55rem] text-stone-300 mt-1.5">
+                          Clé : <code className="bg-stone-50 px-1 py-0.5 rounded text-stone-400">{field.key}</code>
+                        </p>
+                      </div>
+                    );
+                  })}
                 </div>
 
                 {/* Save bar */}
