@@ -18,11 +18,22 @@ export async function generateMetadata({ params }: { params: { lang: string } })
   if (!VALID_LOCALES.has(params.lang)) return {};
   const t = meta[params.lang] || en;
 
+  const BASE = 'https://www.amani-limousines.com';
   return {
     title: t?.metadata?.title ?? '',
     description: t?.metadata?.description ?? '',
     // Toutes les homepages (EN, AR, ZH) sont indexées — clientèle internationale
     robots: { index: true, follow: true },
+    alternates: {
+      canonical: `${BASE}/${params.lang}`,
+      languages: {
+        fr: `${BASE}/`,
+        en: `${BASE}/en`,
+        ar: `${BASE}/ar`,
+        'zh-Hans': `${BASE}/zh`,
+        'x-default': `${BASE}/`,
+      },
+    },
   };
 }
 

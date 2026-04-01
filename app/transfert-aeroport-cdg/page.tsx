@@ -7,6 +7,9 @@ export const metadata: Metadata = {
     'Réservez votre chauffeur privé à l\'aéroport Charles de Gaulle. Prix fixe, suivi de vol, accueil en salle d\'arrivée. Berlines Mercedes et vans VIP disponibles 24h/24.',
   alternates: {
     canonical: 'https://www.amani-limousines.com/transfert-aeroport-cdg',
+    languages: {
+      en: 'https://www.amani-limousines.com/en/cdg-airport-transfer',
+    },
   },
   openGraph: {
     title: 'Chauffeur Privé CDG Paris | Amani Limousines',

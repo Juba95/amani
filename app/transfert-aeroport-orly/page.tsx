@@ -7,6 +7,9 @@ export const metadata: Metadata = {
     'Transfert avec chauffeur privé à l\'aéroport d\'Orly. Terminaux 1, 2, 3 et 4 couverts. Prix fixe, suivi de vol, accueil personnalisé. Réservation 24h/24.',
   alternates: {
     canonical: 'https://www.amani-limousines.com/transfert-aeroport-orly',
+    languages: {
+      en: 'https://www.amani-limousines.com/en/orly-airport-transfer',
+    },
   },
   openGraph: {
     title: 'Chauffeur Privé Orly Paris | Amani Limousines',

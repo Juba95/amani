@@ -7,6 +7,9 @@ export const metadata: Metadata = {
     'Transport VIP pour vos événements à Paris. Fashion Week, Paris Air Show, Roland Garros, Festival de Cannes, Salon Nautic, Maison & Objet. Flotte dédiée, coordination sur site.',
   alternates: {
     canonical: 'https://www.amani-limousines.com/evenements',
+    languages: {
+      en: 'https://www.amani-limousines.com/en/events',
+    },
   },
 };
 

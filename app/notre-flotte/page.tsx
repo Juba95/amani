@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import SEOLayout from '@/components/SEOLayout';
 
 export const metadata: Metadata = {
@@ -7,6 +8,7 @@ export const metadata: Metadata = {
     'Découvrez notre flotte de véhicules de prestige à Paris. Mercedes Classe E, S, V, BMW i7 et Sprinter VIP. Plus de 300 véhicules renouvelés chaque année.',
   alternates: {
     canonical: 'https://www.amani-limousines.com/notre-flotte',
+    languages: { en: 'https://www.amani-limousines.com/en/our-fleet' },
   },
 };
 
@@ -18,7 +20,7 @@ const vehicules = [
     pax: '3 passagers',
     bagages: '2 valises',
     prix: 'À partir de 125 €',
-    image: 'https://www.amani-limousines.com/wp-content/uploads/2017/02/mercedes_benz_classe_e_hr-dvpu.png',
+    image: '/vehicles/mercedes-classe-e.png',
     details: 'La plus polyvalente de notre flotte. La Classe E (ou sa variante électrique EQE) combine un niveau de confort élevé avec des dimensions adaptées à Paris intra-muros. Idéale pour les transferts aéroport solo ou en binôme, et pour les mises à disposition dans le centre de Paris.',
     equipements: ['Wi-Fi 4G inclus', 'Cuir Nappa', 'Climatisation bi-zone', 'Chargeur sans fil', 'Eau minérale'],
   },
@@ -29,7 +31,7 @@ const vehicules = [
     pax: '3 passagers',
     bagages: '2 valises',
     prix: 'À partir de 225 €',
-    image: 'https://www.amani-limousines.com/wp-content/uploads/2017/02/s-Class-1-600x380.jpg',
+    image: '/vehicles/mercedes-classe-s.png',
     details: 'La référence absolue du transport de prestige. La Classe S est la voiture des présidents, des PDG et des délégations de premier rang. Insonorisation renforcée, sièges massants arrière, écrans LCD et une isolation acoustique qui transforme l\'habitacle en espace de travail silencieux.',
     equipements: ['Sièges massants', 'Écrans LCD arrière', 'Bar à bord', 'Burmester® 4D', 'Ambiance lumineuse'],
   },
@@ -40,7 +42,7 @@ const vehicules = [
     pax: '7 passagers',
     bagages: '6 valises',
     prix: 'À partir de 125 €',
-    image: 'https://www.amani-limousines.com/wp-content/uploads/2017/02/PngItem_816085-600x380.png',
+    image: '/vehicles/mercedes-classe-v.png',
     details: 'La solution pour les familles, les groupes de collègues et les délégations de taille moyenne. La Classe V peut être configurée en salon (sièges face à face) ou en configuration standard. L\'espace de chargement accepte des bagages volumineux sans compromettre le confort des passagers.',
     equipements: ['Configuration salon possible', 'Wi-Fi haut débit', 'Espace bagages XXL', 'Stores occultants', '7 ceintures homologuées'],
   },
@@ -51,7 +53,7 @@ const vehicules = [
     pax: '3 passagers',
     bagages: '2 valises',
     prix: 'À partir de 250 €',
-    image: 'https://www.amani-limousines.com/wp-content/uploads/2023/06/bmwI7-redim.jpg',
+    image: '/vehicles/bmw-i7.png',
     details: 'Entièrement électrique, la BMW i7 combine zéro émission et luxe de très haut niveau. Son écran cinéma 31,3 pouces en configuration arrière, son silence absolu et son système d\'ambiance lumineuse en font le véhicule de choix pour les clients sensibles à la durabilité et au confort.',
     equipements: ['100% électrique', 'Écran cinéma 31"', 'Autonomie 600 km', 'Massage 5 zones', 'Silence moteur absolu'],
   },
@@ -62,7 +64,7 @@ const vehicules = [
     pax: '16 passagers',
     bagages: '16 valises',
     prix: 'À partir de 350 €',
-    image: 'https://www.amani-limousines.com/wp-content/uploads/2023/07/sprinter-vip.jpg',
+    image: '/vehicles/mercedes-sprinter.png',
     details: 'Le Sprinter VIP est la solution pour les groupes importants, les délégations officielles et les navettes d\'événements. Aménagement intérieur luxe avec sièges capitaine en cuir, sono premium, éclairage d\'ambiance et climatisation multi-zones. Peut transporter 16 personnes avec leurs bagages.',
     equipements: ['Sièges capitaine cuir', 'Sono premium', 'Climatisation zones', 'Galerie bagages', 'Communication radio'],
   },
@@ -94,10 +96,12 @@ export default function NotreFlottePage() {
         <div className="max-w-4xl mx-auto space-y-10">
           {vehicules.map((v) => (
             <div key={v.id} className="card md:flex gap-8">
-              <div className="md:w-64 flex-shrink-0">
-                <img
+              <div className="md:w-64 flex-shrink-0 relative">
+                <Image
                   src={v.image}
                   alt={v.nom}
+                  width={600}
+                  height={380}
                   className="w-full h-40 object-cover rounded-xl"
                   loading="lazy"
                 />

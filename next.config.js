@@ -28,6 +28,11 @@ const nextConfig = {
       'sartrouville','clamart','bobigny','vincennes','sevran','montrouge',
       'suresnes','massy','gennevilliers','rosny-sous-bois','corbeil-essonnes',
       'evry','stains','gagny','marne-la-vallee','meaux','melun',
+      'cagnes-sur-mer','hyeres','la-ciotat','la-garde','la-muy',
+      'le-cannet','le-lavandou','le-pradet','roquefort-les-pins',
+      'six-fours-les-plages','saint-priest','bandol','colle-sur-loup',
+      'saint-jean-cap-ferrat','saint-tropez','mandelieu-la-napoule',
+      'lorgues','maisons-alfort',
     ];
 
     const cityRedirects = deletedCities.map(city => ({
@@ -48,6 +53,10 @@ const nextConfig = {
       'mandarin-oriental-paris','park-hyatt-paris-vendome','hotel-de-crillon',
       'hotel-le-meurice','the-peninsula-paris','hotel-lutetia',
       'hotel-prince-de-galles','hotel-royal-monceau','hotel-barriere-le-fouquets',
+      'hotel-de-la-tremoille','hotel-de-vendome','hotel-fouquet-s-barriere',
+      'hotel-molitor-paris-mgallery-by-sofitel','hotel-napoleon-paris',
+      'hotel-raphael','hotel-regina-louvre','hotel-san-regis',
+      'hotel-splendide-royal-paris','hotel-vernet',
     ];
 
     const hotelRedirects = [
@@ -243,6 +252,110 @@ const nextConfig = {
       { source: '/en/chamonix',                destination: '/en/chamonix-chauffeur', permanent: true },
       { source: '/en/megeve/',                 destination: '/en/megeve-chauffeur', permanent: true },
       { source: '/en/megeve',                  destination: '/en/megeve-chauffeur', permanent: true },
+
+      // === Hippodromes ===
+      { source: '/hippodrome-dauteuil', destination: '/evenements', permanent: true },
+      { source: '/hippodrome-dauteuil/', destination: '/evenements', permanent: true },
+      { source: '/hippodrome-de-clairefontaine', destination: '/evenements', permanent: true },
+      { source: '/hippodrome-de-clairefontaine/', destination: '/evenements', permanent: true },
+      { source: '/hippodrome-de-deauville-la-touques', destination: '/evenements/hippodrome-deauville', permanent: true },
+      { source: '/hippodrome-de-deauville-la-touques/', destination: '/evenements/hippodrome-deauville', permanent: true },
+      { source: '/hippodrome-de-longchamp/', destination: '/evenements', permanent: true },
+      { source: '/hippodrome-de-longchamp', destination: '/evenements', permanent: true },
+      { source: '/hippodrome-de-vincennes', destination: '/evenements', permanent: true },
+      { source: '/hippodrome-de-chantilly/', destination: '/evenements', permanent: true },
+      { source: '/hippodrome-de-chantilly', destination: '/evenements', permanent: true },
+
+      // === Villes variantes -2 ===
+      { source: '/cagnes-sur-mer-2/', destination: '/longue-distance', permanent: true },
+      { source: '/cagnes-sur-mer-2', destination: '/longue-distance', permanent: true },
+      { source: '/draguignan-2/', destination: '/longue-distance', permanent: true },
+      { source: '/draguignan-2', destination: '/longue-distance', permanent: true },
+      { source: '/hyeres-2/', destination: '/longue-distance', permanent: true },
+      { source: '/hyeres-2', destination: '/longue-distance', permanent: true },
+      { source: '/la-ciotat-2/', destination: '/longue-distance', permanent: true },
+      { source: '/la-ciotat-2', destination: '/longue-distance', permanent: true },
+      { source: '/le-cannet-2/', destination: '/longue-distance', permanent: true },
+      { source: '/le-cannet-2', destination: '/longue-distance', permanent: true },
+      { source: '/six-fours-les-plages-2/', destination: '/longue-distance', permanent: true },
+      { source: '/six-fours-les-plages-2', destination: '/longue-distance', permanent: true },
+      { source: '/frejus-2', destination: '/longue-distance', permanent: true },
+
+      // === Venues / Stades ===
+      { source: '/groupama-stadium/', destination: '/longue-distance', permanent: true },
+      { source: '/groupama-stadium', destination: '/longue-distance', permanent: true },
+      { source: '/arena-pierre-mauroy-lille-villeneuve-dascq/', destination: '/longue-distance', permanent: true },
+      { source: '/arena-pierre-mauroy-lille-villeneuve-dascq', destination: '/longue-distance', permanent: true },
+      { source: '/amphitheatre-exterieur-du-zenith-de-nancy-nancy-maxeville/', destination: '/longue-distance', permanent: true },
+      { source: '/amphitheatre-exterieur-du-zenith-de-nancy-nancy-maxeville', destination: '/longue-distance', permanent: true },
+      { source: '/salle-rameau-lyon/', destination: '/longue-distance', permanent: true },
+      { source: '/salle-rameau-lyon', destination: '/longue-distance', permanent: true },
+      { source: '/parc-des-expositions-de-bordeaux/', destination: '/longue-distance', permanent: true },
+      { source: '/parc-des-expositions-de-bordeaux', destination: '/longue-distance', permanent: true },
+      { source: '/parc-des-expositions-de-montpellier/', destination: '/longue-distance', permanent: true },
+      { source: '/parc-des-expositions-de-montpellier', destination: '/longue-distance', permanent: true },
+      { source: '/pole-international-du-cheval-de-deauville', destination: '/evenements/hippodrome-deauville', permanent: true },
+      { source: '/centre-des-congres-de-lyon-amphitheatre-lyon', destination: '/longue-distance', permanent: true },
+      { source: '/centre-des-congres-de-lyon-amphitheatre-lyon/', destination: '/longue-distance', permanent: true },
+
+      // === Restaurants ===
+      { source: '/alain-ducasse-au-plaza-athenee/', destination: '/chauffeur-prive-paris', permanent: true },
+      { source: '/alain-ducasse-au-plaza-athenee', destination: '/chauffeur-prive-paris', permanent: true },
+      { source: '/le-meurice-alain-ducasse/', destination: '/chauffeur-prive-paris', permanent: true },
+      { source: '/le-meurice-alain-ducasse', destination: '/chauffeur-prive-paris', permanent: true },
+
+      // === Courses / Sport ===
+      { source: '/courses-hippiques-de-france-prix', destination: '/evenements', permanent: true },
+      { source: '/courses-hippiques-de-france-prix/', destination: '/evenements', permanent: true },
+      { source: '/24h-du-mans/', destination: '/evenements', permanent: true },
+      { source: '/24h-du-mans', destination: '/evenements', permanent: true },
+
+      // === Salons ===
+      { source: '/salon-du-livre-de-paris-livre-paris/', destination: '/evenements/salons-professionnels', permanent: true },
+      { source: '/salon-du-livre-de-paris-livre-paris', destination: '/evenements/salons-professionnels', permanent: true },
+
+      // === Pages EN manquantes (various) ===
+      { source: '/en/national-international-transfers/', destination: '/en/long-distance', permanent: true },
+      { source: '/en/service-de-transport-scolaire-et-de-colonies-de-vacances-pour-enfants-en-toute-securite/', destination: '/en', permanent: true },
+      { source: '/en/private-chauffeur-cdg-charles-de-gaule-:slug*', destination: '/en/cdg-airport-transfer', permanent: true },
+
+      // === Misc FR pages ===
+      { source: '/chauffeur-prive-personnel-avion-aerien/', destination: '/mise-a-disposition', permanent: true },
+      { source: '/chauffeur-prive-personnel-avion-aerien', destination: '/mise-a-disposition', permanent: true },
+      { source: '/transport-tpmr-handisport-avec-amani-limousines-accessibilite-et-confort-optimal/', destination: '/', permanent: true },
+      { source: '/transport-tpmr-handisport-avec-amani-limousines-accessibilite-et-confort-optimal', destination: '/', permanent: true },
+      { source: '/transfert-marignane/', destination: '/longue-distance', permanent: true },
+      { source: '/transfert-marignane', destination: '/longue-distance', permanent: true },
+      { source: '/aeroport-bourget/', destination: '/transfert-le-bourget', permanent: true },
+      { source: '/aeroport-bourget', destination: '/transfert-le-bourget', permanent: true },
+      { source: '/aeroport-de-paris-charles-de-gaulle-roissy/', destination: '/transfert-aeroport-cdg', permanent: true },
+      { source: '/aeroport-de-paris-charles-de-gaulle-roissy', destination: '/transfert-aeroport-cdg', permanent: true },
+      { source: '/transfert-aeroport-lyon/', destination: '/longue-distance', permanent: true },
+      { source: '/transfert-aeroport-lyon', destination: '/longue-distance', permanent: true },
+      { source: '/transfert-aeroport-nice', destination: '/longue-distance', permanent: true },
+      { source: '/heliport-de-meaux-esbly', destination: '/transfert-aeroport-cdg', permanent: true },
+      { source: '/heliport-de-meaux-esbly/', destination: '/transfert-aeroport-cdg', permanent: true },
+      { source: '/chateau-musee/', destination: '/excursion-privee', permanent: true },
+      { source: '/chateau-musee', destination: '/excursion-privee', permanent: true },
+      { source: '/bibliotheque-musee/', destination: '/excursion-privee', permanent: true },
+      { source: '/bibliotheque-musee', destination: '/excursion-privee', permanent: true },
+      { source: '/festival-de-cannes/', destination: '/evenements/festival-de-cannes', permanent: true },
+      { source: '/festival-de-cannes', destination: '/evenements/festival-de-cannes', permanent: true },
+
+      // === Arrondissements de Paris (wildcard) ===
+      { source: '/paris-:num(\\d+)-eme-arrondissement/', destination: '/transfert-cdg-paris', permanent: true },
+      { source: '/paris-:num(\\d+)-eme-arrondissement', destination: '/transfert-cdg-paris', permanent: true },
+
+      // === Wildcards — catégories bulk (placed last to avoid conflicts) ===
+      { source: '/festival-:slug*', destination: '/evenements', permanent: true },
+      { source: '/:prefix*-festival', destination: '/evenements', permanent: true },
+      { source: '/:prefix*-festival/', destination: '/evenements', permanent: true },
+      { source: '/golf-:slug*', destination: '/evenements', permanent: true },
+      { source: '/musee-:slug*', destination: '/excursion-privee', permanent: true },
+      { source: '/musee-:slug*/', destination: '/excursion-privee', permanent: true },
+      { source: '/port-:slug*', destination: '/longue-distance', permanent: true },
+      { source: '/arenes-:slug*', destination: '/longue-distance', permanent: true },
+      { source: '/ecomusee-:slug*', destination: '/excursion-privee', permanent: true },
 
       // === Villes + hôtels supprimés ===
       ...cityRedirects,

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     siteName: 'Amani Limousines',
     locale: 'fr_FR',
     type: 'website',
-    images: [{ url: 'https://www.amani-limousines.com/wp-content/uploads/2017/02/s-Class-1-600x380.jpg', width: 600, height: 380 }],
+    images: [{ url: 'https://www.amani-limousines.com/vehicles/mercedes-classe-s.png', width: 600, height: 380 }],
   },
   robots: { index: true, follow: true },
 };
