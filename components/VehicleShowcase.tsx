@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 
 interface VehicleShowcaseProps {
@@ -29,8 +29,21 @@ const DARK_BG_VEHICLES = ['sprinter'];
 export default function VehicleShowcase({ t }: VehicleShowcaseProps) {
   const [idx, setIdx] = useState(0);
   const [fade, setFade] = useState(true);
+  const sectionRef = useRef<HTMLElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  // Only run carousel when section is visible (saves CPU)
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsVisible(entry.isIntersecting),
+      { threshold: 0.1 }
+    );
+    if (sectionRef.current) observer.observe(sectionRef.current);
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
+    if (!isVisible) return;
     const timer = setInterval(() => {
       setFade(false);
       setTimeout(() => {
@@ -39,7 +52,7 @@ export default function VehicleShowcase({ t }: VehicleShowcaseProps) {
       }, 300);
     }, 5000);
     return () => clearInterval(timer);
-  }, []);
+  }, [isVisible]);
 
   const handleDot = (i: number) => {
     setFade(false);
@@ -55,6 +68,7 @@ export default function VehicleShowcase({ t }: VehicleShowcaseProps) {
 
   return (
     <section
+      ref={sectionRef}
       id="fleet"
       className="relative py-20 px-6 md:px-10 text-center section-divider overflow-hidden"
       style={{ background: '#faf8f5' }}

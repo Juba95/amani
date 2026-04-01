@@ -26,11 +26,18 @@ function useCountUp(target: number, duration = 1800, start = false) {
 export default function StatsRow({ t }: StatsRowProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
+  const [loadVideo, setLoadVideo] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => { if (entry.isIntersecting) setVisible(true); },
-      { threshold: 0.3 }
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          // Lazy-load YouTube video only when section is in viewport
+          setLoadVideo(true);
+        }
+      },
+      { threshold: 0.1, rootMargin: '200px' }
     );
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
@@ -51,51 +58,47 @@ export default function StatsRow({ t }: StatsRowProps) {
     <div
       ref={ref}
       className="relative overflow-hidden"
-      style={{ minHeight: '220px' }}
+      style={{ minHeight: '220px', background: '#0a0908' }}
     >
-      {/* ── YouTube background video ── */}
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 pointer-events-none"
-        style={{ zIndex: 0 }}
-      >
-        {/*
-          Technique : l'iframe doit être plus grande que le conteneur pour couvrir tout l'espace.
-          On utilise la proportion 16:9 inversée : width = 177.78vh, height = 56.25vw.
-          On prend le max(100%, valeur calculée) pour s'assurer du remplissage.
-        */}
-        <iframe
-          src="https://www.youtube.com/embed/Tgd6gZt9DvQ?autoplay=1&mute=1&loop=1&playlist=Tgd6gZt9DvQ&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playsinline=1&enablejsapi=0"
-          title="background"
-          allow="autoplay; encrypted-media"
-          allowFullScreen={false}
-          style={{
-            position: 'absolute',
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
-            /* Fill the container regardless of aspect ratio */
-            width: 'max(100%, 177.78vh)',
-            height: 'max(100%, 56.25vw)',
-            border: 'none',
-            pointerEvents: 'none',
-          }}
-        />
-        {/* Dark cinematic overlay */}
+      {/* ── YouTube background video — lazy-loaded ── */}
+      {loadVideo && (
         <div
-          className="absolute inset-0"
-          style={{
-            background: 'linear-gradient(to bottom, rgba(8,7,6,0.72) 0%, rgba(8,7,6,0.60) 50%, rgba(8,7,6,0.72) 100%)',
-          }}
-        />
-        {/* Subtle gold vignette */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background: 'radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.25) 100%)',
-          }}
-        />
-      </div>
+          aria-hidden="true"
+          className="absolute inset-0 pointer-events-none"
+          style={{ zIndex: 0 }}
+        >
+          <iframe
+            src="https://www.youtube.com/embed/Tgd6gZt9DvQ?autoplay=1&mute=1&loop=1&playlist=Tgd6gZt9DvQ&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playsinline=1&enablejsapi=0"
+            title="background"
+            allow="autoplay; encrypted-media"
+            allowFullScreen={false}
+            loading="lazy"
+            style={{
+              position: 'absolute',
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+              width: 'max(100%, 177.78vh)',
+              height: 'max(100%, 56.25vw)',
+              border: 'none',
+              pointerEvents: 'none',
+            }}
+          />
+          {/* Dark cinematic overlay */}
+          <div
+            className="absolute inset-0"
+            style={{
+              background: 'linear-gradient(to bottom, rgba(8,7,6,0.72) 0%, rgba(8,7,6,0.60) 50%, rgba(8,7,6,0.72) 100%)',
+            }}
+          />
+          <div
+            className="absolute inset-0"
+            style={{
+              background: 'radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.25) 100%)',
+            }}
+          />
+        </div>
+      )}
 
       {/* ── Stats content ── */}
       <div

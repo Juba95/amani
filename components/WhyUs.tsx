@@ -29,7 +29,7 @@ function ElfsightReviews() {
           setLoaded(true);
         }
       },
-      { rootMargin: '200px' } // pre-load 200px before visible
+      { rootMargin: '600px' } // pre-load 600px before visible for smoother experience
     );
     observer.observe(el);
     return () => observer.disconnect();

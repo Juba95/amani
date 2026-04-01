@@ -132,6 +132,7 @@ function VideoSection({ t }: { t: any }) {
             title="Amani Limousines — Service de chauffeur privé à Paris"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
+            loading="lazy"
             className="absolute inset-0 w-full h-full"
             style={{ border: 'none' }}
           />

@@ -12,7 +12,7 @@ const dmSerif = DM_Serif_Display({
 
 const inter = Inter({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
+  weight: ['400', '500', '600'],
   display: 'swap',
   variable: '--font-inter',
 });
@@ -76,6 +76,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="theme-color" content="#ffffff" />
+        {/* Preconnect to critical third-party origins */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://maps.googleapis.com" />
+        <link rel="dns-prefetch" href="https://www.youtube.com" />
+        <link rel="dns-prefetch" href="https://elfsightcdn.com" />
+        <link rel="dns-prefetch" href="https://nominatim.openstreetmap.org" />
         {/* hreflang tags */}
         <link rel="alternate" hrefLang="fr" href="https://www.amani-limousines.com/" />
         <link rel="alternate" hrefLang="en" href="https://www.amani-limousines.com/en" />

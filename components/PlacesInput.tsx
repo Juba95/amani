@@ -12,16 +12,26 @@ interface PlacesInputProps {
   onPlaceSelected?: (address: string) => void;
 }
 
-// Charge le script Google Maps une seule fois dans la page
+// Charge le script Google Maps une seule fois dans la page (async + defer)
 function loadGoogleMapsScript(apiKey: string) {
   if (typeof window === 'undefined') return;
   if (document.getElementById('google-maps-script')) return;
-  const script = document.createElement('script');
-  script.id = 'google-maps-script';
-  script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places&language=fr`;
-  script.async = true;
-  script.defer = true;
-  document.head.appendChild(script);
+
+  // Use requestIdleCallback to avoid blocking main thread during page load
+  const load = () => {
+    const script = document.createElement('script');
+    script.id = 'google-maps-script';
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places&language=fr`;
+    script.async = true;
+    script.defer = true;
+    document.head.appendChild(script);
+  };
+
+  if ('requestIdleCallback' in window) {
+    (window as any).requestIdleCallback(load, { timeout: 3000 });
+  } else {
+    setTimeout(load, 1000);
+  }
 }
 
 export default function PlacesInput({

@@ -62,26 +62,26 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
 
         {/* ── LEFT : Text + popular routes ── */}
         <div>
-          <p className={`tag mb-5 transition-all duration-[1200ms] ease-out ${ready ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}
+          <p className={`tag mb-5 transition-[opacity,transform] duration-[1200ms] ease-out ${ready ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}
             style={{ transitionDelay: '300ms' }}>
             {t?.hero?.tag}
           </p>
 
           <h1
-            className={`font-serif text-gray-900 font-normal leading-[1.1] mb-6 transition-all duration-[1200ms] ease-out ${ready ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+            className={`font-serif text-gray-900 font-normal leading-[1.1] mb-6 transition-[opacity,transform] duration-[1200ms] ease-out ${ready ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
             style={{ transitionDelay: '500ms', fontSize: 'clamp(2.2rem, 4.5vw, 3.8rem)' }}>
             {t?.hero?.title_1}<br />
             {t?.hero?.title_2} <em className="italic" style={{ color: '#8a7340' }}>{t?.hero?.title_em}</em><br />
             {t?.hero?.title_3}
           </h1>
 
-          <p className={`font-sans text-sm text-stone-500 font-light leading-relaxed max-w-[460px] mb-10 transition-all duration-[1200ms] ease-out ${ready ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}
+          <p className={`font-sans text-sm text-stone-500 font-light leading-relaxed max-w-[460px] mb-10 transition-[opacity,transform] duration-[1200ms] ease-out ${ready ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}
             style={{ transitionDelay: '700ms' }}>
             {t?.hero?.subtitle}
           </p>
 
           {/* Popular routes */}
-          <div className={`transition-all duration-[1200ms] ease-out ${ready ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
+          <div className={`transition-[opacity,transform] duration-[1200ms] ease-out ${ready ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
             style={{ transitionDelay: '900ms' }}>
             <p className="tag mb-3">{t?.hero?.popular}</p>
             <div className="flex flex-wrap gap-2">
@@ -98,7 +98,7 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
         </div>
 
         {/* ── RIGHT : Booking form ── */}
-        <div className={`transition-all duration-[1200ms] ease-out ${ready ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
+        <div className={`transition-[opacity,transform] duration-[1200ms] ease-out ${ready ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
           style={{ transitionDelay: '600ms' }}>
           <div className="p-7 md:p-9 rounded-2xl border border-warm-300 bg-warm-50 shadow-sm">
             {/* Form header */}
