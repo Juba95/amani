@@ -26,12 +26,12 @@ const vehicules = [
   {
     id: 'eqs',
     nom: 'Mercedes EQS',
-    categorie: 'Berline Business Électrique',
+    categorie: 'Berline Executive Électrique',
     pax: '3 passagers',
     bagages: '2 valises',
     image: '/vehicles/mercedes-eqe.png',
-    details: 'La version 100 % électrique de notre gamme business. La EQS offre le même niveau de confort que la Classe E avec zéro émission. Silence de fonctionnement absolu, parfaite pour les clients sensibles à l\'impact environnemental.',
-    equipements: ['100% électrique', 'Silence absolu', 'Cuir premium', 'Climatisation bi-zone', 'Chargeur USB-C'],
+    details: 'La version 100 % électrique de la Classe S. La EQS offre le même niveau de confort et de prestige que la Classe S avec zéro émission. Silence de fonctionnement absolu, sièges massants, système Burmester® — l\'excellence en mode électrique.',
+    equipements: ['100% électrique', 'Silence absolu', 'Sièges massants', 'Burmester® surround', 'Confort Classe S'],
   },
   {
     id: 'classe_s',

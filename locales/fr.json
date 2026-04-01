@@ -334,15 +334,15 @@
       },
       "eqs": {
         "name": "Mercedes EQS",
-        "category": "Berline Électrique",
+        "category": "Berline Executive Électrique",
         "pax": "3 passagers",
         "bags": "2 valises",
         "from": "À partir de 150 €",
         "features": [
           "100% électrique",
-          "Zéro émission",
-          "Recharge rapide",
-          "Conduite silencieuse"
+          "Confort Classe S",
+          "Sièges massants",
+          "Silence absolu"
         ]
       }
     }
