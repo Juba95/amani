@@ -16,7 +16,8 @@ export default function DevisPage() {
   const to = params.get('to') || '';
   const km = Number(params.get('km')) || 35;
   const dur = params.get('dur') || '45 min';
-  const lang = params.get('lang') || 'fr';
+  const langParam = params.get('lang') || 'fr';
+  const lang = (['fr', 'en', 'ar', 'zh'].includes(langParam) ? langParam : 'fr') as 'fr' | 'en' | 'ar' | 'zh';
 
   const t = locales[lang] || fr;
   const [selectedVehicle, setSelectedVehicle] = useState<string | null>(null);
