@@ -78,6 +78,23 @@ const PRIORITY: Record<string, number> = {
   'megeve-chauffeur':                   0.78,
   'haute-savoie-chauffeur':             0.80,
   'economical-airport-transfer':        0.78,
+  // FR — villes / régions
+  'chauffeur-prive-bordeaux':           0.85,
+  'chauffeur-prive-lyon':               0.85,
+  'chauffeur-prive-nice':               0.82,
+  'chauffeur-prive-cannes':             0.80,
+  'chauffeur-prive-monaco':             0.80,
+  'chauffeur-prive-deauville':          0.78,
+  'chauffeur-prive-marseille':          0.82,
+  'chauffeur-prive-saint-tropez':       0.75,
+  // FR — hubs thématiques
+  'garde-du-corps':                     0.85,
+  'chauffeur-fashion-week':             0.82,
+  'chauffeur-mariage':                  0.80,
+  'chauffeur-diplomatique':             0.78,
+  'taxi-moto':                          0.80,
+  'chauffeur-evenements-sportifs':      0.78,
+  'transfert-hotel-luxe-paris':         0.82,
   // EN slugs
   'cdg-airport-transfer':         0.85,
   'orly-airport-transfer':        0.8,

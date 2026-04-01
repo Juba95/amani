@@ -14,10 +14,26 @@ const nextConfig = {
   // ============================================================
   async redirects() {
     // Villes supprimées → page longue distance
+    // Villes avec page dédiée → redirection spécifique (pas dans deletedCities)
+    const cityWithDedicatedPage = [
+      { slug: 'bordeaux', dest: '/chauffeur-prive-bordeaux' },
+      { slug: 'lyon', dest: '/chauffeur-prive-lyon' },
+      { slug: 'nice', dest: '/chauffeur-prive-nice' },
+      { slug: 'marseille', dest: '/chauffeur-prive-marseille' },
+      { slug: 'cannes', dest: '/chauffeur-prive-cannes' },
+      { slug: 'monaco', dest: '/chauffeur-prive-monaco' },
+      { slug: 'deauville', dest: '/chauffeur-prive-deauville' },
+      { slug: 'saint-tropez', dest: '/chauffeur-prive-saint-tropez' },
+    ];
+    const dedicatedCityRedirects = cityWithDedicatedPage.flatMap(({ slug, dest }) => [
+      { source: `/${slug}/`, destination: dest, permanent: true },
+      { source: `/${slug}`, destination: dest, permanent: true },
+    ]);
+
     const deletedCities = [
       'montpellier','saint-etienne','perpignan','angers','menton','grasse',
-      'le-havre','rouen','nantes','bordeaux','toulouse','strasbourg',
-      'marseille','nice','lyon','dijon','toulon','grenoble','rennes',
+      'le-havre','rouen','nantes','toulouse','strasbourg',
+      'dijon','toulon','grenoble','rennes',
       'clermont-ferrand','tours','limoges','amiens','besancon','orleans',
       'mulhouse','caen','brest','argenteuil','montreuil','saint-denis',
       'boulogne-billancourt','villeurbanne','vitry-sur-seine','colombes',
@@ -31,7 +47,7 @@ const nextConfig = {
       'cagnes-sur-mer','hyeres','la-ciotat','la-garde','la-muy',
       'le-cannet','le-lavandou','le-pradet','roquefort-les-pins',
       'six-fours-les-plages','saint-priest','bandol','colle-sur-loup',
-      'saint-jean-cap-ferrat','saint-tropez','mandelieu-la-napoule',
+      'saint-jean-cap-ferrat','mandelieu-la-napoule',
       'lorgues','maisons-alfort',
     ];
 
@@ -106,11 +122,18 @@ const nextConfig = {
       { source: '/disneyland/', destination: '/transfert-cdg-disneyland', permanent: true },
       { source: '/disneyland-paris/', destination: '/transfert-cdg-disneyland', permanent: true },
 
-      // === Fleet ===
+      // === Fleet (toutes les anciennes pages véhicules) ===
       { source: '/fleet/mercedes-classe-e/', destination: '/notre-flotte', permanent: true },
+      { source: '/fleet/mercedes-classe-e', destination: '/notre-flotte', permanent: true },
       { source: '/fleet/mercedes-classe-s/', destination: '/notre-flotte', permanent: true },
+      { source: '/fleet/mercedes-classe-s', destination: '/notre-flotte', permanent: true },
       { source: '/fleet/mercedes-van-2-2-3/', destination: '/notre-flotte', permanent: true },
-      { source: '/fleet/taxi-moto/', destination: '/notre-flotte', permanent: true },
+      { source: '/fleet/mercedes-van-2-2-3', destination: '/notre-flotte', permanent: true },
+      { source: '/fleet/taxi-moto/', destination: '/taxi-moto', permanent: true },
+      { source: '/fleet/taxi-moto', destination: '/taxi-moto', permanent: true },
+      { source: '/fleet/land-rover-range-rover/', destination: '/notre-flotte', permanent: true },
+      { source: '/fleet/land-rover-range-rover', destination: '/notre-flotte', permanent: true },
+      { source: '/fleet/:model*', destination: '/notre-flotte', permanent: true },
 
       // === Pages EN existantes ===
       { source: '/en/provision/', destination: '/en/hourly-hire', permanent: true },
@@ -145,7 +168,7 @@ const nextConfig = {
       { source: '/en/grand-prix-damerique-hippodrome-de-vincennes/', destination: '/en/events', permanent: true },
       // Chauffeurs privés EN → page dédiée
       { source: '/en/private-chauffeur-in-paris/', destination: '/en/private-chauffeur-paris', permanent: true },
-      { source: '/en/private-chauffeur-in-bordeaux/', destination: '/en/long-distance', permanent: true },
+      { source: '/en/private-chauffeur-in-bordeaux/', destination: '/en/private-chauffeur-bordeaux', permanent: true },
       // Pages institutionnelles EN
       { source: '/en/legal-notice/', destination: '/en/contact', permanent: true },
       { source: '/en/gtc-general-terms-and-conditions-of-sale/', destination: '/en/contact', permanent: true },
@@ -163,11 +186,11 @@ const nextConfig = {
       // === Pages FR manquantes — ajoutées depuis audit Google Search Console ===
       // Chauffeurs privés dans d'autres villes
       { source: '/chauffeur-prive-a-paris/', destination: '/chauffeur-prive-paris', permanent: true },
-      { source: '/chauffeur-prive-a-bordeaux/', destination: '/longue-distance', permanent: true },
+      { source: '/chauffeur-prive-a-bordeaux/', destination: '/chauffeur-prive-bordeaux', permanent: true },
       { source: '/chauffeur-prive-anglophone-expertise-et-efficacite/', destination: '/', permanent: true },
-      { source: '/chauffeur-prive-nice-chantilly/', destination: '/longue-distance', permanent: true },
-      { source: '/private-driver-nice-:slug*', destination: '/longue-distance', permanent: true },
-      { source: '/private-driver-:slug*', destination: '/longue-distance', permanent: true },
+      { source: '/chauffeur-prive-nice-chantilly/', destination: '/chauffeur-prive-nice', permanent: true },
+      { source: '/private-driver-nice-:slug*', destination: '/chauffeur-prive-nice', permanent: true },
+      { source: '/private-driver-:slug*', destination: '/chauffeur-prive-paris', permanent: true },
       // Aéroports FR manquants
       { source: '/aeroports-idf/', destination: '/transfert-aeroport-cdg', permanent: true },
       { source: '/aeroport-de-paris-charles-de-gaulle-cdg-a-dauville', destination: '/longue-distance', permanent: true },
@@ -180,8 +203,8 @@ const nextConfig = {
       { source: '/aeroport-de-pontoise-cormeilles-en-vexin-pox-a-dauville', destination: '/transfert-aeroport-cdg', permanent: true },
       // Transferts FR manquants
       { source: '/transfert-nationaux-internationaux/', destination: '/longue-distance', permanent: true },
-      { source: '/transfert-aeroport-bordeaux/', destination: '/longue-distance', permanent: true },
-      { source: '/transfert-aeroport-nice/', destination: '/longue-distance', permanent: true },
+      { source: '/transfert-aeroport-bordeaux/', destination: '/chauffeur-prive-bordeaux', permanent: true },
+      { source: '/transfert-aeroport-nice/', destination: '/chauffeur-prive-nice', permanent: true },
       // Flotte
       { source: '/flotte/', destination: '/notre-flotte', permanent: true },
       { source: '/fleet/land-rover-range-rover/', destination: '/notre-flotte', permanent: true },
@@ -189,7 +212,7 @@ const nextConfig = {
       { source: '/reims', destination: '/longue-distance', permanent: true },
       { source: '/nimes', destination: '/longue-distance', permanent: true },
       { source: '/grasse', destination: '/longue-distance', permanent: true },
-      { source: '/bordeaux', destination: '/longue-distance', permanent: true },
+      { source: '/bordeaux', destination: '/chauffeur-prive-bordeaux', permanent: true },
       { source: '/saint-etienne', destination: '/longue-distance', permanent: true },
       { source: '/le-havre', destination: '/longue-distance', permanent: true },
       // Pages diverses FR
@@ -237,7 +260,7 @@ const nextConfig = {
       { source: '/paris-6-eme-arrondissement', destination: '/transfert-aeroport-cdg', permanent: true },
       { source: '/frejus-2/',                 destination: '/longue-distance', permanent: true },
       { source: '/frejus-2',                  destination: '/longue-distance', permanent: true },
-      { source: '/lyon/',                     destination: '/longue-distance', permanent: true },
+      { source: '/lyon/',                     destination: '/chauffeur-prive-lyon', permanent: true },
       { source: '/angers',                    destination: '/longue-distance', permanent: true },
 
       // === Alpes / Haute-Savoie ===
@@ -282,21 +305,21 @@ const nextConfig = {
       { source: '/frejus-2', destination: '/longue-distance', permanent: true },
 
       // === Venues / Stades ===
-      { source: '/groupama-stadium/', destination: '/longue-distance', permanent: true },
-      { source: '/groupama-stadium', destination: '/longue-distance', permanent: true },
+      { source: '/groupama-stadium/', destination: '/chauffeur-prive-lyon', permanent: true },
+      { source: '/groupama-stadium', destination: '/chauffeur-prive-lyon', permanent: true },
       { source: '/arena-pierre-mauroy-lille-villeneuve-dascq/', destination: '/longue-distance', permanent: true },
       { source: '/arena-pierre-mauroy-lille-villeneuve-dascq', destination: '/longue-distance', permanent: true },
       { source: '/amphitheatre-exterieur-du-zenith-de-nancy-nancy-maxeville/', destination: '/longue-distance', permanent: true },
       { source: '/amphitheatre-exterieur-du-zenith-de-nancy-nancy-maxeville', destination: '/longue-distance', permanent: true },
-      { source: '/salle-rameau-lyon/', destination: '/longue-distance', permanent: true },
-      { source: '/salle-rameau-lyon', destination: '/longue-distance', permanent: true },
-      { source: '/parc-des-expositions-de-bordeaux/', destination: '/longue-distance', permanent: true },
-      { source: '/parc-des-expositions-de-bordeaux', destination: '/longue-distance', permanent: true },
+      { source: '/salle-rameau-lyon/', destination: '/chauffeur-prive-lyon', permanent: true },
+      { source: '/salle-rameau-lyon', destination: '/chauffeur-prive-lyon', permanent: true },
+      { source: '/parc-des-expositions-de-bordeaux/', destination: '/chauffeur-prive-bordeaux', permanent: true },
+      { source: '/parc-des-expositions-de-bordeaux', destination: '/chauffeur-prive-bordeaux', permanent: true },
       { source: '/parc-des-expositions-de-montpellier/', destination: '/longue-distance', permanent: true },
       { source: '/parc-des-expositions-de-montpellier', destination: '/longue-distance', permanent: true },
       { source: '/pole-international-du-cheval-de-deauville', destination: '/evenements/hippodrome-deauville', permanent: true },
-      { source: '/centre-des-congres-de-lyon-amphitheatre-lyon', destination: '/longue-distance', permanent: true },
-      { source: '/centre-des-congres-de-lyon-amphitheatre-lyon/', destination: '/longue-distance', permanent: true },
+      { source: '/centre-des-congres-de-lyon-amphitheatre-lyon', destination: '/chauffeur-prive-lyon', permanent: true },
+      { source: '/centre-des-congres-de-lyon-amphitheatre-lyon/', destination: '/chauffeur-prive-lyon', permanent: true },
 
       // === Restaurants ===
       { source: '/alain-ducasse-au-plaza-athenee/', destination: '/chauffeur-prive-paris', permanent: true },
@@ -324,15 +347,15 @@ const nextConfig = {
       { source: '/chauffeur-prive-personnel-avion-aerien', destination: '/mise-a-disposition', permanent: true },
       { source: '/transport-tpmr-handisport-avec-amani-limousines-accessibilite-et-confort-optimal/', destination: '/', permanent: true },
       { source: '/transport-tpmr-handisport-avec-amani-limousines-accessibilite-et-confort-optimal', destination: '/', permanent: true },
-      { source: '/transfert-marignane/', destination: '/longue-distance', permanent: true },
-      { source: '/transfert-marignane', destination: '/longue-distance', permanent: true },
+      { source: '/transfert-marignane/', destination: '/chauffeur-prive-marseille', permanent: true },
+      { source: '/transfert-marignane', destination: '/chauffeur-prive-marseille', permanent: true },
       { source: '/aeroport-bourget/', destination: '/transfert-le-bourget', permanent: true },
       { source: '/aeroport-bourget', destination: '/transfert-le-bourget', permanent: true },
       { source: '/aeroport-de-paris-charles-de-gaulle-roissy/', destination: '/transfert-aeroport-cdg', permanent: true },
       { source: '/aeroport-de-paris-charles-de-gaulle-roissy', destination: '/transfert-aeroport-cdg', permanent: true },
-      { source: '/transfert-aeroport-lyon/', destination: '/longue-distance', permanent: true },
-      { source: '/transfert-aeroport-lyon', destination: '/longue-distance', permanent: true },
-      { source: '/transfert-aeroport-nice', destination: '/longue-distance', permanent: true },
+      { source: '/transfert-aeroport-lyon/', destination: '/chauffeur-prive-lyon', permanent: true },
+      { source: '/transfert-aeroport-lyon', destination: '/chauffeur-prive-lyon', permanent: true },
+      { source: '/transfert-aeroport-nice', destination: '/chauffeur-prive-nice', permanent: true },
       { source: '/heliport-de-meaux-esbly', destination: '/transfert-aeroport-cdg', permanent: true },
       { source: '/heliport-de-meaux-esbly/', destination: '/transfert-aeroport-cdg', permanent: true },
       { source: '/chateau-musee/', destination: '/excursion-privee', permanent: true },
@@ -357,7 +380,33 @@ const nextConfig = {
       { source: '/arenes-:slug*', destination: '/longue-distance', permanent: true },
       { source: '/ecomusee-:slug*', destination: '/excursion-privee', permanent: true },
 
-      // === Villes + hôtels supprimés ===
+      // === Redirections thématiques vers hubs dédiés ===
+      // Garde du corps / protection
+      { source: '/protection-rapprochee/', destination: '/garde-du-corps', permanent: true },
+      { source: '/protection-rapprochee', destination: '/garde-du-corps', permanent: true },
+      { source: '/garde-du-corps-paris/', destination: '/garde-du-corps', permanent: true },
+      { source: '/garde-du-corps-paris', destination: '/garde-du-corps', permanent: true },
+      // Fashion week
+      { source: '/chauffeur-fashion-week-paris/', destination: '/chauffeur-fashion-week', permanent: true },
+      { source: '/chauffeur-fashion-week-paris', destination: '/chauffeur-fashion-week', permanent: true },
+      // Mariage
+      { source: '/chauffeur-mariage-paris/', destination: '/chauffeur-mariage', permanent: true },
+      { source: '/chauffeur-mariage-paris', destination: '/chauffeur-mariage', permanent: true },
+      // Transfert hôtels luxe
+      { source: '/transfert-hotel-palace-paris/', destination: '/transfert-hotel-luxe-paris', permanent: true },
+      { source: '/transfert-hotel-palace-paris', destination: '/transfert-hotel-luxe-paris', permanent: true },
+      // Taxi moto
+      { source: '/taxi-moto-paris/', destination: '/taxi-moto', permanent: true },
+      { source: '/taxi-moto-paris', destination: '/taxi-moto', permanent: true },
+      // Diplomatique
+      { source: '/chauffeur-diplomatique-paris/', destination: '/chauffeur-diplomatique', permanent: true },
+      { source: '/chauffeur-diplomatique-paris', destination: '/chauffeur-diplomatique', permanent: true },
+      // Événements sportifs
+      { source: '/chauffeur-evenement-sportif/', destination: '/chauffeur-evenements-sportifs', permanent: true },
+      { source: '/chauffeur-evenement-sportif', destination: '/chauffeur-evenements-sportifs', permanent: true },
+
+      // === Villes avec pages dédiées + villes supprimées + hôtels ===
+      ...dedicatedCityRedirects,
       ...cityRedirects,
       ...hotelRedirects,
     ];

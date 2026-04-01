@@ -97,6 +97,25 @@ export const FR_INDEXED_SLUGS = new Set([
   'evenements/grand-prix-monaco',
   'evenements/salons-professionnels',
 
+  // ── Villes / Régions (nouvelles pages SEO) ────────────────────
+  'chauffeur-prive-bordeaux',
+  'chauffeur-prive-lyon',
+  'chauffeur-prive-nice',
+  'chauffeur-prive-cannes',
+  'chauffeur-prive-monaco',
+  'chauffeur-prive-deauville',
+  'chauffeur-prive-marseille',
+  'chauffeur-prive-saint-tropez',
+
+  // ── Hubs thématiques (nouvelles pages SEO) ────────────────────
+  'garde-du-corps',
+  'chauffeur-fashion-week',
+  'chauffeur-mariage',
+  'chauffeur-diplomatique',
+  'taxi-moto',
+  'chauffeur-evenements-sportifs',
+  'transfert-hotel-luxe-paris',
+
   // ── Institutionnelles ─────────────────────────────────────────
   'contact',
   'a-propos',

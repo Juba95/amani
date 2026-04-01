@@ -3,9 +3,9 @@ import Image from 'next/image';
 import SEOLayout from '@/components/SEOLayout';
 
 export const metadata: Metadata = {
-  title: 'Flotte de Véhicules de Prestige Paris — Mercedes, BMW i7, Sprinter VIP | Amani',
+  title: 'Flotte de Véhicules de Prestige Paris — Mercedes, Range Rover, Sprinter VIP | Amani',
   description:
-    'Découvrez notre flotte de véhicules de prestige à Paris. Mercedes Classe E, S, V, BMW i7 et Sprinter VIP. Plus de 300 véhicules renouvelés chaque année.',
+    'Découvrez notre flotte de véhicules de prestige à Paris. Mercedes Classe E, EQE, S, Maybach, V, G, Range Rover Evoque et Sprinter VIP. Plus de 300 véhicules renouvelés chaque année.',
   alternates: {
     canonical: 'https://www.amani-limousines.com/notre-flotte',
     languages: { en: 'https://www.amani-limousines.com/en/our-fleet' },
@@ -19,10 +19,21 @@ const vehicules = [
     categorie: 'Berline Business',
     pax: '3 passagers',
     bagages: '2 valises',
-    prix: 'À partir de 125 €',
+    prix: 'À partir de 100 €',
     image: '/vehicles/mercedes-classe-e.png',
-    details: 'La plus polyvalente de notre flotte. La Classe E (ou sa variante électrique EQE) combine un niveau de confort élevé avec des dimensions adaptées à Paris intra-muros. Idéale pour les transferts aéroport solo ou en binôme, et pour les mises à disposition dans le centre de Paris.',
+    details: 'La plus polyvalente de notre flotte. La Classe E combine un niveau de confort élevé avec des dimensions adaptées à Paris intra-muros. Idéale pour les transferts aéroport solo ou en binôme, et pour les mises à disposition dans le centre de Paris.',
     equipements: ['Wi-Fi 4G inclus', 'Cuir Nappa', 'Climatisation bi-zone', 'Chargeur sans fil', 'Eau minérale'],
+  },
+  {
+    id: 'eqe',
+    nom: 'Mercedes EQE',
+    categorie: 'Berline Business Électrique',
+    pax: '3 passagers',
+    bagages: '2 valises',
+    prix: 'À partir de 100 €',
+    image: '/vehicles/mercedes-eqe.png',
+    details: 'La version 100 % électrique de notre gamme business. La EQE offre le même niveau de confort que la Classe E avec zéro émission. Silence de fonctionnement absolu, parfaite pour les clients sensibles à l\'impact environnemental.',
+    equipements: ['100% électrique', 'Silence absolu', 'Cuir premium', 'Climatisation bi-zone', 'Chargeur USB-C'],
   },
   {
     id: 'classe_s',
@@ -30,10 +41,32 @@ const vehicules = [
     categorie: 'Berline Executive',
     pax: '3 passagers',
     bagages: '2 valises',
-    prix: 'À partir de 225 €',
+    prix: 'À partir de 150 €',
     image: '/vehicles/mercedes-classe-s.png',
     details: 'La référence absolue du transport de prestige. La Classe S est la voiture des présidents, des PDG et des délégations de premier rang. Insonorisation renforcée, sièges massants arrière, écrans LCD et une isolation acoustique qui transforme l\'habitacle en espace de travail silencieux.',
     equipements: ['Sièges massants', 'Écrans LCD arrière', 'Bar à bord', 'Burmester® 4D', 'Ambiance lumineuse'],
+  },
+  {
+    id: 'classe_s_maybach',
+    nom: 'Mercedes Classe S Maybach',
+    categorie: 'Berline Ultra-Prestige',
+    pax: '3 passagers',
+    bagages: '2 valises',
+    prix: 'À partir de 300 €',
+    image: '/vehicles/mercedes-classe-s-maybach.png',
+    details: 'Le summum du luxe automobile. La Maybach offre un empattement allongé, des sièges arrière inclinables à 43,5°, un réfrigérateur à champagne intégré et une isolation phonique de classe supérieure. Réservée aux clients qui exigent l\'excellence absolue.',
+    equipements: ['Sièges inclinables 43,5°', 'Réfrigérateur champagne', 'Séparation vitrage', 'Burmester® 4D', 'Ambiance première classe'],
+  },
+  {
+    id: 'range_rover_evoque',
+    nom: 'Range Rover Evoque',
+    categorie: 'SUV Premium',
+    pax: '3 passagers',
+    bagages: '2 valises',
+    prix: 'À partir de 150 €',
+    image: '/vehicles/range-rover-evoque.png',
+    details: 'L\'alternative SUV de notre flotte. Le Range Rover Evoque combine une position de conduite surélevée avec un intérieur raffiné. Idéal pour les transferts vers les stations de ski, les domaines viticoles ou tout trajet nécessitant un véhicule haut de gamme plus robuste.',
+    equipements: ['Transmission intégrale', 'Cuir Windsor', 'Système Meridian™', 'Terrain Response', 'Position surélevée'],
   },
   {
     id: 'classe_v',
@@ -41,21 +74,21 @@ const vehicules = [
     categorie: 'Minivan Luxe',
     pax: '7 passagers',
     bagages: '6 valises',
-    prix: 'À partir de 125 €',
+    prix: 'À partir de 100 €',
     image: '/vehicles/mercedes-classe-v.png',
     details: 'La solution pour les familles, les groupes de collègues et les délégations de taille moyenne. La Classe V peut être configurée en salon (sièges face à face) ou en configuration standard. L\'espace de chargement accepte des bagages volumineux sans compromettre le confort des passagers.',
     equipements: ['Configuration salon possible', 'Wi-Fi haut débit', 'Espace bagages XXL', 'Stores occultants', '7 ceintures homologuées'],
   },
   {
-    id: 'bmw_i7',
-    nom: 'BMW i7',
-    categorie: 'Berline Prestige Électrique',
-    pax: '3 passagers',
-    bagages: '2 valises',
-    prix: 'À partir de 250 €',
-    image: '/vehicles/bmw-i7.png',
-    details: 'Entièrement électrique, la BMW i7 combine zéro émission et luxe de très haut niveau. Son écran cinéma 31,3 pouces en configuration arrière, son silence absolu et son système d\'ambiance lumineuse en font le véhicule de choix pour les clients sensibles à la durabilité et au confort.',
-    equipements: ['100% électrique', 'Écran cinéma 31"', 'Autonomie 600 km', 'Massage 5 zones', 'Silence moteur absolu'],
+    id: 'classe_g',
+    nom: 'Mercedes Classe G',
+    categorie: 'SUV Prestige',
+    pax: '4 passagers',
+    bagages: '3 valises',
+    prix: 'À partir de 200 €',
+    image: '/vehicles/mercedes-classe-g.png',
+    details: 'Icône du luxe tout-terrain, le Classe G allie une présence imposante à un intérieur digne d\'une berline de prestige. Choix de prédilection pour les événements de prestige, les mariages et les clients qui souhaitent faire une entrée remarquée.',
+    equipements: ['Transmission intégrale', 'Cuir Nappa designo', 'Burmester® surround', 'Ambiance lumineuse 64 couleurs', 'Présence iconique'],
   },
   {
     id: 'sprinter',
@@ -63,10 +96,33 @@ const vehicules = [
     categorie: 'Minibus Luxe',
     pax: '16 passagers',
     bagages: '16 valises',
-    prix: 'À partir de 350 €',
+    prix: 'À partir de 200 €',
     image: '/vehicles/mercedes-sprinter.png',
     details: 'Le Sprinter VIP est la solution pour les groupes importants, les délégations officielles et les navettes d\'événements. Aménagement intérieur luxe avec sièges capitaine en cuir, sono premium, éclairage d\'ambiance et climatisation multi-zones. Peut transporter 16 personnes avec leurs bagages.',
     equipements: ['Sièges capitaine cuir', 'Sono premium', 'Climatisation zones', 'Galerie bagages', 'Communication radio'],
+  },
+];
+
+const faq = [
+  {
+    q: 'Combien de véhicules avez-vous dans votre flotte ?',
+    a: 'Plus de 300 véhicules renouvelés chaque année. Nos véhicules ont moins de trois ans en moyenne et sont entretenus selon les préconisations constructeur.',
+  },
+  {
+    q: 'Puis-je choisir un véhicule spécifique ?',
+    a: 'Absolument. Lors de votre réservation, vous pouvez sélectionner le modèle exact qui vous convient. Si un véhicule n\'est pas disponible, nous vous proposerons un équivalent ou supérieur.',
+  },
+  {
+    q: 'Proposez-vous des véhicules blindés ?',
+    a: 'Oui, sur demande et avec un préavis suffisant. Contactez-nous pour discuter de vos besoins en sécurité rapprochée.',
+  },
+  {
+    q: 'Les véhicules sont-ils équipés de sièges enfants ?',
+    a: 'Oui, nous fournissons des sièges enfants (groupe 0+, 1 et 2/3) sur simple demande lors de la réservation. Service gratuit.',
+  },
+  {
+    q: 'Quel est le véhicule le plus adapté pour un groupe ?',
+    a: 'La Mercedes Classe V accueille jusqu\'à 7 passagers avec leurs bagages. Pour les groupes plus importants, le Sprinter VIP peut transporter jusqu\'à 16 personnes.',
   },
 ];
 
@@ -137,6 +193,21 @@ export default function NotreFlottePage() {
             Un véhicule Amani n'a aucune raison de sentir la cigarette, d'avoir des traces
             de mains sur les vitres ou un coffre encombré de matériel de chauffeur.
           </p>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-14 px-6 md:px-10 bg-warm-50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="heading">Questions fréquentes</h2>
+          <div className="mt-8 space-y-6">
+            {faq.map((f) => (
+              <div key={f.q} className="border-l-2 border-stone-200 pl-6">
+                <p className="font-serif text-gray-900 mb-2">{f.q}</p>
+                <p className="sf text-stone-600 text-sm leading-relaxed">{f.a}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </SEOLayout>
