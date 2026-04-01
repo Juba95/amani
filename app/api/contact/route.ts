@@ -71,17 +71,9 @@ export async function POST(req: NextRequest) {
   const ref = `AL-${Date.now()}`;
   const createdAt = new Date().toISOString();
 
-  // ── 1. Sauvegarde JSON ──────────────────────────────────────────────────────
-  let savedId = ref;
-  try {
-    const { addContact } = await import('@/lib/contacts');
-    const contact = addContact({ name, email, phone, service, date, passengers, message });
-    savedId = contact.id;
-  } catch (saveErr) {
-    console.error('[contact API] save error:', saveErr);
-  }
+  const savedId = ref;
 
-  // ── 2. Email SMTP — avec timeout de 15s max ────────────────────────────────
+  // ── Email SMTP — avec timeout de 15s max ───────────────────────────────────
   const smtpUser = process.env.SMTP_USER;
   const contactEmail = process.env.CONTACT_EMAIL || smtpUser;
   let emailSent = false;
