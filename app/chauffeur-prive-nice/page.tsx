@@ -6,7 +6,7 @@ import { content, contentMetadata } from '@/lib/get-content';
 const SLUG = 'chauffeur-prive-nice';
 
 export const metadata: Metadata = contentMetadata(SLUG, {
-  title: 'Chauffeur Privé Nice / Côte d\',
+  title: "Chauffeur Privé Nice / Côte d'Azur — Cannes, Monaco, Saint-Tropez | Amani Limousines",
   description: 'Chauffeur privé Nice et Côte d\'Azur : transferts aéroport Nice, Cannes, Monaco, Saint-Tropez. Service haut de gamme en Mercedes, tarif fixe, disponible 7j/7.',
   canonical: 'https://www.amani-limousines.com/chauffeur-prive-nice',
 });
