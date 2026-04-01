@@ -146,6 +146,8 @@ export default function OurFleetEN() {
                   alt={`${v.name} — Amani Limousines Paris`}
                   width={600}
                   height={380}
+                  sizes="(max-width: 768px) 100vw, 256px"
+                  quality={65}
                   className="w-full h-40 object-cover rounded-xl"
                   loading="lazy"
                 />

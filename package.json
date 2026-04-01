@@ -17,6 +17,12 @@
     "nodemailer": "^6.9.14",
     "leaflet": "^1.9.4"
   },
+  "browserslist": [
+    "chrome >= 80",
+    "firefox >= 80",
+    "safari >= 14",
+    "edge >= 80"
+  ],
   "devDependencies": {
     "@types/node": "^20.0.0",
     "@types/react": "^18.3.0",

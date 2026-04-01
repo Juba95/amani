@@ -86,6 +86,7 @@ export default function VehicleShowcase({ t }: VehicleShowcaseProps) {
             alt={vehicle.name}
             fill
             sizes="(max-width: 768px) 90vw, 600px"
+            quality={65}
             className="object-contain"
             style={{ mixBlendMode: isDarkBg ? 'normal' : 'multiply' }}
             priority={idx === 0}
