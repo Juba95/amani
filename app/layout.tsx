@@ -1,5 +1,21 @@
 import type { Metadata } from 'next';
+import { DM_Serif_Display, Inter } from 'next/font/google';
 import '../styles/globals.css';
+
+const dmSerif = DM_Serif_Display({
+  subsets: ['latin'],
+  weight: '400',
+  style: ['normal', 'italic'],
+  display: 'swap',
+  variable: '--font-dm-serif',
+});
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  display: 'swap',
+  variable: '--font-inter',
+});
 
 export const metadata: Metadata = {
   title: 'Amani Limousines — Chauffeur Privé de Prestige à Paris',
@@ -56,7 +72,7 @@ const jsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="fr">
+    <html lang="fr" className={`${dmSerif.variable} ${inter.variable}`}>
       <head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="theme-color" content="#ffffff" />

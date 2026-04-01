@@ -281,7 +281,7 @@ export default function ContactPage() {
             { icon: '✉', label: 'Email', value: 'contact@amani-limousines.com', href: 'mailto:contact@amani-limousines.com' },
           ].map(c => (
             <a key={c.label} href={c.href} target={c.href.startsWith('http') ? '_blank' : undefined}
-              rel="noopener noreferrer"
+              rel={c.href.startsWith('http') ? 'noopener noreferrer' : undefined}
               className="flex items-center gap-4 p-5 bg-white rounded-xl border border-stone-200 hover:border-gold-400 transition-all group">
               <span className="text-2xl">{c.icon}</span>
               <div>

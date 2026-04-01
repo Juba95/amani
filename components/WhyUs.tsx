@@ -1,23 +1,43 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
-// ── Elfsight Google Reviews embed ──────────────────────────────────────────
+// ── Elfsight Google Reviews embed (lazy-loaded on scroll) ─────────────────
 const ELFSIGHT_WIDGET_ID = '8067c73a-9a27-46dd-922c-75d522de6d0e';
 
 function ElfsightReviews() {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [loaded, setLoaded] = useState(false);
+
   useEffect(() => {
-    // Load Elfsight platform script once
-    if (document.querySelector('script[data-elfsight]')) return;
-    const script = document.createElement('script');
-    script.src = 'https://elfsightcdn.com/platform.js';
-    script.async = true;
-    script.setAttribute('data-elfsight', 'true');
-    document.head.appendChild(script);
-  }, []);
+    if (loaded) return;
+    const el = containerRef.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          observer.disconnect();
+          // Load Elfsight platform script only when section is visible
+          if (!document.querySelector('script[data-elfsight]')) {
+            const script = document.createElement('script');
+            script.src = 'https://elfsightcdn.com/platform.js';
+            script.async = true;
+            script.setAttribute('data-elfsight', 'true');
+            document.head.appendChild(script);
+          }
+          setLoaded(true);
+        }
+      },
+      { rootMargin: '200px' } // pre-load 200px before visible
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [loaded]);
 
   return (
     <div
+      ref={containerRef}
       className={`elfsight-app-${ELFSIGHT_WIDGET_ID}`}
       data-elfsight-app-lazy
     />

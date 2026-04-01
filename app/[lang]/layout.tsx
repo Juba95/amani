@@ -1,6 +1,22 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import { DM_Serif_Display, Inter } from 'next/font/google';
 import '../../styles/globals.css';
+
+const dmSerif = DM_Serif_Display({
+  subsets: ['latin'],
+  weight: '400',
+  style: ['normal', 'italic'],
+  display: 'swap',
+  variable: '--font-dm-serif',
+});
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  display: 'swap',
+  variable: '--font-inter',
+});
 
 import en from '@/locales/en.json';
 import ar from '@/locales/ar.json';
@@ -53,7 +69,7 @@ export default function LangLayout({
 
   const isRtl = params.lang === 'ar';
   return (
-    <html lang={params.lang} dir={isRtl ? 'rtl' : 'ltr'}>
+    <html lang={params.lang} dir={isRtl ? 'rtl' : 'ltr'} className={`${dmSerif.variable} ${inter.variable}`}>
       <body>{children}</body>
     </html>
   );
