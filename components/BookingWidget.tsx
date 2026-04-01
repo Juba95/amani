@@ -159,19 +159,19 @@ export default function BookingWidget({ t, locale = 'fr' }: BookingWidgetProps) 
           </p>
           <div className="flex flex-wrap justify-center gap-2">
             {(locale === 'en' ? [
-              { label: 'CDG → Paris',         f: 'Aéroport CDG, Roissy', t: 'Paris centre' },
-              { label: 'Orly → Paris',        f: 'Aéroport Orly',        t: 'Paris centre' },
+              { label: 'CDG → Paris',         f: 'Aéroport CDG, Roissy', t: 'Paris centre, France' },
+              { label: 'Orly → Paris',        f: 'Aéroport Orly',        t: 'Paris centre, France' },
               { label: 'CDG → La Défense',    f: 'Aéroport CDG, Roissy', t: 'La Défense' },
-              { label: 'CDG → Disneyland',    f: 'Aéroport CDG, Roissy', t: 'Disneyland Paris' },
+              { label: 'CDG → Disneyland',    f: 'Aéroport CDG, Roissy', t: 'Disneyland Paris, Marne-la-Vallée' },
               { label: 'CDG → Versailles',    f: 'Aéroport CDG, Roissy', t: 'Château de Versailles' },
-              { label: 'Le Bourget → Paris',  f: 'Aéroport Le Bourget',  t: 'Paris centre' },
+              { label: 'Le Bourget → Paris',  f: 'Aéroport Le Bourget',  t: 'Paris centre, France' },
             ] : [
-              { label: 'CDG → Paris',         f: 'Aéroport CDG, Roissy', t: 'Paris centre' },
-              { label: 'Orly → Paris',        f: 'Aéroport Orly',        t: 'Paris centre' },
+              { label: 'CDG → Paris',         f: 'Aéroport CDG, Roissy', t: 'Paris centre, France' },
+              { label: 'Orly → Paris',        f: 'Aéroport Orly',        t: 'Paris centre, France' },
               { label: 'CDG → La Défense',    f: 'Aéroport CDG, Roissy', t: 'La Défense' },
-              { label: 'CDG → Disneyland',    f: 'Aéroport CDG, Roissy', t: 'Disneyland Paris' },
+              { label: 'CDG → Disneyland',    f: 'Aéroport CDG, Roissy', t: 'Disneyland Paris, Marne-la-Vallée' },
               { label: 'CDG → Versailles',    f: 'Aéroport CDG, Roissy', t: 'Château de Versailles' },
-              { label: 'Le Bourget → Paris',  f: 'Aéroport Le Bourget',  t: 'Paris centre' },
+              { label: 'Le Bourget → Paris',  f: 'Aéroport Le Bourget',  t: 'Paris centre, France' },
               { label: 'CDG → Gare du Nord',  f: 'Aéroport CDG, Roissy', t: 'Gare du Nord, Paris' },
               { label: 'CDG → Gare de Lyon',  f: 'Aéroport CDG, Roissy', t: 'Gare de Lyon, Paris' },
             ]).map((r) => (

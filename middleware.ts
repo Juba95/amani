@@ -99,17 +99,11 @@ export function middleware(req: NextRequest) {
   // Page racine connue → OK (ex: /notre-flotte, /contact, /evenements/...)
   if (VALID_ROOT_SEGMENTS.has(firstSegment)) return NextResponse.next();
 
-  // ── Chemin inconnu (ancien slug WordPress) ──────────────────────────────────
-  // Si l'URL n'a pas de slash final, on en ajoute un pour déclencher
-  // les redirections 301 définies dans next.config.js
-  if (!pathname.endsWith('/')) {
-    const url = req.nextUrl.clone();
-    url.pathname = pathname + '/';
-    return NextResponse.redirect(url, 301);
-  }
-
-  // Si l'URL a déjà un slash mais n'est toujours pas reconnue,
-  // next.config.js ou le 404 prendra le relais
+  // ── Chemin inconnu (ancien slug WordPress ou page inexistante) ────────────
+  // On laisse passer : next.config.js gère les redirections 301 des anciens
+  // slugs WordPress, et Next.js affiche la page not-found pour le reste.
+  // (Ne plus ajouter de trailing slash — ça crée une boucle de redirection
+  //  infinie car trailingSlash n'est pas activé dans next.config.js.)
   return NextResponse.next();
 }
 

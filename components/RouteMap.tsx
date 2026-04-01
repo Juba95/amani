@@ -56,7 +56,11 @@ export default function RouteMap({ from, to, distance, duration, visible }: Rout
 
         // Geocode with Nominatim (OpenStreetMap, free, no key)
         const geocode = async (address: string): Promise<[number, number]> => {
-          const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(address)}&format=json&limit=1&accept-language=fr`;
+          // Ajouter ", France" si pas déjà explicite pour éviter les résultats US/autres
+          const query = /france|paris|cdg|orly|bourget|roissy|défense|versailles/i.test(address)
+            ? address
+            : `${address}, France`;
+          const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(query)}&format=json&limit=1&accept-language=fr&countrycodes=fr`;
           const res = await fetch(url);
           const data = await res.json();
           if (!data?.[0]) throw new Error(`Adresse introuvable : ${address}`);

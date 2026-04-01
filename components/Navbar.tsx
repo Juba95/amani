@@ -110,6 +110,28 @@ function getServicesMenu(locale: Locale, homePrefix: string): DropdownItem[] {
   ];
 }
 
+function getEventsMenu(locale: Locale): DropdownItem[] {
+  if (locale === 'en') return [
+    { label: 'All events',              href: '/en/events' },
+    { label: 'Paris Fashion Week',      href: '/evenements/paris-fashion-week' },
+    { label: 'Paris Air Show',          href: '/evenements/paris-air-show' },
+    { label: 'Roland Garros',           href: '/evenements/roland-garros' },
+    { label: 'Festival de Cannes',      href: '/evenements/festival-de-cannes' },
+    { label: 'Grand Prix Monaco',       href: '/evenements/grand-prix-monaco' },
+    { label: 'Professional exhibitions', href: '/evenements/salons-professionnels' },
+  ];
+  return [
+    { label: 'Tous les événements',     href: '/evenements' },
+    { label: 'Paris Fashion Week',      href: '/evenements/paris-fashion-week' },
+    { label: 'Paris Air Show',          href: '/evenements/paris-air-show' },
+    { label: 'Roland Garros',           href: '/evenements/roland-garros' },
+    { label: 'Festival de Cannes',      href: '/evenements/festival-de-cannes' },
+    { label: 'Grand Prix Monaco',       href: '/evenements/grand-prix-monaco' },
+    { label: 'Salons professionnels',   href: '/evenements/salons-professionnels' },
+    { label: 'Hippodrome Deauville',    href: '/evenements/hippodrome-deauville' },
+  ];
+}
+
 function getDestinationsMenu(locale: Locale): DropdownItem[] {
   if (locale === 'en') return [
     { label: 'Private chauffeur Paris',  href: '/en/private-chauffeur-paris' },
@@ -196,6 +218,7 @@ export default function Navbar({ t, locale }: NavbarProps) {
   const [langOpen, setLangOpen]   = useState(false);
   const [servicesOpen, setServicesOpen]     = useState(false);
   const [destinationsOpen, setDestinationsOpen] = useState(false);
+  const [eventsOpen, setEventsOpen]       = useState(false);
   const [scrolled, setScrolled]   = useState(false);
   const pathname = usePathname();
 
@@ -220,6 +243,7 @@ export default function Navbar({ t, locale }: NavbarProps) {
 
   const servicesItems     = getServicesMenu(locale, homePrefix);
   const destinationsItems = getDestinationsMenu(locale);
+  const eventsItems       = getEventsMenu(locale);
 
   const servicesLabel     = locale === 'en' ? 'Services'     : 'Services';
   const destinationsLabel = locale === 'en' ? 'Destinations' : 'Destinations';
@@ -252,7 +276,7 @@ export default function Navbar({ t, locale }: NavbarProps) {
             label={servicesLabel}
             items={servicesItems}
             isOpen={servicesOpen}
-            onToggle={() => { setServicesOpen(!servicesOpen); setDestinationsOpen(false); }}
+            onToggle={() => { setServicesOpen(!servicesOpen); setDestinationsOpen(false); setEventsOpen(false); }}
             onClose={() => setServicesOpen(false)}
           />
         )}
@@ -269,7 +293,7 @@ export default function Navbar({ t, locale }: NavbarProps) {
             label={destinationsLabel}
             items={destinationsItems}
             isOpen={destinationsOpen}
-            onToggle={() => { setDestinationsOpen(!destinationsOpen); setServicesOpen(false); }}
+            onToggle={() => { setDestinationsOpen(!destinationsOpen); setServicesOpen(false); setEventsOpen(false); }}
             onClose={() => setDestinationsOpen(false)}
           />
         )}
@@ -280,11 +304,22 @@ export default function Navbar({ t, locale }: NavbarProps) {
           {fleetLabel}
         </Link>
 
-        {/* Events */}
-        <a href={anchorHref('events')}
-          className="font-sans text-xs text-gray-600 hover:text-gold-400 tracking-wide transition-colors">
-          {t?.nav?.events}
-        </a>
+        {/* Events dropdown */}
+        {(locale === 'fr' || locale === 'en') && (
+          <DropdownMenu
+            label={t?.nav?.events ?? (locale === 'en' ? 'Events' : 'Événements')}
+            items={eventsItems}
+            isOpen={eventsOpen}
+            onToggle={() => { setEventsOpen(!eventsOpen); setServicesOpen(false); setDestinationsOpen(false); }}
+            onClose={() => setEventsOpen(false)}
+          />
+        )}
+        {(locale === 'ar' || locale === 'zh') && (
+          <a href={anchorHref('events')}
+            className="font-sans text-xs text-gray-600 hover:text-gold-400 tracking-wide transition-colors">
+            {t?.nav?.events}
+          </a>
+        )}
 
         {/* Contact */}
         <Link href={contactHref}
@@ -307,7 +342,7 @@ export default function Navbar({ t, locale }: NavbarProps) {
         {/* Language switcher */}
         <div className="relative">
           <button
-            onClick={() => { setLangOpen(!langOpen); setServicesOpen(false); setDestinationsOpen(false); }}
+            onClick={() => { setLangOpen(!langOpen); setServicesOpen(false); setDestinationsOpen(false); setEventsOpen(false); }}
             className="flex items-center gap-1.5 px-3 py-1.5 border border-stone-200 rounded-md font-sans text-xs text-gray-700 hover:border-gold-400 hover:text-gold-400 transition-all"
           >
             {currentLang.flag} {locale.toUpperCase()}
@@ -386,15 +421,30 @@ export default function Navbar({ t, locale }: NavbarProps) {
               </a>
             )}
 
+            {/* Events section */}
+            {(locale === 'fr' || locale === 'en') && (
+              <>
+                <p className="font-sans text-xs font-semibold tracking-[0.15em] uppercase text-stone-400 mt-4 mb-2">
+                  {t?.nav?.events ?? (locale === 'en' ? 'Events' : 'Événements')}
+                </p>
+                {eventsItems.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    onClick={() => setMenuOpen(false)}
+                    className="font-sans text-sm text-gray-700 hover:text-gold-400 py-1.5"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </>
+            )}
+
             <div className="border-t border-stone-100 mt-4 pt-4 flex flex-col gap-1">
               <Link href={fleetHref} onClick={() => setMenuOpen(false)}
                 className="font-sans text-sm text-gray-700 hover:text-gold-400 py-1.5">
                 {fleetLabel}
               </Link>
-              <a href={anchorHref('events')} onClick={() => setMenuOpen(false)}
-                className="font-sans text-sm text-gray-700 hover:text-gold-400 py-1.5">
-                {t?.nav?.events}
-              </a>
               <Link href={contactHref} onClick={() => setMenuOpen(false)}
                 className="font-sans text-sm text-gray-700 hover:text-gold-400 py-1.5">
                 {t?.nav?.contact}
