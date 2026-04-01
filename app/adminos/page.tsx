@@ -85,8 +85,17 @@ export default function AdminPage() {
     setContentLoading(true);
     try {
       const res = await fetch('/api/adminos/content', { headers: { 'x-admin-key': k } });
-      if (res.ok) setContentBlocks(await res.json());
-    } catch { /* ignore */ }
+      if (res.ok) {
+        const data = await res.json();
+        if (Array.isArray(data) && data.length > 0) {
+          setContentBlocks(data);
+        }
+      } else {
+        console.error('[admin] content API status:', res.status);
+      }
+    } catch (err) {
+      console.error('[admin] content fetch error:', err);
+    }
     finally { setContentLoading(false); }
   }, []);
 
@@ -232,7 +241,7 @@ export default function AdminPage() {
         {/* Onglets */}
         <div className="flex gap-6">
           {([['demandes', 'Demandes'], ['contenus', 'Contenus']] as const).map(([t, label]) => (
-            <button key={t} onClick={() => setTab(t)}
+            <button key={t} onClick={() => { setTab(t); if (t === 'contenus' && contentBlocks.length === 0 && key) fetchContent(key); }}
               className={`font-sans text-xs tracking-wide pb-2 border-b-2 transition-all ${
                 tab === t ? 'border-gold-400 font-medium' : 'border-transparent text-stone-400 hover:text-stone-600'
               }`}
