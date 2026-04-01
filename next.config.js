@@ -85,10 +85,10 @@ const nextConfig = {
       { source: '/grand-prix-du-golf-lisle-adam/', destination: '/evenements', permanent: true },
       { source: '/grand-prix-damerique-hippodrome-de-vincennes/', destination: '/evenements', permanent: true },
       { source: '/grand-prix-de-larc-de-triomphe-hippodrome-de-longchamp/', destination: '/evenements', permanent: true },
-      { source: '/grand-prix-de-monaco/', destination: '/evenements', permanent: true },
+      { source: '/grand-prix-de-monaco/', destination: '/evenements/grand-prix-monaco', permanent: true },
       { source: '/salon-nautic-salon-porte-de-versailles-nautique/', destination: '/evenements', permanent: true },
-      { source: '/premiere-vision/', destination: '/evenements', permanent: true },
-      { source: '/maison-et-objet-salon-villepinte-parc-des-expositions/', destination: '/evenements', permanent: true },
+      { source: '/premiere-vision/', destination: '/evenements/salons-professionnels', permanent: true },
+      { source: '/maison-et-objet-salon-villepinte-parc-des-expositions/', destination: '/evenements/salons-professionnels', permanent: true },
 
       // === Trajets stratégiques ===
       { source: '/paris/', destination: '/transfert-cdg-paris', permanent: true },
@@ -116,10 +116,10 @@ const nextConfig = {
       { source: '/en/long-distance-transfer/', destination: '/en/long-distance', permanent: true },
       { source: '/en/protection-et-securite-nos-services-de-garde-du-corps-chez-amani-limousines/', destination: '/en/close-protection', permanent: true },
       { source: '/en/private-excursion/', destination: '/en/private-excursion', permanent: true },
-      // Aéroports régionaux → longue distance
-      { source: '/en/airport-transfer-lyon/', destination: '/en/long-distance', permanent: true },
-      { source: '/en/airport-transfer-marseille/', destination: '/en/long-distance', permanent: true },
-      { source: '/en/airport-transfer-bordeaux/', destination: '/en/long-distance', permanent: true },
+      // Aéroports régionaux → pages dédiées
+      { source: '/en/airport-transfer-lyon/', destination: '/en/lyon-airport-transfer', permanent: true },
+      { source: '/en/airport-transfer-marseille/', destination: '/en/marseille-airport-transfer', permanent: true },
+      { source: '/en/airport-transfer-bordeaux/', destination: '/en/bordeaux-airport-transfer', permanent: true },
       // Événements EN
       { source: '/en/paris-fashion-week/', destination: '/en/events', permanent: true },
       { source: '/en/paris-air-show/', destination: '/en/events', permanent: true },
@@ -134,8 +134,8 @@ const nextConfig = {
       { source: '/en/grand-prix-of-the-golf-of-lisle-adam/', destination: '/en/events', permanent: true },
       { source: '/en/the-monaco-grand-prix/', destination: '/en/events', permanent: true },
       { source: '/en/grand-prix-damerique-hippodrome-de-vincennes/', destination: '/en/events', permanent: true },
-      // Chauffeurs privés EN → homepage EN
-      { source: '/en/private-chauffeur-in-paris/', destination: '/en', permanent: true },
+      // Chauffeurs privés EN → page dédiée
+      { source: '/en/private-chauffeur-in-paris/', destination: '/en/private-chauffeur-paris', permanent: true },
       { source: '/en/private-chauffeur-in-bordeaux/', destination: '/en/long-distance', permanent: true },
       // Pages institutionnelles EN
       { source: '/en/legal-notice/', destination: '/en/contact', permanent: true },
@@ -153,7 +153,7 @@ const nextConfig = {
 
       // === Pages FR manquantes — ajoutées depuis audit Google Search Console ===
       // Chauffeurs privés dans d'autres villes
-      { source: '/chauffeur-prive-a-paris/', destination: '/', permanent: true },
+      { source: '/chauffeur-prive-a-paris/', destination: '/chauffeur-prive-paris', permanent: true },
       { source: '/chauffeur-prive-a-bordeaux/', destination: '/longue-distance', permanent: true },
       { source: '/chauffeur-prive-anglophone-expertise-et-efficacite/', destination: '/', permanent: true },
       { source: '/chauffeur-prive-nice-chantilly/', destination: '/longue-distance', permanent: true },
@@ -162,8 +162,10 @@ const nextConfig = {
       // Aéroports FR manquants
       { source: '/aeroports-idf/', destination: '/transfert-aeroport-cdg', permanent: true },
       { source: '/aeroport-de-paris-charles-de-gaulle-cdg-a-dauville', destination: '/longue-distance', permanent: true },
+      { source: '/hippodrome-de-deauville/', destination: '/evenements/hippodrome-deauville', permanent: true },
+      { source: '/hippodrome-de-deauville', destination: '/evenements/hippodrome-deauville', permanent: true },
       { source: '/aeroport-de-beauvais-tille-bva-a-dauville', destination: '/longue-distance', permanent: true },
-      { source: '/aeroport-de-paris-beauvais-tille/', destination: '/transfert-aeroport-cdg', permanent: true },
+      { source: '/aeroport-de-paris-beauvais-tille/', destination: '/transfert-aeroport-beauvais', permanent: true },
       { source: '/aeroport-de-paris-orly/', destination: '/transfert-aeroport-orly', permanent: true },
       { source: '/aeroport-de-pontoise-cormeilles-en-vexin/', destination: '/transfert-aeroport-cdg', permanent: true },
       { source: '/aeroport-de-pontoise-cormeilles-en-vexin-pox-a-dauville', destination: '/transfert-aeroport-cdg', permanent: true },
@@ -198,9 +200,51 @@ const nextConfig = {
       { source: '/zh-hans/:path*', destination: '/zh', permanent: true },
 
       // === Booking ancien ===
+      { source: '/service-de-chauffeur-prive-pour-mariage-amani-limousine/', destination: '/chauffeur-mariage-paris', permanent: true },
+      { source: '/service-de-chauffeur-prive-pour-mariage-amani-limousine', destination: '/chauffeur-mariage-paris', permanent: true },
       { source: '/booking/', destination: '/reservation', permanent: true },
 
-      // Villes + hôtels supprimés
+      // === Pages indexées sans slash − présentes dans Google Search Console ===
+      // Hôtels palaces manquants (slug différent ou absent de la liste)
+      { source: '/hotel-shangri-la-paris/',       destination: '/transfert-aeroport-cdg', permanent: true },
+      { source: '/hotel-shangri-la-paris',        destination: '/transfert-aeroport-cdg', permanent: true },
+      { source: '/grand-hotel-du-palais-royal/',  destination: '/transfert-aeroport-cdg', permanent: true },
+      { source: '/grand-hotel-du-palais-royal',   destination: '/transfert-aeroport-cdg', permanent: true },
+      { source: '/hotel-marignan-champs-elysees/',destination: '/transfert-aeroport-cdg', permanent: true },
+      { source: '/hotel-marignan-champs-elysees', destination: '/transfert-aeroport-cdg', permanent: true },
+      { source: '/hotel-scribe-paris-opera-by-sofitel', destination: '/transfert-aeroport-cdg', permanent: true },
+      { source: '/hotel-plaza-athenee',           destination: '/transfert-aeroport-cdg', permanent: true },
+
+      // Événements sportifs / culturels manquants
+      { source: '/golf-le-touquet-la-mer/',   destination: '/evenements', permanent: true },
+      { source: '/golf-le-touquet-la-mer',    destination: '/evenements', permanent: true },
+      { source: '/golf-seignosse/',           destination: '/evenements', permanent: true },
+      { source: '/golf-seignosse',            destination: '/evenements', permanent: true },
+      { source: '/festival-de-cinema/',       destination: '/evenements', permanent: true },
+      { source: '/festival-de-cinema',        destination: '/evenements', permanent: true },
+      { source: '/summum-grenoble/',          destination: '/longue-distance', permanent: true },
+      { source: '/summum-grenoble',           destination: '/longue-distance', permanent: true },
+      { source: '/paris-6-eme-arrondissement/', destination: '/transfert-aeroport-cdg', permanent: true },
+      { source: '/paris-6-eme-arrondissement', destination: '/transfert-aeroport-cdg', permanent: true },
+      { source: '/frejus-2/',                 destination: '/longue-distance', permanent: true },
+      { source: '/frejus-2',                  destination: '/longue-distance', permanent: true },
+      { source: '/lyon/',                     destination: '/longue-distance', permanent: true },
+      { source: '/angers',                    destination: '/longue-distance', permanent: true },
+
+      // === Alpes / Haute-Savoie ===
+      // Anciens slugs WordPress éventuels → nouvelles pages
+      { source: '/chamonix/',                  destination: '/chauffeur-prive-chamonix', permanent: true },
+      { source: '/chamonix',                   destination: '/chauffeur-prive-chamonix', permanent: true },
+      { source: '/megeve/',                    destination: '/chauffeur-prive-megeve', permanent: true },
+      { source: '/megeve',                     destination: '/chauffeur-prive-megeve', permanent: true },
+      { source: '/haute-savoie/',              destination: '/chauffeur-prive-haute-savoie', permanent: true },
+      { source: '/haute-savoie',               destination: '/chauffeur-prive-haute-savoie', permanent: true },
+      { source: '/en/chamonix/',               destination: '/en/chamonix-chauffeur', permanent: true },
+      { source: '/en/chamonix',                destination: '/en/chamonix-chauffeur', permanent: true },
+      { source: '/en/megeve/',                 destination: '/en/megeve-chauffeur', permanent: true },
+      { source: '/en/megeve',                  destination: '/en/megeve-chauffeur', permanent: true },
+
+      // === Villes + hôtels supprimés ===
       ...cityRedirects,
       ...hotelRedirects,
     ];

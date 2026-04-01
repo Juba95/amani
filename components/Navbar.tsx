@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import type { Locale } from '@/lib/vehicles';
@@ -14,44 +14,56 @@ const LANGS: { code: Locale; label: string; flag: string }[] = [
 
 // ── Mapping FR ↔ EN pour le switcher de langue ──────────────────────────────
 const FR_TO_EN: Record<string, string> = {
-  '/':                          '/en',
-  '/mise-a-disposition':        '/en/hourly-hire',
-  '/transfert-prive':           '/en/cdg-airport-transfer',
-  '/meet-and-greet':            '/en/meet-and-greet',
-  '/convoi-delegations':        '/en/delegation-transport',
-  '/securite-rapprochee':       '/en/close-protection',
-  '/excursion-privee':          '/en/private-excursion',
-  '/longue-distance':           '/en/long-distance',
-  '/transfert-aeroport-cdg':    '/en/cdg-airport-transfer',
-  '/transfert-aeroport-orly':   '/en/orly-airport-transfer',
-  '/transfert-le-bourget':      '/en/cdg-airport-transfer',
-  '/notre-flotte':              '/en/our-fleet',
-  '/evenements':                '/en/events',
-  '/evenements/paris-fashion-week': '/en/events',
-  '/evenements/paris-air-show': '/en/events',
-  '/evenements/roland-garros':  '/en/events',
-  '/evenements/festival-de-cannes': '/en/events',
-  '/contact':                   '/en/contact',
-  '/a-propos':                  '/en',
+  '/':                               '/en',
+  '/mise-a-disposition':             '/en/hourly-hire',
+  '/transfert-prive':                '/en/cdg-airport-transfer',
+  '/meet-and-greet':                 '/en/meet-and-greet',
+  '/convoi-delegations':             '/en/delegation-transport',
+  '/securite-rapprochee':            '/en/close-protection',
+  '/excursion-privee':               '/en/private-excursion',
+  '/longue-distance':                '/en/long-distance',
+  '/transfert-aeroport-cdg':         '/en/cdg-airport-transfer',
+  '/transfert-aeroport-orly':        '/en/orly-airport-transfer',
+  '/transfert-le-bourget':           '/en/cdg-airport-transfer',
+  '/notre-flotte':                   '/en/our-fleet',
+  '/evenements':                     '/en/events',
+  '/evenements/paris-fashion-week':  '/en/events',
+  '/evenements/paris-air-show':      '/en/events',
+  '/evenements/roland-garros':       '/en/events',
+  '/evenements/festival-de-cannes':  '/en/events',
+  '/contact':                        '/en/contact',
+  '/a-propos':                       '/en',
+  '/chauffeur-prive-paris':          '/en/private-chauffeur-paris',
+  // Alpes / Haute-Savoie
+  '/chauffeur-prive-chamonix':       '/en/chamonix-chauffeur',
+  '/chauffeur-prive-megeve':         '/en/megeve-chauffeur',
+  '/chauffeur-prive-haute-savoie':   '/en/haute-savoie-chauffeur',
+  '/transfert-aeroport-economique':  '/en/economical-airport-transfer',
 };
 
 const EN_TO_FR: Record<string, string> = {
-  '/en':                        '/',
-  '/en/hourly-hire':            '/mise-a-disposition',
-  '/en/cdg-airport-transfer':   '/transfert-aeroport-cdg',
-  '/en/orly-airport-transfer':  '/transfert-aeroport-orly',
-  '/en/meet-and-greet':         '/meet-and-greet',
-  '/en/delegation-transport':   '/convoi-delegations',
-  '/en/close-protection':       '/securite-rapprochee',
-  '/en/private-excursion':      '/excursion-privee',
-  '/en/long-distance':          '/longue-distance',
-  '/en/our-fleet':              '/notre-flotte',
-  '/en/events':                 '/evenements',
-  '/en/contact':                '/contact',
+  '/en':                             '/',
+  '/en/hourly-hire':                 '/mise-a-disposition',
+  '/en/cdg-airport-transfer':        '/transfert-aeroport-cdg',
+  '/en/orly-airport-transfer':       '/transfert-aeroport-orly',
+  '/en/meet-and-greet':              '/meet-and-greet',
+  '/en/delegation-transport':        '/convoi-delegations',
+  '/en/close-protection':            '/securite-rapprochee',
+  '/en/private-excursion':           '/excursion-privee',
+  '/en/long-distance':               '/longue-distance',
+  '/en/our-fleet':                   '/notre-flotte',
+  '/en/events':                      '/evenements',
+  '/en/contact':                     '/contact',
+  '/en/private-chauffeur-paris':     '/chauffeur-prive-paris',
+  // Alpes / Haute-Savoie
+  '/en/chamonix-chauffeur':          '/chauffeur-prive-chamonix',
+  '/en/megeve-chauffeur':            '/chauffeur-prive-megeve',
+  '/en/haute-savoie-chauffeur':      '/chauffeur-prive-haute-savoie',
+  '/en/economical-airport-transfer': '/transfert-aeroport-economique',
 };
 
 function getLocalizedPath(pathname: string, targetLocale: string): string {
-  // AR et ZH → toujours leur homepage (pas de pages dédiées par service)
+  // AR et ZH → homepages uniquement
   if (targetLocale === 'ar') return '/ar';
   if (targetLocale === 'zh') return '/zh';
 
@@ -59,17 +71,64 @@ function getLocalizedPath(pathname: string, targetLocale: string): string {
   if (targetLocale === 'fr') {
     if (pathname.startsWith('/en')) return EN_TO_FR[pathname] ?? '/';
     if (pathname.startsWith('/ar') || pathname.startsWith('/zh')) return '/';
-    return pathname; // déjà en FR
+    return pathname;
   }
 
   // Vers EN
   if (targetLocale === 'en') {
     if (pathname.startsWith('/ar') || pathname.startsWith('/zh')) return '/en';
-    if (pathname.startsWith('/en')) return pathname; // déjà en EN
-    return FR_TO_EN[pathname] ?? '/en'; // FR → EN
+    if (pathname.startsWith('/en')) return pathname;
+    return FR_TO_EN[pathname] ?? '/en';
   }
 
   return '/';
+}
+
+// ── Menus dropdown ────────────────────────────────────────────────────────────
+
+interface DropdownItem { label: string; href: string }
+
+function getServicesMenu(locale: Locale, homePrefix: string): DropdownItem[] {
+  if (locale === 'en') return [
+    { label: 'Hourly hire',           href: '/en/hourly-hire' },
+    { label: 'Airport transfer CDG',  href: '/en/cdg-airport-transfer' },
+    { label: 'Airport transfer Orly', href: '/en/orly-airport-transfer' },
+    { label: 'Meet & Greet',          href: '/en/meet-and-greet' },
+    { label: 'Long distance',         href: '/en/long-distance' },
+    { label: 'Delegation transport',  href: '/en/delegation-transport' },
+    { label: 'Close protection',      href: '/en/close-protection' },
+  ];
+  // FR (default)
+  return [
+    { label: 'Mise à disposition',   href: '/mise-a-disposition' },
+    { label: 'Transfert aéroport CDG', href: '/transfert-aeroport-cdg' },
+    { label: 'Transfert aéroport Orly', href: '/transfert-aeroport-orly' },
+    { label: 'Meet & Greet',          href: '/meet-and-greet' },
+    { label: 'Longue distance',       href: '/longue-distance' },
+    { label: 'Convoi délégations',    href: '/convoi-delegations' },
+    { label: 'Sécurité rapprochée',   href: '/securite-rapprochee' },
+  ];
+}
+
+function getDestinationsMenu(locale: Locale): DropdownItem[] {
+  if (locale === 'en') return [
+    { label: 'Private chauffeur Paris',  href: '/en/private-chauffeur-paris' },
+    { label: 'Chamonix chauffeur',       href: '/en/chamonix-chauffeur' },
+    { label: 'Megève chauffeur',         href: '/en/megeve-chauffeur' },
+    { label: 'Haute-Savoie chauffeur',   href: '/en/haute-savoie-chauffeur' },
+    { label: 'Bordeaux chauffeur',       href: '/en/private-chauffeur-bordeaux' },
+    { label: 'CDG → Paris transfers',    href: '/en/cdg-airport-transfer' },
+    { label: 'Economical airport transfer', href: '/en/economical-airport-transfer' },
+  ];
+  return [
+    { label: 'Chauffeur privé Paris',     href: '/chauffeur-prive-paris' },
+    { label: 'Chauffeur privé Chamonix',  href: '/chauffeur-prive-chamonix' },
+    { label: 'Chauffeur privé Megève',    href: '/chauffeur-prive-megeve' },
+    { label: 'Chauffeur privé Haute-Savoie', href: '/chauffeur-prive-haute-savoie' },
+    { label: 'Transfert Beauvais',        href: '/transfert-aeroport-beauvais' },
+    { label: 'Transfert CDG → Paris',     href: '/transfert-cdg-paris' },
+    { label: 'Transfert prix fixe',       href: '/transfert-aeroport-economique' },
+  ];
 }
 
 // ────────────────────────────────────────────────────────────────────────────
@@ -79,10 +138,65 @@ interface NavbarProps {
   locale: Locale;
 }
 
+interface DropdownMenuProps {
+  label: string;
+  items: DropdownItem[];
+  isOpen: boolean;
+  onToggle: () => void;
+  onClose: () => void;
+}
+
+function DropdownMenu({ label, items, isOpen, onToggle, onClose }: DropdownMenuProps) {
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (ref.current && !ref.current.contains(e.target as Node)) onClose();
+    }
+    if (isOpen) document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [isOpen, onClose]);
+
+  return (
+    <div ref={ref} className="relative">
+      <button
+        onClick={onToggle}
+        className="flex items-center gap-1 font-sans text-xs text-gray-600 hover:text-gold-400 tracking-wide transition-colors"
+      >
+        {label}
+        <svg
+          className={`w-3 h-3 transition-transform ${isOpen ? 'rotate-180' : ''}`}
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      {isOpen && (
+        <div className="absolute top-full left-0 mt-2 bg-white border border-stone-100 rounded-lg shadow-lg min-w-[220px] py-2 z-50">
+          {items.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              onClick={onClose}
+              className="block px-4 py-2 font-sans text-xs text-gray-600 hover:bg-stone-50 hover:text-gold-400 transition-colors"
+            >
+              {item.label}
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
 export default function Navbar({ t, locale }: NavbarProps) {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [langOpen, setLangOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen]   = useState(false);
+  const [langOpen, setLangOpen]   = useState(false);
+  const [servicesOpen, setServicesOpen]     = useState(false);
+  const [destinationsOpen, setDestinationsOpen] = useState(false);
+  const [scrolled, setScrolled]   = useState(false);
   const pathname = usePathname();
 
   const currentLang = LANGS.find((l) => l.code === locale) || LANGS[0];
@@ -104,6 +218,14 @@ export default function Navbar({ t, locale }: NavbarProps) {
 
   const contactHref = locale === 'fr' ? '/contact' : `/${locale}/contact`;
 
+  const servicesItems     = getServicesMenu(locale, homePrefix);
+  const destinationsItems = getDestinationsMenu(locale);
+
+  const servicesLabel     = locale === 'en' ? 'Services'     : 'Services';
+  const destinationsLabel = locale === 'en' ? 'Destinations' : 'Destinations';
+  const fleetLabel        = t?.nav?.fleet ?? (locale === 'en' ? 'Fleet' : 'Flotte');
+  const fleetHref         = locale === 'en' ? '/en/our-fleet' : '/notre-flotte';
+
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-10 py-4 transition-all duration-300 border-b ${
@@ -124,18 +246,47 @@ export default function Navbar({ t, locale }: NavbarProps) {
 
       {/* Desktop nav */}
       <div className="hidden md:flex items-center gap-8">
-        <a href={anchorHref('services')}
+        {/* Services dropdown */}
+        {(locale === 'fr' || locale === 'en') && (
+          <DropdownMenu
+            label={servicesLabel}
+            items={servicesItems}
+            isOpen={servicesOpen}
+            onToggle={() => { setServicesOpen(!servicesOpen); setDestinationsOpen(false); }}
+            onClose={() => setServicesOpen(false)}
+          />
+        )}
+        {(locale === 'ar' || locale === 'zh') && (
+          <a href={anchorHref('services')}
+            className="font-sans text-xs text-gray-600 hover:text-gold-400 tracking-wide transition-colors">
+            {t?.nav?.services}
+          </a>
+        )}
+
+        {/* Destinations dropdown */}
+        {(locale === 'fr' || locale === 'en') && (
+          <DropdownMenu
+            label={destinationsLabel}
+            items={destinationsItems}
+            isOpen={destinationsOpen}
+            onToggle={() => { setDestinationsOpen(!destinationsOpen); setServicesOpen(false); }}
+            onClose={() => setDestinationsOpen(false)}
+          />
+        )}
+
+        {/* Fleet */}
+        <Link href={fleetHref}
           className="font-sans text-xs text-gray-600 hover:text-gold-400 tracking-wide transition-colors">
-          {t?.nav?.services}
-        </a>
-        <a href={anchorHref('fleet')}
-          className="font-sans text-xs text-gray-600 hover:text-gold-400 tracking-wide transition-colors">
-          {t?.nav?.fleet}
-        </a>
+          {fleetLabel}
+        </Link>
+
+        {/* Events */}
         <a href={anchorHref('events')}
           className="font-sans text-xs text-gray-600 hover:text-gold-400 tracking-wide transition-colors">
           {t?.nav?.events}
         </a>
+
+        {/* Contact */}
         <Link href={contactHref}
           className="font-sans text-xs tracking-wide transition-colors px-3.5 py-1.5 rounded-md border border-stone-200 hover:border-gold-400 hover:text-gold-400"
           style={{ color: pathname === contactHref ? '#8a7340' : undefined }}>
@@ -156,7 +307,7 @@ export default function Navbar({ t, locale }: NavbarProps) {
         {/* Language switcher */}
         <div className="relative">
           <button
-            onClick={() => setLangOpen(!langOpen)}
+            onClick={() => { setLangOpen(!langOpen); setServicesOpen(false); setDestinationsOpen(false); }}
             className="flex items-center gap-1.5 px-3 py-1.5 border border-stone-200 rounded-md font-sans text-xs text-gray-700 hover:border-gold-400 hover:text-gold-400 transition-all"
           >
             {currentLang.flag} {locale.toUpperCase()}
@@ -193,34 +344,73 @@ export default function Navbar({ t, locale }: NavbarProps) {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="absolute top-full left-0 right-0 bg-white border-b border-stone-100 shadow-md py-6 px-6 md:hidden">
-          <div className="flex flex-col gap-4">
-            <a href={anchorHref('services')} onClick={() => setMenuOpen(false)}
-              className="font-sans text-sm text-gray-700 hover:text-gold-400">
-              {t?.nav?.services}
-            </a>
-            <a href={anchorHref('fleet')} onClick={() => setMenuOpen(false)}
-              className="font-sans text-sm text-gray-700 hover:text-gold-400">
-              {t?.nav?.fleet}
-            </a>
-            <a href={anchorHref('events')} onClick={() => setMenuOpen(false)}
-              className="font-sans text-sm text-gray-700 hover:text-gold-400">
-              {t?.nav?.events}
-            </a>
-            <Link href={contactHref} onClick={() => setMenuOpen(false)}
-              className="font-sans text-sm text-gray-700 hover:text-gold-400">
-              {t?.nav?.contact}
-            </Link>
-            <a
-              href={`tel:${t?.nav?.phone?.replace(/\s/g, '') ?? ''}`}
-              className="font-sans text-sm font-semibold"
-              style={{ color: '#8a7340' }}
-              dir="ltr"
-            >
-              {t?.nav?.phone ?? ''}
-            </a>
+        <div className="absolute top-full left-0 right-0 bg-white border-b border-stone-100 shadow-md py-6 px-6 md:hidden max-h-[80vh] overflow-y-auto">
+          <div className="flex flex-col gap-1">
+            {/* Services section */}
+            {(locale === 'fr' || locale === 'en') && (
+              <>
+                <p className="font-sans text-xs font-semibold tracking-[0.15em] uppercase text-stone-400 mt-4 mb-2">
+                  {servicesLabel}
+                </p>
+                {servicesItems.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    onClick={() => setMenuOpen(false)}
+                    className="font-sans text-sm text-gray-700 hover:text-gold-400 py-1.5"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+
+                <p className="font-sans text-xs font-semibold tracking-[0.15em] uppercase text-stone-400 mt-4 mb-2">
+                  {destinationsLabel}
+                </p>
+                {destinationsItems.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    onClick={() => setMenuOpen(false)}
+                    className="font-sans text-sm text-gray-700 hover:text-gold-400 py-1.5"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </>
+            )}
+
+            {(locale === 'ar' || locale === 'zh') && (
+              <a href={anchorHref('services')} onClick={() => setMenuOpen(false)}
+                className="font-sans text-sm text-gray-700 hover:text-gold-400 py-1.5">
+                {t?.nav?.services}
+              </a>
+            )}
+
+            <div className="border-t border-stone-100 mt-4 pt-4 flex flex-col gap-1">
+              <Link href={fleetHref} onClick={() => setMenuOpen(false)}
+                className="font-sans text-sm text-gray-700 hover:text-gold-400 py-1.5">
+                {fleetLabel}
+              </Link>
+              <a href={anchorHref('events')} onClick={() => setMenuOpen(false)}
+                className="font-sans text-sm text-gray-700 hover:text-gold-400 py-1.5">
+                {t?.nav?.events}
+              </a>
+              <Link href={contactHref} onClick={() => setMenuOpen(false)}
+                className="font-sans text-sm text-gray-700 hover:text-gold-400 py-1.5">
+                {t?.nav?.contact}
+              </Link>
+              <a
+                href={`tel:${t?.nav?.phone?.replace(/\s/g, '') ?? ''}`}
+                className="font-sans text-sm font-semibold mt-2"
+                style={{ color: '#8a7340' }}
+                dir="ltr"
+              >
+                {t?.nav?.phone ?? ''}
+              </a>
+            </div>
+
             {/* Mobile language switcher */}
-            <div className="border-t border-stone-100 pt-4 flex gap-3 flex-wrap">
+            <div className="border-t border-stone-100 pt-4 mt-2 flex gap-3 flex-wrap">
               {LANGS.map((l) => (
                 <a
                   key={l.code}

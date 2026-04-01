@@ -83,6 +83,20 @@ export const FR_INDEXED_SLUGS = new Set([
   'evenements/roland-garros',
   'evenements/festival-de-cannes',
 
+  // ── Chauffeur privé Paris et niches ──────────────────────────
+  'chauffeur-prive-paris',
+  'chauffeur-mariage-paris',
+  'transfert-aeroport-beauvais',
+  // ── Alpes / Haute-Savoie ──────────────────────────────────────
+  'chauffeur-prive-chamonix',
+  'chauffeur-prive-megeve',
+  'chauffeur-prive-haute-savoie',
+  'transfert-aeroport-economique',
+  // ── Événements supplémentaires
+  'evenements/hippodrome-deauville',
+  'evenements/grand-prix-monaco',
+  'evenements/salons-professionnels',
+
   // ── Institutionnelles ─────────────────────────────────────────
   'contact',
   'a-propos',
@@ -113,6 +127,18 @@ export const EN_INDEXED_SLUGS = new Set([
   // ── Événements & flotte ───────────────────────────────────────
   'events',
   'our-fleet',
+
+  // ── Chauffeur privé Paris et régions (EN) ────────────────────
+  'private-chauffeur-paris',
+  'private-chauffeur-bordeaux',
+  'bordeaux-airport-transfer',
+  'lyon-airport-transfer',
+  'marseille-airport-transfer',
+  // ── Alpes / Haute-Savoie (EN) ────────────────────────────────
+  'chamonix-chauffeur',
+  'megeve-chauffeur',
+  'haute-savoie-chauffeur',
+  'economical-airport-transfer',
 
   // ── Institutionnelles ─────────────────────────────────────────
   'contact',

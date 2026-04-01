@@ -46,10 +46,16 @@ export default function AdminPage() {
     try {
       const res = await fetch('/api/adminos', { headers: { 'x-admin-key': k } });
       if (res.status === 401) { setError('Mot de passe incorrect'); setKey(''); return; }
+      if (res.status === 503) {
+        const data = await res.json();
+        setError(data.hint || 'ADMIN_PASSWORD non configuré sur le serveur');
+        setKey('');
+        return;
+      }
       if (!res.ok) throw new Error();
       setContacts(await res.json());
     } catch {
-      setError('Erreur de chargement');
+      setError('Erreur de chargement — vérifiez /api/health pour diagnostiquer');
     } finally {
       setLoading(false);
     }

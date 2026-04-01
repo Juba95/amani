@@ -51,10 +51,33 @@ const PRIORITY: Record<string, number> = {
   'evenements/paris-air-show':    0.7,
   'evenements/roland-garros':     0.7,
   'evenements/festival-de-cannes':0.7,
+  // FR — niches SEO
+  'chauffeur-prive-paris':              0.88,
+  'chauffeur-mariage-paris':            0.80,
+  'transfert-aeroport-beauvais':        0.82,
+  'evenements/hippodrome-deauville':    0.68,
+  'evenements/grand-prix-monaco':       0.70,
+  'evenements/salons-professionnels':   0.72,
+  // EN — private chauffeur + régions
+  'private-chauffeur-paris':            0.85,
+  'private-chauffeur-bordeaux':         0.80,
+  'bordeaux-airport-transfer':          0.82,
+  'lyon-airport-transfer':              0.78,
+  'marseille-airport-transfer':         0.78,
   // FR — institutionnelles
   'contact':                      0.6,
   'a-propos':                     0.6,
   'mentions-legales':             0.4,
+  // FR — Alpes / Haute-Savoie
+  'chauffeur-prive-chamonix':           0.82,
+  'chauffeur-prive-megeve':             0.80,
+  'chauffeur-prive-haute-savoie':       0.82,
+  'transfert-aeroport-economique':      0.78,
+  // EN — Alpes / Haute-Savoie + airport
+  'chamonix-chauffeur':                 0.80,
+  'megeve-chauffeur':                   0.78,
+  'haute-savoie-chauffeur':             0.80,
+  'economical-airport-transfer':        0.78,
   // EN slugs
   'cdg-airport-transfer':         0.85,
   'orly-airport-transfer':        0.8,
