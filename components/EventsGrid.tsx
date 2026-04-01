@@ -1,10 +1,21 @@
 'use client';
 
+import Link from 'next/link';
+
 interface EventsGridProps {
   t: any;
 }
 
 const EVENT_KEYS = ['fashionweek', 'airshow', 'rolandgarros', 'cannes', 'sports', 'salons'];
+
+const EVENT_LINKS: Record<string, string> = {
+  fashionweek:  '/evenements/paris-fashion-week',
+  airshow:      '/evenements/paris-air-show',
+  rolandgarros: '/evenements/roland-garros',
+  cannes:       '/evenements/festival-de-cannes',
+  sports:       '/evenements/grand-prix-monaco',
+  salons:       '/evenements/salons-professionnels',
+};
 
 // SVG icons for each event category
 const EVENT_ICONS: Record<string, JSX.Element> = {
@@ -63,7 +74,7 @@ export default function EventsGrid({ t }: EventsGridProps) {
           const event = t?.events?.items?.[key];
           if (!event) return null;
           return (
-            <div key={key} className="card-luxury !p-6 text-center group">
+            <Link key={key} href={EVENT_LINKS[key] || '/evenements'} className="card-luxury !p-6 text-center group block">
               <div
                 className="inline-flex items-center justify-center mb-4 transition-transform group-hover:scale-110"
                 style={{ color: '#8a7340' }}
@@ -74,7 +85,7 @@ export default function EventsGrid({ t }: EventsGridProps) {
               <p className="font-sans text-[0.7rem] font-light" style={{ color: '#8a7340', opacity: 0.8 }}>
                 {event.period}
               </p>
-            </div>
+            </Link>
           );
         })}
       </div>

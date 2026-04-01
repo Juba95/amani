@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import StatsRow from '@/components/StatsRow';
@@ -9,7 +10,6 @@ import ServicesGrid from '@/components/ServicesGrid';
 import EventsGrid from '@/components/EventsGrid';
 import TrustStrip from '@/components/TrustStrip';
 import WhyUs from '@/components/WhyUs';
-import BookingResults from '@/components/BookingResults';
 import { CTA, Footer } from '@/components/CTAFooter';
 
 import fr from '@/locales/fr.json';
@@ -17,22 +17,16 @@ import fr from '@/locales/fr.json';
 export default function HomePage() {
   const t = fr;
   const locale = 'fr' as const;
+  const router = useRouter();
 
   const [from, setFrom] = useState('');
   const [to, setTo] = useState('');
-  const [distance, setDistance] = useState<number | null>(null);
-  const [duration, setDuration] = useState<string | null>(null);
-  const [selectedVehicle, setSelectedVehicle] = useState<string | null>(null);
-  const [showResults, setShowResults] = useState(false);
   const [searchLoading, setSearchLoading] = useState(false);
-  const resultsRef = useRef<HTMLDivElement>(null);
 
   const handleSearch = async (fromVal: string, toVal: string) => {
     if (!fromVal || !toVal) return;
 
     setSearchLoading(true);
-    setShowResults(false);
-    setSelectedVehicle(null);
 
     try {
       const res = await fetch('/api/distance', {
@@ -42,28 +36,23 @@ export default function HomePage() {
       });
       const data = await res.json();
 
-      setDistance(data.km);
-      setDuration(data.duration);
-      setShowResults(true);
-
-      setTimeout(() => {
-        resultsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }, 200);
+      const params = new URLSearchParams({
+        from: fromVal, to: toVal,
+        km: String(data.km),
+        dur: data.duration,
+        lang: 'fr',
+      });
+      router.push(`/devis?${params.toString()}`);
     } catch {
-      setDistance(35);
-      setDuration('45 min');
-      setShowResults(true);
+      const params = new URLSearchParams({
+        from: fromVal, to: toVal,
+        km: '35',
+        dur: '45 min',
+        lang: 'fr',
+      });
+      router.push(`/devis?${params.toString()}`);
     } finally {
       setSearchLoading(false);
-    }
-  };
-
-  const handleSelectVehicle = (id: string) => {
-    setSelectedVehicle(id || null);
-    if (id) {
-      setTimeout(() => {
-        resultsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' });
-      }, 100);
     }
   };
 
@@ -71,7 +60,7 @@ export default function HomePage() {
     <main className="min-h-screen bg-white text-gray-900">
       <Navbar t={t} locale={locale} />
 
-      {/* Hero with booking form */}
+      {/* Hero with booking form → redirects to /devis */}
       <Hero
         t={t}
         from={from}
@@ -102,20 +91,6 @@ export default function HomePage() {
 
       {/* Events */}
       <EventsGrid t={t} />
-
-      {/* Booking results (shown after search) */}
-      {showResults && distance && duration && (
-        <BookingResults
-          t={t}
-          from={from}
-          to={to}
-          distance={distance}
-          duration={duration}
-          selectedVehicle={selectedVehicle}
-          onSelect={handleSelectVehicle}
-          resultsRef={resultsRef}
-        />
-      )}
 
       {/* Trust strip */}
       <TrustStrip t={t} />
