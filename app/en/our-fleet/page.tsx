@@ -5,7 +5,7 @@ import SEOLayoutEN from '@/components/SEOLayoutEN';
 export const metadata: Metadata = {
   title: 'Our Fleet — Prestige Vehicles Paris | Mercedes, Range Rover, Sprinter VIP | Amani',
   description:
-    'Discover Amani Limousines\' fleet of prestige vehicles in Paris. Mercedes E-Class, EQE, S-Class, Maybach, V-Class, G-Class, Range Rover Evoque and Sprinter VIP. 300+ vehicles, renewed annually.',
+    'Discover Amani Limousines\' fleet of prestige vehicles in Paris. Mercedes E-Class, EQS, S-Class, Maybach, V-Class, G-Class, Range Rover Evoque and Sprinter VIP. 300+ vehicles, renewed annually.',
   alternates: {
     canonical: 'https://www.amani-limousines.com/en/our-fleet',
     languages: { fr: 'https://www.amani-limousines.com/notre-flotte' },
@@ -24,13 +24,13 @@ const vehicles = [
     eq: ['Premium Wi-Fi', 'Nappa leather', 'Dual-zone climate', 'Wireless charger', 'Mineral water'],
   },
   {
-    id: 'eqe',
-    name: 'Mercedes EQE',
+    id: 'eqs',
+    name: 'Mercedes EQS',
     cat: 'Electric Business Saloon',
     pax: '3 passengers · 2 bags',
     price: 'From €100',
     img: '/vehicles/mercedes-eqe.png',
-    desc: 'The fully electric version of our business range. The EQE offers the same comfort level as the E-Class with zero emissions. Absolute silence, perfect for environmentally conscious clients.',
+    desc: 'The fully electric version of our business range. The EQS offers the same comfort level as the E-Class with zero emissions. Absolute silence, perfect for environmentally conscious clients.',
     eq: ['100% electric', 'Absolute silence', 'Premium leather', 'Dual-zone climate', 'USB-C chargers'],
   },
   {
@@ -48,7 +48,7 @@ const vehicles = [
     name: 'Mercedes S-Class Maybach',
     cat: 'Ultra-Prestige Saloon',
     pax: '3 passengers · 2 bags',
-    price: 'From €300',
+    price: 'From €200',
     img: '/vehicles/mercedes-classe-s-maybach.png',
     desc: 'The pinnacle of automotive luxury. The Maybach features an extended wheelbase, rear seats reclining to 43.5°, an integrated champagne cooler and superior sound insulation. Reserved for clients who demand absolute excellence.',
     eq: ['43.5° reclining seats', 'Champagne cooler', 'Privacy partition', 'Burmester® 4D', 'First-class ambiance'],
@@ -58,7 +58,7 @@ const vehicles = [
     name: 'Range Rover Evoque',
     cat: 'Premium SUV',
     pax: '3 passengers · 2 bags',
-    price: 'From €150',
+    price: 'From €200',
     img: '/vehicles/range-rover-evoque.png',
     desc: 'The SUV alternative in our fleet. The Range Rover Evoque combines a raised driving position with a refined interior. Ideal for transfers to ski resorts, wine estates or any journey requiring a premium yet robust vehicle.',
     eq: ['All-wheel drive', 'Windsor leather', 'Meridian™ system', 'Terrain Response', 'Elevated position'],
@@ -78,7 +78,7 @@ const vehicles = [
     name: 'Mercedes G-Class',
     cat: 'Prestige SUV',
     pax: '4 passengers · 3 bags',
-    price: 'From €200',
+    price: 'From €250',
     img: '/vehicles/mercedes-classe-g.png',
     desc: 'The icon of luxury all-terrain motoring, the G-Class pairs a commanding presence with an interior worthy of a prestige saloon. The preferred choice for premium events, weddings and clients who wish to make a grand entrance.',
     eq: ['All-wheel drive', 'designo Nappa leather', 'Burmester® surround', '64-colour ambient lighting', 'Iconic presence'],
@@ -88,7 +88,7 @@ const vehicles = [
     name: 'Mercedes Sprinter VIP',
     cat: 'Luxury Minibus',
     pax: '16 passengers · 16 bags',
-    price: 'From €200',
+    price: 'From €300',
     img: '/vehicles/mercedes-sprinter.png',
     desc: 'The solution for large groups, official delegations and event shuttles. Leather captain\'s chairs, premium sound system, ambient lighting and multi-zone air conditioning throughout. Can carry 16 passengers with their luggage.',
     eq: ['Leather captain\'s chairs', 'Premium sound', 'Multi-zone climate', 'Luggage gallery', 'Radio comms ready'],
@@ -169,7 +169,108 @@ export default function OurFleetEN() {
         </div>
       </section>
 
+      {/* Pricing grid */}
       <section className="py-14 px-6 md:px-10 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="heading">Our rates</h2>
+          <p className="sf text-stone-500 mt-3 mb-8 text-sm">Fixed prices, all-inclusive — no meter, no surprises.</p>
+
+          {/* Airport transfers */}
+          <h3 className="font-serif text-lg text-gray-900 mb-4">Airport transfer rates <span className="sf text-sm text-stone-400">(CDG, Orly, Le Bourget)</span></h3>
+          <div className="overflow-x-auto mb-10">
+            <table className="w-full sf text-sm text-left border-collapse">
+              <thead>
+                <tr className="border-b border-stone-200">
+                  <th className="py-3 pr-4 text-stone-400 font-normal">Vehicle</th>
+                  <th className="py-3 px-4 text-stone-400 font-normal">Airport rate</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  ['Mercedes E-Class / V-Class', '€150'],
+                  ['Mercedes EQS Electric', '€150'],
+                  ['Mercedes S-Class', '€200'],
+                  ['Mercedes S-Class Maybach', '€250'],
+                  ['Range Rover Evoque', '€250'],
+                  ['Mercedes G-Class', '€300'],
+                  ['Mercedes Sprinter VIP', '€350'],
+                ].map(([v, p]) => (
+                  <tr key={v} className="border-b border-stone-100">
+                    <td className="py-3 pr-4 text-gray-900">{v}</td>
+                    <td className="py-3 px-4 font-semibold" style={{ color: '#8a7340' }}>{p}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          {/* City rates */}
+          <h3 className="font-serif text-lg text-gray-900 mb-4">City transfers <span className="sf text-sm text-stone-400">(minimum fare)</span></h3>
+          <div className="overflow-x-auto mb-10">
+            <table className="w-full sf text-sm text-left border-collapse">
+              <thead>
+                <tr className="border-b border-stone-200">
+                  <th className="py-3 pr-4 text-stone-400 font-normal">Vehicle</th>
+                  <th className="py-3 px-4 text-stone-400 font-normal">Minimum fare</th>
+                  <th className="py-3 px-4 text-stone-400 font-normal">Rate / km</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  ['Mercedes E-Class / V-Class', '€100', '€3/km'],
+                  ['Mercedes EQS Electric', '€100', '€3/km'],
+                  ['Mercedes S-Class', '€150', '€4/km'],
+                  ['Mercedes S-Class Maybach', '€200', '€5/km'],
+                  ['Range Rover Evoque', '€200', '€5/km'],
+                  ['Mercedes G-Class', '€250', '€5/km'],
+                  ['Mercedes Sprinter VIP', '€300', '€5/km'],
+                ].map(([v, p, km]) => (
+                  <tr key={v} className="border-b border-stone-100">
+                    <td className="py-3 pr-4 text-gray-900">{v}</td>
+                    <td className="py-3 px-4 font-semibold" style={{ color: '#8a7340' }}>{p}</td>
+                    <td className="py-3 px-4 text-stone-500">{km}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          {/* Hourly hire */}
+          <h3 className="font-serif text-lg text-gray-900 mb-4">Hourly hire <span className="sf text-sm text-stone-400">(as-directed)</span></h3>
+          <div className="overflow-x-auto">
+            <table className="w-full sf text-sm text-left border-collapse">
+              <thead>
+                <tr className="border-b border-stone-200">
+                  <th className="py-3 pr-4 text-stone-400 font-normal">Vehicle</th>
+                  <th className="py-3 px-4 text-stone-400 font-normal">Rate / hour</th>
+                  <th className="py-3 px-4 text-stone-400 font-normal">Minimum</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  ['Mercedes E-Class / V-Class', '€95/h', '4 hours'],
+                  ['Mercedes EQS Electric', '€95/h', '4 hours'],
+                  ['Mercedes S-Class', '€130/h', '4 hours'],
+                  ['Mercedes S-Class Maybach', '€220/h', '5 hours'],
+                  ['Range Rover Evoque', '€190/h', '5 hours'],
+                  ['Mercedes G-Class', '€190/h', '5 hours'],
+                  ['Sprinter VIP 12 seats', '€120/h', '5 hours'],
+                  ['Sprinter VIP 16 seats', '€140/h', '5 hours'],
+                  ['Sprinter VIP 20 seats', '€160/h', '5 hours'],
+                ].map(([v, p, min]) => (
+                  <tr key={v} className="border-b border-stone-100">
+                    <td className="py-3 pr-4 text-gray-900">{v}</td>
+                    <td className="py-3 px-4 font-semibold" style={{ color: '#8a7340' }}>{p}</td>
+                    <td className="py-3 px-4 text-stone-500">{min}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-14 px-6 md:px-10 bg-warm-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="heading">Presentation standards</h2>
           <p className="sf text-stone-600 mt-4 leading-relaxed">

@@ -246,7 +246,7 @@
         "category": "Berline Business",
         "pax": "3 passagers",
         "bags": "2 valises",
-        "from": "À partir de 125 €",
+        "from": "À partir de 100 €",
         "features": [
           "Wi-Fi premium",
           "Intérieur cuir",
@@ -259,7 +259,7 @@
         "category": "Berline Executive",
         "pax": "3 passagers",
         "bags": "2 valises",
-        "from": "À partir de 225 €",
+        "from": "À partir de 150 €",
         "features": [
           "Sièges massants",
           "Écrans LCD",
@@ -272,7 +272,7 @@
         "category": "Minivan Luxe",
         "pax": "7 passagers",
         "bags": "6 valises",
-        "from": "À partir de 125 €",
+        "from": "À partir de 100 €",
         "features": [
           "Configuration salon",
           "Espace réunion",
@@ -285,7 +285,7 @@
         "category": "SUV Luxe",
         "pax": "4 passagers",
         "bags": "3 valises",
-        "from": "À partir de 200 €",
+        "from": "À partir de 250 €",
         "features": [
           "Tout-terrain iconique",
           "Intérieur cuir AMG",
@@ -298,7 +298,7 @@
         "category": "Minibus Luxe",
         "pax": "16 passagers",
         "bags": "16 valises",
-        "from": "À partir de 350 €",
+        "from": "À partir de 300 €",
         "features": [
           "Sièges capitaine",
           "Sono premium",
@@ -311,7 +311,7 @@
         "category": "SUV Premium",
         "pax": "3 passagers",
         "bags": "2 valises",
-        "from": "À partir de 225 €",
+        "from": "À partir de 200 €",
         "features": [
           "SUV britannique",
           "Intérieur cuir",
@@ -324,7 +324,7 @@
         "category": "Berline Ultra-Luxe",
         "pax": "3 passagers",
         "bags": "2 valises",
-        "from": "À partir de 300 €",
+        "from": "À partir de 200 €",
         "features": [
           "Le summum Mercedes",
           "Sièges First Class arrière",
@@ -332,12 +332,12 @@
           "Minibar & tablettes"
         ]
       },
-      "eqe": {
-        "name": "Mercedes EQE",
+      "eqs": {
+        "name": "Mercedes EQS",
         "category": "Berline Électrique",
         "pax": "3 passagers",
         "bags": "2 valises",
-        "from": "À partir de 125 €",
+        "from": "À partir de 100 €",
         "features": [
           "100% électrique",
           "Zéro émission",

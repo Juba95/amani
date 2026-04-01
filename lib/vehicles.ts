@@ -29,7 +29,7 @@ export const VEHICLES: Vehicle[] = [
     image: '/vehicles/mercedes-classe-s.png',
     pax: 3, bags: 2,
     basePrice: 150,
-    pricePerKm: 5.00,    // Classe S = 5€/km, minimum 150€
+    pricePerKm: 4.00,    // Classe S = 4€/km, minimum 150€
   },
   {
     id: 'classe_v',
@@ -44,40 +44,40 @@ export const VEHICLES: Vehicle[] = [
     nameKey: 'classe_g',
     image: '/vehicles/mercedes-classe-g.png',
     pax: 4, bags: 3,
-    basePrice: 200,
-    pricePerKm: 4.00,    // Classe G = 4€/km, minimum 200€
+    basePrice: 250,
+    pricePerKm: 5.00,    // Classe G = 5€/km, minimum 250€
   },
   {
     id: 'sprinter',
     nameKey: 'sprinter',
     image: '/vehicles/mercedes-sprinter.png',
     pax: 16, bags: 16,
-    basePrice: 200,
-    pricePerKm: 4.00,    // Sprinter VIP = 4€/km
+    basePrice: 300,
+    pricePerKm: 5.00,    // Sprinter VIP = 5€/km, minimum 300€
   },
   {
     id: 'range_rover_evoque',
     nameKey: 'range_rover_evoque',
     image: '/vehicles/range-rover-evoque.png',
     pax: 3, bags: 2,
-    basePrice: 150,
-    pricePerKm: 5.00,    // Range Rover Evoque = même tarif que Classe S
+    basePrice: 200,
+    pricePerKm: 5.00,    // Range Rover Evoque = 5€/km, minimum 200€
   },
   {
     id: 'classe_s_maybach',
     nameKey: 'classe_s_maybach',
     image: '/vehicles/mercedes-classe-s-maybach.png',
     pax: 3, bags: 2,
-    basePrice: 300,
-    pricePerKm: 3.00,    // Classe S Maybach = 3€/km, minimum 300€
+    basePrice: 200,
+    pricePerKm: 5.00,    // Classe S Maybach = 5€/km, minimum 200€
   },
   {
-    id: 'eqe',
-    nameKey: 'eqe',
+    id: 'eqs',
+    nameKey: 'eqs',
     image: '/vehicles/mercedes-eqe.png',
     pax: 3, bags: 2,
     basePrice: 100,
-    pricePerKm: 3.00,    // Mercedes EQE = même tarif que Classe E
+    pricePerKm: 3.00,    // Mercedes EQS = même tarif que Classe E
   },
 ];
 

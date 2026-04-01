@@ -8,7 +8,7 @@ interface VehicleShowcaseProps {
 }
 
 const VEHICLE_KEYS = [
-  'classe_e', 'eqe', 'classe_s', 'classe_s_maybach',
+  'classe_e', 'eqs', 'classe_s', 'classe_s_maybach',
   'range_rover_evoque', 'classe_v', 'classe_g', 'sprinter',
 ];
 
@@ -20,7 +20,7 @@ const VEHICLE_IMAGES: Record<string, string> = {
   classe_g:          '/vehicles/mercedes-classe-g.png',
   sprinter:          '/vehicles/mercedes-sprinter.png',
   range_rover_evoque:'/vehicles/range-rover-evoque.png',
-  eqe:               '/vehicles/mercedes-eqe.png',
+  eqs:               '/vehicles/mercedes-eqe.png',
 };
 
 // Le Sprinter a un fond sombre → pas de mix-blend-mode multiply

@@ -246,7 +246,7 @@
         "category": "Business Sedan",
         "pax": "3 passengers",
         "bags": "2 suitcases",
-        "from": "From €125",
+        "from": "From €100",
         "features": [
           "Premium Wi-Fi",
           "Leather interior",
@@ -259,7 +259,7 @@
         "category": "Executive Sedan",
         "pax": "3 passengers",
         "bags": "2 suitcases",
-        "from": "From €225",
+        "from": "From €150",
         "features": [
           "Massage seats",
           "LCD screens",
@@ -272,7 +272,7 @@
         "category": "Luxury Minivan",
         "pax": "7 passengers",
         "bags": "6 suitcases",
-        "from": "From €125",
+        "from": "From €100",
         "features": [
           "Lounge layout",
           "Meeting space",
@@ -285,7 +285,7 @@
         "category": "Luxury SUV",
         "pax": "4 passengers",
         "bags": "3 luggage",
-        "from": "From 200 €",
+        "from": "From €250",
         "features": [
           "Iconic 4x4",
           "AMG leather interior",
@@ -298,7 +298,7 @@
         "category": "Luxury Minibus",
         "pax": "16 passengers",
         "bags": "16 suitcases",
-        "from": "From €350",
+        "from": "From €300",
         "features": [
           "Captain seats",
           "Premium sound",
@@ -311,7 +311,7 @@
         "category": "Premium SUV",
         "pax": "3 passengers",
         "bags": "2 suitcases",
-        "from": "From €225",
+        "from": "From €200",
         "features": [
           "British SUV",
           "Leather interior",
@@ -324,7 +324,7 @@
         "category": "Ultra-Luxury Saloon",
         "pax": "3 passengers",
         "bags": "2 suitcases",
-        "from": "From €300",
+        "from": "From €200",
         "features": [
           "The Mercedes pinnacle",
           "First Class rear seats",
@@ -332,12 +332,12 @@
           "Minibar & tablets"
         ]
       },
-      "eqe": {
-        "name": "Mercedes EQE",
+      "eqs": {
+        "name": "Mercedes EQS",
         "category": "Electric Saloon",
         "pax": "3 passengers",
         "bags": "2 suitcases",
-        "from": "From €125",
+        "from": "From €100",
         "features": [
           "100% electric",
           "Zero emissions",

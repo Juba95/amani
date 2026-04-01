@@ -5,7 +5,7 @@ import SEOLayout from '@/components/SEOLayout';
 export const metadata: Metadata = {
   title: 'Flotte de Véhicules de Prestige Paris — Mercedes, Range Rover, Sprinter VIP | Amani',
   description:
-    'Découvrez notre flotte de véhicules de prestige à Paris. Mercedes Classe E, EQE, S, Maybach, V, G, Range Rover Evoque et Sprinter VIP. Plus de 300 véhicules renouvelés chaque année.',
+    'Découvrez notre flotte de véhicules de prestige à Paris. Mercedes Classe E, EQS, S, Maybach, V, G, Range Rover Evoque et Sprinter VIP. Plus de 300 véhicules renouvelés chaque année.',
   alternates: {
     canonical: 'https://www.amani-limousines.com/notre-flotte',
     languages: { en: 'https://www.amani-limousines.com/en/our-fleet' },
@@ -25,14 +25,14 @@ const vehicules = [
     equipements: ['Wi-Fi 4G inclus', 'Cuir Nappa', 'Climatisation bi-zone', 'Chargeur sans fil', 'Eau minérale'],
   },
   {
-    id: 'eqe',
-    nom: 'Mercedes EQE',
+    id: 'eqs',
+    nom: 'Mercedes EQS',
     categorie: 'Berline Business Électrique',
     pax: '3 passagers',
     bagages: '2 valises',
     prix: 'À partir de 100 €',
     image: '/vehicles/mercedes-eqe.png',
-    details: 'La version 100 % électrique de notre gamme business. La EQE offre le même niveau de confort que la Classe E avec zéro émission. Silence de fonctionnement absolu, parfaite pour les clients sensibles à l\'impact environnemental.',
+    details: 'La version 100 % électrique de notre gamme business. La EQS offre le même niveau de confort que la Classe E avec zéro émission. Silence de fonctionnement absolu, parfaite pour les clients sensibles à l\'impact environnemental.',
     equipements: ['100% électrique', 'Silence absolu', 'Cuir premium', 'Climatisation bi-zone', 'Chargeur USB-C'],
   },
   {
@@ -52,7 +52,7 @@ const vehicules = [
     categorie: 'Berline Ultra-Prestige',
     pax: '3 passagers',
     bagages: '2 valises',
-    prix: 'À partir de 300 €',
+    prix: 'À partir de 200 €',
     image: '/vehicles/mercedes-classe-s-maybach.png',
     details: 'Le summum du luxe automobile. La Maybach offre un empattement allongé, des sièges arrière inclinables à 43,5°, un réfrigérateur à champagne intégré et une isolation phonique de classe supérieure. Réservée aux clients qui exigent l\'excellence absolue.',
     equipements: ['Sièges inclinables 43,5°', 'Réfrigérateur champagne', 'Séparation vitrage', 'Burmester® 4D', 'Ambiance première classe'],
@@ -63,7 +63,7 @@ const vehicules = [
     categorie: 'SUV Premium',
     pax: '3 passagers',
     bagages: '2 valises',
-    prix: 'À partir de 150 €',
+    prix: 'À partir de 200 €',
     image: '/vehicles/range-rover-evoque.png',
     details: 'L\'alternative SUV de notre flotte. Le Range Rover Evoque combine une position de conduite surélevée avec un intérieur raffiné. Idéal pour les transferts vers les stations de ski, les domaines viticoles ou tout trajet nécessitant un véhicule haut de gamme plus robuste.',
     equipements: ['Transmission intégrale', 'Cuir Windsor', 'Système Meridian™', 'Terrain Response', 'Position surélevée'],
@@ -85,7 +85,7 @@ const vehicules = [
     categorie: 'SUV Prestige',
     pax: '4 passagers',
     bagages: '3 valises',
-    prix: 'À partir de 200 €',
+    prix: 'À partir de 250 €',
     image: '/vehicles/mercedes-classe-g.png',
     details: 'Icône du luxe tout-terrain, le Classe G allie une présence imposante à un intérieur digne d\'une berline de prestige. Choix de prédilection pour les événements de prestige, les mariages et les clients qui souhaitent faire une entrée remarquée.',
     equipements: ['Transmission intégrale', 'Cuir Nappa designo', 'Burmester® surround', 'Ambiance lumineuse 64 couleurs', 'Présence iconique'],
@@ -96,7 +96,7 @@ const vehicules = [
     categorie: 'Minibus Luxe',
     pax: '16 passagers',
     bagages: '16 valises',
-    prix: 'À partir de 200 €',
+    prix: 'À partir de 300 €',
     image: '/vehicles/mercedes-sprinter.png',
     details: 'Le Sprinter VIP est la solution pour les groupes importants, les délégations officielles et les navettes d\'événements. Aménagement intérieur luxe avec sièges capitaine en cuir, sono premium, éclairage d\'ambiance et climatisation multi-zones. Peut transporter 16 personnes avec leurs bagages.',
     equipements: ['Sièges capitaine cuir', 'Sono premium', 'Climatisation zones', 'Galerie bagages', 'Communication radio'],
@@ -181,8 +181,109 @@ export default function NotreFlottePage() {
         </div>
       </section>
 
-      {/* Standards */}
+      {/* Grille tarifaire */}
       <section className="py-14 px-6 md:px-10 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="heading">Nos tarifs</h2>
+          <p className="sf text-stone-500 mt-3 mb-8 text-sm">Prix fixes, tout compris — pas de compteur, pas de surprise.</p>
+
+          {/* Transferts aéroports */}
+          <h3 className="font-serif text-lg text-gray-900 mb-4">Forfaits transferts aéroports <span className="sf text-sm text-stone-400">(CDG, Orly, Le Bourget)</span></h3>
+          <div className="overflow-x-auto mb-10">
+            <table className="w-full sf text-sm text-left border-collapse">
+              <thead>
+                <tr className="border-b border-stone-200">
+                  <th className="py-3 pr-4 text-stone-400 font-normal">Véhicule</th>
+                  <th className="py-3 px-4 text-stone-400 font-normal">Forfait aéroport</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  ['Mercedes Classe E / Classe V', '150 €'],
+                  ['Mercedes EQS Électrique', '150 €'],
+                  ['Mercedes Classe S', '200 €'],
+                  ['Mercedes Classe S Maybach', '250 €'],
+                  ['Range Rover Evoque', '250 €'],
+                  ['Mercedes Classe G', '300 €'],
+                  ['Mercedes Sprinter VIP', '350 €'],
+                ].map(([v, p]) => (
+                  <tr key={v} className="border-b border-stone-100">
+                    <td className="py-3 pr-4 text-gray-900">{v}</td>
+                    <td className="py-3 px-4 font-semibold" style={{ color: '#8a7340' }}>{p}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          {/* Tarifs ville */}
+          <h3 className="font-serif text-lg text-gray-900 mb-4">Courses en ville <span className="sf text-sm text-stone-400">(tarif minimum)</span></h3>
+          <div className="overflow-x-auto mb-10">
+            <table className="w-full sf text-sm text-left border-collapse">
+              <thead>
+                <tr className="border-b border-stone-200">
+                  <th className="py-3 pr-4 text-stone-400 font-normal">Véhicule</th>
+                  <th className="py-3 px-4 text-stone-400 font-normal">Tarif minimum</th>
+                  <th className="py-3 px-4 text-stone-400 font-normal">Prix / km</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  ['Mercedes Classe E / Classe V', '100 €', '3 €/km'],
+                  ['Mercedes EQS Électrique', '100 €', '3 €/km'],
+                  ['Mercedes Classe S', '150 €', '4 €/km'],
+                  ['Mercedes Classe S Maybach', '200 €', '5 €/km'],
+                  ['Range Rover Evoque', '200 €', '5 €/km'],
+                  ['Mercedes Classe G', '250 €', '5 €/km'],
+                  ['Mercedes Sprinter VIP', '300 €', '5 €/km'],
+                ].map(([v, p, km]) => (
+                  <tr key={v} className="border-b border-stone-100">
+                    <td className="py-3 pr-4 text-gray-900">{v}</td>
+                    <td className="py-3 px-4 font-semibold" style={{ color: '#8a7340' }}>{p}</td>
+                    <td className="py-3 px-4 text-stone-500">{km}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          {/* Mise à disposition */}
+          <h3 className="font-serif text-lg text-gray-900 mb-4">Mise à disposition <span className="sf text-sm text-stone-400">(tarif horaire)</span></h3>
+          <div className="overflow-x-auto">
+            <table className="w-full sf text-sm text-left border-collapse">
+              <thead>
+                <tr className="border-b border-stone-200">
+                  <th className="py-3 pr-4 text-stone-400 font-normal">Véhicule</th>
+                  <th className="py-3 px-4 text-stone-400 font-normal">Tarif / heure</th>
+                  <th className="py-3 px-4 text-stone-400 font-normal">Minimum</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  ['Mercedes Classe E / Classe V', '95 €/h', '4 heures'],
+                  ['Mercedes EQS Électrique', '95 €/h', '4 heures'],
+                  ['Mercedes Classe S', '130 €/h', '4 heures'],
+                  ['Mercedes Classe S Maybach', '220 €/h', '5 heures'],
+                  ['Range Rover Evoque', '190 €/h', '5 heures'],
+                  ['Mercedes Classe G', '190 €/h', '5 heures'],
+                  ['Sprinter VIP 12 places', '120 €/h', '5 heures'],
+                  ['Sprinter VIP 16 places', '140 €/h', '5 heures'],
+                  ['Sprinter VIP 20 places', '160 €/h', '5 heures'],
+                ].map(([v, p, min]) => (
+                  <tr key={v} className="border-b border-stone-100">
+                    <td className="py-3 pr-4 text-gray-900">{v}</td>
+                    <td className="py-3 px-4 font-semibold" style={{ color: '#8a7340' }}>{p}</td>
+                    <td className="py-3 px-4 text-stone-500">{min}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* Standards */}
+      <section className="py-14 px-6 md:px-10 bg-warm-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="heading">Standards d'entretien et de présentation</h2>
           <p className="sf text-stone-600 mt-4 leading-relaxed">
