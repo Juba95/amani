@@ -126,11 +126,11 @@ function AboutSection() {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-lg" style={{ aspectRatio: '4/5' }}>
               <Image
-                src="/lounes.png"
+                src="/lounes-about.png"
                 alt="Lounes — Fondateur d'Amani Limousines, chauffeur privé parlant 8 langues"
                 fill
                 sizes="(max-width: 1024px) 100vw, 500px"
-                className="object-cover"
+                className="object-contain"
                 quality={80}
               />
             </div>
@@ -139,7 +139,7 @@ function AboutSection() {
               className="absolute -bottom-4 -right-4 lg:-right-6 bg-white rounded-xl px-5 py-3 shadow-lg border"
               style={{ borderColor: '#ece9e3' }}
             >
-              <p className="font-serif text-2xl font-normal" style={{ color: '#8a7340' }}>8</p>
+              <p className="font-serif text-2xl font-normal" style={{ color: '#8a7340' }}>10+</p>
               <p className="font-sans text-[0.6rem] tracking-[0.1em] uppercase text-stone-500">langues parlées</p>
             </div>
           </div>
@@ -156,28 +156,27 @@ function AboutSection() {
               className="font-serif font-normal text-gray-900 mb-5"
               style={{ fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', lineHeight: 1.2 }}
             >
-              Lounes, votre chauffeur privé
+              Des chauffeurs privés
               <br />
-              <em className="italic" style={{ color: '#8a7340' }}>qui parle votre langue</em>
+              <em className="italic" style={{ color: '#8a7340' }}>qui parlent votre langue</em>
             </h2>
 
             <div className="space-y-4 font-sans text-sm text-stone-600 leading-relaxed">
               <p>
-                J'ai créé Amani Limousines après 15 ans passés derrière le volant à Paris.
-                Des milliers de courses, des clients de partout dans le monde, et toujours
-                le même constat : quand le chauffeur parle votre langue, tout change. Le trajet
-                devient un moment d'échange, pas juste un déplacement.
+                Quand votre chauffeur parle votre langue, le trajet change complètement.
+                Ce n'est plus juste un déplacement — vous pouvez échanger, poser des questions,
+                vous faire comprendre sans effort.
               </p>
               <p>
-                Je parle 8 langues. Pas des notions — je parle. Assez pour accueillir un homme
-                d'affaires saoudien à Roissy, discuter itinéraire avec une famille japonaise,
-                ou briefer une délégation allemande sur le programme de la journée. Mon équipe
-                est formée sur le même modèle : des chauffeurs qui connaissent Paris par cœur
-                et qui savent s'adapter à chaque culture.
+                Nos chauffeurs parlent plus de 10 langues. Concrètement, ça veut dire accueillir
+                des hommes d'affaires saoudiens à Roissy en arabe, discuter d'un itinéraire
+                avec une famille japonaise, ou briefer une délégation allemande sur le programme
+                du jour. Ils connaissent Paris sur le bout des doigts et savent s'adapter
+                à chaque culture, parce qu'ils ont été formés pour ça.
               </p>
               <p>
-                Chez Amani, le service ne s'arrête pas au trajet. On anticipe, on conseille,
-                on s'occupe des détails. Vous avez juste à monter dans la voiture.
+                Chez Amani, le service ne s'arrête pas au volant. On anticipe, on conseille,
+                on gère les détails. Vous, vous montez en voiture et vous profitez du trajet.
               </p>
             </div>
 
