@@ -9,12 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tiptap/extension-link": "^3.22.1",
+    "@tiptap/extension-placeholder": "^3.22.1",
+    "@tiptap/pm": "^3.22.1",
+    "@tiptap/react": "^3.22.1",
+    "@tiptap/starter-kit": "^3.22.1",
+    "leaflet": "^1.9.4",
     "next": "^14.2.0",
-    "react": "^18.3.0",
-    "react-dom": "^18.3.0",
     "next-intl": "^3.15.0",
     "nodemailer": "^6.9.14",
-    "leaflet": "^1.9.4",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
     "sharp": "^0.33.0"
   },
   "browserslist": [
@@ -24,13 +29,13 @@
     "edge >= 80"
   ],
   "devDependencies": {
+    "@types/leaflet": "^1.9.8",
     "@types/node": "^20.0.0",
-    "@types/react": "^18.3.0",
-    "tailwindcss": "^3.4.0",
-    "postcss": "^8.4.0",
-    "autoprefixer": "^10.4.0",
-    "typescript": "^5.4.0",
     "@types/nodemailer": "^6.4.14",
-    "@types/leaflet": "^1.9.8"
+    "@types/react": "^18.3.0",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.4.0"
   }
 }
