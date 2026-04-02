@@ -93,3 +93,19 @@ export function listEditedPages(): string[] {
   const all = readSiteContent();
   return Object.keys(all).filter(k => !k.startsWith('_'));
 }
+
+/**
+ * Diagnostic : vérifie que le répertoire data est accessible en écriture
+ */
+export function checkDataDir(): { ok: boolean; path: string; error?: string } {
+  try {
+    ensureDir();
+    // Test d'écriture
+    const testFile = path.join(DATA_DIR, '.write-test');
+    fs.writeFileSync(testFile, 'ok', 'utf-8');
+    fs.unlinkSync(testFile);
+    return { ok: true, path: DATA_DIR };
+  } catch (err: any) {
+    return { ok: false, path: DATA_DIR, error: err?.message || 'Permission refusée' };
+  }
+}

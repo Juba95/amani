@@ -1,9 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { readSiteContent, setPageContent, deletePageContent } from '@/lib/site-content';
+import { readSiteContent, setPageContent, deletePageContent, checkDataDir } from '@/lib/site-content';
 import { PAGE_REGISTRY } from '@/lib/page-registry';
 import { PAGE_DEFAULTS } from '@/lib/page-defaults';
-import fs from 'fs';
-import path from 'path';
 
 function checkAuth(req: NextRequest): 'ok' | 'wrong_password' | 'not_configured' {
   const pwd = process.env.ADMIN_PASSWORD;
@@ -20,23 +18,6 @@ function authError(auth: 'wrong_password' | 'not_configured') {
     );
   }
   return NextResponse.json({ error: 'Mot de passe incorrect' }, { status: 401 });
-}
-
-/** Diagnostic : vérifie que le répertoire data est accessible en écriture */
-function checkDataDir(): { ok: boolean; path: string; error?: string } {
-  const dataDir = process.env.DATA_DIR || path.join(process.cwd(), 'data');
-  try {
-    if (!fs.existsSync(dataDir)) {
-      fs.mkdirSync(dataDir, { recursive: true });
-    }
-    // Test d'écriture
-    const testFile = path.join(dataDir, '.write-test');
-    fs.writeFileSync(testFile, 'ok', 'utf-8');
-    fs.unlinkSync(testFile);
-    return { ok: true, path: dataDir };
-  } catch (err: any) {
-    return { ok: false, path: dataDir, error: err?.message || 'Permission refusée' };
-  }
 }
 
 /**
