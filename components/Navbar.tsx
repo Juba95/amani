@@ -34,6 +34,14 @@ const FR_TO_EN: Record<string, string> = {
   '/contact':                        '/en/contact',
   '/a-propos':                       '/en',
   '/chauffeur-prive-paris':          '/en/private-chauffeur-paris',
+  '/chauffeur-prive-bordeaux':       '/en/private-chauffeur-bordeaux',
+  '/chauffeur-prive-lyon':           '/en/private-chauffeur-paris', // fallback or specific if exists
+  '/chauffeur-prive-nice':           '/en/private-chauffeur-paris',
+  '/chauffeur-prive-cannes':         '/en/private-chauffeur-paris',
+  '/chauffeur-prive-monaco':         '/en/private-chauffeur-paris',
+  '/chauffeur-prive-marseille':      '/en/private-chauffeur-paris',
+  '/chauffeur-prive-saint-tropez':   '/en/private-chauffeur-paris',
+  '/chauffeur-prive-deauville':      '/en/private-chauffeur-paris',
   // Alpes / Haute-Savoie
   '/chauffeur-prive-chamonix':       '/en/chamonix-chauffeur',
   '/chauffeur-prive-megeve':         '/en/megeve-chauffeur',
@@ -55,6 +63,7 @@ const EN_TO_FR: Record<string, string> = {
   '/en/events':                      '/evenements',
   '/en/contact':                     '/contact',
   '/en/private-chauffeur-paris':     '/chauffeur-prive-paris',
+  '/en/private-chauffeur-bordeaux':  '/chauffeur-prive-bordeaux',
   // Alpes / Haute-Savoie
   '/en/chamonix-chauffeur':          '/chauffeur-prive-chamonix',
   '/en/megeve-chauffeur':            '/chauffeur-prive-megeve',
@@ -107,6 +116,8 @@ function getServicesMenu(locale: Locale, homePrefix: string): DropdownItem[] {
     { label: 'Longue distance',       href: '/longue-distance' },
     { label: 'Convoi délégations',    href: '/convoi-delegations' },
     { label: 'Sécurité rapprochée',   href: '/securite-rapprochee' },
+    { label: 'Garde du corps',        href: '/garde-du-corps' },
+    { label: 'Taxi moto',             href: '/taxi-moto' },
   ];
 }
 
@@ -129,6 +140,7 @@ function getEventsMenu(locale: Locale): DropdownItem[] {
     { label: 'Grand Prix Monaco',       href: '/evenements/grand-prix-monaco' },
     { label: 'Salons professionnels',   href: '/evenements/salons-professionnels' },
     { label: 'Hippodrome Deauville',    href: '/evenements/hippodrome-deauville' },
+    { label: 'Mariage',                 href: '/chauffeur-mariage' },
   ];
 }
 
@@ -158,21 +170,24 @@ function getSpeakerMenu(locale: Locale): DropdownItem[] {
 function getDestinationsMenu(locale: Locale): DropdownItem[] {
   if (locale === 'en') return [
     { label: 'Private chauffeur Paris',  href: '/en/private-chauffeur-paris' },
+    { label: 'Bordeaux chauffeur',       href: '/en/private-chauffeur-bordeaux' },
     { label: 'Chamonix chauffeur',       href: '/en/chamonix-chauffeur' },
     { label: 'Megève chauffeur',         href: '/en/megeve-chauffeur' },
     { label: 'Haute-Savoie chauffeur',   href: '/en/haute-savoie-chauffeur' },
-    { label: 'Bordeaux chauffeur',       href: '/en/private-chauffeur-bordeaux' },
     { label: 'CDG → Paris transfers',    href: '/en/cdg-airport-transfer' },
     { label: 'Economical airport transfer', href: '/en/economical-airport-transfer' },
   ];
   return [
     { label: 'Chauffeur privé Paris',     href: '/chauffeur-prive-paris' },
+    { label: 'Chauffeur privé Bordeaux',  href: '/chauffeur-prive-bordeaux' },
+    { label: 'Chauffeur privé Lyon',      href: '/chauffeur-prive-lyon' },
+    { label: 'Nice, Cannes, Monaco',      href: '/chauffeur-prive-nice' },
+    { label: 'Marseille, St-Tropez',      href: '/chauffeur-prive-marseille' },
     { label: 'Chauffeur privé Chamonix',  href: '/chauffeur-prive-chamonix' },
     { label: 'Chauffeur privé Megève',    href: '/chauffeur-prive-megeve' },
-    { label: 'Chauffeur privé Haute-Savoie', href: '/chauffeur-prive-haute-savoie' },
-    { label: 'Transfert Beauvais',        href: '/transfert-aeroport-beauvais' },
     { label: 'Transfert CDG → Paris',     href: '/transfert-cdg-paris' },
-    { label: 'Transfert prix fixe',       href: '/transfert-aeroport-economique' },
+    { label: 'Transfert Orly → Paris',    href: '/transfert-orly-paris' },
+    { label: 'Transfert Beauvais',        href: '/transfert-aeroport-beauvais' },
   ];
 }
 

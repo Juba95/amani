@@ -6,9 +6,11 @@ import Link from 'next/link';
 const FOOTER_LINKS_FR: Record<string, { label: string; href: string }[]> = {
   col1: [
     { label: 'Chauffeur privé Paris',        href: '/' },
+    { label: 'Chauffeur privé Bordeaux',     href: '/chauffeur-prive-bordeaux' },
+    { label: 'Chauffeur privé Lyon',         href: '/chauffeur-prive-lyon' },
+    { label: 'Chauffeur privé Nice',         href: '/chauffeur-prive-nice' },
     { label: 'Transfert aéroport CDG',       href: '/transfert-aeroport-cdg' },
     { label: 'Transfert aéroport Orly',      href: '/transfert-aeroport-orly' },
-    { label: 'Transfert Le Bourget',         href: '/transfert-le-bourget' },
   ],
   col2: [
     { label: 'Mise à disposition',           href: '/mise-a-disposition' },
@@ -16,9 +18,10 @@ const FOOTER_LINKS_FR: Record<string, { label: string; href: string }[]> = {
     { label: 'Meet and Greet',               href: '/meet-and-greet' },
     { label: 'Convoi & délégations',         href: '/convoi-delegations' },
     { label: 'Sécurité rapprochée',          href: '/securite-rapprochee' },
-    { label: 'Excursion privée',             href: '/excursion-privee' },
-    { label: 'Longue distance',              href: '/longue-distance' },
+    { label: 'Garde du corps',               href: '/garde-du-corps' },
+    { label: 'Taxi moto',                    href: '/taxi-moto' },
   ],
+
   col3: [
     { label: 'Paris Fashion Week',           href: '/evenements/paris-fashion-week' },
     { label: 'Paris Air Show',               href: '/evenements/paris-air-show' },

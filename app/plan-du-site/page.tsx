@@ -66,7 +66,7 @@ const sections: SitemapSection[] = [
     ],
   },
   {
-    title: 'Chauffeur privé — Destinations',
+    title: 'Chauffeur privé — Villes',
     links: [
       { label: 'Chauffeur privé Paris', href: '/chauffeur-prive-paris' },
       { label: 'Chauffeur privé Bordeaux', href: '/chauffeur-prive-bordeaux' },
@@ -83,15 +83,23 @@ const sections: SitemapSection[] = [
     ],
   },
   {
-    title: 'Mariages & occasions',
+    title: 'Chauffeur polyglotte',
     links: [
-      { label: 'Chauffeur mariage', href: '/chauffeur-mariage' },
-      { label: 'Chauffeur mariage Paris', href: '/chauffeur-mariage-paris' },
+      { label: 'Chauffeur Anglophone', href: '/chauffeur-anglophone' },
+      { label: 'Chauffeur Arabophone', href: '/chauffeur-arabophone' },
+      { label: 'Chauffeur Hispanophone', href: '/chauffeur-hispanophone' },
+      { label: 'Chauffeur Germanophone', href: '/chauffeur-germanophone' },
+      { label: 'Chauffeur Mandarin', href: '/chauffeur-mandarin' },
+      { label: 'Chauffeur Coréen', href: '/chauffeur-coreen' },
+      { label: 'Chauffeur Japonais', href: '/chauffeur-japonais' },
+      { label: 'Chauffeur Russophone', href: '/chauffeur-russophone' },
     ],
   },
   {
-    title: 'Événements',
+    title: 'Mariages & Événements',
     links: [
+      { label: 'Chauffeur mariage', href: '/chauffeur-mariage' },
+      { label: 'Chauffeur mariage Paris', href: '/chauffeur-mariage-paris' },
       { label: 'Événements', href: '/evenements' },
       { label: 'Paris Fashion Week', href: '/evenements/paris-fashion-week' },
       { label: 'Chauffeur Fashion Week', href: '/chauffeur-fashion-week' },
