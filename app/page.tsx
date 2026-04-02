@@ -126,11 +126,11 @@ function AboutSection() {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-lg" style={{ aspectRatio: '4/5' }}>
               <Image
-                src="/lounes-about.png"
+                src="/lounes-about.jpg"
                 alt="Lounes — Fondateur d'Amani Limousines, chauffeur privé parlant 8 langues"
                 fill
                 sizes="(max-width: 1024px) 100vw, 500px"
-                className="object-contain"
+                className="object-cover"
                 quality={80}
               />
             </div>

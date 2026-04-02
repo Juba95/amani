@@ -111,11 +111,11 @@ export default function AProposPage() {
             </div>
             <div className="mt-8 md:mt-0 md:w-72 lg:w-80 shrink-0 flex justify-center">
               <Image
-                src="/lounes-about.png"
+                src="/lounes-about.jpg"
                 alt="Chauffeur privé Amani Limousines"
                 width={320}
                 height={400}
-                className="rounded-2xl object-contain"
+                className="rounded-2xl object-cover"
                 priority={false}
               />
             </div>
