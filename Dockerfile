@@ -38,13 +38,15 @@ COPY --from=builder /app/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
-# Répertoire de données persistant pour les contacts (volume Coolify : /app/data)
-# Doit être créé AVANT USER nextjs pour que l'utilisateur non-root puisse y écrire
+# Sharp pour l'optimisation d'images en mode standalone
+COPY --from=builder /app/node_modules/sharp ./node_modules/sharp
+COPY --from=builder /app/node_modules/@img ./node_modules/@img
+
+# Répertoire de données persistant (volume Coolify : /app/data)
 RUN mkdir -p /app/data && chown -R nextjs:nodejs /app/data
 
 USER nextjs
 
 EXPOSE 3000
 
-# Démarre le serveur standalone (pas besoin de node_modules)
 CMD ["node", "server.js"]
