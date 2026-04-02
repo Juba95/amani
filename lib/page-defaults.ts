@@ -11,6 +11,10 @@ export const PAGE_DEFAULTS: Record<string, Record<string, string>> = {
     meta_description: "Amani Limousines, service de chauffeur privé de prestige à Paris. Notre histoire, nos valeurs, notre flotte de 300+ véhicules. Ambassades, palaces, aviation privée.",
     h1: 'Amani Limousines — service de chauffeur privé de prestige à Paris',
     intro: "Amani Limousines est un prestataire de transport de prestige basé à Paris, spécialisé dans le service aux ambassades, aux États étrangers, aux family offices, aux palaces parisiens et à l'aviation privée. Nous opérons 24 heures sur 24, 365 jours par an, avec une flotte de plus de 300 véhicules de moins de trois ans.",
+    chauffeurs_h2: 'Des chauffeurs privés qui parlent votre langue',
+    chauffeurs_p1: "Quand votre chauffeur parle votre langue, le trajet change complètement. Ce n'est plus juste un déplacement — vous pouvez échanger, poser des questions, vous faire comprendre sans effort.",
+    chauffeurs_p2: "Nos chauffeurs parlent plus de 10 langues. Concrètement, ça veut dire accueillir des hommes d'affaires saoudiens à Roissy en arabe, discuter d'un itinéraire avec une famille japonaise, ou briefer une délégation allemande sur le programme du jour. Ils connaissent Paris sur le bout des doigts et savent s'adapter à chaque culture, parce qu'ils ont été formés pour ça.",
+    chauffeurs_p3: "Chez Amani, le service ne s'arrête pas au volant. On anticipe, on conseille, on gère les détails. Vous, vous montez en voiture et vous profitez du trajet.",
   },
   'chauffeur-anglophone': {
     meta_title: 'Chauffeur Anglophone Paris — Chauffeur Privé Parlant Anglais | Amani Limousines',

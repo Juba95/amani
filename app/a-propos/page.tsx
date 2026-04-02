@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import SEOLayout from '@/components/SEOLayout';
 import { content, contentMetadata } from '@/lib/get-content';
 
@@ -90,23 +91,35 @@ export default function AProposPage() {
         </div>
       </section>
 
-      {/* Chauffeurs */}
+      {/* Chauffeurs multilingues */}
       <section className="py-14 px-6 md:px-10 bg-warm-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Nos chauffeurs</h2>
-          <p className="sf text-stone-600 mt-4 leading-relaxed">
-            Chaque chauffeur Amani est titulaire de la carte professionnelle VTC délivrée par
-            le Registre des Voitures de Tourisme avec Chauffeur. Ils sont sélectionnés sur leur
-            connaissance de Paris et de l'Île-de-France, leur maîtrise de l'anglais, leur
-            présentation et leur discrétion. La plupart parlent deux ou trois langues.
-          </p>
-          <p className="sf text-stone-600 mt-4 leading-relaxed">
-            Nos chauffeurs ne sont pas des sous-traitants de plateformes. Ce sont des
-            professionnels qui connaissent nos standards de service, nos clients réguliers
-            et nos protocoles pour les missions sensibles. Un chauffeur Amani sait comment
-            se comporter chez un chef d'État étranger, dans un palace parisien ou sur le
-            tarmac d'un aéroport d'aviation privée.
-          </p>
+          <div className="md:flex md:items-start md:gap-10">
+            <div className="md:flex-1">
+              <h2 className="heading">
+                {c('chauffeurs_h2', 'Des chauffeurs privés qui parlent votre langue')}
+              </h2>
+              <p className="sf text-stone-600 mt-4 leading-relaxed">
+                {c('chauffeurs_p1', "Quand votre chauffeur parle votre langue, le trajet change complètement. Ce n'est plus juste un déplacement — vous pouvez échanger, poser des questions, vous faire comprendre sans effort.")}
+              </p>
+              <p className="sf text-stone-600 mt-4 leading-relaxed">
+                {c('chauffeurs_p2', "Nos chauffeurs parlent plus de 10 langues. Concrètement, ça veut dire accueillir des hommes d'affaires saoudiens à Roissy en arabe, discuter d'un itinéraire avec une famille japonaise, ou briefer une délégation allemande sur le programme du jour. Ils connaissent Paris sur le bout des doigts et savent s'adapter à chaque culture, parce qu'ils ont été formés pour ça.")}
+              </p>
+              <p className="sf text-stone-600 mt-4 leading-relaxed">
+                {c('chauffeurs_p3', "Chez Amani, le service ne s'arrête pas au volant. On anticipe, on conseille, on gère les détails. Vous, vous montez en voiture et vous profitez du trajet.")}
+              </p>
+            </div>
+            <div className="mt-8 md:mt-0 md:w-72 lg:w-80 shrink-0 flex justify-center">
+              <Image
+                src="/lounes-about.png"
+                alt="Chauffeur privé Amani Limousines"
+                width={320}
+                height={400}
+                className="rounded-2xl object-contain"
+                priority={false}
+              />
+            </div>
+          </div>
         </div>
       </section>
     </SEOLayout>
