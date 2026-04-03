@@ -1,7 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { revalidatePath } from 'next/cache';
 import { readSiteContent, setPageContent, deletePageContent, checkDataDir } from '@/lib/site-content';
 import { PAGE_REGISTRY } from '@/lib/page-registry';
 import { PAGE_DEFAULTS } from '@/lib/page-defaults';
+
+function slugToPath(slug: string): string {
+  if (slug === 'accueil') return '/';
+  if (slug === '_global') return '/'; // _global affecte toutes les pages
+  return `/${slug}`;
+}
 
 function checkAuth(req: NextRequest): 'ok' | 'wrong_password' | 'not_configured' {
   const pwd = process.env.ADMIN_PASSWORD;
@@ -79,10 +86,17 @@ export async function PUT(req: NextRequest) {
     }
 
     if (Object.keys(cleaned).length === 0) {
-      // Si tout est vide, supprimer les overrides
       deletePageContent(slug);
     } else {
       setPageContent(slug, cleaned);
+    }
+
+    // Régénérer la page sur le site live
+    const path = slugToPath(slug);
+    if (slug === '_global') {
+      revalidatePath('/', 'layout'); // régénère tout le site
+    } else {
+      revalidatePath(path);
     }
 
     return NextResponse.json({ success: true, slug, fieldsCount: Object.keys(cleaned).length });
@@ -105,6 +119,13 @@ export async function DELETE(req: NextRequest) {
     const { slug } = await req.json();
     if (!slug) return NextResponse.json({ error: 'slug requis' }, { status: 400 });
     deletePageContent(slug);
+
+    if (slug === '_global') {
+      revalidatePath('/', 'layout');
+    } else {
+      revalidatePath(slugToPath(slug));
+    }
+
     return NextResponse.json({ success: true });
   } catch (err: any) {
     console.error('[adminos/pages DELETE] Error:', err);
