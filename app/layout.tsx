@@ -2,9 +2,6 @@ import type { Metadata } from 'next';
 import { DM_Serif_Display, Inter } from 'next/font/google';
 import '../styles/globals.css';
 
-// Permet la régénération à la demande via revalidatePath (backoffice)
-// Fallback : les pages se régénèrent au maximum toutes les 24h
-export const revalidate = 86400;
 
 const dmSerif = DM_Serif_Display({
   subsets: ['latin'],
