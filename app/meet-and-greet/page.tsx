@@ -24,7 +24,7 @@ export default function MeetAndGreetPage() {
       {/* Hero */}
       <section className="pt-36 pb-16 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
-          <p className="tag">Accueil VIP aéroport</p>
+          <p className="tag">{c('tag', 'Accueil VIP aéroport')}</p>
           <h1 className="heading mt-3">
             {c('h1', 'Service Meet and Greet Paris — l\'accueil qui fait la différence')}
           </h1>
@@ -37,24 +37,24 @@ export default function MeetAndGreetPage() {
       {/* Détail du service */}
       <section className="py-14 px-6 md:px-10 bg-warm-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Ce que comprend le Meet & Greet</h2>
+          <h2 className="heading">{c('section_1_title', 'Ce que comprend le Meet & Greet')}</h2>
           <div className="mt-8 grid md:grid-cols-2 gap-8">
             {[
               {
-                titre: 'Accueil nominatif',
-                desc: 'L\'assistant est positionné après les portiques de douane avec une pancarte au nom de votre passager, visible dès la sortie du couloir d\'arrivée.',
+                titre: c('item_1_title', 'Accueil nominatif'),
+                desc: c('item_1_text', "L'assistant est positionné après les portiques de douane avec une pancarte au nom de votre passager, visible dès la sortie du couloir d'arrivée."),
               },
               {
-                titre: 'Assistance bagages',
-                desc: 'Prise en charge des bagages dès la sortie du tapis roulant. L\'assistant porte ou accompagne les valises jusqu\'au véhicule.',
+                titre: c('item_2_title', 'Assistance bagages'),
+                desc: c('item_2_text', "Prise en charge des bagages dès la sortie du tapis roulant. L'assistant porte ou accompagne les valises jusqu'au véhicule."),
               },
               {
-                titre: 'Liaison vers le véhicule',
-                desc: 'Accompagnement jusqu\'à la Mercedes ou au van VIP stationné dans la zone réservée la plus proche du terminal.',
+                titre: c('item_3_title', 'Liaison vers le véhicule'),
+                desc: c('item_3_text', "Accompagnement jusqu'à la Mercedes ou au van VIP stationné dans la zone réservée la plus proche du terminal."),
               },
               {
-                titre: 'Option Fast Track',
-                desc: 'À CDG et Orly, une option Fast Track permet de traverser les contrôles de sécurité en file prioritaire lors des départs — utile pour les passagers avec peu de temps.',
+                titre: c('item_4_title', 'Option Fast Track'),
+                desc: c('item_4_text', 'À CDG et Orly, une option Fast Track permet de traverser les contrôles de sécurité en file prioritaire lors des départs — utile pour les passagers avec peu de temps.'),
               },
             ].map((item) => (
               <div key={item.titre} className="card">
@@ -69,19 +69,12 @@ export default function MeetAndGreetPage() {
       {/* Pour qui */}
       <section className="py-14 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Pour qui ce service est-il fait ?</h2>
+          <h2 className="heading">{c('section_2_title', 'Pour qui ce service est-il fait ?')}</h2>
           <p className="sf text-stone-600 mt-4 leading-relaxed">
-            Le <strong>Meet and Greet aéroport Paris</strong> est particulièrement apprécié des
-            clients des grands palaces parisiens qui souhaitent que leurs hôtes soient pris en
-            charge dès la sortie de l'avion, des agences de voyage haut de gamme qui gèrent des
-            voyages sur mesure, des familles avec enfants ou personnes âgées pour qui l'aéroport
-            peut être déstabilisant, et des délégations officielles dont le temps est compté entre
-            chaque rendez-vous protocolaire.
+            {c('section_2_text', "Le Meet and Greet aéroport Paris est particulièrement apprécié des clients des grands palaces parisiens qui souhaitent que leurs hôtes soient pris en charge dès la sortie de l'avion, des agences de voyage haut de gamme qui gèrent des voyages sur mesure, des familles avec enfants ou personnes âgées pour qui l'aéroport peut être déstabilisant, et des délégations officielles dont le temps est compté entre chaque rendez-vous protocolaire.")}
           </p>
           <p className="sf text-stone-600 mt-4 leading-relaxed">
-            Ce service est disponible à Charles de Gaulle (tous terminaux), Orly (terminaux 1 à 4)
-            et au Bourget. À CDG, il est possible de positionner l'assistant dans l'espace "attente"
-            côté arrivées internationales, entre la sortie douane et le hall public.
+            {c('section_2_text_2', "Ce service est disponible à Charles de Gaulle (tous terminaux), Orly (terminaux 1 à 4) et au Bourget. À CDG, il est possible de positionner l'assistant dans l'espace \"attente\" côté arrivées internationales, entre la sortie douane et le hall public.")}
           </p>
         </div>
       </section>

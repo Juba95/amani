@@ -24,7 +24,7 @@ export default function ConvoiDelegationsPage() {
       {/* Hero */}
       <section className="pt-36 pb-16 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
-          <p className="tag">Convoi & délégations officielles</p>
+          <p className="tag">{c('tag', 'Convoi & délégations officielles')}</p>
           <h1 className="heading mt-3">
             {c('h1', 'Convoi de véhicules et transport de délégation à Paris — coordination sans faille')}
           </h1>
@@ -37,18 +37,12 @@ export default function ConvoiDelegationsPage() {
       {/* Organisation */}
       <section className="py-14 px-6 md:px-10 bg-warm-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Organisation d'un convoi</h2>
+          <h2 className="heading">{c('section_1_title', "Organisation d'un convoi")}</h2>
           <p className="sf text-stone-600 mt-4 leading-relaxed">
-            La préparation d'un <strong>convoi de véhicules Paris</strong> commence par la collecte
-            des informations logistiques : nombre de passagers, rang protocolaire (qui va dans
-            quelle voiture), les adresses successives avec les horaires contraints, et les éventuelles
-            fenêtres de sécurité imposées par les services de protection.
+            {c('section_1_text', "La préparation d'un convoi de véhicules Paris commence par la collecte des informations logistiques : nombre de passagers, rang protocolaire (qui va dans quelle voiture), les adresses successives avec les horaires contraints, et les éventuelles fenêtres de sécurité imposées par les services de protection.")}
           </p>
           <p className="sf text-stone-600 mt-4 leading-relaxed">
-            Le jour J, chaque chauffeur dispose d'une feuille de route détaillée. Un coordinateur
-            pilote l'ensemble du convoi en temps réel, anticipe les bouchons grâce aux données de
-            circulation, et réorganise les itinéraires si nécessaire. Les chauffeurs sont en
-            communication radio permanente, pas simplement en contact téléphonique.
+            {c('section_1_text_2', "Le jour J, chaque chauffeur dispose d'une feuille de route détaillée. Un coordinateur pilote l'ensemble du convoi en temps réel, anticipe les bouchons grâce aux données de circulation, et réorganise les itinéraires si nécessaire. Les chauffeurs sont en communication radio permanente, pas simplement en contact téléphonique.")}
           </p>
         </div>
       </section>
@@ -57,21 +51,15 @@ export default function ConvoiDelegationsPage() {
       <section className="py-14 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-10">
           <div>
-            <h2 className="heading">Missions diplomatiques</h2>
+            <h2 className="heading">{c('section_2_title', 'Missions diplomatiques')}</h2>
             <p className="sf text-stone-600 mt-4 leading-relaxed">
-              Nous travaillons régulièrement avec des ambassades, consulats et représentations
-              permanentes à Paris. Pour les visites officielles, les véhicules sont préparés
-              selon les protocoles demandés par les équipes de sécurité : vitres teintées,
-              communications isolées, itinéraires validés à l'avance par les services de l'État.
+              {c('section_2_text', "Nous travaillons régulièrement avec des ambassades, consulats et représentations permanentes à Paris. Pour les visites officielles, les véhicules sont préparés selon les protocoles demandés par les équipes de sécurité : vitres teintées, communications isolées, itinéraires validés à l'avance par les services de l'État.")}
             </p>
           </div>
           <div>
-            <h2 className="heading">Événements d'entreprise</h2>
+            <h2 className="heading">{c('section_3_title', "Événements d'entreprise")}</h2>
             <p className="sf text-stone-600 mt-4 leading-relaxed">
-              Pour les séminaires, les assemblées générales et les journées de délégations
-              corporate, nous organisons la logistique transport de A à Z : navettes hôtel–lieu
-              d'événement, transferts aéroport pour les délégations entrantes, voitures de
-              représentation pour les intervenants.
+              {c('section_3_text', "Pour les séminaires, les assemblées générales et les journées de délégations corporate, nous organisons la logistique transport de A à Z : navettes hôtel–lieu d'événement, transferts aéroport pour les délégations entrantes, voitures de représentation pour les intervenants.")}
             </p>
           </div>
         </div>
@@ -80,13 +68,9 @@ export default function ConvoiDelegationsPage() {
       {/* Flotte */}
       <section className="py-14 px-6 md:px-10 bg-warm-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Une flotte pour tous les rangs</h2>
+          <h2 className="heading">{c('section_4_title', 'Une flotte pour tous les rangs')}</h2>
           <p className="sf text-stone-600 mt-4 leading-relaxed">
-            Un convoi peut mêler différentes catégories de véhicules selon le rang des passagers.
-            La délégation principale voyage en Mercedes Classe S ou BMW i7, les conseillers
-            en Classe E, et les bagages ou l'équipement en Classe V ou Sprinter. La coordination
-            visuelle du convoi — tous les véhicules de la même marque et couleur — est soignable
-            sur demande.
+            {c('section_4_text', "Un convoi peut mêler différentes catégories de véhicules selon le rang des passagers. La délégation principale voyage en Mercedes Classe S ou BMW i7, les conseillers en Classe E, et les bagages ou l'équipement en Classe V ou Sprinter. La coordination visuelle du convoi — tous les véhicules de la même marque et couleur — est soignable sur demande.")}
           </p>
         </div>
       </section>

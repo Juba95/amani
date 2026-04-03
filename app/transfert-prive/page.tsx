@@ -24,7 +24,7 @@ export default function TransfertPrivePage() {
       {/* Hero */}
       <section className="pt-36 pb-16 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
-          <p className="tag">Transfert point à point</p>
+          <p className="tag">{c('tag', 'Transfert point à point')}</p>
           <h1 className="heading mt-3">
             {c('h1', 'Transfert privé à Paris — prix fixe garanti, porte à porte')}
           </h1>
@@ -37,14 +37,9 @@ export default function TransfertPrivePage() {
       {/* Prix fixe */}
       <section className="py-14 px-6 md:px-10 bg-warm-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Pourquoi le prix fixe change tout</h2>
+          <h2 className="heading">{c('section_1_title', 'Pourquoi le prix fixe change tout')}</h2>
           <p className="sf text-stone-600 mt-4 leading-relaxed">
-            Un taxi parisien à compteur peut varier du simple au double selon l'heure et les
-            conditions de circulation. Une course CDG–Paris facturée 65 € un mardi à 14h peut
-            coûter 110 € un vendredi à 18h. En choisissant un <strong>transfert privé à Paris</strong>
-            avec prix fixe, vous savez exactement ce que vous déboursez avant même que votre vol ne
-            décole. C'est particulièrement utile pour les notes de frais, les devis client et les
-            budgets de délégation.
+            {c('section_1_text', "Un taxi parisien à compteur peut varier du simple au double selon l'heure et les conditions de circulation. Une course CDG–Paris facturée 65 € un mardi à 14h peut coûter 110 € un vendredi à 18h. En choisissant un transfert privé à Paris avec prix fixe, vous savez exactement ce que vous déboursez avant même que votre vol ne décole. C'est particulièrement utile pour les notes de frais, les devis client et les budgets de délégation.")}
           </p>
         </div>
       </section>
@@ -52,15 +47,15 @@ export default function TransfertPrivePage() {
       {/* Couverture géographique */}
       <section className="py-14 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Toute l'Île-de-France couverte</h2>
+          <h2 className="heading">{c('section_2_title', "Toute l'Île-de-France couverte")}</h2>
           <div className="mt-6 grid md:grid-cols-2 gap-6">
             {[
-              { cat: 'Aéroports', lieux: 'CDG, Orly, Le Bourget' },
-              { cat: 'Gares', lieux: 'Gare du Nord, Gare de Lyon, Gare de l\'Est, Montparnasse' },
-              { cat: 'Palaces & Hôtels', lieux: 'Le Meurice, Ritz, George V, Plaza Athénée, Bristol, Shangri-La' },
-              { cat: 'Quartiers d\'affaires', lieux: 'La Défense, Boulogne, Issy-les-Moulineaux, Levallois' },
-              { cat: 'Événements', lieux: 'Palais des Congrès, Carrousel du Louvre, Versailles, Stade de France' },
-              { cat: 'Adresses personnalisées', lieux: 'Domicile, cabinet, siège social, résidence privée' },
+              { cat: c('item_1_title', 'Aéroports'), lieux: c('item_1_text', 'CDG, Orly, Le Bourget') },
+              { cat: c('item_2_title', 'Gares'), lieux: c('item_2_text', "Gare du Nord, Gare de Lyon, Gare de l'Est, Montparnasse") },
+              { cat: c('item_3_title', 'Palaces & Hôtels'), lieux: c('item_3_text', 'Le Meurice, Ritz, George V, Plaza Athénée, Bristol, Shangri-La') },
+              { cat: c('item_4_title', "Quartiers d'affaires"), lieux: c('item_4_text', 'La Défense, Boulogne, Issy-les-Moulineaux, Levallois') },
+              { cat: c('item_5_title', 'Événements'), lieux: c('item_5_text', 'Palais des Congrès, Carrousel du Louvre, Versailles, Stade de France') },
+              { cat: c('item_6_title', 'Adresses personnalisées'), lieux: c('item_6_text', 'Domicile, cabinet, siège social, résidence privée') },
             ].map((item) => (
               <div key={item.cat} className="card">
                 <p className="sf text-xs text-stone-400 uppercase tracking-wider">{item.cat}</p>
@@ -74,18 +69,12 @@ export default function TransfertPrivePage() {
       {/* Réservation */}
       <section className="py-14 px-6 md:px-10 bg-warm-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Réserver votre <em>transfert privé Paris</em></h2>
+          <h2 className="heading">{c('section_3_title', 'Réserver votre transfert privé Paris')}</h2>
           <p className="sf text-stone-600 mt-4 leading-relaxed">
-            La réservation se fait par téléphone, WhatsApp ou via notre formulaire en ligne.
-            Indiquez votre point de départ, votre destination, la date, l'heure et le nombre
-            de passagers et de bagages. Vous recevez une confirmation avec le nom et le numéro
-            du chauffeur dans l'heure. La veille, une confirmation automatique vous rappelle
-            les détails de la course.
+            {c('section_3_text', "La réservation se fait par téléphone, WhatsApp ou via notre formulaire en ligne. Indiquez votre point de départ, votre destination, la date, l'heure et le nombre de passagers et de bagages. Vous recevez une confirmation avec le nom et le numéro du chauffeur dans l'heure. La veille, une confirmation automatique vous rappelle les détails de la course.")}
           </p>
           <p className="sf text-stone-600 mt-4 leading-relaxed">
-            Pour les transferts vers un aéroport, nous conseillons de communiquer le numéro de
-            vol afin que notre équipe puisse surveiller d'éventuels changements d'horaire et
-            adapter la prise en charge en conséquence.
+            {c('section_3_text_2', "Pour les transferts vers un aéroport, nous conseillons de communiquer le numéro de vol afin que notre équipe puisse surveiller d'éventuels changements d'horaire et adapter la prise en charge en conséquence.")}
           </p>
         </div>
       </section>

@@ -18,7 +18,7 @@ export default function RolandGarrosPage() {
       {/* Hero */}
       <section className="pt-36 pb-16 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
-          <p className="tag">Événement — Mai & Juin</p>
+          <p className="tag">{c('tag', 'Événement — Mai & Juin')}</p>
           <h1 className="heading mt-3">
             {c('h1', 'Chauffeur privé Roland Garros Paris — transferts et hospitalités VIP')}
           </h1>
@@ -31,13 +31,9 @@ export default function RolandGarrosPage() {
       {/* Accès */}
       <section className="py-14 px-6 md:px-10 bg-warm-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Accès Porte d'Auteuil — ce qu'il faut savoir</h2>
+          <h2 className="heading">{c('section_1_title', "Accès Porte d'Auteuil — ce qu'il faut savoir")}</h2>
           <p className="sf text-stone-600 mt-4 leading-relaxed">
-            L'accès en voiture aux abords de Roland Garros est fortement restreint pendant le
-            tournoi. Les zones de dépose sont limitées aux véhicules autorisés. Nos chauffeurs
-            connaissent les créneaux de circulation, les voies de service réservées aux
-            hospitalités corporate et les emplacements où le stationnement d'attente est toléré.
-            Vous descendez à deux pas de l'entrée VIP, sans longer des parkings bondés.
+            {c('section_1_text', "L'accès en voiture aux abords de Roland Garros est fortement restreint pendant le tournoi. Les zones de dépose sont limitées aux véhicules autorisés. Nos chauffeurs connaissent les créneaux de circulation, les voies de service réservées aux hospitalités corporate et les emplacements où le stationnement d'attente est toléré. Vous descendez à deux pas de l'entrée VIP, sans longer des parkings bondés.")}
           </p>
         </div>
       </section>
@@ -46,21 +42,15 @@ export default function RolandGarrosPage() {
       <section className="py-14 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-10">
           <div>
-            <h2 className="heading">Loges et hospitalités corporate</h2>
+            <h2 className="heading">{c('section_2_title', 'Loges et hospitalités corporate')}</h2>
             <p className="sf text-stone-600 mt-4 leading-relaxed">
-              Si votre entreprise dispose d'une loge à Roland Garros, vous pouvez confier
-              la logistique transport de vos invités à Amani Limousines. Nous gérons les
-              navettes depuis les hôtels parisiens, les transferts CDG et Orly pour les
-              invités en déplacement, et les retours en fin de soirée après les matchs et dîners.
+              {c('section_2_text', "Si votre entreprise dispose d'une loge à Roland Garros, vous pouvez confier la logistique transport de vos invités à Amani Limousines. Nous gérons les navettes depuis les hôtels parisiens, les transferts CDG et Orly pour les invités en déplacement, et les retours en fin de soirée après les matchs et dîners.")}
             </p>
           </div>
           <div>
-            <h2 className="heading">Mise à disposition à la journée</h2>
+            <h2 className="heading">{c('section_3_title', 'Mise à disposition à la journée')}</h2>
             <p className="sf text-stone-600 mt-4 leading-relaxed">
-              Pour les journées qui combinent une session à Roland Garros et d'autres
-              rendez-vous sur Paris, la mise à disposition est la formule la plus adaptée.
-              Votre chauffeur vous attend entre les parties, gère les déplacements
-              complémentaires et ramène vos invités à leur hôtel en fin de soirée.
+              {c('section_3_text', "Pour les journées qui combinent une session à Roland Garros et d'autres rendez-vous sur Paris, la mise à disposition est la formule la plus adaptée. Votre chauffeur vous attend entre les parties, gère les déplacements complémentaires et ramène vos invités à leur hôtel en fin de soirée.")}
             </p>
           </div>
         </div>

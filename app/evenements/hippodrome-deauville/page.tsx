@@ -23,7 +23,7 @@ export default function HippodromeDeauvillePage() {
       {/* Hero */}
       <section className="pt-36 pb-16 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
-          <p className="tag">Événement — Calvados, Normandie</p>
+          <p className="tag">{c('tag', 'Événement — Calvados, Normandie')}</p>
           <h1 className="heading mt-3">
             {c('h1', 'Chauffeur privé pour l\'hippodrome de Deauville — Paris–Deauville en 2h30')}
           </h1>
@@ -36,16 +36,9 @@ export default function HippodromeDeauvillePage() {
       {/* Saison hippique */}
       <section className="py-14 px-6 md:px-10 bg-warm-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">La saison hippique à Deauville</h2>
+          <h2 className="heading">{c('section_1_title', 'La saison hippique à Deauville')}</h2>
           <p className="sf text-stone-600 mt-4 leading-relaxed">
-            L'année s'organise autour de trois événements majeurs. Le Prix de Diane Longines, disputé
-            à Chantilly en juin, attire les éleveurs et les parieurs qui continuent ensuite vers Deauville.
-            En août, les Arqana Yearling Sales transforment l'hippodrome en marché international. Les
-            yearlings proviennent de studs français, mais aussi d'Irlande, d'Arabie saoudite, du Japon
-            et de Nouvelle-Zélande. La clientèle est extrêmement internationale : beaucoup débarquent
-            à Paris ou à Deauville-Normandie Airport pour deux ou trois jours de ventes. Enfin, le Grand
-            Prix de Deauville, disputé à la fin août, ramène les plus beaux chevaux de la saison sur
-            la ligne droite normande.
+            {c('section_1_text', "L'année s'organise autour de trois événements majeurs. Le Prix de Diane Longines, disputé à Chantilly en juin, attire les éleveurs et les parieurs qui continuent ensuite vers Deauville. En août, les Arqana Yearling Sales transforment l'hippodrome en marché international. Les yearlings proviennent de studs français, mais aussi d'Irlande, d'Arabie saoudite, du Japon et de Nouvelle-Zélande. La clientèle est extrêmement internationale : beaucoup débarquent à Paris ou à Deauville-Normandie Airport pour deux ou trois jours de ventes. Enfin, le Grand Prix de Deauville, disputé à la fin août, ramène les plus beaux chevaux de la saison sur la ligne droite normande.")}
           </p>
         </div>
       </section>
@@ -53,16 +46,9 @@ export default function HippodromeDeauvillePage() {
       {/* Transfert Paris Deauville */}
       <section className="py-14 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Transfert Paris–Deauville</h2>
+          <h2 className="heading">{c('section_2_title', 'Transfert Paris–Deauville')}</h2>
           <p className="sf text-stone-600 mt-4 leading-relaxed">
-            Le trajet fait 200 kilomètres en deux heures trente environ par l'A13 via Caen, sans
-            compter le trafic week-end d'août qui peut ajouter vingt à trente minutes. Le chauffeur
-            connaît les variantes : traversée de Rouen, itinéraires par Honfleur. Vous pouvez choisir
-            deux formules. Le chauffeur vous attend à l'hippodrome et vous ramène à l'heure fixée,
-            c'est la mise à disposition à la journée. Ou il vous dépose le matin et revient vous chercher
-            le soir à horaire convenu — c'est plus économe pour les trajets aller-retour rapides.
-            Tarifs à partir de 180 euros l'aller simple en Classe E. Trajet coupé en deux jours possible
-            avec une nuit à Deauville ou Trouville.
+            {c('section_2_text', "Le trajet fait 200 kilomètres en deux heures trente environ par l'A13 via Caen, sans compter le trafic week-end d'août qui peut ajouter vingt à trente minutes. Le chauffeur connaît les variantes : traversée de Rouen, itinéraires par Honfleur. Vous pouvez choisir deux formules. Le chauffeur vous attend à l'hippodrome et vous ramène à l'heure fixée, c'est la mise à disposition à la journée. Ou il vous dépose le matin et revient vous chercher le soir à horaire convenu — c'est plus économe pour les trajets aller-retour rapides. Tarifs à partir de 180 euros l'aller simple en Classe E. Trajet coupé en deux jours possible avec une nuit à Deauville ou Trouville.")}
           </p>
         </div>
       </section>
@@ -71,21 +57,15 @@ export default function HippodromeDeauvillePage() {
       <section className="py-14 px-6 md:px-10 bg-warm-50">
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-10">
           <div>
-            <h2 className="heading">Depuis CDG vers Deauville</h2>
+            <h2 className="heading">{c('section_3_title', 'Depuis CDG vers Deauville')}</h2>
             <p className="sf text-stone-600 mt-4 leading-relaxed">
-              Charles de Gaulle à Deauville, c'est environ deux heures selon la circulation.
-              Beaucoup de visiteurs des Yearling Sales arrivent par CDG en provenance de Londres,
-              Hong Kong ou Dubaï. Nous organisons les transferts directs CDG vers l'hippodrome,
-              sans escale Paris centre.
+              {c('section_3_text', "Charles de Gaulle à Deauville, c'est environ deux heures selon la circulation. Beaucoup de visiteurs des Yearling Sales arrivent par CDG en provenance de Londres, Hong Kong ou Dubaï. Nous organisons les transferts directs CDG vers l'hippodrome, sans escale Paris centre.")}
             </p>
           </div>
           <div>
-            <h2 className="heading">Depuis Orly vers Deauville</h2>
+            <h2 className="heading">{c('section_4_title', 'Depuis Orly vers Deauville')}</h2>
             <p className="sf text-stone-600 mt-4 leading-relaxed">
-              Orly est plus proche géographiquement, à environ deux heures trente de Deauville.
-              Pour les clients qui arrivent sur vols intra-Europe ou fret cargo (destination
-              fréquente pour les chevaux), Orly peut être plus rapide qu'une navette
-              par Paris centre.
+              {c('section_4_text', "Orly est plus proche géographiquement, à environ deux heures trente de Deauville. Pour les clients qui arrivent sur vols intra-Europe ou fret cargo (destination fréquente pour les chevaux), Orly peut être plus rapide qu'une navette par Paris centre.")}
             </p>
           </div>
         </div>
@@ -94,13 +74,9 @@ export default function HippodromeDeauvillePage() {
       {/* Accès VIP */}
       <section className="py-14 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Accès aux tribunes et loges VIP</h2>
+          <h2 className="heading">{c('section_5_title', 'Accès aux tribunes et loges VIP')}</h2>
           <p className="sf text-stone-600 mt-4 leading-relaxed">
-            L'hippodrome de Deauville dispose de tribunes réservées, de loges privées et d'accès
-            réservés aux propriétaires et entraîneurs. Nos chauffeurs vous déposent directement
-            aux entrées appropriées selon votre accréditation. Pendant les ventes Arqana, les
-            circuits de navettes entre l'hippo, les restaurants et les hôtels de Deauville sont
-            organisés sur la journée. Mise à disposition chauffeur recommandée plutôt qu'aller-retour.
+            {c('section_5_text', "L'hippodrome de Deauville dispose de tribunes réservées, de loges privées et d'accès réservés aux propriétaires et entraîneurs. Nos chauffeurs vous déposent directement aux entrées appropriées selon votre accréditation. Pendant les ventes Arqana, les circuits de navettes entre l'hippo, les restaurants et les hôtels de Deauville sont organisés sur la journée. Mise à disposition chauffeur recommandée plutôt qu'aller-retour.")}
           </p>
         </div>
       </section>

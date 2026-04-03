@@ -18,7 +18,7 @@ export default function FestivalDeCannesPage() {
       {/* Hero */}
       <section className="pt-36 pb-16 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
-          <p className="tag">Événement — Mai</p>
+          <p className="tag">{c('tag', 'Événement — Mai')}</p>
           <h1 className="heading mt-3">
             {c('h1', 'Chauffeur privé Festival de Cannes — Croisette, Red Carpet, yachts')}
           </h1>
@@ -31,14 +31,9 @@ export default function FestivalDeCannesPage() {
       {/* Nice-Cannes */}
       <section className="py-14 px-6 md:px-10 bg-warm-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Transferts Nice-Cannes — 35 km, sans stress</h2>
+          <h2 className="heading">{c('section_1_title', 'Transferts Nice-Cannes — 35 km, sans stress')}</h2>
           <p className="sf text-stone-600 mt-4 leading-relaxed">
-            L'aéroport de Nice Côte d'Azur (NCE) est la principale porte d'entrée pour le festival.
-            Les 35 kilomètres Nice–Cannes par l'A8 prennent normalement 35 à 40 minutes, mais
-            pendant le festival, la circulation peut être très dense sur certains créneaux.
-            Nos chauffeurs anticipent les heures de pointe liées aux arrivées de vols
-            intercontinentaux et adaptent les itinéraires (autoroute, bord de mer ou route
-            des collines selon les conditions en temps réel).
+            {c('section_1_text', "L'aéroport de Nice Côte d'Azur (NCE) est la principale porte d'entrée pour le festival. Les 35 kilomètres Nice–Cannes par l'A8 prennent normalement 35 à 40 minutes, mais pendant le festival, la circulation peut être très dense sur certains créneaux. Nos chauffeurs anticipent les heures de pointe liées aux arrivées de vols intercontinentaux et adaptent les itinéraires (autoroute, bord de mer ou route des collines selon les conditions en temps réel).")}
           </p>
         </div>
       </section>
@@ -47,21 +42,15 @@ export default function FestivalDeCannesPage() {
       <section className="py-14 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-10">
           <div>
-            <h2 className="heading">Accès Croisette et Red Carpet</h2>
+            <h2 className="heading">{c('section_2_title', 'Accès Croisette et Red Carpet')}</h2>
             <p className="sf text-stone-600 mt-4 leading-relaxed">
-              Le soir des projections officielles, l'accès au Palais des Festivals est réservé
-              aux véhicules accrédités. Nos chauffeurs connaissent les zones de dépose officielles,
-              les créneaux de passage autorisés selon le niveau d'accréditation de vos invités
-              et les itinéraires alternatifs si les accès habituels sont saturés.
+              {c('section_2_text', "Le soir des projections officielles, l'accès au Palais des Festivals est réservé aux véhicules accrédités. Nos chauffeurs connaissent les zones de dépose officielles, les créneaux de passage autorisés selon le niveau d'accréditation de vos invités et les itinéraires alternatifs si les accès habituels sont saturés.")}
             </p>
           </div>
           <div>
-            <h2 className="heading">Navettes Port de Cannes — yachts</h2>
+            <h2 className="heading">{c('section_3_title', 'Navettes Port de Cannes — yachts')}</h2>
             <p className="sf text-stone-600 mt-4 leading-relaxed">
-              Pendant le festival, le Port de Cannes (Vieux Port et Port Canto) est le hub
-              des soirées privées et des réceptions sur yachts. Nous organisons les navettes
-              entre les hôtels, les soirées sur la Croisette et les pontons d'accès aux
-              bateaux amarrés.
+              {c('section_3_text', "Pendant le festival, le Port de Cannes (Vieux Port et Port Canto) est le hub des soirées privées et des réceptions sur yachts. Nous organisons les navettes entre les hôtels, les soirées sur la Croisette et les pontons d'accès aux bateaux amarrés.")}
             </p>
           </div>
         </div>
@@ -70,13 +59,9 @@ export default function FestivalDeCannesPage() {
       {/* Depuis Paris */}
       <section className="py-14 px-6 md:px-10 bg-warm-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Depuis Paris vers Cannes</h2>
+          <h2 className="heading">{c('section_4_title', 'Depuis Paris vers Cannes')}</h2>
           <p className="sf text-stone-600 mt-4 leading-relaxed">
-            Pour les clients qui souhaitent rejoindre Cannes en voiture depuis Paris (940 km,
-            environ 9 heures), nous organisons la longue distance avec relève de chauffeur
-            à mi-parcours. C'est une option prisée par les familles qui souhaitent ne pas
-            avoir de contraintes d'aéroport avec de jeunes enfants, et par les personnalités
-            qui préfèrent éviter les terminaux pendant le festival.
+            {c('section_4_text', "Pour les clients qui souhaitent rejoindre Cannes en voiture depuis Paris (940 km, environ 9 heures), nous organisons la longue distance avec relève de chauffeur à mi-parcours. C'est une option prisée par les familles qui souhaitent ne pas avoir de contraintes d'aéroport avec de jeunes enfants, et par les personnalités qui préfèrent éviter les terminaux pendant le festival.")}
           </p>
         </div>
       </section>

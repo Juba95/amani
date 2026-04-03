@@ -16,16 +16,7 @@ export const metadata: Metadata = contentMetadata(SLUG, {
   },
 });
 
-const routes = [
-  { route: 'Paris → Deauville', km: '200 km', duree: '2h30', note: 'Week-ends, Coupes d\'Amérique, Festival du film' },
-  { route: 'Paris → Bruxelles', km: '310 km', duree: '3h00', note: 'Institutions européennes, sièges corporate' },
-  { route: 'Paris → Reims', km: '145 km', duree: '1h45', note: 'Maisons de Champagne, cathédrale' },
-  { route: 'Paris → Lyon', km: '465 km', duree: '4h30', note: 'Alternative au TGV pour les groupes et délégations' },
-  { route: 'Paris → Monaco', km: '940 km', duree: '9h00', note: 'Grand Prix, résidences, affaires privées' },
-  { route: 'Paris → Genève', km: '555 km', duree: '5h30', note: 'CERN, ONU, banques, forums' },
-  { route: 'Paris → Amsterdam', km: '500 km', duree: '5h00', note: 'Ports, AMS, quartier des affaires' },
-  { route: 'Paris → Londres', km: '460 km', duree: '6h00*', note: '* via Eurotunnel. Documents requis.' },
-];
+// routes data defined inline below using c() calls
 
 export default function LongueDistancePage() {
   const c = content(SLUG);
@@ -35,7 +26,7 @@ export default function LongueDistancePage() {
       {/* Hero */}
       <section className="pt-36 pb-16 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
-          <p className="tag">Longue distance — France & Europe</p>
+          <p className="tag">{c('tag', 'Longue distance — France & Europe')}</p>
           <h1 className="heading mt-3">
             {c('h1', 'Chauffeur privé longue distance depuis Paris — votre bureau roulant')}
           </h1>
@@ -48,9 +39,18 @@ export default function LongueDistancePage() {
       {/* Routes */}
       <section className="py-14 px-6 md:px-10 bg-warm-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Trajets longue distance les plus demandés</h2>
+          <h2 className="heading">{c('section_1_title', 'Trajets longue distance les plus demandés')}</h2>
           <div className="mt-8 grid md:grid-cols-2 gap-4">
-            {routes.map((r) => (
+            {[
+              { route: c('item_1_title', 'Paris → Deauville'), km: c('item_1_text', '200 km'), duree: c('item_1_duree', '2h30'), note: c('item_1_note', "Week-ends, Coupes d'Amérique, Festival du film") },
+              { route: c('item_2_title', 'Paris → Bruxelles'), km: c('item_2_text', '310 km'), duree: c('item_2_duree', '3h00'), note: c('item_2_note', 'Institutions européennes, sièges corporate') },
+              { route: c('item_3_title', 'Paris → Reims'), km: c('item_3_text', '145 km'), duree: c('item_3_duree', '1h45'), note: c('item_3_note', 'Maisons de Champagne, cathédrale') },
+              { route: c('item_4_title', 'Paris → Lyon'), km: c('item_4_text', '465 km'), duree: c('item_4_duree', '4h30'), note: c('item_4_note', 'Alternative au TGV pour les groupes et délégations') },
+              { route: c('item_5_title', 'Paris → Monaco'), km: c('item_5_text', '940 km'), duree: c('item_5_duree', '9h00'), note: c('item_5_note', 'Grand Prix, résidences, affaires privées') },
+              { route: c('item_6_title', 'Paris → Genève'), km: c('item_6_text', '555 km'), duree: c('item_6_duree', '5h30'), note: c('item_6_note', 'CERN, ONU, banques, forums') },
+              { route: c('item_7_title', 'Paris → Amsterdam'), km: c('item_7_text', '500 km'), duree: c('item_7_duree', '5h00'), note: c('item_7_note', "Ports, AMS, quartier des affaires") },
+              { route: c('item_8_title', 'Paris → Londres'), km: c('item_8_text', '460 km'), duree: c('item_8_duree', '6h00*'), note: c('item_8_note', '* via Eurotunnel. Documents requis.') },
+            ].map((r) => (
               <div key={r.route} className="card">
                 <p className="sf font-semibold text-gray-900">{r.route}</p>
                 <p className="sf text-xs text-stone-400 mt-1">{r.km} · {r.duree}</p>
@@ -69,22 +69,15 @@ export default function LongueDistancePage() {
       <section className="py-14 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-10">
           <div>
-            <h2 className="heading">Équipement des véhicules longue distance</h2>
+            <h2 className="heading">{c('section_2_title', 'Équipement des véhicules longue distance')}</h2>
             <p className="sf text-stone-600 mt-4 leading-relaxed">
-              Nos berlines et vans VIP dédiés aux longs trajets sont équipés d'un Wi-Fi 4G/5G,
-              de prises 220V et USB-C pour les appareils professionnels, d'une climatisation
-              multi-zones et d'un espace de rangement adapté aux bagages volumineux. Dans la
-              Classe S et le BMW i7, les sièges arrière bénéficient d'un appuie-tête électrique
-              et d'une inclinaison large pour le repos.
+              {c('section_2_text', "Nos berlines et vans VIP dédiés aux longs trajets sont équipés d'un Wi-Fi 4G/5G, de prises 220V et USB-C pour les appareils professionnels, d'une climatisation multi-zones et d'un espace de rangement adapté aux bagages volumineux. Dans la Classe S et le BMW i7, les sièges arrière bénéficient d'un appuie-tête électrique et d'une inclinaison large pour le repos.")}
             </p>
           </div>
           <div>
-            <h2 className="heading">Relève de chauffeur sur les grands trajets</h2>
+            <h2 className="heading">{c('section_3_title', 'Relève de chauffeur sur les grands trajets')}</h2>
             <p className="sf text-stone-600 mt-4 leading-relaxed">
-              Au-delà de 8 heures de route (Paris–Monaco, Paris–Barcelone), nous prévoyons
-              une relève de chauffeur à mi-parcours pour maintenir un niveau d'attention optimal.
-              Cela se passe dans une aire de service ou directement dans une ville intermédiaire,
-              sans interruption perceptible de votre point de vue.
+              {c('section_3_text', "Au-delà de 8 heures de route (Paris–Monaco, Paris–Barcelone), nous prévoyons une relève de chauffeur à mi-parcours pour maintenir un niveau d'attention optimal. Cela se passe dans une aire de service ou directement dans une ville intermédiaire, sans interruption perceptible de votre point de vue.")}
             </p>
           </div>
         </div>
@@ -93,13 +86,9 @@ export default function LongueDistancePage() {
       {/* Avantage vs train */}
       <section className="py-14 px-6 md:px-10 bg-warm-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Pourquoi choisir la voiture plutôt que le train ?</h2>
+          <h2 className="heading">{c('section_4_title', 'Pourquoi choisir la voiture plutôt que le train ?')}</h2>
           <p className="sf text-stone-600 mt-4 leading-relaxed">
-            Pour un groupe de 3 à 7 personnes, le coût d'un <strong>transfert longue distance
-            Paris</strong> en van VIP est souvent comparable à plusieurs billets de TGV première
-            classe — sans les contraintes de gare, de correspondance et de bagages limités.
-            Pour les délégations avec des équipements spécifiques (matériel de présentation,
-            bagages diplomatiques, appareils médicaux), la voiture reste la seule solution viable.
+            {c('section_4_text', "Pour un groupe de 3 à 7 personnes, le coût d'un transfert longue distance Paris en van VIP est souvent comparable à plusieurs billets de TGV première classe — sans les contraintes de gare, de correspondance et de bagages limités. Pour les délégations avec des équipements spécifiques (matériel de présentation, bagages diplomatiques, appareils médicaux), la voiture reste la seule solution viable.")}
           </p>
         </div>
       </section>

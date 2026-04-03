@@ -17,51 +17,7 @@ export const metadata: Metadata = contentMetadata(SLUG, {
   },
 });
 
-const services = [
-  {
-    titre: 'Protection VIP',
-    texte:
-      "Vous êtes une personnalité publique, un dirigeant exposé ou un investisseur en déplacement à Paris. Nos agents de protection rapprochée vous accompagnent dans tous vos déplacements, de l'hôtel aux rendez-vous, en passant par les dîners et les sorties.",
-  },
-  {
-    titre: 'Escorte de personnalités',
-    texte:
-      "Artistes en tournée, sportifs de haut niveau, influenceurs à forte visibilité — nos gardes du corps assurent une escorte discrète et efficace dans Paris et en région. Le dispositif s'adapte au niveau de menace et à vos exigences.",
-  },
-  {
-    titre: 'Protection événementielle',
-    texte:
-      "Galas, lancements de produits, soirées privées, avant-premières — nos agents sécurisent l'accès, filtrent les entrées et assurent votre protection tout au long de l'événement. Coordination avec les équipes de sécurité du lieu.",
-  },
-  {
-    titre: 'Garde rapprochée de nuit',
-    texte:
-      "Certaines missions nécessitent une présence continue, y compris la nuit. Nos gardes du corps assurent une veille permanente devant votre hôtel, votre résidence ou votre lieu de séjour à Paris. Relève organisée pour une couverture sans interruption.",
-  },
-];
-
-const faq = [
-  {
-    question: 'Quelle est la différence entre un garde du corps et un agent de sécurité ?',
-    reponse:
-      "Un garde du corps assure la protection rapprochée d'une personne physique. Il se déplace avec vous, anticipe les risques et intervient en cas de menace directe. Un agent de sécurité surveille un lieu fixe. Nos gardes du corps sont formés à la protection individuelle en milieu urbain.",
-  },
-  {
-    question: 'Combien coûte un garde du corps à Paris ?',
-    reponse:
-      "Le tarif dépend de la durée de la mission, du nombre d'agents mobilisés et du niveau de risque évalué. Contactez-nous pour un devis personnalisé. Nous proposons des missions à la journée, à la semaine ou au mois.",
-  },
-  {
-    question: 'Vos gardes du corps sont-ils armés ?',
-    reponse:
-      "Nos agents disposent des autorisations requises par la législation française. Le port d'arme est soumis à des conditions strictes et n'est déployé que lorsque l'évaluation de la menace le justifie, en accord avec le client et les autorités compétentes.",
-  },
-  {
-    question: 'Peut-on combiner garde du corps et chauffeur privé ?',
-    reponse:
-      "C'est même la configuration la plus fréquente. Le chauffeur assure la conduite de sécurité pendant que le garde du corps se concentre sur la protection rapprochée. Les deux travaillent en binôme coordonné.",
-  },
-];
+// services and faq data defined inline below using c() calls
 
 export default function GardeduCorps() {
   const c = content(SLUG);
@@ -71,7 +27,7 @@ export default function GardeduCorps() {
       {/* Hero */}
       <section className="pt-36 pb-16 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
-          <p className="tag">Bodyguard — Paris & France</p>
+          <p className="tag">{c('tag', 'Bodyguard — Paris & France')}</p>
           <h1 className="heading mt-3">
             {c('h1', 'Garde du corps et protection rapprochée à Paris — agents formés, discrétion absolue')}
           </h1>
@@ -99,13 +55,29 @@ export default function GardeduCorps() {
       {/* Services */}
       <section className="py-14 px-6 md:px-10 bg-warm-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Nos prestations de garde du corps</h2>
+          <h2 className="heading">{c('section_1_title', 'Nos prestations de garde du corps')}</h2>
           <p className="sf text-stone-500 mt-4 mb-10 leading-relaxed">
-            Chaque mission est différente. Nous adaptons le dispositif au profil du client,
-            au contexte et au niveau de risque identifié. Voici les prestations les plus demandées.
+            {c('section_1_text', 'Chaque mission est différente. Nous adaptons le dispositif au profil du client, au contexte et au niveau de risque identifié. Voici les prestations les plus demandées.')}
           </p>
           <div className="grid md:grid-cols-2 gap-8">
-            {services.map((s) => (
+            {[
+              {
+                titre: c('item_1_title', 'Protection VIP'),
+                texte: c('item_1_text', "Vous êtes une personnalité publique, un dirigeant exposé ou un investisseur en déplacement à Paris. Nos agents de protection rapprochée vous accompagnent dans tous vos déplacements, de l'hôtel aux rendez-vous, en passant par les dîners et les sorties."),
+              },
+              {
+                titre: c('item_2_title', 'Escorte de personnalités'),
+                texte: c('item_2_text', "Artistes en tournée, sportifs de haut niveau, influenceurs à forte visibilité — nos gardes du corps assurent une escorte discrète et efficace dans Paris et en région. Le dispositif s'adapte au niveau de menace et à vos exigences."),
+              },
+              {
+                titre: c('item_3_title', 'Protection événementielle'),
+                texte: c('item_3_text', "Galas, lancements de produits, soirées privées, avant-premières — nos agents sécurisent l'accès, filtrent les entrées et assurent votre protection tout au long de l'événement. Coordination avec les équipes de sécurité du lieu."),
+              },
+              {
+                titre: c('item_4_title', 'Garde rapprochée de nuit'),
+                texte: c('item_4_text', "Certaines missions nécessitent une présence continue, y compris la nuit. Nos gardes du corps assurent une veille permanente devant votre hôtel, votre résidence ou votre lieu de séjour à Paris. Relève organisée pour une couverture sans interruption."),
+              },
+            ].map((s) => (
               <div key={s.titre} className="card">
                 <h3 className="font-serif text-lg text-gray-900 mb-3">{s.titre}</h3>
                 <p className="sf text-stone-600 leading-relaxed text-sm">{s.texte}</p>
@@ -118,38 +90,30 @@ export default function GardeduCorps() {
       {/* Profil agents */}
       <section className="py-14 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Le profil de nos agents de protection</h2>
+          <h2 className="heading">{c('section_2_title', 'Le profil de nos agents de protection')}</h2>
           <div className="mt-8 space-y-6">
             <div className="border-l-2 border-stone-200 pl-6">
-              <p className="font-serif text-gray-900 mb-2">Formation spécialisée</p>
+              <p className="font-serif text-gray-900 mb-2">{c('item_5_title', 'Formation spécialisée')}</p>
               <p className="sf text-stone-600 text-sm leading-relaxed">
-                Tous nos gardes du corps sont titulaires du CQP Agent de Protection Physique
-                des Personnes. Plusieurs sont issus des forces spéciales ou du GIGN. Ils
-                maîtrisent les techniques de défense, de dégagement et de premiers secours.
+                {c('item_5_text', "Tous nos gardes du corps sont titulaires du CQP Agent de Protection Physique des Personnes. Plusieurs sont issus des forces spéciales ou du GIGN. Ils maîtrisent les techniques de défense, de dégagement et de premiers secours.")}
               </p>
             </div>
             <div className="border-l-2 border-stone-200 pl-6">
-              <p className="font-serif text-gray-900 mb-2">Discrétion et présentation</p>
+              <p className="font-serif text-gray-900 mb-2">{c('item_6_title', 'Discrétion et présentation')}</p>
               <p className="sf text-stone-600 text-sm leading-relaxed">
-                Un bodyguard privé efficace sait se fondre dans l'environnement de son client.
-                Nos agents s'adaptent au dress code de chaque situation : costume pour les
-                événements formels, tenue décontractée pour les sorties privées.
+                {c('item_6_text', "Un bodyguard privé efficace sait se fondre dans l'environnement de son client. Nos agents s'adaptent au dress code de chaque situation : costume pour les événements formels, tenue décontractée pour les sorties privées.")}
               </p>
             </div>
             <div className="border-l-2 border-stone-200 pl-6">
-              <p className="font-serif text-gray-900 mb-2">Coordination avec les équipes existantes</p>
+              <p className="font-serif text-gray-900 mb-2">{c('item_7_title', 'Coordination avec les équipes existantes')}</p>
               <p className="sf text-stone-600 text-sm leading-relaxed">
-                Nos agents travaillent en coordination avec vos équipes de sécurité internes,
-                les services de protection des lieux visités et, si nécessaire, les forces
-                de l'ordre. Communication radio sécurisée et protocoles définis en amont.
+                {c('item_7_text', "Nos agents travaillent en coordination avec vos équipes de sécurité internes, les services de protection des lieux visités et, si nécessaire, les forces de l'ordre. Communication radio sécurisée et protocoles définis en amont.")}
               </p>
             </div>
             <div className="border-l-2 border-stone-200 pl-6">
-              <p className="font-serif text-gray-900 mb-2">Disponibilité immédiate</p>
+              <p className="font-serif text-gray-900 mb-2">{c('item_8_title', 'Disponibilité immédiate')}</p>
               <p className="sf text-stone-600 text-sm leading-relaxed">
-                Nous maintenons un vivier d'agents disponibles à Paris et en Île-de-France.
-                Pour les missions urgentes, un garde du corps peut être mobilisé en quelques
-                heures. Pour les missions planifiées, nous préparons un briefing complet.
+                {c('item_8_text', "Nous maintenons un vivier d'agents disponibles à Paris et en Île-de-France. Pour les missions urgentes, un garde du corps peut être mobilisé en quelques heures. Pour les missions planifiées, nous préparons un briefing complet.")}
               </p>
             </div>
           </div>
@@ -159,9 +123,26 @@ export default function GardeduCorps() {
       {/* FAQ */}
       <section className="py-14 px-6 md:px-10 bg-warm-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Questions fréquentes — Garde du corps</h2>
+          <h2 className="heading">{c('section_3_title', 'Questions fréquentes — Garde du corps')}</h2>
           <div className="mt-8 space-y-8">
-            {faq.map((f) => (
+            {[
+              {
+                question: c('faq_1_title', "Quelle est la différence entre un garde du corps et un agent de sécurité ?"),
+                reponse: c('faq_1_text', "Un garde du corps assure la protection rapprochée d'une personne physique. Il se déplace avec vous, anticipe les risques et intervient en cas de menace directe. Un agent de sécurité surveille un lieu fixe. Nos gardes du corps sont formés à la protection individuelle en milieu urbain."),
+              },
+              {
+                question: c('faq_2_title', 'Combien coûte un garde du corps à Paris ?'),
+                reponse: c('faq_2_text', "Le tarif dépend de la durée de la mission, du nombre d'agents mobilisés et du niveau de risque évalué. Contactez-nous pour un devis personnalisé. Nous proposons des missions à la journée, à la semaine ou au mois."),
+              },
+              {
+                question: c('faq_3_title', 'Vos gardes du corps sont-ils armés ?'),
+                reponse: c('faq_3_text', "Nos agents disposent des autorisations requises par la législation française. Le port d'arme est soumis à des conditions strictes et n'est déployé que lorsque l'évaluation de la menace le justifie, en accord avec le client et les autorités compétentes."),
+              },
+              {
+                question: c('faq_4_title', 'Peut-on combiner garde du corps et chauffeur privé ?'),
+                reponse: c('faq_4_text', "C'est même la configuration la plus fréquente. Le chauffeur assure la conduite de sécurité pendant que le garde du corps se concentre sur la protection rapprochée. Les deux travaillent en binôme coordonné."),
+              },
+            ].map((f) => (
               <div key={f.question}>
                 <h3 className="font-serif text-gray-900 text-lg mb-2">{f.question}</h3>
                 <p className="sf text-stone-600 text-sm leading-relaxed">{f.reponse}</p>
@@ -174,7 +155,7 @@ export default function GardeduCorps() {
       {/* Pages liées */}
       <section className="py-14 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Services associés</h2>
+          <h2 className="heading">{c('section_4_title', 'Services associés')}</h2>
           <div className="mt-8 grid sm:grid-cols-2 md:grid-cols-3 gap-4">
             {[
               { label: 'Sécurité rapprochée', href: '/securite-rapprochee' },
