@@ -15,22 +15,22 @@ const services = [
   {
     titre: 'Accueil aéroport à la japonaise',
     texte:
-      "On sait que pour un voyageur japonais, les détails comptent. Le chauffeur est là cinq minutes en avance, le véhicule est impeccable, il y a de l'eau fraîche à bord. Il vous accueille en japonais, s'incline comme il faut, et prend vos bagages sans qu'on ait besoin de demander. Le trajet jusqu'à l'hôtel se fait dans le calme, sauf si vous avez envie de discuter.",
+      "Le chauffeur se présente à l'avance, véhicule préparé, eau fraîche à bord. L'accueil se fait en japonais, avec le protocole attendu. Les bagages sont pris en charge sans qu'il soit nécessaire de le demander. Le trajet vers l'hôtel s'effectue dans le calme, selon vos préférences.",
   },
   {
     titre: 'Haute couture et ateliers parisiens',
     texte:
-      "Les Japonais ont un rapport unique avec la mode parisienne. Le chauffeur connaît les ateliers de la rue Cambon chez Chanel, les showrooms privés de Saint-Germain, les boutiques Hermès du Faubourg. Il vous y conduit, vous dépose devant la porte, et revient vous chercher quand vous avez fini. En japonais, pas de quiproquo sur l'heure ou l'adresse.",
+      "Nos chauffeurs connaissent les adresses incontournables de la mode parisienne : rue Cambon, Saint-Germain, Faubourg Saint-Honoré. Ils assurent vos transferts entre maisons de couture et showrooms, vous déposent à l'entrée et reviennent à l'heure convenue. Les échanges en japonais évitent tout malentendu sur les horaires ou les adresses.",
   },
   {
     titre: 'Restaurants étoilés et gastronomie',
     texte:
-      "Paris et Tokyo se disputent le titre de capitale mondiale de la gastronomie. Le chauffeur connaît les adresses — le Guy Savoy à la Monnaie de Paris, le Cinq au George V, les bistronomies cachées du 11e. Il vous y amène pile à l'heure de la réservation, parce qu'arriver en retard dans un trois-étoiles, c'est pas le genre de la maison.",
+      "Le chauffeur connaît les tables de référence à Paris : Guy Savoy, Le Cinq au George V, les meilleures adresses du 11e. Il vous y conduit à l'heure exacte de votre réservation. En matière de gastronomie étoilée, la ponctualité est aussi importante que le repas lui-même.",
   },
   {
     titre: 'Déplacements d\'affaires pour cadres japonais',
     texte:
-      "Toyota, Sony, Mitsubishi, les banques japonaises — beaucoup ont des bureaux à Paris. Quand un dirigeant arrive de Tokyo pour une semaine de rendez-vous, le chauffeur est là chaque matin à l'heure convenue. Il parle japonais, comprend que la ponctualité n'est pas une option, et connaît le quartier de l'Opéra — le Little Tokyo parisien — comme sa poche.",
+      "Les grandes entreprises japonaises — Toyota, Sony, Mitsubishi — disposent de bureaux à Paris. Pour les dirigeants en déplacement, le chauffeur assure les transferts quotidiens à l'heure fixée, avec la rigueur qu'impose un agenda chargé. Il maîtrise le quartier de l'Opéra, centre de la communauté japonaise à Paris, et communique directement en japonais.",
   },
 ];
 
@@ -58,7 +58,7 @@ export default function ChauffeurJaponaisPage() {
             {c('h1', 'Chauffeur privé parlant japonais à Paris')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            {c('intro', 'Quand un voyageur japonais arrive à Paris, il s\'attend à un certain niveau de service. On le sait. C\'est pour ça qu\'on a des chauffeurs qui parlent japonais et qui connaissent les codes : la ponctualité à la minute, la propreté du véhicule, la discrétion. Pas de blabla inutile, pas de retard, pas d\'à-peu-près. Le chauffeur est là quand il faut, où il faut, et il parle votre langue. Dispo 24h/24, tous les jours.')}
+            {c('intro', 'Amani Limousines propose un service de chauffeur privé en langue japonaise à Paris. Nos chauffeurs maîtrisent les codes d\'hospitalité japonais : ponctualité rigoureuse, tenue irréprochable, véhicule soigné et discrétion absolue. Chaque prise en charge est organisée avec le soin qu\'attendrait une clientèle venue de Tokyo. Service disponible 24h/24, 7j/7.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
@@ -81,10 +81,10 @@ export default function ChauffeurJaponaisPage() {
       {/* Services */}
       <section className="py-14 px-6 md:px-10 bg-warm-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Ce qu'on fait, en japonais</h2>
+          <h2 className="heading">Nos prestations en langue japonaise</h2>
           <p className="sf text-stone-500 mt-4 mb-10 leading-relaxed">
-            Accueil aéroport, haute couture, gastronomie, affaires.
-            Toujours en japonais, toujours à l'heure.
+            Aéroports, haute couture, gastronomie, déplacements d'affaires.
+            En japonais, avec la rigueur qui s'impose.
           </p>
           <div className="grid md:grid-cols-2 gap-8">
             {services.map((s) => (
@@ -100,7 +100,7 @@ export default function ChauffeurJaponaisPage() {
       {/* Situations */}
       <section className="py-14 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Pour qui, concrètement</h2>
+          <h2 className="heading">Occasions et clientèle</h2>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
             {situations.map((s) => (
               <div key={s} className="flex items-start gap-3 p-4 rounded-xl bg-warm-50 border border-warm-200">
@@ -117,7 +117,7 @@ export default function ChauffeurJaponaisPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="heading mb-4">Réservez votre chauffeur parlant japonais</h2>
           <p className="sf text-stone-500 mb-8">
-            Dispo 24h/24, 7j/7. Confirmation en moins de 30 minutes.
+            Disponible 24h/24, 7j/7. Confirmation de réservation sous 30 minutes.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link

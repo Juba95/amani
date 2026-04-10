@@ -106,7 +106,7 @@ export default function AProposPage() {
                 {c('chauffeurs_p2', "Nos chauffeurs parlent plus de 10 langues. Concrètement, ça veut dire accueillir des hommes d'affaires saoudiens à Roissy en arabe, discuter d'un itinéraire avec une famille japonaise, ou briefer une délégation allemande sur le programme du jour. Ils connaissent Paris sur le bout des doigts et savent s'adapter à chaque culture, parce qu'ils ont été formés pour ça.")}
               </p>
               <p className="sf text-stone-600 mt-4 leading-relaxed">
-                {c('chauffeurs_p3', "Chez Amani, le service ne s'arrête pas au volant. On anticipe, on conseille, on gère les détails. Vous, vous montez en voiture et vous profitez du trajet.")}
+                {c('chauffeurs_p3', "Chez Amani Limousines, notre engagement envers le service transcende la simple conduite. Nous anticipons vos besoins, vous offrons des conseils et supervisons chaque détail avec une attention méticuleuse.")}
               </p>
             </div>
             <div className="mt-8 md:mt-0 md:w-72 lg:w-80 shrink-0 flex justify-center">
