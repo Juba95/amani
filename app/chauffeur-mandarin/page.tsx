@@ -15,17 +15,17 @@ const services = [
   {
     titre: 'Accueil aéroport en mandarin',
     texte:
-      "Le panneau est en chinois et en français. Le chauffeur parle mandarin. Il y a de l'eau dans la voiture et la clim est réglée. Ça a l'air basique dit comme ça, mais quand vous débarquez à CDG après douze heures de vol depuis Shanghai ou Pékin, ces détails font toute la différence. On s'occupe des valises, on gère le trajet, et vous pouvez souffler.",
+      "Le panneau est en chinois et en français. Le chauffeur parle mandarin, le véhicule est préparé. Après un long vol depuis Shanghai ou Pékin, ces attentions changent l'expérience de l'arrivée. Les bagages sont pris en charge et le trajet s'organise dans les meilleures conditions.",
   },
   {
     titre: 'Shopping luxe — Faubourg-Saint-Honoré, Printemps, Galeries Lafayette',
     texte:
-      "Soyons honnêtes : beaucoup de visiteurs chinois viennent à Paris pour le shopping. Louis Vuitton sur les Champs, Hermès rue du Faubourg, le corner Chanel au Printemps Haussmann... Le chauffeur connaît toutes ces adresses, il sait où déposer et récupérer sans perdre de temps, et il peut même passer un coup de fil en mandarin au vendeur pour préparer votre visite.",
+      "Paris est une destination de référence pour le shopping de luxe. Louis Vuitton sur les Champs, Hermès rue du Faubourg, Chanel au Printemps Haussmann : le chauffeur maîtrise ces adresses et leurs accès. Il peut contacter en mandarin les équipes des boutiques pour préparer votre visite.",
   },
   {
     titre: 'Délégations d\'affaires et investisseurs',
     texte:
-      "On transporte régulièrement des dirigeants et investisseurs chinois qui ont des journées chargées à Paris — rendez-vous dans des cabinets d'avocats du 8e, visites de locaux commerciaux, déjeuners d'affaires. Le chauffeur parle mandarin, il comprend le contexte professionnel, et il ne vous fera pas arriver en retard à cause d'un mauvais itinéraire.",
+      "Nos chauffeurs accompagnent régulièrement des dirigeants et investisseurs chinois lors de journées chargées à Paris — cabinets du 8e, visites de locaux, déjeuners d'affaires. Communication en mandarin, maîtrise des itinéraires et ponctualité garantie à chaque rendez-vous.",
   },
   {
     titre: 'Excursions — Versailles, Champagne, châteaux de la Loire',
@@ -58,7 +58,7 @@ export default function ChauffeurMandarinPage() {
             {c('h1', 'Chauffeur privé parlant mandarin à Paris')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            {c('intro', 'Paris attire énormément de visiteurs chinois, et on le voit tous les jours. Le problème, c\'est que la barrière de la langue peut vite devenir un vrai casse-tête ici. Avec un chauffeur qui parle mandarin, tout se simplifie. Il connaît les adresses que la clientèle chinoise aime, il sait comment fonctionne Paris, et il parle votre langue. Nos chauffeurs sinophones sont dispo 24h/24, à Paris comme en province.')}
+            {c('intro', 'Amani Limousines met à disposition des chauffeurs privés parlant mandarin à Paris. Shopping de luxe, délégations d\'affaires, tourisme culturel ou excursions en région : chaque déplacement est organisé en tenant compte des attentes d\'une clientèle exigeante. Nos chauffeurs connaissent les adresses prisées de la clientèle chinoise à Paris et communiquent directement en mandarin. Disponibles 24h/24, à Paris et en province.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
@@ -81,10 +81,10 @@ export default function ChauffeurMandarinPage() {
       {/* Services */}
       <section className="py-14 px-6 md:px-10 bg-warm-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Ce qu'on fait, en mandarin</h2>
+          <h2 className="heading">Nos prestations en langue mandarine</h2>
           <p className="sf text-stone-500 mt-4 mb-10 leading-relaxed">
-            Aéroport, shopping, business, excursions hors de Paris —
-            tout se fait en mandarin, du premier au dernier trajet.
+            Aéroports, shopping, déplacements d'affaires, excursions en région —
+            en mandarin, du premier au dernier trajet.
           </p>
           <div className="grid md:grid-cols-2 gap-8">
             {services.map((s) => (
@@ -100,7 +100,7 @@ export default function ChauffeurMandarinPage() {
       {/* Situations */}
       <section className="py-14 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Pour qui, concrètement</h2>
+          <h2 className="heading">Occasions et clientèle</h2>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
             {situations.map((s) => (
               <div key={s} className="flex items-start gap-3 p-4 rounded-xl bg-warm-50 border border-warm-200">
@@ -117,7 +117,7 @@ export default function ChauffeurMandarinPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="heading mb-4">Réservez votre chauffeur parlant mandarin</h2>
           <p className="sf text-stone-500 mb-8">
-            Dispo 24h/24, 7j/7. Confirmation en moins de 30 minutes.
+            Disponible 24h/24, 7j/7. Confirmation de réservation sous 30 minutes.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link

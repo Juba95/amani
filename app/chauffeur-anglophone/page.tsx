@@ -15,22 +15,22 @@ const services = [
   {
     titre: 'Transferts aéroports avec accueil en anglais',
     texte:
-      "Vous atterrissez à CDG après un vol depuis JFK ou Heathrow, vous êtes crevé, et la dernière chose dont vous avez envie c'est de mimer votre adresse à un chauffeur qui ne parle pas anglais. Le nôtre vous attend avec un panneau, récupère vos valises, et vous briefe sur le temps de trajet jusqu'au Ritz ou au Bristol. Tout ça en anglais, sans effort de votre côté.",
+      "Arrivée à CDG depuis New York, Londres ou Singapour : le chauffeur attend à la sortie, panneau nominatif, prise en charge des bagages immédiate. Il vous informe du temps de trajet estimé jusqu'à votre hôtel et des conditions de circulation. Tout se passe en anglais, sans effort de votre côté.",
   },
   {
     titre: 'Rendez-vous d\'affaires entre La Défense et le 8e',
     texte:
-      "Vous enchaînez trois meetings dans la journée — un à La Défense, un boulevard Haussmann, un dernier rue de Rivoli. Votre chauffeur connaît les raccourcis, sait que le tunnel de l'Étoile est bouché à 18h, et vous prévient en anglais quand il faut partir pour être à l'heure. Pas de stress, pas de malentendu sur le planning.",
+      "Trois meetings dans la journée — La Défense, boulevard Haussmann, rue de Rivoli. Le chauffeur connaît les itinéraires, anticipe les contraintes de circulation et vous prévient en anglais lorsqu'il convient de partir pour respecter les horaires. Aucun malentendu sur le planning.",
   },
   {
     titre: 'Visiter Paris sans la barrière de la langue',
     texte:
-      "Montmartre le matin, Saint-Germain pour déjeuner, le Marais l'après-midi. Votre chauffeur connaît les coins que les touristes ratent — la petite place Dauphine, le passage des Panoramas, les quais de Seine côté 5e. Il vous en parle en anglais, vous donne ses adresses perso, et adapte le parcours à vos envies du moment.",
+      "Montmartre le matin, Saint-Germain pour déjeuner, le Marais l'après-midi. Le chauffeur connaît les adresses que les guides ne mentionnent pas — place Dauphine, passage des Panoramas, quais de Seine rive gauche. Il les partage en anglais et adapte le parcours selon vos préférences.",
   },
   {
     titre: 'Mise à disposition sur plusieurs jours',
     texte:
-      "Pour un séjour d'une semaine, une série de conférences ou une délégation qui débarque de New York, on vous attribue un chauffeur dédié. Il retient vos habitudes dès le deuxième jour — l'heure de votre café, le journal que vous lisez, le fait que vous préférez le silence le matin. Un vrai confort.",
+      "Pour un séjour d'une semaine, une série de conférences ou une délégation venue de New York, Amani vous attribue un chauffeur dédié. Il s'adapte rapidement à vos habitudes et préférences, assurant une continuité de service tout au long du séjour.",
   },
 ];
 
@@ -57,7 +57,7 @@ export default function ChauffeurAnglophonePage() {
             {c('h1', 'Chauffeur privé anglophone à Paris')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            {c('intro', 'Ça change tout d\'avoir un chauffeur qui parle votre langue. Plus besoin de montrer l\'adresse sur votre téléphone ou de répéter trois fois le nom de l\'hôtel. Vous montez, vous expliquez ce dont vous avez besoin, et c\'est réglé. On a des chauffeurs qui parlent couramment anglais, dispo jour et nuit, qui connaissent Paris comme leur poche. Que vous soyez là pour le boulot ou en vacances, c\'est juste plus simple comme ça.')}
+            {c('intro', 'Amani Limousines met à disposition des chauffeurs privés anglophones à Paris pour les voyageurs d\'affaires et de loisirs venus des pays anglophones. Communication fluide en anglais, connaissance approfondie de la capitale et discrétion absolue : chaque déplacement s\'effectue avec la clarté et l\'efficacité qu\'attend une clientèle internationale exigeante. Service disponible 24h/24, 7j/7.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
@@ -80,10 +80,10 @@ export default function ChauffeurAnglophonePage() {
       {/* Services */}
       <section className="py-14 px-6 md:px-10 bg-warm-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Ce qu'on fait, en anglais</h2>
+          <h2 className="heading">Nos prestations en langue anglaise</h2>
           <p className="sf text-stone-500 mt-4 mb-10 leading-relaxed">
-            Aéroport, rendez-vous, tourisme, mise à dispo longue durée — tout
-            se passe en anglais, du premier SMS à la dernière course.
+            Aéroports, rendez-vous d'affaires, tourisme, mise à disposition longue durée —
+            en anglais, du premier échange au dernier trajet.
           </p>
           <div className="grid md:grid-cols-2 gap-8">
             {services.map((s) => (
@@ -99,7 +99,7 @@ export default function ChauffeurAnglophonePage() {
       {/* Situations */}
       <section className="py-14 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Pour qui, concrètement</h2>
+          <h2 className="heading">Occasions et clientèle</h2>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
             {situations.map((s) => (
               <div key={s} className="flex items-start gap-3 p-4 rounded-xl bg-warm-50 border border-warm-200">
@@ -116,7 +116,7 @@ export default function ChauffeurAnglophonePage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="heading mb-4">Réservez votre chauffeur anglophone</h2>
           <p className="sf text-stone-500 mb-8">
-            Dispo 24h/24, 7j/7. On vous confirme en moins de 30 minutes.
+            Disponible 24h/24, 7j/7. Confirmation de réservation sous 30 minutes.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link

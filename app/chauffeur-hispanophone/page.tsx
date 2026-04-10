@@ -20,7 +20,7 @@ const services = [
   {
     titre: 'Découvrir Paris avec un local qui parle votre langue',
     texte:
-      "Les touristes hispanophones adorent Paris — et il y a de quoi. Mais entre un plan Google Maps et un chauffeur qui vous raconte l'histoire du passage du Grand-Cerf ou qui vous amène dans un bistrot du 11e que personne ne connaît, y'a pas photo. Le nôtre parle espagnol, connaît ses classiques et ses coins cachés.",
+      "Les visiteurs hispanophones trouvent à Paris bien plus qu'un itinéraire touristique standard. Le chauffeur connaît le passage du Grand-Cerf, les bonnes adresses du 11e, les circuits moins fréquentés. Il partage ces recommandations en espagnol, pour une découverte de la ville à un autre niveau.",
   },
   {
     titre: 'Rendez-vous d\'affaires et diplomatie',
@@ -30,7 +30,7 @@ const services = [
   {
     titre: 'Groupes et délégations hispanophones',
     texte:
-      "Une délégation commerciale mexicaine de douze personnes, un groupe d'argentins en tour gastronomique, une équipe espagnole pour un salon à Villepinte. On organise plusieurs véhicules avec des chauffeurs qui parlent espagnol, et on coordonne le tout pour que personne ne se perde et que tout le monde arrive à l'heure.",
+      "Délégation commerciale mexicaine, groupe argentin en tour gastronomique, équipe espagnole pour un salon à Villepinte : Amani Limousines déploie plusieurs véhicules avec chauffeurs hispanophones et coordonne l'ensemble des transferts pour une arrivée ponctuelle à chaque étape.",
   },
 ];
 
@@ -57,7 +57,7 @@ export default function ChauffeurHispanophonePage() {
             {c('h1', 'Chauffeur privé hispanophone à Paris')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            {c('intro', 'Il y a énormément de visiteurs hispanophones à Paris — des touristes mexicains, des hommes d\'affaires espagnols, des diplomates colombiens, des familles argentines. Le point commun : quand on a un chauffeur qui parle espagnol, tout devient plus facile. Les instructions sont claires, l\'ambiance est détendue, et on peut vraiment profiter de la ville au lieu de galérer avec la langue. Nos chauffeurs hispanophones sont là 24h/24.')}
+            {c('intro', 'Amani Limousines propose un service de chauffeur privé hispanophone à Paris pour les touristes, professionnels et diplomates venus d\'Espagne ou d\'Amérique latine. Communiquer en espagnol avec son chauffeur change fondamentalement l\'expérience d\'un séjour à Paris : les échanges sont directs, les déplacements organisés avec précision. Service disponible 24h/24, 7j/7.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
@@ -80,10 +80,10 @@ export default function ChauffeurHispanophonePage() {
       {/* Services */}
       <section className="py-14 px-6 md:px-10 bg-warm-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Ce qu'on fait, en espagnol</h2>
+          <h2 className="heading">Nos prestations en langue espagnole</h2>
           <p className="sf text-stone-500 mt-4 mb-10 leading-relaxed">
-            Aéroport, tourisme, business, groupes — on s'en occupe,
-            et tout se passe en español.
+            Aéroports, tourisme, déplacements d'affaires, groupes et délégations —
+            en español, du premier au dernier trajet.
           </p>
           <div className="grid md:grid-cols-2 gap-8">
             {services.map((s) => (
@@ -99,7 +99,7 @@ export default function ChauffeurHispanophonePage() {
       {/* Situations */}
       <section className="py-14 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Pour qui, concrètement</h2>
+          <h2 className="heading">Occasions et clientèle</h2>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
             {situations.map((s) => (
               <div key={s} className="flex items-start gap-3 p-4 rounded-xl bg-warm-50 border border-warm-200">
@@ -116,7 +116,7 @@ export default function ChauffeurHispanophonePage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="heading mb-4">Réservez votre chauffeur hispanophone</h2>
           <p className="sf text-stone-500 mb-8">
-            Dispo 24h/24, 7j/7. Confirmation en moins de 30 minutes.
+            Disponible 24h/24, 7j/7. Confirmation de réservation sous 30 minutes.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link

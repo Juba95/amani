@@ -20,7 +20,7 @@ const services = [
   {
     titre: 'Shopping — Faubourg-Saint-Honoré, Vendôme, rue de la Paix',
     texte:
-      "On ne va pas se mentir : Paris et le shopping de luxe, c'est une combinaison que la clientèle russophone connaît bien. Le chauffeur sait exactement où se trouvent les joailliers de la place Vendôme, les boutiques du Faubourg, et les corners exclusifs du Bon Marché. Il vous dépose devant la porte, gère le stationnement, et revient vous chercher avec les sacs.",
+      "Paris et le shopping de luxe forment une combinaison que la clientèle russophone connaît bien. Le chauffeur maîtrise les adresses des joailliers place Vendôme, les boutiques du Faubourg-Saint-Honoré et les corners exclusifs du Bon Marché. Il vous dépose à l'entrée, gère le stationnement et revient à l'heure convenue.",
   },
   {
     titre: 'Soirées, galas et vie mondaine parisienne',
@@ -58,7 +58,7 @@ export default function ChauffeurRussophonePage() {
             {c('h1', 'Chauffeur privé russophone à Paris')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            {c('intro', 'Paris a toujours attiré la clientèle russophone. Shopping sur les Champs-Élysées, expos au Grand Palais, soirées dans les palaces du 8e. Avoir un chauffeur qui parle russe, c\'est pouvoir dire exactement où vous voulez aller, demander un détour par la rue de la Paix, ou changer de programme à la dernière minute — sans que ça devienne compliqué. Nos chauffeurs russophones connaissent Paris par coeur et sont dispo jour et nuit.')}
+            {c('intro', 'Paris attire depuis longtemps une clientèle russophone exigeante — shopping de luxe, soirées dans les palaces, visites culturelles et séjours prolongés. Un chauffeur parlant russe permet d\'organiser chaque déplacement avec précision, d\'ajuster un programme en temps réel et de communiquer sans contrainte. Nos chauffeurs russophones sont disponibles 24h/24, 7j/7.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
@@ -81,10 +81,10 @@ export default function ChauffeurRussophonePage() {
       {/* Services */}
       <section className="py-14 px-6 md:px-10 bg-warm-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Ce qu'on fait, en russe</h2>
+          <h2 className="heading">Nos prestations en langue russe</h2>
           <p className="sf text-stone-500 mt-4 mb-10 leading-relaxed">
-            Aéroport, shopping, soirées, séjours longue durée.
-            Tout en russe, sans prise de tête.
+            Aéroports, shopping de luxe, soirées, séjours longue durée.
+            En russe, avec la discrétion et la précision attendues.
           </p>
           <div className="grid md:grid-cols-2 gap-8">
             {services.map((s) => (
@@ -100,7 +100,7 @@ export default function ChauffeurRussophonePage() {
       {/* Situations */}
       <section className="py-14 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Pour qui, concrètement</h2>
+          <h2 className="heading">Occasions et clientèle</h2>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
             {situations.map((s) => (
               <div key={s} className="flex items-start gap-3 p-4 rounded-xl bg-warm-50 border border-warm-200">
@@ -117,7 +117,7 @@ export default function ChauffeurRussophonePage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="heading mb-4">Réservez votre chauffeur russophone</h2>
           <p className="sf text-stone-500 mb-8">
-            Dispo 24h/24, 7j/7. Confirmation en moins de 30 minutes.
+            Disponible 24h/24, 7j/7. Confirmation de réservation sous 30 minutes.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link

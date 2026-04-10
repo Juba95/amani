@@ -15,22 +15,22 @@ const services = [
   {
     titre: 'Accueil aéroport en coréen',
     texte:
-      "Le panneau est écrit en hangeul et en français. Le chauffeur vous accueille en coréen, prend vos valises, et vous emmène à l'hôtel. Pas de galère avec un GPS approximatif ou un taxi qui ne sait pas où est votre adresse. Vous venez d'arriver à Paris, et quelqu'un vous parle dans votre langue. Ça commence bien.",
+      "Le panneau d'accueil est en hangeul et en français. Le chauffeur vous accueille en coréen, prend en charge vos bagages et vous conduit à votre hôtel. Dès votre arrivée à Paris, vous êtes pris en charge dans votre langue, sans intermédiaire.",
   },
   {
     titre: 'Mode, beauté et shopping parisien',
     texte:
-      "Les Coréens et Paris, c'est une histoire de mode et de beauté. Le chauffeur connaît les concept stores du Marais, les pharmacies du 6e où tout le monde vient chercher des soins dermato, les flagships Chanel et Dior avenue Montaigne, et le fameux espace K-beauty aux Galeries Lafayette Haussmann. Il vous dépose, vous récupère, et entre deux boutiques il sait où se garer sans vous faire perdre vingt minutes.",
+      "Paris et la Corée partagent une passion commune pour la mode et la beauté. Le chauffeur connaît les concept stores du Marais, les pharmacies du 6e reconnues pour leurs soins dermato, les flagships Chanel et Dior avenue Montaigne et l'espace K-beauty des Galeries Lafayette Haussmann. Il assure les dépôts et récupérations avec précision.",
   },
   {
     titre: 'Déplacements corporate — Samsung, LG, Hyundai',
     texte:
-      "Les grands groupes coréens ont des bureaux partout en France. Quand un directeur de chez Samsung ou un ingénieur de chez Hyundai débarque pour une semaine de rendez-vous, il lui faut un chauffeur fiable qui parle coréen. Le nôtre connaît les sièges sociaux de La Défense, les centres R&D en banlieue, et les restos corrects pour un déjeuner d'affaires entre deux meetings.",
+      "Les grands groupes coréens disposent de bureaux à travers la France. Pour un directeur de Samsung ou un ingénieur de Hyundai en déplacement d'une semaine, le chauffeur assure les transferts quotidiens, connaît les sièges de La Défense et les centres R&D en région parisienne, et communique directement en coréen.",
   },
   {
     titre: 'Tourisme et excursions en coréen',
     texte:
-      "Tour Eiffel, Versailles, Giverny, la Champagne... Les touristes coréens veulent tout voir, et ils ont raison. Le chauffeur organise la journée, évite les pièges à touristes, et vous raconte l'essentiel sur chaque lieu en coréen. Pas besoin d'audioguide, pas besoin de chercher sur Naver — il est là.",
+      "Tour Eiffel, Versailles, Giverny, Champagne : le chauffeur organise les journées, sélectionne les itinéraires et commente les sites en coréen. Un accompagnement personnalisé qui rend tout audioguide superflu.",
   },
 ];
 
@@ -58,7 +58,7 @@ export default function ChauffeurCoreenPage() {
             {c('h1', 'Chauffeur privé parlant coréen à Paris')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            {c('intro', 'Les Coréens à Paris, on en voit de plus en plus. Acheteurs mode pendant la Fashion Week, touristes passionnés par la culture française, cadres des grands groupes en déplacement pro. Le point commun de tous ces voyageurs : avoir un chauffeur qui parle coréen rend le séjour tellement plus simple. Plus besoin de galérer avec Google Translate pour donner une adresse. Le chauffeur est là, il parle votre langue, il connaît Paris. C\'est tout.')}
+            {c('intro', 'Amani Limousines propose un service de chauffeur privé en langue coréenne à Paris. Acheteurs mode, touristes, cadres de grandes entreprises : la clientèle coréenne à Paris est diverse et exigeante. Un chauffeur parlant coréen garantit des échanges directs et sans approximation, pour un séjour organisé avec précision. Service disponible 24h/24, 7j/7.')}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
@@ -81,10 +81,10 @@ export default function ChauffeurCoreenPage() {
       {/* Services */}
       <section className="py-14 px-6 md:px-10 bg-warm-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Ce qu'on fait, en coréen</h2>
+          <h2 className="heading">Nos prestations en langue coréenne</h2>
           <p className="sf text-stone-500 mt-4 mb-10 leading-relaxed">
-            Aéroport, shopping, business, excursions. Tout en coréen,
-            du premier jour au dernier.
+            Aéroports, shopping, déplacements d'affaires, excursions.
+            En coréen, du premier au dernier trajet.
           </p>
           <div className="grid md:grid-cols-2 gap-8">
             {services.map((s) => (
@@ -100,7 +100,7 @@ export default function ChauffeurCoreenPage() {
       {/* Situations */}
       <section className="py-14 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading">Pour qui, concrètement</h2>
+          <h2 className="heading">Occasions et clientèle</h2>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
             {situations.map((s) => (
               <div key={s} className="flex items-start gap-3 p-4 rounded-xl bg-warm-50 border border-warm-200">
@@ -117,7 +117,7 @@ export default function ChauffeurCoreenPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="heading mb-4">Réservez votre chauffeur parlant coréen</h2>
           <p className="sf text-stone-500 mb-8">
-            Dispo 24h/24, 7j/7. Confirmation en moins de 30 minutes.
+            Disponible 24h/24, 7j/7. Confirmation de réservation sous 30 minutes.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
