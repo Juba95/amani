@@ -103,7 +103,7 @@ export default function AProposPage() {
                 {c('chauffeurs_p1', "Quand votre chauffeur parle votre langue, le trajet change complètement. Ce n'est plus juste un déplacement — vous pouvez échanger, poser des questions, vous faire comprendre sans effort.")}
               </p>
               <p className="sf text-stone-600 mt-4 leading-relaxed">
-                {c('chauffeurs_p2', "Nos chauffeurs parlent plus de 10 langues. Concrètement, ça veut dire accueillir des hommes d'affaires saoudiens à Roissy en arabe, discuter d'un itinéraire avec une famille japonaise, ou briefer une délégation allemande sur le programme du jour. Ils connaissent Paris sur le bout des doigts et savent s'adapter à chaque culture, parce qu'ils ont été formés pour ça.")}
+                {c('chauffeurs_p2', "Nos chauffeurs parlent plus de 10 langues. Cela signifie accueillir des hommes d'affaires saoudiens à Roissy en arabe, échanger sur un itinéraire avec une famille japonaise, ou coordonner avec une délégation allemande sur le programme du jour. Ils maîtrisent Paris et savent s'adapter aux codes de chaque culture.")}
               </p>
               <p className="sf text-stone-600 mt-4 leading-relaxed">
                 {c('chauffeurs_p3', "Chez Amani Limousines, notre engagement envers le service transcende la simple conduite. Nous anticipons vos besoins, vous offrons des conseils et supervisons chaque détail avec une attention méticuleuse.")}

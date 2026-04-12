@@ -168,15 +168,13 @@ function AboutSection() {
                 vous faire comprendre sans effort.
               </p>
               <p>
-                Nos chauffeurs parlent plus de 10 langues. Concrètement, ça veut dire accueillir
-                des hommes d'affaires saoudiens à Roissy en arabe, discuter d'un itinéraire
-                avec une famille japonaise, ou briefer une délégation allemande sur le programme
-                du jour. Ils connaissent Paris sur le bout des doigts et savent s'adapter
-                à chaque culture, parce qu'ils ont été formés pour ça.
+                Nos chauffeurs parlent plus de 10 langues. Cela signifie accueillir
+                des hommes d'affaires saoudiens à Roissy en arabe, échanger sur un itinéraire
+                avec une famille japonaise, ou coordonner avec une délégation allemande sur le programme
+                du jour. Ils maîtrisent Paris et savent s'adapter aux codes de chaque culture.
               </p>
               <p>
-                Chez Amani, le service ne s'arrête pas au volant. On anticipe, on conseille,
-                on gère les détails. Vous, vous montez en voiture et vous profitez du trajet.
+                Chez Amani Limousines, notre engagement envers le service transcende la simple conduite. Nous anticipons vos besoins, vous offrons des conseils et supervisons chaque détail avec une attention méticuleuse.
               </p>
             </div>
 
