@@ -6,8 +6,8 @@ import { content, contentMetadata } from '@/lib/get-content';
 const SLUG = 'chauffeur-diplomatique';
 
 export const metadata: Metadata = contentMetadata(SLUG, {
-  title: 'Chauffeur Diplomatique Paris — Transport Officiel & Protocole | Amani Limousines',
-  description: 'Transport diplomatique à Paris : convois officiels, ambassades, sommets internationaux. Chauffeurs habilités, véhicules blindés, protocole respecté. Discrétion et multilinguisme.',
+  title: 'Chauffeur Diplomatique — Transport Officiel & Protocole | France & Europe | Amani Limousines',
+  description: 'Transport diplomatique en France et en Europe : convois officiels, ambassades, sommets internationaux. Chauffeurs habilités, véhicules blindés, protocole respecté. Discrétion et multilinguisme.',
   canonical: 'https://www.amani-limousines.com/chauffeur-diplomatique',
   alternates: {
     languages: {

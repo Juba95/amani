@@ -6,8 +6,8 @@ import { content, contentMetadata } from '@/lib/get-content';
 const SLUG = 'chauffeur-anglophone';
 
 export const metadata: Metadata = contentMetadata(SLUG, {
-  title: 'Chauffeur Anglophone Paris — Chauffeur Privé Parlant Anglais | Amani Limousines',
-  description: 'Chauffeur privé parlant anglais à Paris. Transferts aéroports, rendez-vous d\'affaires, tourisme de luxe. Communication fluide en anglais. Disponible 24h/24.',
+  title: 'Chauffeur Anglophone — Chauffeur Privé Parlant Anglais | France & Europe | Amani Limousines',
+  description: 'Chauffeur privé parlant anglais, disponible partout en France et en Europe. Transferts aéroports, rendez-vous d\'affaires, tourisme de luxe. Disponible 24h/24.',
   canonical: 'https://www.amani-limousines.com/chauffeur-anglophone',
 });
 

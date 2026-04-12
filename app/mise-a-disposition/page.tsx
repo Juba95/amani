@@ -5,8 +5,8 @@ import { content, contentMetadata } from '@/lib/get-content';
 const SLUG = 'mise-a-disposition';
 
 export const metadata: Metadata = contentMetadata(SLUG, {
-  title: "Mise à Disposition Chauffeur Privé Paris — À l'Heure, Demi-Journée, Journée | Amani Limousines",
-  description: 'Louez un chauffeur privé à l\'heure à Paris. Demi-journée, journée complète, plusieurs jours. Compteur arrêté pendant les attentes. Berlines Mercedes et vans VIP.',
+  title: "Mise à Disposition Chauffeur Privé — À l'Heure, Demi-Journée, Journée | France & Europe | Amani Limousines",
+  description: 'Louez un chauffeur privé à l\'heure partout en France et en Europe. Demi-journée, journée complète, plusieurs jours. Compteur arrêté pendant les attentes. Berlines Mercedes et vans VIP.',
   canonical: 'https://www.amani-limousines.com/mise-a-disposition',
   alternates: {
     languages: {

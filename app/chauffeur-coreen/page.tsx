@@ -6,8 +6,8 @@ import { content, contentMetadata } from '@/lib/get-content';
 const SLUG = 'chauffeur-coreen';
 
 export const metadata: Metadata = contentMetadata(SLUG, {
-  title: 'Chauffeur Coréen Paris — Chauffeur Privé Parlant Coréen | Amani Limousines',
-  description: 'Chauffeur privé parlant coréen à Paris. K-beauty, mode, tourisme, événements corporate. Communication en coréen. Disponible 24h/24.',
+  title: 'Chauffeur Coréen — Chauffeur Privé Parlant Coréen | France & Europe | Amani Limousines',
+  description: 'Chauffeur privé parlant coréen, disponible partout en France et en Europe. K-beauty, mode, tourisme, événements corporate. Disponible 24h/24.',
   canonical: 'https://www.amani-limousines.com/chauffeur-coreen',
 });
 

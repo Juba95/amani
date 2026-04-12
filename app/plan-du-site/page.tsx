@@ -6,7 +6,7 @@ import { content, contentMetadata } from '@/lib/get-content';
 const SLUG = 'plan-du-site';
 
 export const metadata: Metadata = contentMetadata(SLUG, {
-  title: 'Plan du site — Amani Limousines | Chauffeur privé Paris',
+  title: 'Plan du site — Amani Limousines | Chauffeur Privé France & Europe',
   description: 'Plan du site Amani Limousines. Retrouvez toutes les pages : services, transferts aéroports, destinations, événements et informations.',
   canonical: 'https://www.amani-limousines.com/plan-du-site',
 });

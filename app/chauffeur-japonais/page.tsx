@@ -6,8 +6,8 @@ import { content, contentMetadata } from '@/lib/get-content';
 const SLUG = 'chauffeur-japonais';
 
 export const metadata: Metadata = contentMetadata(SLUG, {
-  title: 'Chauffeur Japonais Paris — Chauffeur Privé Parlant Japonais | Amani Limousines',
-  description: 'Chauffeur privé parlant japonais à Paris. Haute couture, restaurants étoilés, affaires. Communication en japonais. Disponible 24h/24.',
+  title: 'Chauffeur Japonais — Chauffeur Privé Parlant Japonais | France & Europe | Amani Limousines',
+  description: 'Chauffeur privé parlant japonais, disponible partout en France et en Europe. Haute couture, restaurants étoilés, affaires. Disponible 24h/24.',
   canonical: 'https://www.amani-limousines.com/chauffeur-japonais',
 });
 

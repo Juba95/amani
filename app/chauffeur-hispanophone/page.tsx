@@ -6,8 +6,8 @@ import { content, contentMetadata } from '@/lib/get-content';
 const SLUG = 'chauffeur-hispanophone';
 
 export const metadata: Metadata = contentMetadata(SLUG, {
-  title: 'Chauffeur Hispanophone Paris — Chauffeur Privé Parlant Espagnol | Amani Limousines',
-  description: 'Chauffeur privé parlant espagnol à Paris. Tourisme, affaires, visites diplomatiques. Communication fluide en español. Disponible 24h/24.',
+  title: 'Chauffeur Hispanophone — Chauffeur Privé Parlant Espagnol | France & Europe | Amani Limousines',
+  description: 'Chauffeur privé parlant espagnol, disponible partout en France et en Europe. Tourisme, affaires, visites diplomatiques. Disponible 24h/24.',
   canonical: 'https://www.amani-limousines.com/chauffeur-hispanophone',
 });
 

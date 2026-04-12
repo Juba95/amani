@@ -6,8 +6,8 @@ import { content, contentMetadata } from '@/lib/get-content';
 const SLUG = 'chauffeur-germanophone';
 
 export const metadata: Metadata = contentMetadata(SLUG, {
-  title: 'Chauffeur Germanophone Paris — Chauffeur Privé Parlant Allemand | Amani Limousines',
-  description: 'Chauffeur privé parlant allemand à Paris. Industrie automobile, conventions professionnelles, tourisme. Communication en allemand. Disponible 24h/24.',
+  title: 'Chauffeur Germanophone — Chauffeur Privé Parlant Allemand | France & Europe | Amani Limousines',
+  description: 'Chauffeur privé parlant allemand, disponible partout en France et en Europe. Industrie automobile, conventions professionnelles, tourisme. Disponible 24h/24.',
   canonical: 'https://www.amani-limousines.com/chauffeur-germanophone',
 });
 

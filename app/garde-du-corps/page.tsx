@@ -6,7 +6,7 @@ import { content, contentMetadata } from '@/lib/get-content';
 const SLUG = 'garde-du-corps';
 
 export const metadata: Metadata = contentMetadata(SLUG, {
-  title: 'Garde du Corps Paris — Protection Rapprochée & Bodyguard Privé | Amani Limousines',
+  title: 'Garde du Corps — Protection Rapprochée & Bodyguard Privé | France & Europe | Amani Limousines',
   description: 'Garde du corps et protection rapprochée à Paris. Bodyguard privé pour personnalités, dirigeants et événements. Agents formés, discrétion totale, intervention 24h/24.',
   canonical: 'https://www.amani-limousines.com/garde-du-corps',
   alternates: {

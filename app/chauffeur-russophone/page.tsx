@@ -6,8 +6,8 @@ import { content, contentMetadata } from '@/lib/get-content';
 const SLUG = 'chauffeur-russophone';
 
 export const metadata: Metadata = contentMetadata(SLUG, {
-  title: 'Chauffeur Russophone Paris — Chauffeur Privé Parlant Russe | Amani Limousines',
-  description: 'Chauffeur privé parlant russe à Paris. Tourisme de luxe, shopping, événements mondains. Communication en russe. Disponible 24h/24.',
+  title: 'Chauffeur Russophone — Chauffeur Privé Parlant Russe | France & Europe | Amani Limousines',
+  description: 'Chauffeur privé parlant russe, disponible partout en France et en Europe. Tourisme de luxe, shopping, événements mondains. Disponible 24h/24.',
   canonical: 'https://www.amani-limousines.com/chauffeur-russophone',
 });
 

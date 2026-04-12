@@ -6,7 +6,7 @@ const SLUG = 'mentions-legales';
 
 export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Mentions Légales — Amani Limousines',
-  description: 'Mentions légales d\'Amani Limousines, service de chauffeur privé de prestige à Paris.',
+  description: 'Mentions légales d\'Amani Limousines, service de chauffeur privé de prestige en France et en Europe.',
   canonical: 'https://www.amani-limousines.com/mentions-legales',
 });
 

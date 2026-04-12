@@ -19,17 +19,17 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Amani Limousines — Chauffeur Privé de Prestige à Paris',
+  title: 'Amani Limousines — Chauffeur Privé de Prestige | Paris, France & Europe',
   description:
-    'Service de chauffeur privé haut de gamme à Paris. Transferts aéroports CDG, Orly, Le Bourget. Berlines Mercedes, vans VIP, convois. Disponible 24h/24.',
+    'Service de chauffeur privé haut de gamme. Transferts aéroports CDG, Orly, Le Bourget. Déplacements partout en France et en Europe. Berlines Mercedes, vans VIP, convois. Disponible 24h/24.',
   metadataBase: new URL('https://www.amani-limousines.com'),
   alternates: {
     canonical: '/',
     languages: { fr: '/', en: '/en', ar: '/ar', 'zh-Hans': '/zh' },
   },
   openGraph: {
-    title: 'Amani Limousines — Chauffeur Privé de Prestige à Paris',
-    description: 'Service de chauffeur privé haut de gamme. 300+ véhicules. Transferts aéroports, délégations, événements.',
+    title: 'Amani Limousines — Chauffeur Privé de Prestige | Paris, France & Europe',
+    description: 'Service de chauffeur privé haut de gamme. 300+ véhicules. Transferts aéroports, délégations, événements. France & Europe.',
     url: 'https://www.amani-limousines.com',
     siteName: 'Amani Limousines',
     locale: 'fr_FR',

@@ -5,8 +5,8 @@ import { content, contentMetadata } from '@/lib/get-content';
 const SLUG = 'convoi-delegations';
 
 export const metadata: Metadata = contentMetadata(SLUG, {
-  title: 'Convoi de Véhicules Paris — Transport Délégation & Mission Diplomatique | Amani',
-  description: 'Transport de délégations officielles à Paris. Convois de 2 à 30 véhicules, missions diplomatiques, ambassades. Chauffeurs formés, coordination centralisée, disponible 24h/24.',
+  title: 'Convoi de Véhicules — Transport Délégation & Mission Diplomatique | France & Europe | Amani',
+  description: 'Transport de délégations officielles partout en France et en Europe. Convois de 2 à 30 véhicules, missions diplomatiques, ambassades. Chauffeurs formés, coordination centralisée, disponible 24h/24.',
   canonical: 'https://www.amani-limousines.com/convoi-delegations',
   alternates: {
     languages: {

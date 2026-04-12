@@ -6,8 +6,8 @@ import { content, contentMetadata } from '@/lib/get-content';
 const SLUG = 'chauffeur-arabophone';
 
 export const metadata: Metadata = contentMetadata(SLUG, {
-  title: 'Chauffeur Arabophone Paris — Chauffeur Privé Parlant Arabe | Amani Limousines',
-  description: 'Chauffeur privé parlant arabe à Paris. Accueil délégations du Golfe, shopping de luxe, tourisme médical. Communication en arabe. Disponible 24h/24.',
+  title: 'Chauffeur Arabophone — Chauffeur Privé Parlant Arabe | France & Europe | Amani Limousines',
+  description: 'Chauffeur privé parlant arabe, disponible partout en France et en Europe. Accueil délégations du Golfe, shopping de luxe, tourisme médical. Disponible 24h/24.',
   canonical: 'https://www.amani-limousines.com/chauffeur-arabophone',
 });
 

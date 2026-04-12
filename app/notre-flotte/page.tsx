@@ -6,7 +6,7 @@ import { content, contentMetadata } from '@/lib/get-content';
 const SLUG = 'notre-flotte';
 
 export const metadata: Metadata = contentMetadata(SLUG, {
-  title: 'Flotte de Véhicules de Prestige Paris — Mercedes, Range Rover, Sprinter VIP | Amani',
+  title: 'Flotte de Véhicules de Prestige — Mercedes, Range Rover, Sprinter VIP | Amani Limousines',
   description: 'Découvrez notre flotte de véhicules de prestige à Paris. Mercedes Classe E, EQS, S, Maybach, V, G, Range Rover Evoque et Sprinter VIP. Plus de 300 véhicules renouvelés chaque année.',
   canonical: 'https://www.amani-limousines.com/notre-flotte',
   alternates: {

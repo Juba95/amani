@@ -6,8 +6,8 @@ import { content, contentMetadata } from '@/lib/get-content';
 const SLUG = 'a-propos';
 
 export const metadata: Metadata = contentMetadata(SLUG, {
-  title: 'À Propos — Amani Limousines | Service de Chauffeur Privé de Prestige à Paris',
-  description: 'Amani Limousines, service de chauffeur privé de prestige à Paris. Notre histoire, nos valeurs, notre flotte de 300+ véhicules. Ambassades, palaces, aviation privée.',
+  title: 'À Propos — Amani Limousines | Chauffeur Privé de Prestige | France & Europe',
+  description: 'Amani Limousines, service de chauffeur privé de prestige en France et en Europe. Notre histoire, nos valeurs, notre flotte de 300+ véhicules. Ambassades, palaces, aviation privée.',
   canonical: 'https://www.amani-limousines.com/a-propos',
 });
 

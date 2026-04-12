@@ -5,8 +5,8 @@ import { content, contentMetadata } from '@/lib/get-content';
 const SLUG = 'transfert-prive';
 
 export const metadata: Metadata = contentMetadata(SLUG, {
-  title: 'Transfert Privé Paris — Prix Fixe Porte à Porte | Amani Limousines',
-  description: 'Transfert privé à Paris avec chauffeur. Prix fixe garanti, sans compteur. Aéroports, gares, hôtels et adresses personnalisées. Réservation immédiate.',
+  title: 'Transfert Privé — Prix Fixe Porte à Porte | France & Europe | Amani Limousines',
+  description: 'Transfert privé avec chauffeur partout en France et en Europe. Prix fixe garanti, sans compteur. Aéroports, gares, hôtels et adresses personnalisées. Réservation immédiate.',
   canonical: 'https://www.amani-limousines.com/transfert-prive',
   alternates: {
     languages: {

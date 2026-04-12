@@ -6,7 +6,7 @@ import ContactForm from './ContactForm';
 const SLUG = 'contact';
 
 export const metadata: Metadata = contentMetadata(SLUG, {
-  title: 'Contact — Chauffeur Privé Paris | Amani Limousines',
+  title: 'Contact — Chauffeur Privé France & Europe | Amani Limousines',
   description: 'Contactez notre équipe de chauffeurs privés à Paris. Réservation, devis sur mesure, disponible 24h/24. Réponse en moins de 30 minutes.',
   canonical: 'https://www.amani-limousines.com/contact',
 });

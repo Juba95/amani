@@ -5,8 +5,8 @@ import { content, contentMetadata } from '@/lib/get-content';
 const SLUG = 'securite-rapprochee';
 
 export const metadata: Metadata = contentMetadata(SLUG, {
-  title: 'Sécurité Rapprochée Paris — Transport Sécurisé & Garde du Corps | Amani Limousines',
-  description: 'Service de sécurité rapprochée et transport sécurisé à Paris. Escorte pour personnalités, dirigeants et diplomates. Véhicules banalisés, chauffeurs formés.',
+  title: 'Sécurité Rapprochée — Transport Sécurisé & Garde du Corps | France & Europe | Amani Limousines',
+  description: 'Service de sécurité rapprochée et transport sécurisé en France et en Europe. Escorte pour personnalités, dirigeants et diplomates. Véhicules banalisés, chauffeurs formés.',
   canonical: 'https://www.amani-limousines.com/securite-rapprochee',
   alternates: {
     languages: {

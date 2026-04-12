@@ -6,8 +6,8 @@ import { content, contentMetadata } from '@/lib/get-content';
 const SLUG = 'chauffeur-mandarin';
 
 export const metadata: Metadata = contentMetadata(SLUG, {
-  title: 'Chauffeur Mandarin Paris — Chauffeur Privé Parlant Chinois | Amani Limousines',
-  description: 'Chauffeur privé parlant mandarin à Paris. Shopping de luxe, tourisme en groupe, délégations d\'affaires chinoises. Communication en chinois. Disponible 24h/24.',
+  title: 'Chauffeur Mandarin — Chauffeur Privé Parlant Chinois | France & Europe | Amani Limousines',
+  description: 'Chauffeur privé parlant mandarin, disponible partout en France et en Europe. Shopping de luxe, tourisme en groupe, délégations d\'affaires chinoises. Disponible 24h/24.',
   canonical: 'https://www.amani-limousines.com/chauffeur-mandarin',
 });
 

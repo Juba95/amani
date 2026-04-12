@@ -5,9 +5,9 @@ import DevisClient from './DevisClient';
 export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
-  title: 'Devis instantané — Amani Limousines | Chauffeur privé Paris',
+  title: 'Devis instantané — Amani Limousines | Chauffeur Privé France & Europe',
   description:
-    'Obtenez un devis instantané pour votre transfert aéroport ou course en ville. Prix fixe, tout compris.',
+    'Obtenez un devis instantané pour votre transfert aéroport ou course partout en France et en Europe. Prix fixe, tout compris.',
   robots: { index: true, follow: true },
 };
 
