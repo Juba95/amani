@@ -143,15 +143,15 @@ export default function NotreFlottePage() {
         <div className="max-w-4xl mx-auto space-y-10">
           {vehicules.map((v) => (
             <div key={v.id} className="card md:flex gap-8">
-              <div className="md:w-64 flex-shrink-0 relative">
+              <div className="md:w-48 flex-shrink-0 relative">
                 <Image
                   src={v.image}
                   alt={v.nom}
-                  width={600}
-                  height={380}
-                  sizes="(max-width: 768px) 100vw, 256px"
+                  width={400}
+                  height={250}
+                  sizes="(max-width: 768px) 100vw, 192px"
                   quality={65}
-                  className="w-full h-40 object-cover rounded-xl"
+                  className="w-full h-32 object-contain rounded-xl"
                   loading="lazy"
                 />
               </div>
