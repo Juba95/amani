@@ -35,16 +35,16 @@ export default function ContactEN() {
           {[
             {
               title: 'Phone',
-              info: '+33 6 62 02 73 44',
+              info: '+33 6 87 16 97 47',
               detail: 'Available 24/7 for urgent requests and last-minute bookings.',
-              href: 'tel:+33662027344',
+              href: 'tel:+33687169747',
               cta: 'Call now',
             },
             {
               title: 'WhatsApp',
-              info: '+33 6 62 02 73 44',
+              info: '+33 6 87 16 97 47',
               detail: 'Send your journey details by WhatsApp for a quick quote.',
-              href: 'https://wa.me/33662027344',
+              href: 'https://wa.me/33687169747',
               cta: 'Message on WhatsApp',
             },
             {
@@ -86,7 +86,7 @@ export default function ContactEN() {
               Standard bookings: confirmed within 30 minutes. Complex missions (convoys,
               delegations, close protection): allow 2 to 4 hours for a detailed proposal
               with availabilities and pricing. Emergency transfers within 2 hours: call
-              directly on +33 6 62 02 73 44.
+              directly on +33 6 87 16 97 47.
             </p>
           </div>
         </div>

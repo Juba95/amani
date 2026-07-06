@@ -243,7 +243,7 @@ export default function BookingResults({
               </button>
 
               <p className="sf text-center text-[0.72rem] text-stone-400 mt-3">
-                {t?.booking?.or_call || 'Ou appelez le +33 6 62 02 73 44 · WhatsApp disponible'}
+                {t?.booking?.or_call || 'Ou appelez le +33 6 87 16 97 47 · WhatsApp disponible'}
               </p>
             </div>
           </div>

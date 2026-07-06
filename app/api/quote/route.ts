@@ -79,7 +79,8 @@ async function fetchGoogleMapsDistance(from: string, to: string) {
   try {
     const url = `https://maps.googleapis.com/maps/api/distancematrix/json?origins=${encodeURIComponent(from)}&destinations=${encodeURIComponent(to)}&key=${apiKey}&language=fr&units=metric`;
 
-    const res = await fetch(url);
+    // Timeout 8s — évite les requêtes qui restent bloquées si Google ne répond pas
+    const res = await fetch(url, { signal: AbortSignal.timeout(8000) });
     const data = await res.json();
 
     if (data.status === 'OK' && data.rows?.[0]?.elements?.[0]?.status === 'OK') {

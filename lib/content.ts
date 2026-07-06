@@ -89,7 +89,7 @@ const DEFAULT_CONTENT: ContentBlock[] = [
     label: 'Numéro de téléphone',
     page: 'global',
     field: 'phone',
-    value: '+33 6 62 02 73 44',
+    value: '+33 6 87 16 97 47',
     updatedAt: new Date().toISOString(),
   },
   {

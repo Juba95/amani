@@ -46,7 +46,7 @@ const content: Record<Lang, {
       },
     ],
     cta: 'طلب عرض سعر',
-    ctaPhone: '+33 6 62 02 73 44',
+    ctaPhone: '+33 6 87 16 97 47',
     related: [
       { label: 'شامونيه', href: '/ar/chamonix' },
       { label: 'ميجيف', href: '/ar/megeve' },
@@ -79,7 +79,7 @@ const content: Record<Lang, {
       },
     ],
     cta: '索取报价',
-    ctaPhone: '+33 6 62 02 73 44',
+    ctaPhone: '+33 6 87 16 97 47',
     related: [
       { label: '霞慕尼', href: '/zh/chamonix' },
       { label: '梅杰夫', href: '/zh/megeve' },

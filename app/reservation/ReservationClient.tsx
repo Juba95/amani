@@ -80,7 +80,7 @@ function ReservationForm() {
       setStep(2);
       return;
     }
-    window.open(`https://wa.me/33662027344?text=${buildWhatsAppMessage()}`, '_blank');
+    window.open(`https://wa.me/33687169747?text=${buildWhatsAppMessage()}`, '_blank');
     setSubmitted(true);
   };
 
@@ -104,7 +104,7 @@ function ReservationForm() {
               <p className="heading text-2xl">Votre demande a été envoyée</p>
               <p className="sf text-stone-500 mt-3">
                 Notre équipe vous rappelle sous 30 minutes. Vous pouvez également
-                nous contacter directement au <strong>+33 6 62 02 73 44</strong>.
+                nous contacter directement au <strong>+33 6 87 16 97 47</strong>.
               </p>
             </div>
           ) : (
@@ -281,11 +281,11 @@ function ReservationForm() {
           <div className="mt-12 pt-8 border-t border-warm-200">
             <p className="sf text-sm text-stone-500 text-center mb-4">Ou contactez-nous directement</p>
             <div className="flex flex-wrap justify-center gap-3">
-              <a href="tel:+33662027344"
+              <a href="tel:+33687169747"
                 className="btn-outline">
-                ✆ +33 6 62 02 73 44
+                ✆ +33 6 87 16 97 47
               </a>
-              <a href="https://wa.me/33662027344" target="_blank" rel="noopener noreferrer"
+              <a href="https://wa.me/33687169747" target="_blank" rel="noopener noreferrer"
                 className="btn-outline">
                 WhatsApp
               </a>

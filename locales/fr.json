@@ -9,7 +9,7 @@
     "fleet": "Notre Flotte",
     "booking": "Réservation",
     "contact": "Contact",
-    "phone": "+33 6 62 02 73 44",
+    "phone": "+33 6 87 16 97 47",
     "available": "24h/24 — 7j/7"
   },
   "hero": {
@@ -199,7 +199,7 @@
       },
       {
         "q": "Comment réserver votre service ?",
-        "a": "Via notre formulaire en ligne, par téléphone au +33 6 62 02 73 44, par email à contact@amani-limousines.com, ou via WhatsApp. Notre équipe répond dans les 30 minutes, 24h/24."
+        "a": "Via notre formulaire en ligne, par téléphone au +33 6 87 16 97 47, par email à contact@amani-limousines.com, ou via WhatsApp. Notre équipe répond dans les 30 minutes, 24h/24."
       }
     ]
   },
@@ -362,7 +362,7 @@
     "included_items": "Accueil VIP · Suivi de vol · Eau",
     "total": "Prix total fixe",
     "book_now": "Réserver maintenant",
-    "or_call": "Ou appelez le +33 6 62 02 73 44 · WhatsApp disponible",
+    "or_call": "Ou appelez le +33 6 87 16 97 47 · WhatsApp disponible",
     "change_vehicle": "← Modifier le véhicule"
   },
   "trust": {

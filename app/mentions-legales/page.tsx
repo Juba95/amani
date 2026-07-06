@@ -29,7 +29,7 @@ export default function MentionsLegalesPage() {
                 <strong>Amani Limousines</strong><br />
                 Service de chauffeur privé de prestige<br />
                 Paris, France<br />
-                Téléphone : +33 6 62 02 73 44<br />
+                Téléphone : +33 6 87 16 97 47<br />
                 Email : contact@amani-limousines.com<br />
                 Site web : www.amani-limousines.com
               </p>

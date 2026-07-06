@@ -17,7 +17,7 @@ const SERVICE_LABELS: Record<string, string> = Object.fromEntries(
   SERVICES.map(s => [s.value, s.label])
 );
 
-const BUSINESS_WA = '33662027344'; // numéro WhatsApp Amani sans +
+const BUSINESS_WA = '33687169747'; // numéro WhatsApp Amani sans +
 
 // ── Validation du numéro de téléphone ─────────────────────────────────────────
 // Accepte : 06/07 français, +33, 0033, ou tout numéro international (+XX…)

@@ -31,8 +31,8 @@ export default function ContactPage() {
       <section className="py-10 px-6 md:px-10" style={{ background: '#faf8f5' }}>
         <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4">
           {[
-            { icon: '✆', label: 'Téléphone', value: c('phone', '+33 6 62 02 73 44'), href: 'tel:+33662027344' },
-            { icon: '💬', label: 'WhatsApp', value: c('whatsapp', 'Disponible 24h/24'), href: 'https://wa.me/33662027344' },
+            { icon: '✆', label: 'Téléphone', value: c('phone', '+33 6 87 16 97 47'), href: 'tel:+33687169747' },
+            { icon: '💬', label: 'WhatsApp', value: c('whatsapp', 'Disponible 24h/24'), href: 'https://wa.me/33687169747' },
             { icon: '✉', label: 'Email', value: c('email', 'contact@amani-limousines.com'), href: 'mailto:contact@amani-limousines.com' },
           ].map(item => (
             <a key={item.label} href={item.href} target={item.href.startsWith('http') ? '_blank' : undefined}

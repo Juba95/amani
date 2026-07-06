@@ -41,7 +41,8 @@ export async function POST(req: NextRequest) {
     url.searchParams.set('region', 'fr');
     url.searchParams.set('key', apiKey);
 
-    const res = await fetch(url.toString());
+    // Timeout 8s — évite les requêtes qui restent bloquées si Google ne répond pas
+    const res = await fetch(url.toString(), { signal: AbortSignal.timeout(8000) });
     const data = await res.json();
 
     if (data.status !== 'OK') {

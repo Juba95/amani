@@ -42,7 +42,7 @@ const content: Record<Lang, {
       },
     ],
     cta: 'طلب عرض سعر',
-    ctaPhone: '+33 6 62 02 73 44',
+    ctaPhone: '+33 6 87 16 97 47',
     related: [
       { label: 'نقل مطار CDG', href: '/ar#services' },
       { label: 'نقل مطار أورلي', href: '/ar#services' },
@@ -72,7 +72,7 @@ const content: Record<Lang, {
       },
     ],
     cta: '索取报价',
-    ctaPhone: '+33 6 62 02 73 44',
+    ctaPhone: '+33 6 87 16 97 47',
     related: [
       { label: '戴高乐机场接送', href: '/zh#services' },
       { label: '奥利机场接送', href: '/zh#services' },

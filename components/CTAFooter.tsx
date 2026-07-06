@@ -138,7 +138,7 @@ interface CTAProps {
 
 export function CTA({ t }: CTAProps) {
   const phone = t?.nav?.phone?.replace(/\s/g, '') ?? '';
-  const waNumber = '33662027344';
+  const waNumber = '33687169747';
 
   return (
     <section id="contact" className="py-20 px-6 md:px-10 text-center relative gold-glow"

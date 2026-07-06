@@ -55,10 +55,10 @@ export default function BordeauxAirportTransferEN() {
               Request a quote
             </Link>
             <a
-              href="tel:+33662027344"
+              href="tel:+33687169747"
               className="inline-block px-6 py-3 font-sans text-sm tracking-widest uppercase border border-stone-300 text-stone-700"
             >
-              +33 6 62 02 73 44
+              +33 6 87 16 97 47
             </a>
           </div>
         </div>

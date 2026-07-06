@@ -45,7 +45,7 @@ const content: Record<Lang, {
       },
     ],
     cta: 'طلب عرض سعر',
-    ctaPhone: '+33 6 62 02 73 44',
+    ctaPhone: '+33 6 87 16 97 47',
     related: [
       { label: 'ميجيف', href: '/ar/megeve' },
       { label: 'أوت-سافوا', href: '/ar/haute-savoie' },
@@ -76,7 +76,7 @@ const content: Record<Lang, {
       },
     ],
     cta: '索取报价',
-    ctaPhone: '+33 6 62 02 73 44',
+    ctaPhone: '+33 6 87 16 97 47',
     related: [
       { label: '梅杰夫', href: '/zh/megeve' },
       { label: '上萨瓦省', href: '/zh/haute-savoie' },
