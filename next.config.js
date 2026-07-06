@@ -4,8 +4,9 @@ const nextConfig = {
   output: 'standalone',
 
   images: {
-    // AVIF = 50% plus petit que WebP, WebP = fallback
-    formats: ['image/avif', 'image/webp'],
+    // WebP uniquement — l'encodage AVIF consomme trop de RAM/CPU
+    // et peut saturer un petit VPS (OOM → site down)
+    formats: ['image/webp'],
     // Tailles adaptées aux breakpoints du site (évite de servir des images trop grandes)
     deviceSizes: [640, 750, 828, 1080, 1200],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],

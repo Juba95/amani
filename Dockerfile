@@ -14,6 +14,8 @@ COPY . .
 # Variables de build nécessaires
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV NODE_ENV=production
+# Limite la RAM du build pour ne pas étouffer le serveur pendant les déploiements Coolify
+ENV NODE_OPTIONS="--max-old-space-size=1536"
 
 RUN npm run build
 
@@ -26,8 +28,11 @@ ENV NEXT_TELEMETRY_DISABLED=1
 ENV PORT=3000
 ENV HOSTNAME="0.0.0.0"
 ENV DATA_DIR=/app/data
-# Limite mémoire Node.js — évite l'OOM kill silencieux
-ENV NODE_OPTIONS="--max-old-space-size=512"
+# Plafonne le heap Node : en cas de fuite, le process crashe proprement
+# et Docker le redémarre, au lieu de saturer la RAM du serveur entier
+ENV NODE_OPTIONS="--max-old-space-size=768"
+# Limite la concurrence de Sharp (optimisation d'images) — évite les pics RAM
+ENV SHARP_CONCURRENCY=1
 
 # Utilisateur non-root pour la sécurité
 RUN addgroup --system --gid 1001 nodejs \
