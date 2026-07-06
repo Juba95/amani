@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import PlacesInput from '@/components/PlacesInput';
+import PlacesInput, { isGmapsUnavailable } from '@/components/PlacesInput';
 
 interface HeroProps {
   t: any;
@@ -35,7 +35,8 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
 
   const handleSearch = () => {
     const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? '';
-    const needsValidation = apiKey.length >= 10;
+    // Pas de validation bloquante si Google Maps est indisponible (clé rejetée)
+    const needsValidation = apiKey.length >= 10 && !isGmapsUnavailable();
     if (needsValidation && (!fromConfirmed || !toConfirmed)) {
       setSubmitError('Veuillez sélectionner les adresses dans la liste de suggestions');
       return;

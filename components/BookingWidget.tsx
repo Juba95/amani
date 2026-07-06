@@ -8,7 +8,7 @@
 
 import { useState, useRef } from 'react';
 import { useRouter } from 'next/navigation';
-import PlacesInput from '@/components/PlacesInput';
+import PlacesInput, { isGmapsUnavailable } from '@/components/PlacesInput';
 
 interface BookingWidgetProps {
   t: any;
@@ -34,7 +34,8 @@ export default function BookingWidget({ t, locale = 'fr' }: BookingWidgetProps) 
     }
 
     const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? '';
-    const needsValidation = apiKey.length >= 10;
+    // Pas de validation bloquante si Google Maps est indisponible (clé rejetée)
+    const needsValidation = apiKey.length >= 10 && !isGmapsUnavailable();
     if (needsValidation && (!fromConfirmed || !toConfirmed)) {
       setSubmitError(
         locale === 'en'

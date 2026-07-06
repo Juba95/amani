@@ -12,10 +12,32 @@ interface PlacesInputProps {
   onPlaceSelected?: (address: string) => void;
 }
 
+// ── Détection d'échec d'authentification Google Maps ─────────────────────────
+// Google appelle window.gm_authFailure() si la clé API est invalide/rejetée.
+// Dans ce cas, on bascule en mode "saisie libre" : pas d'autocomplete, pas de
+// validation bloquante — le formulaire reste utilisable.
+let gmapsAuthFailed = false;
+const authFailureListeners = new Set<() => void>();
+
+/** true si Google Maps a refusé la clé API (formulaire en mode saisie libre) */
+export function isGmapsUnavailable(): boolean {
+  return gmapsAuthFailed;
+}
+
+function registerAuthFailureHandler() {
+  if (typeof window === 'undefined') return;
+  if ((window as any).gm_authFailure) return;
+  (window as any).gm_authFailure = () => {
+    gmapsAuthFailed = true;
+    authFailureListeners.forEach((fn) => fn());
+  };
+}
+
 // Charge le script Google Maps une seule fois dans la page (async + defer)
 function loadGoogleMapsScript(apiKey: string) {
   if (typeof window === 'undefined') return;
   if (document.getElementById('google-maps-script')) return;
+  registerAuthFailureHandler();
 
   // Use requestIdleCallback to avoid blocking main thread during page load
   const load = () => {
@@ -47,6 +69,24 @@ export default function PlacesInput({
   // true = l'utilisateur a sélectionné dans la liste ; false = texte libre non validé
   const [placeConfirmed, setPlaceConfirmed] = useState(false);
   const [showHint, setShowHint] = useState(false);
+  const [authFailed, setAuthFailed] = useState(gmapsAuthFailed);
+
+  // Si Google rejette la clé : réactiver le champ (Google le désactive et y met
+  // son message d'erreur) et repasser en saisie libre
+  useEffect(() => {
+    const onFailure = () => {
+      setAuthFailed(true);
+      setShowHint(false);
+      if (inputRef.current) {
+        inputRef.current.disabled = false;
+        inputRef.current.placeholder = placeholder;
+        inputRef.current.style.backgroundImage = 'none';
+      }
+    };
+    if (gmapsAuthFailed) onFailure();
+    authFailureListeners.add(onFailure);
+    return () => { authFailureListeners.delete(onFailure); };
+  }, [placeholder]);
 
   const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? '';
 
@@ -101,14 +141,14 @@ export default function PlacesInput({
 
   // Quand l'utilisateur quitte le champ sans avoir sélectionné dans la liste
   const handleBlur = () => {
-    if (value && !placeConfirmed && apiKey && apiKey.length >= 10) {
+    if (value && !placeConfirmed && apiKey && apiKey.length >= 10 && !authFailed) {
       setShowHint(true);
     }
   };
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Enter') {
-      if (!placeConfirmed && apiKey && apiKey.length >= 10 && value) {
+      if (!placeConfirmed && apiKey && apiKey.length >= 10 && !authFailed && value) {
         // Bloquer : forcer une sélection dans la liste
         setShowHint(true);
         e.preventDefault();
@@ -122,7 +162,7 @@ export default function PlacesInput({
     }
   };
 
-  const hasError = showHint && !placeConfirmed && value.length > 0;
+  const hasError = showHint && !placeConfirmed && !authFailed && value.length > 0;
 
   return (
     <div className="relative">
