@@ -13,9 +13,9 @@ const nextConfig = {
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     // Qualité réduite pour perf (les photos de véhicules restent nettes à 70)
     minimumCacheTTL: 31536000,
-    remotePatterns: [
-      { protocol: 'https', hostname: 'www.amani-limousines.com', pathname: '/wp-content/uploads/**' },
-    ],
+    // PAS de remotePatterns vers notre propre domaine : l'optimiseur d'images
+    // se rappellerait lui-même (self-fetch), risque d'auto-amplification.
+    // Toutes les images sont locales dans /public.
   },
 
   // ============================================================
