@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Mode standalone — REQUIS pour Docker/Coolify
-  output: 'standalone',
+  // PAS de output: 'standalone' — le déploiement Coolify utilise Nixpacks
+  // qui démarre avec `next start`, incompatible avec le mode standalone
+  // (cause de gels silencieux du serveur). Le Dockerfile n'est pas utilisé.
 
   images: {
     // WebP uniquement — l'encodage AVIF consomme trop de RAM/CPU
