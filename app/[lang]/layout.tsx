@@ -19,14 +19,15 @@ const inter = Inter({
 });
 
 import en from '@/locales/en.json';
+import es from '@/locales/es.json';
 import ar from '@/locales/ar.json';
 import zh from '@/locales/zh.json';
 
-const VALID_LOCALES = new Set(['en', 'ar', 'zh']);
-const meta: Record<string, any> = { en, ar, zh };
+const VALID_LOCALES = new Set(['en', 'es', 'ar', 'zh']);
+const meta: Record<string, any> = { en, es, ar, zh };
 
 export async function generateStaticParams() {
-  return [{ lang: 'en' }, { lang: 'ar' }, { lang: 'zh' }];
+  return [{ lang: 'en' }, { lang: 'es' }, { lang: 'ar' }, { lang: 'zh' }];
 }
 
 export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata> {
@@ -45,6 +46,7 @@ export async function generateMetadata({ params }: { params: { lang: string } })
       languages: {
         fr: `${BASE}/`,
         en: `${BASE}/en`,
+        es: `${BASE}/es`,
         ar: `${BASE}/ar`,
         'zh-Hans': `${BASE}/zh`,
         'x-default': `${BASE}/`,

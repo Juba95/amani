@@ -8,9 +8,16 @@ import type { Locale } from '@/lib/vehicles';
 const LANGS: { code: Locale; label: string; flag: string }[] = [
   { code: 'fr', label: 'Français', flag: '🇫🇷' },
   { code: 'en', label: 'English', flag: '🇬🇧' },
-  { code: 'ar', label: 'العربية', flag: '🇶🇦' },
+  { code: 'es', label: 'Español', flag: '🇪🇸' },
+  { code: 'ar', label: 'العربية', flag: '🇸🇦' },
   { code: 'zh', label: '中文', flag: '🇨🇳' },
 ];
+
+// Mémorise le choix manuel de langue (lu par le middleware pour la détection
+// automatique sur la racine — le choix explicite prime toujours)
+function rememberLangChoice(code: string) {
+  document.cookie = `amani-lang=${code}; max-age=${60 * 60 * 24 * 365}; path=/`;
+}
 
 // ── Mapping FR ↔ EN pour le switcher de langue ──────────────────────────────
 const FR_TO_EN: Record<string, string> = {
@@ -72,20 +79,23 @@ const EN_TO_FR: Record<string, string> = {
 };
 
 function getLocalizedPath(pathname: string, targetLocale: string): string {
-  // AR et ZH → homepages uniquement
+  // AR, ZH et ES → homepages uniquement
   if (targetLocale === 'ar') return '/ar';
   if (targetLocale === 'zh') return '/zh';
+  if (targetLocale === 'es') return '/es';
+
+  const isLocaleHome = pathname.startsWith('/ar') || pathname.startsWith('/zh') || pathname.startsWith('/es');
 
   // Vers FR
   if (targetLocale === 'fr') {
     if (pathname.startsWith('/en')) return EN_TO_FR[pathname] ?? '/';
-    if (pathname.startsWith('/ar') || pathname.startsWith('/zh')) return '/';
+    if (isLocaleHome) return '/';
     return pathname;
   }
 
   // Vers EN
   if (targetLocale === 'en') {
-    if (pathname.startsWith('/ar') || pathname.startsWith('/zh')) return '/en';
+    if (isLocaleHome) return '/en';
     if (pathname.startsWith('/en')) return pathname;
     return FR_TO_EN[pathname] ?? '/en';
   }
@@ -410,7 +420,7 @@ export default function Navbar({ t, locale }: NavbarProps) {
                       ? 'text-gold-400 bg-stone-50'
                       : 'text-gray-600 hover:bg-stone-50 hover:text-gold-400'
                   }`}
-                  onClick={() => setLangOpen(false)}
+                  onClick={() => { rememberLangChoice(l.code); setLangOpen(false); }}
                 >
                   {l.flag} {l.label}
                 </a>
@@ -541,7 +551,7 @@ export default function Navbar({ t, locale }: NavbarProps) {
                       ? 'border-gold-400 text-gold-400'
                       : 'border-stone-200 text-gray-600 hover:border-gold-400 hover:text-gold-400'
                   }`}
-                  onClick={() => setMenuOpen(false)}
+                  onClick={() => { rememberLangChoice(l.code); setMenuOpen(false); }}
                 >
                   {l.flag} {l.label}
                 </a>

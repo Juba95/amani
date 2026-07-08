@@ -2,8 +2,6 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import Image from 'next/image';
-import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import StatsRow from '@/components/StatsRow';
@@ -12,6 +10,7 @@ import ServicesGrid from '@/components/ServicesGrid';
 import EventsGrid from '@/components/EventsGrid';
 import TrustStrip from '@/components/TrustStrip';
 import WhyUs from '@/components/WhyUs';
+import AboutSection from '@/components/AboutSection';
 import { CTA, Footer } from '@/components/CTAFooter';
 
 import fr from '@/locales/fr.json';
@@ -77,7 +76,7 @@ export default function HomePage() {
       <StatsRow t={t} />
 
       {/* À propos — Lounes */}
-      <AboutSection />
+      <AboutSection t={t} />
 
       {/* Services */}
       <ServicesGrid t={t} locale={locale} />
@@ -101,121 +100,6 @@ export default function HomePage() {
       <CTA t={t} />
       <Footer t={t} />
     </main>
-  );
-}
-
-// ── À propos — Lounes ────────────────────────────────────────────────────
-const SPOKEN_LANGUAGES = [
-  { flag: '🇬🇧', label: 'Anglais',   href: '/chauffeur-anglophone' },
-  { flag: '🇸🇦', label: 'Arabe',     href: '/chauffeur-arabophone' },
-  { flag: '🇪🇸', label: 'Espagnol',  href: '/chauffeur-hispanophone' },
-  { flag: '🇩🇪', label: 'Allemand',  href: '/chauffeur-germanophone' },
-  { flag: '🇨🇳', label: 'Mandarin',  href: '/chauffeur-mandarin' },
-  { flag: '🇰🇷', label: 'Coréen',    href: '/chauffeur-coreen' },
-  { flag: '🇯🇵', label: 'Japonais',  href: '/chauffeur-japonais' },
-  { flag: '🇷🇺', label: 'Russe',     href: '/chauffeur-russophone' },
-];
-
-function AboutSection() {
-  return (
-    <section className="py-20 px-6 md:px-10 bg-white">
-      <div className="max-w-5xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-
-          {/* Photo de Lounes */}
-          <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-lg" style={{ aspectRatio: '4/5' }}>
-              <Image
-                src="/lounes-about.jpg"
-                alt="Lounes — Fondateur d'Amani Limousines, chauffeur privé parlant 8 langues"
-                fill
-                sizes="(max-width: 1024px) 100vw, 500px"
-                className="object-cover"
-                quality={80}
-              />
-            </div>
-            {/* Badge flottant */}
-            <div
-              className="absolute -bottom-4 -right-4 lg:-right-6 bg-white rounded-xl px-5 py-3 shadow-lg border"
-              style={{ borderColor: '#ece9e3' }}
-            >
-              <p className="font-serif text-2xl font-normal" style={{ color: '#8a7340' }}>10+</p>
-              <p className="font-sans text-[0.6rem] tracking-[0.1em] uppercase text-stone-500">langues parlées</p>
-            </div>
-          </div>
-
-          {/* Texte de présentation */}
-          <div>
-            <p
-              className="font-sans text-[0.6rem] tracking-[0.2em] uppercase font-medium mb-4"
-              style={{ color: '#8a7340' }}
-            >
-              À propos
-            </p>
-            <h2
-              className="font-serif font-normal text-gray-900 mb-5"
-              style={{ fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', lineHeight: 1.2 }}
-            >
-              Des chauffeurs privés
-              <br />
-              <em className="italic" style={{ color: '#8a7340' }}>qui parlent votre langue</em>
-            </h2>
-
-            <div className="space-y-4 font-sans text-sm text-stone-600 leading-relaxed">
-              <p>
-                Quand votre chauffeur parle votre langue, le trajet change complètement.
-                Ce n'est plus juste un déplacement — vous pouvez échanger, poser des questions,
-                vous faire comprendre sans effort.
-              </p>
-              <p>
-                Nos chauffeurs parlent plus de 10 langues. Cela signifie accueillir
-                des hommes d'affaires saoudiens à Roissy en arabe, échanger sur un itinéraire
-                avec une famille japonaise, ou coordonner avec une délégation allemande sur le programme
-                du jour. Ils maîtrisent Paris et savent s'adapter aux codes de chaque culture.
-              </p>
-              <p>
-                Chez Amani Limousines, notre engagement envers le service transcende la simple conduite. Nous anticipons vos besoins, vous offrons des conseils et supervisons chaque détail avec une attention méticuleuse.
-              </p>
-            </div>
-
-            {/* Langues parlées — badges cliquables */}
-            <div className="mt-8">
-              <p className="font-sans text-[0.6rem] tracking-[0.15em] uppercase text-stone-400 mb-3">
-                Langues disponibles
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {SPOKEN_LANGUAGES.map((lang) => (
-                  <Link
-                    key={lang.href}
-                    href={lang.href}
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full font-sans text-xs border transition-colors hover:border-gold-400 hover:text-gold-400"
-                    style={{ borderColor: '#e5e2db', color: '#666' }}
-                  >
-                    <span>{lang.flag}</span>
-                    {lang.label}
-                  </Link>
-                ))}
-              </div>
-            </div>
-
-            {/* CTA */}
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Link href="/reservation" className="btn-primary inline-block text-sm">
-                Réserver un chauffeur
-              </Link>
-              <Link
-                href="/contact"
-                className="inline-block font-sans text-xs tracking-wide px-5 py-3 rounded-xl border transition-colors hover:border-gold-400 hover:text-gold-400"
-                style={{ borderColor: '#ddd', color: '#666' }}
-              >
-                Nous contacter
-              </Link>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
   );
 }
 

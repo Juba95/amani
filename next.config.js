@@ -308,8 +308,10 @@ const nextConfig = {
       { source: '/test', destination: '/', permanent: true },
       { source: '/zh-hans/author/:slug*', destination: '/zh', permanent: true },
 
-      // === Langues supprimées : ES, ZH-Hans (pages anciennes) ===
-      { source: '/es/:path*', destination: '/', permanent: true },
+      // === Langues supprimées : ZH-Hans (pages anciennes) ===
+      // NOTE : /es est de nouveau une langue active (homepage espagnole) —
+      // on redirige seulement les anciens slugs WordPress /es/xxx, pas /es
+      { source: '/es/:path+', destination: '/es', permanent: true },
       { source: '/zh-hans/:path*', destination: '/zh', permanent: true },
 
       // === Booking ancien ===
@@ -534,7 +536,7 @@ const nextConfig = {
       {
         source: '/',
         headers: [
-          { key: 'Link', value: '<https://www.amani-limousines.com/>; rel="alternate"; hreflang="fr", <https://www.amani-limousines.com/en>; rel="alternate"; hreflang="en", <https://www.amani-limousines.com/ar>; rel="alternate"; hreflang="ar", <https://www.amani-limousines.com/zh>; rel="alternate"; hreflang="zh-Hans", <https://www.amani-limousines.com/>; rel="alternate"; hreflang="x-default"' },
+          { key: 'Link', value: '<https://www.amani-limousines.com/>; rel="alternate"; hreflang="fr", <https://www.amani-limousines.com/en>; rel="alternate"; hreflang="en", <https://www.amani-limousines.com/es>; rel="alternate"; hreflang="es", <https://www.amani-limousines.com/ar>; rel="alternate"; hreflang="ar", <https://www.amani-limousines.com/zh>; rel="alternate"; hreflang="zh-Hans", <https://www.amani-limousines.com/>; rel="alternate"; hreflang="x-default"' },
         ],
       },
     ];

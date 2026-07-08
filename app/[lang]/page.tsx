@@ -10,16 +10,18 @@ import ServicesGrid from '@/components/ServicesGrid';
 import EventsGrid from '@/components/EventsGrid';
 import TrustStrip from '@/components/TrustStrip';
 import WhyUs from '@/components/WhyUs';
+import AboutSection from '@/components/AboutSection';
 import BookingResults from '@/components/BookingResults';
 import { CTA, Footer } from '@/components/CTAFooter';
 import { RTL_LOCALES } from '@/lib/vehicles';
 import type { Locale } from '@/lib/vehicles';
 
 import en from '@/locales/en.json';
+import es from '@/locales/es.json';
 import ar from '@/locales/ar.json';
 import zh from '@/locales/zh.json';
 
-const translations: Record<string, any> = { en, ar, zh };
+const translations: Record<string, any> = { en, es, ar, zh };
 
 export default function LocalePage() {
   const params = useParams();
@@ -97,6 +99,9 @@ export default function LocalePage() {
 
       {/* Stats */}
       <StatsRow t={t} />
+
+      {/* À propos — Lounes (traduit) */}
+      <AboutSection t={t} />
 
       {/* Services */}
       <ServicesGrid t={t} locale={locale} />

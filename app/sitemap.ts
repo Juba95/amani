@@ -144,9 +144,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   }
 
-  // ── Homepages AR + ZH ───────────────────────────────────────────────────────
+  // ── Homepages ES + AR + ZH ──────────────────────────────────────────────────
   // Clientèle internationale — indexées à 0.9
-  for (const locale of ['ar', 'zh'] as const) {
+  for (const locale of ['es', 'ar', 'zh'] as const) {
     for (const slug of AR_ZH_INDEXED_SLUGS) {
       const path = slug === '' ? `/${locale}` : `/${locale}/${slug}`;
       entries.push({

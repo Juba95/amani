@@ -450,5 +450,34 @@
         "time": "55 min"
       }
     ]
+  },
+  "about": {
+    "tag": "About us",
+    "title": "Private chauffeurs",
+    "title_em": "who speak your language",
+    "badge_label": "languages spoken",
+    "p1": "When your chauffeur speaks your language, the journey changes completely. It's no longer just a transfer — you can chat, ask questions and make yourself understood effortlessly.",
+    "p2": "Our chauffeurs speak more than 10 languages. That means welcoming Saudi businessmen at Roissy in Arabic, discussing an itinerary with a Japanese family, or coordinating the day's programme with a German delegation. They know Paris inside out and adapt to the codes of every culture.",
+    "p3": "At Amani Limousines, our commitment to service goes beyond driving. We anticipate your needs, offer advice and oversee every detail with meticulous attention.",
+    "languages_label": "Available languages",
+    "cta_book": "Book a chauffeur",
+    "cta_contact": "Contact us",
+    "photo_alt": "Lounes — Founder of Amani Limousines, multilingual private chauffeur",
+    "languages": {
+      "en": "English",
+      "ar": "Arabic",
+      "es": "Spanish",
+      "de": "German",
+      "zh": "Mandarin",
+      "ko": "Korean",
+      "ja": "Japanese",
+      "ru": "Russian",
+      "tl": "Filipino",
+      "hi": "Hindi",
+      "sr": "Serbian",
+      "ro": "Romanian",
+      "pt": "Portuguese",
+      "it": "Italian"
+    }
   }
 }

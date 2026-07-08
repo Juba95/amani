@@ -155,7 +155,7 @@ export function findRoute(from: string, to: string) {
   return null;
 }
 
-export const SUPPORTED_LOCALES = ['fr', 'en', 'ar', 'zh'] as const;
+export const SUPPORTED_LOCALES = ['fr', 'en', 'es', 'ar', 'zh'] as const;
 export type Locale = (typeof SUPPORTED_LOCALES)[number];
 export const RTL_LOCALES: Locale[] = ['ar'];
 export const DEFAULT_LOCALE: Locale = 'fr';

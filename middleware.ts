@@ -9,7 +9,7 @@ import { NextRequest, NextResponse } from 'next/server';
 //      déclencher les règles de redirection 301 dans next.config.js
 // ============================================================
 
-const VALID_LOCALES = new Set(['en', 'ar', 'zh']);
+const VALID_LOCALES = new Set(['en', 'es', 'ar', 'zh']);
 
 // Chemins valides à la racine (premier segment de l'URL)
 const VALID_ROOT_SEGMENTS = new Set([
@@ -82,6 +82,10 @@ const VALID_ROOT_SEGMENTS = new Set([
   'plan-du-site',
 ]);
 
+// Bots / crawlers : jamais de redirection par langue (préserve le SEO français
+// de la racine — Google doit indexer / en français)
+const BOT_UA = /bot|crawl|spider|slurp|bingpreview|googlebot|yandex|baidu|duckduck|facebookexternalhit|lighthouse|pagespeed|headless/i;
+
 export function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
 
@@ -97,8 +101,31 @@ export function middleware(req: NextRequest) {
 
   const segments = pathname.split('/').filter(Boolean);
 
-  // Racine → OK
-  if (segments.length === 0) return NextResponse.next();
+  // ── Racine : détection de langue du navigateur (visiteurs réels uniquement) ──
+  // Un visiteur non francophone arrivant sur / est redirigé vers sa langue
+  // (en par défaut ; es/ar/zh si détectées). Son choix manuel via le switcher
+  // est mémorisé en cookie et toujours respecté.
+  if (segments.length === 0) {
+    const langCookie = req.cookies.get('amani-lang')?.value;
+    if (langCookie) return NextResponse.next(); // choix déjà connu → on respecte
+
+    const ua = req.headers.get('user-agent') || '';
+    if (BOT_UA.test(ua)) return NextResponse.next(); // bots → toujours FR sur /
+
+    const accept = (req.headers.get('accept-language') || '').toLowerCase();
+    const primary = accept.split(',')[0]?.trim().slice(0, 2) || '';
+
+    if (primary === 'fr' || primary === '') {
+      const res = NextResponse.next();
+      res.cookies.set('amani-lang', 'fr', { maxAge: 60 * 60 * 24 * 365, path: '/' });
+      return res;
+    }
+
+    const target = ['es', 'ar', 'zh'].includes(primary) ? `/${primary}` : '/en';
+    const res = NextResponse.redirect(new URL(target, req.url), 302);
+    res.cookies.set('amani-lang', target.slice(1), { maxAge: 60 * 60 * 24 * 365, path: '/' });
+    return res;
+  }
 
   const firstSegment = segments[0];
 

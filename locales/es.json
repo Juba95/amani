@@ -1,0 +1,483 @@
+{
+  "metadata": {
+    "title": "Amani Limousines — Servicio Premium de Chófer Privado en París",
+    "description": "Servicio de chófer privado de lujo en París. Traslados aeropuerto CDG, Orly, Le Bourget. Berlinas, vans VIP, convoyes. Disponible 24/7."
+  },
+  "nav": {
+    "services": "Servicios",
+    "events": "Eventos",
+    "fleet": "Nuestra flota",
+    "booking": "Reservar",
+    "contact": "Contacto",
+    "phone": "+33 6 87 16 97 47",
+    "available": "Disponible 24/7"
+  },
+  "hero": {
+    "tag": "Servicio premium de chófer privado en París",
+    "title_1": "La excelencia del transporte privado,",
+    "title_2": "al servicio de las expectativas más",
+    "title_em": "exigentes",
+    "title_3": "",
+    "subtitle": "Traslados aeropuerto, servicio por horas, delegaciones oficiales. Más de 300 vehículos premium. Chóferes políglotas. Disponible 24/7.",
+    "cta": "Obtener presupuesto al instante",
+    "from_label": "RECOGIDA",
+    "to_label": "DESTINO",
+    "from_placeholder": "Aeropuerto, hotel, dirección…",
+    "to_placeholder": "Su destino…",
+    "popular": "Trayectos populares",
+    "form_title": "Su presupuesto al instante",
+    "form_subtitle": "Precio fijo · Sin sorpresas",
+    "trust_signals": [
+      "Precio fijo",
+      "Seguimiento de vuelos",
+      "24/7"
+    ]
+  },
+  "services": {
+    "tag": "Nuestros servicios",
+    "title": "Un servicio",
+    "title_em": "a medida",
+    "learn_more": "Saber más",
+    "items": {
+      "disposition": {
+        "title": "Servicio por horas",
+        "subtitle": "Mise à disposition",
+        "desc": "Su chófer privado en París permanece a su disposición el tiempo que necesite. Media jornada, jornada completa o varios días — el vehículo y el chófer se adaptan a su agenda en tiempo real."
+      },
+      "transfer": {
+        "title": "Traslado privado",
+        "subtitle": "Transfert privé",
+        "desc": "Traslado puerta a puerta entre dos direcciones. Aeropuertos, estaciones, hoteles, lugares de reunión. El precio se fija por adelantado — sin taxímetro, sin sorpresas."
+      },
+      "meetgreet": {
+        "title": "Meet and Greet",
+        "subtitle": "Recepción VIP",
+        "desc": "Recepción personalizada en llegadas con cartel nominativo. Asistencia con el equipaje, acompañamiento hasta el vehículo. Opción Fast Track disponible en CDG y Orly."
+      },
+      "convoy": {
+        "title": "Convoy de vehículos",
+        "subtitle": "Convoi de véhicules",
+        "desc": "Coordinación de varios vehículos para delegaciones, misiones diplomáticas y grandes eventos. Coordinación centralizada, comunicación por radio entre chóferes."
+      },
+      "security": {
+        "title": "Protección personal",
+        "subtitle": "Sécurité rapprochée",
+        "desc": "Transporte seguro con escolta para personalidades, diplomáticos y directivos. Vehículos de cabeza, coches de seguimiento, chóferes formados en conducción defensiva."
+      },
+      "excursion": {
+        "title": "Excursión privada",
+        "subtitle": "Excursion privée",
+        "desc": "Versalles, Champaña, Normandía, Valle del Loira, Giverny. Su chófer conoce las rutas y puede organizar paradas personalizadas. Guía gastronómico disponible."
+      },
+      "longdistance": {
+        "title": "Larga distancia",
+        "subtitle": "Longue distance",
+        "desc": "París–Deauville, París–Bruselas, París–Lyon, París–Costa Azul. Nuestras berlinas y vans VIP están equipadas para viajes largos: Wi-Fi, enchufes, espacio de trabajo."
+      }
+    }
+  },
+  "stats": {
+    "transfers_label": "traslados al mes",
+    "rating_label": "valoración Google",
+    "experience_label": "años de experiencia",
+    "vehicles_label": "vehículos premium"
+  },
+  "process": {
+    "tag": "Cómo funciona",
+    "title": "Reserve en",
+    "title_em": "4 pasos sencillos",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Solicite su presupuesto",
+        "desc": "Introduzca su itinerario en línea o llámenos. Presupuesto al instante, precio fijo garantizado desde la confirmación."
+      },
+      {
+        "num": "02",
+        "title": "Confirmación inmediata",
+        "desc": "Recibe una confirmación por email y SMS con el nombre y la foto de su chófer."
+      },
+      {
+        "num": "03",
+        "title": "Recogida VIP",
+        "desc": "Su chófer llega con 15 minutos de antelación. Si su vuelo se retrasa, se adapta automáticamente sin coste adicional."
+      },
+      {
+        "num": "04",
+        "title": "Viaje con confort",
+        "desc": "Disfrute del trayecto en un vehículo premium. Wi-Fi, agua, cargadores — todo está incluido."
+      }
+    ]
+  },
+  "whyus": {
+    "tag": "Por qué elegirnos",
+    "title": "Un servicio que marca",
+    "title_em": "la diferencia",
+    "items": [
+      {
+        "title": "Precio fijo garantizado",
+        "desc": "Su tarifa se confirma en el momento de la reserva. Sin recargos ni sorpresas, independientemente del tráfico o la duración del trayecto."
+      },
+      {
+        "title": "Chóferes de élite",
+        "desc": "Todos nuestros chóferes están certificados, formados en conducción defensiva y son políglotas — francés, inglés, árabe, mandarín."
+      },
+      {
+        "title": "Seguimiento de vuelos en tiempo real",
+        "desc": "Supervisamos su vuelo en tiempo real. Si su avión se retrasa, su chófer se adapta automáticamente sin coste adicional."
+      },
+      {
+        "title": "Flota premium renovada",
+        "desc": "Más de 300 vehículos renovados cada año — Mercedes, BMW, Sprinter. Todos con menos de 3 años, inspeccionados a diario."
+      },
+      {
+        "title": "Respuesta en 30 minutos",
+        "desc": "Nuestro equipo responde a cualquier solicitud de presupuesto en menos de 30 minutos, 24/7, por teléfono, email o WhatsApp."
+      },
+      {
+        "title": "Discreción absoluta",
+        "desc": "Confidencialidad total para clientes diplomáticos, corporativos y VIP. Nuestros chóferes operan bajo la más estricta confidencialidad."
+      }
+    ]
+  },
+  "reviews": {
+    "tag": "Opiniones de clientes",
+    "title": "Lo que dicen",
+    "title_em": "nuestros clientes",
+    "google_link": "Ver todas las opiniones en Google",
+    "items": [
+      {
+        "name": "James W.",
+        "rating": 5,
+        "text": "Servicio impecable. Chófer puntual, vehículo inmaculado y disponible fuera del horario habitual. Muy recomendable para todos sus traslados profesionales en París.",
+        "role": "CEO, Londres"
+      },
+      {
+        "name": "Sophie L.",
+        "rating": 5,
+        "text": "Utilizo Amani Limousines para todos mis traslados al aeropuerto desde hace 3 años. Puntualidad perfecta, vehículos de alta gama, chóferes siempre corteses. Un auténtico servicio 5 estrellas.",
+        "role": "Consultora internacional"
+      },
+      {
+        "name": "Mohammed A.",
+        "rating": 5,
+        "text": "Coordinación excepcional para una delegación oficial de 12 personas. Logística perfecta, sincronización impecable de los vehículos. Sin duda volveremos a utilizar sus servicios.",
+        "role": "Agregado diplomático"
+      },
+      {
+        "name": "Claire M.",
+        "rating": 5,
+        "text": "Traslado CDG–París a las 5 de la mañana, el chófer estaba allí y sonriente. El seguimiento de vuelos funciona de verdad — ya sabía del retraso. Muy profesional, lo recomiendo.",
+        "role": "Jefa de proyecto"
+      }
+    ]
+  },
+  "faq": {
+    "tag": "Preguntas frecuentes",
+    "title": "Todo lo que necesita",
+    "title_em": "saber",
+    "items": [
+      {
+        "q": "¿Cómo funciona el precio fijo?",
+        "a": "Su precio se calcula y confirma en el momento de la reserva, según su trayecto y el vehículo elegido. Incluye todos los impuestos, peajes y aparcamiento. Sin recargos ni sorpresas."
+      },
+      {
+        "q": "¿Qué ocurre si mi vuelo se retrasa?",
+        "a": "Supervisamos su vuelo en tiempo real. Si su vuelo se retrasa, su chófer se adapta automáticamente sin coste adicional. No tiene que hacer nada — nuestro equipo se encarga de todo."
+      },
+      {
+        "q": "¿Qué tipos de vehículos ofrecen?",
+        "a": "Nuestra flota incluye berlinas ejecutivas (Mercedes Clase E, Clase S, BMW i7), vans de lujo (Mercedes Clase V) y minibuses VIP (Mercedes Sprinter). Todos los vehículos tienen menos de 3 años."
+      },
+      {
+        "q": "¿Ofrecen servicios para delegaciones?",
+        "a": "Sí, coordinamos convoyes de varios vehículos para delegaciones oficiales, misiones diplomáticas y eventos corporativos. Coordinación centralizada, comunicación por radio entre chóferes."
+      },
+      {
+        "q": "¿Cuál es su zona de cobertura?",
+        "a": "Cubrimos París y la región de Île-de-France, con traslados desde y hacia todos los aeropuertos (CDG, Orly, Le Bourget). También cubrimos largas distancias: Deauville, Lyon, Bruselas, Costa Azul y toda Europa."
+      },
+      {
+        "q": "¿Cómo reservo?",
+        "a": "A través de nuestro formulario de presupuesto en línea, por teléfono al +33 6 87 16 97 47, por email a contact@amani-limousines.com o por WhatsApp. Nuestro equipo responde en menos de 30 minutos, 24/7."
+      }
+    ]
+  },
+  "events": {
+    "tag": "Eventos",
+    "title": "Transporte para sus",
+    "title_em": "eventos",
+    "subtitle": "Transporte VIP para los eventos más prestigiosos de París",
+    "items": {
+      "fashionweek": {
+        "title": "Paris Fashion Week",
+        "period": "Febrero y septiembre"
+      },
+      "airshow": {
+        "title": "Salón Aeronáutico de París",
+        "period": "Salón de Le Bourget"
+      },
+      "rolandgarros": {
+        "title": "Roland Garros",
+        "period": "Mayo — junio"
+      },
+      "cannes": {
+        "title": "Festival de Cannes",
+        "period": "Mayo"
+      },
+      "sports": {
+        "title": "Eventos deportivos",
+        "period": "Grandes premios, carreras"
+      },
+      "salons": {
+        "title": "Ferias profesionales",
+        "period": "Nautic, Première Vision, M&O"
+      }
+    }
+  },
+  "fleet": {
+    "tag": "Nuestra flota",
+    "title": "Vehículos de",
+    "title_em": "distinción",
+    "subtitle": "Más de 300 vehículos, renovados cada año",
+    "vehicles": {
+      "classe_e": {
+        "name": "Mercedes Clase E",
+        "category": "Berlina Business",
+        "pax": "3 pasajeros",
+        "bags": "2 maletas",
+        "from": "Desde 100 €",
+        "features": [
+          "Wi-Fi premium",
+          "Interior de cuero",
+          "Climatización bizona",
+          "Cargadores USB-C"
+        ]
+      },
+      "classe_s": {
+        "name": "Mercedes Clase S",
+        "category": "Berlina Ejecutiva",
+        "pax": "3 pasajeros",
+        "bags": "2 maletas",
+        "from": "Desde 150 €",
+        "features": [
+          "Asientos con masaje",
+          "Pantallas LCD",
+          "Aislamiento reforzado",
+          "Bar a bordo"
+        ]
+      },
+      "classe_v": {
+        "name": "Mercedes Clase V",
+        "category": "Van de Lujo",
+        "pax": "7 pasajeros",
+        "bags": "6 maletas",
+        "from": "Desde 100 €",
+        "features": [
+          "Configuración salón",
+          "Espacio de reunión",
+          "Wi-Fi de alta velocidad",
+          "Equipaje XXL"
+        ]
+      },
+      "classe_g": {
+        "name": "Mercedes Clase G",
+        "category": "SUV de Lujo",
+        "pax": "4 pasajeros",
+        "bags": "3 equipajes",
+        "from": "Desde 250 €",
+        "features": [
+          "4x4 icónico",
+          "Interior de cuero AMG",
+          "Sonido Burmester®",
+          "Presencia inigualable"
+        ]
+      },
+      "sprinter": {
+        "name": "Mercedes Sprinter VIP",
+        "category": "Minibús de Lujo",
+        "pax": "16 pasajeros",
+        "bags": "16 maletas",
+        "from": "Desde 300 €",
+        "features": [
+          "Asientos capitán",
+          "Sonido premium",
+          "Climatización por zonas",
+          "Ideal para delegaciones"
+        ]
+      },
+      "range_rover_evoque": {
+        "name": "Range Rover Evoque",
+        "category": "SUV Premium",
+        "pax": "3 pasajeros",
+        "bags": "2 maletas",
+        "from": "Desde 200 €",
+        "features": [
+          "SUV británico",
+          "Interior de cuero",
+          "Terrain Response",
+          "Diseño vanguardista"
+        ]
+      },
+      "classe_s_maybach": {
+        "name": "Mercedes Clase S Maybach",
+        "category": "Berlina Ultra-Lujo",
+        "pax": "3 pasajeros",
+        "bags": "2 maletas",
+        "from": "Desde 200 €",
+        "features": [
+          "La cumbre de Mercedes",
+          "Asientos traseros First Class",
+          "Insonorización máxima",
+          "Minibar y tabletas"
+        ]
+      },
+      "eqs": {
+        "name": "Mercedes EQS",
+        "category": "Berlina Eléctrica",
+        "pax": "3 pasajeros",
+        "bags": "2 maletas",
+        "from": "Desde 150 €",
+        "features": [
+          "100% eléctrico",
+          "Cero emisiones",
+          "Carga rápida",
+          "Marcha silenciosa"
+        ]
+      }
+    }
+  },
+  "booking": {
+    "tag": "Su presupuesto",
+    "title": "Elija su",
+    "title_em": "vehículo",
+    "fixed_price": "Precio fijo todo incluido",
+    "summary": "Resumen",
+    "departure": "Recogida",
+    "arrival": "Destino",
+    "distance": "Distancia",
+    "duration": "Tiempo estimado",
+    "vehicle": "Vehículo",
+    "included": "Incluido",
+    "included_items": "Recepción VIP · Seguimiento de vuelo · Agua",
+    "total": "Precio total fijo",
+    "book_now": "Reservar ahora",
+    "or_call": "O llame al +33 6 87 16 97 47 · WhatsApp disponible",
+    "change_vehicle": "← Cambiar de vehículo"
+  },
+  "trust": {
+    "items": [
+      "Embajadas y consulados",
+      "Family offices",
+      "Agencias de viajes premium",
+      "Palacios parisinos",
+      "Delegaciones oficiales",
+      "Aviación privada"
+    ]
+  },
+  "cta": {
+    "title": "Contacte con",
+    "title_em": "nuestro equipo",
+    "subtitle": "Disponible 24/7 para reservas, presupuestos a medida y solicitudes de delegaciones. Respuesta garantizada en 30 minutos.",
+    "whatsapp": "WhatsApp"
+  },
+  "footer": {
+    "col1_title": "Amani Limousines",
+    "col1_links": [
+      "Chófer privado París",
+      "Traslado aeropuerto CDG",
+      "Traslado aeropuerto Orly",
+      "Traslado Le Bourget"
+    ],
+    "col2_title": "Servicios",
+    "col2_links": [
+      "Servicio por horas",
+      "Convoy y delegaciones",
+      "Protección personal",
+      "Excursión privada"
+    ],
+    "col3_title": "Eventos",
+    "col3_links": [
+      "Paris Fashion Week",
+      "Salón Aeronáutico de París",
+      "Roland Garros",
+      "Ferias profesionales"
+    ],
+    "col4_title": "Información",
+    "col4_links": [
+      "Aviso legal",
+      "Condiciones generales",
+      "Política de privacidad"
+    ],
+    "copyright": "© 2026 AMANI LIMOUSINES — SERVICIO PREMIUM DE CHÓFER PRIVADO | FRANCIA Y EUROPA"
+  },
+  "routes": {
+    "popular": [
+      {
+        "from": "CDG",
+        "to": "París Centro",
+        "km": 32,
+        "time": "45 min"
+      },
+      {
+        "from": "CDG",
+        "to": "La Défense",
+        "km": 35,
+        "time": "40 min"
+      },
+      {
+        "from": "CDG",
+        "to": "Disneyland",
+        "km": 45,
+        "time": "40 min"
+      },
+      {
+        "from": "Orly",
+        "to": "París Centro",
+        "km": 18,
+        "time": "30 min"
+      },
+      {
+        "from": "Le Bourget",
+        "to": "París Centro",
+        "km": 15,
+        "time": "25 min"
+      },
+      {
+        "from": "CDG",
+        "to": "Versalles",
+        "km": 55,
+        "time": "55 min"
+      }
+    ]
+  },
+  "about": {
+    "tag": "Sobre nosotros",
+    "title": "Chóferes privados",
+    "title_em": "que hablan su idioma",
+    "badge_label": "idiomas hablados",
+    "p1": "Cuando su chófer habla su idioma, el trayecto cambia por completo. Ya no es solo un desplazamiento — puede conversar, hacer preguntas y hacerse entender sin esfuerzo.",
+    "p2": "Nuestros chóferes hablan más de 10 idiomas. Eso significa recibir a hombres de negocios saudíes en Roissy en árabe, comentar un itinerario con una familia japonesa o coordinar el programa del día con una delegación alemana. Dominan París y saben adaptarse a los códigos de cada cultura.",
+    "p3": "En Amani Limousines, nuestro compromiso con el servicio va más allá de la conducción. Anticipamos sus necesidades, le asesoramos y supervisamos cada detalle con una atención meticulosa.",
+    "languages_label": "Idiomas disponibles",
+    "cta_book": "Reservar un chófer",
+    "cta_contact": "Contáctenos",
+    "photo_alt": "Lounes — Fundador de Amani Limousines, chófer privado políglota",
+    "languages": {
+      "en": "Inglés",
+      "ar": "Árabe",
+      "es": "Español",
+      "de": "Alemán",
+      "zh": "Mandarín",
+      "ko": "Coreano",
+      "ja": "Japonés",
+      "ru": "Ruso",
+      "tl": "Filipino",
+      "hi": "Hindi",
+      "sr": "Serbio",
+      "ro": "Rumano",
+      "pt": "Portugués",
+      "it": "Italiano"
+    }
+  }
+}
