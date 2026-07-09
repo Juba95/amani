@@ -54,6 +54,15 @@ const FR_TO_EN: Record<string, string> = {
   '/chauffeur-prive-megeve':         '/en/megeve-chauffeur',
   '/chauffeur-prive-haute-savoie':   '/en/haute-savoie-chauffeur',
   '/transfert-aeroport-economique':  '/en/economical-airport-transfer',
+  // Chauffeurs multilingues
+  '/chauffeur-anglophone':           '/en/english-speaking-chauffeur-paris',
+  '/chauffeur-arabophone':           '/en/arabic-speaking-chauffeur-paris',
+  '/chauffeur-hispanophone':         '/en/spanish-speaking-chauffeur-paris',
+  '/chauffeur-germanophone':         '/en/german-speaking-chauffeur-paris',
+  '/chauffeur-mandarin':             '/en/mandarin-speaking-chauffeur-paris',
+  '/chauffeur-coreen':               '/en/korean-speaking-chauffeur-paris',
+  '/chauffeur-japonais':             '/en/japanese-speaking-chauffeur-paris',
+  '/chauffeur-russophone':           '/en/russian-speaking-chauffeur-paris',
 };
 
 const EN_TO_FR: Record<string, string> = {
@@ -76,26 +85,63 @@ const EN_TO_FR: Record<string, string> = {
   '/en/megeve-chauffeur':            '/chauffeur-prive-megeve',
   '/en/haute-savoie-chauffeur':      '/chauffeur-prive-haute-savoie',
   '/en/economical-airport-transfer': '/transfert-aeroport-economique',
+  // Chauffeurs multilingues
+  '/en/english-speaking-chauffeur-paris':  '/chauffeur-anglophone',
+  '/en/arabic-speaking-chauffeur-paris':   '/chauffeur-arabophone',
+  '/en/spanish-speaking-chauffeur-paris':  '/chauffeur-hispanophone',
+  '/en/german-speaking-chauffeur-paris':   '/chauffeur-germanophone',
+  '/en/mandarin-speaking-chauffeur-paris': '/chauffeur-mandarin',
+  '/en/korean-speaking-chauffeur-paris':   '/chauffeur-coreen',
+  '/en/japanese-speaking-chauffeur-paris': '/chauffeur-japonais',
+  '/en/russian-speaking-chauffeur-paris':  '/chauffeur-russophone',
+};
+
+// Pages existant en langue native (AR/ES/ZH) : clé = page FR ou EN équivalente
+const TO_NATIVE: Record<'ar' | 'es' | 'zh', Record<string, string>> = {
+  ar: {
+    '/chauffeur-arabophone': '/ar/arabic-chauffeur',
+    '/en/arabic-speaking-chauffeur-paris': '/ar/arabic-chauffeur',
+  },
+  es: {
+    '/chauffeur-hispanophone': '/es/chofer-hispanohablante',
+    '/en/spanish-speaking-chauffeur-paris': '/es/chofer-hispanohablante',
+  },
+  zh: {
+    '/chauffeur-mandarin': '/zh/mandarin-chauffeur',
+    '/en/mandarin-speaking-chauffeur-paris': '/zh/mandarin-chauffeur',
+  },
+};
+
+// Depuis une page native, retrouver la version FR / EN
+const NATIVE_TO_FR: Record<string, string> = {
+  '/ar/arabic-chauffeur':        '/chauffeur-arabophone',
+  '/es/chofer-hispanohablante':  '/chauffeur-hispanophone',
+  '/zh/mandarin-chauffeur':      '/chauffeur-mandarin',
+};
+const NATIVE_TO_EN: Record<string, string> = {
+  '/ar/arabic-chauffeur':        '/en/arabic-speaking-chauffeur-paris',
+  '/es/chofer-hispanohablante':  '/en/spanish-speaking-chauffeur-paris',
+  '/zh/mandarin-chauffeur':      '/en/mandarin-speaking-chauffeur-paris',
 };
 
 function getLocalizedPath(pathname: string, targetLocale: string): string {
-  // AR, ZH et ES → homepages uniquement
-  if (targetLocale === 'ar') return '/ar';
-  if (targetLocale === 'zh') return '/zh';
-  if (targetLocale === 'es') return '/es';
+  // AR, ZH et ES → page native équivalente si elle existe, sinon homepage
+  if (targetLocale === 'ar' || targetLocale === 'zh' || targetLocale === 'es') {
+    return TO_NATIVE[targetLocale][pathname] ?? `/${targetLocale}`;
+  }
 
-  const isLocaleHome = pathname.startsWith('/ar') || pathname.startsWith('/zh') || pathname.startsWith('/es');
+  const isLocalePath = pathname.startsWith('/ar') || pathname.startsWith('/zh') || pathname.startsWith('/es');
 
   // Vers FR
   if (targetLocale === 'fr') {
     if (pathname.startsWith('/en')) return EN_TO_FR[pathname] ?? '/';
-    if (isLocaleHome) return '/';
+    if (isLocalePath) return NATIVE_TO_FR[pathname] ?? '/';
     return pathname;
   }
 
   // Vers EN
   if (targetLocale === 'en') {
-    if (isLocaleHome) return '/en';
+    if (isLocalePath) return NATIVE_TO_EN[pathname] ?? '/en';
     if (pathname.startsWith('/en')) return pathname;
     return FR_TO_EN[pathname] ?? '/en';
   }
