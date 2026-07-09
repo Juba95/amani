@@ -311,7 +311,8 @@ const nextConfig = {
       // === Langues supprimées : ZH-Hans (pages anciennes) ===
       // NOTE : /es est de nouveau une langue active (homepage espagnole) —
       // on redirige seulement les anciens slugs WordPress /es/xxx, pas /es
-      { source: '/es/:path+', destination: '/es', permanent: true },
+      // Legacy /es/* → home ES, SAUF les pages ES réelles (chofer-hispanohablante…)
+      { source: '/es/:path((?!chofer-hispanohablante).+)', destination: '/es', permanent: true },
       { source: '/zh-hans/:path*', destination: '/zh', permanent: true },
 
       // === Booking ancien ===
