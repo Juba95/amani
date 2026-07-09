@@ -9,6 +9,12 @@ export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Japonais — Chauffeur Privé Parlant Japonais | France & Europe | Amani Limousines',
   description: 'Chauffeur privé parlant japonais, disponible partout en France et en Europe. Haute couture, restaurants étoilés, affaires. Disponible 24h/24.',
   canonical: 'https://www.amani-limousines.com/chauffeur-japonais',
+  alternates: {
+    languages: {
+      en: 'https://www.amani-limousines.com/en/japanese-speaking-chauffeur-paris',
+      'x-default': 'https://www.amani-limousines.com/chauffeur-japonais',
+    },
+  },
 });
 
 const services = [

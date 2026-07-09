@@ -9,6 +9,12 @@ export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Russophone — Chauffeur Privé Parlant Russe | France & Europe | Amani Limousines',
   description: 'Chauffeur privé parlant russe, disponible partout en France et en Europe. Tourisme de luxe, shopping, événements mondains. Disponible 24h/24.',
   canonical: 'https://www.amani-limousines.com/chauffeur-russophone',
+  alternates: {
+    languages: {
+      en: 'https://www.amani-limousines.com/en/russian-speaking-chauffeur-paris',
+      'x-default': 'https://www.amani-limousines.com/chauffeur-russophone',
+    },
+  },
 });
 
 const services = [

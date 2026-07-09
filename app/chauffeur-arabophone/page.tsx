@@ -9,6 +9,13 @@ export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Arabophone — Chauffeur Privé Parlant Arabe | France & Europe | Amani Limousines',
   description: 'Chauffeur privé parlant arabe, disponible partout en France et en Europe. Accueil délégations du Golfe, shopping de luxe, tourisme médical. Disponible 24h/24.',
   canonical: 'https://www.amani-limousines.com/chauffeur-arabophone',
+  alternates: {
+    languages: {
+      en: 'https://www.amani-limousines.com/en/arabic-speaking-chauffeur-paris',
+      ar: 'https://www.amani-limousines.com/ar/arabic-chauffeur',
+      'x-default': 'https://www.amani-limousines.com/chauffeur-arabophone',
+    },
+  },
 });
 
 const services = [

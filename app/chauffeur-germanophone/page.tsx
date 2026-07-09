@@ -9,6 +9,12 @@ export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Germanophone — Chauffeur Privé Parlant Allemand | France & Europe | Amani Limousines',
   description: 'Chauffeur privé parlant allemand, disponible partout en France et en Europe. Industrie automobile, conventions professionnelles, tourisme. Disponible 24h/24.',
   canonical: 'https://www.amani-limousines.com/chauffeur-germanophone',
+  alternates: {
+    languages: {
+      en: 'https://www.amani-limousines.com/en/german-speaking-chauffeur-paris',
+      'x-default': 'https://www.amani-limousines.com/chauffeur-germanophone',
+    },
+  },
 });
 
 const services = [

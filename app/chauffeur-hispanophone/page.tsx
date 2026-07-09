@@ -9,6 +9,13 @@ export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Hispanophone — Chauffeur Privé Parlant Espagnol | France & Europe | Amani Limousines',
   description: 'Chauffeur privé parlant espagnol, disponible partout en France et en Europe. Tourisme, affaires, visites diplomatiques. Disponible 24h/24.',
   canonical: 'https://www.amani-limousines.com/chauffeur-hispanophone',
+  alternates: {
+    languages: {
+      en: 'https://www.amani-limousines.com/en/spanish-speaking-chauffeur-paris',
+      es: 'https://www.amani-limousines.com/es/chofer-hispanohablante',
+      'x-default': 'https://www.amani-limousines.com/chauffeur-hispanophone',
+    },
+  },
 });
 
 const services = [

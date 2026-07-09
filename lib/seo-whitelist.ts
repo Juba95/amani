@@ -171,9 +171,29 @@ export const EN_INDEXED_SLUGS = new Set([
   'haute-savoie-chauffeur',
   'economical-airport-transfer',
 
+  // ── Chauffeurs multilingues (EN) ─────────────────────────────
+  'english-speaking-chauffeur-paris',
+  'arabic-speaking-chauffeur-paris',
+  'spanish-speaking-chauffeur-paris',
+  'german-speaking-chauffeur-paris',
+  'mandarin-speaking-chauffeur-paris',
+  'korean-speaking-chauffeur-paris',
+  'japanese-speaking-chauffeur-paris',
+  'russian-speaking-chauffeur-paris',
+
   // ── Institutionnelles ─────────────────────────────────────────
   'contact',
 ]);
+
+/**
+ * Slugs supplémentaires indexés PAR langue (pages n'existant que dans une seule
+ * langue sous app/[lang]/). Ne pas mettre dans AR_ZH_INDEXED_SLUGS (partagé).
+ */
+export const PER_LOCALE_EXTRA_SLUGS: Record<'es' | 'ar' | 'zh', Set<string>> = {
+  es: new Set(['chofer-hispanohablante']),
+  ar: new Set(['arabic-chauffeur']),
+  zh: new Set(['mandarin-chauffeur']),
+};
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Helpers
@@ -197,7 +217,8 @@ export function shouldIndex(locale: Locale, slug: string = ''): boolean {
   if (locale === 'fr') return FR_INDEXED_SLUGS.has(slug);
   if (locale === 'en') return EN_INDEXED_SLUGS.has(slug);
   // AR et ZH : seulement la homepage (et toute page ajoutée dans AR_ZH_INDEXED_SLUGS)
-  if (locale === 'ar' || locale === 'zh') return AR_ZH_INDEXED_SLUGS.has(slug);
+  if (locale === 'ar' || locale === 'zh')
+    return AR_ZH_INDEXED_SLUGS.has(slug) || PER_LOCALE_EXTRA_SLUGS[locale].has(slug);
   return false;
 }
 

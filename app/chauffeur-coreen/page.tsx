@@ -9,6 +9,12 @@ export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Coréen — Chauffeur Privé Parlant Coréen | France & Europe | Amani Limousines',
   description: 'Chauffeur privé parlant coréen, disponible partout en France et en Europe. K-beauty, mode, tourisme, événements corporate. Disponible 24h/24.',
   canonical: 'https://www.amani-limousines.com/chauffeur-coreen',
+  alternates: {
+    languages: {
+      en: 'https://www.amani-limousines.com/en/korean-speaking-chauffeur-paris',
+      'x-default': 'https://www.amani-limousines.com/chauffeur-coreen',
+    },
+  },
 });
 
 const services = [

@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next';
-import { FR_INDEXED_SLUGS, EN_INDEXED_SLUGS, AR_ZH_INDEXED_SLUGS } from '@/lib/seo-whitelist';
+import { FR_INDEXED_SLUGS, EN_INDEXED_SLUGS, AR_ZH_INDEXED_SLUGS, PER_LOCALE_EXTRA_SLUGS } from '@/lib/seo-whitelist';
 
 const BASE = 'https://www.amani-limousines.com';
 
@@ -147,7 +147,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // ── Homepages ES + AR + ZH ──────────────────────────────────────────────────
   // Clientèle internationale — indexées à 0.9
   for (const locale of ['es', 'ar', 'zh'] as const) {
-    for (const slug of AR_ZH_INDEXED_SLUGS) {
+    for (const slug of new Set([...AR_ZH_INDEXED_SLUGS, ...PER_LOCALE_EXTRA_SLUGS[locale]])) {
       const path = slug === '' ? `/${locale}` : `/${locale}/${slug}`;
       entries.push({
         url: `${BASE}${path}`,
