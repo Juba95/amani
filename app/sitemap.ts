@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next';
 import { FR_INDEXED_SLUGS, EN_INDEXED_SLUGS, AR_ZH_INDEXED_SLUGS, PER_LOCALE_EXTRA_SLUGS } from '@/lib/seo-whitelist';
+import { ALL_DESTINATIONS } from '@/lib/destinations';
 
 const BASE = 'https://www.amani-limousines.com';
 
@@ -142,6 +143,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: getChangeFreq(slug),
       priority: getPriority(slug),
     });
+  }
+
+  // ── Destinations européennes (hubs + toutes les villes du registre) ────────
+  entries.push(
+    { url: `${BASE}/destinations`,    lastModified: now, changeFrequency: 'weekly', priority: 0.75 },
+    { url: `${BASE}/en/destinations`, lastModified: now, changeFrequency: 'weekly', priority: 0.75 },
+  );
+  for (const d of ALL_DESTINATIONS) {
+    entries.push(
+      { url: `${BASE}/destinations/${d.slug}`,    lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
+      { url: `${BASE}/en/destinations/${d.slug}`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
+    );
   }
 
   // ── Homepages ES + AR + ZH ──────────────────────────────────────────────────

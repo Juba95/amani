@@ -56,6 +56,7 @@ const FR_TO_EN: Record<string, string> = {
   '/chauffeur-prive-haute-savoie':   '/en/haute-savoie-chauffeur',
   '/transfert-aeroport-economique':  '/en/economical-airport-transfer',
   '/experiences':                    '/en/experiences',
+  '/destinations':                   '/en/destinations',
   '/corporate':                      '/en/corporate',
   // Chauffeurs multilingues
   '/chauffeur-anglophone':           '/en/english-speaking-chauffeur-paris',
@@ -89,6 +90,7 @@ const EN_TO_FR: Record<string, string> = {
   '/en/haute-savoie-chauffeur':      '/chauffeur-prive-haute-savoie',
   '/en/economical-airport-transfer': '/transfert-aeroport-economique',
   '/en/experiences':                 '/experiences',
+  '/en/destinations':                '/destinations',
   '/en/corporate':                   '/corporate',
   // Chauffeurs multilingues
   '/en/english-speaking-chauffeur-paris':  '/chauffeur-anglophone',
@@ -140,6 +142,7 @@ function getLocalizedPath(pathname: string, targetLocale: string): string {
   // Vers FR
   if (targetLocale === 'fr') {
     if (pathname.startsWith('/en/experiences/')) return pathname.slice(3);
+    if (pathname.startsWith('/en/destinations/')) return pathname.slice(3);
     if (pathname.startsWith('/en')) return EN_TO_FR[pathname] ?? '/';
     if (isLocalePath) return NATIVE_TO_FR[pathname] ?? '/';
     return pathname;
@@ -150,6 +153,7 @@ function getLocalizedPath(pathname: string, targetLocale: string): string {
     if (isLocalePath) return NATIVE_TO_EN[pathname] ?? '/en';
     if (pathname.startsWith('/en')) return pathname;
     if (pathname.startsWith('/experiences/')) return `/en${pathname}`;
+    if (pathname.startsWith('/destinations/')) return `/en${pathname}`;
     return FR_TO_EN[pathname] ?? '/en';
   }
 
@@ -209,6 +213,7 @@ function getEventsMenu(locale: Locale): DropdownItem[] {
 
 function getDestinationsMenu(locale: Locale): DropdownItem[] {
   if (locale === 'en') return [
+    { label: 'All destinations',         href: '/en/destinations' },
     { label: 'Private chauffeur Paris',  href: '/en/private-chauffeur-paris' },
     { label: 'Bordeaux chauffeur',       href: '/en/private-chauffeur-bordeaux' },
     { label: 'Chamonix chauffeur',       href: '/en/chamonix-chauffeur' },
@@ -218,6 +223,7 @@ function getDestinationsMenu(locale: Locale): DropdownItem[] {
     { label: 'Economical airport transfer', href: '/en/economical-airport-transfer' },
   ];
   return [
+    { label: 'Toutes les destinations',   href: '/destinations' },
     { label: 'Chauffeur privé Paris',     href: '/chauffeur-prive-paris' },
     { label: 'Chauffeur privé Bordeaux',  href: '/chauffeur-prive-bordeaux' },
     { label: 'Chauffeur privé Lyon',      href: '/chauffeur-prive-lyon' },

@@ -83,6 +83,8 @@ const VALID_ROOT_SEGMENTS = new Set([
   // Devis, plan du site
   'devis',
   'plan-du-site',
+  // Destinations européennes (hub + /destinations/<slug>)
+  'destinations',
 ]);
 
 // Bots / crawlers : jamais de redirection par langue (préserve le SEO français

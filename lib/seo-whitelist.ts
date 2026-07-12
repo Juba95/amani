@@ -14,6 +14,8 @@
  * ─────────────────────────────────────────────────────────────────────────────
  */
 
+import { getDestination } from '@/lib/destinations';
+
 /**
  * Langues dont TOUTES les pages sont indexées (FR + EN ont un contenu riche et unique).
  * AR et ZH n'ont qu'une homepage → gérées séparément via AR_ZH_INDEXED_SLUGS.
@@ -234,6 +236,14 @@ export const PER_LOCALE_EXTRA_SLUGS: Record<'es' | 'ar' | 'zh', Set<string>> = {
  *   shouldIndex('en', 'cdg-airport-transfer')  // true
  */
 export function shouldIndex(locale: Locale, slug: string = ''): boolean {
+  // Destinations européennes (FR + EN) : indexées si présentes dans le registre
+  // lib/destinations — pas de whitelist manuelle, le registre fait foi.
+  if (locale === 'fr' || locale === 'en') {
+    if (slug === 'destinations') return true;
+    if (slug.startsWith('destinations/')) {
+      return Boolean(getDestination(slug.slice('destinations/'.length)));
+    }
+  }
   // FR et EN : vérifier dans la whitelist dédiée
   if (locale === 'fr') return FR_INDEXED_SLUGS.has(slug);
   if (locale === 'en') return EN_INDEXED_SLUGS.has(slug);
