@@ -13,6 +13,7 @@ import WhyUs from '@/components/WhyUs';
 import AboutSection from '@/components/AboutSection';
 import BookingResults from '@/components/BookingResults';
 import { CTA, Footer } from '@/components/CTAFooter';
+import { SocialProofStrip, ExperiencesSection, DestinationsSection, RoutesStrip, RecruitBlock } from '@/components/HomeSections';
 import { RTL_LOCALES } from '@/lib/vehicles';
 import type { Locale } from '@/lib/vehicles';
 
@@ -106,6 +107,15 @@ export default function LocalePage() {
       {/* Services */}
       <ServicesGrid t={t} locale={locale} />
 
+      {/* Sections refonte P2 — EN uniquement pour l'instant */}
+      {locale === 'en' && (
+        <>
+          <ExperiencesSection locale="en" />
+          <DestinationsSection locale="en" />
+          <RoutesStrip locale="en" />
+        </>
+      )}
+
       {/* Why choose us + Google reviews + FAQ */}
       <WhyUs t={t} />
 
@@ -139,6 +149,8 @@ export default function LocalePage() {
       <TrustStrip t={t} />
 
       {/* CTA + Footer */}
+      {locale === 'en' && <RecruitBlock locale="en" />}
+
       <CTA t={t} />
       <Footer t={t} locale={locale} />
     </main>

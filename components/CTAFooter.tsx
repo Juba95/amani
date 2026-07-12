@@ -31,6 +31,7 @@ const FOOTER_LINKS_FR: Record<string, { label: string; href: string }[]> = {
   ],
   col4: [
     { label: 'Nous contacter',              href: '/contact' },
+    { label: 'Devenir chauffeur',            href: '/devenir-chauffeur' },
     { label: 'Mentions légales',             href: '/mentions-legales' },
     { label: 'CGV',                          href: '/mentions-legales' },
     { label: 'Politique de confidentialité', href: '/mentions-legales' },
@@ -63,6 +64,7 @@ const FOOTER_LINKS_EN: Record<string, { label: string; href: string }[]> = {
     { label: 'Trade fairs',                  href: '/en/events' },
   ],
   col4: [
+    { label: 'Become a chauffeur',           href: '/en/become-a-chauffeur' },
     { label: 'Legal notice',                 href: '/en/contact' },
     { label: 'Terms & conditions',           href: '/en/contact' },
     { label: 'Privacy policy',               href: '/en/contact' },

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import PlacesInput, { isGmapsUnavailable } from '@/components/PlacesInput';
 
 interface HeroProps {
@@ -47,29 +48,23 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
 
   return (
     <section className="relative min-h-screen flex items-center px-6 md:px-10 lg:px-16 pt-24 pb-16 overflow-hidden">
-      {/* ── YouTube video background ── */}
+      {/* ── Photo background (Paris) ── */}
       <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
-        <iframe
-          src="https://www.youtube.com/embed/Tgd6gZt9DvQ?autoplay=1&mute=1&loop=1&playlist=Tgd6gZt9DvQ&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playsinline=1&enablejsapi=0"
-          title="background"
-          allow="autoplay; encrypted-media"
-          allowFullScreen={false}
-          style={{
-            position: 'absolute',
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
-            width: 'max(100%, 177.78vh)',
-            height: 'max(100%, 56.25vw)',
-            border: 'none',
-            pointerEvents: 'none',
-          }}
+        <Image
+          src="/images/home/hero-paris.jpg"
+          alt=""
+          fill
+          priority
+          quality={70}
+          sizes="100vw"
+          className="object-cover"
+          style={{ objectPosition: 'center 62%' }}
         />
         {/* Dark overlay for readability */}
         <div
           className="absolute inset-0"
           style={{
-            background: 'linear-gradient(135deg, rgba(8,7,6,0.82) 0%, rgba(8,7,6,0.65) 40%, rgba(8,7,6,0.78) 100%)',
+            background: 'linear-gradient(135deg, rgba(8,7,6,0.82) 0%, rgba(8,7,6,0.58) 40%, rgba(8,7,6,0.78) 100%)',
           }}
         />
       </div>

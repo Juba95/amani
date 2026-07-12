@@ -118,6 +118,7 @@ export const FR_INDEXED_SLUGS = new Set([
 
   // ── Chauffeur Speaker (langues) ─────────────────────────────────
   'chauffeur-anglophone',
+  'devenir-chauffeur',
   'chauffeur-arabophone',
   'chauffeur-hispanophone',
   'chauffeur-germanophone',
@@ -170,6 +171,8 @@ export const EN_INDEXED_SLUGS = new Set([
   'megeve-chauffeur',
   'haute-savoie-chauffeur',
   'economical-airport-transfer',
+
+  'become-a-chauffeur',
 
   // ── Chauffeurs multilingues (EN) ─────────────────────────────
   'english-speaking-chauffeur-paris',

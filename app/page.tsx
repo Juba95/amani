@@ -12,6 +12,7 @@ import TrustStrip from '@/components/TrustStrip';
 import WhyUs from '@/components/WhyUs';
 import AboutSection from '@/components/AboutSection';
 import { CTA, Footer } from '@/components/CTAFooter';
+import { SocialProofStrip, ExperiencesSection, DestinationsSection, RoutesStrip, RecruitBlock } from '@/components/HomeSections';
 
 import fr from '@/locales/fr.json';
 
@@ -72,6 +73,9 @@ export default function HomePage() {
         loading={searchLoading}
       />
 
+      {/* Preuve sociale (refonte P2) */}
+      <SocialProofStrip locale="fr" />
+
       {/* Stats: 500+ transferts, 4.9★, 15 ans, 300+ véhicules */}
       <StatsRow t={t} />
 
@@ -80,6 +84,15 @@ export default function HomePage() {
 
       {/* Services */}
       <ServicesGrid t={t} locale={locale} />
+
+      {/* Expériences signature (refonte P2) */}
+      <ExperiencesSection locale="fr" />
+
+      {/* Top destinations (refonte P2) */}
+      <DestinationsSection locale="fr" />
+
+      {/* Trajets populaires (refonte P2) */}
+      <RoutesStrip locale="fr" />
 
       {/* Why choose us + Google reviews + FAQ */}
       <WhyUs t={t} />
@@ -95,6 +108,9 @@ export default function HomePage() {
 
       {/* Trust strip */}
       <TrustStrip t={t} />
+
+      {/* Recrutement chauffeurs (refonte P2) */}
+      <RecruitBlock locale="fr" />
 
       {/* CTA + Footer */}
       <CTA t={t} />
