@@ -26,8 +26,8 @@ export default function Logo({
       >
         MANI
       </text>
-      {/* Ligne dorée + LIMOUSINES aligné sous le I */}
-      <line x1="62" y1="70" x2="128" y2="70" stroke={gold} strokeWidth="1.3" />
+      {/* Ligne dorée + LIMOUSINES aligné sous le I (le trait s'arrête avant le texte) */}
+      <line x1="62" y1="70" x2="94" y2="70" stroke={gold} strokeWidth="1.3" />
       <text
         x="212" y="74" textAnchor="end"
         fontFamily="Inter,Arial,sans-serif"
