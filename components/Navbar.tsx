@@ -184,6 +184,7 @@ function getServicesMenu(locale: Locale, homePrefix: string): DropdownItem[] {
 
 function getEventsMenu(locale: Locale): DropdownItem[] {
   if (locale === 'en') return [
+    { label: 'All experiences',         href: '/en/experiences' },
     { label: 'All events',              href: '/en/events' },
     { label: 'Paris Fashion Week',      href: '/evenements/paris-fashion-week' },
     { label: 'Paris Air Show',          href: '/evenements/paris-air-show' },
@@ -193,6 +194,7 @@ function getEventsMenu(locale: Locale): DropdownItem[] {
     { label: 'Professional exhibitions', href: '/evenements/salons-professionnels' },
   ];
   return [
+    { label: 'Toutes les expériences',  href: '/experiences' },
     { label: 'Tous les événements',     href: '/evenements' },
     { label: 'Paris Fashion Week',      href: '/evenements/paris-fashion-week' },
     { label: 'Paris Air Show',          href: '/evenements/paris-air-show' },
@@ -377,14 +379,6 @@ export default function Navbar({ t, locale }: NavbarProps) {
           />
         )}
 
-        {/* Experiences */}
-        {(locale === 'fr' || locale === 'en') && (
-          <Link href={expHref}
-            className="font-sans text-sm text-gray-700 hover:text-gold-400 tracking-wide transition-colors">
-            {expLabel}
-          </Link>
-        )}
-
         {/* Fleet */}
         <Link href={fleetHref}
           className="font-sans text-sm text-gray-700 hover:text-gold-400 tracking-wide transition-colors">
@@ -394,7 +388,7 @@ export default function Navbar({ t, locale }: NavbarProps) {
         {/* Events dropdown */}
         {(locale === 'fr' || locale === 'en') && (
           <DropdownMenu
-            label={t?.nav?.events ?? (locale === 'en' ? 'Events' : 'Événements')}
+            label={locale === 'en' ? 'Experiences & Events' : 'Expériences & Événements'}
             items={eventsItems}
             isOpen={eventsOpen}
             onToggle={() => { setEventsOpen(!eventsOpen); setServicesOpen(false); setDestinationsOpen(false); }}
@@ -413,6 +407,14 @@ export default function Navbar({ t, locale }: NavbarProps) {
           <Link href={corpHref}
             className="font-sans text-sm text-gray-700 hover:text-gold-400 tracking-wide transition-colors">
             Corporate
+          </Link>
+        )}
+
+        {/* Recrutement */}
+        {(locale === 'fr' || locale === 'en') && (
+          <Link href={locale === 'en' ? '/en/become-a-chauffeur' : '/devenir-chauffeur'}
+            className="font-sans text-sm text-gray-700 hover:text-gold-400 tracking-wide transition-colors">
+            {locale === 'en' ? 'Careers' : 'Recrutement'}
           </Link>
         )}
 
@@ -537,9 +539,9 @@ export default function Navbar({ t, locale }: NavbarProps) {
 
             <div className="border-t border-stone-100 mt-4 pt-4 flex flex-col gap-1">
               {(locale === 'fr' || locale === 'en') && (
-                <Link href={expHref} onClick={() => setMenuOpen(false)}
+                <Link href={locale === 'en' ? '/en/become-a-chauffeur' : '/devenir-chauffeur'} onClick={() => setMenuOpen(false)}
                   className="font-sans text-sm text-gray-700 hover:text-gold-400 py-1.5">
-                  {expLabel}
+                  {locale === 'en' ? 'Careers' : 'Recrutement'}
                 </Link>
               )}
               <Link href={fleetHref} onClick={() => setMenuOpen(false)}
