@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
+import EuropeMap from '@/components/EuropeMap';
+import { groupByCountryIso } from '@/lib/destinations';
 import { DestinationsHub } from '@/components/DestinationViews';
 
 const BASE = 'https://www.amani-limousines.com';
@@ -21,6 +23,11 @@ export const metadata: Metadata = {
 export default function DestinationsHubPage() {
   return (
     <SEOLayout>
+      <section className="px-6 md:px-10 pb-4">
+        <div className="max-w-6xl mx-auto">
+          <EuropeMap locale="fr" countries={groupByCountryIso('fr')} />
+        </div>
+      </section>
       <DestinationsHub locale="fr" />
     </SEOLayout>
   );

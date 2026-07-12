@@ -47,3 +47,27 @@ export function getNearbyDestinations(d: Destination): Destination[] {
     .map((slug) => BY_SLUG.get(slug))
     .filter((x): x is Destination => Boolean(x));
 }
+
+// ── Groupement par pays (code ISO) pour la carte interactive ────────────────
+const COUNTRY_ISO: Record<string, string> = {
+  'France': 'fr', 'United Kingdom': 'gb', 'Ireland': 'ie', 'Belgium': 'be',
+  'Netherlands': 'nl', 'Luxembourg': 'lu', 'Germany': 'de', 'Austria': 'at',
+  'Switzerland': 'ch', 'Denmark': 'dk', 'Sweden': 'se', 'Norway': 'no',
+  'Finland': 'fi', 'Iceland': 'is', 'Italy': 'it', 'Spain': 'es',
+  'Portugal': 'pt', 'Czech Republic': 'cz', 'Czechia': 'cz', 'Hungary': 'hu',
+  'Poland': 'pl', 'Monaco': 'mc', 'Greece': 'gr', 'Croatia': 'hr',
+  'Slovenia': 'si', 'Slovakia': 'sk', 'Romania': 'ro', 'Bulgaria': 'bg',
+  'Lithuania': 'lt', 'Latvia': 'lv', 'Estonia': 'ee', 'Andorra': 'ad',
+};
+
+export function groupByCountryIso(locale: 'fr' | 'en') {
+  const out: Record<string, { name: string; cities: { slug: string; name: string }[] }> = {};
+  for (const d of ALL_DESTINATIONS) {
+    const iso = COUNTRY_ISO[d.country.en];
+    if (!iso) continue;
+    if (!out[iso]) out[iso] = { name: d.country[locale], cities: [] };
+    out[iso].cities.push({ slug: d.slug, name: d.name[locale] });
+  }
+  for (const iso of Object.keys(out)) out[iso].cities.sort((a, b) => a.name.localeCompare(b.name));
+  return out;
+}
