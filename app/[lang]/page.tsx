@@ -126,7 +126,6 @@ export default function LocalePage() {
       <ProcessSection t={t} />
 
       {/* Video section */}
-      <VideoSection />
 
       {/* Events */}
       <EventsGrid t={t} />
@@ -154,27 +153,6 @@ export default function LocalePage() {
       <CTA t={t} />
       <Footer t={t} locale={locale} />
     </main>
-  );
-}
-
-// ── Video section ──────────────────────────────────────────────────────────
-function VideoSection() {
-  return (
-    <section className="py-20 px-6 md:px-10" style={{ background: '#0a0908' }}>
-      <div className="max-w-4xl mx-auto">
-        <div className="relative w-full overflow-hidden rounded-2xl shadow-2xl"
-          style={{ paddingBottom: '56.25%', background: '#111' }}>
-          <iframe
-            src="https://www.youtube.com/embed/Tgd6gZt9DvQ?rel=0&modestbranding=1&color=white"
-            title="Amani Limousines — Service de chauffeur privé à Paris"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-            className="absolute inset-0 w-full h-full"
-            style={{ border: 'none' }}
-          />
-        </div>
-      </div>
-    </section>
   );
 }
 
