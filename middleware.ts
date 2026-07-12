@@ -46,6 +46,8 @@ const VALID_ROOT_SEGMENTS = new Set([
   // Pages SEO chauffeur privé et niches
   'chauffeur-prive-paris',
   'devenir-chauffeur',
+  'experiences',
+  'corporate',
   'chauffeur-mariage-paris',
   'transfert-aeroport-beauvais',
   // Pages Alpes / Haute-Savoie

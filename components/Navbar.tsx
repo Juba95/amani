@@ -55,6 +55,8 @@ const FR_TO_EN: Record<string, string> = {
   '/chauffeur-prive-megeve':         '/en/megeve-chauffeur',
   '/chauffeur-prive-haute-savoie':   '/en/haute-savoie-chauffeur',
   '/transfert-aeroport-economique':  '/en/economical-airport-transfer',
+  '/experiences':                    '/en/experiences',
+  '/corporate':                      '/en/corporate',
   // Chauffeurs multilingues
   '/chauffeur-anglophone':           '/en/english-speaking-chauffeur-paris',
   '/chauffeur-arabophone':           '/en/arabic-speaking-chauffeur-paris',
@@ -86,6 +88,8 @@ const EN_TO_FR: Record<string, string> = {
   '/en/megeve-chauffeur':            '/chauffeur-prive-megeve',
   '/en/haute-savoie-chauffeur':      '/chauffeur-prive-haute-savoie',
   '/en/economical-airport-transfer': '/transfert-aeroport-economique',
+  '/en/experiences':                 '/experiences',
+  '/en/corporate':                   '/corporate',
   // Chauffeurs multilingues
   '/en/english-speaking-chauffeur-paris':  '/chauffeur-anglophone',
   '/en/arabic-speaking-chauffeur-paris':   '/chauffeur-arabophone',
@@ -135,6 +139,7 @@ function getLocalizedPath(pathname: string, targetLocale: string): string {
 
   // Vers FR
   if (targetLocale === 'fr') {
+    if (pathname.startsWith('/en/experiences/')) return pathname.slice(3);
     if (pathname.startsWith('/en')) return EN_TO_FR[pathname] ?? '/';
     if (isLocalePath) return NATIVE_TO_FR[pathname] ?? '/';
     return pathname;
@@ -144,6 +149,7 @@ function getLocalizedPath(pathname: string, targetLocale: string): string {
   if (targetLocale === 'en') {
     if (isLocalePath) return NATIVE_TO_EN[pathname] ?? '/en';
     if (pathname.startsWith('/en')) return pathname;
+    if (pathname.startsWith('/experiences/')) return `/en${pathname}`;
     return FR_TO_EN[pathname] ?? '/en';
   }
 
@@ -319,6 +325,9 @@ export default function Navbar({ t, locale }: NavbarProps) {
   const destinationsLabel = locale === 'en' ? 'Destinations' : 'Destinations';
   const fleetLabel        = t?.nav?.fleet ?? (locale === 'en' ? 'Fleet' : 'Flotte');
   const fleetHref         = locale === 'en' ? '/en/our-fleet' : '/notre-flotte';
+  const expLabel          = locale === 'en' ? 'Experiences' : 'Expériences';
+  const expHref           = locale === 'en' ? '/en/experiences' : '/experiences';
+  const corpHref          = locale === 'en' ? '/en/corporate' : '/corporate';
 
   return (
     <nav
@@ -368,6 +377,14 @@ export default function Navbar({ t, locale }: NavbarProps) {
           />
         )}
 
+        {/* Experiences */}
+        {(locale === 'fr' || locale === 'en') && (
+          <Link href={expHref}
+            className="font-sans text-sm text-gray-700 hover:text-gold-400 tracking-wide transition-colors">
+            {expLabel}
+          </Link>
+        )}
+
         {/* Fleet */}
         <Link href={fleetHref}
           className="font-sans text-sm text-gray-700 hover:text-gold-400 tracking-wide transition-colors">
@@ -391,6 +408,13 @@ export default function Navbar({ t, locale }: NavbarProps) {
           </a>
         )}
 
+        {/* Corporate */}
+        {(locale === 'fr' || locale === 'en') && (
+          <Link href={corpHref}
+            className="font-sans text-sm text-gray-700 hover:text-gold-400 tracking-wide transition-colors">
+            Corporate
+          </Link>
+        )}
 
         {/* Contact */}
         <Link href={contactHref}
@@ -512,10 +536,22 @@ export default function Navbar({ t, locale }: NavbarProps) {
             )}
 
             <div className="border-t border-stone-100 mt-4 pt-4 flex flex-col gap-1">
+              {(locale === 'fr' || locale === 'en') && (
+                <Link href={expHref} onClick={() => setMenuOpen(false)}
+                  className="font-sans text-sm text-gray-700 hover:text-gold-400 py-1.5">
+                  {expLabel}
+                </Link>
+              )}
               <Link href={fleetHref} onClick={() => setMenuOpen(false)}
                 className="font-sans text-sm text-gray-700 hover:text-gold-400 py-1.5">
                 {fleetLabel}
               </Link>
+              {(locale === 'fr' || locale === 'en') && (
+                <Link href={corpHref} onClick={() => setMenuOpen(false)}
+                  className="font-sans text-sm text-gray-700 hover:text-gold-400 py-1.5">
+                  Corporate
+                </Link>
+              )}
               <Link href={contactHref} onClick={() => setMenuOpen(false)}
                 className="font-sans text-sm text-gray-700 hover:text-gold-400 py-1.5">
                 {t?.nav?.contact}

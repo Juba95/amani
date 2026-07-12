@@ -29,26 +29,26 @@ export function SocialProofStrip({ locale = 'fr' as L }) {
 /* ── Expériences signature ───────────────────────────────────────────────── */
 const EXPERIENCES = {
   fr: [
-    { img: '/images/home/parisnight.jpg', badge: '4–5 heures', cat: 'Soirée', title: 'Paris by Night',
+    { slug: 'paris-by-night', img: '/images/home/parisnight.jpg', badge: '4–5 heures', cat: 'Soirée', title: 'Paris by Night',
       text: 'La tour Eiffel scintillante, Montmartre au crépuscule, dépose dîner sur les Champs-Élysées — votre chauffeur toute la soirée.', price: '390 €' },
-    { img: '/images/home/champagne.jpg', badge: 'Journée', cat: 'Vin & gastronomie', title: 'Escapade Champagne',
+    { slug: 'champagne-day-trip', img: '/images/home/champagne.jpg', badge: 'Journée', cat: 'Vin & gastronomie', title: 'Escapade Champagne',
       text: 'Reims & Épernay depuis Paris : visites de maisons, dégustations privées et déjeuner — votre chauffeur gère chaque kilomètre.', price: '890 €' },
-    { img: '/images/home/chambord.jpg', badge: 'Journée', cat: 'Excursion', title: 'Châteaux de la Loire',
+    { slug: 'loire-valley-castles', img: '/images/home/chambord.jpg', badge: 'Journée', cat: 'Excursion', title: 'Châteaux de la Loire',
       text: 'Chambord, Chenonceau et déjeuner étoilé. Départ de votre hôtel à 8h, retour pour dîner à Paris.', price: '990 €' },
   ],
   en: [
-    { img: '/images/home/parisnight.jpg', badge: '4–5 hours', cat: 'By night', title: 'Paris by Night',
+    { slug: 'paris-by-night', img: '/images/home/parisnight.jpg', badge: '4–5 hours', cat: 'By night', title: 'Paris by Night',
       text: 'The Eiffel Tower sparkling, Montmartre at dusk, dinner drop-off on the Champs-Élysées — with your chauffeur all evening.', price: '€390' },
-    { img: '/images/home/champagne.jpg', badge: 'Full day', cat: 'Wine & gastronomy', title: 'Champagne Day Trip',
+    { slug: 'champagne-day-trip', img: '/images/home/champagne.jpg', badge: 'Full day', cat: 'Wine & gastronomy', title: 'Champagne Day Trip',
       text: 'Reims & Épernay from Paris: maisons visits, private tastings and lunch — your chauffeur handles every kilometre.', price: '€890' },
-    { img: '/images/home/chambord.jpg', badge: 'Full day', cat: 'Day trip', title: 'Loire Valley Castles',
+    { slug: 'loire-valley-castles', img: '/images/home/chambord.jpg', badge: 'Full day', cat: 'Day trip', title: 'Loire Valley Castles',
       text: 'Chambord, Chenonceau and a starred lunch stop. Depart your hotel at 8am, return for dinner in Paris.', price: '€990' },
   ],
 };
 
 export function ExperiencesSection({ locale = 'fr' as L }) {
   const en = locale === 'en';
-  const href = en ? '/en/private-excursion' : '/excursion-privee';
+  const base = en ? '/en/experiences' : '/experiences';
   return (
     <section className="py-20 px-6 md:px-10 bg-warm-50">
       <div className="max-w-6xl mx-auto">
@@ -60,7 +60,7 @@ export function ExperiencesSection({ locale = 'fr' as L }) {
         </div>
         <div className="grid md:grid-cols-3 gap-7">
           {EXPERIENCES[locale].map((e) => (
-            <Link key={e.title} href={href}
+            <Link key={e.title} href={`${base}/${e.slug}`}
               className="group bg-white border border-warm-200 rounded-md overflow-hidden hover:-translate-y-1 hover:shadow-xl transition-all flex flex-col">
               <div className="relative aspect-[16/10] overflow-hidden">
                 <Image src={e.img} alt={e.title} fill sizes="(max-width:768px) 90vw, 380px" quality={70}

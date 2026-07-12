@@ -119,6 +119,15 @@ export const FR_INDEXED_SLUGS = new Set([
   // ── Chauffeur Speaker (langues) ─────────────────────────────────
   'chauffeur-anglophone',
   'devenir-chauffeur',
+  'experiences',
+  'corporate',
+  'experiences/paris-by-night',
+  'experiences/champagne-day-trip',
+  'experiences/loire-valley-castles',
+  'experiences/versailles-private',
+  'experiences/mont-saint-michel',
+  'experiences/giverny-monet',
+
   'chauffeur-arabophone',
   'chauffeur-hispanophone',
   'chauffeur-germanophone',
@@ -173,6 +182,15 @@ export const EN_INDEXED_SLUGS = new Set([
   'economical-airport-transfer',
 
   'become-a-chauffeur',
+  'experiences',
+  'corporate',
+  'experiences/paris-by-night',
+  'experiences/champagne-day-trip',
+  'experiences/loire-valley-castles',
+  'experiences/versailles-private',
+  'experiences/mont-saint-michel',
+  'experiences/giverny-monet',
+
 
   // ── Chauffeurs multilingues (EN) ─────────────────────────────
   'english-speaking-chauffeur-paris',
