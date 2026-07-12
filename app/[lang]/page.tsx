@@ -4,11 +4,8 @@ import { useState, useRef } from 'react';
 import { useParams } from 'next/navigation';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
-import StatsRow from '@/components/StatsRow';
 import VehicleShowcase from '@/components/VehicleShowcase';
 import ServicesGrid from '@/components/ServicesGrid';
-import EventsGrid from '@/components/EventsGrid';
-import TrustStrip from '@/components/TrustStrip';
 import WhyUs from '@/components/WhyUs';
 import AboutSection from '@/components/AboutSection';
 import BookingResults from '@/components/BookingResults';
@@ -98,16 +95,10 @@ export default function LocalePage() {
         loading={searchLoading}
       />
 
-      {/* Stats */}
-      <StatsRow t={t} />
-
       {/* À propos — Lounes (traduit) */}
       <AboutSection t={t} />
 
-      {/* Services */}
-      <ServicesGrid t={t} locale={locale} />
-
-      {/* Sections refonte P2 — EN uniquement pour l'instant */}
+      {/* Sections maquette — EN uniquement pour l'instant */}
       {locale === 'en' && (
         <>
           <ExperiencesSection locale="en" />
@@ -116,19 +107,14 @@ export default function LocalePage() {
         </>
       )}
 
-      {/* Why choose us + Google reviews + FAQ */}
-      <WhyUs t={t} />
-
-      {/* Fleet showcase */}
+      {/* Flotte */}
       <VehicleShowcase t={t} />
 
-      {/* Process / How it works */}
-      <ProcessSection t={t} />
+      {/* Services */}
+      <ServicesGrid t={t} locale={locale} />
 
-      {/* Video section */}
-
-      {/* Events */}
-      <EventsGrid t={t} />
+      {/* Why choose us + Google reviews + FAQ */}
+      <WhyUs t={t} />
 
       {/* Booking results (shown after search) */}
       {showResults && distance && duration && (
@@ -144,9 +130,6 @@ export default function LocalePage() {
         />
       )}
 
-      {/* Trust strip */}
-      <TrustStrip t={t} />
-
       {/* CTA + Footer */}
       {locale === 'en' && <RecruitBlock locale="en" />}
 
@@ -156,35 +139,3 @@ export default function LocalePage() {
   );
 }
 
-// ── Process section ────────────────────────────────────────────────────────
-function ProcessSection({ t }: { t: any }) {
-  const steps = t?.process?.steps ?? [];
-
-  return (
-    <section className="py-20 px-6 md:px-10 section-divider">
-      <div className="max-w-5xl mx-auto">
-        <div className="text-center mb-12">
-          <p className="tag-gold mb-3">{t?.process?.tag}</p>
-          <h2 className="heading-section">
-            {t?.process?.title}{' '}
-            <em className="italic" style={{ color: '#8a7340' }}>{t?.process?.title_em}</em>
-          </h2>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {steps.map((step: any, i: number) => (
-            <div key={i} className="text-center relative">
-              <div
-                className="w-10 h-10 rounded-full flex items-center justify-center mx-auto mb-4 font-sans text-xs font-medium"
-                style={{ background: 'rgba(138,115,64,0.1)', color: '#8a7340', border: '1px solid rgba(138,115,64,0.3)' }}
-              >
-                {step.num}
-              </div>
-              <h3 className="font-serif text-base font-normal text-gray-900 mb-2">{step.title}</h3>
-              <p className="font-sans text-xs text-stone-500 font-light leading-relaxed">{step.desc}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
