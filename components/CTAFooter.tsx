@@ -17,9 +17,10 @@ const FOOTER_LINKS_FR: Record<string, { label: string; href: string }[]> = {
     { label: 'Transfert privé',              href: '/transfert-prive' },
     { label: 'Meet and Greet',               href: '/meet-and-greet' },
     { label: 'Convoi & délégations',         href: '/convoi-delegations' },
-    { label: 'Sécurité rapprochée',          href: '/securite-rapprochee' },
-    { label: 'Garde du corps',               href: '/garde-du-corps' },
-    { label: 'Taxi moto',                    href: '/taxi-moto' },
+    { label: 'Sécurité & garde du corps',    href: '/securite-rapprochee' },
+    { label: 'Chauffeur anglophone',         href: '/chauffeur-anglophone' },
+    { label: 'Chauffeur arabophone',         href: '/chauffeur-arabophone' },
+    { label: 'Chauffeur hispanophone',       href: '/chauffeur-hispanophone' },
   ],
 
   col3: [
@@ -52,6 +53,8 @@ const FOOTER_LINKS_EN: Record<string, { label: string; href: string }[]> = {
     { label: 'Close protection',             href: '/en/close-protection' },
     { label: 'Private excursion',            href: '/en/private-excursion' },
     { label: 'Long distance',                href: '/en/long-distance' },
+    { label: 'English-speaking chauffeur',   href: '/en/english-speaking-chauffeur-paris' },
+    { label: 'Arabic-speaking chauffeur',    href: '/en/arabic-speaking-chauffeur-paris' },
   ],
   col3: [
     { label: 'Paris Fashion Week',           href: '/en/events' },
@@ -202,6 +205,31 @@ export function Footer({ t, locale = 'fr' }: FooterProps) {
           </div>
         ))}
       </footer>
+      {/* Pre-footer : liens institutionnels compacts */}
+      <div className="px-6 py-4 flex flex-wrap justify-center gap-x-7 gap-y-2"
+        style={{ background: '#f5f2ed', borderTop: '1px solid #ece9e3' }}>
+        {(locale === 'en'
+          ? [
+              { label: 'Further information', href: '/en/contact' },
+              { label: 'Legal notice',        href: '/mentions-legales' },
+              { label: 'Privacy policy',      href: '/mentions-legales' },
+              { label: 'Terms & Conditions',  href: '/mentions-legales' },
+              { label: 'Contact',             href: '/en/contact' },
+            ]
+          : [
+              { label: 'Plus d\u2019informations',        href: '/a-propos' },
+              { label: 'Mentions légales',            href: '/mentions-legales' },
+              { label: 'Politique de confidentialité', href: '/mentions-legales' },
+              { label: 'CGV',                         href: '/mentions-legales' },
+              { label: 'Contact',                     href: '/contact' },
+            ]
+        ).map((l) => (
+          <Link key={l.label} href={l.href}
+            className="font-sans text-[0.68rem] text-stone-500 hover:text-gold-400 transition-colors tracking-wide">
+            {l.label}
+          </Link>
+        ))}
+      </div>
       <div className="font-sans text-[0.6rem] text-stone-400 text-center tracking-[0.12em] px-6 py-5"
         style={{ background: '#faf8f5', borderTop: '1px solid #ece9e3' }}>
         {t?.footer?.copyright ?? '© 2026 AMANI LIMOUSINES'}

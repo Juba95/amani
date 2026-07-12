@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import type { Locale } from '@/lib/vehicles';
+import Logo from '@/components/Logo';
 
 const LANGS: { code: Locale; label: string; flag: string }[] = [
   { code: 'fr', label: 'Français', flag: '🇫🇷' },
@@ -171,9 +172,7 @@ function getServicesMenu(locale: Locale, homePrefix: string): DropdownItem[] {
     { label: 'Meet & Greet',          href: '/meet-and-greet' },
     { label: 'Longue distance',       href: '/longue-distance' },
     { label: 'Convoi délégations',    href: '/convoi-delegations' },
-    { label: 'Sécurité rapprochée',   href: '/securite-rapprochee' },
-    { label: 'Garde du corps',        href: '/garde-du-corps' },
-    { label: 'Taxi moto',             href: '/taxi-moto' },
+    { label: 'Sécurité & garde du corps', href: '/securite-rapprochee' },
   ];
 }
 
@@ -197,29 +196,6 @@ function getEventsMenu(locale: Locale): DropdownItem[] {
     { label: 'Salons professionnels',   href: '/evenements/salons-professionnels' },
     { label: 'Hippodrome Deauville',    href: '/evenements/hippodrome-deauville' },
     { label: 'Mariage',                 href: '/chauffeur-mariage' },
-  ];
-}
-
-function getSpeakerMenu(locale: Locale): DropdownItem[] {
-  if (locale === 'en') return [
-    { label: '🇬🇧 English-speaking',     href: '/chauffeur-anglophone' },
-    { label: '🇸🇦 Arabic-speaking',      href: '/chauffeur-arabophone' },
-    { label: '🇪🇸 Spanish-speaking',     href: '/chauffeur-hispanophone' },
-    { label: '🇩🇪 German-speaking',      href: '/chauffeur-germanophone' },
-    { label: '🇨🇳 Mandarin-speaking',    href: '/chauffeur-mandarin' },
-    { label: '🇰🇷 Korean-speaking',      href: '/chauffeur-coreen' },
-    { label: '🇯🇵 Japanese-speaking',    href: '/chauffeur-japonais' },
-    { label: '🇷🇺 Russian-speaking',     href: '/chauffeur-russophone' },
-  ];
-  return [
-    { label: '🇬🇧 Chauffeur anglophone',   href: '/chauffeur-anglophone' },
-    { label: '🇸🇦 Chauffeur arabophone',    href: '/chauffeur-arabophone' },
-    { label: '🇪🇸 Chauffeur hispanophone',  href: '/chauffeur-hispanophone' },
-    { label: '🇩🇪 Chauffeur germanophone',  href: '/chauffeur-germanophone' },
-    { label: '🇨🇳 Chauffeur mandarin',      href: '/chauffeur-mandarin' },
-    { label: '🇰🇷 Chauffeur coréen',        href: '/chauffeur-coreen' },
-    { label: '🇯🇵 Chauffeur japonais',      href: '/chauffeur-japonais' },
-    { label: '🇷🇺 Chauffeur russophone',    href: '/chauffeur-russophone' },
   ];
 }
 
@@ -277,7 +253,7 @@ function DropdownMenu({ label, items, isOpen, onToggle, onClose }: DropdownMenuP
     <div ref={ref} className="relative">
       <button
         onClick={onToggle}
-        className="flex items-center gap-1 font-sans text-xs text-gray-600 hover:text-gold-400 tracking-wide transition-colors"
+        className="flex items-center gap-1 font-sans text-sm text-gray-700 hover:text-gold-400 tracking-wide transition-colors"
       >
         {label}
         <svg
@@ -296,7 +272,7 @@ function DropdownMenu({ label, items, isOpen, onToggle, onClose }: DropdownMenuP
               key={item.href}
               href={item.href}
               onClick={onClose}
-              className="block px-4 py-2 font-sans text-xs text-gray-600 hover:bg-stone-50 hover:text-gold-400 transition-colors"
+              className="block px-4 py-2 font-sans text-sm text-gray-700 hover:bg-stone-50 hover:text-gold-400 transition-colors"
             >
               {item.label}
             </Link>
@@ -313,7 +289,6 @@ export default function Navbar({ t, locale }: NavbarProps) {
   const [servicesOpen, setServicesOpen]     = useState(false);
   const [destinationsOpen, setDestinationsOpen] = useState(false);
   const [eventsOpen, setEventsOpen]       = useState(false);
-  const [speakerOpen, setSpeakerOpen]   = useState(false);
   const [scrolled, setScrolled]   = useState(false);
   const pathname = usePathname();
 
@@ -339,11 +314,9 @@ export default function Navbar({ t, locale }: NavbarProps) {
   const servicesItems     = getServicesMenu(locale, homePrefix);
   const destinationsItems = getDestinationsMenu(locale);
   const eventsItems       = getEventsMenu(locale);
-  const speakerItems      = getSpeakerMenu(locale);
 
   const servicesLabel     = locale === 'en' ? 'Services'     : 'Services';
   const destinationsLabel = locale === 'en' ? 'Destinations' : 'Destinations';
-  const speakerLabel      = locale === 'en' ? 'Languages'    : 'Langues';
   const fleetLabel        = t?.nav?.fleet ?? (locale === 'en' ? 'Fleet' : 'Flotte');
   const fleetHref         = locale === 'en' ? '/en/our-fleet' : '/notre-flotte';
 
@@ -359,10 +332,10 @@ export default function Navbar({ t, locale }: NavbarProps) {
       {/* Logo */}
       <Link
         href={locale === 'fr' ? '/' : `/${locale}`}
-        className="font-serif font-medium tracking-[0.35em] uppercase transition-opacity hover:opacity-75"
-        style={{ fontSize: '0.78rem', color: '#8a7340' }}
+        className="transition-opacity hover:opacity-75 shrink-0"
+        aria-label="Amani Limousines — accueil"
       >
-        Amani Limousines
+        <Logo tone="dark" className="h-11 md:h-12 w-auto" />
       </Link>
 
       {/* Desktop nav */}
@@ -373,13 +346,13 @@ export default function Navbar({ t, locale }: NavbarProps) {
             label={servicesLabel}
             items={servicesItems}
             isOpen={servicesOpen}
-            onToggle={() => { setServicesOpen(!servicesOpen); setDestinationsOpen(false); setEventsOpen(false); setSpeakerOpen(false); }}
+            onToggle={() => { setServicesOpen(!servicesOpen); setDestinationsOpen(false); setEventsOpen(false); }}
             onClose={() => setServicesOpen(false)}
           />
         )}
         {(locale === 'ar' || locale === 'zh') && (
           <a href={anchorHref('services')}
-            className="font-sans text-xs text-gray-600 hover:text-gold-400 tracking-wide transition-colors">
+            className="font-sans text-sm text-gray-700 hover:text-gold-400 tracking-wide transition-colors">
             {t?.nav?.services}
           </a>
         )}
@@ -390,14 +363,14 @@ export default function Navbar({ t, locale }: NavbarProps) {
             label={destinationsLabel}
             items={destinationsItems}
             isOpen={destinationsOpen}
-            onToggle={() => { setDestinationsOpen(!destinationsOpen); setServicesOpen(false); setEventsOpen(false); setSpeakerOpen(false); }}
+            onToggle={() => { setDestinationsOpen(!destinationsOpen); setServicesOpen(false); setEventsOpen(false); }}
             onClose={() => setDestinationsOpen(false)}
           />
         )}
 
         {/* Fleet */}
         <Link href={fleetHref}
-          className="font-sans text-xs text-gray-600 hover:text-gold-400 tracking-wide transition-colors">
+          className="font-sans text-sm text-gray-700 hover:text-gold-400 tracking-wide transition-colors">
           {fleetLabel}
         </Link>
 
@@ -407,31 +380,21 @@ export default function Navbar({ t, locale }: NavbarProps) {
             label={t?.nav?.events ?? (locale === 'en' ? 'Events' : 'Événements')}
             items={eventsItems}
             isOpen={eventsOpen}
-            onToggle={() => { setEventsOpen(!eventsOpen); setServicesOpen(false); setDestinationsOpen(false); setSpeakerOpen(false); }}
+            onToggle={() => { setEventsOpen(!eventsOpen); setServicesOpen(false); setDestinationsOpen(false); }}
             onClose={() => setEventsOpen(false)}
           />
         )}
         {(locale === 'ar' || locale === 'zh') && (
           <a href={anchorHref('events')}
-            className="font-sans text-xs text-gray-600 hover:text-gold-400 tracking-wide transition-colors">
+            className="font-sans text-sm text-gray-700 hover:text-gold-400 tracking-wide transition-colors">
             {t?.nav?.events}
           </a>
         )}
 
-        {/* Chauffeur Speaker / Languages dropdown */}
-        {(locale === 'fr' || locale === 'en') && (
-          <DropdownMenu
-            label={speakerLabel}
-            items={speakerItems}
-            isOpen={speakerOpen}
-            onToggle={() => { setSpeakerOpen(!speakerOpen); setServicesOpen(false); setDestinationsOpen(false); setEventsOpen(false); }}
-            onClose={() => setSpeakerOpen(false)}
-          />
-        )}
 
         {/* Contact */}
         <Link href={contactHref}
-          className="font-sans text-xs tracking-wide transition-colors px-3.5 py-1.5 rounded-md border border-stone-200 hover:border-gold-400 hover:text-gold-400"
+          className="font-sans text-sm tracking-wide transition-colors px-3.5 py-1.5 rounded-md border border-stone-200 hover:border-gold-400 hover:text-gold-400"
           style={{ color: pathname === contactHref ? '#8a7340' : undefined }}>
           {t?.nav?.contact}
         </Link>
@@ -441,7 +404,7 @@ export default function Navbar({ t, locale }: NavbarProps) {
       <div className="flex items-center gap-4">
         <a
           href={`tel:${t?.nav?.phone?.replace(/\s/g, '') ?? ''}`}
-          className="hidden sm:block font-sans text-xs text-gray-700 tracking-wide hover:text-gold-400 transition-colors font-medium"
+          className="hidden sm:block font-sans text-sm text-gray-700 tracking-wide hover:text-gold-400 transition-colors font-medium"
           dir="ltr"
         >
           {t?.nav?.phone ?? ''}
@@ -450,7 +413,7 @@ export default function Navbar({ t, locale }: NavbarProps) {
         {/* Language switcher */}
         <div className="relative">
           <button
-            onClick={() => { setLangOpen(!langOpen); setServicesOpen(false); setDestinationsOpen(false); setEventsOpen(false); setSpeakerOpen(false); }}
+            onClick={() => { setLangOpen(!langOpen); setServicesOpen(false); setDestinationsOpen(false); setEventsOpen(false); }}
             className="flex items-center gap-1.5 px-3 py-1.5 border border-stone-200 rounded-md font-sans text-xs text-gray-700 hover:border-gold-400 hover:text-gold-400 transition-all"
           >
             {currentLang.flag} {locale.toUpperCase()}
@@ -536,25 +499,6 @@ export default function Navbar({ t, locale }: NavbarProps) {
                   {t?.nav?.events ?? (locale === 'en' ? 'Events' : 'Événements')}
                 </p>
                 {eventsItems.map((item) => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    onClick={() => setMenuOpen(false)}
-                    className="font-sans text-sm text-gray-700 hover:text-gold-400 py-1.5"
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-              </>
-            )}
-
-            {/* Languages / Speaker section */}
-            {(locale === 'fr' || locale === 'en') && (
-              <>
-                <p className="font-sans text-xs font-semibold tracking-[0.15em] uppercase text-stone-400 mt-4 mb-2">
-                  {speakerLabel}
-                </p>
-                {speakerItems.map((item) => (
                   <Link
                     key={item.href}
                     href={item.href}
