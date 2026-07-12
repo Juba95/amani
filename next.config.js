@@ -537,7 +537,7 @@ const nextConfig = {
       {
         source: '/',
         headers: [
-          { key: 'Link', value: '<https://www.amani-limousines.com/>; rel="alternate"; hreflang="fr", <https://www.amani-limousines.com/en>; rel="alternate"; hreflang="en", <https://www.amani-limousines.com/es>; rel="alternate"; hreflang="es", <https://www.amani-limousines.com/ar>; rel="alternate"; hreflang="ar", <https://www.amani-limousines.com/zh>; rel="alternate"; hreflang="zh-Hans", <https://www.amani-limousines.com/>; rel="alternate"; hreflang="x-default"' },
+          { key: 'Link', value: '<https://www.amani-limousines.com/>; rel="alternate"; hreflang="fr", <https://www.amani-limousines.com/en>; rel="alternate"; hreflang="en", <https://www.amani-limousines.com/es>; rel="alternate"; hreflang="es", <https://www.amani-limousines.com/ar>; rel="alternate"; hreflang="ar", <https://www.amani-limousines.com/zh>; rel="alternate"; hreflang="zh-Hans", <https://www.amani-limousines.com/en>; rel="alternate"; hreflang="x-default"' },
         ],
       },
     ];

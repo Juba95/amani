@@ -107,25 +107,15 @@ export function middleware(req: NextRequest) {
   // (en par défaut ; es/ar/zh si détectées). Son choix manuel via le switcher
   // est mémorisé en cookie et toujours respecté.
   if (segments.length === 0) {
+    // ── Anglais par défaut pour TOUS ──────────────────────────────────────
+    // Seul un choix manuel de français (cookie posé par le sélecteur de
+    // langue) permet de rester sur la home FR. Tout le reste → /en.
     const langCookie = req.cookies.get('amani-lang')?.value;
-    if (langCookie) return NextResponse.next(); // choix déjà connu → on respecte
-
-    const ua = req.headers.get('user-agent') || '';
-    if (BOT_UA.test(ua)) return NextResponse.next(); // bots → toujours FR sur /
-
-    const accept = (req.headers.get('accept-language') || '').toLowerCase();
-    const primary = accept.split(',')[0]?.trim().slice(0, 2) || '';
-
-    if (primary === 'fr' || primary === '') {
-      const res = NextResponse.next();
-      res.cookies.set('amani-lang', 'fr', { maxAge: 60 * 60 * 24 * 365, path: '/' });
-      return res;
+    if (langCookie === 'fr') return NextResponse.next();
+    if (langCookie && ['en', 'es', 'ar', 'zh'].includes(langCookie)) {
+      return NextResponse.redirect(new URL(`/${langCookie}`, req.url), 302);
     }
-
-    const target = ['es', 'ar', 'zh'].includes(primary) ? `/${primary}` : '/en';
-    const res = NextResponse.redirect(new URL(target, req.url), 302);
-    res.cookies.set('amani-lang', target.slice(1), { maxAge: 60 * 60 * 24 * 365, path: '/' });
-    return res;
+    return NextResponse.redirect(new URL('/en', req.url), 302);
   }
 
   const firstSegment = segments[0];
