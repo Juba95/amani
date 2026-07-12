@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Corporate — Hôtels, Agences, Ambassades | Amani Limousines',
@@ -19,10 +20,10 @@ const piliers = [
 ];
 
 const cibles = [
-  { titre: 'Hôtels & conciergeries', texte: 'Vos clients jugent l\'hôtel jusque dans la voiture qui les transporte. Chauffeurs en costume, accueil au nom de votre établissement, remontée d\'information au concierge.' },
-  { titre: 'Agences de voyage & DMC', texte: 'Un partenaire transport fiable pour vos circuits, transferts et journées privées. Confirmation instantanée, commission partenaire, assistance 24/7 pendant les séjours.' },
-  { titre: 'Ambassades & ministères', texte: 'Convois officiels, visites d\'État, délégations. Chauffeurs habitués au protocole diplomatique, discrétion absolue, coordination avec les services de sécurité.' },
-  { titre: 'Entreprises', texte: 'Déplacements dirigeants, roadshows investisseurs, transferts collaborateurs. Reporting RSE disponible (flotte hybride et électrique en croissance).' },
+  { img: '/images/home/hotel.jpg', titre: 'Hôtels & conciergeries', texte: 'Vos clients jugent l\'hôtel jusque dans la voiture qui les transporte. Chauffeurs en costume, accueil au nom de votre établissement, remontée d\'information au concierge.' },
+  { img: '/images/home/agency.jpg', titre: 'Agences de voyage & DMC', texte: 'Un partenaire transport fiable pour vos circuits, transferts et journées privées. Confirmation instantanée, commission partenaire, assistance 24/7 pendant les séjours.' },
+  { img: '/images/home/embassy.jpg', titre: 'Ambassades & ministères', texte: 'Convois officiels, visites d\'État, délégations. Chauffeurs habitués au protocole diplomatique, discrétion absolue, coordination avec les services de sécurité.' },
+  { img: '/images/home/ladefense.jpg', titre: 'Entreprises', texte: 'Déplacements dirigeants, roadshows investisseurs, transferts collaborateurs. Reporting RSE disponible (flotte hybride et électrique en croissance).' },
 ];
 
 export default function CorporatePage() {
@@ -69,9 +70,14 @@ export default function CorporatePage() {
           <h2 className="heading text-center mb-10">Pensé pour votre métier</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {cibles.map((c) => (
-              <div key={c.titre} className="p-6 rounded-xl bg-warm-50 border border-warm-200">
-                <h3 className="font-serif text-lg text-gray-900 mb-3">{c.titre}</h3>
-                <p className="sf text-stone-600 leading-relaxed text-sm">{c.texte}</p>
+              <div key={c.titre} className="rounded-xl bg-warm-50 border border-warm-200 overflow-hidden">
+                <div className="relative aspect-[16/7]">
+                  <Image src={c.img} alt={c.titre} fill sizes="(max-width:768px) 90vw, 480px" quality={65} className="object-cover" />
+                </div>
+                <div className="p-6">
+                  <h3 className="font-serif text-lg text-gray-900 mb-3">{c.titre}</h3>
+                  <p className="sf text-stone-600 leading-relaxed text-sm">{c.texte}</p>
+                </div>
               </div>
             ))}
           </div>

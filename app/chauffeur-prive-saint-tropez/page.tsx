@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
 import Link from 'next/link';
 import { content, contentMetadata } from '@/lib/get-content';
+import CityExperiences from '@/components/CityExperiences';
 
 const SLUG = 'chauffeur-prive-saint-tropez';
 
@@ -179,6 +180,7 @@ export default function ChauffeurPriveSaintTropez() {
           </div>
         </div>
       </section>
+      <CityExperiences slug="chauffeur-prive-saint-tropez" />
     </SEOLayout>
   );
 }

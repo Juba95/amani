@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import SEOLayoutEN from '@/components/SEOLayoutEN';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Corporate — Hotels, Agencies, Embassies | Amani Limousines',
@@ -19,10 +20,10 @@ const pillars = [
 ];
 
 const audiences = [
-  { title: 'Hotels & concierges', text: 'Your guests judge the hotel all the way into the car that carries them. Suited chauffeurs, welcome in your establishment\'s name, feedback loop to the concierge desk.' },
-  { title: 'Travel agencies & DMCs', text: 'A reliable ground-transport partner for your tours, transfers and private days. Instant confirmation, partner commission, 24/7 assistance during stays.' },
-  { title: 'Embassies & ministries', text: 'Official convoys, state visits, delegations. Chauffeurs versed in diplomatic protocol, absolute discretion, coordination with security services.' },
-  { title: 'Corporations', text: 'Executive travel, investor roadshows, employee transfers. CSR reporting available (growing hybrid and electric fleet).' },
+  { img: '/images/home/hotel.jpg', title: 'Hotels & concierges', text: 'Your guests judge the hotel all the way into the car that carries them. Suited chauffeurs, welcome in your establishment\'s name, feedback loop to the concierge desk.' },
+  { img: '/images/home/agency.jpg', title: 'Travel agencies & DMCs', text: 'A reliable ground-transport partner for your tours, transfers and private days. Instant confirmation, partner commission, 24/7 assistance during stays.' },
+  { img: '/images/home/embassy.jpg', title: 'Embassies & ministries', text: 'Official convoys, state visits, delegations. Chauffeurs versed in diplomatic protocol, absolute discretion, coordination with security services.' },
+  { img: '/images/home/ladefense.jpg', title: 'Corporations', text: 'Executive travel, investor roadshows, employee transfers. CSR reporting available (growing hybrid and electric fleet).' },
 ];
 
 export default function CorporatePageEN() {
@@ -69,9 +70,14 @@ export default function CorporatePageEN() {
           <h2 className="heading text-center mb-10">Designed for your business</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {audiences.map((c) => (
-              <div key={c.title} className="p-6 rounded-xl bg-warm-50 border border-warm-200">
-                <h3 className="font-serif text-lg text-gray-900 mb-3">{c.title}</h3>
-                <p className="sf text-stone-600 leading-relaxed text-sm">{c.text}</p>
+              <div key={c.title} className="rounded-xl bg-warm-50 border border-warm-200 overflow-hidden">
+                <div className="relative aspect-[16/7]">
+                  <Image src={c.img} alt={c.title} fill sizes="(max-width:768px) 90vw, 480px" quality={65} className="object-cover" />
+                </div>
+                <div className="p-6">
+                  <h3 className="font-serif text-lg text-gray-900 mb-3">{c.title}</h3>
+                  <p className="sf text-stone-600 leading-relaxed text-sm">{c.text}</p>
+                </div>
               </div>
             ))}
           </div>
