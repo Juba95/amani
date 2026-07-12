@@ -40,9 +40,9 @@ export default function AboutSection({ t }: { t?: any }) {
 
           {/* Photo de Lounes */}
           <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-lg" style={{ aspectRatio: '4/5' }}>
+            <div className="relative rounded-2xl overflow-hidden shadow-lg" style={{ aspectRatio: '864 / 1821' }}>
               <Image
-                src="/lounes-about.jpg"
+                src="/images/home/lounes-presentation.jpg"
                 alt={a.photo_alt ?? "Lounes — Fondateur d'Amani Limousines, chauffeur privé polyglotte"}
                 fill
                 sizes="(max-width: 1024px) 100vw, 500px"
