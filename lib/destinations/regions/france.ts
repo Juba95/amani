@@ -3595,4 +3595,344 @@ export const CITIES: Destination[] = [
     ],
     nearby: ['tours', 'angers', 'rennes'],
   },
+  {
+    slug: 'poitiers',
+    name: { fr: 'Poitiers', en: 'Poitiers' },
+    country: { fr: 'France', en: 'France' },
+    region: 'france',
+    airport: 'Poitiers-Biard (PIS)',
+    airportTransfer: {
+      fr: 'L’aéroport de Poitiers-Biard (PIS) se trouve à 5 km à l’ouest du centre : comptez 15 minutes. Depuis Paris-Charles de Gaulle (CDG), à 350 km, comptez 3h30 ou 1h45 en TGV. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Poitiers-Biard Airport (PIS) lies 5 km west of the centre: allow 15 minutes. From Paris-Charles de Gaulle (CDG), 350 km away, allow 3h30 or 1h45 by high-speed train. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Ville d’art et d’histoire du Poitou, Poitiers rassemble un exceptionnel patrimoine roman — Notre-Dame-la-Grande et sa façade sculptée, le baptistère Saint-Jean, l’un des plus anciens de France. Votre **chauffeur privé à Poitiers** dessert le centre historique, le Futuroscope et les rendez-vous d’affaires : transferts depuis l’aéroport ou la gare TGV, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Poitiers est la porte du **Futuroscope et du Poitou**. Le parc du Futuroscope et ses attractions futuristes sont à dix minutes, l’abbaye de Saint-Savin et ses fresques classées UNESCO à l’est, le Marais poitevin et la Venise verte au sud. En mise à disposition à la journée, votre chauffeur relie parc de loisirs, abbayes romanes et marais dans le confort d’une berline privée.',
+      ],
+      en: [
+        'A city of art and history in the Poitou, Poitiers gathers an exceptional Romanesque heritage — Notre-Dame-la-Grande and its sculpted façade, the Saint-Jean baptistery, one of France’s oldest. Your **private chauffeur in Poitiers** serves the historic centre, the Futuroscope and business meetings: transfers from the airport or the high-speed rail station, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Poitiers is the gateway to the **Futuroscope and the Poitou**. The Futuroscope park and its futuristic attractions are ten minutes away, the Saint-Savin abbey and its UNESCO-listed frescoes to the east, the Marais Poitevin and the Green Venice to the south. With a full-day hire, your chauffeur links theme park, Romanesque abbeys and marshes in the comfort of a private sedan.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Poitiers roman', en: 'Romanesque Poitiers' }, teaser: { fr: 'Notre-Dame-la-Grande et sa façade sculptée, le baptistère Saint-Jean, la cathédrale et le palais des comtes. Dépose au centre, promenade dans la ville aux cent clochers.', en: 'Notre-Dame-la-Grande and its sculpted façade, the Saint-Jean baptistery, the cathedral and the counts’ palace. Drop-off in the centre, a stroll through the city of a hundred spires.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Futuroscope', en: 'Futuroscope' }, teaser: { fr: 'Le parc du Futuroscope, ses attractions immersives et son architecture futuriste. Dépose et reprise à l’entrée, journée en famille sans logistique de stationnement.', en: 'The Futuroscope park, its immersive attractions and its futuristic architecture. Drop-off and pick-up at the entrance, a family day with no parking logistics.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '390' },
+      { title: { fr: 'Marais poitevin', en: 'Marais Poitevin' }, teaser: { fr: 'La Venise verte et ses canaux, une promenade en barque, les villages du marais. Journée nature au fil de l’eau au sud de Poitiers.', en: 'The Green Venice and its canals, a boat ride, the marsh villages. A nature day along the water south of Poitiers.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Abbaye de Saint-Savin', en: 'Saint-Savin abbey' }, teaser: { fr: 'L’abbaye de Saint-Savin et ses fresques romanes classées UNESCO, dite la Sixtine romane, la vallée de la Gartempe. Journée art et patrimoine.', en: 'The Saint-Savin abbey and its UNESCO-listed Romanesque frescoes, called the Romanesque Sistine, the Gartempe valley. A day of art and heritage.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '540' },
+      { title: { fr: 'Soirée poitevine', en: 'Poitiers evening' }, teaser: { fr: 'Dîner dans le centre historique, Notre-Dame-la-Grande illuminée par les polychromies, un verre dans la vieille ville. Véhicule à disposition.', en: 'Dinner in the historic centre, Notre-Dame-la-Grande lit by its polychromies, a drink in the old town. Vehicle on standby.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Peut-on aller au Futuroscope avec un chauffeur ?', en: 'Can you go to the Futuroscope with a chauffeur?' }, a: { fr: 'Oui, le parc est à dix minutes de Poitiers. Votre chauffeur vous dépose et vous reprend à l’entrée à l’heure convenue, à prix fixe, sans souci de stationnement.', en: 'Yes, the park is ten minutes from Poitiers. Your chauffeur drops you and picks you up at the entrance at the agreed time, at a fixed price, with no parking worry.' } },
+      { q: { fr: 'Combien de temps de l’aéroport de Poitiers au centre ?', en: 'How long from Poitiers Airport to the centre?' }, a: { fr: 'Comptez 15 minutes. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 15 minutes. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['limoges', 'cognac', 'la-rochelle'],
+  },
+  {
+    slug: 'limoges',
+    name: { fr: 'Limoges', en: 'Limoges' },
+    country: { fr: 'France', en: 'France' },
+    region: 'france',
+    airport: 'Limoges-Bellegarde (LIG)',
+    airportTransfer: {
+      fr: 'L’aéroport de Limoges-Bellegarde (LIG) se trouve à 10 km à l’ouest du centre : comptez 15 minutes. Votre chauffeur vous accueille en salle d’arrivée avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Limoges-Bellegarde Airport (LIG) lies 10 km west of the centre: allow 15 minutes. Your chauffeur greets you in arrivals with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Capitale mondiale de la porcelaine et des émaux, Limoges rayonne au cœur du Limousin avec ses maisons médiévales, sa gare Art déco et le musée Adrien-Dubouché. Votre **chauffeur privé à Limoges** dessert le centre, les manufactures de porcelaine et les rendez-vous d’affaires : transferts depuis l’aéroport, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Limoges est la porte du **Limousin et de ses lacs**. Le lac de Vassivière et les monts, les villages de la porcelaine, et surtout Oradour-sur-Glane, village martyr préservé en l’état, sont à portée. En mise à disposition à la journée, votre chauffeur relie manufactures d’art, lieux de mémoire et nature verdoyante dans le confort d’une berline privée.',
+      ],
+      en: [
+        'World capital of porcelain and enamels, Limoges shines at the heart of the Limousin with its medieval houses, its Art Deco station and the Adrien-Dubouché museum. Your **private chauffeur in Limoges** serves the centre, the porcelain factories and business meetings: transfers from the airport, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Limoges is the gateway to the **Limousin and its lakes**. Lake Vassivière and the hills, the porcelain villages, and above all Oradour-sur-Glane, a martyr village preserved as it was, are within reach. With a full-day hire, your chauffeur links art factories, memorial sites and green nature in the comfort of a private sedan.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Limoges et la porcelaine', en: 'Limoges and porcelain' }, teaser: { fr: 'Le musée Adrien-Dubouché et ses collections, une manufacture de porcelaine, la cité et la cathédrale. Dépose au centre, journée art de la table et patrimoine.', en: 'The Adrien-Dubouché museum and its collections, a porcelain factory, the city and the cathedral. Drop-off in the centre, a day of tableware art and heritage.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Oradour-sur-Glane', en: 'Oradour-sur-Glane' }, teaser: { fr: 'Le village martyr de 1944 conservé en l’état, le centre de la mémoire, un lieu de recueillement bouleversant. Demi-journée d’histoire à 25 km.', en: 'The 1944 martyr village preserved as it was, the memorial centre, a deeply moving place of remembrance. A half-day of history 25 km away.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '360' },
+      { title: { fr: 'Lac de Vassivière et monts', en: 'Lake Vassivière and hills' }, teaser: { fr: 'Le lac de Vassivière et son île, le centre d’art contemporain, les monts et forêts du Limousin. Journée nature et art sur le plateau de Millevaches.', en: 'Lake Vassivière and its island, the contemporary art centre, the hills and forests of the Limousin. A nature and art day on the Millevaches plateau.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Villages et châteaux du Limousin', en: 'Limousin villages and castles' }, teaser: { fr: 'Les plus beaux villages du Limousin, Mortemart et Saint-Léonard, les châteaux et le bocage. Journée patrimoine dans une région verte et authentique.', en: 'The finest villages of the Limousin, Mortemart and Saint-Léonard, the castles and the bocage. A heritage day in a green, authentic region.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '540' },
+      { title: { fr: 'Soirée limougeaude', en: 'Limoges evening' }, teaser: { fr: 'Dîner dans le quartier de la Boucherie médiéval, la cathédrale illuminée, un verre dans la vieille ville. Véhicule à disposition toute la soirée.', en: 'Dinner in the medieval Boucherie quarter, the illuminated cathedral, a drink in the old town. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de l’aéroport de Limoges au centre ?', en: 'How long from Limoges Airport to the centre?' }, a: { fr: 'Comptez 15 minutes. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 15 minutes. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Peut-on visiter Oradour-sur-Glane depuis Limoges ?', en: 'Can you visit Oradour-sur-Glane from Limoges?' }, a: { fr: 'Oui, le village martyr est à 25 km. Votre chauffeur vous y conduit dans le respect du lieu et vous laisse le temps du recueillement, à prix fixe.', en: 'Yes, the martyr village is 25 km away. Your chauffeur drives you there with respect for the place and gives you time for reflection, at a fixed price.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['poitiers', 'cognac'],
+  },
+  {
+    slug: 'saint-etienne',
+    name: { fr: 'Saint-Étienne', en: 'Saint-Étienne' },
+    country: { fr: 'France', en: 'France' },
+    region: 'france',
+    airport: 'Lyon-Saint-Exupéry (LYS)',
+    airportTransfer: {
+      fr: 'L’aéroport de Lyon-Saint-Exupéry (LYS) se trouve à 70 km au nord-est de Saint-Étienne : comptez 1h par l’autoroute. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Lyon-Saint-Exupéry Airport (LYS) lies 70 km north-east of Saint-Étienne: allow 1h by motorway. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Ancienne capitale industrielle devenue Ville UNESCO de design, Saint-Étienne a transformé son héritage minier et manufacturier en cité créative, autour de la Cité du design et de la Comédie. Votre **chauffeur privé à Saint-Étienne** dessert le centre, les sites industriels reconvertis et les rendez-vous d’affaires : transferts depuis Lyon, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Saint-Étienne est la porte du **Pilat et du Forez**. Le parc naturel du Pilat et ses crêts, la chapelle et l’église de Le Corbusier à Firminy, les gorges de la Loire sont à portée. En mise à disposition à la journée, votre chauffeur relie architecture moderne, nature de moyenne montagne et patrimoine industriel dans le confort d’une berline privée.',
+      ],
+      en: [
+        'A former industrial capital turned UNESCO City of Design, Saint-Étienne has transformed its mining and manufacturing heritage into a creative city, around the Cité du Design and the Comédie. Your **private chauffeur in Saint-Étienne** serves the centre, the converted industrial sites and business meetings: transfers from Lyon, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Saint-Étienne is the gateway to the **Pilat and the Forez**. The Pilat nature park and its ridges, Le Corbusier’s chapel and church at Firminy, the Loire gorges are within reach. With a full-day hire, your chauffeur links modern architecture, mid-mountain nature and industrial heritage in the comfort of a private sedan.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Ville de design', en: 'City of design' }, teaser: { fr: 'La Cité du design dans l’ancienne manufacture d’armes, le musée d’Art moderne et sa collection, le patrimoine minier. Dépose au centre, journée création et industrie.', en: 'The Cité du Design in the former arms factory, the Museum of Modern Art and its collection, the mining heritage. Drop-off in the centre, a day of creation and industry.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Le Corbusier à Firminy', en: 'Le Corbusier at Firminy' }, teaser: { fr: 'Le site Le Corbusier de Firminy classé UNESCO, l’église Saint-Pierre, l’unité d’habitation et la Maison de la culture. Journée architecture moderne.', en: 'The UNESCO-listed Le Corbusier site of Firminy, the Saint-Pierre church, the housing unit and the Maison de la Culture. A day of modern architecture.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '360' },
+      { title: { fr: 'Parc naturel du Pilat', en: 'Pilat nature park' }, teaser: { fr: 'Les crêts et forêts du Pilat, les belvédères sur la vallée du Rhône, les villages de moyenne montagne. Journée nature aux portes de Saint-Étienne.', en: 'The ridges and forests of the Pilat, the viewpoints over the Rhône valley, the mid-mountain villages. A nature day at the gates of Saint-Étienne.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Lyon depuis Saint-Étienne', en: 'Lyon from Saint-Étienne' }, teaser: { fr: 'À une heure, le Vieux Lyon Renaissance, la Fourvière, la gastronomie des bouchons. Journée dans la capitale des Gaules, chauffeur en attente.', en: 'An hour away, Renaissance Vieux Lyon, Fourvière, the gastronomy of the bouchons. A day in the capital of the Gauls, chauffeur waiting.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Soirée stéphanoise', en: 'Saint-Étienne evening' }, teaser: { fr: 'Dîner dans le centre créatif, un match au chaudron de Geoffroy-Guichard sur demande, l’ambiance d’une ville populaire. Véhicule à disposition.', en: 'Dinner in the creative centre, a match at the Geoffroy-Guichard cauldron on request, the atmosphere of a working city. Vehicle on standby.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de Lyon à Saint-Étienne ?', en: 'How long from Lyon to Saint-Étienne?' }, a: { fr: 'Comptez 1 heure depuis Lyon-Saint-Exupéry. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 1 hour from Lyon-Saint-Exupéry. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Peut-on visiter le site Le Corbusier de Firminy ?', en: 'Can you visit Le Corbusier’s Firminy site?' }, a: { fr: 'Oui, Firminy est à vingt minutes. En mise à disposition, votre chauffeur combine le site Le Corbusier classé UNESCO et la Cité du design, à prix fixe.', en: 'Yes, Firminy is twenty minutes away. With a hire, your chauffeur combines the UNESCO-listed Le Corbusier site and the Cité du Design, at a fixed price.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['lyon', 'grenoble'],
+  },
+  {
+    slug: 'chartres',
+    name: { fr: 'Chartres', en: 'Chartres' },
+    country: { fr: 'France', en: 'France' },
+    region: 'france',
+    airport: 'Paris-Orly (ORY)',
+    airportTransfer: {
+      fr: 'L’aéroport de Paris-Orly (ORY) se trouve à 75 km au nord-est de Chartres : comptez 1h. Depuis Paris-Charles de Gaulle (CDG), à 110 km, comptez 1h30. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Paris-Orly Airport (ORY) lies 75 km north-east of Chartres: allow 1h. From Paris-Charles de Gaulle (CDG), 110 km away, allow 1h30. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Dominant la plaine de la Beauce, Chartres est célèbre pour sa cathédrale gothique classée UNESCO, chef-d’œuvre aux vitraux du XIIIe siècle et au fameux bleu de Chartres. Votre **chauffeur privé à Chartres** dessert le centre historique, la cathédrale et les rendez-vous : transferts depuis Paris ou les aéroports, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Chartres est une **escapade au sud de Paris**. La capitale est à une heure, la vallée de l’Eure et ses moulins tout proches, les châteaux de Maintenon et d’Anet à portée. En mise à disposition à la journée, votre chauffeur relie cathédrale, villages de la Beauce et châteaux, ou assure les allers-retours depuis Paris pour une visite privée.',
+      ],
+      en: [
+        'Dominating the Beauce plain, Chartres is famous for its UNESCO-listed Gothic cathedral, a masterpiece with 13th-century stained glass and the famous Chartres blue. Your **private chauffeur in Chartres** serves the historic centre, the cathedral and meetings: transfers from Paris or the airports, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Chartres is a **getaway south of Paris**. The capital is an hour away, the Eure valley and its mills nearby, the châteaux of Maintenon and Anet within reach. With a full-day hire, your chauffeur links cathedral, Beauce villages and châteaux, or handles the round trip from Paris for a private visit.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Cathédrale de Chartres', en: 'Chartres cathedral' }, teaser: { fr: 'La cathédrale et ses vitraux du XIIIe siècle, la crypte, le labyrinthe et la vieille ville sur l’Eure. Dépose au plus près, promenade dans la cité de la lumière.', en: 'The cathedral and its 13th-century stained glass, the crypt, the labyrinth and the old town on the Eure. Drop-off nearby, a stroll through the city of light.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Chartres depuis Paris', en: 'Chartres from Paris' }, teaser: { fr: 'Une escapade à la journée depuis la capitale : la cathédrale, la vieille ville et un déjeuner, retour le soir. Alternative privée au train.', en: 'A day trip from the capital: the cathedral, the old town and lunch, return in the evening. A private alternative to the train.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Vallée de l’Eure et châteaux', en: 'Eure valley and châteaux' }, teaser: { fr: 'Le château de Maintenon et son aqueduc, la vallée de l’Eure et ses moulins, les villages de la Beauce. Journée patrimoine et campagne.', en: 'The Maintenon château and its aqueduct, the Eure valley and its mills, the Beauce villages. A day of heritage and countryside.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '540' },
+      { title: { fr: 'Chartres en Lumières', en: 'Chartres en Lumières' }, teaser: { fr: 'Le festival de projections monumentales illuminant la cathédrale et les monuments à la nuit tombée, un dîner en ville. Soirée féerique d’avril à octobre.', en: 'The festival of monumental projections lighting the cathedral and monuments after dark, a dinner in town. A magical evening from April to October.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '380' },
+      { title: { fr: 'Soirée chartraine', en: 'Chartres evening' }, teaser: { fr: 'Dîner dans la vieille ville au bord de l’Eure, la cathédrale illuminée dominant la plaine, un verre au calme. Véhicule à disposition toute la soirée.', en: 'Dinner in the old town by the Eure, the illuminated cathedral dominating the plain, a quiet drink. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Peut-on visiter Chartres à la journée depuis Paris ?', en: 'Can you visit Chartres as a day trip from Paris?' }, a: { fr: 'Oui, Chartres est à une heure de Paris. En mise à disposition à la journée, votre chauffeur vous conduit à la cathédrale, organise la visite et le déjeuner, et vous ramène le soir, à prix fixe.', en: 'Yes, Chartres is an hour from Paris. With a full-day hire, your chauffeur drives you to the cathedral, arranges the visit and lunch, and brings you back in the evening, at a fixed price.' } },
+      { q: { fr: 'Qu’est-ce que Chartres en Lumières ?', en: 'What is Chartres en Lumières?' }, a: { fr: 'C’est un festival nocturne d’avril à octobre qui illumine la cathédrale et les monuments de projections spectaculaires. Votre chauffeur vous conduit pour une soirée féerique, avec véhicule en attente.', en: 'It is a nightly festival from April to October that lights the cathedral and monuments with spectacular projections. Your chauffeur drives you for a magical evening, with the vehicle on standby.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['versailles-ville', 'orleans', 'giverny-village'],
+  },
+  {
+    slug: 'versailles-ville',
+    name: { fr: 'Versailles', en: 'Versailles' },
+    country: { fr: 'France', en: 'France' },
+    region: 'france',
+    airport: 'Paris-Orly (ORY)',
+    airportTransfer: {
+      fr: 'L’aéroport de Paris-Orly (ORY) se trouve à 25 km au sud-est de Versailles : comptez 30 à 40 minutes. Depuis Paris-Charles de Gaulle (CDG), à 50 km, comptez 50 minutes à 1h. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Paris-Orly Airport (ORY) lies 25 km south-east of Versailles: allow 30 to 40 minutes. From Paris-Charles de Gaulle (CDG), 50 km away, allow 50 minutes to 1h. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Écrin du plus célèbre château du monde, Versailles déploie le palais du Roi-Soleil, la galerie des Glaces et ses jardins à la française classés UNESCO, aux portes de Paris. Votre **chauffeur privé à Versailles** dessert le château, la ville royale et les rendez-vous : transferts depuis Paris et les aéroports, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Versailles est la **couronne royale de l’Île-de-France**. Le Trianon et le hameau de la Reine dans le parc, Paris à vingt minutes, les châteaux de Rambouillet et de Breteuil à proximité. En mise à disposition à la journée, votre chauffeur vous dépose au plus près des grilles, gère l’attente pendant votre visite et relie château, ville et capitale sans souci de stationnement.',
+      ],
+      en: [
+        'Setting of the world’s most famous château, Versailles unfolds the Sun King’s palace, the Hall of Mirrors and its UNESCO-listed formal gardens, at the gates of Paris. Your **private chauffeur in Versailles** serves the château, the royal town and meetings: transfers from Paris and the airports, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Versailles is the **royal crown of the Île-de-France**. The Trianon and the Queen’s Hamlet in the park, Paris twenty minutes away, the châteaux of Rambouillet and Breteuil nearby. With a full-day hire, your chauffeur drops you as close as possible to the gates, manages the wait during your visit and links château, town and capital with no parking worry.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Château de Versailles', en: 'Château de Versailles' }, teaser: { fr: 'La galerie des Glaces, les grands appartements, les jardins de Le Nôtre. Dépose au plus près des grilles, chauffeur en attente le temps de votre visite privée.', en: 'The Hall of Mirrors, the grand apartments, Le Nôtre’s gardens. Drop-off as close as possible to the gates, chauffeur waiting during your private visit.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '360' },
+      { title: { fr: 'Trianon et hameau de la Reine', en: 'Trianon and the Queen’s Hamlet' }, teaser: { fr: 'Le Grand et le Petit Trianon, le hameau de Marie-Antoinette, les jardins du domaine. Journée dans l’intimité royale à l’écart des foules.', en: 'The Grand and Petit Trianon, Marie-Antoinette’s hamlet, the estate gardens. A day in royal intimacy away from the crowds.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Versailles et Paris', en: 'Versailles and Paris' }, teaser: { fr: 'Le château le matin, Paris et ses monuments l’après-midi, à vingt minutes. Journée alliant faste royal et capitale, chauffeur en attente.', en: 'The château in the morning, Paris and its monuments in the afternoon, twenty minutes away. A day combining royal splendour and capital, chauffeur waiting.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Châteaux royaux d’Île-de-France', en: 'Royal châteaux of the Île-de-France' }, teaser: { fr: 'Rambouillet et sa laiterie, Breteuil et ses jardins, les domaines royaux des environs. Journée patrimoine dans la couronne de Paris.', en: 'Rambouillet and its dairy, Breteuil and its gardens, the royal estates nearby. A heritage day in the crown of Paris.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Soirée à Versailles', en: 'Evening in Versailles' }, teaser: { fr: 'Dîner dans le quartier Saint-Louis, la ville royale au calme, les grandes eaux nocturnes et le feu d’artifice en été. Véhicule à disposition.', en: 'Dinner in the Saint-Louis quarter, the quiet royal town, the night fountains and fireworks in summer. Vehicle on standby.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '380' },
+    ],
+    faq: [
+      { q: { fr: 'Le chauffeur attend-il pendant la visite du château ?', en: 'Does the chauffeur wait during the château visit?' }, a: { fr: 'Oui, en mise à disposition votre chauffeur vous dépose au plus près des grilles, patiente pendant votre visite et vous reprend à l’heure convenue, à prix fixe.', en: 'Yes, with a hire your chauffeur drops you as close as possible to the gates, waits during your visit and picks you up at the agreed time, at a fixed price.' } },
+      { q: { fr: 'Peut-on combiner Versailles et Paris dans la journée ?', en: 'Can Versailles and Paris be combined in one day?' }, a: { fr: 'Oui, Paris est à vingt minutes. En mise à disposition à la journée, votre chauffeur combine le château le matin et la capitale l’après-midi, à prix fixe.', en: 'Yes, Paris is twenty minutes away. With a full-day hire, your chauffeur combines the château in the morning and the capital in the afternoon, at a fixed price.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['fontainebleau-ville', 'giverny-village', 'chartres'],
+  },
+  {
+    slug: 'fontainebleau-ville',
+    name: { fr: 'Fontainebleau', en: 'Fontainebleau' },
+    country: { fr: 'France', en: 'France' },
+    region: 'france',
+    airport: 'Paris-Orly (ORY)',
+    airportTransfer: {
+      fr: 'L’aéroport de Paris-Orly (ORY) se trouve à 55 km au nord-ouest de Fontainebleau : comptez 50 minutes. Depuis Paris-Charles de Gaulle (CDG), à 85 km, comptez 1h10. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Paris-Orly Airport (ORY) lies 55 km north-west of Fontainebleau: allow 50 minutes. From Paris-Charles de Gaulle (CDG), 85 km away, allow 1h10. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Résidence de trente-quatre souverains de François Ier à Napoléon, le château de Fontainebleau déploie ses appartements et sa cour des Adieux au cœur d’une forêt légendaire, classé UNESCO. Votre **chauffeur privé à Fontainebleau** dessert le château, la ville et les rendez-vous : transferts depuis Paris et les aéroports, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Fontainebleau est une **échappée en forêt au sud de Paris**. La forêt et ses rochers d’escalade, le village d’artistes de Barbizon, le château de Vaux-le-Vicomte à proximité, Provins la médiévale à l’est. En mise à disposition à la journée, votre chauffeur relie châteaux, villages de peintres et forêt, ou assure les allers-retours depuis la capitale.',
+      ],
+      en: [
+        'Residence of thirty-four sovereigns from Francis I to Napoleon, the château de Fontainebleau unfolds its apartments and its Farewell Courtyard at the heart of a legendary forest, UNESCO-listed. Your **private chauffeur in Fontainebleau** serves the château, the town and meetings: transfers from Paris and the airports, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Fontainebleau is a **forest escape south of Paris**. The forest and its climbing rocks, the artists’ village of Barbizon, the château of Vaux-le-Vicomte nearby, medieval Provins to the east. With a full-day hire, your chauffeur links châteaux, painters’ villages and forest, or handles the round trip from the capital.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Château de Fontainebleau', en: 'Château de Fontainebleau' }, teaser: { fr: 'Les grands appartements, la galerie François Ier, la cour des Adieux et les jardins. Dépose au plus près, chauffeur en attente le temps de votre visite.', en: 'The grand apartments, the Francis I gallery, the Farewell Courtyard and the gardens. Drop-off nearby, chauffeur waiting during your visit.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '360' },
+      { title: { fr: 'Vaux-le-Vicomte', en: 'Vaux-le-Vicomte' }, teaser: { fr: 'Le château de Fouquet, modèle de Versailles, ses jardins de Le Nôtre, les soirées aux chandelles en été. Journée patrimoine et jardins à la française.', en: 'Fouquet’s château, the model for Versailles, its Le Nôtre gardens, the candlelit evenings in summer. A day of heritage and formal gardens.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Barbizon et la forêt', en: 'Barbizon and the forest' }, teaser: { fr: 'Le village des peintres de Barbizon, la forêt de Fontainebleau et ses rochers, les gorges d’Apremont. Journée nature et art au sud de Paris.', en: 'The painters’ village of Barbizon, the Fontainebleau forest and its rocks, the Apremont gorges. A day of nature and art south of Paris.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '540' },
+      { title: { fr: 'Provins la médiévale', en: 'Medieval Provins' }, teaser: { fr: 'La cité médiévale de Provins classée UNESCO, ses remparts, sa tour César et ses souterrains. Journée patrimoine dans la ville des foires de Champagne.', en: 'The UNESCO-listed medieval city of Provins, its ramparts, its Caesar Tower and its underground galleries. A heritage day in the city of the Champagne fairs.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Soirée à Fontainebleau', en: 'Evening in Fontainebleau' }, teaser: { fr: 'Dîner dans la ville impériale, le château illuminé, le calme de la lisière de forêt. Véhicule à disposition toute la soirée.', en: 'Dinner in the imperial town, the illuminated château, the calm of the forest edge. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '360' },
+    ],
+    faq: [
+      { q: { fr: 'Peut-on visiter Fontainebleau à la journée depuis Paris ?', en: 'Can you visit Fontainebleau as a day trip from Paris?' }, a: { fr: 'Oui, Fontainebleau est à une heure de Paris. En mise à disposition à la journée, votre chauffeur vous conduit au château, combine avec Vaux-le-Vicomte ou Barbizon et vous ramène le soir, à prix fixe.', en: 'Yes, Fontainebleau is an hour from Paris. With a full-day hire, your chauffeur drives you to the château, combines with Vaux-le-Vicomte or Barbizon and brings you back in the evening, at a fixed price.' } },
+      { q: { fr: 'Le chauffeur attend-il pendant la visite du château ?', en: 'Does the chauffeur wait during the château visit?' }, a: { fr: 'Oui, votre chauffeur vous dépose au plus près, patiente pendant votre visite et vous reprend à l’heure convenue, à prix fixe.', en: 'Yes, your chauffeur drops you nearby, waits during your visit and picks you up at the agreed time, at a fixed price.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['versailles-ville', 'giverny-village', 'chartres'],
+  },
+  {
+    slug: 'giverny-village',
+    name: { fr: 'Giverny', en: 'Giverny' },
+    country: { fr: 'France', en: 'France' },
+    region: 'france',
+    airport: 'Paris-Charles de Gaulle (CDG)',
+    airportTransfer: {
+      fr: 'L’aéroport de Paris-Charles de Gaulle (CDG) se trouve à 80 km à l’est de Giverny : comptez 1h15. Depuis Rouen, à 70 km à l’ouest, comptez 1h. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Paris-Charles de Gaulle Airport (CDG) lies 80 km east of Giverny: allow 1h15. From Rouen, 70 km west, allow 1h. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Village de l’impressionnisme au bord de la Seine, Giverny abrite la maison et les jardins de Claude Monet, le bassin aux nymphéas et le pont japonais qui inspirèrent ses plus célèbres toiles. Votre **chauffeur privé à Giverny** dessert la maison de Monet, le musée des impressionnismes et les hôtels : transferts depuis Paris ou Rouen, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Giverny est le cœur de la **Seine impressionniste**. Vernon et ses maisons à colombages sont à cinq minutes, le château de Bizy à proximité, Rouen et sa cathédrale peinte par Monet à l’ouest. En mise à disposition à la journée, votre chauffeur relie jardins de peintres, villages de la Seine et villes d’art, ou assure les allers-retours depuis Paris pour éviter les cars.',
+      ],
+      en: [
+        'The village of Impressionism on the banks of the Seine, Giverny houses Claude Monet’s house and gardens, the water-lily pond and the Japanese bridge that inspired his most famous canvases. Your **private chauffeur in Giverny** serves Monet’s house, the Impressionisms museum and the hotels: transfers from Paris or Rouen, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Giverny is the heart of the **Impressionist Seine**. Vernon and its half-timbered houses are five minutes away, the Bizy château nearby, Rouen and its cathedral painted by Monet to the west. With a full-day hire, your chauffeur links painters’ gardens, Seine villages and art cities, or handles the round trip from Paris to avoid the coaches.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Maison et jardins de Monet', en: 'Monet’s house and gardens' }, teaser: { fr: 'La maison de Claude Monet, le jardin de fleurs, le bassin aux nymphéas et le pont japonais. Dépose au plus près, chauffeur en attente le temps de votre visite.', en: 'Claude Monet’s house, the flower garden, the water-lily pond and the Japanese bridge. Drop-off nearby, chauffeur waiting during your visit.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '360' },
+      { title: { fr: 'Giverny depuis Paris', en: 'Giverny from Paris' }, teaser: { fr: 'Une escapade à la journée depuis la capitale : la maison de Monet, le musée des impressionnismes et un déjeuner, retour le soir. Alternative privée aux cars.', en: 'A day trip from the capital: Monet’s house, the Impressionisms museum and lunch, return in the evening. A private alternative to the coaches.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '640' },
+      { title: { fr: 'Giverny et Rouen', en: 'Giverny and Rouen' }, teaser: { fr: 'Les jardins de Monet le matin, la cathédrale de Rouen qu’il peignit et la vieille ville l’après-midi. Journée sur les pas de l’impressionnisme.', en: 'Monet’s gardens in the morning, the Rouen cathedral he painted and the old town in the afternoon. A day in the footsteps of Impressionism.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Vallée de la Seine', en: 'Seine valley' }, teaser: { fr: 'Vernon et ses colombages, le château de La Roche-Guyon, les boucles de la Seine et les villages de peintres. Journée nature et patrimoine au fil du fleuve.', en: 'Vernon and its half-timbering, the château of La Roche-Guyon, the Seine’s bends and the painters’ villages. A day of nature and heritage along the river.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Escapade au vert', en: 'Green getaway' }, teaser: { fr: 'Déjeuner dans une auberge de Giverny, le village et ses jardins hors de l’affluence, la Seine au calme. Demi-journée bucolique loin de Paris.', en: 'Lunch in a Giverny inn, the village and its gardens away from the crowds, the quiet Seine. A bucolic half-day away from Paris.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '360' },
+    ],
+    faq: [
+      { q: { fr: 'Peut-on visiter Giverny à la journée depuis Paris ?', en: 'Can you visit Giverny as a day trip from Paris?' }, a: { fr: 'Oui, Giverny est à 1h15 de Paris. En mise à disposition à la journée, votre chauffeur vous conduit aux jardins de Monet, organise la visite et le déjeuner, et vous ramène le soir, à prix fixe.', en: 'Yes, Giverny is 1h15 from Paris. With a full-day hire, your chauffeur drives you to Monet’s gardens, arranges the visit and lunch, and brings you back in the evening, at a fixed price.' } },
+      { q: { fr: 'La maison de Monet est-elle ouverte toute l’année ?', en: 'Is Monet’s house open all year?' }, a: { fr: 'La maison et les jardins sont ouverts d’avril à début novembre. Nous vous conseillons sur les meilleures périodes et horaires pour éviter l’affluence lors de votre réservation.', en: 'The house and gardens are open from April to early November. We advise on the best periods and times to avoid the crowds when you book.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['rouen', 'versailles-ville', 'chartres'],
+  },
+  {
+    slug: 'perpignan',
+    name: { fr: 'Perpignan', en: 'Perpignan' },
+    country: { fr: 'France', en: 'France' },
+    region: 'france',
+    airport: 'Perpignan-Rivesaltes (PGF)',
+    airportTransfer: {
+      fr: 'L’aéroport de Perpignan-Rivesaltes (PGF) se trouve à 6 km au nord-ouest du centre : comptez 15 minutes. Votre chauffeur vous accueille en salle d’arrivée avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Perpignan-Rivesaltes Airport (PGF) lies 6 km north-west of the centre: allow 15 minutes. Your chauffeur greets you in arrivals with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Ancienne capitale continentale des rois de Majorque, Perpignan cultive son âme catalane entre le palais des Rois de Majorque, le Castillet de brique rose et les terrasses ensoleillées. Votre **chauffeur privé à Perpignan** dessert le centre historique, les rendez-vous d’affaires et les stations du littoral : transferts depuis l’aéroport, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Perpignan commande la **Côte Vermeille et la Catalogne**. Collioure et son clocher, chère aux fauves, Céret et l’art moderne, la frontière espagnole et Cadaqués sont à portée. En mise à disposition à la journée, votre chauffeur relie ports de peintres, villages catalans et vignobles du Roussillon dans le confort d’une berline privée.',
+      ],
+      en: [
+        'A former mainland capital of the Kings of Majorca, Perpignan nurtures its Catalan soul between the Palace of the Kings of Majorca, the pink-brick Castillet and the sunny terraces. Your **private chauffeur in Perpignan** serves the historic centre, business meetings and the coastal resorts: transfers from the airport, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Perpignan commands the **Côte Vermeille and Catalonia**. Collioure and its bell tower, dear to the Fauves, Céret and modern art, the Spanish border and Cadaqués are within reach. With a full-day hire, your chauffeur links painters’ ports, Catalan villages and Roussillon vineyards in the comfort of a private sedan.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Collioure et la Côte Vermeille', en: 'Collioure and the Côte Vermeille' }, teaser: { fr: 'Le port et le clocher de Collioure chers à Matisse et Derain, les criques de la Côte Vermeille, les vignobles en terrasses. Journée art et Méditerranée.', en: 'The port and bell tower of Collioure dear to Matisse and Derain, the coves of the Côte Vermeille, the terraced vineyards. A day of art and the Mediterranean.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Perpignan la Catalane', en: 'Catalan Perpignan' }, teaser: { fr: 'Le palais des Rois de Majorque, le Castillet, la cathédrale et le quartier Saint-Jean. Dépose au centre, promenade dans la capitale du Roussillon.', en: 'The Palace of the Kings of Majorca, the Castillet, the cathedral and the Saint-Jean quarter. Drop-off in the centre, a stroll through the capital of the Roussillon.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Vignobles et villages du Roussillon', en: 'Roussillon vineyards and villages' }, teaser: { fr: 'Les domaines de Banyuls et Maury, les villages catalans, le prieuré de Serrabone. Journée œnologie et patrimoine roman au pied des Pyrénées.', en: 'The estates of Banyuls and Maury, the Catalan villages, the Serrabone priory. A day of oenology and Romanesque heritage at the foot of the Pyrenees.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Cadaqués et la Catalogne espagnole', en: 'Cadaqués and Spanish Catalonia' }, teaser: { fr: 'La frontière et la Costa Brava, Cadaqués et la maison de Dalí, Figueres et son musée. Journée transfrontalière sur les pas du surréalisme.', en: 'The border and the Costa Brava, Cadaqués and Dalí’s house, Figueres and its museum. A cross-border day in the footsteps of Surrealism.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Soirée catalane', en: 'Catalan evening' }, teaser: { fr: 'Dîner de tapas et cuisine catalane dans le centre, le Castillet illuminé, un verre de Banyuls. Véhicule à disposition toute la soirée.', en: 'A dinner of tapas and Catalan cuisine in the centre, the illuminated Castillet, a glass of Banyuls. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Peut-on visiter Collioure depuis Perpignan ?', en: 'Can you visit Collioure from Perpignan?' }, a: { fr: 'Oui, Collioure est à trente minutes. En mise à disposition à la journée, votre chauffeur combine le port de peintres, la Côte Vermeille et les vignobles en terrasses, à prix fixe.', en: 'Yes, Collioure is thirty minutes away. With a full-day hire, your chauffeur combines the painters’ port, the Côte Vermeille and the terraced vineyards, at a fixed price.' } },
+      { q: { fr: 'Combien de temps de l’aéroport de Perpignan au centre ?', en: 'How long from Perpignan Airport to the centre?' }, a: { fr: 'Comptez 15 minutes. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 15 minutes. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['carcassonne-ville', 'montpellier', 'nimes'],
+  },
+  {
+    slug: 'carcassonne-ville',
+    name: { fr: 'Carcassonne', en: 'Carcassonne' },
+    country: { fr: 'France', en: 'France' },
+    region: 'france',
+    airport: 'Carcassonne-Salvaza (CCF)',
+    airportTransfer: {
+      fr: 'L’aéroport de Carcassonne-Salvaza (CCF) se trouve à 5 km à l’ouest du centre : comptez 10 minutes. Depuis Toulouse-Blagnac (TLS), à 90 km, comptez 1h. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Carcassonne-Salvaza Airport (CCF) lies 5 km west of the centre: allow 10 minutes. From Toulouse-Blagnac (TLS), 90 km away, allow 1h. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Plus grande cité médiévale fortifiée d’Europe, Carcassonne dresse sa double enceinte, ses 52 tours et son château comtal au-dessus de l’Aude, ensemble classé UNESCO restauré par Viollet-le-Duc. Votre **chauffeur privé à Carcassonne** dessert la Cité, la ville basse et les rendez-vous : transferts depuis l’aéroport ou Toulouse, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Carcassonne commande le **pays cathare et le Canal du Midi**. Les châteaux cathares perchés — Peyrepertuse, Quéribus — les abbayes et les vignobles des Corbières et de la Minervois sont à portée, le Canal du Midi classé UNESCO traverse la ville. En mise à disposition à la journée, votre chauffeur relie forteresses, abbayes et domaines viticoles dans le confort d’une berline privée.',
+      ],
+      en: [
+        'Europe’s largest fortified medieval city, Carcassonne raises its double walls, its 52 towers and its comtal castle above the Aude, a UNESCO-listed ensemble restored by Viollet-le-Duc. Your **private chauffeur in Carcassonne** serves the Cité, the lower town and meetings: transfers from the airport or Toulouse, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Carcassonne commands the **Cathar country and the Canal du Midi**. The perched Cathar castles — Peyrepertuse, Quéribus — the abbeys and the vineyards of the Corbières and Minervois are within reach, the UNESCO-listed Canal du Midi crosses the town. With a full-day hire, your chauffeur links fortresses, abbeys and wine estates in the comfort of a private sedan.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Cité de Carcassonne', en: 'Cité de Carcassonne' }, teaser: { fr: 'La double enceinte et ses tours, le château comtal, la basilique et les remparts. Dépose aux portes de la Cité, promenade dans la plus grande forteresse d’Europe.', en: 'The double walls and their towers, the comtal castle, the basilica and the ramparts. Drop-off at the gates of the Cité, a stroll through Europe’s largest fortress.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Châteaux cathares', en: 'Cathar castles' }, teaser: { fr: 'Les forteresses perchées de Peyrepertuse et Quéribus, les vertiges des Corbières, l’histoire des Cathares. Journée patrimoine et paysages spectaculaires.', en: 'The perched fortresses of Peyrepertuse and Quéribus, the vertigo of the Corbières, the history of the Cathars. A day of heritage and spectacular landscapes.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Vignobles des Corbières et Minervois', en: 'Corbières and Minervois vineyards' }, teaser: { fr: 'Les domaines des Corbières et du Minervois, l’abbaye de Fontfroide, dégustations et déjeuner du terroir. Journée œnologie en pays cathare.', en: 'The estates of the Corbières and the Minervois, the Fontfroide abbey, tastings and a regional lunch. An oenology day in Cathar country.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Canal du Midi et Toulouse', en: 'Canal du Midi and Toulouse' }, teaser: { fr: 'Le Canal du Midi classé UNESCO, ses écluses et platanes, puis Toulouse la ville rose. Journée patrimoine entre eau et brique.', en: 'The UNESCO-listed Canal du Midi, its locks and plane trees, then Toulouse the pink city. A day of heritage between water and brick.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Soirée dans la Cité', en: 'Evening in the Cité' }, teaser: { fr: 'Dîner d’un cassoulet dans la Cité médiévale, les remparts illuminés dominant la ville, un verre de Corbières. Véhicule à disposition toute la soirée.', en: 'A cassoulet dinner in the medieval Cité, the illuminated ramparts dominating the town, a glass of Corbières. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '360' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de l’aéroport de Carcassonne à la Cité ?', en: 'How long from Carcassonne Airport to the Cité?' }, a: { fr: 'Comptez 10 minutes. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 10 minutes. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Peut-on visiter les châteaux cathares depuis Carcassonne ?', en: 'Can you visit the Cathar castles from Carcassonne?' }, a: { fr: 'Oui. En mise à disposition à la journée, votre chauffeur vous conduit aux forteresses perchées de Peyrepertuse et Quéribus et combine avec les vignobles des Corbières, à prix fixe.', en: 'Yes. With a full-day hire, your chauffeur drives you to the perched fortresses of Peyrepertuse and Quéribus and combines with the Corbières vineyards, at a fixed price.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['toulouse', 'perpignan', 'montpellier'],
+  },
+  {
+    slug: 'ajaccio',
+    name: { fr: 'Ajaccio', en: 'Ajaccio' },
+    country: { fr: 'France', en: 'France' },
+    region: 'france',
+    airport: 'Ajaccio-Napoléon Bonaparte (AJA)',
+    airportTransfer: {
+      fr: 'L’aéroport d’Ajaccio-Napoléon Bonaparte (AJA) se trouve à 7 km à l’est du centre : comptez 15 minutes. Votre chauffeur vous accueille en salle d’arrivée avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Ajaccio-Napoléon Bonaparte Airport (AJA) lies 7 km east of the centre: allow 15 minutes. Your chauffeur greets you in arrivals with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Capitale de la Corse-du-Sud et ville natale de Napoléon, Ajaccio marie ses ruelles génoises, sa maison Bonaparte et son golfe baigné de lumière, entre mer et montagne. Votre **chauffeur privé à Ajaccio** dessert le centre, le port de croisière et les rendez-vous : transferts depuis l’aéroport, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Ajaccio est la porte de la **Corse du Sud**. Les îles Sanguinaires et leur coucher de soleil, les calanques rouges de Piana classées UNESCO, la réserve de Scandola et Bonifacio à l’extrême sud sont à portée. En mise à disposition à la journée, votre chauffeur relie golfes turquoise, villages de montagne et sites sauvages de l’Île de Beauté dans le confort d’une berline privée.',
+      ],
+      en: [
+        'Capital of Southern Corsica and Napoleon’s birthplace, Ajaccio marries its Genoese lanes, its Bonaparte house and its light-bathed gulf, between sea and mountain. Your **private chauffeur in Ajaccio** serves the centre, the cruise port and meetings: transfers from the airport, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Ajaccio is the gateway to **Southern Corsica**. The Sanguinaires islands and their sunset, the UNESCO-listed red calanques of Piana, the Scandola reserve and Bonifacio at the far south are within reach. With a full-day hire, your chauffeur links turquoise gulfs, mountain villages and wild sites of the Isle of Beauty in the comfort of a private sedan.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Ajaccio et la cité impériale', en: 'Ajaccio and the imperial city' }, teaser: { fr: 'La maison Bonaparte, la cathédrale, le quartier génois et le marché, le musée Fesch et ses maîtres italiens. Dépose au centre, promenade dans la ville de Napoléon.', en: 'The Bonaparte house, the cathedral, the Genoese quarter and the market, the Fesch museum and its Italian masters. Drop-off in the centre, a stroll through Napoleon’s city.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '360' },
+      { title: { fr: 'Calanques de Piana', en: 'Calanques de Piana' }, teaser: { fr: 'Les calanques de granit rouge de Piana classées UNESCO, le golfe de Porto, le village de Piana parmi les plus beaux de France. Journée nature spectaculaire.', en: 'The UNESCO-listed red-granite calanques of Piana, the Gulf of Porto, the village of Piana among France’s finest. A day of spectacular nature.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '640' },
+      { title: { fr: 'Îles Sanguinaires et golfe', en: 'Sanguinaires islands and gulf' }, teaser: { fr: 'La route des Sanguinaires, la pointe de la Parata, le golfe d’Ajaccio et ses criques. Demi-journée mer et lumière, coucher de soleil légendaire.', en: 'The Sanguinaires road, the Parata point, the Gulf of Ajaccio and its coves. A half-day of sea and light, a legendary sunset.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '380' },
+      { title: { fr: 'Villages de montagne et Bavella', en: 'Mountain villages and Bavella' }, teaser: { fr: 'Les villages perchés de l’intérieur, les aiguilles de Bavella, les forêts et cols de la Corse authentique. Journée montagne au cœur de l’île.', en: 'The perched villages of the interior, the Bavella needles, the forests and passes of authentic Corsica. A mountain day at the heart of the island.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '640' },
+      { title: { fr: 'Soirée ajaccienne', en: 'Ajaccio evening' }, teaser: { fr: 'Dîner de spécialités corses sur le port, le golfe au crépuscule, un verre de vin de l’île. Véhicule à disposition toute la soirée.', en: 'A dinner of Corsican specialities at the port, the gulf at dusk, a glass of island wine. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '360' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de l’aéroport d’Ajaccio au centre ?', en: 'How long from Ajaccio Airport to the centre?' }, a: { fr: 'Comptez 15 minutes. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 15 minutes. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Assurez-vous les escales de croisière à Ajaccio ?', en: 'Do you handle cruise calls in Ajaccio?' }, a: { fr: 'Oui. Nous organisons l’accueil au port et les excursions vers les calanques de Piana, les Sanguinaires ou l’intérieur, avec retour à quai dans les temps du navire.', en: 'Yes. We arrange the port welcome and excursions to the Piana calanques, the Sanguinaires or the interior, with return to the quay on the ship’s schedule.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['nice', 'toulon'],
+  },
 ];
