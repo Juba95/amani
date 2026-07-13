@@ -2745,4 +2745,412 @@ export const CITIES: Destination[] = [
     ],
     nearby: ['la-rochelle'],
   },
+  {
+    slug: 'colmar',
+    name: { fr: 'Colmar', en: 'Colmar' },
+    country: { fr: 'France', en: 'France' },
+    region: 'france',
+    airport: 'EuroAirport Bâle-Mulhouse (MLH)',
+    airportTransfer: {
+      fr: 'L’EuroAirport Bâle-Mulhouse (MLH) se trouve à 65 km au sud de Colmar : comptez 45 minutes par l’autoroute A35. Depuis Strasbourg (SXB), à 70 km au nord, comptez 50 minutes. Votre chauffeur vous accueille en salle d’arrivée avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'EuroAirport Basel-Mulhouse (MLH) lies 65 km south of Colmar: allow 45 minutes via the A35 motorway. From Strasbourg (SXB), 70 km north, allow 50 minutes. Your chauffeur greets you in arrivals with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Capitale des vins d’Alsace, Colmar déroule ses maisons à colombages, ses canaux fleuris de la Petite Venise et son musée Unterlinden abritant le retable d’Issenheim. Votre **chauffeur privé à Colmar** dessert le centre historique piéton, les domaines de la route des vins et les hôtels de charme : transferts depuis Bâle-Mulhouse ou Strasbourg, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Colmar est le cœur de la **route des vins d’Alsace**. Les villages classés parmi les plus beaux de France — Riquewihr, Eguisheim, Kaysersberg — s’égrènent au pied des Vosges à quelques minutes, le château du Haut-Kœnigsbourg domine la plaine. En mise à disposition à la journée, votre chauffeur relie caves, villages fleuris et châteaux pendant que vous dégustez sans souci de conduite.',
+      ],
+      en: [
+        'Capital of the Alsace wines, Colmar unrolls its half-timbered houses, the flowered canals of the Petite Venise and its Unterlinden Museum housing the Isenheim Altarpiece. Your **private chauffeur in Colmar** serves the pedestrian historic centre, the wine-route estates and the boutique hotels: transfers from Basel-Mulhouse or Strasbourg, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Colmar is the heart of the **Alsace wine route**. The villages ranked among France’s finest — Riquewihr, Eguisheim, Kaysersberg — string along the foot of the Vosges minutes away, the Haut-Kœnigsbourg castle dominates the plain. With a full-day hire, your chauffeur links cellars, flowered villages and castles while you taste with no driving worry.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Route des vins d’Alsace', en: 'Alsace wine route' }, teaser: { fr: 'Riquewihr, Eguisheim et Kaysersberg, dégustations de riesling et gewurztraminer dans des domaines familiaux, déjeuner en winstub. Votre chauffeur conduit, vous savourez.', en: 'Riquewihr, Eguisheim and Kaysersberg, tastings of riesling and gewurztraminer at family estates, lunch in a winstub. Your chauffeur drives, you savour.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Colmar et la Petite Venise', en: 'Colmar and the Petite Venise' }, teaser: { fr: 'Les canaux fleuris, le quartier des Tanneurs, le musée Unterlinden et le retable d’Issenheim. Dépose au centre piéton, promenade au fil de l’eau.', en: 'The flowered canals, the Tanners’ quarter, the Unterlinden Museum and the Isenheim Altarpiece. Drop-off in the pedestrian centre, a stroll along the water.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Château du Haut-Kœnigsbourg', en: 'Haut-Kœnigsbourg castle' }, teaser: { fr: 'La forteresse médiévale restaurée dominant la plaine d’Alsace, son panorama sur les Vosges et la Forêt-Noire, un village viticole au retour. Demi-journée patrimoine.', en: 'The restored medieval fortress dominating the Alsace plain, its panorama over the Vosges and the Black Forest, a wine village on the way back. A heritage half-day.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '380' },
+      { title: { fr: 'Strasbourg depuis Colmar', en: 'Strasbourg from Colmar' }, teaser: { fr: 'À 70 km, la cathédrale, la Petite France et le quartier européen. Journée dans la capitale alsacienne, chauffeur en attente entre les étapes.', en: '70 km away, the cathedral, the Petite France and the European quarter. A day in the Alsatian capital, chauffeur waiting between stops.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Soirée alsacienne', en: 'Alsatian evening' }, teaser: { fr: 'Dîner dans une winstub, la Petite Venise illuminée, un dernier verre de crémant. Véhicule à disposition toute la soirée. Marché de Noël en décembre.', en: 'Dinner in a winstub, the illuminated Petite Venise, a last glass of crémant. Vehicle on standby all evening. Christmas market in December.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Peut-on faire la route des vins d’Alsace avec un chauffeur ?', en: 'Can you do the Alsace wine route with a chauffeur?' }, a: { fr: 'Oui, c’est la formule la plus demandée. Votre chauffeur organise et relie les domaines et villages viticoles, vous permettant de déguster en toute sérénité, sur une journée à prix fixe.', en: 'Yes, it is the most requested option. Your chauffeur arranges and links the estates and wine villages, letting you taste with complete peace of mind, over a fixed-price day.' } },
+      { q: { fr: 'Depuis quel aéroport rejoint-on Colmar ?', en: 'From which airport do you reach Colmar?' }, a: { fr: 'Bâle-Mulhouse (MLH) est à 45 minutes, Strasbourg (SXB) à 50 minutes. Votre chauffeur vous accueille à l’aéroport de votre choix avec panneau nominatif, à prix fixe.', en: 'Basel-Mulhouse (MLH) is 45 minutes away, Strasbourg (SXB) 50 minutes. Your chauffeur greets you at the airport of your choice with a name board, at a fixed price.' } },
+      { q: { fr: 'Vos chauffeurs à Colmar parlent-ils anglais ?', en: 'Do your chauffeurs in Colmar speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['strasbourg', 'mulhouse'],
+  },
+  {
+    slug: 'mulhouse',
+    name: { fr: 'Mulhouse', en: 'Mulhouse' },
+    country: { fr: 'France', en: 'France' },
+    region: 'france',
+    airport: 'EuroAirport Bâle-Mulhouse (MLH)',
+    airportTransfer: {
+      fr: 'L’EuroAirport Bâle-Mulhouse (MLH) se trouve à 25 km au sud de Mulhouse : comptez 25 minutes. Votre chauffeur vous accueille en salle d’arrivée avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'EuroAirport Basel-Mulhouse (MLH) lies 25 km south of Mulhouse: allow 25 minutes. Your chauffeur greets you in arrivals with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Ancienne capitale industrielle du sud de l’Alsace, Mulhouse conserve la plus belle collection automobile du monde — la Cité de l’Automobile et ses Bugatti — et un patrimoine textile unique. Votre **chauffeur privé à Mulhouse** dessert le centre, les musées techniques et les rendez-vous industriels de la région des trois frontières : transferts depuis l’EuroAirport, mise à disposition à l’heure, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Mulhouse est au carrefour de la **France, de l’Allemagne et de la Suisse**. Bâle et ses musées sont à 25 km, la Forêt-Noire de l’autre côté du Rhin, la route des vins et Colmar au nord. En mise à disposition à la journée, votre chauffeur relie musées, villages viticoles et villes frontalières dans le confort d’une berline privée.',
+      ],
+      en: [
+        'A former industrial capital of southern Alsace, Mulhouse holds the world’s finest car collection — the Cité de l’Automobile and its Bugattis — and a unique textile heritage. Your **private chauffeur in Mulhouse** serves the centre, the technical museums and the industrial meetings of the three-borders region: transfers from the EuroAirport, hourly hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Mulhouse is at the crossroads of **France, Germany and Switzerland**. Basel and its museums are 25 km away, the Black Forest across the Rhine, the wine route and Colmar to the north. With a full-day hire, your chauffeur links museums, wine villages and border cities in the comfort of a private sedan.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Cité de l’Automobile', en: 'Cité de l’Automobile' }, teaser: { fr: 'La collection Schlumpf, plus de 400 voitures dont les Bugatti Royale, temple mondial de l’automobile. Demi-journée pour passionnés, dépose à l’entrée.', en: 'The Schlumpf Collection, over 400 cars including the Bugatti Royale, a world temple of the automobile. A half-day for enthusiasts, drop-off at the entrance.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Route des vins et Colmar', en: 'Wine route and Colmar' }, teaser: { fr: 'Les villages viticoles du sud de l’Alsace, Eguisheim et Colmar, dégustations en domaine. Journée vin et villages fleuris au nord de Mulhouse.', en: 'The wine villages of southern Alsace, Eguisheim and Colmar, estate tastings. A day of wine and flowered villages north of Mulhouse.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Bâle et ses musées', en: 'Basel and its museums' }, teaser: { fr: 'À 25 km en Suisse, la Fondation Beyeler, le Kunstmuseum, la vieille ville sur le Rhin. Journée d’art contemporain de l’autre côté de la frontière.', en: '25 km away in Switzerland, the Fondation Beyeler, the Kunstmuseum, the old town on the Rhine. A day of contemporary art across the border.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Écomusée et Forêt-Noire', en: 'Écomusée and Black Forest' }, teaser: { fr: 'L’Écomusée d’Alsace, plus grand musée à ciel ouvert de France, puis un aperçu de la Forêt-Noire allemande. Journée traditions et nature.', en: 'The Écomusée d’Alsace, France’s largest open-air museum, then a glimpse of the German Black Forest. A day of traditions and nature.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Soirée aux trois frontières', en: 'Three-borders evening' }, teaser: { fr: 'Dîner alsacien dans le centre, une tarte flambée en winstub, l’ambiance frontalière de la ville. Véhicule à disposition toute la soirée.', en: 'An Alsatian dinner in the centre, a tarte flambée in a winstub, the border-town atmosphere. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de l’EuroAirport à Mulhouse ?', en: 'How long from the EuroAirport to Mulhouse?' }, a: { fr: 'Comptez 25 minutes. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 25 minutes. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Peut-on visiter Bâle et la Suisse depuis Mulhouse ?', en: 'Can you visit Basel and Switzerland from Mulhouse?' }, a: { fr: 'Oui, Bâle est à 25 km, sans formalité de frontière particulière. En mise à disposition à la journée, votre chauffeur combine musées suisses et villes alsaciennes, à prix fixe.', en: 'Yes, Basel is 25 km away, with no particular border formalities. With a full-day hire, your chauffeur combines Swiss museums and Alsatian cities, at a fixed price.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['colmar', 'strasbourg'],
+  },
+  {
+    slug: 'metz',
+    name: { fr: 'Metz', en: 'Metz' },
+    country: { fr: 'France', en: 'France' },
+    region: 'france',
+    airport: 'Metz-Nancy-Lorraine (ETZ)',
+    airportTransfer: {
+      fr: 'L’aéroport de Metz-Nancy-Lorraine (ETZ) se trouve à 25 km au sud de Metz : comptez 25 minutes. Depuis Luxembourg (LUX), à 65 km au nord, comptez 50 minutes. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Metz-Nancy-Lorraine Airport (ETZ) lies 25 km south of Metz: allow 25 minutes. From Luxembourg (LUX), 65 km north, allow 50 minutes. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Cité impériale au confluent de la Moselle et de la Seille, Metz marie une cathédrale de pierre jaune aux plus grandes verrières gothiques de France, un quartier impérial allemand et le Centre Pompidou-Metz. Votre **chauffeur privé à Metz** dessert le centre, le quartier des affaires et les rendez-vous transfrontaliers : transferts depuis l’aéroport ou Luxembourg, mise à disposition à l’heure, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Metz est au cœur de la **Grande Région**. Luxembourg et ses institutions sont à 50 minutes, Nancy et sa place Stanislas à 45 km, la frontière allemande et la Sarre tout près. En mise à disposition à la journée, votre chauffeur relie musées, villes d’art et rendez-vous d’affaires dans ce carrefour de l’Europe.',
+      ],
+      en: [
+        'An imperial city at the confluence of the Moselle and the Seille, Metz marries a yellow-stone cathedral with France’s largest Gothic stained-glass windows, a German imperial quarter and the Centre Pompidou-Metz. Your **private chauffeur in Metz** serves the centre, the business district and cross-border meetings: transfers from the airport or Luxembourg, hourly hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Metz lies at the heart of the **Greater Region**. Luxembourg and its institutions are 50 minutes away, Nancy and its Place Stanislas 45 km, the German border and the Saarland nearby. With a full-day hire, your chauffeur links museums, art cities and business meetings in this crossroads of Europe.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Metz et le Centre Pompidou', en: 'Metz and the Centre Pompidou' }, teaser: { fr: 'La cathédrale Saint-Étienne et ses verrières, le quartier impérial, le Centre Pompidou-Metz. Dépose au centre, promenade entre gothique et art contemporain.', en: 'Saint-Étienne Cathedral and its stained glass, the imperial quarter, the Centre Pompidou-Metz. Drop-off in the centre, a stroll between Gothic and contemporary art.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Luxembourg depuis Metz', en: 'Luxembourg from Metz' }, teaser: { fr: 'À 50 minutes, la vieille ville classée UNESCO, les casemates, le quartier européen du Kirchberg. Journée dans le Grand-Duché, chauffeur en attente.', en: '50 minutes away, the UNESCO-listed old town, the casemates, the European Kirchberg district. A day in the Grand Duchy, chauffeur waiting.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Nancy et la place Stanislas', en: 'Nancy and the Place Stanislas' }, teaser: { fr: 'À 45 km, la plus belle place royale d’Europe classée UNESCO, l’Art nouveau de l’École de Nancy. Journée d’art et d’élégance lorraine.', en: '45 km away, Europe’s finest royal square, UNESCO-listed, the Art Nouveau of the École de Nancy. A day of Lorraine art and elegance.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Verdun et la mémoire', en: 'Verdun and remembrance' }, teaser: { fr: 'À une heure, les champs de bataille de 1916, l’ossuaire de Douaumont, le mémorial. Journée d’histoire au cœur de la Grande Guerre.', en: 'An hour away, the 1916 battlefields, the Douaumont ossuary, the memorial. A day of history at the heart of the Great War.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Soirée messine', en: 'Metz evening' }, teaser: { fr: 'Dîner dans le centre, la cathédrale illuminée dite « lanterne du Bon Dieu », les quais de la Moselle. Véhicule à disposition toute la soirée.', en: 'Dinner in the centre, the illuminated cathedral known as the “Good Lord’s Lantern”, the Moselle quays. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de l’aéroport à Metz ?', en: 'How long from the airport to Metz?' }, a: { fr: 'Comptez 25 minutes depuis Metz-Nancy-Lorraine (ETZ) et 50 minutes depuis Luxembourg (LUX). Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes.', en: 'Allow 25 minutes from Metz-Nancy-Lorraine (ETZ) and 50 minutes from Luxembourg (LUX). The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time.' } },
+      { q: { fr: 'Proposez-vous un service transfrontalier vers le Luxembourg ?', en: 'Do you offer a cross-border service to Luxembourg?' }, a: { fr: 'Oui, les liaisons Metz–Luxembourg sont fréquentes. Transferts et mises à disposition pour rendez-vous d’affaires ou institutionnels, avec chauffeurs habitués à la Grande Région. Compte corporate disponible.', en: 'Yes, Metz–Luxembourg links are frequent. Transfers and hire for business or institutional meetings, with chauffeurs used to the Greater Region. Corporate account available.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['nancy', 'strasbourg', 'luxembourg-city'],
+  },
+  {
+    slug: 'nancy',
+    name: { fr: 'Nancy', en: 'Nancy' },
+    country: { fr: 'France', en: 'France' },
+    region: 'france',
+    airport: 'Metz-Nancy-Lorraine (ETZ)',
+    airportTransfer: {
+      fr: 'L’aéroport de Metz-Nancy-Lorraine (ETZ) se trouve à 45 km au nord de Nancy : comptez 40 minutes. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Metz-Nancy-Lorraine Airport (ETZ) lies 45 km north of Nancy: allow 40 minutes. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Ancienne capitale des ducs de Lorraine, Nancy possède avec la place Stanislas la plus belle place royale d’Europe, classée UNESCO, et fut le berceau de l’Art nouveau avec l’École de Nancy. Votre **chauffeur privé à Nancy** dessert le centre historique, les musées et les rendez-vous d’affaires : transferts depuis l’aéroport, mise à disposition à l’heure, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Nancy est au cœur de la **Lorraine**. Metz et son Centre Pompidou sont à 45 km, les côtes de Toul et leurs vins gris tout près, les Vosges à l’est. En mise à disposition à la journée, votre chauffeur relie places royales, verreries d’art — Baccarat, Daum — et paysages lorrains dans le confort d’une berline privée.',
+      ],
+      en: [
+        'A former capital of the Dukes of Lorraine, Nancy has in the Place Stanislas Europe’s finest royal square, UNESCO-listed, and was the cradle of Art Nouveau with the École de Nancy. Your **private chauffeur in Nancy** serves the historic centre, the museums and business meetings: transfers from the airport, hourly hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Nancy lies at the heart of **Lorraine**. Metz and its Centre Pompidou are 45 km away, the Toul hillsides and their vin gris nearby, the Vosges to the east. With a full-day hire, your chauffeur links royal squares, art glassworks — Baccarat, Daum — and Lorraine landscapes in the comfort of a private sedan.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Place Stanislas et Art nouveau', en: 'Place Stanislas and Art Nouveau' }, teaser: { fr: 'La place royale et ses grilles dorées, le musée de l’École de Nancy, la villa Majorelle. Dépose au centre, promenade entre XVIIIe siècle et Art nouveau.', en: 'The royal square and its gilded gates, the École de Nancy museum, the Villa Majorelle. Drop-off in the centre, a stroll between the 18th century and Art Nouveau.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Baccarat et le cristal', en: 'Baccarat and crystal' }, teaser: { fr: 'La manufacture et le musée Baccarat, l’église aux vitraux de cristal, la vallée de la Meurthe. Journée art du cristal dans la Lorraine profonde.', en: 'The Baccarat factory and museum, the church with its crystal windows, the Meurthe valley. A day of crystal art in deep Lorraine.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Metz depuis Nancy', en: 'Metz from Nancy' }, teaser: { fr: 'À 45 km, la cathédrale aux verrières, le quartier impérial, le Centre Pompidou-Metz. Journée d’art entre les deux capitales lorraines.', en: '45 km away, the cathedral with its stained glass, the imperial quarter, the Centre Pompidou-Metz. A day of art between the two Lorraine capitals.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Vignoble et côtes de Toul', en: 'Toul vineyard' }, teaser: { fr: 'Les côtes de Toul et leur vin gris, la cathédrale de Toul, les villages vignerons. Journée œnologie et patrimoine à l’ouest de Nancy.', en: 'The Toul hillsides and their vin gris, Toul cathedral, the wine villages. A day of oenology and heritage west of Nancy.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Soirée place Stanislas', en: 'Place Stanislas evening' }, teaser: { fr: 'Dîner dans une brasserie Belle Époque, la place royale illuminée, un dernier verre sous les arcades. Véhicule à disposition toute la soirée.', en: 'Dinner in a Belle Époque brasserie, the illuminated royal square, a nightcap under the arcades. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de l’aéroport à Nancy ?', en: 'How long from the airport to Nancy?' }, a: { fr: 'Comptez 40 minutes depuis Metz-Nancy-Lorraine (ETZ). Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 40 minutes from Metz-Nancy-Lorraine (ETZ). The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Peut-on combiner Nancy et Metz dans la journée ?', en: 'Can Nancy and Metz be combined in one day?' }, a: { fr: 'Oui, les deux villes sont à 45 km. En mise à disposition à la journée, votre chauffeur enchaîne place Stanislas, musées et centre de Metz, avec un déjeuner lorrain.', en: 'Yes, the two cities are 45 km apart. With a full-day hire, your chauffeur links the Place Stanislas, museums and the centre of Metz, with a Lorraine lunch.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['metz', 'strasbourg'],
+  },
+  {
+    slug: 'besancon',
+    name: { fr: 'Besançon', en: 'Besançon' },
+    country: { fr: 'France', en: 'France' },
+    region: 'france',
+    airport: 'EuroAirport Bâle-Mulhouse (MLH)',
+    airportTransfer: {
+      fr: 'L’EuroAirport Bâle-Mulhouse (MLH) se trouve à 140 km à l’est de Besançon : comptez 1h30. Depuis l’aéroport de Dole-Jura (DLE), à 50 km, comptez 45 minutes. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'EuroAirport Basel-Mulhouse (MLH) lies 140 km east of Besançon: allow 1h30. From Dole-Jura Airport (DLE), 50 km away, allow 45 minutes. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Capitale de la Franche-Comté lovée dans une boucle du Doubs, Besançon veille depuis sa citadelle de Vauban classée UNESCO, patrie de Victor Hugo et de l’horlogerie française. Votre **chauffeur privé à Besançon** dessert le centre historique, la citadelle et les rendez-vous d’affaires : transferts depuis Dole ou Bâle, mise à disposition à l’heure, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Besançon est la porte du **Jura et des vignobles comtois**. Les reculées et cascades du Jura, Arbois et ses vins jaunes, les salines royales d’Arc-et-Senans classées UNESCO sont à portée. En mise à disposition à la journée, votre chauffeur relie citadelle, nature et domaines viticoles dans une région verte et authentique.',
+      ],
+      en: [
+        'Capital of Franche-Comté nestled in a bend of the Doubs, Besançon watches from its UNESCO-listed Vauban citadel, home of Victor Hugo and of French watchmaking. Your **private chauffeur in Besançon** serves the historic centre, the citadel and business meetings: transfers from Dole or Basel, hourly hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Besançon is the gateway to the **Jura and the Comté vineyards**. The Jura gorges and waterfalls, Arbois and its yellow wines, the UNESCO-listed royal saltworks of Arc-et-Senans are within reach. With a full-day hire, your chauffeur links citadel, nature and wine estates in a green, authentic region.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Citadelle de Vauban', en: 'Vauban citadel' }, teaser: { fr: 'La citadelle classée UNESCO dominant la boucle du Doubs, ses musées, son panorama. Dépose au sommet, promenade sur les remparts, montée évitée.', en: 'The UNESCO-listed citadel dominating the bend of the Doubs, its museums, its panorama. Drop-off at the top, a walk on the ramparts, the climb avoided.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Vignoble du Jura à Arbois', en: 'Jura vineyard at Arbois' }, teaser: { fr: 'Les domaines du vin jaune et du savagnin, dégustation en cave, la maison de Pasteur à Arbois. Journée œnologie dans un vignoble confidentiel.', en: 'The estates of yellow wine and savagnin, a cellar tasting, Pasteur’s house in Arbois. An oenology day in a little-known vineyard.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Reculées et cascades du Jura', en: 'Jura gorges and waterfalls' }, teaser: { fr: 'Les reculées de Baume-les-Messieurs, les cascades du Hérisson, les paysages verdoyants du Jura. Journée nature au rythme lent.', en: 'The gorges of Baume-les-Messieurs, the Hérisson waterfalls, the green Jura landscapes. A slow-paced nature day.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Salines royales d’Arc-et-Senans', en: 'Royal saltworks of Arc-et-Senans' }, teaser: { fr: 'La manufacture idéale de Claude-Nicolas Ledoux classée UNESCO, chef-d’œuvre de l’architecture des Lumières. Demi-journée patrimoine à 30 minutes.', en: 'The ideal factory of Claude-Nicolas Ledoux, UNESCO-listed, a masterpiece of Enlightenment architecture. A heritage half-day 30 minutes away.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '360' },
+      { title: { fr: 'Soirée bisontine', en: 'Besançon evening' }, teaser: { fr: 'Dîner dans le centre historique, la citadelle illuminée dominant le Doubs, l’ambiance d’une ville étudiante et verte. Véhicule à disposition.', en: 'Dinner in the historic centre, the illuminated citadel dominating the Doubs, the atmosphere of a green student city. Vehicle on standby.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Depuis quel aéroport rejoint-on Besançon ?', en: 'From which airport do you reach Besançon?' }, a: { fr: 'Dole-Jura (DLE) est à 45 minutes, Bâle-Mulhouse (MLH) à 1h30, Lyon-Saint-Exupéry à 2h. Votre chauffeur vous accueille à l’aéroport de votre choix avec panneau nominatif, à prix fixe.', en: 'Dole-Jura (DLE) is 45 minutes away, Basel-Mulhouse (MLH) 1h30, Lyon-Saint-Exupéry 2h. Your chauffeur greets you at the airport of your choice with a name board, at a fixed price.' } },
+      { q: { fr: 'Peut-on visiter le vignoble du Jura avec un chauffeur ?', en: 'Can you visit the Jura vineyard with a chauffeur?' }, a: { fr: 'Oui. Votre chauffeur organise et relie les domaines d’Arbois et les villages viticoles du Jura, vous permettant de déguster le vin jaune en toute sérénité, sur une journée à prix fixe.', en: 'Yes. Your chauffeur arranges and links the Arbois estates and the Jura wine villages, letting you taste the yellow wine with peace of mind, over a fixed-price day.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['beaune', 'dijon', 'geneva'],
+  },
+  {
+    slug: 'beaune',
+    name: { fr: 'Beaune', en: 'Beaune' },
+    country: { fr: 'France', en: 'France' },
+    region: 'france',
+    airport: 'Lyon-Saint-Exupéry (LYS)',
+    airportTransfer: {
+      fr: 'L’aéroport de Lyon-Saint-Exupéry (LYS) se trouve à 150 km au sud de Beaune : comptez 1h30 par l’autoroute A6. Depuis Dijon, à 45 km au nord, comptez 40 minutes. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Lyon-Saint-Exupéry Airport (LYS) lies 150 km south of Beaune: allow 1h30 via the A6 motorway. From Dijon, 45 km north, allow 40 minutes. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Capitale des vins de Bourgogne, Beaune enferme dans ses remparts les Hospices et leur toit de tuiles vernissées, au cœur des climats classés UNESCO. Votre **chauffeur privé à Beaune** dessert le centre historique, les domaines de la Côte d’Or et les hôtels de charme : transferts depuis Lyon ou Dijon, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Beaune est le cœur de la **Côte d’Or et de ses grands crus**. Les villages mythiques — Pommard, Meursault, Puligny-Montrachet, la Romanée-Conti — s’égrènent à quelques minutes le long de la route des grands crus. En mise à disposition à la journée, votre chauffeur relie domaines, caves et tables étoilées pendant que vous dégustez les plus grands vins du monde sans souci de conduite.',
+      ],
+      en: [
+        'Capital of the Burgundy wines, Beaune encloses within its walls the Hospices and their glazed-tile roof, at the heart of the UNESCO-listed climats. Your **private chauffeur in Beaune** serves the historic centre, the Côte d’Or estates and the boutique hotels: transfers from Lyon or Dijon, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Beaune is the heart of the **Côte d’Or and its grands crus**. The legendary villages — Pommard, Meursault, Puligny-Montrachet, La Romanée-Conti — string along the grands crus route minutes away. With a full-day hire, your chauffeur links estates, cellars and starred tables while you taste the world’s greatest wines with no driving worry.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Route des grands crus', en: 'Grands crus route' }, teaser: { fr: 'Pommard, Volnay, Meursault et Puligny-Montrachet, dégustations dans des domaines familiaux, déjeuner au cœur des vignes. Votre chauffeur conduit, vous dégustez.', en: 'Pommard, Volnay, Meursault and Puligny-Montrachet, tastings at family estates, lunch among the vines. Your chauffeur drives, you taste.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '690' },
+      { title: { fr: 'Hospices et centre de Beaune', en: 'Hospices and centre of Beaune' }, teaser: { fr: 'L’Hôtel-Dieu et son toit de tuiles vernissées, le retable du Jugement dernier, le marché aux vins. Dépose au centre, promenade dans la cité vigneronne.', en: 'The Hôtel-Dieu and its glazed-tile roof, the Last Judgement altarpiece, the wine market. Drop-off in the centre, a stroll through the wine city.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Côte de Nuits et grands rouges', en: 'Côte de Nuits and great reds' }, teaser: { fr: 'Nuits-Saint-Georges, Vosne-Romanée, Gevrey-Chambertin et le clos de Vougeot, les plus grands pinots noirs. Journée dans le saint des saints du vin.', en: 'Nuits-Saint-Georges, Vosne-Romanée, Gevrey-Chambertin and the Clos de Vougeot, the greatest pinot noirs. A day in the holy of holies of wine.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '720' },
+      { title: { fr: 'Dijon et la Bourgogne des ducs', en: 'Dijon and ducal Burgundy' }, teaser: { fr: 'À 45 km, le palais des ducs, la moutarde, les hôtels particuliers. Journée patrimoine dans la capitale bourguignonne.', en: '45 km away, the palace of the dukes, the mustard, the private mansions. A heritage day in the Burgundian capital.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Soirée gastronomique', en: 'Gastronomic evening' }, teaser: { fr: 'Dîner dans une table étoilée de la Côte, accord mets et grands crus, les remparts illuminés. Véhicule à disposition toute la soirée.', en: 'Dinner at a starred table on the Côte, food and grand cru pairings, the illuminated ramparts. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '420' },
+    ],
+    faq: [
+      { q: { fr: 'Peut-on faire la route des grands crus avec un chauffeur ?', en: 'Can you do the grands crus route with a chauffeur?' }, a: { fr: 'Oui, c’est la raison d’être d’un chauffeur à Beaune : vous dégustez les plus grands vins du monde sans conduire. Votre chauffeur organise et relie les domaines sur une journée à prix fixe.', en: 'Yes, it is the very reason for a chauffeur in Beaune: you taste the world’s greatest wines without driving. Your chauffeur arranges and links the estates over a fixed-price day.' } },
+      { q: { fr: 'Depuis quel aéroport rejoint-on Beaune ?', en: 'From which airport do you reach Beaune?' }, a: { fr: 'Lyon-Saint-Exupéry (LYS) est à 1h30, Dijon à 40 minutes, Genève à 2h. Votre chauffeur vous accueille à l’aéroport de votre choix avec panneau nominatif, à prix fixe.', en: 'Lyon-Saint-Exupéry (LYS) is 1h30 away, Dijon 40 minutes, Geneva 2h. Your chauffeur greets you at the airport of your choice with a name board, at a fixed price.' } },
+      { q: { fr: 'Vos chauffeurs à Beaune parlent-ils anglais ?', en: 'Do your chauffeurs in Beaune speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['dijon', 'besancon'],
+  },
+  {
+    slug: 'epernay',
+    name: { fr: 'Épernay', en: 'Épernay' },
+    country: { fr: 'France', en: 'France' },
+    region: 'france',
+    airport: 'Paris-Charles de Gaulle (CDG)',
+    airportTransfer: {
+      fr: 'L’aéroport de Paris-Charles de Gaulle (CDG) se trouve à 120 km à l’ouest d’Épernay : comptez 1h15 par l’autoroute A4. Depuis Reims, à 28 km au nord, comptez 30 minutes. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Paris-Charles de Gaulle Airport (CDG) lies 120 km west of Épernay: allow 1h15 via the A4 motorway. From Reims, 28 km north, allow 30 minutes. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Capitale du champagne, Épernay aligne sur son avenue de Champagne les maisons les plus prestigieuses — Moët & Chandon, Perrier-Jouët — au-dessus de 110 kilomètres de caves. Votre **chauffeur privé à Épernay** dessert les grandes maisons, les vignerons des coteaux classés UNESCO et les hôtels : transferts depuis Paris ou Reims, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Épernay est le cœur du **vignoble de Champagne**. Les coteaux d’Aÿ et de Hautvillers, où Dom Pérignon élabora sa méthode, la Côte des Blancs et ses chardonnays sont à quelques minutes. En mise à disposition à la journée, votre chauffeur relie grandes maisons, vignerons indépendants et tables gastronomiques pendant que vous dégustez les plus grandes bulles du monde.',
+      ],
+      en: [
+        'Capital of champagne, Épernay lines its Avenue de Champagne with the most prestigious houses — Moët & Chandon, Perrier-Jouët — above 110 kilometres of cellars. Your **private chauffeur in Épernay** serves the great houses, the growers of the UNESCO-listed slopes and the hotels: transfers from Paris or Reims, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Épernay is the heart of the **Champagne vineyard**. The slopes of Aÿ and Hautvillers, where Dom Pérignon developed his method, the Côte des Blancs and its chardonnays are minutes away. With a full-day hire, your chauffeur links great houses, independent growers and gourmet tables while you taste the world’s greatest bubbles.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Grandes maisons de Champagne', en: 'Great Champagne houses' }, teaser: { fr: 'L’avenue de Champagne, une visite de cave chez Moët & Chandon ou Perrier-Jouët, dégustation. Votre chauffeur vous conduit d’une maison à l’autre.', en: 'The Avenue de Champagne, a cellar visit at Moët & Chandon or Perrier-Jouët, a tasting. Your chauffeur drives you from one house to the next.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '390' },
+      { title: { fr: 'Vignerons et Côte des Blancs', en: 'Growers and Côte des Blancs' }, teaser: { fr: 'Hautvillers et l’abbaye de Dom Pérignon, les vignerons indépendants de la Côte des Blancs, dégustations plus intimes. Journée champagne authentique.', en: 'Hautvillers and Dom Pérignon’s abbey, the independent growers of the Côte des Blancs, more intimate tastings. An authentic champagne day.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '640' },
+      { title: { fr: 'Reims et sa cathédrale', en: 'Reims and its cathedral' }, teaser: { fr: 'À 30 minutes, la cathédrale du sacre des rois, les caves Pommery ou Veuve Clicquot. Journée patrimoine et champagne dans la cité des rois.', en: '30 minutes away, the coronation cathedral, the Pommery or Veuve Clicquot cellars. A day of heritage and champagne in the city of kings.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Champagne depuis Paris', en: 'Champagne from Paris' }, teaser: { fr: 'Une escapade à la journée depuis la capitale : maisons de champagne, dégustation et déjeuner, retour le soir. Alternative privée aux excursions en groupe.', en: 'A day trip from the capital: champagne houses, a tasting and lunch, return in the evening. A private alternative to group excursions.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '890' },
+      { title: { fr: 'Soirée sur l’avenue de Champagne', en: 'Evening on the Avenue de Champagne' }, teaser: { fr: 'Dîner gastronomique accordé aux cuvées, l’avenue et ses hôtels particuliers illuminés, une flûte de prestige. Véhicule à disposition toute la soirée.', en: 'A gourmet dinner paired with the cuvées, the avenue and its illuminated mansions, a prestige flute. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '420' },
+    ],
+    faq: [
+      { q: { fr: 'Peut-on visiter les maisons de champagne avec un chauffeur ?', en: 'Can you visit the champagne houses with a chauffeur?' }, a: { fr: 'Oui, c’est l’essence même du service à Épernay : vous dégustez sans conduire. Votre chauffeur organise et relie grandes maisons et vignerons sur une journée à prix fixe.', en: 'Yes, it is the essence of the service in Épernay: you taste without driving. Your chauffeur arranges and links great houses and growers over a fixed-price day.' } },
+      { q: { fr: 'Peut-on faire la Champagne à la journée depuis Paris ?', en: 'Can you do Champagne as a day trip from Paris?' }, a: { fr: 'Oui, Épernay est à 1h15 de Paris. En mise à disposition à la journée, votre chauffeur vous conduit dans le vignoble, organise visites et déjeuner, et vous ramène le soir, à prix fixe.', en: 'Yes, Épernay is 1h15 from Paris. With a full-day hire, your chauffeur drives you into the vineyard, arranges visits and lunch, and brings you back in the evening, at a fixed price.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['reims', 'troyes'],
+  },
+  {
+    slug: 'troyes',
+    name: { fr: 'Troyes', en: 'Troyes' },
+    country: { fr: 'France', en: 'France' },
+    region: 'france',
+    airport: 'Paris-Charles de Gaulle (CDG)',
+    airportTransfer: {
+      fr: 'L’aéroport de Paris-Charles de Gaulle (CDG) se trouve à 170 km au nord-ouest de Troyes : comptez 1h45. Depuis Paris-Orly, à 160 km, comptez 1h45 également. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Paris-Charles de Gaulle Airport (CDG) lies 170 km north-west of Troyes: allow 1h45. From Paris-Orly, 160 km away, also allow 1h45. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Ancienne capitale de la Champagne médiévale, Troyes déploie le plus vaste centre à pans de bois de France, dessiné en forme de bouchon de champagne, et une constellation d’églises gothiques aux vitraux exceptionnels. Votre **chauffeur privé à Troyes** dessert le centre historique, les magasins d’usine et les rendez-vous d’affaires : transferts depuis Paris, mise à disposition à l’heure, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Troyes est aussi la **capitale du shopping d’usine**. Les plus grandes marques y bradent leurs collections dans d’immenses centres de marques ; le vignoble de la Côte des Bar et les lacs de la forêt d’Orient sont tout proches. En mise à disposition à la journée, votre chauffeur relie centre médiéval, magasins d’usine et vignobles pendant que vous profitez sans souci de logistique.',
+      ],
+      en: [
+        'A former capital of medieval Champagne, Troyes displays France’s largest half-timbered centre, laid out in the shape of a champagne cork, and a constellation of Gothic churches with exceptional stained glass. Your **private chauffeur in Troyes** serves the historic centre, the factory outlets and business meetings: transfers from Paris, hourly hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Troyes is also the **factory-outlet capital**. The biggest brands discount their collections in huge outlet centres; the Côte des Bar vineyard and the lakes of the Orient forest are nearby. With a full-day hire, your chauffeur links medieval centre, outlets and vineyards while you enjoy the trip with no logistics worry.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Troyes médiéval', en: 'Medieval Troyes' }, teaser: { fr: 'Les ruelles à pans de bois, la ruelle des Chats, les églises gothiques et leurs vitraux, la cité du vitrail. Dépose au centre, promenade dans le bouchon de champagne.', en: 'The half-timbered lanes, the Ruelle des Chats, the Gothic churches and their stained glass, the stained-glass centre. Drop-off in the centre, a stroll through the champagne cork.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Magasins d’usine', en: 'Factory outlets' }, teaser: { fr: 'Les grands centres de marques de McArthurGlen et Marques Avenue, les plus grandes maisons à prix d’usine. Votre chauffeur transporte vos achats entre les enseignes.', en: 'The McArthurGlen and Marques Avenue outlet centres, the biggest brands at factory prices. Your chauffeur carries your purchases between the stores.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Côte des Bar et champagne', en: 'Côte des Bar and champagne' }, teaser: { fr: 'Le vignoble méridional de la Champagne, les vignerons de la Côte des Bar, dégustation et déjeuner du terroir. Journée bulles hors des sentiers battus.', en: 'The southern Champagne vineyard, the growers of the Côte des Bar, a tasting and a regional lunch. A bubbles day off the beaten track.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Lacs de la forêt d’Orient', en: 'Lakes of the Orient forest' }, teaser: { fr: 'Le parc naturel régional, ses grands lacs, ses villages et sa réserve d’oiseaux. Journée nature à trente minutes de Troyes.', en: 'The regional nature park, its great lakes, its villages and its bird reserve. A nature day thirty minutes from Troyes.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Soirée à Troyes', en: 'Evening in Troyes' }, teaser: { fr: 'Dîner dans une maison à pans de bois, les ruelles médiévales illuminées, un verre de rosé des Riceys. Véhicule à disposition toute la soirée.', en: 'Dinner in a half-timbered house, the illuminated medieval lanes, a glass of Riceys rosé. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de Paris à Troyes ?', en: 'How long from Paris to Troyes?' }, a: { fr: 'Comptez environ 1h45. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow about 1h45. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Proposez-vous une journée shopping dans les magasins d’usine ?', en: 'Do you offer a shopping day at the factory outlets?' }, a: { fr: 'Oui, c’est une demande fréquente. Votre chauffeur vous conduit entre les centres de marques, transporte vos achats et combine éventuellement avec le centre médiéval, sur une journée à prix fixe.', en: 'Yes, a frequent request. Your chauffeur drives you between the outlet centres, carries your purchases and optionally combines with the medieval centre, over a fixed-price day.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['epernay', 'reims'],
+  },
+  {
+    slug: 'grenoble',
+    name: { fr: 'Grenoble', en: 'Grenoble' },
+    country: { fr: 'France', en: 'France' },
+    region: 'france',
+    airport: 'Lyon-Saint-Exupéry (LYS)',
+    airportTransfer: {
+      fr: 'L’aéroport de Lyon-Saint-Exupéry (LYS) se trouve à 100 km au nord-ouest de Grenoble : comptez 1h par l’autoroute. L’aéroport de Grenoble-Alpes-Isère (GNB) est à 40 km. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Lyon-Saint-Exupéry Airport (LYS) lies 100 km north-west of Grenoble: allow 1h by motorway. Grenoble-Alpes-Isère Airport (GNB) is 40 km away. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Capitale des Alpes cernée de trois massifs, Grenoble marie patrimoine dauphinois, pôle scientifique de rang mondial et téléphérique vers la Bastille. Votre **chauffeur privé à Grenoble** dessert le centre, les campus technologiques et les rendez-vous d’affaires, ainsi que les stations de ski des environs : transferts depuis Lyon ou Grenoble, mise à disposition à la journée, prix fixes. Berlines et 4x4 selon la saison, chauffeurs anglophones sur demande.',
+        'Grenoble est la **porte des Alpes du Sud**. Les massifs de la Chartreuse, du Vercors et de Belledonne l’entourent, les stations des Deux Alpes et de l’Alpe d’Huez sont à une heure, la Provence commence au sud. En mise à disposition à la journée, votre chauffeur relie campus, sommets et villages de montagne dans le confort d’une berline privée.',
+      ],
+      en: [
+        'Capital of the Alps ringed by three ranges, Grenoble marries Dauphiné heritage, a world-class science hub and a cable car to the Bastille. Your **private chauffeur in Grenoble** serves the centre, the technology campuses and business meetings, as well as the surrounding ski resorts: transfers from Lyon or Grenoble, full-day hire, fixed prices. Sedans and 4x4s depending on the season, English-speaking chauffeurs on request.',
+        'Grenoble is the **gateway to the southern Alps**. The Chartreuse, Vercors and Belledonne ranges surround it, the Deux Alpes and Alpe d’Huez resorts are an hour away, Provence begins to the south. With a full-day hire, your chauffeur links campuses, peaks and mountain villages in the comfort of a private sedan.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Massif de la Chartreuse', en: 'Chartreuse range' }, teaser: { fr: 'Le monastère de la Grande Chartreuse et son musée, les gorges et villages du parc naturel, la liqueur des moines. Journée nature et spiritualité.', en: 'The Grande Chartreuse monastery and its museum, the gorges and villages of the nature park, the monks’ liqueur. A day of nature and spirituality.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Grenoble et la Bastille', en: 'Grenoble and the Bastille' }, teaser: { fr: 'Le téléphérique et le fort de la Bastille, le musée de Grenoble, le centre dauphinois. Dépose au centre, panorama sur les trois massifs.', en: 'The cable car and the Bastille fort, the Grenoble museum, the Dauphiné centre. Drop-off in the centre, a panorama over the three ranges.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Vercors et ses paysages', en: 'Vercors and its landscapes' }, teaser: { fr: 'Les gorges de la Bourne, les grottes de Choranche, les hauts plateaux du Vercors, un déjeuner de montagne. Journée nature dans un massif sauvage.', en: 'The Bourne gorges, the Choranche caves, the Vercors highlands, a mountain lunch. A nature day in a wild range.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Transferts stations de ski', en: 'Ski resort transfers' }, teaser: { fr: 'Liaison vers l’Alpe d’Huez, les Deux Alpes ou Chamrousse, gestion des skis, reprise à l’heure convenue. La montagne sans conduite en lacets.', en: 'Link to Alpe d’Huez, Les Deux Alpes or Chamrousse, ski handling, pick-up at the agreed time. The mountain without hairpin driving.' }, duration: { fr: 'Transfert', en: 'Transfer' }, price: '360' },
+      { title: { fr: 'Soirée grenobloise', en: 'Grenoble evening' }, teaser: { fr: 'Dîner dans le centre, la Bastille illuminée dominant la ville, l’ambiance d’une cité alpine et étudiante. Véhicule à disposition toute la soirée.', en: 'Dinner in the centre, the illuminated Bastille dominating the city, the atmosphere of an Alpine student city. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de Lyon à Grenoble ?', en: 'How long from Lyon to Grenoble?' }, a: { fr: 'Comptez 1 heure depuis Lyon-Saint-Exupéry. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 1 hour from Lyon-Saint-Exupéry. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Assurez-vous les transferts vers les stations de ski ?', en: 'Do you handle transfers to the ski resorts?' }, a: { fr: 'Oui. Alpe d’Huez, Les Deux Alpes, Chamrousse et les stations de l’Oisans sont à portée. Nous adaptons le véhicule à la saison et gérons skis et bagages, à prix fixe.', en: 'Yes. Alpe d’Huez, Les Deux Alpes, Chamrousse and the Oisans resorts are within reach. We adapt the vehicle to the season and handle skis and luggage, at a fixed price.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['valence', 'geneva'],
+  },
+  {
+    slug: 'valence',
+    name: { fr: 'Valence', en: 'Valence' },
+    country: { fr: 'France', en: 'France' },
+    region: 'france',
+    airport: 'Lyon-Saint-Exupéry (LYS)',
+    airportTransfer: {
+      fr: 'L’aéroport de Lyon-Saint-Exupéry (LYS) se trouve à 100 km au nord de Valence : comptez 1h par l’autoroute A7. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Lyon-Saint-Exupéry Airport (LYS) lies 100 km north of Valence: allow 1h via the A7 motorway. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Porte du Midi sur les rives du Rhône, Valence marie douceur méridionale, kiosque Peynet et haute gastronomie — la maison Pic y règne depuis un siècle. Votre **chauffeur privé à Valence** dessert le centre, la gare TGV et les rendez-vous d’affaires de la vallée du Rhône : transferts depuis Lyon, mise à disposition à l’heure, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Valence est le carrefour du **Rhône méridional**. Les vignobles des côtes du Rhône — Hermitage, Crozes, Saint-Péray — sont tout proches, l’Ardèche et ses gorges à l’ouest, la Provence commence au sud. En mise à disposition à la journée, votre chauffeur relie domaines viticoles, villages perchés et tables étoilées à la frontière du Nord et du Midi.',
+      ],
+      en: [
+        'Gateway to the Midi on the banks of the Rhône, Valence marries southern gentleness, the Peynet bandstand and haute cuisine — the Maison Pic has reigned here for a century. Your **private chauffeur in Valence** serves the centre, the high-speed rail station and the business meetings of the Rhône valley: transfers from Lyon, hourly hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Valence is the crossroads of the **southern Rhône**. The Côtes du Rhône vineyards — Hermitage, Crozes, Saint-Péray — are nearby, the Ardèche and its gorges to the west, Provence begins to the south. With a full-day hire, your chauffeur links wine estates, perched villages and starred tables on the border of the North and the Midi.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Vignobles des côtes du Rhône', en: 'Côtes du Rhône vineyards' }, teaser: { fr: 'Les coteaux de l’Hermitage et de Crozes-Hermitage, les syrahs et les blancs de Saint-Péray, dégustations en domaine. Journée œnologie sur le Rhône.', en: 'The slopes of Hermitage and Crozes-Hermitage, the syrahs and whites of Saint-Péray, estate tastings. An oenology day on the Rhône.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Gorges de l’Ardèche', en: 'Ardèche gorges' }, teaser: { fr: 'Le pont d’Arc, les belvédères sur les gorges, la grotte Chauvet 2 et ses fresques préhistoriques. Journée nature et préhistoire à l’ouest.', en: 'The Pont d’Arc, the gorge viewpoints, the Chauvet 2 cave and its prehistoric frescoes. A day of nature and prehistory to the west.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Villages perchés de la Drôme', en: 'Perched villages of the Drôme' }, teaser: { fr: 'Le village de Mirmande, la Drôme provençale, les champs de lavande en été, un déjeuner du terroir. Journée dans la Provence naissante.', en: 'The village of Mirmande, the Drôme Provençale, the lavender fields in summer, a regional lunch. A day in emerging Provence.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Étape gastronomique', en: 'Gastronomic stop' }, teaser: { fr: 'Déjeuner ou dîner à la maison Pic, triplement étoilée, ou dans une table de la vallée du Rhône, accord avec les grands crus locaux. Souplesse totale.', en: 'Lunch or dinner at the triple-starred Maison Pic, or at a Rhône valley table, paired with the great local wines. Total flexibility.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '420' },
+      { title: { fr: 'Valence et le Rhône', en: 'Valence and the Rhône' }, teaser: { fr: 'Le vieux Valence, le kiosque Peynet, les bords du Rhône et le parc Jouvet. Dépose au centre, promenade dans la porte du Midi.', en: 'Old Valence, the Peynet bandstand, the banks of the Rhône and the Jouvet park. Drop-off in the centre, a stroll through the gateway to the Midi.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de Lyon à Valence ?', en: 'How long from Lyon to Valence?' }, a: { fr: 'Comptez 1 heure par l’A7. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 1 hour via the A7. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Peut-on visiter les vignobles du Rhône depuis Valence ?', en: 'Can you visit the Rhône vineyards from Valence?' }, a: { fr: 'Oui, Hermitage et Crozes sont tout proches. En mise à disposition à la journée, votre chauffeur organise les dégustations et vous conduit d’un domaine à l’autre, à prix fixe.', en: 'Yes, Hermitage and Crozes are nearby. With a full-day hire, your chauffeur arranges the tastings and drives you from one estate to the next, at a fixed price.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['grenoble', 'avignon'],
+  },
+  {
+    slug: 'clermont-ferrand',
+    name: { fr: 'Clermont-Ferrand', en: 'Clermont-Ferrand' },
+    country: { fr: 'France', en: 'France' },
+    region: 'france',
+    airport: 'Clermont-Ferrand-Auvergne (CFE)',
+    airportTransfer: {
+      fr: 'L’aéroport de Clermont-Ferrand-Auvergne (CFE) se trouve à 7 km à l’est du centre : comptez 15 minutes. Votre chauffeur vous accueille en salle d’arrivée avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Clermont-Ferrand-Auvergne Airport (CFE) lies 7 km east of the centre: allow 15 minutes. Your chauffeur greets you in arrivals with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Capitale de l’Auvergne au pied de la chaîne des Puys, Clermont-Ferrand marie une cathédrale de pierre volcanique noire, le siège mondial de Michelin et les volcans classés UNESCO. Votre **chauffeur privé à Clermont-Ferrand** dessert le centre, les sites industriels et les rendez-vous d’affaires : transferts depuis l’aéroport, mise à disposition à l’heure, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Clermont-Ferrand est la porte des **volcans d’Auvergne**. Le puy de Dôme et son panorama, le parc des volcans, les stations thermales de La Bourboule et du Mont-Dore sont à portée. En mise à disposition à la journée, votre chauffeur relie sommets volcaniques, villages romans et thermes dans le poumon vert du centre de la France.',
+      ],
+      en: [
+        'Capital of the Auvergne at the foot of the Chaîne des Puys, Clermont-Ferrand marries a cathedral of black volcanic stone, the world headquarters of Michelin and the UNESCO-listed volcanoes. Your **private chauffeur in Clermont-Ferrand** serves the centre, the industrial sites and business meetings: transfers from the airport, hourly hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Clermont-Ferrand is the gateway to the **Auvergne volcanoes**. The Puy de Dôme and its panorama, the volcanoes park, the thermal resorts of La Bourboule and Le Mont-Dore are within reach. With a full-day hire, your chauffeur links volcanic peaks, Romanesque villages and spas in the green lung of central France.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Puy de Dôme et chaîne des Puys', en: 'Puy de Dôme and the Chaîne des Puys' }, teaser: { fr: 'Le plus célèbre volcan d’Auvergne classé UNESCO, le train à crémaillère, le panorama sur 80 volcans. Journée nature au sommet du Massif central.', en: 'The most famous Auvergne volcano, UNESCO-listed, the rack railway, the panorama over 80 volcanoes. A nature day at the top of the Massif Central.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Clermont et la cathédrale noire', en: 'Clermont and the black cathedral' }, teaser: { fr: 'La cathédrale de pierre de Volvic, la basilique romane Notre-Dame-du-Port, le vieux Montferrand. Dépose au centre, promenade dans la cité volcanique.', en: 'The Volvic-stone cathedral, the Romanesque basilica of Notre-Dame-du-Port, old Montferrand. Drop-off in the centre, a stroll through the volcanic city.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Villages et thermes du Sancy', en: 'Sancy villages and spas' }, teaser: { fr: 'Le massif du Sancy, les stations thermales du Mont-Dore et de La Bourboule, les villages de pierre. Journée nature et bien-être en montagne.', en: 'The Sancy massif, the thermal resorts of Le Mont-Dore and La Bourboule, the stone villages. A day of nature and wellness in the mountains.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Vichy Belle Époque', en: 'Belle Époque Vichy' }, teaser: { fr: 'À une heure, la reine des villes d’eaux, ses sources, son opéra et ses villas thermales. Journée patrimoine et thermalisme au bord de l’Allier.', en: 'An hour away, the queen of spa towns, its springs, its opera house and its thermal villas. A day of heritage and thermalism on the Allier.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Soirée clermontoise', en: 'Clermont evening' }, teaser: { fr: 'Dîner dans le centre, la cathédrale noire illuminée, un verre de saint-pourçain. Véhicule à disposition toute la soirée.', en: 'Dinner in the centre, the illuminated black cathedral, a glass of saint-pourçain. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de l’aéroport de Clermont au centre ?', en: 'How long from Clermont Airport to the centre?' }, a: { fr: 'Comptez 15 minutes. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 15 minutes. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Peut-on visiter les volcans d’Auvergne avec un chauffeur ?', en: 'Can you visit the Auvergne volcanoes with a chauffeur?' }, a: { fr: 'Oui. Le puy de Dôme et le parc des volcans sont à portée. Votre chauffeur vous conduit aux départs, organise le train à crémaillère et combine avec villages et thermes, à prix fixe.', en: 'Yes. The Puy de Dôme and the volcanoes park are within reach. Your chauffeur drives you to the departure points, arranges the rack railway and combines with villages and spas, at a fixed price.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['vichy', 'lyon'],
+  },
+  {
+    slug: 'vichy',
+    name: { fr: 'Vichy', en: 'Vichy' },
+    country: { fr: 'France', en: 'France' },
+    region: 'france',
+    airport: 'Clermont-Ferrand-Auvergne (CFE)',
+    airportTransfer: {
+      fr: 'L’aéroport de Clermont-Ferrand-Auvergne (CFE) se trouve à 60 km au sud de Vichy : comptez 45 minutes. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Clermont-Ferrand-Auvergne Airport (CFE) lies 60 km south of Vichy: allow 45 minutes. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Reine des villes d’eaux, Vichy déroule au bord de l’Allier ses sources thermales, son opéra Art nouveau et ses villas Belle Époque, aujourd’hui inscrite au patrimoine mondial. Votre **chauffeur privé à Vichy** dessert les thermes, le centre patrimonial et les rendez-vous de cure ou d’affaires : transferts depuis Clermont, mise à disposition à l’heure, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Vichy est au cœur du **Bourbonnais et de l’Auvergne**. Les volcans et le puy de Dôme sont à une heure, les châteaux du Bourbonnais tout proches, les vignobles du Saint-Pourçain à quelques minutes. En mise à disposition à la journée, votre chauffeur relie thermes, patrimoine et nature volcanique dans le confort d’une berline privée.',
+      ],
+      en: [
+        'Queen of spa towns, Vichy unrolls along the Allier its thermal springs, its Art Nouveau opera house and its Belle Époque villas, now inscribed as World Heritage. Your **private chauffeur in Vichy** serves the baths, the heritage centre and cure or business meetings: transfers from Clermont, hourly hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Vichy lies at the heart of the **Bourbonnais and the Auvergne**. The volcanoes and the Puy de Dôme are an hour away, the Bourbonnais castles nearby, the Saint-Pourçain vineyards minutes away. With a full-day hire, your chauffeur links spas, heritage and volcanic nature in the comfort of a private sedan.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Vichy thermale et Belle Époque', en: 'Thermal and Belle Époque Vichy' }, teaser: { fr: 'Les sources et le hall des sources, l’opéra Art nouveau, le parc des Sources et les villas. Dépose au centre, promenade dans la reine des villes d’eaux.', en: 'The springs and the Hall des Sources, the Art Nouveau opera house, the Parc des Sources and the villas. Drop-off in the centre, a stroll through the queen of spa towns.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Volcans d’Auvergne', en: 'Auvergne volcanoes' }, teaser: { fr: 'À une heure, le puy de Dôme et la chaîne des Puys classés UNESCO, le panorama sur 80 volcans. Journée nature au sommet du Massif central.', en: 'An hour away, the Puy de Dôme and the UNESCO-listed Chaîne des Puys, the panorama over 80 volcanoes. A nature day at the top of the Massif Central.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Châteaux du Bourbonnais', en: 'Bourbonnais castles' }, teaser: { fr: 'Les forteresses des ducs de Bourbon, le château de Lapalisse, les villages du bocage. Journée patrimoine médiéval au cœur de la France.', en: 'The fortresses of the Dukes of Bourbon, the château of Lapalisse, the bocage villages. A day of medieval heritage in the heart of France.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Vignoble de Saint-Pourçain', en: 'Saint-Pourçain vineyard' }, teaser: { fr: 'L’un des plus anciens vignobles de France, dégustations chez les vignerons, déjeuner du terroir bourbonnais. Journée œnologie confidentielle.', en: 'One of France’s oldest vineyards, tastings at the growers, a Bourbonnais lunch. A day of little-known oenology.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Soirée à Vichy', en: 'Evening in Vichy' }, teaser: { fr: 'Dîner dans une brasserie Belle Époque, l’opéra et le parc illuminés, les bords de l’Allier. Véhicule à disposition toute la soirée.', en: 'Dinner in a Belle Époque brasserie, the illuminated opera house and park, the banks of the Allier. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de l’aéroport de Clermont à Vichy ?', en: 'How long from Clermont Airport to Vichy?' }, a: { fr: 'Comptez 45 minutes. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 45 minutes. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Peut-on combiner Vichy et les volcans d’Auvergne ?', en: 'Can Vichy and the Auvergne volcanoes be combined?' }, a: { fr: 'Oui, le puy de Dôme est à une heure. En mise à disposition à la journée, votre chauffeur combine patrimoine thermal de Vichy et nature volcanique, à prix fixe.', en: 'Yes, the Puy de Dôme is an hour away. With a full-day hire, your chauffeur combines Vichy’s thermal heritage and volcanic nature, at a fixed price.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['clermont-ferrand'],
+  },
 ];
