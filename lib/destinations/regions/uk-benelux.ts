@@ -3218,4 +3218,310 @@ export const CITIES: Destination[] = [
     ],
     nearby: ['amsterdam', 'haarlem'],
   },
+  {
+    slug: 'oxford',
+    name: { fr: 'Oxford', en: 'Oxford' },
+    country: { fr: 'Royaume-Uni', en: 'United Kingdom' },
+    region: 'uk-benelux',
+    airport: 'Londres-Heathrow (LHR)',
+    airportTransfer: {
+      fr: 'L’aéroport de Londres-Heathrow (LHR) se trouve à 90 km au sud-est d’Oxford : comptez 1h à 1h15 par la M40. Depuis London Oxford Airport (OXF), à 15 km, comptez 20 minutes. Votre chauffeur vous accueille en salle d’arrivée, panneau nominatif en main, et suit votre vol en temps réel.',
+      en: 'London Heathrow Airport (LHR) lies 90 km south-east of Oxford: allow 1h to 1h15 via the M40. From London Oxford Airport (OXF), 15 km away, allow 20 minutes. Your chauffeur greets you in arrivals with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Plus ancienne université du monde anglophone, Oxford aligne ses collèges gothiques, ses bibliothèques et ses « dreaming spires » au bord de la Cherwell. Votre **chauffeur privé à Oxford** dessert les colleges, les théâtres universitaires et les hôtels de la ville : transferts depuis Heathrow et Londres, mise à disposition à l’heure, prix fixes annoncés à l’avance. Berlines Mercedes et vans, chauffeurs anglophones et francophones.',
+        'Oxford commande les **Cotswolds et la vallée de la Tamise**. Le palais de Blenheim, lieu de naissance de Churchill, est à 15 km ; les villages de pierre dorée des Cotswolds à trente minutes, Londres à une heure. En mise à disposition à la journée, votre chauffeur relie colleges, châteaux et campagne anglaise pendant que vous profitez du paysage.',
+      ],
+      en: [
+        'The oldest university in the English-speaking world, Oxford lines up its Gothic colleges, libraries and dreaming spires beside the Cherwell. Your **private chauffeur in Oxford** serves the colleges, the university theatres and the city’s hotels: transfers from Heathrow and London, hourly hire, fixed prices confirmed in advance. Mercedes sedans and vans, English- and French-speaking chauffeurs.',
+        'Oxford commands the **Cotswolds and the Thames Valley**. Blenheim Palace, Churchill’s birthplace, is 15 km away; the honey-stone villages of the Cotswolds thirty minutes away, London an hour. With a full-day hire, your chauffeur links colleges, palaces and English countryside while you enjoy the landscape.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Colleges et Bodleian Library', en: 'Colleges and Bodleian Library' }, teaser: { fr: 'Christ Church et son grand hall, la Radcliffe Camera, la Bodleian Library et le pont des Soupirs. Dépose au centre, promenade dans le dédale universitaire.', en: 'Christ Church and its great hall, the Radcliffe Camera, the Bodleian Library and the Bridge of Sighs. Drop-off in the centre, a stroll through the university maze.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '360' },
+      { title: { fr: 'Palais de Blenheim', en: 'Blenheim Palace' }, teaser: { fr: 'À 15 km, le palais baroque des ducs de Marlborough, lieu de naissance de Churchill, et son parc dessiné par Capability Brown. Déjeuner sur le domaine.', en: '15 km away, the Baroque palace of the Dukes of Marlborough, Churchill’s birthplace, and its park designed by Capability Brown. Lunch on the estate.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '380' },
+      { title: { fr: 'Villages des Cotswolds', en: 'Cotswolds villages' }, teaser: { fr: 'Bourton-on-the-Water, Bibury et ses cottages de pierre dorée, un pub de campagne pour le déjeuner. Journée dans la plus anglaise des campagnes.', en: 'Bourton-on-the-Water, Bibury and its honey-stone cottages, a country pub for lunch. A day in the most English of countrysides.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Oxford et Stratford-upon-Avon', en: 'Oxford and Stratford-upon-Avon' }, teaser: { fr: 'Les colleges le matin, la ville natale de Shakespeare l’après-midi, à 65 km. Journée patrimoine et littérature à travers les Midlands.', en: 'The colleges in the morning, Shakespeare’s birthplace in the afternoon, 65 km away. A day of heritage and literature across the Midlands.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '640' },
+      { title: { fr: 'Soirée universitaire', en: 'University evening' }, teaser: { fr: 'Dîner dans une table historique, les colleges illuminés, un pub fréquenté par Tolkien et C.S. Lewis. Véhicule à disposition toute la soirée.', en: 'Dinner at a historic table, the illuminated colleges, a pub frequented by Tolkien and C.S. Lewis. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '380' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de Heathrow à Oxford ?', en: 'How long from Heathrow to Oxford?' }, a: { fr: 'Comptez 1h à 1h15 par la M40. Le transfert privé est à prix fixe, avec accueil en salle d’arrivée, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 1h to 1h15 via the M40. The private transfer is at a fixed price, with a meet-and-greet in arrivals, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Peut-on visiter Blenheim et les Cotswolds depuis Oxford ?', en: 'Can you visit Blenheim and the Cotswolds from Oxford?' }, a: { fr: 'Oui. Blenheim est à 15 km et les Cotswolds à trente minutes. En mise à disposition à la journée, votre chauffeur combine palais, villages de pierre dorée et déjeuner de campagne.', en: 'Yes. Blenheim is 15 km away and the Cotswolds thirty minutes. With a full-day hire, your chauffeur combines the palace, honey-stone villages and a country lunch.' } },
+      { q: { fr: 'Vos chauffeurs à Oxford parlent-ils français ?', en: 'Do your chauffeurs in Oxford speak French?' }, a: { fr: 'Oui, des chauffeurs francophones et anglophones sont disponibles ; d’autres langues sur demande selon les disponibilités.', en: 'Yes, French- and English-speaking chauffeurs are available; other languages on request subject to availability.' } },
+    ],
+    nearby: ['london', 'cotswolds', 'cambridge'],
+  },
+  {
+    slug: 'cambridge',
+    name: { fr: 'Cambridge', en: 'Cambridge' },
+    country: { fr: 'Royaume-Uni', en: 'United Kingdom' },
+    region: 'uk-benelux',
+    airport: 'Londres-Stansted (STN)',
+    airportTransfer: {
+      fr: 'L’aéroport de Londres-Stansted (STN) se trouve à 45 km au sud de Cambridge : comptez 40 à 50 minutes par la M11. Depuis Heathrow (LHR), à 110 km, comptez 1h30. Votre chauffeur vous accueille en salle d’arrivée, panneau nominatif en main, et suit votre vol en temps réel.',
+      en: 'London Stansted Airport (STN) lies 45 km south of Cambridge: allow 40 to 50 minutes via the M11. From Heathrow (LHR), 110 km away, allow 1h30. Your chauffeur greets you in arrivals with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Rivale historique d’Oxford, Cambridge aligne ses colleges le long de la Cam, les pelouses des Backs et la chapelle de King’s College. Votre **chauffeur privé à Cambridge** dessert l’université, les parcs scientifiques et les hôtels de la ville : transferts depuis Stansted et Londres, mise à disposition à l’heure, prix fixes annoncés à l’avance. Berlines Mercedes et vans, chauffeurs anglophones et francophones.',
+        'Cambridge commande l’**East Anglia**. La cathédrale d’Ely et son « vaisseau des Fens » sont à 25 km, les maisons de course de Newmarket tout près, Londres à une heure. En mise à disposition à la journée, votre chauffeur relie colleges, parcs technologiques et campagne anglaise pendant que vous vous concentrez sur vos rendez-vous.',
+      ],
+      en: [
+        'Oxford’s historic rival, Cambridge lines its colleges along the Cam, the lawns of the Backs and the chapel of King’s College. Your **private chauffeur in Cambridge** serves the university, the science parks and the city’s hotels: transfers from Stansted and London, hourly hire, fixed prices confirmed in advance. Mercedes sedans and vans, English- and French-speaking chauffeurs.',
+        'Cambridge commands **East Anglia**. Ely Cathedral and its “ship of the Fens” are 25 km away, the Newmarket racing stables nearby, London an hour away. With a full-day hire, your chauffeur links colleges, technology parks and English countryside while you focus on your meetings.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Colleges et King’s Chapel', en: 'Colleges and King’s Chapel' }, teaser: { fr: 'King’s College et sa chapelle gothique, Trinity et la bibliothèque Wren, les Backs le long de la Cam. Dépose au centre, promenade universitaire à votre rythme.', en: 'King’s College and its Gothic chapel, Trinity and the Wren Library, the Backs along the Cam. Drop-off in the centre, a university stroll at your own pace.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '360' },
+      { title: { fr: 'Ely et sa cathédrale', en: 'Ely and its cathedral' }, teaser: { fr: 'À 25 km, la cathédrale d’Ely surnommée le « vaisseau des Fens », la maison de Cromwell, les paysages plats des marais. Déjeuner dans la petite cité.', en: '25 km away, Ely Cathedral, nicknamed the “ship of the Fens”, Cromwell’s house, the flat marsh landscapes. Lunch in the small city.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '380' },
+      { title: { fr: 'Newmarket et les courses', en: 'Newmarket and the races' }, teaser: { fr: 'Le berceau mondial du pur-sang, ses écuries, le National Horseracing Museum, une matinée d’entraînement sur les Heaths. Journée turf et tradition.', en: 'The world cradle of thoroughbred racing, its stables, the National Horseracing Museum, a training morning on the Heaths. A day of turf and tradition.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Cambridge et parcs scientifiques', en: 'Cambridge and science parks' }, teaser: { fr: 'Mise à disposition autour du Cambridge Science Park et du campus biomédical, rendez-vous d’affaires enchaînés sans souci de logistique. Chauffeur en attente.', en: 'Standby around the Cambridge Science Park and the biomedical campus, business meetings linked without logistical worry. Chauffeur on standby.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '360' },
+      { title: { fr: 'Soirée sur la Cam', en: 'Evening on the Cam' }, teaser: { fr: 'Dîner dans un college ou une table du centre, les ponts illuminés, l’ambiance feutrée des cours anciennes. Véhicule à disposition toute la soirée.', en: 'Dinner in a college or a table in the centre, the illuminated bridges, the hushed atmosphere of the ancient courts. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '380' },
+    ],
+    faq: [
+      { q: { fr: 'Depuis quel aéroport rejoint-on Cambridge ?', en: 'From which airport do you reach Cambridge?' }, a: { fr: 'Cambridge est à 40-50 minutes de Stansted (STN) et à 1h30 de Heathrow (LHR). Votre chauffeur vous accueille à l’aéroport de votre choix avec panneau nominatif, à prix fixe.', en: 'Cambridge is 40-50 minutes from Stansted (STN) and 1h30 from Heathrow (LHR). Your chauffeur greets you at the airport of your choice with a name board, at a fixed price.' } },
+      { q: { fr: 'Proposez-vous un service pour les parcs scientifiques ?', en: 'Do you offer a service for the science parks?' }, a: { fr: 'Oui, mise à disposition à l’heure ou à la journée autour des campus technologiques et biomédicaux, avec chauffeurs ponctuels et discrets. Compte corporate disponible.', en: 'Yes, hourly or daily hire around the technology and biomedical campuses, with punctual, discreet chauffeurs. Corporate account available.' } },
+      { q: { fr: 'Vos chauffeurs à Cambridge parlent-ils français ?', en: 'Do your chauffeurs in Cambridge speak French?' }, a: { fr: 'Oui, des chauffeurs francophones et anglophones sont disponibles ; d’autres langues sur demande selon les disponibilités.', en: 'Yes, French- and English-speaking chauffeurs are available; other languages on request subject to availability.' } },
+    ],
+    nearby: ['london', 'oxford'],
+  },
+  {
+    slug: 'bristol',
+    name: { fr: 'Bristol', en: 'Bristol' },
+    country: { fr: 'Royaume-Uni', en: 'United Kingdom' },
+    region: 'uk-benelux',
+    airport: 'Bristol (BRS)',
+    airportTransfer: {
+      fr: 'L’aéroport de Bristol (BRS) se trouve à 13 km au sud du centre : comptez 25 à 35 minutes selon le trafic. Votre chauffeur vous accueille en salle d’arrivée, panneau nominatif en main, et suit votre vol en temps réel.',
+      en: 'Bristol Airport (BRS) lies 13 km south of the centre: allow 25 to 35 minutes depending on traffic. Your chauffeur greets you in arrivals with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Port historique de l’ouest de l’Angleterre et ville de Brunel, Bristol marie docks réhabilités, art urbain de Banksy et le spectaculaire pont suspendu de Clifton. Votre **chauffeur privé à Bristol** dessert le centre, l’université et les rendez-vous d’affaires de la région : transferts aéroport, mise à disposition à l’heure, prix fixes annoncés à l’avance. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Bristol est aux portes de **Bath et des Cotswolds**. La ville géorgienne de Bath et ses thermes romains sont à 20 km, les gorges de Cheddar et les villages de pierre dorée tout près. En mise à disposition à la journée, votre chauffeur relie patrimoine industriel, campagne du Somerset et cités géorgiennes dans le confort d’une berline privée.',
+      ],
+      en: [
+        'A historic port of western England and Brunel’s city, Bristol marries regenerated docks, Banksy street art and the spectacular Clifton Suspension Bridge. Your **private chauffeur in Bristol** serves the centre, the university and the region’s business meetings: airport transfers, hourly hire, fixed prices confirmed in advance. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Bristol is at the gates of **Bath and the Cotswolds**. The Georgian city of Bath and its Roman baths are 20 km away, the Cheddar Gorge and honey-stone villages nearby. With a full-day hire, your chauffeur links industrial heritage, Somerset countryside and Georgian cities in the comfort of a private sedan.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Bristol et le pont de Clifton', en: 'Bristol and Clifton Bridge' }, teaser: { fr: 'Le pont suspendu de Clifton signé Brunel, le SS Great Britain, les docks réhabilités et l’art de Banksy. Dépose devant chaque site.', en: 'Brunel’s Clifton Suspension Bridge, the SS Great Britain, the regenerated docks and Banksy’s art. Door-to-door drop-offs.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Bath la géorgienne', en: 'Georgian Bath' }, teaser: { fr: 'À 20 km, les thermes romains, le Royal Crescent et l’abbaye, ville classée UNESCO tout entière. Déjeuner dans le centre géorgien.', en: '20 km away, the Roman baths, the Royal Crescent and the abbey, an entirely UNESCO-listed city. Lunch in the Georgian centre.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '360' },
+      { title: { fr: 'Gorges de Cheddar et Wells', en: 'Cheddar Gorge and Wells' }, teaser: { fr: 'Les falaises et grottes des gorges de Cheddar, la plus petite cité d’Angleterre à Wells et sa cathédrale. Journée nature et patrimoine du Somerset.', en: 'The cliffs and caves of the Cheddar Gorge, England’s smallest city at Wells and its cathedral. A day of Somerset nature and heritage.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Cotswolds depuis Bristol', en: 'Cotswolds from Bristol' }, teaser: { fr: 'Les villages de pierre dorée de Castle Combe et Lacock, un pub de campagne, la plus anglaise des campagnes. Journée bucolique à l’est de la ville.', en: 'The honey-stone villages of Castle Combe and Lacock, a country pub, the most English of countrysides. A bucolic day east of the city.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '640' },
+      { title: { fr: 'Soirée au bord de l’eau', en: 'Waterside evening' }, teaser: { fr: 'Dîner dans les docks réhabilités du Harbourside, les quais illuminés, l’ambiance créative de la ville. Véhicule à disposition toute la soirée.', en: 'Dinner in the regenerated Harbourside docks, the illuminated quays, the city’s creative atmosphere. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '360' },
+    ],
+    faq: [
+      { q: { fr: 'Combien coûte un transfert de l’aéroport de Bristol au centre ?', en: 'How much does a transfer from Bristol Airport to the centre cost?' }, a: { fr: 'Le transfert privé entre Bristol (BRS) et le centre est à prix fixe, confirmé à la réservation, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'A private transfer between Bristol (BRS) and the centre is at a fixed price, confirmed at booking, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Peut-on visiter Bath depuis Bristol à la journée ?', en: 'Can you visit Bath from Bristol on a day trip?' }, a: { fr: 'Oui, Bath est à 20 km. En mise à disposition, votre chauffeur combine Bristol et Bath, ou pousse jusqu’aux Cotswolds et aux gorges de Cheddar, à prix fixe.', en: 'Yes, Bath is 20 km away. With a chauffeur hire, your driver combines Bristol and Bath, or extends to the Cotswolds and the Cheddar Gorge, at a fixed price.' } },
+      { q: { fr: 'Vos chauffeurs à Bristol parlent-ils français ?', en: 'Do your chauffeurs in Bristol speak French?' }, a: { fr: 'Oui, des chauffeurs francophones et anglophones sont disponibles sur demande selon les disponibilités.', en: 'Yes, French- and English-speaking chauffeurs are available on request subject to availability.' } },
+    ],
+    nearby: ['bath', 'cotswolds', 'cardiff'],
+  },
+  {
+    slug: 'leeds',
+    name: { fr: 'Leeds', en: 'Leeds' },
+    country: { fr: 'Royaume-Uni', en: 'United Kingdom' },
+    region: 'uk-benelux',
+    airport: 'Leeds Bradford (LBA)',
+    airportTransfer: {
+      fr: 'L’aéroport de Leeds Bradford (LBA) se trouve à 15 km au nord-ouest du centre : comptez 25 à 35 minutes selon le trafic. Votre chauffeur vous accueille en salle d’arrivée, panneau nominatif en main, et suit votre vol en temps réel.',
+      en: 'Leeds Bradford Airport (LBA) lies 15 km north-west of the centre: allow 25 to 35 minutes depending on traffic. Your chauffeur greets you in arrivals with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Ancienne capitale lainière devenue métropole financière du nord de l’Angleterre, Leeds marie arcades victoriennes, quartier d’affaires et vie nocturne animée. Votre **chauffeur privé à Leeds** dessert le centre, les rendez-vous d’affaires et les hôtels de la ville : transferts aéroport, mise à disposition à l’heure, prix fixes annoncés à l’avance. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Leeds est la **porte du Yorkshire**. Les Dales et leurs vallées verdoyantes, York et sa cathédrale à 40 km, le domaine de Harewood House tout près ouvrent les excursions. En mise à disposition à la journée, votre chauffeur relie rendez-vous professionnels, châteaux et paysages de landes dans le comté le plus vaste d’Angleterre.',
+      ],
+      en: [
+        'A former wool capital turned financial metropolis of northern England, Leeds marries Victorian arcades, a business district and a lively nightlife. Your **private chauffeur in Leeds** serves the centre, business meetings and the city’s hotels: airport transfers, hourly hire, fixed prices confirmed in advance. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Leeds is the **gateway to Yorkshire**. The Dales and their green valleys, York and its Minster 40 km away, the Harewood House estate nearby open up excursions. With a full-day hire, your chauffeur links business meetings, castles and moorland landscapes in England’s largest county.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'York et sa cathédrale', en: 'York and its Minster' }, teaser: { fr: 'À 40 km, la plus grande cathédrale gothique d’Europe du Nord, les remparts médiévaux, les ruelles des Shambles. Déjeuner dans la cité historique.', en: '40 km away, the largest Gothic cathedral in Northern Europe, the medieval walls, the lanes of the Shambles. Lunch in the historic city.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Yorkshire Dales', en: 'Yorkshire Dales' }, teaser: { fr: 'Les vallées verdoyantes, les murets de pierre sèche, les villages de Grassington et Malham et sa falaise calcaire. Journée nature et déjeuner au pub.', en: 'The green valleys, the dry-stone walls, the villages of Grassington and Malham with its limestone cove. A nature day and a pub lunch.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Harewood House', en: 'Harewood House' }, teaser: { fr: 'La demeure géorgienne des comtes de Harewood, ses collections, ses jardins de Capability Brown. Demi-journée patrimoine aux portes de Leeds.', en: 'The Georgian house of the Earls of Harewood, its collections, its Capability Brown gardens. A half-day of heritage at the gates of Leeds.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '360' },
+      { title: { fr: 'Leeds shopping et affaires', en: 'Leeds shopping and business' }, teaser: { fr: 'Les arcades victoriennes, le Corn Exchange, le quartier financier. Mise à disposition pour rendez-vous et shopping, chauffeur en attente entre les étapes.', en: 'The Victorian arcades, the Corn Exchange, the financial district. Standby for meetings and shopping, chauffeur waiting between stops.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Soirée dans le Yorkshire', en: 'Yorkshire evening' }, teaser: { fr: 'Dîner dans une table du centre, les arcades illuminées, l’ambiance festive de la ville étudiante. Véhicule à disposition toute la soirée.', en: 'Dinner at a table in the centre, the illuminated arcades, the festive atmosphere of the student city. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de l’aéroport de Leeds Bradford au centre ?', en: 'How long from Leeds Bradford Airport to the centre?' }, a: { fr: 'Comptez 25 à 35 minutes selon le trafic. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 25 to 35 minutes depending on traffic. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Peut-on visiter York et les Dales depuis Leeds ?', en: 'Can you visit York and the Dales from Leeds?' }, a: { fr: 'Oui. York est à 40 km et les Yorkshire Dales à moins d’une heure. En mise à disposition à la journée, votre chauffeur combine cité historique, campagne et déjeuner, à prix fixe.', en: 'Yes. York is 40 km away and the Yorkshire Dales less than an hour. With a full-day hire, your chauffeur combines historic city, countryside and lunch, at a fixed price.' } },
+      { q: { fr: 'Vos chauffeurs à Leeds parlent-ils français ?', en: 'Do your chauffeurs in Leeds speak French?' }, a: { fr: 'Oui, des chauffeurs francophones et anglophones sont disponibles sur demande selon les disponibilités.', en: 'Yes, French- and English-speaking chauffeurs are available on request subject to availability.' } },
+    ],
+    nearby: ['york', 'manchester'],
+  },
+  {
+    slug: 'cotswolds',
+    name: { fr: 'Cotswolds', en: 'Cotswolds' },
+    country: { fr: 'Royaume-Uni', en: 'United Kingdom' },
+    region: 'uk-benelux',
+    airport: 'Londres-Heathrow (LHR)',
+    airportTransfer: {
+      fr: 'L’aéroport de Londres-Heathrow (LHR) se trouve à 110 km au sud-est des Cotswolds : comptez 1h30 à 2h selon le village et le trafic. Depuis Birmingham (BHX), à 50 km du nord des Cotswolds, comptez 45 minutes à 1 heure. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'London Heathrow Airport (LHR) lies 110 km south-east of the Cotswolds: allow 1h30 to 2h depending on the village and traffic. From Birmingham (BHX), 50 km from the northern Cotswolds, allow 45 minutes to 1 hour. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Région de collines classée « zone de beauté naturelle exceptionnelle », les Cotswolds égrènent villages de pierre dorée, manoirs et pubs de campagne entre Oxford et Bath. Votre **chauffeur privé dans les Cotswolds** relie les villages parfois isolés — Bourton-on-the-Water, Bibury, Stow-on-the-Wold, Castle Combe — sans souci de routes étroites ni de stationnement : transferts depuis Londres, Heathrow ou Birmingham, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Les Cotswolds sont au cœur de l’**Angleterre rurale**. Oxford et Blenheim au sud-est, Bath au sud-ouest, Stratford-upon-Avon au nord encadrent la région. En mise à disposition à la journée, votre chauffeur compose un circuit de villages, jardins et pubs à votre rythme, en profitant des paysages vallonnés qui font la carte postale anglaise.',
+      ],
+      en: [
+        'A region of hills designated an “Area of Outstanding Natural Beauty”, the Cotswolds string together honey-stone villages, manor houses and country pubs between Oxford and Bath. Your **private chauffeur in the Cotswolds** links the sometimes isolated villages — Bourton-on-the-Water, Bibury, Stow-on-the-Wold, Castle Combe — with no worry of narrow roads or parking: transfers from London, Heathrow or Birmingham, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'The Cotswolds lie at the heart of **rural England**. Oxford and Blenheim to the south-east, Bath to the south-west, Stratford-upon-Avon to the north frame the region. With a full-day hire, your chauffeur builds a route of villages, gardens and pubs at your pace, enjoying the rolling landscapes that make the English postcard.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Villages classiques des Cotswolds', en: 'Classic Cotswolds villages' }, teaser: { fr: 'Bourton-on-the-Water et ses ponts, Bibury et Arlington Row, Stow-on-the-Wold, un déjeuner au pub. La quintessence des villages de pierre dorée.', en: 'Bourton-on-the-Water and its bridges, Bibury and Arlington Row, Stow-on-the-Wold, a pub lunch. The quintessence of honey-stone villages.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Manoirs et jardins', en: 'Manors and gardens' }, teaser: { fr: 'Le manoir de Sudeley et son château, les jardins d’Hidcote, une maison de thé de campagne. Journée patrimoine et horticulture anglaise.', en: 'Sudeley Manor and its castle, the Hidcote gardens, a country tea room. A day of English heritage and horticulture.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '640' },
+      { title: { fr: 'Cotswolds et Oxford', en: 'Cotswolds and Oxford' }, teaser: { fr: 'Les villages le matin, les colleges d’Oxford et le palais de Blenheim l’après-midi. Journée complète alliant campagne et patrimoine universitaire.', en: 'The villages in the morning, the Oxford colleges and Blenheim Palace in the afternoon. A full day combining countryside and university heritage.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '660' },
+      { title: { fr: 'Castle Combe et le sud', en: 'Castle Combe and the south' }, teaser: { fr: 'Castle Combe, « plus beau village d’Angleterre », Lacock et son abbaye, un pub historique. Journée dans le sud bucolique des Cotswolds.', en: 'Castle Combe, “England’s prettiest village”, Lacock and its abbey, a historic pub. A day in the bucolic southern Cotswolds.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Séjour au vert avec chauffeur', en: 'Countryside stay with chauffeur' }, teaser: { fr: 'Mise à disposition à la journée depuis votre hôtel de campagne, villages et adresses au gré de vos envies, dîner dans un pub gastronomique. Souplesse totale.', en: 'Full-day hire from your country hotel, villages and addresses as you wish, dinner at a gastropub. Total flexibility.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '690' },
+    ],
+    faq: [
+      { q: { fr: 'Pourquoi visiter les Cotswolds avec un chauffeur privé ?', en: 'Why visit the Cotswolds with a private chauffeur?' }, a: { fr: 'Les villages sont dispersés, mal desservis par les transports et bordés de routes étroites au stationnement rare. Votre chauffeur relie les plus beaux sites à votre rythme, vous laissant profiter des paysages sans contrainte.', en: 'The villages are scattered, poorly served by public transport and lined with narrow roads with scarce parking. Your chauffeur links the finest sites at your pace, letting you enjoy the landscapes without constraint.' } },
+      { q: { fr: 'Depuis quel aéroport rejoint-on les Cotswolds ?', en: 'From which airport do you reach the Cotswolds?' }, a: { fr: 'Selon le village, comptez 1h30-2h depuis Heathrow ou 45min-1h depuis Birmingham. Votre chauffeur vous accueille à l’aéroport de votre choix avec panneau nominatif, à prix fixe.', en: 'Depending on the village, allow 1h30-2h from Heathrow or 45min-1h from Birmingham. Your chauffeur greets you at the airport of your choice with a name board, at a fixed price.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils français ?', en: 'Do your chauffeurs speak French?' }, a: { fr: 'Oui, des chauffeurs francophones et anglophones sont disponibles sur demande selon les disponibilités.', en: 'Yes, French- and English-speaking chauffeurs are available on request subject to availability.' } },
+    ],
+    nearby: ['oxford', 'bath', 'stratford-upon-avon'],
+  },
+  {
+    slug: 'stonehenge-salisbury',
+    name: { fr: 'Stonehenge & Salisbury', en: 'Stonehenge & Salisbury' },
+    country: { fr: 'Royaume-Uni', en: 'United Kingdom' },
+    region: 'uk-benelux',
+    airport: 'Londres-Heathrow (LHR)',
+    airportTransfer: {
+      fr: 'L’aéroport de Londres-Heathrow (LHR) se trouve à 120 km à l’est de Salisbury : comptez 1h30 par la M3 et l’A303. Depuis Southampton (SOU), à 40 km, comptez 40 minutes. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'London Heathrow Airport (LHR) lies 120 km east of Salisbury: allow 1h30 via the M3 and A303. From Southampton (SOU), 40 km away, allow 40 minutes. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Cœur du Wiltshire préhistorique, la région de Stonehenge et de Salisbury réunit le plus célèbre cercle de pierres du monde et une cathédrale gothique coiffée de la plus haute flèche d’Angleterre. Votre **chauffeur privé pour Stonehenge et Salisbury** relie sites néolithiques, cité médiévale et campagne du sud-ouest : transferts depuis Londres, Heathrow ou Southampton, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'La région ouvre sur le **Wessex historique**. Le cercle d’Avebury, plus vaste que Stonehenge, la ville géorgienne de Bath à 60 km, les manoirs du Wiltshire complètent l’itinéraire. En mise à disposition à la journée, votre chauffeur relie pierres levées, cathédrales et villages de campagne sans les contraintes des cars de tourisme.',
+      ],
+      en: [
+        'Heart of prehistoric Wiltshire, the Stonehenge and Salisbury area brings together the world’s most famous stone circle and a Gothic cathedral crowned by England’s tallest spire. Your **private chauffeur for Stonehenge and Salisbury** links Neolithic sites, a medieval city and south-western countryside: transfers from London, Heathrow or Southampton, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'The region opens onto **historic Wessex**. The Avebury circle, larger than Stonehenge, the Georgian city of Bath 60 km away, the Wiltshire manor houses extend the route. With a full-day hire, your chauffeur links standing stones, cathedrals and country villages without the constraints of tour buses.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Stonehenge et Salisbury', en: 'Stonehenge and Salisbury' }, teaser: { fr: 'Le cercle mégalithique classé UNESCO, puis la cathédrale de Salisbury, sa flèche de 123 m et un exemplaire de la Magna Carta. Déjeuner dans la cité.', en: 'The UNESCO-listed megalithic circle, then Salisbury Cathedral, its 123-metre spire and an original Magna Carta. Lunch in the city.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Stonehenge et Avebury', en: 'Stonehenge and Avebury' }, teaser: { fr: 'Les deux grands ensembles néolithiques du Wiltshire, le cercle d’Avebury que l’on peut approcher librement, la colline de Silbury. Journée préhistoire.', en: 'The two great Neolithic complexes of Wiltshire, the Avebury circle you can approach freely, Silbury Hill. A prehistory day.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '640' },
+      { title: { fr: 'Stonehenge et Bath', en: 'Stonehenge and Bath' }, teaser: { fr: 'Le cercle de pierres le matin, la ville géorgienne de Bath et ses thermes romains l’après-midi, à 60 km. Journée complète du Wessex.', en: 'The stone circle in the morning, the Georgian city of Bath and its Roman baths in the afternoon, 60 km away. A full Wessex day.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '660' },
+      { title: { fr: 'Transfert commenté depuis Londres', en: 'Guided transfer from London' }, teaser: { fr: 'Une escapade à la journée depuis Londres : Stonehenge, un village anglais et un déjeuner au pub, retour le soir. Alternative privée aux cars de tourisme.', en: 'A day trip from London: Stonehenge, an English village and a pub lunch, return in the evening. A private alternative to tour buses.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '790' },
+      { title: { fr: 'Manoirs du Wiltshire', en: 'Wiltshire manor houses' }, teaser: { fr: 'Longleat et son parc animalier, Wilton House et ses collections, les villages de chaume. Journée patrimoine dans la campagne anglaise.', en: 'Longleat and its safari park, Wilton House and its collections, the thatched villages. A heritage day in the English countryside.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '640' },
+    ],
+    faq: [
+      { q: { fr: 'Peut-on visiter Stonehenge à la journée depuis Londres ?', en: 'Can you visit Stonehenge on a day trip from London?' }, a: { fr: 'Oui. Comptez 1h30 de route. En mise à disposition à la journée, votre chauffeur combine Stonehenge, Salisbury ou Bath et un déjeuner, et vous ramène à Londres le soir, à prix fixe.', en: 'Yes. Allow 1h30 by road. With a full-day hire, your chauffeur combines Stonehenge, Salisbury or Bath and lunch, and brings you back to London in the evening, at a fixed price.' } },
+      { q: { fr: 'Faut-il réserver l’entrée de Stonehenge à l’avance ?', en: 'Do you need to book Stonehenge entry in advance?' }, a: { fr: 'Oui, les créneaux horaires sont à réserver à l’avance. Votre chauffeur cale l’itinéraire sur votre créneau et vous dépose au plus près de la navette du site.', en: 'Yes, timed slots must be booked in advance. Your chauffeur aligns the itinerary with your slot and drops you as close as possible to the site shuttle.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils français ?', en: 'Do your chauffeurs speak French?' }, a: { fr: 'Oui, des chauffeurs francophones et anglophones sont disponibles sur demande selon les disponibilités.', en: 'Yes, French- and English-speaking chauffeurs are available on request subject to availability.' } },
+    ],
+    nearby: ['bath', 'southampton', 'london'],
+  },
+  {
+    slug: 'southampton',
+    name: { fr: 'Southampton', en: 'Southampton' },
+    country: { fr: 'Royaume-Uni', en: 'United Kingdom' },
+    region: 'uk-benelux',
+    airport: 'Southampton (SOU)',
+    airportTransfer: {
+      fr: 'L’aéroport de Southampton (SOU) se trouve à 6 km au nord du centre et du port de croisière : comptez 15 minutes. Depuis Heathrow (LHR), à 100 km, comptez 1h15. Votre chauffeur vous accueille en salle d’arrivée, panneau nominatif en main, et suit votre vol en temps réel.',
+      en: 'Southampton Airport (SOU) lies 6 km north of the centre and the cruise port: allow 15 minutes. From Heathrow (LHR), 100 km away, allow 1h15. Your chauffeur greets you in arrivals with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Grand port de croisière et de départ des transatlantiques — c’est d’ici qu’appareilla le Titanic — Southampton conjugue quais historiques et tourelles médiévales. Votre **chauffeur privé à Southampton** assure les transferts port-aéroport, les liaisons vers Londres et les rendez-vous d’affaires : accueil aux terminaux de croisière, gestion des bagages, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans de grande capacité, chauffeurs anglophones sur demande.',
+        'Southampton est la **porte du New Forest et de la côte sud**. Le parc national du New Forest et ses poneys sauvages sont à vingt minutes, Winchester et sa cathédrale à 20 km, l’île de Wight de l’autre côté du Solent. En mise à disposition à la journée, votre chauffeur relie embarquements de croisière, campagne et cités historiques du Hampshire.',
+      ],
+      en: [
+        'A great cruise port and departure point for the transatlantic liners — it is from here that the Titanic set sail — Southampton blends historic quays and medieval towers. Your **private chauffeur in Southampton** handles port-airport transfers, links to London and business meetings: welcome at the cruise terminals, luggage handling, full-day hire, fixed prices. Mercedes sedans and full-size vans, English-speaking chauffeurs on request.',
+        'Southampton is the **gateway to the New Forest and the south coast**. The New Forest national park and its wild ponies are twenty minutes away, Winchester and its cathedral 20 km, the Isle of Wight across the Solent. With a full-day hire, your chauffeur links cruise embarkations, countryside and historic Hampshire cities.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Transfert croisière et bagages', en: 'Cruise transfer and luggage' }, teaser: { fr: 'Accueil au terminal ou à l’aéroport, prise en charge des bagages, dépose au pied du navire ou reprise au débarquement. Ponctualité garantie pour ne jamais manquer l’embarquement.', en: 'Welcome at the terminal or airport, luggage handling, drop-off at the ship or pick-up on disembarkation. Guaranteed punctuality so you never miss embarkation.' }, duration: { fr: 'Transfert', en: 'Transfer' }, price: '320' },
+      { title: { fr: 'New Forest et poneys sauvages', en: 'New Forest and wild ponies' }, teaser: { fr: 'Le parc national du New Forest, ses landes, ses poneys en liberté et ses villages de chaume. Déjeuner dans un pub forestier.', en: 'The New Forest national park, its heaths, its free-roaming ponies and thatched villages. Lunch at a forest pub.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '360' },
+      { title: { fr: 'Winchester, ancienne capitale', en: 'Winchester, former capital' }, teaser: { fr: 'À 20 km, l’ancienne capitale de l’Angleterre, sa cathédrale et la tombe de Jane Austen, la Grande Salle et la table ronde. Déjeuner dans la cité.', en: '20 km away, England’s former capital, its cathedral and Jane Austen’s tomb, the Great Hall and the Round Table. Lunch in the city.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '360' },
+      { title: { fr: 'Stonehenge depuis Southampton', en: 'Stonehenge from Southampton' }, teaser: { fr: 'À 40 minutes, le cercle mégalithique et la cathédrale de Salisbury. Journée préhistoire idéale avant ou après une croisière.', en: '40 minutes away, the megalithic circle and Salisbury Cathedral. A prehistory day, ideal before or after a cruise.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Southampton et Londres', en: 'Southampton and London' }, teaser: { fr: 'Le transfert de la ville-port à la capitale, à 1h30, avec un arrêt à Winchester possible. Confort et ponctualité pour les débarquements de croisière.', en: 'The transfer from the port city to the capital, 1h30 away, with an optional stop in Winchester. Comfort and punctuality for cruise disembarkations.' }, duration: { fr: 'Transfert', en: 'Transfer' }, price: '560' },
+    ],
+    faq: [
+      { q: { fr: 'Assurez-vous les transferts pour les croisières à Southampton ?', en: 'Do you handle cruise transfers in Southampton?' }, a: { fr: 'Oui, c’est l’une de nos prestations phares. Nous assurons l’aéroport ou Londres vers les terminaux de croisière, avec accueil, gestion des bagages et ponctualité garantie pour respecter l’heure d’embarquement.', en: 'Yes, it is one of our flagship services. We handle airport or London to the cruise terminals, with welcome, luggage handling and guaranteed punctuality to meet the embarkation time.' } },
+      { q: { fr: 'Combien de temps de Heathrow à Southampton ?', en: 'How long from Heathrow to Southampton?' }, a: { fr: 'Comptez environ 1h15. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow about 1h15. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils français ?', en: 'Do your chauffeurs speak French?' }, a: { fr: 'Oui, des chauffeurs francophones et anglophones sont disponibles sur demande selon les disponibilités.', en: 'Yes, French- and English-speaking chauffeurs are available on request subject to availability.' } },
+    ],
+    nearby: ['stonehenge-salisbury', 'bath', 'london'],
+  },
+  {
+    slug: 'cardiff',
+    name: { fr: 'Cardiff', en: 'Cardiff' },
+    country: { fr: 'Royaume-Uni', en: 'United Kingdom' },
+    region: 'uk-benelux',
+    airport: 'Cardiff (CWL)',
+    airportTransfer: {
+      fr: 'L’aéroport de Cardiff (CWL) se trouve à 19 km à l’ouest du centre : comptez 25 à 35 minutes selon le trafic. Depuis Bristol (BRS), à 60 km via le pont Prince-de-Galles, comptez 50 minutes. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Cardiff Airport (CWL) lies 19 km west of the centre: allow 25 to 35 minutes depending on traffic. From Bristol (BRS), 60 km via the Prince of Wales Bridge, allow 50 minutes. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Capitale du pays de Galles au bord de la baie de Cardiff, la ville marie château néogothique, arcades victoriennes et front de mer réhabilité autour du Wales Millennium Centre. Votre **chauffeur privé à Cardiff** dessert le centre, le stade de la Principauté et les rendez-vous d’affaires : transferts aéroport, mise à disposition à l’heure, prix fixes annoncés à l’avance. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Cardiff est la **porte du sud du pays de Galles**. Les Brecon Beacons et leurs montagnes sont à une heure, le château de Caerphilly et la côte du Gower tout près, Bristol de l’autre côté de la Severn. En mise à disposition à la journée, votre chauffeur relie châteaux, vallées galloises et littoral sauvage dans le confort d’une berline privée.',
+      ],
+      en: [
+        'Capital of Wales beside Cardiff Bay, the city marries a neo-Gothic castle, Victorian arcades and a regenerated waterfront around the Wales Millennium Centre. Your **private chauffeur in Cardiff** serves the centre, the Principality Stadium and business meetings: airport transfers, hourly hire, fixed prices confirmed in advance. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Cardiff is the **gateway to South Wales**. The Brecon Beacons and their mountains are an hour away, Caerphilly Castle and the Gower coast nearby, Bristol across the Severn. With a full-day hire, your chauffeur links castles, Welsh valleys and wild coastline in the comfort of a private sedan.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Cardiff et son château', en: 'Cardiff and its castle' }, teaser: { fr: 'Le château néogothique en plein centre, les arcades victoriennes, la baie de Cardiff et le Wales Millennium Centre. Dépose devant chaque site.', en: 'The neo-Gothic castle in the heart of the centre, the Victorian arcades, Cardiff Bay and the Wales Millennium Centre. Door-to-door drop-offs.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Brecon Beacons', en: 'Brecon Beacons' }, teaser: { fr: 'Le parc national et ses sommets, les cascades de Waterfall Country, un déjeuner de village gallois. Journée nature à une heure de la capitale.', en: 'The national park and its peaks, the waterfalls of Waterfall Country, a Welsh village lunch. A nature day an hour from the capital.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Châteaux du pays de Galles', en: 'Castles of Wales' }, teaser: { fr: 'Caerphilly et ses douves, le château de Castell Coch aux allures de conte, l’histoire des princes gallois. Journée patrimoine médiéval.', en: 'Caerphilly and its moats, the fairy-tale Castell Coch, the history of the Welsh princes. A day of medieval heritage.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Presqu’île de Gower', en: 'Gower Peninsula' }, teaser: { fr: 'La première « zone de beauté naturelle exceptionnelle » du Royaume-Uni, les plages de Rhossili et de Three Cliffs Bay. Déjeuner face à la mer.', en: 'The UK’s first “Area of Outstanding Natural Beauty”, the beaches of Rhossili and Three Cliffs Bay. Lunch facing the sea.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '640' },
+      { title: { fr: 'Soirée à la baie de Cardiff', en: 'Cardiff Bay evening' }, teaser: { fr: 'Dîner sur le front de mer réhabilité, le Millennium Centre illuminé, l’ambiance animée des quais. Véhicule à disposition toute la soirée.', en: 'Dinner on the regenerated waterfront, the illuminated Millennium Centre, the lively atmosphere of the quays. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '360' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de l’aéroport de Cardiff au centre ?', en: 'How long from Cardiff Airport to the centre?' }, a: { fr: 'Comptez 25 à 35 minutes selon le trafic. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 25 to 35 minutes depending on traffic. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Proposez-vous un service les jours de match au stade de la Principauté ?', en: 'Do you offer a service on match days at the Principality Stadium?' }, a: { fr: 'Oui. Les jours de rugby ou de concert, le centre est saturé ; votre chauffeur vous dépose au plus près, vous attend et vous ramène sans les embouteillages de sortie.', en: 'Yes. On rugby or concert days the centre is congested; your chauffeur drops you as close as possible, waits and brings you back without the exit traffic.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils français ?', en: 'Do your chauffeurs speak French?' }, a: { fr: 'Oui, des chauffeurs francophones et anglophones sont disponibles sur demande selon les disponibilités.', en: 'Yes, French- and English-speaking chauffeurs are available on request subject to availability.' } },
+    ],
+    nearby: ['bristol', 'bath'],
+  },
+  {
+    slug: 'belfast',
+    name: { fr: 'Belfast', en: 'Belfast' },
+    country: { fr: 'Royaume-Uni', en: 'United Kingdom' },
+    region: 'uk-benelux',
+    airport: 'Belfast International (BFS)',
+    airportTransfer: {
+      fr: 'L’aéroport de Belfast International (BFS) se trouve à 30 km au nord-ouest du centre : comptez 30 à 40 minutes. Depuis George Best City Airport (BHD), à 5 km, comptez 15 minutes. Votre chauffeur vous accueille en salle d’arrivée, panneau nominatif en main, et suit votre vol en temps réel.',
+      en: 'Belfast International Airport (BFS) lies 30 km north-west of the centre: allow 30 to 40 minutes. From George Best City Airport (BHD), 5 km away, allow 15 minutes. Your chauffeur greets you in arrivals with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Capitale de l’Irlande du Nord et berceau du Titanic, Belfast conjugue hôtel de ville édouardien, murals d’histoire et le musée Titanic Belfast sur les anciens chantiers navals. Votre **chauffeur privé à Belfast** dessert le centre, le Titanic Quarter et les rendez-vous d’affaires : transferts aéroport, mise à disposition à l’heure, prix fixes annoncés à l’avance. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Belfast est la **porte de la côte de la Chaussée des Géants**. Le site basaltique classé UNESCO est à une heure, les lieux de tournage de Game of Thrones tout au long de l’Antrim Coast, les distilleries de whiskey de Bushmills. En mise à disposition à la journée, votre chauffeur relie côte spectaculaire, châteaux et villages de pêcheurs d’Irlande du Nord.',
+      ],
+      en: [
+        'Capital of Northern Ireland and birthplace of the Titanic, Belfast blends an Edwardian City Hall, history murals and the Titanic Belfast museum on the former shipyards. Your **private chauffeur in Belfast** serves the centre, the Titanic Quarter and business meetings: airport transfers, hourly hire, fixed prices confirmed in advance. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Belfast is the **gateway to the Giant’s Causeway coast**. The UNESCO-listed basalt site is an hour away, the Game of Thrones filming locations all along the Antrim Coast, the Bushmills whiskey distilleries. With a full-day hire, your chauffeur links spectacular coast, castles and Northern Irish fishing villages.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Chaussée des Géants', en: 'Giant’s Causeway' }, teaser: { fr: 'À une heure, les 40 000 colonnes de basalte classées UNESCO, le pont de corde de Carrick-a-Rede, les ruines de Dunluce. Journée sur la côte d’Antrim.', en: 'An hour away, the 40,000 UNESCO-listed basalt columns, the Carrick-a-Rede rope bridge, the Dunluce ruins. A day on the Antrim coast.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '640' },
+      { title: { fr: 'Titanic Quarter', en: 'Titanic Quarter' }, teaser: { fr: 'Le musée Titanic Belfast sur les chantiers d’origine, le SS Nomadic, les cales de lancement. Demi-journée maritime au cœur de la ville.', en: 'The Titanic Belfast museum on the original shipyards, the SS Nomadic, the launch slipways. A maritime half-day in the heart of the city.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Game of Thrones et l’Antrim', en: 'Game of Thrones and Antrim' }, teaser: { fr: 'Les lieux de tournage de la série — les Dark Hedges, Ballintoy, les glens d’Antrim — le long de la route côtière. Journée cinéma et paysages.', en: 'The series’ filming locations — the Dark Hedges, Ballintoy, the Glens of Antrim — along the coastal road. A day of cinema and landscapes.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '640' },
+      { title: { fr: 'Belfast politique et murals', en: 'Political Belfast and murals' }, teaser: { fr: 'Les murals de Falls Road et Shankill, le mur de la Paix, l’hôtel de ville édouardien. Demi-journée d’histoire contemporaine, chauffeur en attente.', en: 'The Falls Road and Shankill murals, the Peace Wall, the Edwardian City Hall. A half-day of contemporary history, chauffeur on standby.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Distilleries et Bushmills', en: 'Distilleries and Bushmills' }, teaser: { fr: 'La plus vieille distillerie de whiskey au monde à Bushmills, une dégustation, la côte de la Chaussée en toile de fond. Journée terroir et paysages.', en: 'The world’s oldest whiskey distillery at Bushmills, a tasting, the Causeway coast in the background. A day of produce and landscapes.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de l’aéroport de Belfast au centre ?', en: 'How long from Belfast Airport to the centre?' }, a: { fr: 'Comptez 30 à 40 minutes depuis Belfast International (BFS) et 15 minutes depuis George Best City (BHD). Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes.', en: 'Allow 30 to 40 minutes from Belfast International (BFS) and 15 minutes from George Best City (BHD). The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time.' } },
+      { q: { fr: 'Peut-on faire la Chaussée des Géants à la journée depuis Belfast ?', en: 'Can you do the Giant’s Causeway as a day trip from Belfast?' }, a: { fr: 'Oui. Le site est à une heure de Belfast. En mise à disposition à la journée, votre chauffeur combine la côte d’Antrim, la Chaussée des Géants et les lieux de tournage de Game of Thrones, à prix fixe.', en: 'Yes. The site is an hour from Belfast. With a full-day hire, your chauffeur combines the Antrim coast, the Giant’s Causeway and the Game of Thrones locations, at a fixed price.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils français ?', en: 'Do your chauffeurs speak French?' }, a: { fr: 'Oui, des chauffeurs francophones et anglophones sont disponibles sur demande selon les disponibilités.', en: 'Yes, French- and English-speaking chauffeurs are available on request subject to availability.' } },
+    ],
+    nearby: ['dublin'],
+  },
 ];
