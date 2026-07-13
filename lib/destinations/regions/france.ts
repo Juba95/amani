@@ -3153,4 +3153,446 @@ export const CITIES: Destination[] = [
     ],
     nearby: ['clermont-ferrand'],
   },
+  {
+    slug: 'caen',
+    name: { fr: 'Caen', en: 'Caen' },
+    country: { fr: 'France', en: 'France' },
+    region: 'france',
+    airport: 'Caen-Carpiquet (CFR)',
+    airportTransfer: {
+      fr: 'L’aéroport de Caen-Carpiquet (CFR) se trouve à 8 km à l’ouest du centre : comptez 15 minutes. Depuis Paris-Charles de Gaulle (CDG), à 230 km, comptez 2h30. Votre chauffeur vous accueille en salle d’arrivée avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Caen-Carpiquet Airport (CFR) lies 8 km west of the centre: allow 15 minutes. From Paris-Charles de Gaulle (CDG), 230 km away, allow 2h30. Your chauffeur greets you in arrivals with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Cité de Guillaume le Conquérant, Caen conserve deux abbayes romanes, un château ducal et le Mémorial dédié à la paix, capitale de la Basse-Normandie reconstruite après 1944. Votre **chauffeur privé à Caen** dessert le centre, le port de Ouistreham et les rendez-vous d’affaires : transferts depuis l’aéroport ou le ferry, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Caen est la porte des **plages du Débarquement**. Les plages du 6 juin — Sword, Juno, Gold, Omaha — le cimetière américain de Colleville et les batteries s’égrènent sur la côte à une demi-heure. En mise à disposition à la journée, votre chauffeur relie sites de mémoire, abbayes et campagne normande dans le recueillement et le confort d’une berline privée.',
+      ],
+      en: [
+        'City of William the Conqueror, Caen preserves two Romanesque abbeys, a ducal castle and the Memorial dedicated to peace, capital of Lower Normandy rebuilt after 1944. Your **private chauffeur in Caen** serves the centre, the port of Ouistreham and business meetings: transfers from the airport or the ferry, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Caen is the gateway to the **D-Day beaches**. The 6 June beaches — Sword, Juno, Gold, Omaha — the Colleville American cemetery and the batteries string along the coast half an hour away. With a full-day hire, your chauffeur links memorial sites, abbeys and Norman countryside in reflection and the comfort of a private sedan.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Plages du Débarquement', en: 'D-Day beaches' }, teaser: { fr: 'Omaha Beach et le cimetière américain, la pointe du Hoc, Arromanches et son port artificiel. Journée de mémoire sur les lieux du 6 juin 1944.', en: 'Omaha Beach and the American cemetery, the Pointe du Hoc, Arromanches and its artificial harbour. A day of remembrance on the sites of 6 June 1944.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Caen de Guillaume', en: 'William’s Caen' }, teaser: { fr: 'Le château ducal, l’Abbaye aux Hommes et l’Abbaye aux Dames, le Mémorial pour la Paix. Dépose au centre, promenade dans la cité normande.', en: 'The ducal castle, the Abbaye aux Hommes and the Abbaye aux Dames, the Memorial for Peace. Drop-off in the centre, a stroll through the Norman city.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Bayeux et sa tapisserie', en: 'Bayeux and its tapestry' }, teaser: { fr: 'À 30 km, la célèbre tapisserie de la conquête de l’Angleterre, la cathédrale et la première ville libérée. Journée patrimoine médiéval.', en: '30 km away, the famous tapestry of the conquest of England, the cathedral and the first liberated town. A day of medieval heritage.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Côte de Nacre et Honfleur', en: 'Côte de Nacre and Honfleur' }, teaser: { fr: 'Les stations de la côte, Cabourg et Deauville, le vieux bassin de Honfleur cher aux peintres. Journée bord de mer et villégiature normande.', en: 'The coastal resorts, Cabourg and Deauville, the old dock of Honfleur dear to painters. A day of seaside and Norman resorts.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Soirée caennaise', en: 'Caen evening' }, teaser: { fr: 'Dîner dans le quartier du Vaugueux, le château illuminé, une spécialité de tripes à la mode de Caen. Véhicule à disposition toute la soirée.', en: 'Dinner in the Vaugueux quarter, the illuminated castle, a speciality of tripes à la mode de Caen. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Peut-on visiter les plages du Débarquement avec un chauffeur ?', en: 'Can you visit the D-Day beaches with a chauffeur?' }, a: { fr: 'Oui, c’est la formule la plus demandée à Caen. Votre chauffeur vous conduit d’Omaha à la pointe du Hoc et Arromanches, à votre rythme, sur une journée à prix fixe.', en: 'Yes, it is the most requested option in Caen. Your chauffeur drives you from Omaha to the Pointe du Hoc and Arromanches, at your pace, over a fixed-price day.' } },
+      { q: { fr: 'Combien de temps de l’aéroport de Caen au centre ?', en: 'How long from Caen Airport to the centre?' }, a: { fr: 'Comptez 15 minutes. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 15 minutes. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['bayeux', 'honfleur', 'rouen'],
+  },
+  {
+    slug: 'rouen',
+    name: { fr: 'Rouen', en: 'Rouen' },
+    country: { fr: 'France', en: 'France' },
+    region: 'france',
+    airport: 'Paris-Charles de Gaulle (CDG)',
+    airportTransfer: {
+      fr: 'L’aéroport de Paris-Charles de Gaulle (CDG) se trouve à 130 km à l’est de Rouen : comptez 1h30 par l’autoroute A13. Depuis Paris-Beauvais, à 90 km, comptez 1h15. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Paris-Charles de Gaulle Airport (CDG) lies 130 km east of Rouen: allow 1h30 via the A13 motorway. From Paris-Beauvais, 90 km away, allow 1h15. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Capitale historique de la Normandie, Rouen déploie une forêt de flèches gothiques, la cathédrale peinte par Monet, le Gros-Horloge et la place où périt Jeanne d’Arc. Votre **chauffeur privé à Rouen** dessert le centre médiéval piéton, le port sur la Seine et les rendez-vous d’affaires : transferts depuis Paris, mise à disposition à l’heure, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Rouen commande la **vallée de la Seine impressionniste**. Les boucles du fleuve, l’abbaye de Jumièges, Giverny et le jardin de Monet, la côte d’Albâtre sont à portée. En mise à disposition à la journée, votre chauffeur relie abbayes, jardins de peintres et falaises pendant que vous suivez les pas des impressionnistes sans souci de conduite.',
+      ],
+      en: [
+        'Historic capital of Normandy, Rouen unfolds a forest of Gothic spires, the cathedral painted by Monet, the Gros-Horloge and the square where Joan of Arc perished. Your **private chauffeur in Rouen** serves the pedestrian medieval centre, the port on the Seine and business meetings: transfers from Paris, hourly hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Rouen commands the **Impressionist Seine valley**. The river’s bends, the Jumièges abbey, Giverny and Monet’s garden, the Alabaster Coast are within reach. With a full-day hire, your chauffeur links abbeys, painters’ gardens and cliffs while you follow in the Impressionists’ footsteps with no driving worry.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Rouen médiéval', en: 'Medieval Rouen' }, teaser: { fr: 'La cathédrale et ses façades peintes par Monet, le Gros-Horloge, l’aître Saint-Maclou, la place du Vieux-Marché. Dépose au centre, promenade dans la ville aux cent clochers.', en: 'The cathedral and its façades painted by Monet, the Gros-Horloge, the Aître Saint-Maclou, the Place du Vieux-Marché. Drop-off in the centre, a stroll through the city of a hundred spires.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Giverny et Monet', en: 'Giverny and Monet' }, teaser: { fr: 'La maison et les jardins de Claude Monet, le bassin aux nymphéas, le pont japonais. Journée impressionniste à une heure de Rouen.', en: 'Claude Monet’s house and gardens, the water-lily pond, the Japanese bridge. An Impressionist day an hour from Rouen.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Abbayes de la Seine', en: 'Seine abbeys' }, teaser: { fr: 'La route des abbayes le long des boucles de la Seine, Jumièges et Saint-Wandrille, les villages du parc régional. Journée patrimoine et nature.', en: 'The abbey route along the Seine’s bends, Jumièges and Saint-Wandrille, the villages of the regional park. A day of heritage and nature.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Étretat et la côte d’Albâtre', en: 'Étretat and the Alabaster Coast' }, teaser: { fr: 'Les falaises et l’aiguille d’Étretat, les arches immortalisées par les peintres, la côte crayeuse. Journée nature et paysages spectaculaires.', en: 'The cliffs and the needle of Étretat, the arches immortalised by painters, the chalk coast. A day of nature and spectacular landscapes.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Soirée rouennaise', en: 'Rouen evening' }, teaser: { fr: 'Dîner dans une maison à pans de bois, la cathédrale illuminée, un verre de cidre ou de calvados. Véhicule à disposition toute la soirée.', en: 'Dinner in a half-timbered house, the illuminated cathedral, a glass of cider or calvados. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de Paris à Rouen ?', en: 'How long from Paris to Rouen?' }, a: { fr: 'Comptez 1h30 par l’A13. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 1h30 via the A13. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Peut-on visiter Giverny depuis Rouen ?', en: 'Can you visit Giverny from Rouen?' }, a: { fr: 'Oui, Giverny est à une heure. En mise à disposition à la journée, votre chauffeur vous conduit aux jardins de Monet et combine avec les abbayes de la Seine, à prix fixe.', en: 'Yes, Giverny is an hour away. With a full-day hire, your chauffeur drives you to Monet’s gardens and combines with the Seine abbeys, at a fixed price.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['le-havre', 'etretat', 'honfleur'],
+  },
+  {
+    slug: 'le-havre',
+    name: { fr: 'Le Havre', en: 'Le Havre' },
+    country: { fr: 'France', en: 'France' },
+    region: 'france',
+    airport: 'Paris-Charles de Gaulle (CDG)',
+    airportTransfer: {
+      fr: 'L’aéroport de Paris-Charles de Gaulle (CDG) se trouve à 200 km à l’est du Havre : comptez 2h15 par l’autoroute A13. Depuis Deauville-Normandie (DOL), à 45 km via le pont de Normandie, comptez 40 minutes. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Paris-Charles de Gaulle Airport (CDG) lies 200 km east of Le Havre: allow 2h15 via the A13 motorway. From Deauville-Normandie (DOL), 45 km away via the Pont de Normandie, allow 40 minutes. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Reconstruite par Auguste Perret après 1945, la ville-centre du Havre est un chef-d’œuvre du béton classé UNESCO, ouvert sur le plus grand port de commerce de la façade atlantique. Votre **chauffeur privé au Havre** dessert le centre, le terminal de croisière et les rendez-vous d’affaires portuaires : transferts et accueil des escales, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Le Havre est un **point d’entrée sur la Normandie**. Honfleur et son vieux bassin sont de l’autre côté du pont de Normandie, Étretat et ses falaises au nord, la côte fleurie et Deauville à proximité. En mise à disposition à la journée, votre chauffeur relie villes de peintres, falaises et stations balnéaires, ou assure les excursions pour les escales de croisière.',
+      ],
+      en: [
+        'Rebuilt by Auguste Perret after 1945, Le Havre’s city centre is a masterpiece of concrete, UNESCO-listed, open onto the largest commercial port of the Atlantic seaboard. Your **private chauffeur in Le Havre** serves the centre, the cruise terminal and port business meetings: transfers and cruise-call welcomes, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Le Havre is an **entry point to Normandy**. Honfleur and its old dock are across the Pont de Normandie, Étretat and its cliffs to the north, the Côte Fleurie and Deauville nearby. With a full-day hire, your chauffeur links painters’ towns, cliffs and seaside resorts, or handles excursions for cruise calls.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Le Havre de Perret', en: 'Perret’s Le Havre' }, teaser: { fr: 'La ville reconstruite classée UNESCO, l’église Saint-Joseph et sa tour-lanterne, le musée Malraux et ses impressionnistes. Dépose au centre, promenade architecturale.', en: 'The UNESCO-listed rebuilt city, the Saint-Joseph church and its lantern tower, the Malraux museum and its Impressionists. Drop-off in the centre, an architectural stroll.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Honfleur et la côte fleurie', en: 'Honfleur and the Côte Fleurie' }, teaser: { fr: 'Le pont de Normandie, le vieux bassin de Honfleur, Deauville et Trouville. Journée bord de mer et villégiature de l’autre côté de l’estuaire.', en: 'The Pont de Normandie, the old dock of Honfleur, Deauville and Trouville. A day of seaside and resorts across the estuary.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Étretat et la côte d’Albâtre', en: 'Étretat and the Alabaster Coast' }, teaser: { fr: 'Les falaises et l’aiguille d’Étretat, les jardins suspendus, la côte crayeuse. Journée nature au nord du Havre, arrêts photo légendaires.', en: 'The cliffs and needle of Étretat, the hanging gardens, the chalk coast. A nature day north of Le Havre, legendary photo stops.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Escale de croisière', en: 'Cruise call' }, teaser: { fr: 'Accueil au terminal, excursion vers Honfleur, Étretat ou Paris et retour à quai dans les temps du navire. Escale optimisée sans stress.', en: 'Welcome at the terminal, an excursion to Honfleur, Étretat or Paris and return to the quay on the ship’s schedule. An optimised call with no stress.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Soirée havraise', en: 'Le Havre evening' }, teaser: { fr: 'Dîner de poisson face au port de plaisance, la plage et sa promenade, le centre lumineux de Perret. Véhicule à disposition toute la soirée.', en: 'A seafood dinner facing the marina, the beach and its promenade, Perret’s luminous centre. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Assurez-vous les excursions pour les escales de croisière au Havre ?', en: 'Do you handle cruise-call excursions in Le Havre?' }, a: { fr: 'Oui. Nous organisons l’accueil au terminal et les excursions vers Honfleur, Étretat, Rouen ou Paris, avec retour à quai dans les temps du navire et chauffeur en attente tout au long de l’escale.', en: 'Yes. We arrange the terminal welcome and excursions to Honfleur, Étretat, Rouen or Paris, with return to the quay on the ship’s schedule and the chauffeur on standby throughout the call.' } },
+      { q: { fr: 'Combien de temps du Havre à Honfleur ?', en: 'How long from Le Havre to Honfleur?' }, a: { fr: 'Comptez 30 minutes par le pont de Normandie. Le transfert privé est à prix fixe, avec accueil et suivi de votre horaire.', en: 'Allow 30 minutes via the Pont de Normandie. The private transfer is at a fixed price, with a meet-and-greet and schedule tracking.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['honfleur', 'etretat', 'rouen'],
+  },
+  {
+    slug: 'honfleur',
+    name: { fr: 'Honfleur', en: 'Honfleur' },
+    country: { fr: 'France', en: 'France' },
+    region: 'france',
+    airport: 'Deauville-Normandie (DOL)',
+    airportTransfer: {
+      fr: 'L’aéroport de Deauville-Normandie (DOL) se trouve à 15 km à l’ouest de Honfleur : comptez 15 minutes. Depuis Le Havre, à 25 km via le pont de Normandie, comptez 25 minutes. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Deauville-Normandie Airport (DOL) lies 15 km west of Honfleur: allow 15 minutes. From Le Havre, 25 km away via the Pont de Normandie, allow 25 minutes. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Petit port pittoresque de l’estuaire de la Seine, Honfleur a séduit les peintres impressionnistes avec son Vieux Bassin, ses maisons à ardoises et son église de bois Sainte-Catherine. Votre **chauffeur privé à Honfleur** dessert le centre piéton, les hôtels de charme et les rendez-vous : transferts depuis Deauville ou Le Havre, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Honfleur est le cœur de la **côte fleurie**. Deauville et Trouville et leurs planches sont à quinze minutes, le pays d’Auge et ses manoirs à colombages à l’intérieur, les plages du Débarquement à l’ouest. En mise à disposition à la journée, votre chauffeur relie ports de peintres, stations chics et campagne cidricole dans le confort d’une berline privée.',
+      ],
+      en: [
+        'A picturesque little port on the Seine estuary, Honfleur charmed the Impressionist painters with its Vieux Bassin, its slate-clad houses and its wooden Sainte-Catherine church. Your **private chauffeur in Honfleur** serves the pedestrian centre, the boutique hotels and meetings: transfers from Deauville or Le Havre, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Honfleur is the heart of the **Côte Fleurie**. Deauville and Trouville and their boardwalks are fifteen minutes away, the Pays d’Auge and its half-timbered manors inland, the D-Day beaches to the west. With a full-day hire, your chauffeur links painters’ ports, chic resorts and cider countryside in the comfort of a private sedan.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Honfleur et le Vieux Bassin', en: 'Honfleur and the Vieux Bassin' }, teaser: { fr: 'Le Vieux Bassin et ses maisons hautes, l’église de bois Sainte-Catherine, les ruelles chères aux peintres. Dépose au plus près, promenade dans le port impressionniste.', en: 'The Vieux Bassin and its tall houses, the wooden Sainte-Catherine church, the lanes dear to painters. Drop-off nearby, a stroll through the Impressionist port.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Deauville et la côte fleurie', en: 'Deauville and the Côte Fleurie' }, teaser: { fr: 'Les planches de Deauville, les villas de Trouville, le casino et l’hippodrome. Journée villégiature chic sur la côte normande.', en: 'The Deauville boardwalk, the Trouville villas, the casino and the racecourse. A day of chic resorts on the Norman coast.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Pays d’Auge et route du cidre', en: 'Pays d’Auge and cider route' }, teaser: { fr: 'Les manoirs à colombages, les fermes cidricoles et calvados, le village de Beuvron-en-Auge. Journée terroir et traditions dans l’arrière-pays.', en: 'The half-timbered manors, the cider and calvados farms, the village of Beuvron-en-Auge. A day of produce and traditions inland.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Étretat depuis Honfleur', en: 'Étretat from Honfleur' }, teaser: { fr: 'Le pont de Normandie, les falaises et l’aiguille d’Étretat, la côte d’Albâtre. Journée nature et paysages de l’autre côté de l’estuaire.', en: 'The Pont de Normandie, the cliffs and needle of Étretat, the Alabaster Coast. A day of nature and landscapes across the estuary.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Soirée à Honfleur', en: 'Evening in Honfleur' }, teaser: { fr: 'Dîner de fruits de mer sur le Vieux Bassin, les façades illuminées se reflétant dans l’eau, un verre de calvados. Véhicule à disposition.', en: 'A seafood dinner on the Vieux Bassin, the illuminated façades reflected in the water, a glass of calvados. Vehicle on standby.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de l’aéroport de Deauville à Honfleur ?', en: 'How long from Deauville Airport to Honfleur?' }, a: { fr: 'Comptez 15 minutes. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 15 minutes. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Peut-on combiner Honfleur et Deauville dans la journée ?', en: 'Can Honfleur and Deauville be combined in one day?' }, a: { fr: 'Oui, les deux sont à quinze minutes. En mise à disposition à la journée, votre chauffeur relie le Vieux Bassin, les planches de Deauville et le pays d’Auge, à prix fixe.', en: 'Yes, the two are fifteen minutes apart. With a full-day hire, your chauffeur links the Vieux Bassin, the Deauville boardwalk and the Pays d’Auge, at a fixed price.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['le-havre', 'rouen', 'caen'],
+  },
+  {
+    slug: 'etretat',
+    name: { fr: 'Étretat', en: 'Étretat' },
+    country: { fr: 'France', en: 'France' },
+    region: 'france',
+    airport: 'Le Havre-Octeville (LEH)',
+    airportTransfer: {
+      fr: 'L’aéroport du Havre-Octeville (LEH) se trouve à 30 km au sud d’Étretat : comptez 30 minutes. Depuis Paris-Charles de Gaulle (CDG), à 200 km, comptez 2h30. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Le Havre-Octeville Airport (LEH) lies 30 km south of Étretat: allow 30 minutes. From Paris-Charles de Gaulle (CDG), 200 km away, allow 2h30. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Perle de la côte d’Albâtre, Étretat dresse ses falaises de craie, ses arches et son Aiguille, paysage immortalisé par Monet, Courbet et Maupassant. Votre **chauffeur privé à Étretat** dessert le village, les jardins suspendus et les hôtels : transferts depuis Le Havre ou Paris, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Étretat est le joyau de la **côte d’Albâtre**. Les autres stations crayeuses — Fécamp et son palais Bénédictine, Yport — jalonnent la côte, Honfleur et Le Havre sont au sud. En mise à disposition à la journée, votre chauffeur relie falaises, villages de pêcheurs et ports de peintres pendant que vous profitez de l’un des plus beaux littoraux de France.',
+      ],
+      en: [
+        'Pearl of the Alabaster Coast, Étretat raises its chalk cliffs, its arches and its Needle, a landscape immortalised by Monet, Courbet and Maupassant. Your **private chauffeur in Étretat** serves the village, the hanging gardens and the hotels: transfers from Le Havre or Paris, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Étretat is the jewel of the **Alabaster Coast**. The other chalk resorts — Fécamp and its Bénédictine palace, Yport — dot the coast, Honfleur and Le Havre lie to the south. With a full-day hire, your chauffeur links cliffs, fishing villages and painters’ ports while you enjoy one of France’s finest coastlines.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Falaises et Aiguille d’Étretat', en: 'Étretat cliffs and Needle' }, teaser: { fr: 'La falaise d’Aval et son arche, l’Aiguille, la falaise d’Amont et la chapelle, les jardins suspendus. Dépose au village, promenade sur les sentiers du littoral.', en: 'The Aval cliff and its arch, the Needle, the Amont cliff and the chapel, the hanging gardens. Drop-off in the village, a walk on the coastal paths.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Fécamp et la Bénédictine', en: 'Fécamp and the Bénédictine' }, teaser: { fr: 'Le palais Bénédictine et sa liqueur, l’abbaye de la Trinité, le port de pêche. Journée patrimoine et gastronomie sur la côte d’Albâtre.', en: 'The Bénédictine palace and its liqueur, the Trinité abbey, the fishing port. A day of heritage and gastronomy on the Alabaster Coast.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Honfleur depuis Étretat', en: 'Honfleur from Étretat' }, teaser: { fr: 'Le pont de Normandie, le vieux bassin de Honfleur, la côte fleurie. Journée ports de peintres au sud de l’estuaire.', en: 'The Pont de Normandie, the old dock of Honfleur, the Côte Fleurie. A day of painters’ ports south of the estuary.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Côte d’Albâtre panoramique', en: 'Panoramic Alabaster Coast' }, teaser: { fr: 'Les villages crayeux, Yport et Veules-les-Roses parmi les plus beaux de France, les valleuses. Journée nature et villages au fil des falaises.', en: 'The chalk villages, Yport and Veules-les-Roses among France’s finest, the valleuses. A day of nature and villages along the cliffs.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Soirée à Étretat', en: 'Evening in Étretat' }, teaser: { fr: 'Dîner face à la mer, les falaises rougies par le couchant, le calme du village hors saison. Véhicule à disposition toute la soirée.', en: 'Dinner facing the sea, the cliffs reddened by the sunset, the calm of the off-season village. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps du Havre à Étretat ?', en: 'How long from Le Havre to Étretat?' }, a: { fr: 'Comptez 30 minutes. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 30 minutes. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Peut-on venir à Étretat à la journée depuis Paris ?', en: 'Can you come to Étretat as a day trip from Paris?' }, a: { fr: 'Oui, Étretat est à 2h30 de Paris. En mise à disposition à la journée, votre chauffeur vous conduit aux falaises, combine avec Honfleur ou Rouen et vous ramène le soir, à prix fixe.', en: 'Yes, Étretat is 2h30 from Paris. With a full-day hire, your chauffeur drives you to the cliffs, combines with Honfleur or Rouen and brings you back in the evening, at a fixed price.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['le-havre', 'honfleur', 'rouen'],
+  },
+  {
+    slug: 'bayeux',
+    name: { fr: 'Bayeux', en: 'Bayeux' },
+    country: { fr: 'France', en: 'France' },
+    region: 'france',
+    airport: 'Caen-Carpiquet (CFR)',
+    airportTransfer: {
+      fr: 'L’aéroport de Caen-Carpiquet (CFR) se trouve à 30 km à l’est de Bayeux : comptez 30 minutes. Depuis Paris-Charles de Gaulle (CDG), à 260 km, comptez 2h45. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Caen-Carpiquet Airport (CFR) lies 30 km east of Bayeux: allow 30 minutes. From Paris-Charles de Gaulle (CDG), 260 km away, allow 2h45. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Première ville libérée de France, épargnée par les bombardements, Bayeux conserve sa cathédrale gothique, son centre médiéval intact et la célèbre tapisserie racontant la conquête de l’Angleterre. Votre **chauffeur privé à Bayeux** dessert le centre historique et les sites de mémoire : transferts depuis Caen, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Bayeux est la porte des **plages du Débarquement**. Omaha Beach et le cimetière américain de Colleville sont à quinze minutes, la pointe du Hoc et Arromanches tout proches, les cimetières militaires britanniques et allemands aux alentours. En mise à disposition à la journée, votre chauffeur relie sites de mémoire, cathédrale et campagne du Bessin dans le recueillement et le confort.',
+      ],
+      en: [
+        'The first liberated town in France, spared from bombing, Bayeux preserves its Gothic cathedral, its intact medieval centre and the famous tapestry recounting the conquest of England. Your **private chauffeur in Bayeux** serves the historic centre and the memorial sites: transfers from Caen, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Bayeux is the gateway to the **D-Day beaches**. Omaha Beach and the Colleville American cemetery are fifteen minutes away, the Pointe du Hoc and Arromanches nearby, the British and German war cemeteries around. With a full-day hire, your chauffeur links memorial sites, cathedral and Bessin countryside in reflection and comfort.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Plages du Débarquement', en: 'D-Day beaches' }, teaser: { fr: 'Omaha Beach et le cimetière américain, la pointe du Hoc, Arromanches et son port artificiel. Journée de mémoire au départ de la première ville libérée.', en: 'Omaha Beach and the American cemetery, the Pointe du Hoc, Arromanches and its artificial harbour. A day of remembrance from the first liberated town.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Bayeux et sa tapisserie', en: 'Bayeux and its tapestry' }, teaser: { fr: 'La tapisserie de la reine Mathilde, la cathédrale gothique, le centre médiéval intact et le moulin. Dépose au centre, promenade dans la ville épargnée.', en: 'Queen Matilda’s tapestry, the Gothic cathedral, the intact medieval centre and the mill. Drop-off in the centre, a stroll through the spared town.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Mont-Saint-Michel depuis Bayeux', en: 'Mont-Saint-Michel from Bayeux' }, teaser: { fr: 'À 1h30, l’abbaye dressée dans sa baie, la merveille de l’Occident, les remparts. Journée patrimoine dans l’un des sites les plus visités de France.', en: '1h30 away, the abbey rising in its bay, the Wonder of the West, the ramparts. A heritage day at one of France’s most visited sites.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Côte et campagne du Bessin', en: 'Bessin coast and countryside' }, teaser: { fr: 'Le port de Port-en-Bessin, les falaises, les manoirs et fermes du bocage normand. Journée nature et terroir dans l’arrière-pays.', en: 'The port of Port-en-Bessin, the cliffs, the manors and farms of the Norman bocage. A day of nature and produce inland.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '540' },
+      { title: { fr: 'Soirée à Bayeux', en: 'Evening in Bayeux' }, teaser: { fr: 'Dîner dans le centre médiéval, la cathédrale illuminée, un verre de cidre du Bessin. Véhicule à disposition toute la soirée.', en: 'Dinner in the medieval centre, the illuminated cathedral, a glass of Bessin cider. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Bayeux est-elle une bonne base pour les plages du Débarquement ?', en: 'Is Bayeux a good base for the D-Day beaches?' }, a: { fr: 'Oui, c’est la base idéale : Omaha et le cimetière américain sont à quinze minutes. Votre chauffeur vous conduit sur tous les sites à votre rythme, sur une journée à prix fixe.', en: 'Yes, it is the ideal base: Omaha and the American cemetery are fifteen minutes away. Your chauffeur drives you to all the sites at your pace, over a fixed-price day.' } },
+      { q: { fr: 'Combien de temps de Caen à Bayeux ?', en: 'How long from Caen to Bayeux?' }, a: { fr: 'Comptez 30 minutes. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 30 minutes. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['caen', 'mont-saint-michel-ville', 'honfleur'],
+  },
+  {
+    slug: 'mont-saint-michel-ville',
+    name: { fr: 'Mont-Saint-Michel', en: 'Mont-Saint-Michel' },
+    country: { fr: 'France', en: 'France' },
+    region: 'france',
+    airport: 'Rennes-Saint-Jacques (RNS)',
+    airportTransfer: {
+      fr: 'L’aéroport de Rennes-Saint-Jacques (RNS) se trouve à 65 km au sud du Mont-Saint-Michel : comptez 1h. Depuis Caen (CFR), à 130 km, comptez 1h30. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Rennes-Saint-Jacques Airport (RNS) lies 65 km south of Mont-Saint-Michel: allow 1h. From Caen (CFR), 130 km away, allow 1h30. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Merveille de l’Occident dressée sur son rocher dans une immense baie aux plus grandes marées d’Europe, le Mont-Saint-Michel et son abbaye millénaire figurent parmi les sites les plus visités de France, classés UNESCO. Votre **chauffeur privé au Mont-Saint-Michel** dessert le barrage et la navette, les hôtels de la baie et les rendez-vous : transferts depuis Rennes ou Caen, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Le Mont est au carrefour de la **Normandie et de la Bretagne**. Saint-Malo et sa cité corsaire sont à 50 km, Cancale et ses huîtres tout proches, Avranches et la baie côté normand. En mise à disposition à la journée, votre chauffeur relie l’abbaye, les cités bretonnes et les rivages de la baie pendant que vous découvrez ce chef-d’œuvre sans souci de stationnement.',
+      ],
+      en: [
+        'Wonder of the West rising on its rock in a vast bay with Europe’s greatest tides, Mont-Saint-Michel and its thousand-year-old abbey rank among France’s most visited sites, UNESCO-listed. Your **private chauffeur at Mont-Saint-Michel** serves the dam and the shuttle, the bay hotels and meetings: transfers from Rennes or Caen, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'The Mont is at the crossroads of **Normandy and Brittany**. Saint-Malo and its corsair city are 50 km away, Cancale and its oysters nearby, Avranches and the bay on the Norman side. With a full-day hire, your chauffeur links the abbey, the Breton cities and the bay shores while you discover this masterpiece with no parking worry.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Abbaye du Mont-Saint-Michel', en: 'Mont-Saint-Michel abbey' }, teaser: { fr: 'Dépose au barrage, la navette ou la traversée à pied vers le Mont, l’abbaye, les remparts et la baie. Demi-journée dans la merveille de l’Occident.', en: 'Drop-off at the dam, the shuttle or the walk across to the Mont, the abbey, the ramparts and the bay. A half-day in the Wonder of the West.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '360' },
+      { title: { fr: 'Saint-Malo et Cancale', en: 'Saint-Malo and Cancale' }, teaser: { fr: 'À 50 km, la cité corsaire de Saint-Malo et ses remparts, Cancale et ses huîtres, la côte d’Émeraude. Journée cités bretonnes et fruits de mer.', en: '50 km away, the corsair city of Saint-Malo and its ramparts, Cancale and its oysters, the Emerald Coast. A day of Breton cities and seafood.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Traversée de la baie', en: 'Crossing the bay' }, teaser: { fr: 'La traversée guidée des grèves à pied, les sables mouvants et les marées, le Mont vu du large. Journée nature et sensations dans la baie.', en: 'The guided walk across the sands, the quicksand and the tides, the Mont seen from afar. A day of nature and thrills in the bay.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Saint-Malo et la côte d’Émeraude', en: 'Saint-Malo and the Emerald Coast' }, teaser: { fr: 'Dinard et ses villas Belle Époque, la pointe du Grouin, les plages de la côte d’Émeraude. Journée bord de mer côté breton.', en: 'Dinard and its Belle Époque villas, the Pointe du Grouin, the Emerald Coast beaches. A seaside day on the Breton side.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Le Mont au crépuscule', en: 'The Mont at dusk' }, teaser: { fr: 'La visite en fin de journée quand les cars sont partis, l’abbaye illuminée, un dîner d’agneau de pré-salé dans la baie. Véhicule à disposition.', en: 'A late-day visit once the coaches have left, the illuminated abbey, a salt-marsh lamb dinner in the bay. Vehicle on standby.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '400' },
+    ],
+    faq: [
+      { q: { fr: 'Comment accède-t-on au Mont-Saint-Michel avec un chauffeur ?', en: 'How do you reach Mont-Saint-Michel with a chauffeur?' }, a: { fr: 'Votre chauffeur vous dépose au barrage, d’où une navette gratuite ou une marche de 45 minutes mène au Mont, la circulation étant interdite sur le site. Il vous attend et vous reprend à l’heure convenue, à prix fixe.', en: 'Your chauffeur drops you at the dam, from where a free shuttle or a 45-minute walk leads to the Mont, as traffic is banned on the site. He waits and picks you up at the agreed time, at a fixed price.' } },
+      { q: { fr: 'Peut-on combiner le Mont et Saint-Malo dans la journée ?', en: 'Can the Mont and Saint-Malo be combined in one day?' }, a: { fr: 'Oui, Saint-Malo est à 50 km. En mise à disposition à la journée, votre chauffeur relie l’abbaye, la cité corsaire et Cancale, à prix fixe.', en: 'Yes, Saint-Malo is 50 km away. With a full-day hire, your chauffeur links the abbey, the corsair city and Cancale, at a fixed price.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['saint-malo', 'dinard', 'rennes'],
+  },
+  {
+    slug: 'saint-malo',
+    name: { fr: 'Saint-Malo', en: 'Saint-Malo' },
+    country: { fr: 'France', en: 'France' },
+    region: 'france',
+    airport: 'Dinard-Pleurtuit-Saint-Malo (DNR)',
+    airportTransfer: {
+      fr: 'L’aéroport de Dinard-Pleurtuit-Saint-Malo (DNR) se trouve à 15 km à l’ouest de Saint-Malo : comptez 20 minutes. Depuis Rennes (RNS), à 70 km au sud, comptez 1h. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Dinard-Pleurtuit-Saint-Malo Airport (DNR) lies 15 km west of Saint-Malo: allow 20 minutes. From Rennes (RNS), 70 km south, allow 1h. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Cité corsaire ceinte de remparts face à la Manche, Saint-Malo dresse ses hautes maisons de granit derrière ses murailles, patrie de Chateaubriand et des grands navigateurs. Votre **chauffeur privé à Saint-Malo** dessert la ville intra-muros, le port et les hôtels du front de mer : transferts depuis Dinard ou Rennes, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Saint-Malo commande la **côte d’Émeraude**. Dinard et ses villas Belle Époque sont de l’autre côté de la Rance, Cancale et ses parcs à huîtres à l’est, le Mont-Saint-Michel à 50 km. En mise à disposition à la journée, votre chauffeur relie cités corsaires, stations balnéaires et l’abbaye de la baie pendant que vous profitez du littoral breton.',
+      ],
+      en: [
+        'A corsair city ringed by ramparts facing the Channel, Saint-Malo raises its tall granite houses behind its walls, home of Chateaubriand and the great navigators. Your **private chauffeur in Saint-Malo** serves the intra-muros town, the port and the seafront hotels: transfers from Dinard or Rennes, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Saint-Malo commands the **Emerald Coast**. Dinard and its Belle Époque villas are across the Rance, Cancale and its oyster beds to the east, Mont-Saint-Michel 50 km away. With a full-day hire, your chauffeur links corsair cities, seaside resorts and the bay abbey while you enjoy the Breton coast.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Saint-Malo intra-muros', en: 'Saint-Malo intra-muros' }, teaser: { fr: 'Le tour des remparts, la cité corsaire, le tombeau de Chateaubriand au Grand Bé à marée basse, le fort National. Dépose aux portes, promenade dans la cité de granit.', en: 'The rampart walk, the corsair city, Chateaubriand’s tomb at the Grand Bé at low tide, the Fort National. Drop-off at the gates, a stroll through the granite city.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Cancale et la côte d’Émeraude', en: 'Cancale and the Emerald Coast' }, teaser: { fr: 'Cancale et ses parcs à huîtres, la pointe du Grouin, les plages de la côte d’Émeraude. Journée bord de mer et dégustation de fruits de mer.', en: 'Cancale and its oyster beds, the Pointe du Grouin, the Emerald Coast beaches. A seaside day and seafood tasting.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Mont-Saint-Michel depuis Saint-Malo', en: 'Mont-Saint-Michel from Saint-Malo' }, teaser: { fr: 'À 50 km, l’abbaye dressée dans sa baie, la merveille de l’Occident. Journée patrimoine à l’un des sites les plus visités de France.', en: '50 km away, the abbey rising in its bay, the Wonder of the West. A heritage day at one of France’s most visited sites.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Dinard et la Rance', en: 'Dinard and the Rance' }, teaser: { fr: 'Dinard et ses villas Belle Époque, l’estuaire de la Rance et son barrage, Dinan la médiévale en amont. Journée villégiature et patrimoine.', en: 'Dinard and its Belle Époque villas, the Rance estuary and its dam, medieval Dinan upstream. A day of resorts and heritage.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Soirée corsaire', en: 'Corsair evening' }, teaser: { fr: 'Dîner de fruits de mer intra-muros, les remparts battus par les marées, un verre au coucher du soleil. Véhicule à disposition toute la soirée.', en: 'A seafood dinner intra-muros, the ramparts battered by the tides, a drink at sunset. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de l’aéroport de Dinard à Saint-Malo ?', en: 'How long from Dinard Airport to Saint-Malo?' }, a: { fr: 'Comptez 20 minutes. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 20 minutes. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Peut-on combiner Saint-Malo et le Mont-Saint-Michel ?', en: 'Can Saint-Malo and Mont-Saint-Michel be combined?' }, a: { fr: 'Oui, le Mont est à 50 km. En mise à disposition à la journée, votre chauffeur relie la cité corsaire, Cancale et l’abbaye de la baie, à prix fixe.', en: 'Yes, the Mont is 50 km away. With a full-day hire, your chauffeur links the corsair city, Cancale and the bay abbey, at a fixed price.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['dinard', 'mont-saint-michel-ville', 'rennes'],
+  },
+  {
+    slug: 'dinard',
+    name: { fr: 'Dinard', en: 'Dinard' },
+    country: { fr: 'France', en: 'France' },
+    region: 'france',
+    airport: 'Dinard-Pleurtuit-Saint-Malo (DNR)',
+    airportTransfer: {
+      fr: 'L’aéroport de Dinard-Pleurtuit-Saint-Malo (DNR) se trouve à 5 km au sud de Dinard : comptez 10 minutes. Depuis Rennes (RNS), à 65 km, comptez 1h. Votre chauffeur vous accueille en salle d’arrivée avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Dinard-Pleurtuit-Saint-Malo Airport (DNR) lies 5 km south of Dinard: allow 10 minutes. From Rennes (RNS), 65 km away, allow 1h. Your chauffeur greets you in arrivals with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Perle de la côte d’Émeraude et villégiature élue de l’aristocratie britannique au XIXe siècle, Dinard aligne face à Saint-Malo ses villas Belle Époque, ses plages et sa promenade du Clair de Lune. Votre **chauffeur privé à Dinard** dessert le front de mer, les villas et les hôtels de charme : transferts depuis l’aéroport, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Dinard commande la **côte d’Émeraude et l’estuaire de la Rance**. Saint-Malo et sa cité corsaire sont de l’autre côté de la Rance, Dinan la médiévale en amont, le cap Fréhel et Fort-la-Latte à l’ouest. En mise à disposition à la journée, votre chauffeur relie villas Belle Époque, caps sauvages et cités médiévales dans le confort d’une berline privée.',
+      ],
+      en: [
+        'Pearl of the Emerald Coast and the chosen resort of the British aristocracy in the 19th century, Dinard lines up facing Saint-Malo its Belle Époque villas, its beaches and its Clair de Lune promenade. Your **private chauffeur in Dinard** serves the seafront, the villas and the boutique hotels: transfers from the airport, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Dinard commands the **Emerald Coast and the Rance estuary**. Saint-Malo and its corsair city are across the Rance, medieval Dinan upstream, Cap Fréhel and Fort-la-Latte to the west. With a full-day hire, your chauffeur links Belle Époque villas, wild capes and medieval cities in the comfort of a private sedan.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Dinard Belle Époque', en: 'Belle Époque Dinard' }, teaser: { fr: 'La promenade du Clair de Lune, les villas anglo-normandes, la plage de l’Écluse et les tentes rayées. Dépose au front de mer, promenade dans la villégiature chic.', en: 'The Clair de Lune promenade, the Anglo-Norman villas, the Écluse beach and the striped tents. Drop-off at the seafront, a stroll through the chic resort.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Cap Fréhel et Fort-la-Latte', en: 'Cap Fréhel and Fort-la-Latte' }, teaser: { fr: 'Les landes et falaises du cap Fréhel, le château de Fort-la-Latte face à la mer, les plages sauvages. Journée nature sur la côte d’Émeraude.', en: 'The heaths and cliffs of Cap Fréhel, the Fort-la-Latte castle facing the sea, the wild beaches. A nature day on the Emerald Coast.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Saint-Malo et Cancale', en: 'Saint-Malo and Cancale' }, teaser: { fr: 'La cité corsaire de Saint-Malo et ses remparts, Cancale et ses huîtres, la pointe du Grouin. Journée cités et fruits de mer de l’autre côté de la Rance.', en: 'The corsair city of Saint-Malo and its ramparts, Cancale and its oysters, the Pointe du Grouin. A day of cities and seafood across the Rance.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Dinan la médiévale', en: 'Medieval Dinan' }, teaser: { fr: 'La cité médiévale de Dinan sur la Rance, ses remparts, ses maisons à pans de bois et son port. Journée patrimoine en remontant l’estuaire.', en: 'The medieval city of Dinan on the Rance, its ramparts, its half-timbered houses and its port. A heritage day up the estuary.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '540' },
+      { title: { fr: 'Soirée à Dinard', en: 'Evening in Dinard' }, teaser: { fr: 'Dîner face à la mer, la promenade illuminée, Saint-Malo scintillant de l’autre côté de la baie. Véhicule à disposition toute la soirée.', en: 'Dinner facing the sea, the illuminated promenade, Saint-Malo glittering across the bay. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de l’aéroport de Dinard au centre ?', en: 'How long from Dinard Airport to the centre?' }, a: { fr: 'Comptez 10 minutes. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 10 minutes. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Peut-on rejoindre Saint-Malo depuis Dinard ?', en: 'Can you reach Saint-Malo from Dinard?' }, a: { fr: 'Oui, Saint-Malo est de l’autre côté de la Rance, à vingt minutes en voiture. En mise à disposition, votre chauffeur relie les deux stations et la côte d’Émeraude, à prix fixe.', en: 'Yes, Saint-Malo is across the Rance, twenty minutes by car. With a hire, your chauffeur links the two resorts and the Emerald Coast, at a fixed price.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['saint-malo', 'mont-saint-michel-ville', 'rennes'],
+  },
+  {
+    slug: 'brest',
+    name: { fr: 'Brest', en: 'Brest' },
+    country: { fr: 'France', en: 'France' },
+    region: 'france',
+    airport: 'Brest-Bretagne (BES)',
+    airportTransfer: {
+      fr: 'L’aéroport de Brest-Bretagne (BES) se trouve à 10 km au nord-est de Brest : comptez 15 minutes. Votre chauffeur vous accueille en salle d’arrivée avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Brest-Bretagne Airport (BES) lies 10 km north-east of Brest: allow 15 minutes. Your chauffeur greets you in arrivals with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Grand port militaire au bout du Finistère, Brest ouvre sur l’une des plus belles rades du monde et abrite Océanopolis, immense parc de découverte des océans. Votre **chauffeur privé à Brest** dessert le centre, l’arsenal et les rendez-vous d’affaires maritimes : transferts depuis l’aéroport, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Brest est la porte du **Finistère et de ses pointes sauvages**. La presqu’île de Crozon et ses falaises, la pointe Saint-Mathieu et son phare, les abers de la côte des Légendes sont à portée. En mise à disposition à la journée, votre chauffeur relie caps battus par les vents, ports de pêche et villages du bout du monde dans le confort d’une berline privée.',
+      ],
+      en: [
+        'A great naval port at the tip of Finistère, Brest opens onto one of the world’s finest harbours and houses Océanopolis, a vast ocean-discovery park. Your **private chauffeur in Brest** serves the centre, the arsenal and maritime business meetings: transfers from the airport, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Brest is the gateway to **Finistère and its wild headlands**. The Crozon peninsula and its cliffs, the Pointe Saint-Mathieu and its lighthouse, the abers of the Côte des Légendes are within reach. With a full-day hire, your chauffeur links wind-battered capes, fishing ports and end-of-the-world villages in the comfort of a private sedan.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Presqu’île de Crozon', en: 'Crozon peninsula' }, teaser: { fr: 'Les falaises et pointes de Pen-Hir et de Dinan, les plages sauvages, le parc naturel d’Armorique. Journée nature sur l’une des plus belles presqu’îles de Bretagne.', en: 'The cliffs and points of Pen-Hir and Dinan, the wild beaches, the Armorique nature park. A nature day on one of Brittany’s finest peninsulas.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Brest et Océanopolis', en: 'Brest and Océanopolis' }, teaser: { fr: 'Océanopolis et ses pavillons polaires et tropicaux, le château et l’arsenal, les Ateliers des Capucins. Dépose au centre, journée découverte des océans.', en: 'Océanopolis and its polar and tropical pavilions, the castle and the arsenal, the Ateliers des Capucins. Drop-off in the centre, a day discovering the oceans.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Pointe Saint-Mathieu et abers', en: 'Pointe Saint-Mathieu and abers' }, teaser: { fr: 'Le phare et l’abbaye de la pointe Saint-Mathieu, la côte des Légendes et ses abers, les villages de pêcheurs. Journée bout du monde.', en: 'The lighthouse and abbey of the Pointe Saint-Mathieu, the Côte des Légendes and its abers, the fishing villages. An end-of-the-world day.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Quimper et la Cornouaille', en: 'Quimper and Cornouaille' }, teaser: { fr: 'À 70 km, la cathédrale et la vieille ville de Quimper, la faïence, les enclos paroissiaux. Journée patrimoine et culture bretonne.', en: '70 km away, the cathedral and old town of Quimper, the faience, the parish closes. A day of Breton heritage and culture.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Soirée brestoise', en: 'Brest evening' }, teaser: { fr: 'Dîner de fruits de mer sur le port, les Ateliers des Capucins animés, la rade au crépuscule. Véhicule à disposition toute la soirée.', en: 'A seafood dinner at the port, the lively Ateliers des Capucins, the harbour at dusk. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de l’aéroport de Brest au centre ?', en: 'How long from Brest Airport to the centre?' }, a: { fr: 'Comptez 15 minutes. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 15 minutes. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Peut-on visiter la presqu’île de Crozon depuis Brest ?', en: 'Can you visit the Crozon peninsula from Brest?' }, a: { fr: 'Oui, Crozon est à portée en contournant la rade. En mise à disposition à la journée, votre chauffeur vous conduit aux pointes et plages sauvages du Finistère, à prix fixe.', en: 'Yes, Crozon is within reach around the harbour. With a full-day hire, your chauffeur drives you to the wild points and beaches of Finistère, at a fixed price.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['quimper', 'rennes'],
+  },
+  {
+    slug: 'quimper',
+    name: { fr: 'Quimper', en: 'Quimper' },
+    country: { fr: 'France', en: 'France' },
+    region: 'france',
+    airport: 'Quimper-Cornouaille (UIP)',
+    airportTransfer: {
+      fr: 'L’aéroport de Quimper-Cornouaille (UIP) se trouve à 8 km au sud-ouest du centre : comptez 15 minutes. Depuis Brest-Bretagne (BES), à 70 km, comptez 1h. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Quimper-Cornouaille Airport (UIP) lies 8 km south-west of the centre: allow 15 minutes. From Brest-Bretagne (BES), 70 km away, allow 1h. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Capitale historique de la Cornouaille, Quimper marie sa cathédrale gothique aux flèches jumelles, ses ruelles à pans de bois et sa faïence renommée, cœur battant de la culture bretonne. Votre **chauffeur privé à Quimper** dessert le centre historique, les ateliers de faïence et les rendez-vous : transferts depuis l’aéroport, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Quimper est la porte du **pays bigouden et de la Cornouaille**. Les ports de Concarneau et sa ville close, la pointe du Raz et son cap sauvage, Locronan parmi les plus beaux villages de France sont à portée. En mise à disposition à la journée, votre chauffeur relie villes closes, caps de bout du monde et enclos paroissiaux dans le confort d’une berline privée.',
+      ],
+      en: [
+        'Historic capital of Cornouaille, Quimper marries its Gothic cathedral with twin spires, its half-timbered lanes and its renowned faience, the beating heart of Breton culture. Your **private chauffeur in Quimper** serves the historic centre, the faience workshops and meetings: transfers from the airport, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Quimper is the gateway to the **Pays Bigouden and Cornouaille**. The port of Concarneau and its walled town, the Pointe du Raz and its wild cape, Locronan among France’s finest villages are within reach. With a full-day hire, your chauffeur links walled towns, end-of-the-world capes and parish closes in the comfort of a private sedan.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Quimper et la faïence', en: 'Quimper and the faience' }, teaser: { fr: 'La cathédrale Saint-Corentin, la vieille ville à pans de bois, les ateliers de faïence de Quimper. Dépose au centre, promenade dans la capitale de la Cornouaille.', en: 'Saint-Corentin cathedral, the half-timbered old town, the Quimper faience workshops. Drop-off in the centre, a stroll through the capital of Cornouaille.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Pointe du Raz et cap Sizun', en: 'Pointe du Raz and Cap Sizun' }, teaser: { fr: 'La pointe du Raz battue par les vents, le phare de la Vieille, les landes du cap Sizun, la baie des Trépassés. Journée bout du monde breton.', en: 'The wind-battered Pointe du Raz, the Vieille lighthouse, the Cap Sizun heaths, the Baie des Trépassés. A Breton end-of-the-world day.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Concarneau et Locronan', en: 'Concarneau and Locronan' }, teaser: { fr: 'La ville close de Concarneau dans son port, Locronan et ses maisons de granit parmi les plus beaux villages de France. Journée cités bretonnes.', en: 'The walled town of Concarneau in its port, Locronan and its granite houses among France’s finest villages. A day of Breton towns.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '540' },
+      { title: { fr: 'Pays bigouden et côte', en: 'Pays Bigouden and coast' }, teaser: { fr: 'Les ports de pêche du pays bigouden, Pont-l’Abbé et ses coiffes, les plages de la baie d’Audierne. Journée traditions et littoral.', en: 'The fishing ports of the Pays Bigouden, Pont-l’Abbé and its coiffes, the beaches of the Baie d’Audierne. A day of traditions and coast.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '540' },
+      { title: { fr: 'Soirée quimpéroise', en: 'Quimper evening' }, teaser: { fr: 'Dîner de crêpes et fruits de mer dans la vieille ville, les quais de l’Odet, l’ambiance d’une capitale bretonne. Véhicule à disposition.', en: 'A dinner of crêpes and seafood in the old town, the quays of the Odet, the atmosphere of a Breton capital. Vehicle on standby.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de l’aéroport de Quimper au centre ?', en: 'How long from Quimper Airport to the centre?' }, a: { fr: 'Comptez 15 minutes. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 15 minutes. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Peut-on visiter la pointe du Raz depuis Quimper ?', en: 'Can you visit the Pointe du Raz from Quimper?' }, a: { fr: 'Oui, la pointe du Raz est à une heure. En mise à disposition à la journée, votre chauffeur combine le cap Sizun, Locronan et les ports bigoudens, à prix fixe.', en: 'Yes, the Pointe du Raz is an hour away. With a full-day hire, your chauffeur combines the Cap Sizun, Locronan and the Bigouden ports, at a fixed price.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['brest', 'vannes', 'rennes'],
+  },
+  {
+    slug: 'vannes',
+    name: { fr: 'Vannes', en: 'Vannes' },
+    country: { fr: 'France', en: 'France' },
+    region: 'france',
+    airport: 'Nantes-Atlantique (NTE)',
+    airportTransfer: {
+      fr: 'L’aéroport de Nantes-Atlantique (NTE) se trouve à 110 km au sud-est de Vannes : comptez 1h15 par la voie express. Depuis Lorient (LRT), à 60 km, comptez 45 minutes. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Nantes-Atlantique Airport (NTE) lies 110 km south-east of Vannes: allow 1h15 by expressway. From Lorient (LRT), 60 km away, allow 45 minutes. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Cité médiévale au fond du golfe du Morbihan, Vannes conserve ses remparts fleuris, ses maisons à pans de bois et sa cathédrale, ouverte sur l’une des plus belles baies du monde. Votre **chauffeur privé à Vannes** dessert le centre historique, le port et les rendez-vous : transferts depuis Nantes ou Lorient, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Vannes commande le **golfe du Morbihan et ses mégalithes**. Les alignements de Carnac, les plus grands ensembles mégalithiques du monde, la presqu’île de Rhuys et la Roche-Bernard sont à portée, les îles du golfe au large. En mise à disposition à la journée, votre chauffeur relie sites préhistoriques, ports du golfe et cités de caractère dans le confort d’une berline privée.',
+      ],
+      en: [
+        'A medieval city at the head of the Gulf of Morbihan, Vannes preserves its flowered ramparts, its half-timbered houses and its cathedral, open onto one of the world’s finest bays. Your **private chauffeur in Vannes** serves the historic centre, the port and meetings: transfers from Nantes or Lorient, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Vannes commands the **Gulf of Morbihan and its megaliths**. The Carnac alignments, the world’s largest megalithic complexes, the Rhuys peninsula and La Roche-Bernard are within reach, the gulf islands offshore. With a full-day hire, your chauffeur links prehistoric sites, gulf ports and character towns in the comfort of a private sedan.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Vannes et le golfe', en: 'Vannes and the gulf' }, teaser: { fr: 'Les remparts fleuris, la vieille ville à pans de bois, le port et la promenade de la Rabine. Dépose au centre, promenade dans la cité du golfe du Morbihan.', en: 'The flowered ramparts, the half-timbered old town, the port and the Rabine promenade. Drop-off in the centre, a stroll through the Gulf of Morbihan city.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Alignements de Carnac', en: 'Carnac alignments' }, teaser: { fr: 'Les milliers de menhirs alignés de Carnac, les tumulus, le musée de préhistoire, la presqu’île de Quiberon. Journée mégalithes et côte sauvage.', en: 'The thousands of aligned menhirs of Carnac, the tumuli, the prehistory museum, the Quiberon peninsula. A day of megaliths and wild coast.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Presqu’île de Rhuys', en: 'Rhuys peninsula' }, teaser: { fr: 'Le château de Suscinio des ducs de Bretagne, les ports de la presqu’île, les huîtres du golfe. Journée patrimoine et fruits de mer.', en: 'The Suscinio castle of the Dukes of Brittany, the peninsula ports, the gulf oysters. A day of heritage and seafood.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '540' },
+      { title: { fr: 'Îles et ports du Morbihan', en: 'Morbihan islands and ports' }, teaser: { fr: 'Les ports de Larmor-Baden et du golfe, une embarcation vers l’île aux Moines, les villages ostréicoles. Journée au fil de la petite mer.', en: 'The ports of Larmor-Baden and the gulf, a boat to the Île aux Moines, the oyster villages. A day along the little sea.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Soirée à Vannes', en: 'Evening in Vannes' }, teaser: { fr: 'Dîner de fruits de mer dans la vieille ville, les remparts illuminés, un verre au bord du port. Véhicule à disposition toute la soirée.', en: 'A seafood dinner in the old town, the illuminated ramparts, a drink by the port. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Peut-on visiter les alignements de Carnac depuis Vannes ?', en: 'Can you visit the Carnac alignments from Vannes?' }, a: { fr: 'Oui, Carnac est à trente minutes. En mise à disposition à la journée, votre chauffeur combine les mégalithes, la presqu’île de Quiberon et la côte, à prix fixe.', en: 'Yes, Carnac is thirty minutes away. With a full-day hire, your chauffeur combines the megaliths, the Quiberon peninsula and the coast, at a fixed price.' } },
+      { q: { fr: 'Combien de temps de Nantes à Vannes ?', en: 'How long from Nantes to Vannes?' }, a: { fr: 'Comptez 1h15. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 1h15. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['rennes', 'nantes', 'quimper'],
+  },
+  {
+    slug: 'le-mans',
+    name: { fr: 'Le Mans', en: 'Le Mans' },
+    country: { fr: 'France', en: 'France' },
+    region: 'france',
+    airport: 'Paris-Charles de Gaulle (CDG)',
+    airportTransfer: {
+      fr: 'L’aéroport de Paris-Charles de Gaulle (CDG) se trouve à 230 km à l’est du Mans : comptez 2h15 par l’autoroute A11. Depuis Nantes-Atlantique (NTE), à 190 km, comptez 1h45. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Paris-Charles de Gaulle Airport (CDG) lies 230 km east of Le Mans: allow 2h15 via the A11 motorway. From Nantes-Atlantique (NTE), 190 km away, allow 1h45. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Célèbre dans le monde entier pour ses 24 Heures, Le Mans cache derrière son circuit une Cité Plantagenêt médiévale exceptionnelle, ceinte de remparts romains parmi les mieux conservés d’Europe. Votre **chauffeur privé au Mans** dessert le centre historique, le circuit et les rendez-vous d’affaires : transferts depuis Paris, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Le Mans est au carrefour des **Pays de la Loire**. Les châteaux de la Loire et Tours sont à une heure au sud, l’abbaye de Solesmes et la Sarthe verte à proximité, Angers à l’ouest. En mise à disposition à la journée, votre chauffeur relie circuit mythique, cité médiévale et châteaux ligériens dans le confort d’une berline privée.',
+      ],
+      en: [
+        'Famous worldwide for its 24 Hours, Le Mans hides behind its circuit an exceptional medieval Plantagenet City, ringed by Roman walls among the best preserved in Europe. Your **private chauffeur in Le Mans** serves the historic centre, the circuit and business meetings: transfers from Paris, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Le Mans is at the crossroads of the **Pays de la Loire**. The Loire châteaux and Tours are an hour to the south, the Solesmes abbey and the green Sarthe nearby, Angers to the west. With a full-day hire, your chauffeur links legendary circuit, medieval city and Loire châteaux in the comfort of a private sedan.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Circuit des 24 Heures', en: '24 Hours circuit' }, teaser: { fr: 'Le circuit des 24 Heures, le musée des 24 Heures et sa collection, la ligne droite des Hunaudières. Demi-journée pour les passionnés de sport automobile.', en: 'The 24 Hours circuit, the 24 Hours museum and its collection, the Hunaudières straight. A half-day for motorsport enthusiasts.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '360' },
+      { title: { fr: 'Cité Plantagenêt', en: 'Plantagenet City' }, teaser: { fr: 'La cité médiévale et ses maisons à pans de bois, la cathédrale, les remparts romains illuminés. Dépose au centre, promenade dans le vieux Mans.', en: 'The medieval city and its half-timbered houses, the cathedral, the illuminated Roman walls. Drop-off in the centre, a stroll through old Le Mans.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Châteaux de la Loire', en: 'Loire châteaux' }, teaser: { fr: 'À une heure, les châteaux de la vallée de la Loire, Chambord ou Chenonceau, les vignobles. Journée patrimoine Renaissance au sud du Mans.', en: 'An hour away, the châteaux of the Loire valley, Chambord or Chenonceau, the vineyards. A day of Renaissance heritage south of Le Mans.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Sarthe et abbaye de Solesmes', en: 'Sarthe and Solesmes abbey' }, teaser: { fr: 'L’abbaye de Solesmes et son chant grégorien, les villages de la vallée de la Sarthe, la campagne verte. Journée nature et spiritualité.', en: 'The Solesmes abbey and its Gregorian chant, the villages of the Sarthe valley, the green countryside. A day of nature and spirituality.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '540' },
+      { title: { fr: 'Soirée mancelle', en: 'Le Mans evening' }, teaser: { fr: 'Dîner dans la Cité Plantagenêt, les remparts romains illuminés le soir, un verre dans la vieille ville. Véhicule à disposition toute la soirée.', en: 'Dinner in the Plantagenet City, the Roman walls illuminated at night, a drink in the old town. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de Paris au Mans ?', en: 'How long from Paris to Le Mans?' }, a: { fr: 'Comptez 2h15 par l’A11. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 2h15 via the A11. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Proposez-vous un service pendant les 24 Heures du Mans ?', en: 'Do you offer a service during the 24 Hours of Le Mans?' }, a: { fr: 'Oui, pendant l’épreuve nous assurons transferts et mises à disposition entre hôtels, circuit et réceptions, avec chauffeurs habitués à l’affluence de l’événement. Réservation anticipée recommandée.', en: 'Yes, during the event we handle transfers and hire between hotels, circuit and receptions, with chauffeurs used to the event’s crowds. Early booking recommended.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['tours', 'angers', 'rennes'],
+  },
 ];
