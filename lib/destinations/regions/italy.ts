@@ -2806,4 +2806,344 @@ export const CITIES: Destination[] = [
     ],
     nearby: ['assisi', 'siena', 'florence'],
   },
+  {
+    slug: 'bergamo',
+    name: { fr: 'Bergame', en: 'Bergamo' },
+    country: { fr: 'Italie', en: 'Italy' },
+    region: 'italy',
+    airport: 'Milan-Bergame Orio al Serio (BGY)',
+    airportTransfer: {
+      fr: 'L’aéroport de Milan-Bergame Orio al Serio (BGY) se trouve à 5 km au sud-est de Bergame : comptez 15 minutes. Depuis Milan-Linate (LIN), à 55 km, comptez 50 minutes. Votre chauffeur vous accueille en salle d’arrivée avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Milan-Bergamo Orio al Serio Airport (BGY) lies 5 km south-east of Bergamo: allow 15 minutes. From Milan-Linate (LIN), 55 km away, allow 50 minutes. Your chauffeur greets you in arrivals with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Ville double au pied des Alpes lombardes, Bergame oppose sa Città Bassa moderne à sa Città Alta médiévale ceinte de remparts vénitiens classés UNESCO. Votre **chauffeur privé à Bergame** dessert la ville haute à circulation limitée, l’aéroport très fréquenté et les rendez-vous d’affaires de la Lombardie : transferts, mise à disposition à l’heure, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Bergame est une **porte des lacs et de Milan**. Le lac d’Iseo et la Franciacorta viticole sont à trente minutes, le lac de Côme à une heure, Milan à 50 km. En mise à disposition à la journée, votre chauffeur relie villes d’art, vignobles et rivages lacustres pendant que vous profitez de la Lombardie sans souci de conduite.',
+      ],
+      en: [
+        'A double city at the foot of the Lombard Alps, Bergamo sets its modern Città Bassa against its medieval Città Alta ringed by UNESCO-listed Venetian walls. Your **private chauffeur in Bergamo** serves the limited-traffic upper town, the busy airport and Lombardy business meetings: transfers, hourly hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Bergamo is a **gateway to the lakes and Milan**. Lake Iseo and the Franciacorta wine region are thirty minutes away, Lake Como an hour, Milan 55 km. With a full-day hire, your chauffeur links art cities, vineyards and lake shores while you enjoy Lombardy with no driving worry.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Città Alta de Bergame', en: 'Bergamo’s Città Alta' }, teaser: { fr: 'La piazza Vecchia, la basilique Santa Maria Maggiore, les remparts vénitiens et le funiculaire. Dépose au plus près de la ville haute piétonne.', en: 'The Piazza Vecchia, the Santa Maria Maggiore basilica, the Venetian walls and the funicular. Drop-off as close as possible to the pedestrian upper town.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Franciacorta et lac d’Iseo', en: 'Franciacorta and Lake Iseo' }, teaser: { fr: 'Les domaines du célèbre mousseux italien, dégustation en cave, le lac d’Iseo et son île Monte Isola. Journée œnologie et lac à trente minutes.', en: 'The estates of Italy’s famous sparkling wine, a cellar tasting, Lake Iseo and its Monte Isola island. A day of oenology and lake thirty minutes away.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Lac de Côme depuis Bergame', en: 'Lake Como from Bergamo' }, teaser: { fr: 'À une heure, les villas de Côme, Bellagio et ses jardins, une croisière sur le lac. Journée sur le plus élégant des lacs italiens.', en: 'An hour away, the Como villas, Bellagio and its gardens, a lake cruise. A day on the most elegant of Italian lakes.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '640' },
+      { title: { fr: 'Milan à la journée', en: 'Milan day trip' }, teaser: { fr: 'À 50 km, le Duomo, la Scala et le Quadrilatère de la mode. Journée shopping et culture, chauffeur en attente entre les étapes.', en: '50 km away, the Duomo, La Scala and the fashion Quadrilatero. A day of shopping and culture, chauffeur waiting between stops.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Soirée dans la Città Alta', en: 'Evening in the Città Alta' }, teaser: { fr: 'Dîner dans une table de la ville haute, les remparts illuminés dominant la plaine, la vue nocturne sur Milan au loin. Véhicule à disposition.', en: 'Dinner at a table in the upper town, the illuminated walls dominating the plain, the night view over distant Milan. Vehicle on standby.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '360' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de l’aéroport de Bergame au centre ?', en: 'How long from Bergamo Airport to the centre?' }, a: { fr: 'Comptez 15 minutes. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard. Un service idéal après un vol low-cost tardif.', en: 'Allow 15 minutes. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time. An ideal service after a late low-cost flight.' } },
+      { q: { fr: 'Peut-on rejoindre Milan ou les lacs depuis Bergame ?', en: 'Can you reach Milan or the lakes from Bergamo?' }, a: { fr: 'Oui. Milan est à 50 km, le lac de Côme à une heure, la Franciacorta à trente minutes. En mise à disposition à la journée, votre chauffeur compose l’itinéraire de votre choix, à prix fixe.', en: 'Yes. Milan is 55 km away, Lake Como an hour, Franciacorta thirty minutes. With a full-day hire, your chauffeur builds the itinerary of your choice, at a fixed price.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['milan', 'brescia', 'como'],
+  },
+  {
+    slug: 'brescia',
+    name: { fr: 'Brescia', en: 'Brescia' },
+    country: { fr: 'Italie', en: 'Italy' },
+    region: 'italy',
+    airport: 'Milan-Bergame Orio al Serio (BGY)',
+    airportTransfer: {
+      fr: 'L’aéroport de Milan-Bergame Orio al Serio (BGY) se trouve à 50 km à l’ouest de Brescia : comptez 40 à 50 minutes. Depuis Vérone (VRN), à 65 km à l’est, comptez 50 minutes. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Milan-Bergamo Orio al Serio Airport (BGY) lies 50 km west of Brescia: allow 40 to 50 minutes. From Verona (VRN), 65 km east, allow 50 minutes. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Deuxième ville de Lombardie, Brescia dévoile un forum romain classé UNESCO, un château médiéval et le point de départ des Mille Miglia. Votre **chauffeur privé à Brescia** dessert le centre historique, les rendez-vous industriels de la région et les hôtels : transferts aéroport, mise à disposition à l’heure, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Brescia est aux portes du **lac de Garde et de la Franciacorta**. Sirmione et la rive lombarde du Garda sont à trente minutes, les domaines du mousseux de Franciacorta tout près, Vérone à une heure. En mise à disposition à la journée, votre chauffeur relie vignobles, rivages du lac et villes d’art dans le confort d’une berline privée.',
+      ],
+      en: [
+        'Lombardy’s second city, Brescia reveals a UNESCO-listed Roman forum, a medieval castle and the starting point of the Mille Miglia. Your **private chauffeur in Brescia** serves the historic centre, the region’s industrial meetings and the hotels: airport transfers, hourly hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Brescia is at the gates of **Lake Garda and Franciacorta**. Sirmione and the Lombard shore of Garda are thirty minutes away, the Franciacorta sparkling-wine estates nearby, Verona an hour. With a full-day hire, your chauffeur links vineyards, lake shores and art cities in the comfort of a private sedan.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Brescia romaine et médiévale', en: 'Roman and medieval Brescia' }, teaser: { fr: 'Le Capitolium et le forum romain classés UNESCO, le château, la place de la Loggia Renaissance. Dépose au centre, promenade patrimoniale.', en: 'The UNESCO-listed Capitolium and Roman forum, the castle, the Renaissance Piazza della Loggia. Drop-off in the centre, a heritage stroll.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Franciacorta et ses bulles', en: 'Franciacorta and its bubbles' }, teaser: { fr: 'Les domaines du plus prestigieux mousseux d’Italie, dégustation en cave, déjeuner face aux vignes. Journée œnologie à vingt minutes.', en: 'The estates of Italy’s most prestigious sparkling wine, a cellar tasting, lunch facing the vines. An oenology day twenty minutes away.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Lac de Garde à Sirmione', en: 'Lake Garda at Sirmione' }, teaser: { fr: 'La presqu’île de Sirmione, son château scaligère et les grottes de Catulle, les eaux thermales. Journée lac à trente minutes de Brescia.', en: 'The Sirmione peninsula, its Scaliger castle and the Grotte di Catullo, the thermal waters. A lake day thirty minutes from Brescia.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Vérone depuis Brescia', en: 'Verona from Brescia' }, teaser: { fr: 'À une heure, les arènes romaines, le balcon de Roméo et Juliette, la piazza delle Erbe. Journée d’art vénète et déjeuner dans la cité de l’amour.', en: 'An hour away, the Roman arena, Romeo and Juliet’s balcony, the Piazza delle Erbe. A day of Veneto art and lunch in the city of love.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Soirée bresciane', en: 'Brescia evening' }, teaser: { fr: 'Dîner sur la place de la Loggia, le centre Renaissance illuminé, un verre de Franciacorta. Véhicule à disposition toute la soirée.', en: 'Dinner on the Piazza della Loggia, the illuminated Renaissance centre, a glass of Franciacorta. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de l’aéroport de Bergame à Brescia ?', en: 'How long from Bergamo Airport to Brescia?' }, a: { fr: 'Comptez 40 à 50 minutes. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 40 to 50 minutes. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Peut-on visiter la Franciacorta et le lac de Garde depuis Brescia ?', en: 'Can you visit Franciacorta and Lake Garda from Brescia?' }, a: { fr: 'Oui, tous deux à trente minutes. En mise à disposition à la journée, votre chauffeur combine dégustations en Franciacorta et rivages du lac de Garde, à prix fixe.', en: 'Yes, both thirty minutes away. With a full-day hire, your chauffeur combines Franciacorta tastings and Lake Garda shores, at a fixed price.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['bergamo', 'verona', 'lake-garda-sirmione'],
+  },
+  {
+    slug: 'parma',
+    name: { fr: 'Parme', en: 'Parma' },
+    country: { fr: 'Italie', en: 'Italy' },
+    region: 'italy',
+    airport: 'Bologne-Guglielmo Marconi (BLQ)',
+    airportTransfer: {
+      fr: 'L’aéroport de Bologne-Guglielmo Marconi (BLQ) se trouve à 100 km au sud-est de Parme : comptez 1h par l’autoroute A1. Depuis Milan-Linate, à 120 km, comptez 1h30. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Bologna-Guglielmo Marconi Airport (BLQ) lies 100 km south-east of Parma: allow 1h via the A1 motorway. From Milan-Linate, 120 km away, allow 1h30. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Capitale gastronomique de l’Émilie, Parme conjugue le jambon et le parmesan qui portent son nom, un baptistère rose et l’héritage musical de Verdi et Toscanini. Votre **chauffeur privé à Parme** dessert le centre historique, les usines agroalimentaires et le théâtre Regio : transferts depuis Bologne ou Milan, mise à disposition à l’heure, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Parme est le cœur de la **Food Valley émilienne**. Les caves d’affinage du parmigiano, les jambonneries de Langhirano, les domaines de lambrusco et le château de Torrechiara sont à portée. En mise à disposition à la journée, votre chauffeur relie visites de producteurs, dégustations et villes d’art dans la région la plus gourmande d’Italie.',
+      ],
+      en: [
+        'Gastronomic capital of Emilia, Parma combines the ham and parmesan that bear its name, a pink baptistery and the musical legacy of Verdi and Toscanini. Your **private chauffeur in Parma** serves the historic centre, the food factories and the Teatro Regio: transfers from Bologna or Milan, hourly hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Parma is the heart of the **Emilian Food Valley**. The parmigiano ageing cellars, the ham producers of Langhirano, the lambrusco estates and the Torrechiara castle are within reach. With a full-day hire, your chauffeur links producer visits, tastings and art cities in Italy’s most gourmet region.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Route du parmesan et du jambon', en: 'Parmesan and ham route' }, teaser: { fr: 'Une cave d’affinage du parmigiano reggiano, une jambonnerie de Parme, dégustations à la source. Journée gourmande au cœur de la Food Valley.', en: 'A parmigiano reggiano ageing cellar, a Parma ham producer, tastings at the source. A gourmet day at the heart of the Food Valley.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Parme historique', en: 'Historic Parma' }, teaser: { fr: 'Le baptistère rose, la cathédrale et sa coupole du Corrège, le théâtre Regio et le palais de la Pilotta. Dépose au centre, promenade patrimoniale.', en: 'The pink baptistery, the cathedral and its Correggio dome, the Teatro Regio and the Pilotta palace. Drop-off in the centre, a heritage stroll.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Châteaux du duché', en: 'Castles of the duchy' }, teaser: { fr: 'Le château de Torrechiara et ses fresques, Fontanellato et la Rocca Sanvitale, la campagne parmesane. Journée patrimoine et terroir.', en: 'The Torrechiara castle and its frescoes, Fontanellato and the Rocca Sanvitale, the Parma countryside. A day of heritage and produce.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Modène et le balsamique', en: 'Modena and balsamic' }, teaser: { fr: 'À 50 km, une acétaïe de vinaigre balsamique traditionnel, la cathédrale de Modène classée UNESCO, et pourquoi pas Maranello. Journée gastronomie et moteurs.', en: '50 km away, a traditional balsamic vinegar acetaia, the UNESCO-listed Modena cathedral, and why not Maranello. A day of gastronomy and engines.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Soirée à Parme', en: 'Evening in Parma' }, teaser: { fr: 'Dîner dans une trattoria historique, le centre ducal illuminé, un verre de lambrusco. Véhicule à disposition toute la soirée.', en: 'Dinner in a historic trattoria, the illuminated ducal centre, a glass of lambrusco. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Peut-on visiter les producteurs de parmesan et de jambon ?', en: 'Can you visit the parmesan and ham producers?' }, a: { fr: 'Oui, c’est la formule phare de la région. Votre chauffeur organise et relie caves d’affinage, jambonneries et domaines viticoles, avec dégustations à la source, sur une journée à prix fixe.', en: 'Yes, it is the region’s flagship option. Your chauffeur arranges and links ageing cellars, ham producers and wine estates, with tastings at the source, over a fixed-price day.' } },
+      { q: { fr: 'Combien de temps de Bologne à Parme ?', en: 'How long from Bologna to Parma?' }, a: { fr: 'Comptez environ 1 heure par l’A1. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow about 1 hour via the A1. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['modena', 'bologna', 'milan'],
+  },
+  {
+    slug: 'modena',
+    name: { fr: 'Modène', en: 'Modena' },
+    country: { fr: 'Italie', en: 'Italy' },
+    region: 'italy',
+    airport: 'Bologne-Guglielmo Marconi (BLQ)',
+    airportTransfer: {
+      fr: 'L’aéroport de Bologne-Guglielmo Marconi (BLQ) se trouve à 40 km au sud-est de Modène : comptez 35 à 45 minutes par l’autoroute. Votre chauffeur vous accueille en salle d’arrivée avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Bologna-Guglielmo Marconi Airport (BLQ) lies 40 km south-east of Modena: allow 35 to 45 minutes by motorway. Your chauffeur greets you in arrivals with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Ville du vinaigre balsamique, de la meilleure table du monde et des moteurs les plus rapides d’Italie, Modène marie cathédrale romane classée UNESCO et mythe Ferrari. Votre **chauffeur privé à Modène** dessert le centre historique, les usines automobiles et les acétaïes : transferts depuis Bologne, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Modène est la capitale de la **Motor Valley**. Maranello et le musée Ferrari sont à 20 km, Lamborghini à Sant’Agata et Pagani tout près, les acétaïes de balsamique traditionnel dans la campagne. En mise à disposition à la journée, votre chauffeur relie temples de la vitesse, dégustations et villes d’art de l’Émilie gourmande.',
+      ],
+      en: [
+        'City of balsamic vinegar, the world’s best restaurant and Italy’s fastest engines, Modena marries a UNESCO-listed Romanesque cathedral with the Ferrari myth. Your **private chauffeur in Modena** serves the historic centre, the car factories and the acetaie: transfers from Bologna, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Modena is the capital of the **Motor Valley**. Maranello and the Ferrari museum are 20 km away, Lamborghini at Sant’Agata and Pagani nearby, the traditional balsamic acetaie in the countryside. With a full-day hire, your chauffeur links temples of speed, tastings and art cities of gourmet Emilia.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Ferrari à Maranello', en: 'Ferrari at Maranello' }, teaser: { fr: 'Le musée Ferrari à Maranello, la piste de Fiorano, éventuellement un tour en Ferrari. Journée mythique pour les passionnés de moteurs, à 20 km.', en: 'The Ferrari museum at Maranello, the Fiorano track, optionally a Ferrari drive. A legendary day for engine enthusiasts, 20 km away.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '640' },
+      { title: { fr: 'Motor Valley intégrale', en: 'Full Motor Valley' }, teaser: { fr: 'Ferrari, Lamborghini et Pagani en une journée, les musées et les lignes de production. Le rêve automobile italien, chauffeur en attente à chaque étape.', en: 'Ferrari, Lamborghini and Pagani in one day, the museums and production lines. The Italian automotive dream, chauffeur on standby at each stop.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '690' },
+      { title: { fr: 'Balsamique et cathédrale', en: 'Balsamic and cathedral' }, teaser: { fr: 'Une acétaïe familiale de vinaigre balsamique traditionnel, la cathédrale romane classée UNESCO et la Ghirlandina. Journée patrimoine et gastronomie.', en: 'A family acetaia of traditional balsamic vinegar, the UNESCO-listed Romanesque cathedral and the Ghirlandina. A day of heritage and gastronomy.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '360' },
+      { title: { fr: 'Parme depuis Modène', en: 'Parma from Modena' }, teaser: { fr: 'À 50 km, le parmesan et le jambon de Parme à la source, le baptistère rose. Journée gourmande dans la capitale voisine de la Food Valley.', en: '50 km away, Parma’s parmesan and ham at the source, the pink baptistery. A gourmet day in the neighbouring Food Valley capital.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Soirée à Modène', en: 'Evening in Modena' }, teaser: { fr: 'Dîner dans une osteria du centre, la place Grande illuminée, un verre de lambrusco pétillant. Véhicule à disposition toute la soirée.', en: 'Dinner in an osteria in the centre, the illuminated Piazza Grande, a glass of sparkling lambrusco. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Peut-on visiter le musée Ferrari avec un chauffeur ?', en: 'Can you visit the Ferrari museum with a chauffeur?' }, a: { fr: 'Oui, Maranello est à 20 km de Modène. Votre chauffeur vous y conduit, combine avec Lamborghini et Pagani si vous le souhaitez, et vous attend à chaque site, à prix fixe.', en: 'Yes, Maranello is 20 km from Modena. Your chauffeur takes you there, combines with Lamborghini and Pagani if you wish, and waits at each site, at a fixed price.' } },
+      { q: { fr: 'Combien de temps de Bologne à Modène ?', en: 'How long from Bologna to Modena?' }, a: { fr: 'Comptez 35 à 45 minutes. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 35 to 45 minutes. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['parma', 'bologna', 'ferrara'],
+  },
+  {
+    slug: 'ferrara',
+    name: { fr: 'Ferrare', en: 'Ferrara' },
+    country: { fr: 'Italie', en: 'Italy' },
+    region: 'italy',
+    airport: 'Bologne-Guglielmo Marconi (BLQ)',
+    airportTransfer: {
+      fr: 'L’aéroport de Bologne-Guglielmo Marconi (BLQ) se trouve à 50 km au sud de Ferrare : comptez 45 minutes par l’autoroute. Votre chauffeur vous accueille en salle d’arrivée avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Bologna-Guglielmo Marconi Airport (BLQ) lies 50 km south of Ferrara: allow 45 minutes by motorway. Your chauffeur greets you in arrivals with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Cité idéale de la Renaissance façonnée par les Este, Ferrare déploie son château à douves, ses palais et ses larges rues d’une ville pensée pour la beauté, classée UNESCO. Votre **chauffeur privé à Ferrare** dessert le centre historique, souvent parcouru à vélo, et les rendez-vous de la plaine du Pô : transferts depuis Bologne, mise à disposition à l’heure, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Ferrare est la porte du **delta du Pô**. Les lagunes et réserves ornithologiques du delta classé UNESCO sont à trente minutes, Ravenne et ses mosaïques byzantines à 80 km, la côte adriatique tout près. En mise à disposition à la journée, votre chauffeur relie villes d’art, nature sauvage et abbayes de la basse plaine émilienne.',
+      ],
+      en: [
+        'An ideal Renaissance city shaped by the Este family, Ferrara displays its moated castle, its palaces and the wide streets of a city designed for beauty, UNESCO-listed. Your **private chauffeur in Ferrara** serves the historic centre, often explored by bicycle, and the meetings of the Po plain: transfers from Bologna, hourly hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Ferrara is the gateway to the **Po Delta**. The lagoons and bird reserves of the UNESCO-listed delta are thirty minutes away, Ravenna and its Byzantine mosaics 80 km, the Adriatic coast nearby. With a full-day hire, your chauffeur links art cities, wild nature and abbeys of the lower Emilian plain.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Ferrare Renaissance', en: 'Renaissance Ferrara' }, teaser: { fr: 'Le château des Este et ses douves, la cathédrale, le palais des Diamants et le quartier hérité de l’addition renaissante. Dépose au centre, promenade patrimoniale.', en: 'The Este castle and its moats, the cathedral, the Palazzo dei Diamanti and the quarter of the Renaissance addition. Drop-off in the centre, a heritage stroll.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Delta du Pô', en: 'Po Delta' }, teaser: { fr: 'Les lagunes et vallées du delta classé UNESCO, les flamants roses, l’abbaye de Pomposa. Journée nature et patrimoine au fil de l’eau.', en: 'The lagoons and valleys of the UNESCO-listed delta, the flamingos, the Pomposa abbey. A day of nature and heritage along the water.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Ravenne et les mosaïques', en: 'Ravenna and the mosaics' }, teaser: { fr: 'À 80 km, les mosaïques byzantines classées UNESCO, la basilique San Vitale, le tombeau de Dante. Journée d’art paléochrétien.', en: '80 km away, the UNESCO-listed Byzantine mosaics, the San Vitale basilica, Dante’s tomb. A day of early Christian art.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Bologne depuis Ferrare', en: 'Bologna from Ferrara' }, teaser: { fr: 'À 45 minutes, les portiques classés UNESCO, les deux tours, la plus ancienne université d’Europe. Journée d’art et de gastronomie émilienne.', en: '45 minutes away, the UNESCO-listed porticoes, the two towers, Europe’s oldest university. A day of Emilian art and gastronomy.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Soirée à Ferrare', en: 'Evening in Ferrara' }, teaser: { fr: 'Dîner dans une osteria de la vieille ville, le château illuminé se reflétant dans les douves, le calme des rues Renaissance. Véhicule à disposition.', en: 'Dinner in an old-town osteria, the illuminated castle reflected in the moats, the calm of the Renaissance streets. Vehicle on standby.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de Bologne à Ferrare ?', en: 'How long from Bologna to Ferrara?' }, a: { fr: 'Comptez 45 minutes. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 45 minutes. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Peut-on visiter le delta du Pô depuis Ferrare ?', en: 'Can you visit the Po Delta from Ferrara?' }, a: { fr: 'Oui, le delta est à trente minutes. En mise à disposition à la journée, votre chauffeur combine ville Renaissance, lagunes du delta et abbaye de Pomposa, à prix fixe.', en: 'Yes, the delta is thirty minutes away. With a full-day hire, your chauffeur combines the Renaissance city, the delta lagoons and the Pomposa abbey, at a fixed price.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['bologna', 'ravenna', 'modena'],
+  },
+  {
+    slug: 'ravenna',
+    name: { fr: 'Ravenne', en: 'Ravenna' },
+    country: { fr: 'Italie', en: 'Italy' },
+    region: 'italy',
+    airport: 'Bologne-Guglielmo Marconi (BLQ)',
+    airportTransfer: {
+      fr: 'L’aéroport de Bologne-Guglielmo Marconi (BLQ) se trouve à 80 km à l’ouest de Ravenne : comptez 1h par l’autoroute A14. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Bologna-Guglielmo Marconi Airport (BLQ) lies 80 km west of Ravenna: allow 1h via the A14 motorway. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Ancienne capitale de l’Empire romain d’Occident et de l’exarchat byzantin, Ravenne conserve les plus somptueuses mosaïques du monde, huit monuments classés UNESCO, ainsi que le tombeau de Dante. Votre **chauffeur privé à Ravenne** dessert le centre historique, les basiliques et le port de croisière : transferts depuis Bologne, mise à disposition à l’heure, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Ravenne ouvre sur la **côte adriatique et l’Émilie**. Les plages de la Riviera romagnole et Rimini sont à trente minutes, le delta du Pô au nord, Bologne et Ferrare à l’ouest. En mise à disposition à la journée, votre chauffeur relie trésors byzantins, stations balnéaires et villes d’art, ou assure les transferts pour les escales de croisière.',
+      ],
+      en: [
+        'Former capital of the Western Roman Empire and of the Byzantine exarchate, Ravenna preserves the world’s most sumptuous mosaics, eight UNESCO-listed monuments and Dante’s tomb. Your **private chauffeur in Ravenna** serves the historic centre, the basilicas and the cruise port: transfers from Bologna, hourly hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Ravenna opens onto the **Adriatic coast and Emilia**. The Romagna Riviera beaches and Rimini are thirty minutes away, the Po Delta to the north, Bologna and Ferrara to the west. With a full-day hire, your chauffeur links Byzantine treasures, seaside resorts and art cities, or handles transfers for cruise calls.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Mosaïques byzantines', en: 'Byzantine mosaics' }, teaser: { fr: 'La basilique San Vitale, le mausolée de Galla Placidia, Sant’Apollinare et ses ciels d’or, le tombeau de Dante. Dépose au plus près, promenade d’art unique au monde.', en: 'The San Vitale basilica, the Mausoleum of Galla Placidia, Sant’Apollinare and its golden skies, Dante’s tomb. Drop-off nearby, a stroll through art unique in the world.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Riviera romagnole', en: 'Romagna Riviera' }, teaser: { fr: 'Les plages de Cervia et Milano Marittima, les stations balnéaires animées, un déjeuner de poisson adriatique. Journée mer à trente minutes.', en: 'The beaches of Cervia and Milano Marittima, the lively resorts, an Adriatic seafood lunch. A seaside day thirty minutes away.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '360' },
+      { title: { fr: 'Delta du Pô', en: 'Po Delta' }, teaser: { fr: 'Les lagunes et réserves ornithologiques du delta classé UNESCO, les flamants roses, l’abbaye de Pomposa. Journée nature au fil de l’eau.', en: 'The lagoons and bird reserves of the UNESCO-listed delta, the flamingos, the Pomposa abbey. A nature day along the water.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Rimini et Saint-Marin', en: 'Rimini and San Marino' }, teaser: { fr: 'À 50 km, la Rimini de Fellini et le pont de Tibère, puis la République perchée de Saint-Marin. Journée côte et micro-État à part.', en: '50 km away, Fellini’s Rimini and the Tiberius bridge, then the perched Republic of San Marino. A day of coast and a state apart.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Transfert escale de croisière', en: 'Cruise call transfer' }, teaser: { fr: 'Accueil au port de Ravenne, visite des mosaïques et retour à quai dans les temps, gestion des horaires du navire. Escale optimisée sans stress.', en: 'Welcome at the port of Ravenna, a mosaics visit and return to the quay on time, with ship-schedule management. An optimised call with no stress.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '380' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de Bologne à Ravenne ?', en: 'How long from Bologna to Ravenna?' }, a: { fr: 'Comptez environ 1 heure par l’A14. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow about 1 hour via the A14. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Assurez-vous les escales de croisière à Ravenne ?', en: 'Do you handle cruise calls in Ravenna?' }, a: { fr: 'Oui. Nous organisons l’accueil au port, la visite des mosaïques ou des environs et le retour à quai dans les temps du navire, avec chauffeur en attente tout au long de l’escale.', en: 'Yes. We arrange the port welcome, the visit to the mosaics or surroundings and the return to the quay within the ship’s schedule, with the chauffeur on standby throughout the call.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['ferrara', 'bologna', 'rimini'],
+  },
+  {
+    slug: 'padua',
+    name: { fr: 'Padoue', en: 'Padua' },
+    country: { fr: 'Italie', en: 'Italy' },
+    region: 'italy',
+    airport: 'Venise-Marco Polo (VCE)',
+    airportTransfer: {
+      fr: 'L’aéroport de Venise-Marco Polo (VCE) se trouve à 50 km à l’est de Padoue : comptez 45 minutes par l’autoroute. Depuis Trévise (TSF), à 55 km, comptez 50 minutes. Votre chauffeur vous accueille en salle d’arrivée avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Venice-Marco Polo Airport (VCE) lies 50 km east of Padua: allow 45 minutes by motorway. From Treviso (TSF), 55 km away, allow 50 minutes. Your chauffeur greets you in arrivals with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Vieille cité universitaire de la Vénétie, Padoue conserve les fresques révolutionnaires de Giotto à la chapelle des Scrovegni, la basilique Saint-Antoine et la plus vaste place d’Europe. Votre **chauffeur privé à Padoue** dessert le centre historique, l’université et les rendez-vous d’affaires de la région : transferts depuis Venise, mise à disposition à l’heure, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Padoue est aux portes de **Venise et des villas palladiennes**. Venise est à 40 minutes sans les contraintes du logement sur la lagune, les villas de la Riviera del Brenta le long du canal, Vicence et Vérone à l’ouest. En mise à disposition à la journée, votre chauffeur relie chefs-d’œuvre, villas et villes d’art de la plaine vénète.',
+      ],
+      en: [
+        'An old university city of the Veneto, Padua preserves Giotto’s revolutionary frescoes in the Scrovegni Chapel, the Basilica of Saint Anthony and Europe’s largest square. Your **private chauffeur in Padua** serves the historic centre, the university and the region’s business meetings: transfers from Venice, hourly hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Padua is at the gates of **Venice and the Palladian villas**. Venice is 40 minutes away without the constraints of staying on the lagoon, the villas of the Riviera del Brenta line the canal, Vicenza and Verona to the west. With a full-day hire, your chauffeur links masterpieces, villas and art cities of the Veneto plain.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Chapelle des Scrovegni', en: 'Scrovegni Chapel' }, teaser: { fr: 'Les fresques de Giotto qui ont changé l’histoire de l’art, la basilique Saint-Antoine, le Prato della Valle. Dépose au centre, promenade patrimoniale.', en: 'Giotto’s frescoes that changed the history of art, the Basilica of Saint Anthony, the Prato della Valle. Drop-off in the centre, a heritage stroll.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Venise depuis Padoue', en: 'Venice from Padua' }, teaser: { fr: 'À 40 minutes, dépose au plus près de la lagune, Saint-Marc et le Rialto, reprise en fin de journée. La Sérénissime sans le casse-tête du logement.', en: '40 minutes away, drop-off as close as possible to the lagoon, St Mark’s and the Rialto, pick-up at the end of the day. La Serenissima without the accommodation headache.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Villas de la Riviera del Brenta', en: 'Riviera del Brenta villas' }, teaser: { fr: 'Les villas vénitiennes le long du canal du Brenta, la Malcontenta de Palladio, une villa-musée. Journée d’architecture et d’élégance sur l’eau.', en: 'The Venetian villas along the Brenta canal, Palladio’s Malcontenta, a villa-museum. A day of architecture and elegance on the water.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Vicence palladienne', en: 'Palladian Vicenza' }, teaser: { fr: 'À 40 km, la ville de Palladio classée UNESCO, le théâtre Olympique, la villa La Rotonda. Journée d’architecture Renaissance.', en: '40 km away, Palladio’s UNESCO-listed city, the Teatro Olimpico, the Villa La Rotonda. A day of Renaissance architecture.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Soirée à Padoue', en: 'Evening in Padua' }, teaser: { fr: 'Un spritz sur la place des Herbes, dîner dans le centre universitaire, l’animation étudiante des cafés historiques. Véhicule à disposition.', en: 'A spritz on the Piazza delle Erbe, dinner in the university centre, the student buzz of the historic cafés. Vehicle on standby.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Padoue est-elle une bonne base pour visiter Venise ?', en: 'Is Padua a good base for visiting Venice?' }, a: { fr: 'Oui, très pratique : Venise est à 40 minutes, avec des hôtels moins chers et plus faciles d’accès en voiture. Votre chauffeur vous dépose au plus près de la lagune et vous reprend en fin de journée.', en: 'Yes, very practical: Venice is 40 minutes away, with cheaper hotels that are easier to reach by car. Your chauffeur drops you as close as possible to the lagoon and picks you up at the end of the day.' } },
+      { q: { fr: 'Combien de temps de l’aéroport de Venise à Padoue ?', en: 'How long from Venice Airport to Padua?' }, a: { fr: 'Comptez 45 minutes. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 45 minutes. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['venice', 'verona', 'mantua'],
+  },
+  {
+    slug: 'mantua',
+    name: { fr: 'Mantoue', en: 'Mantua' },
+    country: { fr: 'Italie', en: 'Italy' },
+    region: 'italy',
+    airport: 'Vérone-Villafranca (VRN)',
+    airportTransfer: {
+      fr: 'L’aéroport de Vérone-Villafranca (VRN) se trouve à 40 km au nord de Mantoue : comptez 40 minutes. Depuis Bologne (BLQ), à 100 km, comptez 1h15. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Verona-Villafranca Airport (VRN) lies 40 km north of Mantua: allow 40 minutes. From Bologna (BLQ), 100 km away, allow 1h15. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Capitale des Gonzague entourée de trois lacs artificiels, Mantoue déploie l’un des plus vastes ensembles Renaissance d’Italie — le palais ducal, le palais du Te — dans une ville classée UNESCO restée à l’écart des foules. Votre **chauffeur privé à Mantoue** dessert le centre historique et les rendez-vous de la basse Lombardie : transferts depuis Vérone, mise à disposition à l’heure, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Mantoue est au carrefour de la **Lombardie, de la Vénétie et de l’Émilie**. Vérone est à 40 minutes, Sabbioneta la ville idéale tout près, Parme et le lac de Garde à une heure. En mise à disposition à la journée, votre chauffeur relie palais Renaissance, villes d’art et rives lacustres dans une région préservée du tourisme de masse.',
+      ],
+      en: [
+        'Capital of the Gonzaga surrounded by three artificial lakes, Mantua displays one of Italy’s largest Renaissance complexes — the ducal palace, the Palazzo Te — in a UNESCO-listed city that has stayed away from the crowds. Your **private chauffeur in Mantua** serves the historic centre and the meetings of lower Lombardy: transfers from Verona, hourly hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Mantua is at the crossroads of **Lombardy, the Veneto and Emilia**. Verona is 40 minutes away, Sabbioneta the ideal city nearby, Parma and Lake Garda an hour. With a full-day hire, your chauffeur links Renaissance palaces, art cities and lake shores in a region spared from mass tourism.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Palais des Gonzague', en: 'Gonzaga palaces' }, teaser: { fr: 'Le palais ducal et la Chambre des Époux de Mantegna, le palais du Te et sa salle des Géants, les trois lacs. Dépose au centre, promenade Renaissance.', en: 'The ducal palace and Mantegna’s Camera degli Sposi, the Palazzo Te and its Hall of the Giants, the three lakes. Drop-off in the centre, a Renaissance stroll.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Sabbioneta, la ville idéale', en: 'Sabbioneta, the ideal city' }, teaser: { fr: 'À 35 km, la cité Renaissance dessinée d’un trait par Vespasien Gonzague, classée UNESCO avec Mantoue. Journée d’urbanisme humaniste.', en: '35 km away, the Renaissance city drawn in one stroke by Vespasiano Gonzaga, UNESCO-listed alongside Mantua. A day of humanist urbanism.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '360' },
+      { title: { fr: 'Vérone depuis Mantoue', en: 'Verona from Mantua' }, teaser: { fr: 'À 40 minutes, les arènes, le balcon de Juliette, la piazza delle Erbe. Journée d’art vénète et déjeuner dans la cité de l’amour.', en: '40 minutes away, the arena, Juliet’s balcony, the Piazza delle Erbe. A day of Veneto art and lunch in the city of love.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Parme et la Food Valley', en: 'Parma and the Food Valley' }, teaser: { fr: 'À une heure, le parmesan et le jambon à la source, la ville ducale. Journée gourmande dans la capitale voisine de l’Émilie.', en: 'An hour away, parmesan and ham at the source, the ducal city. A gourmet day in the neighbouring Emilian capital.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Soirée sur les lacs', en: 'Evening on the lakes' }, teaser: { fr: 'Dîner d’un risotto à la courge, spécialité locale, les palais illuminés se reflétant sur les lacs, le calme d’une ville préservée. Véhicule à disposition.', en: 'A pumpkin risotto dinner, the local speciality, the illuminated palaces reflected on the lakes, the calm of an unspoilt city. Vehicle on standby.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de l’aéroport de Vérone à Mantoue ?', en: 'How long from Verona Airport to Mantua?' }, a: { fr: 'Comptez 40 minutes. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 40 minutes. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Mantoue vaut-elle une visite avec chauffeur ?', en: 'Is Mantua worth a visit with a chauffeur?' }, a: { fr: 'Oui, c’est l’une des plus belles villes Renaissance d’Italie, restée confidentielle. Votre chauffeur relie Mantoue, Sabbioneta et les villes voisines à votre rythme, à prix fixe.', en: 'Yes, it is one of Italy’s finest Renaissance cities and remains little-known. Your chauffeur links Mantua, Sabbioneta and the neighbouring cities at your pace, at a fixed price.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['verona', 'parma', 'padua'],
+  },
+  {
+    slug: 'rimini',
+    name: { fr: 'Rimini', en: 'Rimini' },
+    country: { fr: 'Italie', en: 'Italy' },
+    region: 'italy',
+    airport: 'Rimini-Federico Fellini (RMI)',
+    airportTransfer: {
+      fr: 'L’aéroport de Rimini-Federico Fellini (RMI) se trouve à 8 km au sud-est du centre : comptez 15 minutes. Depuis Bologne (BLQ), à 120 km, comptez 1h15. Votre chauffeur vous accueille en salle d’arrivée avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Rimini-Federico Fellini Airport (RMI) lies 8 km south-east of the centre: allow 15 minutes. From Bologna (BLQ), 120 km away, allow 1h15. Your chauffeur greets you in arrivals with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Reine des plages de l’Adriatique et ville natale de Fellini, Rimini cache derrière ses kilomètres de sable un centre romain et médiéval avec pont de Tibère et arc d’Auguste. Votre **chauffeur privé à Rimini** dessert le front de mer, les hôtels balnéaires et le centre historique : transferts aéroport, mise à disposition à l’heure, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Rimini est la porte de **Saint-Marin et de la Romagne**. La République perchée de Saint-Marin est à 25 km, les villages du Montefeltro et Urbino tout près, les mosaïques de Ravenne au nord. En mise à disposition à la journée, votre chauffeur relie plages, micro-État et villes d’art de la Renaissance dans l’arrière-pays romagnol.',
+      ],
+      en: [
+        'Queen of the Adriatic beaches and Fellini’s hometown, Rimini hides behind its miles of sand a Roman and medieval centre with the Tiberius bridge and the Arch of Augustus. Your **private chauffeur in Rimini** serves the seafront, the beach hotels and the historic centre: airport transfers, hourly hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Rimini is the gateway to **San Marino and Romagna**. The perched Republic of San Marino is 25 km away, the villages of the Montefeltro and Urbino nearby, the Ravenna mosaics to the north. With a full-day hire, your chauffeur links beaches, a micro-state and Renaissance art cities in the Romagna hinterland.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Saint-Marin, la République perchée', en: 'San Marino, the perched Republic' }, teaser: { fr: 'À 25 km, le plus vieux micro-État du monde sur son mont Titan, ses trois tours, son panorama sur l’Adriatique. Demi-journée insolite.', en: '25 km away, the world’s oldest micro-state on Mount Titano, its three towers, its panorama over the Adriatic. An unusual half-day.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '360' },
+      { title: { fr: 'Rimini de Fellini', en: 'Fellini’s Rimini' }, teaser: { fr: 'Le pont de Tibère, l’arc d’Auguste, le Fellini Museum et le vieux port cher au cinéaste. Dépose au centre, promenade entre Rome antique et cinéma.', en: 'The Tiberius bridge, the Arch of Augustus, the Fellini Museum and the old port dear to the filmmaker. Drop-off in the centre, a stroll between ancient Rome and cinema.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Urbino et le Montefeltro', en: 'Urbino and the Montefeltro' }, teaser: { fr: 'La ville idéale de la Renaissance classée UNESCO, le palais ducal de Federico da Montefeltro, les collines des Marches. Journée d’art et de paysages.', en: 'The ideal Renaissance city, UNESCO-listed, the ducal palace of Federico da Montefeltro, the Marche hills. A day of art and landscapes.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Ravenne et les mosaïques', en: 'Ravenna and the mosaics' }, teaser: { fr: 'À 50 km au nord, les mosaïques byzantines classées UNESCO, la basilique San Vitale, le tombeau de Dante. Journée d’art paléochrétien.', en: '50 km north, the UNESCO-listed Byzantine mosaics, the San Vitale basilica, Dante’s tomb. A day of early Christian art.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Soirée sur la Riviera', en: 'Evening on the Riviera' }, teaser: { fr: 'Dîner de poisson sur le port de plaisance, l’animation de la Riviera romagnole, un dernier verre en bord de mer. Véhicule à disposition toute la soirée.', en: 'A seafood dinner at the marina, the buzz of the Romagna Riviera, a nightcap by the sea. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de l’aéroport de Rimini au centre ?', en: 'How long from Rimini Airport to the centre?' }, a: { fr: 'Comptez 15 minutes. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 15 minutes. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Peut-on visiter Saint-Marin depuis Rimini ?', en: 'Can you visit San Marino from Rimini?' }, a: { fr: 'Oui, Saint-Marin est à 25 km. En mise à disposition, votre chauffeur vous conduit sur le mont Titan, vous laisse découvrir les tours et vous ramène, à prix fixe.', en: 'Yes, San Marino is 25 km away. With a hire, your chauffeur drives you up Mount Titano, lets you explore the towers and brings you back, at a fixed price.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['ravenna', 'bologna'],
+  },
+  {
+    slug: 'cortina-dampezzo',
+    name: { fr: 'Cortina d’Ampezzo', en: 'Cortina d’Ampezzo' },
+    country: { fr: 'Italie', en: 'Italy' },
+    region: 'italy',
+    airport: 'Venise-Marco Polo (VCE)',
+    airportTransfer: {
+      fr: 'L’aéroport de Venise-Marco Polo (VCE) se trouve à 160 km au sud de Cortina d’Ampezzo : comptez 2 heures par la route de montagne. Votre chauffeur, habitué aux cols dolomitiques, vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Venice-Marco Polo Airport (VCE) lies 160 km south of Cortina d’Ampezzo: allow 2 hours by mountain road. Your chauffeur, used to the Dolomite passes, greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Reine des Dolomites et hôtesse des Jeux olympiques d’hiver 2026, Cortina d’Ampezzo déploie son élégance mondaine au pied de sommets calcaires classés UNESCO. Votre **chauffeur privé à Cortina** assure les transferts depuis Venise, la desserte des remontées et des chalets, et la conduite sur les cols souvent enneigés : mise à disposition à la journée, prix fixes. Berlines et 4x4 selon la saison, chauffeurs anglophones sur demande.',
+        'Cortina est au cœur des **Dolomites**. Les cols de Falzarego et de Giau, les lacs de Misurina et de Braies, les pistes olympiques s’enchaînent autour de la station. En mise à disposition à la journée, votre chauffeur relie panoramas, refuges d’altitude et villages ladins pendant que vous profitez de l’un des plus beaux massifs d’Europe.',
+      ],
+      en: [
+        'Queen of the Dolomites and host of the 2026 Winter Olympics, Cortina d’Ampezzo unfolds its worldly elegance at the foot of UNESCO-listed limestone peaks. Your **private chauffeur in Cortina** handles transfers from Venice, access to the lifts and chalets, and driving over the often snow-covered passes: full-day hire, fixed prices. Sedans and 4x4s depending on the season, English-speaking chauffeurs on request.',
+        'Cortina lies at the heart of the **Dolomites**. The Falzarego and Giau passes, the lakes of Misurina and Braies, the Olympic slopes follow one another around the resort. With a full-day hire, your chauffeur links panoramas, mountain refuges and Ladin villages while you enjoy one of Europe’s finest ranges.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Grand tour des Dolomites', en: 'Grand tour of the Dolomites' }, teaser: { fr: 'Les cols de Falzarego, Pordoi et Giau, les panoramas sur les Tre Cime, un déjeuner en refuge d’altitude. Journée montagne, votre chauffeur maîtrise les lacets.', en: 'The Falzarego, Pordoi and Giau passes, the panoramas over the Tre Cime, a lunch at a mountain refuge. A mountain day, your chauffeur masters the hairpins.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '720' },
+      { title: { fr: 'Lac de Braies et Misurina', en: 'Lakes Braies and Misurina' }, teaser: { fr: 'Le lac de Braies aux eaux émeraude, le lac de Misurina au pied des Tre Cime, arrêts photo légendaires. Journée lacs et sommets.', en: 'Lake Braies with its emerald waters, Lake Misurina at the foot of the Tre Cime, legendary photo stops. A day of lakes and peaks.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '690' },
+      { title: { fr: 'Ski et remontées', en: 'Skiing and lifts' }, teaser: { fr: 'Transferts et navette entre votre chalet et les pistes olympiques, gestion des skis, reprise à l’heure convenue. La montagne sans logistique de stationnement.', en: 'Transfers and shuttle between your chalet and the Olympic slopes, ski handling, pick-up at the agreed time. The mountain without parking logistics.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Villages ladins et Bolzano', en: 'Ladin villages and Bolzano' }, teaser: { fr: 'Le val Badia et ses villages ladins, la culture alpine, éventuellement Bolzano et l’homme des glaces Ötzi. Journée culture et paysages du Haut-Adige.', en: 'The Val Badia and its Ladin villages, the Alpine culture, optionally Bolzano and Ötzi the Iceman. A day of South Tyrol culture and landscapes.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '690' },
+      { title: { fr: 'Soirée à Cortina', en: 'Evening in Cortina' }, teaser: { fr: 'Dîner dans un chalet gastronomique, le corso Italia et ses boutiques, les sommets rosis par l’enrosadira au crépuscule. Véhicule à disposition.', en: 'Dinner at a gourmet chalet, the Corso Italia and its boutiques, the peaks turned pink by the enrosadira at dusk. Vehicle on standby.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '400' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de l’aéroport de Venise à Cortina ?', en: 'How long from Venice Airport to Cortina?' }, a: { fr: 'Comptez environ 2 heures par la route de montagne. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow about 2 hours by mountain road. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Vos véhicules sont-ils adaptés à la montagne en hiver ?', en: 'Are your vehicles suited to the mountains in winter?' }, a: { fr: 'Oui, nous adaptons le véhicule à la saison — 4x4 et pneus adéquats l’hiver — et nos chauffeurs sont habitués aux cols enneigés des Dolomites. Précisez vos dates à la réservation.', en: 'Yes, we adapt the vehicle to the season — 4x4 and appropriate tyres in winter — and our chauffeurs are used to the snowy Dolomite passes. Please specify your dates at booking.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['venice', 'padua'],
+  },
 ];
