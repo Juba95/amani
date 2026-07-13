@@ -21,6 +21,8 @@ export default function robots(): MetadataRoute.Robots {
         disallow: [
           '/api/',        // Routes API internes
           '/_next/',      // Assets Next.js (déjà ignorés mais par précaution)
+          '/admin',       // Interfaces d'administration
+          '/adminos',
         ],
       },
       {

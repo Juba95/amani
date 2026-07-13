@@ -537,6 +537,15 @@ const nextConfig = {
             ],
           }]
         : []),
+      // Interfaces d'administration : jamais indexées
+      {
+        source: '/admin/:path*',
+        headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }],
+      },
+      {
+        source: '/adminos/:path*',
+        headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }],
+      },
       // hreflang sur la homepage
       {
         source: '/',
