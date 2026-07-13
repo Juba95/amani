@@ -9,7 +9,7 @@ import ServicesGrid from '@/components/ServicesGrid';
 import WhyUs from '@/components/WhyUs';
 import AboutSection from '@/components/AboutSection';
 import { CTA, Footer } from '@/components/CTAFooter';
-import { SocialProofStrip, ExperiencesSection, DestinationsSection, DestinationsMapSection, RoutesStrip, RecruitBlock } from '@/components/HomeSections';
+import { SocialProofStrip, ExperiencesSection, DestinationsSection, RoutesStrip, RecruitBlock } from '@/components/HomeSections';
 import type { MapCountry } from '@/components/EuropeMap';
 
 import fr from '@/locales/fr.json';
@@ -69,6 +69,8 @@ export default function HomeClient({ countries }: { countries: Record<string, Ma
         setTo={setTo}
         onSearch={handleSearch}
         loading={searchLoading}
+        countries={countries}
+        locale="fr"
       />
 
       {/* Preuve sociale */}
@@ -82,9 +84,6 @@ export default function HomeClient({ countries }: { countries: Record<string, Ma
 
       {/* Top destinations */}
       <DestinationsSection locale="fr" />
-
-      {/* Carte d'Europe interactive — 297 destinations */}
-      <DestinationsMapSection locale="fr" countries={countries} />
 
       {/* Trajets populaires */}
       <RoutesStrip locale="fr" />
