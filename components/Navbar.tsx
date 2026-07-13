@@ -211,29 +211,34 @@ function getEventsMenu(locale: Locale): DropdownItem[] {
   ];
 }
 
+// Top 10 des villes de France (pages dédiées). Pour l'EN, on pointe vers la
+// page anglaise quand elle existe, sinon la page dédiée (landing) FR.
 function getDestinationsMenu(locale: Locale): DropdownItem[] {
   if (locale === 'en') return [
-    { label: 'All destinations',         href: '/en/destinations' },
-    { label: 'Private chauffeur Paris',  href: '/en/private-chauffeur-paris' },
-    { label: 'Bordeaux chauffeur',       href: '/en/private-chauffeur-bordeaux' },
-    { label: 'Chamonix chauffeur',       href: '/en/chamonix-chauffeur' },
-    { label: 'Megève chauffeur',         href: '/en/megeve-chauffeur' },
-    { label: 'Haute-Savoie chauffeur',   href: '/en/haute-savoie-chauffeur' },
-    { label: 'CDG → Paris transfers',    href: '/en/cdg-airport-transfer' },
-    { label: 'Economical airport transfer', href: '/en/economical-airport-transfer' },
+    { label: 'Paris',        href: '/en/private-chauffeur-paris' },
+    { label: 'Nice',         href: '/chauffeur-prive-nice' },
+    { label: 'Cannes',       href: '/chauffeur-prive-cannes' },
+    { label: 'Saint-Tropez', href: '/chauffeur-prive-saint-tropez' },
+    { label: 'Marseille',    href: '/en/marseille-airport-transfer' },
+    { label: 'Lyon',         href: '/en/lyon-airport-transfer' },
+    { label: 'Bordeaux',     href: '/en/private-chauffeur-bordeaux' },
+    { label: 'Deauville',    href: '/chauffeur-prive-deauville' },
+    { label: 'Megève',       href: '/en/megeve-chauffeur' },
+    { label: 'Chamonix',     href: '/en/chamonix-chauffeur' },
+    { label: 'All destinations →', href: '/en/destinations' },
   ];
   return [
-    { label: 'Toutes les destinations',   href: '/destinations' },
-    { label: 'Chauffeur privé Paris',     href: '/chauffeur-prive-paris' },
-    { label: 'Chauffeur privé Bordeaux',  href: '/chauffeur-prive-bordeaux' },
-    { label: 'Chauffeur privé Lyon',      href: '/chauffeur-prive-lyon' },
-    { label: 'Nice, Cannes, Monaco',      href: '/chauffeur-prive-nice' },
-    { label: 'Marseille, St-Tropez',      href: '/chauffeur-prive-marseille' },
-    { label: 'Chauffeur privé Chamonix',  href: '/chauffeur-prive-chamonix' },
-    { label: 'Chauffeur privé Megève',    href: '/chauffeur-prive-megeve' },
-    { label: 'Transfert CDG → Paris',     href: '/transfert-cdg-paris' },
-    { label: 'Transfert Orly → Paris',    href: '/transfert-orly-paris' },
-    { label: 'Transfert Beauvais',        href: '/transfert-aeroport-beauvais' },
+    { label: 'Paris',        href: '/chauffeur-prive-paris' },
+    { label: 'Nice',         href: '/chauffeur-prive-nice' },
+    { label: 'Cannes',       href: '/chauffeur-prive-cannes' },
+    { label: 'Saint-Tropez', href: '/chauffeur-prive-saint-tropez' },
+    { label: 'Marseille',    href: '/chauffeur-prive-marseille' },
+    { label: 'Lyon',         href: '/chauffeur-prive-lyon' },
+    { label: 'Bordeaux',     href: '/chauffeur-prive-bordeaux' },
+    { label: 'Deauville',    href: '/chauffeur-prive-deauville' },
+    { label: 'Megève',       href: '/chauffeur-prive-megeve' },
+    { label: 'Chamonix',     href: '/chauffeur-prive-chamonix' },
+    { label: 'Toutes les destinations →', href: '/destinations' },
   ];
 }
 
@@ -267,7 +272,7 @@ function DropdownMenu({ label, items, isOpen, onToggle, onClose }: DropdownMenuP
     <div ref={ref} className="relative">
       <button
         onClick={onToggle}
-        className="flex items-center gap-1 font-sans text-sm text-gray-700 hover:text-gold-400 tracking-wide transition-colors"
+        className="flex items-center gap-1 font-sans text-sm text-gray-700 hover:text-gold-400 tracking-wide transition-colors whitespace-nowrap"
       >
         {label}
         <svg
@@ -329,10 +334,8 @@ export default function Navbar({ t, locale }: NavbarProps) {
   const destinationsItems = getDestinationsMenu(locale);
   const eventsItems       = getEventsMenu(locale);
 
-  const servicesLabel     = locale === 'en' ? 'Services'     : 'Services';
-  const destinationsLabel = locale === 'en' ? 'Destinations' : 'Destinations';
-  const fleetLabel        = t?.nav?.fleet ?? (locale === 'en' ? 'Fleet' : 'Flotte');
-  const fleetHref         = locale === 'en' ? '/en/our-fleet' : '/notre-flotte';
+  const servicesLabel     = locale === 'en' ? 'Transfers'   : 'Transferts';
+  const destinationsLabel = locale === 'en' ? 'Top cities'  : 'Top villes';
   const expLabel          = locale === 'en' ? 'Experiences' : 'Expériences';
   const expHref           = locale === 'en' ? '/en/experiences' : '/experiences';
   const corpHref          = locale === 'en' ? '/en/corporate' : '/corporate';
@@ -355,8 +358,8 @@ export default function Navbar({ t, locale }: NavbarProps) {
         <Logo tone="dark" className="h-11 md:h-12 w-auto" />
       </Link>
 
-      {/* Desktop nav */}
-      <div className="hidden md:flex items-center gap-6">
+      {/* Desktop nav (≥ lg : en dessous, menu hamburger pour éviter l'entassement) */}
+      <div className="hidden lg:flex items-center gap-5">
         {/* Services dropdown */}
         {(locale === 'fr' || locale === 'en') && (
           <DropdownMenu
@@ -369,7 +372,7 @@ export default function Navbar({ t, locale }: NavbarProps) {
         )}
         {(locale === 'ar' || locale === 'zh') && (
           <a href={anchorHref('services')}
-            className="font-sans text-sm text-gray-700 hover:text-gold-400 tracking-wide transition-colors">
+            className="font-sans text-sm text-gray-700 hover:text-gold-400 tracking-wide transition-colors whitespace-nowrap">
             {t?.nav?.services}
           </a>
         )}
@@ -385,12 +388,6 @@ export default function Navbar({ t, locale }: NavbarProps) {
           />
         )}
 
-        {/* Fleet */}
-        <Link href={fleetHref}
-          className="font-sans text-sm text-gray-700 hover:text-gold-400 tracking-wide transition-colors">
-          {fleetLabel}
-        </Link>
-
         {/* Events dropdown */}
         {(locale === 'fr' || locale === 'en') && (
           <DropdownMenu
@@ -403,7 +400,7 @@ export default function Navbar({ t, locale }: NavbarProps) {
         )}
         {(locale === 'ar' || locale === 'zh') && (
           <a href={anchorHref('events')}
-            className="font-sans text-sm text-gray-700 hover:text-gold-400 tracking-wide transition-colors">
+            className="font-sans text-sm text-gray-700 hover:text-gold-400 tracking-wide transition-colors whitespace-nowrap">
             {t?.nav?.events}
           </a>
         )}
@@ -411,7 +408,7 @@ export default function Navbar({ t, locale }: NavbarProps) {
         {/* Corporate */}
         {(locale === 'fr' || locale === 'en') && (
           <Link href={corpHref}
-            className="font-sans text-sm text-gray-700 hover:text-gold-400 tracking-wide transition-colors">
+            className="font-sans text-sm text-gray-700 hover:text-gold-400 tracking-wide transition-colors whitespace-nowrap">
             Corporate
           </Link>
         )}
@@ -419,7 +416,7 @@ export default function Navbar({ t, locale }: NavbarProps) {
         {/* Recrutement */}
         {(locale === 'fr' || locale === 'en') && (
           <Link href={locale === 'en' ? '/en/become-a-chauffeur' : '/devenir-chauffeur'}
-            className="font-sans text-sm text-gray-700 hover:text-gold-400 tracking-wide transition-colors">
+            className="font-sans text-sm text-gray-700 hover:text-gold-400 tracking-wide transition-colors whitespace-nowrap">
             {locale === 'en' ? 'Careers' : 'Recrutement'}
           </Link>
         )}
@@ -436,7 +433,7 @@ export default function Navbar({ t, locale }: NavbarProps) {
       <div className="flex items-center gap-4">
         <a
           href={`tel:${t?.nav?.phone?.replace(/\s/g, '') ?? ''}`}
-          className="hidden sm:block font-sans text-sm text-gray-700 tracking-wide hover:text-gold-400 transition-colors font-medium"
+          className="hidden xl:block font-sans text-sm text-gray-700 tracking-wide hover:text-gold-400 transition-colors font-medium whitespace-nowrap"
           dir="ltr"
         >
           {t?.nav?.phone ?? ''}
@@ -472,7 +469,7 @@ export default function Navbar({ t, locale }: NavbarProps) {
 
         {/* Mobile menu toggle */}
         <button
-          className="md:hidden text-gray-700 text-lg"
+          className="lg:hidden text-gray-700 text-lg"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Menu"
         >
@@ -482,7 +479,7 @@ export default function Navbar({ t, locale }: NavbarProps) {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="absolute top-full left-0 right-0 bg-white border-b border-stone-100 shadow-md py-6 px-6 md:hidden max-h-[80vh] overflow-y-auto">
+        <div className="absolute top-full left-0 right-0 bg-white border-b border-stone-100 shadow-md py-6 px-6 lg:hidden max-h-[80vh] overflow-y-auto">
           <div className="flex flex-col gap-1">
             {/* Services section */}
             {(locale === 'fr' || locale === 'en') && (
@@ -550,10 +547,6 @@ export default function Navbar({ t, locale }: NavbarProps) {
                   {locale === 'en' ? 'Careers' : 'Recrutement'}
                 </Link>
               )}
-              <Link href={fleetHref} onClick={() => setMenuOpen(false)}
-                className="font-sans text-sm text-gray-700 hover:text-gold-400 py-1.5">
-                {fleetLabel}
-              </Link>
               {(locale === 'fr' || locale === 'en') && (
                 <Link href={corpHref} onClick={() => setMenuOpen(false)}
                   className="font-sans text-sm text-gray-700 hover:text-gold-400 py-1.5">

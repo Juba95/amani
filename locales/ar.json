@@ -41,37 +41,37 @@
     "items": {
       "disposition": {
         "title": "تأجير بالساعة",
-        "subtitle": "Mise à disposition",
+        "subtitle": "Hourly hire",
         "desc": "سائقك الخاص في باريس يبقى تحت تصرفك طوال المدة التي تختارها. نصف يوم، يوم كامل، عدة أيام — السيارة والسائق يتكيفان مع جدولك في الوقت الفعلي."
       },
       "transfer": {
         "title": "نقل خاص",
-        "subtitle": "Transfert privé",
+        "subtitle": "Private transfer",
         "desc": "نقل من الباب إلى الباب بين أي عنوانين. المطارات، محطات القطار، الفنادق، أماكن الاجتماعات. السعر محدد مسبقاً — بدون عداد، بدون مفاجآت."
       },
       "meetgreet": {
         "title": "استقبال وترحيب",
-        "subtitle": "Meet and Greet",
+        "subtitle": "Meet & Greet",
         "desc": "استقبال شخصي في منطقة الوصول مع لوحة باسمك. المساعدة في الأمتعة، المرافقة إلى السيارة. خيار المسار السريع متاح في مطاري شارل ديغول وأورلي."
       },
       "convoy": {
         "title": "قافلة مركبات",
-        "subtitle": "Convoi de véhicules",
+        "subtitle": "Vehicle convoy",
         "desc": "تنسيق عدة مركبات للوفود والبعثات الدبلوماسية والفعاليات الكبرى. إرسال مركزي، اتصال لاسلكي بين السائقين."
       },
       "security": {
         "title": "حماية أمنية",
-        "subtitle": "Sécurité rapprochée",
+        "subtitle": "Close protection",
         "desc": "نقل آمن مع مرافقة للشخصيات والدبلوماسيين والمسؤولين التنفيذيين. سيارات أمامية، سيارات متابعة، سائقون مدربون على القيادة الأمنية."
       },
       "excursion": {
         "title": "رحلة خاصة",
-        "subtitle": "Excursion privée",
+        "subtitle": "Private excursion",
         "desc": "فرساي، الشمبانيا، نورماندي، قصور اللوار، جيفرني. سائقك يعرف المسارات ويمكنه ترتيب توقفات مخصصة. دليل طعام متاح."
       },
       "longdistance": {
         "title": "مسافات طويلة",
-        "subtitle": "Longue distance",
+        "subtitle": "Long distance",
         "desc": "باريس–دوفيل، باريس–بروكسل، باريس–ليون، باريس–الريفييرا الفرنسية. سياراتنا السيدان وحافلات VIP مجهزة للرحلات الطويلة."
       }
     }
@@ -210,28 +210,28 @@
     "subtitle": "نقل VIP لأبرز المناسبات الباريسية",
     "items": {
       "fashionweek": {
-        "title": "Paris Fashion Week",
-        "period": "Février & Septembre"
+        "title": "أسبوع الموضة في باريس",
+        "period": "فبراير وسبتمبر"
       },
       "airshow": {
-        "title": "Paris Air Show",
-        "period": "Salon du Bourget"
+        "title": "معرض باريس الجوي",
+        "period": "معرض لو بورجيه"
       },
       "rolandgarros": {
-        "title": "Roland Garros",
-        "period": "Mai — Juin"
+        "title": "رولان غاروس",
+        "period": "مايو — يونيو"
       },
       "cannes": {
-        "title": "Festival de Cannes",
-        "period": "Mai"
+        "title": "مهرجان كان",
+        "period": "مايو"
       },
       "sports": {
-        "title": "Compétitions sportives",
-        "period": "Grand Prix, courses"
+        "title": "المنافسات الرياضية",
+        "period": "الجائزة الكبرى والسباقات"
       },
       "salons": {
-        "title": "Salons professionnels",
-        "period": "Nautic, Première Vision, M&O"
+        "title": "المعارض المهنية",
+        "period": "نوتيك، بروميير فيزيون، M&O"
       }
     }
   },
@@ -243,41 +243,41 @@
     "vehicles": {
       "classe_e": {
         "name": "Mercedes Classe E",
-        "category": "Berline Business",
-        "pax": "3 passagers",
-        "bags": "2 valises",
-        "from": "À partir de 125 €",
+        "category": "سيدان أعمال",
+        "pax": "3 ركاب",
+        "bags": "حقيبتان",
+        "from": "ابتداءً من 125 €",
         "features": [
-          "Wi-Fi premium",
-          "Intérieur cuir",
-          "Climatisation bi-zone",
-          "Chargeurs USB-C"
+          "واي فاي متميز",
+          "مقصورة جلدية",
+          "تكييف ثنائي المناطق",
+          "شواحن USB-C"
         ]
       },
       "classe_s": {
         "name": "Mercedes Classe S",
-        "category": "Berline Executive",
-        "pax": "3 passagers",
-        "bags": "2 valises",
-        "from": "À partir de 225 €",
+        "category": "سيدان تنفيذية",
+        "pax": "3 ركاب",
+        "bags": "حقيبتان",
+        "from": "ابتداءً من 225 €",
         "features": [
-          "Sièges massants",
-          "Écrans LCD",
-          "Insonorisation renforcée",
-          "Bar à bord"
+          "مقاعد بخاصية التدليك",
+          "شاشات LCD",
+          "عزل صوتي معزز",
+          "ميني بار على المتن"
         ]
       },
       "classe_v": {
         "name": "Mercedes Classe V",
-        "category": "Minivan Luxe",
-        "pax": "7 passagers",
-        "bags": "6 valises",
-        "from": "À partir de 125 €",
+        "category": "ميني فان فاخر",
+        "pax": "7 ركاب",
+        "bags": "6 حقائب",
+        "from": "ابتداءً من 125 €",
         "features": [
-          "Configuration salon",
-          "Espace réunion",
-          "Wi-Fi haut débit",
-          "Bagages XXL"
+          "ترتيب صالة",
+          "مساحة اجتماعات",
+          "واي فاي عالي السرعة",
+          "أمتعة كبيرة جداً"
         ]
       },
       "classe_g": {
@@ -424,30 +424,30 @@
   "footer": {
     "col1_title": "Amani Limousines",
     "col1_links": [
-      "Chauffeur privé Paris",
-      "Transfert aéroport CDG",
-      "Transfert aéroport Orly",
-      "Transfert Le Bourget"
+      "سائق خاص في باريس",
+      "نقل مطار شارل ديغول",
+      "نقل مطار أورلي",
+      "نقل لو بورجيه"
     ],
-    "col2_title": "Prestations",
+    "col2_title": "الخدمات",
     "col2_links": [
-      "Mise à disposition",
-      "Convoi & délégations",
-      "Sécurité rapprochée",
-      "Excursion privée"
+      "تأجير بالساعة",
+      "قوافل ووفود",
+      "حماية أمنية",
+      "رحلة خاصة"
     ],
-    "col3_title": "Événements",
+    "col3_title": "الفعاليات",
     "col3_links": [
-      "Paris Fashion Week",
-      "Paris Air Show",
-      "Roland Garros",
-      "Salons professionnels"
+      "أسبوع الموضة في باريس",
+      "معرض باريس الجوي",
+      "رولان غاروس",
+      "المعارض المهنية"
     ],
-    "col4_title": "Informations",
+    "col4_title": "معلومات",
     "col4_links": [
-      "Mentions légales",
-      "CGV",
-      "Politique de confidentialité"
+      "إشعارات قانونية",
+      "الشروط والأحكام",
+      "سياسة الخصوصية"
     ],
     "copyright": "© 2026 أماني ليموزين — خدمة سائق خاص فاخرة | فرنسا وأوروبا"
   },

@@ -31,6 +31,20 @@ export default function EuropeMap({
   const holder = useRef<HTMLDivElement>(null);
   const [svg, setSvg] = useState('');
   const [selected, setSelected] = useState<string>('fr');
+  // Survol = aperçu ; clic = fige la sélection (re-clic sur le même pays = libère).
+  const [locked, setLocked] = useState(false);
+
+  const handleHover = (e: React.MouseEvent) => {
+    if (locked) return;
+    const iso = countryFromEvent(e.target);
+    if (iso) setSelected(iso);
+  };
+  const handleClick = (e: React.MouseEvent) => {
+    const iso = countryFromEvent(e.target);
+    if (!iso) return;
+    if (locked && iso === selected) setLocked(false);
+    else { setSelected(iso); setLocked(true); }
+  };
 
   useEffect(() => {
     fetch('/images/europe-map.svg')
@@ -93,25 +107,31 @@ export default function EuropeMap({
       <div className="relative">
         <div
           ref={holder}
-          className="am-map am-map--hero"
+          className={`am-map am-map--hero ${locked ? 'am-locked' : ''}`}
           dangerouslySetInnerHTML={{ __html: svg }}
-          onMouseOver={(e) => { const iso = countryFromEvent(e.target); if (iso) setSelected(iso); }}
-          onClick={(e) => { const iso = countryFromEvent(e.target); if (iso) setSelected(iso); }}
+          onMouseOver={handleHover}
+          onClick={handleClick}
           aria-label={en ? 'Interactive map of Europe' : 'Carte interactive de l’Europe'}
         />
 
-        {/* Compteur discret, en haut de la carte */}
-        <p className="absolute top-0 left-1 font-sans text-[0.6rem] tracking-[0.2em] uppercase pointer-events-none"
-          style={{ color: 'rgba(201,168,76,0.85)' }}>
-          {total} {en ? 'destinations · 30 countries' : 'destinations · 30 pays'}
-        </p>
+        {/* Compteur + indication d'usage, en haut de la carte */}
+        <div className="absolute top-0 left-1 pointer-events-none">
+          <p className="font-sans text-[0.6rem] tracking-[0.2em] uppercase" style={{ color: 'rgba(201,168,76,0.85)' }}>
+            {total} {en ? 'destinations · 30 countries' : 'destinations · 30 pays'}
+          </p>
+          <p className="font-sans text-[0.55rem] tracking-[0.08em] mt-0.5" style={{ color: 'rgba(245,240,230,0.4)' }}>
+            {locked
+              ? (en ? '📍 Pinned — click again to release' : '📍 Figé — recliquez pour libérer')
+              : (en ? 'Hover to explore · click to pin' : 'Survolez · cliquez pour figer')}
+          </p>
+        </div>
 
-        {/* Badge du pays survolé → lien vers le hub destinations */}
+        {/* Badge du pays sélectionné → lien vers le hub destinations */}
         {current && (
           <Link
             href={base}
             className="absolute bottom-1 left-1 flex items-baseline gap-2.5 rounded-md px-4 py-2.5 backdrop-blur-sm transition-colors group"
-            style={{ background: 'rgba(10,9,8,0.72)', border: '1px solid rgba(201,168,76,0.35)' }}
+            style={{ background: 'rgba(10,9,8,0.72)', border: `1px solid ${locked ? '#c9a84c' : 'rgba(201,168,76,0.35)'}` }}
           >
             <span className="font-serif text-lg leading-none" style={{ color: '#f5f3ef' }}>{current.name}</span>
             <span className="font-sans text-[0.62rem] tracking-[0.14em] uppercase" style={{ color: '#c9a84c' }}>
@@ -126,6 +146,8 @@ export default function EuropeMap({
           .am-map--hero .am-active, .am-map--hero .am-active path { fill: rgba(201,168,76,0.5); cursor: pointer; }
           .am-map--hero .am-active:hover, .am-map--hero .am-active:hover path { fill: rgba(201,168,76,0.8); }
           .am-map--hero .am-selected, .am-map--hero .am-selected path { fill: #c9a84c !important; }
+          .am-map--hero.am-locked .am-active:hover, .am-map--hero.am-locked .am-active:hover path { fill: rgba(201,168,76,0.5); }
+          .am-map--hero.am-locked .am-selected, .am-map--hero.am-locked .am-selected path { fill: #e0c56a !important; }
         `}</style>
       </div>
     );
@@ -136,16 +158,19 @@ export default function EuropeMap({
     <div className="grid lg:grid-cols-[1.4fr,1fr] gap-8 items-start">
       <div
         ref={holder}
-        className="am-map am-map--panel rounded-lg border border-warm-200 bg-white overflow-hidden"
+        className={`am-map am-map--panel rounded-lg border border-warm-200 bg-white overflow-hidden ${locked ? 'am-locked' : ''}`}
         dangerouslySetInnerHTML={{ __html: svg }}
-        onMouseOver={(e) => { const iso = countryFromEvent(e.target); if (iso) setSelected(iso); }}
-        onClick={(e) => { const iso = countryFromEvent(e.target); if (iso) setSelected(iso); }}
+        onMouseOver={handleHover}
+        onClick={handleClick}
         aria-label={en ? 'Interactive map of Europe' : 'Carte interactive de l’Europe'}
       />
       <div className="bg-warm-50 border border-warm-200 rounded-lg p-6 lg:sticky lg:top-28">
         {current ? (
           <>
-            <p className="tag">{en ? 'Destinations in' : 'Destinations en'}</p>
+            <p className="tag">
+              {en ? 'Destinations in' : 'Destinations en'}
+              {locked && <span className="ml-2 text-gold-500 normal-case tracking-normal">· {en ? '📍 pinned' : '📍 figé'}</span>}
+            </p>
             <h3 className="font-serif text-2xl text-gray-900 mt-1 mb-4">{current.name}</h3>
             <div className="grid grid-cols-2 gap-x-4 max-h-[420px] overflow-y-auto pr-1">
               {current.cities.map((c) => (
@@ -177,6 +202,7 @@ export default function EuropeMap({
         .am-map--panel .am-active, .am-map--panel .am-active path { fill: #c9b27c; cursor: pointer; }
         .am-map--panel .am-active:hover, .am-map--panel .am-active:hover path { fill: #a8894e; }
         .am-map--panel .am-selected, .am-map--panel .am-selected path { fill: #8a7340 !important; }
+        .am-map--panel.am-locked .am-active:hover, .am-map--panel.am-locked .am-active:hover path { fill: #c9b27c; }
       `}</style>
     </div>
   );

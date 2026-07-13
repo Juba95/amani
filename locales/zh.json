@@ -41,37 +41,37 @@
     "items": {
       "disposition": {
         "title": "包时服务",
-        "subtitle": "Mise à disposition",
+        "subtitle": "Hourly hire",
         "desc": "您的巴黎私人司机在您选择的时间内随时待命。半天、全天、多天——车辆和司机实时适应您的日程安排。"
       },
       "transfer": {
         "title": "私人接送",
-        "subtitle": "Transfert privé",
+        "subtitle": "Private transfer",
         "desc": "任意两个地址之间的门到门接送。机场、火车站、酒店、会议地点。价格预先确定——没有计价器，没有意外费用。"
       },
       "meetgreet": {
         "title": "贵宾迎接",
-        "subtitle": "Meet and Greet",
+        "subtitle": "Meet & Greet",
         "desc": "在到达区域提供个性化迎接服务，举着您名字的接机牌。行李协助，护送至车辆。戴高乐和奥利机场提供快速通道选项。"
       },
       "convoy": {
         "title": "车队护送",
-        "subtitle": "Convoi de véhicules",
+        "subtitle": "Vehicle convoy",
         "desc": "为代表团、外交任务和大型活动协调多辆车辆。集中调度，司机之间无线电通信。"
       },
       "security": {
         "title": "安全护卫",
-        "subtitle": "Sécurité rapprochée",
+        "subtitle": "Close protection",
         "desc": "为公众人物、外交官和企业高管提供带护卫的安全运输。前导车、跟随车，受过安全驾驶训练的司机。"
       },
       "excursion": {
         "title": "私人游览",
-        "subtitle": "Excursion privée",
+        "subtitle": "Private excursion",
         "desc": "凡尔赛、香槟区、诺曼底、卢瓦尔河城堡、吉维尼。您的司机熟悉路线，可以安排沿途定制停靠点。"
       },
       "longdistance": {
         "title": "长途出行",
-        "subtitle": "Longue distance",
+        "subtitle": "Long distance",
         "desc": "巴黎至多维尔、巴黎至布鲁塞尔、巴黎至里昂、巴黎至蔚蓝海岸。我们的豪华轿车和VIP商务车配备Wi-Fi、充电口和工作空间。"
       }
     }
@@ -210,28 +210,28 @@
     "subtitle": "巴黎重大活动VIP专属接送",
     "items": {
       "fashionweek": {
-        "title": "Paris Fashion Week",
-        "period": "Février & Septembre"
+        "title": "巴黎时装周",
+        "period": "二月与九月"
       },
       "airshow": {
-        "title": "Paris Air Show",
-        "period": "Salon du Bourget"
+        "title": "巴黎航空展",
+        "period": "布尔歇航展"
       },
       "rolandgarros": {
-        "title": "Roland Garros",
-        "period": "Mai — Juin"
+        "title": "法国网球公开赛",
+        "period": "五月至六月"
       },
       "cannes": {
-        "title": "Festival de Cannes",
-        "period": "Mai"
+        "title": "戛纳电影节",
+        "period": "五月"
       },
       "sports": {
-        "title": "Compétitions sportives",
-        "period": "Grand Prix, courses"
+        "title": "体育赛事",
+        "period": "大奖赛与赛事"
       },
       "salons": {
-        "title": "Salons professionnels",
-        "period": "Nautic, Première Vision, M&O"
+        "title": "专业展会",
+        "period": "Nautic、Première Vision、M&O"
       }
     }
   },
@@ -243,41 +243,41 @@
     "vehicles": {
       "classe_e": {
         "name": "Mercedes Classe E",
-        "category": "Berline Business",
-        "pax": "3 passagers",
-        "bags": "2 valises",
-        "from": "À partir de 125 €",
+        "category": "商务轿车",
+        "pax": "3位乘客",
+        "bags": "2件行李",
+        "from": "125 €起",
         "features": [
-          "Wi-Fi premium",
-          "Intérieur cuir",
-          "Climatisation bi-zone",
-          "Chargeurs USB-C"
+          "高级 Wi-Fi",
+          "真皮内饰",
+          "双区空调",
+          "USB-C 充电"
         ]
       },
       "classe_s": {
         "name": "Mercedes Classe S",
-        "category": "Berline Executive",
-        "pax": "3 passagers",
-        "bags": "2 valises",
-        "from": "À partir de 225 €",
+        "category": "行政轿车",
+        "pax": "3位乘客",
+        "bags": "2件行李",
+        "from": "225 €起",
         "features": [
-          "Sièges massants",
-          "Écrans LCD",
-          "Insonorisation renforcée",
-          "Bar à bord"
+          "按摩座椅",
+          "LCD 屏幕",
+          "强化隔音",
+          "车载酒吧"
         ]
       },
       "classe_v": {
         "name": "Mercedes Classe V",
-        "category": "Minivan Luxe",
-        "pax": "7 passagers",
-        "bags": "6 valises",
-        "from": "À partir de 125 €",
+        "category": "豪华商务车",
+        "pax": "7位乘客",
+        "bags": "6件行李",
+        "from": "125 €起",
         "features": [
-          "Configuration salon",
-          "Espace réunion",
-          "Wi-Fi haut débit",
-          "Bagages XXL"
+          "沙龙式布局",
+          "会议空间",
+          "高速 Wi-Fi",
+          "超大行李空间"
         ]
       },
       "classe_g": {
@@ -424,30 +424,30 @@
   "footer": {
     "col1_title": "Amani Limousines",
     "col1_links": [
-      "Chauffeur privé Paris",
-      "Transfert aéroport CDG",
-      "Transfert aéroport Orly",
-      "Transfert Le Bourget"
+      "巴黎私人司机",
+      "戴高乐机场接送",
+      "奥利机场接送",
+      "布尔歇机场接送"
     ],
-    "col2_title": "Prestations",
+    "col2_title": "服务",
     "col2_links": [
-      "Mise à disposition",
-      "Convoi & délégations",
-      "Sécurité rapprochée",
-      "Excursion privée"
+      "包时租车",
+      "车队与代表团",
+      "贴身安保",
+      "私人游览"
     ],
-    "col3_title": "Événements",
+    "col3_title": "活动",
     "col3_links": [
-      "Paris Fashion Week",
-      "Paris Air Show",
-      "Roland Garros",
-      "Salons professionnels"
+      "巴黎时装周",
+      "巴黎航空展",
+      "法国网球公开赛",
+      "专业展会"
     ],
-    "col4_title": "Informations",
+    "col4_title": "信息",
     "col4_links": [
-      "Mentions légales",
-      "CGV",
-      "Politique de confidentialité"
+      "法律声明",
+      "服务条款",
+      "隐私政策"
     ],
     "copyright": "© 2026 AMANI LIMOUSINES — 法国及欧洲豪华私人司机服务"
   },

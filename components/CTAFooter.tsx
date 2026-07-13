@@ -137,6 +137,40 @@ function getFooterLinks(locale: string) {
   return FOOTER_LINKS_FR;
 }
 
+// Liens institutionnels compacts du pré-footer, localisés (la page légale reste
+// unique — /mentions-legales — mais les libellés sont traduits).
+function getPreFooterLinks(locale: string): { label: string; href: string }[] {
+  const legal = '/mentions-legales';
+  if (locale === 'en') return [
+    { label: 'Further information', href: '/en/contact' },
+    { label: 'Legal notice',       href: legal },
+    { label: 'Privacy policy',     href: legal },
+    { label: 'Terms & Conditions', href: legal },
+    { label: 'Contact',            href: '/en/contact' },
+  ];
+  if (locale === 'ar') return [
+    { label: 'مزيد من المعلومات', href: '/ar/contact' },
+    { label: 'إشعارات قانونية',   href: legal },
+    { label: 'سياسة الخصوصية',    href: legal },
+    { label: 'الشروط والأحكام',   href: legal },
+    { label: 'اتصل بنا',          href: '/ar/contact' },
+  ];
+  if (locale === 'zh') return [
+    { label: '更多信息',   href: '/zh/contact' },
+    { label: '法律声明',   href: legal },
+    { label: '隐私政策',   href: legal },
+    { label: '服务条款',   href: legal },
+    { label: '联系我们',   href: '/zh/contact' },
+  ];
+  return [
+    { label: 'Plus d’informations',          href: '/a-propos' },
+    { label: 'Mentions légales',             href: legal },
+    { label: 'Politique de confidentialité', href: legal },
+    { label: 'CGV',                          href: legal },
+    { label: 'Contact',                      href: '/contact' },
+  ];
+}
+
 interface CTAProps {
   t: any;
 }
@@ -210,22 +244,7 @@ export function Footer({ t, locale = 'fr' }: FooterProps) {
       {/* Pre-footer : liens institutionnels compacts */}
       <div className="px-6 py-4 flex flex-wrap justify-center gap-x-7 gap-y-2"
         style={{ background: '#f5f2ed', borderTop: '1px solid #ece9e3' }}>
-        {(locale === 'en'
-          ? [
-              { label: 'Further information', href: '/en/contact' },
-              { label: 'Legal notice',        href: '/mentions-legales' },
-              { label: 'Privacy policy',      href: '/mentions-legales' },
-              { label: 'Terms & Conditions',  href: '/mentions-legales' },
-              { label: 'Contact',             href: '/en/contact' },
-            ]
-          : [
-              { label: 'Plus d\u2019informations',        href: '/a-propos' },
-              { label: 'Mentions légales',            href: '/mentions-legales' },
-              { label: 'Politique de confidentialité', href: '/mentions-legales' },
-              { label: 'CGV',                         href: '/mentions-legales' },
-              { label: 'Contact',                     href: '/contact' },
-            ]
-        ).map((l) => (
+        {getPreFooterLinks(locale).map((l) => (
           <Link key={l.label} href={l.href}
             className="font-sans text-[0.68rem] text-stone-500 hover:text-gold-400 transition-colors tracking-wide">
             {l.label}
