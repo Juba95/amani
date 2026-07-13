@@ -2432,4 +2432,378 @@ export const CITIES: Destination[] = [
     ],
     nearby: ['siena'],
   },
+  {
+    slug: 'amalfi',
+    name: { fr: 'Amalfi', en: 'Amalfi' },
+    country: { fr: 'Italie', en: 'Italy' },
+    region: 'italy',
+    airport: 'Naples-Capodichino (NAP)',
+    airportTransfer: {
+      fr: 'L’aéroport de Naples-Capodichino (NAP) se trouve à 65 km d’Amalfi : comptez 1h30 à 2h par la route côtière sinueuse. Votre chauffeur, habitué aux lacets de la côte amalfitaine, vous accueille en salle d’arrivée avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Naples-Capodichino Airport (NAP) lies 65 km from Amalfi: allow 1h30 to 2h along the winding coast road. Your chauffeur, used to the hairpins of the Amalfi Coast, greets you in arrivals with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Ancienne république maritime accrochée à la falaise, Amalfi donne son nom à la plus spectaculaire des côtes italiennes, entre citronniers en terrasses, cathédrale arabo-normande et criques turquoise. Votre **chauffeur privé à Amalfi** maîtrise la route côtière étroite et vertigineuse, gère les zones à circulation limitée et vous dépose au plus près : transferts depuis Naples, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Amalfi commande toute la **côte amalfitaine et le golfe de Salerne**. Ravello et ses jardins suspendus sont à 15 minutes, Positano à 20, Pompéi et le Vésuve à une heure. En mise à disposition à la journée, votre chauffeur relie villages perchés, embarcadères et tables étoilées pendant que vous profitez d’un des plus beaux littoraux du monde sans toucher au volant.',
+      ],
+      en: [
+        'A former maritime republic clinging to the cliff, Amalfi gives its name to Italy’s most spectacular coast, among terraced lemon groves, an Arab-Norman cathedral and turquoise coves. Your **private chauffeur in Amalfi** masters the narrow, vertiginous coast road, handles the limited-traffic zones and drops you as close as possible: transfers from Naples, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Amalfi commands the whole **Amalfi Coast and the Gulf of Salerno**. Ravello and its hanging gardens are 15 minutes away, Positano 20, Pompeii and Vesuvius an hour. With a full-day hire, your chauffeur links perched villages, jetties and starred tables while you enjoy one of the world’s finest coastlines without touching the wheel.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Route de la côte amalfitaine', en: 'Amalfi Coast road' }, teaser: { fr: 'Amalfi, Positano et Ravello enchaînés sur la mythique route côtière, arrêts panoramiques, déjeuner face à la mer. Votre chauffeur gère les lacets, vous admirez.', en: 'Amalfi, Positano and Ravello linked along the legendary coast road, panoramic stops, lunch facing the sea. Your chauffeur handles the hairpins, you admire.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '690' },
+      { title: { fr: 'Ravello et ses jardins', en: 'Ravello and its gardens' }, teaser: { fr: 'La villa Rufolo et la villa Cimbrone, leurs terrasses suspendues au-dessus du golfe, le festival de musique. Demi-journée hors du temps à 15 minutes.', en: 'The Villa Rufolo and Villa Cimbrone, their terraces suspended above the gulf, the music festival. A timeless half-day 15 minutes away.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '390' },
+      { title: { fr: 'Pompéi et le Vésuve', en: 'Pompeii and Vesuvius' }, teaser: { fr: 'La cité romaine figée par l’éruption, le cratère du Vésuve et son panorama sur le golfe de Naples. Journée archéologie à une heure de la côte.', en: 'The Roman city frozen by the eruption, the Vesuvius crater and its panorama over the Bay of Naples. An archaeology day an hour from the coast.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Transfert vers Capri', en: 'Transfer to Capri' }, teaser: { fr: 'Dépose à l’embarcadère de Salerne ou d’Amalfi pour le ferry vers Capri, reprise au retour. Votre chauffeur cale les horaires sur ceux des bateaux.', en: 'Drop-off at the Salerno or Amalfi jetty for the Capri ferry, pick-up on return. Your chauffeur aligns the timings with the boats.' }, duration: { fr: 'Transfert', en: 'Transfer' }, price: '360' },
+      { title: { fr: 'Soirée sur la côte', en: 'Evening on the coast' }, teaser: { fr: 'Dîner dans une table étoilée en surplomb, les villages illuminés au bord de l’eau, un dernier limoncello. Véhicule à disposition toute la soirée.', en: 'Dinner at a clifftop starred table, the villages illuminated by the water, a last limoncello. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '420' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de l’aéroport de Naples à Amalfi ?', en: 'How long from Naples Airport to Amalfi?' }, a: { fr: 'Comptez 1h30 à 2h par la route côtière sinueuse. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 1h30 to 2h along the winding coast road. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'La route de la côte amalfitaine est-elle difficile ?', en: 'Is the Amalfi Coast road difficult?' }, a: { fr: 'Elle est étroite, sinueuse et souvent encombrée. C’est justement l’intérêt d’un chauffeur privé habitué à ces lacets : vous profitez du paysage en toute sécurité, sans stress de conduite ni de stationnement.', en: 'It is narrow, winding and often congested. That is precisely the value of a private chauffeur used to these hairpins: you enjoy the scenery in complete safety, with no driving or parking stress.' } },
+      { q: { fr: 'Vos chauffeurs sur la côte amalfitaine parlent-ils anglais ?', en: 'Do your chauffeurs on the Amalfi Coast speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['positano', 'sorrento', 'naples'],
+  },
+  {
+    slug: 'positano',
+    name: { fr: 'Positano', en: 'Positano' },
+    country: { fr: 'Italie', en: 'Italy' },
+    region: 'italy',
+    airport: 'Naples-Capodichino (NAP)',
+    airportTransfer: {
+      fr: 'L’aéroport de Naples-Capodichino (NAP) se trouve à 60 km de Positano : comptez 1h30 à 2h par la route côtière. Votre chauffeur vous accueille en salle d’arrivée avec panneau nominatif, gère la descente en escaliers du village et suit votre vol en temps réel.',
+      en: 'Naples-Capodichino Airport (NAP) lies 60 km from Positano: allow 1h30 to 2h along the coast road. Your chauffeur greets you in arrivals with a name board, handles the village’s stepped descent and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Cascade de maisons pastel dévalant la falaise jusqu’à une plage de galets, Positano est le joyau glamour de la côte amalfitaine. Votre **chauffeur privé à Positano** vous dépose au plus haut du village — où la voiture ne descend pas — gère les bagages et les zones réglementées : transferts depuis Naples, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Positano ouvre sur toute la **côte amalfitaine**. Amalfi et Ravello sont à 20 minutes, le sentier des Dieux part des hauteurs, Capri se rejoint par ferry. En mise à disposition à la journée, votre chauffeur relie villages perchés, plages et embarcadères pendant que vous vivez le rêve méditerranéen sans souci de conduite.',
+      ],
+      en: [
+        'A cascade of pastel houses tumbling down the cliff to a pebble beach, Positano is the glamorous jewel of the Amalfi Coast. Your **private chauffeur in Positano** drops you at the top of the village — where cars cannot descend — handles the luggage and restricted zones: transfers from Naples, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Positano opens onto the whole **Amalfi Coast**. Amalfi and Ravello are 20 minutes away, the Path of the Gods starts from the heights, Capri is reached by ferry. With a full-day hire, your chauffeur links perched villages, beaches and jetties while you live the Mediterranean dream with no driving worry.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Positano et la côte', en: 'Positano and the coast' }, teaser: { fr: 'Le village en cascade, la plage de Marina Grande, puis Amalfi et Ravello sur la route côtière. Journée panoramique, votre chauffeur gère les lacets.', en: 'The cascading village, Marina Grande beach, then Amalfi and Ravello on the coast road. A panoramic day, your chauffeur handles the hairpins.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '690' },
+      { title: { fr: 'Sentier des Dieux', en: 'Path of the Gods' }, teaser: { fr: 'Dépose au départ du sentier à Bomerano, reprise à Nocelle au-dessus de Positano après la plus belle randonnée de la côte. Logistique gérée de bout en bout.', en: 'Drop-off at the trailhead in Bomerano, pick-up at Nocelle above Positano after the coast’s finest hike. Logistics handled end to end.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '390' },
+      { title: { fr: 'Pompéi et le Vésuve', en: 'Pompeii and Vesuvius' }, teaser: { fr: 'La cité romaine et le cratère du volcan, à une heure de la côte. Journée archéologie et paysages du golfe de Naples.', en: 'The Roman city and the volcano crater, an hour from the coast. A day of archaeology and Bay of Naples landscapes.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Transfert vers Capri', en: 'Transfer to Capri' }, teaser: { fr: 'Dépose à l’embarcadère de Positano pour le ferry vers Capri, reprise au retour, horaires calés sur les bateaux. Journée sur l’île mythique.', en: 'Drop-off at the Positano jetty for the Capri ferry, pick-up on return, timings aligned with the boats. A day on the legendary island.' }, duration: { fr: 'Transfert', en: 'Transfer' }, price: '360' },
+      { title: { fr: 'Soirée glamour', en: 'Glamorous evening' }, teaser: { fr: 'Dîner dans une table iconique face à la mer, les lumières du village se reflétant sur l’eau, un dernier verre en terrasse. Véhicule à disposition.', en: 'Dinner at an iconic table facing the sea, the village lights reflected on the water, a nightcap on a terrace. Vehicle on standby.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '420' },
+    ],
+    faq: [
+      { q: { fr: 'La voiture peut-elle descendre dans Positano ?', en: 'Can the car go down into Positano?' }, a: { fr: 'Le cœur du village est piéton, en escaliers. Votre chauffeur vous dépose au plus haut point accessible, gère vos bagages et vous reprend au même endroit, vous évitant toute contrainte de stationnement.', en: 'The heart of the village is pedestrian, on steps. Your chauffeur drops you at the highest accessible point, handles your luggage and picks you up at the same spot, saving you any parking constraint.' } },
+      { q: { fr: 'Combien de temps de Naples à Positano ?', en: 'How long from Naples to Positano?' }, a: { fr: 'Comptez 1h30 à 2h par la route côtière. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 1h30 to 2h along the coast road. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['amalfi', 'sorrento', 'naples'],
+  },
+  {
+    slug: 'sorrento',
+    name: { fr: 'Sorrente', en: 'Sorrento' },
+    country: { fr: 'Italie', en: 'Italy' },
+    region: 'italy',
+    airport: 'Naples-Capodichino (NAP)',
+    airportTransfer: {
+      fr: 'L’aéroport de Naples-Capodichino (NAP) se trouve à 50 km de Sorrente : comptez 1h à 1h15 par l’autoroute puis la route de la péninsule. Votre chauffeur vous accueille en salle d’arrivée avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Naples-Capodichino Airport (NAP) lies 50 km from Sorrento: allow 1h to 1h15 by motorway then the peninsula road. Your chauffeur greets you in arrivals with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Balcon sur le golfe de Naples posé sur ses falaises de tuf, Sorrente marie citronniers, marqueterie d’art et douceur de vivre face au Vésuve. Votre **chauffeur privé à Sorrente** dessert les hôtels de la falaise, le port des ferries et la vieille ville : transferts depuis Naples, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Sorrente est la **base idéale du golfe de Naples**. La côte amalfitaine commence de l’autre côté de la péninsule, Pompéi et le Vésuve sont à 40 minutes, Capri à un ferry. En mise à disposition à la journée, votre chauffeur relie sites antiques, villages perchés et embarcadères pendant que vous rayonnez sans contrainte depuis votre hôtel.',
+      ],
+      en: [
+        'A balcony over the Bay of Naples set on its tuff cliffs, Sorrento marries lemon groves, marquetry art and la dolce vita facing Vesuvius. Your **private chauffeur in Sorrento** serves the clifftop hotels, the ferry port and the old town: transfers from Naples, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Sorrento is the **ideal base for the Bay of Naples**. The Amalfi Coast begins on the other side of the peninsula, Pompeii and Vesuvius are 40 minutes away, Capri a ferry ride. With a full-day hire, your chauffeur links ancient sites, perched villages and jetties while you radiate from your hotel without constraint.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Côte amalfitaine depuis Sorrente', en: 'Amalfi Coast from Sorrento' }, teaser: { fr: 'La route panoramique vers Positano, Amalfi et Ravello, arrêts photo et déjeuner face à la mer. Votre chauffeur gère les lacets de la côte.', en: 'The scenic road to Positano, Amalfi and Ravello, photo stops and lunch facing the sea. Your chauffeur handles the coast’s hairpins.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '690' },
+      { title: { fr: 'Pompéi et le Vésuve', en: 'Pompeii and Vesuvius' }, teaser: { fr: 'La cité romaine à 40 minutes, le cratère du Vésuve et son panorama. Journée archéologie et volcan au départ de Sorrente.', en: 'The Roman city 40 minutes away, the Vesuvius crater and its panorama. A day of archaeology and volcano from Sorrento.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Transfert vers Capri', en: 'Transfer to Capri' }, teaser: { fr: 'Dépose au port de Sorrente pour le ferry vers Capri, reprise au retour, horaires calés. Journée sur l’île de la Grotte bleue.', en: 'Drop-off at Sorrento port for the Capri ferry, pick-up on return, timings aligned. A day on the island of the Blue Grotto.' }, duration: { fr: 'Transfert', en: 'Transfer' }, price: '340' },
+      { title: { fr: 'Naples et son centre historique', en: 'Naples and its historic centre' }, teaser: { fr: 'La ville la plus intense d’Italie, ses églises baroques, le musée archéologique et une vraie pizza napolitaine. Journée culturelle à 50 km.', en: 'Italy’s most intense city, its Baroque churches, the archaeological museum and a real Neapolitan pizza. A cultural day 50 km away.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Soirée à Sorrente', en: 'Evening in Sorrento' }, teaser: { fr: 'Dîner dans la vieille ville, la piazza Tasso animée, le coucher de soleil sur le Vésuve depuis la falaise. Véhicule à disposition toute la soirée.', en: 'Dinner in the old town, the lively Piazza Tasso, sunset over Vesuvius from the cliff. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '380' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de Naples à Sorrente ?', en: 'How long from Naples to Sorrento?' }, a: { fr: 'Comptez 1h à 1h15. Le transfert privé est à prix fixe, avec accueil en salle d’arrivée, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 1h to 1h15. The private transfer is at a fixed price, with a meet-and-greet in arrivals, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Sorrente est-elle une bonne base pour la côte amalfitaine ?', en: 'Is Sorrento a good base for the Amalfi Coast?' }, a: { fr: 'Oui, c’est l’une des meilleures : hôtels de qualité, port de ferries pour Capri, et la côte amalfitaine à portée. Votre chauffeur rayonne depuis Sorrente vers tous les sites du golfe.', en: 'Yes, one of the best: quality hotels, a ferry port for Capri, and the Amalfi Coast within reach. Your chauffeur radiates from Sorrento to all the gulf’s sites.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['positano', 'amalfi', 'naples'],
+  },
+  {
+    slug: 'capri',
+    name: { fr: 'Capri', en: 'Capri' },
+    country: { fr: 'Italie', en: 'Italy' },
+    region: 'italy',
+    airport: 'Naples-Capodichino (NAP)',
+    airportTransfer: {
+      fr: 'L’aéroport de Naples-Capodichino (NAP) est relié à Capri par un transfert combiné : votre chauffeur vous conduit au port de Naples ou de Sorrente (30 à 60 minutes), gère vos bagages jusqu’à l’embarcadère et cale l’horaire sur celui du ferry. Accueil avec panneau nominatif et suivi du vol.',
+      en: 'Naples-Capodichino Airport (NAP) connects to Capri via a combined transfer: your chauffeur drives you to the port of Naples or Sorrento (30 to 60 minutes), handles your luggage to the jetty and aligns the timing with the ferry. Name-board welcome and flight tracking.',
+    },
+    intro: {
+      fr: [
+        'Île mythique du golfe de Naples chère aux empereurs romains et à la jet-set, Capri conjugue Faraglioni, Grotte bleue et jardins d’Auguste. Sur l’île même, la circulation est très restreinte ; votre **chauffeur privé pour Capri** organise l’ensemble du parcours côté continent — transfert aéroport, dépose à l’embarcadère, reprise au retour — et, selon les conditions, la voiture de correspondance sur place. Prix fixes, logistique de bout en bout.',
+        'Capri se vit en excursion depuis Naples, Sorrente ou la côte amalfitaine. Votre chauffeur cale les horaires sur les ferries, vous accueille au débarquement et reprend le relais dès votre retour sur le continent. En mise à disposition, il compose votre journée entre le port, l’aéroport et vos étapes du golfe sans que vous ayez à gérer les correspondances.',
+      ],
+      en: [
+        'A legendary island in the Bay of Naples, dear to Roman emperors and the jet set, Capri combines the Faraglioni, the Blue Grotto and the Gardens of Augustus. On the island itself, traffic is heavily restricted; your **private chauffeur for Capri** organises the whole mainland journey — airport transfer, jetty drop-off, return pick-up — and, conditions permitting, the connecting car on site. Fixed prices, end-to-end logistics.',
+        'Capri is experienced as an excursion from Naples, Sorrento or the Amalfi Coast. Your chauffeur aligns the timings with the ferries, greets you on disembarkation and takes over as soon as you are back on the mainland. With a hire, he builds your day between the port, the airport and your gulf stops without you having to manage the connections.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Journée à Capri', en: 'Day on Capri' }, teaser: { fr: 'Transfert et dépose à l’embarcadère, ferry vers l’île, reprise au retour : la Grotte bleue, les Faraglioni, la piazzetta. Logistique du continent gérée pour vous.', en: 'Transfer and jetty drop-off, ferry to the island, pick-up on return: the Blue Grotto, the Faraglioni, the piazzetta. The mainland logistics handled for you.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '420' },
+      { title: { fr: 'Capri et la côte amalfitaine', en: 'Capri and the Amalfi Coast' }, teaser: { fr: 'L’île un jour, la route côtière le lendemain : votre chauffeur coordonne ferries, embarcadères et étapes du golfe sur votre séjour. Souplesse totale.', en: 'The island one day, the coast road the next: your chauffeur coordinates ferries, jetties and gulf stops across your stay. Total flexibility.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '690' },
+      { title: { fr: 'Transfert aéroport et embarquement', en: 'Airport transfer and embarkation' }, teaser: { fr: 'Accueil à Naples, trajet jusqu’au port, gestion des bagages jusqu’à l’embarcadère, horaires calés sur le ferry. Aucune correspondance à gérer.', en: 'Welcome in Naples, journey to the port, luggage handling to the jetty, timings aligned with the ferry. No connection to manage.' }, duration: { fr: 'Transfert', en: 'Transfer' }, price: '340' },
+      { title: { fr: 'Pompéi avant Capri', en: 'Pompeii before Capri' }, teaser: { fr: 'Une matinée à Pompéi puis dépose à l’embarcadère de Sorrente pour l’après-midi sur l’île. Journée antique et méditerranéenne coordonnée.', en: 'A morning in Pompeii then drop-off at the Sorrento jetty for an afternoon on the island. A coordinated ancient and Mediterranean day.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Soirée au retour de Capri', en: 'Evening returning from Capri' }, teaser: { fr: 'Reprise au débarquement en fin de journée, dîner sur la côte ou à Sorrente, retour serein à votre hôtel. Véhicule à disposition en soirée.', en: 'Pick-up on disembarkation at the end of the day, dinner on the coast or in Sorrento, a relaxed return to your hotel. Vehicle on standby in the evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '380' },
+    ],
+    faq: [
+      { q: { fr: 'Peut-on avoir un chauffeur privé sur l’île de Capri ?', en: 'Can you have a private chauffeur on Capri island?' }, a: { fr: 'La circulation est très restreinte sur l’île, réservée à des véhicules autorisés. Nous organisons l’intégralité du parcours côté continent (aéroport, port, retour) et, selon les conditions, la correspondance sur place. Précisez votre programme à la réservation.', en: 'Traffic is heavily restricted on the island, reserved for authorised vehicles. We organise the entire mainland journey (airport, port, return) and, conditions permitting, the connection on site. Please specify your programme at booking.' } },
+      { q: { fr: 'Comment se passe le transfert aéroport vers Capri ?', en: 'How does the airport transfer to Capri work?' }, a: { fr: 'Votre chauffeur vous accueille à Naples, vous conduit au port de Naples ou de Sorrente, gère vos bagages jusqu’à l’embarcadère et cale l’horaire sur le ferry. Il vous reprend à l’identique au retour.', en: 'Your chauffeur greets you in Naples, drives you to the port of Naples or Sorrento, handles your luggage to the jetty and aligns the timing with the ferry. He picks you up the same way on return.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['sorrento', 'naples', 'positano'],
+  },
+  {
+    slug: 'portofino',
+    name: { fr: 'Portofino', en: 'Portofino' },
+    country: { fr: 'Italie', en: 'Italy' },
+    region: 'italy',
+    airport: 'Gênes-Cristoforo Colombo (GOA)',
+    airportTransfer: {
+      fr: 'L’aéroport de Gênes-Cristoforo Colombo (GOA) se trouve à 40 km à l’ouest de Portofino : comptez 45 minutes à 1 heure. Votre chauffeur vous accueille en salle d’arrivée avec panneau nominatif, gère la route étroite du promontoire et suit votre vol en temps réel.',
+      en: 'Genoa-Cristoforo Colombo Airport (GOA) lies 40 km west of Portofino: allow 45 minutes to 1 hour. Your chauffeur greets you in arrivals with a name board, handles the narrow promontory road and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Minuscule port de pêche devenu repaire de la jet-set, Portofino aligne ses façades ocre autour d’une piazzetta et d’une marina de yachts, à la pointe d’un promontoire boisé. Votre **chauffeur privé à Portofino** dessert le village, Santa Margherita Ligure et les hôtels de la Riviera du Levant : transferts depuis Gênes, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Portofino ouvre sur la **Riviera ligure et les Cinque Terre**. Santa Margherita et Rapallo sont à quelques minutes, l’abbaye de San Fruttuoso accessible par la mer, les Cinque Terre à une heure. En mise à disposition à la journée, votre chauffeur relie villages de pêcheurs, criques et tables de bord de mer pendant que vous profitez de la dolce vita ligure.',
+      ],
+      en: [
+        'A tiny fishing port turned jet-set haunt, Portofino lines its ochre façades around a piazzetta and a yacht marina, at the tip of a wooded promontory. Your **private chauffeur in Portofino** serves the village, Santa Margherita Ligure and the hotels of the Riviera di Levante: transfers from Genoa, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Portofino opens onto the **Ligurian Riviera and the Cinque Terre**. Santa Margherita and Rapallo are minutes away, the San Fruttuoso abbey reachable by sea, the Cinque Terre an hour. With a full-day hire, your chauffeur links fishing villages, coves and seaside tables while you enjoy the Ligurian dolce vita.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Portofino et Santa Margherita', en: 'Portofino and Santa Margherita' }, teaser: { fr: 'La piazzetta et la marina de Portofino, la baie élégante de Santa Margherita Ligure, un déjeuner de poisson face aux yachts. Journée Riviera.', en: 'The Portofino piazzetta and marina, the elegant bay of Santa Margherita Ligure, a seafood lunch facing the yachts. A Riviera day.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Cinque Terre depuis Portofino', en: 'Cinque Terre from Portofino' }, teaser: { fr: 'Dépose à La Spezia ou Levanto pour découvrir les cinq villages classés UNESCO en train régional ou bateau, reprise au retour. Journée côte ligure.', en: 'Drop-off at La Spezia or Levanto to discover the five UNESCO-listed villages by regional train or boat, pick-up on return. A Ligurian coast day.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '690' },
+      { title: { fr: 'Gênes historique', en: 'Historic Genoa' }, teaser: { fr: 'Les palais des Rolli classés UNESCO, le vieux port et l’aquarium, les ruelles du centre médiéval. Journée patrimoine dans la capitale ligure.', en: 'The UNESCO-listed Rolli palaces, the old port and the aquarium, the lanes of the medieval centre. A heritage day in the Ligurian capital.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Villages du promontoire', en: 'Promontory villages' }, teaser: { fr: 'Camogli et ses maisons colorées, l’abbaye de San Fruttuoso nichée dans sa crique, un déjeuner de bord de mer. Journée intime de la Riviera.', en: 'Camogli and its colourful houses, the San Fruttuoso abbey tucked in its cove, a seaside lunch. An intimate Riviera day.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '390' },
+      { title: { fr: 'Soirée à Portofino', en: 'Evening in Portofino' }, teaser: { fr: 'Dîner sur la piazzetta face à la marina, les yachts illuminés, un dernier verre chic. Véhicule à disposition toute la soirée.', en: 'Dinner on the piazzetta facing the marina, the illuminated yachts, a stylish nightcap. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '400' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de l’aéroport de Gênes à Portofino ?', en: 'How long from Genoa Airport to Portofino?' }, a: { fr: 'Comptez 45 minutes à 1 heure. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 45 minutes to 1 hour. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Peut-on visiter les Cinque Terre depuis Portofino ?', en: 'Can you visit the Cinque Terre from Portofino?' }, a: { fr: 'Oui, à environ une heure. Comme les villages sont à circulation restreinte, votre chauffeur vous dépose à La Spezia ou Levanto d’où train et bateaux desservent les cinq villages, puis vous reprend.', en: 'Yes, about an hour away. As the villages have restricted traffic, your chauffeur drops you at La Spezia or Levanto, from where trains and boats serve the five villages, then picks you up.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['genoa', 'cinque-terre'],
+  },
+  {
+    slug: 'cinque-terre',
+    name: { fr: 'Cinque Terre', en: 'Cinque Terre' },
+    country: { fr: 'Italie', en: 'Italy' },
+    region: 'italy',
+    airport: 'Pise-Galilée (PSA)',
+    airportTransfer: {
+      fr: 'L’aéroport de Pise-Galilée (PSA) se trouve à 90 km au sud des Cinque Terre : comptez 1h15. Depuis Gênes (GOA), à 100 km au nord, comptez 1h30. Comme les villages sont à circulation restreinte, votre chauffeur vous dépose à La Spezia ou Levanto, portes d’entrée du parc.',
+      en: 'Pisa-Galilei Airport (PSA) lies 90 km south of the Cinque Terre: allow 1h15. From Genoa (GOA), 100 km north, allow 1h30. As the villages have restricted traffic, your chauffeur drops you at La Spezia or Levanto, the gateways to the park.',
+    },
+    intro: {
+      fr: [
+        'Cinq villages de pêcheurs accrochés à des falaises plongeant dans la mer Ligure — Monterosso, Vernazza, Corniglia, Manarola et Riomaggiore — les Cinque Terre forment un parc national classé UNESCO où la voiture ne pénètre pas. Votre **chauffeur privé pour les Cinque Terre** vous conduit aux portes du parc — La Spezia ou Levanto — d’où train et bateaux desservent les villages, et vous reprend au retour : transferts depuis Pise ou Gênes, prix fixes.',
+        'Les Cinque Terre s’intègrent à un itinéraire de la **Riviera ligure et de la Toscane**. Portofino est à une heure au nord, Pise et Lucques à une heure au sud, les marbres de Carrare tout près. En mise à disposition, votre chauffeur compose une journée entre villages perchés, embarcadères et tables de bord de mer sans souci de conduite ni de stationnement.',
+      ],
+      en: [
+        'Five fishing villages clinging to cliffs plunging into the Ligurian Sea — Monterosso, Vernazza, Corniglia, Manarola and Riomaggiore — the Cinque Terre form a UNESCO-listed national park where cars do not enter. Your **private chauffeur for the Cinque Terre** drives you to the gateways of the park — La Spezia or Levanto — from where trains and boats serve the villages, and picks you up on return: transfers from Pisa or Genoa, fixed prices.',
+        'The Cinque Terre fit into a **Ligurian Riviera and Tuscany** itinerary. Portofino is an hour north, Pisa and Lucca an hour south, the Carrara marble quarries nearby. With a hire, your chauffeur builds a day among perched villages, jetties and seaside tables with no driving or parking worry.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Journée aux Cinque Terre', en: 'Day in the Cinque Terre' }, teaser: { fr: 'Dépose à La Spezia ou Levanto, les cinq villages en train régional ou en bateau, déjeuner de poisson à Vernazza, reprise au retour. Logistique gérée.', en: 'Drop-off at La Spezia or Levanto, the five villages by regional train or boat, a seafood lunch in Vernazza, pick-up on return. Logistics handled.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '690' },
+      { title: { fr: 'Cinque Terre et Portofino', en: 'Cinque Terre and Portofino' }, teaser: { fr: 'Les villages classés UNESCO puis le port glamour de Portofino, à une heure au nord. Deux joyaux de la Riviera ligure combinés.', en: 'The UNESCO-listed villages then the glamorous port of Portofino, an hour north. Two Ligurian Riviera jewels combined.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '790' },
+      { title: { fr: 'Cinque Terre et Pise', en: 'Cinque Terre and Pisa' }, teaser: { fr: 'Les villages le matin, la tour penchée et la place des Miracles de Pise l’après-midi, à une heure au sud. Journée côte et Toscane.', en: 'The villages in the morning, the leaning tower and the Piazza dei Miracoli of Pisa in the afternoon, an hour south. A coast and Tuscany day.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '720' },
+      { title: { fr: 'Carrare et ses marbres', en: 'Carrara and its marble' }, teaser: { fr: 'Les carrières de marbre blanc dont Michel-Ange tirait ses blocs, un atelier de sculpture, la côte de la Versilia. Journée insolite à 30 minutes.', en: 'The white-marble quarries from which Michelangelo drew his blocks, a sculpture workshop, the Versilia coast. An unusual day 30 minutes away.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Soirée à La Spezia', en: 'Evening in La Spezia' }, teaser: { fr: 'Dîner de poisson au retour des villages, le golfe des Poètes au coucher du soleil, un dernier verre sur le port. Véhicule à disposition en soirée.', en: 'A seafood dinner on the way back from the villages, the Gulf of Poets at sunset, a nightcap on the harbour. Vehicle on standby in the evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '380' },
+    ],
+    faq: [
+      { q: { fr: 'Peut-on conduire jusque dans les villages des Cinque Terre ?', en: 'Can you drive into the Cinque Terre villages?' }, a: { fr: 'Non, les cinq villages sont à circulation restreinte et interdits aux voitures des visiteurs. Votre chauffeur vous dépose à La Spezia ou Levanto, d’où train et bateaux desservent les villages, et vous reprend au point convenu.', en: 'No, the five villages have restricted traffic and are closed to visitors’ cars. Your chauffeur drops you at La Spezia or Levanto, from where trains and boats serve the villages, and picks you up at the agreed point.' } },
+      { q: { fr: 'Depuis quel aéroport rejoint-on les Cinque Terre ?', en: 'From which airport do you reach the Cinque Terre?' }, a: { fr: 'Pise (PSA) est à 1h15 au sud, Gênes (GOA) à 1h30 au nord. Votre chauffeur vous accueille à l’aéroport de votre choix avec panneau nominatif, à prix fixe.', en: 'Pisa (PSA) is 1h15 to the south, Genoa (GOA) 1h30 to the north. Your chauffeur greets you at the airport of your choice with a name board, at a fixed price.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['portofino', 'pisa', 'lucca', 'genoa'],
+  },
+  {
+    slug: 'taormina',
+    name: { fr: 'Taormine', en: 'Taormina' },
+    country: { fr: 'Italie', en: 'Italy' },
+    region: 'italy',
+    airport: 'Catane-Fontanarossa (CTA)',
+    airportTransfer: {
+      fr: 'L’aéroport de Catane-Fontanarossa (CTA) se trouve à 60 km au sud de Taormine : comptez 1 heure par l’autoroute A18 le long de la côte ionienne. Votre chauffeur vous accueille en salle d’arrivée avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Catania-Fontanarossa Airport (CTA) lies 60 km south of Taormina: allow 1 hour via the A18 motorway along the Ionian coast. Your chauffeur greets you in arrivals with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Balcon de Sicile perché sur ses falaises face à l’Etna, Taormine déroule son théâtre antique, ses ruelles médiévales et ses jardins fleuris au-dessus de la mer Ionienne. Votre **chauffeur privé à Taormine** dessert le centre à circulation limitée, la plage d’Isola Bella et les hôtels de la corniche : transferts depuis Catane, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Taormine est la **base idéale de la Sicile orientale**. Le volcan Etna et ses coulées sont à une heure, les villes baroques de Catane et Syracuse au sud, les villages de pêcheurs de la côte tout près. En mise à disposition à la journée, votre chauffeur relie sites antiques, vignobles de l’Etna et bourgades baroques dans le confort d’une berline privée.',
+      ],
+      en: [
+        'A Sicilian balcony perched on its cliffs facing Etna, Taormina unrolls its ancient theatre, medieval lanes and flowered gardens above the Ionian Sea. Your **private chauffeur in Taormina** serves the limited-traffic centre, the Isola Bella beach and the corniche hotels: transfers from Catania, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Taormina is the **ideal base for eastern Sicily**. The Etna volcano and its lava flows are an hour away, the Baroque cities of Catania and Syracuse to the south, the coastal fishing villages nearby. With a full-day hire, your chauffeur links ancient sites, Etna vineyards and Baroque towns in the comfort of a private sedan.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Etna et ses vignobles', en: 'Etna and its vineyards' }, teaser: { fr: 'Le plus haut volcan actif d’Europe, les coulées de lave, une dégustation dans un domaine des pentes de l’Etna. Journée volcan et vin à une heure.', en: 'Europe’s highest active volcano, the lava flows, a tasting at an estate on Etna’s slopes. A day of volcano and wine an hour away.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Taormine et Isola Bella', en: 'Taormina and Isola Bella' }, teaser: { fr: 'Le théâtre antique face à l’Etna, les ruelles médiévales, la plage-île d’Isola Bella. Dépose au plus près du centre piéton, journée à votre rythme.', en: 'The ancient theatre facing Etna, the medieval lanes, the island beach of Isola Bella. Drop-off as close as possible to the pedestrian centre, a day at your own pace.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '360' },
+      { title: { fr: 'Syracuse et Ortigia', en: 'Syracuse and Ortigia' }, teaser: { fr: 'À une heure au sud, la cité grecque de Syracuse, l’île baroque d’Ortigia, le théâtre antique. Journée archéologie et baroque sicilien.', en: 'An hour south, the Greek city of Syracuse, the Baroque island of Ortigia, the ancient theatre. A day of archaeology and Sicilian Baroque.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Villages baroques du Val di Noto', en: 'Baroque villages of Val di Noto' }, teaser: { fr: 'Noto et Modica classées UNESCO, le chocolat de Modica, les façades baroques dorées. Journée patrimoine dans la Sicile du sud-est.', en: 'Noto and Modica, UNESCO-listed, the chocolate of Modica, the golden Baroque façades. A heritage day in south-eastern Sicily.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '660' },
+      { title: { fr: 'Soirée à Taormine', en: 'Evening in Taormina' }, teaser: { fr: 'Dîner dans une table du corso, l’Etna rougeoyant à la nuit tombée, un dernier verre en terrasse au-dessus de la mer. Véhicule à disposition.', en: 'Dinner at a table on the corso, Etna glowing at nightfall, a nightcap on a terrace above the sea. Vehicle on standby.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '380' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de l’aéroport de Catane à Taormine ?', en: 'How long from Catania Airport to Taormina?' }, a: { fr: 'Comptez environ 1 heure par l’A18. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow about 1 hour via the A18. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Peut-on monter à l’Etna avec un chauffeur ?', en: 'Can you go up Etna with a chauffeur?' }, a: { fr: 'Oui. Votre chauffeur vous conduit jusqu’aux stations de départ (Rifugio Sapienza côté sud), organise éventuellement téléphérique et guide, et combine la montée avec une dégustation dans un vignoble de l’Etna.', en: 'Yes. Your chauffeur drives you to the departure stations (Rifugio Sapienza on the south side), optionally arranges the cable car and a guide, and combines the ascent with a tasting at an Etna vineyard.' } },
+      { q: { fr: 'Vos chauffeurs en Sicile parlent-ils anglais ?', en: 'Do your chauffeurs in Sicily speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['catania', 'palermo'],
+  },
+  {
+    slug: 'matera',
+    name: { fr: 'Matera', en: 'Matera' },
+    country: { fr: 'Italie', en: 'Italy' },
+    region: 'italy',
+    airport: 'Bari-Karol Wojtyła (BRI)',
+    airportTransfer: {
+      fr: 'L’aéroport de Bari-Karol Wojtyła (BRI) se trouve à 65 km au nord-est de Matera : comptez 1 heure. Votre chauffeur vous accueille en salle d’arrivée avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Bari-Karol Wojtyła Airport (BRI) lies 65 km north-east of Matera: allow 1 hour. Your chauffeur greets you in arrivals with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Troisième plus ancienne ville habitée du monde, Matera creuse ses Sassi — habitations troglodytes classées UNESCO — dans un amphithéâtre de calcaire au-dessus d’un ravin. Votre **chauffeur privé à Matera** dessert la ville haute, les entrées des Sassi et les hôtels troglodytes : transferts depuis Bari, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Matera est la **porte de la Basilicate et des Pouilles**. Les trulli d’Alberobello sont à une heure, la côte de la mer Ionienne au sud, les villages perchés de la Basilicate tout autour. En mise à disposition à la journée, votre chauffeur relie décors de cinéma, églises rupestres et tables du terroir dans le sud profond de l’Italie.',
+      ],
+      en: [
+        'The world’s third-oldest inhabited city, Matera carves its Sassi — UNESCO-listed cave dwellings — into a limestone amphitheatre above a ravine. Your **private chauffeur in Matera** serves the upper town, the Sassi entrances and the cave hotels: transfers from Bari, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Matera is the **gateway to Basilicata and Puglia**. The trulli of Alberobello are an hour away, the Ionian Sea coast to the south, the perched villages of Basilicata all around. With a full-day hire, your chauffeur links film sets, rock churches and regional tables in the deep south of Italy.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Les Sassi de Matera', en: 'The Sassi of Matera' }, teaser: { fr: 'Les quartiers troglodytes classés UNESCO, les églises rupestres, le belvédère sur le ravin. Dépose aux entrées des Sassi, promenade dans un décor hors du temps.', en: 'The UNESCO-listed cave quarters, the rock churches, the viewpoint over the ravine. Drop-off at the Sassi entrances, a stroll in a timeless setting.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Alberobello et les trulli', en: 'Alberobello and the trulli' }, teaser: { fr: 'À une heure, les maisons coniques de pierre sèche classées UNESCO, les ruelles blanches d’Alberobello. Journée insolite dans les Pouilles.', en: 'An hour away, the UNESCO-listed dry-stone conical houses, the white lanes of Alberobello. An unusual day in Puglia.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Lecce, la Florence baroque', en: 'Lecce, the Baroque Florence' }, teaser: { fr: 'La ville baroque du Salento, ses églises de pierre dorée, la place Sant’Oronzo. Journée patrimoine dans le talon de la botte, à 1h30.', en: 'The Baroque city of the Salento, its golden-stone churches, the Piazza Sant’Oronzo. A heritage day in the heel of the boot, 1h30 away.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '690' },
+      { title: { fr: 'Villages de la Basilicate', en: 'Villages of Basilicata' }, teaser: { fr: 'Les villages perchés de Craco l’abandonnée et de Pietrapertosa dans les Dolomites lucaniennes, les paysages sauvages. Journée nature et cinéma.', en: 'The perched villages of abandoned Craco and Pietrapertosa in the Lucanian Dolomites, the wild landscapes. A day of nature and cinema.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '640' },
+      { title: { fr: 'Soirée dans les Sassi', en: 'Evening in the Sassi' }, teaser: { fr: 'Dîner dans une table troglodyte, les Sassi illuminés à la bougie, le silence minéral du ravin. Véhicule à disposition toute la soirée.', en: 'Dinner in a cave restaurant, the candlelit Sassi, the mineral silence of the ravine. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '360' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de l’aéroport de Bari à Matera ?', en: 'How long from Bari Airport to Matera?' }, a: { fr: 'Comptez environ 1 heure. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow about 1 hour. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Peut-on circuler en voiture dans les Sassi ?', en: 'Can you drive in the Sassi?' }, a: { fr: 'Les Sassi sont piétons et à circulation très restreinte. Votre chauffeur vous dépose aux entrées, gère vos bagages jusqu’à votre hôtel troglodyte et vous reprend au point convenu.', en: 'The Sassi are pedestrian and heavily traffic-restricted. Your chauffeur drops you at the entrances, handles your luggage to your cave hotel and picks you up at the agreed point.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['bari', 'lecce'],
+  },
+  {
+    slug: 'lecce',
+    name: { fr: 'Lecce', en: 'Lecce' },
+    country: { fr: 'Italie', en: 'Italy' },
+    region: 'italy',
+    airport: 'Brindisi-Salento (BDS)',
+    airportTransfer: {
+      fr: 'L’aéroport de Brindisi-Salento (BDS) se trouve à 40 km au nord de Lecce : comptez 40 minutes. Depuis Bari (BRI), à 150 km, comptez 1h45. Votre chauffeur vous accueille en salle d’arrivée avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Brindisi-Salento Airport (BDS) lies 40 km north of Lecce: allow 40 minutes. From Bari (BRI), 150 km away, allow 1h45. Your chauffeur greets you in arrivals with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Surnommée la « Florence du baroque », Lecce sculpte dans sa pierre dorée et tendre les façades les plus exubérantes du sud de l’Italie, au cœur du Salento. Votre **chauffeur privé à Lecce** dessert le centre historique, la basilique Santa Croce et les masserie de la campagne : transferts depuis Brindisi, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Lecce commande tout le **talon des Pouilles**. Les plages des deux mers — Adriatique et Ionienne — sont à trente minutes, Otrante et Gallipoli au sud, les masserie viticoles tout autour. En mise à disposition à la journée, votre chauffeur relie villes baroques, criques et domaines pendant que vous découvrez la région la plus authentique du Sud.',
+      ],
+      en: [
+        'Nicknamed the “Florence of the Baroque”, Lecce carves the most exuberant façades in southern Italy into its soft golden stone, at the heart of the Salento. Your **private chauffeur in Lecce** serves the historic centre, the Santa Croce basilica and the countryside masserie: transfers from Brindisi, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Lecce commands the whole **heel of Puglia**. The beaches of two seas — Adriatic and Ionian — are thirty minutes away, Otranto and Gallipoli to the south, the wine masserie all around. With a full-day hire, your chauffeur links Baroque towns, coves and estates while you discover the most authentic region of the South.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Lecce baroque', en: 'Baroque Lecce' }, teaser: { fr: 'La basilique Santa Croce, la place du Dôme, l’amphithéâtre romain, les façades de pierre dorée. Dépose au centre, promenade dans la ville-joyau.', en: 'The Santa Croce basilica, the Piazza del Duomo, the Roman amphitheatre, the golden-stone façades. Drop-off in the centre, a stroll through the jewel city.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Otrante et la côte adriatique', en: 'Otranto and the Adriatic coast' }, teaser: { fr: 'La ville la plus à l’est d’Italie, sa cathédrale et sa mosaïque, les criques turquoise du Salento. Déjeuner de poisson face à la mer.', en: 'The easternmost town in Italy, its cathedral and mosaic, the turquoise coves of the Salento. A seafood lunch facing the sea.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Gallipoli et la mer Ionienne', en: 'Gallipoli and the Ionian Sea' }, teaser: { fr: 'La vieille ville sur son île, le château, les plages de sable de la côte ionienne. Journée balnéaire et baroque à l’ouest du Salento.', en: 'The old town on its island, the castle, the sandy beaches of the Ionian coast. A seaside and Baroque day in the western Salento.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Masserie et vins du Salento', en: 'Salento masserie and wines' }, teaser: { fr: 'Les fermes fortifiées reconverties, dégustation de primitivo et negroamaro, déjeuner du terroir dans un domaine. Journée gastronomie et campagne.', en: 'The converted fortified farms, a tasting of primitivo and negroamaro, a regional lunch at an estate. A day of gastronomy and countryside.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '640' },
+      { title: { fr: 'Soirée à Lecce', en: 'Evening in Lecce' }, teaser: { fr: 'Dîner dans le centre baroque illuminé, la place Sant’Oronzo animée, un dernier verre de negroamaro. Véhicule à disposition toute la soirée.', en: 'Dinner in the illuminated Baroque centre, the lively Piazza Sant’Oronzo, a last glass of negroamaro. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '360' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de l’aéroport de Brindisi à Lecce ?', en: 'How long from Brindisi Airport to Lecce?' }, a: { fr: 'Comptez environ 40 minutes. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow about 40 minutes. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Peut-on visiter les plages du Salento depuis Lecce ?', en: 'Can you visit the Salento beaches from Lecce?' }, a: { fr: 'Oui, les deux côtes sont à trente minutes. En mise à disposition à la journée, votre chauffeur combine ville baroque, criques adriatiques ou ioniennes et déjeuner de bord de mer.', en: 'Yes, both coasts are thirty minutes away. With a full-day hire, your chauffeur combines the Baroque city, Adriatic or Ionian coves and a seaside lunch.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['bari', 'matera'],
+  },
+  {
+    slug: 'assisi',
+    name: { fr: 'Assise', en: 'Assisi' },
+    country: { fr: 'Italie', en: 'Italy' },
+    region: 'italy',
+    airport: 'Pérouse-San Francesco (PEG)',
+    airportTransfer: {
+      fr: 'L’aéroport de Pérouse-San Francesco (PEG) se trouve à 20 km à l’ouest d’Assise : comptez 25 minutes. Depuis Rome (FCO), à 180 km, comptez 2 heures. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Perugia-San Francesco Airport (PEG) lies 20 km west of Assisi: allow 25 minutes. From Rome (FCO), 180 km away, allow 2 hours. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Cité de saint François accrochée aux pentes du mont Subasio, Assise déploie sa basilique aux fresques de Giotto et ses ruelles de pierre rose au-dessus de la plaine ombrienne. Votre **chauffeur privé à Assise** dessert la ville haute à circulation limitée, la basilique et les sanctuaires franciscains : transferts depuis Pérouse ou Rome, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Assise est au cœur de l’**Ombrie verte**. Pérouse et sa capitale du chocolat sont à 25 minutes, Spello, Spolète et les cascades des Marmore tout près, la Toscane à une heure. En mise à disposition à la journée, votre chauffeur relie sanctuaires, villages perchés et domaines viticoles dans le « poumon vert » de l’Italie.',
+      ],
+      en: [
+        'The city of Saint Francis clinging to the slopes of Mount Subasio, Assisi displays its basilica with Giotto’s frescoes and its pink-stone lanes above the Umbrian plain. Your **private chauffeur in Assisi** serves the limited-traffic upper town, the basilica and the Franciscan sanctuaries: transfers from Perugia or Rome, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Assisi lies at the heart of **green Umbria**. Perugia and its chocolate capital are 25 minutes away, Spello, Spoleto and the Marmore Falls nearby, Tuscany an hour. With a full-day hire, your chauffeur links sanctuaries, perched villages and wine estates in Italy’s “green lung”.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Basilique et sanctuaires', en: 'Basilica and sanctuaries' }, teaser: { fr: 'La basilique Saint-François et ses fresques de Giotto, la basilique Sainte-Claire, l’ermitage des Carceri sur le mont Subasio. Dépose au plus près du centre.', en: 'The Basilica of Saint Francis and its Giotto frescoes, the Basilica of Saint Clare, the Eremo delle Carceri on Mount Subasio. Drop-off as close as possible to the centre.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Villages perchés d’Ombrie', en: 'Perched villages of Umbria' }, teaser: { fr: 'Spello et ses ruelles fleuries, Bevagna et Montefalco, un déjeuner du terroir. Journée dans la plus verte des régions italiennes.', en: 'Spello and its flowered lanes, Bevagna and Montefalco, a regional lunch. A day in the greenest of Italian regions.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Pérouse et le chocolat', en: 'Perugia and chocolate' }, teaser: { fr: 'La capitale ombrienne, son centre étrusque et médiéval, la maison Perugina et une dégustation de chocolat. Journée patrimoine et gourmandise.', en: 'The Umbrian capital, its Etruscan and medieval centre, the Perugina house and a chocolate tasting. A day of heritage and indulgence.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Vins de Montefalco', en: 'Montefalco wines' }, teaser: { fr: 'Les domaines du Sagrantino, dégustation dans une cave familiale, déjeuner face aux vignes et aux collines. Journée œnologie en Ombrie.', en: 'The Sagrantino estates, a tasting in a family cellar, lunch facing the vines and hills. An oenology day in Umbria.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Soirée à Assise', en: 'Evening in Assisi' }, teaser: { fr: 'Dîner dans une table de la ville haute, la basilique illuminée dominant la plaine, le calme des ruelles à la nuit. Véhicule à disposition.', en: 'Dinner at a table in the upper town, the illuminated basilica dominating the plain, the calm of the lanes at night. Vehicle on standby.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '360' },
+    ],
+    faq: [
+      { q: { fr: 'Depuis quel aéroport rejoint-on Assise ?', en: 'From which airport do you reach Assisi?' }, a: { fr: 'Pérouse (PEG) est à 25 minutes, Rome (FCO) à 2 heures, Florence à 2h. Votre chauffeur vous accueille à l’aéroport de votre choix avec panneau nominatif, à prix fixe.', en: 'Perugia (PEG) is 25 minutes away, Rome (FCO) 2 hours, Florence 2h. Your chauffeur greets you at the airport of your choice with a name board, at a fixed price.' } },
+      { q: { fr: 'Peut-on visiter Assise en excursion depuis Rome ou Florence ?', en: 'Can Assisi be visited as an excursion from Rome or Florence?' }, a: { fr: 'Oui, à environ 2 heures de chacune. En mise à disposition à la journée, votre chauffeur vous conduit à Assise, organise la visite et vous ramène le soir, à prix fixe.', en: 'Yes, about 2 hours from each. With a full-day hire, your chauffeur drives you to Assisi, arranges the visit and brings you back in the evening, at a fixed price.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['perugia', 'siena', 'rome'],
+  },
+  {
+    slug: 'perugia',
+    name: { fr: 'Pérouse', en: 'Perugia' },
+    country: { fr: 'Italie', en: 'Italy' },
+    region: 'italy',
+    airport: 'Pérouse-San Francesco (PEG)',
+    airportTransfer: {
+      fr: 'L’aéroport de Pérouse-San Francesco (PEG) se trouve à 12 km à l’est du centre : comptez 20 minutes. Depuis Rome (FCO), à 170 km, comptez 2 heures. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Perugia-San Francesco Airport (PEG) lies 12 km east of the centre: allow 20 minutes. From Rome (FCO), 170 km away, allow 2 hours. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Capitale de l’Ombrie perchée sur sa colline, Pérouse superpose murailles étrusques, palais gothiques et une université pour étrangers qui l’anime toute l’année — sans oublier son célèbre chocolat. Votre **chauffeur privé à Pérouse** dessert le centre historique en escaliers, la Rocca Paolina et les rendez-vous universitaires : transferts depuis l’aéroport ou Rome, mise à disposition à l’heure, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Pérouse est le **cœur de l’Ombrie**. Assise et sa basilique sont à 25 minutes, le lac Trasimène tout près, les villages du Sagrantino et la Toscane à une heure. En mise à disposition à la journée, votre chauffeur relie sanctuaires, domaines viticoles et villages perchés dans une région verte et préservée.',
+      ],
+      en: [
+        'Capital of Umbria perched on its hill, Perugia layers Etruscan walls, Gothic palaces and a university for foreigners that keeps it lively all year — not to mention its famous chocolate. Your **private chauffeur in Perugia** serves the stepped historic centre, the Rocca Paolina and university meetings: transfers from the airport or Rome, hourly hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Perugia is the **heart of Umbria**. Assisi and its basilica are 25 minutes away, Lake Trasimeno nearby, the Sagrantino villages and Tuscany an hour. With a full-day hire, your chauffeur links sanctuaries, wine estates and perched villages in a green, unspoilt region.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Pérouse historique et chocolat', en: 'Historic Perugia and chocolate' }, teaser: { fr: 'Le corso Vannucci, la fontaine Maggiore, la Rocca Paolina souterraine et la maison Perugina pour une dégustation. Dépose au plus près du centre.', en: 'The Corso Vannucci, the Fontana Maggiore, the underground Rocca Paolina and the Perugina house for a tasting. Drop-off as close as possible to the centre.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Assise et les sanctuaires', en: 'Assisi and the sanctuaries' }, teaser: { fr: 'À 25 minutes, la basilique Saint-François et ses fresques de Giotto, l’ermitage des Carceri. Journée franciscaine au départ de Pérouse.', en: '25 minutes away, the Basilica of Saint Francis and its Giotto frescoes, the Eremo delle Carceri. A Franciscan day from Perugia.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Lac Trasimène', en: 'Lake Trasimeno' }, teaser: { fr: 'Le plus grand lac de l’Italie centrale, ses îles, Castiglione del Lago et ses remparts, un déjeuner de poisson de lac. Journée nature tranquille.', en: 'Central Italy’s largest lake, its islands, Castiglione del Lago and its ramparts, a lake-fish lunch. A quiet nature day.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Vins de Montefalco et Sagrantino', en: 'Montefalco and Sagrantino wines' }, teaser: { fr: 'Les domaines du Sagrantino, dégustation en cave, déjeuner face aux collines ombriennes. Journée œnologie dans les vignobles verts.', en: 'The Sagrantino estates, a cellar tasting, lunch facing the Umbrian hills. An oenology day in the green vineyards.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Soirée universitaire', en: 'University evening' }, teaser: { fr: 'Dîner dans le centre médiéval, l’animation étudiante du corso, la vue nocturne sur la vallée depuis les remparts. Véhicule à disposition.', en: 'Dinner in the medieval centre, the student buzz of the corso, the night view over the valley from the ramparts. Vehicle on standby.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de Rome à Pérouse ?', en: 'How long from Rome to Perugia?' }, a: { fr: 'Comptez environ 2 heures. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow about 2 hours. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Peut-on combiner Pérouse et Assise dans la journée ?', en: 'Can Perugia and Assisi be combined in one day?' }, a: { fr: 'Oui, les deux villes sont à 25 minutes. En mise à disposition à la journée, votre chauffeur enchaîne le centre de Pérouse et les sanctuaires d’Assise, avec un déjeuner ombrien.', en: 'Yes, the two cities are 25 minutes apart. With a full-day hire, your chauffeur links the centre of Perugia and the Assisi sanctuaries, with an Umbrian lunch.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['assisi', 'siena', 'florence'],
+  },
 ];
