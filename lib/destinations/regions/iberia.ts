@@ -3038,4 +3038,1014 @@ export const CITIES: Destination[] = [
     ],
     nearby: ['san-sebastian', 'bilbao', 'zaragoza'],
   },
+  {
+    slug: 'lisbon',
+    name: { fr: 'Lisbonne', en: 'Lisbon' },
+    country: { fr: 'Portugal', en: 'Portugal' },
+    region: 'iberia',
+    airport: 'Humberto Delgado (LIS)',
+    airportTransfer: {
+      fr: 'L’aéroport Humberto Delgado (LIS) se trouve à 7 km au nord du centre : comptez 15 à 25 minutes pour rejoindre le Chiado, le Bairro Alto ou Belém selon le trafic. Votre chauffeur vous accueille en salle d’arrivée, panneau nominatif en main, et suit votre vol en temps réel.',
+      en: 'Humberto Delgado Airport (LIS) lies 7 km north of the centre: allow 15 to 25 minutes to reach the Chiado, the Bairro Alto or Belém depending on traffic. Your chauffeur greets you in the arrivals hall with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Bâtie sur sept collines au bord du Tage, Lisbonne mêle azulejos, tramways jaunes et miradouros ouverts sur l’estuaire. Votre **chauffeur privé à Lisbonne** connaît les ruelles pentues de l’Alfama, les accès à Belém et les tables de l’Avenida da Liberdade : transferts aéroport, mise à disposition à l’heure, dépose au plus près des sites piétonniers. Berlines Mercedes et vans, prix fixes annoncés à l’avance, chauffeurs anglophones sur demande.',
+        'Lisbonne est aussi la porte des grandes escapades de l’Estrémadure. **Sintra et ses palais**, Cascais et la côte de l’Estoril, le cap de Roca — point le plus à l’ouest de l’Europe continentale — se rejoignent en moins d’une heure. En mise à disposition à la journée, votre chauffeur relie sanctuaire de Fátima, domaines viticoles de la région de Colares et dîners de fado sans que vous perdiez de temps dans la circulation de la capitale.',
+      ],
+      en: [
+        'Built on seven hills above the Tagus, Lisbon blends azulejo tiles, yellow trams and miradouros opening onto the estuary. Your **private chauffeur in Lisbon** knows the steep lanes of the Alfama, the approaches to Belém and the restaurants of the Avenida da Liberdade: airport transfers, hourly hire, drop-offs as close as possible to pedestrian sites. Mercedes sedans and vans, fixed prices confirmed in advance, English-speaking chauffeurs on request.',
+        'Lisbon is also the gateway to the great Estremadura excursions. **Sintra and its palaces**, Cascais and the Estoril coast, Cabo da Roca — the westernmost point of continental Europe — are all less than an hour away. With a full-day hire, your chauffeur links the sanctuary of Fátima, the Colares wine estates and evenings of fado without you losing time in the capital’s traffic.',
+      ],
+    },
+    experiences: [
+      {
+        title: { fr: 'Sintra, palais et Quinta da Regaleira', en: 'Sintra, palaces and Quinta da Regaleira' },
+        teaser: {
+          fr: 'À 30 km à l’ouest de Lisbonne, la montagne romantique classée UNESCO : le palais de la Pena, la Quinta da Regaleira et son puits initiatique, le cap de Roca face à l’Atlantique. Déjeuner à Sintra avant le retour.',
+          en: '30 km west of Lisbon, the UNESCO-listed romantic hills: the Pena Palace, the Quinta da Regaleira with its initiation well, Cabo da Roca facing the Atlantic. Lunch in Sintra before the return.',
+        },
+        duration: { fr: 'Journée complète', en: 'Full day' },
+        price: '590',
+      },
+      {
+        title: { fr: 'Belém et le Lisbonne des Découvertes', en: 'Belém and the Lisbon of the Discoveries' },
+        teaser: {
+          fr: 'Le monastère des Hiéronymites, la tour de Belém, le monument aux Découvertes et une pause pastéis de nata chez Pastéis de Belém. Dépose devant chaque site, véhicule en attente.',
+          en: 'The Jerónimos Monastery, the Belém Tower, the Monument to the Discoveries and a pastéis de nata break at Pastéis de Belém. Door-to-door drop-offs, vehicle on standby.',
+        },
+        duration: { fr: 'Demi-journée', en: 'Half day' },
+        price: '380',
+      },
+      {
+        title: { fr: 'Fátima et les monastères', en: 'Fátima and the monasteries' },
+        teaser: {
+          fr: 'À 130 km au nord, le sanctuaire de Fátima, puis les monastères gothiques de Batalha et d’Alcobaça, classés UNESCO. Retour possible par le village médiéval d’Óbidos.',
+          en: '130 km north, the sanctuary of Fátima, then the UNESCO-listed Gothic monasteries of Batalha and Alcobaça. Optional return via the medieval village of Óbidos.',
+        },
+        duration: { fr: 'Journée complète', en: 'Full day' },
+        price: '790',
+      },
+      {
+        title: { fr: 'Cascais et la côte de l’Estoril', en: 'Cascais and the Estoril coast' },
+        teaser: {
+          fr: 'La corniche de la Marginal jusqu’à Cascais, la plage sauvage du Guincho, la bouche de l’Enfer. Déjeuner de poisson face à l’océan avant le retour par la serra de Sintra.',
+          en: 'The Marginal coast road to Cascais, the wild Guincho beach, the Boca do Inferno. A seafood lunch facing the ocean before returning through the Sintra hills.',
+        },
+        duration: { fr: 'Demi-journée', en: 'Half day' },
+        price: '420',
+      },
+      {
+        title: { fr: 'Soirée fado et miradouros', en: 'Fado evening and miradouros' },
+        teaser: {
+          fr: 'Les belvédères de l’Alfama à la tombée du jour, dîner-spectacle de fado dans une casa typique, puis le pont du 25-Avril illuminé. Véhicule à disposition toute la soirée.',
+          en: 'The Alfama viewpoints at dusk, a fado dinner-show in a traditional casa, then the illuminated 25 de Abril Bridge. Vehicle on standby all evening.',
+        },
+        duration: { fr: 'Soirée', en: 'Evening' },
+        price: '390',
+      },
+    ],
+    faq: [
+      {
+        q: {
+          fr: 'Combien coûte un transfert entre l’aéroport de Lisbonne et le centre-ville ?',
+          en: 'How much does a transfer between Lisbon Airport and the city centre cost?',
+        },
+        a: {
+          fr: 'Le transfert privé entre l’aéroport Humberto Delgado (LIS) et le centre de Lisbonne est facturé à prix fixe, confirmé à la réservation. Il comprend l’accueil en salle d’arrivée avec panneau nominatif, le suivi du vol et 60 minutes d’attente offertes en cas de retard.',
+          en: 'A private transfer between Humberto Delgado Airport (LIS) and central Lisbon is charged at a fixed price, confirmed at booking. It includes a meet-and-greet with a name board, flight tracking and 60 minutes of complimentary waiting time in case of delay.',
+        },
+      },
+      {
+        q: {
+          fr: 'Peut-on visiter Sintra à la journée avec un chauffeur privé ?',
+          en: 'Can Sintra be visited on a day trip with a private chauffeur?',
+        },
+        a: {
+          fr: 'Oui. Sintra est à 30 km de Lisbonne ; en mise à disposition à la journée, votre chauffeur vous dépose au plus près du palais de la Pena et de la Quinta da Regaleira, vous attend sur place et prolonge volontiers vers Cascais ou le cap de Roca.',
+          en: 'Yes. Sintra is 30 km from Lisbon; with a full-day hire, your chauffeur drops you as close as possible to the Pena Palace and the Quinta da Regaleira, waits on site and gladly extends to Cascais or Cabo da Roca.',
+        },
+      },
+      {
+        q: {
+          fr: 'Vos chauffeurs à Lisbonne parlent-ils anglais ?',
+          en: 'Do your chauffeurs in Lisbon speak English?',
+        },
+        a: {
+          fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande à la réservation, ainsi que d’autres langues selon les disponibilités. Précisez votre préférence lors de la commande.',
+          en: 'Yes, English-speaking chauffeurs are available on request at booking, along with other languages subject to availability. Please state your preference when ordering.',
+        },
+      },
+    ],
+    nearby: ['sintra', 'cascais', 'evora', 'obidos'],
+  },
+  {
+    slug: 'porto',
+    name: { fr: 'Porto', en: 'Porto' },
+    country: { fr: 'Portugal', en: 'Portugal' },
+    region: 'iberia',
+    airport: 'Francisco Sá Carneiro (OPO)',
+    airportTransfer: {
+      fr: 'L’aéroport Francisco Sá Carneiro (OPO) se situe à 11 km au nord-ouest du centre : comptez 20 à 30 minutes pour rejoindre la Ribeira ou l’Avenida dos Aliados selon le trafic. Votre chauffeur vous accueille en salle d’arrivée, panneau nominatif en main, et suit votre vol en temps réel.',
+      en: 'Francisco Sá Carneiro Airport (OPO) lies 11 km north-west of the centre: allow 20 to 30 minutes to reach the Ribeira or the Avenida dos Aliados depending on traffic. Your chauffeur greets you in the arrivals hall with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Accrochée aux rives escarpées du Douro, Porto aligne façades d’azulejos, ponts de fer et chais de vin de Porto à Vila Nova de Gaia. Votre **chauffeur privé à Porto** connaît les ruelles pentues de la Ribeira, les accès aux caves et les tables de la Foz : transferts aéroport, mise à disposition à l’heure, dépose au plus près des sites piétonniers. Berlines Mercedes et vans, prix fixes annoncés à l’avance, chauffeurs anglophones sur demande.',
+        'Porto est aussi le point de départ de la **vallée du Douro**, premier vignoble délimité au monde, dont les terrasses classées UNESCO s’étagent à une heure de route. Braga et Guimarães, berceau de la nation, complètent l’itinéraire au nord. En mise à disposition à la journée, votre chauffeur enchaîne quintas, dégustations et déjeuners au bord du fleuve pendant que vous profitez du paysage.',
+      ],
+      en: [
+        'Clinging to the steep banks of the Douro, Porto lines up azulejo façades, iron bridges and port-wine cellars in Vila Nova de Gaia. Your **private chauffeur in Porto** knows the steep lanes of the Ribeira, the approaches to the cellars and the restaurants of Foz: airport transfers, hourly hire, drop-offs as close as possible to pedestrian sites. Mercedes sedans and vans, fixed prices confirmed in advance, English-speaking chauffeurs on request.',
+        'Porto is also the gateway to the **Douro Valley**, the world’s first demarcated wine region, whose UNESCO-listed terraces rise an hour’s drive away. Braga and Guimarães, cradle of the nation, extend the route to the north. With a full-day hire, your chauffeur links quintas, tastings and riverside lunches while you enjoy the landscape.',
+      ],
+    },
+    experiences: [
+      {
+        title: { fr: 'Vallée du Douro et dégustations', en: 'Douro Valley and tastings' },
+        teaser: {
+          fr: 'À une heure de Porto, les terrasses viticoles classées UNESCO : visite d’une quinta, dégustation de porto et de vins tranquilles, déjeuner surplombant le fleuve. Retour par la route panoramique N-222.',
+          en: 'An hour from Porto, the UNESCO-listed vineyard terraces: a quinta visit, a tasting of port and still wines, lunch overlooking the river. Return along the scenic N-222 road.',
+        },
+        duration: { fr: 'Journée complète', en: 'Full day' },
+        price: '790',
+      },
+      {
+        title: { fr: 'Caves de Vila Nova de Gaia', en: 'Vila Nova de Gaia cellars' },
+        teaser: {
+          fr: 'Les grands noms du porto — Graham’s, Taylor’s, Sandeman — sur la rive de Gaia, dégustation face à la Ribeira, croisière des six ponts en option. Dépose et reprise devant chaque cave.',
+          en: 'The great port houses — Graham’s, Taylor’s, Sandeman — on the Gaia bank, a tasting facing the Ribeira, an optional six-bridges cruise. Drop-off and pick-up at each cellar.',
+        },
+        duration: { fr: 'Demi-journée', en: 'Half day' },
+        price: '390',
+      },
+      {
+        title: { fr: 'Braga et Guimarães', en: 'Braga and Guimarães' },
+        teaser: {
+          fr: 'Le sanctuaire baroque du Bom Jesus do Monte et son escalier monumental, puis Guimarães, « berceau du Portugal » classé UNESCO. Déjeuner dans le centre médiéval avant le retour.',
+          en: 'The Baroque sanctuary of Bom Jesus do Monte and its monumental stairway, then Guimarães, the UNESCO-listed “cradle of Portugal”. Lunch in the medieval centre before the return.',
+        },
+        duration: { fr: 'Journée complète', en: 'Full day' },
+        price: '690',
+      },
+      {
+        title: { fr: 'Porto historique en voiture privée', en: 'Historic Porto by private car' },
+        teaser: {
+          fr: 'La librairie Lello, la gare de São Bento et ses azulejos, le pont Dom-Luís et la Foz do Douro au coucher du soleil. Véhicule en attente à chaque étape, itinéraire adapté à votre rythme.',
+          en: 'The Lello bookshop, São Bento station and its azulejos, the Dom Luís Bridge and the Foz do Douro at sunset. Vehicle on standby at each stop, itinerary adapted to your pace.',
+        },
+        duration: { fr: 'Demi-journée', en: 'Half day' },
+        price: '360',
+      },
+      {
+        title: { fr: 'Soirée à la Foz', en: 'Evening in Foz' },
+        teaser: {
+          fr: 'Dîner de fruits de mer face à l’Atlantique, coucher de soleil sur l’embouchure du Douro, puis les quais illuminés de la Ribeira. Véhicule à disposition toute la soirée.',
+          en: 'A seafood dinner facing the Atlantic, sunset over the Douro mouth, then the illuminated Ribeira quays. Vehicle on standby all evening.',
+        },
+        duration: { fr: 'Soirée', en: 'Evening' },
+        price: '380',
+      },
+    ],
+    faq: [
+      {
+        q: {
+          fr: 'Combien coûte un transfert entre l’aéroport de Porto et le centre-ville ?',
+          en: 'How much does a transfer between Porto Airport and the city centre cost?',
+        },
+        a: {
+          fr: 'Le transfert privé entre l’aéroport Francisco Sá Carneiro (OPO) et le centre de Porto est facturé à prix fixe, confirmé à la réservation. Il comprend l’accueil en salle d’arrivée avec panneau nominatif, le suivi du vol et 60 minutes d’attente offertes en cas de retard.',
+          en: 'A private transfer between Francisco Sá Carneiro Airport (OPO) and central Porto is charged at a fixed price, confirmed at booking. It includes a meet-and-greet with a name board, flight tracking and 60 minutes of complimentary waiting time in case of delay.',
+        },
+      },
+      {
+        q: {
+          fr: 'Peut-on faire la vallée du Douro à la journée depuis Porto ?',
+          en: 'Can the Douro Valley be done as a day trip from Porto?',
+        },
+        a: {
+          fr: 'Oui. La vallée du Douro est à environ une heure de Porto ; en mise à disposition à la journée, votre chauffeur organise visites de quintas, dégustations et déjeuner, et vous ramène en fin d’après-midi par la route panoramique.',
+          en: 'Yes. The Douro Valley is about an hour from Porto; with a full-day hire, your chauffeur arranges quinta visits, tastings and lunch, and brings you back in the late afternoon along the scenic road.',
+        },
+      },
+      {
+        q: {
+          fr: 'Vos chauffeurs à Porto parlent-ils anglais ?',
+          en: 'Do your chauffeurs in Porto speak English?',
+        },
+        a: {
+          fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande à la réservation, ainsi que d’autres langues selon les disponibilités. Précisez votre préférence lors de la commande.',
+          en: 'Yes, English-speaking chauffeurs are available on request at booking, along with other languages subject to availability. Please state your preference when ordering.',
+        },
+      },
+    ],
+    nearby: ['braga', 'coimbra'],
+  },
+  {
+    slug: 'sintra',
+    name: { fr: 'Sintra', en: 'Sintra' },
+    country: { fr: 'Portugal', en: 'Portugal' },
+    region: 'iberia',
+    airport: 'Lisbonne (LIS)',
+    airportTransfer: {
+      fr: 'L’aéroport de Lisbonne (LIS) se trouve à 30 km à l’est de Sintra : comptez 35 à 45 minutes jusqu’au centre historique ou au palais de la Pena. Votre chauffeur vous accueille en salle d’arrivée, panneau nominatif en main, et suit votre vol en temps réel.',
+      en: 'Lisbon Airport (LIS) lies 30 km east of Sintra: allow 35 to 45 minutes to the historic centre or the Pena Palace. Your chauffeur greets you in the arrivals hall with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Nichée dans une serra boisée à 30 km de Lisbonne, Sintra a séduit rois et poètes romantiques de son microclimat et de ses palais de conte. Votre **chauffeur privé à Sintra** maîtrise les routes étroites et sinueuses qui montent à la Pena et à la Quinta da Regaleira, souvent saturées en saison : dépose au plus près des entrées, attente sur place, itinéraire optimisé selon l’affluence. Berlines Mercedes et vans, prix fixes, chauffeurs anglophones sur demande.',
+        'Au-delà des palais, Sintra ouvre sur la côte sauvage de l’Atlantique. Le **cap de Roca**, point le plus occidental du continent, la plage de Guincho et la station chic de Cascais se rejoignent en une trentaine de minutes. En mise à disposition à la journée, votre chauffeur compose un circuit palais-océan-Cascais sans que vous ayez à vous soucier du stationnement, rare et compliqué dans la vieille ville.',
+      ],
+      en: [
+        'Set in a wooded serra 30 km from Lisbon, Sintra has enchanted kings and Romantic poets with its microclimate and fairy-tale palaces. Your **private chauffeur in Sintra** masters the narrow, winding roads up to the Pena and the Quinta da Regaleira, often congested in season: drop-offs as close as possible to the entrances, on-site waiting, an itinerary optimised for the crowds. Mercedes sedans and vans, fixed prices, English-speaking chauffeurs on request.',
+        'Beyond the palaces, Sintra opens onto the wild Atlantic coast. **Cabo da Roca**, the westernmost point of the continent, Guincho beach and the smart resort of Cascais are all about thirty minutes away. With a full-day hire, your chauffeur builds a palaces-ocean-Cascais route without you having to worry about parking, which is scarce and complicated in the old town.',
+      ],
+    },
+    experiences: [
+      {
+        title: { fr: 'Palais de la Pena et parc', en: 'Pena Palace and park' },
+        teaser: {
+          fr: 'Le palais romantique aux couleurs vives et son parc exotique de 200 hectares, dépose au plus près de l’entrée haute pour éviter la montée. Attente sur place, reprise à l’heure convenue.',
+          en: 'The vividly coloured Romantic palace and its 200-hectare exotic park, drop-off as close as possible to the upper entrance to avoid the climb. Waiting on site, pick-up at the agreed time.',
+        },
+        duration: { fr: 'Demi-journée', en: 'Half day' },
+        price: '340',
+      },
+      {
+        title: { fr: 'Quinta da Regaleira et centre historique', en: 'Quinta da Regaleira and historic centre' },
+        teaser: {
+          fr: 'Le puits initiatique et les jardins ésotériques de la Regaleira, puis le palais national et ses cheminées coniques. Déjeuner dans le centre avant de poursuivre.',
+          en: 'The initiation well and esoteric gardens of the Regaleira, then the National Palace with its conical chimneys. Lunch in the centre before continuing.',
+        },
+        duration: { fr: 'Demi-journée', en: 'Half day' },
+        price: '340',
+      },
+      {
+        title: { fr: 'Cap de Roca et Cascais', en: 'Cabo da Roca and Cascais' },
+        teaser: {
+          fr: 'Le phare du cap de Roca face à l’immensité atlantique, la plage sauvage du Guincho, puis déjeuner de poisson à Cascais. Retour par la corniche de l’Estoril.',
+          en: 'The Cabo da Roca lighthouse facing the vast Atlantic, the wild Guincho beach, then a seafood lunch in Cascais. Return along the Estoril coast road.',
+        },
+        duration: { fr: 'Demi-journée', en: 'Half day' },
+        price: '420',
+      },
+      {
+        title: { fr: 'Sintra et palais de Monserrate', en: 'Sintra and Monserrate palace' },
+        teaser: {
+          fr: 'Le palais mauresque de Monserrate et son parc botanique, moins fréquenté, puis le château des Maures et son panorama sur la serra. Journée au rythme lent, loin des cars.',
+          en: 'The Moorish Monserrate palace and its quieter botanical park, then the Castle of the Moors and its panorama over the serra. A slow-paced day, away from the tour buses.',
+        },
+        duration: { fr: 'Journée complète', en: 'Full day' },
+        price: '590',
+      },
+      {
+        title: { fr: 'Journée palais et océan', en: 'Palaces and ocean day' },
+        teaser: {
+          fr: 'La combinaison intégrale : Pena, Regaleira, cap de Roca et déjeuner à Cascais, orchestrée pour éviter files et embouteillages. Véhicule à disposition toute la journée.',
+          en: 'The full combination: Pena, Regaleira, Cabo da Roca and lunch in Cascais, orchestrated to avoid queues and traffic. Vehicle on standby all day.',
+        },
+        duration: { fr: 'Journée complète', en: 'Full day' },
+        price: '640',
+      },
+    ],
+    faq: [
+      {
+        q: {
+          fr: 'Vaut-il mieux visiter Sintra avec un chauffeur privé ?',
+          en: 'Is it better to visit Sintra with a private chauffeur?',
+        },
+        a: {
+          fr: 'Oui, car les routes de Sintra sont étroites, sinueuses et saturées en saison, et le stationnement y est rare. Votre chauffeur vous dépose au plus près des entrées, patiente sur place et optimise l’ordre des visites selon l’affluence.',
+          en: 'Yes, because Sintra’s roads are narrow, winding and congested in season, and parking is scarce. Your chauffeur drops you as close as possible to the entrances, waits on site and optimises the order of visits according to the crowds.',
+        },
+      },
+      {
+        q: {
+          fr: 'Peut-on combiner Sintra et Cascais dans la même journée ?',
+          en: 'Can Sintra and Cascais be combined in the same day?',
+        },
+        a: {
+          fr: 'Oui. Les deux sites sont distants d’une trentaine de minutes. En mise à disposition à la journée, votre chauffeur enchaîne palais de Sintra le matin, cap de Roca et déjeuner à Cascais l’après-midi, selon le rythme que vous souhaitez.',
+          en: 'Yes. The two sites are about thirty minutes apart. With a full-day hire, your chauffeur links the Sintra palaces in the morning, Cabo da Roca and lunch in Cascais in the afternoon, at the pace you prefer.',
+        },
+      },
+      {
+        q: {
+          fr: 'Depuis quel aéroport arrive-t-on à Sintra ?',
+          en: 'From which airport do you reach Sintra?',
+        },
+        a: {
+          fr: 'L’aéroport le plus proche est celui de Lisbonne (LIS), à 30 km. Votre chauffeur vous y accueille avec panneau nominatif et vous conduit directement à Sintra en 35 à 45 minutes, à prix fixe.',
+          en: 'The nearest airport is Lisbon (LIS), 30 km away. Your chauffeur greets you there with a name board and drives you directly to Sintra in 35 to 45 minutes, at a fixed price.',
+        },
+      },
+    ],
+    nearby: ['lisbon', 'cascais'],
+  },
+  {
+    slug: 'cascais',
+    name: { fr: 'Cascais', en: 'Cascais' },
+    country: { fr: 'Portugal', en: 'Portugal' },
+    region: 'iberia',
+    airport: 'Lisbonne (LIS)',
+    airportTransfer: {
+      fr: 'L’aéroport de Lisbonne (LIS) se trouve à 30 km à l’est de Cascais : comptez 30 à 45 minutes par l’A5 selon le trafic. Votre chauffeur vous accueille en salle d’arrivée, panneau nominatif en main, et suit votre vol en temps réel.',
+      en: 'Lisbon Airport (LIS) lies 30 km east of Cascais: allow 30 to 45 minutes via the A5 depending on traffic. Your chauffeur greets you in the arrivals hall with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Ancien village de pêcheurs devenu station balnéaire de la cour portugaise, Cascais aligne marina élégante, plages abritées et villas Belle Époque à 30 km de Lisbonne. Votre **chauffeur privé à Cascais** dessert les hôtels de la baie, les golfs de l’Estoril et les restaurants du front de mer : transferts aéroport, mise à disposition à l’heure, prix fixes annoncés à l’avance. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Cascais est le point d’ancrage idéal de la côte de l’Estoril. La **serra de Sintra et ses palais**, le cap de Roca, la plage sauvage du Guincho prisée des surfeurs se rejoignent en quinze à trente minutes. En mise à disposition à la journée, votre chauffeur relie parcours de golf, dîners de fruits de mer et escapades à Sintra pendant que vous profitez de la douceur de l’Atlantique.',
+      ],
+      en: [
+        'A former fishing village turned seaside resort of the Portuguese court, Cascais offers an elegant marina, sheltered beaches and Belle Époque villas 30 km from Lisbon. Your **private chauffeur in Cascais** serves the bay’s hotels, the Estoril golf courses and the seafront restaurants: airport transfers, hourly hire, fixed prices confirmed in advance. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Cascais is the ideal base for the Estoril coast. The **Sintra hills and their palaces**, Cabo da Roca and the wild Guincho beach favoured by surfers are fifteen to thirty minutes away. With a full-day hire, your chauffeur links golf rounds, seafood dinners and excursions to Sintra while you enjoy the mildness of the Atlantic.',
+      ],
+    },
+    experiences: [
+      {
+        title: { fr: 'Sintra depuis Cascais', en: 'Sintra from Cascais' },
+        teaser: {
+          fr: 'Vingt minutes de route jusqu’aux palais de la serra : Pena, Regaleira et centre historique, avec dépose au plus près des entrées. Retour par le cap de Roca au coucher du soleil.',
+          en: 'Twenty minutes to the palaces of the serra: Pena, Regaleira and the historic centre, with drop-offs as close as possible to the entrances. Return via Cabo da Roca at sunset.',
+        },
+        duration: { fr: 'Journée complète', en: 'Full day' },
+        price: '590',
+      },
+      {
+        title: { fr: 'Guincho et cap de Roca', en: 'Guincho and Cabo da Roca' },
+        teaser: {
+          fr: 'La plage sauvage du Guincho battue par les vents, le phare du cap de Roca face à l’Atlantique, déjeuner de poisson en bord de mer. Balade côtière au rythme lent.',
+          en: 'The wind-swept Guincho beach, the Cabo da Roca lighthouse facing the Atlantic, a seafood lunch by the sea. A slow-paced coastal drive.',
+        },
+        duration: { fr: 'Demi-journée', en: 'Half day' },
+        price: '380',
+      },
+      {
+        title: { fr: 'Lisbonne à la journée', en: 'Lisbon day trip' },
+        teaser: {
+          fr: 'Trente minutes par l’A5 jusqu’à la capitale : Belém, Alfama et miradouros, dépose devant chaque site, véhicule en attente. Retour à Cascais pour le dîner.',
+          en: 'Thirty minutes via the A5 to the capital: Belém, Alfama and the miradouros, door-to-door drop-offs, vehicle on standby. Back in Cascais for dinner.',
+        },
+        duration: { fr: 'Journée complète', en: 'Full day' },
+        price: '560',
+      },
+      {
+        title: { fr: 'Golf sur la côte de l’Estoril', en: 'Golf on the Estoril coast' },
+        teaser: {
+          fr: 'Transferts et mise à disposition autour des parcours de l’Estoril, d’Oitavos Dunes et de Penha Longa. Votre chauffeur gère clubs et horaires pendant que vous jouez.',
+          en: 'Transfers and standby around the Estoril, Oitavos Dunes and Penha Longa courses. Your chauffeur handles clubs and timings while you play.',
+        },
+        duration: { fr: 'Demi-journée', en: 'Half day' },
+        price: '400',
+      },
+      {
+        title: { fr: 'Soirée sur la baie', en: 'Evening on the bay' },
+        teaser: {
+          fr: 'Coucher de soleil sur la marina, dîner de fruits de mer face à l’océan, puis les terrasses animées du centre. Véhicule à disposition toute la soirée.',
+          en: 'Sunset over the marina, a seafood dinner facing the ocean, then the lively terraces of the centre. Vehicle on standby all evening.',
+        },
+        duration: { fr: 'Soirée', en: 'Evening' },
+        price: '360',
+      },
+    ],
+    faq: [
+      {
+        q: {
+          fr: 'Combien de temps faut-il de l’aéroport de Lisbonne à Cascais ?',
+          en: 'How long does it take from Lisbon Airport to Cascais?',
+        },
+        a: {
+          fr: 'Comptez 30 à 45 minutes par l’autoroute A5, selon le trafic. Le transfert privé est facturé à prix fixe, avec accueil en salle d’arrivée, suivi du vol et 60 minutes d’attente offertes en cas de retard.',
+          en: 'Allow 30 to 45 minutes via the A5 motorway, depending on traffic. The private transfer is charged at a fixed price, with a meet-and-greet in arrivals, flight tracking and 60 minutes of complimentary waiting time in case of delay.',
+        },
+      },
+      {
+        q: {
+          fr: 'Peut-on rejoindre Sintra facilement depuis Cascais ?',
+          en: 'Can Sintra be reached easily from Cascais?',
+        },
+        a: {
+          fr: 'Oui, Sintra est à une vingtaine de minutes de route. En mise à disposition à la journée, votre chauffeur combine les palais de Sintra, le cap de Roca et un déjeuner, puis vous ramène à Cascais.',
+          en: 'Yes, Sintra is about twenty minutes away. With a full-day hire, your chauffeur combines the Sintra palaces, Cabo da Roca and lunch, then brings you back to Cascais.',
+        },
+      },
+      {
+        q: {
+          fr: 'Vos chauffeurs à Cascais parlent-ils anglais ?',
+          en: 'Do your chauffeurs in Cascais speak English?',
+        },
+        a: {
+          fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande à la réservation, ainsi que d’autres langues selon les disponibilités.',
+          en: 'Yes, English-speaking chauffeurs are available on request at booking, along with other languages subject to availability.',
+        },
+      },
+    ],
+    nearby: ['lisbon', 'sintra'],
+  },
+  {
+    slug: 'faro',
+    name: { fr: 'Faro', en: 'Faro' },
+    country: { fr: 'Portugal', en: 'Portugal' },
+    region: 'iberia',
+    airport: 'Faro (FAO)',
+    airportTransfer: {
+      fr: 'L’aéroport de Faro (FAO) se trouve à 7 km à l’ouest du centre : comptez 15 minutes jusqu’à la vieille ville, et 40 à 70 minutes vers les stations de l’Algarve — Vilamoura, Albufeira, Lagos. Votre chauffeur vous accueille en salle d’arrivée, panneau nominatif en main, et suit votre vol en temps réel.',
+      en: 'Faro Airport (FAO) lies 7 km west of the centre: allow 15 minutes to the old town, and 40 to 70 minutes to the Algarve resorts — Vilamoura, Albufeira, Lagos. Your chauffeur greets you in the arrivals hall with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Capitale de l’Algarve et porte d’entrée du sud du Portugal, Faro veille sur la lagune de la Ria Formosa, ses îles et ses flamants roses. Votre **chauffeur privé à Faro** dessert la vieille ville aux remparts, l’aéroport et l’ensemble des stations de la côte : transferts à prix fixe, mise à disposition à l’heure, dépose au plus près des marinas et des plages. Berlines Mercedes et vans de grande capacité, chauffeurs anglophones sur demande.',
+        'Depuis Faro rayonne tout l’**Algarve balnéaire** : les falaises ocre de la Ponta da Piedade à Lagos, les golfs de Vilamoura, les villages blancs de l’intérieur comme Silves ou Loulé. En mise à disposition à la journée, votre chauffeur relie criques, tables de poisson et parcours de golf pendant que vous profitez des 300 jours de soleil annuels de la région.',
+      ],
+      en: [
+        'Capital of the Algarve and gateway to southern Portugal, Faro watches over the Ria Formosa lagoon, its islands and its flamingos. Your **private chauffeur in Faro** serves the walled old town, the airport and all the coastal resorts: fixed-price transfers, hourly hire, drop-offs as close as possible to the marinas and beaches. Mercedes sedans and full-size vans, English-speaking chauffeurs on request.',
+        'From Faro radiates the whole **seaside Algarve**: the ochre cliffs of Ponta da Piedade at Lagos, the golf courses of Vilamoura, the white inland villages such as Silves and Loulé. With a full-day hire, your chauffeur links coves, seafood restaurants and golf courses while you enjoy the region’s 300 days of annual sunshine.',
+      ],
+    },
+    experiences: [
+      {
+        title: { fr: 'Lagos et la Ponta da Piedade', en: 'Lagos and Ponta da Piedade' },
+        teaser: {
+          fr: 'À l’ouest de Faro, les falaises dorées et les grottes marines de la Ponta da Piedade, la plage de Dona Ana, la vieille ville de Lagos. Déjeuner de poisson face à l’océan.',
+          en: 'West of Faro, the golden cliffs and sea caves of Ponta da Piedade, Dona Ana beach, the old town of Lagos. A seafood lunch facing the ocean.',
+        },
+        duration: { fr: 'Journée complète', en: 'Full day' },
+        price: '690',
+      },
+      {
+        title: { fr: 'Ria Formosa et Olhão', en: 'Ria Formosa and Olhão' },
+        teaser: {
+          fr: 'Le parc naturel de la Ria Formosa, ses marais salants et ses îles-barrières, le marché aux poissons d’Olhão et les villages de pêcheurs. Balade nature au rythme lent.',
+          en: 'The Ria Formosa nature park, its salt pans and barrier islands, the fish market of Olhão and the fishing villages. A slow-paced nature drive.',
+        },
+        duration: { fr: 'Demi-journée', en: 'Half day' },
+        price: '360',
+      },
+      {
+        title: { fr: 'Villages blancs de l’intérieur', en: 'White villages inland' },
+        teaser: {
+          fr: 'Silves et son château maure de grès rouge, Loulé et son marché, Monchique et ses sources thermales dans la serra. Déjeuner du terroir loin de la côte.',
+          en: 'Silves and its red-sandstone Moorish castle, Loulé and its market, Monchique and its thermal springs in the serra. A regional lunch away from the coast.',
+        },
+        duration: { fr: 'Journée complète', en: 'Full day' },
+        price: '640',
+      },
+      {
+        title: { fr: 'Golf en Algarve', en: 'Golf in the Algarve' },
+        teaser: {
+          fr: 'Transferts et mise à disposition autour des parcours de Vilamoura, de Quinta do Lago et de San Lorenzo. Votre chauffeur gère les horaires pendant que vous jouez.',
+          en: 'Transfers and standby around the Vilamoura, Quinta do Lago and San Lorenzo courses. Your chauffeur handles the timings while you play.',
+        },
+        duration: { fr: 'Demi-journée', en: 'Half day' },
+        price: '400',
+      },
+      {
+        title: { fr: 'Séville depuis l’Algarve', en: 'Seville from the Algarve' },
+        teaser: {
+          fr: 'Deux heures de route vers l’Espagne : la Giralda, l’Alcázar et le quartier de Santa Cruz, déjeuner de tapas, retour en fin de journée. Passage de frontière sans formalité.',
+          en: 'Two hours to Spain: the Giralda, the Alcázar and the Santa Cruz quarter, a tapas lunch, return at the end of the day. Border crossing with no formalities.',
+        },
+        duration: { fr: 'Journée complète', en: 'Full day' },
+        price: '890',
+      },
+    ],
+    faq: [
+      {
+        q: {
+          fr: 'Combien coûte un transfert de l’aéroport de Faro vers les stations de l’Algarve ?',
+          en: 'How much does a transfer from Faro Airport to the Algarve resorts cost?',
+        },
+        a: {
+          fr: 'Le transfert privé depuis Faro (FAO) vers Vilamoura, Albufeira, Lagos ou toute autre station est facturé à prix fixe selon la distance, confirmé à la réservation. Il comprend l’accueil avec panneau nominatif, le suivi du vol et 60 minutes d’attente offertes.',
+          en: 'A private transfer from Faro (FAO) to Vilamoura, Albufeira, Lagos or any other resort is charged at a fixed price by distance, confirmed at booking. It includes a name-board meet-and-greet, flight tracking and 60 minutes of complimentary waiting time.',
+        },
+      },
+      {
+        q: {
+          fr: 'Peut-on faire une excursion à Séville depuis l’Algarve ?',
+          en: 'Can you take an excursion to Seville from the Algarve?',
+        },
+        a: {
+          fr: 'Oui. Séville est à environ deux heures de route de Faro, sans formalité de frontière. En mise à disposition à la journée, votre chauffeur vous y conduit et vous ramène le soir même, à prix fixe.',
+          en: 'Yes. Seville is about two hours’ drive from Faro, with no border formalities. With a full-day hire, your chauffeur takes you there and back the same evening, at a fixed price.',
+        },
+      },
+      {
+        q: {
+          fr: 'Vos chauffeurs en Algarve parlent-ils anglais ?',
+          en: 'Do your chauffeurs in the Algarve speak English?',
+        },
+        a: {
+          fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.',
+          en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.',
+        },
+      },
+    ],
+    nearby: ['seville', 'lisbon'],
+  },
+  {
+    slug: 'funchal',
+    name: { fr: 'Funchal', en: 'Funchal' },
+    country: { fr: 'Portugal', en: 'Portugal' },
+    region: 'iberia',
+    airport: 'Madère – Cristiano Ronaldo (FNC)',
+    airportTransfer: {
+      fr: 'L’aéroport de Madère – Cristiano Ronaldo (FNC) se trouve à 18 km à l’est de Funchal : comptez 25 à 35 minutes le long de la côte. Votre chauffeur vous accueille en salle d’arrivée, panneau nominatif en main, et suit votre vol en temps réel.',
+      en: 'Madeira – Cristiano Ronaldo Airport (FNC) lies 18 km east of Funchal: allow 25 to 35 minutes along the coast. Your chauffeur greets you in the arrivals hall with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Capitale de l’île de Madère, Funchal étage ses jardins subtropicaux, ses quintas et son front de mer au pied de montagnes plongeant dans l’Atlantique. Votre **chauffeur privé à Funchal** connaît les routes escarpées de l’île, les points de vue du Cabo Girão et les villages de la côte : transferts aéroport, mise à disposition à la journée, dépose au plus près des sites. Berlines et 4x4 selon les itinéraires, prix fixes, chauffeurs anglophones sur demande.',
+        'Madère se découvre à la journée depuis Funchal. Le **plateau du Paul da Serra**, les forêts de lauriers classées UNESCO, les piscines naturelles de Porto Moniz et les levadas se rejoignent par des routes de montagne exigeantes. En mise à disposition, votre chauffeur relie belvédères, dégustations de vin de Madère et déjeuners de village pendant que vous profitez du paysage volcanique.',
+      ],
+      en: [
+        'Capital of Madeira, Funchal tiers its subtropical gardens, quintas and seafront at the foot of mountains plunging into the Atlantic. Your **private chauffeur in Funchal** knows the island’s steep roads, the Cabo Girão viewpoints and the coastal villages: airport transfers, full-day hire, drop-offs as close as possible to the sites. Sedans and 4x4s depending on the route, fixed prices, English-speaking chauffeurs on request.',
+        'Madeira is best discovered on day trips from Funchal. The **Paul da Serra plateau**, the UNESCO-listed laurel forests, the natural pools of Porto Moniz and the levadas are reached by demanding mountain roads. With a chauffeur hire, your driver links viewpoints, Madeira wine tastings and village lunches while you enjoy the volcanic landscape.',
+      ],
+    },
+    experiences: [
+      {
+        title: { fr: 'Tour de l’île de Madère', en: 'Madeira island tour' },
+        teaser: {
+          fr: 'Le Cabo Girão, deuxième plus haute falaise d’Europe, les piscines volcaniques de Porto Moniz, la pointe de São Lourenço. Déjeuner de village et arrêts photo tout au long de la côte.',
+          en: 'Cabo Girão, Europe’s second-highest cliff, the volcanic pools of Porto Moniz, the São Lourenço headland. A village lunch and photo stops all along the coast.',
+        },
+        duration: { fr: 'Journée complète', en: 'Full day' },
+        price: '590',
+      },
+      {
+        title: { fr: 'Monte et jardins tropicaux', en: 'Monte and tropical gardens' },
+        teaser: {
+          fr: 'Le jardin tropical de Monte Palace, l’église de Nossa Senhora et la fameuse descente en carro de cesto — luges d’osier. Retour par les quintas fleuries des hauteurs.',
+          en: 'The Monte Palace tropical garden, the church of Nossa Senhora and the famous carro de cesto — wicker toboggan — descent. Return via the flowered quintas of the heights.',
+        },
+        duration: { fr: 'Demi-journée', en: 'Half day' },
+        price: '340',
+      },
+      {
+        title: { fr: 'Pics et forêts de lauriers', en: 'Peaks and laurel forests' },
+        teaser: {
+          fr: 'Le Pico do Arieiro à 1 818 m au-dessus des nuages, la laurisylve classée UNESCO de Ribeiro Frio, une levada accessible. Journée montagne loin de la côte.',
+          en: 'Pico do Arieiro at 1,818 m above the clouds, the UNESCO-listed laurisilva of Ribeiro Frio, an accessible levada. A mountain day away from the coast.',
+        },
+        duration: { fr: 'Journée complète', en: 'Full day' },
+        price: '620',
+      },
+      {
+        title: { fr: 'Câmara de Lobos et vin de Madère', en: 'Câmara de Lobos and Madeira wine' },
+        teaser: {
+          fr: 'Le village de pêcheurs cher à Churchill, dégustation de vin de Madère dans une adega historique, déjeuner d’espada aux bananes. Balade côtière tranquille.',
+          en: 'The fishing village dear to Churchill, a Madeira wine tasting in a historic adega, a lunch of espada with banana. A relaxed coastal drive.',
+        },
+        duration: { fr: 'Demi-journée', en: 'Half day' },
+        price: '340',
+      },
+      {
+        title: { fr: 'Soirée à Funchal', en: 'Evening in Funchal' },
+        teaser: {
+          fr: 'Coucher de soleil sur la baie depuis les hauteurs, dîner dans la vieille ville de la Zona Velha, puis les terrasses animées de l’Avenida do Mar. Véhicule à disposition.',
+          en: 'Sunset over the bay from the heights, dinner in the old town of the Zona Velha, then the lively terraces of the Avenida do Mar. Vehicle on standby.',
+        },
+        duration: { fr: 'Soirée', en: 'Evening' },
+        price: '360',
+      },
+    ],
+    faq: [
+      {
+        q: {
+          fr: 'Combien coûte le transfert de l’aéroport de Madère à Funchal ?',
+          en: 'How much does the transfer from Madeira Airport to Funchal cost?',
+        },
+        a: {
+          fr: 'Le transfert privé entre l’aéroport (FNC) et Funchal est facturé à prix fixe, confirmé à la réservation. Il comprend l’accueil avec panneau nominatif, le suivi du vol et 60 minutes d’attente offertes en cas de retard.',
+          en: 'A private transfer between the airport (FNC) and Funchal is charged at a fixed price, confirmed at booking. It includes a name-board meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.',
+        },
+      },
+      {
+        q: {
+          fr: 'Faut-il un 4x4 pour visiter Madère ?',
+          en: 'Do you need a 4x4 to tour Madeira?',
+        },
+        a: {
+          fr: 'Pas nécessairement : la plupart des sites sont accessibles en berline. Pour certains itinéraires de montagne, un véhicule adapté est proposé. Votre chauffeur choisit le véhicule selon le programme convenu.',
+          en: 'Not necessarily: most sites are reachable by sedan. For certain mountain routes, a suitable vehicle is provided. Your chauffeur selects the vehicle according to the agreed programme.',
+        },
+      },
+      {
+        q: {
+          fr: 'Vos chauffeurs à Madère parlent-ils anglais ?',
+          en: 'Do your chauffeurs in Madeira speak English?',
+        },
+        a: {
+          fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.',
+          en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.',
+        },
+      },
+    ],
+    nearby: ['lisbon'],
+  },
+  {
+    slug: 'evora',
+    name: { fr: 'Évora', en: 'Évora' },
+    country: { fr: 'Portugal', en: 'Portugal' },
+    region: 'iberia',
+    airport: 'Lisbonne (LIS)',
+    airportTransfer: {
+      fr: 'L’aéroport de Lisbonne (LIS) se trouve à 130 km à l’ouest d’Évora : comptez 1h15 à 1h30 par l’A6. Votre chauffeur vous accueille en salle d’arrivée, panneau nominatif en main, et suit votre vol en temps réel.',
+      en: 'Lisbon Airport (LIS) lies 130 km west of Évora: allow 1h15 to 1h30 via the A6. Your chauffeur greets you in the arrivals hall with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Capitale de l’Alentejo, Évora enferme dans ses remparts un temple romain, une cathédrale gothique et une chapelle des Os, deux mille ans d’histoire classés au patrimoine mondial. Votre **chauffeur privé à Évora** dessert la ville-musée, les domaines viticoles alentejans et les monts mégalithiques des environs : transferts depuis Lisbonne, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Autour d’Évora s’étend l’**Alentejo des vins et des mégalithes** : le cromlech des Almendres, plus grand ensemble mégalithique de la péninsule, les quintas de Reguengos et de Vidigueira, les villages blancs comme Monsaraz perché sur son piton. En mise à disposition, votre chauffeur relie caves, tables de terroir et sites préhistoriques à travers les plaines d’oliviers et de chênes-lièges.',
+      ],
+      en: [
+        'Capital of the Alentejo, Évora holds within its walls a Roman temple, a Gothic cathedral and a Chapel of Bones — two thousand years of history listed as World Heritage. Your **private chauffeur in Évora** serves the museum town, the Alentejo wine estates and the surrounding megalithic hills: transfers from Lisbon, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Around Évora stretches the **Alentejo of wines and megaliths**: the Almendres Cromlech, the largest megalithic complex on the peninsula, the quintas of Reguengos and Vidigueira, white villages like Monsaraz perched on its outcrop. With a chauffeur hire, your driver links cellars, regional tables and prehistoric sites across the plains of olive and cork trees.',
+      ],
+    },
+    experiences: [
+      {
+        title: { fr: 'Évora, ville-musée', en: 'Évora, the museum town' },
+        teaser: {
+          fr: 'Le temple romain de Diane, la cathédrale, la chapelle des Os et ses murs d’ossements, l’université historique. Dépose aux portes de la vieille ville, promenade guidée à votre rythme.',
+          en: 'The Roman Temple of Diana, the cathedral, the bone-lined Chapel of Bones, the historic university. Drop-off at the gates of the old town, a stroll at your own pace.',
+        },
+        duration: { fr: 'Demi-journée', en: 'Half day' },
+        price: '360',
+      },
+      {
+        title: { fr: 'Mégalithes de l’Alentejo', en: 'Alentejo megaliths' },
+        teaser: {
+          fr: 'Le cromlech des Almendres et son cercle de menhirs, le dolmen d’Anta Grande do Zambujeiro, à travers les plaines de chênes-lièges. Voyage aux origines néolithiques.',
+          en: 'The Almendres Cromlech and its circle of menhirs, the Anta Grande do Zambujeiro dolmen, across the cork-oak plains. A journey to Neolithic origins.',
+        },
+        duration: { fr: 'Demi-journée', en: 'Half day' },
+        price: '360',
+      },
+      {
+        title: { fr: 'Route des vins de l’Alentejo', en: 'Alentejo wine route' },
+        teaser: {
+          fr: 'Deux ou trois quintas autour de Reguengos et de Vidigueira, dégustations et déjeuner au domaine. Votre chauffeur conduit pendant que vous goûtez.',
+          en: 'Two or three quintas around Reguengos and Vidigueira, tastings and lunch at the estate. Your chauffeur drives while you taste.',
+        },
+        duration: { fr: 'Journée complète', en: 'Full day' },
+        price: '620',
+      },
+      {
+        title: { fr: 'Monsaraz et le lac d’Alqueva', en: 'Monsaraz and Lake Alqueva' },
+        teaser: {
+          fr: 'Le village fortifié de Monsaraz perché au-dessus du plus grand lac artificiel d’Europe, réserve de ciel étoilé. Déjeuner face aux remparts, retour au crépuscule.',
+          en: 'The fortified village of Monsaraz perched above Europe’s largest artificial lake, a dark-sky reserve. Lunch facing the ramparts, return at dusk.',
+        },
+        duration: { fr: 'Journée complète', en: 'Full day' },
+        price: '640',
+      },
+      {
+        title: { fr: 'Évora depuis Lisbonne à la journée', en: 'Évora from Lisbon day trip' },
+        teaser: {
+          fr: '1h15 de route par l’A6 : la ville-musée le matin, une quinta et un déjeuner alentejan l’après-midi, retour à Lisbonne le soir. Journée complète clé en main.',
+          en: '1h15 via the A6: the museum town in the morning, a quinta and an Alentejo lunch in the afternoon, back in Lisbon in the evening. A turnkey full day.',
+        },
+        duration: { fr: 'Journée complète', en: 'Full day' },
+        price: '790',
+      },
+    ],
+    faq: [
+      {
+        q: {
+          fr: 'Peut-on visiter Évora à la journée depuis Lisbonne ?',
+          en: 'Can Évora be visited on a day trip from Lisbon?',
+        },
+        a: {
+          fr: 'Oui. Évora est à 1h15 de Lisbonne par l’A6. En mise à disposition à la journée, votre chauffeur vous conduit à Évora, organise visites et déjeuner, et vous ramène le soir même, à prix fixe.',
+          en: 'Yes. Évora is 1h15 from Lisbon via the A6. With a full-day hire, your chauffeur drives you to Évora, arranges visits and lunch, and brings you back the same evening, at a fixed price.',
+        },
+      },
+      {
+        q: {
+          fr: 'La route des vins de l’Alentejo est-elle accessible avec chauffeur ?',
+          en: 'Is the Alentejo wine route accessible with a chauffeur?',
+        },
+        a: {
+          fr: 'Oui, c’est l’une des formules les plus demandées. Votre chauffeur organise les visites de quintas et conduit d’un domaine à l’autre pendant que vous profitez des dégustations en toute sérénité.',
+          en: 'Yes, it is one of the most requested options. Your chauffeur arranges the quinta visits and drives from estate to estate while you enjoy the tastings with complete peace of mind.',
+        },
+      },
+      {
+        q: {
+          fr: 'Vos chauffeurs en Alentejo parlent-ils anglais ?',
+          en: 'Do your chauffeurs in the Alentejo speak English?',
+        },
+        a: {
+          fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.',
+          en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.',
+        },
+      },
+    ],
+    nearby: ['lisbon', 'seville'],
+  },
+  {
+    slug: 'coimbra',
+    name: { fr: 'Coimbra', en: 'Coimbra' },
+    country: { fr: 'Portugal', en: 'Portugal' },
+    region: 'iberia',
+    airport: 'Porto (OPO)',
+    airportTransfer: {
+      fr: 'L’aéroport de Porto (OPO) se trouve à 120 km au nord de Coimbra : comptez 1h15 par l’A1. Depuis Lisbonne (LIS), à 200 km au sud, le trajet demande environ 2 heures. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Porto Airport (OPO) lies 120 km north of Coimbra: allow 1h15 via the A1. From Lisbon (LIS), 200 km south, the journey takes about 2 hours. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Ancienne capitale du royaume et siège de la plus vieille université du Portugal, Coimbra domine le Mondego de ses ruelles étudiantes et de sa bibliothèque Joanina baroque. Votre **chauffeur privé à Coimbra** dessert la ville haute universitaire, classée UNESCO, les monastères et les villages du centre : transferts depuis Porto ou Lisbonne, mise à disposition à l’heure, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Coimbra commande le **centre historique du Portugal**. Le sanctuaire de Fátima, les monastères de Batalha et d’Alcobaça, le village schisteux de Piódão et les forêts de la serra da Estrela se rejoignent en une heure à peine. En mise à disposition à la journée, votre chauffeur relie sites classés, tables de terroir et panoramas de montagne au cœur du pays.',
+      ],
+      en: [
+        'A former capital of the kingdom and home to Portugal’s oldest university, Coimbra overlooks the Mondego with its student lanes and its Baroque Joanina Library. Your **private chauffeur in Coimbra** serves the UNESCO-listed upper university town, the monasteries and the villages of the centre: transfers from Porto or Lisbon, hourly hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Coimbra commands the **historic heart of Portugal**. The sanctuary of Fátima, the monasteries of Batalha and Alcobaça, the schist village of Piódão and the forests of the Serra da Estrela are barely an hour away. With a full-day hire, your chauffeur links listed sites, regional tables and mountain panoramas in the middle of the country.',
+      ],
+    },
+    experiences: [
+      {
+        title: { fr: 'Université et bibliothèque Joanina', en: 'University and Joanina Library' },
+        teaser: {
+          fr: 'La bibliothèque baroque Joanina et ses rayonnages dorés, la salle des Actes, la cathédrale romane. Dépose au pied de la ville haute, promenade dans le dédale étudiant.',
+          en: 'The Baroque Joanina Library with its gilded shelves, the Hall of Acts, the Romanesque cathedral. Drop-off at the foot of the upper town, a walk through the student maze.',
+        },
+        duration: { fr: 'Demi-journée', en: 'Half day' },
+        price: '340',
+      },
+      {
+        title: { fr: 'Fátima et les monastères', en: 'Fátima and the monasteries' },
+        teaser: {
+          fr: 'Le sanctuaire de Fátima, puis les monastères gothiques de Batalha et d’Alcobaça classés UNESCO. Déjeuner en chemin, retour par le château de Leiria.',
+          en: 'The sanctuary of Fátima, then the UNESCO-listed Gothic monasteries of Batalha and Alcobaça. Lunch en route, return via Leiria castle.',
+        },
+        duration: { fr: 'Journée complète', en: 'Full day' },
+        price: '620',
+      },
+      {
+        title: { fr: 'Serra da Estrela', en: 'Serra da Estrela' },
+        teaser: {
+          fr: 'Le plus haut massif du Portugal continental, ses lacs glaciaires et ses bergeries de fromage Serra. Déjeuner de montagne, arrêts panoramiques sur la route des cols.',
+          en: 'Continental Portugal’s highest range, its glacial lakes and its Serra-cheese farms. A mountain lunch, panoramic stops along the pass road.',
+        },
+        duration: { fr: 'Journée complète', en: 'Full day' },
+        price: '690',
+      },
+      {
+        title: { fr: 'Village schisteux de Piódão', en: 'Schist village of Piódão' },
+        teaser: {
+          fr: 'Le village-crèche de Piódão, ses maisons de schiste étagées à flanc de montagne, l’un des plus beaux du Portugal. Déjeuner du terroir loin des circuits classiques.',
+          en: 'The nativity-scene village of Piódão, its schist houses tiered on the mountainside, one of Portugal’s finest. A regional lunch off the beaten track.',
+        },
+        duration: { fr: 'Journée complète', en: 'Full day' },
+        price: '660',
+      },
+      {
+        title: { fr: 'Étape sur la route Porto–Lisbonne', en: 'Stop on the Porto–Lisbon route' },
+        teaser: {
+          fr: 'Coimbra à mi-chemin entre les deux grandes villes : visite de l’université et déjeuner avant de reprendre la route, transfert prolongé à prix fixe. Idéal pour un road-trip.',
+          en: 'Coimbra halfway between the two great cities: a visit to the university and lunch before continuing, an extended transfer at a fixed price. Ideal for a road trip.',
+        },
+        duration: { fr: 'Demi-journée', en: 'Half day' },
+        price: '420',
+      },
+    ],
+    faq: [
+      {
+        q: {
+          fr: 'Depuis quel aéroport rejoint-on Coimbra ?',
+          en: 'From which airport do you reach Coimbra?',
+        },
+        a: {
+          fr: 'Coimbra est à 1h15 de Porto (OPO) et à environ 2 heures de Lisbonne (LIS). Votre chauffeur vous accueille à l’aéroport de votre choix avec panneau nominatif et vous conduit directement, à prix fixe.',
+          en: 'Coimbra is 1h15 from Porto (OPO) and about 2 hours from Lisbon (LIS). Your chauffeur greets you at the airport of your choice with a name board and drives you directly, at a fixed price.',
+        },
+      },
+      {
+        q: {
+          fr: 'Peut-on faire étape à Coimbra entre Porto et Lisbonne ?',
+          en: 'Can you stop in Coimbra between Porto and Lisbon?',
+        },
+        a: {
+          fr: 'Oui, c’est une étape idéale à mi-chemin. Votre chauffeur intègre la visite de Coimbra et un déjeuner au transfert entre les deux villes, à prix fixe convenu à l’avance.',
+          en: 'Yes, it is an ideal halfway stop. Your chauffeur incorporates a visit to Coimbra and lunch into the transfer between the two cities, at a fixed price agreed in advance.',
+        },
+      },
+      {
+        q: {
+          fr: 'Vos chauffeurs à Coimbra parlent-ils anglais ?',
+          en: 'Do your chauffeurs in Coimbra speak English?',
+        },
+        a: {
+          fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.',
+          en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.',
+        },
+      },
+    ],
+    nearby: ['porto', 'lisbon', 'braga'],
+  },
+  {
+    slug: 'braga',
+    name: { fr: 'Braga', en: 'Braga' },
+    country: { fr: 'Portugal', en: 'Portugal' },
+    region: 'iberia',
+    airport: 'Porto (OPO)',
+    airportTransfer: {
+      fr: 'L’aéroport de Porto (OPO) se trouve à 50 km au sud de Braga : comptez 35 à 45 minutes par l’A3. Votre chauffeur vous accueille en salle d’arrivée, panneau nominatif en main, et suit votre vol en temps réel.',
+      en: 'Porto Airport (OPO) lies 50 km south of Braga: allow 35 to 45 minutes via the A3. Your chauffeur greets you in the arrivals hall with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Ville des archevêques et l’une des plus anciennes cités chrétiennes de la péninsule, Braga aligne cathédrale romane, palais baroques et le sanctuaire escalier du Bom Jesus do Monte. Votre **chauffeur privé à Braga** dessert le centre historique, le sanctuaire et les villes du Minho : transferts depuis Porto, mise à disposition à l’heure, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Braga commande le **Minho verdoyant**, berceau du Portugal. Guimarães et son château fondateur, le parc national de Peneda-Gerês et ses lagunes, les domaines de vinho verde se rejoignent en moins d’une heure. En mise à disposition à la journée, votre chauffeur relie sanctuaires, tables du terroir et paysages de montagne à travers la province la plus verte du pays.',
+      ],
+      en: [
+        'City of archbishops and one of the oldest Christian cities on the peninsula, Braga lines up a Romanesque cathedral, Baroque palaces and the stairway sanctuary of Bom Jesus do Monte. Your **private chauffeur in Braga** serves the historic centre, the sanctuary and the towns of the Minho: transfers from Porto, hourly hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Braga commands the **green Minho**, cradle of Portugal. Guimarães and its founding castle, the Peneda-Gerês national park and its lagoons, the vinho verde estates are all less than an hour away. With a full-day hire, your chauffeur links sanctuaries, regional tables and mountain landscapes across the country’s greenest province.',
+      ],
+    },
+    experiences: [
+      {
+        title: { fr: 'Bom Jesus do Monte', en: 'Bom Jesus do Monte' },
+        teaser: {
+          fr: 'Le sanctuaire baroque et son escalier monumental en zigzag, le funiculaire à eau le plus ancien du monde, panorama sur la ville. Dépose au sommet, montée évitée.',
+          en: 'The Baroque sanctuary and its monumental zigzag stairway, the world’s oldest water-powered funicular, a panorama over the city. Drop-off at the top, the climb avoided.',
+        },
+        duration: { fr: 'Demi-journée', en: 'Half day' },
+        price: '340',
+      },
+      {
+        title: { fr: 'Guimarães, berceau du Portugal', en: 'Guimarães, cradle of Portugal' },
+        teaser: {
+          fr: 'Le château fondateur d’Afonso Henriques, le palais des ducs de Bragance, le centre médiéval classé UNESCO. Déjeuner dans la vieille ville avant le retour.',
+          en: 'The founding castle of Afonso Henriques, the palace of the Dukes of Braganza, the UNESCO-listed medieval centre. Lunch in the old town before the return.',
+        },
+        duration: { fr: 'Demi-journée', en: 'Half day' },
+        price: '360',
+      },
+      {
+        title: { fr: 'Parc national de Peneda-Gerês', en: 'Peneda-Gerês National Park' },
+        teaser: {
+          fr: 'L’unique parc national du Portugal, ses lagunes, cascades et villages de granit, les chevaux garranos en liberté. Déjeuner de montagne, route panoramique.',
+          en: 'Portugal’s only national park, its lagoons, waterfalls and granite villages, the free-roaming garrano horses. A mountain lunch, a scenic road.',
+        },
+        duration: { fr: 'Journée complète', en: 'Full day' },
+        price: '640',
+      },
+      {
+        title: { fr: 'Route du vinho verde', en: 'Vinho verde route' },
+        teaser: {
+          fr: 'Les quintas du Minho et leurs treilles hautes, dégustation de vinho verde et déjeuner au domaine. Votre chauffeur conduit d’une propriété à l’autre.',
+          en: 'The Minho quintas and their high trellises, a vinho verde tasting and lunch at the estate. Your chauffeur drives from one property to the next.',
+        },
+        duration: { fr: 'Journée complète', en: 'Full day' },
+        price: '620',
+      },
+      {
+        title: { fr: 'Braga et Porto combinés', en: 'Braga and Porto combined' },
+        teaser: {
+          fr: 'Le sanctuaire et le centre de Braga le matin, les caves de porto de Gaia l’après-midi, à 50 km. Journée complète orchestrée sans temps mort.',
+          en: 'The sanctuary and centre of Braga in the morning, the port cellars of Gaia in the afternoon, 50 km away. A full day orchestrated with no downtime.',
+        },
+        duration: { fr: 'Journée complète', en: 'Full day' },
+        price: '660',
+      },
+    ],
+    faq: [
+      {
+        q: {
+          fr: 'Combien de temps de l’aéroport de Porto à Braga ?',
+          en: 'How long from Porto Airport to Braga?',
+        },
+        a: {
+          fr: 'Comptez 35 à 45 minutes par l’A3. Le transfert privé est facturé à prix fixe, avec accueil en salle d’arrivée, suivi du vol et 60 minutes d’attente offertes en cas de retard.',
+          en: 'Allow 35 to 45 minutes via the A3. The private transfer is charged at a fixed price, with a meet-and-greet in arrivals, flight tracking and 60 minutes of complimentary waiting time in case of delay.',
+        },
+      },
+      {
+        q: {
+          fr: 'Peut-on combiner Braga et Guimarães dans la journée ?',
+          en: 'Can Braga and Guimarães be combined in one day?',
+        },
+        a: {
+          fr: 'Oui, les deux villes sont distantes de 25 km. En mise à disposition à la journée, votre chauffeur enchaîne le Bom Jesus et le centre de Braga, puis le château et le centre médiéval de Guimarães.',
+          en: 'Yes, the two cities are 25 km apart. With a full-day hire, your chauffeur links Bom Jesus and the centre of Braga, then the castle and medieval centre of Guimarães.',
+        },
+      },
+      {
+        q: {
+          fr: 'Vos chauffeurs à Braga parlent-ils anglais ?',
+          en: 'Do your chauffeurs in Braga speak English?',
+        },
+        a: {
+          fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.',
+          en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.',
+        },
+      },
+    ],
+    nearby: ['porto', 'coimbra'],
+  },
+  {
+    slug: 'obidos',
+    name: { fr: 'Óbidos', en: 'Óbidos' },
+    country: { fr: 'Portugal', en: 'Portugal' },
+    region: 'iberia',
+    airport: 'Lisbonne (LIS)',
+    airportTransfer: {
+      fr: 'L’aéroport de Lisbonne (LIS) se trouve à 85 km au sud d’Óbidos : comptez 1 heure par l’A8. Votre chauffeur vous accueille en salle d’arrivée, panneau nominatif en main, et suit votre vol en temps réel.',
+      en: 'Lisbon Airport (LIS) lies 85 km south of Óbidos: allow 1 hour via the A8. Your chauffeur greets you in the arrivals hall with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Village médiéval blotti dans ses remparts, offert jadis par les rois à leurs reines, Óbidos aligne ruelles blanches ourlées de bougainvilliers, château et boutiques de ginjinha servie dans un gobelet de chocolat. Votre **chauffeur privé à Óbidos** dessert le village, la côte d’Argent voisine et les monastères du centre : transferts depuis Lisbonne, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Óbidos ouvre sur la **côte d’Argent atlantique**. Les vagues géantes de Nazaré, le monastère d’Alcobaça, la lagune d’Óbidos et la station de Peniche se rejoignent en moins de quarante minutes. En mise à disposition, votre chauffeur relie village fortifié, plages sauvages et tables de poisson pendant que vous profitez d’un Portugal authentique, loin des foules.',
+      ],
+      en: [
+        'A medieval village nestled within its walls, once given by kings to their queens, Óbidos offers white lanes hemmed with bougainvillea, a castle and shops selling ginjinha in a chocolate cup. Your **private chauffeur in Óbidos** serves the village, the nearby Silver Coast and the monasteries of the centre: transfers from Lisbon, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Óbidos opens onto the **Atlantic Silver Coast**. The giant waves of Nazaré, the monastery of Alcobaça, the Óbidos lagoon and the resort of Peniche are all less than forty minutes away. With a chauffeur hire, your driver links the fortified village, wild beaches and seafood tables while you enjoy an authentic Portugal, away from the crowds.',
+      ],
+    },
+    experiences: [
+      {
+        title: { fr: 'Óbidos, village fortifié', en: 'Óbidos, fortified village' },
+        teaser: {
+          fr: 'Le chemin de ronde des remparts, la rue Direita et ses boutiques, un verre de ginjinha au gobelet de chocolat. Dépose aux portes du village, promenade à votre rythme.',
+          en: 'The rampart walkway, the Rua Direita and its shops, a glass of ginjinha in a chocolate cup. Drop-off at the village gates, a stroll at your own pace.',
+        },
+        duration: { fr: 'Demi-journée', en: 'Half day' },
+        price: '340',
+      },
+      {
+        title: { fr: 'Nazaré et les vagues géantes', en: 'Nazaré and the giant waves' },
+        teaser: {
+          fr: 'Le phare du Sítio d’où l’on observe les plus grosses vagues du monde, le funiculaire, un déjeuner de poisson sur la plage. Balade côtière face à l’Atlantique.',
+          en: 'The Sítio lighthouse from which the world’s biggest waves are watched, the funicular, a seafood lunch on the beach. A coastal drive facing the Atlantic.',
+        },
+        duration: { fr: 'Demi-journée', en: 'Half day' },
+        price: '380',
+      },
+      {
+        title: { fr: 'Monastères d’Alcobaça et Batalha', en: 'Alcobaça and Batalha monasteries' },
+        teaser: {
+          fr: 'Deux chefs-d’œuvre gothiques classés UNESCO en une journée, le tombeau de Pedro et Inês à Alcobaça, les voûtes de Batalha. Déjeuner en chemin.',
+          en: 'Two UNESCO-listed Gothic masterpieces in one day, the tomb of Pedro and Inês at Alcobaça, the vaults of Batalha. Lunch en route.',
+        },
+        duration: { fr: 'Journée complète', en: 'Full day' },
+        price: '590',
+      },
+      {
+        title: { fr: 'Côte d’Argent et Peniche', en: 'Silver Coast and Peniche' },
+        teaser: {
+          fr: 'La presqu’île de Peniche, la forteresse et le monastère-île de Berlenga en toile de fond, les plages de surf de Baleal. Déjeuner de fruits de mer en bord de mer.',
+          en: 'The Peniche peninsula, the fortress and the island monastery of Berlenga in the distance, the surf beaches of Baleal. A seafood lunch by the sea.',
+        },
+        duration: { fr: 'Demi-journée', en: 'Half day' },
+        price: '380',
+      },
+      {
+        title: { fr: 'Óbidos depuis Lisbonne à la journée', en: 'Óbidos from Lisbon day trip' },
+        teaser: {
+          fr: 'Une heure de route par l’A8 : le village le matin, Nazaré ou les monastères l’après-midi, retour à Lisbonne le soir. Escapade complète sur la côte d’Argent.',
+          en: 'One hour via the A8: the village in the morning, Nazaré or the monasteries in the afternoon, back in Lisbon in the evening. A complete Silver Coast getaway.',
+        },
+        duration: { fr: 'Journée complète', en: 'Full day' },
+        price: '690',
+      },
+    ],
+    faq: [
+      {
+        q: {
+          fr: 'Peut-on visiter Óbidos à la journée depuis Lisbonne ?',
+          en: 'Can Óbidos be visited on a day trip from Lisbon?',
+        },
+        a: {
+          fr: 'Oui. Óbidos est à une heure de Lisbonne par l’A8. En mise à disposition à la journée, votre chauffeur combine le village, la côte d’Argent — Nazaré ou les monastères — et un déjeuner, puis vous ramène le soir.',
+          en: 'Yes. Óbidos is an hour from Lisbon via the A8. With a full-day hire, your chauffeur combines the village, the Silver Coast — Nazaré or the monasteries — and lunch, then brings you back in the evening.',
+        },
+      },
+      {
+        q: {
+          fr: 'Peut-on voir les vagues géantes de Nazaré depuis Óbidos ?',
+          en: 'Can you see the giant waves of Nazaré from Óbidos?',
+        },
+        a: {
+          fr: 'Oui, Nazaré est à environ 40 minutes d’Óbidos. Le spectacle des grandes vagues a lieu surtout d’octobre à mars ; votre chauffeur vous conduit au phare du Sítio, meilleur point d’observation.',
+          en: 'Yes, Nazaré is about 40 minutes from Óbidos. The big-wave spectacle mainly occurs from October to March; your chauffeur takes you to the Sítio lighthouse, the best viewing point.',
+        },
+      },
+      {
+        q: {
+          fr: 'Vos chauffeurs parlent-ils anglais ?',
+          en: 'Do your chauffeurs speak English?',
+        },
+        a: {
+          fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.',
+          en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.',
+        },
+      },
+    ],
+    nearby: ['lisbon', 'coimbra'],
+  },
 ];
