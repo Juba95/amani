@@ -75,8 +75,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="fr" className={`${dmSerif.variable} ${inter.variable}`}>
       <head>
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="theme-color" content="#ffffff" />
+        {/* Les favicons (A doré Amani) sont générés automatiquement par Next.js
+            depuis app/favicon.ico, app/icon.svg et app/apple-icon.png — URLs
+            hashées qui invalident le cache navigateur à chaque changement. */}
+        <meta name="theme-color" content="#0a0908" />
         {/* Preconnect to critical third-party origins */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

@@ -3,170 +3,309 @@
 import Link from 'next/link';
 
 // ── Liens footer par locale ──────────────────────────────────────────────────
-const FOOTER_LINKS_FR: Record<string, { label: string; href: string }[]> = {
-  col1: [
-    { label: 'Chauffeur privé Paris',        href: '/' },
-    { label: 'Chauffeur privé Bordeaux',     href: '/chauffeur-prive-bordeaux' },
-    { label: 'Chauffeur privé Lyon',         href: '/chauffeur-prive-lyon' },
-    { label: 'Chauffeur privé Nice',         href: '/chauffeur-prive-nice' },
-    { label: 'Transfert aéroport CDG',       href: '/transfert-aeroport-cdg' },
-    { label: 'Transfert aéroport Orly',      href: '/transfert-aeroport-orly' },
-  ],
-  col2: [
-    { label: 'Mise à disposition',           href: '/mise-a-disposition' },
-    { label: 'Transfert privé',              href: '/transfert-prive' },
-    { label: 'Meet and Greet',               href: '/meet-and-greet' },
-    { label: 'Convoi & délégations',         href: '/convoi-delegations' },
-    { label: 'Sécurité & garde du corps',    href: '/securite-rapprochee' },
-    { label: 'Chauffeur anglophone',         href: '/chauffeur-anglophone' },
-    { label: 'Chauffeur arabophone',         href: '/chauffeur-arabophone' },
-    { label: 'Chauffeur hispanophone',       href: '/chauffeur-hispanophone' },
-  ],
+// ── Colonnes du footer par locale (titre + liens) ───────────────────────────
+type FooterCol = { title: string; links: { label: string; href: string }[] };
 
-  col3: [
-    { label: 'Paris Fashion Week',           href: '/evenements/paris-fashion-week' },
-    { label: 'Paris Air Show',               href: '/evenements/paris-air-show' },
-    { label: 'Roland Garros',                href: '/evenements/roland-garros' },
-    { label: 'Salons professionnels',        href: '/evenements' },
-  ],
-  col4: [
-    { label: 'Nous contacter',              href: '/contact' },
-    { label: 'Devenir chauffeur',            href: '/devenir-chauffeur' },
-    { label: 'Mentions légales',             href: '/mentions-legales' },
-    { label: 'CGV',                          href: '/mentions-legales' },
-    { label: 'Politique de confidentialité', href: '/mentions-legales' },
-    { label: 'Plan du site',                href: '/plan-du-site' },
-  ],
-};
+const FOOTER_COLS_FR: FooterCol[] = [
+  {
+    title: 'Chauffeur privé',
+    links: [
+      { label: 'Chauffeur privé Paris',     href: '/chauffeur-prive-paris' },
+      { label: 'Chauffeur privé Nice',      href: '/chauffeur-prive-nice' },
+      { label: 'Chauffeur privé Cannes',    href: '/chauffeur-prive-cannes' },
+      { label: 'Chauffeur privé Lyon',      href: '/chauffeur-prive-lyon' },
+      { label: 'Chauffeur privé Bordeaux',  href: '/chauffeur-prive-bordeaux' },
+      { label: 'Chauffeur privé Marseille', href: '/chauffeur-prive-marseille' },
+      { label: 'Saint-Tropez',              href: '/chauffeur-prive-saint-tropez' },
+    ],
+  },
+  {
+    title: 'Transferts',
+    links: [
+      { label: 'Mise à disposition',        href: '/mise-a-disposition' },
+      { label: 'Transfert aéroport CDG',    href: '/transfert-aeroport-cdg' },
+      { label: 'Transfert aéroport Orly',   href: '/transfert-aeroport-orly' },
+      { label: 'Transfert Le Bourget',      href: '/transfert-le-bourget' },
+      { label: 'Meet and Greet',            href: '/meet-and-greet' },
+      { label: 'Longue distance',           href: '/longue-distance' },
+      { label: 'Convoi & délégations',      href: '/convoi-delegations' },
+    ],
+  },
+  {
+    title: 'Notre flotte',
+    links: [
+      { label: 'Mercedes Classe E',         href: '/notre-flotte' },
+      { label: 'Mercedes Classe S',         href: '/notre-flotte' },
+      { label: 'Mercedes Classe V',         href: '/notre-flotte' },
+      { label: 'Mercedes Classe S Maybach', href: '/notre-flotte' },
+      { label: 'Mercedes Classe G',         href: '/notre-flotte' },
+      { label: 'Mercedes Sprinter VIP',     href: '/notre-flotte' },
+      { label: 'Mercedes EQS électrique',   href: '/notre-flotte' },
+      { label: 'Range Rover Evoque',        href: '/notre-flotte' },
+    ],
+  },
+  {
+    title: 'Destinations & Événements',
+    links: [
+      { label: 'Toutes les destinations',   href: '/destinations' },
+      { label: 'Paris Fashion Week',        href: '/evenements/paris-fashion-week' },
+      { label: 'Roland Garros',             href: '/evenements/roland-garros' },
+      { label: 'Festival de Cannes',        href: '/evenements/festival-de-cannes' },
+      { label: 'Grand Prix de Monaco',      href: '/evenements/grand-prix-monaco' },
+      { label: 'Chauffeur mariage',         href: '/chauffeur-mariage' },
+    ],
+  },
+  {
+    title: 'Entreprise',
+    links: [
+      { label: 'Corporate',                 href: '/corporate' },
+      { label: 'Devenir chauffeur',         href: '/devenir-chauffeur' },
+      { label: 'Nous contacter',            href: '/contact' },
+      { label: 'À propos',                  href: '/a-propos' },
+      { label: 'Plan du site',              href: '/plan-du-site' },
+    ],
+  },
+  {
+    title: 'Légal',
+    links: [
+      { label: 'Mentions légales',              href: '/mentions-legales' },
+      { label: 'CGV',                           href: '/cgv' },
+      { label: 'Politique de confidentialité',  href: '/politique-confidentialite' },
+    ],
+  },
+];
 
-const FOOTER_LINKS_EN: Record<string, { label: string; href: string }[]> = {
-  col1: [
-    { label: 'Private chauffeur Paris',      href: '/en' },
-    { label: 'CDG airport transfer',         href: '/en/cdg-airport-transfer' },
-    { label: 'Orly airport transfer',        href: '/en/orly-airport-transfer' },
-    { label: 'Le Bourget transfer',          href: '/en/cdg-airport-transfer' },
-  ],
-  col2: [
-    { label: 'Hourly hire',                  href: '/en/hourly-hire' },
-    { label: 'Private transfer',             href: '/en/cdg-airport-transfer' },
-    { label: 'Meet & Greet',                 href: '/en/meet-and-greet' },
-    { label: 'Convoy & delegations',         href: '/en/delegation-transport' },
-    { label: 'Close protection',             href: '/en/close-protection' },
-    { label: 'Private excursion',            href: '/en/private-excursion' },
-    { label: 'Long distance',                href: '/en/long-distance' },
-    { label: 'English-speaking chauffeur',   href: '/en/english-speaking-chauffeur-paris' },
-    { label: 'Arabic-speaking chauffeur',    href: '/en/arabic-speaking-chauffeur-paris' },
-  ],
-  col3: [
-    { label: 'Paris Fashion Week',           href: '/en/events' },
-    { label: 'Paris Air Show',               href: '/en/events' },
-    { label: 'Roland Garros',                href: '/en/events' },
-    { label: 'Trade fairs',                  href: '/en/events' },
-  ],
-  col4: [
-    { label: 'Become a chauffeur',           href: '/en/become-a-chauffeur' },
-    { label: 'Legal notice',                 href: '/en/contact' },
-    { label: 'Terms & conditions',           href: '/en/contact' },
-    { label: 'Privacy policy',               href: '/en/contact' },
-    { label: 'Sitemap',                      href: '/plan-du-site' },
-  ],
-};
+const FOOTER_COLS_EN: FooterCol[] = [
+  {
+    title: 'Private chauffeur',
+    links: [
+      { label: 'Private chauffeur Paris',   href: '/en/private-chauffeur-paris' },
+      { label: 'Private chauffeur Bordeaux',href: '/en/private-chauffeur-bordeaux' },
+      { label: 'Chamonix chauffeur',        href: '/en/chamonix-chauffeur' },
+      { label: 'Megève chauffeur',          href: '/en/megeve-chauffeur' },
+      { label: 'Haute-Savoie chauffeur',    href: '/en/haute-savoie-chauffeur' },
+    ],
+  },
+  {
+    title: 'Transfers',
+    links: [
+      { label: 'Hourly hire',               href: '/en/hourly-hire' },
+      { label: 'CDG airport transfer',      href: '/en/cdg-airport-transfer' },
+      { label: 'Orly airport transfer',     href: '/en/orly-airport-transfer' },
+      { label: 'Meet & Greet',              href: '/en/meet-and-greet' },
+      { label: 'Long distance',             href: '/en/long-distance' },
+      { label: 'Convoy & delegations',      href: '/en/delegation-transport' },
+      { label: 'Close protection',          href: '/en/close-protection' },
+    ],
+  },
+  {
+    title: 'Our fleet',
+    links: [
+      { label: 'Mercedes E-Class',          href: '/en/our-fleet' },
+      { label: 'Mercedes S-Class',          href: '/en/our-fleet' },
+      { label: 'Mercedes V-Class',          href: '/en/our-fleet' },
+      { label: 'Mercedes S-Class Maybach',  href: '/en/our-fleet' },
+      { label: 'Mercedes G-Class',          href: '/en/our-fleet' },
+      { label: 'Mercedes Sprinter VIP',     href: '/en/our-fleet' },
+      { label: 'Mercedes EQS electric',     href: '/en/our-fleet' },
+      { label: 'Range Rover Evoque',        href: '/en/our-fleet' },
+    ],
+  },
+  {
+    title: 'Destinations & Events',
+    links: [
+      { label: 'All destinations',          href: '/en/destinations' },
+      { label: 'Paris Fashion Week',        href: '/en/events' },
+      { label: 'Roland Garros',             href: '/en/events' },
+      { label: 'Cannes Film Festival',      href: '/en/events' },
+      { label: 'Monaco Grand Prix',         href: '/en/events' },
+      { label: 'Trade fairs',               href: '/en/events' },
+    ],
+  },
+  {
+    title: 'Company',
+    links: [
+      { label: 'Corporate',                 href: '/en/corporate' },
+      { label: 'Become a chauffeur',        href: '/en/become-a-chauffeur' },
+      { label: 'Contact',                   href: '/en/contact' },
+      { label: 'Sitemap',                   href: '/plan-du-site' },
+    ],
+  },
+  {
+    title: 'Legal',
+    links: [
+      { label: 'Legal notice',              href: '/mentions-legales' },
+      { label: 'Terms & conditions',        href: '/cgv' },
+      { label: 'Privacy policy',            href: '/politique-confidentialite' },
+    ],
+  },
+];
 
-const FOOTER_LINKS_AR: Record<string, { label: string; href: string }[]> = {
-  col1: [
-    { label: 'شوفير خاص — باريس',         href: '/ar' },
-    { label: 'نقل مطار CDG',               href: '/ar#services' },
-    { label: 'نقل مطار أورلي',             href: '/ar#services' },
-    { label: 'نقل لو بورجيه',              href: '/ar#services' },
-  ],
-  col2: [
-    { label: 'تأجير بالساعة',             href: '/ar#services' },
-    { label: 'نقل خاص',                   href: '/ar#services' },
-    { label: 'استقبال وترحيب',            href: '/ar#services' },
-    { label: 'قافلة مركبات',              href: '/ar#services' },
-    { label: 'حماية أمنية',               href: '/ar#services' },
-    { label: 'رحلة خاصة',                 href: '/ar#services' },
-    { label: 'مسافات طويلة',              href: '/ar#services' },
-  ],
-  col3: [
-    { label: 'Paris Fashion Week',         href: '/ar#events' },
-    { label: 'Paris Air Show',             href: '/ar#events' },
-    { label: 'Roland Garros',             href: '/ar#events' },
-    { label: 'Salons professionnels',      href: '/ar#events' },
-  ],
-  col4: [
-    { label: 'ذكر قانوني',                href: '/mentions-legales' },
-    { label: 'الشروط والأحكام',           href: '/mentions-legales' },
-    { label: 'سياسة الخصوصية',            href: '/mentions-legales' },
-  ],
-};
+const FOOTER_COLS_AR: FooterCol[] = [
+  {
+    title: 'سائق خاص',
+    links: [
+      { label: 'سائق خاص في باريس',  href: '/ar' },
+      { label: 'سائق خاص في نيس',    href: '/ar' },
+      { label: 'سائق خاص في كان',    href: '/ar' },
+      { label: 'سائق خاص في ليون',   href: '/ar' },
+      { label: 'سائق خاص في بوردو',  href: '/ar' },
+    ],
+  },
+  {
+    title: 'خدمات النقل',
+    links: [
+      { label: 'تأجير بالساعة',      href: '/ar#services' },
+      { label: 'نقل مطار شارل ديغول', href: '/ar#services' },
+      { label: 'نقل مطار أورلي',     href: '/ar#services' },
+      { label: 'استقبال وترحيب',     href: '/ar#services' },
+      { label: 'مسافات طويلة',       href: '/ar#services' },
+      { label: 'قوافل ووفود',        href: '/ar#services' },
+    ],
+  },
+  {
+    title: 'أسطولنا',
+    links: [
+      { label: 'مرسيدس الفئة E',        href: '/ar#fleet' },
+      { label: 'مرسيدس الفئة S',        href: '/ar#fleet' },
+      { label: 'مرسيدس الفئة V',        href: '/ar#fleet' },
+      { label: 'مرسيدس-مايباخ الفئة S', href: '/ar#fleet' },
+      { label: 'مرسيدس الفئة G',        href: '/ar#fleet' },
+      { label: 'مرسيدس سبرينتر VIP',    href: '/ar#fleet' },
+      { label: 'مرسيدس EQS',            href: '/ar#fleet' },
+      { label: 'رينج روفر إيفوك',       href: '/ar#fleet' },
+    ],
+  },
+  {
+    title: 'الوجهات والفعاليات',
+    links: [
+      { label: 'جميع الوجهات',           href: '/ar#services' },
+      { label: 'أسبوع الموضة في باريس',  href: '/ar#events' },
+      { label: 'رولان غاروس',            href: '/ar#events' },
+      { label: 'مهرجان كان',             href: '/ar#events' },
+      { label: 'جائزة موناكو الكبرى',    href: '/ar#events' },
+    ],
+  },
+  {
+    title: 'الشركة',
+    links: [
+      { label: 'خدمات الشركات',   href: '/ar' },
+      { label: 'كن سائقاً',       href: '/ar' },
+      { label: 'اتصل بنا',        href: '/ar/contact' },
+    ],
+  },
+  {
+    title: 'قانوني',
+    links: [
+      { label: 'إشعارات قانونية', href: '/mentions-legales' },
+      { label: 'الشروط والأحكام', href: '/cgv' },
+      { label: 'سياسة الخصوصية',  href: '/politique-confidentialite' },
+    ],
+  },
+];
 
-const FOOTER_LINKS_ZH: Record<string, { label: string; href: string }[]> = {
-  col1: [
-    { label: '巴黎私人司机',               href: '/zh' },
-    { label: '戴高乐机场接送',             href: '/zh#services' },
-    { label: '奥利机场接送',               href: '/zh#services' },
-    { label: '勒布尔热接送',               href: '/zh#services' },
-  ],
-  col2: [
-    { label: '包时服务',                   href: '/zh#services' },
-    { label: '私人接送',                   href: '/zh#services' },
-    { label: '贵宾迎接',                   href: '/zh#services' },
-    { label: '车队护送',                   href: '/zh#services' },
-    { label: '安全护卫',                   href: '/zh#services' },
-    { label: '私人游览',                   href: '/zh#services' },
-    { label: '长途出行',                   href: '/zh#services' },
-  ],
-  col3: [
-    { label: 'Paris Fashion Week',         href: '/zh#events' },
-    { label: 'Paris Air Show',             href: '/zh#events' },
-    { label: 'Roland Garros',             href: '/zh#events' },
-    { label: '专业展览',                   href: '/zh#events' },
-  ],
-  col4: [
-    { label: '法律声明',                   href: '/mentions-legales' },
-    { label: '条款与条件',                 href: '/mentions-legales' },
-    { label: '隐私政策',                   href: '/mentions-legales' },
-  ],
-};
+const FOOTER_COLS_ZH: FooterCol[] = [
+  {
+    title: '私人司机',
+    links: [
+      { label: '巴黎私人司机',   href: '/zh' },
+      { label: '尼斯私人司机',   href: '/zh' },
+      { label: '戛纳私人司机',   href: '/zh' },
+      { label: '里昂私人司机',   href: '/zh' },
+      { label: '波尔多私人司机', href: '/zh' },
+    ],
+  },
+  {
+    title: '接送服务',
+    links: [
+      { label: '包时租车',       href: '/zh#services' },
+      { label: '戴高乐机场接送', href: '/zh#services' },
+      { label: '奥利机场接送',   href: '/zh#services' },
+      { label: '贵宾迎接',       href: '/zh#services' },
+      { label: '长途出行',       href: '/zh#services' },
+      { label: '车队与代表团',   href: '/zh#services' },
+    ],
+  },
+  {
+    title: '我们的车队',
+    links: [
+      { label: '梅赛德斯 E 级',      href: '/zh#fleet' },
+      { label: '梅赛德斯 S 级',      href: '/zh#fleet' },
+      { label: '梅赛德斯 V 级',      href: '/zh#fleet' },
+      { label: '迈巴赫 S 级',        href: '/zh#fleet' },
+      { label: '梅赛德斯 G 级',      href: '/zh#fleet' },
+      { label: 'Sprinter VIP 商务车', href: '/zh#fleet' },
+      { label: '梅赛德斯 EQS',       href: '/zh#fleet' },
+      { label: '路虎揽胜极光',       href: '/zh#fleet' },
+    ],
+  },
+  {
+    title: '目的地与活动',
+    links: [
+      { label: '所有目的地',     href: '/zh#services' },
+      { label: '巴黎时装周',     href: '/zh#events' },
+      { label: '法国网球公开赛', href: '/zh#events' },
+      { label: '戛纳电影节',     href: '/zh#events' },
+      { label: '摩纳哥大奖赛',   href: '/zh#events' },
+    ],
+  },
+  {
+    title: '公司',
+    links: [
+      { label: '企业服务', href: '/zh' },
+      { label: '成为司机', href: '/zh' },
+      { label: '联系我们', href: '/zh/contact' },
+    ],
+  },
+  {
+    title: '法律',
+    links: [
+      { label: '法律声明', href: '/mentions-legales' },
+      { label: '服务条款', href: '/cgv' },
+      { label: '隐私政策', href: '/politique-confidentialite' },
+    ],
+  },
+];
 
-function getFooterLinks(locale: string) {
-  if (locale === 'en') return FOOTER_LINKS_EN;
-  if (locale === 'ar') return FOOTER_LINKS_AR;
-  if (locale === 'zh') return FOOTER_LINKS_ZH;
-  return FOOTER_LINKS_FR;
+function getFooterCols(locale: string): FooterCol[] {
+  if (locale === 'en') return FOOTER_COLS_EN;
+  if (locale === 'ar') return FOOTER_COLS_AR;
+  if (locale === 'zh') return FOOTER_COLS_ZH;
+  return FOOTER_COLS_FR;
 }
 
-// Liens institutionnels compacts du pré-footer, localisés (la page légale reste
-// unique — /mentions-legales — mais les libellés sont traduits).
+// Liens institutionnels compacts du pré-footer, localisés. Chaque page légale
+// est désormais distincte : mentions légales, confidentialité, CGV.
 function getPreFooterLinks(locale: string): { label: string; href: string }[] {
   const legal = '/mentions-legales';
+  const privacy = '/politique-confidentialite';
+  const terms = '/cgv';
   if (locale === 'en') return [
     { label: 'Further information', href: '/en/contact' },
     { label: 'Legal notice',       href: legal },
-    { label: 'Privacy policy',     href: legal },
-    { label: 'Terms & Conditions', href: legal },
+    { label: 'Privacy policy',     href: privacy },
+    { label: 'Terms & Conditions', href: terms },
     { label: 'Contact',            href: '/en/contact' },
   ];
   if (locale === 'ar') return [
     { label: 'مزيد من المعلومات', href: '/ar/contact' },
     { label: 'إشعارات قانونية',   href: legal },
-    { label: 'سياسة الخصوصية',    href: legal },
-    { label: 'الشروط والأحكام',   href: legal },
+    { label: 'سياسة الخصوصية',    href: privacy },
+    { label: 'الشروط والأحكام',   href: terms },
     { label: 'اتصل بنا',          href: '/ar/contact' },
   ];
   if (locale === 'zh') return [
     { label: '更多信息',   href: '/zh/contact' },
     { label: '法律声明',   href: legal },
-    { label: '隐私政策',   href: legal },
-    { label: '服务条款',   href: legal },
+    { label: '隐私政策',   href: privacy },
+    { label: '服务条款',   href: terms },
     { label: '联系我们',   href: '/zh/contact' },
   ];
   return [
     { label: 'Plus d’informations',          href: '/a-propos' },
     { label: 'Mentions légales',             href: legal },
-    { label: 'Politique de confidentialité', href: legal },
-    { label: 'CGV',                          href: legal },
+    { label: 'Politique de confidentialité', href: privacy },
+    { label: 'CGV',                          href: terms },
     { label: 'Contact',                      href: '/contact' },
   ];
 }
@@ -215,21 +354,19 @@ interface FooterProps {
 }
 
 export function Footer({ t, locale = 'fr' }: FooterProps) {
-  const links = getFooterLinks(locale);
-  const cols = [
-    { title: t?.footer?.col1_title ?? 'Amani Limousines', links: links.col1 },
-    { title: t?.footer?.col2_title ?? 'Prestations',      links: links.col2 },
-    { title: t?.footer?.col3_title ?? 'Événements',       links: links.col3 },
-    { title: t?.footer?.col4_title ?? 'Informations',     links: links.col4 },
-  ];
+  const cols = getFooterCols(locale);
+  const rtl = locale === 'ar';
 
   return (
     <>
-      <footer className="flex flex-wrap justify-between gap-8 px-6 md:px-10 py-12"
-        style={{ borderTop: '1px solid #ece9e3', background: '#faf8f5' }}>
+      <footer
+        dir={rtl ? 'rtl' : 'ltr'}
+        className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-x-6 gap-y-10 px-6 md:px-10 py-14"
+        style={{ borderTop: '1px solid #ece9e3', background: '#faf8f5' }}
+      >
         {cols.map((col, i) => (
           <div key={i}>
-            <h4 className="font-sans text-xs font-semibold tracking-[0.15em] uppercase text-gold-400 mb-4">
+            <h4 className="font-sans text-[0.7rem] font-semibold tracking-[0.15em] uppercase text-gold-400 mb-4">
               {col.title}
             </h4>
             {col.links.map((link, j) => (

@@ -36,6 +36,35 @@ export default function MentionsLegalesPage() {
             </div>
 
             <div>
+              <h2 className="heading text-xl text-gray-900">Informations légales de la société</h2>
+              <div className="mt-3 overflow-x-auto">
+                <table className="w-full text-sm border-collapse">
+                  <tbody>
+                    {[
+                      ['Dénomination sociale', 'Amani Limousines'],
+                      ['Forme juridique', 'SASU — société par actions simplifiée unipersonnelle'],
+                      ['Capital social', '600,00 €'],
+                      ['SIREN', '821 665 395'],
+                      ['SIRET (siège)', '821 665 395 00025'],
+                      ['Numéro de TVA intracommunautaire', 'FR90 821 665 395'],
+                      ['Numéro RCS', '821 665 395 R.C.S. Paris'],
+                      ['Immatriculation au RCS', 'Inscrit au greffe de Paris le 22/07/2016'],
+                      ['Immatriculation au RNE', 'Inscrit le 22/07/2016'],
+                    ].map(([k, v]) => (
+                      <tr key={k} className="border-b border-warm-200">
+                        <th scope="row" className="text-left align-top font-medium text-gray-700 py-2 pr-4 whitespace-nowrap">{k}</th>
+                        <td className="py-2 text-stone-600">{v}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="mt-3 text-sm text-stone-500">
+                Directeur de la publication : le représentant légal d’Amani Limousines.
+              </p>
+            </div>
+
+            <div>
               <h2 className="heading text-xl text-gray-900">Activité réglementée</h2>
               <p className="mt-3">
                 Amani Limousines exerce son activité en tant que Voiture de Tourisme avec
@@ -49,8 +78,9 @@ export default function MentionsLegalesPage() {
             <div>
               <h2 className="heading text-xl text-gray-900">Hébergement</h2>
               <p className="mt-3">
-                Le site amani-limousines.com est hébergé par Vercel Inc.,
-                440 N Barranca Ave #4133, Covina, CA 91723, États-Unis.
+                Le site amani-limousines.com est hébergé par <strong>OVH SAS</strong>,
+                2 rue Kellermann, 59100 Roubaix, France — RCS Lille Métropole 424 761 419 00045.
+                Téléphone : 1007.
               </p>
             </div>
 
