@@ -2742,4 +2742,480 @@ export const CITIES: Destination[] = [
     ],
     nearby: ['manchester', 'birmingham'],
   },
+  {
+    slug: 'brussels',
+    name: { fr: 'Bruxelles', en: 'Brussels' },
+    country: { fr: 'Belgique', en: 'Belgium' },
+    region: 'uk-benelux',
+    airport: 'Bruxelles-Zaventem (BRU)',
+    airportTransfer: {
+      fr: 'L’aéroport de Bruxelles-Zaventem (BRU) se trouve à 12 km au nord-est du centre : comptez 20 à 35 minutes pour rejoindre la Grand-Place ou le quartier européen selon le trafic. Votre chauffeur vous accueille en salle d’arrivée, panneau nominatif en main, et suit votre vol en temps réel. Depuis Bruxelles-Sud Charleroi (CRL), à 50 km, comptez 50 à 60 minutes.',
+      en: 'Brussels Airport (BRU) lies 12 km north-east of the centre: allow 20 to 35 minutes to reach the Grand-Place or the European quarter depending on traffic. Your chauffeur greets you in arrivals with a name board and tracks your flight in real time. From Brussels-South Charleroi (CRL), 50 km away, allow 50 to 60 minutes.',
+    },
+    intro: {
+      fr: [
+        'Capitale de la Belgique et de l’Union européenne, Bruxelles superpose Grand-Place baroque, maisons Art nouveau et institutions du quartier Schuman. Votre **chauffeur privé à Bruxelles** dessert les sommets européens, l’OTAN, les hôtels du Sablon et les tables étoilées de la ville : transferts aéroport et Eurostar, mise à disposition à l’heure, prix fixes annoncés à l’avance. Berlines Mercedes et vans, chauffeurs francophones et anglophones.',
+        'Bruxelles commande les **villes d’art flamandes**. Bruges, Gand et Anvers se rejoignent en moins d’une heure, le champ de bataille de Waterloo est à vingt minutes. En mise à disposition à la journée, votre chauffeur relie réunions institutionnelles, dîners d’affaires et escapades culturelles pendant que vous travaillez ou vous reposez à bord.',
+      ],
+      en: [
+        'Capital of Belgium and of the European Union, Brussels layers a Baroque Grand-Place, Art Nouveau houses and the institutions of the Schuman quarter. Your **private chauffeur in Brussels** serves EU summits, NATO, the hotels of the Sablon and the city’s starred restaurants: airport and Eurostar transfers, hourly hire, fixed prices confirmed in advance. Mercedes sedans and vans, French- and English-speaking chauffeurs.',
+        'Brussels commands the **Flemish art cities**. Bruges, Ghent and Antwerp are all less than an hour away, the Waterloo battlefield twenty minutes. With a full-day hire, your chauffeur links institutional meetings, business dinners and cultural excursions while you work or rest on board.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Bruges à la journée', en: 'Bruges day trip' }, teaser: { fr: 'À 100 km, la Venise du Nord : le beffroi, les canaux, la place du Markt et le béguinage. Déjeuner de moules avant le retour par la campagne flamande.', en: '100 km away, the Venice of the North: the belfry, the canals, the Markt square and the beguinage. A mussels lunch before returning through the Flemish countryside.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '690' },
+      { title: { fr: 'Gand, ville médiévale', en: 'Ghent, medieval city' }, teaser: { fr: 'Le château des comtes, les quais du Graslei, la cathédrale Saint-Bavon et l’Agneau mystique des Van Eyck. Escapade à 55 km, déjeuner dans le centre.', en: 'The Gravensteen castle, the Graslei quays, Saint Bavo’s Cathedral and the Van Eyck Mystic Lamb. A getaway 55 km away, lunch in the centre.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Waterloo et la butte du Lion', en: 'Waterloo and the Lion’s Mound' }, teaser: { fr: 'À 20 km, le champ de bataille de 1815, le panorama de la butte du Lion, le Mémorial. Demi-journée d’histoire aux portes de Bruxelles.', en: '20 km away, the 1815 battlefield, the Lion’s Mound panorama, the Memorial. A half-day of history at the gates of Brussels.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '360' },
+      { title: { fr: 'Bruxelles Art nouveau', en: 'Art Nouveau Brussels' }, teaser: { fr: 'Les maisons Horta classées UNESCO, le quartier des Étangs d’Ixelles, les galeries Saint-Hubert. Dépose devant chaque site, véhicule en attente.', en: 'The UNESCO-listed Horta houses, the Ixelles ponds quarter, the Saint-Hubert galleries. Door-to-door drop-offs, vehicle on standby.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Soirée gastronomique', en: 'Gastronomic evening' }, teaser: { fr: 'Dîner dans une table étoilée du Sablon ou une brasserie historique, la Grand-Place illuminée, un dernier verre dans une estaminet. Véhicule à disposition toute la soirée.', en: 'Dinner at a starred Sablon table or a historic brasserie, the illuminated Grand-Place, a nightcap in an estaminet. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '390' },
+    ],
+    faq: [
+      { q: { fr: 'Combien coûte un transfert entre l’aéroport de Bruxelles et le centre ?', en: 'How much does a transfer between Brussels Airport and the centre cost?' }, a: { fr: 'Le transfert privé entre Bruxelles-Zaventem (BRU) et le centre est facturé à prix fixe, confirmé à la réservation, avec accueil en salle d’arrivée, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'A private transfer between Brussels Airport (BRU) and the centre is charged at a fixed price, confirmed at booking, with a meet-and-greet in arrivals, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Proposez-vous un service pour les institutions européennes ?', en: 'Do you offer a service for the EU institutions?' }, a: { fr: 'Oui. Nous assurons des mises à disposition et transferts pour sommets, délégations et rendez-vous au quartier européen et à l’OTAN, avec chauffeurs habitués au protocole et à la sécurité. Compte corporate disponible.', en: 'Yes. We provide hire and transfers for summits, delegations and meetings in the European quarter and at NATO, with chauffeurs versed in protocol and security. Corporate account available.' } },
+      { q: { fr: 'Vos chauffeurs à Bruxelles parlent-ils anglais ?', en: 'Do your chauffeurs in Brussels speak English?' }, a: { fr: 'Oui, nos chauffeurs sont francophones et anglophones ; d’autres langues sont disponibles sur demande selon les disponibilités.', en: 'Yes, our chauffeurs speak French and English; other languages are available on request subject to availability.' } },
+    ],
+    nearby: ['bruges', 'ghent', 'antwerp'],
+  },
+  {
+    slug: 'bruges',
+    name: { fr: 'Bruges', en: 'Bruges' },
+    country: { fr: 'Belgique', en: 'Belgium' },
+    region: 'uk-benelux',
+    airport: 'Bruxelles-Zaventem (BRU)',
+    airportTransfer: {
+      fr: 'L’aéroport de Bruxelles-Zaventem (BRU) se trouve à 100 km de Bruges : comptez 1h15 par l’autoroute. Depuis l’aéroport d’Ostende-Bruges (OST), à 25 km, comptez 30 minutes. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Brussels Airport (BRU) lies 100 km from Bruges: allow 1h15 by motorway. From Ostend-Bruges Airport (OST), 25 km away, allow 30 minutes. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Cité médiévale intacte inscrite au patrimoine mondial, Bruges déroule canaux, beffroi et places pavées à l’abri des voitures. Votre **chauffeur privé à Bruges** vous dépose aux portes du centre piéton, gère les accès réglementés et vous attend pendant vos visites : transferts depuis Bruxelles ou Ostende, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Bruges ouvre sur la **côte belge et les villes d’art**. Ostende et ses plages, Gand à 45 km, les champs de bataille des Flandres autour d’Ypres se rejoignent en moins d’une heure. En mise à disposition, votre chauffeur relie musées, chocolatiers et brasseries pendant que vous profitez de la ville sans souci de stationnement.',
+      ],
+      en: [
+        'An intact medieval city inscribed as World Heritage, Bruges unrolls canals, a belfry and cobbled squares sheltered from cars. Your **private chauffeur in Bruges** drops you at the gates of the pedestrian centre, handles the restricted-access zones and waits during your visits: transfers from Brussels or Ostend, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Bruges opens onto the **Belgian coast and the art cities**. Ostend and its beaches, Ghent 45 km away, the Flanders battlefields around Ypres are all less than an hour away. With a chauffeur hire, your driver links museums, chocolatiers and breweries while you enjoy the city with no parking worries.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Bruges historique', en: 'Historic Bruges' }, teaser: { fr: 'Le beffroi, la place du Markt, le lac d’Amour et le béguinage, une croisière sur les canaux. Dépose aux portes du centre, promenade à votre rythme.', en: 'The belfry, the Markt square, the Lake of Love and the beguinage, a canal cruise. Drop-off at the gates of the centre, a stroll at your own pace.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Ypres et les champs de bataille', en: 'Ypres and the battlefields' }, teaser: { fr: 'Les mémoriaux de la Grande Guerre autour d’Ypres, la porte de Menin et le Last Post, les cimetières des Flandres. Journée de mémoire à 55 km.', en: 'The Great War memorials around Ypres, the Menin Gate and the Last Post, the Flanders cemeteries. A day of remembrance 55 km away.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Côte belge et Ostende', en: 'Belgian coast and Ostend' }, teaser: { fr: 'La digue d’Ostende, les villas balnéaires de Knokke-le-Zoute, les plages de la mer du Nord. Déjeuner de fruits de mer face à la mer.', en: 'The Ostend promenade, the seaside villas of Knokke, the North Sea beaches. A seafood lunch facing the sea.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '360' },
+      { title: { fr: 'Gand depuis Bruges', en: 'Ghent from Bruges' }, teaser: { fr: 'À 45 km, le château des comtes, les quais du Graslei et l’Agneau mystique. Combinaison possible des deux villes d’art dans la journée.', en: '45 km away, the Gravensteen castle, the Graslei quays and the Mystic Lamb. The two art cities can be combined in one day.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '360' },
+      { title: { fr: 'Chocolat et brasseries', en: 'Chocolate and breweries' }, teaser: { fr: 'Les chocolatiers artisanaux, la brasserie De Halve Maan et sa bière servie par canalisation, dégustations à travers la ville. Véhicule en attente entre les étapes.', en: 'The artisan chocolatiers, the De Halve Maan brewery with its pipeline-served beer, tastings across the city. Vehicle on standby between stops.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Peut-on circuler en voiture dans le centre de Bruges ?', en: 'Can you drive in the centre of Bruges?' }, a: { fr: 'Le centre historique est en grande partie piéton et à accès réglementé. Votre chauffeur vous dépose au plus près, gère les zones autorisées et vous attend à un point convenu, vous évitant tout souci de stationnement.', en: 'The historic centre is largely pedestrian and access-restricted. Your chauffeur drops you as close as possible, handles the permitted zones and waits at an agreed point, saving you any parking concerns.' } },
+      { q: { fr: 'Depuis quel aéroport rejoint-on Bruges ?', en: 'From which airport do you reach Bruges?' }, a: { fr: 'Bruges est à 1h15 de Bruxelles (BRU) et à 30 minutes d’Ostende-Bruges (OST). Votre chauffeur vous accueille à l’aéroport de votre choix avec panneau nominatif, à prix fixe.', en: 'Bruges is 1h15 from Brussels (BRU) and 30 minutes from Ostend-Bruges (OST). Your chauffeur greets you at the airport of your choice with a name board, at a fixed price.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['ghent', 'brussels', 'antwerp'],
+  },
+  {
+    slug: 'ghent',
+    name: { fr: 'Gand', en: 'Ghent' },
+    country: { fr: 'Belgique', en: 'Belgium' },
+    region: 'uk-benelux',
+    airport: 'Bruxelles-Zaventem (BRU)',
+    airportTransfer: {
+      fr: 'L’aéroport de Bruxelles-Zaventem (BRU) se trouve à 55 km de Gand : comptez 45 minutes à 1 heure par l’autoroute. Votre chauffeur vous accueille en salle d’arrivée, panneau nominatif en main, et suit votre vol en temps réel.',
+      en: 'Brussels Airport (BRU) lies 55 km from Ghent: allow 45 minutes to 1 hour by motorway. Your chauffeur greets you in arrivals with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Puissante cité drapière au Moyen Âge, Gand aligne le long de la Lys ses quais médiévaux, son château comtal et sa cathédrale abritant l’Agneau mystique. Votre **chauffeur privé à Gand** dessert le centre historique, l’université et les tables branchées de la ville la plus étudiante de Flandre : transferts depuis Bruxelles, mise à disposition à l’heure, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Gand se trouve au cœur des **Flandres**. Bruges à 45 km, Anvers à 60 km, Bruxelles à 55 km composent un triangle d’art parcouru en une journée. En mise à disposition, votre chauffeur relie musées, ateliers de créateurs et brasseries pendant que vous découvrez une ville médiévale restée vivante et authentique.',
+      ],
+      en: [
+        'A powerful cloth city in the Middle Ages, Ghent lines the Lys with medieval quays, its comital castle and its cathedral housing the Mystic Lamb. Your **private chauffeur in Ghent** serves the historic centre, the university and the trendy tables of Flanders’ most student city: transfers from Brussels, hourly hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Ghent lies at the heart of **Flanders**. Bruges 45 km away, Antwerp 60 km, Brussels 55 km form an art triangle covered in a day. With a chauffeur hire, your driver links museums, designer studios and breweries while you discover a medieval city that has stayed alive and authentic.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Gand médiéval', en: 'Medieval Ghent' }, teaser: { fr: 'Le château des comtes, les quais du Graslei et du Korenlei, la cathédrale Saint-Bavon et l’Agneau mystique restauré. Dépose au centre, promenade à votre rythme.', en: 'The Gravensteen castle, the Graslei and Korenlei quays, Saint Bavo’s Cathedral and the restored Mystic Lamb. Drop-off in the centre, a stroll at your own pace.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Bruges depuis Gand', en: 'Bruges from Ghent' }, teaser: { fr: 'À 45 km, la Venise du Nord et ses canaux, croisière et déjeuner de moules. Deux villes d’art flamandes combinées dans la journée.', en: '45 km away, the Venice of the North and its canals, a cruise and a mussels lunch. Two Flemish art cities combined in one day.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '360' },
+      { title: { fr: 'Anvers, mode et diamants', en: 'Antwerp, fashion and diamonds' }, teaser: { fr: 'À 60 km, la cathédrale et les Rubens, le quartier des diamantaires, les créateurs de l’Académie. Déjeuner dans le centre avant le retour.', en: '60 km away, the cathedral and the Rubens, the diamond quarter, the Academy designers. Lunch in the centre before the return.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Triangle d’art flamand', en: 'Flemish art triangle' }, teaser: { fr: 'Gand, Bruges et un arrêt à Bruxelles en une journée orchestrée : trois centres médiévaux, un déjeuner en chemin, véhicule à disposition. Confort d’un circuit privé.', en: 'Ghent, Bruges and a Brussels stop in one orchestrated day: three medieval centres, lunch en route, vehicle on standby. The comfort of a private tour.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '790' },
+      { title: { fr: 'Soirée sur les quais', en: 'Evening on the quays' }, teaser: { fr: 'Les quais illuminés du Graslei à la tombée de la nuit, dîner dans une table du Patershol, un dernier verre en terrasse. Véhicule à disposition toute la soirée.', en: 'The illuminated Graslei quays at nightfall, dinner at a Patershol table, a nightcap on a terrace. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '360' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de l’aéroport de Bruxelles à Gand ?', en: 'How long from Brussels Airport to Ghent?' }, a: { fr: 'Comptez 45 minutes à 1 heure par l’autoroute. Le transfert privé est à prix fixe, avec accueil en salle d’arrivée, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 45 minutes to 1 hour by motorway. The private transfer is at a fixed price, with a meet-and-greet in arrivals, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Peut-on combiner Gand et Bruges dans la journée ?', en: 'Can Ghent and Bruges be combined in one day?' }, a: { fr: 'Oui, les deux villes sont distantes de 45 km. En mise à disposition à la journée, votre chauffeur enchaîne les deux centres médiévaux avec un déjeuner en chemin, à votre rythme.', en: 'Yes, the two cities are 45 km apart. With a full-day hire, your chauffeur links the two medieval centres with lunch en route, at your pace.' } },
+      { q: { fr: 'Vos chauffeurs à Gand parlent-ils anglais ?', en: 'Do your chauffeurs in Ghent speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['bruges', 'brussels', 'antwerp'],
+  },
+  {
+    slug: 'antwerp',
+    name: { fr: 'Anvers', en: 'Antwerp' },
+    country: { fr: 'Belgique', en: 'Belgium' },
+    region: 'uk-benelux',
+    airport: 'Bruxelles-Zaventem (BRU)',
+    airportTransfer: {
+      fr: 'L’aéroport de Bruxelles-Zaventem (BRU) se trouve à 45 km au sud d’Anvers : comptez 40 à 55 minutes par l’autoroute. Votre chauffeur vous accueille en salle d’arrivée, panneau nominatif en main, et suit votre vol en temps réel.',
+      en: 'Brussels Airport (BRU) lies 45 km south of Antwerp: allow 40 to 55 minutes by motorway. Your chauffeur greets you in arrivals with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Deuxième port d’Europe et capitale mondiale du diamant, Anvers marie la cathédrale gothique de Rubens, la gare-cathédrale et l’avant-garde de la mode flamande. Votre **chauffeur privé à Anvers** dessert le quartier des diamantaires, les showrooms de créateurs et les tables du Zuid : transferts depuis Bruxelles, mise à disposition à l’heure, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Anvers commande le nord de la **Flandre**. Gand à 60 km, Bruges à 95 km, la frontière néerlandaise et Rotterdam à moins d’une heure ouvrent les excursions. En mise à disposition à la journée, votre chauffeur relie rendez-vous d’affaires portuaires, shopping mode et musées Rubens pendant que vous vous concentrez sur l’essentiel.',
+      ],
+      en: [
+        'Europe’s second port and the world diamond capital, Antwerp marries Rubens’ Gothic cathedral, the cathedral-like railway station and the avant-garde of Flemish fashion. Your **private chauffeur in Antwerp** serves the diamond quarter, the designer showrooms and the tables of the Zuid: transfers from Brussels, hourly hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Antwerp commands northern **Flanders**. Ghent 60 km away, Bruges 95 km, the Dutch border and Rotterdam less than an hour away open up excursions. With a full-day hire, your chauffeur links port business meetings, fashion shopping and Rubens museums while you focus on what matters.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Anvers, Rubens et diamants', en: 'Antwerp, Rubens and diamonds' }, teaser: { fr: 'La cathédrale Notre-Dame et ses Rubens, la maison du maître, le quartier des diamantaires. Dépose devant chaque site, véhicule en attente.', en: 'The Cathedral of Our Lady and its Rubens, the master’s house, the diamond quarter. Door-to-door drop-offs, vehicle on standby.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Mode et shopping flamand', en: 'Flemish fashion and shopping' }, teaser: { fr: 'Les créateurs de la Modenatie, les boutiques du Wilde Zee, le MoMu. Votre chauffeur transporte vos achats pendant que vous poursuivez la balade.', en: 'The Modenatie designers, the Wilde Zee boutiques, the MoMu. Your chauffeur carries your purchases while you continue browsing.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Gand depuis Anvers', en: 'Ghent from Antwerp' }, teaser: { fr: 'À 60 km, le château des comtes, les quais du Graslei et l’Agneau mystique. Déjeuner dans le centre médiéval avant le retour.', en: '60 km away, the Gravensteen castle, the Graslei quays and the Mystic Lamb. Lunch in the medieval centre before the return.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '360' },
+      { title: { fr: 'Rotterdam et l’architecture', en: 'Rotterdam and architecture' }, teaser: { fr: 'À moins d’une heure au nord, la ville-manifeste de l’architecture contemporaine, le marché couvert, le port. Journée design de part et d’autre de la frontière.', en: 'Less than an hour north, the manifesto city of contemporary architecture, the covered market, the port. A design day either side of the border.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Soirée au Zuid', en: 'Evening in the Zuid' }, teaser: { fr: 'Dîner dans une table étoilée du quartier Sud, les quais de l’Escaut au coucher du soleil, un dernier verre design. Véhicule à disposition toute la soirée.', en: 'Dinner at a starred table in the Zuid, the Scheldt quays at sunset, a stylish nightcap. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '380' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de l’aéroport de Bruxelles à Anvers ?', en: 'How long from Brussels Airport to Antwerp?' }, a: { fr: 'Comptez 40 à 55 minutes par l’autoroute. Le transfert privé est à prix fixe, avec accueil en salle d’arrivée, suivi du vol et 60 minutes d’attente offertes.', en: 'Allow 40 to 55 minutes by motorway. The private transfer is at a fixed price, with a meet-and-greet in arrivals, flight tracking and 60 minutes of complimentary waiting time.' } },
+      { q: { fr: 'Proposez-vous un service pour le quartier des diamantaires ?', en: 'Do you offer a service for the diamond quarter?' }, a: { fr: 'Oui, avec des chauffeurs discrets et ponctuels, habitués à une clientèle exigeante. Mise à disposition à l’heure ou à la journée, compte corporate disponible.', en: 'Yes, with discreet, punctual chauffeurs used to a demanding clientele. Hourly or daily hire, corporate account available.' } },
+      { q: { fr: 'Vos chauffeurs à Anvers parlent-ils anglais ?', en: 'Do your chauffeurs in Antwerp speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['ghent', 'brussels', 'rotterdam'],
+  },
+  {
+    slug: 'liege',
+    name: { fr: 'Liège', en: 'Liège' },
+    country: { fr: 'Belgique', en: 'Belgium' },
+    region: 'uk-benelux',
+    airport: 'Bruxelles-Zaventem (BRU)',
+    airportTransfer: {
+      fr: 'L’aéroport de Bruxelles-Zaventem (BRU) se trouve à 100 km à l’ouest de Liège : comptez 1 heure à 1h15 par l’autoroute E40. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Brussels Airport (BRU) lies 100 km west of Liège: allow 1 hour to 1h15 via the E40 motorway. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Ancienne principauté épiscopale sur les rives de la Meuse, Liège cultive une identité frondeuse, une gastronomie généreuse et la spectaculaire gare des Guillemins signée Calatrava. Votre **chauffeur privé à Liège** dessert le centre, la gare TGV et les rendez-vous d’affaires du bassin mosan : transferts, mise à disposition à l’heure, prix fixes. Berlines Mercedes et vans, chauffeurs francophones et anglophones.',
+        'Liège ouvre sur les **Ardennes belges**. Spa et son circuit de Francorchamps, les châteaux de la vallée de la Meuse, la citadelle de Namur se rejoignent en moins d’une heure. En mise à disposition à la journée, votre chauffeur relie rendez-vous professionnels, tables du terroir et escapades vertes au cœur de la Wallonie.',
+      ],
+      en: [
+        'A former episcopal principality on the banks of the Meuse, Liège cultivates a rebellious identity, a generous cuisine and the spectacular Calatrava-designed Guillemins station. Your **private chauffeur in Liège** serves the centre, the high-speed rail station and the business meetings of the Meuse basin: transfers, hourly hire, fixed prices. Mercedes sedans and vans, French- and English-speaking chauffeurs.',
+        'Liège opens onto the **Belgian Ardennes**. Spa and its Francorchamps circuit, the castles of the Meuse valley, the Namur citadel are all less than an hour away. With a full-day hire, your chauffeur links business meetings, regional tables and green getaways in the heart of Wallonia.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Spa-Francorchamps', en: 'Spa-Francorchamps' }, teaser: { fr: 'Le mythique circuit de Formule 1, le Raidillon de l’Eau Rouge, la ville thermale de Spa et ses bains. Journée sport et détente à 40 km.', en: 'The legendary Formula 1 circuit, the Eau Rouge corner, the spa town of Spa and its baths. A day of sport and relaxation 40 km away.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Vallée de la Meuse et Namur', en: 'Meuse valley and Namur' }, teaser: { fr: 'Les châteaux et falaises de la Meuse, la citadelle de Namur, le village de Dinant et sa collégiale. Déjeuner en bord de fleuve.', en: 'The castles and cliffs of the Meuse, the Namur citadel, the village of Dinant and its collegiate church. A riverside lunch.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Liège historique', en: 'Historic Liège' }, teaser: { fr: 'La montagne de Bueren et ses 374 marches, le palais des princes-évêques, la gare des Guillemins de Calatrava. Dépose devant chaque site.', en: 'The Montagne de Bueren and its 374 steps, the Palace of the Prince-Bishops, Calatrava’s Guillemins station. Door-to-door drop-offs.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Ardennes vertes', en: 'Green Ardennes' }, teaser: { fr: 'Les forêts et vallées des Hautes Fagnes, les villages de pierre, une table du terroir. Journée nature loin de l’agitation urbaine.', en: 'The forests and valleys of the High Fens, the stone villages, a regional table. A nature day away from urban bustle.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Soirée mosane', en: 'Meuse evening' }, teaser: { fr: 'Dîner dans une table du Carré, les quais de la Meuse illuminés, l’ambiance chaleureuse des estaminets liégeois. Véhicule à disposition toute la soirée.', en: 'Dinner at a table in the Carré, the illuminated Meuse quays, the warm atmosphere of Liège’s estaminets. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '360' },
+    ],
+    faq: [
+      { q: { fr: 'Peut-on visiter le circuit de Spa-Francorchamps ?', en: 'Can you visit the Spa-Francorchamps circuit?' }, a: { fr: 'Oui, le circuit est à 40 km de Liège. Votre chauffeur vous y conduit, combine la visite avec la ville thermale de Spa et un déjeuner, à prix fixe. Idéal les jours d’événement automobile.', en: 'Yes, the circuit is 40 km from Liège. Your chauffeur takes you there, combines the visit with the spa town of Spa and lunch, at a fixed price. Ideal on motorsport event days.' } },
+      { q: { fr: 'Combien de temps de l’aéroport de Bruxelles à Liège ?', en: 'How long from Brussels Airport to Liège?' }, a: { fr: 'Comptez 1 heure à 1h15 par l’E40. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 1 hour to 1h15 via the E40. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Vos chauffeurs à Liège parlent-ils anglais ?', en: 'Do your chauffeurs in Liège speak English?' }, a: { fr: 'Oui, nos chauffeurs sont francophones et anglophones ; d’autres langues sont disponibles sur demande selon les disponibilités.', en: 'Yes, our chauffeurs speak French and English; other languages are available on request subject to availability.' } },
+    ],
+    nearby: ['namur', 'spa', 'brussels'],
+  },
+  {
+    slug: 'namur',
+    name: { fr: 'Namur', en: 'Namur' },
+    country: { fr: 'Belgique', en: 'Belgium' },
+    region: 'uk-benelux',
+    airport: 'Bruxelles-Zaventem (BRU)',
+    airportTransfer: {
+      fr: 'L’aéroport de Bruxelles-Zaventem (BRU) se trouve à 65 km au nord de Namur : comptez 50 minutes à 1 heure par l’autoroute. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Brussels Airport (BRU) lies 65 km north of Namur: allow 50 minutes to 1 hour by motorway. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Capitale de la Wallonie au confluent de la Sambre et de la Meuse, Namur veille depuis sa citadelle sur une vieille ville pavée et un fleuve bordé de guinguettes. Votre **chauffeur privé à Namur** dessert le Parlement wallon, le centre historique et les rendez-vous institutionnels : transferts depuis Bruxelles, mise à disposition à l’heure, prix fixes. Berlines Mercedes et vans, chauffeurs francophones et anglophones.',
+        'Namur est la **porte des Ardennes et de la Meuse**. Dinant et sa collégiale à 30 km, les châteaux de la vallée, les grottes de Han se rejoignent en moins d’une heure. En mise à disposition à la journée, votre chauffeur relie rendez-vous, tables du terroir et escapades nature au fil du fleuve.',
+      ],
+      en: [
+        'Capital of Wallonia at the confluence of the Sambre and the Meuse, Namur watches from its citadel over a cobbled old town and a river lined with guinguettes. Your **private chauffeur in Namur** serves the Walloon Parliament, the historic centre and institutional meetings: transfers from Brussels, hourly hire, fixed prices. Mercedes sedans and vans, French- and English-speaking chauffeurs.',
+        'Namur is the **gateway to the Ardennes and the Meuse**. Dinant and its collegiate church 30 km away, the valley castles, the Han caves are all less than an hour away. With a full-day hire, your chauffeur links meetings, regional tables and nature getaways along the river.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Citadelle et vieille ville', en: 'Citadel and old town' }, teaser: { fr: 'La citadelle et son panorama sur les deux vallées, les ruelles pavées, le beffroi classé UNESCO. Dépose au sommet, montée évitée.', en: 'The citadel and its panorama over the two valleys, the cobbled lanes, the UNESCO-listed belfry. Drop-off at the top, the climb avoided.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Dinant et la Meuse', en: 'Dinant and the Meuse' }, teaser: { fr: 'La collégiale accrochée à la falaise, la citadelle, la maison de Sax. Croisière sur la Meuse et déjeuner en bord de fleuve à 30 km.', en: 'The collegiate church clinging to the cliff, the citadel, the Sax house. A Meuse cruise and a riverside lunch 30 km away.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '360' },
+      { title: { fr: 'Grottes de Han et nature', en: 'Han caves and nature' }, teaser: { fr: 'Les célèbres grottes de Han-sur-Lesse et leur parc animalier, les paysages de la Famenne. Journée nature en famille à moins d’une heure.', en: 'The famous Han-sur-Lesse caves and their wildlife park, the Famenne landscapes. A family nature day less than an hour away.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Châteaux de la vallée', en: 'Valley castles' }, teaser: { fr: 'Les châteaux de la vallée de la Meuse — Annevoie et ses jardins d’eau, Freÿr et ses jardins à la française. Journée patrimoine et déjeuner du terroir.', en: 'The castles of the Meuse valley — Annevoie and its water gardens, Freÿr and its formal gardens. A heritage day and a regional lunch.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Soirée au confluent', en: 'Evening at the confluence' }, teaser: { fr: 'Le confluent illuminé, dîner dans une table du centre, l’ambiance des quais. Véhicule à disposition toute la soirée.', en: 'The illuminated confluence, dinner at a table in the centre, the atmosphere of the quays. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de l’aéroport de Bruxelles à Namur ?', en: 'How long from Brussels Airport to Namur?' }, a: { fr: 'Comptez 50 minutes à 1 heure par l’autoroute. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 50 minutes to 1 hour by motorway. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Peut-on combiner Namur et Dinant dans la journée ?', en: 'Can Namur and Dinant be combined in one day?' }, a: { fr: 'Oui, Dinant est à 30 km de Namur. En mise à disposition à la journée, votre chauffeur combine citadelle, croisière sur la Meuse et déjeuner en bord de fleuve.', en: 'Yes, Dinant is 30 km from Namur. With a full-day hire, your chauffeur combines the citadel, a Meuse cruise and a riverside lunch.' } },
+      { q: { fr: 'Vos chauffeurs à Namur parlent-ils anglais ?', en: 'Do your chauffeurs in Namur speak English?' }, a: { fr: 'Oui, nos chauffeurs sont francophones et anglophones ; d’autres langues sont disponibles sur demande selon les disponibilités.', en: 'Yes, our chauffeurs speak French and English; other languages are available on request subject to availability.' } },
+    ],
+    nearby: ['liege', 'brussels'],
+  },
+  {
+    slug: 'waterloo',
+    name: { fr: 'Waterloo', en: 'Waterloo' },
+    country: { fr: 'Belgique', en: 'Belgium' },
+    region: 'uk-benelux',
+    airport: 'Bruxelles-Zaventem (BRU)',
+    airportTransfer: {
+      fr: 'L’aéroport de Bruxelles-Zaventem (BRU) se trouve à 35 km au nord de Waterloo : comptez 40 à 50 minutes selon le trafic. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Brussels Airport (BRU) lies 35 km north of Waterloo: allow 40 to 50 minutes depending on traffic. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Théâtre de la bataille qui mit fin à l’épopée napoléonienne en 1815, Waterloo conjugue mémoire historique et banlieue résidentielle cossue au sud de Bruxelles. Votre **chauffeur privé à Waterloo** dessert le champ de bataille, la butte du Lion et les demeures des environs : transferts depuis Bruxelles, mise à disposition à l’heure, prix fixes. Berlines Mercedes et vans, chauffeurs francophones et anglophones.',
+        'Waterloo est aux portes de **Bruxelles**. La capitale et sa Grand-Place sont à 20 minutes, le Brabant wallon et ses châteaux tout autour. En mise à disposition à la journée, votre chauffeur combine site historique, escapade dans la capitale et déjeuner de campagne, dans le confort d’une berline privée.',
+      ],
+      en: [
+        'Scene of the battle that ended the Napoleonic epic in 1815, Waterloo blends historical memory with an affluent residential suburb south of Brussels. Your **private chauffeur in Waterloo** serves the battlefield, the Lion’s Mound and the surrounding estates: transfers from Brussels, hourly hire, fixed prices. Mercedes sedans and vans, French- and English-speaking chauffeurs.',
+        'Waterloo is at the gates of **Brussels**. The capital and its Grand-Place are 20 minutes away, the Walloon Brabant and its castles all around. With a full-day hire, your chauffeur combines the historic site, a capital getaway and a country lunch, in the comfort of a private sedan.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Champ de bataille de 1815', en: '1815 battlefield' }, teaser: { fr: 'La butte du Lion et son panorama, le Mémorial 1815, la ferme d’Hougoumont. Demi-journée d’histoire napoléonienne avec dépose devant chaque site.', en: 'The Lion’s Mound and its panorama, the Memorial 1815, the Hougoumont farm. A half-day of Napoleonic history with door-to-door drop-offs.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Bruxelles depuis Waterloo', en: 'Brussels from Waterloo' }, teaser: { fr: 'À 20 minutes, la Grand-Place, le Sablon et le quartier européen. Journée dans la capitale, véhicule en attente entre les étapes.', en: '20 minutes away, the Grand-Place, the Sablon and the European quarter. A day in the capital, vehicle on standby between stops.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Châteaux du Brabant wallon', en: 'Walloon Brabant castles' }, teaser: { fr: 'Le château de La Hulpe et sa fondation Folon, les domaines et jardins du Brabant. Journée nature et art aux portes de Bruxelles.', en: 'The La Hulpe castle and its Folon foundation, the estates and gardens of the Brabant. A day of nature and art at the gates of Brussels.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Villes d’art flamandes', en: 'Flemish art cities' }, teaser: { fr: 'Gand ou Bruges à la journée depuis Waterloo : villes médiévales, canaux, déjeuner sur place. Circuit privé confortable au départ de la banlieue sud.', en: 'Ghent or Bruges on a day trip from Waterloo: medieval cities, canals, lunch on site. A comfortable private tour from the southern suburb.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '690' },
+      { title: { fr: 'Soirée à Bruxelles', en: 'Evening in Brussels' }, teaser: { fr: 'Dîner dans une table de la capitale, la Grand-Place illuminée, retour tranquille à Waterloo. Véhicule à disposition toute la soirée.', en: 'Dinner at a table in the capital, the illuminated Grand-Place, a quiet return to Waterloo. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '380' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de l’aéroport de Bruxelles à Waterloo ?', en: 'How long from Brussels Airport to Waterloo?' }, a: { fr: 'Comptez 40 à 50 minutes selon le trafic. Le transfert privé est à prix fixe, avec accueil, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 40 to 50 minutes depending on traffic. The private transfer is at a fixed price, with a meet-and-greet, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Peut-on combiner Waterloo et Bruxelles ?', en: 'Can Waterloo and Brussels be combined?' }, a: { fr: 'Oui, la capitale est à 20 minutes. En mise à disposition à la journée, votre chauffeur combine le champ de bataille le matin et Bruxelles l’après-midi, à votre rythme.', en: 'Yes, the capital is 20 minutes away. With a full-day hire, your chauffeur combines the battlefield in the morning and Brussels in the afternoon, at your pace.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, nos chauffeurs sont francophones et anglophones ; d’autres langues sont disponibles sur demande selon les disponibilités.', en: 'Yes, our chauffeurs speak French and English; other languages are available on request subject to availability.' } },
+    ],
+    nearby: ['brussels', 'namur'],
+  },
+  {
+    slug: 'spa',
+    name: { fr: 'Spa', en: 'Spa' },
+    country: { fr: 'Belgique', en: 'Belgium' },
+    region: 'uk-benelux',
+    airport: 'Bruxelles-Zaventem (BRU)',
+    airportTransfer: {
+      fr: 'L’aéroport de Bruxelles-Zaventem (BRU) se trouve à 130 km à l’ouest de Spa : comptez 1h15 à 1h30 par l’autoroute. Depuis Liège (LGG), à 40 km, comptez 40 minutes. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Brussels Airport (BRU) lies 130 km west of Spa: allow 1h15 to 1h30 by motorway. From Liège (LGG), 40 km away, allow 40 minutes. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Ville d’eau qui a donné son nom à toutes les stations thermales du monde, Spa niche ses sources, son casino historique et ses hôtels de cure dans les forêts des Ardennes. Votre **chauffeur privé à Spa** dessert les thermes, le circuit de Francorchamps et les demeures de la région : transferts depuis Liège ou Bruxelles, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Spa est au cœur des **Ardennes belges**. Le mythique circuit de Spa-Francorchamps est à 10 km, les Hautes Fagnes et leurs tourbières tout autour, l’Allemagne et le Luxembourg à moins d’une heure. En mise à disposition, votre chauffeur relie cure thermale, week-end automobile et escapades nature dans un décor de forêts et de vallons.',
+      ],
+      en: [
+        'The spa town that gave its name to every thermal resort in the world, Spa nestles its springs, historic casino and cure hotels in the Ardennes forests. Your **private chauffeur in Spa** serves the baths, the Francorchamps circuit and the region’s estates: transfers from Liège or Brussels, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Spa lies at the heart of the **Belgian Ardennes**. The legendary Spa-Francorchamps circuit is 10 km away, the High Fens and their peat bogs all around, Germany and Luxembourg less than an hour away. With a chauffeur hire, your driver links thermal cures, a motorsport weekend and nature getaways in a setting of forests and valleys.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Circuit de Spa-Francorchamps', en: 'Spa-Francorchamps circuit' }, teaser: { fr: 'À 10 km, le Raidillon de l’Eau Rouge, les tribunes du temple de la vitesse. Journée idéale les week-ends de Grand Prix ou d’endurance, transferts et attente inclus.', en: '10 km away, the Eau Rouge corner, the grandstands of the temple of speed. An ideal day on Grand Prix or endurance weekends, transfers and waiting included.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Thermes et Hautes Fagnes', en: 'Baths and High Fens' }, teaser: { fr: 'Les Thermes de Spa perchés sur la colline, les tourbières des Hautes Fagnes, un déjeuner ardennais. Journée bien-être et nature.', en: 'The Thermes de Spa perched on the hill, the High Fens peat bogs, an Ardennes lunch. A day of wellness and nature.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Spa historique', en: 'Historic Spa' }, teaser: { fr: 'Le casino, plus ancien du monde, les sources Pouhon, les villas de la Belle Époque. Demi-journée patrimoine avec dépose devant chaque site.', en: 'The world’s oldest casino, the Pouhon springs, the Belle Époque villas. A half-day of heritage with door-to-door drop-offs.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Vallée de la Meuse', en: 'Meuse valley' }, teaser: { fr: 'Les châteaux et falaises de la Meuse, Dinant et sa collégiale, une croisière sur le fleuve. Journée patrimoine à travers la Wallonie.', en: 'The castles and cliffs of the Meuse, Dinant and its collegiate church, a river cruise. A heritage day across Wallonia.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Soirée thermale', en: 'Thermal evening' }, teaser: { fr: 'Dîner dans un hôtel de cure, une soirée au casino, le calme des forêts ardennaises. Véhicule à disposition toute la soirée.', en: 'Dinner at a cure hotel, an evening at the casino, the calm of the Ardennes forests. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '360' },
+    ],
+    faq: [
+      { q: { fr: 'Peut-on assister à un Grand Prix à Spa-Francorchamps avec chauffeur ?', en: 'Can you attend a Grand Prix at Spa-Francorchamps with a chauffeur?' }, a: { fr: 'Oui, c’est même l’usage le plus demandé les week-ends d’événement, où le stationnement est saturé. Votre chauffeur vous dépose au plus près, vous attend et vous ramène sans les embouteillages de sortie.', en: 'Yes, it is the most requested use on event weekends, when parking is saturated. Your chauffeur drops you as close as possible, waits and brings you back without the exit traffic.' } },
+      { q: { fr: 'Depuis quel aéroport rejoint-on Spa ?', en: 'From which airport do you reach Spa?' }, a: { fr: 'Spa est à 40 minutes de Liège (LGG) et à 1h15-1h30 de Bruxelles (BRU). Votre chauffeur vous accueille à l’aéroport de votre choix avec panneau nominatif, à prix fixe.', en: 'Spa is 40 minutes from Liège (LGG) and 1h15-1h30 from Brussels (BRU). Your chauffeur greets you at the airport of your choice with a name board, at a fixed price.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['liege', 'namur'],
+  },
+  {
+    slug: 'haarlem',
+    name: { fr: 'Haarlem', en: 'Haarlem' },
+    country: { fr: 'Pays-Bas', en: 'Netherlands' },
+    region: 'uk-benelux',
+    airport: 'Amsterdam-Schiphol (AMS)',
+    airportTransfer: {
+      fr: 'L’aéroport d’Amsterdam-Schiphol (AMS) se trouve à 15 km au sud-est de Haarlem : comptez 20 à 30 minutes selon le trafic. Votre chauffeur vous accueille en salle d’arrivée, panneau nominatif en main, et suit votre vol en temps réel.',
+      en: 'Amsterdam-Schiphol Airport (AMS) lies 15 km south-east of Haarlem: allow 20 to 30 minutes depending on traffic. Your chauffeur greets you in arrivals with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Ancienne cité drapière et ville de Frans Hals, Haarlem aligne sa Grote Markt, ses hofjes secrets et ses canaux à quinze minutes d’Amsterdam, sans la foule. Votre **chauffeur privé à Haarlem** dessert le centre, le musée Frans Hals et les champs de fleurs voisins : transferts depuis Schiphol, mise à disposition à l’heure, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Haarlem est la porte des **champs de tulipes du Bollenstreek**. Le parc de Keukenhof et la station balnéaire de Zandvoort sont à quinze minutes, Amsterdam à vingt. En mise à disposition à la journée, votre chauffeur relie musées, jardins fleuris au printemps et plages de la mer du Nord dans un rayon très court.',
+      ],
+      en: [
+        'A former cloth city and the town of Frans Hals, Haarlem offers its Grote Markt, secret hofjes and canals fifteen minutes from Amsterdam, without the crowds. Your **private chauffeur in Haarlem** serves the centre, the Frans Hals Museum and the nearby flower fields: transfers from Schiphol, hourly hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Haarlem is the gateway to the **Bollenstreek tulip fields**. The Keukenhof park and the seaside resort of Zandvoort are fifteen minutes away, Amsterdam twenty. With a full-day hire, your chauffeur links museums, spring flower gardens and North Sea beaches within a very short radius.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Haarlem et Frans Hals', en: 'Haarlem and Frans Hals' }, teaser: { fr: 'La Grote Markt et son église Saint-Bavon, le musée Frans Hals, les hofjes cachés. Dépose au centre, promenade au calme à quinze minutes d’Amsterdam.', en: 'The Grote Markt and its Saint Bavo church, the Frans Hals Museum, the hidden hofjes. Drop-off in the centre, a quiet stroll fifteen minutes from Amsterdam.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Keukenhof et champs de tulipes', en: 'Keukenhof and tulip fields' }, teaser: { fr: 'Le plus grand jardin de bulbes au monde (mars à mai), les champs de tulipes du Bollenstreek en damiers colorés. Journée fleurie au printemps.', en: 'The world’s largest bulb garden (March to May), the chequerboard tulip fields of the Bollenstreek. A flowery day in spring.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '520' },
+      { title: { fr: 'Zandvoort et la mer du Nord', en: 'Zandvoort and the North Sea' }, teaser: { fr: 'La plage et la digue de Zandvoort, le circuit de Formule 1, les dunes. Demi-journée iodée à quinze minutes de la ville.', en: 'The beach and promenade of Zandvoort, the Formula 1 circuit, the dunes. A seaside half-day fifteen minutes from town.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Amsterdam depuis Haarlem', en: 'Amsterdam from Haarlem' }, teaser: { fr: 'À vingt minutes, les canaux, le Rijksmuseum et le quartier des musées. Journée dans la capitale, véhicule en attente, retour au calme le soir.', en: 'Twenty minutes away, the canals, the Rijksmuseum and the museum quarter. A day in the capital, vehicle on standby, a quiet return in the evening.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Soirée à Haarlem', en: 'Evening in Haarlem' }, teaser: { fr: 'Dîner sur la Grote Markt, les canaux illuminés, l’ambiance des cafés bruns loin de l’effervescence d’Amsterdam. Véhicule à disposition toute la soirée.', en: 'Dinner on the Grote Markt, the illuminated canals, the atmosphere of the brown cafés far from Amsterdam’s buzz. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de Schiphol à Haarlem ?', en: 'How long from Schiphol to Haarlem?' }, a: { fr: 'Comptez 20 à 30 minutes selon le trafic. Le transfert privé est à prix fixe, avec accueil en salle d’arrivée, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 20 to 30 minutes depending on traffic. The private transfer is at a fixed price, with a meet-and-greet in arrivals, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Peut-on visiter Keukenhof avec un chauffeur privé ?', en: 'Can you visit Keukenhof with a private chauffeur?' }, a: { fr: 'Oui. Keukenhof est à quinze minutes de Haarlem et ouvre de mars à mai. Votre chauffeur vous dépose à l’entrée, vous évite le stationnement saturé et prolonge par les champs de tulipes.', en: 'Yes. Keukenhof is fifteen minutes from Haarlem and open from March to May. Your chauffeur drops you at the entrance, spares you the saturated parking and extends to the tulip fields.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['amsterdam', 'keukenhof-lisse', 'leiden'],
+  },
+  {
+    slug: 'delft',
+    name: { fr: 'Delft', en: 'Delft' },
+    country: { fr: 'Pays-Bas', en: 'Netherlands' },
+    region: 'uk-benelux',
+    airport: 'Amsterdam-Schiphol (AMS)',
+    airportTransfer: {
+      fr: 'L’aéroport d’Amsterdam-Schiphol (AMS) se trouve à 60 km au nord de Delft : comptez 45 minutes à 1 heure. Depuis Rotterdam-La Haye (RTM), à 10 km, comptez 15 minutes. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Amsterdam-Schiphol Airport (AMS) lies 60 km north of Delft: allow 45 minutes to 1 hour. From Rotterdam-The Hague (RTM), 10 km away, allow 15 minutes. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Ville de Vermeer et berceau de la faïence bleue, Delft déroule ses canaux, sa place du marché et ses églises entre La Haye et Rotterdam. Votre **chauffeur privé à Delft** dessert le centre historique, les manufactures de faïence et les rendez-vous d’affaires de la Randstad : transferts depuis Schiphol ou Rotterdam, mise à disposition à l’heure, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Delft est au cœur de la **Randstad hollandaise**. La Haye et ses institutions à 10 km, Rotterdam et son port à 15 km, les plages de Scheveningen tout près. En mise à disposition à la journée, votre chauffeur relie rendez-vous professionnels, musées et centres historiques d’une conurbation dense en un temps record.',
+      ],
+      en: [
+        'The town of Vermeer and cradle of blue earthenware, Delft unrolls its canals, market square and churches between The Hague and Rotterdam. Your **private chauffeur in Delft** serves the historic centre, the earthenware factories and the business meetings of the Randstad: transfers from Schiphol or Rotterdam, hourly hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Delft lies at the heart of the **Dutch Randstad**. The Hague and its institutions 10 km away, Rotterdam and its port 15 km, the Scheveningen beaches nearby. With a full-day hire, your chauffeur links business meetings, museums and historic centres of a dense conurbation in record time.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Delft et la faïence bleue', en: 'Delft and blue earthenware' }, teaser: { fr: 'La Nieuwe Kerk, la place du marché, une manufacture historique de faïence de Delft. Dépose au centre, promenade le long des canaux.', en: 'The Nieuwe Kerk, the market square, a historic Delft earthenware factory. Drop-off in the centre, a stroll along the canals.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'La Haye et le Mauritshuis', en: 'The Hague and the Mauritshuis' }, teaser: { fr: 'À 10 km, le Mauritshuis et la Jeune Fille à la perle de Vermeer, le Binnenhof, la plage de Scheveningen. Journée capitale et art.', en: '10 km away, the Mauritshuis and Vermeer’s Girl with a Pearl Earring, the Binnenhof, Scheveningen beach. A day of capital and art.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Rotterdam et l’architecture', en: 'Rotterdam and architecture' }, teaser: { fr: 'À 15 km, la ville moderne, le Markthal, les maisons cubiques, le port. Demi-journée design de l’autre côté de la Randstad.', en: '15 km away, the modern city, the Markthal, the cube houses, the port. A design half-day on the other side of the Randstad.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '360' },
+      { title: { fr: 'Randstad en une journée', en: 'Randstad in a day' }, teaser: { fr: 'Delft, La Haye et Rotterdam enchaînées : art, institutions et architecture, un déjeuner en chemin, véhicule à disposition. Confort d’un circuit privé.', en: 'Delft, The Hague and Rotterdam in sequence: art, institutions and architecture, lunch en route, vehicle on standby. The comfort of a private tour.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '690' },
+      { title: { fr: 'Soirée sur les canaux', en: 'Evening on the canals' }, teaser: { fr: 'Dîner au bord de l’eau, les canaux et la Nieuwe Kerk illuminés, l’ambiance étudiante paisible. Véhicule à disposition toute la soirée.', en: 'Dinner by the water, the illuminated canals and Nieuwe Kerk, the peaceful student atmosphere. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Depuis quel aéroport rejoint-on Delft ?', en: 'From which airport do you reach Delft?' }, a: { fr: 'Delft est à 15 minutes de Rotterdam-La Haye (RTM) et à 45 minutes-1 heure de Schiphol (AMS). Votre chauffeur vous accueille à l’aéroport de votre choix avec panneau nominatif, à prix fixe.', en: 'Delft is 15 minutes from Rotterdam-The Hague (RTM) and 45 minutes-1 hour from Schiphol (AMS). Your chauffeur greets you at the airport of your choice with a name board, at a fixed price.' } },
+      { q: { fr: 'Peut-on visiter plusieurs villes de la Randstad dans la journée ?', en: 'Can you visit several Randstad cities in one day?' }, a: { fr: 'Oui, les villes sont très proches. En mise à disposition à la journée, votre chauffeur combine Delft, La Haye et Rotterdam avec un déjeuner, sans temps perdu en transports.', en: 'Yes, the cities are very close. With a full-day hire, your chauffeur combines Delft, The Hague and Rotterdam with lunch, with no time lost in transport.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['the-hague', 'rotterdam', 'leiden'],
+  },
+  {
+    slug: 'leiden',
+    name: { fr: 'Leyde', en: 'Leiden' },
+    country: { fr: 'Pays-Bas', en: 'Netherlands' },
+    region: 'uk-benelux',
+    airport: 'Amsterdam-Schiphol (AMS)',
+    airportTransfer: {
+      fr: 'L’aéroport d’Amsterdam-Schiphol (AMS) se trouve à 20 km au nord-est de Leyde : comptez 20 à 30 minutes. Votre chauffeur vous accueille en salle d’arrivée, panneau nominatif en main, et suit votre vol en temps réel.',
+      en: 'Amsterdam-Schiphol Airport (AMS) lies 20 km north-east of Leiden: allow 20 to 30 minutes. Your chauffeur greets you in arrivals with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Plus ancienne ville universitaire des Pays-Bas et berceau de Rembrandt, Leyde entrelace canaux, cours secrètes et musées savants à vingt minutes d’Amsterdam. Votre **chauffeur privé à Leyde** dessert le centre historique, l’université et les champs de fleurs voisins : transferts depuis Schiphol, mise à disposition à l’heure, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Leyde est au cœur du **Bollenstreek fleuri**. Le parc de Keukenhof est à dix minutes, La Haye et sa côte à quinze, Amsterdam à vingt. En mise à disposition à la journée, votre chauffeur relie musées, jardins de tulipes au printemps et centres historiques dans un rayon très resserré.',
+      ],
+      en: [
+        'The oldest university city in the Netherlands and birthplace of Rembrandt, Leiden weaves canals, secret courtyards and scholarly museums twenty minutes from Amsterdam. Your **private chauffeur in Leiden** serves the historic centre, the university and the nearby flower fields: transfers from Schiphol, hourly hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Leiden lies at the heart of the **flowering Bollenstreek**. The Keukenhof park is ten minutes away, The Hague and its coast fifteen, Amsterdam twenty. With a full-day hire, your chauffeur links museums, spring tulip gardens and historic centres within a very tight radius.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Leyde et Rembrandt', en: 'Leiden and Rembrandt' }, teaser: { fr: 'Les canaux, le moulin De Valk, le musée national des Antiquités, la maison natale de Rembrandt. Dépose au centre, promenade le long des cours d’eau.', en: 'The canals, the De Valk windmill, the National Museum of Antiquities, Rembrandt’s birthplace. Drop-off in the centre, a stroll along the waterways.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '340' },
+      { title: { fr: 'Keukenhof et le Bollenstreek', en: 'Keukenhof and the Bollenstreek' }, teaser: { fr: 'À dix minutes, le plus grand jardin de bulbes au monde et les champs de tulipes en damiers (mars à mai). Journée fleurie au printemps.', en: 'Ten minutes away, the world’s largest bulb garden and the chequerboard tulip fields (March to May). A flowery day in spring.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '520' },
+      { title: { fr: 'La Haye et la côte', en: 'The Hague and the coast' }, teaser: { fr: 'À 15 km, le Mauritshuis, le Binnenhof et la plage de Scheveningen. Journée art et mer du Nord depuis Leyde.', en: '15 km away, the Mauritshuis, the Binnenhof and Scheveningen beach. A day of art and North Sea from Leiden.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Amsterdam depuis Leyde', en: 'Amsterdam from Leiden' }, teaser: { fr: 'À vingt minutes, les canaux, le Rijksmuseum et le quartier des musées. Journée dans la capitale, retour au calme le soir.', en: 'Twenty minutes away, the canals, the Rijksmuseum and the museum quarter. A day in the capital, a quiet return in the evening.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Soirée universitaire', en: 'University evening' }, teaser: { fr: 'Dîner au bord d’un canal, les poèmes muraux de la ville, l’ambiance des cafés étudiants. Véhicule à disposition toute la soirée.', en: 'Dinner by a canal, the city’s wall poems, the atmosphere of the student cafés. Vehicle on standby all evening.' }, duration: { fr: 'Soirée', en: 'Evening' }, price: '340' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps de Schiphol à Leyde ?', en: 'How long from Schiphol to Leiden?' }, a: { fr: 'Comptez 20 à 30 minutes. Le transfert privé est à prix fixe, avec accueil en salle d’arrivée, suivi du vol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow 20 to 30 minutes. The private transfer is at a fixed price, with a meet-and-greet in arrivals, flight tracking and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Leyde est-elle proche des champs de tulipes ?', en: 'Is Leiden close to the tulip fields?' }, a: { fr: 'Oui, Keukenhof et le Bollenstreek sont à dix minutes. Au printemps, votre chauffeur combine la ville et les champs fleuris dans une même journée, à prix fixe.', en: 'Yes, Keukenhof and the Bollenstreek are ten minutes away. In spring, your chauffeur combines the city and the flowering fields in a single day, at a fixed price.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['keukenhof-lisse', 'the-hague', 'haarlem'],
+  },
+  {
+    slug: 'giethoorn',
+    name: { fr: 'Giethoorn', en: 'Giethoorn' },
+    country: { fr: 'Pays-Bas', en: 'Netherlands' },
+    region: 'uk-benelux',
+    airport: 'Amsterdam-Schiphol (AMS)',
+    airportTransfer: {
+      fr: 'L’aéroport d’Amsterdam-Schiphol (AMS) se trouve à 130 km au sud-ouest de Giethoorn : comptez 1h30 par l’autoroute. Votre chauffeur vous accueille avec panneau nominatif et suit votre vol en temps réel.',
+      en: 'Amsterdam-Schiphol Airport (AMS) lies 130 km south-west of Giethoorn: allow 1h30 by motorway. Your chauffeur greets you with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Village sans routes surnommé la « Venise du Nord », Giethoorn s’égrène le long de canaux paisibles, entre chaumières et ponts de bois, au cœur du parc national de Weerribben-Wieden. Votre **chauffeur privé à Giethoorn** vous conduit depuis Amsterdam ou Schiphol jusqu’aux abords du village, où la promenade se poursuit en barque électrique : transferts à prix fixe, mise à disposition à la journée. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Giethoorn se découvre en excursion depuis Amsterdam. À 1h30 de route, ce village-carte-postale offre une parenthèse hors du temps, souvent combinée avec les villages de pêcheurs de l’ancienne mer du Zuiderzee. En mise à disposition à la journée, votre chauffeur vous attend pendant votre balade en barque et vous ramène en fin d’après-midi, sans la contrainte des trains régionaux.',
+      ],
+      en: [
+        'A road-free village nicknamed the “Venice of the North”, Giethoorn threads along peaceful canals, among thatched cottages and wooden bridges, in the heart of the Weerribben-Wieden national park. Your **private chauffeur in Giethoorn** drives you from Amsterdam or Schiphol to the edge of the village, where the visit continues by electric boat: fixed-price transfers, full-day hire. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Giethoorn is best discovered on an excursion from Amsterdam. A 1h30 drive away, this postcard village offers a timeless interlude, often combined with the fishing villages of the former Zuiderzee. With a full-day hire, your chauffeur waits during your boat ride and brings you back in the late afternoon, without the constraint of regional trains.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Giethoorn en barque', en: 'Giethoorn by boat' }, teaser: { fr: 'Le village sans voitures, ses canaux, ses chaumières et ponts de bois, une promenade en barque électrique. Votre chauffeur vous attend à l’embarcadère.', en: 'The car-free village, its canals, thatched cottages and wooden bridges, a ride by electric boat. Your chauffeur waits at the jetty.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Villages du Zuiderzee', en: 'Zuiderzee villages' }, teaser: { fr: 'Les anciens ports de pêche de Volendam et Marken, les maisons de bois, un déjeuner de hareng. Journée traditions au bord de l’ancienne mer intérieure.', en: 'The former fishing ports of Volendam and Marken, the wooden houses, a herring lunch. A day of traditions on the shore of the former inland sea.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Giethoorn et Kampen', en: 'Giethoorn and Kampen' }, teaser: { fr: 'Le village-canaux le matin, la cité hanséatique de Kampen et ses quais sur l’IJssel l’après-midi. Journée patrimoine hors des sentiers battus.', en: 'The canal village in the morning, the Hanseatic town of Kampen and its IJssel quays in the afternoon. A heritage day off the beaten track.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+      { title: { fr: 'Nature de Weerribben-Wieden', en: 'Weerribben-Wieden nature' }, teaser: { fr: 'Le plus grand marais de tourbe d’Europe occidentale, ses roselières et sa faune, une balade au fil de l’eau. Journée nature au rythme lent.', en: 'Western Europe’s largest peat marsh, its reed beds and wildlife, a waterside walk. A slow-paced nature day.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Excursion depuis Amsterdam', en: 'Excursion from Amsterdam' }, teaser: { fr: '1h30 de route depuis la capitale : le village, la barque et un déjeuner, retour à Amsterdam le soir. Journée clé en main loin de la foule.', en: '1h30 from the capital: the village, the boat and lunch, back in Amsterdam in the evening. A turnkey day away from the crowds.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '690' },
+    ],
+    faq: [
+      { q: { fr: 'Peut-on visiter Giethoorn à la journée depuis Amsterdam ?', en: 'Can Giethoorn be visited on a day trip from Amsterdam?' }, a: { fr: 'Oui. Giethoorn est à 1h30 d’Amsterdam. En mise à disposition à la journée, votre chauffeur vous y conduit, vous attend pendant la balade en barque et vous ramène en fin d’après-midi, à prix fixe.', en: 'Yes. Giethoorn is 1h30 from Amsterdam. With a full-day hire, your chauffeur takes you there, waits during the boat ride and brings you back in the late afternoon, at a fixed price.' } },
+      { q: { fr: 'Y a-t-il des routes dans Giethoorn ?', en: 'Are there roads in Giethoorn?' }, a: { fr: 'Le cœur du village est sans voitures : on s’y déplace à pied ou en barque. Votre chauffeur vous dépose à l’entrée et vous attend, la visite se poursuivant au fil de l’eau.', en: 'The heart of the village is car-free: you move around on foot or by boat. Your chauffeur drops you at the entrance and waits, the visit continuing along the water.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['amsterdam'],
+  },
+  {
+    slug: 'keukenhof-lisse',
+    name: { fr: 'Keukenhof – Lisse', en: 'Keukenhof – Lisse' },
+    country: { fr: 'Pays-Bas', en: 'Netherlands' },
+    region: 'uk-benelux',
+    airport: 'Amsterdam-Schiphol (AMS)',
+    airportTransfer: {
+      fr: 'L’aéroport d’Amsterdam-Schiphol (AMS) se trouve à 15 km au nord de Keukenhof et Lisse : comptez 20 à 30 minutes. Votre chauffeur vous accueille en salle d’arrivée, panneau nominatif en main, et suit votre vol en temps réel.',
+      en: 'Amsterdam-Schiphol Airport (AMS) lies 15 km north of Keukenhof and Lisse: allow 20 to 30 minutes. Your chauffeur greets you in arrivals with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Au cœur du Bollenstreek, le parc de Keukenhof déploie chaque printemps sept millions de bulbes en fleurs, entouré de champs de tulipes en damiers colorés. Votre **chauffeur privé à Keukenhof** vous dépose à l’entrée du parc, vous évite le stationnement saturé de la haute saison et prolonge la journée dans les villages fleuris de Lisse : transferts depuis Schiphol, mise à disposition à la journée, prix fixes. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Le Bollenstreek se prolonge vers la **côte et les villes d’art**. La station de Noordwijk et ses dunes, Leyde et ses canaux, Haarlem et Amsterdam sont à moins de trente minutes. En mise à disposition, votre chauffeur combine jardins de tulipes, plages de la mer du Nord et centres historiques dans une même journée de printemps.',
+      ],
+      en: [
+        'At the heart of the Bollenstreek, the Keukenhof park unfurls seven million flowering bulbs each spring, surrounded by chequerboard tulip fields. Your **private chauffeur at Keukenhof** drops you at the park entrance, spares you the high-season parking congestion and extends the day into the flowering villages of Lisse: transfers from Schiphol, full-day hire, fixed prices. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'The Bollenstreek extends toward the **coast and the art cities**. The resort of Noordwijk and its dunes, Leiden and its canals, Haarlem and Amsterdam are all less than thirty minutes away. With a chauffeur hire, your driver combines tulip gardens, North Sea beaches and historic centres in a single spring day.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Parc de Keukenhof', en: 'Keukenhof park' }, teaser: { fr: 'Le plus grand jardin de bulbes au monde (mi-mars à mi-mai), ses parterres de tulipes, jacinthes et narcisses. Dépose à l’entrée, stationnement évité.', en: 'The world’s largest bulb garden (mid-March to mid-May), its beds of tulips, hyacinths and daffodils. Drop-off at the entrance, parking avoided.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '400' },
+      { title: { fr: 'Champs de tulipes du Bollenstreek', en: 'Bollenstreek tulip fields' }, teaser: { fr: 'Les champs en damiers colorés autour de Lisse et Hillegom, les meilleurs points de vue au fil des routes de campagne. Arrêts photo tout au long du parcours.', en: 'The colourful chequerboard fields around Lisse and Hillegom, the best viewpoints along the country roads. Photo stops all along the route.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '380' },
+      { title: { fr: 'Keukenhof et la côte', en: 'Keukenhof and the coast' }, teaser: { fr: 'Le parc le matin, la station de Noordwijk et ses dunes l’après-midi, un déjeuner face à la mer du Nord. Journée fleurs et grand air.', en: 'The park in the morning, the resort of Noordwijk and its dunes in the afternoon, a lunch facing the North Sea. A day of flowers and fresh air.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Fleurs et villes d’art', en: 'Flowers and art cities' }, teaser: { fr: 'Keukenhof puis Leyde ou Haarlem, canaux et musées à quinze minutes. Journée complète alliant nature fleurie et patrimoine hollandais.', en: 'Keukenhof then Leiden or Haarlem, canals and museums fifteen minutes away. A full day combining flowering nature and Dutch heritage.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Amsterdam et les tulipes', en: 'Amsterdam and the tulips' }, teaser: { fr: 'Les champs fleuris le matin, les canaux d’Amsterdam et le Rijksmuseum l’après-midi. La quintessence des Pays-Bas en une journée.', en: 'The flowering fields in the morning, the Amsterdam canals and the Rijksmuseum in the afternoon. The essence of the Netherlands in one day.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '620' },
+    ],
+    faq: [
+      { q: { fr: 'Quand le parc de Keukenhof est-il ouvert ?', en: 'When is the Keukenhof park open?' }, a: { fr: 'Keukenhof ouvre chaque année de la mi-mars à la mi-mai. En dehors de cette période, votre chauffeur vous propose les champs du Bollenstreek et les villes voisines. Le transfert reste à prix fixe.', en: 'Keukenhof opens each year from mid-March to mid-May. Outside this period, your chauffeur offers the Bollenstreek fields and the neighbouring cities. The transfer remains at a fixed price.' } },
+      { q: { fr: 'Faut-il un chauffeur pour visiter Keukenhof ?', en: 'Do you need a chauffeur to visit Keukenhof?' }, a: { fr: 'C’est fortement conseillé en haute saison : le stationnement est saturé et les files interminables. Votre chauffeur vous dépose à l’entrée, vous attend et prolonge vers les champs et villages fleuris.', en: 'It is strongly advised in high season: parking is saturated and queues endless. Your chauffeur drops you at the entrance, waits and extends to the fields and flowering villages.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['leiden', 'haarlem', 'amsterdam'],
+  },
+  {
+    slug: 'zaanse-schans',
+    name: { fr: 'Zaanse Schans', en: 'Zaanse Schans' },
+    country: { fr: 'Pays-Bas', en: 'Netherlands' },
+    region: 'uk-benelux',
+    airport: 'Amsterdam-Schiphol (AMS)',
+    airportTransfer: {
+      fr: 'L’aéroport d’Amsterdam-Schiphol (AMS) se trouve à 30 km au sud de Zaanse Schans : comptez 30 à 40 minutes. Votre chauffeur vous accueille en salle d’arrivée, panneau nominatif en main, et suit votre vol en temps réel.',
+      en: 'Amsterdam-Schiphol Airport (AMS) lies 30 km south of Zaanse Schans: allow 30 to 40 minutes. Your chauffeur greets you in arrivals with a name board and tracks your flight in real time.',
+    },
+    intro: {
+      fr: [
+        'Musée à ciel ouvert au bord de la Zaan, Zaanse Schans aligne moulins à vent en activité, maisons de bois vertes et ateliers traditionnels, à vingt minutes d’Amsterdam. Votre **chauffeur privé à Zaanse Schans** vous conduit depuis la capitale ou Schiphol jusqu’au site, vous évitant les cars de tourisme et le stationnement bondé : transferts à prix fixe, mise à disposition à la journée. Berlines Mercedes et vans, chauffeurs anglophones sur demande.',
+        'Zaanse Schans se combine avec les **villages de l’ancien Zuiderzee**. Volendam, Marken et Edam, patrie du fromage, sont à quinze minutes ; Amsterdam à vingt. En mise à disposition à la journée, votre chauffeur relie moulins, fromageries et ports de pêche traditionnels dans un circuit privé au cœur de la Hollande-Septentrionale.',
+      ],
+      en: [
+        'An open-air museum on the banks of the Zaan, Zaanse Schans lines up working windmills, green wooden houses and traditional workshops, twenty minutes from Amsterdam. Your **private chauffeur at Zaanse Schans** drives you from the capital or Schiphol to the site, sparing you the tour buses and the crowded parking: fixed-price transfers, full-day hire. Mercedes sedans and vans, English-speaking chauffeurs on request.',
+        'Zaanse Schans combines with the **villages of the former Zuiderzee**. Volendam, Marken and Edam, home of the cheese, are fifteen minutes away; Amsterdam twenty. With a full-day hire, your chauffeur links windmills, cheese farms and traditional fishing ports in a private tour at the heart of North Holland.',
+      ],
+    },
+    experiences: [
+      { title: { fr: 'Moulins de Zaanse Schans', en: 'Zaanse Schans windmills' }, teaser: { fr: 'Les moulins à vent en activité, les ateliers de sabots et de fromage, les maisons de bois vertes au bord de la Zaan. Dépose au site, stationnement évité.', en: 'The working windmills, the clog and cheese workshops, the green wooden houses by the Zaan. Drop-off at the site, parking avoided.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '360' },
+      { title: { fr: 'Villages du Zuiderzee', en: 'Zuiderzee villages' }, teaser: { fr: 'Volendam et son port, l’île de Marken et ses maisons de bois, Edam et son marché aux fromages. Journée traditions au bord de l’ancienne mer.', en: 'Volendam and its harbour, the island of Marken and its wooden houses, Edam and its cheese market. A day of traditions by the former sea.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Moulins et fromages', en: 'Windmills and cheese' }, teaser: { fr: 'Zaanse Schans le matin, une fromagerie d’Edam et une dégustation l’après-midi. Journée artisanat et terroir de Hollande-Septentrionale.', en: 'Zaanse Schans in the morning, an Edam cheese farm and a tasting in the afternoon. A day of North Holland crafts and produce.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '560' },
+      { title: { fr: 'Amsterdam et Zaanse Schans', en: 'Amsterdam and Zaanse Schans' }, teaser: { fr: 'Les moulins le matin, les canaux et musées d’Amsterdam l’après-midi. La carte postale hollandaise complète en une journée.', en: 'The windmills in the morning, the Amsterdam canals and museums in the afternoon. The complete Dutch postcard in one day.' }, duration: { fr: 'Journée complète', en: 'Full day' }, price: '590' },
+      { title: { fr: 'Excursion depuis Amsterdam', en: 'Excursion from Amsterdam' }, teaser: { fr: 'Vingt minutes depuis la capitale : les moulins, un déjeuner de village, retour à Amsterdam. Escapade authentique loin de la foule du centre.', en: 'Twenty minutes from the capital: the windmills, a village lunch, back in Amsterdam. An authentic getaway away from the city-centre crowds.' }, duration: { fr: 'Demi-journée', en: 'Half day' }, price: '380' },
+    ],
+    faq: [
+      { q: { fr: 'Combien de temps d’Amsterdam à Zaanse Schans ?', en: 'How long from Amsterdam to Zaanse Schans?' }, a: { fr: 'Comptez une vingtaine de minutes. Le transfert privé est à prix fixe, avec accueil, suivi du vol depuis Schiphol et 60 minutes d’attente offertes en cas de retard.', en: 'Allow about twenty minutes. The private transfer is at a fixed price, with a meet-and-greet, flight tracking from Schiphol and 60 minutes of complimentary waiting time in case of delay.' } },
+      { q: { fr: 'Peut-on combiner Zaanse Schans et les villages de pêcheurs ?', en: 'Can Zaanse Schans and the fishing villages be combined?' }, a: { fr: 'Oui, Volendam, Marken et Edam sont tout proches. En mise à disposition à la journée, votre chauffeur enchaîne moulins, ports traditionnels et dégustation de fromage.', en: 'Yes, Volendam, Marken and Edam are very close. With a full-day hire, your chauffeur links windmills, traditional harbours and a cheese tasting.' } },
+      { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
+    ],
+    nearby: ['amsterdam', 'haarlem'],
+  },
 ];
