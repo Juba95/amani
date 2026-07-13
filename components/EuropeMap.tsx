@@ -32,25 +32,26 @@ export default function EuropeMap({
       .catch(() => {});
   }, []);
 
-  // Annote les pays couverts + bind les interactions
+  // Annote visuellement les pays couverts (aucun écouteur par élément :
+  // les interactions passent par délégation sur le conteneur, cf. onMouseOver)
   useEffect(() => {
     const root = holder.current;
     if (!root || !svg) return;
-    const cleanups: (() => void)[] = [];
     Object.keys(countries).forEach((iso) => {
-      const el = root.querySelector<SVGGraphicsElement>(`#${iso}`);
-      if (!el) return;
-      el.classList.add('am-active');
-      const on = () => setSelected(iso);
-      el.addEventListener('click', on);
-      el.addEventListener('mouseenter', on);
-      cleanups.push(() => {
-        el.removeEventListener('click', on);
-        el.removeEventListener('mouseenter', on);
-      });
+      root.querySelector(`#${iso}`)?.classList.add('am-active');
     });
-    return () => cleanups.forEach((fn) => fn());
   }, [svg, countries]);
+
+  // Remonte du nœud SVG survolé jusqu'au pays couvert le plus proche
+  const countryFromEvent = (target: EventTarget | null): string | null => {
+    let el = target as Element | null;
+    while (el && el !== holder.current) {
+      const id = (el as Element).id;
+      if (id && countries[id]) return id;
+      el = el.parentElement;
+    }
+    return null;
+  };
 
   // Marque le pays sélectionné
   useEffect(() => {
@@ -69,6 +70,8 @@ export default function EuropeMap({
         ref={holder}
         className="am-map rounded-lg border border-warm-200 bg-white overflow-hidden"
         dangerouslySetInnerHTML={{ __html: svg }}
+        onMouseOver={(e) => { const iso = countryFromEvent(e.target); if (iso) setSelected(iso); }}
+        onClick={(e) => { const iso = countryFromEvent(e.target); if (iso) setSelected(iso); }}
         aria-label={locale === 'en' ? 'Interactive map of Europe' : 'Carte interactive de l’Europe'}
       />
       <div className="bg-warm-50 border border-warm-200 rounded-lg p-6 lg:sticky lg:top-28">
