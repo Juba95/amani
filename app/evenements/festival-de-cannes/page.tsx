@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import SEOLayout from '@/components/SEOLayout';
 import { content, contentMetadata } from '@/lib/get-content';
 
@@ -25,6 +26,13 @@ export default function FestivalDeCannesPage() {
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
             {c('intro', 'Cannes en mai, c\'est deux semaines où la Côte d\'Azur concentre plus de personnalités au mètre carré que n\'importe quel autre endroit au monde. Le transport y est une affaire de positionnement, de timing et de discrétion. Amani Limousines déploie une équipe dédiée pendant toute la durée du festival pour les transferts Nice–Cannes avec chauffeur privé, les navettes Croisette et les accès réservés aux projections et soirées.')}
           </p>
+        </div>
+      </section>
+
+      {/* Bannière visuelle */}
+      <section className="px-6 md:px-10 bg-white pb-4">
+        <div className="max-w-4xl mx-auto relative aspect-[21/9] rounded-lg overflow-hidden">
+          <Image src="/images/home/cannes.jpg" alt="Festival de Cannes — la Croisette" fill priority sizes="(max-width:1024px) 100vw, 900px" quality={75} className="object-cover" />
         </div>
       </section>
 

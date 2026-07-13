@@ -23,12 +23,9 @@ export const metadata: Metadata = {
 export default function DestinationsHubPage() {
   return (
     <SEOLayout>
-      <section className="px-6 md:px-10 pb-4">
-        <div className="max-w-6xl mx-auto">
-          <EuropeMap locale="fr" countries={groupByCountryIso('fr')} />
-        </div>
-      </section>
-      <DestinationsHub locale="fr" />
+      <DestinationsHub locale="fr">
+        <EuropeMap locale="fr" countries={groupByCountryIso('fr')} />
+      </DestinationsHub>
     </SEOLayout>
   );
 }

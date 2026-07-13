@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import SEOLayoutEN from '@/components/SEOLayoutEN';
+import Image from 'next/image';
 import Link from 'next/link';
 import { content, contentMetadata } from '@/lib/get-content';
 
@@ -40,7 +41,8 @@ export default function BecomeAChauffeurPage() {
     <SEOLayoutEN>
       {/* Hero */}
       <section className="pt-36 pb-16 px-6 md:px-10 bg-white">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto grid lg:grid-cols-[1.2fr,1fr] gap-10 items-center">
+        <div>
           <p className="tag">Careers</p>
           <h1 className="heading mt-3">{c('h1', 'Become an Amani Limousines chauffeur')}</h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
@@ -63,6 +65,11 @@ export default function BecomeAChauffeurPage() {
               Apply via WhatsApp
             </a>
           </div>
+        </div>
+        <div className="relative aspect-[4/5] rounded-lg overflow-hidden hidden lg:block">
+          <Image src="/images/home/lounes-presentation.jpg" alt="Amani Limousines private chauffeur" fill sizes="420px" quality={75}
+            className="object-cover" />
+        </div>
         </div>
       </section>
 

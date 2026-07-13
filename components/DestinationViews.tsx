@@ -4,6 +4,7 @@
  * et hub (liste de toutes les destinations groupées par pays).
  * Styles cohérents avec CityExperiences.tsx / ExperiencesViews.tsx.
  */
+import Image from 'next/image';
 import Link from 'next/link';
 import {
   ALL_DESTINATIONS,
@@ -230,7 +231,16 @@ export function DestinationDetail({ d, locale }: { d: Destination; locale: DestL
   );
 }
 
-export function DestinationsHub({ locale }: { locale: DestLocale }) {
+/** Destinations phares illustrées (slugs du registre disposant d'une photo). */
+const HUB_HIGHLIGHTS: { slug: string; img: string; label: { fr: string; en: string } }[] = [
+  { slug: 'versailles-ville', img: '/images/home/versailles.jpg', label: { fr: 'Versailles', en: 'Versailles' } },
+  { slug: 'giverny-village', img: '/images/home/giverny.jpg', label: { fr: 'Giverny', en: 'Giverny' } },
+  { slug: 'mont-saint-michel-ville', img: '/images/home/montsaintmichel.jpg', label: { fr: 'Mont-Saint-Michel', en: 'Mont-Saint-Michel' } },
+  { slug: 'epernay', img: '/images/home/champagne.jpg', label: { fr: 'Épernay', en: 'Épernay' } },
+  { slug: 'tours', img: '/images/home/chambord.jpg', label: { fr: 'Châteaux de la Loire', en: 'Loire Valley' } },
+];
+
+export function DestinationsHub({ locale, children }: { locale: DestLocale; children?: React.ReactNode }) {
   const t = T[locale];
 
   // Groupement par pays, dans l'ordre d'apparition du registre
@@ -251,6 +261,34 @@ export function DestinationsHub({ locale }: { locale: DestLocale }) {
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl mx-auto">{t.hubIntro}</p>
         </div>
       </section>
+
+      {/* Carte d'Europe interactive (slot fourni par la page) */}
+      {children && (
+        <section className="pb-14 px-6 md:px-10 bg-white">
+          <div className="max-w-6xl mx-auto">{children}</div>
+        </section>
+      )}
+
+      {/* Destinations phares illustrées */}
+      <section className="pb-14 px-6 md:px-10 bg-white">
+        <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+          {HUB_HIGHLIGHTS.map((h) => (
+            <Link key={h.slug} href={`${t.base}/${h.slug}`}
+              className="group relative aspect-[3/4] rounded-md overflow-hidden hover:-translate-y-1 transition-transform">
+              <Image src={h.img} alt={h.label[locale]} fill sizes="(max-width:640px) 45vw, 220px" quality={65}
+                className="object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, rgba(0,0,0,.05) 35%, rgba(0,0,0,.78))' }} />
+              <div className="absolute bottom-0 left-0 right-0 p-4">
+                <h3 className="font-serif text-lg text-white">{h.label[locale]}</h3>
+                <p className="font-sans text-[0.6rem] tracking-[0.12em] uppercase text-white/75">
+                  {locale === 'en' ? 'Private chauffeur' : 'Chauffeur privé'}
+                </p>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       <section className="pb-20 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto space-y-12">
           {[...byCountry.entries()].map(([country, cities]) => (

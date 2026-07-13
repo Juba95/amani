@@ -28,12 +28,23 @@ export default function EuropeMap({
   useEffect(() => {
     fetch('/images/europe-map.svg')
       .then((r) => r.text())
-      .then(setSvg)
+      .then((raw) => {
+        // Recadre sur l'Europe couverte (le fond inclut Groenland/Proche-Orient,
+        // coûteux en espace visuel) : union des bbox des pays desservis + marge.
+        const open = raw.indexOf('<svg');
+        const close = raw.indexOf('>', open);
+        let tag = raw.slice(open, close + 1)
+          .replace(/\s(width|height|viewBox)="[^"]*"/g, '')
+          .replace('<svg', '<svg viewBox="105 -15 401 538"');
+        setSvg(raw.slice(0, open) + tag + raw.slice(close + 1));
+      })
       .catch(() => {});
   }, []);
 
   // Annote visuellement les pays couverts (aucun écouteur par élément :
   // les interactions passent par délégation sur le conteneur, cf. onMouseOver)
+  // puis recadre le viewBox sur l'union des pays couverts : le fond de carte
+  // inclut Groenland/Proche-Orient, inutiles et coûteux en espace visuel.
   useEffect(() => {
     const root = holder.current;
     if (!root || !svg) return;

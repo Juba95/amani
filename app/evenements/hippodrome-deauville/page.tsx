@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import SEOLayout from '@/components/SEOLayout';
 import { content, contentMetadata } from '@/lib/get-content';
 
@@ -30,6 +31,13 @@ export default function HippodromeDeauvillePage() {
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
             {c('intro', 'Deauville, c\'est 200 km depuis Paris, deux heures trente sur l\'A13 selon la circulation. L\'hippodrome reste le rendez-vous mondain que les Parisiens font encore, en particulier en août pour les Yearling Sales et le Grand Prix de Deauville. On y vient souvent à plusieurs, on repart tard, et la route du retour en nocturne mérite d\'avoir un chauffeur.')}
           </p>
+        </div>
+      </section>
+
+      {/* Bannière visuelle */}
+      <section className="px-6 md:px-10 bg-white pb-4">
+        <div className="max-w-4xl mx-auto relative aspect-[21/9] rounded-lg overflow-hidden">
+          <Image src="/images/home/deauville.jpg" alt="Deauville — hippodrome et planches" fill priority sizes="(max-width:1024px) 100vw, 900px" quality={75} className="object-cover" />
         </div>
       </section>
 

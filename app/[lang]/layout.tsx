@@ -1,22 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { DM_Serif_Display, Inter } from 'next/font/google';
-import '../../styles/globals.css';
-
-const dmSerif = DM_Serif_Display({
-  subsets: ['latin'],
-  weight: '400',
-  style: ['normal', 'italic'],
-  display: 'swap',
-  variable: '--font-dm-serif',
-});
-
-const inter = Inter({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-  display: 'swap',
-  variable: '--font-inter',
-});
+import HtmlLangSetter from '@/components/HtmlLangSetter';
 
 import en from '@/locales/en.json';
 import es from '@/locales/es.json';
@@ -71,8 +55,9 @@ export default function LangLayout({
 
   const isRtl = params.lang === 'ar';
   return (
-    <html lang={params.lang} dir={isRtl ? 'rtl' : 'ltr'} className={`${dmSerif.variable} ${inter.variable}`}>
-      <body>{children}</body>
-    </html>
+    <>
+      <HtmlLangSetter lang={params.lang} dir={isRtl ? 'rtl' : 'ltr'} />
+      {children}
+    </>
   );
 }

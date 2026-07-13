@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import SEOLayout from '@/components/SEOLayout';
 import { content, contentMetadata } from '@/lib/get-content';
 
@@ -25,6 +26,13 @@ export default function ParisFashionWeekPage() {
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
             {c('intro', 'La Fashion Week parisienne concentre en une semaine les adresses les plus disputées de la capitale. Palais Royal, Grand Palais Éphémère, Trocadéro, Marais, 8ème arrondissement : les défilés se déroulent dans des lieux hétéroclites, souvent peu accessibles aux taxis ordinaires. Un chauffeur privé Paris Fashion Week dédié reste à votre disposition entre chaque défilé, stationné à proximité, prêt à vous déposer à l\'entrée VIP suivante.')}
           </p>
+        </div>
+      </section>
+
+      {/* Bannière visuelle */}
+      <section className="px-6 md:px-10 bg-white pb-4">
+        <div className="max-w-4xl mx-auto relative aspect-[21/9] rounded-lg overflow-hidden">
+          <Image src="/images/home/parisnight.jpg" alt="Paris Fashion Week" fill priority sizes="(max-width:1024px) 100vw, 900px" quality={75} className="object-cover" />
         </div>
       </section>
 

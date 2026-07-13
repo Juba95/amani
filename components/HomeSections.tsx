@@ -5,6 +5,7 @@
  */
 import Image from 'next/image';
 import Link from 'next/link';
+import EuropeMap, { type MapCountry } from './EuropeMap';
 
 type L = 'fr' | 'en';
 
@@ -126,6 +127,37 @@ export function DestinationsSection({ locale = 'fr' as L }) {
               </div>
             </Link>
           ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ── Carte d'Europe interactive ──────────────────────────────────────────── */
+export function DestinationsMapSection({ locale = 'fr' as L, countries }: { locale?: L; countries: Record<string, MapCountry> }) {
+  const en = locale === 'en';
+  const total = Object.values(countries).reduce((n, c) => n + c.cities.length, 0);
+  return (
+    <section className="py-20 px-6 md:px-10 bg-white">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center max-w-2xl mx-auto mb-12">
+          <p className="tag">{en ? 'Across Europe' : 'Partout en Europe'}</p>
+          <h2 className="heading mt-3">
+            {en ? `${total} destinations, one chauffeur` : `${total} destinations, un seul chauffeur`}
+          </h2>
+          <p className="font-sans text-sm text-stone-500 leading-relaxed mt-4">
+            {en
+              ? 'Hover over a country to discover our cities — each with airport transfers, hourly hire and 5 curated experiences.'
+              : 'Survolez un pays pour découvrir nos villes — chacune avec transferts aéroport, mise à disposition et 5 expériences sur mesure.'}
+          </p>
+        </div>
+        <EuropeMap locale={locale} countries={countries} />
+        <div className="text-center mt-10">
+          <Link href={en ? '/en/destinations' : '/destinations'}
+            className="inline-block px-7 py-3.5 font-sans text-sm tracking-widest uppercase text-white transition-opacity hover:opacity-90"
+            style={{ background: '#8a7340' }}>
+            {en ? 'All destinations' : 'Toutes les destinations'}
+          </Link>
         </div>
       </div>
     </section>

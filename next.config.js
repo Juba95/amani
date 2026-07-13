@@ -526,13 +526,17 @@ const nextConfig = {
           { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
         ],
       },
-      // Cache long sur les fonts self-hosted par next/font
-      {
-        source: '/_next/static/:path*',
-        headers: [
-          { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
-        ],
-      },
+      // Cache long sur les fonts self-hosted par next/font.
+      // Jamais en dev : les chunks dev ne sont pas hashés, un cache immutable
+      // ferait exécuter au navigateur du code obsolète pendant un an.
+      ...(process.env.NODE_ENV === 'production'
+        ? [{
+            source: '/_next/static/:path*',
+            headers: [
+              { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
+            ],
+          }]
+        : []),
       // hreflang sur la homepage
       {
         source: '/',

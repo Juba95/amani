@@ -3117,7 +3117,7 @@ export const CITIES: Destination[] = [
       { q: { fr: 'Peut-on visiter les volcans d’Auvergne avec un chauffeur ?', en: 'Can you visit the Auvergne volcanoes with a chauffeur?' }, a: { fr: 'Oui. Le puy de Dôme et le parc des volcans sont à portée. Votre chauffeur vous conduit aux départs, organise le train à crémaillère et combine avec villages et thermes, à prix fixe.', en: 'Yes. The Puy de Dôme and the volcanoes park are within reach. Your chauffeur drives you to the departure points, arranges the rack railway and combines with villages and spas, at a fixed price.' } },
       { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
     ],
-    nearby: ['vichy', 'lyon'],
+    nearby: ['vichy', 'valence'],
   },
   {
     slug: 'vichy',
@@ -3695,7 +3695,7 @@ export const CITIES: Destination[] = [
       { q: { fr: 'Peut-on visiter le site Le Corbusier de Firminy ?', en: 'Can you visit Le Corbusier’s Firminy site?' }, a: { fr: 'Oui, Firminy est à vingt minutes. En mise à disposition, votre chauffeur combine le site Le Corbusier classé UNESCO et la Cité du design, à prix fixe.', en: 'Yes, Firminy is twenty minutes away. With a hire, your chauffeur combines the UNESCO-listed Le Corbusier site and the Cité du Design, at a fixed price.' } },
       { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
     ],
-    nearby: ['lyon', 'grenoble'],
+    nearby: ['valence', 'grenoble'],
   },
   {
     slug: 'chartres',
@@ -3933,6 +3933,6 @@ export const CITIES: Destination[] = [
       { q: { fr: 'Assurez-vous les escales de croisière à Ajaccio ?', en: 'Do you handle cruise calls in Ajaccio?' }, a: { fr: 'Oui. Nous organisons l’accueil au port et les excursions vers les calanques de Piana, les Sanguinaires ou l’intérieur, avec retour à quai dans les temps du navire.', en: 'Yes. We arrange the port welcome and excursions to the Piana calanques, the Sanguinaires or the interior, with return to the quay on the ship’s schedule.' } },
       { q: { fr: 'Vos chauffeurs parlent-ils anglais ?', en: 'Do your chauffeurs speak English?' }, a: { fr: 'Oui, des chauffeurs anglophones sont disponibles sur demande, ainsi que d’autres langues selon les disponibilités.', en: 'Yes, English-speaking chauffeurs are available on request, along with other languages subject to availability.' } },
     ],
-    nearby: ['nice', 'toulon'],
+    nearby: ['toulon', 'hyeres'],
   },
 ];
