@@ -80,7 +80,7 @@ const vehicles = [
     name: 'Mercedes G-Class',
     cat: 'Prestige SUV',
     pax: '4 passengers · 3 bags',
-    price: 'From €250',
+    price: 'From €500',
     img: '/vehicles/mercedes-classe-g.png',
     desc: 'The icon of luxury all-terrain motoring, the G-Class pairs a commanding presence with an interior worthy of a prestige saloon. The preferred choice for premium events, weddings and clients who wish to make a grand entrance.',
     eq: ['All-wheel drive', 'designo Nappa leather', 'Burmester® surround', '64-colour ambient lighting', 'Iconic presence'],
@@ -196,7 +196,7 @@ export default function OurFleetEN() {
                   ['Mercedes S-Class', '€220'],
                   ['Mercedes S-Class Maybach', '€250'],
                   ['Range Rover Evoque', '€250'],
-                  ['Mercedes G-Class', '€250'],
+                  ['Mercedes G-Class', '€500'],
                   ['Mercedes Sprinter VIP', '€450'],
                 ].map(([v, p]) => (
                   <tr key={v} className="border-b border-stone-100">

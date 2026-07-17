@@ -213,7 +213,7 @@ export default function NotreFlottePage() {
                   </tr>
                   <tr className="border-b border-warm-200">
                     <td className="py-3.5 pr-4 text-gray-800">Mercedes Classe G</td>
-                    <td className="py-3.5 text-right font-medium" style={{ color: '#8a7340' }}>250 €</td>
+                    <td className="py-3.5 text-right font-medium" style={{ color: '#8a7340' }}>500 €</td>
                   </tr>
                   <tr className="border-b border-warm-200">
                     <td className="py-3.5 pr-4 text-gray-800">Mercedes Sprinter VIP</td>

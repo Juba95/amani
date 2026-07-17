@@ -49,7 +49,7 @@ export const VEHICLES: Vehicle[] = [
     image: '/vehicles/mercedes-classe-g.png',
     pax: 4, bags: 3,
     basePrice: 250,
-    airportPrice: 250,     // Forfait aéroport Classe G
+    airportPrice: 500,     // Forfait aéroport Classe G
     pricePerKm: 5.00,
   },
   {
