@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import SEOLayoutEN from '@/components/SEOLayoutEN';
 import { content, contentMetadata } from '@/lib/get-content';
 
@@ -13,13 +14,17 @@ export const metadata: Metadata = contentMetadata(SLUG, {
   },
 });
 
+// href → page détail existante (contenu en français pour l'instant, comme
+// sur le hub FR ; les cartes sans page dédiée restent non cliquables)
 const events = [
-  { name: 'Paris Fashion Week', period: 'February & September', desc: 'Shuttles between fashion houses, Triangle d\'Or hotels and Marais showrooms.' },
-  { name: 'Paris Air Show', period: 'June (odd years)', desc: 'Transfers to Le Bourget, FBO welcome, government and industry delegation convoys.' },
-  { name: 'Roland Garros', period: 'May — June', desc: 'Porte d\'Auteuil transfers, VIP hospitality access, corporate lounge shuttles.' },
-  { name: 'Cannes Film Festival', period: 'May', desc: 'Nice–Cannes transfers, Croisette access, Red Carpet drop-off, yacht port shuttles.' },
-  { name: 'Maison & Objet', period: 'January & September', desc: 'Villepinte shuttles and CDG transfers for international buyers and exhibitors.' },
-  { name: 'Salon Nautic', period: 'December', desc: 'Porte de Versailles — transfers and as-directed hire for trade professionals.' },
+  { name: 'Paris Fashion Week', period: 'February & September', desc: 'Shuttles between fashion houses, Triangle d\'Or hotels and Marais showrooms.', href: '/evenements/paris-fashion-week' },
+  { name: 'Paris Air Show', period: 'June (odd years)', desc: 'Transfers to Le Bourget, FBO welcome, government and industry delegation convoys.', href: '/evenements/paris-air-show' },
+  { name: 'Roland Garros', period: 'May — June', desc: 'Porte d\'Auteuil transfers, VIP hospitality access, corporate lounge shuttles.', href: '/evenements/roland-garros' },
+  { name: 'Cannes Film Festival', period: 'May', desc: 'Nice–Cannes transfers, Croisette access, Red Carpet drop-off, yacht port shuttles.', href: '/evenements/festival-de-cannes' },
+  { name: 'Monaco Grand Prix', period: 'May', desc: 'Nice–Monaco transfers, paddock and yacht hospitality access, circuit road closures handled.', href: '/evenements/grand-prix-monaco' },
+  { name: 'Deauville Racecourse', period: 'August', desc: 'Paris–Deauville transfers for race days, polo and the yearling sales.', href: '/evenements/hippodrome-deauville' },
+  { name: 'Maison & Objet', period: 'January & September', desc: 'Villepinte shuttles and CDG transfers for international buyers and exhibitors.', href: '/evenements/salons-professionnels' },
+  { name: 'Salon Nautic', period: 'December', desc: 'Porte de Versailles — transfers and as-directed hire for trade professionals.', href: '/evenements/salons-professionnels' },
 ];
 
 export default function EventsEN() {
@@ -48,6 +53,11 @@ export default function EventsEN() {
                 <p className="sf text-xs text-stone-400 uppercase tracking-wider">{e.period}</p>
                 <p className="heading text-xl mt-1">{e.name}</p>
                 <p className="sf text-stone-500 text-sm mt-3 leading-relaxed">{e.desc}</p>
+                {e.href && (
+                  <Link href={e.href} className="sf text-xs mt-4 inline-block" style={{ color: '#8a7340' }}>
+                    Learn more →
+                  </Link>
+                )}
               </div>
             ))}
           </div>

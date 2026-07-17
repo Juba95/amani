@@ -46,9 +46,9 @@ export default function EvenementsPage() {
               { titre: c('item_3_title', 'Roland Garros'), periode: c('item_3_text', 'Mai — Juin'), slug: 'roland-garros', desc: c('item_3_desc', "Transferts Porte d'Auteuil, loges VIP, hospitalités corporates. Flotte renforcée en phase finale.") },
               { titre: c('item_4_title', 'Festival de Cannes'), periode: c('item_4_text', 'Mai'), slug: 'festival-de-cannes', desc: c('item_4_desc', "Transferts Nice–Cannes, accès Croisette, Red Carpet. Service disponible sur la semaine complète du festival.") },
               { titre: c('item_5_title', 'Salon du Bourget (SIAE)'), periode: c('item_5_text', 'Juin (années impaires)'), slug: 'paris-air-show', desc: c('item_5_desc', "En parallèle du show, navettes entre Le Bourget et les hôtels parisiens pour les exposants.") },
-              { titre: c('item_6_title', 'Maison & Objet'), periode: c('item_6_text', 'Janvier & Septembre'), slug: null, desc: c('item_6_desc', "Navettes Villepinte et transferts depuis CDG pour les acheteurs et exposants internationaux.") },
-              { titre: c('item_7_title', 'Salon Nautic'), periode: c('item_7_text', 'Décembre'), slug: null, desc: c('item_7_desc', "Porte de Versailles — transferts et mises à disposition pour les professionnels du nautisme.") },
-              { titre: c('item_8_title', 'Première Vision'), periode: c('item_8_text', 'Février & Septembre'), slug: null, desc: c('item_8_desc', "Le salon international du tissu. Navettes Villepinte et transferts vers les hôtels du 8ème et 16ème.") },
+              { titre: c('item_6_title', 'Maison & Objet'), periode: c('item_6_text', 'Janvier & Septembre'), slug: 'salons-professionnels', desc: c('item_6_desc', "Navettes Villepinte et transferts depuis CDG pour les acheteurs et exposants internationaux.") },
+              { titre: c('item_7_title', 'Salon Nautic'), periode: c('item_7_text', 'Décembre'), slug: 'salons-professionnels', desc: c('item_7_desc', "Porte de Versailles — transferts et mises à disposition pour les professionnels du nautisme.") },
+              { titre: c('item_8_title', 'Première Vision'), periode: c('item_8_text', 'Février & Septembre'), slug: 'salons-professionnels', desc: c('item_8_desc', "Le salon international du tissu. Navettes Villepinte et transferts vers les hôtels du 8ème et 16ème.") },
             ].map((e) => (
               <div key={e.titre} className="card">
                 <p className="sf text-xs text-stone-400 uppercase tracking-wider">{e.periode}</p>
