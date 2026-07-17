@@ -6,7 +6,7 @@
  */
 import Image from 'next/image';
 import Link from 'next/link';
-import { getCityExperienceDetails, getExperienceImage } from '@/lib/experience-details';
+import { getCityExperienceDetails, getExperienceImage, getImageCredit } from '@/lib/experience-details';
 import {
   ALL_DESTINATIONS,
   getNearbyDestinations,
@@ -90,6 +90,7 @@ export function DestinationDetail({ d, locale }: { d: Destination; locale: DestL
   const expDetails = getCityExperienceDetails(d.slug);
   // Image héros de la ville (null tant que non générée)
   const cityImage = getExperienceImage(d.slug);
+  const cityImageCredit = getImageCredit(d.slug, cityImage);
   const nearby = getNearbyDestinations(d);
 
   const faqJsonLd = {
@@ -124,6 +125,11 @@ export function DestinationDetail({ d, locale }: { d: Destination; locale: DestL
                 sizes="(max-width: 1024px) 100vw, 896px"
                 className="object-cover"
               />
+              {cityImageCredit && (
+                <span className="absolute bottom-1.5 right-2 font-sans text-[0.55rem] text-white/70 bg-black/30 px-1.5 py-0.5 rounded-sm">
+                  {cityImageCredit}
+                </span>
+              )}
             </div>
           )}
           <div className="mt-6 space-y-5">

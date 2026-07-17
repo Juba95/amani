@@ -59,20 +59,42 @@ export function getExperienceDetail(citySlug: string, expSlug: string): Experien
 }
 
 const IMAGES_DIR = path.join(process.cwd(), 'public', 'images', 'destinations');
+const CREDITS_FILE = path.join(process.cwd(), 'content', 'image-credits.json');
 
 /**
- * Image héros d'une expérience : image dédiée <ville>--<exp>.webp si générée,
- * sinon image de la ville <ville>.webp, sinon null (pages sans image = OK).
- * Générées par scripts/generate-experience-images.mjs (1536×1024).
+ * Image héros d'une expérience, par ordre de priorité :
+ *  1. <ville>--<exp>.webp — image IA dédiée à l'expérience
+ *  2. <ville>.jpg         — photo réelle Wikimedia (fetch-wikimedia-images.mjs)
+ *  3. <ville>.webp        — image IA de la ville (generate-experience-images.mjs)
+ * null si rien (pages valides sans image — couverture progressive).
  */
 export function getExperienceImage(citySlug: string, expSlug?: string): string | null {
   if (expSlug && fs.existsSync(path.join(IMAGES_DIR, `${citySlug}--${expSlug}.webp`))) {
     return `/images/destinations/${citySlug}--${expSlug}.webp`;
   }
+  if (fs.existsSync(path.join(IMAGES_DIR, `${citySlug}.jpg`))) {
+    return `/images/destinations/${citySlug}.jpg`;
+  }
   if (fs.existsSync(path.join(IMAGES_DIR, `${citySlug}.webp`))) {
     return `/images/destinations/${citySlug}.webp`;
   }
   return null;
+}
+
+/**
+ * Crédit licence d'une photo Wikimedia (obligatoire pour CC BY / BY-SA).
+ * Retourne une ligne prête à afficher, ou null pour les images IA/absentes.
+ */
+export function getImageCredit(citySlug: string, imageSrc: string | null): string | null {
+  if (!imageSrc || !imageSrc.endsWith('.jpg')) return null;
+  try {
+    const credits = JSON.parse(fs.readFileSync(CREDITS_FILE, 'utf-8'));
+    const c = credits[citySlug];
+    if (!c) return null;
+    return [c.artist, c.license, 'Wikimedia Commons'].filter(Boolean).join(' · ');
+  } catch {
+    return null;
+  }
 }
 
 /** Toutes les paires (ville, expérience) générées — pour generateStaticParams/sitemap. */

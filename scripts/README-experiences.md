@@ -111,3 +111,21 @@ MODEL=gpt-5-mini OPENAI_API_KEY=sk-... npm run exp:generate
 Conseil : générez 3 villes avec deux modèles différents (`LIMIT=3` puis
 `rm content/experience-details/<ville>.json` entre les essais), comparez,
 puis lancez tout avec le gagnant.
+
+## Alternative gratuite : vraies photos Wikimedia
+
+```bash
+# Toutes les villes sans photo réelle :
+node scripts/fetch-wikimedia-images.mjs
+# Villes précises (remplace l'image IA à l'affichage) :
+ONLY=paris,rome,barcelona node scripts/fetch-wikimedia-images.mjs
+```
+
+Gratuit, sans clé API. Récupère l'image principale de l'article Wikipédia
+(FR puis EN) en 1600 px + le crédit licence depuis Commons. Le site affiche
+automatiquement l'attribution sous l'image (obligation CC BY-SA).
+
+Priorité d'affichage : image IA dédiée à l'expérience > photo réelle (.jpg)
+> image IA de la ville (.webp). Une photo Wikimedia remplace donc l'image IA
+sans supprimer son fichier — `rm public/images/destinations/<ville>.jpg`
+pour revenir à l'IA.

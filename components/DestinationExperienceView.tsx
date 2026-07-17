@@ -6,7 +6,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import type { Destination } from '@/lib/destinations';
-import { getExperienceImage, type ExperienceDetail } from '@/lib/experience-details';
+import { getExperienceImage, getImageCredit, type ExperienceDetail } from '@/lib/experience-details';
 
 type L = 'fr' | 'en';
 
@@ -65,6 +65,7 @@ export default function DestinationExperienceView({
   const cityName = d.name[locale];
   // Image héros (générée par script) — la page reste valide sans image
   const heroImage = getExperienceImage(d.slug, exp.slug);
+  const heroImageCredit = getImageCredit(d.slug, heroImage);
 
   return (
     <>
@@ -92,6 +93,11 @@ export default function DestinationExperienceView({
                 sizes="(max-width: 1024px) 100vw, 896px"
                 className="object-cover"
               />
+              {heroImageCredit && (
+                <span className="absolute bottom-1.5 right-2 font-sans text-[0.55rem] text-white/70 bg-black/30 px-1.5 py-0.5 rounded-sm">
+                  {heroImageCredit}
+                </span>
+              )}
             </div>
           )}
 
