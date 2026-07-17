@@ -1,0 +1,275 @@
+{
+ "city": "porto",
+ "experiences": [
+  {
+   "slug": "douro-valley-and-tastings",
+   "index": 0,
+   "title": {
+    "fr": "Vallée du Douro et dégustations",
+    "en": "Douro Valley and tastings"
+   },
+   "intro": {
+    "fr": [
+     "À 110 km de Porto via l’A4 puis l’IP4, les coteaux schisteux du Douro forment des amphithéâtres de vignes entre 50 et 600 mètres d’altitude. Depuis Peso da Régua jusqu’à Pinhão, les terrasses de la viticulture héroïque inscrites par l’UNESCO depuis 2001 déroulent leurs murets de xisto. Les quintas historiques — comme Quinta do Seixo (Sandeman) face au méandre, ou Quinta do Bomfim (Symington) au bord de la voie ferrée du Douro de 1887 — racontent portos, vins DOC Douro et cépages autochtones (Touriga Nacional, Tinta Roriz). La N-222, route panoramique primée, serpente 27 km entre virages et belvédères.",
+     "Le déroulé est simple et confortable : prise en charge à votre hôtel à Porto, véhicule Mercedes à disposition, horaires souples, et pendant que l’on visite et déguste, votre chauffeur privé à Porto gère circulation, stationnement et réservations. Première quinta pour comprendre l’assemblage et les lagares, pause déjeuner sur une terrasse dominant le fleuve, puis deuxième domaine axé vins tranquilles. Un détour par le miradouro de Casal de Loivos ajoute la lecture du paysage en strates. Retour l’après-midi par la N-222 afin de saisir la géométrie des vignes au soleil déclinant."
+    ],
+    "en": [
+     "About 110 km east of Porto via the A4 and IP4, the Douro’s schist slopes rise in stepped amphitheatres from 50 to 600 meters. Between Peso da Régua and Pinhão, the UNESCO-listed terraces (since 2001) reveal dry-stone walls, historic quintas, and a viticultural toolkit built for steep terrain. Names matter here: Quinta do Seixo (Sandeman) perched over a tight bend, or trackside Quinta do Bomfim (Symington) beside the 1887 Douro railway, where port and DOC Douro wines showcase native grapes like Touriga Nacional and Tinta Roriz. The award-winning N-222 threads 27 scenic kilometers of bends and viewpoints.",
+     "Your day is designed for ease: hotel pickup in Porto, Mercedes on standby, flexible timing, and while you tour and taste, the driver handles traffic, parking, and bookings. Start with a quinta focused on foot-trodden lagares and blending, break for lunch overlooking the river, then a second estate highlighting still wines. A brief stop at the Miradouro de Casal de Loivos helps you read the layered landscape. The late-afternoon return along the N-222 frames the vineyards in slanting light."
+    ]
+   },
+   "steps": [
+    {
+     "fr": "08h30 — Départ de votre hôtel à Porto, cap sur Peso da Régua par l’A4/IP4 (1h15).",
+     "en": "08:30 — Leave your Porto hotel, drive to Peso da Régua via A4/IP4 (about 1h15)."
+    },
+    {
+     "fr": "10h00 — Visite et dégustation à Quinta do Seixo ou Quinta do Bomfim (1h15).",
+     "en": "10:00 — Tour and tasting at Quinta do Seixo or Quinta do Bomfim (1h15)."
+    },
+    {
+     "fr": "12h30 — Déjeuner panoramique à Pinhão, terrasse sur le fleuve, puis arrêt au miradouro de Casal de Loivos (30 min).",
+     "en": "12:30 — Scenic lunch in Pinhão by the river, then stop at Miradouro de Casal de Loivos (30 min)."
+    },
+    {
+     "fr": "15h00 — Deuxième quinta axée vins tranquilles, puis retour par la N-222 vers Porto (arrivée vers 18h30).",
+     "en": "15:00 — Second estate focused on still wines, then return via the N-222 to Porto (ETA ~18:30)."
+    }
+   ],
+   "included": {
+    "fr": [
+     "Chauffeur dédié francophone",
+     "Mercedes classe E ou V",
+     "Prise en charge hôtel à Porto",
+     "Réservations des quintas"
+    ],
+    "en": [
+     "Dedicated French-speaking driver",
+     "Mercedes E or V-Class",
+     "Hotel pickup in Porto",
+     "Quinta reservations"
+    ]
+   },
+   "tip": {
+    "fr": "Entre mai et octobre, réservez le créneau de 10h pour la première quinta : les lagares sont plus calmes et la lumière éclaire les coteaux côté sud sans contre-jour depuis Pinhão.",
+    "en": "From May to October, book the 10:00 slot for your first quinta: lagares are quieter and the south-facing slopes are perfectly lit from Pinhão, avoiding harsh backlight."
+   }
+  },
+  {
+   "slug": "vila-nova-de-gaia-cellars",
+   "index": 1,
+   "title": {
+    "fr": "Caves de Vila Nova de Gaia",
+    "en": "Vila Nova de Gaia cellars"
+   },
+   "intro": {
+    "fr": [
+     "9 maisons historiques se font face sur la rive sud du Douro, à 1,2 km du pont Dom-Luís I : Taylor’s (fondée en 1692) sur les hauteurs, Graham’s et Sandeman près des quais, chacun avec ses lodges tempérés où vieillissent les colheitas. La vue embrasse la Ribeira et les azulejos de la gare de São Bento, à 10 minutes en voiture. On parle millésimes, levures et bois de chêne, on compare des tawny de 10 à 30 ans, et l’on comprend pourquoi Gaia, plus fraîche que Porto l’été grâce aux brises atlantiques, fut choisie dès le XVIIIe siècle pour l’affinage.",
+     "Pendant quatre heures, votre véhicule Mercedes reste à disposition : prise en charge à l’hôtel dans le centre de Porto, traversée rapide du pont vers Gaia, arrêts au plus près des portes des chais. Vous dégustez, on conduit ; votre chauffeur ajuste l’ordre des visites selon l’affluence, réserve un créneau si besoin et gère le temps entre caves et belvédères. À Porto avec un chauffeur privé, la logistique s’efface : courtes liaisons de 5 à 12 minutes, attentes incluses, et option d’embarquer pour la croisière des six ponts sans se soucier du stationnement."
+    ],
+    "en": [
+     "Nine historic lodges line the south bank of the Douro, just 1.2 km from Dom Luís I Bridge: Taylor’s (1692) up on the hill, Graham’s and Sandeman by the river, each keeping cellars at steady temperature where colheitas mature for decades. The panorama takes in Ribeira and São Bento’s azulejos, a 10‑minute drive away. Expect real talk—yeasts, oak, and vintages—plus side‑by‑side tastings of 10 to 30‑year tawnies, and a clear sense of why cooler, breezier Gaia became the ageing hub as early as the 18th century.",
+     "Your Mercedes stays at your disposal for four hours: hotel pickup in central Porto, a swift bridge crossing to Gaia, and drop‑offs right at each cellar door. You taste while we drive; your driver fine‑tunes the order to dodge crowds, lines up reservations when needed, and balances time between lodges and viewpoints. With a private driver in Porto, logistics disappear—short 5 to 12‑minute hops, waiting included—and you can add the Six Bridges cruise without worrying about parking."
+    ]
+   },
+   "steps": [
+    {
+     "fr": "09h00 — Prise en charge à votre hôtel à Porto et passage du pont Dom-Luís I vers Gaia.",
+     "en": "09:00 — Pickup at your Porto hotel and cross Dom Luís I Bridge to Gaia."
+    },
+    {
+     "fr": "09h15 — Dégustation commentée chez Sandeman, table avec vue sur la Ribeira (45 min).",
+     "en": "09:15 — Guided tasting at Sandeman with Ribeira views (45 min)."
+    },
+    {
+     "fr": "10h15 — Visite des chais de Taylor’s sur les hauteurs, puis tawny flight dans la sala de provas (60 min).",
+     "en": "10:15 — Tour Taylor’s hilltop cellars, then a tawny flight in the tasting room (60 min)."
+    },
+    {
+     "fr": "11h45 — Graham’s: vieux colheitas, belvédère sur le Douro, et, en option, départ croisière des six ponts (50–60 min).",
+     "en": "11:45 — Graham’s for aged colheitas and Douro viewpoint, with optional Six Bridges cruise (50–60 min)."
+    }
+   ],
+   "included": {
+    "fr": [
+     "Chauffeur dédié Amani",
+     "Mercedes classe E ou V",
+     "Prise en charge hôtel",
+     "Attente entre visites"
+    ],
+    "en": [
+     "Dedicated Amani driver",
+     "Mercedes E- or V-Class",
+     "Hotel pickup",
+     "Waiting time between stops"
+    ]
+   },
+   "tip": {
+    "fr": "Pour éviter les groupes, réservez Taylor’s à la 1re heure d’ouverture en semaine, puis Sandeman à 10h15 ; demandez une table en terrasse chez Graham’s pour aligner la dégustation sur le passage d’un rabelo vers 12h.",
+    "en": "To dodge groups, book Taylor’s at weekday opening time, then Sandeman for 10:15; at Graham’s, ask for a terrace table to catch a rabelo passing around noon."
+   }
+  },
+  {
+   "slug": "braga-and-guimaraes",
+   "index": 2,
+   "title": {
+    "fr": "Braga et Guimarães",
+    "en": "Braga and Guimarães"
+   },
+   "intro": {
+    "fr": [
+     "En 1882, l’ascenseur hydraulique du Bom Jesus do Monte – encore en service – a relié pour la première fois la vallée de Braga au sanctuaire baroque, à 566 marches au-dessus de la ville. On y croise les chapelles des Mystères et un parterre de fontaines allégoriques du XVIIIe siècle, avant d’atteindre la basilique de Carlos Amarante. À 25 km plus à l’ouest, Guimarães conserve les murs du château où naquit Afonso Henriques au XIIe siècle et le Palais des Ducs de Bragance aux cheminées coniques. Deux cités, deux récits fondateurs, reliés par une campagne de vignes en treille et de granit.",
+     "Depuis Porto, votre chauffeur privé dans la région du Minho vous prend à l’hôtel et met une Mercedes à disposition pour la journée : départ souple vers 9h, 55 km par l’A3 jusqu’à Braga, puis 25 minutes de route vers Guimarães. Pendant qu’il gère la conduite et le stationnement, vous visitez le sanctuaire, déjeunez dans le centre médiéval, goûtez un vinho verde et faites halte au château. Vous choisissez le rythme ; lui attend, réserve si besoin, et vous ramène à Porto en fin d’après-midi sans contretemps."
+    ],
+    "en": [
+     "Back in 1882, the Bom Jesus do Monte funicular—Portugal’s oldest water‑balanced lift still operating—began shuttling pilgrims up to the baroque sanctuary and its 566-step staircase. Along the climb are 18th‑century chapels and allegorical fountains; at the top, Carlos Amarante’s basilica crowns the hill. Twenty-five kilometers away lies Guimarães, with the castle linked to Afonso Henriques’ 12th‑century birth and the Ducal Palace with its distinctive conical chimneys. Two founding chapters of the nation, stitched together by vine‑lined lanes and granite.",
+     "Setting off from Porto, your dedicated driver in the Minho collects you at the hotel with a Mercedes and keeps the car at your disposal: a flexible 9:00 start, 55 km on the A3 to Braga, then a 25‑minute hop to Guimarães. While they handle traffic and parking, you explore the sanctuary, sit down to lunch in the medieval center, taste a crisp vinho verde, and stop at the castle. You set the pace; the driver waits, arranges bookings if needed, and brings you back to Porto by late afternoon without fuss."
+    ]
+   },
+   "steps": [
+    {
+     "fr": "09h00 — Prise en charge à votre hôtel à Porto et route A3 vers Braga (environ 50–60 minutes).",
+     "en": "09:00 — Pick-up at your Porto hotel and drive the A3 to Braga (about 50–60 minutes)."
+    },
+    {
+     "fr": "10h15 — Découverte du sanctuaire du Bom Jesus do Monte et de son funiculaire hydraulique (visite 1h15).",
+     "en": "10:15 — Explore Bom Jesus do Monte sanctuary and its hydraulic funicular (about 1h15)."
+    },
+    {
+     "fr": "12h15 — Trajet vers Guimarães (25 minutes) et déjeuner sur la Largo da Oliveira dans le centre médiéval.",
+     "en": "12:15 — Short drive to Guimarães (25 minutes) and lunch on Largo da Oliveira in the medieval core."
+    },
+    {
+     "fr": "14h30 — Visite du Château de Guimarães et du Palais des Ducs de Bragance, puis retour à Porto vers 17h00.",
+     "en": "14:30 — Visit Guimarães Castle and the Ducal Palace, then return to Porto around 17:00."
+    }
+   ],
+   "included": {
+    "fr": [
+     "Chauffeur dédié journée",
+     "Mercedes récente et eau",
+     "Prise en charge à l’hôtel",
+     "Attente et stationnement inclus"
+    ],
+    "en": [
+     "Dedicated driver all day",
+     "Late‑model Mercedes, water",
+     "Hotel pick‑up included",
+     "Waiting time and parking"
+    ]
+   },
+   "tip": {
+    "fr": "Pour monter l’escalier de Bom Jesus au calme, arrivez avant 10h en semaine et redescendez par le funiculaire : le guichet n’ouvre pas avant, réglez en espèces à la cabine supérieure.",
+    "en": "For a peaceful climb at Bom Jesus, arrive before 10:00 on weekdays and ride the funicular down; the ticket booth opens later, so carry cash to pay at the upper cabin."
+   }
+  },
+  {
+   "slug": "historic-porto-by-private-car",
+   "index": 3,
+   "title": {
+    "fr": "Porto historique en voiture privée",
+    "en": "Historic Porto by private car"
+   },
+   "intro": {
+    "fr": [
+     "Reflets dorés sur les azulejos de São Bento, qui crépitent de conversations et de freinages discrets sur le marbre ciré: Porto révèle ses textures avant même la lumière du Douro. À deux minutes à pied, la Livraria Lello, ouverte en 1906, garde ses boiseries sculptées et un escalier rouge bordeaux dont les marches grincent sous les pas du matin. On traverse ensuite la Praça da Liberdade vers la Torre dos Clérigos, 76 mètres, signée Nicolau Nasoni. Depuis le tablier supérieur du pont Dom‑Luís I, 1886, la brise venue de l’Atlantique pique les joues, et l’estuaire semble déjà pousser la ville vers la mer.",
+     "Vous êtes pris en charge à votre hôtel dans la Baixa, véhicule Mercedes à disposition et itinéraire ajusté à votre rythme: on visite, il conduit, vous dégustez. À Porto avec un chauffeur privé, les liaisons deviennent des parenthèses: 8 minutes de São Bento à Clérigos, 12 minutes jusqu’à Foz par l’Avenida da Boavista, puis retour par la Ribeira si le soleil baisse. Le temps d’un café chez Guarany ou d’un porto blanc sec dans une cave de Vila Nova de Gaia, la voiture attend à la porte. Les arrêts se modulent selon la foule et la marée, et la fin se cale sur votre soirée."
+    ],
+    "en": [
+     "Golden flashes skim the azulejos in São Bento while soft brake squeals ripple over polished stone; Porto shows its textures before the Douro shows its light. Two minutes away, Livraria Lello—1906—keeps its carved wood and that wine‑red staircase that creaks at opening time. Cross Praça da Liberdade to Nasoni’s 76‑meter Clérigos tower, then feel the Atlantic breath on the upper deck of the 1886 Dom Luís I bridge as the estuary nudges the city toward open water.",
+     "Collected at your Baixa hotel with a Mercedes on standby, the route flexes to your pace: you explore, your driver handles the links, tastings slot neatly in. With a private chauffeur in Porto, transfers turn into interludes—8 minutes São Bento to Clérigos, 12 down Avenida da Boavista to Foz, then back via Ribeira if the light softens. Pause for coffee at Guarany or a dry white port in Gaia while the car waits at the door. Stops expand or shrink with crowds and tide, and we time the return to your evening plans."
+    ]
+   },
+   "steps": [
+    {
+     "fr": "09h00 — Prise en charge à votre hôtel dans la Baixa et arrêt guidé à la gare de São Bento (20 min).",
+     "en": "09:00 — Pickup at your Baixa hotel and guided stop at São Bento Station (20 min)."
+    },
+    {
+     "fr": "09h30 — Passage par la Livraria Lello et la Torre dos Clérigos, montée optionnelle au clocher (30–40 min).",
+     "en": "09:30 — Swing by Livraria Lello and Clérigos Tower, optional climb to the belfry (30–40 min)."
+    },
+    {
+     "fr": "10h30 — Traversée du pont Dom‑Luís I vers Vila Nova de Gaia pour un verre de porto blanc sec (30 min).",
+     "en": "10:30 — Cross Dom Luís I Bridge to Vila Nova de Gaia for a dry white port tasting (30 min)."
+    },
+    {
+     "fr": "11h30 — Route panoramique par l’Avenida da Boavista jusqu’à Foz do Douro et arrêt photo au coucher du soleil si départ l’après‑midi.",
+     "en": "11:30 — Scenic drive along Avenida da Boavista to Foz do Douro, with a sunset photo stop if starting in the afternoon."
+    }
+   ],
+   "included": {
+    "fr": [
+     "Chauffeur dédié Amani",
+     "Mercedes à disposition",
+     "Prise en charge hôtel",
+     "Attente à chaque arrêt"
+    ],
+    "en": [
+     "Dedicated Amani driver",
+     "Mercedes on standby",
+     "Hotel pickup",
+     "Waiting at each stop"
+    ]
+   },
+   "tip": {
+    "fr": "Réservez la montée à la Torre dos Clérigos pour l’ouverture (9h00) ou 1 h avant le coucher du soleil: moins de file et une lumière rasante parfaite sur la Ribeira.",
+    "en": "Book the Clérigos Tower climb for opening time (9:00) or about an hour before sunset—shorter lines and raking light over Ribeira."
+   }
+  },
+  {
+   "slug": "evening-in-foz",
+   "index": 4,
+   "title": {
+    "fr": "Soirée à la Foz",
+    "en": "Evening in Foz"
+   },
+   "intro": {
+    "fr": [
+     "En 1870, le tramway à chevaux reliait déjà Porto à Foz do Douro, signe que la bourgeoisie cherchait l’air de l’Atlantique après la chaleur des ruelles. Ce front de mer, ourlé de fortins du XVIIe siècle comme São João da Foz, allonge ses promenades jusqu’au phare de Felgueiras où l’océan heurte la jetée. À 5 km du centre, on dîne ici des percebes ou d’une caldeirada en regardant l’embouchure se teinter d’orange, puis l’on file, fleuve amont, vers la Ribeira dont les quais se mirent dans l’eau, piles du pont Dom-Luís I comme des cordes tendues.",
+     "Votre chauffeur privé à Porto passe vous prendre à l’hôtel, attend entre les plats, puis vous conduit à votre rythme, sans stress de stationnement ni de taxi à trouver. Véhicule à disposition pour la soirée : Foz pour le coucher de soleil, une halte photo à Pergola da Foz, un digestif côté Farolim, et enfin la rive sud à Vila Nova de Gaia, 12 minutes par l’A1 depuis le Jardim do Passeio Alegre. Vous réservez, vous dégustez, vous visitez ; il gère l’itinéraire, la circulation et le retour au chaud."
+    ],
+    "en": [
+     "Back in 1870, horse-drawn trams already ran from central Porto to Foz do Douro, a clue that well-to-do families fled toward the Atlantic breeze after hot days in town. The seafront still shows its history: 17th‑century São João da Foz fort, the Felgueiras lighthouse taking the brunt of Atlantic swells, and a promenade just 5 km from the center. Seafood here is the point—percebes or a caldeirada—while the Douro mouth turns copper at dusk before you cruise upriver to Ribeira, its quay lights threading beneath Dom Luís I.",
+     "Your private driver in Porto collects you at the hotel, waits discreetly between courses, and keeps the car ready so there’s no parking hassle or scramble for cabs. The vehicle is at your disposal all evening: sunset in Foz, a quick photo stop at the Pergola da Foz, a post‑dinner drink by the Farolim, then over to Vila Nova de Gaia—about 12 minutes via the A1 from Jardim do Passeio Alegre. You book, taste, and wander; the driver handles routing, traffic, and a warm ride back."
+    ]
+   },
+   "steps": [
+    {
+     "fr": "19h00 — Prise en charge à votre hôtel dans le centre, cap sur Foz do Douro (15–20 min).",
+     "en": "7:00 pm — Pick-up at your hotel downtown and drive to Foz do Douro (15–20 min)."
+    },
+    {
+     "fr": "19h30 — Promenade le long de la Pergola da Foz et du phare de Felgueiras, photos au coucher du soleil (30 min).",
+     "en": "7:30 pm — Stroll by the Pergola da Foz and Felgueiras lighthouse for sunset photos (30 min)."
+    },
+    {
+     "fr": "20h15 — Dîner fruits de mer à Foz, par exemple chez Cafeína ou Praia da Luz; chauffeur en attente (1 h 45).",
+     "en": "8:15 pm — Seafood dinner in Foz, e.g., at Cafeína or Praia da Luz; driver on standby (1 h 45)."
+    },
+    {
+     "fr": "22h15 — Trajet panoramique vers Ribeira puis Gaia pour un digestif sur les quais, retour à l’hôtel vers 23h15.",
+     "en": "10:15 pm — Scenic drive to Ribeira then Gaia for a nightcap on the quays; hotel drop-off around 11:15 pm."
+    }
+   ],
+   "included": {
+    "fr": [
+     "Chauffeur dédié soirée",
+     "Mercedes classe E ou V",
+     "Prise en charge hôtel",
+     "Attente entre les plats"
+    ],
+    "en": [
+     "Dedicated evening driver",
+     "Mercedes E or V-Class",
+     "Hotel pick-up",
+     "Waiting between courses"
+    ]
+   },
+   "tip": {
+    "fr": "Pour une table avec vue dégagée sur le couchant, réservez côté fenêtre au moins 48 h avant chez Praia da Luz et demandez l’aile sud pour éviter l’éblouissement du phare.",
+    "en": "For an unobstructed sunset view, book a window table at Praia da Luz at least 48 hours ahead and request the south wing to avoid glare from the lighthouse."
+   }
+  }
+ ]
+}

@@ -1,0 +1,275 @@
+{
+ "city": "bologna",
+ "experiences": [
+  {
+   "slug": "motor-valley-ferrari-and-lamborghini",
+   "index": 0,
+   "title": {
+    "fr": "Motor Valley : Ferrari et Lamborghini",
+    "en": "Motor Valley: Ferrari and Lamborghini"
+   },
+   "intro": {
+    "fr": [
+     "Entre la quiétude des portici de Bologne et le grondement des V12 d’Émilie-Romagne, la journée bascule vite. Maranello n’est qu’à 45 km, mais l’histoire y roule vite: la piste d’essai de Fiorano, l’usine dessinée par Jean Nouvel, le Museo Enzo Ferrari à Modène avec son toit jaune rappelant le capot d’une 250 GTO. À 32 km de là, Sant’Agata Bolognese expose les premières 350 GT et l’Aventador assemblée à la main. Entre ces pôles, la Via Emilia relie ateliers, circuits privés et trattorie fréquentées par les mécanos depuis les années 1960.",
+     "Le déroulé est simple: prise en charge à votre hôtel de Bologne par notre chauffeur privé à Bologne, Mercedes à disposition toute la journée. Vous visitez pendant qu’il conduit, il attend pendant que vous déjeunez au Cavallino face aux grilles de Maranello, il s’adapte si un essai routier se libère. Les billets musée, réservations d’usine et créneaux d’essai peuvent être pré-bloqués; le reste, souple: arrêt photo devant Fiorano, détour par l’atelier Pagani à San Cesario (15 min de plus), ou passage par Modène pour un espresso chez Menomoka entre deux expositions."
+    ],
+    "en": [
+     "Between Bologna’s shaded portici and the bark of V12s in Emilia-Romagna, the day shifts gear fast. Maranello sits just 28 miles away, where Fiorano test track hums, Jean Nouvel’s factory lines gleam, and Modena’s Enzo Ferrari Museum sports a yellow roof shaped after a 250 GTO bonnet. Thirty-two kilometers in the other direction, Sant’Agata Bolognese showcases early 350 GTs and hand-built Aventadors. Linking it all, the ancient Via Emilia threads workshops, private tracks, and worker-favorite trattorie since the 1960s.",
+     "Here’s how it runs: hotel pickup in Bologna, dedicated chauffeur and Mercedes at your disposal all day. You tour while he drives, and he waits while you lunch at Cavallino opposite the Maranello gates, adjusting plans if a driving slot opens. Museum tickets, factory access, and test drives can be pre-booked; the rest stays flexible—photo stops by Fiorano, a short hop to Pagani in San Cesario, or an espresso break in Modena at Menomoka between exhibits."
+    ]
+   },
+   "steps": [
+    {
+     "fr": "09h00 — Départ de votre hôtel à Bologne vers Maranello par l’Autostrada A1 (environ 50 minutes).",
+     "en": "09:00 — Depart your Bologna hotel for Maranello via A1 (about 50 minutes)."
+    },
+    {
+     "fr": "10h00 — Museo Ferrari Maranello puis arrêt photo devant l’entrée de l’usine et les grilles de Fiorano (1h30).",
+     "en": "10:00 — Museo Ferrari Maranello, then photo stop by the factory gate and Fiorano fence (1h30)."
+    },
+    {
+     "fr": "12h30 — Déjeuner réservé au Ristorante Cavallino, face à l’usine historique (1h15).",
+     "en": "12:30 — Lunch at Ristorante Cavallino, opposite the historic factory (1h15)."
+    },
+    {
+     "fr": "14h15 — Route vers Sant’Agata Bolognese pour le Museo Automobili Lamborghini et, selon créneau, essai de conduite sur route locale; retour à Bologne vers 17h30.",
+     "en": "14:15 — Drive to Sant’Agata Bolognese for Museo Automobili Lamborghini and, if scheduled, a road test drive; return to Bologna around 17:30."
+    }
+   ],
+   "included": {
+    "fr": [
+     "Chauffeur dédié Mercedes",
+     "Prise en charge hôtel",
+     "Véhicule à disposition",
+     "Attente et flexibilité"
+    ],
+    "en": [
+     "Dedicated Mercedes chauffeur",
+     "Hotel pickup",
+     "Vehicle at disposal",
+     "Waiting time included"
+    ]
+   },
+   "tip": {
+    "fr": "Pour une visite d’usine Lamborghini en semaine, réservez 2 à 3 semaines avant et ciblez un créneau après 14h: les lignes tournent et l’accès est généralement moins chargé que le matin.",
+    "en": "For weekday Lamborghini factory tours, book 2–3 weeks ahead and aim for an after-2 pm slot: the lines are running and crowds are lighter than in the morning."
+   }
+  },
+  {
+   "slug": "gourmet-modena-balsamic-and-parmesan",
+   "index": 1,
+   "title": {
+    "fr": "Modène gourmande : balsamique et parmesan",
+    "en": "Gourmet Modena: balsamic and Parmesan"
+   },
+   "intro": {
+    "fr": [
+     "1598 mètres, c’est l’altitude du Monte Cimone qui ferme l’horizon de la plaine émilienne où Modène affine ses trésors depuis des siècles. Ici, l’Aceto Balsamico Tradizionale vieillit dans des batteries de fûts en chêne, cerisier et genévrier, parfois depuis plus de 25 ans, tandis que les meules de Parmigiano Reggiano tournent et sèchent dans des cathédrales de bois. Entre la Piazza Grande classée par l’UNESCO, la via Emilia tracée par les Romains et l’ombre du Cavallino de Maranello à 18 km, la gourmandise s’appuie sur des règles strictes : AOP, contrôles matinaux, gestes transmis en famille.",
+     "Confortablement installé, vous êtes pris en charge à l’hôtel de Bologne par votre chauffeur privé à Modène et dans sa campagne, en Mercedes, véhicule à disposition toute la journée. Il gère les temps de route — 50 minutes jusqu’à une acetaia familiale, 20 minutes vers la fromagerie — pendant que vous goûtez moûts en vieillissement, croûtes tièdes et cristaux de tyrosine. Souplesse totale : détour pour un espresso sur la Via Farini, arrêt photo sur la Piazza Roma, et réservation du déjeuner en centre-ville pendant qu’il vous dépose à l’entrée des ateliers."
+    ],
+    "en": [
+     "At 1,598 meters, Monte Cimone frames the Emilia plain where Modena has refined its staples for centuries. Traditional balsamic vinegar rests in tiered sets of oak, cherry, and juniper barrels—often 12, 25 years or more—while wheels of Parmigiano Reggiano rotate and dry in vast timber halls. Between the UNESCO-listed Piazza Grande, the Roman Via Emilia, and the Cavallino’s shadow in Maranello 18 km away, indulgence here follows strict rules: PDO status, dawn inspections, family-kept methods.",
+     "Collected from your Bologna hotel, you ride in a Mercedes with your dedicated driver, vehicle on standby all day, as the countryside unfolds. He handles the transfers—about 50 minutes to a family acetaia, then 20 minutes to the dairy—while you taste warm rinds, aging musts, and those crunchy tyrosine crystals. Plans stay flexible: a quick espresso on Via Farini, a photo stop in Piazza Roma, and lunch bookings in central Modena arranged while you step straight into each workshop."
+    ]
+   },
+   "steps": [
+    {
+     "fr": "08h00 — Départ de Bologne, route vers une acetaia traditionnelle près de Nonantola (50 min).",
+     "en": "08:00 — Depart Bologna for a traditional acetaia near Nonantola (50 min)."
+    },
+    {
+     "fr": "09h00 — Visite et dégustation guidée de balsamiques AOP, des moûts aux fûts centenaires (1h30).",
+     "en": "09:00 — Guided tasting of PDO balsamics, from cooked musts to century-old barrels (1h30)."
+    },
+    {
+     "fr": "11h00 — Fromagerie de Parmigiano Reggiano : salles de cuisson, saloirs et affinage, avec dégustation (1h15).",
+     "en": "11:00 — Parmigiano Reggiano dairy: cooking rooms, brining and aging halls, with tasting (1h15)."
+    },
+    {
+     "fr": "12h45 — Déjeuner réservé à Modène centre, puis promenade Piazza Grande et Via Emilia avant le retour (arrivée vers 16h).",
+     "en": "12:45 — Lunch booked in central Modena, stroll Piazza Grande and Via Emilia, then return to Bologna (arrive ~16:00)."
+    }
+   ],
+   "included": {
+    "fr": [
+     "Chauffeur dédié Mercedes",
+     "Prise en charge hôtel",
+     "Véhicule à disposition",
+     "Attente et retours souples"
+    ],
+    "en": [
+     "Dedicated Mercedes driver",
+     "Hotel pick-up",
+     "Vehicle at disposal",
+     "Flexible waiting and returns"
+    ]
+   },
+   "tip": {
+    "fr": "Pour voir le caillage et le moulage du Parmigiano, ciblez une fromagerie qui commence la cuisson vers 6h30 et arrivez avant 9h30 ; mars à mai offre souvent du lait plus riche après l’herbe nouvelle.",
+    "en": "To catch curdling and molding at the dairy, choose one that fires the vats around 6:30 am and arrive before 9:30; March–May often yields richer milk after the first fresh grass."
+   }
+  },
+  {
+   "slug": "parma-ham-and-correggio",
+   "index": 2,
+   "title": {
+    "fr": "Parme, jambon et Corrège",
+    "en": "Parma, ham and Correggio"
+   },
+   "intro": {
+    "fr": [
+     "Après l’agitation des arcades de Bologne, la route file vers l’ouest et, en moins d’une heure, Parme révèle ses tonalités ocres et ses accents de cour des Farnèse. Sous la coupole du Duomo (1526–1530), Corrège peint une Assomption vertigineuse qui a inspiré le baroque romain; à deux pas, le Teatro Farnese en bois (1618) s’élève comme un décor vivant. Ensuite, cap sur les collines de Langhirano, à 20–25 km, où souffle l’aria gentile qui sèche le prosciutto di Parma et que contrôle le Consorzio depuis 1963.",
+     "Pour la journée, votre chauffeur attend à l’hôtel à Bologne, Mercedes spacieuse à disposition et rythme souple : on visite, on goûte, il conduit. Parme avec chauffeur privé en Émilie-Romagne permet d’enchaîner la cathédrale, la Camera di San Paolo et le Palazzo della Pilotta sans souci de stationnement, puis de rejoindre un prosciuttificio pour comprendre le salage, l’étuvage et l’affinage. Selon l’heure, halte chez un affineur de Parmigiano Reggiano en plaine ou déjeuner typico dans une trattoria de Collecchio; retour prévu en fin d’après-midi, trafic aidant en 60–75 minutes."
+    ],
+    "en": [
+     "Leave Bologna’s bustle behind and, within an hour, Parma’s ducal palette comes into view—Farnese legacy intact. Inside the Cathedral, Correggio’s swirling Assumption (1526–1530) rewrote ceiling painting; next door, the wooden Teatro Farnese (1618) rises like a stage waiting for trumpets. Then the road bends into the Langhirano hills, 20–25 km south, where the famous aria gentile dries prosciutto under rules enforced by the Consorzio since 1963.",
+     "For the day, your driver meets you at the hotel in Bologna, a roomy Mercedes at the ready, timing flexible: you explore and taste while they handle the wheel. With a private chauffeur in Emilia-Romagna you can link the Cathedral, Camera di San Paolo, and Palazzo della Pilotta without parking stress, then roll on to a prosciuttificio to see salting, resting, and curing in sequence. Depending on timing, add a Parmigiano Reggiano dairy stop in the plain or a trattoria lunch in Collecchio; return late afternoon, usually 60–75 minutes back."
+    ]
+   },
+   "steps": [
+    {
+     "fr": "09 h 00 — Prise en charge à votre hôtel à Bologne et départ vers Parme par l’A1 (env. 95 km, 1 h).",
+     "en": "09:00 — Pick-up at your Bologna hotel and drive to Parma via A1 (about 95 km, 1 hr)."
+    },
+    {
+     "fr": "10 h 15 — Duomo de Parme et coupole du Corrège, puis Camera di San Paolo (1 h 15).",
+     "en": "10:15 — Parma Cathedral and Correggio’s dome, then Camera di San Paolo (1 hr 15)."
+    },
+    {
+     "fr": "11 h 45 — Palazzo della Pilotta et Teatro Farnese, visite concentrée (45 min).",
+     "en": "11:45 — Palazzo della Pilotta and Teatro Farnese, focused visit (45 min)."
+    },
+    {
+     "fr": "13 h 15 — Langhirano : déjeuner simple et prosciuttificio agréé, séchoirs et dégustation (2 h), retour vers 17 h.",
+     "en": "13:15 — Langhirano: casual lunch and certified prosciuttificio, cellars and tasting (2 hrs), back around 17:00."
+    }
+   ],
+   "included": {
+    "fr": [
+     "Chauffeur dédié francophone",
+     "Mercedes Classe E ou V",
+     "Prise en charge hôtel Bologne",
+     "Attente et transferts privés"
+    ],
+    "en": [
+     "Dedicated French-speaking driver",
+     "Mercedes E-Class or V-Class",
+     "Hotel pick-up Bologna",
+     "Waiting time and private transfers"
+    ]
+   },
+   "tip": {
+    "fr": "Pour voir les séchoirs au plus actif, privilégiez septembre à mars et arrivez avant 14 h ; réservez la visite du prosciuttificio 48 h à l’avance pour accéder aux salles d’affinage.",
+    "en": "For livelier drying rooms, go September to March and arrive before 2 pm; book the prosciuttificio visit 48 hours ahead to secure access to curing halls."
+   }
+  },
+  {
+   "slug": "ravenna-and-its-mosaics",
+   "index": 3,
+   "title": {
+    "fr": "Ravenne et ses mosaïques",
+    "en": "Ravenna and its mosaics"
+   },
+   "intro": {
+    "fr": [
+     "En 526, l’église San Vitale fut commencée sous l’évêque Ecclesius et consacrée en 547, quelques années après la reconquête de l’Italie par Justinien : ses panneaux de mosaïque impériale ont conservé les pourpres et les ors sans retouche majeure. À 1 h 20 de route de Bologne (80 km par l’A14), Ravenne aligne huit sites inscrits à l’UNESCO, du mausolée de Galla Placidia au Baptistère des Ariens. On y lit aussi une autre Italie : le tombeau de Dante, mort en exil en 1321, et la « Zone du Silence » autour de la Basilique San Francesco, où l’eau affleure sous le pavement.",
+     "Pour cette journée, prise en charge à votre hôtel à Bologne, départ confortable en Mercedes, et véhicule à disposition pour passer d’un monument à l’autre sans courir. Votre chauffeur s’occupe du stationnement pendant que vous visitez, puis file vers le déjeuner pendant que vous dégustez les piadine de Via Cavour. À Ravenne avec un chauffeur privé Bologne, vous modulez l’ordre des visites, ajoutez Sant’Apollinare in Classe (8 km au sud) si le temps le permet, et revenez par la pinède de Cervia pour un café face aux salines, avant d’être déposé à votre porte."
+    ],
+    "en": [
+     "In 526, construction began on San Vitale under Bishop Ecclesius; when it was consecrated in 547, Ravenna had become the Western showcase of Justinian’s court, its imperial mosaics still glowing today without major repainting. Just 80 km from Bologna via the A14, the city lines up eight UNESCO sites, from the Mausoleum of Galla Placidia to the Arian Baptistery. There’s a different Italy here as well: Dante’s tomb (1321) and the quiet zone around San Francesco, where water glints beneath the nave’s floor.",
+     "Your day starts with hotel pickup in Bologna, a smooth Mercedes ride, and the car at your disposal to hop efficiently between monuments. While you tour, your driver handles parking; while you lunch, they secure the next stop so you keep momentum. With a Bologna private chauffeur, you can slot in Sant’Apollinare in Classe (8 km south) if time allows, then loop back via Cervia’s pinewoods for a coffee by the salt pans, before drop-off at your door."
+    ]
+   },
+   "steps": [
+    {
+     "fr": "09h00 — Départ de votre hôtel à Bologne, autoroute A14 vers Ravenne (env. 1 h 20).",
+     "en": "09:00 — Hotel pickup in Bologna, straight onto the A14 to Ravenna (about 1h20)."
+    },
+    {
+     "fr": "10h30 — Basilique San Vitale et Mausolée de Galla Placidia, visite guidée 1 h 30.",
+     "en": "10:30 — Basilica of San Vitale and Mausoleum of Galla Placidia, 1h30 visit."
+    },
+    {
+     "fr": "12h30 — Déjeuner léger près de Via Cavour, puis Baptistères Néonien et des Ariens (1 h).",
+     "en": "12:30 — Light lunch around Via Cavour, then the Neonian and Arian Baptisteries (1h)."
+    },
+    {
+     "fr": "15h00 — Tombe de Dante et Basilique San Francesco; option Sant’Apollinare in Classe, retour Bologne vers 18h30.",
+     "en": "15:00 — Dante’s Tomb and San Francesco; optional Sant’Apollinare in Classe, return to Bologna around 18:30."
+    }
+   ],
+   "included": {
+    "fr": [
+     "Chauffeur dédié francophone",
+     "Mercedes Classe E/V à la journée",
+     "Prise en charge hôtel à Bologne",
+     "Attente et transferts sites"
+    ],
+    "en": [
+     "Dedicated French-speaking driver",
+     "Mercedes E/V for the day",
+     "Bologna hotel pickup",
+     "Waiting time and transfers"
+    ]
+   },
+   "tip": {
+    "fr": "Arrivez à l’ouverture (8h30) à Galla Placidia pour voir les étoiles s’allumer avec la lumière rasante; réservez le billet combiné Classis + Sant’Apollinare in Classe en ligne la veille pour éviter l’affluence des bus.",
+    "en": "Be at Galla Placidia at opening (8:30) to catch the stars glow in low light; book the combined Classis + Sant’Apollinare in Classe ticket online the day before to dodge coach crowds."
+   }
+  },
+  {
+   "slug": "bologna-evening-beneath-the-porticoes",
+   "index": 4,
+   "title": {
+    "fr": "Soirée bolonaise sous les portiques",
+    "en": "Bologna evening beneath the porticoes"
+   },
+   "intro": {
+    "fr": [
+     "Le cliquetis des verres monte de la Via Pescherie Vecchie, juste après 19h30. À l’angle de la Piazza Maggiore, les arcades du Quadrilatero résonnent d’italien rapide ; sur le comptoir de Tamburini, mortadelle IGP et Parmigiano 24 mois. Un Spritz, une copa de Pignoletto frizzante, et déjà l’odeur du ragù s’échappe des cuisines voisines. Sous 38 km d’arcades, la ville glisse vers la nuit, et l’on comprend pourquoi les Bolognais dînent tard : la pierre garde la chaleur, la conversation s’étire, la colline de San Luca attend, là-haut, ses 666 arcades et la vue sur la plaine du Pô.",
+     "Pour cette soirée, votre chauffeur privé à Bologne vous récupère à l’hôtel près de Via Indipendenza et reste à disposition. On trinque dans le Quadrilatero puis cap sur une osteria historique, réservée pour l’heure italienne, le temps qu’il attende devant la porte. Vous dégustez tagliatelle al ragù et tortellini in brodo pendant qu’il gère le trafic en ZTL. Après le café, montée de 4,5 km jusqu’au Sanctuaire de San Luca, arrêt photo et retour. Si l’envie vous prend, détour par la Finestrella di Via Piella ou gelato chez Cremeria Cavour, sans stress d’itinéraire ni de stationnement."
+    ],
+    "en": [
+     "Glasses clink along Via Pescherie Vecchie around 7:30 pm. Under the Quadrilatero’s porticoes by Piazza Maggiore, rapid-fire Italian bounces off stone; at Tamburini, slices of IGP mortadella share the counter with 24‑month Parmigiano. A Pignoletto spritz in hand, you catch the first waft of ragù from nearby kitchens. Bologna’s 38 km of porticoes breathe out the day, conversations stretch, and up on the ridge San Luca waits—666 arches and a night view across the Po plain.",
+     "Your dedicated driver collects you by Via Indipendenza and stays with you throughout. Sip in the Quadrilatero, then slip into a booked osteria at the local dinner hour while the car waits kerbside. You focus on tagliatelle al ragù and tortellini in brodo as your driver handles ZTL logistics. Espresso done, it’s a 4.5 km ride to the Sanctuary of San Luca for night photos, then back. Fancy a detour to the Finestrella on Via Piella or a late gelato at Cremeria Cavour? Easy—no parking hunts, no map-checks."
+    ]
+   },
+   "steps": [
+    {
+     "fr": "19h30 — Prise en charge à votre hôtel près de Via Indipendenza et dépose au Quadrilatero (Piazza Maggiore, Via Pescherie Vecchie).",
+     "en": "7:30 pm – Pick-up by Via Indipendenza hotel and drop-off in the Quadrilatero (Piazza Maggiore, Via Pescherie Vecchie)."
+    },
+    {
+     "fr": "Apéritif et dégustation chez Tamburini ou Medulla Vini, 45 à 60 minutes sous les portiques.",
+     "en": "Aperitivo and tastings at Tamburini or Medulla Vini, 45–60 minutes beneath the porticoes."
+    },
+    {
+     "fr": "20h45 — Dîner réservé à l’Osteria dell’Orsa ou Trattoria Anna Maria pour tagliatelle al ragù et tortellini (1 h 30).",
+     "en": "8:45 pm – Reserved dinner at Osteria dell’Orsa or Trattoria Anna Maria for ragù tagliatelle and tortellini (1 hr 30)."
+    },
+    {
+     "fr": "22h30 — Montée en 15 minutes au Sanctuaire de San Luca pour la vue nocturne, arrêt photo, puis retour à votre adresse.",
+     "en": "10:30 pm – 15‑minute drive up to the Sanctuary of San Luca for night views, photo stop, then return drop-off."
+    }
+   ],
+   "included": {
+    "fr": [
+     "Chauffeur dédié",
+     "Mercedes classe E/V",
+     "Prise en charge hôtel",
+     "Attente devant les lieux"
+    ],
+    "en": [
+     "Dedicated driver",
+     "Mercedes E/V class",
+     "Hotel pick-up",
+     "Waiting at each stop"
+    ]
+   },
+   "tip": {
+    "fr": "Pour éviter la foule en montée, demandez un créneau à San Luca entre 22h45 et 23h15 : l’éclairage de la basilique est encore allumé et la ville en contrebas est déjà calme.",
+    "en": "Aim for San Luca between 10:45 and 11:15 pm: the basilica lights are still on while the city below has quieted, ideal for clean night shots."
+   }
+  }
+ ]
+}

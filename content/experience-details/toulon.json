@@ -1,0 +1,275 @@
+{
+ "city": "toulon",
+ "experiences": [
+  {
+   "slug": "bandol-vineyards",
+   "index": 0,
+   "title": {
+    "fr": "Vignobles de Bandol",
+    "en": "Bandol vineyards"
+   },
+   "intro": {
+    "fr": [
+     "1 500 hectares classés en AOC depuis 1941 dessinent l’amphithéâtre de Bandol, exposé plein sud entre La Cadière-d’Azur et Le Castellet. Ici, le mourvèdre règne, mûrissant sur des restanques calcaires balayées par le Mistral ; les rouges patientent souvent 18 à 24 mois en foudres. À 30 minutes de Toulon, le Château de Pibarnon grimpe vers 300 m d’altitude, tandis que Tempier et La Bégude veillent sur la baie. Les villages perchés dominent les baies de Saint-Cyr et de Bandol, et les vieilles terrasses racontent un siècle de travail à la main.",
+     "Dans la matinée, votre chauffeur privé à Toulon vous accueille à l’hôtel et vous conduit, en Mercedes, sur une boucle souple : visites réservées, temps de route maîtrisé, pauses photo au col de la Croix des Signes si le ciel est clair. Vous dégustez, il conduit ; nous gérons les rendez-vous et les changements de rythme. Pibarnon au sommet, déjeuner simple mais précis face aux vignes à La Cadière, puis Tempier en fin d’après-midi pour comparer millésimes et élevages. Retour par la corniche des Embiez si la lumière tombe bien."
+    ],
+    "en": [
+     "1,500 hectares designated AOC since 1941 shape Bandol’s south-facing amphitheater between La Cadière-d’Azur and Le Castellet. Mourvèdre sets the tone here, ripening on limestone terraces swept by the Mistral; reds often rest 18–24 months in large casks. Thirty minutes from Toulon, Château de Pibarnon climbs toward 300 meters, while Tempier and La Bégude look out to the bay. Hilltop villages gaze over Saint-Cyr and Bandol, and the old stone terraces speak of a century of handwork.",
+     "Your private chauffeur in Toulon collects you at the hotel and, in a Mercedes, steers an adaptable loop: pre-booked visits, well-timed transfers, and photo halts at Col de la Croix des Signes when skies are clear. You taste while they drive; we handle appointments and pacing. Pibarnon up high, a focused vineyard-view lunch in La Cadière, then Tempier late afternoon to compare vintages and élevage. If the light is kind, we return along the Embiez coastal road."
+    ]
+   },
+   "steps": [
+    {
+     "fr": "09h00 — Prise en charge à votre hôtel à Toulon et départ vers La Cadière-d’Azur (30 min).",
+     "en": "09:00 — Pick-up at your Toulon hotel and drive to La Cadière-d’Azur (30 min)."
+    },
+    {
+     "fr": "10h00 — Visite des chais et dégustation au Château de Pibarnon, panorama à 300 m (1h15).",
+     "en": "10:00 — Cellar tour and tasting at Château de Pibarnon, panoramic views at 300 m (1h15)."
+    },
+    {
+     "fr": "12h30 — Déjeuner réservé à La Cadière-d’Azur, terrasse face aux restanques, puis halte au belvédère du Castellet (1h45).",
+     "en": "12:30 — Reserved lunch in La Cadière-d’Azur with terrace over the terraces, then viewpoint stop in Le Castellet (1h45)."
+    },
+    {
+     "fr": "15h30 — Dégustation comparative chez Domaine Tempier ou La Bégude selon agenda, retour à Toulon vers 17h30.",
+     "en": "15:30 — Comparative tasting at Domaine Tempier or La Bégude subject to schedule, return to Toulon around 17:30."
+    }
+   ],
+   "included": {
+    "fr": [
+     "Chauffeur dédié journée",
+     "Mercedes Classe E ou V",
+     "Prise en charge hôtel Toulon",
+     "Réservations de domaines"
+    ],
+    "en": [
+     "Dedicated driver all day",
+     "Mercedes E- or V-Class",
+     "Hotel pick-up in Toulon",
+     "Estate appointments booked"
+    ]
+   },
+   "tip": {
+    "fr": "Pour apprécier les rouges sur le fruit et éviter les foules, visez un départ en semaine entre mi-mai et fin juin ; demandez une place ombragée côté vigne à La Cadière pour le déjeuner, le vent peut se lever après 13h.",
+    "en": "To catch reds at their freshest and skip crowds, plan a weekday start from mid-May to late June; at lunch in La Cadière, ask for a shaded vineyard-side table as the wind often picks up after 1 pm."
+   }
+  },
+  {
+   "slug": "porquerolles-from-the-tour-fondue",
+   "index": 1,
+   "title": {
+    "fr": "Porquerolles depuis la Tour Fondue",
+    "en": "Porquerolles from the Tour Fondue"
+   },
+   "intro": {
+    "fr": [
+     "En 1912, l’ingénieur François Joseph Fournier acheta l’île de Porquerolles aux enchères pour la doter d’un vignoble expérimental et d’un village structuré autour de sa place centrale. Cette histoire a laissé des traces concrètes : ruelles quadrillées, citernes, et parcelles viticoles encore actives autour du domaine de l’île. Depuis la presqu’île de Giens, la Tour Fondue n’est qu’à 12 km du centre de Toulon par la D559, soit une trentaine de minutes hors pointe. Une traversée de 15 minutes, et l’on passe des pins d’Alep aux eaux turquoise, entre la plage d’Argent et la baie abritée de Notre-Dame, souvent plus calme quand le mistral souffle côté ouest.",
+     "À la journée, le déroulé est simple et confortable : prise en charge à votre hôtel de Toulon, véhicule Mercedes à disposition, arrêts selon vos envies. Votre chauffeur privé à Toulon gère les horaires du premier bateau utile, ajuste le retour si le vent forcit, et vous dépose directement à la Tour Fondue pour éviter le casse-tête du stationnement. À Porquerolles, vous dégustez les cuvées de l’île (Domaine de La Courtade à 1,6 km du port), visitez la Fondation Carmignac (20 minutes à vélo par les pistes sableuses) et rejoignez, sans se presser, la plage Notre-Dame à 3 km, pendant qu’il veille à vos réservations et vous attend côté continent."
+    ],
+    "en": [
+     "Back in 1912, engineer François Joseph Fournier bought Porquerolles at auction and set up a model village and vineyards that still shape the island’s grid of lanes, water cisterns, and working plots. From the Giens peninsula, the pier at La Tour Fondue sits roughly 12 km from central Toulon along the D559—about a half hour off-peak. A brisk 15‑minute crossing swaps Aleppo pines for glassy shallows, between Plage d’Argent’s silver sand and the sheltered arc of Notre‑Dame, often quieter when the mistral bites the west side.",
+     "Your day runs smoothly: hotel pickup in Toulon, a Mercedes at your disposal, and timing that bends to your plans. With a dedicated private driver in Toulon, ferry schedules are handled, returns adjusted if the wind picks up, and you’re dropped right at La Tour Fondue so parking never becomes the story. On the island, taste Domaine de La Courtade’s wines a mile from the port, wander the Carmignac Foundation (about a 20‑minute bike ride on sandy tracks), and stroll to Notre‑Dame beach 3 km away—while your driver manages bookings and waits on the mainland."
+    ]
+   },
+   "steps": [
+    {
+     "fr": "08h30 — Prise en charge à votre hôtel de Toulon et trajet de 30 min vers la Tour Fondue (Giens).",
+     "en": "08:30 — Hotel pickup in Toulon and a 30‑minute drive to La Tour Fondue (Giens)."
+    },
+    {
+     "fr": "09h15 — Embarquement pour Porquerolles, traversée d’environ 15 minutes avec les Bateliers du Levant.",
+     "en": "09:15 — Board for Porquerolles, a roughly 15‑minute crossing with Bateliers du Levant."
+    },
+    {
+     "fr": "Matin — Location de vélos au port, balade vers la plage d’Argent puis Notre‑Dame (3 km, chemins sableux).",
+     "en": "Morning — Rent bikes at the harbor, ride to Plage d’Argent then Notre‑Dame (3 km on sandy paths)."
+    },
+    {
+     "fr": "Après‑midi — Dégustation au Domaine de La Courtade et visite de la Fondation Carmignac, retour ferry flexible selon vent et affluence.",
+     "en": "Afternoon — Tasting at Domaine de La Courtade and visit to the Carmignac Foundation; flexible ferry back depending on wind and crowds."
+    }
+   ],
+   "included": {
+    "fr": [
+     "Chauffeur dédié Mercedes",
+     "Prise en charge hôtel",
+     "Dépose à la Tour Fondue",
+     "Attente et retour coordonné"
+    ],
+    "en": [
+     "Dedicated Mercedes driver",
+     "Hotel pickup",
+     "Drop-off at La Tour Fondue",
+     "Waiting time and return"
+    ]
+   },
+   "tip": {
+    "fr": "En été, réservez le ferry de 9h15 et partez vous asseoir côté tribord à l’aller pour bénéficier de l’ombre ; sur place, louez vos vélos avant 10h pour éviter la file.",
+    "en": "In summer, book the 9:15 a.m. ferry and sit starboard on the outbound leg for shade; on arrival, rent bikes before 10 a.m. to skip the queue."
+   }
+  },
+  {
+   "slug": "mont-faron-and-toulon-harbour",
+   "index": 2,
+   "title": {
+    "fr": "Mont Faron et rade de Toulon",
+    "en": "Mont Faron and Toulon harbour"
+   },
+   "intro": {
+    "fr": [
+     "D’en bas la rumeur des quais, d’en haut le vent clair du Faron. À 584 m, la route en lacets grimpe depuis le quartier du Mourillon en 20 minutes à peine, jusqu’au mémorial du débarquement de Provence (1944) et à la fauverie fondée dans les années 1960. Le regard accroche la grande rade, la Petite Rade, l’arsenal et la Darse Vieille ; on suit du doigt les ferries pour la Corse, les frégates à quai, les forts Balaguier et l’Éguillette en face à La Seyne. En redescendant, la ville s’étale comme une carte marine : repères sûrs pour préparer l’étape suivante, plus gourmande.",
+     "Le déroulé est simple et souple : prise en charge à votre hôtel en Mercedes, véhicule à disposition, temps d’arrêt quand il faut. À Toulon avec votre chauffeur privé, on enchaîne panorama, visite brève du mémorial et passage par la fauverie, puis descente vers les Halles Biltoki (5 km, 15 min) et le marché du cours Lafayette pour goûter chichi frégi et cade, pendant qu’il gère stationnement et circulation. Trajet final par le port, rive à rive si vous le souhaitez, pour comparer points de vue et rythmer la demi-journée sans se presser."
+    ],
+    "en": [
+     "Down on the quays it’s all bustle; up on Mount Faron the air turns crisp and quiet. At 584 m, a winding road lifts you from the Mourillon in about 20 minutes to the Provence landings memorial (1944) and the long-standing big-cat sanctuary. The whole harbour spreads below: Grande and Petite Rade, the naval yard, the Darse Vieille; ferries tracing Corsican routes, frigates alongside, and across the water the twin forts of Balaguier and l’Éguillette at La Seyne. On the way back, the city becomes a chart, handy to plot the next, tastier stop.",
+     "Logistics stay effortless: hotel pickup in a Mercedes, car on standby, unhurried stops. With your private driver in Toulon, you’ll pair summit views with a brief museum visit and the feline park, then roll down to Halles Biltoki (5 km, 15 min) and the cours Lafayette market for chichi frégi and chickpea cade while parking and traffic are handled for you. To close, a harbour loop by the waterfront—both shores if you wish—so the half-day flows with varied vantage points and no rush."
+    ]
+   },
+   "steps": [
+    {
+     "fr": "09h00 Prise en charge à votre hôtel et montée au mont Faron par la route panoramique (20 min).",
+     "en": "09:00 Hotel pickup and scenic drive up Mount Faron (20 min)."
+    },
+    {
+     "fr": "Arrêt au Mémorial du débarquement de Provence et belvédères voisins pour la vue sur la rade (45 min).",
+     "en": "Stop at the Provence Landings Memorial and nearby lookouts for harbour views (45 min)."
+    },
+    {
+     "fr": "Passage à la Fauverie du Faron puis descente vers le centre-ville et le port (25 min).",
+     "en": "Call at the Faron big-cat sanctuary, then descend toward downtown and the port (25 min)."
+    },
+    {
+     "fr": "Balade gourmande aux Halles Biltoki et au marché du cours Lafayette, puis retour via les quais (45–60 min).",
+     "en": "Tasting stroll at Halles Biltoki and cours Lafayette market, then return via the quays (45–60 min)."
+    }
+   ],
+   "included": {
+    "fr": [
+     "Chauffeur dédié Toulon",
+     "Mercedes récente",
+     "Prise en charge hôtel",
+     "Attente et dépose flexibles"
+    ],
+    "en": [
+     "Dedicated driver Toulon",
+     "Late-model Mercedes",
+     "Hotel pickup",
+     "Flexible waiting and drop-off"
+    ]
+   },
+   "tip": {
+    "fr": "Pour un ciel limpide et un trafic léger, visez un départ avant 9h en semaine ; par mistral fort, prévoyez une veste légère en haut du Faron, même en été.",
+    "en": "For the clearest views and lighter traffic, start before 9 am on weekdays; when the mistral blows, bring a light jacket for the summit even in summer."
+   }
+  },
+  {
+   "slug": "sanary-and-cassis-along-the-coast",
+   "index": 3,
+   "title": {
+    "fr": "Sanary et Cassis par la côte",
+    "en": "Sanary and Cassis along the coast"
+   },
+   "intro": {
+    "fr": [
+     "L’odeur d’algue fraîche se mêle au gasoil discret des pointus qui cliquettent contre le quai de Sanary-sur-Mer, port actif où l’on vend encore la pêche du jour sous la halle Frédéric-Mistral. On part ensuite longer Bandol et sa baie abritée, célèbre depuis les années 1940 pour ses vins de mourvèdre, avant d’atteindre Cassis, blottie entre le cap Canaille (394 m) et les calanques calcaires. Si le vent n’est pas trop fort, la route des Crêtes déroule ses belvédères au-dessus des falaises Soubeyranes, parmi les plus hautes falaises maritimes de France, avec des vues sur la Méditerranée et le Bec de l’Aigle de La Ciotat.",
+     "Au départ de votre hôtel à Toulon, votre chauffeur conduit, vous explorez. Le véhicule Mercedes reste à disposition toute la journée, arrêts souples et timing ajusté aux horaires des bateaux à Cassis (sorties de 45 à 90 min). On s’attarde au marché provençal de Sanary les mercredis matin, on savoure un verre à Bandol pendant qu’il gère le stationnement, puis cap sur Cassis pour la promenade en mer. Autour de Toulon avec un chauffeur privé, l’itinéraire s’adapte aussi aux rafales du mistral pour décider du passage par la route des Crêtes ou d’une alternative abritée via La Ciotat."
+    ],
+    "en": [
+     "A faint tang of seaweed mingles with diesel as the wooden pointus knock gently against the quay in Sanary-sur-Mer, where the day’s catch still changes hands under the Frédéric Mistral hall. We trace the curve of Bandol’s sheltered bay—famed since the 1940s for mourvèdre-driven reds—then slip into Cassis, wedged between Cap Canaille (394 m) and the chalky calanques. If the wind behaves, the Route des Crêtes strings together lofty lookouts above the Soubeyranes sea cliffs, with wide-open views to the Mediterranean and La Ciotat’s Bec de l’Aigle.",
+     "Collected from your hotel in Toulon, you relax while your driver handles the road. A Mercedes stays at your disposal all day, with flexible stops and timing tailored to Cassis boat schedules (45–90 minutes). Linger at Sanary’s Wednesday market, pause for a glass in Bandol while parking is taken care of, then head to Cassis for the coastal boat ride. With a private chauffeur around Toulon, the route can pivot if the mistral kicks up—choosing the cliff road or a more sheltered detour via La Ciotat."
+    ]
+   },
+   "steps": [
+    {
+     "fr": "08h30 — Prise en charge à votre hôtel à Toulon et trajet de 25 min vers Sanary-sur-Mer par la D559.",
+     "en": "08:30 — Pick-up at your Toulon hotel and a 25-minute drive to Sanary-sur-Mer via the D559."
+    },
+    {
+     "fr": "09h00-10h30 — Flânerie sur le port et, le mercredi, passage au marché puis café sur le quai Charles de Gaulle.",
+     "en": "09:00–10:30 — Stroll the harbor and, on Wednesday, browse the market, then coffee on Quai Charles de Gaulle."
+    },
+    {
+     "fr": "11h00 — Arrêt à Bandol pour un verre face à la baie, puis route de 30 min vers Cassis (arrivée vers 12h00).",
+     "en": "11:00 — Stop in Bandol for a drink facing the bay, then a 30-minute drive to Cassis (arrive around noon)."
+    },
+    {
+     "fr": "13h30-15h00 — Embarquement à Cassis pour une sortie vers les calanques, puis, si le vent le permet, retour par la route des Crêtes au-dessus des falaises Soubeyranes.",
+     "en": "13:30–15:00 — Board in Cassis for a calanques boat tour, then, weather allowing, return via the Route des Crêtes above the Soubeyranes cliffs."
+    }
+   ],
+   "included": {
+    "fr": [
+     "Chauffeur dédié francophone",
+     "Mercedes récente à disposition",
+     "Prise en charge à l’hôtel",
+     "Attente pendant visites/repas"
+    ],
+    "en": [
+     "Dedicated French-speaking driver",
+     "Late-model Mercedes at disposal",
+     "Hotel pick-up included",
+     "Waiting time during stops"
+    ]
+   },
+   "tip": {
+    "fr": "En été, réservez la sortie bateau à Cassis la veille pour un créneau avant 14h, la houle s’élève souvent l’après-midi sous mistral.",
+    "en": "In summer, pre-book the Cassis boat tour for a slot before 2 pm, as afternoon swell often builds with the mistral."
+   }
+  },
+  {
+   "slug": "circuit-paul-ricard-at-le-castellet",
+   "index": 4,
+   "title": {
+    "fr": "Circuit Paul Ricard au Castellet",
+    "en": "Circuit Paul Ricard at Le Castellet"
+   },
+   "intro": {
+    "fr": [
+     "Le vrombissement sec des V6 résonne contre les pins parasols, et l’odeur de gomme chaude flotte au-dessus des stands du Circuit Paul Ricard. Ici, les bandes bleues et rouges en asphalte abrasif (Zones Blue Line/Red Zone créées en 2005) dessinent un ruban technique repensé par Philippe Gurdjian. À 40 minutes de Toulon par l’A50 puis la D2, on passe de la rade militaire à un plateau balayé par le mistral. Les tribunes surplombent la ligne droite du Mistral, 1,6 km, où l’on guette l’effet du vent latéral sur les freinages de Signes. On vient pour les Grands Prix, les roulages Track Days, les formations SODI et les incentives d’entreprise.",
+     "Depuis votre hôtel à Toulon ou au Mourillon, notre chauffeur privé à Toulon vous récupère à l’heure convenue et garde le cap pendant que vous vivez la journée: briefing paddock, pit walk, déjeuner aux Terrasses du Castellet, visite du Village médiéval à 3 km. Véhicule Mercedes à disposition, souple sur les horaires: on alterne tribunes et stands, il attend sur site, ajuste la dépose (paddock ou parking P3 selon accréditation). Pendant que vous dégustez une AOP Bandol au retour, il gère trafic, badges, et la halte photo au belvédère du col de l’Ange."
+    ],
+    "en": [
+     "A dry bark from the V6s bounces off the stone pines, and the sweet smell of hot rubber hangs over the Paul Ricard pit lane. Those blue and red high‑grip run‑offs—installed in the mid‑2000s—trace a technical ribbon reworked by Philippe Gurdjian. Forty minutes from Toulon via the A50 and D2, you swap a naval harbor for a windswept plateau. From the grandstands above the 1.6 km Mistral Straight, crosswinds shape braking into Signes; come for Formula weekends, open track days, corporate incentives, or a driver-coaching session.",
+     "Picked up at your Toulon hotel or in Le Mourillon, you settle in while your dedicated driver keeps the timing tight: paddock briefing, pit walk, lunch at Les Terrasses du Castellet, then the medieval village just 3 km away. A Mercedes at disposal means flexible drops—paddock lane or P3 depending on accreditation—plus on-site waiting. While you sample a glass of Bandol on the way back, the driver handles traffic, passes, and a quick photo stop at the Col de l’Ange viewpoint."
+    ]
+   },
+   "steps": [
+    {
+     "fr": "08h30 — Prise en charge à votre hôtel de Toulon, départ par l’A50 puis D2 vers Le Castellet (40 min).",
+     "en": "08:30 — Pickup at your Toulon hotel; A50 then D2 to Le Castellet (about 40 minutes)."
+    },
+    {
+     "fr": "09h15 — Dépose côté paddock ou parking P3 selon accréditation, accès tribunes et premier stint en piste (1–2 h).",
+     "en": "09:15 — Drop-off at paddock or P3 per accreditation; grandstands and first on-track session (1–2 hours)."
+    },
+    {
+     "fr": "12h30 — Déjeuner rapide aux Terrasses du Castellet ou au Panoramic Club, puis reprise des sessions ou pit walk (60–90 min).",
+     "en": "12:30 — Lunch at Les Terrasses du Castellet or the Panoramic Club, then sessions resume or a pit walk (60–90 min)."
+    },
+    {
+     "fr": "15h30 — Échappée au village du Castellet (3 km) pour café et vue sur la Sainte-Baume, retour à Toulon vers 17h30.",
+     "en": "15:30 — Detour to Le Castellet village (3 km) for coffee and Sainte-Baume views; return to Toulon around 17:30."
+    }
+   ],
+   "included": {
+    "fr": [
+     "Chauffeur dédié Mercedes",
+     "Prise en charge à l’hôtel",
+     "Dépose paddock ou P3",
+     "Attente et retours flexibles"
+    ],
+    "en": [
+     "Dedicated Mercedes driver",
+     "Hotel pickup",
+     "Paddock or P3 drop-off",
+     "On-site waiting, flexible return"
+    ]
+   },
+   "tip": {
+    "fr": "Pour les F1 ou Bol d’Or, viser une arrivée avant 08h00 évite les bouchons sur la D2 et sécurise l’accès paddock; réservez le parking P3 au moins 10 jours avant l’événement.",
+    "en": "For F1 or Bol d’Or days, arrive before 08:00 to beat D2 traffic and secure paddock access; book P3 parking at least 10 days ahead."
+   }
+  }
+ ]
+}

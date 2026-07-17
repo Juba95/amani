@@ -1,0 +1,275 @@
+{
+ "city": "cinque-terre",
+ "experiences": [
+  {
+   "slug": "day-in-the-cinque-terre",
+   "index": 0,
+   "title": {
+    "fr": "Journée aux Cinque Terre",
+    "en": "Day in the Cinque Terre"
+   },
+   "intro": {
+    "fr": [
+     "Depuis la côte ligure, la route SS1 Aurelia file depuis Gênes vers La Spezia en surplomb des terrasses d’oliviers, avec des lacets qui dominent des falaises atteignant 300 m d’à-pic. À 95 km de Pise et 35 km de Portofino, le chapelet des Cinque Terre se découvre mieux en combinant train régional et bateaux: les sentiers comme le 592-4 entre Corniglia et Vernazza ferment parfois après de fortes pluies, alors la mer devient votre « ligne 1 ». On traverse des villages construits à flanc de schistes, on suit la houle, on compte les vignobles DOC de Sciacchetrà sur des murets du XIXe siècle.",
+     "Ensuite, tout se met en place avec votre chauffeur privé à Cinque Terre : prise en charge à l’hôtel, Mercedes climatisée à disposition, horaires souples, et vous explorez pendant qu’il gère la logistique. Dépose efficace à La Spezia Centrale ou Levanto, billets prêts, et cap sur Monterosso pour un café avant le TER de 08:50. Vous savourez les anchois IGP à Vernazza, faites halte à Manarola au belvédère du cimetière, puis retrouvez le véhicule à l’heure convenue; il attend, bagages au frais, et vous ramène par l’Aurelia en évitant les bouchons du soir."
+    ],
+    "en": [
+     "Hugging the Ligurian coast, the SS1 Aurelia winds from Genoa to La Spezia above terraced olives, with switchbacks skirting 300‑meter cliffs. Set 95 km from Pisa and 35 km from Portofino, the Cinque Terre is best navigated by pairing regional trains with ferries: paths like 592‑4 between Corniglia and Vernazza can close after heavy rain, so the sea becomes your first line of transit. You’ll pass hamlets pinned to schist, ride the swell, and spot the DOC Sciacchetrà vineyards propped by 19th‑century dry‑stone walls.",
+     "From there, your day runs smoothly with a dedicated driver: hotel pickup, a cooled Mercedes on standby, flexible timing, while you explore and dine as logistics stay off your plate. Drop‑off at La Spezia Centrale or Levanto, tickets handled, then Monterosso for a coffee before the 08:50 regionale. Taste IGP anchovies in Vernazza, pause at Manarola’s cemetery viewpoint, and meet your car at the agreed time; luggage chilled, cabin cool, and a calm return on the Aurelia that skirts evening traffic."
+    ]
+   },
+   "steps": [
+    {
+     "fr": "08:00 — Prise en charge à votre hôtel (Pise, Forte dei Marmi ou La Spezia) et route par la SS1 vers La Spezia Centrale.",
+     "en": "08:00 — Pick‑up at your hotel (Pisa, Forte dei Marmi, or La Spezia) and drive via SS1 to La Spezia Centrale."
+    },
+    {
+     "fr": "09:00 — Train régional pour Monterosso, café sur la Piazza Garibaldi puis ferry vers Vernazza (20 min).",
+     "en": "09:00 — Regional train to Monterosso, coffee on Piazza Garibaldi, then ferry to Vernazza (20 min)."
+    },
+    {
+     "fr": "12:30 — Déjeuner poisson à Vernazza (anchois IGP, trofie au pesto) et balade au bastion Belforte (45 min).",
+     "en": "12:30 — Seafood lunch in Vernazza (IGP anchovies, trofie al pesto) and stroll up to Belforte bastion (45 min)."
+    },
+    {
+     "fr": "15:30 — Train pour Manarola, point de vue du cimetière, puis retour vers Levanto/La Spezia et reprise par votre chauffeur à 17:30.",
+     "en": "15:30 — Train to Manarola, cemetery viewpoint, then back to Levanto/La Spezia and pickup by your driver at 17:30."
+    }
+   ],
+   "included": {
+    "fr": [
+     "Chauffeur dédié",
+     "Mercedes Classe E/V",
+     "Prise en charge hôtel",
+     "Dépose gare/port Cinque Terre"
+    ],
+    "en": [
+     "Dedicated driver",
+     "Mercedes E/V Class",
+     "Hotel pick‑up",
+     "Cinque Terre drop‑off"
+    ]
+   },
+   "tip": {
+    "fr": "Pour éviter les files au ferry de Vernazza, montez à bord à Monterosso avant 10:30 et asseyez‑vous tribord: la côte se lit mieux en arrivant sur Corniglia et Manarola.",
+    "en": "To skip ferry lines in Vernazza, board earlier in Monterosso before 10:30 and sit starboard—the coastline unfolds perfectly as you approach Corniglia and Manarola."
+   }
+  },
+  {
+   "slug": "cinque-terre-and-portofino",
+   "index": 1,
+   "title": {
+    "fr": "Cinque Terre et Portofino",
+    "en": "Cinque Terre and Portofino"
+   },
+   "intro": {
+    "fr": [
+     "Reflets d’ardoise sur la mer tôt le matin, cri des goélands, odeur de basilic qui s’échappe des focaccerie de Monterosso : la Ligurie s’éveille. Entre Riomaggiore et Vernazza, les terrasses de vignes (sciacchetrà, cépage bosco) font face aux sentiers du parc national créé en 1999, et l’ancienne voie ferrée de 1874 perce la falaise. L’après‑midi, cap sur Portofino : la Piazzetta, minuscule, vit au rythme des navettes pour San Fruttuoso et des pêcheurs qui réparent encore leurs filets. Mains courantes polies par le sel, façades peintes a fresco, et à 20 km à l’est, la promesse d’une crique aux eaux claires.",
+     "Votre journée démarre à votre hôtel : prise en charge, bagages dans le coffre, et Mercedes à disposition sans contrainte d’horaires. Dans les Cinque Terre avec votre chauffeur privé, on enchaîne les haltes courtes entre villages pendant qu’il gère la route SP370 et les parkings limités ; vous marchez, visitez l’église Santa Margherita d’Antiochia, goûtez l’anchois de Monterosso ou un verre de vermentino, puis filez vers Portofino (environ 1 h depuis Levanto). Souplesse garantie : si la houle permet, il vous dépose à Rapallo pour embarquer vers l’abbaye de San Fruttuoso et vous attend à votre retour."
+    ],
+    "en": [
+     "Slate-sheen light on the water at daybreak, gulls calling, and a drift of basil from Monterosso’s focaccia ovens: Liguria waking up. Between Riomaggiore and Vernazza, vineyard terraces for sciacchetrà (bosco grape) lean over park trails established in 1999, while the 1874 railway still tunnels through the cliffs. By afternoon you turn to Portofino: the pocket-size Piazzetta hums with boats to San Fruttuoso and fishermen mending nets; salt-burnished railings, trompe‑l’œil façades, and, 20 km east, a promise of a clear-water cove.",
+     "Your day begins at your hotel: pickup, bags stowed, and a Mercedes on standby with no clock to race. With a private chauffeur in the Cinque Terre, you hop between villages while they handle the SP370 and scarce parking; you stroll to Santa Margherita d’Antiochia, taste Monterosso anchovies or a glass of vermentino, then continue to Portofino (about 1 hour from Levanto). Flexibility built in: if seas are calm, get dropped in Rapallo to boat to San Fruttuoso Abbey, where your driver will be waiting on your return."
+    ]
+   },
+   "steps": [
+    {
+     "fr": "08h30 : Prise en charge à votre hôtel (La Spezia, Levanto ou environs) et route panoramique par la SP370 vers Riomaggiore.",
+     "en": "08:30: Hotel pickup (La Spezia, Levanto area) and scenic SP370 drive to Riomaggiore."
+    },
+    {
+     "fr": "10h00–12h00 : Arrêts à Manarola et Vernazza, balade au port et visite de Santa Margherita d’Antiochia.",
+     "en": "10:00–12:00: Stops in Manarola and Vernazza, harbor stroll and visit Santa Margherita d’Antiochia."
+    },
+    {
+     "fr": "12h30 : Déjeuner libre à Monterosso (anchois IGP, trofie al pesto), puis départ pour la Riviera de Portofino.",
+     "en": "12:30: Free lunch in Monterosso (IGP anchovies, trofie al pesto), then depart toward the Portofino Riviera."
+    },
+    {
+     "fr": "15h00–17h30 : Arrivée à Portofino, montée au Castello Brown ou bateau pour San Fruttuoso, et retour à l’hôtel vers 19h.",
+     "en": "15:00–17:30: Arrive Portofino, climb to Castello Brown or boat to San Fruttuoso, then return to hotel by 19:00."
+    }
+   ],
+   "included": {
+    "fr": [
+     "Chauffeur dédié journée",
+     "Mercedes Classe E/V",
+     "Prise en charge hôtel",
+     "Attente et bagagerie"
+    ],
+    "en": [
+     "Dedicated day chauffeur",
+     "Mercedes E/V Class",
+     "Hotel pickup",
+     "Waiting time & luggage"
+    ]
+   },
+   "tip": {
+    "fr": "D’avril à juin, visez un départ 8h00 pour éviter l’affluence et prenez le bateau Vernazza–Monterosso avant midi : la lumière révèle les façades et la houle reste plus calme.",
+    "en": "From April to June, aim for an 8:00 start to beat crowds and catch the Vernazza–Monterosso boat before noon when light is best and seas are usually calmer."
+   }
+  },
+  {
+   "slug": "cinque-terre-and-pisa",
+   "index": 2,
+   "title": {
+    "fr": "Cinque Terre et Pise",
+    "en": "Cinque Terre and Pisa"
+   },
+   "intro": {
+    "fr": [
+     "À l’aube, le train côtier file entre les tunnels et votre regard accroche les barques bleu écaillé de Riomaggiore; dix minutes plus tard, un espresso sur la piazzetta de Vernazza, puis le sentier entre les vignes en terrasses du hameau de Corniglia révèle la mer 100 mètres plus bas. On parle Sciacchetrà, murets en pierre sèche, tours sarrasines. L’après-midi, changement de décor : à une heure et quart par l’A12, la Piazza dei Miracoli dévoile le marbre de Carrare de la cathédrale de Pise et l’inclinaison de 4° de la tour, qui a commencé à pencher dès 1178.",
+     "Le déroulé reste simple et confortable : prise en charge à votre hôtel à La Spezia ou Levanto, véhicule Mercedes climatisé à disposition, et cap sur les villages tandis que votre chauffeur conduit et se gare hors des ZTL. Le matin, vous visitez, vous goûtez des anchois de Monterosso pendant qu’il gère les liaisons ou l’attente à la gare. Après le déjeuner, route vers Pise avec votre chauffeur privé Cinque Terre, arrêt photo au Lungarno et créneau d’entrée réservé pour la place; retour souple, selon la lumière ou la marée des trains locaux."
+    ],
+    "en": [
+     "Dawn breaks as the coastal train slips in and out of tunnels; in Riomaggiore, chipped blue skiffs bob under the cliff, and ten minutes later an espresso lands on your table in Vernazza’s small square. A short climb at Corniglia runs along terraced vines, the Ligurian Sea a hundred meters below. Talk turns to Sciacchetrà, dry-stone walls, Saracen watchtowers. By mid‑afternoon the scene flips: 75 minutes down the A12, Pisa’s Piazza dei Miracoli gleams in Carrara marble, and the Leaning Tower tilts a stubborn four degrees, a quirk documented since 1178.",
+     "Logistics are built for ease: hotel pick‑up in La Spezia or Levanto, a cooled Mercedes at your disposal, and the driver handles ZTL drop‑offs while you explore and taste Monterosso anchovies. After lunch, it’s on to Pisa with your Cinque Terre private chauffeur, a Lungarno photo stop, and a timed entry on the square; the return is flexible, shaped by late light and the cadence of local trains."
+    ]
+   },
+   "steps": [
+    {
+     "fr": "08 h 30 — Prise en charge à La Spezia ou Levanto, route panoramique SP370 vers Riomaggiore.",
+     "en": "08:30 — Pick‑up in La Spezia or Levanto, scenic SP370 drive to Riomaggiore."
+    },
+    {
+     "fr": "Matinée (2–3 h) entre Riomaggiore, Vernazza et Corniglia, avec segments en train ou à pied selon la mer et l’affluence.",
+     "en": "Morning (2–3 h) across Riomaggiore, Vernazza, and Corniglia, mixing short train hops or walks based on sea state and crowds."
+    },
+    {
+     "fr": "12 h 45 — Déjeuner à Monterosso al Mare, dégustation d’anchois IGP et Sciacchetrà au verre.",
+     "en": "12:45 — Lunch in Monterosso al Mare, tasting IGP anchovies and a glass of Sciacchetrà."
+    },
+    {
+     "fr": "14 h 15 — Trajet vers Pise (75 min) par l’A12, arrêt Lungarno puis visite de la Piazza dei Miracoli (1 h).",
+     "en": "14:15 — Drive to Pisa (75 min) via the A12, pause on the Lungarno, then Piazza dei Miracoli visit (1 h)."
+    }
+   ],
+   "included": {
+    "fr": [
+     "Chauffeur dédié francophone",
+     "Mercedes classe E ou V",
+     "Prise en charge hôtel",
+     "Attente et dépose ZTL"
+    ],
+    "en": [
+     "Dedicated French‑speaking driver",
+     "Mercedes E‑ or V‑Class",
+     "Hotel pick‑up",
+     "ZTL drop‑off and waiting"
+    ]
+   },
+   "tip": {
+    "fr": "Pour monter dans la tour, réservez le créneau de 16 h 30 à l’avance : la lumière latérale révèle mieux l’ovalisation des colonnes et la foule des groupes a déjà quitté la place.",
+    "en": "If you plan to climb the tower, prebook the 4:30 pm slot: side light shows the column ovalization best, and most tour groups have cleared the square."
+   }
+  },
+  {
+   "slug": "carrara-and-its-marble",
+   "index": 3,
+   "title": {
+    "fr": "Carrare et ses marbres",
+    "en": "Carrara and its marble"
+   },
+   "intro": {
+    "fr": [
+     "Grésillement des scies diamantées, poussière blanche qui vole et soleil qui tape sur la paroi: à Colonnata, l’amphithéâtre de marbre luit comme neige pétrifiée. Les fronts de taille des Alpes Apuanes, entaillés depuis l’époque romaine, racontent l’histoire d’un matériau qui a façonné les statues de Michel‑Ange et la façade de San Lorenzo à Florence. On file ensuite par la route panoramique 446 jusqu’à Miseglia et Fantiscritti; les anciennes voies Decauville serpentent encore au-dessus des vides, rappelant l’ère des « lizzatori » qui faisaient glisser les blocs sur des madriers. À 30 minutes de La Spezia, la montagne s’ouvre et la mer de Versilia scintille déjà.",
+     "Le matin, votre chauffeur vous attend devant l’hôtel à Monterosso ou Riomaggiore et règle tout: confort d’une Mercedes, eau fraîche, tempo souple. On visite une carrière active avec casque et guide local, on s’arrête dans un atelier de sculpture à Pietrasanta, vous goûtez le lardo IGP de Colonnata pendant qu’il gère la route et le parking. Autour de Carrara, notre chauffeur privé en Ligurie–Toscane adapte l’itinéraire selon la météo et l’activité des sites, puis longe la côte via Forte dei Marmi pour un espresso face à la jetée, avant un retour serein vers les Cinque Terre."
+    ],
+    "en": [
+     "The whine of diamond blades, a chalky haze on your shoes, and hard sun striking a cliff of stone: at Colonnata the marble amphitheater gleams like frozen snow. Cut since Roman times, these Apuan Alps quarries supplied blocks for Michelangelo and dressed the façade of San Lorenzo in Florence. Follow the scenic SP446 toward Miseglia and Fantiscritti; remnants of Decauville rail lines still cling above the void, a reminder of the lizzatori who once slid massive blocks down greased timbers. Just 30 minutes from La Spezia, the mountain opens—and the Versilia sea flickers into view.",
+     "Morning pickup at your hotel in Monterosso or Riomaggiore, and your driver handles the rest: a smooth Mercedes ride, chilled water, an easy pace. Tour an active quarry with hard hat and local guide, stop in a working studio in Pietrasanta, and sample IGP lardo in Colonnata while he deals with roads and parking. Around Carrara, our private chauffeur across Liguria–Tuscany tweaks the plan to match weather and quarry activity, then cruises the coast via Forte dei Marmi for a quick espresso on the pier before a calm drive back to the Cinque Terre."
+    ]
+   },
+   "steps": [
+    {
+     "fr": "09h00 — Prise en charge à votre hôtel des Cinque Terre et route panoramique vers Carrara via la SP446 (30–40 min).",
+     "en": "09:00 — Pickup at your Cinque Terre hotel and scenic drive to Carrara via SP446 (30–40 min)."
+    },
+    {
+     "fr": "10h00 — Visite d’une carrière active à Fantiscritti avec casque et guide (env. 75 minutes).",
+     "en": "10:00 — Guided hard‑hat tour of an active quarry at Fantiscritti (about 75 minutes)."
+    },
+    {
+     "fr": "12h15 — Déjeuner simple à Colonnata et dégustation de lardo IGP, puis arrêt atelier de sculpture à Pietrasanta (45 min).",
+     "en": "12:15 — Simple lunch in Colonnata with IGP lardo tasting, then a sculpture workshop stop in Pietrasanta (45 min)."
+    },
+    {
+     "fr": "15h30 — Retour par la côte: pause café à Forte dei Marmi et retour aux Cinque Terre vers 17h30.",
+     "en": "15:30 — Coastal return with a coffee stop in Forte dei Marmi and arrival back in the Cinque Terre around 17:30."
+    }
+   ],
+   "included": {
+    "fr": [
+     "Chauffeur dédié francophone",
+     "Mercedes Classe V ou E",
+     "Prise en charge hôtel",
+     "Attente et stationnement gérés"
+    ],
+    "en": [
+     "Dedicated French-speaking driver",
+     "Mercedes E or V Class",
+     "Hotel pick-up",
+     "Waiting time and parking"
+    ]
+   },
+   "tip": {
+    "fr": "Pour voir les tailles en pleine activité, visez un jour de semaine entre 9h et 11h d’avril à juin; réservez la visite de carrière 48 h avant, les accès pouvant fermer lors d’extractions lourdes.",
+    "en": "To catch quarry operations in full swing, go on a weekday between 9 and 11 am from April to June; book the quarry tour 48 hours ahead as access may close during heavy extraction."
+   }
+  },
+  {
+   "slug": "evening-in-la-spezia",
+   "index": 4,
+   "title": {
+    "fr": "Soirée à La Spezia",
+    "en": "Evening in La Spezia"
+   },
+   "intro": {
+    "fr": [
+     "Depuis Monterosso, la route SP370 grimpe à 300 m d’altitude au-dessus des vignes en terrasses, longe la crête jusqu’au col du Termine, puis redescend sur La Spezia par la SP530 en 45 minutes pour 32 km. À l’arrivée, le golfe des Poètes s’ouvre comme un amphithéâtre naturel entre Portovenere et Lerici ; les façades liberty de Viale Italia virent au rose quand le soleil tombe derrière Palmaria. On vient ici pour les fritti di mare servis à la minute, les langoustines de Via Prione, et ce verre de vermentino en regardant les ferries rentrer au Molo Italia.",
+     "Après la prise en charge à votre hôtel dans les Cinque Terre, le chauffeur attend entre chaque halte, garde vos achats au frais et ajuste l’itinéraire au rythme des tables et du ciel. D’abord un tour de baie au coucher, puis un dîner réservé à l’heure juste, ensuite une promenade digestif sur la passeggiata Morin : vous dégustez, il conduit. À La Spezia avec un chauffeur privé, on gagne du temps entre parkings complets et ZTL, on découvre aussi les adresses locales – de la pescheria di Piazza Cavour aux gelati tardifs de Corso Cavour – sans regarder la montre."
+    ],
+    "en": [
+     "Leaving Monterosso, the SP370 climbs past terraced vines to roughly 300 meters, rides the ridge to Passo del Termine, then drops to La Spezia via the SP530: about 32 km in 45 minutes. Down on the Gulf of Poets, the amphitheater of water stretches between Portovenere and Lerici; Viale Italia’s liberty façades turn coral as the sun slips behind Palmaria. Come for just-fried seafood cones, sweet scampi on Via Prione, and a chilled glass of Vermentino while ferries nose into Molo Italia.",
+     "Collected at your Cinque Terre hotel, you keep the car at disposal as the driver waits between stops, stashes your purchases, and fine-tunes timing to the sunset and the kitchen. First a bay spin at golden hour, then a booked table, and finally a slow stroll on Passeggiata Morin: you taste, he drives. With a private chauffeur in La Spezia, you skip ZTL and full parking lots and tap into local haunts—from the fish market on Piazza Cavour to late-night gelato on Corso Cavour—without watching the clock."
+    ]
+   },
+   "steps": [
+    {
+     "fr": "19h00 — Prise en charge à Monterosso et trajet panoramique par la SP370/SP530 vers La Spezia (45 min).",
+     "en": "7:00 pm — Pick-up in Monterosso; scenic drive via SP370/SP530 to La Spezia (45 min)."
+    },
+    {
+     "fr": "19h50 — Arrêt photo rapide sur la passeggiata Morin face à Palmaria et Tino (10 minutes).",
+     "en": "7:50 pm — Quick photo stop on Passeggiata Morin facing Palmaria and Tino (10 minutes)."
+    },
+    {
+     "fr": "20h15 — Dîner de poisson réservé près de Via Prione ou Piazza Cavour, selon l’arrivage (env. 1 h 45).",
+     "en": "8:15 pm — Seafood dinner near Via Prione or Piazza Cavour, booked per the day’s catch (about 1 h 45)."
+    },
+    {
+     "fr": "22h15 — Dernier verre au Molo Italia puis retour à l’hôtel dans les Cinque Terre (45–60 min selon village).",
+     "en": "10:15 pm — Nightcap at Molo Italia, then return to your Cinque Terre hotel (45–60 min depending on village)."
+    }
+   ],
+   "included": {
+    "fr": [
+     "Chauffeur dédié soirée",
+     "Mercedes classe E/V",
+     "Prise en charge hôtel",
+     "Attente entre étapes"
+    ],
+    "en": [
+     "Dedicated evening driver",
+     "Mercedes E/V class",
+     "Hotel pick-up",
+     "Waiting between stops"
+    ]
+   },
+   "tip": {
+    "fr": "Pour les couchers nets sur Palmaria, visez une arrivée à la passeggiata Morin 20 à 25 minutes avant l’heure officielle du coucher du soleil et réservez la table du deuxième service pour éviter le pic de 20h.",
+    "en": "For clean sunsets over Palmaria, plan to reach Passeggiata Morin 20–25 minutes before official sunset and book the second dinner seating to dodge the 8 pm rush."
+   }
+  }
+ ]
+}
