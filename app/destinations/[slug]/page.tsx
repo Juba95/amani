@@ -19,7 +19,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const d = getDestination(params.slug);
   if (!d) return {};
   return {
-    title: `Chauffeur Privé ${d.name.fr} — Transferts & Expériences | Amani Limousines`,
+    title: `Chauffeur Privé ${d.name.fr} — VTC de Luxe, Transferts & Expériences | Amani Limousines`,
     description: metaDescription(d.intro.fr),
     alternates: {
       canonical: `${BASE}/destinations/${d.slug}`,

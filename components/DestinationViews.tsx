@@ -92,6 +92,23 @@ export function DestinationDetail({ d, locale }: { d: Destination; locale: DestL
   const cityImage = getExperienceImage(d.slug);
   const cityImageCredit = getImageCredit(d.slug, cityImage);
   const nearby = getNearbyDestinations(d);
+  // Maillage pays : jusqu'à 12 autres villes du même pays (hors ville courante
+  // et hors villes proches déjà listées juste au-dessus)
+  const nearbySlugs = new Set(nearby.map((n) => n.slug));
+  const countrySisters = ALL_DESTINATIONS
+    .filter((x) => x.country.en === d.country.en && x.slug !== d.slug && !nearbySlugs.has(x.slug))
+    .slice(0, 12);
+
+  const BASE_URL = 'https://www.amani-limousines.com';
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Amani Limousines', item: BASE_URL },
+      { '@type': 'ListItem', position: 2, name: locale === 'fr' ? 'Destinations' : 'Destinations', item: `${BASE_URL}${t.base}` },
+      { '@type': 'ListItem', position: 3, name: d.name[locale], item: `${BASE_URL}${t.base}/${d.slug}` },
+    ],
+  };
 
   const faqJsonLd = {
     '@context': 'https://schema.org',
@@ -108,6 +125,10 @@ export function DestinationDetail({ d, locale }: { d: Destination; locale: DestL
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
       {/* Hero : pays + h1 + image (si générée) + intro */}
@@ -153,6 +174,39 @@ export function DestinationDetail({ d, locale }: { d: Destination; locale: DestL
             <p className="sf text-sm text-stone-600 leading-relaxed mt-2">
               {d.airportTransfer[locale]}
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Services VTC — bloc sémantique (mots-clés à fort volume : VTC,
+          chauffeur de maître, voiture avec chauffeur, transfert aéroport) */}
+      <section className="py-12 px-6 md:px-10 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="heading text-2xl">
+            {locale === 'fr'
+              ? `VTC de luxe à ${d.name.fr} — nos services avec chauffeur`
+              : `Luxury chauffeur services in ${d.name.en}`}
+          </h2>
+          <div className="mt-7 grid sm:grid-cols-2 gap-x-8 gap-y-5">
+            {(locale === 'fr'
+              ? [
+                  [`Transfert aéroport ${d.name.fr}`, <>Accueil personnalisé, suivi de vol et <strong>prix fixe</strong> — votre <strong>VTC à {d.name.fr}</strong> vous attend, même en cas de retard.</>],
+                  ['Mise à disposition avec chauffeur', <>Une <strong>voiture avec chauffeur</strong> à l’heure ou à la journée : rendez-vous d’affaires, shopping, visites — l’itinéraire s’adapte à vous.</>],
+                  ['Chauffeur de maître', <>Un <strong>chauffeur de maître</strong> dédié pour vos séjours : discrétion, ponctualité et connaissance parfaite de {d.name.fr} et de sa région.</>],
+                  ['Excursions et expériences', <>Cinq itinéraires signés au départ de {d.name.fr}, avec <strong>chauffeur privé</strong> et véhicule Mercedes à chaque étape.</>],
+                ]
+              : [
+                  [`${d.name.en} airport transfer`, <>Personal meet-and-greet, flight tracking and <strong>fixed prices</strong> — your <strong>private driver in {d.name.en}</strong> waits for you, even when flights run late.</>],
+                  ['Chauffeur hire by the hour', <>A <strong>car with driver</strong> by the hour or the day: business meetings, shopping, sightseeing — the itinerary adapts to you.</>],
+                  ['Personal chauffeur service', <>A dedicated <strong>personal chauffeur</strong> for your stay: discretion, punctuality and intimate knowledge of {d.name.en} and its region.</>],
+                  ['Excursions and experiences', <>Five signature itineraries departing {d.name.en}, with a <strong>private chauffeur</strong> and a Mercedes on standby at every stop.</>],
+                ]
+            ).map(([title, body], i) => (
+              <div key={i}>
+                <h3 className="font-serif text-base text-gray-900">{title}</h3>
+                <p className="sf text-sm text-stone-600 leading-relaxed mt-1.5">{body}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -221,25 +275,63 @@ export function DestinationDetail({ d, locale }: { d: Destination; locale: DestL
         </div>
       </section>
 
-      {/* Villes proches (maillage interne) */}
+      {/* Villes proches (maillage interne) + expériences à proximité */}
       {nearby.length > 0 && (
         <section className="py-14 px-6 md:px-10 bg-white">
           <div className="max-w-4xl mx-auto">
             <p className="tag">{t.nearbyTag}</p>
             <h2 className="heading mt-2 mb-8">{t.nearbyTitle}</h2>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {nearby.map((n) => {
+                const nDetails = getCityExperienceDetails(n.slug);
+                const firstExp = nDetails?.experiences[0];
+                return (
+                  <div key={n.slug} className="card">
+                    <Link href={`${t.base}/${n.slug}`} className="font-serif text-lg text-gray-900 hover:text-gold-500 transition-colors">
+                      {locale === 'fr' ? `Chauffeur privé ${n.name.fr}` : `Private chauffeur ${n.name.en}`}
+                    </Link>
+                    {firstExp && (
+                      <Link href={`${t.base}/${n.slug}/${firstExp.slug}`}
+                        className="block font-sans text-xs text-stone-500 hover:text-gold-500 mt-2 transition-colors">
+                        → {firstExp.title[locale]}
+                      </Link>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Maillage pays : les autres villes desservies dans le même pays */}
+      {countrySisters.length > 0 && (
+        <section className="py-14 px-6 md:px-10 bg-warm-50">
+          <div className="max-w-4xl mx-auto">
+            <p className="tag">{d.country[locale]}</p>
+            <h2 className="heading mt-2 mb-4">
+              {locale === 'fr'
+                ? `Chauffeur privé en ${d.country.fr} — nos autres destinations`
+                : `Private chauffeur in ${d.country.en} — our other destinations`}
+            </h2>
+            <p className="sf text-sm text-stone-500 mb-8 leading-relaxed">
+              {locale === 'fr'
+                ? <>Votre <strong>chauffeur de maître</strong> vous accompagne dans tout le pays : mise à disposition, transferts inter-villes et excursions au départ de {d.name.fr}.</>
+                : <>Your <strong>personal chauffeur</strong> covers the whole country: hourly hire, inter-city transfers and excursions departing from {d.name.en}.</>}
+            </p>
             <div className="flex flex-wrap gap-3">
-              {nearby.map((n) => (
+              {countrySisters.map((n) => (
                 <Link
                   key={n.slug}
                   href={`${t.base}/${n.slug}`}
-                  className="font-sans text-sm px-5 py-2.5 rounded-full border border-warm-200 text-stone-600 hover:border-stone-500 hover:text-gray-900 transition-colors"
+                  className="font-sans text-sm px-5 py-2.5 rounded-full border border-warm-200 bg-white text-stone-600 hover:border-stone-500 hover:text-gray-900 transition-colors"
                 >
                   {n.name[locale]}
                 </Link>
               ))}
               <Link
                 href={t.base}
-                className="font-sans text-sm px-5 py-2.5 rounded-full border border-warm-200 text-stone-400 hover:border-stone-500 hover:text-gray-900 transition-colors"
+                className="font-sans text-sm px-5 py-2.5 rounded-full border border-warm-200 bg-white text-stone-400 hover:border-stone-500 hover:text-gray-900 transition-colors"
               >
                 {t.allDest} →
               </Link>

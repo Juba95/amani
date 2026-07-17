@@ -11,6 +11,7 @@ import AboutSection from '@/components/AboutSection';
 import BookingResults from '@/components/BookingResults';
 import { CTA, Footer } from '@/components/CTAFooter';
 import { SocialProofStrip, ExperiencesSection, DestinationsSection, RoutesStrip, RecruitBlock } from '@/components/HomeSections';
+import ParallaxBand from '@/components/ParallaxBand';
 import type { MapCountry } from '@/components/EuropeMap';
 import { RTL_LOCALES } from '@/lib/vehicles';
 import type { Locale } from '@/lib/vehicles';
@@ -106,6 +107,14 @@ export default function LocaleHomeClient({ countries }: { countries: Record<stri
         <>
           <ExperiencesSection locale="en" />
           <DestinationsSection locale="en" />
+          <ParallaxBand
+            image="/images/city-hero/chauffeur-prive-paris.jpg"
+            tag="Private chauffeur service"
+            title="A luxury chauffeur service, wherever Europe takes you"
+            subtitle="From Paris to the Riviera, your private car and driver await — fixed prices, Mercedes fleet, available around the clock."
+            ctaLabel="All destinations"
+            ctaHref="/en/destinations"
+          />
           <RoutesStrip locale="en" />
         </>
       )}

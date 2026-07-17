@@ -10,6 +10,7 @@ import WhyUs from '@/components/WhyUs';
 import AboutSection from '@/components/AboutSection';
 import { CTA, Footer } from '@/components/CTAFooter';
 import { SocialProofStrip, ExperiencesSection, DestinationsSection, RoutesStrip, RecruitBlock } from '@/components/HomeSections';
+import ParallaxBand from '@/components/ParallaxBand';
 import type { MapCountry } from '@/components/EuropeMap';
 
 import fr from '@/locales/fr.json';
@@ -84,6 +85,16 @@ export default function HomeClient({ countries }: { countries: Record<string, Ma
 
       {/* Top destinations */}
       <DestinationsSection locale="fr" />
+
+      {/* Bandeau parallaxe */}
+      <ParallaxBand
+        image="/images/city-hero/chauffeur-prive-paris.jpg"
+        tag="Chauffeur de maître"
+        title="Un VTC de luxe, un chauffeur de maître, partout en Europe"
+        subtitle="De Paris à la Riviera, votre voiture avec chauffeur vous attend — prix fixe, véhicule Mercedes, disponibilité 24h/24."
+        ctaLabel="Toutes les destinations"
+        ctaHref="/destinations"
+      />
 
       {/* Trajets populaires */}
       <RoutesStrip locale="fr" />

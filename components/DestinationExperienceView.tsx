@@ -5,7 +5,7 @@
  */
 import Image from 'next/image';
 import Link from 'next/link';
-import type { Destination } from '@/lib/destinations';
+import { getNearbyDestinations, type Destination } from '@/lib/destinations';
 import { getExperienceImage, getImageCredit, type ExperienceDetail } from '@/lib/experience-details';
 
 type L = 'fr' | 'en';
@@ -66,9 +66,23 @@ export default function DestinationExperienceView({
   // Image héros (générée par script) — la page reste valide sans image
   const heroImage = getExperienceImage(d.slug, exp.slug);
   const heroImageCredit = getImageCredit(d.slug, heroImage);
+  const nearby = getNearbyDestinations(d);
+
+  const BASE_URL = 'https://www.amani-limousines.com';
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Amani Limousines', item: BASE_URL },
+      { '@type': 'ListItem', position: 2, name: 'Destinations', item: `${BASE_URL}${t.base}` },
+      { '@type': 'ListItem', position: 3, name: cityName, item: `${BASE_URL}${t.base}/${d.slug}` },
+      { '@type': 'ListItem', position: 4, name: exp.title[locale], item: `${BASE_URL}${t.base}/${d.slug}/${exp.slug}` },
+    ],
+  };
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       {/* Hero */}
       <section className="pt-36 pb-10 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
@@ -190,6 +204,23 @@ export default function DestinationExperienceView({
               style={{ color: '#6d5a30' }}>
               ← {t.backCity(cityName)}
             </Link>
+          </div>
+        </section>
+      )}
+
+      {/* Villes proches — maillage inter-villes depuis l'expérience */}
+      {nearby.length > 0 && (
+        <section className="py-12 px-6 md:px-10 bg-white">
+          <div className="max-w-4xl mx-auto">
+            <p className="tag">{locale === 'fr' ? 'Poursuivez votre itinéraire' : 'Continue your journey'}</p>
+            <div className="mt-4 flex flex-wrap gap-3">
+              {nearby.map((n) => (
+                <Link key={n.slug} href={`${t.base}/${n.slug}`}
+                  className="font-sans text-sm px-5 py-2.5 rounded-full border border-warm-200 text-stone-600 hover:border-stone-500 hover:text-gray-900 transition-colors">
+                  {locale === 'fr' ? `Chauffeur privé ${n.name.fr}` : `Private chauffeur ${n.name.en}`}
+                </Link>
+              ))}
+            </div>
           </div>
         </section>
       )}
