@@ -6,7 +6,7 @@ const SLUG = 'transfert-cdg-gare-du-nord';
 
 export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Privé CDG Gare du Nord — Transfert Aéroport Charles de Gaulle | Amani',
-  description: 'Transfert entre l\'aéroport CDG et la Gare du Nord avec chauffeur privé. 28 km, 35 min. Correspondance Eurostar, Thalys, TGV. Prix fixe à partir de 125 €.',
+  description: 'Transfert entre l\'aéroport CDG et la Gare du Nord avec chauffeur privé. 28 km, 35 min. Correspondance Eurostar, Thalys, TGV. Prix fixe à partir de 150 €.',
   canonical: 'https://www.amani-limousines.com/transfert-cdg-gare-du-nord',
 });
 
@@ -54,9 +54,9 @@ export default function TransfertCDGGareNordPage() {
             <h2 className="heading">Tarifs CDG → Gare du Nord</h2>
             <div className="mt-6 space-y-3">
               {[
-                { v: 'Mercedes Classe E (1–3 pax)', p: 'à partir de 125 €' },
+                { v: 'Mercedes Classe E (1–3 pax)', p: 'à partir de 150 €' },
                 { v: 'Mercedes Classe S (1–3 pax)', p: 'à partir de 150 €' },
-                { v: 'Mercedes Classe V (jusqu\'à 7 pax)', p: 'à partir de 125 €' },
+                { v: 'Mercedes Classe V (jusqu\'à 7 pax)', p: 'à partir de 160 €' },
               ].map((r) => (
                 <div key={r.v} className="flex justify-between items-center py-2 border-b border-warm-200">
                   <span className="sf text-sm text-gray-700">{r.v}</span>

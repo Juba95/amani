@@ -246,7 +246,7 @@
         "category": "Berline Business",
         "pax": "3 passagers",
         "bags": "2 valises",
-        "from": "À partir de 100 €",
+        "from": "À partir de 150 €",
         "features": [
           "Wi-Fi premium",
           "Intérieur cuir",
@@ -259,7 +259,7 @@
         "category": "Berline Executive",
         "pax": "3 passagers",
         "bags": "2 valises",
-        "from": "À partir de 150 €",
+        "from": "À partir de 220 €",
         "features": [
           "Sièges massants",
           "Écrans LCD",
@@ -272,7 +272,7 @@
         "category": "Minivan Luxe",
         "pax": "7 passagers",
         "bags": "6 valises",
-        "from": "À partir de 100 €",
+        "from": "À partir de 160 €",
         "features": [
           "Configuration salon",
           "Espace réunion",
@@ -298,7 +298,7 @@
         "category": "Minibus Luxe",
         "pax": "16 passagers",
         "bags": "16 valises",
-        "from": "À partir de 300 €",
+        "from": "À partir de 450 €",
         "features": [
           "Sièges capitaine",
           "Sono premium",

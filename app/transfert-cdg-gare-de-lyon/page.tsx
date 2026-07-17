@@ -57,7 +57,7 @@ export default function TransfertCDGGareLyonPage() {
             <h2 className="heading">Tarifs CDG → Gare de Lyon</h2>
             <div className="mt-6 space-y-3">
               {[
-                { v: 'Mercedes Classe E (1–3 pax)', p: 'à partir de 125 €' },
+                { v: 'Mercedes Classe E (1–3 pax)', p: 'à partir de 150 €' },
                 { v: 'Mercedes Classe S (1–3 pax)', p: 'à partir de 165 €' },
                 { v: 'Mercedes Classe V (jusqu\'à 7 pax)', p: 'à partir de 130 €' },
               ].map((r) => (

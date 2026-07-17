@@ -35,8 +35,8 @@ export default function TransfertCDGDisneylandPage() {
               {[
                 { label: 'Distance', val: '45 km environ' },
                 { label: 'Durée estimée', val: '35–50 min' },
-                { label: 'Classe E (3 pax)', val: 'à partir de 125 €' },
-                { label: 'Classe V (7 pax)', val: 'à partir de 125 €' },
+                { label: 'Classe E (3 pax)', val: 'à partir de 150 €' },
+                { label: 'Classe V (7 pax)', val: 'à partir de 160 €' },
                 { label: 'Sprinter VIP (16 pax)', val: 'à partir de 200 €' },
               ].map((r) => (
                 <div key={r.label} className="flex justify-between items-center py-2 border-b border-warm-200">

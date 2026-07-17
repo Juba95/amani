@@ -6,7 +6,7 @@ const SLUG = 'transfert-cdg-hotel-ritz';
 
 export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Chauffeur Privé CDG Hôtel Ritz Paris — Transfert Aéroport Place Vendôme | Amani',
-  description: 'Transfert CDG vers l\'Hôtel Ritz Paris (Place Vendôme) avec chauffeur privé. 30 km, 40 min. Mercedes Classe S, accueil VIP, bagagiste à bord. Prix fixe 225 €.',
+  description: 'Transfert CDG vers l\'Hôtel Ritz Paris (Place Vendôme) avec chauffeur privé. 30 km, 40 min. Mercedes Classe S, accueil VIP, bagagiste à bord. Prix fixe 220 €.',
   canonical: 'https://www.amani-limousines.com/transfert-cdg-hotel-ritz',
 });
 
@@ -18,7 +18,7 @@ const jsonLd = {
   areaServed: 'Aéroport CDG → Place Vendôme, Paris 1er',
   description: 'Transfert avec chauffeur privé entre l\'aéroport Charles de Gaulle et l\'Hôtel Ritz Paris.',
   offers: [
-    { '@type': 'Offer', name: 'Mercedes Classe S — CDG → Ritz', price: '225', priceCurrency: 'EUR' },
+    { '@type': 'Offer', name: 'Mercedes Classe S — CDG → Ritz', price: '220', priceCurrency: 'EUR' },
     { '@type': 'Offer', name: 'BMW i7 — CDG → Ritz', price: '250', priceCurrency: 'EUR' },
   ],
 };
@@ -77,10 +77,10 @@ export default function TransfertCDGRitzPage() {
             </p>
             <div className="mt-6 space-y-3">
               {[
-                { v: 'Mercedes Classe S', p: '225 €' },
+                { v: 'Mercedes Classe S', p: '220 €' },
                 { v: 'BMW i7 (électrique)', p: '250 €' },
-                { v: 'Mercedes Classe E', p: '125 €' },
-                { v: 'Mercedes Classe V (groupe)', p: '125 €' },
+                { v: 'Mercedes Classe E', p: '150 €' },
+                { v: 'Mercedes Classe V (groupe)', p: '160 €' },
               ].map((r) => (
                 <div key={r.v} className="flex justify-between items-center py-2 border-b border-warm-200">
                   <span className="sf text-sm text-gray-700">{r.v}</span>

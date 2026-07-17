@@ -6,7 +6,7 @@ const SLUG = 'transfert-cdg-paris';
 
 export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Transfert CDG Paris Centre — Chauffeur Privé Charles de Gaulle | Amani',
-  description: 'Transfert entre l\'aéroport CDG et Paris centre avec chauffeur privé. 32 km, 45 minutes. Prix fixe à partir de 125 €. Suivi de vol, disponible 24h/24.',
+  description: 'Transfert entre l\'aéroport CDG et Paris centre avec chauffeur privé. 32 km, 45 minutes. Prix fixe à partir de 150 €. Suivi de vol, disponible 24h/24.',
   canonical: 'https://www.amani-limousines.com/transfert-cdg-paris',
 });
 
@@ -33,9 +33,9 @@ export default function TransfertCDGParisPage() {
             <h2 className="heading">Tarifs CDG → Paris Centre</h2>
             <div className="mt-6 space-y-3">
               {[
-                { v: 'Classe E (3 pax)', p: '125 €' },
-                { v: 'Classe S (3 pax)', p: '225 €' },
-                { v: 'Classe V (7 pax)', p: '125 €' },
+                { v: 'Classe E (3 pax)', p: '150 €' },
+                { v: 'Classe S (3 pax)', p: '220 €' },
+                { v: 'Classe V (7 pax)', p: '160 €' },
                 { v: 'BMW i7 (3 pax)', p: '250 €' },
                 { v: 'Sprinter VIP (16 pax)', p: 'Sur devis' },
               ].map((r) => (

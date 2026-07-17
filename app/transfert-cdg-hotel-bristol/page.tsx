@@ -17,7 +17,7 @@ const jsonLd = {
   provider: { '@type': 'LocalBusiness', name: 'Amani Limousines' },
   areaServed: 'Aéroport CDG → Rue du Faubourg Saint-Honoré, Paris 8ème',
   offers: [
-    { '@type': 'Offer', name: 'Mercedes Classe S — CDG → Bristol', price: '225', priceCurrency: 'EUR' },
+    { '@type': 'Offer', name: 'Mercedes Classe S — CDG → Bristol', price: '220', priceCurrency: 'EUR' },
   ],
 };
 
@@ -65,10 +65,10 @@ export default function TransfertCDGBristolPage() {
             <h2 className="heading">Tarifs</h2>
             <div className="mt-6 space-y-3">
               {[
-                { v: 'Mercedes Classe S', p: '225 €' },
+                { v: 'Mercedes Classe S', p: '220 €' },
                 { v: 'BMW i7', p: '250 €' },
-                { v: 'Mercedes Classe E', p: '125 €' },
-                { v: 'Classe V (groupe)', p: '125 €' },
+                { v: 'Mercedes Classe E', p: '150 €' },
+                { v: 'Classe V (groupe)', p: '160 €' },
               ].map((r) => (
                 <div key={r.v} className="flex justify-between items-center py-2 border-b border-warm-200">
                   <span className="sf text-sm text-gray-700">{r.v}</span>

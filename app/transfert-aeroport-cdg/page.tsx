@@ -23,9 +23,9 @@ const jsonLd = {
   areaServed: 'Aéroport Charles de Gaulle, Paris',
   description: 'Service de transfert avec chauffeur privé depuis et vers l\'aéroport Charles de Gaulle. Berlines et vans VIP, prix fixe, suivi de vol.',
   offers: [
-    { '@type': 'Offer', name: 'Mercedes Classe E — CDG', price: '125', priceCurrency: 'EUR' },
-    { '@type': 'Offer', name: 'Mercedes Classe S — CDG', price: '225', priceCurrency: 'EUR' },
-    { '@type': 'Offer', name: 'Mercedes Classe V — CDG', price: '125', priceCurrency: 'EUR' },
+    { '@type': 'Offer', name: 'Mercedes Classe E — CDG', price: '150', priceCurrency: 'EUR' },
+    { '@type': 'Offer', name: 'Mercedes Classe S — CDG', price: '220', priceCurrency: 'EUR' },
+    { '@type': 'Offer', name: 'Mercedes Classe V — CDG', price: '160', priceCurrency: 'EUR' },
   ],
 };
 
@@ -104,9 +104,9 @@ export default function TransfertCDGPage() {
           <p className="sf text-stone-500 mt-2 text-sm">Prix fixes tout compris • Péages inclus</p>
           <div className="mt-8 grid md:grid-cols-3 gap-6">
             {[
-              { name: 'Mercedes Classe E', cat: 'Berline Business', pax: '1–3 passagers', price: 'À partir de 125 €' },
-              { name: 'Mercedes Classe S', cat: 'Berline Executive', pax: '1–3 passagers', price: 'À partir de 225 €' },
-              { name: 'Mercedes Classe V', cat: 'Minivan Luxe', pax: 'Jusqu\'à 7 passagers', price: 'À partir de 125 €' },
+              { name: 'Mercedes Classe E', cat: 'Berline Business', pax: '1–3 passagers', price: 'À partir de 150 €' },
+              { name: 'Mercedes Classe S', cat: 'Berline Executive', pax: '1–3 passagers', price: 'À partir de 220 €' },
+              { name: 'Mercedes Classe V', cat: 'Minivan Luxe', pax: 'Jusqu\'à 7 passagers', price: 'À partir de 160 €' },
             ].map((v) => (
               <div key={v.name} className="card">
                 <p className="sf text-xs text-stone-400 uppercase tracking-wider">{v.cat}</p>

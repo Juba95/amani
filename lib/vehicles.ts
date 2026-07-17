@@ -21,7 +21,7 @@ export const VEHICLES: Vehicle[] = [
     nameKey: 'classe_e',
     image: '/vehicles/mercedes-classe-e.png',
     pax: 3, bags: 2,
-    basePrice: 100,
+    basePrice: 100,        // Tarif minimum ville Classe E
     airportPrice: 150,     // Forfait aéroport Classe E
     pricePerKm: 3.00,
   },
@@ -30,8 +30,8 @@ export const VEHICLES: Vehicle[] = [
     nameKey: 'classe_s',
     image: '/vehicles/mercedes-classe-s.png',
     pax: 3, bags: 2,
-    basePrice: 150,
-    airportPrice: 200,     // Forfait aéroport Classe S
+    basePrice: 150,        // Tarif minimum ville Classe S
+    airportPrice: 220,     // Forfait aéroport Classe S
     pricePerKm: 4.00,
   },
   {
@@ -39,7 +39,7 @@ export const VEHICLES: Vehicle[] = [
     nameKey: 'classe_v',
     image: '/vehicles/mercedes-classe-v.png',
     pax: 7, bags: 6,
-    basePrice: 100,
+    basePrice: 100,        // Tarif minimum ville Classe V
     airportPrice: 160,     // Forfait aéroport Classe V
     pricePerKm: 3.00,
   },
@@ -57,8 +57,8 @@ export const VEHICLES: Vehicle[] = [
     nameKey: 'sprinter',
     image: '/vehicles/mercedes-sprinter.png',
     pax: 16, bags: 16,
-    basePrice: 300,
-    airportPrice: 350,     // Forfait aéroport Sprinter VIP
+    basePrice: 300,        // Tarif minimum ville Sprinter VIP
+    airportPrice: 450,     // Forfait aéroport Sprinter VIP
     pricePerKm: 5.00,
   },
   {

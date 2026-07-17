@@ -246,7 +246,7 @@
         "category": "Berlina Business",
         "pax": "3 pasajeros",
         "bags": "2 maletas",
-        "from": "Desde 100 €",
+        "from": "Desde 150 €",
         "features": [
           "Wi-Fi premium",
           "Interior de cuero",
@@ -259,7 +259,7 @@
         "category": "Berlina Ejecutiva",
         "pax": "3 pasajeros",
         "bags": "2 maletas",
-        "from": "Desde 150 €",
+        "from": "Desde 220 €",
         "features": [
           "Asientos con masaje",
           "Pantallas LCD",
@@ -272,7 +272,7 @@
         "category": "Van de Lujo",
         "pax": "7 pasajeros",
         "bags": "6 maletas",
-        "from": "Desde 100 €",
+        "from": "Desde 160 €",
         "features": [
           "Configuración salón",
           "Espacio de reunión",
@@ -298,7 +298,7 @@
         "category": "Minibús de Lujo",
         "pax": "16 pasajeros",
         "bags": "16 maletas",
-        "from": "Desde 300 €",
+        "from": "Desde 450 €",
         "features": [
           "Asientos capitán",
           "Sonido premium",

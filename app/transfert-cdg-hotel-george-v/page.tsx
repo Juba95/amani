@@ -18,7 +18,7 @@ const jsonLd = {
   areaServed: 'Aéroport CDG → Avenue George V, Paris 8ème',
   description: 'Transfert avec chauffeur privé entre Charles de Gaulle et le Four Seasons George V.',
   offers: [
-    { '@type': 'Offer', name: 'Mercedes Classe S — CDG → George V', price: '225', priceCurrency: 'EUR' },
+    { '@type': 'Offer', name: 'Mercedes Classe S — CDG → George V', price: '220', priceCurrency: 'EUR' },
   ],
 };
 
@@ -65,10 +65,10 @@ export default function TransfertCDGGeorgeVPage() {
             <h2 className="heading">Tarifs CDG → George V</h2>
             <div className="mt-6 space-y-3">
               {[
-                { v: 'Mercedes Classe S', p: '225 €' },
+                { v: 'Mercedes Classe S', p: '220 €' },
                 { v: 'BMW i7', p: '250 €' },
-                { v: 'Mercedes Classe E', p: '125 €' },
-                { v: 'Mercedes Classe V (jusqu\'à 7 pax)', p: '125 €' },
+                { v: 'Mercedes Classe E', p: '150 €' },
+                { v: 'Mercedes Classe V (jusqu\'à 7 pax)', p: '160 €' },
               ].map((r) => (
                 <div key={r.v} className="flex justify-between items-center py-2 border-b border-warm-200">
                   <span className="sf text-sm text-gray-700">{r.v}</span>

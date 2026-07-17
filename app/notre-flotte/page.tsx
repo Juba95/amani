@@ -201,7 +201,7 @@ export default function NotreFlottePage() {
                   </tr>
                   <tr className="border-b border-warm-200">
                     <td className="py-3.5 pr-4 text-gray-800">Mercedes Classe S</td>
-                    <td className="py-3.5 text-right font-medium" style={{ color: '#8a7340' }}>200 €</td>
+                    <td className="py-3.5 text-right font-medium" style={{ color: '#8a7340' }}>220 €</td>
                   </tr>
                   <tr className="border-b border-warm-200">
                     <td className="py-3.5 pr-4 text-gray-800">Mercedes Classe S Maybach</td>
@@ -217,7 +217,7 @@ export default function NotreFlottePage() {
                   </tr>
                   <tr className="border-b border-warm-200">
                     <td className="py-3.5 pr-4 text-gray-800">Mercedes Sprinter VIP</td>
-                    <td className="py-3.5 text-right font-medium" style={{ color: '#8a7340' }}>350 €</td>
+                    <td className="py-3.5 text-right font-medium" style={{ color: '#8a7340' }}>450 €</td>
                   </tr>
                 </tbody>
               </table>

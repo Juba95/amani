@@ -6,7 +6,7 @@ const SLUG = 'en/cdg-airport-transfer';
 
 export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Private Driver CDG Airport Paris — Charles de Gaulle Transfer | Amani Limousines',
-  description: 'Book a private driver at CDG airport Paris. Fixed price, flight tracking, VIP meet & greet. Mercedes S-Class and vans available 24/7. From €125.',
+  description: 'Book a private driver at CDG airport Paris. Fixed price, flight tracking, VIP meet & greet. Mercedes S-Class and vans available 24/7. From €150.',
   canonical: 'https://www.amani-limousines.com/en/cdg-airport-transfer',
   alternates: {
     languages: { fr: 'https://www.amani-limousines.com/transfert-aeroport-cdg' },
@@ -21,8 +21,8 @@ const jsonLd = {
   areaServed: 'Charles de Gaulle Airport, Paris',
   description: 'Private transfer service to and from CDG airport. Fixed price, 24/7 availability.',
   offers: [
-    { '@type': 'Offer', name: 'Mercedes E-Class — CDG', price: '125', priceCurrency: 'EUR' },
-    { '@type': 'Offer', name: 'Mercedes S-Class — CDG', price: '225', priceCurrency: 'EUR' },
+    { '@type': 'Offer', name: 'Mercedes E-Class — CDG', price: '150', priceCurrency: 'EUR' },
+    { '@type': 'Offer', name: 'Mercedes S-Class — CDG', price: '220', priceCurrency: 'EUR' },
   ],
 };
 
@@ -76,9 +76,9 @@ export default function CDGAirportTransferEN() {
             <h2 className="heading">Fixed fares — CDG to Paris</h2>
             <div className="mt-4 space-y-3">
               {[
-                { v: 'Mercedes E-Class (1–3 pax)', p: 'from €125' },
-                { v: 'Mercedes S-Class (1–3 pax)', p: 'from €225' },
-                { v: 'Mercedes V-Class (up to 7 pax)', p: 'from €125' },
+                { v: 'Mercedes E-Class (1–3 pax)', p: 'from €150' },
+                { v: 'Mercedes S-Class (1–3 pax)', p: 'from €220' },
+                { v: 'Mercedes V-Class (up to 7 pax)', p: 'from €160' },
                 { v: 'BMW i7 (1–3 pax)', p: 'from €250' },
               ].map((r) => (
                 <div key={r.v} className="flex justify-between items-center py-2 border-b border-warm-200">
