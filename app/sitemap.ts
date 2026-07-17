@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { FR_INDEXED_SLUGS, EN_INDEXED_SLUGS, AR_ZH_INDEXED_SLUGS, PER_LOCALE_EXTRA_SLUGS } from '@/lib/seo-whitelist';
 import { ALL_DESTINATIONS } from '@/lib/destinations';
+import { getAllExperienceDetailParams } from '@/lib/experience-details';
 
 const BASE = 'https://www.amani-limousines.com';
 
@@ -154,6 +155,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entries.push(
       { url: `${BASE}/destinations/${d.slug}`,    lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
       { url: `${BASE}/en/destinations/${d.slug}`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
+    );
+  }
+
+  // ── Pages détail d'expériences (contenu généré, couverture progressive) ────
+  for (const p of getAllExperienceDetailParams()) {
+    entries.push(
+      { url: `${BASE}/destinations/${p.slug}/${p.exp}`,    lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
+      { url: `${BASE}/en/destinations/${p.slug}/${p.exp}`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     );
   }
 

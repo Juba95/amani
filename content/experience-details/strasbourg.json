@@ -1,0 +1,150 @@
+{
+ "city": "strasbourg",
+ "experiences": [
+  {
+   "slug": "alsace-wine-route",
+   "index": 0,
+   "title": { "fr": "Route des Vins d’Alsace", "en": "Alsace Wine Route" },
+   "intro": {
+    "fr": [
+     "De Marlenheim à Thann, la Route des Vins d’Alsace déroule 170 kilomètres de coteaux au pied des Vosges. Obernai, Barr, Ribeauvillé, Riquewihr : les villages se succèdent, ceints de remparts et fleuris de géraniums, chacun gardant ses winstubs et ses domaines familiaux. C’est ici que naissent les grands rieslings et gewurztraminers, dans des caves où l’on déguste au milieu des foudres de chêne centenaires.",
+     "Votre chauffeur vous prend en charge à votre hôtel de Strasbourg et compose l’itinéraire selon vos envies : deux ou trois domaines réservés à l’avance, un déjeuner en winstub à Riquewihr, un détour par la place du marché d’Obernai. Vous dégustez librement, il conduit. Le véhicule reste à disposition à chaque étape et vos caisses de vin voyagent dans le coffre jusqu’à votre porte."
+    ],
+    "en": [
+     "From Marlenheim to Thann, the Alsace Wine Route winds along 170 kilometres of slopes at the foot of the Vosges. Obernai, Barr, Ribeauvillé, Riquewihr: walled, geranium-decked villages follow one another, each with its winstubs and family estates. This is the birthplace of the great rieslings and gewurztraminers, tasted in cellars among century-old oak casks.",
+     "Your chauffeur collects you at your Strasbourg hotel and shapes the route around your wishes: two or three estates booked ahead, lunch in a winstub in Riquewihr, a detour via Obernai's market square. You taste freely, he drives. The vehicle stays on standby at every stop and your cases of wine travel in the boot right to your door."
+    ]
+   },
+   "steps": [
+    { "fr": "Départ de votre hôtel à Strasbourg vers 9 h, cap sur Obernai par la plaine.", "en": "Depart your Strasbourg hotel around 9am, heading for Obernai across the plain." },
+    { "fr": "Première dégustation dans un domaine familial à Mittelbergheim ou Barr.", "en": "First tasting at a family estate in Mittelbergheim or Barr." },
+    { "fr": "Déjeuner en winstub à Riquewihr puis flânerie dans les ruelles médiévales.", "en": "Winstub lunch in Riquewihr, then a stroll through the medieval lanes." },
+    { "fr": "Dernière cave à Ribeauvillé et retour à Strasbourg en fin d’après-midi.", "en": "A final cellar in Ribeauvillé before returning to Strasbourg in the late afternoon." }
+   ],
+   "included": {
+    "fr": ["Chauffeur dédié toute la journée", "Véhicule Mercedes premium", "Prise en charge à votre hôtel", "Attente incluse à chaque domaine"],
+    "en": ["Dedicated chauffeur all day", "Premium Mercedes vehicle", "Hotel pick-up included", "Waiting time at every estate"]
+   },
+   "tip": {
+    "fr": "Visez septembre-octobre : les vendanges animent les villages et les caves ouvrent leurs jus nouveaux. Réservez les domaines une semaine à l’avance, nous nous en chargeons volontiers.",
+    "en": "Aim for September-October: harvest season brings the villages to life and cellars pour their new vintages. Estates should be booked a week ahead — we are happy to arrange it."
+   }
+  },
+  {
+   "slug": "colmar-and-little-venice",
+   "index": 1,
+   "title": { "fr": "Colmar et la Petite Venise", "en": "Colmar and Little Venice" },
+   "intro": {
+    "fr": [
+     "À 70 kilomètres au sud de Strasbourg, Colmar concentre l’Alsace rêvée : maisons à colombages penchées sur la Lauch, quartier des Tanneurs, canaux de la Petite Venise où glissent les barques à fond plat. Le musée Unterlinden abrite le retable d’Issenheim, chef-d’œuvre bouleversant de Grünewald, à deux pas des ruelles où Bartholdi, père de la statue de la Liberté, vit le jour.",
+     "Comptez quarante-cinq minutes de route directe avec votre chauffeur. Il vous dépose au plus près du centre piéton, vous explorez à votre rythme — marché couvert, promenade en barque, terrasse au bord de l’eau — puis vous retrouve à l’heure convenue. Sur le retour, un arrêt à Eguisheim ou Kaysersberg s’improvise sans contrainte."
+    ],
+    "en": [
+     "Seventy kilometres south of Strasbourg, Colmar distils the Alsace of picture books: half-timbered houses leaning over the Lauch, the tanners' quarter, the canals of Little Venice where flat-bottomed boats glide by. The Unterlinden Museum holds Grünewald's Isenheim Altarpiece, a deeply moving masterpiece, steps from the lanes where Bartholdi, father of the Statue of Liberty, was born.",
+     "Allow forty-five minutes' direct drive with your chauffeur. He drops you at the edge of the pedestrian centre; you explore at your own pace — covered market, boat ride, waterside terrace — and he meets you at the agreed time. On the way back, a stop in Eguisheim or Kaysersberg is easily improvised."
+    ]
+   },
+   "steps": [
+    { "fr": "Prise en charge à Strasbourg et route directe vers Colmar (45 minutes).", "en": "Pick-up in Strasbourg and direct drive to Colmar (45 minutes)." },
+    { "fr": "Dépose au centre : Petite Venise, quartier des Tanneurs, marché couvert.", "en": "Drop-off in the centre: Little Venice, tanners' quarter, covered market." },
+    { "fr": "Visite libre du musée Unterlinden et du retable d’Issenheim.", "en": "Free visit to the Unterlinden Museum and the Isenheim Altarpiece." },
+    { "fr": "Arrêt photo à Eguisheim sur le chemin du retour vers Strasbourg.", "en": "Photo stop in Eguisheim on the way back to Strasbourg." }
+   ],
+   "included": {
+    "fr": ["Chauffeur dédié la demi-journée", "Véhicule Mercedes premium", "Prise en charge à votre hôtel", "Arrêt village au retour"],
+    "en": ["Dedicated chauffeur for the half-day", "Premium Mercedes vehicle", "Hotel pick-up included", "Village stop on the return"]
+   },
+   "tip": {
+    "fr": "En décembre, le marché de Noël de Colmar est l’un des plus beaux de France — partez avant 14 h pour profiter des illuminations au retour sans les foules du soir.",
+    "en": "In December, Colmar's Christmas market is among the finest in France — leave before 2pm to catch the lights on your return while avoiding the evening crowds."
+   }
+  },
+  {
+   "slug": "haut-koenigsbourg-castle",
+   "index": 2,
+   "title": { "fr": "Château du Haut-Kœnigsbourg", "en": "Haut-Kœnigsbourg Castle" },
+   "intro": {
+    "fr": [
+     "Perché à 757 mètres sur son éperon de grès rose, le Haut-Kœnigsbourg surveille la plaine d’Alsace depuis huit siècles. Restauré par Guillaume II au début du XXe siècle, le château déploie pont-levis, salle d’armes et donjon dans un état saisissant. Par temps clair, la vue porte des Vosges à la Forêt-Noire — et jusqu’aux Alpes certains matins d’hiver.",
+     "La montée en lacets ne se prête ni au bus ni au stationnement hasardeux : votre chauffeur vous dépose devant l’entrée, vous visitez sans contrainte d’horaire, il vous attend. Au retour, la route peut descendre par Saint-Hippolyte et ses vignes ou par la volerie des aigles de Kintzheim, selon vos envies du moment."
+    ],
+    "en": [
+     "Perched at 757 metres on its pink sandstone spur, Haut-Kœnigsbourg has watched over the Alsace plain for eight centuries. Restored by Kaiser Wilhelm II in the early 1900s, the castle unfolds drawbridge, armoury and keep in striking condition. On a clear day the view stretches from the Vosges to the Black Forest — and to the Alps on some winter mornings.",
+     "The hairpin climb suits neither coaches nor uncertain parking: your chauffeur drops you at the entrance, you visit with no timetable, he waits. The descent can run through Saint-Hippolyte and its vines or past the Kintzheim eagle sanctuary, as the mood takes you."
+    ]
+   },
+   "steps": [
+    { "fr": "Départ de Strasbourg par l’A35, sortie Sélestat (40 minutes).", "en": "Leave Strasbourg on the A35, Sélestat exit (40 minutes)." },
+    { "fr": "Montée en lacets et dépose directement devant l’entrée du château.", "en": "Hairpin climb and drop-off right at the castle entrance." },
+    { "fr": "Visite libre : pont-levis, salle d’armes, donjon et panorama.", "en": "Free visit: drawbridge, armoury, keep and panorama." },
+    { "fr": "Descente par Saint-Hippolyte et retour par la route des vins.", "en": "Descent via Saint-Hippolyte and return along the wine route." }
+   ],
+   "included": {
+    "fr": ["Chauffeur dédié la demi-journée", "Véhicule Mercedes premium", "Dépose devant l’entrée", "Itinéraire retour au choix"],
+    "en": ["Dedicated chauffeur for the half-day", "Premium Mercedes vehicle", "Drop-off at the entrance", "Choice of return route"]
+   },
+   "tip": {
+    "fr": "Arrivez à l’ouverture (9 h 15) : vous aurez la cour intérieure pour vous et la brume matinale sur la plaine vaut à elle seule le déplacement.",
+    "en": "Arrive at opening time (9.15am): you will have the inner courtyard to yourself, and the morning mist over the plain is worth the trip on its own."
+   }
+  },
+  {
+   "slug": "baden-baden-spa-and-casino",
+   "index": 3,
+   "title": { "fr": "Baden-Baden, thermes et casino", "en": "Baden-Baden, spa and casino" },
+   "intro": {
+    "fr": [
+     "Une heure de route suffit pour changer de pays et d’époque : Baden-Baden, la belle endormie de la Forêt-Noire, cultive depuis le XIXe siècle un art de vivre thermal que l’Europe entière lui envie. Les thermes de Caracalla et le Friedrichsbad marient eaux chaudes et architecture néo-Renaissance ; le soir, le casino de la Belle Époque — le plus beau du monde selon Marlene Dietrich — ouvre ses salons dorés.",
+     "Votre chauffeur franchit le Rhin et vous dépose aux thermes ou sur la Lichtentaler Allee. Il patiente pendant votre soin ou votre dîner, puis vous ramène à Strasbourg dans la soirée. Aucun horaire de train, aucun parking allemand à déchiffrer : l’escapade transfrontalière dans sa version la plus simple."
+    ],
+    "en": [
+     "One hour's drive changes both country and century: Baden-Baden, the Black Forest's sleeping beauty, has cultivated a spa-town art de vivre envied across Europe since the 19th century. The Caracalla baths and the Friedrichsbad pair thermal waters with neo-Renaissance architecture; in the evening the Belle Époque casino — the world's most beautiful, according to Marlene Dietrich — opens its gilded salons.",
+     "Your chauffeur crosses the Rhine and drops you at the baths or on the Lichtentaler Allee. He waits during your treatment or dinner, then drives you back to Strasbourg in the evening. No train timetable, no German car park to decipher: the cross-border escape at its simplest."
+    ]
+   },
+   "steps": [
+    { "fr": "Départ de Strasbourg, passage du Rhin et arrivée en une heure.", "en": "Leave Strasbourg, cross the Rhine and arrive within the hour." },
+    { "fr": "Dépose aux thermes de Caracalla ou au Friedrichsbad.", "en": "Drop-off at the Caracalla baths or the Friedrichsbad." },
+    { "fr": "Promenade sur la Lichtentaler Allee et dîner en ville.", "en": "Stroll along the Lichtentaler Allee and dinner in town." },
+    { "fr": "Soirée au casino puis retour de nuit vers Strasbourg.", "en": "Evening at the casino, then the night drive back to Strasbourg." }
+   ],
+   "included": {
+    "fr": ["Chauffeur dédié journée ou soirée", "Véhicule Mercedes premium", "Trajet transfrontalier inclus", "Attente pendant soins et dîner"],
+    "en": ["Dedicated chauffeur, day or evening", "Premium Mercedes vehicle", "Cross-border journey included", "Waiting during spa and dinner"]
+   },
+   "tip": {
+    "fr": "Le Friedrichsbad se vit sans maillot selon le rituel romain-irlandais : prévoyez 3 h et réservez le soin « Kaiserbad » en semaine, bien moins fréquenté.",
+    "en": "The Friedrichsbad follows the Roman-Irish ritual, swimsuit-free: allow 3 hours and book the \"Kaiserbad\" treatment on a weekday, when it is far quieter."
+   }
+  },
+  {
+   "slug": "strasbourg-gourmet-evening",
+   "index": 4,
+   "title": { "fr": "Soirée gastronomique strasbourgeoise", "en": "Strasbourg gourmet evening" },
+   "intro": {
+    "fr": [
+     "Strasbourg compte parmi les grandes tables de France : maisons étoilées au bord de l’Ill, winstubs séculaires de la Petite France, caves voûtées où le pinot noir se sert au pichet. Entre la cathédrale illuminée et les ponts couverts, la ville de nuit se découvre autrement — silhouettes à colombages se reflétant dans l’eau noire, ruelles presque vides une fois les visiteurs partis.",
+     "Votre chauffeur orchestre la soirée : apéritif place de la cathédrale, dîner dans la table de votre choix — nous réservons pour vous —, détour photo par les quais avant le retour. Le véhicule vous attend à chaque étape, vous profitez du vin sans compter et rentrez à votre hôtel sans chercher un taxi sous la pluie."
+    ],
+    "en": [
+     "Strasbourg ranks among France's great dining cities: starred houses on the banks of the Ill, centuries-old winstubs in Petite France, vaulted cellars where pinot noir is served by the jug. Between the floodlit cathedral and the covered bridges, the city reveals another self at night — half-timbered silhouettes mirrored in dark water, lanes nearly empty once the visitors have gone.",
+     "Your chauffeur orchestrates the evening: an aperitif on the cathedral square, dinner at the table of your choice — we book it for you —, a photo detour along the quays before heading back. The car waits at every stop; you enjoy the wine freely and return to your hotel without hunting for a taxi in the rain."
+    ]
+   },
+   "steps": [
+    { "fr": "Prise en charge à votre hôtel en début de soirée.", "en": "Early-evening pick-up at your hotel." },
+    { "fr": "Apéritif près de la cathédrale illuminée, dépose au plus près.", "en": "Aperitif by the floodlit cathedral, drop-off as close as can be." },
+    { "fr": "Dîner en winstub ou table étoilée, réservation assurée par nos soins.", "en": "Dinner in a winstub or starred restaurant, booked on your behalf." },
+    { "fr": "Tour des quais de la Petite France de nuit et retour à l’hôtel.", "en": "Night loop along the Petite France quays and return to your hotel." }
+   ],
+   "included": {
+    "fr": ["Chauffeur dédié toute la soirée", "Véhicule Mercedes premium", "Réservation de table assurée", "Retour à l’hôtel inclus"],
+    "en": ["Dedicated chauffeur all evening", "Premium Mercedes vehicle", "Restaurant booking arranged", "Hotel return included"]
+   },
+   "tip": {
+    "fr": "Le mardi et le mercredi, les grandes tables strasbourgeoises trouvent plus facilement une place en terrasse d’hiver — et la Petite France est déserte dès 22 h pour les photos.",
+    "en": "On Tuesdays and Wednesdays the top Strasbourg tables more easily find you a winter-terrace seat — and Petite France empties by 10pm, perfect for photographs."
+   }
+  }
+ ]
+}

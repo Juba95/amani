@@ -6,6 +6,7 @@
  */
 import Image from 'next/image';
 import Link from 'next/link';
+import { getCityExperienceDetails } from '@/lib/experience-details';
 import {
   ALL_DESTINATIONS,
   getNearbyDestinations,
@@ -85,6 +86,8 @@ function Price({ price, locale }: { price: string; locale: DestLocale }) {
 
 export function DestinationDetail({ d, locale }: { d: Destination; locale: DestLocale }) {
   const t = T[locale];
+  // Contenu long des expériences (null tant que non généré pour cette ville)
+  const expDetails = getCityExperienceDetails(d.slug);
   const nearby = getNearbyDestinations(d);
 
   const faqJsonLd = {
@@ -134,30 +137,50 @@ export function DestinationDetail({ d, locale }: { d: Destination; locale: DestL
         </div>
       </section>
 
-      {/* 5 expériences numérotées I-V */}
+      {/* 5 expériences numérotées I-V — cliquables si le contenu long existe
+          (content/experience-details/<slug>.json, généré par script) */}
       <section className="py-14 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
           <p className="tag">{t.expTag}</p>
           <h2 className="heading mt-2">{t.expTitle(d.name[locale])}</h2>
           <p className="sf text-stone-500 mt-4 mb-10 leading-relaxed">{t.expIntro}</p>
           <div className="space-y-4">
-            {d.experiences.map((e, i) => (
-              <div key={e.title.en} className="card flex flex-col sm:flex-row sm:items-center gap-4">
-                <span className="font-serif text-2xl shrink-0 w-10" style={{ color: '#c9b27c' }}>
-                  {['I', 'II', 'III', 'IV', 'V'][i]}
-                </span>
-                <div className="flex-1">
-                  <h3 className="font-serif text-lg text-gray-900">{e.title[locale]}</h3>
-                  <p className="sf text-sm text-stone-600 leading-relaxed mt-1">{e.teaser[locale]}</p>
-                </div>
-                <div className="shrink-0 text-left sm:text-right font-sans text-xs text-stone-400">
-                  <span className="block">{e.duration[locale]}</span>
-                  <span className="block mt-0.5">
-                    {t.from} <Price price={e.price} locale={locale} />
+            {d.experiences.map((e, i) => {
+              const detail = expDetails?.experiences.find((x) => x.index === i);
+              const inner = (
+                <>
+                  <span className="font-serif text-2xl shrink-0 w-10" style={{ color: '#c9b27c' }}>
+                    {['I', 'II', 'III', 'IV', 'V'][i]}
                   </span>
+                  <div className="flex-1">
+                    <h3 className="font-serif text-lg text-gray-900">{e.title[locale]}</h3>
+                    <p className="sf text-sm text-stone-600 leading-relaxed mt-1">{e.teaser[locale]}</p>
+                    {detail && (
+                      <span className="inline-block mt-2 font-sans text-[0.65rem] font-bold tracking-[0.12em] uppercase"
+                        style={{ color: '#6d5a30' }}>
+                        {locale === 'fr' ? 'Découvrir l’itinéraire →' : 'View the itinerary →'}
+                      </span>
+                    )}
+                  </div>
+                  <div className="shrink-0 text-left sm:text-right font-sans text-xs text-stone-400">
+                    <span className="block">{e.duration[locale]}</span>
+                    <span className="block mt-0.5">
+                      {t.from} <Price price={e.price} locale={locale} />
+                    </span>
+                  </div>
+                </>
+              );
+              return detail ? (
+                <Link key={e.title.en} href={`${t.base}/${d.slug}/${detail.slug}`}
+                  className="card flex flex-col sm:flex-row sm:items-center gap-4 hover:-translate-y-0.5 hover:shadow-lg transition-all">
+                  {inner}
+                </Link>
+              ) : (
+                <div key={e.title.en} className="card flex flex-col sm:flex-row sm:items-center gap-4">
+                  {inner}
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
