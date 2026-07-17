@@ -1,0 +1,34 @@
+{
+ "chauffeur-prive-paris": {
+  "artist": "Yann Caradec from Paris, France",
+  "license": "CC BY-SA 2.0"
+ },
+ "chauffeur-prive-nice": {
+  "artist": "piet theisohn from Leverkusen, Germany",
+  "license": "CC BY 2.0"
+ },
+ "chauffeur-prive-cannes": {
+  "artist": "Christophe.Finot",
+  "license": "CC BY-SA 2.5"
+ },
+ "chauffeur-prive-saint-tropez": {
+  "artist": "dronepicr",
+  "license": "CC BY 2.0"
+ },
+ "chauffeur-prive-bordeaux": {
+  "artist": "Mariette",
+  "license": "Public domain"
+ },
+ "chauffeur-prive-deauville": {
+  "artist": "Dennis G. Jarvis",
+  "license": "CC BY-SA 2.0"
+ },
+ "chauffeur-prive-megeve": {
+  "artist": "Guilhem Vellut from Annecy, France",
+  "license": "CC BY 2.0"
+ },
+ "chauffeur-prive-marseille": {
+  "artist": "Benh LIEU SONG",
+  "license": "CC BY-SA 3.0"
+ }
+}

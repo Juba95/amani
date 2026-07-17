@@ -24,16 +24,22 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const ROOT = process.cwd();
-const INPUT = path.join(ROOT, 'scripts', '.cache', 'experiences-input.json');
-const OUT_DIR = path.join(ROOT, 'public', 'images', 'destinations');
-const CREDITS = path.join(ROOT, 'content', 'image-credits.json');
+const INPUT = process.env.INPUT_FILE
+  ? path.resolve(ROOT, process.env.INPUT_FILE)
+  : path.join(ROOT, 'scripts', '.cache', 'experiences-input.json');
+const OUT_DIR = process.env.OUT_DIR
+  ? path.resolve(ROOT, process.env.OUT_DIR)
+  : path.join(ROOT, 'public', 'images', 'destinations');
+const CREDITS = process.env.CREDITS_FILE
+  ? path.resolve(ROOT, process.env.CREDITS_FILE)
+  : path.join(ROOT, 'content', 'image-credits.json');
 
 const LIMIT = process.env.LIMIT ? Number(process.env.LIMIT) : Infinity;
 const ONLY = process.env.ONLY ? new Set(process.env.ONLY.split(',').map((s) => s.trim())) : null;
 const UA = 'AmaniLimousines/1.0 (https://www.amani-limousines.com; contact@amani-limousines.com)';
 
 if (!fs.existsSync(INPUT)) {
-  console.error('❌ Lancez d’abord : npx tsx scripts/export-experiences-input.ts');
+  console.error(`❌ Fichier d’entrée introuvable : ${INPUT}\n   Lancez d’abord le script d’export correspondant (export-experiences-input.ts ou export-city-experiences-input.ts).`);
   process.exit(1);
 }
 fs.mkdirSync(OUT_DIR, { recursive: true });

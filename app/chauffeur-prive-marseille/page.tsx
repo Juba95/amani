@@ -1,8 +1,10 @@
 import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
+import Image from 'next/image';
 import Link from 'next/link';
 import { content, contentMetadata } from '@/lib/get-content';
 import CityExperiences from '@/components/CityExperiences';
+import { getCityExpImage, getCityExpImageCredit } from '@/lib/city-experience-content';
 
 const SLUG = 'chauffeur-prive-marseille';
 
@@ -46,6 +48,8 @@ const occasions = [
 
 export default function ChauffeurPriveMarseille() {
   const c = content(SLUG);
+  const heroImage = getCityExpImage('chauffeur-prive-marseille');
+  const heroImageCredit = getCityExpImageCredit('chauffeur-prive-marseille');
 
   return (
     <SEOLayout>
@@ -76,6 +80,20 @@ export default function ChauffeurPriveMarseille() {
           </div>
         </div>
       </section>
+
+      {heroImage && (
+        <section className="px-6 md:px-10 pb-16 bg-white">
+          <div className="max-w-4xl mx-auto relative aspect-[3/2] sm:aspect-[21/9] rounded-lg overflow-hidden">
+            <Image src={heroImage} alt="Marseille — chauffeur privé Amani Limousines" fill priority
+              sizes="(max-width: 1024px) 100vw, 896px" className="object-cover" />
+            {heroImageCredit && (
+              <span className="absolute bottom-1.5 right-2 font-sans text-[0.55rem] text-white/70 bg-black/30 px-1.5 py-0.5 rounded-sm">
+                {heroImageCredit}
+              </span>
+            )}
+          </div>
+        </section>
+      )}
 
       {/* Occasions */}
       <section className="py-14 px-6 md:px-10 bg-warm-50">

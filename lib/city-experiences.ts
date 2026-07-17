@@ -362,4 +362,39 @@ export const CITY_EXPERIENCES: Record<string, { city: string; experiences: CityE
       },
     ],
   },
+  'chauffeur-prive-chamonix': {
+    city: 'Chamonix',
+    experiences: [
+      {
+        title: 'Aiguille du Midi, 3 842 mètres',
+        teaser: 'Dépose au pied du téléphérique de l’Aiguille du Midi, le plus haut d’Europe, pour un panorama à 360° sur le mont Blanc et la chaîne alpine. Le véhicule vous attend au retour, quel que soit l’horaire.',
+        duration: 'Demi-journée',
+        price: '380',
+      },
+      {
+        title: 'Mer de Glace et grotte de glace',
+        teaser: 'Le train à crémaillère du Montenvers mène au plus grand glacier de France, sa grotte sculptée chaque année et le musée de la Glaciologie. Dépose à la gare de départ, retour à l’heure choisie.',
+        duration: 'Demi-journée',
+        price: '380',
+      },
+      {
+        title: 'Genève et le lac Léman',
+        teaser: 'À 1h de route, la vieille ville de Genève, le jet d’eau, les quais du Léman et les boutiques horlogères. Une échappée suisse au départ de Chamonix, passage de frontière sans formalité.',
+        duration: 'Journée complète',
+        price: '650',
+      },
+      {
+        title: 'Villages de la vallée : Argentière et Servoz',
+        teaser: 'Argentière et son glacier, le col des Montets, le village préservé de Servoz au pied du massif — la Haute-Savoie hors des foules du centre-ville, à quelques minutes de Chamonix.',
+        duration: 'Demi-journée',
+        price: '360',
+      },
+      {
+        title: 'Soirée savoyarde',
+        teaser: 'Dîner de fondue ou de tartiflette dans un chalet du centre, les sommets éclairés par la lune sur le retour. Véhicule à disposition toute la soirée, aucun souci de route enneigée.',
+        duration: 'Soirée',
+        price: '340',
+      },
+    ],
+  },
 };
