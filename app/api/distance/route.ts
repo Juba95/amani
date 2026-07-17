@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { estimateDistanceKm, estimateDurationMin, formatDuration } from '@/lib/geo-estimate';
 
 /**
  * POST /api/distance
@@ -22,11 +23,11 @@ export async function POST(req: NextRequest) {
 
   // ── Fallback si pas de clé Google ──────────────────────────────────────────
   if (!apiKey) {
-    const fallbackKm = estimateDistance(origin, destination);
+    const fallbackKm = estimateDistanceKm(origin, destination);
     return NextResponse.json({
       km: fallbackKm,
-      duration: `${Math.round(fallbackKm * 1.4)} min`,
-      durationMin: Math.round(fallbackKm * 1.4),
+      duration: formatDuration(estimateDurationMin(fallbackKm)),
+      durationMin: estimateDurationMin(fallbackKm),
       source: 'estimate',
     });
   }
@@ -63,49 +64,12 @@ export async function POST(req: NextRequest) {
   } catch (err) {
     // En cas d'erreur Google → fallback estimation
     console.error('Google Distance Matrix error:', err);
-    const fallbackKm = estimateDistance(origin, destination);
+    const fallbackKm = estimateDistanceKm(origin, destination);
     return NextResponse.json({
       km: fallbackKm,
-      duration: `${Math.round(fallbackKm * 1.4)} min`,
-      durationMin: Math.round(fallbackKm * 1.4),
+      duration: formatDuration(estimateDurationMin(fallbackKm)),
+      durationMin: estimateDurationMin(fallbackKm),
       source: 'estimate',
     });
   }
-}
-
-/**
- * Estimation basique basée sur les trajets connus Amani.
- * Utilisé en fallback si pas de clé Google Maps.
- */
-function estimateDistance(origin: string, destination: string): number {
-  const o = origin.toLowerCase();
-  const d = destination.toLowerCase();
-
-  const KNOWN: Array<{ from: string[]; to: string[]; km: number }> = [
-    { from: ['cdg', 'charles de gaulle', 'roissy'], to: ['paris', 'centre', 'bastille', 'châtelet'], km: 32 },
-    { from: ['cdg', 'charles de gaulle', 'roissy'], to: ['défense', 'la défense'], km: 30 },
-    { from: ['cdg', 'charles de gaulle', 'roissy'], to: ['versailles'], km: 55 },
-    { from: ['cdg', 'charles de gaulle', 'roissy'], to: ['disneyland', 'disney'], km: 45 },
-    { from: ['cdg', 'charles de gaulle', 'roissy'], to: ['gare du nord', 'nord'], km: 28 },
-    { from: ['cdg', 'charles de gaulle', 'roissy'], to: ['gare de lyon', 'lyon'], km: 38 },
-    { from: ['cdg', 'charles de gaulle', 'roissy'], to: ['orly'], km: 58 },
-    { from: ['orly'], to: ['paris', 'centre'], km: 22 },
-    { from: ['orly'], to: ['défense', 'la défense'], km: 35 },
-    { from: ['orly'], to: ['versailles'], km: 30 },
-    { from: ['paris', 'centre'], to: ['versailles'], km: 25 },
-    { from: ['paris', 'centre'], to: ['reims'], km: 145 },
-    { from: ['paris', 'centre'], to: ['bruxelles', 'brussels'], km: 310 },
-    { from: ['paris', 'centre'], to: ['lille'], km: 230 },
-    { from: ['paris', 'centre'], to: ['deauville'], km: 210 },
-    { from: ['paris', 'centre'], to: ['ritz', 'four seasons', 'george v', 'bristol', 'crillon', 'meurice', 'plaza athénée', 'mandarin', 'park hyatt'], km: 32 },
-  ];
-
-  for (const route of KNOWN) {
-    const fromMatch = route.from.some((f) => o.includes(f) || d.includes(f));
-    const toMatch = route.to.some((t) => d.includes(t) || o.includes(t));
-    if (fromMatch && toMatch) return route.km;
-  }
-
-  // Fallback générique : 35 km (trajet moyen CDG → Paris)
-  return 35;
 }

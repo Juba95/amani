@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { VEHICLES, calculatePrice, PREDEFINED_ROUTES } from '@/lib/vehicles';
+import { estimateDistanceKm, estimateDurationMin } from '@/lib/geo-estimate';
 
 export async function POST(request: NextRequest) {
   try {
@@ -26,8 +27,8 @@ export async function POST(request: NextRequest) {
         durationMin = gmaps.durationMin;
       } else {
         // Fallback : estimation basée sur les coordonnées approx
-        distanceKm = estimateDistance(from, to);
-        durationMin = Math.round(distanceKm * 1.3);
+        distanceKm = estimateDistanceKm(from, to);
+        durationMin = estimateDurationMin(distanceKm);
       }
     }
 
@@ -97,10 +98,6 @@ async function fetchGoogleMapsDistance(from: string, to: string) {
 }
 
 // Estimation basique de distance
-function estimateDistance(from: string, to: string): number {
-  // Retourne une valeur par défaut raisonnable pour l'IDF
-  return Math.floor(Math.random() * 35) + 15;
-}
 
 function formatDuration(minutes: number): string {
   if (minutes < 60) return `${minutes} min`;
