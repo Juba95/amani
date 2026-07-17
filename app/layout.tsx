@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.amani-limousines.com'),
   alternates: {
     canonical: '/',
-    languages: { fr: '/', en: '/en', ar: '/ar', 'zh-Hans': '/zh' },
+    languages: { fr: '/', en: '/en', ar: '/ar', 'zh-Hans': '/zh', 'x-default': '/' },
   },
   openGraph: {
     title: 'Amani Limousines — Chauffeur Privé de Prestige | Paris, France & Europe',
@@ -85,12 +85,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="dns-prefetch" href="https://maps.googleapis.com" />
         <link rel="dns-prefetch" href="https://elfsightcdn.com" />
         <link rel="dns-prefetch" href="https://nominatim.openstreetmap.org" />
-        {/* hreflang tags */}
-        <link rel="alternate" hrefLang="fr" href="https://www.amani-limousines.com/" />
-        <link rel="alternate" hrefLang="en" href="https://www.amani-limousines.com/en" />
-        <link rel="alternate" hrefLang="ar" href="https://www.amani-limousines.com/ar" />
-        <link rel="alternate" hrefLang="zh-Hans" href="https://www.amani-limousines.com/zh" />
-        <link rel="alternate" hrefLang="x-default" href="https://www.amani-limousines.com/" />
+        {/* Les hreflang sont fournis par page via generateMetadata (alternates.
+            languages). On ne les code PAS en dur ici : sinon ils pointeraient
+            vers la home sur toutes les pages et entreraient en conflit avec les
+            hreflang spécifiques (signaux contradictoires pour Google). */}
         {/* Schema.org structured data */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </head>
