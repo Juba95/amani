@@ -9,7 +9,9 @@
     "lint": "next lint",
     "exp:export": "tsx scripts/export-experiences-input.ts",
     "exp:generate": "node scripts/generate-experience-details.mjs",
-    "exp:images": "node scripts/generate-experience-images.mjs"
+    "exp:images": "node scripts/generate-experience-images.mjs",
+    "cityexp:export": "tsx scripts/export-city-experiences-input.ts",
+    "cityexp:generate": "INPUT_FILE=scripts/.cache/city-experiences-input.json OUT_DIR=content/city-experience-details node scripts/generate-experience-details.mjs"
   },
   "dependencies": {
     "@tiptap/extension-link": "^3.22.1",

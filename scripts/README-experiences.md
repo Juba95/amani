@@ -129,3 +129,19 @@ Priorité d'affichage : image IA dédiée à l'expérience > photo réelle (.jpg
 > image IA de la ville (.webp). Une photo Wikimedia remplace donc l'image IA
 sans supprimer son fichier — `rm public/images/destinations/<ville>.jpg`
 pour revenir à l'IA.
+
+## Pages villes dédiées (chauffeur-prive-*)
+
+Les 10 pages `/chauffeur-prive-{paris,nice,cannes,monaco,saint-tropez,lyon,
+bordeaux,deauville,megeve,marseille}` utilisent un catalogue distinct
+(`lib/city-experiences.ts`). Même principe : cartes cliquables dès que le
+contenu existe dans `content/city-experience-details/<pageSlug>.json`.
+
+```bash
+npm run cityexp:export                       # une fois
+OPENAI_API_KEY=sk-... MODEL=gpt-5 npm run cityexp:generate
+```
+
+Cannes est déjà rédigée à la main (exemple). Les 9 autres se génèrent avec la
+commande ci-dessus (~45 expériences, ~0,50 €). Images : réutilisent
+`public/images/home/<ville>.jpg` (déjà en place).

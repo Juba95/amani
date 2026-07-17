@@ -22,8 +22,14 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const ROOT = process.cwd();
-const INPUT = path.join(ROOT, 'scripts', '.cache', 'experiences-input.json');
-const OUT_DIR = path.join(ROOT, 'content', 'experience-details');
+// Entrée/sortie surchargeable (permet de réutiliser le même générateur pour
+// les pages villes dédiées : INPUT_FILE + OUT_DIR)
+const INPUT = process.env.INPUT_FILE
+  ? path.resolve(ROOT, process.env.INPUT_FILE)
+  : path.join(ROOT, 'scripts', '.cache', 'experiences-input.json');
+const OUT_DIR = process.env.OUT_DIR
+  ? path.resolve(ROOT, process.env.OUT_DIR)
+  : path.join(ROOT, 'content', 'experience-details');
 
 const API_KEY = process.env.OPENAI_API_KEY;
 const MODEL = process.env.MODEL || 'gpt-4o-mini';
@@ -120,8 +126,11 @@ async function callAPI(city, exp, attempt = 1) {
         type: 'json_schema',
         json_schema: { name: 'experience_detail', strict: true, schema: RESPONSE_SCHEMA },
       },
-      // Les modèles de raisonnement (gpt-5*, o*) n'acceptent pas temperature
-      ...(/^(gpt-5|o\d)/.test(MODEL) ? {} : { temperature: 0.9 }),
+      // Les modèles de raisonnement (gpt-5*, o*) n'acceptent pas temperature ;
+      // pour de la rédaction, l'effort minimal est plus rapide et suffisant.
+      ...(/^(gpt-5|o\d)/.test(MODEL)
+        ? { reasoning_effort: process.env.REASONING || 'minimal' }
+        : { temperature: 0.9 }),
     }),
   });
 

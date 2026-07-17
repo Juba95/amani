@@ -1,0 +1,195 @@
+{
+ "city": "chauffeur-prive-cannes",
+ "experiences": [
+  {
+   "slug": "iles-de-lerins-depose-au-vieux-port",
+   "index": 0,
+   "title": {
+    "fr": "Îles de Lérins, dépose au Vieux-Port"
+   },
+   "intro": {
+    "fr": [
+     "Face à la Croisette, à un quart d’heure de bateau, deux îles tournent le dos à l’agitation cannoise. Sainte-Marguerite, la plus grande, abrite le Fort Royal où le Masque de fer fut détenu dix-sept ans à partir de 1687 ; ses sentiers d’eucalyptus et de pins d’Alep font le tour de l’île en deux heures. Saint-Honorat, plus petite, appartient depuis le Ve siècle à une communauté de moines cisterciens qui y cultivent huit hectares de vigne et distillent la Lérina. Aucune voiture, aucun hôtel : on y vient pour le silence.",
+     "Votre chauffeur vous dépose au quai Laubeuf, devant l’embarcadère, et récupère la voiture pendant votre traversée. Vous choisissez votre île le matin même selon l’envie et la lumière ; au retour, il vous attend au port sans que vous ayez à chercher une place le long du boulevard Jean-Hibert. La demi-journée laisse le temps d’une baignade dans une crique de Sainte-Marguerite ou d’une dégustation au domaine des moines avant de rentrer déjeuner sur le continent."
+    ]
+   },
+   "steps": [
+    {
+     "fr": "Prise en charge à votre hôtel cannois et dépose au quai Laubeuf, embarcadère des Îles de Lérins."
+    },
+    {
+     "fr": "Traversée de 15 minutes vers Sainte-Marguerite (Fort Royal, Masque de fer) ou Saint-Honorat (abbaye et vignes)."
+    },
+    {
+     "fr": "Tour de l’île à pied, baignade en crique ou dégustation au domaine des moines cisterciens."
+    },
+    {
+     "fr": "Retour au Vieux-Port où votre chauffeur vous attend pour le déjeuner sur le continent."
+    }
+   ],
+   "included": {
+    "fr": [
+     "Chauffeur dédié la demi-journée",
+     "Véhicule Mercedes premium",
+     "Prise en charge à votre hôtel",
+     "Attente au port pendant la traversée"
+    ]
+   },
+   "tip": {
+    "fr": "Les bateaux pour Saint-Honorat sont opérés par l’abbaye (compagnie séparée de Sainte-Marguerite) : précisez votre île à la réservation. Partez avant 10 h, les criques de Sainte-Marguerite se remplissent dès midi en été."
+   }
+  },
+  {
+   "slug": "grasse-capitale-du-parfum",
+   "index": 1,
+   "title": {
+    "fr": "Grasse, capitale du parfum"
+   },
+   "intro": {
+    "fr": [
+     "Dix-sept kilomètres séparent la Croisette de Grasse, mais la route grimpe de 300 mètres dans l’arrière-pays et change d’univers. Depuis le XVIe siècle, la ville tanne d’abord des cuirs qu’elle parfume, puis se consacre entièrement à la fleur : jasmin, rose centifolia, tubéreuse, cueillis à la main dans les champs alentour. Fragonard, Molinard et Galimard ouvrent leurs ateliers à la visite ; on y suit le parcours de l’enfleurage à la distillation, et l’on comprend pourquoi les grands nez du monde se forment encore ici.",
+     "La formule la plus prisée reste la création d’un parfum sur mesure : accompagné d’un « nez », vous composez votre fragrance à partir d’une trentaine d’essences, repartez avec votre flacon et sa formule conservée à vie. Votre chauffeur enchaîne les maisons selon vos envies et redescend ensuite vers un déjeuner à Grasse ou dans un village voisin. De mai à juin, un détour par les champs de rose en fleur, tôt le matin quand on récolte, vaut à lui seul la montée."
+    ]
+   },
+   "steps": [
+    {
+     "fr": "Départ de Cannes et montée à Grasse (17 km, environ 30 minutes) dans l’arrière-pays."
+    },
+    {
+     "fr": "Visite d’une maison de parfum : Fragonard, Molinard ou Galimard, de l’enfleurage à la distillation."
+    },
+    {
+     "fr": "Atelier de création de votre parfum sur mesure avec un nez (flacon et formule à emporter)."
+    },
+    {
+     "fr": "En saison, arrêt dans les champs de rose de mai, puis déjeuner avant le retour."
+    }
+   ],
+   "included": {
+    "fr": [
+     "Chauffeur dédié la demi-journée",
+     "Véhicule Mercedes premium",
+     "Prise en charge à votre hôtel",
+     "Attente entre chaque maison"
+    ]
+   },
+   "tip": {
+    "fr": "Réservez l’atelier « parfumeur » à l’avance : les créneaux partent vite l’été. La rose centifolia se récolte en mai, le jasmin d’août à octobre — calez la visite sur la fleur que vous préférez."
+   }
+  },
+  {
+   "slug": "mougins-village-des-gastronomes",
+   "index": 2,
+   "title": {
+    "fr": "Mougins, village des gastronomes"
+   },
+   "intro": {
+    "fr": [
+     "À huit kilomètres de Cannes, Mougins enroule ses ruelles en escargot autour d’une colline, dominant l’ancien pays de Grasse. Picasso y passa les quinze dernières années de sa vie, à l’ombre de la chapelle Notre-Dame-de-Vie ; galeries d’art et sculptures ponctuent aujourd’hui chaque placette. Mais le village doit surtout sa réputation à la table : Roger Vergé y installa le Moulin de Mougins dans les années 1970 et fit de la commune un pèlerinage gastronomique que perpétuent plusieurs adresses étoilées.",
+     "Le soir venu, votre chauffeur vous conduit dîner sans souci de la route de retour, en lacets et sans éclairage. Vous profitez de la carte des vins autant que de l’assiette, puis rentrez à Cannes quand bon vous semble. Avant le repas, le Musée d’art classique de Mougins — qui confronte antiques gréco-romaines et œuvres modernes — se visite en fin d’après-midi, quand les cars de touristes ont quitté le village."
+    ]
+   },
+   "steps": [
+    {
+     "fr": "Prise en charge à votre hôtel cannois en fin d’après-midi (Mougins est à 8 km)."
+    },
+    {
+     "fr": "Flânerie dans le village circulaire et, en option, Musée d’art classique de Mougins."
+    },
+    {
+     "fr": "Dîner dans l’une des tables réputées du village, au rythme que vous choisissez."
+    },
+    {
+     "fr": "Retour de nuit vers Cannes, votre chauffeur gérant la route en lacets."
+    }
+   ],
+   "included": {
+    "fr": [
+     "Chauffeur dédié la soirée",
+     "Véhicule Mercedes premium",
+     "Prise en charge à votre hôtel",
+     "Retour de nuit à l’heure choisie"
+    ]
+   },
+   "tip": {
+    "fr": "Les meilleures tables de Mougins affichent complet le week-end : réservez plusieurs jours à l’avance, nous nous en chargeons volontiers. Demandez une table en terrasse au coucher du soleil, la vue porte jusqu’à l’Estérel."
+   }
+  },
+  {
+   "slug": "corniche-dor-et-massif-de-lesterel",
+   "index": 3,
+   "title": {
+    "fr": "Corniche d’Or et massif de l’Estérel"
+   },
+   "intro": {
+    "fr": [
+     "Ouverte en 1903 par le Touring Club de France, la Corniche d’Or épouse sur une trentaine de kilomètres le contact brutal entre la roche rouge de l’Estérel et le bleu de la Méditerranée. De Théoule-sur-Mer à Saint-Raphaël, la route se faufile entre calanques et pointes de porphyre, dévoile le rocher du Cap Roux, la rade d’Agay où débarquèrent les troupes en 1944, et le sémaphore du Dramont face à l’île d’Or. C’est l’un des rares tronçons de la Côte où la corniche reste sauvage, sans lotissement.",
+     "Votre chauffeur roule au rythme du paysage, s’arrête aux belvédères que les autocars ne peuvent atteindre et vous laisse descendre vers une calanque pour la baignade. Le déjeuner se prend les pieds dans l’eau, à Agay ou au Trayas, dans un restaurant de plage réservé à l’avance. La demi-journée peut se prolonger jusqu’à Saint-Raphaël ou bifurquer vers l’intérieur du massif, sur les pistes rouges du col Notre-Dame, selon votre envie du moment."
+    ]
+   },
+   "steps": [
+    {
+     "fr": "Départ de Cannes vers Théoule-sur-Mer, entrée de la Corniche d’Or."
+    },
+    {
+     "fr": "Route littorale de 30 km : Cap Roux, Le Trayas, Agay, arrêts belvédères et calanques."
+    },
+    {
+     "fr": "Baignade dans une crique de porphyre rouge et déjeuner de plage à Agay ou au Trayas."
+    },
+    {
+     "fr": "Retour par la corniche ou détour dans le massif de l’Estérel avant Cannes."
+    }
+   ],
+   "included": {
+    "fr": [
+     "Chauffeur dédié la demi-journée",
+     "Véhicule Mercedes premium",
+     "Prise en charge à votre hôtel",
+     "Arrêts baignade et photo à la demande"
+    ]
+   },
+   "tip": {
+    "fr": "En été, faites la corniche le matin : la lumière rasante embrase le porphyre rouge et la route est encore fluide. Les plages d’Agay ont un fond de sable, plus agréable que les galets du Trayas pour la baignade."
+   }
+  },
+  {
+   "slug": "soiree-croisette-casino",
+   "index": 4,
+   "title": {
+    "fr": "Soirée Croisette & Casino"
+   },
+   "intro": {
+    "fr": [
+     "La Croisette se vit autrement à la nuit tombée, quand les façades des palaces s’illuminent et que la promenade se vide de ses baigneurs. La soirée commence par un dîner : une table étoilée comme La Palme d’Or, au Martinez, ou l’une des plages privées qui dressent le couvert sur le sable face à la mer. Puis le Casino Barrière Le Croisette, sous l’hôtel Majestic, ouvre ses salles de jeux et son ambiance feutrée jusqu’au petit matin.",
+     "Votre chauffeur vous dépose au tapis rouge, sans que vous ayez à affronter la circulation du boulevard ni la recherche d’un stationnement introuvable en saison. Il patiente pendant le dîner comme au casino et vous ramène à votre villa ou votre hôtel à l’heure que vous décidez, aussi tardive soit-elle. C’est la version cannoise de la nuit sans contrainte : on profite, on ne conduit pas."
+    ]
+   },
+   "steps": [
+    {
+     "fr": "Prise en charge à votre villa ou hôtel en début de soirée."
+    },
+    {
+     "fr": "Dépose devant votre table : La Palme d’Or, une plage privée ou l’adresse de votre choix."
+    },
+    {
+     "fr": "Casino Barrière Le Croisette, votre chauffeur en attente sur la Croisette."
+    },
+    {
+     "fr": "Retour à l’heure que vous souhaitez, aussi tardif soit-il."
+    }
+   ],
+   "included": {
+    "fr": [
+     "Chauffeur dédié toute la soirée",
+     "Véhicule Mercedes premium",
+     "Dépose au plus près des entrées",
+     "Retour de nuit à l’heure choisie"
+    ]
+   },
+   "tip": {
+    "fr": "Le Casino Barrière impose une tenue correcte (pas de short ni de tongs) et une pièce d’identité à l’entrée. Réservez le dîner tôt en saison : pendant le Festival, les plages privées de la Croisette se réservent des semaines à l’avance."
+   }
+  }
+ ]
+}
