@@ -65,8 +65,29 @@ const RESPONSE_SCHEMA = {
   },
 };
 
+/**
+ * Angles d'attaque tournants : sur 1 485 pages sœurs, la variation structurelle
+ * est ce qui distingue un corpus rédactionnel d'un gabarit généré. L'angle est
+ * choisi déterministiquement (hash du slug) → reproductible, jamais uniforme.
+ */
+const ANGLES = [
+  'Ouvre le 1er paragraphe par un détail sensoriel précis (lumière, son, odeur, matière) observé sur place.',
+  'Ouvre le 1er paragraphe par un fait historique ou une anecdote datée, vérifiable et peu connue.',
+  'Ouvre le 1er paragraphe par la géographie : relief, distance exacte, route empruntée.',
+  'Ouvre le 1er paragraphe par une scène vécue à hauteur de voyageur (un moment précis de la journée).',
+  'Ouvre le 1er paragraphe par un chiffre concret (altitude, année, superficie, nombre) qui situe le lieu.',
+  'Ouvre le 1er paragraphe par un contraste (avant/après, haut/bas, agitation/calme) propre au lieu.',
+];
+
+function hashCode(s) {
+  let h = 0;
+  for (let i = 0; i < s.length; i++) h = ((h << 5) - h + s.charCodeAt(i)) | 0;
+  return Math.abs(h);
+}
+
 function buildPrompt(city, exp) {
-  return `Tu écris pour Amani Limousines, maison française de chauffeur privé haut de gamme (Mercedes, prix fixes, chauffeur dédié). Rédige le contenu d'une page « expérience » :
+  const angle = ANGLES[hashCode(`${city.city}/${exp.slug}`) % ANGLES.length];
+  return `Tu es un rédacteur de guides de voyage français expérimenté. Tu écris pour Amani Limousines, maison française de chauffeur privé haut de gamme (Mercedes, prix fixes, chauffeur dédié). Rédige le contenu d'une page « expérience » :
 
 VILLE : ${city.cityName.fr} / ${city.cityName.en} (${city.country.fr})
 EXPÉRIENCE : ${exp.title.fr} / ${exp.title.en}
@@ -74,11 +95,18 @@ ACCROCHE EXISTANTE (ne pas répéter mot à mot) : ${exp.teaser.fr}
 DURÉE : ${exp.duration.fr} — PRIX : à partir de ${exp.price} €
 
 Produis un JSON avec :
-- intro_fr : 2 paragraphes français (80-110 mots chacun). Ton élégant, concret, factuel (lieux réels, distances plausibles). Le 1er paragraphe plante le décor et l'intérêt ; le 2e explique le déroulé avec le chauffeur (véhicule à disposition, prise en charge à l'hôtel, souplesse). Utilise « votre chauffeur » et « ${exp.title.fr} » naturellement. Pas de superlatifs creux, pas de tirets cadratins, varie les longueurs de phrases.
-- intro_en : traduction naturelle anglaise des 2 paragraphes (pas littérale, idiomatique).
-- steps : 4 étapes d'itinéraire, chacune UNE phrase courte (fr + en), chronologiques, avec lieux précis.
-- included_fr / included_en : 4 puces courtes (3-6 mots) de ce qui est inclus (ex. « Chauffeur dédié toute la durée », « Véhicule Mercedes premium », « Prise en charge à votre hôtel », « Attente incluse à chaque étape » — adapte à l'expérience).
-- tip_fr / tip_en : 1 conseil pratique d'initié (meilleure saison, horaire, réservation restaurant…), 1-2 phrases.`;
+- intro_fr : 2 paragraphes français (80-110 mots chacun). ${angle} Le 1er paragraphe plante le décor et l'intérêt ; le 2e explique le déroulé avec le chauffeur (véhicule à disposition, prise en charge à l'hôtel, souplesse, on déguste/visite pendant qu'il conduit). Glisse UNE fois, naturellement, « chauffeur privé » à proximité du nom de la ville ou de la région (jamais en début de phrase). Nomme des lieux réels et des distances plausibles.
+- intro_en : réécriture anglaise idiomatique des 2 paragraphes (pas une traduction littérale — un rédacteur anglophone natif).
+- steps : 4 étapes d'itinéraire, chacune UNE phrase courte (fr + en), chronologiques, avec lieux précis et un horaire ou une durée quand c'est pertinent.
+- included_fr / included_en : 4 puces courtes (3-6 mots) de ce qui est inclus, adaptées à CETTE expérience (chauffeur dédié, véhicule, prise en charge, attente, réservation…).
+- tip_fr / tip_en : 1 conseil pratique d'initié, spécifique et actionnable (meilleure saison, horaire précis, réservation, place où s'asseoir…), 1-2 phrases.
+
+RÈGLES DE STYLE (impératives, FR comme EN) :
+- Écriture humaine : varie fortement la longueur des phrases (mélange courtes et longues), autorise une inversion ou une incise de temps en temps.
+- INTERDITS absolus : « niché au cœur de », « au cœur de », « incontournable », « véritable », « unique », « exceptionnel », « n'hésitez pas », « que vous soyez… ou… », « offre une expérience », « plongez », « laissez-vous », « émerveill- », les tirets cadratins (—), les listes de trois adjectifs, toute phrase commençant par un participe présent.
+- Zéro superlatif creux : chaque affirmation s'appuie sur un fait (nom, date, distance, altitude, spécialité).
+- Ne commence jamais les deux paragraphes par la même tournure ; ne commence pas par le nom de la ville.
+- Le contenu doit apprendre quelque chose au lecteur qui connaît déjà la destination.`;
 }
 
 async function callAPI(city, exp, attempt = 1) {
@@ -92,7 +120,7 @@ async function callAPI(city, exp, attempt = 1) {
         type: 'json_schema',
         json_schema: { name: 'experience_detail', strict: true, schema: RESPONSE_SCHEMA },
       },
-      temperature: 0.8,
+      temperature: 0.9,
     }),
   });
 

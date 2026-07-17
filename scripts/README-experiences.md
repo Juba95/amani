@@ -4,7 +4,21 @@ Chaque destination du site possède 5 expériences. Ce pipeline génère pour
 chacune une **page détail bilingue** (`/destinations/<ville>/<experience>` et
 `/en/destinations/...`) via l'API OpenAI, avec un modèle économique.
 
-**Coût estimé : ≈ 1,50 € pour les 297 villes** (gpt-4o-mini).
+**Coût estimé : ≈ 1-1,50 € TOUT COMPRIS** — le script fait 1 appel par
+expérience, soit 297 villes × 5 = 1 485 appels gpt-4o-mini (~0,7 M tokens
+d'entrée + ~1 M de sortie).
+
+## Qualité SEO & anti-détection
+
+Le prompt impose un style rédactionnel humain : angle d'ouverture **tournant**
+d'une page à l'autre (6 angles choisis par hash du slug — sensoriel,
+historique, géographique, scène vécue, chiffre, contraste), longueurs de
+phrases variées, faits vérifiables obligatoires (noms, dates, distances),
+mot-clé « chauffeur privé + ville » placé une seule fois naturellement, et
+une liste d'interdits couvrant les tics d'écriture IA (« niché au cœur de »,
+« incontournable », « laissez-vous », tirets cadratins, triplets d'adjectifs,
+participes présents en tête de phrase…). L'anglais est une réécriture
+idiomatique, pas une traduction littérale.
 
 ## Sur votre Mac (dans le dossier du projet)
 
