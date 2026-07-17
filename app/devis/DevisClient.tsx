@@ -16,12 +16,19 @@ function toLocale(v: string | null): Locale {
   return 'fr';
 }
 
+/** Nettoie un paramètre d'URL : les chaînes littérales "undefined"/"null"
+ *  (issues d'un String(undefined) en amont) sont traitées comme vides. */
+function clean(v: string | null): string {
+  if (!v || v === 'undefined' || v === 'null') return '';
+  return v;
+}
+
 function DevisContent() {
   const params = useSearchParams();
-  const from = params.get('from') || '';
-  const to = params.get('to') || '';
+  const from = clean(params.get('from'));
+  const to = clean(params.get('to'));
   const km = Number(params.get('km')) || 35;
-  const dur = params.get('dur') || '45 min';
+  const dur = clean(params.get('dur')) || '45 min';
   const lang: Locale = toLocale(params.get('lang'));
 
   const t = locales[lang] || fr;

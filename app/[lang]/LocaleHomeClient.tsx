@@ -52,8 +52,8 @@ export default function LocaleHomeClient({ countries }: { countries: Record<stri
       });
       const data = await res.json();
 
-      setDistance(data.km);
-      setDuration(data.duration);
+      setDistance(data?.km ?? 35);
+      setDuration(data?.duration ?? '45 min');
       setShowResults(true);
 
       setTimeout(() => {

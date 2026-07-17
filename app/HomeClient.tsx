@@ -38,8 +38,8 @@ export default function HomeClient({ countries }: { countries: Record<string, Ma
 
       const params = new URLSearchParams({
         from: fromVal, to: toVal,
-        km: String(data.km),
-        dur: data.duration,
+        km: String(data?.km ?? 35),
+        dur: data?.duration ?? '45 min',
         lang: 'fr',
       });
       router.push(`/devis?${params.toString()}`);
