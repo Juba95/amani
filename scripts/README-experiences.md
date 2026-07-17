@@ -70,3 +70,44 @@ git add content/experience-details && git commit -m "content: expériences déta
 - **Regénérer une ville** : supprimez son fichier
   (`rm content/experience-details/nice.json`) puis relancez le script.
 - La sitemap intègre automatiquement les nouvelles pages au build.
+
+## Images héros (1 par ville, partagée par ses 5 pages)
+
+```bash
+# 297 villes en qualité medium ≈ 18 € (~30 min)
+OPENAI_API_KEY=sk-... npm run exp:images
+
+# Test d'abord :
+OPENAI_API_KEY=sk-... LIMIT=3 npm run exp:images
+
+# Variantes :
+QUALITY=low   → ≈ 5 €  (suffisant en petit format)
+QUALITY=high  → ≈ 70 €
+PER=experience → 1 image par page (1485 images, ≈ 90 € en medium) — déconseillé :
+                 +300 Mo dans le repo pour un gain SEO marginal
+```
+
+Sortie : `public/images/destinations/<ville>.webp` (1536×1024, ≈ 150 KB).
+L'image apparaît automatiquement sur la page ville ET ses 5 pages expériences
+(alt text localisé, next/image optimisé). Sans image, les pages restent
+valides — couverture progressive, comme pour le texte.
+
+⚠️ gpt-image-1 exige une organisation OpenAI vérifiée
+(platform.openai.com → Settings → Organization → Verify).
+
+## Quel modèle pour le contenu ?
+
+| Modèle | Coût (1485 exp.) | Qualité SEO |
+|---|---|---|
+| gpt-4o-mini | ≈ 1,50 € | correcte ; faits parfois approximatifs |
+| **gpt-5-mini** | **≈ 2,50 €** | **recommandé** — meilleur suivi des interdits stylistiques |
+| gpt-4o | ≈ 11 € | très bonne densité factuelle |
+| gpt-5 | ≈ 11 € | maximale |
+
+```bash
+MODEL=gpt-5-mini OPENAI_API_KEY=sk-... npm run exp:generate
+```
+
+Conseil : générez 3 villes avec deux modèles différents (`LIMIT=3` puis
+`rm content/experience-details/<ville>.json` entre les essais), comparez,
+puis lancez tout avec le gagnant.

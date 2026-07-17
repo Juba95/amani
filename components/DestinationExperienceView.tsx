@@ -3,9 +3,10 @@
  * scripts/generate-experience-details.mjs). Server component — style aligné
  * sur DestinationViews / ExperiencesViews.
  */
+import Image from 'next/image';
 import Link from 'next/link';
 import type { Destination } from '@/lib/destinations';
-import type { ExperienceDetail } from '@/lib/experience-details';
+import { getExperienceImage, type ExperienceDetail } from '@/lib/experience-details';
 
 type L = 'fr' | 'en';
 
@@ -62,6 +63,8 @@ export default function DestinationExperienceView({
   const price = locale === 'fr' ? `${source?.price ?? ''} €` : `€${source?.price ?? ''}`;
   const duration = source?.duration[locale] ?? '';
   const cityName = d.name[locale];
+  // Image héros (générée par script) — la page reste valide sans image
+  const heroImage = getExperienceImage(d.slug, exp.slug);
 
   return (
     <>
@@ -77,6 +80,20 @@ export default function DestinationExperienceView({
           </nav>
           <p className="tag">{t.tag} — {cityName}</p>
           <h1 className="heading mt-3">{exp.title[locale]}</h1>
+
+          {/* Image héros (1536×1024, générée par script — absente = section omise) */}
+          {heroImage && (
+            <div className="relative aspect-[3/2] rounded-lg overflow-hidden mt-8">
+              <Image
+                src={heroImage}
+                alt={`${exp.title[locale]} — ${cityName}`}
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 896px"
+                className="object-cover"
+              />
+            </div>
+          )}
 
           {/* Bandeau infos */}
           <div className="mt-8 grid grid-cols-3 max-w-lg border border-warm-200 rounded-lg overflow-hidden text-center divide-x divide-warm-200">

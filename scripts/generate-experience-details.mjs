@@ -120,7 +120,8 @@ async function callAPI(city, exp, attempt = 1) {
         type: 'json_schema',
         json_schema: { name: 'experience_detail', strict: true, schema: RESPONSE_SCHEMA },
       },
-      temperature: 0.9,
+      // Les modèles de raisonnement (gpt-5*, o*) n'acceptent pas temperature
+      ...(/^(gpt-5|o\d)/.test(MODEL) ? {} : { temperature: 0.9 }),
     }),
   });
 

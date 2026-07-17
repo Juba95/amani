@@ -58,6 +58,23 @@ export function getExperienceDetail(citySlug: string, expSlug: string): Experien
   return city?.experiences.find((e) => e.slug === expSlug) ?? null;
 }
 
+const IMAGES_DIR = path.join(process.cwd(), 'public', 'images', 'destinations');
+
+/**
+ * Image héros d'une expérience : image dédiée <ville>--<exp>.webp si générée,
+ * sinon image de la ville <ville>.webp, sinon null (pages sans image = OK).
+ * Générées par scripts/generate-experience-images.mjs (1536×1024).
+ */
+export function getExperienceImage(citySlug: string, expSlug?: string): string | null {
+  if (expSlug && fs.existsSync(path.join(IMAGES_DIR, `${citySlug}--${expSlug}.webp`))) {
+    return `/images/destinations/${citySlug}--${expSlug}.webp`;
+  }
+  if (fs.existsSync(path.join(IMAGES_DIR, `${citySlug}.webp`))) {
+    return `/images/destinations/${citySlug}.webp`;
+  }
+  return null;
+}
+
 /** Toutes les paires (ville, expérience) générées — pour generateStaticParams/sitemap. */
 export function getAllExperienceDetailParams(): { slug: string; exp: string }[] {
   let files: string[] = [];

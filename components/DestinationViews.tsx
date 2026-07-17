@@ -6,7 +6,7 @@
  */
 import Image from 'next/image';
 import Link from 'next/link';
-import { getCityExperienceDetails } from '@/lib/experience-details';
+import { getCityExperienceDetails, getExperienceImage } from '@/lib/experience-details';
 import {
   ALL_DESTINATIONS,
   getNearbyDestinations,
@@ -88,6 +88,8 @@ export function DestinationDetail({ d, locale }: { d: Destination; locale: DestL
   const t = T[locale];
   // Contenu long des expériences (null tant que non généré pour cette ville)
   const expDetails = getCityExperienceDetails(d.slug);
+  // Image héros de la ville (null tant que non générée)
+  const cityImage = getExperienceImage(d.slug);
   const nearby = getNearbyDestinations(d);
 
   const faqJsonLd = {
@@ -107,11 +109,23 @@ export function DestinationDetail({ d, locale }: { d: Destination; locale: DestL
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
-      {/* Hero : pays + h1 + intro */}
+      {/* Hero : pays + h1 + image (si générée) + intro */}
       <section className="pt-36 pb-12 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
           <p className="tag">{d.country[locale]}</p>
           <h1 className="heading mt-3">{t.h1(d.name[locale])}</h1>
+          {cityImage && (
+            <div className="relative aspect-[3/2] sm:aspect-[21/9] rounded-lg overflow-hidden mt-8">
+              <Image
+                src={cityImage}
+                alt={`${d.name[locale]} — ${d.country[locale]}`}
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 896px"
+                className="object-cover"
+              />
+            </div>
+          )}
           <div className="mt-6 space-y-5">
             {d.intro[locale].map((p, i) => (
               <p key={i} className="sf text-stone-600 leading-relaxed">
