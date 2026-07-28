@@ -5,9 +5,18 @@ import Image from 'next/image';
 import PlacesInput, { isGmapsUnavailable } from '@/components/PlacesInput';
 import EuropeMap, { type MapCountry } from '@/components/EuropeMap';
 
+/** Options de recherche transmises au devis (aller-retour double le prix,
+ *  passagers/bagages filtrent les véhicules éligibles). */
+export interface SearchOptions {
+  trip: 'oneway' | 'return';
+  date: string;
+  pax: number;
+  bags: number;
+}
+
 interface HeroProps {
   t: any;
-  onSearch: (from: string, to: string) => void;
+  onSearch: (from: string, to: string, opts?: SearchOptions) => void;
   from: string;
   to: string;
   setFrom: (v: string) => void;
@@ -23,11 +32,18 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
   const [fromConfirmed, setFromConfirmed] = useState(false);
   const [toConfirmed, setToConfirmed]     = useState(false);
   const [submitError, setSubmitError]     = useState('');
+  // Nouveau formulaire : type de trajet, date/heure, passagers, bagages
+  const [trip, setTrip] = useState<'oneway' | 'return'>('oneway');
+  const [date, setDate] = useState('');
+  const [pax, setPax]   = useState(1);
+  const [bags, setBags] = useState(1);
 
   useEffect(() => { setTimeout(() => setReady(true), 150); }, []);
 
   const handleFromChange = (v: string) => { setFrom(v); if (!v) setFromConfirmed(false); setSubmitError(''); };
   const handleToChange   = (v: string) => { setTo(v);   if (!v) setToConfirmed(false);   setSubmitError(''); };
+
+  const opts = (): SearchOptions => ({ trip, date, pax, bags });
 
   const handleQuickRoute = (route: any) => {
     setFrom(route.from);
@@ -35,7 +51,7 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
     setFromConfirmed(true);
     setToConfirmed(true);
     setSubmitError('');
-    onSearch(route.from, route.to);
+    onSearch(route.from, route.to, opts());
   };
 
   const handleSearch = () => {
@@ -47,10 +63,22 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
       return;
     }
     setSubmitError('');
-    onSearch(from, to);
+    onSearch(from, to, opts());
   };
 
   const mapLocale = locale === 'fr' ? 'fr' : 'en';
+  const fr = locale === 'fr';
+  // Libellés du formulaire (FR / EN — les autres langues utilisent l'anglais)
+  const L = {
+    oneWay:    fr ? 'Aller simple'  : 'One way',
+    round:     fr ? 'Aller-retour'  : 'Return',
+    dateLabel: fr ? 'Date & heure'  : 'Date & time',
+    pax:       fr ? 'Passagers'     : 'Passengers',
+    bags:      fr ? 'Bagages'       : 'Luggage pieces',
+    continue:  fr ? 'Continuer'     : 'Continue',
+    proof:     fr ? '4,9/5 sur Google · 307 destinations en Europe' : '4.9/5 on Google · 307 destinations across Europe',
+  };
+  const stepBtn = 'w-9 h-9 flex items-center justify-center rounded-md border border-warm-300 text-stone-500 hover:border-stone-500 hover:text-gray-900 transition-colors text-lg leading-none select-none';
 
   return (
     <section className="relative min-h-screen flex items-center px-6 md:px-10 lg:px-16 pt-28 pb-16 overflow-hidden">

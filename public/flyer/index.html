@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amani Limousines — Dossier partenaire</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#16130e; --cream:#faf7f1; --paper:#ffffff; --line:#e7e0d4;
+    --gold:#8a7340; --gold2:#b3924e; --muted:#6f6a60; --dark:#0f0d0b;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{-webkit-print-color-adjust:exact; print-color-adjust:exact}
+  body{background:#54504a; font-family:'Inter',Arial,sans-serif; color:var(--ink)}
+  .serif{font-family:'Playfair Display',Georgia,serif}
+  .sheet{
+    width:210mm; height:297mm; background:var(--cream); margin:14px auto;
+    position:relative; overflow:hidden; page-break-after:always;
+  }
+  .kicker{font-size:9px; letter-spacing:.22em; text-transform:uppercase; color:var(--gold); font-weight:600}
+  .muted{color:var(--muted)}
+  .pad{padding:16mm 15mm}
+
+  /* ── RECTO header ── */
+  .top{background:var(--dark); color:#f3eee4; padding:12mm 15mm 10mm}
+  .brand{display:flex; align-items:center; gap:11px}
+  .mono{width:34px; height:40px}
+  .brand h1{font-size:23px; letter-spacing:.16em; font-weight:400}
+  .brand .lim{font-size:8.5px; letter-spacing:.42em; color:var(--gold2); margin-top:2px}
+  .top .sub{margin-top:9px; font-size:10.5px; letter-spacing:.05em; color:#c9c2b3}
+  .badge{display:inline-block; margin-top:11px; font-size:9px; letter-spacing:.18em; text-transform:uppercase;
+    color:var(--gold2); border:1px solid rgba(179,146,78,.5); border-radius:20px; padding:5px 13px}
+
+  /* intro row */
+  .intro{display:grid; grid-template-columns:34% 1fr; gap:9mm; align-items:center; margin-top:9mm}
+  .portrait{position:relative}
+  .portrait img{width:100%; display:block}
+  .portrait .cap{font-size:9px; color:var(--muted); text-align:center; margin-top:4px; letter-spacing:.02em}
+  .intro h2{font-size:22px; line-height:1.18; font-weight:500; margin-bottom:9px}
+  .intro p{font-size:10.5px; line-height:1.65; color:#3f3a31; margin-bottom:7px}
+  .intro b{color:var(--ink); font-weight:600}
+
+  /* services */
+  .sect-t{font-size:13px; font-weight:500; letter-spacing:.02em; margin-bottom:9px}
+  .services{display:grid; grid-template-columns:repeat(3,1fr); gap:7px; margin-top:5mm}
+  .svc{background:var(--paper); border:1px solid var(--line); border-radius:9px; padding:9px 11px}
+  .svc .n{font-size:11px; font-weight:600}
+  .svc .d{font-size:8.7px; color:var(--muted); margin-top:2px; line-height:1.4}
+
+  /* targets */
+  .targets{display:flex; flex-wrap:wrap; gap:6px; margin-top:5mm}
+  .chip{font-size:9.5px; padding:5px 11px; border:1px solid var(--line); border-radius:20px; background:var(--paper); color:#40382c}
+  .chip b{color:var(--gold); font-weight:600}
+
+  /* advantages */
+  .adv{display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-top:5mm}
+  .card{background:var(--paper); border:1px solid var(--line); border-radius:10px; padding:11px 10px; text-align:center}
+  .card .big{font-family:'Playfair Display',serif; font-size:19px; color:var(--gold); font-weight:600}
+  .card .lab{font-size:9px; color:#3f3a31; margin-top:4px; line-height:1.35}
+
+  /* contact footer */
+  .contact{position:absolute; left:0; right:0; bottom:0; background:var(--dark); color:#f3eee4;
+    padding:8mm 15mm; display:grid; grid-template-columns:auto 1fr; gap:14px; align-items:center}
+  .qr{background:#fff; padding:7px; border-radius:9px; width:96px; height:96px}
+  .qr img{width:100%; display:block}
+  .contact .cta{font-family:'Playfair Display',serif; font-size:16px; font-weight:500}
+  .contact .rows{margin-top:7px; font-size:10px; line-height:1.75; color:#d7d0c1}
+  .contact .rows b{color:var(--gold2); font-weight:600}
+  .contact .rows span{color:#fff}
+
+  /* ── VERSO ── */
+  .vhead{padding:12mm 15mm 0}
+  .fleet{display:grid; grid-template-columns:repeat(2,1fr); gap:7mm 8mm; padding:6mm 15mm}
+  .veh{background:var(--paper); border:1px solid var(--line); border-radius:12px; padding:10px 13px; display:flex; flex-direction:column}
+  .veh .ph{height:74px; display:flex; align-items:center; justify-content:center; margin-bottom:5px}
+  .veh .ph img{max-height:74px; max-width:88%}
+  .veh .cat{font-size:8px; letter-spacing:.16em; text-transform:uppercase; color:var(--gold); font-weight:600}
+  .veh .nm{font-family:'Playfair Display',serif; font-size:15px; margin-top:1px}
+  .veh .sp{font-size:8.6px; color:var(--muted); margin-top:2px}
+  .veh .pr{display:flex; gap:8px; margin-top:8px; border-top:1px solid var(--line); padding-top:8px}
+  .veh .pr>div{flex:1}
+  .veh .pr .l{font-size:7.6px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted)}
+  .veh .pr .v{font-family:'Playfair Display',serif; font-size:15px; color:var(--ink); font-weight:600}
+  .veh .pr .v small{font-size:9px; color:var(--muted); font-weight:400}
+  .note{padding:2mm 15mm 0; font-size:8.7px; color:var(--muted); line-height:1.5}
+  .vfoot{position:absolute; left:0; right:0; bottom:0; background:var(--dark); color:#f3eee4;
+    padding:7mm 15mm; display:grid; grid-template-columns:1fr auto; gap:14px; align-items:center}
+  .vfoot .t{font-family:'Playfair Display',serif; font-size:15px}
+  .vfoot .rows{font-size:10px; line-height:1.7; color:#d7d0c1; margin-top:5px}
+  .vfoot .rows b{color:var(--gold2)}
+  .vfoot .qr{width:82px; height:82px}
+
+  @media print{ body{background:#fff} .sheet{margin:0} }
+  @page{ size:A4; margin:0 }
+</style>
+</head>
+<body>
+
+<!-- ══════════ RECTO ══════════ -->
+<section class="sheet">
+  <div class="top">
+    <div class="brand">
+      <svg class="mono" viewBox="0 0 56 66" aria-hidden="true">
+        <path d="M2 58 L26 6 L32 6 L8 58 Z" fill="#b3924e"/>
+        <path d="M14 58 L38 6 L44 6 L20 58 Z" fill="#b3924e"/>
+        <path d="M38 6 L44 6 L58 58 L51 58 Z" fill="#b3924e"/>
+      </svg>
+      <div>
+        <h1 class="serif">AMANI</h1>
+        <div class="lim">LIMOUSINES</div>
+      </div>
+    </div>
+    <p class="sub">Chauffeur privé de prestige · Paris, France &amp; Europe · 24h/24</p>
+    <span class="badge">Dossier partenaire B2B</span>
+  </div>
+
+  <div class="pad" style="padding-top:0">
+    <div class="intro">
+      <div class="portrait">
+        <img src="/lounes-about.png" alt="Lounès, fondateur d'Amani Limousines">
+        <div class="cap">Lounès — fondateur &amp; chauffeur polyglotte</div>
+      </div>
+      <div>
+        <p class="kicker">Votre partenaire transport haut de gamme</p>
+        <h2 class="serif">Une flotte premium, des chauffeurs polyglottes, un seul interlocuteur.</h2>
+        <p>Amani Limousines met à disposition de ses partenaires une flotte <b>Mercedes récente</b> et des chauffeurs <b>multilingues</b> (français, anglais, arabe…), pour des transferts et mises à disposition <b>à prix fixe</b>, partout en France et en Europe — <b>307 destinations</b> desservies.</p>
+        <p>Une équipe <b>disponible 24h/24</b>, épaulée par nos outils IA pour un devis instantané, une réservation en 30 secondes et un suivi impeccable. Vos clients voyagent, nous gérons chaque kilomètre.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:8mm">
+      <p class="sect-t serif">Nos services</p>
+      <div class="services">
+        <div class="svc"><div class="n">Transferts aéroport</div><div class="d">CDG · Orly · Le Bourget · Beauvais — accueil, suivi de vol, prix fixe.</div></div>
+        <div class="svc"><div class="n">Mise à disposition</div><div class="d">Chauffeur à l'heure ou à la journée, véhicule dédié entre chaque étape.</div></div>
+        <div class="svc"><div class="n">Aviation privée</div><div class="d">Accueil FBO au Bourget, coordination jet, discrétion absolue.</div></div>
+        <div class="svc"><div class="n">Événementiel</div><div class="d">Fashion Week, Cannes, Roland-Garros, salons — flotte renforcée.</div></div>
+        <div class="svc"><div class="n">Délégations &amp; convois</div><div class="d">Ambassades, ministères, groupes — logistique multi-véhicules.</div></div>
+        <div class="svc"><div class="n">Excursions privées</div><div class="d">Champagne, châteaux, Riviera — journées avec chauffeur dédié.</div></div>
+      </div>
+    </div>
+
+    <div style="margin-top:7mm">
+      <p class="sect-t serif">Conçu pour vous</p>
+      <div class="targets">
+        <span class="chip"><b>1.</b> Entreprises</span>
+        <span class="chip"><b>2.</b> Hôtels 4★ &amp; 5★</span>
+        <span class="chip"><b>3.</b> Conciergeries</span>
+        <span class="chip"><b>4.</b> Agences de voyage</span>
+        <span class="chip"><b>5.</b> Aviation privée</span>
+        <span class="chip"><b>6.</b> Événementiel</span>
+        <span class="chip"><b>7.</b> Ambassades</span>
+        <span class="chip"><b>8.</b> Cabinets d'avocats</span>
+        <span class="chip"><b>9.</b> Immobilier de luxe</span>
+      </div>
+    </div>
+
+    <div style="margin-top:7mm">
+      <p class="sect-t serif">Vos avantages partenaire</p>
+      <div class="adv">
+        <div class="card"><div class="big">15%</div><div class="lab">Commission apporteur d'affaires</div></div>
+        <div class="card"><div class="big">−10%</div><div class="lab">Code partenaire pour vos clients</div></div>
+        <div class="card"><div class="big">30&nbsp;j</div><div class="lab">Facturation mensuelle centralisée</div></div>
+        <div class="card"><div class="big">24/7</div><div class="lab">Interlocuteur dédié &amp; réservation prioritaire</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact">
+    <div class="qr"><img src="/flyer/assets/qr.png" alt="QR WhatsApp Amani Limousines"></div>
+    <div>
+      <div class="cta">Réservez en 30 secondes sur WhatsApp</div>
+      <div class="rows">
+        <b>WhatsApp</b> <span>Scannez le QR — wa.me/message/WSLY2SLQ2EYNL1</span><br>
+        <b>Email</b> <span>amani.limousines@gmail.com</span> &nbsp;·&nbsp; <b>Tél</b> <span>+33 6 87 16 97 47</span><br>
+        <b>Web</b> <span>www.amani-limousines.com</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ VERSO ══════════ -->
+<section class="sheet">
+  <div class="vhead">
+    <p class="kicker">La flotte &amp; les tarifs partenaires</p>
+    <h2 class="serif" style="font-size:24px; font-weight:500; margin-top:6px">Mercedes &amp; véhicules de prestige</h2>
+    <p class="muted" style="font-size:10px; margin-top:5px">Tarifs partenaires B2B — transferts aéroport (forfait) et mise à disposition à l'heure.</p>
+  </div>
+
+  <div class="fleet">
+    <div class="veh">
+      <div class="ph"><img src="/vehicles/mercedes-classe-e.png" alt="Mercedes Classe E"></div>
+      <div class="cat">Berline Business</div>
+      <div class="nm serif">Mercedes Classe E</div>
+      <div class="sp">3 passagers · 2 bagages</div>
+      <div class="pr">
+        <div><div class="l">Transfert aéroport</div><div class="v">150 €</div></div>
+        <div><div class="l">Mise à disposition</div><div class="v">95 €<small>/h</small></div></div>
+      </div>
+    </div>
+    <div class="veh">
+      <div class="ph"><img src="/vehicles/mercedes-classe-v.png" alt="Mercedes Classe V"></div>
+      <div class="cat">Van Luxe</div>
+      <div class="nm serif">Mercedes Classe V</div>
+      <div class="sp">7 passagers · 6 bagages</div>
+      <div class="pr">
+        <div><div class="l">Transfert aéroport</div><div class="v">160 €</div></div>
+        <div><div class="l">Mise à disposition</div><div class="v">95 €<small>/h</small></div></div>
+      </div>
+    </div>
+    <div class="veh">
+      <div class="ph"><img src="/vehicles/mercedes-classe-s.png" alt="Mercedes Classe S"></div>
+      <div class="cat">Berline Executive</div>
+      <div class="nm serif">Mercedes Classe S</div>
+      <div class="sp">3 passagers · 2 bagages</div>
+      <div class="pr">
+        <div><div class="l">Transfert aéroport</div><div class="v">220 €</div></div>
+        <div><div class="l">Mise à disposition</div><div class="v">130 €<small>/h</small></div></div>
+      </div>
+    </div>
+    <div class="veh">
+      <div class="ph"><img src="/vehicles/mercedes-classe-s-maybach.png" alt="Mercedes Classe S Maybach"></div>
+      <div class="cat">Ultra-prestige</div>
+      <div class="nm serif">Mercedes S Maybach</div>
+      <div class="sp">3 passagers · 2 bagages</div>
+      <div class="pr">
+        <div><div class="l">Transfert aéroport</div><div class="v">250 €</div></div>
+        <div><div class="l">Mise à disposition</div><div class="v">220 €<small>/h</small></div></div>
+      </div>
+    </div>
+    <div class="veh">
+      <div class="ph"><img src="/vehicles/mercedes-classe-g.png" alt="Mercedes Classe G"></div>
+      <div class="cat">SUV Prestige</div>
+      <div class="nm serif">Mercedes Classe G</div>
+      <div class="sp">4 passagers · 3 bagages</div>
+      <div class="pr">
+        <div><div class="l">Transfert aéroport</div><div class="v">500 €</div></div>
+        <div><div class="l">Mise à disposition</div><div class="v">190 €<small>/h</small></div></div>
+      </div>
+    </div>
+    <div class="veh">
+      <div class="ph"><img src="/vehicles/mercedes-sprinter.png" alt="Mercedes Sprinter VIP"></div>
+      <div class="cat">Minibus VIP</div>
+      <div class="nm serif">Mercedes Sprinter VIP</div>
+      <div class="sp">Jusqu'à 16 passagers</div>
+      <div class="pr">
+        <div><div class="l">Transfert aéroport</div><div class="v">450 €</div></div>
+        <div><div class="l">Mise à disposition</div><div class="v">120 €<small>/h</small></div></div>
+      </div>
+    </div>
+  </div>
+
+  <p class="note">Forfaits aéroport CDG / Orly ↔ Paris intra-muros, TTC. Longue distance facturée au kilomètre (ex. Paris → Nice, Paris → Genève). Mise à disposition : minimum 4 h. Range Rover Evoque, Mercedes EQS (électrique) et BMW i7 également disponibles. <b>Tarifs indicatifs — grille complète et conditions partenaires communiquées sur demande.</b></p>
+
+  <div class="vfoot">
+    <div>
+      <div class="t serif">Réservation directe</div>
+      <div class="rows">
+        <b>WhatsApp</b> wa.me/message/WSLY2SLQ2EYNL1 &nbsp;·&nbsp; <b>Email</b> amani.limousines@gmail.com<br>
+        <b>Tél</b> +33 6 87 16 97 47 &nbsp;·&nbsp; <b>Devis en ligne</b> www.amani-limousines.com/reservation
+      </div>
+    </div>
+    <div class="qr" style="background:#fff; padding:7px; border-radius:9px"><img src="/flyer/assets/qr.png" alt="QR WhatsApp" style="width:100%; display:block"></div>
+  </div>
+</section>
+
+</body>
+</html>

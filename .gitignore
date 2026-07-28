@@ -5,3 +5,13 @@ node_modules/
 .env.production
 *.local
 scripts/.cache/
+
+# Artefacts de build
+next-env.d.ts
+tsconfig.tsbuildinfo
+
+# macOS
+.DS_Store
+
+# Copie locale du projet (non déployée)
+/amani/
