@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import MailtoLink from '@/components/MailtoLink';
 
 // ── Liens footer par locale ──────────────────────────────────────────────────
 // ── Colonnes du footer par locale (titre + liens) ───────────────────────────
@@ -334,10 +335,11 @@ export function CTA({ t }: CTAProps) {
             className="px-6 py-3 border border-gold-400/20 rounded-xl font-sans text-sm text-gold-400 hover:bg-gold-400/[0.06] hover:border-gold-400/40 transition-all">
             ✆ <span dir="ltr">{t?.nav?.phone ?? ''}</span>
           </a>
-          <a href="mailto:amani.limousines@gmail.com"
+          {/* Retombe sur Gmail/Outlook/copie si aucun client mail n’est configuré. */}
+          <MailtoLink email="amani.limousines@gmail.com"
             className="px-6 py-3 border border-gold-400/20 rounded-xl font-sans text-sm text-gold-400 hover:bg-gold-400/[0.06] hover:border-gold-400/40 transition-all">
             ✉ amani.limousines@gmail.com
-          </a>
+          </MailtoLink>
           <a href={`https://wa.me/${waNumber}`} target="_blank" rel="noopener noreferrer"
             className="px-6 py-3 border border-gold-400/20 rounded-xl font-sans text-sm text-gold-400 hover:bg-gold-400/[0.06] hover:border-gold-400/40 transition-all">
             {t?.cta?.whatsapp}

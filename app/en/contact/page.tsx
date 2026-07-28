@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import SEOLayoutEN from '@/components/SEOLayoutEN';
 import { content, contentMetadata } from '@/lib/get-content';
+import MailtoLink from '@/components/MailtoLink';
 
 const SLUG = 'en/contact';
 
@@ -52,6 +53,7 @@ export default function ContactEN() {
               info: 'amani.limousines@gmail.com',
               detail: 'For detailed requests, delegation quotes and corporate accounts.',
               href: 'mailto:amani.limousines@gmail.com',
+              email: 'amani.limousines@gmail.com',
               cta: 'Send an email',
             },
           ].map((c) => (
@@ -59,11 +61,19 @@ export default function ContactEN() {
               <p className="tag">{c.title}</p>
               <p className="sf font-semibold text-gray-900 mt-3">{c.info}</p>
               <p className="sf text-stone-500 text-sm mt-3 leading-relaxed">{c.detail}</p>
-              <a href={c.href} target={c.href.startsWith('http') ? '_blank' : undefined}
-                rel={c.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                className="btn-outline mt-5 inline-block">
-                {c.cta}
-              </a>
+              {/* Le lien email retombe sur Gmail/Outlook/copie si aucun client mail n’est configuré. */}
+              {c.email ? (
+                <MailtoLink email={c.email} subject="Request — Amani Limousines" locale="en"
+                  className="btn-outline mt-5 inline-block">
+                  {c.cta}
+                </MailtoLink>
+              ) : (
+                <a href={c.href} target={c.href.startsWith('http') ? '_blank' : undefined}
+                  rel={c.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                  className="btn-outline mt-5 inline-block">
+                  {c.cta}
+                </a>
+              )}
             </div>
           ))}
         </div>

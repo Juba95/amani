@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOLayout from '@/components/SEOLayout';
 import { content, contentMetadata } from '@/lib/get-content';
 import ContactForm from './ContactForm';
+import MailtoLink from '@/components/MailtoLink';
 
 const SLUG = 'contact';
 
@@ -33,18 +34,37 @@ export default function ContactPage() {
           {[
             { icon: '✆', label: 'Téléphone', value: c('phone', '+33 6 87 16 97 47'), href: 'tel:+33687169747' },
             { icon: '💬', label: 'WhatsApp', value: c('whatsapp', 'Disponible 24h/24'), href: 'https://wa.me/33687169747' },
-            { icon: '✉', label: 'Email', value: c('email', 'amani.limousines@gmail.com'), href: 'mailto:amani.limousines@gmail.com' },
-          ].map(item => (
-            <a key={item.label} href={item.href} target={item.href.startsWith('http') ? '_blank' : undefined}
-              rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-              className="flex items-center gap-4 p-5 bg-white rounded-xl border border-stone-200 hover:border-gold-400 transition-all group">
-              <span className="text-2xl">{item.icon}</span>
-              <div>
-                <p className="font-sans text-[0.6rem] tracking-[0.12em] uppercase text-stone-400">{item.label}</p>
-                <p className="font-sans text-sm text-gray-800 font-medium group-hover:text-gold-400 transition-colors">{item.value}</p>
-              </div>
-            </a>
-          ))}
+            { icon: '✉', label: 'Email', value: c('email', 'amani.limousines@gmail.com'), email: 'amani.limousines@gmail.com' },
+          ].map(item => {
+            const cardClass = "flex items-center gap-4 p-5 bg-white rounded-xl border border-stone-200 hover:border-gold-400 transition-all group";
+            const inner = (
+              <>
+                <span className="text-2xl">{item.icon}</span>
+                <div>
+                  <p className="font-sans text-[0.6rem] tracking-[0.12em] uppercase text-stone-400">{item.label}</p>
+                  <p className="font-sans text-sm text-gray-800 font-medium group-hover:text-gold-400 transition-colors">{item.value}</p>
+                </div>
+              </>
+            );
+
+            // Le lien email retombe sur Gmail/Outlook/copie si aucun client mail n’est configuré.
+            if (item.email) {
+              return (
+                <MailtoLink key={item.label} email={item.email}
+                  subject="Demande — Amani Limousines" className={cardClass}>
+                  {inner}
+                </MailtoLink>
+              );
+            }
+
+            return (
+              <a key={item.label} href={item.href} target={item.href!.startsWith('http') ? '_blank' : undefined}
+                rel={item.href!.startsWith('http') ? 'noopener noreferrer' : undefined}
+                className={cardClass}>
+                {inner}
+              </a>
+            );
+          })}
         </div>
       </section>
 
