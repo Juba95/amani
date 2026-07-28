@@ -72,6 +72,9 @@ export default function ContactForm() {
   const [phoneError, setPhoneError] = useState('');
   const [status, setStatus] = useState<FormStatus>('idle');
   const [submittedForm, setSubmittedForm] = useState<typeof form | null>(null);
+  // false quand la demande est bien enregistrée mais que la notification mail
+  // n'est pas partie : on invite alors à confirmer par WhatsApp.
+  const [emailSent, setEmailSent] = useState(true);
 
   const set = (k: keyof typeof form) =>
     (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
@@ -107,6 +110,7 @@ export default function ContactForm() {
         return;
       }
       setSubmittedForm({ ...form });
+      setEmailSent(data?.emailSent !== false);
       setStatus('success');
       setForm({ name: '', email: '', phone: '', service: '', date: '', passengers: '', message: '' });
     } catch {
@@ -132,9 +136,13 @@ export default function ContactForm() {
           style={{ background: 'rgba(138,115,64,0.1)' }}>
           <span className="text-2xl" style={{ color: '#8a7340' }}>✓</span>
         </div>
-        <h3 className="font-serif text-2xl font-normal text-gray-900 mb-3">Message envoyé</h3>
+        <h3 className="font-serif text-2xl font-normal text-gray-900 mb-3">
+          {emailSent ? 'Message envoyé' : 'Demande enregistrée'}
+        </h3>
         <p className="font-sans text-sm text-stone-500 max-w-sm mx-auto mb-8">
-          Notre équipe vous répond sous 30 minutes. Vous recevrez une confirmation par email.
+          {emailSent
+            ? 'Notre équipe vous répond sous 30 minutes. Vous recevrez une confirmation par email.'
+            : 'Votre demande est bien enregistrée. Pour une réponse immédiate, confirmez-la via WhatsApp ci-dessous.'}
         </p>
 
         {/* Bouton WhatsApp */}

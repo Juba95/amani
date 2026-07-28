@@ -13,5 +13,9 @@ tsconfig.tsbuildinfo
 # macOS
 .DS_Store
 
+# Donnees d'execution (demandes clients, contenu edite) — jamais dans git
+/data/*
+!/data/.gitkeep
+
 # Copie locale du projet (non déployée)
 /amani/

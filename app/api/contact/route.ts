@@ -1,4 +1,38 @@
 import { NextRequest, NextResponse } from 'next/server';
+import path from 'path';
+import fs from 'fs';
+
+const DATA_DIR = process.env.DATA_DIR || path.join(process.cwd(), 'data');
+const DATA_FILE = path.join(DATA_DIR, 'contacts.json');
+
+/**
+ * Enregistre la demande sur disque AVANT toute tentative d'envoi.
+ *
+ * L'email peut échouer (identifiants SMTP invalides, serveur injoignable) : sans
+ * cette trace, la demande du client serait perdue définitivement alors que le
+ * site lui affiche une confirmation.
+ */
+function saveContact(entry: Record<string, unknown>): boolean {
+  try {
+    if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
+    let all: unknown[] = [];
+    if (fs.existsSync(DATA_FILE)) {
+      try {
+        const parsed = JSON.parse(fs.readFileSync(DATA_FILE, 'utf-8'));
+        if (Array.isArray(parsed)) all = parsed;
+      } catch {
+        // Fichier corrompu : on le met de côté plutôt que d'écraser l'historique.
+        fs.renameSync(DATA_FILE, `${DATA_FILE}.corrupt-${Date.now()}`);
+      }
+    }
+    all.push(entry);
+    fs.writeFileSync(DATA_FILE, JSON.stringify(all, null, 2), 'utf-8');
+    return true;
+  } catch (err) {
+    console.error('[contact API] save error:', err);
+    return false;
+  }
+}
 
 const SERVICE_LABELS: Record<string, string> = {
   transfert:    'Transfert privé',
@@ -70,6 +104,20 @@ export async function POST(req: NextRequest) {
   const serviceLabel = SERVICE_LABELS[service] || service || 'Non précisé';
   const ref = `AL-${Date.now()}`;
   const createdAt = new Date().toISOString();
+
+  const saved = saveContact({
+    id: ref,
+    createdAt,
+    name,
+    email,
+    phone,
+    service,
+    serviceLabel,
+    date: date || null,
+    passengers: passengers || null,
+    message,
+    source: 'contact',
+  });
 
   const savedId = ref;
 
@@ -150,10 +198,20 @@ export async function POST(req: NextRequest) {
   }
 
   // ── Réponse ─────────────────────────────────────────────────────────────────
+  // La demande n'est réellement prise en compte que si elle est partie par mail
+  // OU conservée sur disque. Si les deux échouent, il faut le dire au visiteur.
+  if (!emailSent && !saved) {
+    return NextResponse.json(
+      { error: 'Impossible d’enregistrer votre demande. Merci de nous joindre par téléphone ou WhatsApp.' },
+      { status: 500 },
+    );
+  }
+
   return NextResponse.json({
     success: true,
     id: savedId,
     emailSent,
+    saved,
     ...(emailError ? { emailWarning: emailError } : {}),
   });
 }
