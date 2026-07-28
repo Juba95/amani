@@ -110,13 +110,15 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
     { h: 8,  label: fr ? 'Journée (8 h)'      : 'Day (8 h)' },
     { h: 12, label: fr ? 'Journée étendue (12 h)' : 'Extended day (12 h)' },
   ];
-  const stepBtn = 'w-8 h-8 flex items-center justify-center rounded-full border border-white/25 text-white/70 hover:border-white hover:text-white transition-colors text-lg leading-none select-none';
-  const microLabel = 'block font-sans text-[0.6rem] tracking-[0.18em] uppercase mb-1.5 text-white/45';
+  const stepBtn = 'w-7 h-7 md:w-8 md:h-8 flex items-center justify-center rounded-full border border-white/25 text-white/70 hover:border-white hover:text-white transition-colors text-base leading-none select-none';
+  const microLabel = 'block font-sans text-[0.55rem] tracking-[0.16em] uppercase mb-1 text-white/45';
   // Champ souligné sur fond sombre, dans l'esprit du widget de référence.
-  const underline = 'w-full bg-transparent border-0 border-b border-white/20 focus:border-white/70 outline-none py-2 font-sans text-[0.95rem] text-white placeholder:text-white/35 transition-colors';
+  const underline = 'w-full bg-transparent border-0 border-b border-white/20 focus:border-white/70 outline-none py-1.5 font-sans text-[0.9rem] text-white placeholder:text-white/35 transition-colors';
 
   return (
-    <section className="relative min-h-screen flex items-center px-6 md:px-10 lg:px-16 pt-28 pb-16 overflow-hidden">
+    // min-h-svh (et non 100vh) : sur mobile la barre d'URL ne pousse plus le
+    // formulaire hors de l'écran.
+    <section className="relative min-h-svh flex items-center px-5 sm:px-6 md:px-10 lg:px-16 pt-[5.25rem] pb-8 sm:pt-24 sm:pb-10 md:pt-28 md:pb-16 overflow-hidden">
       {/* ── Photo background (Paris) ── */}
       <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
         <Image
@@ -139,7 +141,7 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
       </div>
 
       {/* Two-column layout : carte à gauche, H1 + formulaire à droite */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[1.15fr,1fr] gap-12 lg:gap-16 items-center">
+      <div className="relative z-10 w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[1.15fr,1fr] gap-10 lg:gap-16 items-center">
 
         {/* ── LEFT : Interactive Europe map ── */}
         <div className={`order-2 lg:order-1 transition-[opacity,transform] duration-[1400ms] ease-out ${ready ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
@@ -151,28 +153,31 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
 
         {/* ── RIGHT : Tag + H1 + booking form ── */}
         <div className="order-1 lg:order-2">
-          <p className={`tag mb-4 transition-[opacity,transform] duration-[1200ms] ease-out ${ready ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}
+          <p className={`tag text-[0.58rem] sm:text-[0.68rem] tracking-[0.22em] sm:tracking-[0.3em] mb-2 md:mb-4 transition-[opacity,transform] duration-[1200ms] ease-out ${ready ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}
             style={{ transitionDelay: '300ms', color: '#c9a84c' }}>
             {t?.hero?.tag}
           </p>
 
           <h1
-            className={`font-serif font-normal leading-[1.12] mb-4 transition-[opacity,transform] duration-[1200ms] ease-out ${ready ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
-            style={{ transitionDelay: '450ms', fontSize: 'clamp(1.9rem, 3vw, 2.7rem)', color: '#f5f3ef' }}>
+            className={`font-serif font-normal leading-[1.14] mb-2.5 md:mb-4 transition-[opacity,transform] duration-[1200ms] ease-out ${ready ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+            style={{ transitionDelay: '450ms', fontSize: 'clamp(1.32rem, 4.4vw, 2.7rem)', color: '#f5f3ef' }}>
             {t?.hero?.title_1}<br />
             {t?.hero?.title_2} <em className="italic" style={{ color: '#c9a84c' }}>{t?.hero?.title_em}</em> {t?.hero?.title_3}
           </h1>
 
-          <p className={`font-sans text-sm font-light leading-relaxed max-w-[520px] mb-8 transition-[opacity,transform] duration-[1200ms] ease-out ${ready ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}
+          {/* Sur mobile : version courte du résumé, pour que le formulaire
+              entre en entier dans l'écran sans faire défiler. */}
+          <p className={`font-sans text-[0.8rem] sm:text-sm font-light leading-snug sm:leading-relaxed max-w-[520px] mb-3.5 md:mb-7 transition-[opacity,transform] duration-[1200ms] ease-out ${ready ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}
             style={{ transitionDelay: '600ms', color: 'rgba(245,240,230,0.7)' }}>
-            {t?.hero?.subtitle}
+            <span className="sm:hidden">{t?.hero?.subtitle_short ?? t?.hero?.subtitle}</span>
+            <span className="hidden sm:inline">{t?.hero?.subtitle}</span>
           </p>
 
           {/* Booking form */}
           <div className={`transition-[opacity,transform] duration-[1200ms] ease-out ${ready ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
             style={{ transitionDelay: '750ms' }}>
             <div
-              className="p-5 md:p-7 rounded-2xl border backdrop-blur-md"
+              className="p-4 sm:p-5 md:p-6 rounded-2xl border backdrop-blur-md"
               style={{
                 borderColor: 'rgba(255,255,255,0.12)',
                 background: 'rgba(18,16,14,0.72)',
@@ -180,14 +185,14 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
               }}
             >
               {/* Onglets Transfert / Mise à disposition */}
-              <div className="flex p-1 rounded-full mb-6" style={{ border: '1px solid rgba(255,255,255,0.18)' }}>
+              <div className="flex p-1 rounded-full mb-4 md:mb-5" style={{ border: '1px solid rgba(255,255,255,0.18)' }}>
                 {([['transfer', L.transfer], ['disposal', L.disposal]] as const).map(([key, label]) => {
                   const active = mode === key;
                   return (
                     <button key={key} type="button"
                       onClick={() => { setMode(key); setSubmitError(''); }}
                       aria-pressed={active}
-                      className={`flex-1 py-2.5 rounded-full font-sans text-[0.7rem] tracking-[0.15em] uppercase transition-all focus:outline-none focus-visible:ring-1 focus-visible:ring-white/60 ${
+                      className={`flex-1 py-2 rounded-full font-sans text-[0.62rem] sm:text-[0.7rem] tracking-[0.13em] sm:tracking-[0.15em] uppercase transition-all focus:outline-none focus-visible:ring-1 focus-visible:ring-white/60 ${
                         active ? 'bg-white text-gray-900 font-medium' : 'text-white/60 hover:text-white/90'
                       }`}>
                       {label}
@@ -197,7 +202,7 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
               </div>
 
               {mode === 'transfer' ? (
-                <div className="flex flex-col gap-4 mb-5">
+                <div className="flex flex-col gap-3 md:gap-4 mb-3.5 md:mb-4">
                   <PlacesInput
                     label={L.pickup}
                     placeholder={L.pickupPh}
@@ -218,7 +223,7 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
                   />
                 </div>
               ) : (
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 mb-3.5 md:mb-4">
                   <PlacesInput
                     label={L.city}
                     placeholder={L.cityPh}
@@ -240,19 +245,19 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
               )}
 
               {/* Date & heure + passagers / bagages */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 mb-3.5 md:mb-4">
                 <div>
                   <label className={microLabel} htmlFor="hero-date">{L.dateLabel}</label>
                   <input id="hero-date" type="datetime-local" value={date}
                     onChange={(e) => setDate(e.target.value)}
                     className={`${underline} [color-scheme:dark]`} />
                 </div>
-                <div className="flex gap-5">
+                <div className="flex gap-4">
                   {([[L.pax, pax, setPax, 1, 8], [L.bags, bags, setBags, 0, 10]] as const).map(
                     ([label, val, setVal, min, max]) => (
                       <div key={label} className="flex-1">
                         <span className={microLabel}>{label}</span>
-                        <div className="flex items-center gap-2 pt-0.5">
+                        <div className="flex items-center gap-1.5 md:gap-2">
                           <button type="button" className={stepBtn} aria-label={`${label} −`}
                             onClick={() => setVal(Math.max(min, val - 1))}>−</button>
                           <span className="font-sans text-white text-sm w-5 text-center tabular-nums">{val}</span>
@@ -267,12 +272,12 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
 
               {/* Aller simple / aller-retour — sans objet en mise à disposition */}
               {mode === 'transfer' && (
-                <div className="flex gap-5 mb-5">
+                <div className="flex gap-5 mb-3.5 md:mb-4">
                   {([['oneway', L.oneWay], ['return', L.round]] as const).map(([key, label]) => (
                     <label key={key} className="flex items-center gap-2 cursor-pointer">
                       <input type="radio" name="hero-trip" checked={trip === key}
                         onChange={() => setTrip(key)} className="accent-white w-3.5 h-3.5" />
-                      <span className="font-sans text-[0.78rem] text-white/70">{label}</span>
+                      <span className="font-sans text-[0.74rem] text-white/70">{label}</span>
                     </label>
                   ))}
                 </div>
@@ -285,7 +290,7 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
               )}
 
               <button
-                className="w-full py-3.5 rounded-full bg-white text-gray-900 font-sans text-[0.72rem] tracking-[0.18em] uppercase font-medium hover:bg-white/90 transition-colors flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed"
+                className="w-full py-3 md:py-3.5 rounded-full bg-white text-gray-900 font-sans text-[0.68rem] sm:text-[0.72rem] tracking-[0.16em] uppercase font-medium hover:bg-white/90 transition-colors flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed"
                 onClick={handleSearch}
                 disabled={loading}>
                 {loading ? (
@@ -298,19 +303,20 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
                 )}
               </button>
 
-              {/* Trust signals under form */}
-              <div className="mt-4 flex justify-around">
+              {/* Trust signals under form — masqués sur mobile pour que le
+                  formulaire tienne dans l'écran */}
+              <div className="mt-3 hidden sm:flex justify-around">
                 {(t?.hero?.trust_signals ?? ['Prix fixe', 'Suivi de vol', '24h/24']).map((item: string) => (
                   <div key={item} className="text-center">
-                    <p className="font-sans text-[0.6rem] tracking-[0.1em] uppercase text-white/40">{item}</p>
+                    <p className="font-sans text-[0.55rem] sm:text-[0.6rem] tracking-[0.1em] uppercase text-white/40">{item}</p>
                   </div>
                 ))}
               </div>
             </div>
 
             {/* Popular routes — sous le formulaire */}
-            <div className="mt-5">
-              <p className="font-sans text-[0.6rem] tracking-[0.2em] uppercase font-medium mb-2.5" style={{ color: '#c9a84c' }}>
+            <div className="mt-4">
+              <p className="font-sans text-[0.58rem] tracking-[0.2em] uppercase font-medium mb-2" style={{ color: '#c9a84c' }}>
                 {t?.hero?.popular}
               </p>
               <div className="flex flex-wrap gap-2">
@@ -318,7 +324,7 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
                   <button key={i}
                     onClick={() => handleQuickRoute(route)}
                     dir="ltr"
-                    className="px-3.5 py-1.5 rounded-full font-sans text-[0.72rem] font-light tracking-wide transition-colors"
+                    className="px-3 py-1 rounded-full font-sans text-[0.68rem] font-light tracking-wide transition-colors"
                     style={{
                       border: '1px solid rgba(201,168,76,0.3)',
                       color: 'rgba(245,240,230,0.6)',

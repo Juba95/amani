@@ -13,6 +13,7 @@ export interface Vehicle {
   basePrice: number;       // prix minimum en ville
   airportPrice: number;    // forfait aéroport IDF (CDG, Orly, Le Bourget)
   pricePerKm: number;
+  hourlyPrice: number;     // mise à disposition : tarif horaire
 }
 
 export const VEHICLES: Vehicle[] = [
@@ -24,6 +25,7 @@ export const VEHICLES: Vehicle[] = [
     basePrice: 100,        // Tarif minimum ville Classe E
     airportPrice: 150,     // Forfait aéroport Classe E
     pricePerKm: 3.00,
+    hourlyPrice: 90,       // Mise à disposition (€/h)
   },
   {
     id: 'classe_s',
@@ -33,6 +35,7 @@ export const VEHICLES: Vehicle[] = [
     basePrice: 150,        // Tarif minimum ville Classe S
     airportPrice: 220,     // Forfait aéroport Classe S
     pricePerKm: 4.00,
+    hourlyPrice: 120,      // Mise à disposition (€/h)
   },
   {
     id: 'classe_v',
@@ -42,6 +45,7 @@ export const VEHICLES: Vehicle[] = [
     basePrice: 100,        // Tarif minimum ville Classe V
     airportPrice: 160,     // Forfait aéroport Classe V
     pricePerKm: 3.00,
+    hourlyPrice: 100,      // Mise à disposition (€/h)
   },
   {
     id: 'classe_g',
@@ -51,6 +55,7 @@ export const VEHICLES: Vehicle[] = [
     basePrice: 250,
     airportPrice: 500,     // Forfait aéroport Classe G
     pricePerKm: 5.00,
+    hourlyPrice: 150,      // Mise à disposition (€/h)
   },
   {
     id: 'sprinter',
@@ -60,6 +65,7 @@ export const VEHICLES: Vehicle[] = [
     basePrice: 300,        // Tarif minimum ville Sprinter VIP
     airportPrice: 450,     // Forfait aéroport Sprinter VIP
     pricePerKm: 5.00,
+    hourlyPrice: 150,      // Mise à disposition (€/h)
   },
   {
     id: 'range_rover_evoque',
@@ -69,6 +75,7 @@ export const VEHICLES: Vehicle[] = [
     basePrice: 200,
     airportPrice: 250,     // Forfait aéroport Range Rover
     pricePerKm: 5.00,
+    hourlyPrice: 120,      // Mise à disposition (€/h)
   },
   {
     id: 'classe_s_maybach',
@@ -78,6 +85,7 @@ export const VEHICLES: Vehicle[] = [
     basePrice: 200,
     airportPrice: 250,     // Forfait aéroport Maybach
     pricePerKm: 5.00,
+    hourlyPrice: 120,      // Mise à disposition (€/h)
   },
   {
     id: 'eqs',
@@ -87,6 +95,7 @@ export const VEHICLES: Vehicle[] = [
     basePrice: 150,
     airportPrice: 200,     // Forfait aéroport EQS = même que Classe S
     pricePerKm: 4.00,
+    hourlyPrice: 120,      // Mise à disposition (€/h)
   },
 ];
 
@@ -121,6 +130,18 @@ export function calculatePrice(vehicle: Vehicle, distanceKm: number, airport = f
   const kmPrice = vehicle.pricePerKm * distanceKm;
   const minimum = airport ? vehicle.airportPrice : vehicle.basePrice;
   return Math.max(Math.round(kmPrice), minimum);
+}
+
+/** Durées proposées en mise à disposition (heures). */
+export const DISPOSAL_HOURS = [4, 8, 12] as const;
+
+/**
+ * Prix d'une mise à disposition : tarif horaire du véhicule × nombre d'heures.
+ * Aucune distance n'entre en compte, le chauffeur reste avec le client.
+ */
+export function calculateDisposalPrice(vehicle: Vehicle, hours: number): number {
+  const h = Number.isFinite(hours) && hours > 0 ? hours : 4;
+  return Math.round(vehicle.hourlyPrice * h);
 }
 
 export const PREDEFINED_ROUTES: Record<string, { km: number; minutes: number }> = {

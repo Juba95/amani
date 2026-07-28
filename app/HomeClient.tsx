@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Navbar from '@/components/Navbar';
-import Hero from '@/components/Hero';
+import Hero, { type SearchOptions } from '@/components/Hero';
 import VehicleShowcase from '@/components/VehicleShowcase';
 import ServicesGrid from '@/components/ServicesGrid';
 import WhyUs from '@/components/WhyUs';
@@ -24,7 +24,22 @@ export default function HomeClient({ countries }: { countries: Record<string, Ma
   const [to, setTo] = useState('');
   const [searchLoading, setSearchLoading] = useState(false);
 
-  const handleSearch = async (fromVal: string, toVal: string) => {
+  const handleSearch = async (fromVal: string, toVal: string, opts?: SearchOptions) => {
+    // Mise à disposition : pas de destination, donc pas de distance à calculer —
+    // le prix dépend uniquement du véhicule et du nombre d'heures.
+    if (opts?.mode === 'disposal') {
+      if (!fromVal) return;
+      const params = new URLSearchParams({
+        from: fromVal,
+        to: fromVal,
+        mode: 'disposal',
+        hours: String(opts.hours ?? 4),
+        lang: 'fr',
+      });
+      router.push(`/devis?${params.toString()}`);
+      return;
+    }
+
     if (!fromVal || !toVal) return;
 
     setSearchLoading(true);

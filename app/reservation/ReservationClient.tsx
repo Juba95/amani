@@ -4,7 +4,7 @@ import { Suspense, useState, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Navbar from '@/components/Navbar';
 import { CTA, Footer } from '@/components/CTAFooter';
-import { VEHICLES, calculatePrice } from '@/lib/vehicles';
+import { VEHICLES, calculatePrice, calculateDisposalPrice, DISPOSAL_HOURS } from '@/lib/vehicles';
 import fr from '@/locales/fr.json';
 
 const VEHICLE_NAMES: Record<string, string> = {
@@ -34,6 +34,10 @@ function ReservationForm() {
     email: '',
     notes: '',
   });
+  // Mise à disposition : pas de destination, une durée en heures à la place.
+  const [mode, setMode] = useState<'transfer' | 'disposal'>('transfer');
+  const [hours, setHours] = useState<number>(4);
+  const disposal = mode === 'disposal';
 
   const [step, setStep] = useState<1 | 2>(1);
   const [submitted, setSubmitted] = useState(false);
@@ -47,18 +51,26 @@ function ReservationForm() {
     const prefillFrom = searchParams.get('from');
     const prefillTo = searchParams.get('to');
     const prefillVehicle = searchParams.get('vehicle');
+    const prefillMode = searchParams.get('mode');
+    const prefillHours = Number(searchParams.get('hours'));
+    if (prefillMode === 'disposal') setMode('disposal');
+    if (prefillHours > 0) setHours(prefillHours);
     if (prefillFrom || prefillTo || prefillVehicle) {
       setForm(f => ({
         ...f,
         ...(prefillFrom ? { from: prefillFrom } : {}),
-        ...(prefillTo ? { to: prefillTo } : {}),
+        // En mise à disposition, départ et arrivée sont identiques : ne pas
+        // pré-remplir une destination qui n'a pas lieu d'être.
+        ...(prefillTo && prefillMode !== 'disposal' ? { to: prefillTo } : {}),
         ...(prefillVehicle ? { vehicle: prefillVehicle } : {}),
       }));
     }
   }, [searchParams]);
 
   const selectedVehicle = VEHICLES.find((v) => v.id === form.vehicle);
-  const estimatedPrice = selectedVehicle ? calculatePrice(selectedVehicle, 30) : null;
+  const estimatedPrice = selectedVehicle
+    ? (disposal ? calculateDisposalPrice(selectedVehicle, hours) : calculatePrice(selectedVehicle, 30))
+    : null;
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -66,13 +78,15 @@ function ReservationForm() {
 
   const buildWhatsAppMessage = () => {
     const vehicleName = VEHICLE_NAMES[form.vehicle] || form.vehicle;
-    const price = selectedVehicle ? calculatePrice(selectedVehicle, 30) : '?';
     return encodeURIComponent(
-      `Bonjour Amani Limousines,\n\nJe souhaite réserver un transfert :\n\n` +
-      `📍 Départ : ${form.from}\n📍 Arrivée : ${form.to}\n` +
+      `Bonjour Amani Limousines,\n\n` +
+      (disposal
+        ? `Je souhaite réserver une mise à disposition :\n\n📍 Prise en charge : ${form.from}\n⏱ Durée : ${hours} h\n`
+        : `Je souhaite réserver un transfert :\n\n📍 Départ : ${form.from}\n📍 Arrivée : ${form.to}\n`) +
       `📅 Date : ${form.date} à ${form.time}\n` +
-      `👥 Passagers : ${form.passengers}\n🚗 Véhicule : ${vehicleName}\n\n` +
-      `Nom : ${form.name}\nTél : ${form.phone}\nEmail : ${form.email}\n` +
+      `👥 Passagers : ${form.passengers}\n🚗 Véhicule : ${vehicleName}\n` +
+      (estimatedPrice ? `💶 Estimation : ${estimatedPrice} €\n` : '') +
+      `\nNom : ${form.name}\nTél : ${form.phone}\nEmail : ${form.email}\n` +
       (form.notes ? `\nNotes : ${form.notes}` : '') +
       `\n\nMerci`
     );
@@ -101,13 +115,16 @@ function ReservationForm() {
           name: form.name,
           email: form.email,
           phone: form.phone,
-          service: 'transfert',
+          service: disposal ? 'mise-a-disposition' : 'transfert',
           date: [form.date, form.time].filter(Boolean).join(' '),
           passengers: form.passengers,
           message:
             `Reservation depuis le formulaire du site.\n\n` +
-            `Depart : ${form.from || '—'}\n` +
-            `Arrivee : ${form.to || '—'}\n` +
+            (disposal
+              ? `Type : mise a disposition (${hours} h)\n` +
+                `Prise en charge : ${form.from || '—'}\n`
+              : `Depart : ${form.from || '—'}\n` +
+                `Arrivee : ${form.to || '—'}\n`) +
             `Date : ${form.date || '—'} ${form.time || ''}\n` +
             `Passagers : ${form.passengers}\n` +
             `Vehicule : ${vehicleName}` +
@@ -160,26 +177,42 @@ function ReservationForm() {
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
                       <label className="sf text-xs text-stone-500 uppercase tracking-wider block mb-2">
-                        Point de départ *
+                        {disposal ? 'Lieu de prise en charge *' : 'Point de départ *'}
                       </label>
                       <input
                         name="from" value={form.from} onChange={handleChange} required
-                        placeholder="CDG Terminal 2E, hôtel, adresse…"
+                        placeholder={disposal ? 'Hôtel, adresse, aéroport…' : 'CDG Terminal 2E, hôtel, adresse…'}
                         className="field-luxury"
                         style={{ paddingLeft: '1rem' }}
                       />
                     </div>
-                    <div>
-                      <label className="sf text-xs text-stone-500 uppercase tracking-wider block mb-2">
-                        Destination *
-                      </label>
-                      <input
-                        name="to" value={form.to} onChange={handleChange} required
-                        placeholder="Hôtel, adresse, gare…"
-                        className="field-luxury"
-                        style={{ paddingLeft: '1rem' }}
-                      />
-                    </div>
+                    {disposal ? (
+                      <div>
+                        <label className="sf text-xs text-stone-500 uppercase tracking-wider block mb-2">
+                          Durée de la mise à disposition *
+                        </label>
+                        <select
+                          value={hours} onChange={(e) => setHours(Number(e.target.value))}
+                          className="field-luxury" style={{ paddingLeft: '1rem' }}
+                        >
+                          {DISPOSAL_HOURS.map((h) => (
+                            <option key={h} value={h}>{h} heures</option>
+                          ))}
+                        </select>
+                      </div>
+                    ) : (
+                      <div>
+                        <label className="sf text-xs text-stone-500 uppercase tracking-wider block mb-2">
+                          Destination *
+                        </label>
+                        <input
+                          name="to" value={form.to} onChange={handleChange} required
+                          placeholder="Hôtel, adresse, gare…"
+                          className="field-luxury"
+                          style={{ paddingLeft: '1rem' }}
+                        />
+                      </div>
+                    )}
                   </div>
 
                   <div className="grid md:grid-cols-2 gap-6">
@@ -258,10 +291,13 @@ function ReservationForm() {
                     <p className="sf text-sm font-semibold text-gray-900 mb-3">Récapitulatif</p>
                     <div className="space-y-1">
                       {[
-                        { label: 'Départ', val: form.from },
-                        { label: 'Arrivée', val: form.to },
+                        { label: disposal ? 'Prise en charge' : 'Départ', val: form.from },
+                        disposal
+                          ? { label: 'Durée', val: `${hours} heures` }
+                          : { label: 'Arrivée', val: form.to },
                         { label: 'Date', val: `${form.date} à ${form.time}` },
                         { label: 'Véhicule', val: VEHICLE_NAMES[form.vehicle] || form.vehicle },
+                        ...(estimatedPrice ? [{ label: 'Estimation', val: `${estimatedPrice} €` }] : []),
                       ].map((r) => (
                         <div key={r.label} className="flex gap-4 text-sm">
                           <span className="sf text-stone-400 w-20 flex-shrink-0">{r.label}</span>

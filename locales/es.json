@@ -31,7 +31,8 @@
       "Precio fijo",
       "Seguimiento de vuelos",
       "24/7"
-    ]
+    ],
+    "subtitle_short": "Traslados, servicio por horas, larga distancia. 24/7."
   },
   "services": {
     "tag": "Nuestros servicios",
@@ -363,7 +364,14 @@
     "total": "Precio total fijo",
     "book_now": "Reservar ahora",
     "or_call": "O llame al +33 6 87 16 97 47 · WhatsApp disponible",
-    "change_vehicle": "← Cambiar de vehículo"
+    "change_vehicle": "← Cambiar de vehículo",
+    "disposal_tag": "Su servicio por horas",
+    "disposal_badge": "Puesta a disposición",
+    "pickup_city": "Recogida",
+    "disposal_duration": "Duración",
+    "hour_short": "h",
+    "per_hour": "€/h",
+    "hours_label": "horas"
   },
   "trust": {
     "items": [

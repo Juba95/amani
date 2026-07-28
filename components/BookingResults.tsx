@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import dynamic from 'next/dynamic';
-import { VEHICLES, calculatePrice, isAirportTransfer } from '@/lib/vehicles';
+import { VEHICLES, calculatePrice, calculateDisposalPrice, isAirportTransfer } from '@/lib/vehicles';
 
 const RouteMap = dynamic(() => import('@/components/RouteMap'), { ssr: false });
 
@@ -60,16 +60,26 @@ interface BookingResultsProps {
   selectedVehicle: string | null;
   onSelect: (id: string) => void;
   resultsRef: React.RefObject<HTMLDivElement>;
+  /** 'disposal' = mise à disposition horaire : prix = tarif horaire × heures. */
+  mode?: 'transfer' | 'disposal';
+  /** Nombre d'heures réservées en mise à disposition. */
+  hours?: number;
 }
 
 export default function BookingResults({
   t, from, to, distance, duration, selectedVehicle, onSelect, resultsRef,
+  mode = 'transfer', hours = 4,
 }: BookingResultsProps) {
   const router = useRouter();
   const formatPrice = (p: number) => Math.round(p).toLocaleString('fr-FR') + ' €';
 
-  const airport = isAirportTransfer(from, to);
+  const disposal = mode === 'disposal';
+  const airport = !disposal && isAirportTransfer(from, to);
   const selected = VEHICLES.find((v) => v.id === selectedVehicle);
+  // En mise à disposition, la distance n'entre pas dans le calcul.
+  const priceOf = (v: (typeof VEHICLES)[number]) =>
+    disposal ? calculateDisposalPrice(v, hours) : calculatePrice(v, distance, airport);
+  const hoursLabel = `${hours} ${t?.booking?.hour_short || 'h'}`;
 
   const goToReservation = () => {
     if (!selected) return;
@@ -78,6 +88,7 @@ export default function BookingResults({
       vehicle: selected.id,
       km: String(distance),
       dur: duration,
+      ...(disposal ? { mode: 'disposal', hours: String(hours) } : {}),
     });
     router.push(`/reservation?${params.toString()}`);
   };
@@ -87,7 +98,9 @@ export default function BookingResults({
       {/* Vehicle selection — light background */}
       <section className="py-16 px-6 md:px-10 bg-warm-50">
         <div className="max-w-5xl mx-auto">
-          <p className="tag mb-2">{t?.booking?.tag || 'Votre devis'}</p>
+          <p className="tag mb-2">
+            {disposal ? (t?.booking?.disposal_tag || 'Votre mise à disposition') : (t?.booking?.tag || 'Votre devis')}
+          </p>
           <h2 className="heading mb-2">
             {t?.booking?.title || 'Choisissez votre'} <em>{t?.booking?.title_em || 'véhicule'}</em>
           </h2>
@@ -96,29 +109,47 @@ export default function BookingResults({
           {/* Route bar */}
           <div className="flex flex-wrap items-center gap-4 px-5 py-3.5 mb-6 rounded-xl bg-white border border-warm-300">
             <span className="sf text-sm text-gray-700">{from}</span>
-            <span style={{ color: '#8a7340' }}>→</span>
-            <span className="sf text-sm text-gray-700">{to}</span>
+            {!disposal && (
+              <>
+                <span style={{ color: '#8a7340' }}>→</span>
+                <span className="sf text-sm text-gray-700">{to}</span>
+              </>
+            )}
             {airport && (
               <span className="sf text-[0.6rem] px-2.5 py-1 rounded-full font-medium uppercase tracking-wider"
                 style={{ background: 'rgba(138,115,64,0.1)', color: '#8a7340' }}>
                 ✈ Forfait aéroport
               </span>
             )}
+            {disposal && (
+              <span className="sf text-[0.6rem] px-2.5 py-1 rounded-full font-medium uppercase tracking-wider"
+                style={{ background: 'rgba(138,115,64,0.1)', color: '#8a7340' }}>
+                {t?.booking?.disposal_badge || 'Mise à disposition'}
+              </span>
+            )}
             <div className="ml-auto flex gap-5 sf text-sm text-stone-400">
-              <span><strong className="font-medium" style={{ color: '#8a7340' }}>{distance} km</strong></span>
-              <span><strong className="font-medium" style={{ color: '#8a7340' }}>{duration}</strong></span>
+              {disposal ? (
+                <span><strong className="font-medium" style={{ color: '#8a7340' }}>{hoursLabel}</strong></span>
+              ) : (
+                <>
+                  <span><strong className="font-medium" style={{ color: '#8a7340' }}>{distance} km</strong></span>
+                  <span><strong className="font-medium" style={{ color: '#8a7340' }}>{duration}</strong></span>
+                </>
+              )}
             </div>
           </div>
 
-          {/* Route map */}
-          <RouteMap from={from} to={to} distance={distance} duration={duration} visible={true} />
+          {/* Route map — sans objet en mise à disposition (pas de destination) */}
+          {!disposal && (
+            <RouteMap from={from} to={to} distance={distance} duration={duration} visible={true} />
+          )}
 
           {/* Vehicle cards — with images */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
             {VEHICLES.map((v) => {
               const info = VEHICLE_INFO[v.id];
               const vehicleT = t?.fleet?.vehicles?.[v.nameKey];
-              const price = calculatePrice(v, distance, airport);
+              const price = priceOf(v);
               const isSelected = selectedVehicle === v.id;
               const name = vehicleT?.name || info?.name || v.nameKey;
               const category = vehicleT?.category || info?.category || '';
@@ -173,7 +204,11 @@ export default function BookingResults({
                     <p className="font-serif text-xl font-medium" style={{ color: '#8a7340' }}>
                       {formatPrice(price)}
                     </p>
-                    <p className="sf text-[0.6rem] text-stone-400 mt-0.5">prix fixe</p>
+                    <p className="sf text-[0.6rem] text-stone-400 mt-0.5">
+                      {disposal
+                        ? `${v.hourlyPrice} ${t?.booking?.per_hour || '€/h'} × ${hoursLabel}`
+                        : 'prix fixe'}
+                    </p>
                   </div>
                 </div>
               );
@@ -217,12 +252,19 @@ export default function BookingResults({
               </div>
 
               {/* Trip details */}
-              {[
-                [t?.booking?.departure || 'Départ', from],
-                [t?.booking?.arrival || 'Arrivée', to],
-                [t?.booking?.distance || 'Distance', `${distance} km · ${duration}`],
-                [t?.booking?.included || 'Inclus', t?.booking?.included_items || 'Eau, Wi-Fi, chargeurs, suivi de vol'],
-              ].map(([label, value], i) => (
+              {(disposal
+                ? [
+                    [t?.booking?.pickup_city || 'Prise en charge', from],
+                    [t?.booking?.disposal_duration || 'Durée', hoursLabel],
+                    [t?.booking?.included || 'Inclus', t?.booking?.included_items || 'Eau, Wi-Fi, chargeurs, suivi de vol'],
+                  ]
+                : [
+                    [t?.booking?.departure || 'Départ', from],
+                    [t?.booking?.arrival || 'Arrivée', to],
+                    [t?.booking?.distance || 'Distance', `${distance} km · ${duration}`],
+                    [t?.booking?.included || 'Inclus', t?.booking?.included_items || 'Eau, Wi-Fi, chargeurs, suivi de vol'],
+                  ]
+              ).map(([label, value], i) => (
                 <div key={i} className="flex justify-between py-2.5 border-b border-warm-200 sf text-sm">
                   <span className="text-stone-400">{label}</span>
                   <span className="text-gray-700 text-right font-normal">{value}</span>
@@ -233,13 +275,13 @@ export default function BookingResults({
               <div className="flex justify-between items-baseline pt-5 mt-2">
                 <span className="sf text-sm text-stone-400">{t?.booking?.total || 'Prix total fixe'}</span>
                 <span className="font-serif text-3xl font-medium" style={{ color: '#8a7340' }}>
-                  {formatPrice(calculatePrice(selected, distance, airport))}
+                  {formatPrice(priceOf(selected))}
                 </span>
               </div>
 
               {/* CTA */}
               <button className="btn-primary mt-6 w-full" onClick={goToReservation}>
-                {t?.booking?.book_now || 'Réserver maintenant'} — {formatPrice(calculatePrice(selected, distance, airport))}
+                {t?.booking?.book_now || 'Réserver maintenant'} — {formatPrice(priceOf(selected))}
               </button>
 
               <p className="sf text-center text-[0.72rem] text-stone-400 mt-3">

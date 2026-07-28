@@ -31,7 +31,8 @@
       "Fixed price",
       "Flight tracking",
       "24/7"
-    ]
+    ],
+    "subtitle_short": "Transfers, hourly hire, long distance. Available 24/7."
   },
   "services": {
     "tag": "Our services",
@@ -363,7 +364,14 @@
     "total": "Total fixed price",
     "book_now": "Book now",
     "or_call": "Or call +33 6 87 16 97 47 · WhatsApp available",
-    "change_vehicle": "← Change vehicle"
+    "change_vehicle": "← Change vehicle",
+    "disposal_tag": "Your hourly hire",
+    "disposal_badge": "Full disposal",
+    "pickup_city": "Pick-up",
+    "disposal_duration": "Duration",
+    "hour_short": "h",
+    "per_hour": "€/h",
+    "hours_label": "hours"
   },
   "trust": {
     "items": [

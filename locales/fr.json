@@ -31,7 +31,8 @@
       "Prix fixe",
       "Suivi de vol",
       "24h/24"
-    ]
+    ],
+    "subtitle_short": "Transferts, mises à disposition, longue distance. 24h/24."
   },
   "services": {
     "tag": "Nos prestations",
@@ -363,7 +364,14 @@
     "total": "Prix total fixe",
     "book_now": "Réserver maintenant",
     "or_call": "Ou appelez le +33 6 87 16 97 47 · WhatsApp disponible",
-    "change_vehicle": "← Modifier le véhicule"
+    "change_vehicle": "← Modifier le véhicule",
+    "disposal_tag": "Votre mise à disposition",
+    "disposal_badge": "Mise à disposition",
+    "pickup_city": "Prise en charge",
+    "disposal_duration": "Durée",
+    "hour_short": "h",
+    "per_hour": "€/h",
+    "hours_label": "heures"
   },
   "trust": {
     "items": [

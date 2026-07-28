@@ -172,7 +172,7 @@ export default function PlacesInput({
   return (
     <div className="relative">
       {dark ? (
-        <span className="block font-sans text-[0.6rem] tracking-[0.18em] uppercase mb-1.5 text-white/45">
+        <span className="block font-sans text-[0.55rem] tracking-[0.16em] uppercase mb-1 text-white/45">
           {label}
         </span>
       ) : (
@@ -185,7 +185,7 @@ export default function PlacesInput({
         type="text"
         className={
           dark
-            ? `w-full bg-transparent border-0 border-b outline-none py-2 pr-6 font-sans text-[0.95rem] text-white placeholder:text-white/35 transition-colors ${
+            ? `w-full bg-transparent border-0 border-b outline-none py-1.5 pr-6 font-sans text-[0.9rem] text-white placeholder:text-white/35 transition-colors ${
                 hasError ? 'border-amber-400/70' : 'border-white/20 focus:border-white/70'
               }`
             : `field-luxury transition-colors ${hasError ? 'border-amber-400 focus:border-amber-400' : ''}`
@@ -201,7 +201,7 @@ export default function PlacesInput({
       {placeConfirmed && value && (
         <span
           className={`absolute text-xs pointer-events-none ${
-            dark ? 'right-0 bottom-2.5 text-emerald-400' : 'right-4 top-1/2 -translate-y-1/2 text-emerald-500'
+            dark ? 'right-0 bottom-2 text-emerald-400' : 'right-4 top-1/2 -translate-y-1/2 text-emerald-500'
           }`}
           title="Adresse confirmée"
         >

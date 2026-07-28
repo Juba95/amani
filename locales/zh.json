@@ -31,7 +31,8 @@
       "固定价格",
       "航班追踪",
       "24/7"
-    ]
+    ],
+    "subtitle_short": "接送、包时服务、长途出行。全天候。"
   },
   "services": {
     "tag": "我们的服务",
@@ -363,7 +364,14 @@
     "total": "固定总价",
     "book_now": "立即预订",
     "or_call": "或致电 +33 6 87 16 97 47 · 微信/WhatsApp可用",
-    "change_vehicle": "← 更换车辆"
+    "change_vehicle": "← 更换车辆",
+    "disposal_tag": "您的包车服务",
+    "disposal_badge": "按小时包车",
+    "pickup_city": "上车地点",
+    "disposal_duration": "时长",
+    "hour_short": "小时",
+    "per_hour": "€/小时",
+    "hours_label": "小时"
   },
   "trust": {
     "items": [

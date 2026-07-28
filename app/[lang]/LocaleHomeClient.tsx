@@ -3,7 +3,7 @@
 import { useState, useRef } from 'react';
 import { useParams } from 'next/navigation';
 import Navbar from '@/components/Navbar';
-import Hero from '@/components/Hero';
+import Hero, { type SearchOptions } from '@/components/Hero';
 import VehicleShowcase from '@/components/VehicleShowcase';
 import ServicesGrid from '@/components/ServicesGrid';
 import WhyUs from '@/components/WhyUs';
@@ -36,11 +36,29 @@ export default function LocaleHomeClient({ countries }: { countries: Record<stri
   const [selectedVehicle, setSelectedVehicle] = useState<string | null>(null);
   const [showResults, setShowResults] = useState(false);
   const [searchLoading, setSearchLoading] = useState(false);
+  const [mode, setMode] = useState<'transfer' | 'disposal'>('transfer');
+  const [hours, setHours] = useState(4);
   const resultsRef = useRef<HTMLDivElement>(null);
 
-  const handleSearch = async (fromVal: string, toVal: string) => {
+  const handleSearch = async (fromVal: string, toVal: string, opts?: SearchOptions) => {
+    // Mise à disposition : le prix vient du tarif horaire, aucune distance à calculer.
+    if (opts?.mode === 'disposal') {
+      if (!fromVal) return;
+      setMode('disposal');
+      setHours(opts.hours ?? 4);
+      setSelectedVehicle(null);
+      setDistance(0);
+      setDuration('');
+      setShowResults(true);
+      setTimeout(() => {
+        resultsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 200);
+      return;
+    }
+
     if (!fromVal || !toVal) return;
 
+    setMode('transfer');
     setSearchLoading(true);
     setShowResults(false);
     setSelectedVehicle(null);
@@ -129,7 +147,7 @@ export default function LocaleHomeClient({ countries }: { countries: Record<stri
       <WhyUs t={t} />
 
       {/* Booking results (shown after search) */}
-      {showResults && distance && duration && (
+      {showResults && distance !== null && duration !== null && (
         <BookingResults
           t={t}
           from={from}
@@ -139,6 +157,8 @@ export default function LocaleHomeClient({ countries }: { countries: Record<stri
           selectedVehicle={selectedVehicle}
           onSelect={handleSelectVehicle}
           resultsRef={resultsRef}
+          mode={mode}
+          hours={hours}
         />
       )}
 

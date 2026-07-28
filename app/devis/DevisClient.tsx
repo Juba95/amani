@@ -30,6 +30,8 @@ function DevisContent() {
   const km = Number(params.get('km')) || 35;
   const dur = clean(params.get('dur')) || '45 min';
   const lang: Locale = toLocale(params.get('lang'));
+  const mode = params.get('mode') === 'disposal' ? 'disposal' : 'transfer';
+  const hours = Number(params.get('hours')) || 4;
 
   const t = locales[lang] || fr;
   const [selectedVehicle, setSelectedVehicle] = useState<string | null>(null);
@@ -72,6 +74,8 @@ function DevisContent() {
           selectedVehicle={selectedVehicle}
           onSelect={(id) => setSelectedVehicle(id)}
           resultsRef={{ current: null }}
+          mode={mode}
+          hours={hours}
         />
       </main>
 
