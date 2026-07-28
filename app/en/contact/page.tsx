@@ -49,9 +49,9 @@ export default function ContactEN() {
             },
             {
               title: 'Email',
-              info: 'contact@amani-limousines.com',
+              info: 'amani.limousines@gmail.com',
               detail: 'For detailed requests, delegation quotes and corporate accounts.',
-              href: 'mailto:contact@amani-limousines.com',
+              href: 'mailto:amani.limousines@gmail.com',
               cta: 'Send an email',
             },
           ].map((c) => (

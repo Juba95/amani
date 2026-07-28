@@ -289,7 +289,7 @@ function ReservationForm() {
                 className="btn-outline">
                 WhatsApp
               </a>
-              <a href="mailto:contact@amani-limousines.com"
+              <a href="mailto:amani.limousines@gmail.com"
                 className="btn-outline">
                 Email
               </a>

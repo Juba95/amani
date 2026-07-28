@@ -108,7 +108,7 @@ const ARTICLES: { h: string; body: React.ReactNode }[] = [
     body: (
       <p>
         Toute réclamation doit être adressée à{' '}
-        <a href="mailto:contact@amani-limousines.com" className="text-gold-500 hover:underline">contact@amani-limousines.com</a>.
+        <a href="mailto:amani.limousines@gmail.com" className="text-gold-500 hover:underline">amani.limousines@gmail.com</a>.
         Conformément à la réglementation, le client consommateur peut recourir gratuitement à un médiateur de la
         consommation en cas de litige non résolu à l’amiable.
       </p>

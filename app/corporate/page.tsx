@@ -39,7 +39,7 @@ export default function CorporatePage() {
             Un compte corporate, c’est notre organisation au service de la vôtre.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <a href="mailto:contact@amani-limousines.com?subject=Ouverture%20de%20compte%20corporate"
+            <a href="mailto:amani.limousines@gmail.com?subject=Ouverture%20de%20compte%20corporate"
               className="inline-block px-7 py-3.5 font-sans text-sm tracking-widest uppercase text-white" style={{ background: '#0a0908' }}>
               Ouvrir un compte corporate
             </a>
@@ -91,9 +91,9 @@ export default function CorporatePage() {
             Décrivez-nous vos besoins — nous revenons vers vous sous 24 h avec une proposition tarifaire.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="mailto:contact@amani-limousines.com?subject=Ouverture%20de%20compte%20corporate"
+            <a href="mailto:amani.limousines@gmail.com?subject=Ouverture%20de%20compte%20corporate"
               className="inline-block px-6 py-3 font-sans text-sm tracking-widest uppercase text-white" style={{ background: '#0a0908' }}>
-              contact@amani-limousines.com
+              amani.limousines@gmail.com
             </a>
             <a href="tel:+33687169747"
               className="inline-block px-6 py-3 font-sans text-sm tracking-widest uppercase border border-stone-300 text-stone-700 hover:border-stone-600 transition-colors">

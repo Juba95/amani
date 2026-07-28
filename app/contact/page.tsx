@@ -33,7 +33,7 @@ export default function ContactPage() {
           {[
             { icon: '✆', label: 'Téléphone', value: c('phone', '+33 6 87 16 97 47'), href: 'tel:+33687169747' },
             { icon: '💬', label: 'WhatsApp', value: c('whatsapp', 'Disponible 24h/24'), href: 'https://wa.me/33687169747' },
-            { icon: '✉', label: 'Email', value: c('email', 'contact@amani-limousines.com'), href: 'mailto:contact@amani-limousines.com' },
+            { icon: '✉', label: 'Email', value: c('email', 'amani.limousines@gmail.com'), href: 'mailto:amani.limousines@gmail.com' },
           ].map(item => (
             <a key={item.label} href={item.href} target={item.href.startsWith('http') ? '_blank' : undefined}
               rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}

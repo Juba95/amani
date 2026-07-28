@@ -39,7 +39,7 @@ export default function CorporatePageEN() {
             A corporate account puts our organisation at the service of yours.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <a href="mailto:contact@amani-limousines.com?subject=Corporate%20account%20opening"
+            <a href="mailto:amani.limousines@gmail.com?subject=Corporate%20account%20opening"
               className="inline-block px-7 py-3.5 font-sans text-sm tracking-widest uppercase text-white" style={{ background: '#0a0908' }}>
               Open a corporate account
             </a>
@@ -91,9 +91,9 @@ export default function CorporatePageEN() {
             Tell us what you need — we come back within 24 hours with a pricing proposal.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="mailto:contact@amani-limousines.com?subject=Corporate%20account%20opening"
+            <a href="mailto:amani.limousines@gmail.com?subject=Corporate%20account%20opening"
               className="inline-block px-6 py-3 font-sans text-sm tracking-widest uppercase text-white" style={{ background: '#0a0908' }}>
-              contact@amani-limousines.com
+              amani.limousines@gmail.com
             </a>
             <a href="tel:+33687169747"
               className="inline-block px-6 py-3 font-sans text-sm tracking-widest uppercase border border-stone-300 text-stone-700 hover:border-stone-600 transition-colors">

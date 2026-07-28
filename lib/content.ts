@@ -97,7 +97,7 @@ const DEFAULT_CONTENT: ContentBlock[] = [
     label: 'Email de contact',
     page: 'global',
     field: 'email',
-    value: 'contact@amani-limousines.com',
+    value: 'amani.limousines@gmail.com',
     updatedAt: new Date().toISOString(),
   },
 ];

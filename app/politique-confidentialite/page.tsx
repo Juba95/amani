@@ -16,7 +16,7 @@ const SECTIONS: { h: string; body: React.ReactNode }[] = [
       <p>
         Les données personnelles collectées sur ce site sont traitées par <strong>Amani Limousines</strong>{' '}
         (SASU, SIREN 821 665 395), établie à Paris, France. Pour toute question relative à vos données,
-        écrivez à <a href="mailto:contact@amani-limousines.com" className="text-gold-500 hover:underline">contact@amani-limousines.com</a>.
+        écrivez à <a href="mailto:amani.limousines@gmail.com" className="text-gold-500 hover:underline">amani.limousines@gmail.com</a>.
       </p>
     ),
   },
@@ -89,7 +89,7 @@ const SECTIONS: { h: string; body: React.ReactNode }[] = [
         </ul>
         <p className="mt-2">
           Pour exercer ces droits, écrivez à{' '}
-          <a href="mailto:contact@amani-limousines.com" className="text-gold-500 hover:underline">contact@amani-limousines.com</a>.
+          <a href="mailto:amani.limousines@gmail.com" className="text-gold-500 hover:underline">amani.limousines@gmail.com</a>.
           Vous pouvez également introduire une réclamation auprès de la CNIL (
           <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer" className="text-gold-500 hover:underline">www.cnil.fr</a>).
         </p>

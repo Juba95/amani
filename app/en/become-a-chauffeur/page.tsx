@@ -50,7 +50,7 @@ export default function BecomeAChauffeurPage() {
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <a
-              href="mailto:contact@amani-limousines.com?subject=Chauffeur%20application%20-%20Amani"
+              href="mailto:amani.limousines@gmail.com?subject=Chauffeur%20application%20-%20Amani"
               className="inline-block px-6 py-3 font-sans text-sm tracking-widest uppercase text-white transition-all"
               style={{ background: '#0a0908' }}
             >
@@ -116,11 +116,11 @@ export default function BecomeAChauffeurPage() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="mailto:contact@amani-limousines.com?subject=Chauffeur%20application%20-%20Amani"
+              href="mailto:amani.limousines@gmail.com?subject=Chauffeur%20application%20-%20Amani"
               className="inline-block px-6 py-3 font-sans text-sm tracking-widest uppercase text-white transition-all"
               style={{ background: '#0a0908' }}
             >
-              contact@amani-limousines.com
+              amani.limousines@gmail.com
             </a>
             <Link
               href="/en/contact"

@@ -47,7 +47,7 @@ const jsonLd = {
   description: 'Service de chauffeur privé de prestige à Paris. Transferts aéroports, mises à disposition, délégations.',
   url: 'https://www.amani-limousines.com',
   telephone: '+33687169747',
-  email: 'contact@amani-limousines.com',
+  email: 'amani.limousines@gmail.com',
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Paris',

@@ -334,9 +334,9 @@ export function CTA({ t }: CTAProps) {
             className="px-6 py-3 border border-gold-400/20 rounded-xl font-sans text-sm text-gold-400 hover:bg-gold-400/[0.06] hover:border-gold-400/40 transition-all">
             ✆ <span dir="ltr">{t?.nav?.phone ?? ''}</span>
           </a>
-          <a href="mailto:contact@amani-limousines.com"
+          <a href="mailto:amani.limousines@gmail.com"
             className="px-6 py-3 border border-gold-400/20 rounded-xl font-sans text-sm text-gold-400 hover:bg-gold-400/[0.06] hover:border-gold-400/40 transition-all">
-            ✉ contact@amani-limousines.com
+            ✉ amani.limousines@gmail.com
           </a>
           <a href={`https://wa.me/${waNumber}`} target="_blank" rel="noopener noreferrer"
             className="px-6 py-3 border border-gold-400/20 rounded-xl font-sans text-sm text-gold-400 hover:bg-gold-400/[0.06] hover:border-gold-400/40 transition-all">

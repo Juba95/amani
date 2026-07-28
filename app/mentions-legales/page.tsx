@@ -30,7 +30,7 @@ export default function MentionsLegalesPage() {
                 Service de chauffeur privé de prestige<br />
                 Paris, France<br />
                 Téléphone : +33 6 87 16 97 47<br />
-                Email : contact@amani-limousines.com<br />
+                Email : amani.limousines@gmail.com<br />
                 Site web : www.amani-limousines.com
               </p>
             </div>
@@ -103,7 +103,7 @@ export default function MentionsLegalesPage() {
                 demande. Elles ne sont ni vendues ni transmises à des tiers, sauf obligation légale.
                 Conformément au Règlement Général sur la Protection des Données (RGPD), vous
                 disposez d'un droit d'accès, de rectification et de suppression de vos données.
-                Pour exercer ce droit, contactez-nous à contact@amani-limousines.com.
+                Pour exercer ce droit, contactez-nous à amani.limousines@gmail.com.
               </p>
             </div>
 
