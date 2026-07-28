@@ -10,6 +10,8 @@ interface PlacesInputProps {
   onEnter?: () => void;
   /** Appelé quand une adresse complète est sélectionnée dans l'autocomplete */
   onPlaceSelected?: (address: string) => void;
+  /** 'dark' : libellé au-dessus et champ souligné, pour le widget du hero. */
+  variant?: 'light' | 'dark';
 }
 
 // ── Détection d'échec d'authentification Google Maps ─────────────────────────
@@ -63,6 +65,7 @@ export default function PlacesInput({
   onChange,
   onEnter,
   onPlaceSelected,
+  variant = 'light',
 }: PlacesInputProps) {
   const inputRef = useRef<HTMLInputElement>(null);
   const autocompleteRef = useRef<google.maps.places.Autocomplete | null>(null);
@@ -164,15 +167,29 @@ export default function PlacesInput({
 
   const hasError = showHint && !placeConfirmed && !authFailed && value.length > 0;
 
+  const dark = variant === 'dark';
+
   return (
     <div className="relative">
-      <span className="absolute left-4 top-1/2 -translate-y-1/2 font-sans text-[0.62rem] font-semibold tracking-[0.12em] uppercase text-gold-400 z-10 pointer-events-none">
-        {label}
-      </span>
+      {dark ? (
+        <span className="block font-sans text-[0.6rem] tracking-[0.18em] uppercase mb-1.5 text-white/45">
+          {label}
+        </span>
+      ) : (
+        <span className="absolute left-4 top-1/2 -translate-y-1/2 font-sans text-[0.62rem] font-semibold tracking-[0.12em] uppercase text-gold-400 z-10 pointer-events-none">
+          {label}
+        </span>
+      )}
       <input
         ref={inputRef}
         type="text"
-        className={`field-luxury transition-colors ${hasError ? 'border-amber-400 focus:border-amber-400' : ''}`}
+        className={
+          dark
+            ? `w-full bg-transparent border-0 border-b outline-none py-2 pr-6 font-sans text-[0.95rem] text-white placeholder:text-white/35 transition-colors ${
+                hasError ? 'border-amber-400/70' : 'border-white/20 focus:border-white/70'
+              }`
+            : `field-luxury transition-colors ${hasError ? 'border-amber-400 focus:border-amber-400' : ''}`
+        }
         placeholder={placeholder}
         value={value}
         onChange={(e) => handleManualChange(e.target.value)}
@@ -183,7 +200,9 @@ export default function PlacesInput({
       {/* Indicateur de confirmation */}
       {placeConfirmed && value && (
         <span
-          className="absolute right-4 top-1/2 -translate-y-1/2 text-emerald-500 text-xs pointer-events-none"
+          className={`absolute text-xs pointer-events-none ${
+            dark ? 'right-0 bottom-2.5 text-emerald-400' : 'right-4 top-1/2 -translate-y-1/2 text-emerald-500'
+          }`}
           title="Adresse confirmée"
         >
           ✓
@@ -191,7 +210,7 @@ export default function PlacesInput({
       )}
       {/* Hint : sélectionner dans la liste */}
       {hasError && (
-        <p className="mt-1 font-sans text-[0.65rem] text-amber-600 leading-snug px-1">
+        <p className={`mt-1 font-sans text-[0.65rem] leading-snug ${dark ? 'text-amber-300' : 'text-amber-600 px-1'}`}>
           Sélectionnez une adresse dans la liste pour calculer le trajet
         </p>
       )}

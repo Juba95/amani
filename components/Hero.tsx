@@ -12,6 +12,10 @@ export interface SearchOptions {
   date: string;
   pax: number;
   bags: number;
+  /** 'transfer' = trajet A→B ; 'disposal' = mise à disposition horaire. */
+  mode?: 'transfer' | 'disposal';
+  /** Durée en heures, uniquement en mise à disposition. */
+  hours?: number;
 }
 
 interface HeroProps {
@@ -37,13 +41,16 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
   const [date, setDate] = useState('');
   const [pax, setPax]   = useState(1);
   const [bags, setBags] = useState(1);
+  // Transfert A→B ou mise à disposition à l'heure (onglets du widget)
+  const [mode, setMode]   = useState<'transfer' | 'disposal'>('transfer');
+  const [hours, setHours] = useState(8);
 
   useEffect(() => { setTimeout(() => setReady(true), 150); }, []);
 
   const handleFromChange = (v: string) => { setFrom(v); if (!v) setFromConfirmed(false); setSubmitError(''); };
   const handleToChange   = (v: string) => { setTo(v);   if (!v) setToConfirmed(false);   setSubmitError(''); };
 
-  const opts = (): SearchOptions => ({ trip, date, pax, bags });
+  const opts = (): SearchOptions => ({ trip, date, pax, bags, mode, hours });
 
   const handleQuickRoute = (route: any) => {
     setFrom(route.from);
@@ -55,6 +62,17 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
   };
 
   const handleSearch = () => {
+    // Mise à disposition : une seule ville suffit, pas de destination.
+    if (mode === 'disposal') {
+      if (!from.trim()) {
+        setSubmitError(fr ? 'Indiquez la ville de prise en charge' : 'Enter the pickup city');
+        return;
+      }
+      setSubmitError('');
+      onSearch(from, from, opts());
+      return;
+    }
+
     const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? '';
     // Pas de validation bloquante si Google Maps est indisponible (clé rejetée)
     const needsValidation = apiKey.length >= 10 && !isGmapsUnavailable();
@@ -70,15 +88,32 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
   const fr = locale === 'fr';
   // Libellés du formulaire (FR / EN — les autres langues utilisent l'anglais)
   const L = {
-    oneWay:    fr ? 'Aller simple'  : 'One way',
-    round:     fr ? 'Aller-retour'  : 'Return',
-    dateLabel: fr ? 'Date & heure'  : 'Date & time',
-    pax:       fr ? 'Passagers'     : 'Passengers',
-    bags:      fr ? 'Bagages'       : 'Luggage pieces',
-    continue:  fr ? 'Continuer'     : 'Continue',
-    proof:     fr ? '4,9/5 sur Google · 307 destinations en Europe' : '4.9/5 on Google · 307 destinations across Europe',
+    transfer:  fr ? 'Transfert'         : 'Transfer',
+    disposal:  fr ? 'Mise à disposition': 'Full disposal',
+    oneWay:    fr ? 'Aller simple'      : 'One way',
+    round:     fr ? 'Aller-retour'      : 'Return',
+    pickup:    fr ? 'Départ'            : 'Pickup',
+    dest:      fr ? 'Destination'       : 'Destination',
+    city:      fr ? 'Ville de référence': 'Reference city',
+    duration:  fr ? 'Durée'             : 'Duration',
+    dateLabel: fr ? 'Date & heure'      : 'Date & time',
+    pax:       fr ? 'Passagers'         : 'Passengers',
+    bags:      fr ? 'Bagages'           : 'Luggage',
+    continue:  fr ? 'Continuer'         : 'Continue',
+    computing: fr ? 'Calcul en cours…'  : 'Calculating…',
+    cityPh:    fr ? 'Paris, Cannes, Genève…'      : 'Paris, Cannes, Geneva…',
+    pickupPh:  fr ? 'Aéroport, hôtel, adresse'    : 'Airport, hotel, address',
+    destPh:    fr ? 'Où allez-vous ?'             : 'Where are you going',
   };
-  const stepBtn = 'w-9 h-9 flex items-center justify-center rounded-md border border-warm-300 text-stone-500 hover:border-stone-500 hover:text-gray-900 transition-colors text-lg leading-none select-none';
+  const HOURS = [
+    { h: 4,  label: fr ? 'Demi-journée (4 h)' : 'Half day (4 h)' },
+    { h: 8,  label: fr ? 'Journée (8 h)'      : 'Day (8 h)' },
+    { h: 12, label: fr ? 'Journée étendue (12 h)' : 'Extended day (12 h)' },
+  ];
+  const stepBtn = 'w-8 h-8 flex items-center justify-center rounded-full border border-white/25 text-white/70 hover:border-white hover:text-white transition-colors text-lg leading-none select-none';
+  const microLabel = 'block font-sans text-[0.6rem] tracking-[0.18em] uppercase mb-1.5 text-white/45';
+  // Champ souligné sur fond sombre, dans l'esprit du widget de référence.
+  const underline = 'w-full bg-transparent border-0 border-b border-white/20 focus:border-white/70 outline-none py-2 font-sans text-[0.95rem] text-white placeholder:text-white/35 transition-colors';
 
   return (
     <section className="relative min-h-screen flex items-center px-6 md:px-10 lg:px-16 pt-28 pb-16 overflow-hidden">
@@ -137,58 +172,129 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
           <div className={`transition-[opacity,transform] duration-[1200ms] ease-out ${ready ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
             style={{ transitionDelay: '750ms' }}>
             <div
-              className="p-6 md:p-8 rounded-2xl border bg-white/95 backdrop-blur-sm"
+              className="p-5 md:p-7 rounded-2xl border backdrop-blur-md"
               style={{
-                borderColor: 'rgba(236,233,227,0.6)',
-                boxShadow: '0 20px 60px rgba(0,0,0,0.35), 0 8px 24px rgba(0,0,0,0.2)',
+                borderColor: 'rgba(255,255,255,0.12)',
+                background: 'rgba(18,16,14,0.72)',
+                boxShadow: '0 24px 70px rgba(0,0,0,0.5)',
               }}
             >
-              {/* Form header */}
-              <p className="font-serif text-gray-900 text-lg mb-1">{t?.hero?.form_title ?? 'Votre devis instantané'}</p>
-              <p className="font-sans text-xs text-stone-400 font-light mb-5">{t?.hero?.form_subtitle ?? 'Prix fixe · Pas de surprise'}</p>
-
-              <div className="flex flex-col gap-3 mb-4">
-                <PlacesInput
-                  label={t?.hero?.from_label ?? 'DÉPART'}
-                  placeholder={t?.hero?.from_placeholder ?? 'ex : 8 rue de Rivoli, Paris'}
-                  value={from}
-                  onChange={handleFromChange}
-                  onEnter={handleSearch}
-                  onPlaceSelected={(a) => { setFrom(a); setFromConfirmed(true); }}
-                />
-
-                <div className="flex items-center justify-center">
-                  <div className="h-px flex-1 bg-warm-300" />
-                  <span className="mx-3 text-gold-400 text-xs">↕</span>
-                  <div className="h-px flex-1 bg-warm-300" />
-                </div>
-
-                <PlacesInput
-                  label={t?.hero?.to_label ?? 'ARRIVÉE'}
-                  placeholder={t?.hero?.to_placeholder ?? 'ex : Aéroport CDG, Terminal 2E'}
-                  value={to}
-                  onChange={handleToChange}
-                  onEnter={handleSearch}
-                  onPlaceSelected={(a) => { setTo(a); setToConfirmed(true); }}
-                />
+              {/* Onglets Transfert / Mise à disposition */}
+              <div className="flex p-1 rounded-full mb-6" style={{ border: '1px solid rgba(255,255,255,0.18)' }}>
+                {([['transfer', L.transfer], ['disposal', L.disposal]] as const).map(([key, label]) => {
+                  const active = mode === key;
+                  return (
+                    <button key={key} type="button"
+                      onClick={() => { setMode(key); setSubmitError(''); }}
+                      aria-pressed={active}
+                      className={`flex-1 py-2.5 rounded-full font-sans text-[0.7rem] tracking-[0.15em] uppercase transition-all focus:outline-none focus-visible:ring-1 focus-visible:ring-white/60 ${
+                        active ? 'bg-white text-gray-900 font-medium' : 'text-white/60 hover:text-white/90'
+                      }`}>
+                      {label}
+                    </button>
+                  );
+                })}
               </div>
 
+              {mode === 'transfer' ? (
+                <div className="flex flex-col gap-4 mb-5">
+                  <PlacesInput
+                    label={L.pickup}
+                    placeholder={L.pickupPh}
+                    value={from}
+                    onChange={handleFromChange}
+                    onEnter={handleSearch}
+                    onPlaceSelected={(a) => { setFrom(a); setFromConfirmed(true); }}
+                    variant="dark"
+                  />
+                  <PlacesInput
+                    label={L.dest}
+                    placeholder={L.destPh}
+                    value={to}
+                    onChange={handleToChange}
+                    onEnter={handleSearch}
+                    onPlaceSelected={(a) => { setTo(a); setToConfirmed(true); }}
+                    variant="dark"
+                  />
+                </div>
+              ) : (
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
+                  <PlacesInput
+                    label={L.city}
+                    placeholder={L.cityPh}
+                    value={from}
+                    onChange={handleFromChange}
+                    onEnter={handleSearch}
+                    onPlaceSelected={(a) => { setFrom(a); setFromConfirmed(true); }}
+                    variant="dark"
+                  />
+                  <div>
+                    <label className={microLabel} htmlFor="hero-hours">{L.duration}</label>
+                    <select id="hero-hours" value={hours}
+                      onChange={(e) => setHours(Number(e.target.value))}
+                      className={`${underline} [&>option]:text-gray-900`}>
+                      {HOURS.map(o => <option key={o.h} value={o.h}>{o.label}</option>)}
+                    </select>
+                  </div>
+                </div>
+              )}
+
+              {/* Date & heure + passagers / bagages */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
+                <div>
+                  <label className={microLabel} htmlFor="hero-date">{L.dateLabel}</label>
+                  <input id="hero-date" type="datetime-local" value={date}
+                    onChange={(e) => setDate(e.target.value)}
+                    className={`${underline} [color-scheme:dark]`} />
+                </div>
+                <div className="flex gap-5">
+                  {([[L.pax, pax, setPax, 1, 8], [L.bags, bags, setBags, 0, 10]] as const).map(
+                    ([label, val, setVal, min, max]) => (
+                      <div key={label} className="flex-1">
+                        <span className={microLabel}>{label}</span>
+                        <div className="flex items-center gap-2 pt-0.5">
+                          <button type="button" className={stepBtn} aria-label={`${label} −`}
+                            onClick={() => setVal(Math.max(min, val - 1))}>−</button>
+                          <span className="font-sans text-white text-sm w-5 text-center tabular-nums">{val}</span>
+                          <button type="button" className={stepBtn} aria-label={`${label} +`}
+                            onClick={() => setVal(Math.min(max, val + 1))}>+</button>
+                        </div>
+                      </div>
+                    ),
+                  )}
+                </div>
+              </div>
+
+              {/* Aller simple / aller-retour — sans objet en mise à disposition */}
+              {mode === 'transfer' && (
+                <div className="flex gap-5 mb-5">
+                  {([['oneway', L.oneWay], ['return', L.round]] as const).map(([key, label]) => (
+                    <label key={key} className="flex items-center gap-2 cursor-pointer">
+                      <input type="radio" name="hero-trip" checked={trip === key}
+                        onChange={() => setTrip(key)} className="accent-white w-3.5 h-3.5" />
+                      <span className="font-sans text-[0.78rem] text-white/70">{label}</span>
+                    </label>
+                  ))}
+                </div>
+              )}
+
               {submitError && (
-                <p className="text-center font-sans text-[0.7rem] text-amber-600 mb-2 leading-snug">
+                <p className="font-sans text-[0.72rem] text-amber-300 mb-3 leading-snug">
                   {submitError}
                 </p>
               )}
+
               <button
-                className="btn-primary flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed"
+                className="w-full py-3.5 rounded-full bg-white text-gray-900 font-sans text-[0.72rem] tracking-[0.18em] uppercase font-medium hover:bg-white/90 transition-colors flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed"
                 onClick={handleSearch}
                 disabled={loading}>
                 {loading ? (
                   <>
-                    <span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                    Calcul en cours…
+                    <span className="w-4 h-4 border-2 border-gray-400/40 border-t-gray-900 rounded-full animate-spin" />
+                    {L.computing}
                   </>
                 ) : (
-                  t?.hero?.cta ?? 'Obtenir un devis instantané'
+                  t?.hero?.cta ?? L.continue
                 )}
               </button>
 
@@ -196,7 +302,7 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
               <div className="mt-4 flex justify-around">
                 {(t?.hero?.trust_signals ?? ['Prix fixe', 'Suivi de vol', '24h/24']).map((item: string) => (
                   <div key={item} className="text-center">
-                    <p className="font-sans text-[0.6rem] tracking-[0.1em] uppercase text-stone-400">{item}</p>
+                    <p className="font-sans text-[0.6rem] tracking-[0.1em] uppercase text-white/40">{item}</p>
                   </div>
                 ))}
               </div>

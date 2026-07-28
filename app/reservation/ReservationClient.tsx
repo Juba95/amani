@@ -37,6 +37,10 @@ function ReservationForm() {
 
   const [step, setStep] = useState<1 | 2>(1);
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  // false quand la demande est enregistree mais que la notification mail
+  // n'est pas partie : on insiste alors sur la confirmation WhatsApp.
+  const [emailSent, setEmailSent] = useState(true);
 
   // Pré-remplir depuis les query params (venant de /devis)
   useEffect(() => {
@@ -74,14 +78,51 @@ function ReservationForm() {
     );
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (step === 1) {
       setStep(2);
       return;
     }
+
+    // WhatsApp ouvert immediatement : ouvrir apres l'await serait bloque comme
+    // popup, le clic n'etant plus considere comme geste utilisateur direct.
     window.open(`https://wa.me/33687169747?text=${buildWhatsAppMessage()}`, '_blank');
-    setSubmitted(true);
+
+    // La demande partait uniquement par WhatsApp : fermeture de l'onglet,
+    // popup bloque ou absence de WhatsApp et la reservation etait perdue.
+    setSending(true);
+    try {
+      const vehicleName = VEHICLE_NAMES[form.vehicle] || form.vehicle || 'Non precise';
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          phone: form.phone,
+          service: 'transfert',
+          date: [form.date, form.time].filter(Boolean).join(' '),
+          passengers: form.passengers,
+          message:
+            `Reservation depuis le formulaire du site.\n\n` +
+            `Depart : ${form.from || '—'}\n` +
+            `Arrivee : ${form.to || '—'}\n` +
+            `Date : ${form.date || '—'} ${form.time || ''}\n` +
+            `Passagers : ${form.passengers}\n` +
+            `Vehicule : ${vehicleName}` +
+            (estimatedPrice ? `\nPrix estime : ${estimatedPrice} EUR` : '') +
+            (form.notes ? `\n\nNotes : ${form.notes}` : ''),
+        }),
+      });
+      const data = await res.json().catch(() => ({}));
+      setEmailSent(res.ok && data?.emailSent !== false);
+    } catch {
+      setEmailSent(false);
+    } finally {
+      setSending(false);
+      setSubmitted(true);
+    }
   };
 
   return (
@@ -101,10 +142,15 @@ function ReservationForm() {
 
           {submitted ? (
             <div className="mt-10 p-8 rounded-2xl border border-warm-300 bg-warm-50 text-center">
-              <p className="heading text-2xl">Votre demande a été envoyée</p>
+              <p className="heading text-2xl">
+                {emailSent ? 'Votre demande a été envoyée' : 'Votre demande est enregistrée'}
+              </p>
               <p className="sf text-stone-500 mt-3">
-                Notre équipe vous rappelle sous 30 minutes. Vous pouvez également
-                nous contacter directement au <strong>+33 6 87 16 97 47</strong>.
+                {emailSent
+                  ? <>Notre équipe vous rappelle sous 30 minutes. Vous pouvez également
+                      nous contacter directement au <strong>+33 6 87 16 97 47</strong>.</>
+                  : <>Confirmez-la sur WhatsApp pour une réponse immédiate, ou appelez-nous
+                      au <strong>+33 6 87 16 97 47</strong>.</>}
               </p>
             </div>
           ) : (
