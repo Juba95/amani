@@ -50,6 +50,43 @@
   }
   .heading em { @apply italic; color: #8a7340; }
 
+  /* ── Hero : garder le formulaire au-dessus de la ligne de flottaison ──
+     Sur un portable 13-14" (hauteur utile ~700-780 px), le titre pleine
+     taille et la carte d'Europe repoussaient le bouton du widget sous le
+     bord de l'écran. Tant que la fenêtre est peu haute on resserre le
+     titre, les marges et la carte ; au-delà, le rendu large est intact. */
+  .hero-title { font-size: clamp(1.32rem, 4.4vw, 2.7rem); }
+
+  @media (min-width: 1024px) and (max-height: 900px) {
+    .hero-tight { padding-top: 5.5rem; padding-bottom: 2rem; }
+    .hero-tight .hero-title { font-size: clamp(1.5rem, 2.6vw, 2.3rem); margin-bottom: 0.6rem; }
+    .hero-tight .hero-sub { margin-bottom: 0.9rem; font-size: 0.82rem; }
+    /* La carte suit la largeur de sa colonne : on la borne en hauteur pour
+       qu'elle cesse de dicter la hauteur de la rangée. */
+    .hero-tight .am-map--hero svg { max-height: 54vh; width: auto; margin: 0 auto; }
+  }
+
+  /* Fenêtres vraiment basses (13" en 720p, écran secondaire) : dernier cran,
+     titre et carte du formulaire resserrés d'un pas de plus. */
+  @media (min-width: 1024px) and (max-height: 780px) {
+    .hero-tight { padding-top: 4.75rem; }
+    .hero-tight .hero-title { font-size: clamp(1.4rem, 2.2vw, 1.95rem); }
+    .hero-tight .hero-sub { margin-bottom: 0.65rem; }
+    .hero-tight .am-map--hero svg { max-height: 46vh; }
+    .hero-tight .hero-card { padding: 1rem 1.25rem; }
+    .hero-tight .hero-card .hero-tabs { margin-bottom: 0.75rem; }
+  }
+
+  /* En dessous de ~680 px de haut (1366x768 avec barres, écran secondaire),
+     le résumé passe à la trappe : priorité au formulaire complet. */
+  @media (min-width: 1024px) and (max-height: 680px) {
+    .hero-tight { padding-top: 4.5rem; }
+    .hero-tight .hero-title { font-size: clamp(1.3rem, 1.9vw, 1.7rem); }
+    .hero-tight .hero-sub { display: none; }
+    .hero-tight .am-map--hero svg { max-height: 40vh; }
+    .hero-tight .hero-card { padding: 0.85rem 1.15rem; }
+  }
+
   .field-luxury {
     @apply sf w-full py-3.5 px-4 pl-[82px] rounded-xl text-sm font-normal outline-none transition-all;
     background: #f8f6f2; border: 1.5px solid #e8e4dc; color: #111;

@@ -118,7 +118,7 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
   return (
     // min-h-svh (et non 100vh) : sur mobile la barre d'URL ne pousse plus le
     // formulaire hors de l'écran.
-    <section className="relative min-h-svh flex items-center px-5 sm:px-6 md:px-10 lg:px-16 pt-[5.25rem] pb-8 sm:pt-24 sm:pb-10 md:pt-28 md:pb-16 overflow-hidden">
+    <section className="hero-tight relative min-h-svh flex items-center px-5 sm:px-6 md:px-10 lg:px-16 pt-[5.25rem] pb-8 sm:pt-24 sm:pb-10 md:pt-28 md:pb-16 overflow-hidden">
       {/* ── Photo background (Paris) ── */}
       <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
         <Image
@@ -159,25 +159,25 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
           </p>
 
           <h1
-            className={`font-serif font-normal leading-[1.14] mb-2.5 md:mb-4 transition-[opacity,transform] duration-[1200ms] ease-out ${ready ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
-            style={{ transitionDelay: '450ms', fontSize: 'clamp(1.32rem, 4.4vw, 2.7rem)', color: '#f5f3ef' }}>
+            className={`hero-title font-serif font-normal leading-[1.14] mb-2.5 md:mb-4 transition-[opacity,transform] duration-[1200ms] ease-out ${ready ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+            style={{ transitionDelay: '450ms', color: '#f5f3ef' }}>
             {t?.hero?.title_1}<br />
             {t?.hero?.title_2} <em className="italic" style={{ color: '#c9a84c' }}>{t?.hero?.title_em}</em> {t?.hero?.title_3}
           </h1>
 
           {/* Sur mobile : version courte du résumé, pour que le formulaire
               entre en entier dans l'écran sans faire défiler. */}
-          <p className={`font-sans text-[0.8rem] sm:text-sm font-light leading-snug sm:leading-relaxed max-w-[520px] mb-3.5 md:mb-7 transition-[opacity,transform] duration-[1200ms] ease-out ${ready ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}
+          <p className={`hero-sub font-sans text-[0.8rem] sm:text-sm font-light leading-snug sm:leading-relaxed max-w-[520px] mb-3.5 md:mb-7 transition-[opacity,transform] duration-[1200ms] ease-out ${ready ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}
             style={{ transitionDelay: '600ms', color: 'rgba(245,240,230,0.7)' }}>
-            <span className="sm:hidden">{t?.hero?.subtitle_short ?? t?.hero?.subtitle}</span>
-            <span className="hidden sm:inline">{t?.hero?.subtitle}</span>
+            <span className="hero-sub-short sm:hidden">{t?.hero?.subtitle_short ?? t?.hero?.subtitle}</span>
+            <span className="hero-sub-full hidden sm:inline">{t?.hero?.subtitle}</span>
           </p>
 
           {/* Booking form */}
           <div className={`transition-[opacity,transform] duration-[1200ms] ease-out ${ready ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
             style={{ transitionDelay: '750ms' }}>
             <div
-              className="p-4 sm:p-5 md:p-6 rounded-2xl border backdrop-blur-md"
+              className="hero-card p-4 sm:p-5 md:p-6 rounded-2xl border backdrop-blur-md"
               style={{
                 borderColor: 'rgba(255,255,255,0.12)',
                 background: 'rgba(18,16,14,0.72)',
@@ -185,7 +185,7 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
               }}
             >
               {/* Onglets Transfert / Mise à disposition */}
-              <div className="flex p-1 rounded-full mb-4 md:mb-5" style={{ border: '1px solid rgba(255,255,255,0.18)' }}>
+              <div className="hero-tabs flex p-1 rounded-full mb-4 md:mb-5" style={{ border: '1px solid rgba(255,255,255,0.18)' }}>
                 {([['transfer', L.transfer], ['disposal', L.disposal]] as const).map(([key, label]) => {
                   const active = mode === key;
                   return (
