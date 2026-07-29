@@ -61,9 +61,10 @@
     .hero-tight { padding-top: 5.5rem; padding-bottom: 2rem; }
     .hero-tight .hero-title { font-size: clamp(1.5rem, 2.6vw, 2.3rem); margin-bottom: 0.6rem; }
     .hero-tight .hero-sub { margin-bottom: 0.9rem; font-size: 0.82rem; }
-    /* La carte suit la largeur de sa colonne : on la borne en hauteur pour
-       qu'elle cesse de dicter la hauteur de la rangée. */
-    .hero-tight .am-map--hero svg { max-height: 54vh; width: auto; margin: 0 auto; }
+    /* La carte suit la largeur de sa colonne : on la borne en hauteur juste
+       assez pour qu'elle cesse de dicter la hauteur de la rangée (et donc de
+       décaler le formulaire), sans la rapetisser plus que nécessaire. */
+    .hero-tight .am-map--hero svg { max-height: 92vh; width: auto; margin: 0 auto; }
   }
 
   /* Fenêtres vraiment basses (13" en 720p, écran secondaire) : dernier cran,
@@ -72,7 +73,7 @@
     .hero-tight { padding-top: 4.75rem; }
     .hero-tight .hero-title { font-size: clamp(1.4rem, 2.2vw, 1.95rem); }
     .hero-tight .hero-sub { margin-bottom: 0.65rem; }
-    .hero-tight .am-map--hero svg { max-height: 46vh; }
+    .hero-tight .am-map--hero svg { max-height: 90vh; }
     .hero-tight .hero-card { padding: 1rem 1.25rem; }
     .hero-tight .hero-card .hero-tabs { margin-bottom: 0.75rem; }
   }
@@ -83,7 +84,7 @@
     .hero-tight { padding-top: 4.5rem; }
     .hero-tight .hero-title { font-size: clamp(1.3rem, 1.9vw, 1.7rem); }
     .hero-tight .hero-sub { display: none; }
-    .hero-tight .am-map--hero svg { max-height: 40vh; }
+    .hero-tight .am-map--hero svg { max-height: 86vh; }
     .hero-tight .hero-card { padding: 0.85rem 1.15rem; }
   }
 
