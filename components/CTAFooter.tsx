@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Logo from '@/components/Logo';
 import MailtoLink from '@/components/MailtoLink';
 
 // ── Liens footer par locale ──────────────────────────────────────────────────
@@ -40,9 +41,12 @@ const FOOTER_COLS_FR: FooterCol[] = [
       { label: 'Mercedes Classe V',         href: '/notre-flotte' },
       { label: 'Mercedes Classe S Maybach', href: '/notre-flotte' },
       { label: 'Mercedes Classe G',         href: '/notre-flotte' },
-      { label: 'Mercedes Sprinter VIP',     href: '/notre-flotte' },
       { label: 'Mercedes EQS électrique',   href: '/notre-flotte' },
-      { label: 'Range Rover Evoque',        href: '/notre-flotte' },
+      { label: 'Range Rover',               href: '/notre-flotte' },
+      { label: 'Sprinter VIP 8 places',     href: '/notre-flotte' },
+      { label: 'Sprinter 15 places',        href: '/notre-flotte' },
+      { label: 'Sprinter VIP 19 places',    href: '/notre-flotte' },
+      { label: 'Tourismo 50 places',        href: '/notre-flotte' },
     ],
   },
   {
@@ -107,9 +111,12 @@ const FOOTER_COLS_EN: FooterCol[] = [
       { label: 'Mercedes V-Class',          href: '/en/our-fleet' },
       { label: 'Mercedes S-Class Maybach',  href: '/en/our-fleet' },
       { label: 'Mercedes G-Class',          href: '/en/our-fleet' },
-      { label: 'Mercedes Sprinter VIP',     href: '/en/our-fleet' },
       { label: 'Mercedes EQS electric',     href: '/en/our-fleet' },
-      { label: 'Range Rover Evoque',        href: '/en/our-fleet' },
+      { label: 'Range Rover',               href: '/en/our-fleet' },
+      { label: 'Sprinter VIP 8 seats',      href: '/en/our-fleet' },
+      { label: 'Sprinter 15 seats',         href: '/en/our-fleet' },
+      { label: 'Sprinter VIP 19 seats',     href: '/en/our-fleet' },
+      { label: 'Tourismo 50 seats',         href: '/en/our-fleet' },
     ],
   },
   {
@@ -138,6 +145,72 @@ const FOOTER_COLS_EN: FooterCol[] = [
       { label: 'Legal notice',              href: '/mentions-legales' },
       { label: 'Terms & conditions',        href: '/cgv' },
       { label: 'Privacy policy',            href: '/politique-confidentialite' },
+    ],
+  },
+];
+
+const FOOTER_COLS_DE: FooterCol[] = [
+  {
+    title: 'Privatchauffeur',
+    links: [
+      { label: 'Privatchauffeur Paris',   href: '/de' },
+      { label: 'Deutschsprachiger Chauffeur', href: '/de/deutschsprachiger-chauffeur' },
+      { label: 'Privatchauffeur Nizza',   href: '/de' },
+      { label: 'Privatchauffeur Cannes',  href: '/de' },
+      { label: 'Privatchauffeur Lyon',    href: '/de' },
+      { label: 'Privatchauffeur Bordeaux', href: '/de' },
+    ],
+  },
+  {
+    title: 'Transfers',
+    links: [
+      { label: 'Stundenmiete',            href: '/de#services' },
+      { label: 'Flughafentransfer CDG',   href: '/de#services' },
+      { label: 'Flughafentransfer Orly',  href: '/de#services' },
+      { label: 'Meet and Greet',          href: '/de#services' },
+      { label: 'Langstrecke',             href: '/de#services' },
+      { label: 'Konvois & Delegationen',  href: '/de#services' },
+      { label: 'Personenschutz',          href: '/de#services' },
+    ],
+  },
+  {
+    title: 'Unsere Flotte',
+    links: [
+      { label: 'Mercedes E-Klasse',              href: '/de#fleet' },
+      { label: 'Mercedes S-Klasse',              href: '/de#fleet' },
+      { label: 'Mercedes V-Klasse',              href: '/de#fleet' },
+      { label: 'Mercedes-Maybach S-Klasse',      href: '/de#fleet' },
+      { label: 'Mercedes G-Klasse',              href: '/de#fleet' },
+      { label: 'Range Rover',                    href: '/de#fleet' },
+      { label: 'Sprinter VIP 8 / 15 / 19 Plätze', href: '/de#fleet' },
+      { label: 'Tourismo 50 Plätze',             href: '/de#fleet' },
+    ],
+  },
+  {
+    title: 'Ziele & Events',
+    links: [
+      { label: 'Alle Ziele',              href: '/de#services' },
+      { label: 'Paris Fashion Week',      href: '/de#events' },
+      { label: 'French Open',             href: '/de#events' },
+      { label: 'Filmfestival Cannes',     href: '/de#events' },
+      { label: 'Grand Prix von Monaco',   href: '/de#events' },
+      { label: 'Fachmessen',              href: '/de#events' },
+    ],
+  },
+  {
+    title: 'Unternehmen',
+    links: [
+      { label: 'Geschäftskunden',         href: '/de' },
+      { label: 'Chauffeur werden',        href: '/de' },
+      { label: 'Kontakt',                 href: '/de#contact' },
+    ],
+  },
+  {
+    title: 'Rechtliches',
+    links: [
+      { label: 'Impressum',               href: '/mentions-legales' },
+      { label: 'AGB',                     href: '/cgv' },
+      { label: 'Datenschutzerklärung',    href: '/politique-confidentialite' },
     ],
   },
 ];
@@ -270,6 +343,7 @@ const FOOTER_COLS_ZH: FooterCol[] = [
 
 function getFooterCols(locale: string): FooterCol[] {
   if (locale === 'en') return FOOTER_COLS_EN;
+  if (locale === 'de') return FOOTER_COLS_DE;
   if (locale === 'ar') return FOOTER_COLS_AR;
   if (locale === 'zh') return FOOTER_COLS_ZH;
   return FOOTER_COLS_FR;
@@ -287,6 +361,13 @@ function getPreFooterLinks(locale: string): { label: string; href: string }[] {
     { label: 'Privacy policy',     href: privacy },
     { label: 'Terms & Conditions', href: terms },
     { label: 'Contact',            href: '/en/contact' },
+  ];
+  if (locale === 'de') return [
+    { label: 'Mehr erfahren',        href: '/de' },
+    { label: 'Impressum',            href: legal },
+    { label: 'Datenschutzerklärung', href: privacy },
+    { label: 'AGB',                  href: terms },
+    { label: 'Kontakt',              href: '/de#contact' },
   ];
   if (locale === 'ar') return [
     { label: 'مزيد من المعلومات', href: '/ar/contact' },
@@ -310,6 +391,57 @@ function getPreFooterLinks(locale: string): { label: string; href: string }[] {
     { label: 'Contact',                      href: '/contact' },
   ];
 }
+
+
+// ── Bandeau de marque du footer : baseline et libellés, par langue ──────────
+type BrandCopy = {
+  tagline: string;
+  available: string;
+  phoneLabel: string;
+  emailLabel: string;
+  whatsappLabel: string;
+  bookLabel: string;
+  bookHref: string;
+};
+
+const BRAND_COPY: Record<string, BrandCopy> = {
+  fr: {
+    tagline: 'Chauffeur privé de prestige — Paris, France & Europe. Transferts aéroport, mises à disposition, délégations officielles.',
+    available: '24h/24 · 7j/7',
+    phoneLabel: 'Téléphone', emailLabel: 'Email', whatsappLabel: 'WhatsApp',
+    bookLabel: 'Réserver', bookHref: '/reservation',
+  },
+  en: {
+    tagline: 'Premium private chauffeur service — Paris, France & Europe. Airport transfers, hourly hire, official delegations.',
+    available: '24/7',
+    phoneLabel: 'Phone', emailLabel: 'Email', whatsappLabel: 'WhatsApp',
+    bookLabel: 'Book now', bookHref: '/reservation',
+  },
+  de: {
+    tagline: 'Privatchauffeur der Spitzenklasse — Paris, Frankreich & Europa. Flughafentransfers, Stundenmiete, offizielle Delegationen.',
+    available: 'Rund um die Uhr',
+    phoneLabel: 'Telefon', emailLabel: 'E-Mail', whatsappLabel: 'WhatsApp',
+    bookLabel: 'Jetzt buchen', bookHref: '/reservation',
+  },
+  es: {
+    tagline: 'Chófer privado de prestigio — París, Francia y Europa. Traslados al aeropuerto, disposición horaria, delegaciones oficiales.',
+    available: '24/7',
+    phoneLabel: 'Teléfono', emailLabel: 'Email', whatsappLabel: 'WhatsApp',
+    bookLabel: 'Reservar', bookHref: '/reservation',
+  },
+  ar: {
+    tagline: 'خدمة سائق خاص فاخرة — باريس وفرنسا وأوروبا. نقل من المطارات، تأجير بالساعة، وفود رسمية.',
+    available: '24/7',
+    phoneLabel: 'الهاتف', emailLabel: 'البريد الإلكتروني', whatsappLabel: 'واتساب',
+    bookLabel: 'احجز الآن', bookHref: '/reservation',
+  },
+  zh: {
+    tagline: '尊贵私人司机服务 — 巴黎、法国及欧洲。机场接送、包时租车、官方代表团。',
+    available: '全天候 24/7',
+    phoneLabel: '电话', emailLabel: '邮箱', whatsappLabel: 'WhatsApp',
+    bookLabel: '立即预订', bookHref: '/reservation',
+  },
+};
 
 interface CTAProps {
   t: any;
@@ -358,12 +490,57 @@ interface FooterProps {
 export function Footer({ t, locale = 'fr' }: FooterProps) {
   const cols = getFooterCols(locale);
   const rtl = locale === 'ar';
+  const brand = BRAND_COPY[locale] ?? BRAND_COPY.fr;
+  const phoneRaw = t?.nav?.phone ?? '+33 6 87 16 97 47';
+  const phoneTel = phoneRaw.replace(/\s/g, '');
+  const homeHref = locale === 'fr' ? '/' : `/${locale}`;
 
   return (
     <>
+      {/* Bandeau de marque : logo, baseline et contacts directs */}
+      <div
+        dir={rtl ? 'rtl' : 'ltr'}
+        className="px-6 md:px-10 pt-14 pb-10"
+        style={{ borderTop: '1px solid #ece9e3', background: '#faf8f5' }}
+      >
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row md:items-end md:justify-between gap-8">
+          <div className="max-w-md">
+            <Link href={homeHref} aria-label="Amani Limousines" className="inline-block transition-opacity hover:opacity-75">
+              <Logo tone="dark" className="h-12 w-auto" />
+            </Link>
+            <p className="font-sans text-xs text-stone-500 font-light leading-relaxed mt-5">
+              {brand.tagline}
+            </p>
+            <p className="font-sans text-[0.65rem] tracking-[0.18em] uppercase text-gold-400 mt-3">
+              {brand.available}
+            </p>
+          </div>
+
+          <div className={`flex flex-col gap-2.5 ${rtl ? 'md:items-start' : 'md:items-end'}`}>
+            <a href={`tel:${phoneTel}`} dir="ltr"
+              className="font-sans text-sm text-stone-700 hover:text-gold-400 transition-colors">
+              <span className="text-stone-400 text-xs">{brand.phoneLabel} · </span>{phoneRaw}
+            </a>
+            <MailtoLink email="amani.limousines@gmail.com"
+              className="font-sans text-sm text-stone-700 hover:text-gold-400 transition-colors">
+              <span className="text-stone-400 text-xs">{brand.emailLabel} · </span>amani.limousines@gmail.com
+            </MailtoLink>
+            <a href="https://wa.me/33687169747" target="_blank" rel="noopener noreferrer"
+              className="font-sans text-sm text-stone-700 hover:text-gold-400 transition-colors">
+              <span className="text-stone-400 text-xs">{brand.whatsappLabel} · </span>+33 6 87 16 97 47
+            </a>
+            <Link href={brand.bookHref}
+              className="mt-2 inline-block px-5 py-2.5 rounded-xl font-sans text-xs tracking-[0.12em] uppercase text-white transition-opacity hover:opacity-85"
+              style={{ background: '#0a0908' }}>
+              {brand.bookLabel}
+            </Link>
+          </div>
+        </div>
+      </div>
+
       <footer
         dir={rtl ? 'rtl' : 'ltr'}
-        className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-x-6 gap-y-10 px-6 md:px-10 py-14"
+        className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-x-6 gap-y-10 px-6 md:px-10 pt-10 pb-14"
         style={{ borderTop: '1px solid #ece9e3', background: '#faf8f5' }}
       >
         {cols.map((col, i) => (

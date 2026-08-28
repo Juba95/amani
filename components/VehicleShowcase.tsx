@@ -9,7 +9,8 @@ interface VehicleShowcaseProps {
 
 const VEHICLE_KEYS = [
   'classe_e', 'eqs', 'classe_s', 'classe_s_maybach',
-  'range_rover_evoque', 'classe_v', 'classe_g', 'sprinter',
+  'range_rover_evoque', 'classe_v', 'classe_g',
+  'sprinter', 'sprinter_15', 'sprinter_vip_19', 'tourismo_50',
 ];
 
 const VEHICLE_IMAGES: Record<string, string> = {
@@ -19,12 +20,15 @@ const VEHICLE_IMAGES: Record<string, string> = {
   classe_v:          '/vehicles/mercedes-classe-v.png',
   classe_g:          '/vehicles/mercedes-classe-g.png',
   sprinter:          '/vehicles/mercedes-sprinter.png',
-  range_rover_evoque:'/vehicles/range-rover-evoque.png',
+  sprinter_15:       '/vehicles/mercedes-sprinter-15.png',
+  sprinter_vip_19:   '/vehicles/mercedes-sprinter-vip-19.png',
+  tourismo_50:       '/vehicles/mercedes-tourismo.png',
+  range_rover_evoque:'/vehicles/range-rover.png',
   eqs:               '/vehicles/mercedes-eqe.png',
 };
 
-// Le Sprinter a un fond sombre → pas de mix-blend-mode multiply
-const DARK_BG_VEHICLES = ['sprinter'];
+// Ces photos ont un fond sombre → pas de mix-blend-mode multiply
+const DARK_BG_VEHICLES = ['sprinter', 'sprinter_15', 'sprinter_vip_19'];
 
 export default function VehicleShowcase({ t }: VehicleShowcaseProps) {
   const [idx, setIdx] = useState(0);

@@ -14,8 +14,11 @@ const VEHICLE_NAMES: Record<string, string> = {
   classe_s_maybach: 'Mercedes Classe S Maybach',
   classe_v: 'Mercedes Classe V',
   classe_g: 'Mercedes Classe G',
-  range_rover_evoque: 'Range Rover Evoque',
-  sprinter: 'Mercedes Sprinter VIP',
+  range_rover_evoque: 'Range Rover',
+  sprinter: 'Mercedes Sprinter VIP 8 places',
+  sprinter_15: 'Mercedes Sprinter 15 places',
+  sprinter_vip_19: 'Mercedes Sprinter VIP 19 places',
+  tourismo_50: 'Mercedes Tourismo 50 places',
 };
 
 function ReservationForm() {

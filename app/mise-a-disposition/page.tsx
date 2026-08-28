@@ -115,7 +115,7 @@ export default function MiseADispositionPage() {
               { name: c('item_4_title', 'Mercedes Classe E'), note: c('item_4_text', 'Berline 3 passagers — la plus polyvalente pour Paris intra-muros') },
               { name: c('item_5_title', 'Mercedes Classe S'), note: c('item_5_text', 'Berline executive — pour les présidents et directeurs généraux') },
               { name: c('item_6_title', 'Mercedes Classe V'), note: c('item_6_text', 'Minivan 7 passagers — idéale pour les groupes et familles') },
-              { name: c('item_7_title', 'Mercedes Sprinter VIP'), note: c('item_7_text', 'Minibus 16 places — pour les délégations importantes') },
+              { name: c('item_7_title', 'Mercedes Sprinter VIP'), note: c('item_7_text', 'Minibus 8 à 19 places, autocar 50 places — pour les groupes et délégations') },
             ].map((v) => (
               <div key={v.name} className="card flex gap-4">
                 <div>

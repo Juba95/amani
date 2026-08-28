@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 
-type Locale = 'fr' | 'en' | 'ar' | 'zh';
+type Locale = 'fr' | 'en' | 'de' | 'ar' | 'zh';
 
 type Props = {
   email: string;
@@ -32,6 +32,15 @@ const LABELS = {
     copied: 'Address copied ✓',
     close: 'Close',
   },
+  de: {
+    title: 'Keine Mail-App erkannt',
+    intro: 'Ihr Browser hat kein Mailprogramm hinterlegt. Erreichen Sie uns anders:',
+    gmail: 'Gmail öffnen',
+    outlook: 'Outlook öffnen',
+    copy: 'Adresse kopieren',
+    copied: 'Adresse kopiert ✓',
+    close: 'Schließen',
+  },
   ar: {
     title: 'لم يتم العثور على تطبيق بريد',
     intro: 'لا يوجد تطبيق بريد مرتبط بمتصفحك. راسلنا بطريقة أخرى:',
@@ -56,6 +65,7 @@ function detectLocale(): Locale {
   const lang = (document.documentElement.lang || '').toLowerCase();
   const path = window.location.pathname;
   if (lang.startsWith('en') || path.startsWith('/en')) return 'en';
+  if (lang.startsWith('de') || path.startsWith('/de')) return 'de';
   if (lang.startsWith('ar') || path.startsWith('/ar')) return 'ar';
   if (lang.startsWith('zh') || path.startsWith('/zh')) return 'zh';
   return 'fr';

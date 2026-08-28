@@ -22,7 +22,7 @@ export default function TransfertCDGDisneylandPage() {
             {c('h1', 'Transfert CDG Disneyland Paris avec chauffeur privé — familles et groupes')}
           </h1>
           <p className="sf text-stone-500 mt-6 text-lg leading-relaxed max-w-2xl">
-            {c('intro', 'Marne-la-Vallée et Disneyland Paris sont à 45 km de Charles de Gaulle — bien plus proche que Paris intra-muros, et en direction opposée. La Navette officielle Disney Express existe, mais avec des bagages de famille, de jeunes enfants et des horaires décalés, un chauffeur privé CDG Disneyland en Classe V (7 passagers) ou en Sprinter (16 passagers) reste la solution la plus confortable.')}
+            {c('intro', 'Marne-la-Vallée et Disneyland Paris sont à 45 km de Charles de Gaulle — bien plus proche que Paris intra-muros, et en direction opposée. La Navette officielle Disney Express existe, mais avec des bagages de famille, de jeunes enfants et des horaires décalés, un chauffeur privé CDG Disneyland en Classe V (7 passagers) ou en Sprinter (jusqu\'à 19 passagers) reste la solution la plus confortable.')}
           </p>
         </div>
       </section>
@@ -68,7 +68,7 @@ export default function TransfertCDGDisneylandPage() {
             enfants peuvent être fournis sur demande — à préciser lors de la réservation.
           </p>
           <p className="sf text-stone-600 mt-4 leading-relaxed">
-            Pour les groupes de plus de 7 personnes, le Mercedes Sprinter VIP (16 places)
+            Pour les groupes de plus de 7 personnes, le Mercedes Sprinter VIP (jusqu'à 19 places)
             reste la solution la plus économique par tête, tout en maintenant un niveau
             de confort nettement supérieur aux navettes partagées.
           </p>

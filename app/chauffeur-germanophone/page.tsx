@@ -12,6 +12,7 @@ export const metadata: Metadata = contentMetadata(SLUG, {
   alternates: {
     languages: {
       en: 'https://www.amani-limousines.com/en/german-speaking-chauffeur-paris',
+      de: 'https://www.amani-limousines.com/de/deutschsprachiger-chauffeur',
       'x-default': 'https://www.amani-limousines.com/chauffeur-germanophone',
     },
   },

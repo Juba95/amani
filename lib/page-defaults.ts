@@ -257,7 +257,7 @@ export const PAGE_DEFAULTS: Record<string, Record<string, string>> = {
   },
   'notre-flotte': {
     meta_title: 'Flotte de Véhicules de Prestige Paris — Mercedes, Range Rover, Sprinter VIP | Amani',
-    meta_description: "Découvrez notre flotte de véhicules de prestige à Paris. Mercedes Classe E, EQS, S, Maybach, V, G, Range Rover Evoque et Sprinter VIP. Plus de 300 véhicules renouvelés chaque année.",
+    meta_description: "Découvrez notre flotte de véhicules de prestige à Paris. Mercedes Classe E, EQS, S, Maybach, V, G, Range Rover, Sprinter VIP 8 / 15 / 19 places et autocar Tourismo 50 places. Plus de 300 véhicules renouvelés chaque année.",
     h1: 'Véhicules de prestige à Paris — plus de 300 unités',
     intro: "Chez Amani Limousines, la flotte est renouvelée chaque année pour garantir que vos passagers voyagent dans des véhicules récents. Pas de modèles vieillissants tolérés sous prétexte qu'ils sont encore en état de marche. Nos véhicules de prestige à Paris ont moins de trois ans en moyenne, et sont entretenus selon les préconisations constructeur à chaque intervention.",
   },
@@ -307,7 +307,7 @@ export const PAGE_DEFAULTS: Record<string, Record<string, string>> = {
     meta_title: 'Transfert CDG Disneyland Paris — Chauffeur Privé Marne-la-Vallée | Amani',
     meta_description: "Transfert aéroport CDG vers Disneyland Paris avec chauffeur privé. 45 km, 40 minutes. Familles et groupes bienvenus. Mercedes Classe V disponible. Prix fixe.",
     h1: 'Transfert CDG Disneyland Paris avec chauffeur privé — familles et groupes',
-    intro: "Marne-la-Vallée et Disneyland Paris sont à 45 km de Charles de Gaulle — bien plus proche que Paris intra-muros, et en direction opposée. La Navette officielle Disney Express existe, mais avec des bagages de famille, de jeunes enfants et des horaires décalés, un chauffeur privé CDG Disneyland en Classe V (7 passagers) ou en Sprinter (16 passagers) reste la solution la plus confortable.",
+    intro: "Marne-la-Vallée et Disneyland Paris sont à 45 km de Charles de Gaulle — bien plus proche que Paris intra-muros, et en direction opposée. La Navette officielle Disney Express existe, mais avec des bagages de famille, de jeunes enfants et des horaires décalés, un chauffeur privé CDG Disneyland en Classe V (7 passagers) ou en Sprinter (jusqu\'à 19 passagers) reste la solution la plus confortable.",
   },
   'transfert-cdg-gare-de-lyon': {
     meta_title: 'Chauffeur Privé CDG Gare de Lyon — Transfert Aéroport Paris | Amani Limousines',
@@ -482,7 +482,7 @@ export const PAGE_DEFAULTS: Record<string, Record<string, string>> = {
   },
   'en/our-fleet': {
     meta_title: 'Our Fleet — Prestige Vehicles Paris | Mercedes, Range Rover, Sprinter VIP | Amani',
-    meta_description: "Discover Amani Limousines' fleet of prestige vehicles in Paris. Mercedes E-Class, EQS, S-Class, Maybach, V-Class, G-Class, Range Rover Evoque and Sprinter VIP. 300+ vehicles, renewed annually.",
+    meta_description: "Discover Amani Limousines' fleet of prestige vehicles in Paris. Mercedes E-Class, EQS, S-Class, Maybach, V-Class, G-Class, Range Rover, Sprinter VIP 8 / 15 / 19 seats and a 50-seat Tourismo coach. 300+ vehicles, renewed annually.",
     h1: 'Prestige vehicles in Paris — over 300 units',
     intro: "At Amani Limousines, the fleet is renewed annually to guarantee that passengers travel in recent vehicles. No ageing models kept because they still run. Our prestige vehicles in Paris average under three years old and are maintained to manufacturer specifications at every service interval.",
   },

@@ -31,6 +31,57 @@ interface HeroProps {
   locale?: string;
 }
 
+// Libellés du formulaire par langue. Les langues non traduites ici
+// (es, ar, zh) retombent sur l'anglais.
+type FormLabels = {
+  transfer: string; disposal: string; oneWay: string; round: string;
+  pickup: string; dest: string; city: string; duration: string;
+  dateLabel: string; pax: string; bags: string; continue: string;
+  computing: string; cityPh: string; pickupPh: string; destPh: string;
+  halfDay: string; day: string; extendedDay: string;
+errCity: string; errAddresses: string;
+};
+
+const LABELS: Record<string, FormLabels> = {
+  fr: {
+    transfer: 'Transfert', disposal: 'Mise à disposition',
+    oneWay: 'Aller simple', round: 'Aller-retour',
+    pickup: 'Départ', dest: 'Destination', city: 'Ville de référence',
+    duration: 'Durée', dateLabel: 'Date & heure', pax: 'Passagers',
+    bags: 'Bagages', continue: 'Continuer', computing: 'Calcul en cours…',
+    cityPh: 'Paris, Cannes, Genève…', pickupPh: 'Aéroport, hôtel, adresse',
+    destPh: 'Où allez-vous ?',
+    halfDay: 'Demi-journée (4 h)', day: 'Journée (8 h)', extendedDay: 'Journée étendue (12 h)',
+errCity: 'Indiquez la ville de prise en charge',
+errAddresses: 'Veuillez sélectionner les adresses dans la liste de suggestions',
+  },
+  en: {
+    transfer: 'Transfer', disposal: 'Full disposal',
+    oneWay: 'One way', round: 'Return',
+    pickup: 'Pickup', dest: 'Destination', city: 'Reference city',
+    duration: 'Duration', dateLabel: 'Date & time', pax: 'Passengers',
+    bags: 'Luggage', continue: 'Continue', computing: 'Calculating…',
+    cityPh: 'Paris, Cannes, Geneva…', pickupPh: 'Airport, hotel, address',
+    destPh: 'Where are you going',
+    halfDay: 'Half day (4 h)', day: 'Day (8 h)', extendedDay: 'Extended day (12 h)',
+errCity: 'Enter the pickup city',
+errAddresses: 'Please pick the addresses from the suggestion list',
+  },
+  de: {
+    transfer: 'Transfer', disposal: 'Stundenmiete',
+    oneWay: 'Einfache Fahrt', round: 'Hin- und Rückfahrt',
+    pickup: 'Abholung', dest: 'Ziel', city: 'Ausgangsort',
+    duration: 'Dauer', dateLabel: 'Datum & Uhrzeit', pax: 'Passagiere',
+    bags: 'Gepäck', continue: 'Weiter', computing: 'Berechnung läuft…',
+    cityPh: 'Paris, Cannes, Genf …', pickupPh: 'Flughafen, Hotel, Adresse',
+    destPh: 'Wohin fahren Sie?',
+    halfDay: 'Halber Tag (4 Std.)', day: 'Ganzer Tag (8 Std.)', extendedDay: 'Langer Tag (12 Std.)',
+errCity: 'Bitte geben Sie den Abholort an',
+errAddresses: 'Bitte wählen Sie die Adressen aus der Vorschlagsliste',
+  },
+};
+
+
 export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = false, countries, locale = 'fr' }: HeroProps) {
   const [ready, setReady] = useState(false);
   const [fromConfirmed, setFromConfirmed] = useState(false);
@@ -46,6 +97,10 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
   const [hours, setHours] = useState(8);
 
   useEffect(() => { setTimeout(() => setReady(true), 150); }, []);
+
+  const mapLocale: 'fr' | 'en' | 'de' =
+    locale === 'fr' ? 'fr' : locale === 'de' ? 'de' : 'en';
+  const L = LABELS[locale] ?? LABELS.en;
 
   const handleFromChange = (v: string) => { setFrom(v); if (!v) setFromConfirmed(false); setSubmitError(''); };
   const handleToChange   = (v: string) => { setTo(v);   if (!v) setToConfirmed(false);   setSubmitError(''); };
@@ -65,7 +120,7 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
     // Mise à disposition : une seule ville suffit, pas de destination.
     if (mode === 'disposal') {
       if (!from.trim()) {
-        setSubmitError(fr ? 'Indiquez la ville de prise en charge' : 'Enter the pickup city');
+        setSubmitError(L.errCity);
         return;
       }
       setSubmitError('');
@@ -77,38 +132,17 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
     // Pas de validation bloquante si Google Maps est indisponible (clé rejetée)
     const needsValidation = apiKey.length >= 10 && !isGmapsUnavailable();
     if (needsValidation && (!fromConfirmed || !toConfirmed)) {
-      setSubmitError('Veuillez sélectionner les adresses dans la liste de suggestions');
+      setSubmitError(L.errAddresses);
       return;
     }
     setSubmitError('');
     onSearch(from, to, opts());
   };
 
-  const mapLocale = locale === 'fr' ? 'fr' : 'en';
-  const fr = locale === 'fr';
-  // Libellés du formulaire (FR / EN — les autres langues utilisent l'anglais)
-  const L = {
-    transfer:  fr ? 'Transfert'         : 'Transfer',
-    disposal:  fr ? 'Mise à disposition': 'Full disposal',
-    oneWay:    fr ? 'Aller simple'      : 'One way',
-    round:     fr ? 'Aller-retour'      : 'Return',
-    pickup:    fr ? 'Départ'            : 'Pickup',
-    dest:      fr ? 'Destination'       : 'Destination',
-    city:      fr ? 'Ville de référence': 'Reference city',
-    duration:  fr ? 'Durée'             : 'Duration',
-    dateLabel: fr ? 'Date & heure'      : 'Date & time',
-    pax:       fr ? 'Passagers'         : 'Passengers',
-    bags:      fr ? 'Bagages'           : 'Luggage',
-    continue:  fr ? 'Continuer'         : 'Continue',
-    computing: fr ? 'Calcul en cours…'  : 'Calculating…',
-    cityPh:    fr ? 'Paris, Cannes, Genève…'      : 'Paris, Cannes, Geneva…',
-    pickupPh:  fr ? 'Aéroport, hôtel, adresse'    : 'Airport, hotel, address',
-    destPh:    fr ? 'Où allez-vous ?'             : 'Where are you going',
-  };
   const HOURS = [
-    { h: 4,  label: fr ? 'Demi-journée (4 h)' : 'Half day (4 h)' },
-    { h: 8,  label: fr ? 'Journée (8 h)'      : 'Day (8 h)' },
-    { h: 12, label: fr ? 'Journée étendue (12 h)' : 'Extended day (12 h)' },
+    { h: 4,  label: L.halfDay },
+    { h: 8,  label: L.day },
+    { h: 12, label: L.extendedDay },
   ];
   const stepBtn = 'w-7 h-7 md:w-8 md:h-8 flex items-center justify-center rounded-full border border-white/25 text-white/70 hover:border-white hover:text-white transition-colors text-base leading-none select-none';
   const microLabel = 'block font-sans text-[0.55rem] tracking-[0.16em] uppercase mb-1 text-white/45';

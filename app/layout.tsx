@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.amani-limousines.com'),
   alternates: {
     canonical: '/',
-    languages: { fr: '/', en: '/en', ar: '/ar', 'zh-Hans': '/zh', 'x-default': '/' },
+    languages: { fr: '/', en: '/en', de: '/de', es: '/es', ar: '/ar', 'zh-Hans': '/zh', 'x-default': '/' },
   },
   openGraph: {
     title: 'Amani Limousines — Chauffeur Privé de Prestige | Paris, France & Europe',

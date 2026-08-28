@@ -17,11 +17,12 @@ import { RTL_LOCALES } from '@/lib/vehicles';
 import type { Locale } from '@/lib/vehicles';
 
 import en from '@/locales/en.json';
+import de from '@/locales/de.json';
 import es from '@/locales/es.json';
 import ar from '@/locales/ar.json';
 import zh from '@/locales/zh.json';
 
-const translations: Record<string, any> = { en, es, ar, zh };
+const translations: Record<string, any> = { en, de, es, ar, zh };
 
 export default function LocaleHomeClient({ countries }: { countries: Record<string, MapCountry> }) {
   const params = useParams();
@@ -120,20 +121,24 @@ export default function LocaleHomeClient({ countries }: { countries: Record<stri
       {/* À propos — Lounes (traduit) */}
       <AboutSection t={t} />
 
-      {/* Sections maquette — EN uniquement pour l'instant */}
-      {locale === 'en' && (
+      {/* Sections maquette — EN et DE (les autres locales n'ont pas encore le contenu) */}
+      {(locale === 'en' || locale === 'de') && (
         <>
-          <ExperiencesSection locale="en" />
-          <DestinationsSection locale="en" />
+          <ExperiencesSection locale={locale} />
+          <DestinationsSection locale={locale} />
           <ParallaxBand
             image="/images/city-hero/chauffeur-prive-paris.jpg"
-            tag="Private chauffeur service"
-            title="A luxury chauffeur service, wherever Europe takes you"
-            subtitle="From Paris to the Riviera, your private car and driver await — fixed prices, Mercedes fleet, available around the clock."
-            ctaLabel="All destinations"
+            tag={locale === 'de' ? 'Privatchauffeur-Service' : 'Private chauffeur service'}
+            title={locale === 'de'
+              ? 'Ein Chauffeurservice der Spitzenklasse, wohin Sie Europa auch führt'
+              : 'A luxury chauffeur service, wherever Europe takes you'}
+            subtitle={locale === 'de'
+              ? 'Von Paris bis an die Riviera: Ihr Wagen mit Chauffeur wartet — Festpreise, Mercedes-Flotte, rund um die Uhr verfügbar.'
+              : 'From Paris to the Riviera, your private car and driver await — fixed prices, Mercedes fleet, available around the clock.'}
+            ctaLabel={locale === 'de' ? 'Alle Ziele' : 'All destinations'}
             ctaHref="/en/destinations"
           />
-          <RoutesStrip locale="en" />
+          <RoutesStrip locale={locale} />
         </>
       )}
 
@@ -163,7 +168,7 @@ export default function LocaleHomeClient({ countries }: { countries: Record<stri
       )}
 
       {/* CTA + Footer */}
-      {locale === 'en' && <RecruitBlock locale="en" />}
+      {(locale === 'en' || locale === 'de') && <RecruitBlock locale={locale} />}
 
       <CTA t={t} />
       <Footer t={t} locale={locale} />

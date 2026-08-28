@@ -1,0 +1,530 @@
+{
+  "metadata": {
+    "title": "Amani Limousines — Privatchauffeur der Spitzenklasse in Paris",
+    "description": "Exklusiver Chauffeurservice in Paris. Flughafentransfers CDG, Orly, Le Bourget. Limousinen, VIP-Vans, Konvois. Rund um die Uhr verfügbar."
+  },
+  "nav": {
+    "services": "Leistungen",
+    "events": "Events",
+    "fleet": "Unsere Flotte",
+    "booking": "Buchen",
+    "contact": "Kontakt",
+    "phone": "+33 6 87 16 97 47",
+    "available": "24/7 erreichbar"
+  },
+  "hero": {
+    "tag": "Privatchauffeur der Spitzenklasse in Paris",
+    "title_1": "Exzellenz im privaten Transport,",
+    "title_2": "für die",
+    "title_em": "höchsten",
+    "title_3": "Ansprüche",
+    "subtitle": "Flughafentransfers, Stundenmiete, offizielle Delegationen. Über 300 Premiumfahrzeuge. Mehrsprachige Chauffeure. Rund um die Uhr verfügbar.",
+    "cta": "Sofortangebot erhalten",
+    "from_label": "ABHOLUNG",
+    "to_label": "ZIEL",
+    "from_placeholder": "Flughafen, Hotel, Adresse …",
+    "to_placeholder": "Ihr Ziel …",
+    "popular": "Beliebte Strecken",
+    "form_title": "Ihr Sofortangebot",
+    "form_subtitle": "Festpreis · Keine Überraschungen",
+    "trust_signals": [
+      "Festpreis",
+      "Flugüberwachung",
+      "24/7"
+    ],
+    "subtitle_short": "Transfers, Stundenmiete, Langstrecke. Rund um die Uhr."
+  },
+  "services": {
+    "tag": "Unsere Leistungen",
+    "title": "Ein Service",
+    "title_em": "nach Maß",
+    "learn_more": "Mehr erfahren",
+    "items": {
+      "disposition": {
+        "title": "Stundenmiete",
+        "subtitle": "Mise à disposition",
+        "desc": "Ihr Privatchauffeur in Paris bleibt so lange zu Ihrer Verfügung, wie Sie es wünschen. Halbtags, ganztags oder über mehrere Tage — Fahrzeug und Chauffeur passen sich Ihrem Zeitplan in Echtzeit an."
+      },
+      "transfer": {
+        "title": "Privattransfer",
+        "subtitle": "Transfert privé",
+        "desc": "Tür-zu-Tür-Fahrt zwischen zwei Adressen. Flughäfen, Bahnhöfe, Hotels, Veranstaltungsorte. Der Preis steht vorab fest — kein Taxameter, keine Überraschungen."
+      },
+      "meetgreet": {
+        "title": "Meet and Greet",
+        "subtitle": "VIP-Empfang",
+        "desc": "Persönlicher Empfang im Ankunftsbereich mit Namensschild. Gepäckhilfe und Begleitung zum Fahrzeug. Fast-Track-Option an CDG und Orly verfügbar."
+      },
+      "convoy": {
+        "title": "Fahrzeugkonvoi",
+        "subtitle": "Convoi de véhicules",
+        "desc": "Koordination mehrerer Fahrzeuge für Delegationen, diplomatische Missionen und Großveranstaltungen. Zentrale Disposition, Funkverbindung zwischen den Fahrern."
+      },
+      "security": {
+        "title": "Personenschutz",
+        "subtitle": "Sécurité rapprochée",
+        "desc": "Gesicherter Transport mit Eskorte für Persönlichkeiten, Diplomaten und Führungskräfte. Vorausfahrzeuge, Begleitfahrzeuge, Fahrer mit Sicherheitsfahrtraining."
+      },
+      "excursion": {
+        "title": "Private Ausflüge",
+        "subtitle": "Excursion privée",
+        "desc": "Versailles, Champagne, Normandie, Loire-Schlösser, Giverny. Ihr Chauffeur kennt die Strecken und richtet Zwischenstopps nach Ihren Wünschen ein. Kulinarische Begleitung auf Anfrage."
+      },
+      "longdistance": {
+        "title": "Langstrecke",
+        "subtitle": "Longue distance",
+        "desc": "Paris–Deauville, Paris–Brüssel, Paris–Lyon, Paris–Côte d'Azur. Unsere Limousinen und VIP-Vans sind für lange Fahrten ausgestattet: WLAN, Steckdosen, Arbeitsplatz."
+      }
+    }
+  },
+  "stats": {
+    "transfers_label": "Transfers pro Monat",
+    "rating_label": "Google-Bewertung",
+    "experience_label": "Jahre Erfahrung",
+    "vehicles_label": "Premiumfahrzeuge"
+  },
+  "process": {
+    "tag": "So funktioniert es",
+    "title": "Buchen in",
+    "title_em": "4 einfachen Schritten",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Angebot anfragen",
+        "desc": "Geben Sie Ihre Strecke online ein oder rufen Sie uns an. Sofortangebot, ab der Bestätigung garantierter Festpreis."
+      },
+      {
+        "num": "02",
+        "title": "Sofortige Bestätigung",
+        "desc": "Sie erhalten eine Bestätigung per E-Mail und SMS mit Namen und Foto Ihres Chauffeurs."
+      },
+      {
+        "num": "03",
+        "title": "VIP-Abholung",
+        "desc": "Ihr Chauffeur ist 15 Minuten vorher da. Verspätet sich Ihr Flug, passt er sich automatisch an — ohne Aufpreis."
+      },
+      {
+        "num": "04",
+        "title": "Komfortabel reisen",
+        "desc": "Genießen Sie die Fahrt in einem Premiumfahrzeug. WLAN, Wasser, Ladegeräte — alles inklusive."
+      }
+    ]
+  },
+  "whyus": {
+    "tag": "Warum Amani",
+    "title": "Ein Service, der",
+    "title_em": "den Unterschied macht",
+    "items": [
+      {
+        "title": "Garantierter Festpreis",
+        "desc": "Ihr Preis steht bei der Buchung fest. Keine Zuschläge, keine bösen Überraschungen — unabhängig von Verkehr und Fahrtdauer."
+      },
+      {
+        "title": "Erstklassige Chauffeure",
+        "desc": "Alle unsere Chauffeure sind zertifiziert, im Sicherheitsfahren geschult und mehrsprachig — Französisch, Englisch, Deutsch, Arabisch, Mandarin."
+      },
+      {
+        "title": "Flugüberwachung in Echtzeit",
+        "desc": "Wir verfolgen Ihren Flug in Echtzeit. Verspätet sich Ihre Maschine, passt sich Ihr Chauffeur automatisch an — ohne Zusatzkosten."
+      },
+      {
+        "title": "Ständig erneuerte Premiumflotte",
+        "desc": "Über 300 jährlich erneuerte Fahrzeuge — Mercedes, BMW, Sprinter. Alle jünger als 3 Jahre, täglich kontrolliert."
+      },
+      {
+        "title": "Antwort in 30 Minuten",
+        "desc": "Unser Team beantwortet jede Anfrage innerhalb von 30 Minuten, rund um die Uhr — per Telefon, E-Mail oder WhatsApp."
+      },
+      {
+        "title": "Absolute Diskretion",
+        "desc": "Vollständige Vertraulichkeit für diplomatische, geschäftliche und VIP-Kunden. Unsere Chauffeure arbeiten unter strengster Verschwiegenheit."
+      }
+    ]
+  },
+  "reviews": {
+    "tag": "Kundenstimmen",
+    "title": "Was unsere",
+    "title_em": "Kunden sagen",
+    "google_link": "Alle Bewertungen auf Google ansehen",
+    "items": [
+      {
+        "name": "James W.",
+        "rating": 5,
+        "text": "Tadelloser Service. Chauffeur pünktlich, Fahrzeug makellos, auch außerhalb der üblichen Zeiten verfügbar. Uneingeschränkt zu empfehlen für Geschäftstransfers in Paris.",
+        "role": "CEO, London"
+      },
+      {
+        "name": "Sophie L.",
+        "rating": 5,
+        "text": "Seit drei Jahren übernimmt Amani Limousines alle meine Flughafentransfers. Perfekte Pünktlichkeit, Fahrzeuge der Spitzenklasse, stets zuvorkommende Chauffeure. Ein echter 5-Sterne-Service.",
+        "role": "Internationale Beraterin"
+      },
+      {
+        "name": "Mohammed A.",
+        "rating": 5,
+        "text": "Hervorragende Koordination für eine offizielle Delegation von 12 Personen. Perfekte Logistik, tadellose Abstimmung der Fahrzeuge. Wir buchen mit Sicherheit wieder.",
+        "role": "Diplomatischer Attaché"
+      },
+      {
+        "name": "Claire M.",
+        "rating": 5,
+        "text": "Transfer CDG–Paris um 5 Uhr morgens, der Chauffeur war da und hat gelächelt. Die Flugüberwachung funktioniert wirklich — er wusste bereits von der Verspätung. Sehr professionell.",
+        "role": "Projektleiterin"
+      }
+    ]
+  },
+  "faq": {
+    "tag": "Häufige Fragen",
+    "title": "Alles, was Sie",
+    "title_em": "wissen müssen",
+    "items": [
+      {
+        "q": "Wie funktioniert der Festpreis?",
+        "a": "Ihr Preis wird bei der Buchung anhand Ihrer Strecke und des gewählten Fahrzeugs berechnet und bestätigt. Er enthält alle Steuern, Maut- und Parkgebühren. Keine Zuschläge, keine Überraschungen."
+      },
+      {
+        "q": "Was passiert, wenn mein Flug Verspätung hat?",
+        "a": "Wir verfolgen Ihren Flug in Echtzeit. Bei Verspätung passt sich Ihr Chauffeur automatisch an — ohne Aufpreis. Sie müssen nichts tun, unser Team kümmert sich um alles."
+      },
+      {
+        "q": "Welche Fahrzeuge bieten Sie an?",
+        "a": "Unsere Flotte umfasst Business- und Executive-Limousinen (Mercedes E-Klasse, S-Klasse, Maybach, EQS), Luxus-Vans (Mercedes V-Klasse), VIP-Minibusse (Sprinter 8, 15 und 19 Plätze) sowie einen Reisebus Mercedes Tourismo mit 50 Plätzen. Alle Fahrzeuge sind jünger als 3 Jahre."
+      },
+      {
+        "q": "Betreuen Sie auch Delegationen?",
+        "a": "Ja. Wir koordinieren Konvois mehrerer Fahrzeuge für offizielle Delegationen, diplomatische Missionen und Firmenveranstaltungen. Zentrale Disposition, Funkverbindung zwischen den Fahrern."
+      },
+      {
+        "q": "In welchem Gebiet sind Sie tätig?",
+        "a": "Wir bedienen Paris und die Île-de-France mit Transfers von und zu allen Flughäfen (CDG, Orly, Le Bourget). Dazu kommen Langstrecken: Deauville, Lyon, Brüssel, Côte d'Azur und ganz Europa."
+      },
+      {
+        "q": "Wie buche ich?",
+        "a": "Über unser Online-Formular, telefonisch unter +33 6 87 16 97 47, per E-Mail an amani.limousines@gmail.com oder über WhatsApp. Unser Team antwortet innerhalb von 30 Minuten, rund um die Uhr."
+      }
+    ]
+  },
+  "events": {
+    "tag": "Events",
+    "title": "Transport für Ihre",
+    "title_em": "Veranstaltungen",
+    "subtitle": "VIP-Transport für die großen Termine in Paris",
+    "items": {
+      "fashionweek": {
+        "title": "Paris Fashion Week",
+        "period": "Februar & September"
+      },
+      "airshow": {
+        "title": "Paris Air Show",
+        "period": "Messe Le Bourget"
+      },
+      "rolandgarros": {
+        "title": "French Open (Roland Garros)",
+        "period": "Mai — Juni"
+      },
+      "cannes": {
+        "title": "Filmfestival von Cannes",
+        "period": "Mai"
+      },
+      "sports": {
+        "title": "Sportveranstaltungen",
+        "period": "Grand Prix, Rennen"
+      },
+      "salons": {
+        "title": "Fachmessen",
+        "period": "Nautic, Première Vision, M&O"
+      }
+    }
+  },
+  "fleet": {
+    "tag": "Unsere Flotte",
+    "title": "Fahrzeuge der ",
+    "title_em": "Extraklasse",
+    "subtitle": "Über 300 Fahrzeuge, jedes Jahr erneuert",
+    "vehicles": {
+      "classe_e": {
+        "name": "Mercedes E-Klasse",
+        "category": "Business-Limousine",
+        "pax": "3 Passagiere",
+        "bags": "2 Koffer",
+        "from": "Ab 150 €",
+        "features": [
+          "Premium-WLAN",
+          "Lederausstattung",
+          "2-Zonen-Klimaanlage",
+          "USB-C-Ladegeräte"
+        ]
+      },
+      "classe_s": {
+        "name": "Mercedes S-Klasse",
+        "category": "Executive-Limousine",
+        "pax": "3 Passagiere",
+        "bags": "2 Koffer",
+        "from": "Ab 220 €",
+        "features": [
+          "Massagesitze",
+          "LCD-Bildschirme",
+          "Verstärkte Dämmung",
+          "Bordbar"
+        ]
+      },
+      "classe_v": {
+        "name": "Mercedes V-Klasse",
+        "category": "Luxus-Van",
+        "pax": "7 Passagiere",
+        "bags": "6 Koffer",
+        "from": "Ab 160 €",
+        "features": [
+          "Lounge-Bestuhlung",
+          "Besprechungsraum",
+          "Schnelles WLAN",
+          "XXL-Gepäckraum"
+        ]
+      },
+      "classe_g": {
+        "name": "Mercedes G-Klasse",
+        "category": "Luxus-SUV",
+        "pax": "4 Passagiere",
+        "bags": "3 Gepäckstücke",
+        "from": "Ab 500 €",
+        "features": [
+          "Ikonischer Geländewagen",
+          "AMG-Lederausstattung",
+          "Burmester®-Sound",
+          "Unvergleichliche Präsenz"
+        ]
+      },
+      "eqs": {
+        "name": "Mercedes EQS",
+        "category": "Elektro-Limousine",
+        "pax": "3 Passagiere",
+        "bags": "2 Koffer",
+        "from": "Ab 150 €",
+        "features": [
+          "100 % elektrisch",
+          "Emissionsfrei",
+          "Schnellladen",
+          "Lautloses Fahren"
+        ]
+      },
+      "classe_s_maybach": {
+        "name": "Mercedes-Maybach S-Klasse",
+        "category": "Ultra-Luxus-Limousine",
+        "pax": "3 Passagiere",
+        "bags": "2 Koffer",
+        "from": "Ab 200 €",
+        "features": [
+          "Das Beste von Mercedes",
+          "First-Class-Fondsitze",
+          "Maximale Schalldämmung",
+          "Minibar & Tablets"
+        ]
+      },
+      "range_rover_evoque": {
+        "name": "Range Rover",
+        "category": "Prestige-SUV",
+        "pax": "4 Passagiere",
+        "bags": "3 Koffer",
+        "from": "Ab 200 €",
+        "features": [
+          "Britischer SUV",
+          "Lederausstattung",
+          "Allradantrieb",
+          "Erhöhte Sitzposition"
+        ]
+      },
+      "sprinter": {
+        "name": "Mercedes Sprinter VIP 8 Plätze",
+        "category": "VIP-Minibus",
+        "pax": "8 Passagiere",
+        "bags": "8 Koffer",
+        "from": "Ab 200 €",
+        "features": [
+          "8 Kapitänssitze aus Leder",
+          "Premium-Soundanlage",
+          "Zonen-Klimaanlage",
+          "Ideal für Delegationen"
+        ]
+      },
+      "sprinter_15": {
+        "name": "Mercedes Sprinter 15 Plätze",
+        "category": "Minibus",
+        "pax": "15 Passagiere",
+        "bags": "15 Koffer",
+        "from": "Ab 200 €",
+        "features": [
+          "15 Sitzplätze",
+          "Gepäckraum",
+          "Klimaanlage",
+          "Gruppentransfers"
+        ]
+      },
+      "sprinter_vip_19": {
+        "name": "Mercedes Sprinter VIP 19 Plätze",
+        "category": "VIP-Minibus",
+        "pax": "19 Passagiere",
+        "bags": "19 Koffer",
+        "from": "Ab 200 €",
+        "features": [
+          "19 Sitzplätze",
+          "VIP-Ausstattung",
+          "Soundanlage & Mikrofon",
+          "Gruppen & Seminare"
+        ]
+      },
+      "tourismo_50": {
+        "name": "Mercedes Tourismo 50 Plätze",
+        "category": "Reisebus",
+        "pax": "50 Passagiere",
+        "bags": "50 Koffer",
+        "from": "Ab 200 €",
+        "features": [
+          "50 Sitzplätze",
+          "Großer Gepäckraum",
+          "WC an Bord",
+          "Kongresse & Events"
+        ]
+      }
+    }
+  },
+  "booking": {
+    "tag": "Ihr Angebot",
+    "title": "Wählen Sie Ihr",
+    "title_em": "Fahrzeug",
+    "fixed_price": "Festpreis, alles inklusive",
+    "summary": "Übersicht",
+    "departure": "Abholung",
+    "arrival": "Ziel",
+    "distance": "Entfernung",
+    "duration": "Geschätzte Dauer",
+    "vehicle": "Fahrzeug",
+    "included": "Inklusive",
+    "included_items": "VIP-Empfang · Flugüberwachung · Wasser",
+    "total": "Gesamtfestpreis",
+    "book_now": "Jetzt buchen",
+    "or_call": "Oder rufen Sie an: +33 6 87 16 97 47 · auch per WhatsApp",
+    "change_vehicle": "← Fahrzeug ändern",
+    "disposal_tag": "Ihre Stundenmiete",
+    "disposal_badge": "Stundenmiete",
+    "pickup_city": "Abholung",
+    "disposal_duration": "Dauer",
+    "hour_short": "Std.",
+    "per_hour": "€/Std.",
+    "hours_label": "Stunden"
+  },
+  "trust": {
+    "items": [
+      "Botschaften & Konsulate",
+      "Family Offices",
+      "Premium-Reisebüros",
+      "Pariser Luxushotels",
+      "Offizielle Delegationen",
+      "Privatluftfahrt"
+    ]
+  },
+  "cta": {
+    "title": "Kontaktieren Sie",
+    "title_em": "unser Team",
+    "subtitle": "Rund um die Uhr erreichbar für Buchungen, individuelle Angebote und Delegationsanfragen. Antwort innerhalb von 30 Minuten garantiert.",
+    "whatsapp": "WhatsApp"
+  },
+  "footer": {
+    "col1_title": "Amani Limousines",
+    "col1_links": [
+      "Privatchauffeur Paris",
+      "Flughafentransfer CDG",
+      "Flughafentransfer Orly",
+      "Transfer Le Bourget"
+    ],
+    "col2_title": "Leistungen",
+    "col2_links": [
+      "Stundenmiete",
+      "Konvois & Delegationen",
+      "Personenschutz",
+      "Private Ausflüge"
+    ],
+    "col3_title": "Events",
+    "col3_links": [
+      "Paris Fashion Week",
+      "Paris Air Show",
+      "French Open",
+      "Fachmessen"
+    ],
+    "col4_title": "Informationen",
+    "col4_links": [
+      "Impressum",
+      "AGB",
+      "Datenschutzerklärung"
+    ],
+    "copyright": "© 2026 AMANI LIMOUSINES — EXKLUSIVER CHAUFFEURSERVICE | FRANKREICH & EUROPA"
+  },
+  "routes": {
+    "popular": [
+      {
+        "from": "CDG",
+        "to": "Paris Zentrum",
+        "km": 32,
+        "time": "45 Min."
+      },
+      {
+        "from": "CDG",
+        "to": "La Défense",
+        "km": 35,
+        "time": "40 Min."
+      },
+      {
+        "from": "CDG",
+        "to": "Disneyland",
+        "km": 45,
+        "time": "40 Min."
+      },
+      {
+        "from": "Orly",
+        "to": "Paris Zentrum",
+        "km": 18,
+        "time": "30 Min."
+      },
+      {
+        "from": "Le Bourget",
+        "to": "Paris Zentrum",
+        "km": 15,
+        "time": "25 Min."
+      },
+      {
+        "from": "CDG",
+        "to": "Versailles",
+        "km": 55,
+        "time": "55 Min."
+      }
+    ]
+  },
+  "about": {
+    "tag": "Über uns",
+    "title": "Privatchauffeure,",
+    "title_em": "die Ihre Sprache sprechen",
+    "badge_label": "gesprochene Sprachen",
+    "p1": "Wenn Ihr Chauffeur Ihre Sprache spricht, verändert sich die Fahrt vollständig. Es ist kein bloßer Transfer mehr — Sie unterhalten sich, stellen Fragen und werden mühelos verstanden.",
+    "p2": "Unsere Chauffeure sprechen mehr als 10 Sprachen. Das heißt: eine deutsche Delegation am Terminal 2E begrüßen, mit einer japanischen Familie die Route besprechen oder das Tagesprogramm mit einem Geschäftsreisenden aus Riad auf Arabisch abstimmen. Sie kennen Paris genau und bewegen sich sicher in den Gepflogenheiten jeder Kultur.",
+    "p3": "Bei Amani Limousines endet unser Anspruch nicht am Lenkrad. Wir denken voraus, beraten Sie und achten auf jedes Detail.",
+    "languages_label": "Verfügbare Sprachen",
+    "cta_book": "Chauffeur buchen",
+    "cta_contact": "Kontakt aufnehmen",
+    "photo_alt": "Lounes — Gründer von Amani Limousines, mehrsprachiger Privatchauffeur",
+    "languages": {
+      "en": "Englisch",
+      "ar": "Arabisch",
+      "es": "Spanisch",
+      "de": "Deutsch",
+      "zh": "Mandarin",
+      "ko": "Koreanisch",
+      "ja": "Japanisch",
+      "ru": "Russisch",
+      "tl": "Filipino",
+      "hi": "Hindi",
+      "sr": "Serbisch",
+      "ro": "Rumänisch",
+      "pt": "Portugiesisch",
+      "it": "Italienisch"
+    }
+  }
+}

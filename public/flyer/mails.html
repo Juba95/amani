@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amani Limousines — Mails types partenaires</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#16130e; --cream:#faf7f1; --paper:#ffffff; --line:#e7e0d4;
+    --gold:#8a7340; --gold2:#b3924e; --muted:#6f6a60; --dark:#0f0d0b;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{-webkit-print-color-adjust:exact; print-color-adjust:exact}
+  body{background:#54504a; font-family:'Inter',Arial,sans-serif; color:var(--ink)}
+  .serif{font-family:'Playfair Display',Georgia,serif}
+  .sheet{
+    width:210mm; min-height:297mm; background:var(--cream); margin:14px auto;
+    position:relative; overflow:hidden; page-break-after:always; padding-bottom:14mm;
+  }
+  .kicker{font-size:9px; letter-spacing:.22em; text-transform:uppercase; color:var(--gold); font-weight:600}
+  .muted{color:var(--muted)}
+
+  /* En-tête sombre */
+  .top{background:var(--dark); color:#f3eee4; padding:9mm 15mm 7mm}
+  .brand{display:flex; align-items:center; gap:11px}
+  .mono{width:32px; height:38px}
+  .brand h1{font-size:22px; letter-spacing:.16em; font-weight:400}
+  .brand .lim{font-size:8.5px; letter-spacing:.42em; color:var(--gold2); margin-top:2px}
+  .top .sub{margin-top:9px; font-size:10.5px; letter-spacing:.05em; color:#c9c2b3}
+  .badge{display:inline-block; margin-top:10px; font-size:9px; letter-spacing:.18em; text-transform:uppercase;
+    color:var(--gold2); border:1px solid rgba(179,146,78,.5); border-radius:20px; padding:5px 13px}
+
+  .pad{padding:6mm 15mm 0}
+  .lead{font-size:9.8px; line-height:1.55; color:#3f3a31}
+  .lead b{color:var(--ink); font-weight:600}
+
+  /* Bloc mail */
+  .mail{background:var(--paper); border:1px solid var(--line); border-radius:11px;
+    padding:10px 13px 11px; margin-top:5mm; position:relative}
+  .mail .target{font-size:8px; letter-spacing:.16em; text-transform:uppercase; color:var(--gold); font-weight:600}
+  .mail h2{font-family:'Playfair Display',serif; font-size:15.5px; font-weight:500; margin-top:2px}
+  .mail .when{font-size:8.2px; color:var(--muted); margin-top:3px; line-height:1.4}
+  .subject{margin-top:8px; padding:6px 9px; background:#f6f3ec; border-left:2px solid var(--gold2);
+    border-radius:0 6px 6px 0; font-size:9.2px; line-height:1.45}
+  .subject span{font-size:7.6px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted);
+    display:block; margin-bottom:2px}
+  .body{margin-top:7px; font-size:8.5px; line-height:1.48; color:#3a352d; white-space:pre-line}
+  .body b{color:var(--ink); font-weight:600}
+  .followup{margin-top:8px; padding-top:7px; border-top:1px dashed var(--line);
+    font-size:8.1px; line-height:1.45; color:var(--muted); white-space:pre-line}
+  .followup em{color:var(--gold); font-style:normal; font-weight:600; letter-spacing:.1em;
+    text-transform:uppercase; font-size:7.6px; display:block; margin-bottom:3px}
+  .copy{position:absolute; top:11px; right:12px; font-family:'Inter',sans-serif; font-size:8.4px;
+    letter-spacing:.12em; text-transform:uppercase; color:var(--gold); background:transparent;
+    border:1px solid var(--line); border-radius:14px; padding:4px 10px; cursor:pointer}
+  .copy:hover{border-color:var(--gold2); background:#f6f3ec}
+
+  /* Rappel des règles d'envoi */
+  .tips{margin-top:5mm; display:grid; grid-template-columns:repeat(3,1fr); gap:6px}
+  .tip{background:var(--paper); border:1px solid var(--line); border-radius:9px; padding:8px 10px}
+  .tip .n{font-size:9.8px; font-weight:600}
+  .tip .d{font-size:8px; color:var(--muted); margin-top:2px; line-height:1.4}
+
+  .foot{margin:6mm 15mm 0; padding:5mm 0 0; border-top:1px solid var(--line);
+    font-size:8.6px; color:var(--muted); line-height:1.6}
+  .foot b{color:var(--gold)}
+
+  /* Barre de navigation entre les documents — écran seulement */
+  .docnav{max-width:210mm; margin:14px auto 0; display:flex; gap:8px; align-items:center;
+    font-size:11px; color:#d7d0c1}
+  .docnav a{color:#e6dcc4; text-decoration:none; border:1px solid rgba(179,146,78,.45);
+    border-radius:16px; padding:5px 12px}
+  .docnav a.on{background:#b3924e; border-color:#b3924e; color:#141210; font-weight:600}
+  .docnav a:hover{border-color:#b3924e}
+  @media print{ .docnav{display:none} }
+
+  @media print{
+    body{background:#fff}
+    .sheet{margin:0}
+    .copy{display:none}
+  }
+  @page{ size:A4; margin:0 }
+</style>
+</head>
+<body>
+
+<nav class="docnav">
+  <span>Amani Limousines —</span>
+  <a href="/flyer/index.html">Dossier partenaire</a>
+  <a href="/flyer/mails.html" class="on">Mails types</a>
+</nav>
+
+
+<!-- ══════════ FEUILLE 1 — HÔTELS ══════════ -->
+<section class="sheet">
+  <div class="top">
+    <div class="brand">
+      <svg class="mono" viewBox="0 0 56 66" aria-hidden="true">
+        <path d="M2 58 L26 6 L32 6 L8 58 Z" fill="#b3924e"/>
+        <path d="M14 58 L38 6 L44 6 L20 58 Z" fill="#b3924e"/>
+        <path d="M38 6 L44 6 L58 58 L51 58 Z" fill="#b3924e"/>
+      </svg>
+      <div>
+        <h1 class="serif">AMANI</h1>
+        <div class="lim">LIMOUSINES</div>
+      </div>
+    </div>
+    <p class="sub">Mails types de prospection — à copier, personnaliser, envoyer</p>
+    <span class="badge">1 / 3 · Hôtels &amp; conciergeries</span>
+  </div>
+
+  <div class="pad">
+    <p class="lead">Trois mails prêts à l'emploi, un par cible. <b>Remplacez les mentions entre crochets</b>
+      par le nom de l'établissement et celui de votre interlocuteur : un mail nominatif obtient deux à trois
+      fois plus de réponses qu'un envoi générique. Joignez toujours le dossier partenaire A4 en PDF.</p>
+
+    <div class="mail">
+      <button class="copy" data-copy="m1">Copier</button>
+      <div class="target">Cible 1 — Hôtels 4★ &amp; 5★, palaces, conciergeries</div>
+      <h2 class="serif">Premier contact — chef concierge / direction</h2>
+      <div class="when">À adresser au chef concierge (ou à la direction de l'hébergement). Meilleur moment :
+        mardi ou jeudi, 9 h – 10 h 30. Relance à J+7 si pas de réponse.</div>
+
+      <div class="subject"><span>Objet</span>Transport privé pour vos clients — partenariat conciergerie, Amani Limousines</div>
+
+      <div class="body" id="m1">Bonjour [Prénom Nom],
+
+Je me permets de vous écrire en tant que fondateur d'Amani Limousines, société de transport privé avec chauffeur basée à Paris.
+
+Nous travaillons avec des établissements comme le vôtre pour prendre en charge les transferts de leurs clients : arrivées et départs CDG, Orly, Le Bourget et Beauvais, mises à disposition à l'heure ou à la journée, excursions privées (Versailles, Champagne, Normandie) et déplacements longue distance partout en France et en Europe.
+
+Concrètement, ce que cela change pour votre conciergerie :
+
+• Un seul interlocuteur joignable 24h/24, et un véhicule confirmé en moins de 30 minutes.
+• Des prix fixes annoncés à l'avance : votre client ne découvre jamais un supplément à l'arrivée.
+• Une flotte Mercedes récente — Classe E, Classe S, Maybach, Classe V, Range Rover, Sprinter VIP 8, 15 et 19 places, autocar Tourismo 50 places — de quoi couvrir aussi bien un couple qu'un groupe complet.
+• Des chauffeurs polyglottes : français, anglais, allemand, arabe, espagnol, mandarin.
+• Une facturation mensuelle centralisée à 30 jours, ou le paiement direct par le client, selon ce qui vous arrange.
+• Une commission apporteur d'affaires de 15 %, ou un code partenaire à −10 % pour vos clients — à vous de choisir la formule.
+
+Vous trouverez en pièce jointe notre dossier partenaire : présentation, flotte et grille tarifaire complète.
+
+Seriez-vous disponible pour un échange de quinze minutes cette semaine ou la suivante ? Je peux aussi passer vous voir directement à [nom de l'établissement] pour vous présenter la flotte.
+
+Bien cordialement,
+
+Lounès — Fondateur, Amani Limousines
++33 6 87 16 97 47 · amani.limousines@gmail.com
+www.amani-limousines.com</div>
+
+      <div class="followup"><em>Relance à J+7</em>Bonjour [Prénom],
+
+Je reviens vers vous au sujet de mon message de la semaine dernière sur les transferts de vos clients.
+
+Pour vous donner une idée concrète : un transfert CDG → votre établissement en Mercedes Classe E est à 150 €, prix fixe, accueil en zone d'arrivée avec pancarte et suivi du vol inclus. Si le vol a du retard, le chauffeur attend sans supplément.
+
+Je vous propose de tester sur un seul transfert, sans engagement. Dites-moi simplement quand vous en avez un à confirmer.
+
+Bien à vous,
+Lounès — +33 6 87 16 97 47</div>
+    </div>
+
+    <div class="tips">
+      <div class="tip"><div class="n">Nominatif</div><div class="d">Trouvez le nom du chef concierge sur le site de l'hôtel ou sur LinkedIn avant d'envoyer.</div></div>
+      <div class="tip"><div class="n">Dossier joint</div><div class="d">Toujours joindre le PDF du dossier partenaire — jamais un lien seul.</div></div>
+      <div class="tip"><div class="n">Une seule demande</div><div class="d">Un mail = une demande. Ici : quinze minutes d'échange, rien d'autre.</div></div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <b>Amani Limousines</b> · +33 6 87 16 97 47 · amani.limousines@gmail.com · www.amani-limousines.com<br>
+    WhatsApp : wa.me/message/WSLY2SLQ2EYNL1 — réponse en moins de 30 minutes, 24h/24.
+  </div>
+</section>
+
+<!-- ══════════ FEUILLE 2 — AGENCES DE VOYAGES ══════════ -->
+<section class="sheet">
+  <div class="top">
+    <div class="brand">
+      <svg class="mono" viewBox="0 0 56 66" aria-hidden="true">
+        <path d="M2 58 L26 6 L32 6 L8 58 Z" fill="#b3924e"/>
+        <path d="M14 58 L38 6 L44 6 L20 58 Z" fill="#b3924e"/>
+        <path d="M38 6 L44 6 L58 58 L51 58 Z" fill="#b3924e"/>
+      </svg>
+      <div>
+        <h1 class="serif">AMANI</h1>
+        <div class="lim">LIMOUSINES</div>
+      </div>
+    </div>
+    <p class="sub">Mails types de prospection — à copier, personnaliser, envoyer</p>
+    <span class="badge">2 / 3 · Agences de voyages, TO &amp; DMC</span>
+  </div>
+
+  <div class="pad">
+    <div class="mail">
+      <button class="copy" data-copy="m2">Copier</button>
+      <div class="target">Cible 2 — Agences de voyages, tour-opérateurs, DMC, conciergeries de luxe</div>
+      <h2 class="serif">Premier contact — responsable production / achats</h2>
+      <div class="when">À adresser au responsable production, achats ou groupes — pas à l'adresse contact@ générique
+        quand vous pouvez l'éviter. Relance à J+7.</div>
+
+      <div class="subject"><span>Objet</span>Flotte avec chauffeur à Paris pour vos clients et vos groupes — tarifs revendeur</div>
+
+      <div class="body" id="m2">Bonjour [Prénom Nom],
+
+Je suis Lounès, fondateur d'Amani Limousines, société de transport privé avec chauffeur basée à Paris. Nous travaillons avec des agences et des réceptifs qui ont besoin d'un prestataire fiable sur la partie transport de leurs programmes.
+
+Ce que nous couvrons pour vos clients :
+
+• Transferts aéroports et gares : CDG, Orly, Le Bourget, Beauvais, gares parisiennes — accueil avec pancarte, suivi des vols, prix fixe annoncé au moment de la réservation.
+• Mises à disposition à l'heure ou à la journée, avec chauffeur et véhicule dédiés entre chaque étape.
+• Excursions privées : Versailles, Giverny, Champagne, Mont-Saint-Michel, châteaux de la Loire, Normandie.
+• Longue distance et itinéraires sur plusieurs jours, partout en France et en Europe — plus de 300 destinations desservies.
+
+La flotte va de la berline au grand autocar, ce qui permet de traiter tous vos formats sans changer de prestataire :
+
+• Mercedes Classe E, Classe S, Maybach, EQS et Range Rover — 3 à 4 passagers.
+• Mercedes Classe V — 7 passagers avec bagages.
+• Mercedes Sprinter VIP 8 places, Sprinter 15 places, Sprinter VIP 19 places.
+• Autocar Mercedes Tourismo 50 places, avec soutes et WC à bord.
+
+Côté conditions professionnelles :
+
+• Tarifs nets revendeur, vous appliquez votre propre marge — ou commission de 15 % si vous préférez que le client règle directement.
+• Devis en moins de 30 minutes, y compris sur les demandes multi-véhicules.
+• Facturation mensuelle centralisée à 30 jours, un seul document pour tous les dossiers du mois.
+• Licence VTC, assurance transport de personnes et attestations à jour, transmises sur simple demande.
+• Chauffeurs polyglottes : français, anglais, allemand, arabe, espagnol, mandarin.
+
+Le dossier partenaire est en pièce jointe, avec la grille tarifaire complète.
+
+Je peux vous envoyer une cotation test sur un programme réel de votre choix : donnez-moi un itinéraire et un effectif, vous aurez le prix dans l'heure. Cela vous donnera une base de comparaison concrète avec votre prestataire actuel.
+
+Bien cordialement,
+
+Lounès — Fondateur, Amani Limousines
++33 6 87 16 97 47 · amani.limousines@gmail.com
+www.amani-limousines.com</div>
+
+      <div class="followup"><em>Relance à J+7</em>Bonjour [Prénom],
+
+Je reviens vers vous concernant la partie transport de vos programmes parisiens.
+
+Ma proposition tient toujours : envoyez-moi un itinéraire type — par exemple un transfert CDG puis deux jours de mise à disposition pour un groupe de quinze personnes — et je vous retourne la cotation dans l'heure, sans engagement. Vous verrez tout de suite où nous nous situons.
+
+Bien à vous,
+Lounès — +33 6 87 16 97 47</div>
+    </div>
+
+    <div class="tips">
+      <div class="tip"><div class="n">Cotation test</div><div class="d">La demande de devis test est ce qui convertit : elle ne coûte rien à l'agence.</div></div>
+      <div class="tip"><div class="n">Vos justificatifs</div><div class="d">Licence VTC et attestation d'assurance prêtes à envoyer — les agences les demandent toujours.</div></div>
+      <div class="tip"><div class="n">Saison</div><div class="d">Prospectez en janvier–mars et en septembre : les programmes de l'année s'arbitrent à ce moment-là.</div></div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <b>Amani Limousines</b> · +33 6 87 16 97 47 · amani.limousines@gmail.com · www.amani-limousines.com<br>
+    Flotte : berlines, SUV, vans, Sprinter VIP 8 / 15 / 19 places, autocar 50 places — France &amp; Europe, 24h/24.
+  </div>
+</section>
+
+<!-- ══════════ FEUILLE 3 — AMBASSADES ══════════ -->
+<section class="sheet">
+  <div class="top">
+    <div class="brand">
+      <svg class="mono" viewBox="0 0 56 66" aria-hidden="true">
+        <path d="M2 58 L26 6 L32 6 L8 58 Z" fill="#b3924e"/>
+        <path d="M14 58 L38 6 L44 6 L20 58 Z" fill="#b3924e"/>
+        <path d="M38 6 L44 6 L58 58 L51 58 Z" fill="#b3924e"/>
+      </svg>
+      <div>
+        <h1 class="serif">AMANI</h1>
+        <div class="lim">LIMOUSINES</div>
+      </div>
+    </div>
+    <p class="sub">Mails types de prospection — à copier, personnaliser, envoyer</p>
+    <span class="badge">3 / 3 · Ambassades &amp; organisations internationales</span>
+  </div>
+
+  <div class="pad">
+    <div class="mail">
+      <button class="copy" data-copy="m3">Copier</button>
+      <div class="target">Cible 3 — Ambassades, consulats, missions permanentes, organisations internationales</div>
+      <h2 class="serif">Premier contact — service protocole / intendance</h2>
+      <div class="when">À adresser au service du protocole, à l'intendance ou au chef de chancellerie. Ton plus
+        formel que les deux précédents, aucune familiarité. Relance à J+10.</div>
+
+      <div class="subject"><span>Objet</span>Mise à disposition de véhicules avec chauffeur pour vos délégations — Amani Limousines</div>
+
+      <div class="body" id="m3">Madame, Monsieur,
+
+Amani Limousines est une société de transport privé avec chauffeur établie à Paris. Nous assurons régulièrement le transport de délégations officielles, de personnalités en visite et de personnel diplomatique, et je souhaiterais vous présenter nos prestations.
+
+Nos interventions auprès des représentations diplomatiques couvrent :
+
+• L'accueil et le transfert des délégations à Roissy-Charles-de-Gaulle, Orly et Le Bourget, y compris l'accueil en terminal d'aviation d'affaires (FBO).
+• La mise à disposition de véhicules avec chauffeur à l'heure, à la journée ou sur la durée complète d'une visite officielle.
+• L'organisation de convois de plusieurs véhicules, avec coordination centralisée et liaison radio entre les chauffeurs.
+• Le transport sécurisé avec véhicules d'ouverture et de fermeture, sur demande et avec préavis.
+• Les déplacements longue distance et transfrontaliers, en France et dans toute l'Europe.
+
+Nos moyens :
+
+• Flotte Mercedes récente : Classe S et Maybach pour les personnalités, Classe E et EQS pour les accompagnants, Classe V et Range Rover, Sprinter VIP 8, 15 et 19 places, autocar Tourismo 50 places pour les délégations nombreuses.
+• Chauffeurs expérimentés, formés à la conduite de sécurité, connaissant le quartier des ambassades, l'OCDE et l'UNESCO.
+• Chauffeurs parlant français, anglais, allemand, arabe, espagnol, mandarin, russe et une dizaine d'autres langues.
+• Discrétion absolue : nos chauffeurs sont engagés par une clause de confidentialité, et nous signons sans difficulté tout accord de non-divulgation que vous nous soumettriez.
+• Disponibilité permanente, 24 heures sur 24, y compris pour les demandes de dernière minute.
+
+Sur le plan administratif, nous travaillons sur bon de commande et facturation mensuelle, avec un récapitulatif détaillé par mission. Nos attestations d'assurance, notre licence de transport et les pièces d'identité de nos chauffeurs peuvent vous être transmises préalablement à toute mission, si votre protocole l'exige.
+
+Vous trouverez ci-joint notre dossier de présentation, comprenant la flotte et la grille tarifaire.
+
+Je me tiens à votre disposition pour un entretien ou pour vous adresser une proposition chiffrée sur une visite à venir.
+
+Je vous prie d'agréer, Madame, Monsieur, l'expression de ma considération distinguée.
+
+Lounès — Fondateur, Amani Limousines
++33 6 87 16 97 47 · amani.limousines@gmail.com
+www.amani-limousines.com</div>
+
+      <div class="followup"><em>Relance à J+10</em>Madame, Monsieur,
+
+Je me permets de revenir vers vous à la suite de mon courriel du [date], relatif au transport de vos délégations.
+
+Si vous avez une visite officielle programmée dans les prochaines semaines, je peux vous adresser une proposition chiffrée sans engagement, incluant le nombre de véhicules et de chauffeurs nécessaires ainsi que le déroulé horaire.
+
+Nos attestations d'assurance et notre licence de transport sont disponibles sur simple demande.
+
+Je vous prie d'agréer, Madame, Monsieur, l'expression de ma considération distinguée.
+
+Lounès — Amani Limousines · +33 6 87 16 97 47</div>
+    </div>
+
+    <div class="tips">
+      <div class="tip"><div class="n">Registre formel</div><div class="d">Vouvoiement, formule de politesse complète, aucune abréviation. Le protocole y est attentif.</div></div>
+      <div class="tip"><div class="n">Conformité</div><div class="d">Annoncez d'emblée assurance, licence et confidentialité : ce sont les trois premiers filtres.</div></div>
+      <div class="tip"><div class="n">Timing</div><div class="d">Visez les périodes de visites officielles et les grands sommets ; relancez à J+10, pas avant.</div></div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <b>Amani Limousines</b> · +33 6 87 16 97 47 · amani.limousines@gmail.com · www.amani-limousines.com<br>
+    Convois, accueil FBO Le Bourget, chauffeurs polyglottes, confidentialité contractuelle — 24h/24, 7j/7.
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll('.copy').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var block = document.getElementById(btn.dataset.copy);
+      var subject = block.closest('.mail').querySelector('.subject').textContent.replace(/^Objet/, 'Objet : ');
+      var text = subject + '\n\n' + block.innerText;
+      navigator.clipboard.writeText(text).then(function () {
+        var label = btn.textContent;
+        btn.textContent = 'Copié ✓';
+        setTimeout(function () { btn.textContent = label; }, 1800);
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

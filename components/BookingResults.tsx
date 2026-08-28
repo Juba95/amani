@@ -40,13 +40,28 @@ const VEHICLE_INFO: Record<string, { name: string; category: string; highlights:
     highlights: ['Présence iconique', 'Cuir designo', 'Burmester® surround'],
   },
   sprinter: {
-    name: 'Mercedes Sprinter VIP',
-    category: 'Minibus Luxe',
-    highlights: ['Jusqu\'à 16 places', 'Sièges capitaine cuir', 'Sono premium'],
+    name: 'Mercedes Sprinter VIP 8 places',
+    category: 'Minibus VIP',
+    highlights: ['8 sièges capitaine cuir', 'Sono premium', 'Tablettes de travail'],
+  },
+  sprinter_15: {
+    name: 'Mercedes Sprinter 15 places',
+    category: 'Minibus',
+    highlights: ['15 places assises', 'Soute à bagages', 'Climatisation'],
+  },
+  sprinter_vip_19: {
+    name: 'Mercedes Sprinter VIP 19 places',
+    category: 'Minibus VIP',
+    highlights: ['19 places assises', 'Aménagement VIP', 'Sono & micro'],
+  },
+  tourismo_50: {
+    name: 'Mercedes Tourismo 50 places',
+    category: 'Autocar de tourisme',
+    highlights: ['50 places assises', 'WC à bord', 'Soutes grande capacité'],
   },
   range_rover_evoque: {
-    name: 'Range Rover Evoque',
-    category: 'SUV Premium',
+    name: 'Range Rover',
+    category: 'SUV de prestige',
     highlights: ['Transmission intégrale', 'Cuir Windsor', 'Meridian™'],
   },
 };

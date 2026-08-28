@@ -9,7 +9,7 @@ import { NextRequest, NextResponse } from 'next/server';
 //      déclencher les règles de redirection 301 dans next.config.js
 // ============================================================
 
-const VALID_LOCALES = new Set(['en', 'es', 'ar', 'zh']);
+const VALID_LOCALES = new Set(['en', 'de', 'es', 'ar', 'zh']);
 
 // Chemins valides à la racine (premier segment de l'URL)
 const VALID_ROOT_SEGMENTS = new Set([
@@ -116,7 +116,7 @@ export function middleware(req: NextRequest) {
     // langue) permet de rester sur la home FR. Tout le reste → /en.
     const langCookie = req.cookies.get('amani-lang')?.value;
     if (langCookie === 'fr') return NextResponse.next();
-    if (langCookie && ['en', 'es', 'ar', 'zh'].includes(langCookie)) {
+    if (langCookie && ['en', 'de', 'es', 'ar', 'zh'].includes(langCookie)) {
       return NextResponse.redirect(new URL(`/${langCookie}`, req.url), 302);
     }
     return NextResponse.redirect(new URL('/en', req.url), 302);

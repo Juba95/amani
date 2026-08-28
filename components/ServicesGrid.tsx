@@ -42,7 +42,9 @@ const SERVICE_HREFS_EN: Record<string, string> = {
 };
 
 function getServiceHref(key: string, locale: string) {
-  if (locale === 'en') return SERVICE_HREFS_EN[key] ?? '/';
+  // Les pages de service n'existent qu'en FR et EN. L'allemand pointe vers
+  // l'anglais : un visiteur germanophone y est plus à l'aise qu'en français.
+  if (locale === 'en' || locale === 'de') return SERVICE_HREFS_EN[key] ?? '/';
   return SERVICE_HREFS_FR[key] ?? '/';
 }
 

@@ -66,7 +66,7 @@ export default function GrandPrixMonacoPage() {
         <div className="max-w-4xl mx-auto">
           <h2 className="heading">{c('section_3_title', 'Paris–Monaco en voiture : pour les groupes et les bagages')}</h2>
           <p className="sf text-stone-600 mt-4 leading-relaxed">
-            {c('section_3_text', "Pour les groupes ou les clients qui préfèrent la route, 940 kilomètres se parcourent en Sprinter VIP pouvant accueillir jusqu'à 16 passagers. Tarif devis selon l'effectif. Le trajet prend neuf heures environ. Beaucoup préfèrent le scinder en deux jours avec une étape à Lyon ou Marseille, arrivée fraîche le lendemain vers 10 heures. C'est aussi l'option choisie par les clients qui voyagent avec enfants ou qui réalisent un road trip Côte d'Azur intégrant le Grand Prix à un séjour plus large.")}
+            {c('section_3_text', "Pour les groupes ou les clients qui préfèrent la route, 940 kilomètres se parcourent en Sprinter VIP pouvant accueillir jusqu'à 19 passagers. Tarif devis selon l'effectif. Le trajet prend neuf heures environ. Beaucoup préfèrent le scinder en deux jours avec une étape à Lyon ou Marseille, arrivée fraîche le lendemain vers 10 heures. C'est aussi l'option choisie par les clients qui voyagent avec enfants ou qui réalisent un road trip Côte d'Azur intégrant le Grand Prix à un séjour plus large.")}
           </p>
         </div>
       </section>
@@ -83,7 +83,7 @@ export default function GrandPrixMonacoPage() {
           <div>
             <h2 className="heading">{c('section_5_title', 'Classe G et Sprinter VIP')}</h2>
             <p className="sf text-stone-600 mt-4 leading-relaxed">
-              {c('section_5_text', "Pour les groupes ou les longs trajets : Sprinter VIP climatisé jusqu'à 16 passagers, configuration chauffeuse + client VIP possible. Classe G pour entrée imposante à Monaco.")}
+              {c('section_5_text', "Pour les groupes ou les longs trajets : Sprinter VIP climatisé jusqu'à 19 passagers, configuration chauffeuse + client VIP possible. Classe G pour entrée imposante à Monaco.")}
             </p>
           </div>
         </div>

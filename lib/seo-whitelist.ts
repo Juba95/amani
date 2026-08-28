@@ -33,7 +33,7 @@ export const AR_ZH_INDEXED_SLUGS = new Set([
 
 /** Type des locales supportées */
 export type IndexedLocale = 'fr' | 'en';
-export type Locale = 'fr' | 'en' | 'ar' | 'zh';
+export type Locale = 'fr' | 'en' | 'de' | 'es' | 'ar' | 'zh';
 
 /**
  * Slugs FR indexés — correspondent aux dossiers dans app/
@@ -212,7 +212,8 @@ export const EN_INDEXED_SLUGS = new Set([
  * Slugs supplémentaires indexés PAR langue (pages n'existant que dans une seule
  * langue sous app/[lang]/). Ne pas mettre dans AR_ZH_INDEXED_SLUGS (partagé).
  */
-export const PER_LOCALE_EXTRA_SLUGS: Record<'es' | 'ar' | 'zh', Set<string>> = {
+export const PER_LOCALE_EXTRA_SLUGS: Record<'de' | 'es' | 'ar' | 'zh', Set<string>> = {
+  de: new Set(['deutschsprachiger-chauffeur']),
   es: new Set(['chofer-hispanohablante']),
   ar: new Set(['arabic-chauffeur']),
   zh: new Set(['mandarin-chauffeur']),
@@ -225,7 +226,7 @@ export const PER_LOCALE_EXTRA_SLUGS: Record<'es' | 'ar' | 'zh', Set<string>> = {
 /**
  * Retourne true si la combinaison locale + slug doit être indexée.
  *
- * @param locale  'fr' | 'en' | 'ar' | 'zh'
+ * @param locale  'fr' | 'en' | 'de' | 'es' | 'ar' | 'zh'
  * @param slug    Slug de la page sans slash initial (ex: 'transfert-cdg-paris')
  *                Pour la homepage, passer '' ou undefined.
  *
@@ -247,10 +248,8 @@ export function shouldIndex(locale: Locale, slug: string = ''): boolean {
   // FR et EN : vérifier dans la whitelist dédiée
   if (locale === 'fr') return FR_INDEXED_SLUGS.has(slug);
   if (locale === 'en') return EN_INDEXED_SLUGS.has(slug);
-  // AR et ZH : seulement la homepage (et toute page ajoutée dans AR_ZH_INDEXED_SLUGS)
-  if (locale === 'ar' || locale === 'zh')
-    return AR_ZH_INDEXED_SLUGS.has(slug) || PER_LOCALE_EXTRA_SLUGS[locale].has(slug);
-  return false;
+  // DE, ES, AR et ZH : la homepage + les pages natives listées ci-dessus
+  return AR_ZH_INDEXED_SLUGS.has(slug) || PER_LOCALE_EXTRA_SLUGS[locale].has(slug);
 }
 
 /**

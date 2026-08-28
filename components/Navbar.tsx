@@ -9,6 +9,7 @@ import Logo from '@/components/Logo';
 const LANGS: { code: Locale; label: string; flag: string }[] = [
   { code: 'fr', label: 'Français', flag: '🇫🇷' },
   { code: 'en', label: 'English', flag: '🇬🇧' },
+  { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
   { code: 'es', label: 'Español', flag: '🇪🇸' },
   { code: 'ar', label: 'العربية', flag: '🇸🇦' },
   { code: 'zh', label: '中文', flag: '🇨🇳' },
@@ -104,10 +105,14 @@ const EN_TO_FR: Record<string, string> = {
 };
 
 // Pages existant en langue native (AR/ES/ZH) : clé = page FR ou EN équivalente
-const TO_NATIVE: Record<'ar' | 'es' | 'zh', Record<string, string>> = {
+const TO_NATIVE: Record<'ar' | 'de' | 'es' | 'zh', Record<string, string>> = {
   ar: {
     '/chauffeur-arabophone': '/ar/arabic-chauffeur',
     '/en/arabic-speaking-chauffeur-paris': '/ar/arabic-chauffeur',
+  },
+  de: {
+    '/chauffeur-germanophone': '/de/deutschsprachiger-chauffeur',
+    '/en/german-speaking-chauffeur-paris': '/de/deutschsprachiger-chauffeur',
   },
   es: {
     '/chauffeur-hispanophone': '/es/chofer-hispanohablante',
@@ -122,22 +127,26 @@ const TO_NATIVE: Record<'ar' | 'es' | 'zh', Record<string, string>> = {
 // Depuis une page native, retrouver la version FR / EN
 const NATIVE_TO_FR: Record<string, string> = {
   '/ar/arabic-chauffeur':        '/chauffeur-arabophone',
+  '/de/deutschsprachiger-chauffeur': '/chauffeur-germanophone',
   '/es/chofer-hispanohablante':  '/chauffeur-hispanophone',
   '/zh/mandarin-chauffeur':      '/chauffeur-mandarin',
 };
 const NATIVE_TO_EN: Record<string, string> = {
   '/ar/arabic-chauffeur':        '/en/arabic-speaking-chauffeur-paris',
+  '/de/deutschsprachiger-chauffeur': '/en/german-speaking-chauffeur-paris',
   '/es/chofer-hispanohablante':  '/en/spanish-speaking-chauffeur-paris',
   '/zh/mandarin-chauffeur':      '/en/mandarin-speaking-chauffeur-paris',
 };
 
 function getLocalizedPath(pathname: string, targetLocale: string): string {
-  // AR, ZH et ES → page native équivalente si elle existe, sinon homepage
-  if (targetLocale === 'ar' || targetLocale === 'zh' || targetLocale === 'es') {
+  // AR, ZH, ES et DE → page native équivalente si elle existe, sinon homepage
+  if (targetLocale === 'ar' || targetLocale === 'zh' || targetLocale === 'es' || targetLocale === 'de') {
     return TO_NATIVE[targetLocale][pathname] ?? `/${targetLocale}`;
   }
 
-  const isLocalePath = pathname.startsWith('/ar') || pathname.startsWith('/zh') || pathname.startsWith('/es');
+  const isLocalePath =
+    pathname.startsWith('/ar') || pathname.startsWith('/zh') ||
+    pathname.startsWith('/es') || pathname.startsWith('/de');
 
   // Vers FR
   if (targetLocale === 'fr') {
@@ -328,7 +337,13 @@ export default function Navbar({ t, locale }: NavbarProps) {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  const contactHref = locale === 'fr' ? '/contact' : `/${locale}/contact`;
+  // Locales servies par une home unique (DE, ES, AR, ZH) : pas de sous-pages
+  // dédiées, la navigation se fait par ancres et le contact pointe sur #contact.
+  const anchorLocale = locale === 'ar' || locale === 'zh' || locale === 'es' || locale === 'de';
+  const contactHref =
+    locale === 'fr' ? '/contact'
+    : anchorLocale ? anchorHref('contact')
+    : `/${locale}/contact`;
 
   const servicesItems     = getServicesMenu(locale, homePrefix);
   const destinationsItems = getDestinationsMenu(locale);
@@ -370,7 +385,7 @@ export default function Navbar({ t, locale }: NavbarProps) {
             onClose={() => setServicesOpen(false)}
           />
         )}
-        {(locale === 'ar' || locale === 'zh') && (
+        {anchorLocale && (
           <a href={anchorHref('services')}
             className="font-sans text-sm text-gray-700 hover:text-gold-400 tracking-wide transition-colors whitespace-nowrap">
             {t?.nav?.services}
@@ -398,7 +413,7 @@ export default function Navbar({ t, locale }: NavbarProps) {
             onClose={() => setEventsOpen(false)}
           />
         )}
-        {(locale === 'ar' || locale === 'zh') && (
+        {anchorLocale && (
           <a href={anchorHref('events')}
             className="font-sans text-sm text-gray-700 hover:text-gold-400 tracking-wide transition-colors whitespace-nowrap">
             {t?.nav?.events}
@@ -514,7 +529,7 @@ export default function Navbar({ t, locale }: NavbarProps) {
               </>
             )}
 
-            {(locale === 'ar' || locale === 'zh') && (
+            {anchorLocale && (
               <a href={anchorHref('services')} onClick={() => setMenuOpen(false)}
                 className="font-sans text-sm text-gray-700 hover:text-gold-400 py-1.5">
                 {t?.nav?.services}

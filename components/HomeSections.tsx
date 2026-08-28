@@ -1,19 +1,21 @@
 /**
  * Sections de la home issues de la refonte (maquette V3) :
  * preuve sociale, expériences, top destinations, trajets populaires, recrutement.
- * Bilingue FR/EN — server component (aucun état).
+ * Trilingue FR/EN/DE — server component (aucun état).
  */
 import Image from 'next/image';
 import Link from 'next/link';
 
-type L = 'fr' | 'en';
+type L = 'fr' | 'en' | 'de';
 
 /* ── Preuve sociale ──────────────────────────────────────────────────────── */
 export function SocialProofStrip({ locale = 'fr' as L }) {
-  const items =
-    locale === 'en'
-      ? ['<b>4.9/5</b> Google Reviews', 'Trusted by <b>embassies & palaces</b>', '<b>Fixed prices</b>, no surprises', 'Free waiting time at airports']
-      : ['<b>4,9/5</b> avis Google', 'Partenaire des <b>ambassades & palaces</b>', '<b>Prix fixes</b>, sans surprise', 'Attente gratuite aux aéroports'];
+  const ITEMS: Record<L, string[]> = {
+    fr: ['<b>4,9/5</b> avis Google', 'Partenaire des <b>ambassades & palaces</b>', '<b>Prix fixes</b>, sans surprise', 'Attente gratuite aux aéroports'],
+    en: ['<b>4.9/5</b> Google Reviews', 'Trusted by <b>embassies & palaces</b>', '<b>Fixed prices</b>, no surprises', 'Free waiting time at airports'],
+    de: ['<b>4,9/5</b> bei Google', 'Partner von <b>Botschaften & Luxushotels</b>', '<b>Festpreise</b>, keine Überraschungen', 'Kostenlose Wartezeit am Flughafen'],
+  };
+  const items = ITEMS[locale] ?? ITEMS.fr;
   return (
     <div className="bg-white border-b border-warm-200">
       <div className="max-w-6xl mx-auto px-6 py-4 flex flex-wrap items-center justify-center gap-x-10 gap-y-2">
@@ -36,6 +38,14 @@ const EXPERIENCES = {
     { slug: 'loire-valley-castles', img: '/images/home/chambord.jpg', badge: 'Journée', cat: 'Excursion', title: 'Châteaux de la Loire',
       text: 'Chambord, Chenonceau et déjeuner étoilé. Départ de votre hôtel à 8h, retour pour dîner à Paris.', price: '990 €' },
   ],
+  de: [
+    { slug: 'paris-by-night', img: '/images/home/parisnight.jpg', badge: '4–5 Stunden', cat: 'Abendtour', title: 'Paris bei Nacht',
+      text: 'Der Eiffelturm im Glitzern, Montmartre in der Dämmerung, Absetzen zum Dinner auf den Champs-Élysées — Ihr Chauffeur den ganzen Abend.', price: '390 €' },
+    { slug: 'champagne-day-trip', img: '/images/home/champagne.jpg', badge: 'Ganzer Tag', cat: 'Wein & Gastronomie', title: 'Ausflug in die Champagne',
+      text: 'Reims und Épernay ab Paris: Besuch der Häuser, private Verkostungen und Mittagessen — Ihr Chauffeur übernimmt jeden Kilometer.', price: '890 €' },
+    { slug: 'loire-valley-castles', img: '/images/home/chambord.jpg', badge: 'Ganzer Tag', cat: 'Tagesausflug', title: 'Schlösser der Loire',
+      text: 'Chambord, Chenonceau und ein Mittagessen im Sternerestaurant. Abfahrt am Hotel um 8 Uhr, zurück zum Abendessen in Paris.', price: '990 €' },
+  ],
   en: [
     { slug: 'paris-by-night', img: '/images/home/parisnight.jpg', badge: '4–5 hours', cat: 'By night', title: 'Paris by Night',
       text: 'The Eiffel Tower sparkling, Montmartre at dusk, dinner drop-off on the Champs-Élysées — with your chauffeur all evening.', price: '€390' },
@@ -48,18 +58,23 @@ const EXPERIENCES = {
 
 export function ExperiencesSection({ locale = 'fr' as L }) {
   const en = locale === 'en';
-  const base = en ? '/en/experiences' : '/experiences';
+  const de = locale === 'de';
+  // Les pages détail n'existent qu'en FR et EN : DE renvoie vers la version anglaise.
+  const base = en || de ? '/en/experiences' : '/experiences';
+  const cards = EXPERIENCES[locale] ?? EXPERIENCES.fr;
   return (
     <section className="py-20 px-6 md:px-10 bg-warm-50">
       <div className="max-w-6xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <p className="tag">{en ? 'Signature experiences' : 'Expériences signature'}</p>
+          <p className="tag">{de ? 'Signature-Erlebnisse' : en ? 'Signature experiences' : 'Expériences signature'}</p>
           <h2 className="heading mt-3">
-            {en ? 'More than a transfer — a curated experience' : 'Plus qu’un transfert — une expérience sur mesure'}
+            {de ? 'Mehr als ein Transfer — ein Erlebnis nach Maß'
+              : en ? 'More than a transfer — a curated experience'
+              : 'Plus qu’un transfert — une expérience sur mesure'}
           </h2>
         </div>
         <div className="grid md:grid-cols-3 gap-7">
-          {EXPERIENCES[locale].map((e) => (
+          {cards.map((e) => (
             <Link key={e.title} href={`${base}/${e.slug}`}
               className="group bg-white border border-warm-200 rounded-md overflow-hidden hover:-translate-y-1 hover:shadow-xl transition-all flex flex-col">
               <div className="relative aspect-[16/10] overflow-hidden">
@@ -72,9 +87,9 @@ export function ExperiencesSection({ locale = 'fr' as L }) {
                 <h3 className="font-serif text-xl text-gray-900">{e.title}</h3>
                 <p className="font-sans text-sm text-stone-500 leading-relaxed">{e.text}</p>
                 <div className="mt-auto pt-4 border-t border-warm-200 flex items-center justify-between">
-                  <span className="font-sans text-xs text-stone-400">{en ? 'From' : 'À partir de'} <b className="font-serif text-base text-gray-900 font-normal">{e.price}</b></span>
+                  <span className="font-sans text-xs text-stone-400">{de ? 'Ab' : en ? 'From' : 'À partir de'} <b className="font-serif text-base text-gray-900 font-normal">{e.price}</b></span>
                   <span className="font-sans text-[0.65rem] font-bold tracking-[0.12em] uppercase" style={{ color: '#6d5a30' }}>
-                    {en ? 'Discover →' : 'Découvrir →'}
+                    {de ? 'Entdecken →' : en ? 'Discover →' : 'Découvrir →'}
                   </span>
                 </div>
               </div>
@@ -102,18 +117,21 @@ const DESTS: { name: string; img: string; fr: string; en: string }[] = [
 
 export function DestinationsSection({ locale = 'fr' as L }) {
   const en = locale === 'en';
+  const de = locale === 'de';
   return (
     <section className="py-20 px-6 md:px-10" style={{ background: '#0f0d0b' }}>
       <div className="max-w-6xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <p className="tag">{en ? 'Top destinations' : 'Top destinations'}</p>
+          <p className="tag">{de ? 'Top-Ziele' : 'Top destinations'}</p>
           <h2 className="heading mt-3 text-white">
-            {en ? 'Your chauffeur, all across France' : 'Votre chauffeur, partout en France'}
+            {de ? 'Ihr Chauffeur, überall in Frankreich'
+              : en ? 'Your chauffeur, all across France'
+              : 'Votre chauffeur, partout en France'}
           </h2>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
           {DESTS.map((d) => (
-            <Link key={d.name} href={en ? d.en : d.fr}
+            <Link key={d.name} href={en || de ? d.en : d.fr}
               className="group relative aspect-[3/4] rounded-md overflow-hidden hover:-translate-y-1 transition-transform">
               <Image src={`/images/home/${d.img}.jpg`} alt={d.name} fill sizes="(max-width:640px) 45vw, 220px" quality={65}
                 className="object-cover group-hover:scale-105 transition-transform duration-500" />
@@ -121,7 +139,7 @@ export function DestinationsSection({ locale = 'fr' as L }) {
               <div className="absolute bottom-0 left-0 right-0 p-4">
                 <h3 className="font-serif text-lg text-white">{d.name}</h3>
                 <p className="font-sans text-[0.6rem] tracking-[0.12em] uppercase text-white/75">
-                  {en ? 'Private chauffeur' : 'Chauffeur privé'}
+                  {de ? 'Privatchauffeur' : en ? 'Private chauffeur' : 'Chauffeur privé'}
                 </p>
               </div>
             </Link>
@@ -140,6 +158,12 @@ const ROUTES = {
     { label: 'Paris ↔ Reims',        info: '1 h 45 · 145 km', href: '/longue-distance' },
     { label: 'Nice ↔ Monaco',        info: '35 min · 22 km', href: '/chauffeur-prive-monaco' },
   ],
+  de: [
+    { label: 'Paris ↔ Flughafen CDG', info: '45 Min. · 34 km', href: '/en/cdg-airport-transfer' },
+    { label: 'Paris ↔ Deauville',     info: '2 Std. 15 · 200 km', href: '/en/long-distance' },
+    { label: 'Paris ↔ Reims',         info: '1 Std. 45 · 145 km', href: '/en/long-distance' },
+    { label: 'Nizza ↔ Monaco',        info: '35 Min. · 22 km', href: '/en/long-distance' },
+  ],
   en: [
     { label: 'Paris ↔ CDG Airport', info: '45 min · 34 km', href: '/en/cdg-airport-transfer' },
     { label: 'Paris ↔ Deauville',   info: '2 h 15 · 200 km', href: '/en/long-distance' },
@@ -150,17 +174,21 @@ const ROUTES = {
 
 export function RoutesStrip({ locale = 'fr' as L }) {
   const en = locale === 'en';
+  const de = locale === 'de';
+  const routes = ROUTES[locale] ?? ROUTES.fr;
   return (
     <section className="py-16 px-6 md:px-10 bg-white">
       <div className="max-w-6xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-8">
-          <p className="tag">{en ? 'Popular routes' : 'Trajets populaires'}</p>
+          <p className="tag">{de ? 'Beliebte Strecken' : en ? 'Popular routes' : 'Trajets populaires'}</p>
           <h2 className="heading mt-3" style={{ fontSize: '1.6rem' }}>
-            {en ? 'Fixed-price journeys, door to door' : 'Prix fixe, porte à porte'}
+            {de ? 'Festpreis, von Tür zu Tür'
+              : en ? 'Fixed-price journeys, door to door'
+              : 'Prix fixe, porte à porte'}
           </h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {ROUTES[locale].map((r) => (
+          {routes.map((r) => (
             <Link key={r.label} href={r.href}
               className="border border-warm-200 rounded-sm px-5 py-4 bg-warm-50 hover:border-stone-400 transition-colors">
               <span className="block font-sans text-sm font-semibold text-gray-900">{r.label}</span>
@@ -176,17 +204,20 @@ export function RoutesStrip({ locale = 'fr' as L }) {
 /* ── Recrutement chauffeurs ──────────────────────────────────────────────── */
 export function RecruitBlock({ locale = 'fr' as L }) {
   const en = locale === 'en';
-  const href = en ? '/en/become-a-chauffeur' : '/devenir-chauffeur';
+  const de = locale === 'de';
+  const href = en || de ? '/en/become-a-chauffeur' : '/devenir-chauffeur';
   return (
     <section className="py-20 px-6 md:px-10 bg-warm-50">
       <div className="max-w-5xl mx-auto rounded-lg px-8 py-14 md:px-16 text-center relative overflow-hidden"
         style={{ background: 'linear-gradient(120deg, #171410, #241d12)' }}>
-        <p className="tag" style={{ color: '#c9b27c' }}>{en ? 'Careers' : 'Recrutement'}</p>
+        <p className="tag" style={{ color: '#c9b27c' }}>{de ? 'Karriere' : en ? 'Careers' : 'Recrutement'}</p>
         <h2 className="heading mt-3 text-white">
-          {en ? 'Become an Amani chauffeur' : 'Devenez chauffeur Amani'}
+          {de ? 'Werden Sie Amani-Chauffeur' : en ? 'Become an Amani chauffeur' : 'Devenez chauffeur Amani'}
         </h2>
         <p className="font-sans text-sm font-light leading-relaxed max-w-xl mx-auto mt-4" style={{ color: '#bdb5a4' }}>
-          {en
+          {de
+            ? 'Wir suchen laufend außergewöhnliche Chauffeure — mehrsprachig, tadellos auftretend, mit Freude am Service.'
+            : en
             ? 'We are always looking for exceptional chauffeurs — multilingual, impeccably presented, passionate about service.'
             : 'Nous recherchons en permanence des chauffeurs d’exception — multilingues, d’une présentation irréprochable, passionnés par le service.'}
         </p>
@@ -194,12 +225,12 @@ export function RecruitBlock({ locale = 'fr' as L }) {
           <Link href={href}
             className="inline-block px-7 py-3.5 font-sans text-sm tracking-widest uppercase text-white transition-opacity hover:opacity-90"
             style={{ background: '#8a7340' }}>
-            {en ? 'Apply as a chauffeur' : 'Postuler comme chauffeur'}
+            {de ? 'Als Chauffeur bewerben' : en ? 'Apply as a chauffeur' : 'Postuler comme chauffeur'}
           </Link>
           <Link href={href}
             className="inline-block px-7 py-3.5 font-sans text-sm tracking-widest uppercase transition-colors border"
             style={{ borderColor: '#c9b27c', color: '#c9b27c' }}>
-            {en ? 'Partner with your own vehicle' : 'Devenir partenaire avec votre véhicule'}
+            {de ? 'Partner mit eigenem Fahrzeug' : en ? 'Partner with your own vehicle' : 'Devenir partenaire avec votre véhicule'}
           </Link>
         </div>
       </div>

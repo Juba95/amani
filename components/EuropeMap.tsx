@@ -24,7 +24,7 @@ export default function EuropeMap({
   countries,
   variant = 'panel',
 }: {
-  locale: 'fr' | 'en';
+  locale: 'fr' | 'en' | 'de';
   countries: Record<string, MapCountry>;
   variant?: 'panel' | 'hero';
 }) {
@@ -99,6 +99,18 @@ export default function EuropeMap({
   const current = countries[selected];
   const base = locale === 'en' ? '/en/destinations' : '/destinations';
   const en = locale === 'en';
+  // Libellés de la carte, par langue (fr par défaut).
+  const M = {
+    fr: { alt: 'Carte interactive de l’Europe', countries: 'destinations · 30 pays',
+          pinned: '📍 Figé — recliquez pour libérer', hint: 'Survolez · cliquez pour figer', cities: 'villes' },
+    en: { alt: 'Interactive map of Europe', countries: 'destinations · 30 countries',
+          pinned: '📍 Pinned — click again to release', hint: 'Hover to explore · click to pin', cities: 'cities' },
+    de: { alt: 'Interaktive Europakarte', countries: 'Ziele · 30 Länder',
+          pinned: '📍 Fixiert — erneut klicken zum Lösen', hint: 'Fahren Sie über die Karte · Klick fixiert', cities: 'Städte' },
+  }[locale] ?? {
+    alt: 'Carte interactive de l’Europe', countries: 'destinations · 30 pays',
+    pinned: '📍 Figé — recliquez pour libérer', hint: 'Survolez · cliquez pour figer', cities: 'villes',
+  };
 
   /* ── Variante hero : carte seule, palette sombre/or, badge flottant ── */
   if (variant === 'hero') {
@@ -111,18 +123,16 @@ export default function EuropeMap({
           dangerouslySetInnerHTML={{ __html: svg }}
           onMouseOver={handleHover}
           onClick={handleClick}
-          aria-label={en ? 'Interactive map of Europe' : 'Carte interactive de l’Europe'}
+          aria-label={M.alt}
         />
 
         {/* Compteur + indication d'usage, en haut de la carte */}
         <div className="absolute top-0 left-1 pointer-events-none">
           <p className="font-sans text-[0.6rem] tracking-[0.2em] uppercase" style={{ color: 'rgba(201,168,76,0.85)' }}>
-            {total} {en ? 'destinations · 30 countries' : 'destinations · 30 pays'}
+            {total} {M.countries}
           </p>
           <p className="font-sans text-[0.55rem] tracking-[0.08em] mt-0.5" style={{ color: 'rgba(245,240,230,0.4)' }}>
-            {locked
-              ? (en ? '📍 Pinned — click again to release' : '📍 Figé — recliquez pour libérer')
-              : (en ? 'Hover to explore · click to pin' : 'Survolez · cliquez pour figer')}
+            {locked ? M.pinned : M.hint}
           </p>
         </div>
 
@@ -135,7 +145,7 @@ export default function EuropeMap({
           >
             <span className="font-serif text-lg leading-none" style={{ color: '#f5f3ef' }}>{current.name}</span>
             <span className="font-sans text-[0.62rem] tracking-[0.14em] uppercase" style={{ color: '#c9a84c' }}>
-              {current.cities.length} {en ? 'cities' : 'villes'} <span className="group-hover:translate-x-0.5 inline-block transition-transform">→</span>
+              {current.cities.length} {M.cities} <span className="group-hover:translate-x-0.5 inline-block transition-transform">→</span>
             </span>
           </Link>
         )}

@@ -166,9 +166,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     );
   }
 
-  // ── Homepages ES + AR + ZH ──────────────────────────────────────────────────
+  // ── Homepages DE + ES + AR + ZH ─────────────────────────────────────────────
   // Clientèle internationale — indexées à 0.9
-  for (const locale of ['es', 'ar', 'zh'] as const) {
+  for (const locale of ['de', 'es', 'ar', 'zh'] as const) {
     for (const slug of new Set([...AR_ZH_INDEXED_SLUGS, ...PER_LOCALE_EXTRA_SLUGS[locale]])) {
       const path = slug === '' ? `/${locale}` : `/${locale}/${slug}`;
       entries.push({

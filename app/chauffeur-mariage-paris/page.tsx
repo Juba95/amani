@@ -58,7 +58,7 @@ export default function ChauffeurMariageParisPage() {
             Pour transporter les familles et les témoins depuis la mairie ou l'église jusqu'au
             lieu de réception, nous proposons plusieurs solutions. La Classe V (7 places assises
             confortables) accueille les parents des mariés et les témoins. Le Sprinter VIP
-            (jusqu'à 16 places climatisées) permet d'organiser un convoi cohérent pour les
+            (jusqu'à 19 places climatisées) permet d'organiser un convoi cohérent pour les
             proches. Vous économisez les taxis dispersés et chaotiques. Tous les véhicules
             arrivent au même horaire, les photos de groupe se font sans attendre. Coordination
             par radio entre chauffeur des mariés et chauffeurs des autres véhicules.

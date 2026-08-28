@@ -2,12 +2,13 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import SEOLayout from '@/components/SEOLayout';
 import { content, contentMetadata } from '@/lib/get-content';
+import { fleetRates, MIN_DISPOSAL_HOURS, eur } from '@/lib/fleet-pricing';
 
 const SLUG = 'notre-flotte';
 
 export const metadata: Metadata = contentMetadata(SLUG, {
-  title: 'Flotte de Véhicules de Prestige — Mercedes, Range Rover, Sprinter VIP | Amani Limousines',
-  description: 'Découvrez notre flotte de véhicules de prestige à Paris. Mercedes Classe E, EQS, S, Maybach, V, G, Range Rover Evoque et Sprinter VIP. Plus de 300 véhicules renouvelés chaque année.',
+  title: 'Flotte de Véhicules de Prestige — Mercedes, Range Rover, Sprinter VIP, Autocar | Amani Limousines',
+  description: 'Découvrez notre flotte de véhicules de prestige à Paris. Mercedes Classe E, EQS, S, Maybach, V, G, Range Rover, Sprinter VIP 8 / 15 / 19 places et autocar Tourismo 50 places. Plus de 300 véhicules renouvelés chaque année.',
   canonical: 'https://www.amani-limousines.com/notre-flotte',
   alternates: {
     languages: { en: 'https://www.amani-limousines.com/en/our-fleet' },
@@ -57,12 +58,12 @@ const vehicules = [
   },
   {
     id: 'range_rover_evoque',
-    nom: 'Range Rover Evoque',
-    categorie: 'SUV Premium',
-    pax: '3 passagers',
-    bagages: '2 valises',
-    image: '/vehicles/range-rover-evoque.png',
-    details: 'L\'alternative SUV de notre flotte. Le Range Rover Evoque combine une position de conduite surélevée avec un intérieur raffiné. Idéal pour les transferts vers les stations de ski, les domaines viticoles ou tout trajet nécessitant un véhicule haut de gamme plus robuste.',
+    nom: 'Range Rover',
+    categorie: 'SUV de prestige',
+    pax: '4 passagers',
+    bagages: '3 valises',
+    image: '/vehicles/range-rover.png',
+    details: 'L\'alternative SUV de notre flotte. Le Range Rover combine une position de conduite surélevée avec un intérieur raffiné et une transmission intégrale. Idéal pour les transferts vers les stations de ski, les domaines viticoles ou tout trajet nécessitant un véhicule haut de gamme plus robuste.',
     equipements: ['Transmission intégrale', 'Cuir Windsor', 'Système Meridian™', 'Terrain Response', 'Position surélevée'],
   },
   {
@@ -87,13 +88,43 @@ const vehicules = [
   },
   {
     id: 'sprinter',
-    nom: 'Mercedes Sprinter VIP',
-    categorie: 'Minibus Luxe',
-    pax: '16 passagers',
-    bagages: '16 valises',
+    nom: 'Mercedes Sprinter VIP 8 places',
+    categorie: 'Minibus VIP',
+    pax: '8 passagers',
+    bagages: '8 valises',
     image: '/vehicles/mercedes-sprinter.png',
-    details: 'Le Sprinter VIP est la solution pour les groupes importants, les délégations officielles et les navettes d\'événements. Aménagement intérieur luxe avec sièges capitaine en cuir, sono premium, éclairage d\'ambiance et climatisation multi-zones. Peut transporter 16 personnes avec leurs bagages.',
-    equipements: ['Sièges capitaine cuir', 'Sono premium', 'Climatisation zones', 'Galerie bagages', 'Communication radio'],
+    details: 'La version la plus luxueuse du Sprinter : huit sièges capitaine en cuir, espace aux jambes généreux, tablettes et éclairage d\'ambiance. Le choix des délégations restreintes, des familles nombreuses et des comités de direction qui veulent voyager ensemble sans sacrifier le confort d\'une berline.',
+    equipements: ['8 sièges capitaine cuir', 'Sono premium', 'Climatisation zones', 'Tablettes de travail', 'Éclairage d\'ambiance'],
+  },
+  {
+    id: 'sprinter_15',
+    nom: 'Mercedes Sprinter 15 places',
+    categorie: 'Minibus',
+    pax: '15 passagers',
+    bagages: '15 valises',
+    image: '/vehicles/mercedes-sprinter-15.png',
+    details: 'Le format le plus efficace pour déplacer une équipe complète. Quinze places assises, une soute arrière qui accepte les valises cabine et soute de tout le groupe, et un gabarit qui passe encore dans Paris intra-muros. Navettes hôtel, séminaires, équipes de tournage.',
+    equipements: ['15 places assises', 'Soute à bagages', 'Climatisation', 'Prises USB', 'Accès Paris intra-muros'],
+  },
+  {
+    id: 'sprinter_vip_19',
+    nom: 'Mercedes Sprinter VIP 19 places',
+    categorie: 'Minibus VIP',
+    pax: '19 passagers',
+    bagages: '19 valises',
+    image: '/vehicles/mercedes-sprinter-vip-19.png',
+    details: 'Le grand Sprinter en aménagement VIP : dix-neuf places, sono avec micro pour les guides et accompagnateurs, rideaux occultants et rangements individuels. Conçu pour les groupes d\'affaires, les délégations et les circuits privés de plusieurs jours.',
+    equipements: ['19 places assises', 'Aménagement VIP', 'Sono & micro', 'Rideaux occultants', 'Grande soute'],
+  },
+  {
+    id: 'tourismo_50',
+    nom: 'Mercedes Tourismo 50 places',
+    categorie: 'Autocar de tourisme',
+    pax: '50 passagers',
+    bagages: '50 valises',
+    image: '/vehicles/mercedes-tourismo.png',
+    details: 'L\'autocar de tourisme Mercedes pour les groupes de cinquante personnes : sièges inclinables, WC à bord, soutes de grande capacité et climatisation intégrale. La solution des congrès, des incentives, des mariages et des transferts d\'équipes complètes depuis les aéroports.',
+    equipements: ['50 places assises', 'Sièges inclinables', 'WC à bord', 'Soutes grande capacité', 'Sono & micro'],
   },
 ];
 
@@ -116,12 +147,13 @@ const faq = [
   },
   {
     q: 'Quel est le véhicule le plus adapté pour un groupe ?',
-    a: 'La Mercedes Classe V accueille jusqu\'à 7 passagers avec leurs bagages. Pour les groupes plus importants, le Sprinter VIP peut transporter jusqu\'à 16 personnes.',
+    a: 'La Mercedes Classe V accueille jusqu\'à 7 passagers avec leurs bagages. Au-delà, le Sprinter VIP existe en 8 et 19 places, le Sprinter standard en 15 places, et le Mercedes Tourismo emmène 50 personnes avec leurs bagages en soute.',
   },
 ];
 
 export default function NotreFlottePage() {
   const c = content(SLUG);
+  const rates = fleetRates('fr');
 
   return (
     <SEOLayout>
@@ -182,89 +214,38 @@ export default function NotreFlottePage() {
             Prix fixes, tout compris — pas de compteur, pas de surprise. Accueil personnalisé, suivi du vol en temps réel.
           </p>
 
-          {/* Forfaits Aéroports */}
-          <div className="mb-12">
-            <h3 className="font-serif text-xl text-gray-900 mb-1">Forfaits Aéroports</h3>
-            <p className="sf text-xs text-stone-400 uppercase tracking-wider mb-5">CDG · Orly · Le Bourget</p>
-            <div className="overflow-x-auto">
-              <table className="w-full text-left border-collapse">
-                <thead>
-                  <tr className="border-b-2 border-warm-300">
-                    <th className="sf text-xs text-stone-400 uppercase tracking-wider py-3 pr-4">Véhicule</th>
-                    <th className="sf text-xs text-stone-400 uppercase tracking-wider py-3 text-right">Forfait</th>
+          <div className="overflow-x-auto mb-10">
+            <table className="w-full text-left border-collapse">
+              <thead>
+                <tr className="border-b-2 border-warm-300">
+                  <th className="sf text-xs text-stone-400 uppercase tracking-wider py-3 pr-4">Véhicule</th>
+                  <th className="sf text-xs text-stone-400 uppercase tracking-wider py-3 px-4 text-right">Transfert aéroport</th>
+                  <th className="sf text-xs text-stone-400 uppercase tracking-wider py-3 px-4 text-right">Transfert ville</th>
+                  <th className="sf text-xs text-stone-400 uppercase tracking-wider py-3 px-4 text-right">Au-delà</th>
+                  <th className="sf text-xs text-stone-400 uppercase tracking-wider py-3 pl-4 text-right">Mise à disposition</th>
+                </tr>
+              </thead>
+              <tbody className="sf text-sm">
+                {rates.map((r) => (
+                  <tr key={r.id} className="border-b border-warm-200">
+                    <td className="py-3.5 pr-4 text-gray-800 whitespace-nowrap">{r.name}</td>
+                    <td className="py-3.5 px-4 text-right font-medium" style={{ color: '#8a7340' }}>{eur(r.airport)}</td>
+                    <td className="py-3.5 px-4 text-right font-medium" style={{ color: '#8a7340' }}>{eur(r.city)}</td>
+                    <td className="py-3.5 px-4 text-right text-stone-500 whitespace-nowrap">{eur(r.perKm)}/km</td>
+                    <td className="py-3.5 pl-4 text-right text-stone-500 whitespace-nowrap">{eur(r.hourly)}/h</td>
                   </tr>
-                </thead>
-                <tbody className="sf text-sm">
-                  <tr className="border-b border-warm-200">
-                    <td className="py-3.5 pr-4 text-gray-800">Mercedes Classe E / Classe V</td>
-                    <td className="py-3.5 text-right font-medium" style={{ color: '#8a7340' }}>150 € / 160 €</td>
-                  </tr>
-                  <tr className="border-b border-warm-200">
-                    <td className="py-3.5 pr-4 text-gray-800">Mercedes Classe S</td>
-                    <td className="py-3.5 text-right font-medium" style={{ color: '#8a7340' }}>220 €</td>
-                  </tr>
-                  <tr className="border-b border-warm-200">
-                    <td className="py-3.5 pr-4 text-gray-800">Mercedes Classe S Maybach</td>
-                    <td className="py-3.5 text-right font-medium" style={{ color: '#8a7340' }}>350 €</td>
-                  </tr>
-                  <tr className="border-b border-warm-200">
-                    <td className="py-3.5 pr-4 text-gray-800">Range Rover Evoque</td>
-                    <td className="py-3.5 text-right font-medium" style={{ color: '#8a7340' }}>250 €</td>
-                  </tr>
-                  <tr className="border-b border-warm-200">
-                    <td className="py-3.5 pr-4 text-gray-800">Mercedes Classe G</td>
-                    <td className="py-3.5 text-right font-medium" style={{ color: '#8a7340' }}>500 €</td>
-                  </tr>
-                  <tr className="border-b border-warm-200">
-                    <td className="py-3.5 pr-4 text-gray-800">Mercedes Sprinter VIP</td>
-                    <td className="py-3.5 text-right font-medium" style={{ color: '#8a7340' }}>450 €</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+                ))}
+              </tbody>
+            </table>
           </div>
 
-          {/* Forfaits Ville */}
-          <div className="mb-10">
-            <h3 className="font-serif text-xl text-gray-900 mb-1">Forfaits Ville</h3>
-            <p className="sf text-xs text-stone-400 uppercase tracking-wider mb-5">Tarif minimum — Paris &amp; Île-de-France</p>
-            <div className="overflow-x-auto">
-              <table className="w-full text-left border-collapse">
-                <thead>
-                  <tr className="border-b-2 border-warm-300">
-                    <th className="sf text-xs text-stone-400 uppercase tracking-wider py-3 pr-4">Véhicule</th>
-                    <th className="sf text-xs text-stone-400 uppercase tracking-wider py-3 text-right">Tarif minimum</th>
-                  </tr>
-                </thead>
-                <tbody className="sf text-sm">
-                  <tr className="border-b border-warm-200">
-                    <td className="py-3.5 pr-4 text-gray-800">Mercedes Classe E / Classe V</td>
-                    <td className="py-3.5 text-right font-medium" style={{ color: '#8a7340' }}>100 € / 110 €</td>
-                  </tr>
-                  <tr className="border-b border-warm-200">
-                    <td className="py-3.5 pr-4 text-gray-800">Mercedes Classe S</td>
-                    <td className="py-3.5 text-right font-medium" style={{ color: '#8a7340' }}>150 €</td>
-                  </tr>
-                  <tr className="border-b border-warm-200">
-                    <td className="py-3.5 pr-4 text-gray-800">Mercedes Classe S Maybach</td>
-                    <td className="py-3.5 text-right font-medium" style={{ color: '#8a7340' }}>250 €</td>
-                  </tr>
-                  <tr className="border-b border-warm-200">
-                    <td className="py-3.5 pr-4 text-gray-800">Range Rover Evoque</td>
-                    <td className="py-3.5 text-right font-medium" style={{ color: '#8a7340' }}>200 €</td>
-                  </tr>
-                  <tr className="border-b border-warm-200">
-                    <td className="py-3.5 pr-4 text-gray-800">Mercedes Classe G</td>
-                    <td className="py-3.5 text-right font-medium" style={{ color: '#8a7340' }}>200 €</td>
-                  </tr>
-                  <tr className="border-b border-warm-200">
-                    <td className="py-3.5 pr-4 text-gray-800">Mercedes Sprinter VIP</td>
-                    <td className="py-3.5 text-right font-medium" style={{ color: '#8a7340' }}>300 €</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
+          <p className="sf text-xs text-stone-400 leading-relaxed mb-8">
+            Transfert aéroport : forfait CDG, Orly, Le Bourget et Beauvais ↔ Paris et proche
+            couronne. Transfert ville : tarif minimum Paris &amp; Île-de-France. Au-delà du
+            forfait, la course est facturée au kilomètre. Mise à disposition : minimum{' '}
+            {MIN_DISPOSAL_HOURS} heures, le chauffeur et le véhicule restent avec vous.
+            Tous les prix sont TTC, péages et carburant inclus.
+          </p>
 
           <div className="text-center">
             <a href="/devis" className="btn-primary inline-block">

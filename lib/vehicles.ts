@@ -28,6 +28,16 @@ export const VEHICLES: Vehicle[] = [
     hourlyPrice: 90,       // Mise à disposition (€/h)
   },
   {
+    id: 'eqs',
+    nameKey: 'eqs',
+    image: '/vehicles/mercedes-eqe.png',
+    pax: 3, bags: 2,
+    basePrice: 150,
+    airportPrice: 200,     // Forfait aéroport EQS = même que Classe S
+    pricePerKm: 4.00,
+    hourlyPrice: 120,      // Mise à disposition (€/h)
+  },
+  {
     id: 'classe_s',
     nameKey: 'classe_s',
     image: '/vehicles/mercedes-classe-s.png',
@@ -38,6 +48,16 @@ export const VEHICLES: Vehicle[] = [
     hourlyPrice: 120,      // Mise à disposition (€/h)
   },
   {
+    id: 'classe_s_maybach',
+    nameKey: 'classe_s_maybach',
+    image: '/vehicles/mercedes-classe-s-maybach.png',
+    pax: 3, bags: 2,
+    basePrice: 200,        // Transfert ville Maybach
+    airportPrice: 400,     // Transfert aéroport Maybach
+    pricePerKm: 6.00,
+    hourlyPrice: 200,      // Mise à disposition (€/h)
+  },
+  {
     id: 'classe_v',
     nameKey: 'classe_v',
     image: '/vehicles/mercedes-classe-v.png',
@@ -46,6 +66,16 @@ export const VEHICLES: Vehicle[] = [
     airportPrice: 160,     // Forfait aéroport Classe V
     pricePerKm: 3.00,
     hourlyPrice: 100,      // Mise à disposition (€/h)
+  },
+  {
+    id: 'range_rover_evoque',
+    nameKey: 'range_rover_evoque',
+    image: '/vehicles/range-rover.png',
+    pax: 4, bags: 3,
+    basePrice: 200,        // Transfert ville Range Rover
+    airportPrice: 400,     // Transfert aéroport Range Rover
+    pricePerKm: 6.00,
+    hourlyPrice: 200,      // Mise à disposition (€/h)
   },
   {
     id: 'classe_g',
@@ -61,41 +91,41 @@ export const VEHICLES: Vehicle[] = [
     id: 'sprinter',
     nameKey: 'sprinter',
     image: '/vehicles/mercedes-sprinter.png',
-    pax: 16, bags: 16,
-    basePrice: 300,        // Tarif minimum ville Sprinter VIP
-    airportPrice: 450,     // Forfait aéroport Sprinter VIP
-    pricePerKm: 5.00,
-    hourlyPrice: 150,      // Mise à disposition (€/h)
+    pax: 8, bags: 8,
+    basePrice: 200,        // Transfert ville Sprinter VIP 8 places
+    airportPrice: 400,     // Transfert aéroport Sprinter VIP 8 places
+    pricePerKm: 6.00,
+    hourlyPrice: 200,      // Mise à disposition (€/h)
   },
   {
-    id: 'range_rover_evoque',
-    nameKey: 'range_rover_evoque',
-    image: '/vehicles/range-rover-evoque.png',
-    pax: 3, bags: 2,
-    basePrice: 200,
-    airportPrice: 250,     // Forfait aéroport Range Rover
-    pricePerKm: 5.00,
-    hourlyPrice: 120,      // Mise à disposition (€/h)
+    id: 'sprinter_15',
+    nameKey: 'sprinter_15',
+    image: '/vehicles/mercedes-sprinter-15.png',
+    pax: 15, bags: 15,
+    basePrice: 200,        // Transfert ville Sprinter 15 places
+    airportPrice: 400,     // Transfert aéroport Sprinter 15 places
+    pricePerKm: 6.00,
+    hourlyPrice: 200,      // Mise à disposition (€/h)
   },
   {
-    id: 'classe_s_maybach',
-    nameKey: 'classe_s_maybach',
-    image: '/vehicles/mercedes-classe-s-maybach.png',
-    pax: 3, bags: 2,
-    basePrice: 200,
-    airportPrice: 250,     // Forfait aéroport Maybach
-    pricePerKm: 5.00,
-    hourlyPrice: 120,      // Mise à disposition (€/h)
+    id: 'sprinter_vip_19',
+    nameKey: 'sprinter_vip_19',
+    image: '/vehicles/mercedes-sprinter-vip-19.png',
+    pax: 19, bags: 19,
+    basePrice: 200,        // Transfert ville Sprinter VIP 19 places
+    airportPrice: 400,     // Transfert aéroport Sprinter VIP 19 places
+    pricePerKm: 6.00,
+    hourlyPrice: 200,      // Mise à disposition (€/h)
   },
   {
-    id: 'eqs',
-    nameKey: 'eqs',
-    image: '/vehicles/mercedes-eqe.png',
-    pax: 3, bags: 2,
-    basePrice: 150,
-    airportPrice: 200,     // Forfait aéroport EQS = même que Classe S
-    pricePerKm: 4.00,
-    hourlyPrice: 120,      // Mise à disposition (€/h)
+    id: 'tourismo_50',
+    nameKey: 'tourismo_50',
+    image: '/vehicles/mercedes-tourismo.png',
+    pax: 50, bags: 50,
+    basePrice: 200,        // Transfert ville Tourismo 50 places
+    airportPrice: 600,     // Transfert aéroport Tourismo 50 places
+    pricePerKm: 8.00,
+    hourlyPrice: 200,      // Mise à disposition (€/h)
   },
 ];
 
@@ -176,7 +206,7 @@ export function findRoute(from: string, to: string) {
   return null;
 }
 
-export const SUPPORTED_LOCALES = ['fr', 'en', 'es', 'ar', 'zh'] as const;
+export const SUPPORTED_LOCALES = ['fr', 'en', 'de', 'es', 'ar', 'zh'] as const;
 export type Locale = (typeof SUPPORTED_LOCALES)[number];
 export const RTL_LOCALES: Locale[] = ['ar'];
 export const DEFAULT_LOCALE: Locale = 'fr';

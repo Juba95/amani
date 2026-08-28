@@ -294,45 +294,6 @@
           "无与伦比的气场"
         ]
       },
-      "sprinter": {
-        "name": "Mercedes Sprinter VIP",
-        "category": "豪华中巴",
-        "pax": "16位乘客",
-        "bags": "16件行李",
-        "from": "450 €起",
-        "features": [
-          "船长座椅",
-          "高级音响",
-          "分区空调",
-          "适合代表团"
-        ]
-      },
-      "range_rover_evoque": {
-        "name": "路虎揽胜极光",
-        "category": "高端SUV",
-        "pax": "3位乘客",
-        "bags": "2件行李",
-        "from": "起价225欧元",
-        "features": [
-          "英国SUV",
-          "皮革内饰",
-          "地形响应技术",
-          "前卫设计"
-        ]
-      },
-      "classe_s_maybach": {
-        "name": "梅赛德斯S级迈巴赫",
-        "category": "顶级豪华轿车",
-        "pax": "3位乘客",
-        "bags": "2件行李",
-        "from": "起价300欧元",
-        "features": [
-          "梅赛德斯巅峰之作",
-          "后排头等舱座椅",
-          "极致隔音",
-          "迷你吧与平板"
-        ]
-      },
       "eqs": {
         "name": "梅赛德斯EQS",
         "category": "纯电动轿车",
@@ -344,6 +305,84 @@
           "零排放",
           "快速充电",
           "安静驾乘"
+        ]
+      },
+      "classe_s_maybach": {
+        "name": "梅赛德斯S级迈巴赫",
+        "category": "顶级豪华轿车",
+        "pax": "3位乘客",
+        "bags": "2件行李",
+        "from": "200 €起",
+        "features": [
+          "梅赛德斯巅峰之作",
+          "后排头等舱座椅",
+          "极致隔音",
+          "迷你吧与平板"
+        ]
+      },
+      "range_rover_evoque": {
+        "name": "路虎揽胜",
+        "category": "尊贵SUV",
+        "pax": "4位乘客",
+        "bags": "3件行李",
+        "from": "200 €起",
+        "features": [
+          "英国SUV",
+          "皮革内饰",
+          "四驱系统",
+          "高坐姿视野"
+        ]
+      },
+      "sprinter": {
+        "name": "梅赛德斯 Sprinter VIP 8座",
+        "category": "VIP 中巴",
+        "pax": "8位乘客",
+        "bags": "8件行李",
+        "from": "200 €起",
+        "features": [
+          "真皮船长座椅",
+          "高级音响",
+          "分区空调",
+          "适合代表团"
+        ]
+      },
+      "sprinter_15": {
+        "name": "梅赛德斯 Sprinter 15座",
+        "category": "中巴",
+        "pax": "15位乘客",
+        "bags": "15件行李",
+        "from": "200 €起",
+        "features": [
+          "15个座位",
+          "大型行李舱",
+          "空调",
+          "团队接送"
+        ]
+      },
+      "sprinter_vip_19": {
+        "name": "梅赛德斯 Sprinter VIP 19座",
+        "category": "VIP 中巴",
+        "pax": "19位乘客",
+        "bags": "19件行李",
+        "from": "200 €起",
+        "features": [
+          "19个座位",
+          "VIP 内饰",
+          "音响与麦克风",
+          "团队与研讨会"
+        ]
+      },
+      "tourismo_50": {
+        "name": "梅赛德斯 Tourismo 50座",
+        "category": "旅游大巴",
+        "pax": "50位乘客",
+        "bags": "50件行李",
+        "from": "200 €起",
+        "features": [
+          "50个座位",
+          "超大行李舱",
+          "车载洗手间",
+          "会议与活动"
         ]
       }
     }

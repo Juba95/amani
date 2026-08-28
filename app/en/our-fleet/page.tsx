@@ -2,12 +2,13 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import SEOLayoutEN from '@/components/SEOLayoutEN';
 import { content, contentMetadata } from '@/lib/get-content';
+import { fleetRates, MIN_DISPOSAL_HOURS, eurEn } from '@/lib/fleet-pricing';
 
 const SLUG = 'en/our-fleet';
 
 export const metadata: Metadata = contentMetadata(SLUG, {
   title: 'Our Fleet — Prestige Vehicles Paris | Mercedes, Range Rover, Sprinter VIP | Amani',
-  description: 'Discover Amani Limousines\' fleet of prestige vehicles in Paris. Mercedes E-Class, EQS, S-Class, Maybach, V-Class, G-Class, Range Rover Evoque and Sprinter VIP. 300+ vehicles, renewed annually.',
+  description: 'Discover Amani Limousines\' fleet of prestige vehicles in Paris. Mercedes E-Class, EQS, S-Class, Maybach, V-Class, G-Class, Range Rover, Sprinter VIP 8 / 15 / 19 seats and a 50-seat Tourismo coach. 300+ vehicles, renewed annually.',
   canonical: 'https://www.amani-limousines.com/en/our-fleet',
   alternates: {
     languages: { fr: 'https://www.amani-limousines.com/notre-flotte' },
@@ -57,12 +58,12 @@ const vehicles = [
   },
   {
     id: 'range_rover_evoque',
-    name: 'Range Rover Evoque',
-    cat: 'Premium SUV',
-    pax: '3 passengers · 2 bags',
+    name: 'Range Rover',
+    cat: 'Prestige SUV',
+    pax: '4 passengers · 3 bags',
     price: 'From €200',
-    img: '/vehicles/range-rover-evoque.png',
-    desc: 'The SUV alternative in our fleet. The Range Rover Evoque combines a raised driving position with a refined interior. Ideal for transfers to ski resorts, wine estates or any journey requiring a premium yet robust vehicle.',
+    img: '/vehicles/range-rover.png',
+    desc: 'The SUV alternative in our fleet. The Range Rover combines a raised driving position with a refined interior and full-time all-wheel drive. Ideal for transfers to ski resorts, wine estates or any journey requiring a premium yet robust vehicle.',
     eq: ['All-wheel drive', 'Windsor leather', 'Meridian™ system', 'Terrain Response', 'Elevated position'],
   },
   {
@@ -87,13 +88,43 @@ const vehicles = [
   },
   {
     id: 'sprinter',
-    name: 'Mercedes Sprinter VIP',
-    cat: 'Luxury Minibus',
-    pax: '16 passengers · 16 bags',
-    price: 'From €450',
+    name: 'Mercedes Sprinter VIP 8 seats',
+    cat: 'VIP Minibus',
+    pax: '8 passengers · 8 bags',
+    price: 'From €200',
     img: '/vehicles/mercedes-sprinter.png',
-    desc: 'The solution for large groups, official delegations and event shuttles. Leather captain\'s chairs, premium sound system, ambient lighting and multi-zone air conditioning throughout. Can carry 16 passengers with their luggage.',
-    eq: ['Leather captain\'s chairs', 'Premium sound', 'Multi-zone climate', 'Luggage gallery', 'Radio comms ready'],
+    desc: 'The most luxurious Sprinter layout: eight leather captain\'s chairs, generous legroom, work tables and ambient lighting. The choice of small delegations, large families and executive teams who want to travel together without giving up saloon-level comfort.',
+    eq: ['8 leather captain\'s chairs', 'Premium sound', 'Multi-zone climate', 'Work tables', 'Ambient lighting'],
+  },
+  {
+    id: 'sprinter_15',
+    name: 'Mercedes Sprinter 15 seats',
+    cat: 'Minibus',
+    pax: '15 passengers · 15 bags',
+    price: 'From €200',
+    img: '/vehicles/mercedes-sprinter-15.png',
+    desc: 'The most efficient way to move a full team. Fifteen seats, a rear hold that takes the whole group\'s cabin and check-in luggage, and a footprint that still works inside central Paris. Hotel shuttles, seminars, film crews.',
+    eq: ['15 seats', 'Luggage hold', 'Air conditioning', 'USB sockets', 'Central Paris access'],
+  },
+  {
+    id: 'sprinter_vip_19',
+    name: 'Mercedes Sprinter VIP 19 seats',
+    cat: 'VIP Minibus',
+    pax: '19 passengers · 19 bags',
+    price: 'From €200',
+    img: '/vehicles/mercedes-sprinter-vip-19.png',
+    desc: 'The long-wheelbase Sprinter in VIP trim: nineteen seats, a PA system with microphone for guides and tour managers, blackout curtains and individual storage. Built for business groups, delegations and multi-day private itineraries.',
+    eq: ['19 seats', 'VIP fit-out', 'PA system & mic', 'Blackout curtains', 'Large luggage hold'],
+  },
+  {
+    id: 'tourismo_50',
+    name: 'Mercedes Tourismo 50 seats',
+    cat: 'Touring coach',
+    pax: '50 passengers · 50 bags',
+    price: 'From €200',
+    img: '/vehicles/mercedes-tourismo.png',
+    desc: 'The Mercedes touring coach for groups of fifty: reclining seats, on-board WC, high-capacity luggage holds and full air conditioning. The answer for congresses, incentives, weddings and full-team airport transfers.',
+    eq: ['50 seats', 'Reclining seats', 'On-board WC', 'High-capacity holds', 'PA system & mic'],
   },
 ];
 
@@ -116,12 +147,13 @@ const faq = [
   },
   {
     q: 'Which vehicle is best suited for groups?',
-    a: 'The Mercedes V-Class accommodates up to 7 passengers with luggage. For larger groups, the Sprinter VIP can carry up to 16 people.',
+    a: 'The Mercedes V-Class accommodates up to 7 passengers with luggage. Beyond that, the Sprinter VIP comes in 8- and 19-seat layouts, the standard Sprinter seats 15, and the Mercedes Tourismo coach carries 50 people with their luggage in the hold.',
   },
 ];
 
 export default function OurFleetEN() {
   const c = content(SLUG);
+  const rates = fleetRates('en');
 
   return (
     <SEOLayoutEN>
@@ -178,101 +210,38 @@ export default function OurFleetEN() {
           <h2 className="heading">Our rates</h2>
           <p className="sf text-stone-500 mt-3 mb-8 text-sm">Fixed prices, all-inclusive — no meter, no surprises.</p>
 
-          {/* Airport transfers */}
-          <h3 className="font-serif text-lg text-gray-900 mb-4">Airport transfer rates <span className="sf text-sm text-stone-400">(CDG, Orly, Le Bourget)</span></h3>
-          <div className="overflow-x-auto mb-10">
+          <div className="overflow-x-auto mb-8">
             <table className="w-full sf text-sm text-left border-collapse">
               <thead>
                 <tr className="border-b border-stone-200">
                   <th className="py-3 pr-4 text-stone-400 font-normal">Vehicle</th>
-                  <th className="py-3 px-4 text-stone-400 font-normal">Airport rate</th>
+                  <th className="py-3 px-4 text-stone-400 font-normal text-right">Airport transfer</th>
+                  <th className="py-3 px-4 text-stone-400 font-normal text-right">City transfer</th>
+                  <th className="py-3 px-4 text-stone-400 font-normal text-right">Beyond</th>
+                  <th className="py-3 pl-4 text-stone-400 font-normal text-right">Hourly hire</th>
                 </tr>
               </thead>
               <tbody>
-                {[
-                  ['Mercedes E-Class', '€150'],
-                  ['Mercedes EQS Electric', '€200'],
-                  ['Mercedes V-Class', '€160'],
-                  ['Mercedes S-Class', '€220'],
-                  ['Mercedes S-Class Maybach', '€250'],
-                  ['Range Rover Evoque', '€250'],
-                  ['Mercedes G-Class', '€500'],
-                  ['Mercedes Sprinter VIP', '€450'],
-                ].map(([v, p]) => (
-                  <tr key={v} className="border-b border-stone-100">
-                    <td className="py-3 pr-4 text-gray-900">{v}</td>
-                    <td className="py-3 px-4 font-semibold" style={{ color: '#8a7340' }}>{p}</td>
+                {rates.map((r) => (
+                  <tr key={r.id} className="border-b border-stone-100">
+                    <td className="py-3 pr-4 text-gray-900 whitespace-nowrap">{r.name}</td>
+                    <td className="py-3 px-4 text-right font-semibold" style={{ color: '#8a7340' }}>{eurEn(r.airport)}</td>
+                    <td className="py-3 px-4 text-right font-semibold" style={{ color: '#8a7340' }}>{eurEn(r.city)}</td>
+                    <td className="py-3 px-4 text-right text-stone-500 whitespace-nowrap">{eurEn(r.perKm)}/km</td>
+                    <td className="py-3 pl-4 text-right text-stone-500 whitespace-nowrap">{eurEn(r.hourly)}/h</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
 
-          {/* City rates */}
-          <h3 className="font-serif text-lg text-gray-900 mb-4">City transfers <span className="sf text-sm text-stone-400">(minimum fare)</span></h3>
-          <div className="overflow-x-auto mb-10">
-            <table className="w-full sf text-sm text-left border-collapse">
-              <thead>
-                <tr className="border-b border-stone-200">
-                  <th className="py-3 pr-4 text-stone-400 font-normal">Vehicle</th>
-                  <th className="py-3 px-4 text-stone-400 font-normal">Minimum fare</th>
-                  <th className="py-3 px-4 text-stone-400 font-normal">Rate / km</th>
-                </tr>
-              </thead>
-              <tbody>
-                {[
-                  ['Mercedes E-Class', '€100', '€3/km'],
-                  ['Mercedes EQS Electric', '€150', '€4/km'],
-                  ['Mercedes V-Class', '€100', '€3/km'],
-                  ['Mercedes S-Class', '€150', '€4/km'],
-                  ['Mercedes S-Class Maybach', '€200', '€5/km'],
-                  ['Range Rover Evoque', '€200', '€5/km'],
-                  ['Mercedes G-Class', '€250', '€5/km'],
-                  ['Mercedes Sprinter VIP', '€300', '€5/km'],
-                ].map(([v, p, km]) => (
-                  <tr key={v} className="border-b border-stone-100">
-                    <td className="py-3 pr-4 text-gray-900">{v}</td>
-                    <td className="py-3 px-4 font-semibold" style={{ color: '#8a7340' }}>{p}</td>
-                    <td className="py-3 px-4 text-stone-500">{km}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-
-          {/* Hourly hire */}
-          <h3 className="font-serif text-lg text-gray-900 mb-4">Hourly hire <span className="sf text-sm text-stone-400">(as-directed)</span></h3>
-          <div className="overflow-x-auto">
-            <table className="w-full sf text-sm text-left border-collapse">
-              <thead>
-                <tr className="border-b border-stone-200">
-                  <th className="py-3 pr-4 text-stone-400 font-normal">Vehicle</th>
-                  <th className="py-3 px-4 text-stone-400 font-normal">Rate / hour</th>
-                  <th className="py-3 px-4 text-stone-400 font-normal">Minimum</th>
-                </tr>
-              </thead>
-              <tbody>
-                {[
-                  ['Mercedes E-Class', '€95/h', '4 hours'],
-                  ['Mercedes EQS Electric', '€130/h', '4 hours'],
-                  ['Mercedes V-Class', '€95/h', '4 hours'],
-                  ['Mercedes S-Class', '€130/h', '4 hours'],
-                  ['Mercedes S-Class Maybach', '€220/h', '5 hours'],
-                  ['Range Rover Evoque', '€190/h', '5 hours'],
-                  ['Mercedes G-Class', '€190/h', '5 hours'],
-                  ['Sprinter VIP 12 seats', '€120/h', '5 hours'],
-                  ['Sprinter VIP 16 seats', '€140/h', '5 hours'],
-                  ['Sprinter VIP 20 seats', '€160/h', '5 hours'],
-                ].map(([v, p, min]) => (
-                  <tr key={v} className="border-b border-stone-100">
-                    <td className="py-3 pr-4 text-gray-900">{v}</td>
-                    <td className="py-3 px-4 font-semibold" style={{ color: '#8a7340' }}>{p}</td>
-                    <td className="py-3 px-4 text-stone-500">{min}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+          <p className="sf text-xs text-stone-400 leading-relaxed">
+            Airport transfer: fixed fare between CDG, Orly, Le Bourget or Beauvais and Paris
+            and its inner suburbs. City transfer: minimum fare within Paris &amp; Île-de-France.
+            Beyond the fixed fare, journeys are billed per kilometre. Hourly hire:{' '}
+            {MIN_DISPOSAL_HOURS} hours minimum, with the car and chauffeur staying with you
+            throughout. All prices include VAT, tolls and fuel.
+          </p>
         </div>
       </section>
 

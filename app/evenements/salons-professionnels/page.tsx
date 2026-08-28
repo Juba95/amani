@@ -71,7 +71,7 @@ export default function SalonsProfessionnelsPage() {
         <div className="max-w-4xl mx-auto">
           <h2 className="heading">{c('section_5_title', 'Navette hôtel–salon coordonnée')}</h2>
           <p className="sf text-stone-600 mt-4 leading-relaxed">
-            {c('section_5_text', "Pour les délégations qui ont plusieurs membres logés dans différents hôtels (Four Seasons, Plaza Athénée, Mandarin Oriental, Hilton), nous coordonnons les prises en charge sequentielles. Un chauffeur part du premier hôtel à 8h30, ramasse les visiteurs des deux ou trois autres hôtels avec timing serré, arrive au salon à l'ouverture. L'après-midi, même logique en sens inverse. Classe V (7 places) ou Sprinter VIP (jusqu'à 16 places) selon le nombre de délégués.")}
+            {c('section_5_text', "Pour les délégations qui ont plusieurs membres logés dans différents hôtels (Four Seasons, Plaza Athénée, Mandarin Oriental, Hilton), nous coordonnons les prises en charge sequentielles. Un chauffeur part du premier hôtel à 8h30, ramasse les visiteurs des deux ou trois autres hôtels avec timing serré, arrive au salon à l'ouverture. L'après-midi, même logique en sens inverse. Classe V (7 places) ou Sprinter VIP (jusqu'à 19 places) selon le nombre de délégués.")}
           </p>
         </div>
       </section>
@@ -101,7 +101,7 @@ export default function SalonsProfessionnelsPage() {
         <div className="max-w-4xl mx-auto">
           <h2 className="heading">{c('section_8_title', 'Flotte adaptée aux salons')}</h2>
           <p className="sf text-stone-600 mt-4 leading-relaxed">
-            {c('section_8_text', "Classe E (4 passagers) pour les visiteurs solo ou duo, très maniable en circulation parisienne. Classe V (7 places) pour les petites délégations, coffre spacieux pour les documents et maquettes. Sprinter VIP climatisé (jusqu'à 16 places) pour les groupes de délégués complets. Tous les véhicules disposent d'une Wi-Fi embarquée et des prises 220V pour recharger téléphones et ordinateurs portables pendant les trajets.")}
+            {c('section_8_text', "Classe E (4 passagers) pour les visiteurs solo ou duo, très maniable en circulation parisienne. Classe V (7 places) pour les petites délégations, coffre spacieux pour les documents et maquettes. Sprinter VIP climatisé (jusqu'à 19 places) pour les groupes de délégués complets. Tous les véhicules disposent d'une Wi-Fi embarquée et des prises 220V pour recharger téléphones et ordinateurs portables pendant les trajets.")}
           </p>
         </div>
       </section>

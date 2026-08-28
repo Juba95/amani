@@ -294,30 +294,17 @@
           "Présence inégalée"
         ]
       },
-      "sprinter": {
-        "name": "Mercedes Sprinter VIP",
-        "category": "Minibus Luxe",
-        "pax": "16 passagers",
-        "bags": "16 valises",
-        "from": "À partir de 450 €",
-        "features": [
-          "Sièges capitaine",
-          "Sono premium",
-          "Climatisation zone",
-          "Idéal délégations"
-        ]
-      },
-      "range_rover_evoque": {
-        "name": "Range Rover Evoque",
-        "category": "SUV Premium",
+      "eqs": {
+        "name": "Mercedes EQS",
+        "category": "Berline Executive Électrique",
         "pax": "3 passagers",
         "bags": "2 valises",
-        "from": "À partir de 200 €",
+        "from": "À partir de 150 €",
         "features": [
-          "SUV britannique",
-          "Intérieur cuir",
-          "Technologie Terrain Response",
-          "Design avant-gardiste"
+          "100% électrique",
+          "Confort Classe S",
+          "Sièges massants",
+          "Silence absolu"
         ]
       },
       "classe_s_maybach": {
@@ -333,17 +320,69 @@
           "Minibar & tablettes"
         ]
       },
-      "eqs": {
-        "name": "Mercedes EQS",
-        "category": "Berline Executive Électrique",
-        "pax": "3 passagers",
-        "bags": "2 valises",
-        "from": "À partir de 150 €",
+      "range_rover_evoque": {
+        "name": "Range Rover",
+        "category": "SUV de prestige",
+        "pax": "4 passagers",
+        "bags": "3 valises",
+        "from": "À partir de 200 €",
         "features": [
-          "100% électrique",
-          "Confort Classe S",
-          "Sièges massants",
-          "Silence absolu"
+          "SUV britannique",
+          "Intérieur cuir",
+          "Transmission intégrale",
+          "Position surélevée"
+        ]
+      },
+      "sprinter": {
+        "name": "Mercedes Sprinter VIP 8 places",
+        "category": "Minibus VIP",
+        "pax": "8 passagers",
+        "bags": "8 valises",
+        "from": "À partir de 200 €",
+        "features": [
+          "Sièges capitaine cuir",
+          "Sono premium",
+          "Climatisation zone",
+          "Idéal délégations"
+        ]
+      },
+      "sprinter_15": {
+        "name": "Mercedes Sprinter 15 places",
+        "category": "Minibus",
+        "pax": "15 passagers",
+        "bags": "15 valises",
+        "from": "À partir de 200 €",
+        "features": [
+          "15 places assises",
+          "Soute à bagages",
+          "Climatisation",
+          "Navettes de groupe"
+        ]
+      },
+      "sprinter_vip_19": {
+        "name": "Mercedes Sprinter VIP 19 places",
+        "category": "Minibus VIP",
+        "pax": "19 passagers",
+        "bags": "19 valises",
+        "from": "À partir de 200 €",
+        "features": [
+          "19 places assises",
+          "Aménagement VIP",
+          "Sono & micro",
+          "Groupes & séminaires"
+        ]
+      },
+      "tourismo_50": {
+        "name": "Mercedes Tourismo 50 places",
+        "category": "Autocar de tourisme",
+        "pax": "50 passagers",
+        "bags": "50 valises",
+        "from": "À partir de 200 €",
+        "features": [
+          "50 places assises",
+          "Grande soute",
+          "WC à bord",
+          "Congrès & événements"
         ]
       }
     }

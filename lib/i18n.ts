@@ -6,11 +6,12 @@ import { SUPPORTED_LOCALES, type Locale, RTL_LOCALES } from './vehicles';
 // Import des fichiers de traduction
 import fr from '../locales/fr.json';
 import en from '../locales/en.json';
+import de from '../locales/de.json';
 import es from '../locales/es.json';
 import ar from '../locales/ar.json';
 import zh from '../locales/zh.json';
 
-const translations: Record<Locale, any> = { fr, en, es, ar, zh };
+const translations: Record<Locale, any> = { fr, en, de, es, ar, zh };
 
 // Récupérer les traductions pour une langue donnée
 export function getTranslations(locale: Locale) {

@@ -238,7 +238,7 @@
   },
   "fleet": {
     "tag": "Our fleet",
-    "title": "Vehicles of",
+    "title": "Vehicles of ",
     "title_em": "distinction",
     "subtitle": "Over 300 vehicles, renewed every year",
     "vehicles": {
@@ -294,30 +294,17 @@
           "Unmatched presence"
         ]
       },
-      "sprinter": {
-        "name": "Mercedes Sprinter VIP",
-        "category": "Luxury Minibus",
-        "pax": "16 passengers",
-        "bags": "16 suitcases",
-        "from": "From €450",
-        "features": [
-          "Captain seats",
-          "Premium sound",
-          "Zoned climate",
-          "Ideal for delegations"
-        ]
-      },
-      "range_rover_evoque": {
-        "name": "Range Rover Evoque",
-        "category": "Premium SUV",
+      "eqs": {
+        "name": "Mercedes EQS",
+        "category": "Electric Saloon",
         "pax": "3 passengers",
         "bags": "2 suitcases",
-        "from": "From €200",
+        "from": "From €150",
         "features": [
-          "British SUV",
-          "Leather interior",
-          "Terrain Response",
-          "Avant-garde design"
+          "100% electric",
+          "Zero emissions",
+          "Fast charging",
+          "Silent ride"
         ]
       },
       "classe_s_maybach": {
@@ -333,17 +320,69 @@
           "Minibar & tablets"
         ]
       },
-      "eqs": {
-        "name": "Mercedes EQS",
-        "category": "Electric Saloon",
-        "pax": "3 passengers",
-        "bags": "2 suitcases",
-        "from": "From €150",
+      "range_rover_evoque": {
+        "name": "Range Rover",
+        "category": "Prestige SUV",
+        "pax": "4 passengers",
+        "bags": "3 suitcases",
+        "from": "From €200",
         "features": [
-          "100% electric",
-          "Zero emissions",
-          "Fast charging",
-          "Silent ride"
+          "British SUV",
+          "Leather interior",
+          "All-wheel drive",
+          "Elevated driving position"
+        ]
+      },
+      "sprinter": {
+        "name": "Mercedes Sprinter VIP 8 seats",
+        "category": "VIP Minibus",
+        "pax": "8 passengers",
+        "bags": "8 suitcases",
+        "from": "From €200",
+        "features": [
+          "Leather captain seats",
+          "Premium sound",
+          "Zoned climate",
+          "Ideal for delegations"
+        ]
+      },
+      "sprinter_15": {
+        "name": "Mercedes Sprinter 15 seats",
+        "category": "Minibus",
+        "pax": "15 passengers",
+        "bags": "15 suitcases",
+        "from": "From €200",
+        "features": [
+          "15 seats",
+          "Luggage hold",
+          "Air conditioning",
+          "Group shuttles"
+        ]
+      },
+      "sprinter_vip_19": {
+        "name": "Mercedes Sprinter VIP 19 seats",
+        "category": "VIP Minibus",
+        "pax": "19 passengers",
+        "bags": "19 suitcases",
+        "from": "From €200",
+        "features": [
+          "19 seats",
+          "VIP fit-out",
+          "Sound system & mic",
+          "Groups & seminars"
+        ]
+      },
+      "tourismo_50": {
+        "name": "Mercedes Tourismo 50 seats",
+        "category": "Touring coach",
+        "pax": "50 passengers",
+        "bags": "50 suitcases",
+        "from": "From €200",
+        "features": [
+          "50 seats",
+          "Large luggage hold",
+          "On-board WC",
+          "Congresses & events"
         ]
       }
     }
