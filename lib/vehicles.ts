@@ -120,7 +120,7 @@ export const VEHICLES: Vehicle[] = [
   {
     id: 'tourismo_50',
     nameKey: 'tourismo_50',
-    image: '/vehicles/mercedes-tourismo.png',
+    image: '/vehicles/mercedes-tourismo.jpg',
     pax: 50, bags: 50,
     basePrice: 200,        // Transfert ville Tourismo 50 places
     airportPrice: 600,     // Transfert aéroport Tourismo 50 places
