@@ -122,7 +122,7 @@ const vehicles = [
     cat: 'Touring coach',
     pax: '50 passengers · 50 bags',
     price: 'From €200',
-    img: '/vehicles/mercedes-tourismo.png',
+    img: '/vehicles/mercedes-tourismo.jpg',
     desc: 'The Mercedes touring coach for groups of fifty: reclining seats, on-board WC, high-capacity luggage holds and full air conditioning. The answer for congresses, incentives, weddings and full-team airport transfers.',
     eq: ['50 seats', 'Reclining seats', 'On-board WC', 'High-capacity holds', 'PA system & mic'],
   },

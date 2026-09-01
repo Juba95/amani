@@ -22,7 +22,7 @@ const VEHICLE_IMAGES: Record<string, string> = {
   sprinter:          '/vehicles/mercedes-sprinter.png',
   sprinter_15:       '/vehicles/mercedes-sprinter-15.png',
   sprinter_vip_19:   '/vehicles/mercedes-sprinter-vip-19.png',
-  tourismo_50:       '/vehicles/mercedes-tourismo.png',
+  tourismo_50:       '/vehicles/mercedes-tourismo.jpg',
   range_rover_evoque:'/vehicles/range-rover.png',
   eqs:               '/vehicles/mercedes-eqe.png',
 };

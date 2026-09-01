@@ -122,7 +122,7 @@ const vehicules = [
     categorie: 'Autocar de tourisme',
     pax: '50 passagers',
     bagages: '50 valises',
-    image: '/vehicles/mercedes-tourismo.png',
+    image: '/vehicles/mercedes-tourismo.jpg',
     details: 'L\'autocar de tourisme Mercedes pour les groupes de cinquante personnes : sièges inclinables, WC à bord, soutes de grande capacité et climatisation intégrale. La solution des congrès, des incentives, des mariages et des transferts d\'équipes complètes depuis les aéroports.',
     equipements: ['50 places assises', 'Sièges inclinables', 'WC à bord', 'Soutes grande capacité', 'Sono & micro'],
   },
