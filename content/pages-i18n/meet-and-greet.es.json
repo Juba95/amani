@@ -1,0 +1,56 @@
+{
+  "slug": "meet-and-greet",
+  "locale": "es",
+  "tag": "Recepción VIP en el aeropuerto",
+  "h1": "Meet and Greet en los aeropuertos de París",
+  "intro": "El servicio Meet and Greet en París cubre el tramo entre la salida del avión y el interior del vehículo. Un asistente lo espera en la zona de llegadas, **después de la aduana**, con un cartel a su nombre. Se encarga de su equipaje y lo acompaña directamente hasta el auto. Usted no tiene que buscar a su conductor entre decenas de carteles. Es un complemento del servicio de chofer privado para sus traslados desde Charles de Gaulle, Orly y Le Bourget.",
+  "sections": [
+    {
+      "title": "Qué incluye el Meet and Greet",
+      "paragraphs": [
+        "El asistente se ocupa de cada paso entre la llegada al terminal y la salida en el vehículo. Para los vuelos de salida existe además una opción de acceso prioritario."
+      ],
+      "cards": [
+        {
+          "title": "Recepción con cartel",
+          "text": "El asistente espera después de los controles de aduana con un cartel con el nombre del pasajero, visible en cuanto sale del pasillo de llegadas."
+        },
+        {
+          "title": "Ayuda con el equipaje",
+          "text": "El asistente recoge el equipaje a la salida de la cinta y lleva o acompaña las maletas hasta el vehículo."
+        },
+        {
+          "title": "Acompañamiento al vehículo",
+          "text": "El pasajero va directamente al Mercedes o a la van VIP, estacionado en la zona reservada más cercana al terminal."
+        },
+        {
+          "title": "Opción Fast Track",
+          "text": "En CDG y Orly, la opción Fast Track permite pasar los controles de seguridad por una fila prioritaria en las salidas. Es útil para los pasajeros con poco tiempo."
+        }
+      ]
+    },
+    {
+      "title": "Para quién es este servicio",
+      "paragraphs": [
+        "Lo solicitan con frecuencia los **hoteles de cinco estrellas de París** que quieren que sus huéspedes sean atendidos desde la salida del avión. También las agencias de viajes de alta gama que organizan viajes a medida, las familias con niños pequeños o personas mayores, para quienes el aeropuerto puede resultar desorientador, y las delegaciones oficiales que tienen poco tiempo entre una cita protocolaria y la siguiente.",
+        "El servicio está disponible en Charles de Gaulle (todas las terminales), en Orly (terminales 1 a 4) y en Le Bourget. En CDG, el asistente puede esperar en la **zona de espera de llegadas internacionales**, entre la salida de la aduana y el vestíbulo público."
+      ]
+    },
+    {
+      "title": "Contacte a nuestro equipo",
+      "paragraphs": [
+        "El equipo atiende **las 24 horas, los 7 días de la semana** para reservas, presupuestos a medida y solicitudes de delegaciones. La respuesta está garantizada en menos de 30 minutos.",
+        "Puede escribir o llamar al +33 6 87 16 97 47, también por WhatsApp, o enviar un correo a amani.limousines@gmail.com. Los traslados se ofrecen a precio fijo, con seguimiento del vuelo."
+      ]
+    }
+  ],
+  "meta": {
+    "title": "Meet and Greet París: CDG, Orly, Le Bourget | Amani Limousines",
+    "description": "Un asistente lo recibe después de la aduana en CDG, Orly o Le Bourget con un cartel a su nombre, se encarga del equipaje y lo acompaña hasta el vehículo."
+  },
+  "cta": {
+    "title": "Reserve su recepción en el aeropuerto",
+    "text": "Indique su vuelo y su destino al reservar, o contáctenos por teléfono, WhatsApp o correo. Recibirá un precio fijo y una respuesta en menos de 30 minutos.",
+    "button": "Reservar"
+  }
+}

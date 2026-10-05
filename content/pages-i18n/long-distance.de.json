@@ -1,0 +1,80 @@
+{
+  "slug": "long-distance",
+  "locale": "de",
+  "tag": "Langstrecke – Frankreich & Europa",
+  "h1": "Langstreckenfahrten ab Paris: Ihr Büro auf vier Rädern",
+  "intro": "Der Zug hält nicht überall, und Flughäfen liegen oft weit außerhalb. Für Strecken zwischen 150 und 1.000 km bietet ein Privatchauffeur ab Paris etwas, das weder TGV noch Flugzeug leisten: Sie arbeiten in Ruhe und bestimmen Abfahrt, Pausen und Tempo selbst. An Bord gibt es WLAN, 220-V-Steckdosen und eine individuell regelbare Klimaanlage. Es ist leise. Sie arbeiten oder schlafen, um die Fahrt kümmert sich der Fahrer.",
+  "sections": [
+    {
+      "title": "Die gefragtesten Langstrecken",
+      "paragraphs": [
+        "Diese Verbindungen ab Paris werden am häufigsten gebucht. Entfernungen und Fahrzeiten sind Richtwerte.",
+        "Jedes andere Ziel ist auf Anfrage möglich. Nennen Sie uns Abfahrtsort, Ziel und Datum, dann erhalten Sie ein Angebot."
+      ],
+      "cards": [
+        {
+          "title": "Paris → Deauville",
+          "text": "200 km, etwa 2 Std. 30. Wochenenden, Pferderennen, Filmfestival."
+        },
+        {
+          "title": "Paris → Brüssel",
+          "text": "310 km, etwa 3 Std. EU-Institutionen, Firmenzentralen."
+        },
+        {
+          "title": "Paris → Reims",
+          "text": "145 km, etwa 1 Std. 45. Champagnerhäuser, Kathedrale."
+        },
+        {
+          "title": "Paris → Lyon",
+          "text": "465 km, etwa 4 Std. 30. Alternative zum TGV für Gruppen und Delegationen."
+        },
+        {
+          "title": "Paris → Monaco",
+          "text": "940 km, etwa 9 Std. Grand Prix, Privatresidenzen, private Geschäftstermine."
+        },
+        {
+          "title": "Paris → Genf",
+          "text": "555 km, etwa 5 Std. 30. CERN, UNO, Banken, Foren."
+        },
+        {
+          "title": "Paris → Amsterdam",
+          "text": "500 km, etwa 5 Std. Hafen, Flughafen Schiphol, Geschäftsviertel."
+        },
+        {
+          "title": "Paris → London",
+          "text": "460 km, etwa 6 Std. über den Eurotunnel. Reisedokumente erforderlich."
+        }
+      ]
+    },
+    {
+      "title": "Ausstattung der Langstreckenfahrzeuge",
+      "paragraphs": [
+        "Unsere Limousinen und VIP-Vans für lange Strecken haben 4G/5G-WLAN, 220-V- und USB-C-Steckdosen für Ihre Arbeitsgeräte und eine Mehrzonen-Klimaanlage. Auch für sperriges Gepäck ist Platz.",
+        "In der Mercedes S-Klasse und im **BMW i7** haben die Rücksitze elektrisch verstellbare Kopfstützen. Sie lassen sich weit neigen, sodass Sie unterwegs ausruhen können."
+      ]
+    },
+    {
+      "title": "Fahrerwechsel auf sehr langen Strecken",
+      "paragraphs": [
+        "Ab **8 Stunden Fahrzeit**, etwa Paris–Monaco oder Paris–Barcelona, planen wir zur Hälfte der Strecke einen Fahrerwechsel ein. So bleibt die Aufmerksamkeit am Steuer durchgehend hoch.",
+        "Der Wechsel findet an einer Raststätte oder in einer Stadt auf dem Weg statt. Für Sie ist davon kaum etwas zu merken."
+      ]
+    },
+    {
+      "title": "Warum das Auto statt des Zugs?",
+      "paragraphs": [
+        "Für eine Gruppe von 3 bis 7 Personen kostet eine Langstreckenfahrt im VIP-Van ab Paris oft ähnlich viel wie mehrere TGV-Tickets in der ersten Klasse. Dafür entfallen Bahnhof, Umstiege und Gepäckgrenzen.",
+        "Delegationen mit besonderer Ausrüstung wie Präsentationsmaterial, Diplomatengepäck oder medizinischen Geräten haben mit dem Auto **die einzige praktikable Lösung**."
+      ]
+    }
+  ],
+  "meta": {
+    "title": "Langstreckenfahrten ab Paris mit Chauffeur | Amani Limousines",
+    "description": "Chauffeurservice ab Paris für 150 bis 1.000 km: Brüssel, Genf, Monaco, London. WLAN, Steckdosen, Fahrerwechsel ab 8 Stunden. Rund um die Uhr erreichbar."
+  },
+  "cta": {
+    "title": "Langstreckenfahrt anfragen",
+    "text": "Unser Team ist rund um die Uhr für Buchungen, individuelle Angebote und Delegationsanfragen da. Antwort innerhalb von 30 Minuten garantiert. Telefon und WhatsApp: +33 6 87 16 97 47, E-Mail: amani.limousines@gmail.com.",
+    "button": "Jetzt buchen"
+  }
+}

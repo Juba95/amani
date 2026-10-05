@@ -1,0 +1,71 @@
+{
+  "slug": "delegation-transport",
+  "locale": "de",
+  "tag": "Konvois & offizielle Delegationen",
+  "h1": "Delegationstransport und Fahrzeugkonvois in Paris",
+  "intro": "Ein Ministerbesuch, ein Staatsbesuch, ein Unternehmensgipfel oder eine Gruppe von Führungskräften auf Rundreise: Solche Einsätze brauchen mehr als ein Fahrzeug. Die Abstimmung zwischen den Wagen zählt dann ebenso wie der Komfort in jedem einzelnen. Amani Limousines organisiert Fahrten mit Privatchauffeur auch für ganze Delegationen. Der Delegationstransport in Paris beruht auf **zentraler Disposition**, ständiger Funkverbindung zwischen den Fahrern und einem Konvoileiter, der während des gesamten Einsatzes vor Ort ist.",
+  "sections": [
+    {
+      "title": "Organisation eines Konvois",
+      "paragraphs": [
+        "Die Vorbereitung beginnt mit den logistischen Eckdaten. Dazu gehören die Zahl der Passagiere, die protokollarische Rangfolge (wer in welchem Wagen fährt), die einzelnen Adressen mit ihren festen Zeiten und etwaige Sicherheitsfenster, die von den Personenschutzdiensten vorgegeben werden.",
+        "Am Einsatztag hat jeder Fahrer einen detaillierten Fahrplan. Ein Koordinator steuert den gesamten Konvoi in Echtzeit, erkennt Staus anhand aktueller Verkehrsdaten früh und passt die Routen bei Bedarf an. Die Fahrer stehen **in ständigem Funkkontakt**, nicht bloß telefonisch in Verbindung."
+      ]
+    },
+    {
+      "title": "Diplomatische Missionen",
+      "paragraphs": [
+        "Wir arbeiten regelmäßig mit Botschaften, Konsulaten und Ständigen Vertretungen in Paris. Bei offiziellen Besuchen werden die Fahrzeuge nach den Vorgaben der Sicherheitsteams vorbereitet: getönte Scheiben, abgeschirmte Kommunikation und **vorab von den staatlichen Stellen freigegebene Routen**. Unsere Fahrer sind die Zusammenarbeit mit Personenschutzteams gewohnt."
+      ]
+    },
+    {
+      "title": "Unternehmensveranstaltungen",
+      "paragraphs": [
+        "Für Seminare, Hauptversammlungen, Vorstandssitzungen und Delegationstage von Unternehmen übernehmen wir die **gesamte Transportlogistik**. Sie haben einen Ansprechpartner für alle Fahrten Ihrer Gruppe."
+      ],
+      "cards": [
+        {
+          "title": "Shuttles",
+          "text": "Pendelverkehr zwischen Hotel und Veranstaltungsort."
+        },
+        {
+          "title": "Flughafentransfer",
+          "text": "Abholung ankommender Delegationen am Flughafen."
+        },
+        {
+          "title": "Repräsentationsfahrzeuge",
+          "text": "Eigene Wagen für Redner und VIP-Gäste."
+        }
+      ]
+    },
+    {
+      "title": "Eine Flotte für jeden Rang",
+      "paragraphs": [
+        "Ein Konvoi kann je nach protokollarischem Rang verschiedene Fahrzeugklassen kombinieren. Auf Wunsch fahren alle Wagen **in einheitlicher Marke und Farbe**."
+      ],
+      "cards": [
+        {
+          "title": "Hauptdelegation",
+          "text": "Mercedes S-Klasse oder BMW i7."
+        },
+        {
+          "title": "Berater",
+          "text": "Mercedes E-Klasse."
+        },
+        {
+          "title": "Gepäck und Ausrüstung",
+          "text": "Mercedes V-Klasse oder Sprinter."
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "title": "Delegationstransport & Fahrzeugkonvoi Paris | Amani Limousines",
+    "description": "Fahrzeugkonvois für Delegationen, Staatsbesuche und Firmenevents in Paris: zentrale Disposition, Funkverbindung zwischen den Fahrern, Koordinator vor Ort."
+  },
+  "cta": {
+    "title": "Planen Sie einen Delegationseinsatz",
+    "text": "Unser Team ist rund um die Uhr erreichbar und antwortet innerhalb von 30 Minuten. Schildern Sie uns Ihren Einsatz telefonisch unter +33 6 87 16 97 47, per WhatsApp oder per E-Mail an amani.limousines@gmail.com. Sie erhalten ein individuelles Angebot.",
+    "button": "Jetzt anfragen"
+  }
+}

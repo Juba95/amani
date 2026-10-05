@@ -1,0 +1,84 @@
+{
+  "slug": "events",
+  "locale": "es",
+  "tag": "Transporte para eventos",
+  "h1": "Transporte VIP para sus eventos en París y en Francia",
+  "intro": "París recibe cada año algunos de los eventos más prestigiosos del mundo: Fashion Week, Paris Air Show, Roland Garros. Fuera de la capital están el Festival de Cine de Cannes y el Gran Premio de Mónaco. Cada cita genera una demanda de transporte muy alta, y solo equipos con experiencia en estas condiciones pueden atenderla. Amani Limousines ofrece un servicio de chofer privado en cada edición, con **flotas dedicadas y coordinadores en el sitio**. Los vehículos se reservan con mucha antelación.",
+  "sections": [
+    {
+      "title": "Eventos en París y alrededores",
+      "paragraphs": [
+        "Estos son los eventos de la región de París que el equipo cubre cada año. Las fechas indican el periodo habitual de cada uno."
+      ],
+      "cards": [
+        {
+          "title": "Paris Fashion Week (febrero y septiembre)",
+          "text": "Traslados entre las casas de moda, los hoteles del Triangle d'Or y los showrooms del Marais."
+        },
+        {
+          "title": "Paris Air Show (junio, años impares)",
+          "text": "Traslados a Le Bourget, recepción en la terminal FBO y convoyes para delegaciones industriales y gubernamentales. Durante el salón también hay traslados entre Le Bourget y los hoteles de París para los expositores."
+        },
+        {
+          "title": "Roland Garros (mayo y junio)",
+          "text": "Traslados a Porte d'Auteuil, acceso a palcos VIP y hospitalidad corporativa. La flota se refuerza en la fase final del torneo."
+        },
+        {
+          "title": "Maison & Objet (enero y septiembre)",
+          "text": "Traslados a Villepinte y desde el aeropuerto CDG para compradores y expositores internacionales."
+        },
+        {
+          "title": "Salon Nautic (diciembre)",
+          "text": "En Porte de Versailles: traslados y vehículo con conductor por horas para los profesionales del sector náutico."
+        },
+        {
+          "title": "Première Vision",
+          "text": "El salón internacional de tejidos. Traslados a Villepinte y a los hoteles de los distritos 8 y 16."
+        }
+      ]
+    },
+    {
+      "title": "Eventos en la Costa Azul y Normandía",
+      "paragraphs": [
+        "El servicio también cubre grandes citas fuera de París, con traslados desde los aeropuertos y hoteles de la región."
+      ],
+      "cards": [
+        {
+          "title": "Festival de Cine de Cannes (mayo)",
+          "text": "Traslados entre Niza y Cannes, acceso a la Croisette, llegada a la alfombra roja y traslados al puerto de yates. Servicio disponible durante toda la semana del festival."
+        },
+        {
+          "title": "Gran Premio de Mónaco",
+          "text": "Traslados entre Niza y Mónaco, acceso al paddock y a la hospitalidad en yates. El equipo gestiona los cierres de calles por el circuito."
+        },
+        {
+          "title": "Hipódromo de Deauville (agosto)",
+          "text": "Traslados entre París y Deauville para los días de carreras, el polo y las subastas de potros de un año."
+        }
+      ]
+    },
+    {
+      "title": "Reserve con antelación",
+      "paragraphs": [
+        "Durante la Fashion Week o Roland Garros, los vehículos de calidad se agotan con semanas de antelación. Si usted es expositor, comprador, periodista acreditado o anfitrión de hospitalidad corporativa, organice su transporte con el mismo plazo que sus entradas y su alojamiento.",
+        "El equipo puede **bloquear vehículos con varios meses de antelación** y ajustar los horarios a medida que se define su programa."
+      ]
+    },
+    {
+      "title": "Traslados al aeropuerto y contacto",
+      "paragraphs": [
+        "Todos los traslados tienen **precio fijo, sin sorpresas**. El conductor sigue su vuelo en tiempo real y el servicio funciona las 24 horas. Entre los trayectos más solicitados están CDG a París, Orly a París, CDG a La Défense, CDG a Disneyland, CDG a Versalles y Le Bourget a París.",
+        "Para una reserva, un presupuesto a medida o una solicitud para una delegación, escriba o llame al equipo por teléfono o WhatsApp al +33 6 87 16 97 47, o por correo a amani.limousines@gmail.com. La respuesta llega en menos de 30 minutos."
+      ]
+    }
+  ],
+  "meta": {
+    "title": "Transporte para eventos en París y Francia | Amani Limousines",
+    "description": "Fashion Week, Roland Garros, Paris Air Show, Cannes, Mónaco: traslados con conductor, coordinadores en sitio y vehículos reservados con meses de antelación."
+  },
+  "cta": {
+    "title": "Asegure su transporte para el próximo evento",
+    "text": "Indique las fechas y el programa de su viaje. El equipo le responde en menos de 30 minutos, a cualquier hora.",
+    "button": "Reservar"
+  }
+}

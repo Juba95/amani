@@ -149,28 +149,32 @@ const FOOTER_COLS_EN: FooterCol[] = [
   },
 ];
 
+// Les douze pages de service existent maintenant en allemand, espagnol, arabe
+// et chinois (app/[lang]/[page]) : les colonnes « transferts » et « société »
+// pointent vers ces pages. La flotte et les événements restent des ancres vers
+// les sections de la home localisée, qui sont les seules à les présenter.
 const FOOTER_COLS_DE: FooterCol[] = [
   {
     title: 'Privatchauffeur',
     links: [
-      { label: 'Privatchauffeur Paris',   href: '/de' },
+      { label: 'Privatchauffeur Paris',       href: '/de/destinations/paris' },
       { label: 'Deutschsprachiger Chauffeur', href: '/de/deutschsprachiger-chauffeur' },
-      { label: 'Privatchauffeur Nizza',   href: '/de' },
-      { label: 'Privatchauffeur Cannes',  href: '/de' },
-      { label: 'Privatchauffeur Lyon',    href: '/de' },
-      { label: 'Privatchauffeur Bordeaux', href: '/de' },
+      { label: 'Privatchauffeur Nizza',       href: '/de/destinations/nice' },
+      { label: 'Privatchauffeur Cannes',      href: '/de/destinations/cannes' },
+      { label: 'Privatchauffeur Saint-Tropez', href: '/de/destinations/saint-tropez' },
+      { label: 'Privatchauffeur Bordeaux',    href: '/de/destinations/bordeaux' },
     ],
   },
   {
     title: 'Transfers',
     links: [
-      { label: 'Stundenmiete',            href: '/de#services' },
-      { label: 'Flughafentransfer CDG',   href: '/de#services' },
-      { label: 'Flughafentransfer Orly',  href: '/de#services' },
-      { label: 'Meet and Greet',          href: '/de#services' },
-      { label: 'Langstrecke',             href: '/de#services' },
-      { label: 'Konvois & Delegationen',  href: '/de#services' },
-      { label: 'Personenschutz',          href: '/de#services' },
+      { label: 'Stundenmiete',            href: '/de/hourly-hire' },
+      { label: 'Flughafentransfer CDG',   href: '/de/cdg-airport-transfer' },
+      { label: 'Flughafentransfer Orly',  href: '/de/orly-airport-transfer' },
+      { label: 'Meet and Greet',          href: '/de/meet-and-greet' },
+      { label: 'Langstrecke',             href: '/de/long-distance' },
+      { label: 'Konvois & Delegationen',  href: '/de/delegation-transport' },
+      { label: 'Personenschutz',          href: '/de/close-protection' },
     ],
   },
   {
@@ -189,20 +193,20 @@ const FOOTER_COLS_DE: FooterCol[] = [
   {
     title: 'Ziele & Events',
     links: [
-      { label: 'Alle Ziele',              href: '/de#services' },
+      { label: 'Alle Ziele',              href: '/de/destinations' },
+      { label: 'Erlebnisse',              href: '/de/experiences' },
+      { label: 'Events',                  href: '/de/events' },
       { label: 'Paris Fashion Week',      href: '/de#events' },
-      { label: 'French Open',             href: '/de#events' },
       { label: 'Filmfestival Cannes',     href: '/de#events' },
       { label: 'Grand Prix von Monaco',   href: '/de#events' },
-      { label: 'Fachmessen',              href: '/de#events' },
     ],
   },
   {
     title: 'Unternehmen',
     links: [
-      { label: 'Geschäftskunden',         href: '/de' },
-      { label: 'Chauffeur werden',        href: '/de' },
-      { label: 'Kontakt',                 href: '/de#contact' },
+      { label: 'Geschäftskunden',         href: '/de/corporate' },
+      { label: 'Chauffeur werden',        href: '/de/become-a-chauffeur' },
+      { label: 'Kontakt',                 href: '/de/contact' },
     ],
   },
   {
@@ -211,6 +215,72 @@ const FOOTER_COLS_DE: FooterCol[] = [
       { label: 'Impressum',               href: '/mentions-legales' },
       { label: 'AGB',                     href: '/cgv' },
       { label: 'Datenschutzerklärung',    href: '/politique-confidentialite' },
+    ],
+  },
+];
+
+const FOOTER_COLS_ES: FooterCol[] = [
+  {
+    title: 'Chófer privado',
+    links: [
+      { label: 'Chófer privado en París',        href: '/es/destinations/paris' },
+      { label: 'Chófer hispanohablante',         href: '/es/chofer-hispanohablante' },
+      { label: 'Chófer privado en Niza',         href: '/es/destinations/nice' },
+      { label: 'Chófer privado en Cannes',       href: '/es/destinations/cannes' },
+      { label: 'Chófer privado en Saint-Tropez', href: '/es/destinations/saint-tropez' },
+      { label: 'Chófer privado en Burdeos',      href: '/es/destinations/bordeaux' },
+    ],
+  },
+  {
+    title: 'Traslados',
+    links: [
+      { label: 'Disposición horaria',      href: '/es/hourly-hire' },
+      { label: 'Traslado aeropuerto CDG',  href: '/es/cdg-airport-transfer' },
+      { label: 'Traslado aeropuerto Orly', href: '/es/orly-airport-transfer' },
+      { label: 'Meet and Greet',           href: '/es/meet-and-greet' },
+      { label: 'Larga distancia',          href: '/es/long-distance' },
+      { label: 'Convoyes y delegaciones',  href: '/es/delegation-transport' },
+      { label: 'Protección personal',      href: '/es/close-protection' },
+    ],
+  },
+  {
+    title: 'Nuestra flota',
+    links: [
+      { label: 'Mercedes Clase E',                 href: '/es#fleet' },
+      { label: 'Mercedes Clase S',                 href: '/es#fleet' },
+      { label: 'Mercedes Clase V',                 href: '/es#fleet' },
+      { label: 'Mercedes-Maybach Clase S',         href: '/es#fleet' },
+      { label: 'Mercedes Clase G',                 href: '/es#fleet' },
+      { label: 'Range Rover',                      href: '/es#fleet' },
+      { label: 'Sprinter VIP 8 / 15 / 19 plazas',  href: '/es#fleet' },
+      { label: 'Tourismo 50 plazas',               href: '/es#fleet' },
+    ],
+  },
+  {
+    title: 'Destinos y eventos',
+    links: [
+      { label: 'Todos los destinos',    href: '/es/destinations' },
+      { label: 'Experiencias',          href: '/es/experiences' },
+      { label: 'Eventos',               href: '/es/events' },
+      { label: 'Paris Fashion Week',    href: '/es#events' },
+      { label: 'Festival de Cannes',    href: '/es#events' },
+      { label: 'Gran Premio de Mónaco', href: '/es#events' },
+    ],
+  },
+  {
+    title: 'Empresa',
+    links: [
+      { label: 'Servicios corporativos', href: '/es/corporate' },
+      { label: 'Trabaja con nosotros',   href: '/es/become-a-chauffeur' },
+      { label: 'Contacto',               href: '/es/contact' },
+    ],
+  },
+  {
+    title: 'Legal',
+    links: [
+      { label: 'Aviso legal',            href: '/mentions-legales' },
+      { label: 'Condiciones generales',  href: '/cgv' },
+      { label: 'Política de privacidad', href: '/politique-confidentialite' },
     ],
   },
 ];
@@ -229,12 +299,13 @@ const FOOTER_COLS_AR: FooterCol[] = [
   {
     title: 'خدمات النقل',
     links: [
-      { label: 'تأجير بالساعة',      href: '/ar#services' },
-      { label: 'نقل مطار شارل ديغول', href: '/ar#services' },
-      { label: 'نقل مطار أورلي',     href: '/ar#services' },
-      { label: 'استقبال وترحيب',     href: '/ar#services' },
-      { label: 'مسافات طويلة',       href: '/ar#services' },
-      { label: 'قوافل ووفود',        href: '/ar#services' },
+      { label: 'تأجير بالساعة',      href: '/ar/hourly-hire' },
+      { label: 'نقل مطار شارل ديغول', href: '/ar/cdg-airport-transfer' },
+      { label: 'نقل مطار أورلي',     href: '/ar/orly-airport-transfer' },
+      { label: 'استقبال وترحيب',     href: '/ar/meet-and-greet' },
+      { label: 'مسافات طويلة',       href: '/ar/long-distance' },
+      { label: 'قوافل ووفود',        href: '/ar/delegation-transport' },
+      { label: 'الحماية الشخصية',    href: '/ar/close-protection' },
     ],
   },
   {
@@ -253,7 +324,8 @@ const FOOTER_COLS_AR: FooterCol[] = [
   {
     title: 'الوجهات والفعاليات',
     links: [
-      { label: 'جميع الوجهات',           href: '/ar#services' },
+      { label: 'التجارب',                href: '/ar/experiences' },
+      { label: 'الفعاليات',              href: '/ar/events' },
       { label: 'أسبوع الموضة في باريس',  href: '/ar#events' },
       { label: 'رولان غاروس',            href: '/ar#events' },
       { label: 'مهرجان كان',             href: '/ar#events' },
@@ -263,8 +335,8 @@ const FOOTER_COLS_AR: FooterCol[] = [
   {
     title: 'الشركة',
     links: [
-      { label: 'خدمات الشركات',   href: '/ar' },
-      { label: 'كن سائقاً',       href: '/ar' },
+      { label: 'خدمات الشركات',   href: '/ar/corporate' },
+      { label: 'كن سائقاً',       href: '/ar/become-a-chauffeur' },
       { label: 'اتصل بنا',        href: '/ar/contact' },
     ],
   },
@@ -292,12 +364,13 @@ const FOOTER_COLS_ZH: FooterCol[] = [
   {
     title: '接送服务',
     links: [
-      { label: '包时租车',       href: '/zh#services' },
-      { label: '戴高乐机场接送', href: '/zh#services' },
-      { label: '奥利机场接送',   href: '/zh#services' },
-      { label: '贵宾迎接',       href: '/zh#services' },
-      { label: '长途出行',       href: '/zh#services' },
-      { label: '车队与代表团',   href: '/zh#services' },
+      { label: '包时租车',       href: '/zh/hourly-hire' },
+      { label: '戴高乐机场接送', href: '/zh/cdg-airport-transfer' },
+      { label: '奥利机场接送',   href: '/zh/orly-airport-transfer' },
+      { label: '贵宾迎接',       href: '/zh/meet-and-greet' },
+      { label: '长途出行',       href: '/zh/long-distance' },
+      { label: '车队与代表团',   href: '/zh/delegation-transport' },
+      { label: '随身安保',       href: '/zh/close-protection' },
     ],
   },
   {
@@ -316,7 +389,8 @@ const FOOTER_COLS_ZH: FooterCol[] = [
   {
     title: '目的地与活动',
     links: [
-      { label: '所有目的地',     href: '/zh#services' },
+      { label: '体验',           href: '/zh/experiences' },
+      { label: '活动',           href: '/zh/events' },
       { label: '巴黎时装周',     href: '/zh#events' },
       { label: '法国网球公开赛', href: '/zh#events' },
       { label: '戛纳电影节',     href: '/zh#events' },
@@ -326,8 +400,8 @@ const FOOTER_COLS_ZH: FooterCol[] = [
   {
     title: '公司',
     links: [
-      { label: '企业服务', href: '/zh' },
-      { label: '成为司机', href: '/zh' },
+      { label: '企业服务', href: '/zh/corporate' },
+      { label: '成为司机', href: '/zh/become-a-chauffeur' },
       { label: '联系我们', href: '/zh/contact' },
     ],
   },
@@ -344,6 +418,8 @@ const FOOTER_COLS_ZH: FooterCol[] = [
 function getFooterCols(locale: string): FooterCol[] {
   if (locale === 'en') return FOOTER_COLS_EN;
   if (locale === 'de') return FOOTER_COLS_DE;
+  // L'espagnol tombait sur le footer français faute de colonnes dédiées.
+  if (locale === 'es') return FOOTER_COLS_ES;
   if (locale === 'ar') return FOOTER_COLS_AR;
   if (locale === 'zh') return FOOTER_COLS_ZH;
   return FOOTER_COLS_FR;
@@ -363,11 +439,18 @@ function getPreFooterLinks(locale: string): { label: string; href: string }[] {
     { label: 'Contact',            href: '/en/contact' },
   ];
   if (locale === 'de') return [
-    { label: 'Mehr erfahren',        href: '/de' },
+    { label: 'Mehr erfahren',        href: '/de/corporate' },
     { label: 'Impressum',            href: legal },
     { label: 'Datenschutzerklärung', href: privacy },
     { label: 'AGB',                  href: terms },
-    { label: 'Kontakt',              href: '/de#contact' },
+    { label: 'Kontakt',              href: '/de/contact' },
+  ];
+  if (locale === 'es') return [
+    { label: 'Más información',        href: '/es/corporate' },
+    { label: 'Aviso legal',           href: legal },
+    { label: 'Política de privacidad', href: privacy },
+    { label: 'Condiciones generales', href: terms },
+    { label: 'Contacto',              href: '/es/contact' },
   ];
   if (locale === 'ar') return [
     { label: 'مزيد من المعلومات', href: '/ar/contact' },

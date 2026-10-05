@@ -1,0 +1,78 @@
+{
+  "slug": "cdg-airport-transfer",
+  "locale": "es",
+  "tag": "Aeropuerto Charles de Gaulle",
+  "h1": "Traslados desde y hacia el aeropuerto CDG de París",
+  "intro": "Por Roissy-Charles de Gaulle pasan más de 67 millones de pasajeros al año. Para llegar a París sin perder tiempo, conviene contar con un servicio de chofer privado que conozca bien los terminales y esté puntual a su llegada. Amani Limousines realiza traslados desde y hacia CDG **los siete días de la semana, de día y de noche**. No hay taxímetro: el precio se acuerda al reservar y no cambia después.",
+  "sections": [
+    {
+      "title": "Todos los terminales de CDG",
+      "paragraphs": [
+        "El aeropuerto tiene varios terminales unidos por el tren interno CDG-Val, pero las distancias entre ellos son largas. El Terminal 1 recibe vuelos intercontinentales de muchas aerolíneas. El Terminal 2, dividido de 2A a 2G, es sobre todo de **Air France y sus socios**. El Terminal 3 atiende vuelos chárter y de bajo costo. Su conductor lo espera en la salida que corresponde al terminal indicado en su boleto, con un letrero con su nombre.",
+        "Si su vuelo llega al 2E, el terminal de los vuelos de larga distancia de Air France, el conductor está en el nivel de llegadas, justo después de las puertas automáticas. Usted no tiene que buscar la fila de taxis ni cruzar los estacionamientos."
+      ]
+    },
+    {
+      "title": "Seguimiento del vuelo en tiempo real",
+      "paragraphs": [
+        "Los retrasos son parte de la aviación. Nuestro sistema sigue el estado de su vuelo con los datos de Eurocontrol. Si su avión aterriza tarde, el conductor lo sabe al momento y ajusta su hora de llegada.",
+        "Un retraso de la aerolínea **nunca le genera costos de espera adicionales**. Usted paga el precio acordado al reservar."
+      ]
+    },
+    {
+      "title": "Precio fijo garantizado",
+      "paragraphs": [
+        "El monto de su cotización es el monto final. No hay recargo nocturno ni de fin de semana, y tampoco cargos ocultos de estacionamiento. El traslado incluye la recepción personalizada, la ayuda con el equipaje, agua mineral a bordo y **los peajes en las rutas habituales**.",
+        "Tarifas del trayecto CDG a París, todo incluido. El precio es el mismo para ir de París a CDG. El BMW i7 y el Mercedes Sprinter VIP están disponibles bajo cotización."
+      ],
+      "cards": [
+        {
+          "title": "Sedán Business",
+          "text": "Mercedes Clase E, de 1 a 3 pasajeros. Desde 150 €."
+        },
+        {
+          "title": "Sedán Executive",
+          "text": "Mercedes Clase S. Desde 220 €."
+        },
+        {
+          "title": "Minivan de lujo",
+          "text": "Mercedes Clase V, hasta 7 pasajeros. Desde 160 €."
+        }
+      ]
+    },
+    {
+      "title": "Opción Meet & Greet en CDG",
+      "paragraphs": [
+        "Con el servicio Meet & Greet, un asistente recibe a su pasajero en la zona de llegadas, después de la aduana y antes de la salida al público, con un letrero con su nombre. Se encarga del equipaje y lo acompaña hasta el vehículo, estacionado en la zona reservada para ascenso y descenso.",
+        "Es un servicio muy solicitado por **delegaciones oficiales**, huéspedes de los grandes hoteles de París y familias que viajan con niños."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿Con cuánta anticipación debo reservar?",
+      "a": "Recomendamos de 24 a 48 horas para un traslado normal. También aceptamos solicitudes de último momento hasta 2 horas antes de la recogida, según disponibilidad."
+    },
+    {
+      "q": "¿Qué pasa si cancelan mi vuelo?",
+      "a": "Si nos avisa al menos 3 horas antes de la recogida prevista, le reembolsamos la reserva o la cambiamos de fecha sin costo. Pasado ese plazo, se aplican las condiciones generales de venta."
+    },
+    {
+      "q": "¿El conductor puede esperar si el equipaje tarda?",
+      "a": "Sí. La tarifa incluye 60 minutos de espera gratuita a partir de la hora real de aterrizaje. Después se cobra una tarifa por hora, y le avisamos por SMS."
+    },
+    {
+      "q": "¿Puedo reservar varios vehículos al mismo tiempo?",
+      "a": "Sí. Organizamos con frecuencia convoyes de 3 a 15 vehículos para delegaciones oficiales y grupos. La coordinación es centralizada y los conductores se comunican por radio."
+    }
+  ],
+  "meta": {
+    "title": "Traslado aeropuerto CDG París, precio fijo | Amani Limousines",
+    "description": "Traslados desde y hacia el aeropuerto Charles de Gaulle las 24 horas. Precio fijo con peajes incluidos, seguimiento de vuelo y 60 minutos de espera gratis."
+  },
+  "cta": {
+    "title": "Reserve su traslado desde CDG",
+    "text": "Nuestro equipo atiende las 24 horas reservas, cotizaciones a medida y solicitudes para delegaciones. Respondemos en menos de 30 minutos. Llame o escriba por WhatsApp al +33 6 87 16 97 47, o envíe un correo a amani.limousines@gmail.com.",
+    "button": "Reservar"
+  }
+}

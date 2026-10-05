@@ -1,0 +1,96 @@
+{
+  "slug": "events",
+  "locale": "de",
+  "tag": "Eventtransfers Paris",
+  "h1": "VIP-Transfers zu Veranstaltungen in Paris",
+  "intro": "Paris ist Gastgeber großer Veranstaltungen von internationalem Rang: Fashion Week, Paris Air Show, Roland Garros, dazu das Filmfestival in Cannes. Jede davon erzeugt ein hohes Verkehrsaufkommen, das nur Teams bewältigen, die diese besonderen Bedingungen kennen. Amani Limousines ist bei jeder großen Ausgabe im Einsatz, mit **eigenen Flotten, Koordinatoren vor Ort** und Fahrzeugen, die lange im Voraus reserviert sind. Ob Aussteller, Einkäufer oder Gast: Sie fahren mit Privatchauffeur zu Ihren Terminen.",
+  "sections": [
+    {
+      "title": "Veranstaltungen, die wir abdecken",
+      "paragraphs": [
+        "Die großen Messen, Modewochen und Sportereignisse in Paris, an der Côte d'Azur und in der Normandie folgen einem festen Kalender. Unsere Planung richtet sich danach."
+      ],
+      "cards": [
+        {
+          "title": "Paris Fashion Week (Februar und September)",
+          "text": "Shuttles zwischen den Modehäusern, den Hotels im Triangle d'Or und den Showrooms im Marais."
+        },
+        {
+          "title": "Paris Air Show (Juni, ungerade Jahre)",
+          "text": "Transfers nach Le Bourget, Empfang am FBO, Konvois für Regierungs- und Industriedelegationen. Für Aussteller fahren Shuttles zwischen Le Bourget und den Pariser Hotels."
+        },
+        {
+          "title": "Roland Garros (Mai bis Juni)",
+          "text": "Transfers zur Porte d'Auteuil, Zugang zu VIP-Logen und Firmenhospitality. In der Endphase des Turniers ist die Flotte verstärkt."
+        },
+        {
+          "title": "Filmfestival Cannes (Mai)",
+          "text": "Transfers Nizza–Cannes, Zufahrt zur Croisette, Vorfahrt am Red Carpet, Shuttles zum Yachthafen. Der Service steht während der gesamten Festivalwoche zur Verfügung."
+        },
+        {
+          "title": "Grand Prix von Monaco",
+          "text": "Transfers Nizza–Monaco, Zugang zu Paddock und Yacht-Hospitality. Die Straßensperrungen rund um die Strecke planen wir ein."
+        },
+        {
+          "title": "Pferderennbahn Deauville (August)",
+          "text": "Transfers Paris–Deauville zu den Renntagen, zum Polo und zu den Jährlingsauktionen."
+        },
+        {
+          "title": "Maison & Objet (Januar und September)",
+          "text": "Shuttles nach Villepinte und Transfers ab CDG für internationale Einkäufer und Aussteller."
+        },
+        {
+          "title": "Salon Nautic (Dezember)",
+          "text": "Porte de Versailles: Transfers und Fahrzeuge mit Chauffeur auf Stundenbasis für Fachbesucher der Bootsbranche."
+        },
+        {
+          "title": "Première Vision",
+          "text": "Internationale Stoffmesse. Shuttles nach Villepinte und Transfers zu den Hotels im 8. und 16. Arrondissement."
+        }
+      ]
+    },
+    {
+      "title": "Früh buchen, entspannt fahren",
+      "paragraphs": [
+        "Während der Fashion Week oder Roland Garros sind gute Fahrzeuge **Wochen im Voraus ausgebucht**. Planen Sie Ihre Transfers als Aussteller, akkreditierter Einkäufer, Journalist oder Gastgeber einer Firmenhospitality mit demselben Vorlauf wie Tickets und Unterkunft.",
+        "Unser Team kann Fahrzeuge mehrere Monate vorher reservieren. Die Fahrpläne passen wir an, sobald Ihr Programm feststeht."
+      ]
+    },
+    {
+      "title": "Flughafentransfers im Großraum Paris",
+      "paragraphs": [
+        "Viele Gäste reisen per Flugzeug an. Für die gängigen Strecken gilt ein **Festpreis**, wir verfolgen Ihren Flug und sind rund um die Uhr erreichbar. Den Preis für Ihre Strecke nennen wir Ihnen auf Anfrage."
+      ],
+      "cards": [
+        {
+          "title": "Ab CDG",
+          "text": "Paris, La Défense, Disneyland, Versailles, Gare du Nord, Gare de Lyon."
+        },
+        {
+          "title": "Ab Orly",
+          "text": "Paris."
+        },
+        {
+          "title": "Ab Le Bourget",
+          "text": "Paris."
+        }
+      ]
+    },
+    {
+      "title": "Kontakt zu unserem Team",
+      "paragraphs": [
+        "Wir sind rund um die Uhr für Buchungen, individuelle Angebote und Delegationsanfragen da. Sie erhalten **innerhalb von 30 Minuten eine Antwort**.",
+        "Telefon und WhatsApp: +33 6 87 16 97 47. E-Mail: amani.limousines@gmail.com."
+      ]
+    }
+  ],
+  "meta": {
+    "title": "Eventtransfers Paris: Fashion Week, Air Show | Amani Limousines",
+    "description": "Fahrten zu Fashion Week, Paris Air Show, Roland Garros, Cannes und Monaco. Eigene Flotten, Koordinatoren vor Ort, Fahrzeuge Monate im Voraus reservierbar."
+  },
+  "cta": {
+    "title": "Fahrzeuge für Ihre Veranstaltung reservieren",
+    "text": "Nennen Sie uns Termine und Programm. Wir reservieren die Fahrzeuge und senden Ihnen ein Angebot zum Festpreis.",
+    "button": "Jetzt buchen"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "slug": "orly-airport-transfer",
+  "locale": "es",
+  "tag": "Aeropuerto París-Orly",
+  "h1": "Traslado con chofer entre el aeropuerto de Orly y París",
+  "intro": "Orly es el aeropuerto más cercano a París: está a 18 km del centro. Del terminal 4 a la Place d'Italie hay de 25 a 35 minutos según el tráfico. Con un servicio de chofer privado, usted evita la fila de taxis, la recarga de la tarjeta Navigo y el Orlyval, que a veces va lleno. Al salir de la sala de llegadas, su vehículo lo espera. Amani Limousines atiende los cuatro terminales de Orly con el mismo nivel de servicio que en Charles de Gaulle.",
+  "sections": [
+    {
+      "title": "Los terminales de Orly",
+      "paragraphs": [
+        "Desde la reorganización de 2021, Orly tiene cuatro terminales: Orly 1, 2, 3 y 4. **Orly 4, antes llamado Orly Sud**, recibe sobre todo los vuelos de Air France hacia los territorios franceses de ultramar y África, además de buena parte de las aerolíneas extranjeras. Orly 1, 2 y 3, antes Orly Ouest, concentran los vuelos de Transavia, Vueling, easyJet y otras aerolíneas de bajo costo.",
+        "Su chofer sabe dónde opera cada aerolínea. Lo espera en la salida correcta con un cartel con su nombre. Un pasillo peatonal une Orly 4 con los terminales 1, 2 y 3. Si su conexión implica pasar de una zona a otra, hace falta más tiempo, y su chofer lo tiene en cuenta al fijar la hora de recogida."
+      ]
+    },
+    {
+      "title": "Por qué Orly es distinto de CDG",
+      "paragraphs": [
+        "El aeropuerto Charles de Gaulle llega a París por el norte, a través de algunos de los tramos más congestionados del periférico. Orly entra a la ciudad por el sur, por la autopista A6B, que lleva directamente a la Rive Gauche: los distritos 5, 6, 14 y 15, que suelen tener menos tráfico.",
+        "Para un hotel cerca de Saint-Germain, Montparnasse o el Barrio Latino, Orly es la opción más práctica. **El mismo precio fijo se aplica a todos los distritos de París**, sin importar de qué lado del Sena esté su destino."
+      ]
+    },
+    {
+      "title": "Tarifas más accesibles que en CDG",
+      "paragraphs": [
+        "La corta distancia entre Orly y París se refleja en el precio. Un traslado en Mercedes Clase E hacia el centro de París **empieza en 80 €**, que es la tarifa mínima garantizada. Los precios son fijos, con todo incluido, peajes también.",
+        "Para destinos fuera del centro, como La Défense o Versalles, la tarifa se calcula por kilómetro, sin recargo nocturno ni de fin de semana. El precio de la Clase V se da por cotización."
+      ],
+      "cards": [
+        {
+          "title": "Sedán Business",
+          "text": "Mercedes Clase E. Centro de París: 80 €."
+        },
+        {
+          "title": "Sedán Executive",
+          "text": "Mercedes Clase S. Centro de París: 96 €."
+        },
+        {
+          "title": "Minivan de lujo",
+          "text": "Mercedes Clase V, hasta 7 pasajeros. Precio por cotización."
+        }
+      ]
+    },
+    {
+      "title": "Destinos frecuentes desde Orly",
+      "paragraphs": [
+        "Estas son las rutas más solicitadas, con distancia, duración estimada y precio desde el que parte cada trayecto."
+      ],
+      "cards": [
+        {
+          "title": "Orly → Centro de París (distritos 13, 14 y 5)",
+          "text": "18 km, de 25 a 35 min. Desde 80 €."
+        },
+        {
+          "title": "Orly → La Défense",
+          "text": "30 km, de 35 a 45 min. Desde 95 €."
+        },
+        {
+          "title": "Orly → Versalles",
+          "text": "25 km, de 30 a 40 min. Desde 85 €."
+        },
+        {
+          "title": "Orly → Marne-la-Vallée / Disneyland",
+          "text": "42 km, de 45 a 55 min. Desde 115 €."
+        }
+      ]
+    },
+    {
+      "title": "Pensado para los vuelos de madrugada",
+      "paragraphs": [
+        "Orly tiene muchas salidas a las 6 de la mañana. A esa hora, un taxi puede tardar 30 minutos en llegar. **Su chofer de Amani queda confirmado la noche anterior** y pasa por su domicilio u hotel a la hora acordada.",
+        "El servicio funciona las 24 horas, también los días festivos y durante las huelgas del transporte público parisino (RATP)."
+      ]
+    }
+  ],
+  "meta": {
+    "title": "Chofer privado aeropuerto Orly a París | Amani Limousines",
+    "description": "Traslado con chofer entre Orly y París a precio fijo: desde 80 € al centro, peajes incluidos. Los 4 terminales, servicio 24 h, ideal para vuelos de madrugada."
+  },
+  "cta": {
+    "title": "Reserve su traslado desde Orly",
+    "text": "Nuestro equipo atiende las 24 horas y responde en menos de 30 minutos. Puede reservar con el botón, por teléfono o WhatsApp al +33 6 87 16 97 47, o por correo a amani.limousines@gmail.com.",
+    "button": "Reservar mi traslado"
+  }
+}

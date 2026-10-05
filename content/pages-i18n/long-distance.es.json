@@ -1,0 +1,80 @@
+{
+  "slug": "long-distance",
+  "locale": "es",
+  "tag": "Larga distancia, Francia y Europa",
+  "h1": "Traslados de larga distancia desde París: su oficina en movimiento",
+  "intro": "El tren no siempre llega hasta su destino y el avión lo obliga a usar aeropuertos que suelen estar lejos de donde usted necesita ir. Para trayectos de **150 a 1 000 km** desde París, un servicio de chofer privado le ofrece algo que ni el TGV ni el avión igualan: un espacio de trabajo donde usted decide el horario, las paradas y el ritmo. El vehículo tiene wifi, enchufes de 220 V y climatización individual. Usted trabaja o duerme, y el conductor se ocupa del camino.",
+  "sections": [
+    {
+      "title": "Los trayectos de larga distancia más solicitados",
+      "paragraphs": [
+        "Estas son las rutas que más reservan nuestros clientes, con la distancia y el tiempo aproximado de viaje desde París.",
+        "Cualquier destino que no figure en la lista es posible **con presupuesto a medida**. Indíquenos el punto de salida, el de llegada y la fecha que desea."
+      ],
+      "cards": [
+        {
+          "title": "París → Deauville",
+          "text": "200 km, 2 h 30. Fines de semana, festival de cine."
+        },
+        {
+          "title": "París → Bruselas",
+          "text": "310 km, 3 h. Instituciones europeas, sedes corporativas."
+        },
+        {
+          "title": "París → Reims",
+          "text": "145 km, 1 h 45. Casas de champán, catedral."
+        },
+        {
+          "title": "París → Lyon",
+          "text": "465 km, 4 h 30. Alternativa al TGV para grupos y delegaciones."
+        },
+        {
+          "title": "París → Mónaco",
+          "text": "940 km, 9 h. Gran Premio, residencias privadas, negocios privados."
+        },
+        {
+          "title": "París → Ginebra",
+          "text": "555 km, 5 h 30. CERN, ONU, banca privada, foros."
+        },
+        {
+          "title": "París → Ámsterdam",
+          "text": "500 km, 5 h. Puerto, aeropuerto de Schiphol, distrito de negocios."
+        },
+        {
+          "title": "París → Londres",
+          "text": "460 km, 6 h por el Eurotúnel. Se requiere documentación de viaje."
+        }
+      ]
+    },
+    {
+      "title": "Equipamiento de los vehículos",
+      "paragraphs": [
+        "Nuestros sedanes y vans VIP para viajes largos tienen wifi 4G/5G, enchufes de 220 V y USB-C para equipos de trabajo, climatización por zonas y espacio amplio para equipaje voluminoso.",
+        "En el Mercedes Clase S y el BMW i7, los asientos traseros tienen reposacabezas eléctrico y **una inclinación amplia** para descansar durante el trayecto."
+      ]
+    },
+    {
+      "title": "Relevo de conductor en los trayectos más largos",
+      "paragraphs": [
+        "Cuando el viaje supera **las 8 horas de manejo**, como París–Mónaco o París–Barcelona, programamos un relevo de conductor a mitad de camino. Así el conductor mantiene la atención plena de principio a fin.",
+        "El cambio se hace en un área de servicio de la autopista o en una ciudad intermedia. Para usted, el viaje sigue sin interrupciones."
+      ]
+    },
+    {
+      "title": "¿Por qué el auto y no el tren?",
+      "paragraphs": [
+        "Para un grupo de 3 a 7 personas, el costo de un traslado de larga distancia en van VIP suele ser **comparable al de varios boletos de TGV en primera clase**. A cambio, evita las estaciones, las conexiones y los límites de equipaje.",
+        "Hay delegaciones que viajan con material de presentación, valija diplomática o aparatos médicos. En esos casos, el auto sigue siendo la única opción viable."
+      ]
+    }
+  ],
+  "meta": {
+    "title": "Traslados de larga distancia desde París | Amani Limousines",
+    "description": "Traslados en auto con conductor desde París a Bruselas, Ginebra, Mónaco, Londres y toda Europa. Wifi a bordo, relevo de conductor y presupuesto a medida."
+  },
+  "cta": {
+    "title": "Solicite su presupuesto",
+    "text": "Nuestro equipo atiende las 24 horas, los 7 días de la semana, por teléfono o WhatsApp al +33 6 87 16 97 47 o por correo a amani.limousines@gmail.com. Indique su origen, su destino y la fecha. Le respondemos en menos de 30 minutos.",
+    "button": "Reservar"
+  }
+}

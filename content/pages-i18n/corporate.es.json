@@ -1,0 +1,79 @@
+{
+  "slug": "corporate",
+  "locale": "es",
+  "tag": "Empresas y socios",
+  "h1": "Un equipo dedicado para hoteles, agencias y embajadas",
+  "intro": "Amani Limousines trabaja con los hoteles de categoría Palace de París, con agencias de viajes internacionales y con representaciones diplomáticas. Para estos clientes ofrece un servicio de chófer privado con cuenta corporativa. La idea es sencilla: nuestra organización se adapta a la suya. Usted tiene una línea prioritaria, una sola persona de contacto, **facturación mensual** y tarifas acordadas según su volumen. La empresa opera desde París en toda Francia y en Europa, las 24 horas, todos los días del año.",
+  "sections": [
+    {
+      "title": "Qué incluye una cuenta de socio",
+      "paragraphs": [
+        "La cuenta corporativa reúne cuatro compromisos concretos. Cubren la atención de sus solicitudes, la facturación, el contacto diario y el precio."
+      ],
+      "cards": [
+        {
+          "title": "Atención prioritaria",
+          "text": "Sus solicitudes pasan primero. Tiene una línea dedicada con respuesta en menos de 15 minutos y vehículos reservados para socios en temporada alta, incluida la Semana de la Moda de París."
+        },
+        {
+          "title": "Facturación mensual",
+          "text": "Se acabaron los gastos viaje por viaje. Recibe un estado de cuenta mensual detallado por servicio, por cliente o por centro de costos, con pago a 30 días."
+        },
+        {
+          "title": "Gestor de cuenta dedicado",
+          "text": "Una sola persona conoce sus costumbres, sus clientes VIP y sus requisitos de protocolo. La contacta directamente, sin pasar por una central telefónica."
+        },
+        {
+          "title": "Tarifas negociadas",
+          "text": "Tabla de precios para socios según su volumen, precios fijos garantizados durante todo el año y condiciones preferentes en servicios por horas de larga duración."
+        }
+      ]
+    },
+    {
+      "title": "Pensado para su sector",
+      "paragraphs": [
+        "Cada tipo de cliente tiene necesidades distintas. El servicio se ajusta a la forma de trabajar de cada uno."
+      ],
+      "cards": [
+        {
+          "title": "Hoteles y conserjerías",
+          "text": "Sus huéspedes juzgan el hotel hasta en el auto que los traslada. Los chóferes visten traje, reciben al cliente en nombre de su establecimiento e informan al conserje."
+        },
+        {
+          "title": "Agencias de viajes y DMC",
+          "text": "Un socio de transporte confiable para circuitos, traslados y días privados. Confirmación inmediata, comisión para socios y asistencia 24/7 durante la estancia."
+        },
+        {
+          "title": "Embajadas y ministerios",
+          "text": "Caravanas oficiales, visitas de Estado y delegaciones. Chóferes con experiencia en protocolo diplomático, discreción absoluta y coordinación con los servicios de seguridad."
+        },
+        {
+          "title": "Empresas",
+          "text": "Viajes de directivos, roadshows con inversionistas y traslados de empleados. Hay informes de RSE disponibles, ya que la flota híbrida y eléctrica está en crecimiento."
+        }
+      ]
+    },
+    {
+      "title": "Hablemos de su volumen",
+      "paragraphs": [
+        "Cuéntenos qué necesita por correo electrónico, por teléfono o por WhatsApp. Le respondemos **en un plazo de 24 horas** con una propuesta de tarifas.",
+        "Correo: amani.limousines@gmail.com. Teléfono y WhatsApp: +33 6 87 16 97 47. El equipo está disponible las 24 horas, todos los días, para reservas, cotizaciones a medida y solicitudes de delegación."
+      ]
+    },
+    {
+      "title": "La empresa",
+      "paragraphs": [
+        "Amani Limousines es una sociedad francesa de tipo SASU, **inscrita en el Registro Mercantil de París desde 2016**. SIREN 821 665 395, SIRET 821 665 395 00025, número de IVA intracomunitario FR90 821 665 395."
+      ]
+    }
+  ],
+  "meta": {
+    "title": "Cuenta corporativa para hoteles y agencias | Amani Limousines",
+    "description": "Cuenta corporativa para hoteles, agencias, embajadas y empresas: línea prioritaria, facturación mensual, tarifas negociadas y un gestor de cuenta dedicado."
+  },
+  "cta": {
+    "title": "Abra su cuenta corporativa",
+    "text": "Escríbanos o llámenos al +33 6 87 16 97 47 y le enviamos una propuesta de tarifas en menos de 24 horas.",
+    "button": "Solicitar una cuenta corporativa"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "slug": "hourly-hire",
+  "locale": "es",
+  "tag": "Servicio por horas",
+  "h1": "Auto con conductor por horas en París",
+  "intro": "El servicio por horas pone a su disposición un servicio de **chófer privado** en París durante un tiempo acordado, a diferencia de un traslado simple de un punto a otro. Entre una cita y la siguiente, el vehículo queda estacionado cerca y está listo en dos minutos. Así, una jornada de reuniones en París y su región es mucho más fácil de organizar. Usted fija el horario y el conductor se adapta a su agenda durante todo el servicio.",
+  "sections": [
+    {
+      "title": "Cómo funciona",
+      "paragraphs": [
+        "Usted indica la hora de inicio, la hora aproximada de fin y la primera dirección de recogida. Lo demás se resuelve sobre la marcha. ¿Sale de una reunión en Neuilly y su siguiente cita es en el Marais? Basta un mensaje a su conductor para organizar el trayecto. Si necesita pasar por un hotel a dejar documentos, no hay trámite ni aplicación que abrir: el conductor cambia la ruta en el momento.",
+        "Mientras usted está en una reunión, el tiempo de espera no se cobra aparte. Está incluido en la tarifa por hora. **Usted paga solo la duración acordada**, sin importar cuántas direcciones visite dentro de ese horario."
+      ]
+    },
+    {
+      "title": "Fórmulas disponibles",
+      "paragraphs": [
+        "Hay tres formatos según la duración de su agenda."
+      ],
+      "cards": [
+        {
+          "title": "Media jornada: 4 horas",
+          "text": "Para una mañana de citas o una tarde de eventos. Se recomienda para 2 a 4 direcciones."
+        },
+        {
+          "title": "Jornada completa: 8 horas",
+          "text": "El formato más solicitado para visitas a clientes, recorridos de delegaciones y días de feria."
+        },
+        {
+          "title": "Varios días: a medida",
+          "text": "Para delegaciones que pasan varios días en París. El mismo conductor y el mismo vehículo de principio a fin."
+        }
+      ]
+    },
+    {
+      "title": "Para quién es este servicio",
+      "paragraphs": [
+        "Lo utilizan sobre todo directivos con varias reuniones seguidas en París el mismo día, delegaciones extranjeras en visita institucional y familias que quieren conocer la ciudad con comodidad, sin buscar un taxi entre un museo y una tienda. También lo contratan agencias de viajes de alta gama que organizan estancias para sus clientes.",
+        "Contratar un conductor por un día completo suele costar **menos que reservar viajes sueltos** a lo largo de la jornada. A eso se suma la comodidad de volver siempre al mismo vehículo, con calefacción o aire acondicionado según la estación y con sus pertenencias a bordo entre un trayecto y otro."
+      ]
+    },
+    {
+      "title": "Vehículos disponibles",
+      "paragraphs": [
+        "Todos los modelos de la flota pueden contratarse por horas."
+      ],
+      "cards": [
+        {
+          "title": "Mercedes Clase E",
+          "text": "Sedán para 3 pasajeros. La opción más versátil para moverse dentro de París."
+        },
+        {
+          "title": "Mercedes Clase S",
+          "text": "Sedán ejecutivo, pensado para presidentes y directores generales."
+        },
+        {
+          "title": "Mercedes Clase V",
+          "text": "Minivan para 7 pasajeros, adecuada para grupos y familias."
+        },
+        {
+          "title": "Mercedes Sprinter VIP",
+          "text": "Minibús de 8 a 19 plazas y autocar de 50 plazas, para grupos y delegaciones."
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "title": "Auto con conductor por horas en París | Amani Limousines",
+    "description": "Contrate un auto con conductor en París por 4 horas, 8 horas o varios días. Esperas incluidas, ruta flexible y respuesta en 30 minutos, las 24 horas del día."
+  },
+  "cta": {
+    "title": "Reserve su servicio por horas",
+    "text": "El equipo está disponible las 24 horas para reservas, presupuestos a medida y solicitudes de delegaciones, con respuesta garantizada en 30 minutos. Llame al +33 6 87 16 97 47, escriba por WhatsApp o envíe un correo a amani.limousines@gmail.com.",
+    "button": "Reservar ahora"
+  }
+}

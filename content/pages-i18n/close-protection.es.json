@@ -1,0 +1,45 @@
+{
+  "slug": "close-protection",
+  "locale": "es",
+  "tag": "Protección cercana en París",
+  "h1": "Protección cercana y transporte seguro en París, con la discreción como prioridad",
+  "intro": "En una ciudad como París, la protección cercana depende menos de los vehículos blindados que de la anticipación, la discreción y la elección de la ruta. Amani Limousines ofrece un servicio de chofer privado para misiones de seguridad, con conductores formados en conducción defensiva, en lectura del entorno urbano y en los protocolos de comunicación con los equipos de protección. Conocen las rutas alternativas, los puntos de salida rápida y los accesos que la mayoría de los conductores nunca usa.",
+  "sections": [
+    {
+      "title": "Conductores formados en conducción de seguridad",
+      "paragraphs": [
+        "Los conductores asignados a estas misiones recibieron una formación específica en **conducción defensiva y situaciones de riesgo**. Saben qué rutas alternativas tomar en París, dónde están los accesos reservados a emergencias y qué puntos permiten salir rápido de los barrios sensibles.",
+        "Trabajan en coordinación directa con los responsables de seguridad de sus clientes."
+      ]
+    },
+    {
+      "title": "Vehículo principal y vehículo de escolta",
+      "paragraphs": [
+        "Para personas con alta exposición mediática o política, el dispositivo incluye **un mínimo de dos vehículos**: uno principal y uno de escolta. Los dos conductores mantienen comunicación por radio en todo momento.",
+        "Si ocurre un incidente, el protocolo de extracción se activa de inmediato."
+      ]
+    },
+    {
+      "title": "Vehículos sin distintivos",
+      "paragraphs": [
+        "A petición del cliente, todos los vehículos circulan sin ninguna marca de Amani Limousines. Son sedanes negros estándar con placas de matrícula normales. El auto se confunde con el tráfico habitual de París, y **esa es a menudo la mejor protección**."
+      ]
+    },
+    {
+      "title": "Perfiles de clientes",
+      "paragraphs": [
+        "Este servicio lo usan directivos de empresas cotizadas sujetos a restricciones de vigilancia, figuras públicas de visita en París (artistas, deportistas, personas muy conocidas), diplomáticos en misión no oficial y familias adineradas que quieren un nivel adicional de protección durante su estancia en la capital.",
+        "Todas las misiones se tratan con **total confidencialidad**. Ningún detalle sale del equipo asignado a la misión."
+      ]
+    }
+  ],
+  "meta": {
+    "title": "Protección cercana y transporte seguro en París | Amani Limousines",
+    "description": "Transporte seguro en París: conductores formados en conducción defensiva, dispositivo de dos vehículos, autos sin distintivos y total confidencialidad."
+  },
+  "cta": {
+    "title": "Organice su transporte seguro",
+    "text": "El equipo atiende las 24 horas, todos los días, para reservas y presupuestos a medida, con respuesta garantizada en 30 minutos. Puede escribir a amani.limousines@gmail.com, llamar o enviar un WhatsApp al +33 6 87 16 97 47.",
+    "button": "Reservar"
+  }
+}

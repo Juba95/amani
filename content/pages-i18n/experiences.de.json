@@ -1,0 +1,76 @@
+{
+  "slug": "experiences",
+  "locale": "de",
+  "tag": "Ausflüge ab Paris",
+  "h1": "Signature Experiences: Ausflüge mit Chauffeur ab Paris",
+  "intro": "Diese Ausflüge sind mehr als eine Fahrt von A nach B. Jede Experience umfasst einen Privatchauffeur, der nur für Sie da ist, ein Premiumfahrzeug und eine Route, die auf Ihre Wünsche abgestimmt ist. Die Preise sind fest, Sie wissen also vorab, was Sie zahlen. Zur Auswahl stehen ein Abend in Paris, Halbtagesausflüge und ganze Tagestouren, etwa in die Champagne, an die Loire oder zum Mont Saint-Michel. Amani Limousines ist ein Chauffeurservice mit Sitz in Paris und seit 2016 im Pariser Handelsregister eingetragen.",
+  "sections": [
+    {
+      "title": "Am Abend und für einen halben Tag",
+      "paragraphs": [
+        "Für einen Abend oder einen Vormittag brauchen Sie Paris nicht weit zu verlassen. Ihr Chauffeur holt Sie ab und bleibt während des gesamten Programms in Ihrer Nähe.",
+        "Die Abendtour dauert vier bis fünf Stunden und kostet **ab 390 €**. Versailles erkunden Sie in einem halben Tag in Ihrem eigenen Tempo."
+      ],
+      "cards": [
+        {
+          "title": "Paris by Night · ab 390 €",
+          "text": "Vier bis fünf Stunden. Der funkelnde Eiffelturm, Montmartre in der Abenddämmerung, danach bringt Sie Ihr Chauffeur zum Abendessen auf die Champs-Élysées. Er steht Ihnen den ganzen Abend zur Verfügung."
+        },
+        {
+          "title": "Versailles privat · 450 €",
+          "text": "Halber Tag. Das Schloss, die Gärten von Le Nôtre und das Anwesen von Marie-Antoinette. Sie bestimmen das Tempo, Ihr Chauffeur wartet auf Sie."
+        }
+      ]
+    },
+    {
+      "title": "Tagesausflüge ab Paris",
+      "paragraphs": [
+        "Die Ganztagestouren führen in Regionen, die mit öffentlichen Verkehrsmitteln umständlich zu erreichen sind. Ihr Chauffeur übernimmt jeden Kilometer, Sie kümmern sich nur um das Programm vor Ort.",
+        "Giverny liegt eine Stunde von Paris entfernt. Der Mont Saint-Michel ist das weiteste Ziel und kostet **1.290 €**."
+      ],
+      "cards": [
+        {
+          "title": "Schlösser der Loire · 990 €",
+          "text": "Chambord, Chenonceau und ein Mittagessen in einem Sternerestaurant. Abfahrt an Ihrem Hotel um 8 Uhr, Rückkehr nach Paris rechtzeitig zum Abendessen."
+        },
+        {
+          "title": "Mont Saint-Michel · 1.290 €",
+          "text": "Das „Wunder des Abendlandes“ an einem Tag ab Paris: Abtei, Bucht und Mittagessen mit Blick aufs Meer."
+        },
+        {
+          "title": "Giverny, Monets Gärten · 590 €",
+          "text": "Das Haus des Malers, der Wassergarten und die Seerosen. Der Impressionismus in Originalgröße, eine Stunde von Paris."
+        }
+      ]
+    },
+    {
+      "title": "Wein und Gastronomie",
+      "paragraphs": [
+        "In die Champagne geht es für einen ganzen Tag. Sie besuchen Reims und Épernay, besichtigen Champagnerhäuser und nehmen an privaten Verkostungen teil. Ein Mittagessen ist eingeplant.",
+        "Der Preis liegt bei **890 €**. Da Ihr Chauffeur fährt, können Sie jede Verkostung unbesorgt genießen."
+      ],
+      "cards": [
+        {
+          "title": "Champagne-Ausflug · 890 €",
+          "text": "Ganzer Tag. Reims und Épernay ab Paris: Besuche bei Champagnerhäusern, private Verkostungen und Mittagessen. Ihr Chauffeur übernimmt jeden Kilometer."
+        }
+      ]
+    },
+    {
+      "title": "Kontakt und individuelle Angebote",
+      "paragraphs": [
+        "Das Team ist rund um die Uhr erreichbar, auch für individuelle Angebote und Anfragen von Delegationen. Sie erhalten **innerhalb von 30 Minuten** eine Antwort.",
+        "Am einfachsten erreichen Sie uns telefonisch oder per WhatsApp unter +33 6 87 16 97 47 oder per E-Mail an amani.limousines@gmail.com. Neben den Ausflügen bietet Amani Limousines Flughafentransfers ab CDG, Orly und Le Bourget, Fahrzeuge mit Chauffeur auf Stundenbasis sowie Fahrten für offizielle Delegationen in Paris, Frankreich und Europa an."
+      ]
+    }
+  ],
+  "meta": {
+    "title": "Ausflüge mit Chauffeur ab Paris: Festpreise | Amani Limousines",
+    "description": "Ausflüge ab Paris mit eigenem Chauffeur: Paris by Night ab 390 €, Versailles, Giverny, Champagne, Loire-Schlösser, Mont Saint-Michel. Festpreise, 24/7."
+  },
+  "cta": {
+    "title": "Ihren Ausflug reservieren",
+    "text": "Wählen Sie Ihre Experience und reservieren Sie zum Festpreis. Für Fragen oder ein individuelles Programm erreichen Sie uns rund um die Uhr unter +33 6 87 16 97 47, auch per WhatsApp.",
+    "button": "Jetzt reservieren"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "slug": "contact",
+  "locale": "de",
+  "tag": "Kontakt und Anfragen",
+  "h1": "So erreichen Sie unser Team in Paris",
+  "intro": "Das Team von Amani Limousines ist rund um die Uhr erreichbar, an jedem Tag des Jahres. Sie können einen Privatchauffeur in Frankreich und Europa buchen, ein individuelles Angebot anfordern oder Fragen zur Organisation Ihrer Reise stellen. **Wir antworten innerhalb von 30 Minuten**, auch nachts und an Feiertagen. Für Ihre Anfrage stehen Telefon, WhatsApp und E-Mail zur Verfügung. Wählen Sie den Weg, der zu Ihrem Anliegen passt.",
+  "sections": [
+    {
+      "title": "Kontaktwege",
+      "paragraphs": [
+        "Jeder Kanal hat seinen Zweck. Für dringende Fahrten rufen Sie am besten an. Für ein schnelles Angebot reicht eine Nachricht mit Ihren Reisedaten.",
+        "Umfangreiche Anfragen, etwa für Delegationen oder Firmenkonten, senden Sie per E-Mail."
+      ],
+      "cards": [
+        {
+          "title": "Telefon",
+          "text": "+33 6 87 16 97 47. Rund um die Uhr erreichbar, für dringende Anfragen und kurzfristige Buchungen."
+        },
+        {
+          "title": "WhatsApp",
+          "text": "Schicken Sie uns die Details Ihrer Fahrt per WhatsApp und erhalten Sie zügig ein Angebot."
+        },
+        {
+          "title": "E-Mail",
+          "text": "amani.limousines@gmail.com. Für ausführliche Anfragen, Angebote für Delegationen und Firmenkonten."
+        }
+      ]
+    },
+    {
+      "title": "Gesprochene Sprachen",
+      "paragraphs": [
+        "Unser Team antwortet auf Französisch, Englisch, Arabisch und Mandarin. Die Fahrer sprechen mehrere Sprachen.",
+        "Sie kennen die kulturellen Gepflogenheiten, die arabischsprachige Gäste aus Katar, Saudi-Arabien und den Vereinigten Arabischen Emiraten erwarten. Dasselbe gilt für chinesischsprachige Kunden aus Hongkong, Shanghai und Peking."
+      ]
+    },
+    {
+      "title": "Antwortzeiten",
+      "paragraphs": [
+        "Wie schnell Sie eine Antwort erhalten, hängt von der Art des Auftrags ab. Einfache Buchungen sind rasch bestätigt. Aufwendige Einsätze brauchen etwas mehr Vorbereitung."
+      ],
+      "cards": [
+        {
+          "title": "Standardbuchungen",
+          "text": "Bestätigung innerhalb von 30 Minuten."
+        },
+        {
+          "title": "Komplexe Einsätze",
+          "text": "Bei Konvois, Delegationen und Personenschutz erhalten Sie innerhalb von 2 bis 4 Stunden einen ausführlichen Vorschlag mit Verfügbarkeiten und Preisen."
+        },
+        {
+          "title": "Notfalltransfers",
+          "text": "Für Fahrten innerhalb der nächsten 2 Stunden rufen Sie direkt unter +33 6 87 16 97 47 an."
+        }
+      ]
+    },
+    {
+      "title": "Festpreise für Flughafentransfers",
+      "paragraphs": [
+        "Für Flughafentransfers im Großraum Paris gelten **Festpreise ohne Überraschungen**. Ihr Flug wird verfolgt, damit der Fahrer auch bei Verspätung zur richtigen Zeit bereitsteht.",
+        "Häufig gebuchte Strecken sind CDG nach Paris, Orly nach Paris, CDG nach La Défense, CDG nach Disneyland, CDG nach Versailles und Le Bourget nach Paris. Den Preis für Ihre Strecke nennen wir Ihnen auf Anfrage."
+      ]
+    },
+    {
+      "title": "Das Unternehmen",
+      "paragraphs": [
+        "Amani Limousines ist eine französische SASU und seit 2016 im Handelsregister von Paris eingetragen. Der Sitz liegt in Paris, die Einsätze führen durch Frankreich und Europa.",
+        "SIREN 821 665 395, SIRET 821 665 395 00025, Umsatzsteuer-Identifikationsnummer FR90 821 665 395, Handelsregister 821 665 395 R.C.S. Paris."
+      ]
+    }
+  ],
+  "meta": {
+    "title": "Kontakt: Chauffeurservice Paris rund um die Uhr | Amani Limousines",
+    "description": "Erreichen Sie Amani Limousines rund um die Uhr per Telefon, WhatsApp oder E-Mail. Antwort innerhalb von 30 Minuten, Chauffeurservice in Paris und Europa."
+  },
+  "cta": {
+    "title": "Ihre Fahrt planen",
+    "text": "Teilen Sie uns Datum, Strecke und Zahl der Fahrgäste mit. Sie erhalten innerhalb von 30 Minuten eine Bestätigung oder ein Angebot.",
+    "button": "Jetzt buchen"
+  }
+}

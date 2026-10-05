@@ -1,0 +1,81 @@
+{
+  "slug": "experiences",
+  "locale": "es",
+  "tag": "Excursiones desde París",
+  "h1": "Experiencias Signature: excursiones y noches en París con chófer",
+  "intro": "Amani Limousines organiza excursiones de un día, medio día o una noche a partir de París, con servicio de chófer privado incluido de principio a fin. Cada experiencia incluye un chófer dedicado, un vehículo premium y un itinerario diseñado según sus intereses. Usted elige el destino: la Champaña, los castillos del Loira, Versalles, el Mont Saint-Michel, Giverny o la ciudad de noche. **El precio es fijo y se conoce antes de reservar.** No hay cargos adicionales al final del día.",
+  "sections": [
+    {
+      "title": "Seis experiencias a elegir",
+      "paragraphs": [
+        "Las experiencias se agrupan en tres tipos: salidas nocturnas, excursiones y propuestas de vino y gastronomía. Todas salen de París y regresan a París.",
+        "El chófer lo recoge en su hotel y lo acompaña durante todo el recorrido. Mientras usted visita, él lo espera, así que no tiene que preocuparse por horarios de tren ni por dónde estacionar."
+      ],
+      "cards": [
+        {
+          "title": "Paris by Night · 4 a 5 horas · desde 390 €",
+          "text": "La torre Eiffel iluminada, Montmartre al atardecer y traslado a cenar en los Campos Elíseos. El chófer está con usted toda la noche."
+        },
+        {
+          "title": "Champaña · día completo · 890 €",
+          "text": "Reims y Épernay desde París, con visitas a casas de champaña, catas privadas y almuerzo. El chófer se encarga de todos los kilómetros."
+        },
+        {
+          "title": "Castillos del Loira · excursión · 990 €",
+          "text": "Chambord, Chenonceau y almuerzo en un restaurante con estrella. Salida de su hotel a las 8:00 y regreso a París a tiempo para cenar."
+        },
+        {
+          "title": "Versalles en privado · medio día · 450 €",
+          "text": "El palacio, los jardines de Le Nôtre y la finca de María Antonieta, a su propio ritmo. El chófer lo espera a la salida."
+        },
+        {
+          "title": "Mont Saint-Michel · 1290 €",
+          "text": "La Maravilla de Occidente en un solo día desde París: la abadía, la bahía y un almuerzo frente al mar."
+        },
+        {
+          "title": "Giverny, los jardines de Monet · 590 €",
+          "text": "La casa del pintor, el jardín de agua y los nenúfares, a una hora de París."
+        }
+      ]
+    },
+    {
+      "title": "Precio fijo, sin sorpresas",
+      "paragraphs": [
+        "Las tarifas indicadas son fijas. Paris by Night tiene un precio de partida de 390 €; las demás experiencias tienen un precio cerrado.",
+        "Si quiere un presupuesto para otro trayecto o una variante del itinerario, puede pedirlo por teléfono, por WhatsApp o por correo electrónico. **Recibirá un precio fijo antes de confirmar la reserva.**"
+      ]
+    },
+    {
+      "title": "Traslados desde los aeropuertos de París",
+      "paragraphs": [
+        "Además de las excursiones, Amani Limousines ofrece paquetes de traslado desde los aeropuertos de la región de París, con seguimiento de vuelo y servicio las 24 horas. Para conocer la tarifa de cada ruta, consulte al equipo."
+      ],
+      "cards": [
+        {
+          "title": "Desde Charles de Gaulle (CDG)",
+          "text": "Hacia el centro de París, La Défense, Disneyland, Versalles, la estación Gare du Nord y la estación Gare de Lyon."
+        },
+        {
+          "title": "Desde Orly y Le Bourget",
+          "text": "Traslados hacia el centro de París."
+        }
+      ]
+    },
+    {
+      "title": "Cómo reservar",
+      "paragraphs": [
+        "El equipo atiende las 24 horas, los 7 días de la semana, para reservas, presupuestos a medida y solicitudes de delegaciones. **La respuesta llega en menos de 30 minutos.**",
+        "Puede llamar o escribir por WhatsApp al +33 6 87 16 97 47, o enviar un correo a amani.limousines@gmail.com. Amani Limousines es una sociedad francesa (SASU) registrada en París desde 2016."
+      ]
+    }
+  ],
+  "meta": {
+    "title": "Excursiones privadas desde París con chófer | Amani Limousines",
+    "description": "Champaña, Loira, Versalles, Mont Saint-Michel y Giverny desde París con chófer y vehículo premium. Precios fijos desde 390 €. Reserve por teléfono o WhatsApp."
+  },
+  "cta": {
+    "title": "Reserve su experiencia",
+    "text": "Elija su excursión y la fecha. El equipo confirma el precio fijo y los detalles en menos de 30 minutos.",
+    "button": "Reservar"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "meet-and-greet",
+  "locale": "de",
+  "tag": "VIP-Empfang am Flughafen",
+  "h1": "Meet and Greet an den Pariser Flughäfen CDG, Orly und Le Bourget",
+  "intro": "Der Meet-and-Greet-Service von Amani Limousines deckt die Strecke zwischen Flugzeugtür und Fahrzeug ab. Ein Assistent erwartet Ihren Gast im Ankunftsbereich **nach der Zollkontrolle** mit einem Namensschild. Er übernimmt das Gepäck und bringt Ihren Gast direkt zum Wagen. Die Suche nach dem Fahrer zwischen Dutzenden Schildern entfällt. Den Empfang buchen Sie zu Ihrem Flughafentransfer mit Privatchauffeur an den Pariser Flughäfen Charles de Gaulle, Orly und Le Bourget.",
+  "sections": [
+    {
+      "title": "Was der Meet and Greet umfasst",
+      "paragraphs": [
+        "Der Service beginnt am Ausgang des Ankunftskorridors und endet, wenn Ihr Gast im Fahrzeug sitzt. Für Abflüge in CDG und Orly gibt es zusätzlich eine Fast-Track-Option."
+      ],
+      "cards": [
+        {
+          "title": "Empfang mit Namensschild",
+          "text": "Der Assistent steht hinter der Zollkontrolle. Das Schild mit dem Namen Ihres Gastes ist sofort sichtbar, sobald dieser den Ankunftskorridor verlässt."
+        },
+        {
+          "title": "Hilfe mit dem Gepäck",
+          "text": "Der Assistent übernimmt die Koffer am Gepäckband. Er trägt sie oder begleitet sie bis zum Fahrzeug."
+        },
+        {
+          "title": "Begleitung zum Fahrzeug",
+          "text": "Ihr Gast wird direkt zum Mercedes oder zum VIP-Van geführt. Der Wagen steht in der reservierten Zone nahe am Terminal."
+        },
+        {
+          "title": "Fast Track bei Abflug",
+          "text": "In CDG und Orly passieren Fluggäste die Sicherheitskontrolle über eine Prioritätsspur. Das hilft bei knappen Abflugzeiten."
+        }
+      ]
+    },
+    {
+      "title": "Für wen der Service gedacht ist",
+      "paragraphs": [
+        "Am häufigsten fragen Pariser Luxushotels den Empfang an, deren Gäste ab dem Flugzeug betreut werden sollen. Dazu kommen Reiseagenturen mit maßgeschneiderten Reisen und Familien mit kleinen Kindern oder älteren Angehörigen, für die ein großer Flughafen anstrengend sein kann. Auch offizielle Delegationen buchen ihn, wenn zwischen Landung und nächstem Termin **wenig Zeit** bleibt.",
+        "Der Service ist in Charles de Gaulle (alle Terminals), Orly (Terminals 1 bis 4) und Le Bourget verfügbar. In CDG kann der Assistent auf Wunsch im Wartebereich der internationalen Ankünfte stehen, also zwischen Zollausgang und öffentlicher Halle."
+      ]
+    },
+    {
+      "title": "Kontakt und Erreichbarkeit",
+      "paragraphs": [
+        "Das Team nimmt Buchungen, individuelle Angebotsanfragen und Delegationsanfragen rund um die Uhr an. Sie erhalten **innerhalb von 30 Minuten** eine Antwort.",
+        "Sie erreichen Amani Limousines telefonisch und per WhatsApp unter +33 6 87 16 97 47 oder per E-Mail an amani.limousines@gmail.com. Die Preise sind Festpreise, und der Flug Ihres Gastes wird verfolgt."
+      ]
+    }
+  ],
+  "meta": {
+    "title": "Meet and Greet Paris: CDG, Orly, Le Bourget | Amani Limousines",
+    "description": "Persönlicher Empfang an den Pariser Flughäfen CDG, Orly und Le Bourget: Namensschild nach dem Zoll, Hilfe mit dem Gepäck und Begleitung bis zum Fahrzeug."
+  },
+  "cta": {
+    "title": "Empfang am Flughafen buchen",
+    "text": "Nennen Sie Flughafen, Flugnummer und Ziel. Sie erhalten einen Festpreis, telefonisch, per WhatsApp unter +33 6 87 16 97 47 oder per E-Mail an amani.limousines@gmail.com.",
+    "button": "Jetzt buchen"
+  }
+}

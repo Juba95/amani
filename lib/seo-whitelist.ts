@@ -16,6 +16,7 @@
 
 import { translatedSlugs } from './destinations/i18n';
 import { getDestination } from '@/lib/destinations';
+import { SITE_PAGE_SLUGS } from './site-page-slugs';
 
 /**
  * Langues dont TOUTES les pages sont indexées (FR + EN ont un contenu riche et unique).
@@ -257,6 +258,9 @@ export function shouldIndex(locale: Locale, slug: string = ''): boolean {
       return translatedSlugs(locale).includes(slug.slice('destinations/'.length));
     }
   }
+  // Les douze pages de service, servies par app/[lang]/[page] dans les quatre
+  // langues du gabarit : indexées dès qu'elles sont produites.
+  if (SITE_PAGE_SLUGS.includes(slug)) return true;
   // AR et ZH : la homepage + les pages natives listées ci-dessus
   return AR_ZH_INDEXED_SLUGS.has(slug) || PER_LOCALE_EXTRA_SLUGS[locale].has(slug);
 }

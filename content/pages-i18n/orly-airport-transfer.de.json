@@ -1,0 +1,77 @@
+{
+  "slug": "orly-airport-transfer",
+  "locale": "de",
+  "tag": "Flughafen Paris-Orly",
+  "h1": "Flughafentransfer Orly–Paris: 18 km bis ins Zentrum",
+  "intro": "Orly ist der Flughafen, der am nächsten an der Pariser Innenstadt liegt. Vom Terminal 4 bis zur Place d'Italie sind es 18 Kilometer, je nach Verkehr also 25 bis 35 Minuten. Ohne Privatchauffeur wird daraus schnell eine Stunde: Schlange am Taxistand, Fahrkarten für den Nahverkehr, ein volles Orlyval. Mit Amani Limousines gehen Sie direkt von der Ankunftshalle zu Ihrem Mercedes. Der Service deckt alle vier Terminals in Orly ab, mit demselben Standard wie in Charles de Gaulle.",
+  "sections": [
+    {
+      "title": "Die Terminals in Orly",
+      "paragraphs": [
+        "Seit der Umstrukturierung 2021 hat Orly vier Terminals: Orly 1, 2, 3 und 4. In **Orly 4, dem früheren Orly Sud**, fliegt Air France in die Überseegebiete und nach Afrika, außerdem ein großer Teil der ausländischen Fluggesellschaften. Die Terminals 1, 2 und 3, früher Orly Ouest, bedienen Transavia, Vueling, easyJet und weitere Billigflieger.",
+        "Ihr Chauffeur kennt die Abfertigung jeder Airline. Er wartet mit einem Namensschild am richtigen Ausgang. Orly 4 ist zu Fuß mit den Terminals 1 bis 3 verbunden. Müssen Sie zwischen beiden Bereichen wechseln, dauert das länger, und der Chauffeur plant diese Zeit bei der Abholung ein."
+      ]
+    },
+    {
+      "title": "Festpreise von Orly nach Paris",
+      "paragraphs": [
+        "Die kurze Strecke zahlt sich aus: Ein Transfer nach Orly kostet weniger als nach Charles de Gaulle. Die Fahrt in einer Mercedes E-Klasse ins Pariser Zentrum **beginnt bei 80 €**, das ist der garantierte Mindestpreis. Alle Preise sind Festpreise, Mautgebühren sind enthalten.",
+        "Für Ziele außerhalb des Zentrums, etwa La Défense oder Versailles, wird nach Kilometern abgerechnet. Nacht- oder Wochenendzuschläge gibt es nicht. Für die Mercedes V-Klasse nennt die Preisliste keinen Betrag; fragen Sie dafür ein Angebot an."
+      ],
+      "cards": [
+        {
+          "title": "Business-Limousine, Mercedes E-Klasse",
+          "text": "Pariser Zentrum: 80 €"
+        },
+        {
+          "title": "Executive-Limousine, Mercedes S-Klasse",
+          "text": "Pariser Zentrum: 96 €"
+        },
+        {
+          "title": "Luxus-Van, Mercedes V-Klasse",
+          "text": "Bis zu 7 Fahrgäste, Preis auf Anfrage"
+        }
+      ]
+    },
+    {
+      "title": "Häufige Ziele ab Orly",
+      "paragraphs": [
+        "Orly erreicht Paris von Süden über die A6B. Die Fahrt endet damit direkt am linken Seineufer, im 5., 6., 14. und 15. Arrondissement, wo der Verkehr oft weniger dicht ist als auf den nördlichen Abschnitten der Ringautobahn, über die man von CDG kommt. Für Hotels in Saint-Germain, Montparnasse oder im Quartier Latin ist **Orly meist der praktischere Flughafen**."
+      ],
+      "cards": [
+        {
+          "title": "Orly → Pariser Zentrum (5., 13., 14. Arr.)",
+          "text": "18 km, 25–35 Min., ab 80 €"
+        },
+        {
+          "title": "Orly → La Défense",
+          "text": "30 km, 35–45 Min., ab 95 €"
+        },
+        {
+          "title": "Orly → Versailles",
+          "text": "25 km, 30–40 Min., ab 85 €"
+        },
+        {
+          "title": "Orly → Marne-la-Vallée / Disneyland",
+          "text": "42 km, 45–55 Min., ab 115 €"
+        }
+      ]
+    },
+    {
+      "title": "Frühe Flüge ohne Risiko",
+      "paragraphs": [
+        "Viele Flüge ab Orly starten schon um 6 Uhr. Ein Taxi braucht zu dieser Zeit bis zu 30 Minuten, bis es vor der Tür steht. Ihr Chauffeur wird **am Vorabend bestätigt** und holt Sie zur vereinbarten Zeit ab.",
+        "Der Service läuft rund um die Uhr, auch an Feiertagen und wenn die Pariser Verkehrsbetriebe RATP streiken."
+      ]
+    }
+  ],
+  "meta": {
+    "title": "Flughafentransfer Orly–Paris ab 80 € | Amani Limousines",
+    "description": "Transfer vom Flughafen Paris-Orly ins Zentrum: 18 km, 25–35 Minuten, Festpreis ab 80 € inklusive Maut. Alle vier Terminals, rund um die Uhr verfügbar."
+  },
+  "cta": {
+    "title": "Ihren Transfer ab Orly buchen",
+    "text": "Unser Team ist rund um die Uhr erreichbar, telefonisch unter +33 6 87 16 97 47, per WhatsApp oder per E-Mail an amani.limousines@gmail.com. Sie erhalten innerhalb von 30 Minuten eine Antwort.",
+    "button": "Jetzt buchen"
+  }
+}

@@ -312,8 +312,15 @@ const nextConfig = {
       // NOTE : /es est de nouveau une langue active (homepage espagnole) —
       // on redirige seulement les anciens slugs WordPress /es/xxx, pas /es
       // Legacy /es/* → home ES, SAUF les pages ES réelles : la page native
-      // chofer-hispanohablante et les destinations traduites (/es/destinations/*).
-      { source: '/es/:path((?!chofer-hispanohablante|destinations).+)', destination: '/es', permanent: true },
+      // chofer-hispanohablante, les destinations traduites (/es/destinations/*)
+      // et les douze pages de service servies par app/[lang]/[page].
+      // Toute page ES ajoutée plus tard doit figurer ici, sinon elle part en 308.
+      {
+        source:
+          '/es/:path((?!chofer-hispanohablante|destinations|hourly-hire|cdg-airport-transfer|orly-airport-transfer|meet-and-greet|long-distance|delegation-transport|close-protection|corporate|contact|become-a-chauffeur|experiences|events).+)',
+        destination: '/es',
+        permanent: true,
+      },
       { source: '/zh-hans/:path*', destination: '/zh', permanent: true },
 
       // === Booking ancien ===

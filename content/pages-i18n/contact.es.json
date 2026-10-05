@@ -1,0 +1,91 @@
+{
+  "slug": "contact",
+  "locale": "es",
+  "tag": "Contacto 24 horas",
+  "h1": "Hable con el equipo de Amani Limousines",
+  "intro": "El equipo de Amani Limousines atiende las 24 horas, todos los días del año, para reservas, presupuestos a medida y preguntas de logística sobre su servicio de chofer privado en París, en Francia o en el resto de Europa. Responde en **menos de 30 minutos**, también de noche y en días festivos. Puede escribir o llamar por teléfono, WhatsApp o correo electrónico. El medio más adecuado depende de lo que necesite y de la urgencia de su viaje.",
+  "sections": [
+    {
+      "title": "Cómo comunicarse con nosotros",
+      "paragraphs": [
+        "Hay tres vías de contacto y cada una sirve mejor para un tipo de solicitud. El teléfono funciona para lo urgente. WhatsApp es lo más rápido si quiere un presupuesto, y el correo es la opción indicada cuando la solicitud tiene más detalle."
+      ],
+      "cards": [
+        {
+          "title": "Teléfono",
+          "text": "+33 6 87 16 97 47. Disponible las 24 horas para solicitudes urgentes y reservas de último momento."
+        },
+        {
+          "title": "WhatsApp",
+          "text": "Envíe los datos de su trayecto por WhatsApp y reciba un presupuesto rápido. Disponible las 24 horas."
+        },
+        {
+          "title": "Correo electrónico",
+          "text": "amani.limousines@gmail.com. Para solicitudes detalladas, presupuestos de delegaciones y cuentas de empresa."
+        }
+      ]
+    },
+    {
+      "title": "Idiomas",
+      "paragraphs": [
+        "El equipo responde en francés, inglés, árabe y mandarín. Los choferes hablan varios idiomas y conocen los protocolos culturales que espera la clientela de habla árabe (Catar, Arabia Saudita, Emiratos Árabes Unidos) y de habla china (Hong Kong, Shanghái, Pekín)."
+      ]
+    },
+    {
+      "title": "Plazos de respuesta",
+      "paragraphs": [
+        "El plazo depende de la complejidad de la solicitud. Una reserva sencilla se confirma enseguida. Una operación con varios vehículos o con protección requiere más preparación."
+      ],
+      "cards": [
+        {
+          "title": "Reservas estándar",
+          "text": "Confirmación en un plazo de 30 minutos."
+        },
+        {
+          "title": "Misiones complejas",
+          "text": "Convoyes, delegaciones y protección cercana: cuente con 2 a 4 horas para recibir una propuesta detallada con disponibilidad y precios."
+        },
+        {
+          "title": "Traslados de urgencia",
+          "text": "Si necesita un traslado en las próximas 2 horas, llame directamente al +33 6 87 16 97 47."
+        }
+      ]
+    },
+    {
+      "title": "Trayectos frecuentes desde los aeropuertos",
+      "paragraphs": [
+        "Los traslados desde los aeropuertos de la región de París se ofrecen a **precio fijo**, con seguimiento del vuelo y servicio las 24 horas. Para conocer la tarifa de su trayecto, pídala por teléfono, WhatsApp o correo, o use el botón de reserva."
+      ],
+      "cards": [
+        {
+          "title": "Desde CDG",
+          "text": "Hacia París, La Défense, Disneyland, Versalles, la Gare du Nord y la Gare de Lyon."
+        },
+        {
+          "title": "Desde Orly",
+          "text": "Hacia París."
+        },
+        {
+          "title": "Desde Le Bourget",
+          "text": "Hacia París."
+        }
+      ]
+    },
+    {
+      "title": "La empresa",
+      "paragraphs": [
+        "Amani Limousines es una SASU francesa, registrada en el Registro Mercantil de París (RCS) desde 2016. Ofrece traslados al aeropuerto, servicio de chofer por horas y transporte de delegaciones oficiales en París, Francia y Europa.",
+        "SIREN: 821 665 395. SIRET: 821 665 395 00025. Número de IVA intracomunitario: FR90 821 665 395. Registro mercantil: 821 665 395 R.C.S. Paris."
+      ]
+    }
+  ],
+  "meta": {
+    "title": "Contacto 24 h: chofer en París y Europa | Amani Limousines",
+    "description": "Contacte a Amani Limousines las 24 horas por teléfono, WhatsApp o correo. Respuesta en menos de 30 minutos para reservas y presupuestos en París y Europa."
+  },
+  "cta": {
+    "title": "¿Listo para reservar?",
+    "text": "Indique su trayecto, la fecha y el número de pasajeros. Recibirá una confirmación en menos de 30 minutos, a cualquier hora.",
+    "button": "Reservar"
+  }
+}

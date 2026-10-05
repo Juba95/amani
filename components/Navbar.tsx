@@ -5,6 +5,15 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import type { Locale } from '@/lib/vehicles';
 import Logo from '@/components/Logo';
+import {
+  citiesMenu,
+  eventsMenu as localizedEventsMenu,
+  isNavLocale,
+  navLabel,
+  navMenuLabels,
+  pageHref,
+  transfersMenu,
+} from '@/lib/nav-i18n';
 
 const LANGS: { code: Locale; label: string; flag: string }[] = [
   { code: 'fr', label: 'Français', flag: '🇫🇷' },
@@ -184,6 +193,7 @@ function getLocalizedPath(pathname: string, targetLocale: string): string {
 interface DropdownItem { label: string; href: string }
 
 function getServicesMenu(locale: Locale, homePrefix: string): DropdownItem[] {
+  if (isNavLocale(locale)) return transfersMenu(locale);
   if (locale === 'en') return [
     { label: 'Hourly hire',           href: '/en/hourly-hire' },
     { label: 'Airport transfer CDG',  href: '/en/cdg-airport-transfer' },
@@ -206,6 +216,7 @@ function getServicesMenu(locale: Locale, homePrefix: string): DropdownItem[] {
 }
 
 function getEventsMenu(locale: Locale): DropdownItem[] {
+  if (isNavLocale(locale)) return localizedEventsMenu(locale);
   if (locale === 'en') return [
     { label: 'All experiences',         href: '/en/experiences' },
     { label: 'All events',              href: '/en/events' },
@@ -233,6 +244,8 @@ function getEventsMenu(locale: Locale): DropdownItem[] {
 // Top 10 des villes de France (pages dédiées). Pour l'EN, on pointe vers la
 // page anglaise quand elle existe, sinon la page dédiée (landing) FR.
 function getDestinationsMenu(locale: Locale): DropdownItem[] {
+  // Vide pour l'arabe et le chinois : aucune ville n'y est traduite.
+  if (isNavLocale(locale)) return citiesMenu(locale);
   if (locale === 'en') return [
     { label: 'Paris',        href: '/en/private-chauffeur-paris' },
     { label: 'Nice',         href: '/chauffeur-prive-nice' },
@@ -338,8 +351,6 @@ export default function Navbar({ t, locale }: NavbarProps) {
     pathname === `/${locale}/`;
 
   const homePrefix = locale === 'fr' ? '' : `/${locale}`;
-  const anchorHref = (id: string) =>
-    isHome ? `#${id}` : `${homePrefix}/#${id}`;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -347,23 +358,31 @@ export default function Navbar({ t, locale }: NavbarProps) {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  // Locales servies par une home unique (DE, ES, AR, ZH) : pas de sous-pages
-  // dédiées, la navigation se fait par ancres et le contact pointe sur #contact.
-  const anchorLocale = locale === 'ar' || locale === 'zh' || locale === 'es' || locale === 'de';
+  // Depuis que les douze pages de service existent en allemand, espagnol, arabe
+  // et chinois (app/[lang]/[page]), toutes les langues ont un menu complet. Il
+  // reste une exception : l'arabe et le chinois n'ont pas de page destination,
+  // leur entrée « villes » est donc vide et le menu la saute.
+  const nav = isNavLocale(locale) ? navMenuLabels(locale) : null;
+
   const contactHref =
     locale === 'fr' ? '/contact'
-    : anchorLocale ? anchorHref('contact')
+    : nav ? pageHref(locale as any, 'contact')
     : `/${locale}/contact`;
 
   const servicesItems     = getServicesMenu(locale, homePrefix);
   const destinationsItems = getDestinationsMenu(locale);
   const eventsItems       = getEventsMenu(locale);
 
-  const servicesLabel     = locale === 'en' ? 'Transfers'   : 'Transferts';
-  const destinationsLabel = locale === 'en' ? 'Top cities'  : 'Top villes';
-  const expLabel          = locale === 'en' ? 'Experiences' : 'Expériences';
-  const expHref           = locale === 'en' ? '/en/experiences' : '/experiences';
-  const corpHref          = locale === 'en' ? '/en/corporate' : '/corporate';
+  const servicesLabel     = nav ? nav.transfers : locale === 'en' ? 'Transfers'   : 'Transferts';
+  const destinationsLabel = nav ? nav.cities    : locale === 'en' ? 'Top cities'  : 'Top villes';
+  const eventsLabel       = nav ? (t?.nav?.events ?? nav.transfers)
+                          : locale === 'en' ? 'Experiences & Events' : 'Expériences & Événements';
+  const careersLabel      = nav ? nav.careers : locale === 'en' ? 'Careers' : 'Recrutement';
+  const careersHref       = nav ? pageHref(locale as any, 'become-a-chauffeur')
+                          : locale === 'en' ? '/en/become-a-chauffeur' : '/devenir-chauffeur';
+  const corpLabel         = nav ? navLabel(locale as any, 'corporate') : 'Corporate';
+  const corpHref          = nav ? pageHref(locale as any, 'corporate')
+                          : locale === 'en' ? '/en/corporate' : '/corporate';
 
   return (
     <nav
@@ -386,7 +405,7 @@ export default function Navbar({ t, locale }: NavbarProps) {
       {/* Desktop nav (≥ lg : en dessous, menu hamburger pour éviter l'entassement) */}
       <div className="hidden lg:flex items-center gap-5">
         {/* Services dropdown */}
-        {(locale === 'fr' || locale === 'en') && (
+        {servicesItems.length > 0 && (
           <DropdownMenu
             label={servicesLabel}
             items={servicesItems}
@@ -395,15 +414,9 @@ export default function Navbar({ t, locale }: NavbarProps) {
             onClose={() => setServicesOpen(false)}
           />
         )}
-        {anchorLocale && (
-          <a href={anchorHref('services')}
-            className="font-sans text-sm text-gray-700 hover:text-gold-400 tracking-wide transition-colors whitespace-nowrap">
-            {t?.nav?.services}
-          </a>
-        )}
 
-        {/* Destinations dropdown */}
-        {(locale === 'fr' || locale === 'en') && (
+        {/* Destinations dropdown — vide en arabe et en chinois */}
+        {destinationsItems.length > 0 && (
           <DropdownMenu
             label={destinationsLabel}
             items={destinationsItems}
@@ -414,37 +427,27 @@ export default function Navbar({ t, locale }: NavbarProps) {
         )}
 
         {/* Events dropdown */}
-        {(locale === 'fr' || locale === 'en') && (
+        {eventsItems.length > 0 && (
           <DropdownMenu
-            label={locale === 'en' ? 'Experiences & Events' : 'Expériences & Événements'}
+            label={eventsLabel}
             items={eventsItems}
             isOpen={eventsOpen}
             onToggle={() => { setEventsOpen(!eventsOpen); setServicesOpen(false); setDestinationsOpen(false); }}
             onClose={() => setEventsOpen(false)}
           />
         )}
-        {anchorLocale && (
-          <a href={anchorHref('events')}
-            className="font-sans text-sm text-gray-700 hover:text-gold-400 tracking-wide transition-colors whitespace-nowrap">
-            {t?.nav?.events}
-          </a>
-        )}
 
         {/* Corporate */}
-        {(locale === 'fr' || locale === 'en') && (
-          <Link href={corpHref}
-            className="font-sans text-sm text-gray-700 hover:text-gold-400 tracking-wide transition-colors whitespace-nowrap">
-            Corporate
-          </Link>
-        )}
+        <Link href={corpHref}
+          className="font-sans text-sm text-gray-700 hover:text-gold-400 tracking-wide transition-colors whitespace-nowrap">
+          {corpLabel}
+        </Link>
 
         {/* Recrutement */}
-        {(locale === 'fr' || locale === 'en') && (
-          <Link href={locale === 'en' ? '/en/become-a-chauffeur' : '/devenir-chauffeur'}
-            className="font-sans text-sm text-gray-700 hover:text-gold-400 tracking-wide transition-colors whitespace-nowrap">
-            {locale === 'en' ? 'Careers' : 'Recrutement'}
-          </Link>
-        )}
+        <Link href={careersHref}
+          className="font-sans text-sm text-gray-700 hover:text-gold-400 tracking-wide transition-colors whitespace-nowrap">
+          {careersLabel}
+        </Link>
 
         {/* Contact */}
         <Link href={contactHref}
@@ -506,78 +509,40 @@ export default function Navbar({ t, locale }: NavbarProps) {
       {menuOpen && (
         <div className="absolute top-full left-0 right-0 bg-white border-b border-stone-100 shadow-md py-6 px-6 lg:hidden max-h-[80vh] overflow-y-auto">
           <div className="flex flex-col gap-1">
-            {/* Services section */}
-            {(locale === 'fr' || locale === 'en') && (
-              <>
-                <p className="font-sans text-xs font-semibold tracking-[0.15em] uppercase text-stone-400 mt-4 mb-2">
-                  {servicesLabel}
-                </p>
-                {servicesItems.map((item) => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    onClick={() => setMenuOpen(false)}
-                    className="font-sans text-sm text-gray-700 hover:text-gold-400 py-1.5"
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-
-                <p className="font-sans text-xs font-semibold tracking-[0.15em] uppercase text-stone-400 mt-4 mb-2">
-                  {destinationsLabel}
-                </p>
-                {destinationsItems.map((item) => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    onClick={() => setMenuOpen(false)}
-                    className="font-sans text-sm text-gray-700 hover:text-gold-400 py-1.5"
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-              </>
-            )}
-
-            {anchorLocale && (
-              <a href={anchorHref('services')} onClick={() => setMenuOpen(false)}
-                className="font-sans text-sm text-gray-700 hover:text-gold-400 py-1.5">
-                {t?.nav?.services}
-              </a>
-            )}
-
-            {/* Events section */}
-            {(locale === 'fr' || locale === 'en') && (
-              <>
-                <p className="font-sans text-xs font-semibold tracking-[0.15em] uppercase text-stone-400 mt-4 mb-2">
-                  {t?.nav?.events ?? (locale === 'en' ? 'Events' : 'Événements')}
-                </p>
-                {eventsItems.map((item) => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    onClick={() => setMenuOpen(false)}
-                    className="font-sans text-sm text-gray-700 hover:text-gold-400 py-1.5"
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-              </>
+            {/* Sections : chaque liste vide se saute d'elle-même */}
+            {([
+              { title: servicesLabel,     items: servicesItems },
+              { title: destinationsLabel, items: destinationsItems },
+              { title: eventsLabel,       items: eventsItems },
+            ] as const).map(({ title, items }) =>
+              items.length === 0 ? null : (
+                <div key={title} className="flex flex-col gap-1">
+                  <p className="font-sans text-xs font-semibold tracking-[0.15em] uppercase text-stone-400 mt-4 mb-2">
+                    {title}
+                  </p>
+                  {items.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      onClick={() => setMenuOpen(false)}
+                      className="font-sans text-sm text-gray-700 hover:text-gold-400 py-1.5"
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              ),
             )}
 
             <div className="border-t border-stone-100 mt-4 pt-4 flex flex-col gap-1">
-              {(locale === 'fr' || locale === 'en') && (
-                <Link href={locale === 'en' ? '/en/become-a-chauffeur' : '/devenir-chauffeur'} onClick={() => setMenuOpen(false)}
-                  className="font-sans text-sm text-gray-700 hover:text-gold-400 py-1.5">
-                  {locale === 'en' ? 'Careers' : 'Recrutement'}
-                </Link>
-              )}
-              {(locale === 'fr' || locale === 'en') && (
-                <Link href={corpHref} onClick={() => setMenuOpen(false)}
-                  className="font-sans text-sm text-gray-700 hover:text-gold-400 py-1.5">
-                  Corporate
-                </Link>
-              )}
+              <Link href={careersHref} onClick={() => setMenuOpen(false)}
+                className="font-sans text-sm text-gray-700 hover:text-gold-400 py-1.5">
+                {careersLabel}
+              </Link>
+              <Link href={corpHref} onClick={() => setMenuOpen(false)}
+                className="font-sans text-sm text-gray-700 hover:text-gold-400 py-1.5">
+                {corpLabel}
+              </Link>
               <Link href={contactHref} onClick={() => setMenuOpen(false)}
                 className="font-sans text-sm text-gray-700 hover:text-gold-400 py-1.5">
                 {t?.nav?.contact}

@@ -3,6 +3,7 @@ import { FR_INDEXED_SLUGS, EN_INDEXED_SLUGS, AR_ZH_INDEXED_SLUGS, PER_LOCALE_EXT
 import { PUBLISHED_DESTINATIONS } from '@/lib/destinations';
 import { translatedSlugs, TRANSLATED_LOCALES } from '@/lib/destinations/i18n';
 import { getAllExperienceDetailParams } from '@/lib/experience-details';
+import { allLocalizedPageParams } from '@/lib/site-pages';
 
 const BASE = 'https://www.amani-limousines.com';
 
@@ -183,6 +184,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: now, changeFrequency: 'monthly', priority: 0.7,
       });
     }
+  }
+
+  // ── Pages de service traduites (DE + ES + AR + ZH) ─────────────────────────
+  // Produites par scripts/translate-site-pages.ts ; seules celles réellement
+  // présentes dans content/pages-i18n sont listées.
+  for (const { lang, slug } of allLocalizedPageParams()) {
+    entries.push({
+      url: `${BASE}/${lang}/${slug}`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.75,
+    });
   }
 
   // ── Homepages DE + ES + AR + ZH ─────────────────────────────────────────────

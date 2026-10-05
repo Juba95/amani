@@ -1,0 +1,63 @@
+{
+  "slug": "close-protection",
+  "locale": "de",
+  "tag": "Personenschutz in Paris",
+  "h1": "Personenschutz und sicherer Transport in Paris: Diskretion hat Vorrang",
+  "intro": "Personenschutz in einer Großstadt wie Paris hängt weniger von gepanzerten Fahrzeugen ab als von Vorausplanung, Diskretion und der richtigen Route. Für diese Einsätze stellt Amani Limousines Ihnen einen Privatchauffeur mit spezieller Sicherheitsausbildung zur Verfügung. Unsere Fahrer beherrschen defensives Fahren und beobachten das städtische Umfeld genau. Sie arbeiten nach den Kommunikationsprotokollen der Schutzteams. Ausweichrouten, schnelle Abfahrtspunkte und Zufahrten, die die meisten Fahrer nie nutzen, kennen sie aus der Praxis.",
+  "sections": [
+    {
+      "title": "Fahrer mit Ausbildung in Sicherheitsfahrtechnik",
+      "paragraphs": [
+        "Die Fahrer für Personenschutzeinsätze haben eine **gezielte Ausbildung in defensivem Fahren** und im Umgang mit Risikosituationen erhalten. In Paris kennen sie alternative Strecken, Zufahrten für Rettungsdienste und Punkte, an denen sich ein Fahrzeug in sensiblen Vierteln schnell aus dem Verkehr lösen kann.",
+        "Sie stimmen sich direkt mit den Sicherheitsverantwortlichen Ihrer Schutzperson ab."
+      ]
+    },
+    {
+      "title": "Hauptfahrzeug und Begleitfahrzeug",
+      "paragraphs": [
+        "Für Personen mit hoher medialer oder politischer Exposition setzen wir **mindestens zwei Fahrzeuge** ein: ein Hauptfahrzeug und ein Begleitfahrzeug. Beide Fahrer stehen ständig per Funk in Verbindung.",
+        "Kommt es zu einem Zwischenfall, wird das Protokoll zur Evakuierung sofort ausgelöst."
+      ]
+    },
+    {
+      "title": "Neutrale Fahrzeuge",
+      "paragraphs": [
+        "Auf Wunsch fahren alle unsere Fahrzeuge ohne jedes Kennzeichen von Amani Limousines. Es sind schwarze Standardlimousinen mit regulären Serienkennzeichen. So fällt das Fahrzeug im normalen Pariser Verkehr nicht auf, und das ist oft **der wirksamste Schutz**."
+      ]
+    },
+    {
+      "title": "Für wen der Service gedacht ist",
+      "paragraphs": [
+        "Unser Fahrdienst für Personenschutz in Paris richtet sich an folgende Kunden:",
+        "Jeder Einsatz wird **streng vertraulich** behandelt. Keine Einzelheit verlässt das zuständige Team."
+      ],
+      "cards": [
+        {
+          "title": "Führungskräfte",
+          "text": "Vorstände börsennotierter Unternehmen, die besonderen Überwachungsauflagen unterliegen."
+        },
+        {
+          "title": "Personen des öffentlichen Lebens",
+          "text": "Künstler, Sportler und Persönlichkeiten mit sehr hoher Sichtbarkeit auf Reisen in Paris."
+        },
+        {
+          "title": "Diplomaten",
+          "text": "Diplomatische Vertreter auf nicht offizieller Mission."
+        },
+        {
+          "title": "Vermögende Familien",
+          "text": "Familien, die während eines Aufenthalts in der Hauptstadt zusätzlichen Schutz wünschen."
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "title": "Personenschutz Paris: sicherer Transport | Amani Limousines",
+    "description": "Sicherer Transport in Paris mit geschulten Fahrern, Begleitfahrzeug und neutralen Limousinen. Diskret und vertraulich, rund um die Uhr per Telefon anfragen."
+  },
+  "cta": {
+    "title": "Einsatz vertraulich anfragen",
+    "text": "Unser Team ist rund um die Uhr erreichbar und antwortet innerhalb von 30 Minuten. Sie erreichen uns telefonisch oder per WhatsApp unter +33 6 87 16 97 47 sowie per E-Mail an amani.limousines@gmail.com.",
+    "button": "Jetzt buchen"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "slug": "delegation-transport",
+  "locale": "es",
+  "tag": "Convoyes y delegaciones oficiales",
+  "h1": "Transporte de delegaciones y convoyes de vehículos en París",
+  "intro": "Algunas misiones requieren más de un vehículo: una delegación ministerial, una visita de Estado, una cumbre corporativa o un grupo de directivos de gira. En esos casos, la coordinación entre los autos importa tanto como la comodidad de cada uno. El servicio de chofer privado de Amani Limousines para delegaciones en París funciona con un **despacho centralizado**, comunicación por radio continua entre los conductores y un jefe de convoy presente en el terreno durante toda la misión.",
+  "sections": [
+    {
+      "title": "Organización de un convoy",
+      "paragraphs": [
+        "La preparación empieza con la información logística. Necesitamos saber el número de pasajeros, el rango protocolario de cada uno (quién viaja en qué vehículo), las direcciones sucesivas con sus horarios fijos y las posibles ventanas de seguridad que impongan los servicios de protección.",
+        "El día de la misión, cada conductor tiene una hoja de ruta detallada. Un coordinador dirige el convoy en tiempo real, se anticipa a los embotellamientos con datos de tráfico y reorganiza los itinerarios cuando hace falta. Los conductores están en **comunicación por radio permanente**, no solo en contacto telefónico."
+      ]
+    },
+    {
+      "title": "Misiones diplomáticas",
+      "paragraphs": [
+        "Trabajamos con regularidad con embajadas, consulados y representaciones permanentes en París. Para las visitas oficiales, los vehículos se preparan según los protocolos que piden los equipos de seguridad. Nuestros conductores están acostumbrados a trabajar junto a los equipos de protección."
+      ],
+      "cards": [
+        {
+          "title": "Vidrios polarizados",
+          "text": "Vehículos preparados según el protocolo solicitado."
+        },
+        {
+          "title": "Comunicaciones aisladas",
+          "text": "Canales separados para las comunicaciones del convoy."
+        },
+        {
+          "title": "Itinerarios validados",
+          "text": "Rutas aprobadas de antemano por los servicios del Estado."
+        }
+      ]
+    },
+    {
+      "title": "Eventos corporativos",
+      "paragraphs": [
+        "Para seminarios, juntas de consejo, asambleas generales y jornadas de delegaciones corporativas, nos encargamos de toda la logística de transporte, de principio a fin."
+      ],
+      "cards": [
+        {
+          "title": "Traslados hotel–evento",
+          "text": "Servicio continuo entre los hoteles y el lugar del evento."
+        },
+        {
+          "title": "Traslados al aeropuerto",
+          "text": "Recepción de las delegaciones que llegan a París."
+        },
+        {
+          "title": "Vehículos de representación",
+          "text": "Autos dedicados para ponentes e invitados VIP."
+        }
+      ]
+    },
+    {
+      "title": "Una flota para cada rango",
+      "paragraphs": [
+        "Un convoy puede combinar distintas categorías de vehículos según el rango protocolario de los pasajeros. La delegación principal viaja en **Mercedes Clase S o BMW i7**, los asesores en Clase E, y el equipaje o el equipo en Clase V o Sprinter.",
+        "Si lo solicita, todos los vehículos del convoy pueden ser de la misma marca y del mismo color."
+      ]
+    }
+  ],
+  "meta": {
+    "title": "Transporte de delegaciones y convoyes en París | Amani Limousines",
+    "description": "Convoyes de vehículos para delegaciones oficiales, misiones diplomáticas y eventos corporativos en París: despacho centralizado y radio entre conductores."
+  },
+  "cta": {
+    "title": "Organice el transporte de su delegación",
+    "text": "Nuestro equipo atiende las 24 horas, los 7 días de la semana, para reservas, cotizaciones a la medida y solicitudes de delegación, con respuesta garantizada en menos de 30 minutos. Llame o escriba por WhatsApp al +33 6 87 16 97 47, o por correo a amani.limousines@gmail.com.",
+    "button": "Reservar"
+  }
+}

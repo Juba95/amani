@@ -1,0 +1,73 @@
+{
+  "slug": "corporate",
+  "locale": "de",
+  "tag": "Firmenkunden und Partner",
+  "h1": "Ein eigener Desk für Hotels, Agenturen und Botschaften",
+  "intro": "Amani Limousines ist seit 15 Jahren Transportpartner der Pariser Palasthotels, internationaler Reiseveranstalter und diplomatischer Vertretungen. Das Unternehmen hat seinen Sitz in Paris und organisiert Fahrten mit Privatchauffeur in Frankreich und ganz Europa. Mit einem Firmenkonto stellen wir unsere Organisation in den Dienst Ihrer eigenen. Sie erhalten eine direkte Leitung, einen festen Ansprechpartner und Konditionen, die sich nach Ihrem Volumen richten. Ein Konto eröffnen Sie per Telefon, WhatsApp oder E-Mail; auf Wunsch rufen wir Sie zurück.",
+  "sections": [
+    {
+      "title": "Was ein Partnerkonto umfasst",
+      "paragraphs": [
+        "Ein Partnerkonto bündelt vier Leistungen. Sie betreffen die Reaktionszeit, die Abrechnung, die Betreuung und den Preis."
+      ],
+      "cards": [
+        {
+          "title": "Dispatch mit Vorrang",
+          "text": "Ihre Anfragen werden zuerst bearbeitet. Sie haben eine eigene Leitung und erhalten **innerhalb von 15 Minuten** eine Antwort. In der Hochsaison, auch zur Fashion Week, sind Fahrzeuge für Partner reserviert."
+        },
+        {
+          "title": "Monatliche Rechnung",
+          "text": "Keine Einzelbelege pro Fahrt mehr. Sie erhalten eine detaillierte Monatsaufstellung nach Abteilung, Kunde oder Kostenstelle, mit **30 Tagen Zahlungsziel**."
+        },
+        {
+          "title": "Fester Ansprechpartner",
+          "text": "Eine Person kennt Ihre Abläufe, Ihre VIP-Gäste und Ihre Protokollvorgaben. Sie erreichen sie direkt, ohne Telefonzentrale."
+        },
+        {
+          "title": "Ausgehandelte Tarife",
+          "text": "Die Partnerpreise richten sich nach Ihrem Volumen. Festpreise sind **das ganze Jahr garantiert**, für längere Anmietungen auf Stundenbasis gelten Vorzugskonditionen."
+        }
+      ]
+    },
+    {
+      "title": "Auf Ihre Branche abgestimmt",
+      "paragraphs": [
+        "Jede Kundengruppe hat eigene Anforderungen. Ein Hotel braucht andere Abläufe als eine Botschaft oder ein Konzern."
+      ],
+      "cards": [
+        {
+          "title": "Hotels und Concierges",
+          "text": "Ihre Gäste beurteilen das Hotel bis in das Fahrzeug hinein. Die Chauffeure tragen Anzug, empfangen die Gäste im Namen Ihres Hauses und geben Rückmeldung an den Concierge."
+        },
+        {
+          "title": "Reiseagenturen und DMCs",
+          "text": "Ein verlässlicher Transportpartner für Rundreisen, Transfers und private Tagesprogramme. Sie erhalten eine sofortige Bestätigung und eine Partnerprovision. Während des Aufenthalts ist rund um die Uhr jemand für Ihre Gäste da."
+        },
+        {
+          "title": "Botschaften und Ministerien",
+          "text": "Offizielle Kolonnen, Staatsbesuche und Delegationen. Die Chauffeure sind mit dem diplomatischen Protokoll vertraut und arbeiten mit den Sicherheitsdiensten zusammen. **Diskretion ist selbstverständlich.**"
+        },
+        {
+          "title": "Unternehmen",
+          "text": "Fahrten für Führungskräfte, Roadshows für Investoren und Transfers für Mitarbeitende. Auf Anfrage erhalten Sie ein CSR-Reporting, denn der Anteil an Hybrid- und Elektrofahrzeugen in der Flotte wächst."
+        }
+      ]
+    },
+    {
+      "title": "Sprechen wir über Ihr Volumen",
+      "paragraphs": [
+        "Beschreiben Sie uns Ihren Bedarf. Sie erhalten **innerhalb von 24 Stunden** ein Preisangebot.",
+        "Sie erreichen das Team rund um die Uhr unter +33 6 87 16 97 47, auch per WhatsApp, oder per E-Mail an amani.limousines@gmail.com. Auf Buchungen, individuelle Angebote und Delegationsanfragen antworten wir garantiert innerhalb von 30 Minuten."
+      ]
+    }
+  ],
+  "meta": {
+    "title": "Firmenkunden: Hotels, Agenturen, Botschaften | Amani Limousines",
+    "description": "Firmenkonto bei Amani Limousines: Dispatch mit Vorrang, Monatsrechnung, fester Ansprechpartner und Partnertarife für Hotels, Agenturen und Botschaften."
+  },
+  "cta": {
+    "title": "Firmenkonto eröffnen",
+    "text": "Nennen Sie uns Ihren Bedarf, und wir melden uns innerhalb von 24 Stunden mit einem Angebot. Telefon und WhatsApp: +33 6 87 16 97 47.",
+    "button": "Anfrage senden"
+  }
+}

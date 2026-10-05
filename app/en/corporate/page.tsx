@@ -2,13 +2,19 @@ import type { Metadata } from 'next';
 import SEOLayoutEN from '@/components/SEOLayoutEN';
 import Link from 'next/link';
 import Image from 'next/image';
+import { localizedAlternates } from '@/lib/get-content';
+import { withRegionalVariants } from '@/lib/hreflang';
 
 export const metadata: Metadata = {
   title: 'Corporate — Hotels, Agencies, Embassies | Amani Limousines',
   description: 'Amani Limousines corporate account: priority dispatch, monthly invoicing, dedicated account manager and negotiated rates for hotels, travel agencies, corporations, embassies and ministries.',
   alternates: {
     canonical: 'https://www.amani-limousines.com/en/corporate',
-    languages: { fr: 'https://www.amani-limousines.com/corporate', 'x-default': 'https://www.amani-limousines.com/en/corporate' },
+    languages: withRegionalVariants({
+      fr: 'https://www.amani-limousines.com/corporate',
+      'x-default': 'https://www.amani-limousines.com/en/corporate',
+      ...localizedAlternates('en/corporate'),
+    }),
   },
 };
 

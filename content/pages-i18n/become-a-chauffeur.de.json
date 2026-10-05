@@ -1,0 +1,86 @@
+{
+  "slug": "become-a-chauffeur",
+  "locale": "de",
+  "tag": "Karriere bei Amani Limousines",
+  "h1": "Chauffeur bei Amani Limousines werden",
+  "intro": "Amani Limousines ist ein Chauffeurservice mit Sitz in Paris und seit 2016 im Pariser Handelsregister eingetragen. Zu unseren Kunden zählen Botschaften, Luxushotels der Palace-Kategorie und Gäste der Privatluftfahrt, die eine Fahrt mit Privatchauffeur in Paris, Frankreich und Europa buchen. Für diese Kundschaft suchen wir laufend Chauffeure. Sie sprechen mehrere Sprachen, treten tadellos auf und haben Freude am Service? Dann passen Sie zu einem Haus, das Ihren Beruf ernst nimmt und entsprechend wertschätzt.",
+  "sections": [
+    {
+      "title": "Was wir Ihnen bieten",
+      "paragraphs": [
+        "Wir stellen das Fahrzeug, planen die Einsätze und kümmern uns um alles, was nicht zum Fahren gehört. Sie konzentrieren sich auf den Gast."
+      ],
+      "cards": [
+        {
+          "title": "Fahrzeuge der Oberklasse",
+          "text": "Sie fahren Mercedes S-, E- oder V-Klasse. Die Wagen sind gewartet und versichert, und wir erneuern sie **alle drei Jahre**."
+        },
+        {
+          "title": "Attraktive Vergütung",
+          "text": "Ein Festgehalt plus Prämien für lange Stundenbuchungen und Stammkunden. Die Zahlung kommt regelmäßig und pünktlich."
+        },
+        {
+          "title": "Laufende Weiterbildung",
+          "text": "Etikette und Protokoll für Botschaften und Luxushotels, Sicherheitsfahrtraining und Fremdsprachen. Wir investieren in Ihre Entwicklung."
+        },
+        {
+          "title": "Planbare Arbeitswochen",
+          "text": "Die Einsätze stehen im Voraus fest: Flughafentransfers, Veranstaltungen, Delegationen. Sie kennen Ihre Woche."
+        }
+      ]
+    },
+    {
+      "title": "Das Profil, das wir suchen",
+      "paragraphs": [
+        "Unsere Kunden sind Diplomaten und Gäste mit hohen Ansprüchen an Diskretion. Deshalb sind uns einige Voraussetzungen wichtig."
+      ],
+      "cards": [
+        {
+          "title": "Gültige VTC-Karte",
+          "text": "Die VTC-Karte ist die französische Lizenz für die gewerbliche Personenbeförderung mit Chauffeur. Ohne sie ist keine Anstellung möglich."
+        },
+        {
+          "title": "Auftreten und Service",
+          "text": "Ein gepflegtes Erscheinungsbild und ein ausgeprägter Sinn für Service."
+        },
+        {
+          "title": "Sprachen",
+          "text": "Französisch und Englisch fließend. Eine dritte Sprache ist ein echter Vorteil."
+        },
+        {
+          "title": "Ortskenntnis",
+          "text": "Sie kennen Paris und die Region Île-de-France gut."
+        },
+        {
+          "title": "Absolute Diskretion",
+          "text": "Sie betreuen diplomatische Kunden und VIP-Gäste."
+        },
+        {
+          "title": "Flexibilität",
+          "text": "Verfügbarkeit an Abenden und Wochenenden ist willkommen."
+        }
+      ]
+    },
+    {
+      "title": "Mit eigenem Fahrzeug",
+      "paragraphs": [
+        "Sie besitzen bereits ein Fahrzeug der Oberklasse? Wir arbeiten auch mit **selbstständigen Partnerchauffeuren** zusammen. Erwähnen Sie das bitte in Ihrer Bewerbung."
+      ]
+    },
+    {
+      "title": "So bewerben Sie sich",
+      "paragraphs": [
+        "Schicken Sie uns Ihren Lebenslauf und ein professionelles Foto an amani.limousines@gmail.com oder über WhatsApp an +33 6 87 16 97 47. Sie erhalten **innerhalb von 48 Stunden** eine Antwort. Das Vorstellungsgespräch findet binnen einer Woche statt."
+      ]
+    }
+  ],
+  "meta": {
+    "title": "Chauffeur werden in Paris: Stellen und Profil | Amani Limousines",
+    "description": "Amani Limousines sucht Chauffeure für Paris: Mercedes gestellt, Festgehalt plus Prämien, Schulungen. VTC-Karte, Französisch und Englisch. Antwort in 48 h."
+  },
+  "cta": {
+    "title": "Bereit für den Einstieg?",
+    "text": "Senden Sie Lebenslauf und Foto per E-Mail an amani.limousines@gmail.com oder per WhatsApp an +33 6 87 16 97 47. Unser Team ist rund um die Uhr erreichbar.",
+    "button": "Kontakt aufnehmen"
+  }
+}

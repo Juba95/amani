@@ -1,0 +1,76 @@
+{
+  "slug": "hourly-hire",
+  "locale": "de",
+  "tag": "Chauffeur auf Stundenbasis",
+  "h1": "Fahrzeug mit Chauffeur in Paris stundenweise buchen: Ihr Terminplan bestimmt die Route",
+  "intro": "Bei einem Transfer fahren Sie von A nach B. Bei der Stundenbuchung steht Ihnen ein Privatchauffeur in Paris für eine vereinbarte Dauer zur Verfügung. Zwischen Ihren Terminen parkt das Fahrzeug in der Nähe und ist **innerhalb von zwei Minuten bei Ihnen**. So wird ein Tag mit mehreren Besprechungen in Paris und der Region Île-de-France deutlich leichter zu bewältigen. Sie müssen nicht vor jedem Termin ein Taxi suchen.",
+  "sections": [
+    {
+      "title": "So funktioniert die Stundenbuchung",
+      "paragraphs": [
+        "Sie nennen uns die Startzeit, das ungefähre Ende und die erste Abholadresse. Alles Weitere regeln Sie unterwegs. Sie kommen aus einer Besprechung in Neuilly und müssen anschließend ins Marais? Eine kurze Nachricht an Ihren Chauffeur genügt, und die Route steht. Auch ein Halt an einem Hotel, um Unterlagen abzugeben, ist schnell eingeplant. Dafür brauchen Sie weder eine App noch ein Formular. Der Chauffeur passt die Strecke sofort an.",
+        "Während Ihrer Besprechung läuft kein Taxameter. **Wartezeiten sind im Stundenpreis enthalten.** Sie zahlen die vereinbarte Dauer, egal wie viele Adressen Sie in diesem Zeitraum anfahren."
+      ]
+    },
+    {
+      "title": "Buchungsformate",
+      "paragraphs": [
+        "Wählen Sie die Dauer passend zu Ihrem Programm. Für Aufenthalte über mehrere Tage stellen wir ein individuelles Angebot zusammen."
+      ],
+      "cards": [
+        {
+          "title": "Halber Tag: 4 Stunden",
+          "text": "Für einen Vormittag mit Kundenterminen oder einen Nachmittag mit Veranstaltungen. Empfohlen für 2 bis 4 Adressen."
+        },
+        {
+          "title": "Ganzer Tag: 8 Stunden",
+          "text": "Das meistgebuchte Format für Kundenbesuche, Delegationsprogramme und Messetage."
+        },
+        {
+          "title": "Mehrere Tage: nach Vereinbarung",
+          "text": "Für Delegationen, die mehrere Tage in Paris sind. Derselbe Chauffeur und dasselbe Fahrzeug über den gesamten Aufenthalt."
+        }
+      ]
+    },
+    {
+      "title": "Wer die Stundenbuchung nutzt",
+      "paragraphs": [
+        "Häufig buchen Geschäftsführungen diesen Service, die an einem Tag mehrere Termine in Paris haben. Dazu kommen ausländische Delegationen auf offiziellem Besuch, Familien, die Paris bequem erkunden möchten, ohne zwischen Museen und Geschäften Taxis zu suchen, und Premium-Reiseagenturen, die individuelle Reisen für ihre Kunden planen.",
+        "Ein Chauffeur für den ganzen Tag ist oft **günstiger als viele einzeln gebuchte Fahrten**. Dazu kommt der Komfort: Sie steigen immer in dasselbe Fahrzeug, das je nach Jahreszeit geheizt oder klimatisiert ist, und Ihre Sachen bleiben zwischen den Fahrten an Bord."
+      ]
+    },
+    {
+      "title": "Verfügbare Fahrzeuge",
+      "paragraphs": [
+        "Für die Stundenbuchung stehen vier Fahrzeugtypen zur Wahl, von der Limousine bis zum Reisebus."
+      ],
+      "cards": [
+        {
+          "title": "Mercedes E-Klasse",
+          "text": "Limousine für 3 Fahrgäste. Die vielseitigste Wahl für Fahrten innerhalb von Paris."
+        },
+        {
+          "title": "Mercedes S-Klasse",
+          "text": "Executive-Limousine für Vorstände und Geschäftsführer."
+        },
+        {
+          "title": "Mercedes V-Klasse",
+          "text": "Van für 7 Fahrgäste, passend für Gruppen und Familien."
+        },
+        {
+          "title": "Mercedes Sprinter VIP",
+          "text": "Minibus mit 8 bis 19 Plätzen sowie Reisebus mit 50 Plätzen für Gruppen und Delegationen."
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "title": "Chauffeur stundenweise in Paris buchen | Amani Limousines",
+    "description": "Chauffeur in Paris für 4 oder 8 Stunden oder mehrere Tage. Wartezeit inklusive, Route flexibel anpassbar. Mercedes E-, S-, V-Klasse und Sprinter VIP."
+  },
+  "cta": {
+    "title": "Chauffeur für Ihren Tag in Paris anfragen",
+    "text": "Unser Team ist rund um die Uhr erreichbar, für Buchungen, individuelle Angebote und Delegationsanfragen. Sie erhalten garantiert innerhalb von 30 Minuten eine Antwort. Rufen Sie uns an unter +33 6 87 16 97 47, schreiben Sie per WhatsApp oder an amani.limousines@gmail.com.",
+    "button": "Jetzt buchen"
+  }
+}
