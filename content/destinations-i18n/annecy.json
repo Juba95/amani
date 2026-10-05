@@ -9,17 +9,17 @@
     "es": "Francia"
   },
   "airportTransfer": {
-    "de": "Der Flughafen Genf (GVA) liegt 40 km von Annecy entfernt. Über die Autobahn A41 erreichen Sie die Altstadt oder das Seeufer in 40 bis 45 Minuten. Ihr Chauffeur empfängt Sie in der Ankunftshalle mit einem Namensschild und verfolgt Ihren Flug in Echtzeit. Auch den TGV-Bahnhof von Annecy, der direkt mit Paris verbunden ist, fahren wir an.",
-    "es": "El aeropuerto de Ginebra (GVA) está a 40 km de Annecy: calcule entre 40 y 45 minutos por la autopista A41 hasta el casco antiguo o la orilla del lago. Su chófer le recibe en la sala de llegadas con un cartel con su nombre y sigue su vuelo en tiempo real. También cubrimos la estación de TGV de Annecy, con trenes directos desde París."
+    "de": "Der Flughafen Genf (GVA) liegt 40 km von Annecy entfernt. Über die Autobahn A41 brauchen Sie 40 bis 45 Minuten bis in die Altstadt oder ans Seeufer. Ihr Chauffeur empfängt Sie in der Ankunftshalle mit einem Namensschild und verfolgt Ihren Flug in Echtzeit. Auch den TGV-Bahnhof von Annecy mit direkten Zügen aus Paris fahren wir an.",
+    "es": "El aeropuerto de Ginebra (GVA) está a 40 km de Annecy. Por la autopista A41 se tarda entre 40 y 45 minutos hasta el casco antiguo o la orilla del lago. Su chófer lo recibe en la sala de llegadas con un cartel con su nombre y sigue su vuelo en tiempo real. También cubrimos la estación de TGV de Annecy, con trenes directos desde París."
   },
   "intro": {
     "de": [
-      "Man nennt Annecy das Venedig der Alpen. Kanäle, der Palais de l’Île und das Schloss liegen am Ufer eines Sees, dessen Wasser zu den saubersten Europas zählt. Ihr **Privatchauffeur in Annecy** übernimmt Transfers vom Flughafen und vom TGV-Bahnhof, steht stundenweise für Geschäftstermine bereit und setzt Sie so nah wie möglich an der Fußgängerzone der Altstadt ab. Dazu kommen Rundfahrten um den See über Talloires, Menthon-Saint-Bernard und Duingt. Gefahren wird in Premium-Limousinen und -Vans, zu Festpreisen.",
-      "Annecy eignet sich auch gut als Ausgangspunkt zwischen See und Bergen. Das **Aravis**-Massiv mit den Skiorten La Clusaz und Le Grand-Bornand liegt vierzig Minuten entfernt, Genf weniger als eine Stunde, Chamonix und der Mont Blanc eine Stunde und fünfzehn Minuten. Im Sommer bestimmt der See den Rhythmus: Anfang August die Fête du Lac, dazu die Terrassen von Talloires und der Wassersport. Ihr Chauffeur kennt die Verkehrslage in dieser Zeit ebenso gut wie die Haltepunkte."
+      "Annecy hat den Beinamen Venedig der Alpen. Die Stadt hat Kanäle, den Inselpalast Palais de l’Île und ein Schloss, und sie liegt an einem See, dessen Wasser zu den saubersten Europas gehört. Ihr **Privatchauffeur in Annecy** übernimmt Transfers vom Flughafen und vom TGV-Bahnhof, steht stundenweise für Geschäftstermine bereit und setzt Sie so nah wie möglich an der autofreien Altstadt ab. Er fährt Sie auch um den See, über Talloires, Menthon-Saint-Bernard und Duingt. Wir setzen Premium-Limousinen und Vans ein, zu Festpreisen.",
+      "Annecy ist außerdem ein guter Ausgangspunkt zwischen See und Bergen. Das Massiv der **Aravis** mit den Skiorten La Clusaz und Le Grand-Bornand erreichen Sie in vierzig Minuten, Genf in weniger als einer Stunde. Nach Chamonix und zum Mont Blanc sind es eineinviertel Stunden. Im Sommer bestimmt der See den Rhythmus: Anfang August findet die Fête du Lac statt, dazu kommen die Terrassen von Talloires und der Wassersport. Ihr Chauffeur kennt den Verkehr zu dieser Zeit und weiß, wo er Sie absetzen kann."
     ],
     "es": [
-      "Conocida como la Venecia de los Alpes, Annecy reúne canales, el Palais de l’Île y su castillo a orillas de un lago cuyas aguas figuran entre las más limpias de Europa. Su **chófer privado en Annecy** se encarga de los traslados desde el aeropuerto y la estación de TGV, del servicio por horas para reuniones de negocios y de dejarle lo más cerca posible del casco antiguo peatonal. También ofrece la vuelta al lago por Talloires, Menthon-Saint-Bernard y Duingt. Sedanes y vans premium, a precio cerrado.",
-      "Annecy es además una buena base entre lago y montaña. El macizo de los **Aravis** y las estaciones de La Clusaz y Le Grand-Bornand quedan a cuarenta minutos, Ginebra a menos de una hora y Chamonix con el Mont Blanc a una hora y cuarto. En verano manda el lago: la Fête du Lac a principios de agosto, las terrazas de Talloires, los deportes náuticos. Su chófer conoce bien el tráfico de esas semanas y los puntos donde se puede parar."
+      "A Annecy la llaman la Venecia de los Alpes. Tiene canales, el Palais de l’Île y un castillo, todo a orillas de un lago cuyas aguas están entre las más limpias de Europa. Su **chófer privado en Annecy** se encarga de los traslados desde el aeropuerto y la estación de TGV, queda a su disposición por horas para reuniones de negocios y lo deja lo más cerca posible del casco antiguo peatonal. También ofrece la vuelta al lago por Talloires, Menthon-Saint-Bernard y Duingt. Trabajamos con sedanes y vans premium, a precio fijo.",
+      "Annecy es además una buena base entre el lago y la montaña. El macizo de los **Aravis** y las estaciones de La Clusaz y Le Grand-Bornand están a cuarenta minutos, y Ginebra a menos de una hora. Chamonix y el Mont Blanc quedan a una hora y cuarto. En verano manda el lago: la Fête du Lac a principios de agosto, las terrazas de Talloires, los deportes náuticos. Su chófer conoce el tráfico de esa temporada y los puntos donde puede dejarlo."
     ]
   },
   "experiences": [
@@ -29,8 +29,8 @@
         "es": "Vuelta al lago de Annecy"
       },
       "teaser": {
-        "de": "Die 40 km rund um den See im privaten Fahrzeug: Veyrier-du-Lac, das Schloss Menthon-Saint-Bernard, Talloires mit seiner Abtei, das Naturschutzgebiet Bout-du-Lac, Duingt und Sévrier. Fotostopps und Badepausen ganz nach Lust und Laune.",
-        "es": "Los 40 km alrededor del lago en vehículo privado: Veyrier-du-Lac, el castillo de Menthon-Saint-Bernard, Talloires y su abadía, la reserva natural del Bout-du-Lac, Duingt y Sévrier. Paradas para fotos o para un baño cuando le apetezca."
+        "de": "Die 40 km um den See im eigenen Fahrzeug: Veyrier-du-Lac, das Schloss Menthon-Saint-Bernard, Talloires mit seiner Abtei, das Naturschutzgebiet Bout-du-Lac, Duingt und Sévrier. Für Fotos oder ein Bad halten Sie, wo Sie möchten.",
+        "es": "Los 40 km alrededor del lago en vehículo privado: Veyrier-du-Lac, el castillo de Menthon-Saint-Bernard, Talloires y su abadía, la reserva natural del Bout-du-Lac, Duingt y Sévrier. Puede detenerse para tomar fotos o nadar cuando quiera."
       },
       "duration": {
         "de": "Halber Tag",
@@ -40,11 +40,11 @@
     {
       "title": {
         "de": "Sternemenü in Talloires",
-        "es": "Almuerzo con estrella en Talloires"
+        "es": "Almuerzo con estrellas en Talloires"
       },
       "teaser": {
-        "de": "Wir bringen Sie zu den großen Restaurants am Ostufer, etwa zur Auberge du Père Bise gegenüber dem Roc de Chère. Danach ruhen Sie am Wasser aus oder überqueren den See im privaten Boot. Rückfahrt zum Hotel am späten Nachmittag.",
-        "es": "Le dejamos ante las grandes mesas de la orilla este, como la Auberge du Père Bise frente al Roc de Chère. Después, descanso junto al agua o travesía del lago en barco privado. Regreso al hotel a última hora de la tarde."
+        "de": "Wir setzen Sie vor den großen Restaurants am Ostufer ab, etwa der Auberge du Père Bise gegenüber dem Roc de Chère. Danach ruhen Sie am Wasser aus oder überqueren den See mit einem privaten Boot. Am späten Nachmittag geht es zurück ins Hotel.",
+        "es": "Lo dejamos en la puerta de los grandes restaurantes de la orilla este, como la Auberge du Père Bise, frente al Roc de Chère. Después puede descansar junto al agua o cruzar el lago en un barco privado. Regreso a su hotel al final de la tarde."
       },
       "duration": {
         "de": "Halber Tag",
@@ -57,8 +57,8 @@
         "es": "Los Aravis y las granjas de reblochon"
       },
       "teaser": {
-        "de": "Vierzig Minuten von Annecy entfernt: die Dörfer La Clusaz und Le Grand-Bornand, der Col des Aravis mit Blick auf den Mont Blanc und ein Almhof, auf dem der Reblochon fermier entsteht. Verkostung, dann Rückfahrt durch das Tal von Thônes.",
-        "es": "A cuarenta minutos de Annecy, los pueblos de La Clusaz y Le Grand-Bornand, el puerto de los Aravis frente al Mont Blanc y una granja de montaña donde se elabora el reblochon fermier. Degustación y regreso por el valle de Thônes."
+        "de": "Vierzig Minuten von Annecy liegen die Dörfer La Clusaz und Le Grand-Bornand, der Col des Aravis mit Blick auf den Mont Blanc und ein Almhof, auf dem Reblochon fermier hergestellt wird. Nach der Verkostung fahren Sie durch das Tal von Thônes zurück.",
+        "es": "A cuarenta minutos de Annecy están los pueblos de La Clusaz y Le Grand-Bornand, el Col des Aravis frente al Mont Blanc y una granja de montaña donde se elabora el reblochon fermier. Hay degustación y el regreso es por el valle de Thônes."
       },
       "duration": {
         "de": "Ganzer Tag",
@@ -71,8 +71,8 @@
         "es": "Chamonix y el Mont Blanc"
       },
       "teaser": {
-        "de": "Nach Chamonix sind es eine Stunde und fünfzehn Minuten. Dort warten die Seilbahn auf die Aiguille du Midi auf 3.842 Metern, die Zahnradbahn zum Montenvers mit dem Mer de Glace und ein Mittagessen mit Blick auf die Drus. Zeitgebundene Tickets und Organisation übernimmt Ihr Chauffeur.",
-        "es": "Una hora y cuarto de carretera hasta Chamonix: el teleférico de la Aiguille du Midi a 3.842 metros, el tren de Montenvers y el Mer de Glace, y un almuerzo frente a los Drus. Su chófer se ocupa de las entradas con horario y de toda la logística."
+        "de": "Nach Chamonix sind es eineinviertel Stunden Fahrt. Dort warten die Seilbahn auf die Aiguille du Midi auf 3.842 Metern, die Zahnradbahn zum Montenvers mit dem Gletscher Mer de Glace und ein Mittagessen mit Blick auf die Drus. Ihr Chauffeur kümmert sich um die Tickets mit festen Zeitfenstern und die gesamte Logistik.",
+        "es": "Chamonix está a una hora y cuarto por carretera. Allí lo esperan el teleférico de la Aiguille du Midi, a 3.842 metros, el tren del Montenvers hasta el glaciar Mer de Glace y un almuerzo frente a los Drus. Su chófer se ocupa de los boletos con horario y de toda la logística."
       },
       "duration": {
         "de": "Ganzer Tag",
@@ -85,8 +85,8 @@
         "es": "Noche en el casco antiguo y a orillas del Thiou"
       },
       "teaser": {
-        "de": "Abendessen in einem der Restaurants der Altstadt, im Clos des Sens in Annecy-le-Vieux oder auf einer Terrasse am Thiou. Anschließend ein Spaziergang entlang der beleuchteten Kanäle. Wir setzen Sie so nah wie möglich an den Fußgängerzonen ab, das Fahrzeug bleibt in Bereitschaft.",
-        "es": "Cena en el casco antiguo, en Le Clos des Sens de Annecy-le-Vieux o en una terraza junto al Thiou, y después un paseo por los canales iluminados. Le dejamos lo más cerca posible de las zonas peatonales y el vehículo queda a su disposición."
+        "de": "Abendessen in einem der Restaurants der Altstadt, etwa im Clos des Sens in Annecy-le-Vieux oder auf einer Terrasse am Thiou. Danach spazieren Sie an den beleuchteten Kanälen entlang. Wir setzen Sie so nah wie möglich an den Fußgängerzonen ab, und das Fahrzeug bleibt für Sie bereit.",
+        "es": "Cena en uno de los restaurantes del casco antiguo, como Le Clos des Sens en Annecy-le-Vieux o una terraza sobre el Thiou. Luego, un paseo por los canales iluminados. Lo dejamos lo más cerca posible de las zonas peatonales y el vehículo queda a su disposición."
       },
       "duration": {
         "de": "Abend",
@@ -101,28 +101,28 @@
         "es": "¿Cuánto cuesta un traslado entre el aeropuerto de Ginebra y Annecy?"
       },
       "a": {
-        "de": "Der private Transfer zwischen Genf (GVA) und Annecy wird zu einem Festpreis berechnet, den wir bei der Buchung bestätigen. Inbegriffen sind der Empfang in der Ankunftshalle mit Namensschild, die Flugverfolgung in Echtzeit und kostenlose Wartezeit bei Verspätung. Für Reisende aus dem Schengen-Raum ist der Grenzübertritt ohne Formalitäten möglich.",
-        "es": "El traslado privado entre Ginebra (GVA) y Annecy tiene un precio cerrado, confirmado al reservar. Incluye la recepción en la sala de llegadas con cartel nominativo, el seguimiento del vuelo en tiempo real y tiempo de espera gratuito en caso de retraso. Para los viajeros del espacio Schengen, el paso de frontera no requiere ningún trámite."
+        "de": "Für den privaten Transfer zwischen Genf (GVA) und Annecy gilt ein Festpreis, den wir bei der Buchung bestätigen. Er umfasst den Empfang in der Ankunftshalle mit Namensschild, die Flugverfolgung in Echtzeit und kostenlose Wartezeit bei Verspätung. Für Reisende aus dem Schengen-Raum ist der Grenzübertritt ohne Formalitäten.",
+        "es": "El traslado privado entre Ginebra (GVA) y Annecy tiene un precio fijo, que se confirma al reservar. Incluye la recepción en la sala de llegadas con cartel con su nombre, el seguimiento del vuelo en tiempo real y tiempo de espera sin costo en caso de retraso. Para quienes viajan dentro del espacio Schengen, el cruce de la frontera no requiere trámites."
       }
     },
     {
       "q": {
-        "de": "Kommt man mit dem Auto nah an die Altstadt von Annecy heran?",
-        "es": "¿Se puede llegar en coche cerca del casco antiguo de Annecy?"
+        "de": "Kann man mit dem Auto nah an die Altstadt von Annecy heranfahren?",
+        "es": "¿Se puede llegar en auto cerca del casco antiguo de Annecy?"
       },
       "a": {
-        "de": "Der historische Kern ist Fußgängerzone. Ihr Chauffeur kennt jedoch die nächstgelegenen zugelassenen Haltepunkte, etwa am Quai Perrière, in der Rue Royale oder am Hôtel de Ville, und passt die Route an Markttage und den Andrang im Sommer an. Abgeholt werden Sie am selben Ort oder an einem anderen, je nachdem, wo Ihr Spaziergang endet.",
-        "es": "El centro histórico es peatonal, pero su chófer conoce los puntos de parada autorizados más cercanos, como el Quai Perrière, la Rue Royale o el Hôtel de Ville, y adapta el recorrido los días de mercado y en las semanas de más afluencia del verano. Le recoge en el mismo sitio o en otro, según dónde termine su paseo."
+        "de": "Der historische Kern ist Fußgängerzone. Ihr Chauffeur kennt aber die erlaubten Haltepunkte, die am nächsten liegen: Quai Perrière, Rue Royale und das Rathaus. An Markttagen und bei starkem Andrang im Sommer passt er die Route an. Er holt Sie am selben Punkt oder an einem anderen ab, je nachdem, wohin Ihr Spaziergang Sie führt.",
+        "es": "El centro histórico es peatonal, pero su chófer conoce los puntos autorizados más cercanos para dejarlo: el Quai Perrière, la Rue Royale y el Ayuntamiento. En días de mercado y con las multitudes del verano ajusta la ruta. Lo recoge en el mismo lugar o en otro, según dónde termine su paseo."
       }
     },
     {
       "q": {
-        "de": "Bieten Sie stundenweisen Service zur Fête du Lac oder zum Animationsfilmfestival an?",
+        "de": "Bieten Sie einen Chauffeur auf Stundenbasis für die Fête du Lac oder das Animationsfilmfestival an?",
         "es": "¿Ofrecen servicio por horas para la Fête du Lac o el Festival de Cine de Animación?"
       },
       "a": {
-        "de": "Ja. Während der Fête du Lac Anfang August und des Internationalen Animationsfilmfestivals im Juni ist der Verkehr rund um den Pâquier stark eingeschränkt. Buchen Sie deshalb einige Tage im Voraus. Ihr Chauffeur plant die zugelassenen Haltepunkte und steht Ihnen den ganzen Abend zur Verfügung.",
-        "es": "Sí. Durante la Fête du Lac, a principios de agosto, y el Festival Internacional de Cine de Animación, en junio, el tráfico está muy restringido alrededor del Pâquier. Reserve con varios días de antelación: su chófer organiza las paradas autorizadas y queda a su disposición toda la noche."
+        "de": "Ja. Während der Fête du Lac Anfang August und des Internationalen Animationsfilmfestivals im Juni ist der Verkehr rund um den Pâquier stark eingeschränkt. Buchen Sie einige Tage im Voraus. Ihr Chauffeur plant die erlaubten Haltepunkte und bleibt den ganzen Abend für Sie verfügbar.",
+        "es": "Sí. Durante la Fête du Lac, a principios de agosto, y el Festival Internacional de Cine de Animación, en junio, la circulación está muy restringida alrededor del Pâquier. Reserve con varios días de anticipación. Su chófer planifica los puntos autorizados para dejarlo y queda a su disposición toda la noche."
       }
     }
   ]

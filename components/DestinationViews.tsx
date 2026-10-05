@@ -9,6 +9,7 @@ import Link from 'next/link';
 import { getCityExperienceDetails, getExperienceImage, getImageCredit } from '@/lib/experience-details';
 import {
   ALL_DESTINATIONS,
+  PUBLISHED_DESTINATIONS,
   getNearbyDestinations,
   type Destination,
 } from '@/lib/destinations';
@@ -156,7 +157,7 @@ export function DestinationDetail({ d, locale }: { d: Destination; locale: DestL
   // Maillage pays : jusqu'à 12 autres villes du même pays (hors ville courante
   // et hors villes proches déjà listées juste au-dessus)
   const nearbySlugs = new Set(nearby.map((n) => n.slug));
-  const countrySisters = ALL_DESTINATIONS
+  const countrySisters = PUBLISHED_DESTINATIONS
     .filter((x) => x.country.en === d.country.en && x.slug !== d.slug && !nearbySlugs.has(x.slug))
     .slice(0, 12);
 
@@ -243,13 +244,23 @@ export function DestinationDetail({ d, locale }: { d: Destination; locale: DestL
           chauffeur de maître, voiture avec chauffeur, transfert aéroport) */}
       <section className="py-12 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="heading text-2xl">
-            {locale === 'fr'
-              ? `VTC de luxe à ${d.name.fr} — nos services avec chauffeur`
-              : `Luxury chauffeur services in ${d.name.en}`}
-          </h2>
+          <h2 className="heading text-2xl">{SERVICES_TITLE[locale](L(d.name, locale))}</h2>
           <div className="mt-7 grid sm:grid-cols-2 gap-x-8 gap-y-5">
-            {(locale === 'fr'
+            {(locale === 'de'
+              ? [
+                  [`Flughafentransfer ${L(d.name, locale)}`, <>Persönlicher Empfang, Flugverfolgung und <strong>Festpreis</strong> — Ihr <strong>Privatchauffeur in {L(d.name, locale)}</strong> wartet auf Sie, auch wenn sich der Flug verspätet.</>],
+                  ['Stundenweise Anmietung mit Chauffeur', <>Ein <strong>Wagen mit Chauffeur</strong> stundenweise oder für den ganzen Tag: Geschäftstermine, Einkäufe, Besichtigungen. Die Route richtet sich nach Ihnen.</>],
+                  ['Persönlicher Chauffeur', <>Ein fester <strong>persönlicher Chauffeur</strong> für Ihren Aufenthalt: Diskretion, Pünktlichkeit und genaue Ortskenntnis von {L(d.name, locale)} und Umgebung.</>],
+                  ['Ausflüge und Erlebnisse', <>Fünf ausgearbeitete Routen ab {L(d.name, locale)}, mit <strong>Privatchauffeur</strong> und Mercedes bei jeder Etappe.</>],
+                ]
+              : locale === 'es'
+              ? [
+                  [`Traslado al aeropuerto en ${L(d.name, locale)}`, <>Recepción personalizada, seguimiento del vuelo y <strong>precio cerrado</strong>. Su <strong>chófer privado en {L(d.name, locale)}</strong> lo espera, incluso si el vuelo se retrasa.</>],
+                  ['Disposición por horas con chófer', <>Un <strong>vehículo con chófer</strong> por horas o por jornada: reuniones de trabajo, compras, visitas. El itinerario se adapta a usted.</>],
+                  ['Chófer personal', <>Un <strong>chófer personal</strong> asignado durante su estancia: discreción, puntualidad y conocimiento preciso de {L(d.name, locale)} y su región.</>],
+                  ['Excursiones y experiencias', <>Cinco itinerarios preparados con salida desde {L(d.name, locale)}, con <strong>chófer privado</strong> y un Mercedes a disposición en cada parada.</>],
+                ]
+              : locale === 'fr'
               ? [
                   [`Transfert aéroport ${d.name.fr}`, <>Accueil personnalisé, suivi de vol et <strong>prix fixe</strong> — votre <strong>VTC à {d.name.fr}</strong> vous attend, même en cas de retard.</>],
                   ['Mise à disposition avec chauffeur', <>Une <strong>voiture avec chauffeur</strong> à l’heure ou à la journée : rendez-vous d’affaires, shopping, visites — l’itinéraire s’adapte à vous.</>],
@@ -293,7 +304,7 @@ export function DestinationDetail({ d, locale }: { d: Destination; locale: DestL
                     {detail && (
                       <span className="inline-block mt-2 font-sans text-[0.65rem] font-bold tracking-[0.12em] uppercase"
                         style={{ color: '#6d5a30' }}>
-                        {locale === 'fr' ? 'Découvrir l’itinéraire →' : 'View the itinerary →'}
+                        {MICRO[locale].viewItinerary}
                       </span>
                     )}
                   </div>
@@ -349,7 +360,7 @@ export function DestinationDetail({ d, locale }: { d: Destination; locale: DestL
                 return (
                   <div key={n.slug} className="card">
                     <Link href={`${t.base}/${n.slug}`} className="font-serif text-lg text-gray-900 hover:text-gold-500 transition-colors">
-                      {locale === 'fr' ? `Chauffeur privé ${n.name.fr}` : `Private chauffeur ${n.name.en}`}
+                      {MICRO[locale].chauffeurIn(L(n.name, locale))}
                     </Link>
                     {firstExp && (
                       <Link href={`${t.base}/${n.slug}/${firstExp.slug}`}
@@ -371,14 +382,10 @@ export function DestinationDetail({ d, locale }: { d: Destination; locale: DestL
           <div className="max-w-4xl mx-auto">
             <p className="tag">{L(d.country, locale)}</p>
             <h2 className="heading mt-2 mb-4">
-              {locale === 'fr'
-                ? `Chauffeur privé en ${d.country.fr} — nos autres destinations`
-                : `Private chauffeur in ${d.country.en} — our other destinations`}
+              {MICRO[locale].countryTitle(L(d.country, locale))}
             </h2>
             <p className="sf text-sm text-stone-500 mb-8 leading-relaxed">
-              {locale === 'fr'
-                ? <>Votre <strong>chauffeur de maître</strong> vous accompagne dans tout le pays : mise à disposition, transferts inter-villes et excursions au départ de {d.name.fr}.</>
-                : <>Your <strong>personal chauffeur</strong> covers the whole country: hourly hire, inter-city transfers and excursions departing from {d.name.en}.</>}
+              {MICRO[locale].countryIntro(L(d.name, locale))}
             </p>
             <div className="flex flex-wrap gap-3">
               {countrySisters.map((n) => (
@@ -428,6 +435,47 @@ export function DestinationDetail({ d, locale }: { d: Destination; locale: DestL
 }
 
 /** Destinations phares illustrées (slugs du registre disposant d'une photo). */
+/** Fragments courts qui restaient codés en fr/en. */
+const MICRO: Record<DestLocale, {
+  viewItinerary: string;
+  chauffeurIn: (city: string) => string;
+  countryTitle: (country: string) => string;
+  countryIntro: (city: string) => JSX.Element;
+}> = {
+  fr: {
+    viewItinerary: 'Découvrir l’itinéraire →',
+    chauffeurIn: (c) => `Chauffeur privé ${c}`,
+    countryTitle: (c) => `Chauffeur privé en ${c} — nos autres destinations`,
+    countryIntro: (city) => <>Votre <strong>chauffeur de maître</strong> vous accompagne dans tout le pays : mise à disposition, transferts inter-villes et excursions au départ de {city}.</>,
+  },
+  en: {
+    viewItinerary: 'View the itinerary →',
+    chauffeurIn: (c) => `Private chauffeur ${c}`,
+    countryTitle: (c) => `Private chauffeur in ${c} — our other destinations`,
+    countryIntro: (city) => <>Your <strong>personal chauffeur</strong> covers the whole country: hourly hire, inter-city transfers and excursions departing from {city}.</>,
+  },
+  de: {
+    viewItinerary: 'Die Route ansehen →',
+    chauffeurIn: (c) => `Privatchauffeur ${c}`,
+    countryTitle: (c) => `Privatchauffeur in ${c} — unsere weiteren Ziele`,
+    countryIntro: (city) => <>Ihr <strong>persönlicher Chauffeur</strong> begleitet Sie im ganzen Land: Stundenmiete, Fahrten zwischen Städten und Ausflüge ab {city}.</>,
+  },
+  es: {
+    viewItinerary: 'Ver el itinerario →',
+    chauffeurIn: (c) => `Chófer privado ${c}`,
+    countryTitle: (c) => `Chófer privado en ${c} — nuestros otros destinos`,
+    countryIntro: (city) => <>Su <strong>chófer personal</strong> lo acompaña por todo el país: disposición por horas, traslados entre ciudades y excursiones con salida desde {city}.</>,
+  },
+};
+
+/** Titre du bloc services, par langue. Le mot-clé local porte le référencement. */
+const SERVICES_TITLE: Record<DestLocale, (city: string) => string> = {
+  fr: (c) => `VTC de luxe à ${c} — nos services avec chauffeur`,
+  en: (c) => `Luxury chauffeur services in ${c}`,
+  de: (c) => `Luxus-Chauffeurservice in ${c} — unsere Leistungen`,
+  es: (c) => `Servicio de chófer de lujo en ${c} — nuestras prestaciones`,
+};
+
 const HUB_SUBTITLE: Record<DestLocale, string> = {
   fr: 'Chauffeur privé',
   en: 'Private chauffeur',
@@ -454,7 +502,7 @@ export function DestinationsHub({
   destinations?: Destination[];
 }) {
   const t = T[locale];
-  const list = destinations ?? ALL_DESTINATIONS;
+  const list = destinations ?? PUBLISHED_DESTINATIONS;
   const inScope = new Set(list.map((d) => d.slug));
 
   // Groupement par pays, dans l'ordre d'apparition du registre

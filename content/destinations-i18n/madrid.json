@@ -9,17 +9,17 @@
     "es": "España"
   },
   "airportTransfer": {
-    "de": "Der Flughafen Adolfo Suárez Madrid-Barajas (MAD) liegt 15 km nordöstlich des Zentrums. Je nach Verkehr brauchen Sie 25 bis 35 Minuten bis zur Puerta del Sol oder zum Paseo de la Castellana. Ihr Chauffeur erwartet Sie in der Ankunftshalle mit einem Namensschild und verfolgt Ihren Flug in Echtzeit.",
-    "es": "El aeropuerto Adolfo Suárez Madrid-Barajas (MAD) está a 15 km al noreste del centro. Según el tráfico, se tarda entre 25 y 35 minutos en llegar a la Puerta del Sol o al paseo de la Castellana. Su chófer le espera en la sala de llegadas con un cartel con su nombre y sigue su vuelo en tiempo real."
+    "de": "Der Flughafen Adolfo Suárez Madrid-Barajas (MAD) liegt 15 km nordöstlich des Zentrums. Bis zur Puerta del Sol oder zum Paseo de la Castellana brauchen Sie je nach Verkehr 25 bis 35 Minuten. Ihr Chauffeur erwartet Sie in der Ankunftshalle mit einem Namensschild und verfolgt Ihren Flug in Echtzeit.",
+    "es": "El aeropuerto Adolfo Suárez Madrid-Barajas (MAD) está a 15 km al noreste del centro. Para llegar a la Puerta del Sol o al paseo de la Castellana se necesitan entre 25 y 35 minutos, según el tráfico. Su chofer lo espera en la sala de llegadas con un letrero con su nombre y sigue su vuelo en tiempo real."
   },
   "intro": {
     "de": [
-      "Madrid ist Hauptstadt des Königreichs und der wichtigste Finanzplatz Spaniens. Hier finden Sie Paläste aus der Habsburgerzeit, das Kunstdreieck am Paseo del Prado und die Geschäftsachse der Castellana. Ihr **Privatchauffeur in Madrid** fährt Sie zur IFEMA, ins Viertel Salamanca, zum Santiago Bernabéu und in die Sterneküchen der Stadt, in einer Mercedes-Limousine oder einem geräumigen Van. Wir übernehmen Transfers vom Flughafen und zu den AVE-Bahnhöfen ebenso wie Buchungen auf Stundenbasis, zu Festpreisen, die vorab feststehen. Jede Fahrt ist geplant, bevor Sie landen.",
-      "Madrid eignet sich zudem gut als Ausgangspunkt für Ausflüge nach Kastilien. **Toledo, Segovia und El Escorial** erreichen Sie in kaum einer Stunde Fahrt. Wer weiterfahren möchte, hängt Ávila und Salamanca an, im Norden beginnen die Weinberge der Ribera del Duero. Bei einer Tagesbuchung kümmert sich Ihr Chauffeur um die Abfolge von Sehenswürdigkeiten, reservierten Tischen und Fotostopps, und Sie schauen derweil auf die Landschaft der Meseta."
+      "Madrid ist die Hauptstadt des Königreichs und der wichtigste Finanzplatz Spaniens. Hier finden Sie die Paläste der Habsburger, das Kunstdreieck am Paseo del Prado und die Geschäftsachse der Castellana. Ihr **Privatchauffeur in Madrid** fährt Sie zur Messe IFEMA, ins Viertel Salamanca, zum Estadio Santiago Bernabéu und zu den Sternerestaurants der Stadt, in einer Mercedes-Limousine oder einem großen Van. Wir übernehmen Transfers vom Flughafen und von den AVE-Bahnhöfen sowie stundenweise Buchungen. Die Festpreise nennen wir Ihnen im Voraus, und jede Fahrt ist geplant, bevor Sie ankommen.",
+      "Madrid ist außerdem ein guter Ausgangspunkt für Ausflüge nach Kastilien. **Toledo, Segovia und El Escorial** erreichen Sie in knapp einer Stunde Fahrt. Ávila und Salamanca lassen sich anschließen, und im Norden liegen die Weinberge der Ribera del Duero. Bei einer Tagesbuchung plant Ihr Chauffeur Sehenswürdigkeiten, reservierte Tische und Fotostopps nacheinander ein. Sie selbst schauen auf die Landschaft der Meseta."
     ],
     "es": [
-      "Capital del reino y primera plaza financiera de España, Madrid reúne palacios de los Austrias, el triángulo del arte del paseo del Prado y las avenidas de negocios de la Castellana. Su **chófer privado en Madrid** le lleva a IFEMA, al barrio de Salamanca, al Santiago Bernabéu y a los restaurantes con estrella de la ciudad, en berlina Mercedes o en furgoneta de gran capacidad. Traslados al aeropuerto y a las estaciones del AVE, servicio por horas y precios cerrados confirmados de antemano. Cada trayecto queda organizado antes de su llegada.",
-      "Madrid es también una buena base para las grandes excursiones por Castilla. **Toledo, Segovia y El Escorial** quedan a apenas una hora en coche. Ávila y Salamanca permiten alargar la ruta, y al norte empiezan los viñedos de la Ribera del Duero. Con el servicio por día completo, su chófer encadena monumentos, mesas reservadas y paradas para fotos mientras usted disfruta del paisaje de la Meseta."
+      "Madrid es la capital del reino y el principal centro financiero de España. Tiene los palacios de los Austrias, el triángulo del arte del paseo del Prado y las avenidas de negocios de la Castellana. Su **chofer privado en Madrid** lo lleva a IFEMA, al barrio de Salamanca, al estadio Santiago Bernabéu y a los restaurantes con estrella Michelin de la ciudad, en un sedán Mercedes o en una van de gran capacidad. Ofrecemos traslados desde el aeropuerto y las estaciones del AVE, servicio por horas y precios fijos confirmados de antemano. Cada trayecto queda organizado antes de su llegada.",
+      "Madrid es también una buena base para recorrer Castilla. **Toledo, Segovia y El Escorial** están a menos de una hora por carretera. Desde allí la ruta puede seguir hasta Ávila y Salamanca, y al norte están los viñedos de la Ribera del Duero. Con el servicio por día completo, su chofer organiza monumentos, mesas reservadas y paradas para fotos. Usted solo tiene que mirar el paisaje de la Meseta."
     ]
   },
   "experiences": [
@@ -29,8 +29,8 @@
         "es": "Toledo, ciudad de las tres culturas"
       },
       "teaser": {
-        "de": "70 km südlich von Madrid liegt die einstige Kaiserstadt, heute UNESCO-Welterbe: die Primaskathedrale, die Synagoge del Tránsito und El Greco in Santo Tomé. Vor der Rückfahrt halten Sie am Aussichtspunkt Mirador del Valle.",
-        "es": "A 70 km al sur de Madrid, la ciudad imperial declarada Patrimonio de la Humanidad por la UNESCO: la catedral primada, la sinagoga del Tránsito y El Greco en Santo Tomé. Antes de volver, parada en el mirador del Valle."
+        "de": "Die alte Kaiserstadt liegt 70 km südlich von Madrid und ist UNESCO-Welterbe. Sie sehen die Primas-Kathedrale, die Synagoge del Tránsito und El Greco in der Kirche Santo Tomé. Vor der Rückfahrt halten Sie am Aussichtspunkt Mirador del Valle.",
+        "es": "A 70 km al sur de Madrid está la ciudad imperial, Patrimonio de la Humanidad de la UNESCO. Visitará la catedral primada, la sinagoga del Tránsito y el Greco en Santo Tomé. Antes del regreso, parada en el mirador del Valle para ver la ciudad desde enfrente."
       },
       "duration": {
         "de": "Ganzer Tag",
@@ -43,8 +43,8 @@
         "es": "Segovia y el palacio de La Granja"
       },
       "teaser": {
-        "de": "Das römische Aquädukt, der märchenhafte Alcázar und das Spanferkel bei Cándido. Danach geht es in die Barockgärten von La Granja de San Ildefonso. Zurück fahren Sie über die Sierra de Guadarrama.",
-        "es": "El acueducto romano, el Alcázar de cuento y el cochinillo de Cándido. Después, los jardines a la francesa de La Granja de San Ildefonso. Regreso por la sierra de Guadarrama."
+        "de": "Das römische Aquädukt, der Alcázar wie aus dem Märchenbuch und Spanferkel im Restaurant Cándido. Danach die französischen Gärten von La Granja de San Ildefonso. Zurück geht es durch die Sierra de Guadarrama.",
+        "es": "El acueducto romano, el Alcázar de cuento y el cochinillo asado de Cándido. Después, los jardines a la francesa de La Granja de San Ildefonso. El regreso es por la sierra de Guadarrama."
       },
       "duration": {
         "de": "Ganzer Tag",
@@ -57,8 +57,8 @@
         "es": "El Escorial y el valle de los reyes"
       },
       "teaser": {
-        "de": "50 km nordwestlich steht das Klosterpalast Philipps II. mit Basilika, Königsgruft und einer Bibliothek voller vergoldeter Fresken. Auf Wunsch fahren Sie weiter in die ummauerte Stadt Ávila.",
-        "es": "A 50 km al noroeste, el monasterio-palacio de Felipe II: la basílica, el panteón real y la biblioteca de frescos dorados. Si lo desea, la visita puede continuar en Ávila y su muralla."
+        "de": "Das Kloster und der Palast Philipps II. liegen 50 km nordwestlich von Madrid. Zu sehen sind die Basilika, die königliche Grablege und die Bibliothek mit ihren vergoldeten Fresken. Auf Wunsch fahren Sie weiter nach Ávila mit seiner Stadtmauer.",
+        "es": "A 50 km al noroeste está el monasterio y palacio de Felipe II. Incluye la basílica, el panteón real y la biblioteca con sus frescos dorados. Si lo desea, puede continuar hasta Ávila y sus murallas."
       },
       "duration": {
         "de": "Halber Tag",
@@ -68,11 +68,11 @@
     {
       "title": {
         "de": "Das Kunstdreieck mit eigenem Wagen",
-        "es": "El triángulo del arte en coche privado"
+        "es": "El triángulo del arte en vehículo privado"
       },
       "teaser": {
-        "de": "Prado, Reina Sofía und Thyssen-Bornemisza nacheinander, ohne sich um Wege kümmern zu müssen. Sie steigen direkt vor jedem Museum aus, der Wagen wartet. Mittagspause im Retiro oder bei Horcher.",
-        "es": "El Prado, el Reina Sofía y el Thyssen-Bornemisza uno tras otro, sin preocuparse por los desplazamientos. Le dejamos en la puerta de cada museo y el coche le espera. Para comer, el Retiro o Horcher."
+        "de": "Prado, Reina Sofía und Thyssen-Bornemisza an einem Tag, ohne sich um Wege kümmern zu müssen. Ihr Chauffeur setzt Sie vor jedem Museum ab, der Wagen wartet. Mittagspause im Retiro-Park oder im Restaurant Horcher.",
+        "es": "El Prado, el Reina Sofía y el Thyssen-Bornemisza en un solo día, sin preocuparse por los traslados. Su chofer lo deja en la puerta de cada museo y el vehículo lo espera. Para almorzar, el parque del Retiro o el restaurante Horcher."
       },
       "duration": {
         "de": "Ganzer Tag",
@@ -85,8 +85,8 @@
         "es": "Una noche en Madrid"
       },
       "teaser": {
-        "de": "Abendessen im DiverXO, im Coque oder in einer hundertjährigen Taberna in La Latina. Danach Flamenco im Corral de la Morería und eine Fahrt über die beleuchtete Gran Vía bis Cibeles. Der Wagen steht den ganzen Abend bereit.",
-        "es": "Cena en DiverXO, en Coque o en una taberna centenaria de La Latina, flamenco en el tablao Corral de la Morería y, para terminar, la Gran Vía y Cibeles iluminadas. Vehículo a su disposición toda la noche."
+        "de": "Abendessen im DiverXO, im Coque oder in einer über hundert Jahre alten Taberna in La Latina. Danach Flamenco im Corral de la Morería und eine Fahrt über die beleuchtete Gran Vía und an der Cibeles vorbei. Der Wagen steht Ihnen den ganzen Abend zur Verfügung.",
+        "es": "Cena en DiverXO, en Coque o en una taberna centenaria de La Latina. Luego, flamenco en el tablao Corral de la Morería y un recorrido por la Gran Vía y la Cibeles iluminadas. El vehículo queda a su disposición toda la noche."
       },
       "duration": {
         "de": "Abend",
@@ -98,11 +98,11 @@
     {
       "q": {
         "de": "Was kostet ein Transfer vom Flughafen Madrid-Barajas ins Stadtzentrum?",
-        "es": "¿Cuánto cuesta un traslado entre el aeropuerto de Madrid-Barajas y el centro?"
+        "es": "¿Cuánto cuesta un traslado entre el aeropuerto de Madrid-Barajas y el centro de la ciudad?"
       },
       "a": {
-        "de": "Der private Transfer zwischen Madrid-Barajas (MAD) und dem Zentrum von Madrid kostet einen Festpreis, den wir bei der Buchung bestätigen. Inbegriffen sind der Empfang in der Ankunftshalle mit Namensschild, die Flugverfolgung in Echtzeit und bei Verspätung 60 Minuten kostenlose Wartezeit.",
-        "es": "El traslado privado entre Madrid-Barajas (MAD) y el centro de Madrid tiene un precio cerrado, que se confirma al reservar. Incluye la recogida en la sala de llegadas con cartel nominativo, el seguimiento del vuelo en tiempo real y 60 minutos de espera gratuita en caso de retraso."
+        "de": "Für den privaten Transfer zwischen Madrid-Barajas (MAD) und dem Zentrum von Madrid gilt ein Festpreis, den wir bei der Buchung bestätigen. Im Preis enthalten sind der Empfang in der Ankunftshalle mit Namensschild, die Flugverfolgung in Echtzeit und bei Verspätung 60 Minuten kostenlose Wartezeit.",
+        "es": "El traslado privado entre Madrid-Barajas (MAD) y el centro de Madrid tiene un precio fijo, confirmado al hacer la reserva. Incluye la recepción en la sala de llegadas con letrero nominativo, el seguimiento del vuelo en tiempo real y 60 minutos de espera sin costo en caso de retraso."
       }
     },
     {
@@ -111,18 +111,18 @@
         "es": "¿Hacen traslados a las estaciones del AVE de Atocha y Chamartín?"
       },
       "a": {
-        "de": "Ja. Wir fahren Atocha und Chamartín täglich an und setzen Sie so nah wie möglich an den Fernverkehrseingängen ab. Ihr Chauffeur legt die Abholzeit nach der Verkehrslage fest, damit Sie mit dem gewünschten Zeitpuffer vor Abfahrt Ihres Zuges ankommen.",
-        "es": "Sí. Cubrimos Atocha y Chamartín a diario y le dejamos lo más cerca posible de los accesos de larga distancia. Su chófer ajusta la hora de recogida según el tráfico para que llegue con la antelación que desee antes de su tren."
+        "de": "Ja. Wir fahren täglich nach Atocha und Chamartín und setzen Sie so nah wie möglich am Eingang zu den Fernzügen ab. Ihr Chauffeur legt die Abholzeit nach der Verkehrslage fest. So sind Sie mit dem gewünschten Zeitpuffer vor Ihrem Zug am Bahnhof.",
+        "es": "Sí. Vamos a Atocha y Chamartín todos los días y lo dejamos lo más cerca posible de los accesos a los trenes de larga distancia. Su chofer ajusta la hora de recogida según el tráfico, para que llegue con el margen que usted quiera antes de su tren."
       }
     },
     {
       "q": {
-        "de": "Lassen sich Toledo und Segovia von Madrid aus an einem Tag besuchen?",
+        "de": "Kann man Toledo und Segovia von Madrid aus an einem Tag besuchen?",
         "es": "¿Se pueden visitar Toledo y Segovia en un mismo día desde Madrid?"
       },
       "a": {
-        "de": "Mit einer Tagesbuchung ist das machbar: eine Rundfahrt von etwa 300 km mit jeweils rund drei Stunden vor Ort. Wir empfehlen trotzdem, jeder Stadt einen eigenen Tag zu widmen, damit Sie beide in Ruhe erleben. Ihr Chauffeur richtet die Route nach Ihrem Tempo aus.",
-        "es": "Es posible con el servicio por día completo: un circuito de unos 300 km y unas tres horas de visita en cada ciudad. Aun así, le recomendamos dedicar un día a cada una para disfrutarlas con calma. Su chófer adapta el itinerario a su ritmo."
+        "de": "Mit einer Tagesbuchung ist das möglich. Die Rundfahrt ist etwa 300 km lang, und Sie haben in jeder Stadt rund drei Stunden. Wir empfehlen trotzdem einen eigenen Tag pro Stadt, damit Sie genug Zeit haben. Ihr Chauffeur passt die Route Ihrem Tempo an.",
+        "es": "Es posible con el servicio por día completo: un circuito de unos 300 km y unas tres horas de visita en cada ciudad. De todos modos, recomendamos dedicar un día a cada una para recorrerlas con calma. Su chofer adapta el itinerario a su ritmo."
       }
     }
   ]

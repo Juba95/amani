@@ -9,17 +9,17 @@
     "es": "España"
   },
   "airportTransfer": {
-    "de": "Der Flughafen Josep Tarradellas Barcelona-El Prat (BCN) liegt 14 km südwestlich des Zentrums. Bis zum Passeig de Gràcia oder zum Port Vell brauchen Sie 25 bis 30 Minuten. Ihr Chauffeur erwartet Sie im Ankunftsbereich mit einem Namensschild. Er verfolgt Ihren Flug und passt die Abholzeit entsprechend an.",
-    "es": "El aeropuerto Josep Tarradellas Barcelona-El Prat (BCN) está a 14 km al suroeste del centro. Hasta el paseo de Gràcia o el Port Vell se tarda entre 25 y 30 minutos. Su chófer le espera en la zona de llegadas con un cartel con su nombre y sigue su vuelo para ajustar la hora de recogida."
+    "de": "Der Flughafen Josep Tarradellas Barcelona-El Prat (BCN) liegt 14 km südwestlich des Zentrums. Bis zum Passeig de Gràcia oder zum Port Vell brauchen Sie 25 bis 30 Minuten. Ihr Chauffeur wartet mit Namensschild im Ankunftsbereich und verfolgt Ihren Flug, damit die Abholung zur tatsächlichen Landezeit passt.",
+    "es": "El aeropuerto Josep Tarradellas Barcelona-El Prat (BCN) está a 14 km al suroeste del centro. Hasta el Passeig de Gràcia o el Port Vell hay entre 25 y 30 minutos. Su chófer lo espera en la zona de llegadas con un cartel con su nombre y sigue su vuelo para ajustar la hora de recogida."
   },
   "intro": {
     "de": [
-      "Barcelona liegt zwischen dem Meer und den Hügeln der Collserola. Hier treffen die mittelalterlichen Gassen des Barri Gòtic, das von Gaudí geprägte Eixample und die Strandpromenade aus der Olympiazeit aufeinander. Ihr **Privatchauffeur in Barcelona** verbindet die Messe Fira und das Viertel 22@ mit den Hotels am Passeig de Gràcia, dem Camp Nou und den Kreuzfahrtterminals im Hafen, in einer Limousine oder einem Van der Oberklasse. Ob Kongress, Landgang, Dreharbeiten oder Familienurlaub: Sie zahlen Festpreise, auf Wunsch fährt ein zweisprachiger Chauffeur, und die Abstimmung mit Hotel und Concierge übernehmen wir.",
-      "Rund um die Stadt liegt Katalonien. **Montserrat mit seinem Kloster hoch in den Felsen** erreichen Sie in einer Stunde, die Sektkellereien des Penedès in vierzig Minuten. Im Norden folgen die Costa Brava und das Dalí-Dreieck um Figueres, im Süden Sitges und das römische Tarragona. Wenn Sie den Wagen für einen ganzen Tag buchen, plant Ihr Chauffeur die Route gemeinsam mit Ihnen: Badebuchten, Bodegas, mittelalterliche Dörfer. Abends bringt er Sie entspannt zurück."
+      "Barcelona liegt zwischen dem Meer und den Hügeln der Collserola. Auf engem Raum finden Sie die gotischen Gassen des Barri Gòtic, das Eixample mit den Bauten Gaudís und die Strandpromenade aus der Zeit der Olympischen Spiele. Ihr **Privatchauffeur in Barcelona** fährt Sie in der Premium-Limousine oder im Van zur Messe Fira und ins Viertel 22@, zu den Hotels am Passeig de Gràcia, zum Camp Nou und zu den Kreuzfahrtterminals im Hafen. Ob Kongress, Landgang, Dreharbeiten oder Familienurlaub: Sie zahlen Festpreise, bekommen auf Wunsch zweisprachige Chauffeure, und wir stimmen uns mit Ihrem Hotel und Ihrem Concierge ab.",
+      "Rund um die Stadt liegt Katalonien. **Montserrat mit seinem Kloster am Felsen** erreichen Sie in einer Stunde, die Weinkeller des Penedès in vierzig Minuten. Im Norden liegen die Costa Brava und das Dalí-Dreieck um Figueres, im Süden Sitges und das römische Tarragona. Buchen Sie den Chauffeur für einen ganzen Tag, plant er die Route mit Ihnen: Badebuchten, Bodegas, mittelalterliche Dörfer. Am Abend bringt er Sie ohne Zeitdruck zurück."
     ],
     "es": [
-      "Entre el mar y la sierra de Collserola, Barcelona reúne el trazado medieval del Barri Gòtic, el Eixample modernista de Gaudí y el frente marítimo olímpico. Su **chófer privado en Barcelona** le lleva a la Fira y al distrito 22@, a los hoteles del paseo de Gràcia, al Camp Nou y a las terminales de cruceros del puerto, en berlina o van de gama alta. Congresos, escalas de crucero, rodajes o viajes en familia: precios cerrados, chóferes bilingües bajo petición y coordinación con el hotel y la conserjería.",
-      "Alrededor se extiende Cataluña. **Montserrat y su monasterio colgado de la montaña** quedan a una hora, y las bodegas del Penedès a cuarenta minutos. Al norte esperan la Costa Brava y el triángulo daliniano de Figueres; al sur, Sitges y la Tarragona romana. Si contrata el servicio por un día completo, su chófer diseña la ruta con usted (calas, bodegas, pueblos medievales) y le devuelve por la noche sin ninguna complicación."
+      "Barcelona está entre el mar y la sierra de Collserola. En pocos kilómetros reúne el trazado gótico del Barri Gòtic, el Eixample modernista de Gaudí y el frente marítimo de los Juegos Olímpicos. Su **chófer privado en Barcelona** lo lleva en sedán o van premium a la Fira y al distrito 22@, a los hoteles del Passeig de Gràcia, al Camp Nou y a las terminales de cruceros del puerto. Congresos, escalas de crucero, rodajes o viajes en familia: precios fijos, chóferes bilingües si lo solicita y coordinación con su hotel y su conserjería.",
+      "Alrededor de la ciudad se extiende Cataluña. **Montserrat y su monasterio en la montaña** están a una hora, las bodegas del Penedès a cuarenta minutos. Al norte quedan la Costa Brava y el triángulo daliniano de Figueres; al sur, Sitges y la Tarragona romana. Si contrata el servicio por día completo, su chófer arma el recorrido con usted: calas, bodegas, pueblos medievales. Por la noche lo regresa a su hotel sin prisas."
     ]
   },
   "experiences": [
@@ -29,8 +29,8 @@
         "es": "Montserrat, la montaña sagrada"
       },
       "teaser": {
-        "de": "60 km von Barcelona entfernt klammert sich das Benediktinerkloster an die Felsnadeln von Montserrat. Zu sehen sind die Moreneta, die Schwarze Madonna, der Knabenchor der Escolania und die Wanderwege zum Sant Jeroni. Auf dem Rückweg halten Sie zur Weinprobe in einer Kellerei im Penedès.",
-        "es": "A 60 km de Barcelona, el monasterio benedictino aferrado a las agujas de Montserrat: la Moreneta, la Escolanía y los senderos de Sant Jeroni. A la vuelta, cata en una bodega del Penedès."
+        "de": "60 km von Barcelona entfernt hängt das Benediktinerkloster zwischen den Felsnadeln von Montserrat. Sie sehen die Schwarze Madonna (Moreneta), hören den Knabenchor Escolania und wandern auf den Wegen zum Sant Jeroni. Auf der Rückfahrt halten Sie zur Weinprobe in einem Keller des Penedès.",
+        "es": "A 60 km de Barcelona, el monasterio benedictino está entre las agujas rocosas de Montserrat. La Moreneta, el coro de niños de la Escolania y los senderos de Sant Jeroni. De regreso, una cata en una bodega del Penedès."
       },
       "duration": {
         "de": "Ganzer Tag",
@@ -40,11 +40,11 @@
     {
       "title": {
         "de": "Costa Brava und Dalí-Dreieck",
-        "es": "Costa Brava y triángulo daliniano"
+        "es": "Costa Brava y triángulo de Dalí"
       },
       "teaser": {
-        "de": "Das Dalí-Theatermuseum in Figueres, Dalís Haus in Portlligat bei Cadaqués, die Buchten von Begur. Die raue katalanische Küste an einem Tag, mittags gibt es Fisch mit Blick aufs Mittelmeer.",
-        "es": "El Teatro-Museo Dalí de Figueres, la casa de Portlligat en Cadaqués y las calas de Begur: la costa salvaje catalana en un día, con almuerzo de pescado frente al Mediterráneo."
+        "de": "Das Teatre-Museu Dalí in Figueres, Dalís Haus in Portlligat bei Cadaqués, die Buchten von Begur. An einem Tag sehen Sie die wilde Küste Kataloniens. Mittags essen Sie Fisch mit Blick aufs Mittelmeer.",
+        "es": "El Teatro-Museo Dalí en Figueres, la casa de Portlligat en Cadaqués y las calas de Begur. La costa agreste de Cataluña en un día, con almuerzo de pescado frente al Mediterráneo."
       },
       "duration": {
         "de": "Ganzer Tag",
@@ -53,12 +53,12 @@
     },
     {
       "title": {
-        "de": "Kellereien im Penedès: die Cava-Route",
+        "de": "Weinkeller des Penedès, die Cava-Route",
         "es": "Bodegas del Penedès, la ruta del cava"
       },
       "teaser": {
-        "de": "45 Minuten vom Zentrum liegt Sant Sadurní d’Anoia. Neben großen Häusern wie Codorníu und Gramona besuchen Sie auch Familienweingüter. Jahrhundertealte Keller, kommentierte Verkostungen, und ans Steuer müssen Sie nicht.",
-        "es": "A 45 minutos del centro, Sant Sadurní d’Anoia y sus grandes casas, como Codorníu o Gramona, junto a bodegas familiares. Visitas a cavas centenarias y catas comentadas, sin tocar el volante."
+        "de": "Sant Sadurní d'Anoia liegt 45 Minuten vom Zentrum. Hier besuchen Sie große Häuser wie Codorníu und Gramona und kleine Familienweingüter. Sie gehen durch hundertjährige Keller und probieren mit fachkundiger Begleitung. Ans Steuer müssen Sie nicht.",
+        "es": "A 45 minutos del centro, Sant Sadurní d'Anoia reúne grandes casas como Codorníu y Gramona junto a bodegas familiares. Visitas a cavas centenarias y catas comentadas. Usted no toca el volante."
       },
       "duration": {
         "de": "Halber Tag",
@@ -68,11 +68,11 @@
     {
       "title": {
         "de": "Gaudí-Tag im Privatwagen",
-        "es": "Día Gaudí en coche privado"
+        "es": "Día Gaudí en auto privado"
       },
       "teaser": {
-        "de": "Sagrada Família, Park Güell, La Pedrera und Casa Batlló, von Tür zu Tür gefahren. Die Tickets ohne Anstehen stimmen wir mit Ihrem Concierge ab. Zum Abschluss geht es zu den Bunkers del Carmel mit Blick über die ganze Stadt.",
-        "es": "Sagrada Família, Park Güell, La Pedrera y Casa Batlló de puerta a puerta, con entradas sin colas coordinadas con su conserjería. El día termina en los Búnkers del Carmel, con vistas sobre toda la ciudad."
+        "de": "Sagrada Família, Park Güell, La Pedrera und Casa Batlló, jeweils von Tür zu Tür. Die Tickets ohne Anstehen organisieren wir mit Ihrem Concierge. Zum Schluss fahren Sie zu den Bunkers del Carmel und sehen die ganze Stadt von oben.",
+        "es": "Sagrada Família, Park Güell, La Pedrera y Casa Batlló, de puerta a puerta. Las entradas sin fila se coordinan con su conserjería. El día termina en los Bunkers del Carmel, con vista sobre toda la ciudad."
       },
       "duration": {
         "de": "Ganzer Tag",
@@ -82,11 +82,11 @@
     {
       "title": {
         "de": "Ein Abend in Barcelona",
-        "es": "Noche barcelonesa"
+        "es": "Una noche en Barcelona"
       },
       "teaser": {
-        "de": "Abendessen im Disfrutar, im Lasarte oder in einer Bodega im Born. Danach die Magische Fontäne am Montjuïc und die beleuchtete Uferpromenade. Sie werden vor jeder Adresse abgesetzt, der Wagen wartet den ganzen Abend.",
-        "es": "Cena en Disfrutar, Lasarte o una bodega del Born, y después la Fuente Mágica de Montjuïc y el frente marítimo iluminado. Le dejamos en la puerta de cada lugar y el vehículo le espera toda la noche."
+        "de": "Abendessen im Disfrutar, im Lasarte oder in einer Bodega im Born. Danach geht es zum Zauberbrunnen am Montjuïc und an die beleuchtete Uferpromenade. Ihr Chauffeur setzt Sie vor jeder Adresse ab, der Wagen wartet den ganzen Abend.",
+        "es": "Cena en Disfrutar, en Lasarte o en una bodega del Born. Después, la Fuente Mágica de Montjuïc y el paseo marítimo iluminado. Su chófer lo deja frente a cada dirección y el vehículo lo espera toda la noche."
       },
       "duration": {
         "de": "Abend",
@@ -101,8 +101,8 @@
         "es": "¿Cuánto cuesta un traslado entre el aeropuerto de El Prat y el centro de Barcelona?"
       },
       "a": {
-        "de": "Der private Transfer zwischen Barcelona-El Prat (BCN) und dem Zentrum kostet einen Festpreis, den wir bei der Buchung bestätigen. Inbegriffen sind der Empfang im Ankunftsbereich mit Namensschild, die Flugverfolgung in Echtzeit und kostenlose Wartezeit bei Verspätung.",
-        "es": "El traslado privado entre Barcelona-El Prat (BCN) y el centro tiene un precio cerrado, confirmado al reservar. Incluye recepción en la zona de llegadas con cartel nominativo, seguimiento del vuelo en tiempo real y espera gratuita en caso de retraso."
+        "de": "Für den privaten Transfer zwischen Barcelona-El Prat (BCN) und dem Zentrum gilt ein Festpreis, den wir bei der Buchung bestätigen. Inklusive sind der Empfang mit Namensschild im Ankunftsbereich, die Flugverfolgung in Echtzeit und kostenlose Wartezeit bei Verspätung.",
+        "es": "El traslado privado entre Barcelona-El Prat (BCN) y el centro tiene un precio fijo, confirmado al momento de la reserva. Incluye recibimiento en la zona de llegadas con cartel con su nombre, seguimiento del vuelo en tiempo real y espera sin costo en caso de retraso."
       }
     },
     {
@@ -111,18 +111,18 @@
         "es": "¿Hacen traslados a las terminales de cruceros del puerto de Barcelona?"
       },
       "a": {
-        "de": "Ja. Wir fahren täglich zu den Terminals am Moll Adossat und am World Trade Center, zur Einschiffung wie zur Ausschiffung. Ihr Chauffeur richtet sich nach dem Fahrplan des Schiffs und erwartet Sie mit Namensschild in der zugelassenen Zone.",
-        "es": "Sí. Realizamos a diario traslados a las terminales del Moll Adossat y del World Trade Center, tanto para el embarque como para el desembarque. Su chófer sigue los horarios del barco y le espera en la zona autorizada con un cartel con su nombre."
+        "de": "Ja. Wir fahren täglich zu den Terminals am Moll Adossat und am World Trade Center, zur Einschiffung wie zur Ausschiffung. Ihr Chauffeur richtet sich nach dem Fahrplan des Schiffs und wartet mit Namensschild in der zugelassenen Zone.",
+        "es": "Sí. Hacemos traslados todos los días a las terminales del Moll Adossat y del World Trade Center, tanto para el embarque como para el desembarque. Su chófer sigue los horarios del barco y lo espera en la zona autorizada con un cartel con su nombre."
       }
     },
     {
       "q": {
-        "de": "Lässt sich von Barcelona aus ein Ausflug nach Montserrat oder an die Costa Brava organisieren?",
+        "de": "Kann ich von Barcelona aus einen Ausflug nach Montserrat oder an die Costa Brava buchen?",
         "es": "¿Se puede organizar una excursión a Montserrat o a la Costa Brava desde Barcelona?"
       },
       "a": {
-        "de": "Selbstverständlich. Montserrat, das Penedès, Sitges, Girona oder das Dalí-Dreieck besuchen Sie als Tagesausflug mit Hin- und Rückfahrt ab Barcelona, zum Festpreis. Route und Stopps legen wir vor der Abfahrt mit Ihnen fest. Unterwegs können Sie sie jederzeit ändern.",
-        "es": "Por supuesto. Montserrat, el Penedès, Sitges, Girona o el triángulo daliniano se visitan en excursiones de ida y vuelta en el día desde Barcelona, a precio cerrado. El itinerario y las paradas se acuerdan con usted antes de salir y pueden cambiarse por el camino."
+        "de": "Ja. Montserrat, das Penedès, Sitges, Girona und das Dalí-Dreieck sind als Tagesausflug mit Hin- und Rückfahrt ab Barcelona möglich, zum Festpreis. Route und Stopps legen wir vor der Abfahrt mit Ihnen fest. Unterwegs können Sie sie noch ändern.",
+        "es": "Por supuesto. Montserrat, el Penedès, Sitges, Girona o el triángulo de Dalí se pueden visitar en el día, ida y vuelta desde Barcelona, a precio fijo. El itinerario y las paradas se acuerdan con usted antes de salir y se pueden cambiar durante el trayecto."
       }
     }
   ]

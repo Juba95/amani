@@ -9,17 +9,17 @@
     "es": "Francia"
   },
   "airportTransfer": {
-    "de": "Der Flughafen Nizza-Côte d’Azur (NCE) liegt rund 12 km von Èze Village entfernt. Über die Moyenne Corniche brauchen Sie je nach Verkehr 25 bis 35 Minuten. Ihr Chauffeur erwartet Sie in der Ankunftshalle mit einem Namensschild. Er verfolgt Ihren Flug in Echtzeit und passt die Abholung entsprechend an.",
-    "es": "El aeropuerto de Niza-Costa Azul (NCE) está a unos 12 km de Èze Village. Por la corniche media, el trayecto dura entre 25 y 35 minutos según el tráfico. Su chófer le espera en la sala de llegadas con un cartel con su nombre y sigue su vuelo en tiempo real para ajustar la hora de recogida."
+    "de": "Der Flughafen Nizza-Côte d’Azur (NCE) liegt rund 12 km von Èze entfernt. Über die Moyenne Corniche brauchen Sie je nach Verkehr 25 bis 35 Minuten. Ihr Chauffeur erwartet Sie in der Ankunftshalle mit einem Namensschild. Er verfolgt Ihren Flug in Echtzeit und passt die Abholzeit entsprechend an.",
+    "es": "El aeropuerto de Niza-Costa Azul (NCE) está a unos 12 km de Èze. Por la Moyenne Corniche, la carretera intermedia de la costa, el trayecto dura entre 25 y 35 minutos según el tráfico. Su chófer lo espera en la sala de llegadas con un cartel con su nombre y sigue su vuelo en tiempo real para ajustar la hora de recogida."
   },
   "intro": {
     "de": [
-      "Èze liegt auf 429 Metern über dem Mittelmeer und ist das Adlernest der Riviera. Hier gibt es mittelalterliche Gassen, einen exotischen Garten in den Ruinen der Burg, Werkstätten von Kunsthandwerkern und das Hotel La Chèvre d’Or direkt an der Felskante. Ihr **Privatchauffeur in Èze** setzt Sie am Eingang des autofreien Dorfes ab, so nah wie möglich an Hotels und Restaurants. Er wartet während Ihres Besuchs oder Ihres Abendessens. Das Gepäck übernimmt er bis zu der Stelle, an der der Gepäckservice der Hotels beginnt.",
-      "Èze liegt an der Moyenne Corniche genau auf halber Strecke zwischen Nizza und Monaco. Bis ins Fürstentum sind es zehn Minuten, bis zur Promenade des Anglais fünfzehn. Unterhalb des Dorfes liegen Beaulieu und Cap Ferrat. Ihr Chauffeur verbindet den Besuch im Dorf mit einer **Besichtigung der Parfümerie Fragonard** in Èze-Bord-de-Mer oder mit einem ganzen Tag entlang der Corniches und der Bergdörfer. Am schönsten ist ein Besuch im Frühling und im Herbst, wenn das Licht klar ist und es ruhiger wird."
+      "Èze liegt 429 Meter über dem Mittelmeer und ist das Adlernest der Riviera. Es hat mittelalterliche Gassen, einen exotischen Garten in den Ruinen der Burg, Kunsthandwerkerateliers und das Hotel La Chèvre d’Or direkt an der Felskante. Ihr **Privatchauffeur in Èze** bringt Sie bis zum Eingang des autofreien Dorfes, so nah wie möglich an Hotels und Restaurants. Während Ihres Besuchs oder Abendessens wartet er auf Sie. Ihr Gepäck übergibt er an den Trägerservice, den die Häuser selbst organisieren.",
+      "Èze liegt an der Moyenne Corniche genau auf halber Strecke zwischen Nizza und Monaco. Bis ins Fürstentum sind es zehn Minuten, bis zur Promenade des Anglais fünfzehn, und unterhalb des Dorfes liegen Beaulieu und Cap-Ferrat. Ihr Chauffeur verbindet den Besuch mit einer **Führung durch die Parfümerie Fragonard** in Èze-Bord-de-Mer oder mit einem ganzen Tag entlang der Küstenstraßen und Bergdörfer. Am schönsten ist ein Besuch im Frühjahr und im Herbst, wenn das Licht klar ist und es ruhiger wird."
     ],
     "es": [
-      "A 429 metros sobre el Mediterráneo, Èze es el nido de águila de la Riviera: callejuelas medievales, un jardín exótico plantado entre las ruinas del castillo, talleres de artesanos y el hotel La Chèvre d’Or colgado del acantilado. Su **chófer privado en Èze** le deja en la entrada del pueblo peatonal, lo más cerca posible de hoteles y restaurantes. Le espera durante la visita o la cena. También se ocupa del equipaje hasta el punto donde los establecimientos organizan su traslado.",
-      "Èze está en la corniche media, justo a medio camino entre Niza y Mónaco. El Principado queda a diez minutos y el Paseo de los Ingleses a quince; más abajo están Beaulieu y Cap Ferrat. Su chófer puede combinar el pueblo con la **visita a la perfumería Fragonard** en Èze-Bord-de-Mer o con una jornada completa por las corniches y los pueblos encaramados. En primavera y otoño la luz es más bonita y hay menos gente, y son las mejores épocas para visitarlo."
+      "A 429 metros sobre el Mediterráneo, Èze es el nido de águila de la Riviera francesa. Tiene callejuelas medievales, un jardín exótico plantado entre las ruinas del castillo, talleres de artesanos y el hotel La Chèvre d’Or, colgado del acantilado. Su **chófer privado en Èze** lo deja en la entrada del pueblo peatonal, lo más cerca posible de los hoteles y restaurantes. Lo espera durante la visita o la cena y se ocupa del equipaje hasta entregarlo al servicio de maleteros que organizan los establecimientos.",
+      "Èze está sobre la Moyenne Corniche, justo a mitad de camino entre Niza y Mónaco. El Principado queda a diez minutos y el Paseo de los Ingleses a quince; más abajo están Beaulieu y Cap-Ferrat. Su chófer puede combinar el pueblo con la **visita a la perfumería Fragonard** en Èze-Bord-de-Mer o con un día completo por las carreteras de la costa y los pueblos en altura. En primavera y otoño hay menos gente y la luz es más bonita, así que son las mejores épocas para venir."
     ]
   },
   "experiences": [
@@ -29,8 +29,8 @@
         "es": "Cena en La Chèvre d’Or"
       },
       "teaser": {
-        "de": "Absetzen am Dorfeingang, bei Bedarf Begleitung bis zum Hotel und Abendessen mit Blick auf das Mittelmeer in einem der eindrucksvollsten Speisesäle der Riviera. Das Fahrzeug wartet und bringt Sie danach zurück in Ihr Hotel oder Ihre Villa.",
-        "es": "Llegada a la entrada del pueblo, acompañamiento hasta el hotel si lo necesita y cena frente al Mediterráneo en uno de los comedores más espléndidos de la Riviera. El vehículo le espera y le lleva de vuelta a su hotel o villa."
+        "de": "Ihr Chauffeur setzt Sie am Dorfeingang ab und begleitet Sie bei Bedarf bis zum Hotel. Sie essen mit Blick auf das Mittelmeer in einem der eindrucksvollsten Speisesäle der Riviera. Danach bringt Sie der wartende Wagen zurück zu Ihrem Hotel oder Ihrer Villa.",
+        "es": "Su chófer lo deja en la entrada del pueblo y, si lo desea, lo acompaña hasta el hotel. La cena es frente al Mediterráneo, en uno de los comedores más notables de la Riviera. El vehículo lo espera y lo lleva de vuelta a su hotel o villa."
       },
       "duration": {
         "de": "Abend",
@@ -43,8 +43,8 @@
         "es": "Jardín exótico y perfumería Fragonard"
       },
       "teaser": {
-        "de": "Zuerst der Kakteengarten oben im Dorf mit Panoramablick von Saint-Tropez bis nach Italien. Danach die kostenlose Führung durch die Fabrik von Fragonard weiter unten. Ein halber Tag ganz für Èze.",
-        "es": "Primero, el jardín de cactus en lo alto del pueblo, con vistas desde Saint-Tropez hasta Italia. Después, la visita guiada gratuita a la fábrica Fragonard, más abajo. Media jornada dedicada por completo a Èze."
+        "de": "Oben im Dorf liegt der Kakteengarten. Von dort reicht der Blick von Saint-Tropez bis nach Italien. Anschließend geht es hinunter zur kostenlosen Führung durch die Fabrik von Fragonard. Ein halber Tag ganz für Èze.",
+        "es": "El jardín de cactus está en lo alto del pueblo y tiene vistas desde Saint-Tropez hasta Italia. Después se baja a la fábrica Fragonard para la visita guiada gratuita. Una media jornada completa dedicada a Èze."
       },
       "duration": {
         "de": "Halber Tag",
@@ -57,22 +57,22 @@
         "es": "Mónaco y Montecarlo"
       },
       "teaser": {
-        "de": "Zehn Minuten bergab ins Fürstentum: der Felsen mit dem Fürstenpalast, das Ozeanographische Museum und die Place du Casino. Mit einem Vormittag in Èze wird daraus ein ganzer Tag zwischen mittelalterlichem Dorf und Fürstentum.",
-        "es": "Diez minutos de bajada hasta el Principado: la Roca y el Palacio del Príncipe, el Museo Oceanográfico y la plaza del Casino. Si visita Èze por la mañana, tiene una jornada completa entre pueblo medieval y principado."
+        "de": "Zehn Minuten bergab, und Sie sind im Fürstentum. Dort warten der Felsen mit dem Fürstenpalast, das Ozeanographische Museum und die Place du Casino. Mit Èze am Vormittag wird daraus ein ganzer Tag zwischen mittelalterlichem Dorf und Fürstentum.",
+        "es": "Diez minutos de bajada hasta el Principado: la Roca y el Palacio del Príncipe, el Museo Oceanográfico y la plaza del Casino. Si visita Èze por la mañana, tiene un día completo entre el pueblo medieval y el Principado."
       },
       "duration": {
         "de": "Ganzer Tag",
-        "es": "Jornada completa"
+        "es": "Día completo"
       }
     },
     {
       "title": {
         "de": "La Turbie und die Grande Corniche",
-        "es": "La Turbie y la gran corniche"
+        "es": "La Turbie y la Grande Corniche"
       },
       "teaser": {
-        "de": "Oberhalb von Èze steht die Trophäe des Augustus, 480 Meter über Monaco. Von dort führt die Grande Corniche an zahlreichen Aussichtspunkten vorbei bis nach Roquebrune-Cap-Martin mit seiner karolingischen Burg. Unterwegs halten Sie an den schönsten Stellen für Fotos.",
-        "es": "Por encima de Èze, el Trofeo de Augusto domina Mónaco desde 480 metros de altura. Desde allí, la gran corniche pasa por un mirador tras otro hasta Roquebrune-Cap-Martin y su castillo carolingio. Hay paradas para fotos en los mejores puntos."
+        "de": "Oberhalb von Èze steht das Trophäum des Augustus, 480 Meter über Monaco. Die Grande Corniche führt von dort an Aussichtspunkten vorbei bis nach Roquebrune-Cap-Martin mit seiner karolingischen Burg. Unterwegs halten Sie an den schönsten Stellen für Fotos.",
+        "es": "Por encima de Èze, el Trofeo de Augusto domina Mónaco desde 480 metros de altura. Desde allí, la Grande Corniche, la carretera alta de la costa, pasa por varios miradores hasta Roquebrune-Cap-Martin y su castillo carolingio. Hay paradas para fotos en los mejores puntos."
       },
       "duration": {
         "de": "Halber Tag",
@@ -85,8 +85,8 @@
         "es": "Niza y la bahía de los Ángeles"
       },
       "teaser": {
-        "de": "Fünfzehn Minuten über die Moyenne Corniche: der Cours Saleya, der Burghügel, die Museen von Matisse und Chagall in Cimiez und ein Mittagessen an der Promenade. Zurück geht es über Villefranche und seine Bucht.",
-        "es": "Quince minutos por la corniche media: el Cours Saleya, la colina del Castillo, los museos Matisse y Chagall en Cimiez y un almuerzo en el Paseo. La vuelta pasa por Villefranche y su rada."
+        "de": "Nach fünfzehn Minuten auf der Moyenne Corniche sind Sie in Nizza. Auf dem Programm stehen der Cours Saleya, der Burgberg, die Museen Matisse und Chagall in Cimiez und ein Mittagessen an der Promenade. Zurück fahren Sie über Villefranche und seine Bucht.",
+        "es": "Quince minutos por la Moyenne Corniche: el Cours Saleya, la colina del Castillo, los museos Matisse y Chagall en Cimiez y un almuerzo en el Paseo de los Ingleses. El regreso es por Villefranche y su bahía."
       },
       "duration": {
         "de": "Halber Tag",
@@ -97,22 +97,22 @@
   "faq": [
     {
       "q": {
-        "de": "Was kostet ein Transfer vom Flughafen Nizza nach Èze Village?",
-        "es": "¿Cuánto cuesta un traslado entre el aeropuerto de Niza y Èze Village?"
+        "de": "Was kostet ein Transfer vom Flughafen Nizza nach Èze?",
+        "es": "¿Cuánto cuesta un traslado entre el aeropuerto de Niza y Èze?"
       },
       "a": {
-        "de": "Der private Transfer zwischen Nizza-Côte d’Azur (NCE) und Èze Village hat einen Festpreis, den wir bei der Buchung bestätigen. Darin enthalten sind der Empfang in der Ankunftshalle mit Namensschild, die Flugverfolgung in Echtzeit und kostenlose Wartezeit bei Verspätung.",
-        "es": "El traslado privado entre Niza-Costa Azul (NCE) y Èze Village tiene un precio fijo, confirmado en el momento de la reserva. Incluye la recepción en la sala de llegadas con cartel nominativo, el seguimiento del vuelo en tiempo real y tiempo de espera gratuito en caso de retraso."
+        "de": "Der private Transfer zwischen Nizza-Côte d’Azur (NCE) und Èze hat einen Festpreis, den wir bei der Buchung bestätigen. Inbegriffen sind der Empfang in der Ankunftshalle mit Namensschild, die Flugverfolgung in Echtzeit und kostenlose Wartezeit bei Verspätung.",
+        "es": "El traslado privado entre Niza-Costa Azul (NCE) y Èze tiene un precio fijo, que se confirma al reservar. Incluye la recepción en la sala de llegadas con cartel con su nombre, el seguimiento del vuelo en tiempo real y tiempo de espera sin costo en caso de retraso."
       }
     },
     {
       "q": {
-        "de": "Kann man mit dem Auto ins Dorf Èze fahren?",
-        "es": "¿Se puede llegar en coche al pueblo de Èze?"
+        "de": "Kann man mit dem Auto in das Dorf Èze fahren?",
+        "es": "¿Se puede entrar en auto al pueblo de Èze?"
       },
       "a": {
-        "de": "Nein. Das mittelalterliche Dorf ist komplett autofrei und sehr steil. Ihr Chauffeur setzt Sie so nah wie möglich am Eingang ab, an der Moyenne Corniche. Von dort übernehmen La Chèvre d’Or und Château Eza den Transport Ihres Gepäcks. Die Abholung erfolgt an derselben Stelle, zu einer Uhrzeit Ihrer Wahl.",
-        "es": "No. El pueblo medieval es totalmente peatonal y tiene mucha pendiente. Su chófer le deja lo más cerca posible de la entrada, en la corniche media; desde allí, La Chèvre d’Or y Château Eza se encargan del equipaje. La recogida es en el mismo lugar, a la hora que usted elija."
+        "de": "Nein. Das mittelalterliche Dorf ist komplett autofrei und sehr steil. Ihr Chauffeur setzt Sie an der Moyenne Corniche ab, so nah wie möglich am Eingang. Von dort organisieren La Chèvre d’Or und Château Eza den Transport Ihres Gepäcks. Abgeholt werden Sie an derselben Stelle, zu der Uhrzeit, die Sie wünschen.",
+        "es": "No. El pueblo medieval es totalmente peatonal y tiene pendientes muy pronunciadas. Su chófer lo deja lo más cerca posible de la entrada, sobre la Moyenne Corniche. Desde ese punto, La Chèvre d’Or y Château Eza se encargan de subir el equipaje. La recogida es en el mismo lugar, a la hora que usted elija."
       }
     },
     {
@@ -121,8 +121,8 @@
         "es": "¿Se puede combinar Èze con Mónaco o Niza en el mismo día?"
       },
       "a": {
-        "de": "Ja, und diese Route ist bei unseren Kunden am beliebtesten: Èze am Vormittag, bevor die Besucher kommen, Mittagessen im Dorf oder am Meer, dann Monaco oder Nizza am Nachmittag. Wenn Sie den Wagen für einen ganzen Tag buchen, können Sie die Reihenfolge unterwegs noch ändern.",
-        "es": "Sí, y es el itinerario que más nos piden: Èze por la mañana antes de que llegue la gente, almuerzo en el pueblo o junto al mar y Mónaco o Niza por la tarde. Si reserva el vehículo para todo el día, puede cambiar el orden de las paradas sobre la marcha."
+        "de": "Ja, das ist sogar die am häufigsten gebuchte Route. Vormittags besuchen Sie Èze, bevor es voll wird, mittags essen Sie im Dorf oder am Meer, und am Nachmittag geht es nach Monaco oder Nizza. Wenn Sie den Wagen für einen ganzen Tag mieten, können Sie die Reihenfolge auch unterwegs noch ändern.",
+        "es": "Sí, y es el itinerario que más nos piden. Por la mañana visita Èze antes de que llegue la gente, almuerza en el pueblo o junto al mar y por la tarde va a Mónaco o Niza. Si contrata el servicio por día completo, puede cambiar el orden de las paradas sobre la marcha."
       }
     }
   ]

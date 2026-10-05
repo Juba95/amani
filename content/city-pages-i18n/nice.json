@@ -1,0 +1,205 @@
+{
+  "slug": "nice",
+  "source": "chauffeur-prive-nice",
+  "airport": "Nice-Côte d’Azur (NCE)",
+  "nearby": [
+    "antibes",
+    "eze-village",
+    "cap-ferrat",
+    "saint-paul-de-vence"
+  ],
+  "price": [
+    "420",
+    "490",
+    "750",
+    "460",
+    "390"
+  ],
+  "frTitles": [
+    "Èze et les trois Corniches",
+    "Saint-Paul-de-Vence & Fondation Maeght",
+    "Arrière-pays niçois, gorges du Loup",
+    "Menton, citrons et jardins",
+    "Soirée à Monte-Carlo"
+  ],
+  "frTeasers": [
+    "À 12 km de Nice, le village médiéval d’Èze domine la mer à 429 mètres. Montée par la Basse Corniche, retour par la Grande Corniche — le plus beau balcon de la Riviera.",
+    "À 20 km de Nice, le village d’artistes où vécut Chagall, la Colombe d’Or et la Fondation Maeght — Miró, Giacometti, Calder dans les pins. Déjeuner sur les remparts.",
+    "Tourrettes-sur-Loup et ses violettes, les gorges du Loup, Gourdon perché à 758 mètres au-dessus de la vallée : une journée hors du littoral, à moins d’une heure de la Promenade.",
+    "À 30 km de Nice, la ville la plus douce de France : vieille ville aux façades ocre, jardin Serre de la Madone, salle des mariages décorée par Cocteau. Retour par Roquebrune-Cap-Martin.",
+    "À 20 km de la Promenade des Anglais, dîner au Louis XV ou soirée à l’Opéra Garnier de Monaco, dépose devant le Casino. Votre chauffeur reste à disposition jusqu’au retour."
+  ],
+  "frDurations": [
+    "3-4 heures",
+    "Demi-journée",
+    "Journée complète",
+    "Demi-journée",
+    "Soirée"
+  ],
+  "frIntro": "La Côte d'Azur est un littoral de 120 kilomètres où chaque déplacement dépend de la saison, de l'événement en cours et de l'état de la circulation sur l'autoroute A8. Un chauffeur privé à Nice vous épargne les embouteillages chroniques entre l'aéroport, Cannes et Monaco. Amani Limousines couvre l'ensemble du littoral azuréen avec des Mercedes récentes, un tarif fixe et des chauffeurs qui connaissent chaque raccourci.",
+  "name": {
+    "en": "Nice",
+    "de": "Nizza",
+    "es": "Niza"
+  },
+  "country": {
+    "en": "France",
+    "de": "Frankreich",
+    "es": "Francia"
+  },
+  "airportTransfer": {
+    "fr": "L'aéroport Nice-Côte d'Azur (NCE) est à 7 km du centre-ville. Le trajet par la promenade des Anglais dure de 15 à 25 minutes. Depuis l'aéroport, Monaco est à 30 km et Cannes à 33 km.",
+    "en": "Nice Côte d'Azur Airport (NCE) is 7 km from the city centre. The drive along the Promenade des Anglais takes 15 to 25 minutes. From the airport, Monaco is 30 km away and Cannes 33 km.",
+    "de": "Der Flughafen Nizza-Côte d'Azur (NCE) liegt 7 km vom Stadtzentrum entfernt. Die Fahrt über die Promenade des Anglais dauert 15 bis 25 Minuten. Vom Flughafen sind es 30 km nach Monaco und 33 km nach Cannes.",
+    "es": "El aeropuerto de Niza-Costa Azul (NCE) está a 7 km del centro de la ciudad. El trayecto por el Paseo de los Ingleses dura entre 15 y 25 minutos. Desde el aeropuerto, Mónaco está a 30 km y Cannes a 33 km."
+  },
+  "intro": {
+    "fr": [
+      "La Côte d'Azur est un littoral de **120 kilomètres** où chaque déplacement dépend de la saison, de l'événement en cours et de l'état de la circulation sur l'autoroute A8. Entre l'aéroport, Cannes et Monaco, les embouteillages sont chroniques. Avec un chauffeur privé à Nice, vous les contournez. Amani Limousines couvre l'ensemble du littoral azuréen avec des Mercedes récentes, un tarif fixe et des chauffeurs qui connaissent chaque raccourci. Vous connaissez le prix du trajet dès la réservation, quel que soit le temps passé dans la circulation.",
+      "Nice est un bon point de départ pour la Riviera et l'arrière-pays. À 12 km, le village médiéval d'Èze domine la mer à **429 mètres**. Saint-Paul-de-Vence, où vécut Chagall, est à 20 km, avec la Fondation Maeght et ses œuvres de Miró, Giacometti et Calder installées dans les pins. Menton est à 30 km. Plus au nord, les gorges du Loup et Gourdon offrent une journée loin du littoral, à moins d'une heure de la Promenade. Le soir, votre chauffeur vous dépose devant le Casino de Monte-Carlo et reste à disposition jusqu'au retour."
+    ],
+    "en": [
+      "The Côte d'Azur is a **120-kilometre** coastline where every journey depends on the season, the event of the moment and the traffic on the A8 motorway. Congestion between the airport, Cannes and Monaco is a constant. With a private chauffeur in Nice, you avoid it. Amani Limousines covers the entire Riviera with recent Mercedes vehicles, a fixed fare and drivers who know every shortcut. You know the price of your journey when you book, however long the traffic holds you up.",
+      "Nice is a practical base for both the coast and the hills behind it. The medieval village of Èze, 12 km away, stands **429 metres** above the sea. Saint-Paul-de-Vence, where Chagall lived, is 20 km from the city and has the Fondation Maeght, with works by Miró, Giacometti and Calder set among pine trees. Menton is 30 km east. Further inland, the Gorges du Loup and the village of Gourdon make a full day away from the sea, less than an hour from the Promenade. In the evening, your driver drops you at the Monte-Carlo Casino and waits until you are ready to return."
+    ],
+    "de": [
+      "Die Côte d'Azur ist ein **120 Kilometer** langer Küstenstreifen. Jede Fahrt hängt hier von der Jahreszeit, den aktuellen Veranstaltungen und dem Verkehr auf der Autobahn A8 ab. Zwischen Flughafen, Cannes und Monaco staut es sich regelmäßig. Mit einem Privatchauffeur in Nizza umgehen Sie diese Staus. Amani Limousines fährt an der gesamten Riviera, mit neuen Mercedes-Fahrzeugen, einem Festpreis und Fahrern, die jede Abkürzung kennen. Den Preis Ihrer Fahrt kennen Sie schon bei der Buchung, egal wie lange der Verkehr Sie aufhält.",
+      "Nizza ist ein guter Ausgangspunkt für die Küste und das Hinterland. Das mittelalterliche Dorf Èze liegt 12 km entfernt, **429 Meter** über dem Meer. In Saint-Paul-de-Vence, 20 km von Nizza, lebte Chagall. Dort ist auch die Fondation Maeght mit Werken von Miró, Giacometti und Calder zwischen Pinien. Menton liegt 30 km entfernt. Weiter im Norden sind die Loup-Schlucht und das Bergdorf Gourdon ein Tagesausflug abseits der Küste, keine Stunde von der Promenade. Abends setzt Ihr Fahrer Sie vor dem Casino von Monte-Carlo ab und wartet, bis Sie zurückfahren möchten."
+    ],
+    "es": [
+      "La Costa Azul es un litoral de **120 kilómetros** donde cada trayecto depende de la temporada, de los eventos del momento y del tráfico en la autopista A8. Entre el aeropuerto, Cannes y Mónaco los embotellamientos son constantes. Con un chófer privado en Niza, usted los evita. Amani Limousines cubre toda la Riviera francesa con vehículos Mercedes recientes, tarifa fija y conductores que conocen cada atajo. Usted sabe el precio del trayecto desde el momento de la reserva, sin importar cuánto tiempo lo retenga el tráfico.",
+      "Niza es un buen punto de partida para la costa y para el interior. El pueblo medieval de Èze está a 12 km, a **429 metros** sobre el mar. En Saint-Paul-de-Vence, a 20 km, vivió Chagall, y allí está la Fundación Maeght, con obras de Miró, Giacometti y Calder entre pinos. Mentón está a 30 km. Más al norte, las gargantas del Loup y el pueblo de Gourdon ocupan una jornada lejos del litoral, a menos de una hora del Paseo de los Ingleses. Por la noche, su chófer lo deja frente al Casino de Montecarlo y lo espera hasta el regreso."
+    ]
+  },
+  "experiences": [
+    {
+      "title": {
+        "en": "Èze and the Three Corniches",
+        "de": "Èze und die drei Corniches",
+        "es": "Èze y las tres Corniches"
+      },
+      "teaser": {
+        "en": "12 km from Nice, the medieval village of Èze looks down on the sea from 429 metres. You drive up along the Lower Corniche and return by the Grande Corniche, the finest viewpoint on the Riviera.",
+        "de": "12 km von Nizza entfernt liegt das mittelalterliche Dorf Èze, 429 Meter über dem Meer. Hinauf geht es über die Basse Corniche, zurück über die Grande Corniche. Sie ist der schönste Aussichtsbalkon der Riviera.",
+        "es": "A 12 km de Niza, el pueblo medieval de Èze domina el mar desde 429 metros de altura. La subida es por la Basse Corniche y el regreso por la Grande Corniche, el mejor mirador de la Riviera."
+      },
+      "duration": {
+        "en": "3 to 4 hours",
+        "de": "3 bis 4 Stunden",
+        "es": "3 a 4 horas"
+      }
+    },
+    {
+      "title": {
+        "en": "Saint-Paul-de-Vence and the Fondation Maeght",
+        "de": "Saint-Paul-de-Vence und Fondation Maeght",
+        "es": "Saint-Paul-de-Vence y la Fundación Maeght"
+      },
+      "teaser": {
+        "en": "20 km from Nice, this artists' village was home to Chagall. Visit La Colombe d'Or and the Fondation Maeght, where works by Miró, Giacometti and Calder stand among the pines. Lunch is on the ramparts.",
+        "de": "Das Künstlerdorf, in dem Chagall lebte, liegt 20 km von Nizza. Dort sind die Colombe d'Or und die Fondation Maeght mit Werken von Miró, Giacometti und Calder unter Pinien. Mittagessen auf der Stadtmauer.",
+        "es": "A 20 km de Niza está el pueblo de artistas donde vivió Chagall, con La Colombe d'Or y la Fundación Maeght: Miró, Giacometti y Calder entre los pinos. El almuerzo es sobre las murallas."
+      },
+      "duration": {
+        "en": "Half day",
+        "de": "Halber Tag",
+        "es": "Medio día"
+      }
+    },
+    {
+      "title": {
+        "en": "The Hills behind Nice and the Gorges du Loup",
+        "de": "Hinterland von Nizza und Loup-Schlucht",
+        "es": "El interior de Niza y las gargantas del Loup"
+      },
+      "teaser": {
+        "en": "Tourrettes-sur-Loup and its violets, the Gorges du Loup, and Gourdon, perched 758 metres above the valley. A day away from the coast, less than an hour from the Promenade.",
+        "de": "Tourrettes-sur-Loup mit seinen Veilchen, die Loup-Schlucht und Gourdon, 758 Meter über dem Tal. Ein Tag abseits der Küste, weniger als eine Stunde von der Promenade entfernt.",
+        "es": "Tourrettes-sur-Loup y sus violetas, las gargantas del Loup y Gourdon, a 758 metros sobre el valle. Una jornada lejos de la costa, a menos de una hora del Paseo de los Ingleses."
+      },
+      "duration": {
+        "en": "Full day",
+        "de": "Ganzer Tag",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "en": "Menton, Lemons and Gardens",
+        "de": "Menton, Zitronen und Gärten",
+        "es": "Mentón, limones y jardines"
+      },
+      "teaser": {
+        "en": "30 km from Nice, Menton has the mildest climate in France. See the old town with its ochre façades, the Serre de la Madone garden and the wedding hall decorated by Cocteau. The return is via Roquebrune-Cap-Martin.",
+        "de": "Menton liegt 30 km von Nizza und ist die mildeste Stadt Frankreichs. Die Altstadt hat ockerfarbene Fassaden, dazu kommen der Garten Serre de la Madone und der von Cocteau gestaltete Trausaal. Zurück geht es über Roquebrune-Cap-Martin.",
+        "es": "A 30 km de Niza, Mentón es la ciudad de clima más suave de Francia. Su casco antiguo tiene fachadas ocres, y allí están el jardín Serre de la Madone y la sala de bodas decorada por Cocteau. El regreso es por Roquebrune-Cap-Martin."
+      },
+      "duration": {
+        "en": "Half day",
+        "de": "Halber Tag",
+        "es": "Medio día"
+      }
+    },
+    {
+      "title": {
+        "en": "An Evening in Monte-Carlo",
+        "de": "Ein Abend in Monte-Carlo",
+        "es": "Una noche en Montecarlo"
+      },
+      "teaser": {
+        "en": "20 km from the Promenade des Anglais: dinner at Le Louis XV or a performance at the Opéra Garnier in Monaco, with drop-off in front of the Casino. Your chauffeur stays available until you return.",
+        "de": "20 km von der Promenade des Anglais: Abendessen im Louis XV oder ein Abend in der Opéra Garnier von Monaco, Ankunft direkt vor dem Casino. Ihr Chauffeur bleibt bis zur Rückfahrt für Sie da.",
+        "es": "A 20 km del Paseo de los Ingleses: cena en Le Louis XV o una función en la Ópera Garnier de Mónaco, con llegada frente al Casino. Su chófer queda a su disposición hasta el regreso."
+      },
+      "duration": {
+        "en": "Evening",
+        "de": "Abend",
+        "es": "Noche"
+      }
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "fr": "Combien de temps faut-il pour aller de l'aéroport de Nice au centre-ville ?",
+        "en": "How long does it take from Nice airport to the city centre?",
+        "de": "Wie lange dauert die Fahrt vom Flughafen Nizza ins Stadtzentrum?",
+        "es": "¿Cuánto se tarda del aeropuerto de Niza al centro de la ciudad?"
+      },
+      "a": {
+        "fr": "L'aéroport Nice-Côte d'Azur (NCE) est à 7 km du centre. Par la promenade des Anglais, comptez 15 à 25 minutes. Pour Monaco (30 km) ou Cannes (33 km), votre chauffeur vous conduit directement depuis le terminal.",
+        "en": "Nice Côte d'Azur Airport (NCE) is 7 km from the centre. Along the Promenade des Anglais, the drive takes 15 to 25 minutes. For Monaco (30 km) or Cannes (33 km), your chauffeur drives you there directly from the terminal.",
+        "de": "Der Flughafen Nizza-Côte d'Azur (NCE) liegt 7 km vom Zentrum entfernt. Über die Promenade des Anglais dauert die Fahrt 15 bis 25 Minuten. Nach Monaco (30 km) oder Cannes (33 km) bringt Ihr Chauffeur Sie direkt vom Terminal aus.",
+        "es": "El aeropuerto de Niza-Costa Azul (NCE) está a 7 km del centro. Por el Paseo de los Ingleses, el trayecto dura entre 15 y 25 minutos. Para ir a Mónaco (30 km) o a Cannes (33 km), su chófer lo lleva directamente desde la terminal."
+      }
+    },
+    {
+      "q": {
+        "fr": "Le prix change-t-il en cas d'embouteillage sur l'A8 ?",
+        "en": "Does the price change if there is traffic on the A8?",
+        "de": "Ändert sich der Preis bei Stau auf der A8?",
+        "es": "¿Cambia el precio si hay tráfico en la A8?"
+      },
+      "a": {
+        "fr": "Non. Amani Limousines applique un tarif fixe, connu au moment de la réservation. Le temps passé dans la circulation entre l'aéroport, Cannes et Monaco ne modifie pas le prix.",
+        "en": "No. Amani Limousines charges a fixed fare, confirmed when you book. Time spent in traffic between the airport, Cannes and Monaco does not change the price.",
+        "de": "Nein. Amani Limousines berechnet einen Festpreis, den Sie bei der Buchung kennen. Die Zeit im Stau zwischen Flughafen, Cannes und Monaco ändert daran nichts.",
+        "es": "No. Amani Limousines aplica una tarifa fija, que usted conoce al reservar. El tiempo en el tráfico entre el aeropuerto, Cannes y Mónaco no modifica el precio."
+      }
+    },
+    {
+      "q": {
+        "fr": "Le chauffeur attend-il pendant une soirée à Monte-Carlo ?",
+        "en": "Does the chauffeur wait during an evening in Monte-Carlo?",
+        "de": "Wartet der Chauffeur während eines Abends in Monte-Carlo?",
+        "es": "¿El chófer espera durante una noche en Montecarlo?"
+      },
+      "a": {
+        "fr": "Oui. Votre chauffeur vous dépose devant le Casino, que vous dîniez au Louis XV ou assistiez à une représentation à l'Opéra Garnier. Il reste à disposition jusqu'au retour vers Nice, à 20 km de la Promenade.",
+        "en": "Yes. Your chauffeur drops you in front of the Casino, whether you are dining at Le Louis XV or attending the Opéra Garnier. He stays available until you head back to Nice, 20 km from the Promenade.",
+        "de": "Ja. Ihr Chauffeur setzt Sie vor dem Casino ab, ob zum Abendessen im Louis XV oder für die Opéra Garnier. Er bleibt bis zur Rückfahrt nach Nizza für Sie da, 20 km von der Promenade entfernt.",
+        "es": "Sí. Su chófer lo deja frente al Casino, ya sea para cenar en Le Louis XV o para una función en la Ópera Garnier. Queda a su disposición hasta el regreso a Niza, a 20 km del Paseo de los Ingleses."
+      }
+    }
+  ]
+}

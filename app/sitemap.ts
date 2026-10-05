@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
 import { FR_INDEXED_SLUGS, EN_INDEXED_SLUGS, AR_ZH_INDEXED_SLUGS, PER_LOCALE_EXTRA_SLUGS } from '@/lib/seo-whitelist';
-import { ALL_DESTINATIONS } from '@/lib/destinations';
+import { PUBLISHED_DESTINATIONS } from '@/lib/destinations';
 import { translatedSlugs, TRANSLATED_LOCALES } from '@/lib/destinations/i18n';
 import { getAllExperienceDetailParams } from '@/lib/experience-details';
 
@@ -152,7 +152,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/destinations`,    lastModified: now, changeFrequency: 'weekly', priority: 0.75 },
     { url: `${BASE}/en/destinations`, lastModified: now, changeFrequency: 'weekly', priority: 0.75 },
   );
-  for (const d of ALL_DESTINATIONS) {
+  for (const d of PUBLISHED_DESTINATIONS) {
     entries.push(
       { url: `${BASE}/destinations/${d.slug}`,    lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
       { url: `${BASE}/en/destinations/${d.slug}`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },

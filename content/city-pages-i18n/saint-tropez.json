@@ -1,0 +1,203 @@
+{
+  "slug": "saint-tropez",
+  "source": "chauffeur-prive-saint-tropez",
+  "airport": "La Môle – Saint-Tropez (LTT) · Nice-Côte d’Azur (NCE)",
+  "nearby": [
+    "antibes",
+    "saint-paul-de-vence"
+  ],
+  "price": [
+    "700",
+    "420",
+    "480",
+    "350",
+    "400"
+  ],
+  "frTitles": [
+    "Journée plage à Pampelonne",
+    "Port-Grimaud et Grimaud",
+    "Vignobles de la presqu’île",
+    "Gassin et Ramatuelle au couchant",
+    "Nuit tropézienne"
+  ],
+  "frTeasers": [
+    "À 5 km du village, les 4,5 km de sable de Pampelonne : dépose au Club 55 ou à La Réserve à la Plage, navettes à la demande vers le village, retour au coucher du soleil.",
+    "À 7 km de Saint-Tropez, la cité lacustre dessinée par François Spoerry en 1966 — canaux, ponts et coches d’eau — puis le village médiéval de Grimaud et son château en ruine.",
+    "Château Minuty, Château des Marres, Domaines Ott à quelques kilomètres du port : dégustations de rosés côtes-de-provence entre vignes et mer. Vous goûtez chaque cuvée, votre chauffeur conduit.",
+    "Deux villages perchés classés au-dessus du golfe : Gassin et sa table d’orientation à 200 mètres, Ramatuelle et ses ruelles en escargot. Apéritif face aux îles d’Or, dîner au village.",
+    "Dîner sur le port ou à La Vague d’Or, puis Les Caves du Roy à l’hôtel Byblos. Votre chauffeur vous évite la recherche de voiturier et vous ramène à votre villa, à toute heure."
+  ],
+  "frDurations": [
+    "Journée complète",
+    "Demi-journée",
+    "Demi-journée",
+    "Soirée",
+    "Soirée"
+  ],
+  "frIntro": "Saint-Tropez est un village de 4 000 habitants qui accueille 80 000 personnes par jour en été. La route départementale qui y mène est à voie unique sur plusieurs kilomètres, et les bouchons du week-end peuvent durer deux heures. Un chauffeur privé à Saint-Tropez connaît les créneaux, les raccourcis par Grimaud et les accès par la route des plages. Amani Limousines vous y conduit depuis Nice, l'aéroport de La Môle ou votre yacht, en Mercedes, au tarif fixe.",
+  "name": {
+    "en": "Saint-Tropez",
+    "de": "Saint-Tropez",
+    "es": "Saint-Tropez"
+  },
+  "country": {
+    "en": "France",
+    "de": "Frankreich",
+    "es": "Francia"
+  },
+  "airportTransfer": {
+    "fr": "L'aérodrome de La Môle – Saint-Tropez (LTT) est à 15 km, soit 25 minutes de route. Depuis l'aéroport de Nice-Côte d'Azur (NCE), comptez 110 km et deux heures hors saison. L'été, le trajet est plus long : la départementale qui dessert le golfe est à voie unique sur plusieurs kilomètres.",
+    "en": "La Môle – Saint-Tropez airfield (LTT) is 15 km away, a 25-minute drive. From Nice Côte d'Azur Airport (NCE) the distance is 110 km, which takes two hours outside the high season. In summer it takes longer, because the main road into the gulf narrows to a single lane for several kilometres.",
+    "de": "Der Flugplatz La Môle – Saint-Tropez (LTT) liegt 15 km entfernt, die Fahrt dauert 25 Minuten. Vom Flughafen Nizza Côte d'Azur (NCE) sind es 110 km. Außerhalb der Saison brauchen Sie dafür zwei Stunden, im Sommer länger: Die Landstraße in den Golf ist auf mehreren Kilometern einspurig.",
+    "es": "El aeródromo de La Môle – Saint-Tropez (LTT) está a 15 km, a 25 minutos por carretera. Desde el aeropuerto de Niza-Costa Azul (NCE) hay 110 km, unas dos horas fuera de temporada. En verano el trayecto es más largo, porque la carretera que lleva al golfo tiene un solo carril durante varios kilómetros."
+  },
+  "intro": {
+    "fr": [
+      "Saint-Tropez est un village de 4 000 habitants qui accueille **80 000 personnes par jour en été**. La route départementale qui y mène est à voie unique sur plusieurs kilomètres, et les bouchons du week-end peuvent durer deux heures. Amani Limousines met à votre disposition un chauffeur privé à Saint-Tropez qui connaît les bons créneaux horaires, les raccourcis par Grimaud et les accès par la route des plages. Nous vous y conduisons depuis Nice, depuis l'aérodrome de La Môle ou depuis votre yacht. Le véhicule est une Mercedes, et le tarif est fixé à l'avance.",
+      "Sur place, votre chauffeur reste avec vous toute la journée si vous le souhaitez. La plage de Pampelonne, **4,5 km de sable à 5 km du village**, en est un bon exemple : dépose au Club 55 ou à La Réserve à la Plage, navettes à la demande, retour au coucher du soleil. Sur la presqu'île, Château Minuty, Château des Marres et les Domaines Ott servent leurs rosés côtes-de-provence. Vous goûtez, il conduit. Le soir, Gassin et Ramatuelle donnent sur les îles d'Or. Port-Grimaud, la cité lacustre de François Spoerry, est à 7 km. Après les Caves du Roy, il vous ramène à votre villa, à toute heure."
+    ],
+    "en": [
+      "Saint-Tropez is a village of 4,000 residents that receives **80,000 visitors a day in summer**. The road leading there is a single lane for several kilometres, and weekend traffic jams can last two hours. Amani Limousines provides a private chauffeur in Saint-Tropez who knows the right times to travel, the shortcuts through Grimaud and the back routes along the beach road. We drive you there from Nice, from La Môle airfield or from your yacht. You travel in a Mercedes, and the fare is fixed before you set off.",
+      "Once you are there, your chauffeur can stay with you for the whole day. Pampelonne beach, with **4.5 km of sand just 5 km from the village**, is a good example: drop-off at Club 55 or La Réserve à la Plage, shuttles back to the village whenever you want, and a pickup at sunset. On the peninsula, Château Minuty, Château des Marres and Domaines Ott pour their Côtes de Provence rosés. You taste, he drives. In the evening, the hill villages of Gassin and Ramatuelle look out over the Golden Isles. Port-Grimaud is 7 km away. After a night at Les Caves du Roy, you are taken back to your villa at any hour."
+    ],
+    "de": [
+      "Saint-Tropez ist ein Dorf mit 4.000 Einwohnern, das im Sommer **täglich 80.000 Besucher** empfängt. Die Landstraße dorthin ist auf mehreren Kilometern einspurig, und Staus am Wochenende können zwei Stunden dauern. Amani Limousines stellt Ihnen einen Privatchauffeur in Saint-Tropez zur Seite, der die günstigen Zeitfenster kennt, ebenso die Abkürzungen über Grimaud und die Zufahrten über die Strandstraße. Wir holen Sie in Nizza, am Flugplatz La Môle oder an Ihrer Yacht ab. Sie fahren in einem Mercedes, und der Preis steht vorher fest.",
+      "Vor Ort bleibt Ihr Chauffeur auf Wunsch den ganzen Tag bei Ihnen. Ein Beispiel ist der Strand von Pampelonne mit **4,5 km Sand, 5 km vom Ort entfernt**: Sie steigen am Club 55 oder an La Réserve à la Plage aus, fahren bei Bedarf zwischendurch ins Dorf und werden bei Sonnenuntergang abgeholt. Auf der Halbinsel schenken Château Minuty, Château des Marres und die Domaines Ott ihre Roséweine der Côtes de Provence aus. Sie probieren, er fährt. Abends blicken die Bergdörfer Gassin und Ramatuelle auf die Goldenen Inseln. Port-Grimaud liegt 7 km entfernt. Nach den Caves du Roy bringt er Sie zu jeder Uhrzeit zurück in Ihre Villa."
+    ],
+    "es": [
+      "Saint-Tropez es un pueblo de 4.000 habitantes que recibe **80.000 visitantes al día en verano**. La carretera de acceso tiene un solo carril durante varios kilómetros, y los embotellamientos del fin de semana pueden durar dos horas. Amani Limousines pone a su disposición un chófer privado en Saint-Tropez que conoce los mejores horarios para circular, los atajos por Grimaud y los accesos por la ruta de las playas. Lo llevamos desde Niza, desde el aeródromo de La Môle o desde su yate. Usted viaja en un Mercedes, con una tarifa fija acordada de antemano.",
+      "Una vez allí, su chófer puede acompañarlo durante todo el día. La playa de Pampelonne, con **4,5 km de arena a 5 km del pueblo**, es un buen ejemplo: lo deja en el Club 55 o en La Réserve à la Plage, lo lleva al pueblo cuando usted lo pida y lo recoge al atardecer. En la península, Château Minuty, Château des Marres y Domaines Ott ofrecen sus vinos rosados de Côtes de Provence. Usted prueba cada vino y el chófer maneja. Por la tarde, los pueblos de Gassin y Ramatuelle miran hacia las islas de Oro. Port-Grimaud está a 7 km. Después de Les Caves du Roy, lo lleva de vuelta a su villa a cualquier hora."
+    ]
+  },
+  "experiences": [
+    {
+      "title": {
+        "en": "A day at Pampelonne beach",
+        "de": "Strandtag in Pampelonne",
+        "es": "Un día en la playa de Pampelonne"
+      },
+      "teaser": {
+        "en": "Pampelonne has 4.5 km of sand and lies 5 km from the village. Your chauffeur drops you at Club 55 or La Réserve à la Plage, runs you into the village on request and collects you at sunset.",
+        "de": "Pampelonne hat 4,5 km Sandstrand und liegt 5 km vom Dorf entfernt. Ihr Chauffeur setzt Sie am Club 55 oder an La Réserve à la Plage ab, fährt Sie auf Wunsch ins Dorf und holt Sie bei Sonnenuntergang wieder ab.",
+        "es": "Pampelonne tiene 4,5 km de arena y está a 5 km del pueblo. Su chófer lo deja en el Club 55 o en La Réserve à la Plage, lo lleva al pueblo cuando usted quiera y lo recoge al atardecer."
+      },
+      "duration": {
+        "en": "Full day",
+        "de": "Ganztägig",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "en": "Port-Grimaud and Grimaud",
+        "de": "Port-Grimaud und Grimaud",
+        "es": "Port-Grimaud y Grimaud"
+      },
+      "teaser": {
+        "en": "Port-Grimaud is 7 km from Saint-Tropez. The architect François Spoerry designed this lakeside town in 1966, with canals, bridges and water taxis. Afterwards you visit the medieval village of Grimaud and its ruined castle.",
+        "de": "Port-Grimaud liegt 7 km von Saint-Tropez entfernt. Der Architekt François Spoerry hat die Lagunenstadt 1966 entworfen, mit Kanälen, Brücken und Wassertaxis. Danach geht es in das mittelalterliche Dorf Grimaud mit seiner Burgruine.",
+        "es": "Port-Grimaud está a 7 km de Saint-Tropez. El arquitecto François Spoerry diseñó esta ciudad lacustre en 1966, con canales, puentes y barcos-taxi. Después se visita el pueblo medieval de Grimaud y las ruinas de su castillo."
+      },
+      "duration": {
+        "en": "Half day",
+        "de": "Halbtags",
+        "es": "Medio día"
+      }
+    },
+    {
+      "title": {
+        "en": "Vineyards of the peninsula",
+        "de": "Weingüter der Halbinsel",
+        "es": "Viñedos de la península"
+      },
+      "teaser": {
+        "en": "Château Minuty, Château des Marres and Domaines Ott are a few kilometres from the harbour. You taste Côtes de Provence rosés among vines that run down to the sea. You try every wine, and your chauffeur drives.",
+        "de": "Château Minuty, Château des Marres und die Domaines Ott liegen wenige Kilometer vom Hafen entfernt. Sie probieren Roséweine der Côtes de Provence zwischen Reben und Meer. Sie kosten jeden Wein, Ihr Chauffeur fährt.",
+        "es": "Château Minuty, Château des Marres y Domaines Ott están a pocos kilómetros del puerto. Usted degusta rosados de Côtes de Provence entre viñedos y mar. Prueba cada vino y su chófer maneja."
+      },
+      "duration": {
+        "en": "Half day",
+        "de": "Halbtags",
+        "es": "Medio día"
+      }
+    },
+    {
+      "title": {
+        "en": "Gassin and Ramatuelle at sunset",
+        "de": "Gassin und Ramatuelle bei Sonnenuntergang",
+        "es": "Gassin y Ramatuelle al atardecer"
+      },
+      "teaser": {
+        "en": "These two listed hill villages sit above the gulf. Gassin has a viewpoint at 200 metres, and Ramatuelle has lanes that wind in a spiral. You have a drink facing the Golden Isles, then dinner in the village.",
+        "de": "Die beiden denkmalgeschützten Bergdörfer liegen über dem Golf. Gassin hat einen Aussichtspunkt auf 200 Metern, Ramatuelle hat spiralförmig angelegte Gassen. Sie nehmen einen Aperitif mit Blick auf die Goldenen Inseln, danach essen Sie im Dorf zu Abend.",
+        "es": "Son dos pueblos protegidos en lo alto del golfo. Gassin tiene un mirador a 200 metros y Ramatuelle tiene callejuelas en espiral. Usted toma un aperitivo frente a las islas de Oro y luego cena en el pueblo."
+      },
+      "duration": {
+        "en": "Evening",
+        "de": "Abends",
+        "es": "Tarde y noche"
+      }
+    },
+    {
+      "title": {
+        "en": "A night out in Saint-Tropez",
+        "de": "Eine Nacht in Saint-Tropez",
+        "es": "Una noche en Saint-Tropez"
+      },
+      "teaser": {
+        "en": "Dinner on the harbour or at La Vague d'Or, then Les Caves du Roy at the Hôtel Byblos. Your chauffeur spares you the wait for valet parking and takes you back to your villa at any hour.",
+        "de": "Abendessen am Hafen oder im La Vague d'Or, danach Les Caves du Roy im Hôtel Byblos. Ihr Chauffeur erspart Ihnen das Warten auf den Parkservice und bringt Sie zu jeder Uhrzeit zurück in Ihre Villa.",
+        "es": "Cena en el puerto o en La Vague d'Or y después Les Caves du Roy, en el hotel Byblos. Su chófer le evita esperar al servicio de valet y lo lleva de vuelta a su villa a cualquier hora."
+      },
+      "duration": {
+        "en": "Evening",
+        "de": "Abends",
+        "es": "Tarde y noche"
+      }
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "fr": "Combien de temps faut-il pour aller de l'aéroport à Saint-Tropez ?",
+        "en": "How long is the drive from the airport to Saint-Tropez?",
+        "de": "Wie lange dauert die Fahrt vom Flughafen nach Saint-Tropez?",
+        "es": "¿Cuánto tarda el trayecto del aeropuerto a Saint-Tropez?"
+      },
+      "a": {
+        "fr": "Depuis l'aérodrome de La Môle (LTT), 15 km et 25 minutes. Depuis Nice-Côte d'Azur (NCE), 110 km et deux heures hors saison. L'été, prévoyez davantage : la départementale qui dessert le golfe est à voie unique sur plusieurs kilomètres.",
+        "en": "From La Môle airfield (LTT) it is 15 km, about 25 minutes. From Nice Côte d'Azur (NCE) it is 110 km, two hours outside the high season. Allow more time in summer, as the road into the gulf is a single lane for several kilometres.",
+        "de": "Vom Flugplatz La Môle (LTT) sind es 15 km, etwa 25 Minuten. Von Nizza Côte d'Azur (NCE) sind es 110 km, außerhalb der Saison zwei Stunden. Im Sommer sollten Sie mehr Zeit einplanen, denn die Straße in den Golf ist auf mehreren Kilometern einspurig.",
+        "es": "Desde el aeródromo de La Môle (LTT) hay 15 km, unos 25 minutos. Desde Niza-Costa Azul (NCE) hay 110 km, dos horas fuera de temporada. En verano conviene prever más tiempo, porque la carretera al golfo tiene un solo carril durante varios kilómetros."
+      }
+    },
+    {
+      "q": {
+        "fr": "Comment évitez-vous les embouteillages de l'été ?",
+        "en": "How do you deal with summer traffic?",
+        "de": "Wie umgehen Sie den Sommerverkehr?",
+        "es": "¿Cómo evitan los embotellamientos del verano?"
+      },
+      "a": {
+        "fr": "Le week-end, les bouchons peuvent durer deux heures. Nos chauffeurs connaissent les créneaux les plus fluides, les raccourcis par Grimaud et les accès par la route des plages.",
+        "en": "Weekend traffic jams can last two hours. Our chauffeurs know the quieter times to travel, the shortcuts through Grimaud and the back routes along the beach road.",
+        "de": "Am Wochenende können Staus zwei Stunden dauern. Unsere Chauffeure kennen die ruhigeren Zeitfenster, die Abkürzungen über Grimaud und die Zufahrten über die Strandstraße.",
+        "es": "Los fines de semana, los embotellamientos pueden durar dos horas. Nuestros chóferes conocen los horarios con menos tráfico, los atajos por Grimaud y los accesos por la ruta de las playas."
+      }
+    },
+    {
+      "q": {
+        "fr": "Pouvez-vous venir me chercher sur mon yacht ?",
+        "en": "Can you pick me up from my yacht?",
+        "de": "Holen Sie mich auch an meiner Yacht ab?",
+        "es": "¿Pueden recogerme en mi yate?"
+      },
+      "a": {
+        "fr": "Oui. Amani Limousines vous prend en charge à votre yacht, à Nice ou à l'aérodrome de La Môle. Le trajet se fait en Mercedes, au tarif fixe.",
+        "en": "Yes. Amani Limousines collects you from your yacht, in Nice or at La Môle airfield. You travel in a Mercedes at a fixed fare.",
+        "de": "Ja. Amani Limousines holt Sie an Ihrer Yacht, in Nizza oder am Flugplatz La Môle ab. Sie fahren in einem Mercedes zum Festpreis.",
+        "es": "Sí. Amani Limousines lo recoge en su yate, en Niza o en el aeródromo de La Môle. Usted viaja en un Mercedes con tarifa fija."
+      }
+    }
+  ]
+}

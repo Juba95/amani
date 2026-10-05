@@ -12,8 +12,18 @@ import {
 
 import de from '@/locales/de.json';
 import es from '@/locales/es.json';
+import { withRegionalVariants } from '@/lib/hreflang';
 
 const BASE = 'https://www.amani-limousines.com';
+
+/** Villes dont les versions française et anglaise vivent sur une page dédiée. */
+const DEDICATED_PAGES: Record<string, { fr: string; en: string }> = {
+  paris: { fr: '/chauffeur-prive-paris', en: '/en/private-chauffeur-paris' },
+  nice: { fr: '/chauffeur-prive-nice', en: '/en/private-chauffeur-paris' },
+  cannes: { fr: '/chauffeur-prive-cannes', en: '/en/private-chauffeur-paris' },
+  'saint-tropez': { fr: '/chauffeur-prive-saint-tropez', en: '/en/private-chauffeur-paris' },
+  bordeaux: { fr: '/chauffeur-prive-bordeaux', en: '/en/private-chauffeur-bordeaux' },
+};
 const UI: Record<TranslatedLocale, any> = { de, es };
 
 const META: Record<TranslatedLocale, { title: (c: string) => string }> = {
@@ -30,6 +40,13 @@ function metaDescription(paragraphs: string[]): string {
   return text.length > 158 ? `${text.slice(0, 155).trimEnd()}…` : text;
 }
 
+/**
+ * Seules les villes listées par generateStaticParams sont servies. Sans cela,
+ * Next rend aussi les slugs hors liste à la demande — et les entrées qui
+ * n'existent que pour la traduction ressortiraient en français.
+ */
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return TRANSLATED_LOCALES.flatMap((lang) =>
     translatedSlugs(lang).map((slug) => ({ lang, slug })),
@@ -45,10 +62,15 @@ export function generateMetadata({ params }: { params: { lang: string; slug: str
   // Les hreflang ne listent que les langues où la page existe réellement :
   // le français et l'anglais couvrent les 297 villes, l'allemand et l'espagnol
   // seulement celles qui sont traduites.
+  // Les villes à page dédiée ont leurs équivalents français et anglais à une
+  // autre adresse : /chauffeur-prive-paris plutôt que /destinations/paris.
+  const dedicated = DEDICATED_PAGES[d.slug];
+  const frUrl = dedicated ? `${BASE}${dedicated.fr}` : `${BASE}/destinations/${d.slug}`;
+  const enUrl = dedicated ? `${BASE}${dedicated.en}` : `${BASE}/en/destinations/${d.slug}`;
   const languages: Record<string, string> = {
-    fr: `${BASE}/destinations/${d.slug}`,
-    en: `${BASE}/en/destinations/${d.slug}`,
-    'x-default': `${BASE}/en/destinations/${d.slug}`,
+    fr: frUrl,
+    en: enUrl,
+    'x-default': enUrl,
   };
   for (const l of TRANSLATED_LOCALES) {
     if (getTranslatedDestination(d.slug, l)) languages[l] = `${BASE}/${l}/destinations/${d.slug}`;
@@ -58,7 +80,10 @@ export function generateMetadata({ params }: { params: { lang: string; slug: str
     title: META[params.lang].title(name),
     description: metaDescription(d.intro[params.lang] ?? d.intro.en),
     robots: { index: true, follow: true },
-    alternates: { canonical: `${BASE}/${params.lang}/destinations/${d.slug}`, languages },
+    alternates: {
+      canonical: `${BASE}/${params.lang}/destinations/${d.slug}`,
+      languages: withRegionalVariants(languages),
+    },
   };
 }
 

@@ -31,5 +31,12 @@ export interface Destination {
   intro: LocalizedList;        // 2 paragraphes de 60-90 mots chacun (**gras** supporté)
   experiences: DestExperience[];   // exactement 5
   faq: { q: LocalizedText; a: LocalizedText }[];  // 3 questions
-  nearby: string[];                // 2-4 slugs de villes proches (maillage interne)
+  nearby: string[];
+  /**
+   * Entrée présente uniquement pour servir les traductions. La ville a déjà sa
+   * page française et anglaise écrite à la main (/chauffeur-prive-paris) :
+   * publier /destinations/paris en plus la cannibaliserait. Exclue des routes
+   * et du sitemap français et anglais.
+   */
+  translationOnly?: boolean;                // 2-4 slugs de villes proches (maillage interne)
 }

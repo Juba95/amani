@@ -7,6 +7,7 @@ import de from '@/locales/de.json';
 import es from '@/locales/es.json';
 import ar from '@/locales/ar.json';
 import zh from '@/locales/zh.json';
+import { withRegionalVariants } from '@/lib/hreflang';
 
 const VALID_LOCALES = new Set(['en', 'de', 'es', 'ar', 'zh']);
 const meta: Record<string, any> = { en, de, es, ar, zh };
@@ -28,7 +29,7 @@ export async function generateMetadata({ params }: { params: { lang: string } })
     robots: { index: true, follow: true },
     alternates: {
       canonical: `${BASE}/${params.lang}`,
-      languages: {
+      languages: withRegionalVariants({
         fr: `${BASE}/`,
         en: `${BASE}/en`,
         de: `${BASE}/de`,
@@ -36,7 +37,7 @@ export async function generateMetadata({ params }: { params: { lang: string } })
         ar: `${BASE}/ar`,
         'zh-Hans': `${BASE}/zh`,
         'x-default': `${BASE}/`,
-      },
+      }),
     },
   };
 }

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { DM_Serif_Display, Inter } from 'next/font/google';
 import '../styles/globals.css';
+import { withRegionalVariants } from '@/lib/hreflang';
 
 
 const dmSerif = DM_Serif_Display({
@@ -25,7 +26,9 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.amani-limousines.com'),
   alternates: {
     canonical: '/',
-    languages: { fr: '/', en: '/en', de: '/de', es: '/es', ar: '/ar', 'zh-Hans': '/zh', 'x-default': '/' },
+    languages: withRegionalVariants({
+      fr: '/', en: '/en', de: '/de', es: '/es', ar: '/ar', 'zh-Hans': '/zh', 'x-default': '/',
+    }),
   },
   openGraph: {
     title: 'Amani Limousines — Chauffeur Privé de Prestige | Paris, France & Europe',

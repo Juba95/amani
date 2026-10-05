@@ -9,17 +9,17 @@
     "es": "Italia"
   },
   "airportTransfer": {
-    "de": "Der nächste Flughafen für Como ist Mailand-Malpensa (MXP), 55 km südwestlich. Bis zur Piazza Cavour oder zu Ihrem Hotel am See fahren Sie 50 Minuten bis eine Stunde. Ab Mailand-Linate (LIN) sind es etwa eine Stunde, aus der Mailänder Innenstadt 45 Minuten. Ihr Chauffeur verfolgt Ihren Flug und empfängt Sie mit einem Namensschild.",
-    "es": "Como está a 55 km al suroeste del aeropuerto de Milán-Malpensa (MXP). Hasta la piazza Cavour o su hotel junto al lago hay entre 50 minutos y una hora de trayecto. Desde Milán-Linate (LIN) calcule una hora aproximadamente, y 45 minutos desde el centro de Milán. Su chófer sigue su vuelo en tiempo real y le espera con un cartel con su nombre."
+    "de": "Como liegt 55 km nordöstlich des Flughafens Mailand-Malpensa (MXP). Bis zur Piazza Cavour oder zu Ihrem Hotel am See brauchen Sie 50 Minuten bis eine Stunde. Ab Mailand-Linate (LIN) sind es etwa eine Stunde, ab der Mailänder Innenstadt 45 Minuten. Ihr Chauffeur verfolgt Ihren Flug und empfängt Sie mit einem Namensschild.",
+    "es": "Como está a 55 km al noreste del aeropuerto de Milán-Malpensa (MXP). Hasta la Piazza Cavour o su hotel junto al lago, calcule entre 50 minutos y una hora. Desde Milán-Linate (LIN) el trayecto dura alrededor de una hora, y desde el centro de Milán, 45 minutos. Su chófer sigue su vuelo y lo recibe con un cartel con su nombre."
   },
   "intro": {
     "de": [
-      "Como liegt am Fuß der Voralpen, dort, wo der eleganteste der oberitalienischen Seen beginnt. Die Stadt hat einen Dom aus Gotik und Renaissance, eine Seepromenade aus der Belle Époque und die Standseilbahn nach Brunate. Dazu kommen Seidenwebereien, die seit zwei Jahrhunderten für die Haute Couture arbeiten. Ihr **Privatchauffeur in Como** übernimmt die Fahrten von und nach Malpensa und Mailand. Danach folgt er der Uferstraße, die schmal ist und eng am Hang entlangführt. Vom Rücksitz aus genießt man sie mehr.",
-      "Von Como aus reihen sich am Ufer die berühmten Villen: **die Villa d’Este in Cernobbio**, die Villa del Balbianello auf ihrer Landzunge bei Lenno, die Villa Carlotta mit ihren Gärten in Tremezzo. Bellagio liegt an der Spitze, wo die drei Arme des Sees zusammentreffen. Ihr Chauffeur stimmt Autofahrten und private Boote aufeinander ab und reserviert Tische direkt am Wasser. Abends bringt er Sie zurück, ob Ihr Hotel in Como, Cernobbio oder Moltrasio ist."
+      "Como liegt am Fuß der Voralpen, am Südende des elegantesten der oberitalienischen Seen. Die Stadt hat einen Dom aus Gotik und Renaissance, eine Uferpromenade aus der Belle Époque und die Standseilbahn nach Brunate. Seit zwei Jahrhunderten liefern die Seidenwebereien von Como Stoffe für die Haute Couture. Ihr **Privatchauffeur in Como** übernimmt die Fahrten von und nach Malpensa und Mailand. Danach geht es auf die schmale Uferstraße hoch über dem See, und die genießt man am besten auf dem Beifahrersitz.",
+      "Von Como aus reihen sich die berühmten Villen am Ufer entlang: **die Villa d’Este in Cernobbio**, die Villa del Balbianello auf ihrer Landzunge bei Lenno, die Villa Carlotta mit ihren Gärten in Tremezzo und schließlich Bellagio, wo die drei Arme des Sees zusammentreffen. Ihr Chauffeur stimmt Straßenfahrten und private Boote aufeinander ab und reserviert Tische direkt am Wasser. Abends bringt er Sie zurück, ob Ihr Hotel in Como, Cernobbio oder Moltrasio liegt."
     ],
     "es": [
-      "Como está al pie de los Prealpes, a la entrada del más elegante de los lagos italianos. Tiene una catedral gótica y renacentista, un paseo junto al lago de la Belle Époque y el funicular de Brunate. También tiene talleres de seda que visten a la alta costura desde hace dos siglos. Su **chófer privado en Como** se encarga de los traslados con Malpensa y Milán. Después le lleva por la carretera del lago, estrecha y colgada sobre el agua. Se disfruta mucho más sin tener que conducir.",
-      "Desde Como, la orilla se llena de villas célebres: **Villa d’Este en Cernobbio**, Villa del Balbianello en su promontorio de Lenno, Villa Carlotta y sus jardines en Tremezzo. Bellagio está en la punta donde se unen los tres brazos del lago. Su chófer coordina carreteras y barcos privados y reserva mesa junto al agua. Por la noche le lleva de vuelta, tanto si su hotel está en Como como en Cernobbio o Moltrasio."
+      "Como está al pie de los Prealpes, en la entrada del más elegante de los lagos italianos. Tiene una catedral gótica y renacentista, un paseo junto al lago de la Belle Époque y el funicular de Brunate. Sus talleres de seda trabajan para la alta costura desde hace dos siglos. Su **chófer privado en Como** se encarga de los traslados con Malpensa y Milán. Después toma la carretera que bordea el lago en lo alto, estrecha y llena de curvas, que se disfruta mucho más sin tener que manejar.",
+      "Desde Como, la orilla está salpicada de villas famosas: **la Villa d’Este en Cernobbio**, la Villa del Balbianello sobre su promontorio de Lenno, la Villa Carlotta y sus jardines en Tremezzo, y Bellagio, en el punto donde se unen los tres brazos del lago. Su chófer coordina los recorridos por carretera y los barcos privados, y reserva mesa a la orilla del agua. Por la noche lo lleva de vuelta, ya sea que su hotel esté en Como, Cernobbio o Moltrasio."
     ]
   },
   "experiences": [
@@ -29,8 +29,8 @@
         "es": "Villa del Balbianello y Villa Carlotta"
       },
       "teaser": {
-        "de": "Die beiden schönsten Villen am See an einem Tag. Zuerst die Landzunge des Balbianello bei Lenno, bekannt aus mehreren Filmen. Dann der botanische Garten und die Marmorskulpturen von Canova in der Villa Carlotta. Mittagessen in Tremezzo mit Blick auf Bellagio.",
-        "es": "Las dos villas más bellas del lago en un solo día. Primero el promontorio del Balbianello en Lenno, escenario de varias películas. Después los jardines botánicos y los mármoles de Canova en Villa Carlotta. Almuerzo en Tremezzo, frente a Bellagio."
+        "de": "Die zwei schönsten Villen am See an einem Tag. Zuerst die Landzunge des Balbianello bei Lenno, bekannt aus mehreren Kinofilmen, dann der botanische Garten und die Marmorskulpturen von Canova in der Villa Carlotta. Mittagessen in Tremezzo mit Blick auf Bellagio.",
+        "es": "Las dos villas más bellas del lago en un solo día. Primero, el promontorio del Balbianello en Lenno, escenario de varias películas. Luego, los jardines botánicos y los mármoles de Canova en la Villa Carlotta. Almuerzo en Tremezzo, frente a Bellagio."
       },
       "duration": {
         "de": "Ganzer Tag",
@@ -43,8 +43,8 @@
         "es": "Vuelta al lago y Bellagio"
       },
       "teaser": {
-        "de": "Das Westufer entlang über Cernobbio und Tremezzo, dann mit der Autofähre nach Bellagio. Dort Mittagessen und die Gärten der Villa Melzi. Zurück geht es über das Ufer von Lecco. So sehen Sie den Comer See auf einer einzigen Fahrt.",
-        "es": "La orilla occidental por Cernobbio y Tremezzo y después el transbordador hasta Bellagio. Allí, almuerzo y los jardines de Villa Melzi. La vuelta es por la orilla de Lecco. Así recorre el lago de Como de una sola vez."
+        "de": "Über Cernobbio und Tremezzo am Westufer entlang, dann mit der Autofähre nach Bellagio zum Mittagessen und in die Gärten der Villa Melzi. Zurück geht es über das Ufer von Lecco. So sehen Sie den ganzen Comer See an einem Tag.",
+        "es": "La orilla occidental por Cernobbio y Tremezzo, y luego el transbordador hasta Bellagio para almorzar y recorrer los jardines de la Villa Melzi. El regreso es por la orilla de Lecco. Todo el lago de Como en un solo recorrido."
       },
       "duration": {
         "de": "Ganzer Tag",
@@ -57,8 +57,8 @@
         "es": "Paseo privado en barco desde Como"
       },
       "teaser": {
-        "de": "Ihr Chauffeur bringt Sie zum Anleger. Dort wartet ein klassisches Riva-Boot aus lackiertem Holz für zwei Stunden auf dem See: die Villen vom Wasser aus, die Buchten von Torno, ein Aperitivo an Bord. Nach der Rückkehr steht der Wagen für den restlichen Tag bereit.",
-        "es": "Su chófer le deja en el embarcadero. Allí le espera una Riva clásica de madera barnizada para dos horas en el lago: las villas vistas desde el agua, las calas de Torno, un aperitivo a bordo. A la vuelta, el coche le espera para continuar el día."
+        "de": "Ihr Chauffeur bringt Sie zum Steg. Dort wartet ein klassisches Riva-Boot aus lackiertem Holz für zwei Stunden auf dem See: die Villen vom Wasser aus, die Buchten von Torno, ein Aperitif an Bord. Nach der Rückkehr steht das Fahrzeug für den weiteren Tag bereit.",
+        "es": "Su chófer lo deja en el muelle para un paseo de dos horas en una Riva clásica de madera barnizada: las villas vistas desde el agua, las calas de Torno y un aperitivo a bordo. Al regresar, el vehículo lo espera para continuar el día."
       },
       "duration": {
         "de": "Halber Tag",
@@ -71,8 +71,8 @@
         "es": "Brunate y la historia de la seda"
       },
       "teaser": {
-        "de": "Die Fahrt hinauf nach Brunate bietet einen weiten Blick über den See bis zu den Alpen. Danach besuchen Sie das Seidenmuseum und eine Weberei, in der Seidentücher für die großen Modehäuser entstehen. Eine andere Seite von Como, zwischen Höhenlage und Handwerk.",
-        "es": "Subida a Brunate para ver el lago y los Alpes desde arriba. Después, el Museo de la Seda y una fábrica donde se tejen los pañuelos de las grandes casas de moda. Es la otra cara de Como, entre la montaña y el oficio artesano."
+        "de": "Hinauf nach Brunate, von wo man über den See bis zu den Alpen sieht. Danach das Seidenmuseum und eine Weberei, in der die Seidentücher großer Modehäuser entstehen. So lernen Sie eine andere Seite von Como kennen.",
+        "es": "Subida a Brunate, con vistas sobre el lago y los Alpes. Después, el Museo de la Seda y una fábrica donde se producen los pañuelos de las grandes casas de moda. Es otra cara de Como, menos conocida."
       },
       "duration": {
         "de": "Halber Tag",
@@ -81,12 +81,12 @@
     },
     {
       "title": {
-        "de": "Abend in der Villa d’Este oder im Harry’s Bar",
-        "es": "Velada en Villa d’Este o en Harry’s Bar"
+        "de": "Abend in der Villa d’Este oder in Harry’s Bar",
+        "es": "Noche en la Villa d’Este o en el Harry’s Bar"
       },
       "teaser": {
-        "de": "Aperitivo auf der schwimmenden Terrasse der Villa d’Este in Cernobbio, danach Abendessen direkt am Wasser oder im Harry’s Bar mit Blick auf den See. Ihr Chauffeur setzt Sie vor der Tür ab und hält den Wagen bereit. Die Rückfahrt führt nachts die Uferstraße entlang.",
-        "es": "Aperitivo en la terraza flotante de Villa d’Este en Cernobbio y cena junto al agua o en Harry’s Bar, frente al lago. Su chófer le deja en la puerta y el coche queda a su disposición. La vuelta es de noche, por la carretera del lago."
+        "de": "Aperitif auf der schwimmenden Terrasse der Villa d’Este in Cernobbio, danach Abendessen direkt am Wasser oder in Harry’s Bar mit Blick auf den See. Ihr Chauffeur setzt Sie direkt vor der Tür ab, das Fahrzeug wartet, und nachts fahren Sie über die Uferstraße zurück.",
+        "es": "Aperitivo en la terraza flotante de la Villa d’Este en Cernobbio y cena a la orilla del agua o en el Harry’s Bar, frente al lago. Su chófer lo deja en la puerta, el vehículo queda a su disposición y el regreso es de noche por la carretera del lago."
       },
       "duration": {
         "de": "Abend",
@@ -97,32 +97,32 @@
   "faq": [
     {
       "q": {
-        "de": "Was kostet ein Transfer zwischen Malpensa und Como oder Cernobbio?",
+        "de": "Was kostet ein Transfer von Malpensa nach Como oder Cernobbio?",
         "es": "¿Cuánto cuesta un traslado entre Malpensa y Como o Cernobbio?"
       },
       "a": {
-        "de": "Der private Transfer zwischen Malpensa (MXP) und Como, Cernobbio oder Moltrasio hat einen Festpreis, den wir bei der Buchung bestätigen. Inbegriffen sind der Empfang mit Namensschild, die Flugverfolgung und kostenlose Wartezeit bei Verspätung. Für Linate und die Mailänder Innenstadt gelten dieselben Bedingungen.",
-        "es": "El traslado privado entre Malpensa (MXP) y Como, Cernobbio o Moltrasio tiene un precio fijo, que confirmamos al reservar. Incluye recibimiento con cartel nominativo, seguimiento del vuelo y espera gratuita en caso de retraso. Linate y el centro de Milán tienen las mismas condiciones."
+        "de": "Für den privaten Transfer zwischen Malpensa (MXP) und Como, Cernobbio oder Moltrasio gilt ein Festpreis, den wir bei der Buchung bestätigen. Empfang mit Namensschild, Flugverfolgung und kostenlose Wartezeit bei Verspätung sind inbegriffen. Für Linate und die Mailänder Innenstadt gelten dieselben Bedingungen.",
+        "es": "El traslado privado entre Malpensa (MXP) y Como, Cernobbio o Moltrasio tiene un precio fijo, confirmado al reservar. Incluye recibimiento con cartel con su nombre, seguimiento del vuelo y tiempo de espera sin costo en caso de retraso. Linate y el centro de Milán se atienden en las mismas condiciones."
       }
     },
     {
       "q": {
-        "de": "Ist die Straße am See schwierig zu fahren? Braucht man wirklich einen Chauffeur?",
-        "es": "¿Es difícil la carretera del lago? ¿De verdad hace falta un chófer?"
+        "de": "Ist die Straße am See schwierig zu fahren? Brauche ich wirklich einen Chauffeur?",
+        "es": "¿Es difícil la carretera del lago? ¿De verdad necesito un chófer?"
       },
       "a": {
-        "de": "Die SS340 ist schmal und kurvenreich, in der Saison herrscht viel Verkehr. Parkplätze in der Nähe der Villen sind selten. Mit Chauffeur werden Sie direkt am Eingang abgesetzt und der Wagen wartet auf Sie. Sie schauen auf die Landschaft statt auf die Parklücken.",
-        "es": "La SS340 es estrecha y tiene muchas curvas, y en temporada hay mucho tráfico. Cerca de las villas apenas hay aparcamiento. Con chófer, le deja en la entrada y el coche le espera. Usted mira el paisaje en lugar de buscar sitio para aparcar."
+        "de": "Die SS340 ist eng und kurvig, in der Saison herrscht dort viel Verkehr. Parkplätze in der Nähe der Villen sind knapp. Mit Chauffeur werden Sie direkt am Eingang abgesetzt, das Fahrzeug wartet auf Sie, und Sie schauen auf die Landschaft statt auf die Suche nach einer Parklücke.",
+        "es": "La SS340 es estrecha y tiene muchas curvas, y en temporada el tráfico es intenso. Cerca de las villas casi no hay lugar para estacionar. Con chófer, usted baja en la entrada, el vehículo lo espera y puede mirar el paisaje en vez de buscar dónde estacionar."
       }
     },
     {
       "q": {
-        "de": "Lassen sich Auto und privates Boot auf dem Comer See kombinieren?",
-        "es": "¿Se pueden combinar coche y barco privado en el lago de Como?"
+        "de": "Lassen sich Auto und Privatboot auf dem Comer See kombinieren?",
+        "es": "¿Se puede combinar auto y barco privado en el lago de Como?"
       },
       "a": {
-        "de": "Ja, und so ist der See am besten zu erleben. Ihr Chauffeur bringt Sie zum Anleger, ein privates Boot fährt Sie zu den Villen, die man nur vom Wasser aus richtig sieht. Am nächsten Anleger holt Sie der Wagen wieder ab. Wir organisieren alles in einer einzigen Buchung.",
-        "es": "Sí, y es la mejor manera de conocer el lago. Su chófer le lleva al embarcadero y un barco privado le acerca a las villas que mejor se ven desde el agua. El coche le recoge en el siguiente embarcadero. Lo coordinamos todo en una sola reserva."
+        "de": "Ja, und so lässt sich der See am besten erkunden. Ihr Chauffeur fährt Sie zum Steg, ein Privatboot bringt Sie zu den Villen, die man am besten vom Wasser aus sieht, und am nächsten Anleger holt das Fahrzeug Sie wieder ab. Wir organisieren alles in einer einzigen Buchung.",
+        "es": "Sí, y es la mejor manera de conocer el lago. Su chófer lo lleva al muelle, un barco privado lo acerca a las villas que se ven mejor desde el agua y el vehículo lo recoge en el siguiente embarcadero. Coordinamos todo en una sola reserva."
       }
     }
   ]

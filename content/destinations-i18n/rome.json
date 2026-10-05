@@ -9,17 +9,17 @@
     "es": "Italia"
   },
   "airportTransfer": {
-    "de": "Der Flughafen Rom-Fiumicino (FCO) liegt 30 km südwestlich der Altstadt. Bis zur Spanischen Treppe oder zum Vatikan brauchen Sie je nach Verkehr 45 bis 60 Minuten. Ihr Chauffeur verfolgt Ihren Flug in Echtzeit und erwartet Sie mit Namensschild in der Ankunftshalle. Vom Flughafen Ciampino (CIA), 15 km südöstlich gelegen, dauert die Fahrt 30 bis 40 Minuten.",
-    "es": "El aeropuerto de Roma-Fiumicino (FCO) está a 30 km al suroeste del centro histórico. Hasta la plaza de España o el Vaticano hay que contar entre 45 y 60 minutos, según el tráfico. Su chófer sigue el vuelo en tiempo real y le espera en la sala de llegadas con un cartel con su nombre. Desde Ciampino (CIA), a 15 km al sureste, el trayecto dura de 30 a 40 minutos."
+    "de": "Der Flughafen Rom-Fiumicino (FCO) liegt 30 km südwestlich der Altstadt. Bis zur Spanischen Treppe oder zum Vatikan brauchen Sie je nach Verkehr 45 bis 60 Minuten. Ihr Chauffeur erwartet Sie mit Namensschild in der Ankunftshalle und verfolgt Ihren Flug in Echtzeit. Vom Flughafen Ciampino (CIA), 15 km südöstlich, dauert die Fahrt 30 bis 40 Minuten.",
+    "es": "El aeropuerto de Roma-Fiumicino (FCO) está a 30 km al suroeste del centro histórico. Para llegar a la Plaza de España o al Vaticano, calcule entre 45 y 60 minutos según el tráfico. Su chófer lo espera en la sala de llegadas con un cartel con su nombre y sigue su vuelo en tiempo real. Desde Ciampino (CIA), a 15 km al sureste, el trayecto dura de 30 a 40 minutos."
   },
   "intro": {
     "de": [
-      "Achtundzwanzig Jahrhunderte Geschichte liegen in Rom übereinander: Kolosseum und Kaiserforen, Barockpaläste und die Trattoria um die Ecke. Ihr **Privatchauffeur in Rom** kennt die Zufahrtsbeschränkungen der ZTL in der Altstadt, die Wege zum Vatikan und die engen Gassen von Trastevere. Er übernimmt Transfers ab Fiumicino und Ciampino, steht stundenweise zur Verfügung und setzt Sie so nah wie möglich an den Fußgängerzonen ab. Zur Wahl stehen Mercedes-Limousinen und große Vans. Die Festpreise erfahren Sie vorab, englischsprachige Chauffeure gibt es auf Wunsch.",
-      "Von Rom aus erreichen Sie bequem das Latium und darüber hinaus. Die **Villen von Tivoli**, also die Villa d’Este und die Hadriansvilla, liegen 35 km entfernt. Dazu kommen die Castelli Romani mit ihren Frascati-Weinen und Ostia Antica am Meer. Buchen Sie den Chauffeur für den ganzen Tag, verbindet er Papstaudienz, Geschäftstermin im Viertel EUR und Abendessen in Monti, ohne dass Sie eine Minute im römischen Verkehr verlieren."
+      "Rom hat achtundzwanzig Jahrhunderte Geschichte. Kolosseum, Kaiserforen, Barockpaläste und einfache Trattorien liegen hier dicht beieinander. Ihr **Privatchauffeur in Rom** kennt die Zufahrtsregeln der ZTL in der Altstadt, die Wege zum Vatikan und die engen Gassen von Trastevere. Er übernimmt Transfers ab Fiumicino und Ciampino, steht stundenweise zur Verfügung und setzt Sie so nah wie möglich an den Fußgängerzonen ab. Zur Auswahl stehen Mercedes-Limousinen und große Vans, zu Festpreisen, die Sie vorab kennen. Englischsprachige Chauffeure auf Anfrage.",
+      "Von Rom aus erreichen Sie auch das Latium und weitere Ziele gut. Die **Villen von Tivoli**, also die Villa d’Este und die Hadriansvilla, liegen 35 km entfernt. Dazu kommen die Hügel der Castelli Romani mit den Weinen aus Frascati und Ostia Antica am Meer. Buchen Sie den Chauffeur für einen ganzen Tag, verbindet er Papstaudienz, Geschäftstermin im Viertel EUR und Abendessen in Monti. Im römischen Verkehr verlieren Sie dabei keine Minute."
     ],
     "es": [
-      "Roma acumula veintiocho siglos de historia: el Coliseo, los foros imperiales, los palacios barrocos y las trattorias de barrio. Su **chófer privado en Roma** conoce las restricciones de la ZTL del centro histórico, los accesos al Vaticano y las callejuelas del Trastevere. Se encarga de los traslados desde Fiumicino y Ciampino, del servicio por horas y de dejarle lo más cerca posible de las zonas peatonales. Disponemos de berlinas Mercedes y furgonetas de gran capacidad, con precios cerrados que se confirman de antemano y chóferes que hablan inglés si lo solicita.",
-      "Roma es además una buena base para recorrer el Lacio y más allá. Las **villas de Tívoli**, la Villa d’Este y la Villa Adriana, quedan a 35 km. También están los Castelli Romani y sus vinos de Frascati, y Ostia Antica, junto al mar. Con el servicio por días, su chófer enlaza una audiencia papal, una reunión de trabajo en el barrio del EUR y una cena en Monti sin que pierda un minuto en el tráfico romano."
+      "Roma tiene veintiocho siglos de historia. El Coliseo, los foros imperiales, los palacios barrocos y las trattorias de barrio conviven en pocas calles. Su **chófer privado en Roma** conoce las restricciones de la ZTL del centro histórico, los accesos al Vaticano y las callejuelas del Trastevere. Se encarga de los traslados desde Fiumicino y Ciampino, está disponible por horas y lo deja lo más cerca posible de las zonas peatonales. Sedanes Mercedes y vans de gran capacidad, con precios fijos que usted conoce de antemano. Chóferes de habla inglesa bajo solicitud.",
+      "Roma es también un buen punto de partida hacia el Lacio y más allá. Las **villas de Tívoli**, Villa d’Este y Villa Adriana, están a 35 km. Cerca quedan las colinas de los Castelli Romani con sus vinos de Frascati, y Ostia Antica junto al mar. Si contrata el servicio por un día completo, su chófer enlaza una audiencia papal, una reunión de negocios en el barrio del EUR y una cena en Monti. Usted no pierde ni un minuto en el tráfico romano."
     ]
   },
   "experiences": [
@@ -29,8 +29,8 @@
         "es": "Tívoli, Villa d’Este y Villa Adriana"
       },
       "teaser": {
-        "de": "35 km östlich von Rom liegen zwei UNESCO-Welterbestätten, die sich an einem Tag besuchen lassen: die Villa d’Este mit ihren fünfhundert Brunnen und die Kaiserresidenz Hadrians. Mittagessen in Tivoli, am späten Nachmittag Rückfahrt über die Via Tiburtina.",
-        "es": "A 35 km al este de Roma hay dos lugares declarados Patrimonio de la Humanidad que se visitan en un solo día: las quinientas fuentes de la Villa d’Este y la residencia imperial de Adriano. Almuerzo en Tívoli y regreso por la Vía Tiburtina a última hora de la tarde."
+        "de": "35 km östlich von Rom besuchen Sie an einem Tag zwei UNESCO-Welterbestätten: die fünfhundert Brunnen der Villa d’Este und die Kaiserresidenz Hadrians. Mittagessen in Tivoli, Rückfahrt über die Via Tiburtina am späten Nachmittag.",
+        "es": "A 35 km al este de Roma, dos sitios declarados Patrimonio de la Humanidad por la UNESCO en un solo día: las quinientas fuentes de Villa d’Este y la residencia imperial de Adriano. Almuerzo en Tívoli y regreso por la Vía Tiburtina al final de la tarde."
       },
       "duration": {
         "de": "Ganzer Tag",
@@ -39,12 +39,12 @@
     },
     {
       "title": {
-        "de": "Castelli Romani und Frascati-Weine",
-        "es": "Castelli Romani y vinos de Frascati"
+        "de": "Castelli Romani und die Weine von Frascati",
+        "es": "Castelli Romani y los vinos de Frascati"
       },
       "teaser": {
-        "de": "Frascati, Castel Gandolfo mit der päpstlichen Residenz über dem Albaner See, Ariccia und seine Porchetta: Die Hügel der Päpste liegen 25 km von Rom entfernt. Bei der Weinprobe auf einem Gut in Frascati sitzt Ihr Chauffeur am Steuer.",
-        "es": "Frascati, Castel Gandolfo con su residencia pontificia sobre el lago Albano, Ariccia y su porchetta. Las colinas de los papas están a 25 km de Roma. Usted cata vinos en una bodega de Frascati y su chófer se ocupa de conducir."
+        "de": "Frascati, Castel Gandolfo mit der päpstlichen Residenz über dem Albaner See, Ariccia mit seiner Porchetta: Die Hügel der Päpste liegen 25 km von Rom entfernt. Sie probieren Wein auf einem Gut in Frascati, Ihr Chauffeur fährt.",
+        "es": "Frascati, Castel Gandolfo con su residencia papal sobre el lago Albano, Ariccia y su porchetta: las colinas de los papas están a 25 km de Roma. Usted hace una cata en una bodega de Frascati mientras su chófer maneja."
       },
       "duration": {
         "de": "Halber Tag",
@@ -57,8 +57,8 @@
         "es": "Ostia Antica y la costa romana"
       },
       "teaser": {
-        "de": "Der antike Hafen Roms ist stellenweise besser erhalten als Pompeji: Theater, Thermen, Mosaike der Handelsgilden. Nur 30 Minuten vom Zentrum entfernt, ideal für einen Ausflug vor dem Abflug vom nahen Fiumicino.",
-        "es": "El antiguo puerto de Roma, en algunas zonas mejor conservado que Pompeya: teatro, termas y mosaicos de los gremios. Está a 30 minutos del centro y es una escapada ideal antes de tomar un vuelo en Fiumicino, muy cerca."
+        "de": "Der antike Hafen Roms ist an manchen Stellen besser erhalten als Pompeji. Zu sehen sind Theater, Thermen und die Mosaiken der Handelsgilden. Er liegt 30 Minuten vom Zentrum entfernt und passt gut vor einen Abflug ab Fiumicino, das ganz in der Nähe ist.",
+        "es": "El antiguo puerto de Roma está, en algunas partes, mejor conservado que Pompeya. Tiene un teatro, termas y los mosaicos de los gremios. Queda a 30 minutos del centro y es una buena escapada antes de un vuelo desde Fiumicino, que está muy cerca."
       },
       "duration": {
         "de": "Halber Tag",
@@ -71,8 +71,8 @@
         "es": "La Roma barroca de noche"
       },
       "teaser": {
-        "de": "Trevi-Brunnen, Piazza Navona, Pantheon und der beleuchtete Petersdom. Auf dieser Abendtour werden Sie jeweils direkt vor Ort abgesetzt, abseits der Touristenströme. Der Tisch in Trastevere oder Monti ist reserviert, der Wagen bleibt den ganzen Abend für Sie da.",
-        "es": "La Fontana di Trevi, la plaza Navona, el Panteón y San Pedro iluminados. En este recorrido nocturno le dejamos junto a cada monumento, lejos de las aglomeraciones. La cena está reservada en el Trastevere o en Monti y el vehículo queda a su disposición toda la noche."
+        "de": "Trevi-Brunnen, Piazza Navona, Pantheon und Petersdom im Licht der Nacht. Ihr Chauffeur setzt Sie jeweils direkt am Ort ab, abseits der Touristenströme. Ein Tisch in Trastevere oder Monti ist reserviert, das Fahrzeug steht den ganzen Abend bereit.",
+        "es": "La Fontana de Trevi, la Plaza Navona, el Panteón y San Pedro iluminados. Es un recorrido nocturno en el que su chófer lo deja junto a cada sitio, lejos de las multitudes. La cena está reservada en el Trastevere o en Monti y el vehículo queda a su disposición toda la noche."
       },
       "duration": {
         "de": "Abend",
@@ -81,12 +81,12 @@
     },
     {
       "title": {
-        "de": "Tagesausflug Rom – Pompeji",
-        "es": "Excursión de un día Roma – Pompeya"
+        "de": "Tagesausflug von Rom nach Pompeji",
+        "es": "Excursión de un día de Roma a Pompeya"
       },
       "teaser": {
-        "de": "240 km südlich liegt die Stadt, die der Vesuv im Jahr 79 erstarren ließ: Forum, Mysterienvilla, unversehrte Fresken. Frühe Abfahrt in der Limousine, auf Wunsch mit Privatführer vor Ort. Am Abend geht es im selben Wagen zurück nach Rom.",
-        "es": "A 240 km al sur se encuentra la ciudad que el Vesubio dejó congelada en el año 79: el foro, la Villa de los Misterios, frescos intactos. Salida temprano en berlina, guía privado opcional en el yacimiento y regreso a Roma por la noche en el mismo vehículo."
+        "de": "240 km südlich liegt die Stadt, die der Vesuv im Jahr 79 n. Chr. verschüttet hat: Forum, Mysterienvilla, vollständig erhaltene Fresken. Abfahrt am frühen Morgen in der Limousine, auf Wunsch mit Privatführer vor Ort. Am Abend fahren Sie im selben Fahrzeug zurück nach Rom.",
+        "es": "A 240 km al sur está la ciudad que el Vesubio sepultó en el año 79: el foro, la Villa de los Misterios, frescos intactos. Salida temprano en sedán, guía privado opcional en el sitio y regreso a Roma por la noche en el mismo vehículo."
       },
       "duration": {
         "de": "Ganzer Tag",
@@ -97,12 +97,12 @@
   "faq": [
     {
       "q": {
-        "de": "Was kostet ein Transfer zwischen Rom-Fiumicino und der Innenstadt?",
+        "de": "Was kostet ein Transfer vom Flughafen Rom-Fiumicino ins Zentrum von Rom?",
         "es": "¿Cuánto cuesta un traslado entre Roma-Fiumicino y el centro de Roma?"
       },
       "a": {
-        "de": "Der private Transfer zwischen Fiumicino (FCO) und dem Zentrum von Rom wird zu einem Festpreis abgerechnet, der bei der Buchung bestätigt wird und unabhängig vom Verkehr gilt. Inbegriffen sind der Empfang mit Namensschild in der Ankunftshalle, die Flugverfolgung in Echtzeit und bei Verspätung 60 Minuten kostenlose Wartezeit.",
-        "es": "El traslado privado entre Fiumicino (FCO) y el centro de Roma tiene un precio cerrado, confirmado al reservar, sea cual sea el tráfico. Incluye la recogida en la sala de llegadas con cartel nominativo, el seguimiento del vuelo en tiempo real y 60 minutos de espera gratuita en caso de retraso."
+        "de": "Der private Transfer zwischen Fiumicino (FCO) und dem Zentrum von Rom hat einen Festpreis. Sie erhalten ihn bei der Buchung, und er ändert sich nicht, egal wie der Verkehr ist. Im Preis enthalten sind der Empfang mit Namensschild in der Ankunftshalle, die Flugverfolgung in Echtzeit und 60 Minuten kostenlose Wartezeit bei Verspätung.",
+        "es": "El traslado privado entre Fiumicino (FCO) y el centro de Roma tiene un precio fijo, que se confirma al reservar y no cambia con el tráfico. Incluye la recepción en la sala de llegadas con un cartel con su nombre, el seguimiento del vuelo en tiempo real y 60 minutos de espera sin costo en caso de retraso."
       }
     },
     {
@@ -111,8 +111,8 @@
         "es": "¿Puede su chófer circular por la ZTL del centro histórico de Roma?"
       },
       "a": {
-        "de": "Anders als Privatwagen besitzen unsere Fahrzeuge mit Chauffeur (NCC-Lizenz) eine Zufahrtsgenehmigung für die römische ZTL. Wir setzen Sie so nah wie möglich an Ihrem Hotel, am Pantheon oder an der Spanischen Treppe ab. Reine Fußgängerzonen bleiben dabei tabu.",
-        "es": "A diferencia de los coches particulares, nuestros vehículos con conductor (licencia NCC) cuentan con permiso de acceso a la ZTL de Roma. Le dejamos lo más cerca posible de su hotel, del Panteón o de la plaza de España, respetando las zonas exclusivamente peatonales."
+        "de": "Ja. Unsere Fahrzeuge mit Chauffeur haben eine NCC-Lizenz und damit eine Zufahrtsgenehmigung für die römische ZTL. Privatautos haben diese nicht. Wir setzen Sie so nah wie möglich an Ihrem Hotel, am Pantheon oder an der Spanischen Treppe ab. Reine Fußgängerzonen bleiben dabei tabu.",
+        "es": "Sí. Nuestros vehículos con chófer tienen licencia NCC y, por lo tanto, permiso para entrar en la ZTL de Roma. Los autos particulares no lo tienen. Lo dejamos lo más cerca posible de su hotel, del Panteón o de la Plaza de España, respetando las zonas exclusivamente peatonales."
       }
     },
     {
@@ -121,8 +121,8 @@
         "es": "¿Ofrecen excursiones de un día desde Roma?"
       },
       "a": {
-        "de": "Ja. Tivoli, die Castelli Romani, Ostia Antica, Orvieto und sogar Pompeji oder die Amalfiküste lassen sich ab Rom als Tagesausflug zum Festpreis besuchen. Route und Zeitplan legen wir vor der Abfahrt gemeinsam mit Ihnen fest. Unterwegs können Sie beides noch ändern.",
-        "es": "Sí. Tívoli, los Castelli Romani, Ostia Antica, Orvieto e incluso Pompeya y la costa amalfitana se pueden visitar en el día desde Roma, a precio cerrado. El itinerario y los horarios se acuerdan con usted antes de salir, y pueden modificarse durante el trayecto."
+        "de": "Ja. Tivoli, die Castelli Romani, Ostia Antica, Orvieto und sogar Pompeji und die Amalfiküste sind als Tagesausflug ab Rom möglich, zum Festpreis. Route und Zeiten legen wir vor der Abfahrt mit Ihnen fest. Unterwegs können Sie beides noch ändern.",
+        "es": "Sí. Tívoli, los Castelli Romani, Ostia Antica, Orvieto e incluso Pompeya y la costa amalfitana se pueden visitar en un día desde Roma, a precio fijo. El itinerario y los horarios se acuerdan con usted antes de salir, y puede modificarlos durante el trayecto."
       }
     }
   ]

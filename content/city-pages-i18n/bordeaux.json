@@ -1,0 +1,200 @@
+{
+  "slug": "bordeaux",
+  "source": "chauffeur-prive-bordeaux",
+  "airport": "Bordeaux-Mérignac (BOD)",
+  "nearby": [],
+  "price": [
+    "790",
+    "850",
+    "780",
+    "520",
+    "320"
+  ],
+  "frTitles": [
+    "Saint-Émilion, village et grands crus",
+    "Médoc, la route des châteaux",
+    "Arcachon et la dune du Pilat",
+    "Sauternes et les Graves",
+    "Soirée bordelaise, quais et grandes tables"
+  ],
+  "frTeasers": [
+    "À 40 km de Bordeaux, la cité médiévale classée UNESCO, son église monolithe creusée dans le calcaire et deux propriétés classées — dégustations organisées selon vos préférences.",
+    "La D2 vers le nord : Margaux, Saint-Julien, Pauillac et leurs façades du XVIIIe. Visites et dégustations dans deux crus classés 1855, déjeuner face aux vignes à Pauillac.",
+    "À 65 km de Bordeaux, la plus haute dune d’Europe — près de 106 mètres face au banc d’Arguin. Dégustation d’huîtres au Cap Ferret ou au village de l’Herbe, retour par la Ville d’Hiver.",
+    "À 45 km au sud, le vignoble des liquoreux : Château d’Yquem en majesté, dégustations à Sauternes et Barsac, arrêt au château de Roquetaillade. L’or du Bordelais en une demi-journée.",
+    "Le miroir d’eau et la place de la Bourse illuminée, dîner au Pressoir d’Argent ou dans une table des Chartrons, dépose et retour à votre hôtel. Bordeaux de nuit, sans contrainte."
+  ],
+  "frDurations": [
+    "Journée complète",
+    "Journée complète",
+    "Journée complète",
+    "Demi-journée",
+    "Soirée"
+  ],
+  "frIntro": "Bordeaux se parcourt en voiture : les châteaux du Médoc sont à quarante minutes du centre, Saint-Émilion à une heure, Arcachon à cinquante minutes. Un chauffeur privé à Bordeaux transforme chaque déplacement en moment de calme. Amani Limousines vous conduit dans toute la Gironde avec des Mercedes récentes, un tarif fixe communiqué avant la réservation et une ponctualité sans négociation.",
+  "name": {
+    "en": "Bordeaux",
+    "de": "Bordeaux",
+    "es": "Burdeos"
+  },
+  "country": {
+    "en": "France",
+    "de": "Frankreich",
+    "es": "Francia"
+  },
+  "airportTransfer": {
+    "fr": "L'aéroport de Bordeaux-Mérignac (BOD) est à 12 km du centre, soit 20 à 30 minutes de route. Saint-Émilion est à 40 km à l'est, le Médoc et Margaux à 30 km au nord-ouest. Votre chauffeur vous attend à l'arrivée et vous conduit directement à votre hôtel ou à votre première propriété viticole.",
+    "en": "Bordeaux-Mérignac Airport (BOD) is 12 km from the city centre, a drive of 20 to 30 minutes. Saint-Émilion is 40 km to the east, and the Médoc and Margaux are 30 km to the northwest. Your chauffeur meets you on arrival and drives you straight to your hotel or to your first wine estate.",
+    "de": "Der Flughafen Bordeaux-Mérignac (BOD) liegt 12 km vom Stadtzentrum entfernt. Die Fahrt dauert 20 bis 30 Minuten. Saint-Émilion liegt 40 km östlich, das Médoc und Margaux 30 km nordwestlich. Ihr Chauffeur erwartet Sie bei der Ankunft und bringt Sie direkt zu Ihrem Hotel oder zum ersten Weingut.",
+    "es": "El aeropuerto de Burdeos-Mérignac (BOD) está a 12 km del centro, a unos 20 o 30 minutos en auto. Saint-Émilion está a 40 km al este, y el Médoc y Margaux, a 30 km al noroeste. Su chófer lo espera a la llegada y lo lleva directamente a su hotel o a la primera bodega de su recorrido."
+  },
+  "intro": {
+    "fr": [
+      "Bordeaux se découvre en voiture : les châteaux du Médoc sont à quarante minutes du centre, Saint-Émilion à une heure, Arcachon à cinquante minutes. Avec un chauffeur privé à Bordeaux, chaque trajet se fait au calme, sans itinéraire à préparer. Amani Limousines vous conduit dans toute la Gironde avec des Mercedes récentes. Le **tarif est fixe et communiqué avant la réservation**, sans supplément découvert en route. La ponctualité, elle, ne se négocie pas.",
+      "Les cinq excursions proposées couvrent les grands vignobles et la côte atlantique. Dans le Médoc, la D2 relie Margaux, Saint-Julien et Pauillac, avec des visites dans deux crus classés 1855. Saint-Émilion, cité médiévale classée UNESCO, est à 40 km. Au sud, Sauternes et Barsac se visitent en une demi-journée, avec un arrêt au château de Roquetaillade. Vers l'ouest, la dune du Pilat atteint **près de 106 mètres**, ce qui en fait la plus haute d'Europe. Le soir, votre chauffeur vous dépose au restaurant puis vous ramène à votre hôtel."
+    ],
+    "en": [
+      "Bordeaux is a region best explored by car. The Médoc châteaux are forty minutes from the city centre, Saint-Émilion is an hour away and Arcachon takes fifty minutes. With a private chauffeur in Bordeaux, every journey is quiet and you have no route to plan. Amani Limousines drives you anywhere in the Gironde in recent Mercedes models. The **fare is fixed and confirmed before you book**, so there are no surprises on the road. Punctuality is not up for discussion.",
+      "Our five excursions cover the main vineyards and the Atlantic coast. In the Médoc, the D2 road links Margaux, Saint-Julien and Pauillac, with visits to two 1855 classified growths. Saint-Émilion, a medieval town on the UNESCO list, is 40 km away. To the south, Sauternes and Barsac fit into a half day, with a stop at Château de Roquetaillade. Out west, the Dune du Pilat rises to **almost 106 metres** and is the highest dune in Europe. In the evening, your chauffeur drops you at the restaurant and takes you back to your hotel afterwards."
+    ],
+    "de": [
+      "Bordeaux erkundet man am besten mit dem Auto. Die Châteaux im Médoc liegen vierzig Minuten vom Zentrum entfernt, Saint-Émilion eine Stunde und Arcachon fünfzig Minuten. Mit einem Privatchauffeur in Bordeaux verläuft jede Fahrt ruhig, und Sie müssen keine Route planen. Amani Limousines fährt Sie mit neueren Mercedes-Modellen durch die gesamte Gironde. Der **Fahrpreis ist fest und steht vor der Buchung fest**, ohne spätere Aufschläge. Über Pünktlichkeit wird bei uns nicht verhandelt.",
+      "Unsere fünf Ausflüge führen in die wichtigsten Weinbaugebiete und an die Atlantikküste. Im Médoc verbindet die D2 Margaux, Saint-Julien und Pauillac, mit Besuchen bei zwei klassifizierten Gewächsen von 1855. Saint-Émilion ist eine mittelalterliche Stadt auf der UNESCO-Liste und liegt 40 km entfernt. Im Süden passen Sauternes und Barsac in einen halben Tag, mit einem Halt am Château de Roquetaillade. Im Westen ist die Düne von Pilat **fast 106 Meter** hoch und damit die höchste Europas. Am Abend bringt Sie Ihr Chauffeur zum Restaurant und danach zurück ins Hotel."
+    ],
+    "es": [
+      "Burdeos se recorre mejor en auto. Los châteaux del Médoc están a cuarenta minutos del centro, Saint-Émilion a una hora y Arcachon a cincuenta minutos. Con un chófer privado en Burdeos, cada trayecto es tranquilo y usted no tiene que planear la ruta. Amani Limousines lo lleva por toda la Gironda en vehículos Mercedes recientes. La **tarifa es fija y se le comunica antes de reservar**, sin cargos adicionales durante el viaje. La puntualidad no se negocia.",
+      "Las cinco excursiones que ofrecemos cubren los principales viñedos y la costa atlántica. En el Médoc, la carretera D2 une Margaux, Saint-Julien y Pauillac, con visitas a dos grands crus clasificados en 1855. Saint-Émilion, ciudad medieval declarada Patrimonio de la Humanidad por la UNESCO, está a 40 km. Al sur, Sauternes y Barsac se visitan en medio día, con una parada en el castillo de Roquetaillade. Al oeste, la duna de Pilat mide **casi 106 metros** y es la más alta de Europa. Por la noche, su chófer lo deja en el restaurante y después lo regresa a su hotel."
+    ]
+  },
+  "experiences": [
+    {
+      "title": {
+        "en": "Saint-Émilion, village and grands crus",
+        "de": "Saint-Émilion, Dorf und Grands Crus",
+        "es": "Saint-Émilion, pueblo y grands crus"
+      },
+      "teaser": {
+        "en": "Forty kilometres from Bordeaux, a UNESCO-listed medieval town with a monolithic church carved into the limestone, plus two classified estates. Tastings are arranged to suit your preferences.",
+        "de": "40 km von Bordeaux entfernt liegt die mittelalterliche Stadt auf der UNESCO-Liste, mit ihrer in den Kalkstein gehauenen Felsenkirche und zwei klassifizierten Weingütern. Die Verkostungen richten sich nach Ihren Wünschen.",
+        "es": "A 40 km de Burdeos está esta ciudad medieval declarada Patrimonio de la Humanidad, con su iglesia monolítica excavada en la piedra caliza y dos propiedades clasificadas. Las catas se organizan según sus preferencias."
+      },
+      "duration": {
+        "en": "Full day",
+        "de": "Ganztägig",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "en": "The Médoc château route",
+        "de": "Médoc, die Straße der Châteaux",
+        "es": "Médoc, la ruta de los châteaux"
+      },
+      "teaser": {
+        "en": "The D2 heads north through Margaux, Saint-Julien and Pauillac, past their 18th-century façades. Tours and tastings at two 1855 classified growths, then lunch overlooking the vines in Pauillac.",
+        "de": "Die D2 führt nach Norden durch Margaux, Saint-Julien und Pauillac mit ihren Fassaden aus dem 18. Jahrhundert. Besichtigungen und Verkostungen bei zwei klassifizierten Gewächsen von 1855, Mittagessen mit Blick auf die Reben in Pauillac.",
+        "es": "La D2 hacia el norte pasa por Margaux, Saint-Julien y Pauillac, con sus fachadas del siglo XVIII. Visitas y catas en dos grands crus clasificados en 1855, y almuerzo frente a los viñedos en Pauillac."
+      },
+      "duration": {
+        "en": "Full day",
+        "de": "Ganztägig",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "en": "Arcachon and the Dune du Pilat",
+        "de": "Arcachon und die Düne von Pilat",
+        "es": "Arcachon y la duna de Pilat"
+      },
+      "teaser": {
+        "en": "Sixty-five kilometres from Bordeaux is Europe's highest dune, almost 106 metres tall, facing the Banc d'Arguin. Oyster tasting at Cap Ferret or in the village of L'Herbe, with the return through the Ville d'Hiver.",
+        "de": "65 km von Bordeaux entfernt liegt die höchste Düne Europas, fast 106 Meter hoch, gegenüber der Sandbank von Arguin. Austernverkostung am Cap Ferret oder im Dorf L'Herbe, Rückfahrt durch die Ville d'Hiver.",
+        "es": "A 65 km de Burdeos está la duna más alta de Europa, de casi 106 metros, frente al banco de Arguin. Degustación de ostras en Cap Ferret o en el pueblo de L'Herbe, con regreso por la Ville d'Hiver."
+      },
+      "duration": {
+        "en": "Full day",
+        "de": "Ganztägig",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "en": "Sauternes and the Graves",
+        "de": "Sauternes und die Graves",
+        "es": "Sauternes y las Graves"
+      },
+      "teaser": {
+        "en": "Forty-five kilometres south, the home of Bordeaux's sweet wines. See Château d'Yquem, taste in Sauternes and Barsac, and stop at Château de Roquetaillade, all in half a day.",
+        "de": "45 km südlich liegt das Gebiet der Süßweine. Château d'Yquem, Verkostungen in Sauternes und Barsac und ein Halt am Château de Roquetaillade, alles an einem halben Tag.",
+        "es": "A 45 km al sur está la región de los vinos dulces de Burdeos. Château d'Yquem, catas en Sauternes y Barsac y una parada en el castillo de Roquetaillade, todo en medio día."
+      },
+      "duration": {
+        "en": "Half day",
+        "de": "Halbtags",
+        "es": "Medio día"
+      }
+    },
+    {
+      "title": {
+        "en": "A Bordeaux evening, quays and fine dining",
+        "de": "Abend in Bordeaux, Kais und Spitzenküche",
+        "es": "Noche en Burdeos, muelles y alta cocina"
+      },
+      "teaser": {
+        "en": "The Miroir d'Eau and the illuminated Place de la Bourse, dinner at Le Pressoir d'Argent or a restaurant in the Chartrons district, then the drive back to your hotel. Bordeaux at night, at your own pace.",
+        "de": "Der Miroir d'Eau und die beleuchtete Place de la Bourse, Abendessen im Pressoir d'Argent oder in einem Restaurant im Viertel Chartrons, danach die Rückfahrt zum Hotel. Bordeaux bei Nacht, ganz nach Ihrem Zeitplan.",
+        "es": "El Miroir d'Eau y la plaza de la Bourse iluminada, cena en Le Pressoir d'Argent o en un restaurante del barrio de Chartrons, y luego el regreso a su hotel. Burdeos de noche, a su propio ritmo."
+      },
+      "duration": {
+        "en": "Evening",
+        "de": "Abend",
+        "es": "Noche"
+      }
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "fr": "Combien de temps faut-il pour aller de l'aéroport de Bordeaux-Mérignac au centre ?",
+        "en": "How long does it take from Bordeaux-Mérignac Airport to the city centre?",
+        "de": "Wie lange dauert die Fahrt vom Flughafen Bordeaux-Mérignac ins Zentrum?",
+        "es": "¿Cuánto se tarda del aeropuerto de Burdeos-Mérignac al centro?"
+      },
+      "a": {
+        "fr": "L'aéroport est à 12 km du centre. Le trajet prend 20 à 30 minutes. Votre chauffeur peut aussi vous conduire directement dans le Médoc, à 30 km au nord-ouest, ou à Saint-Émilion, à 40 km à l'est.",
+        "en": "The airport is 12 km from the centre, and the drive takes 20 to 30 minutes. Your chauffeur can also take you straight to the Médoc, 30 km to the northwest, or to Saint-Émilion, 40 km to the east.",
+        "de": "Der Flughafen liegt 12 km vom Zentrum entfernt. Die Fahrt dauert 20 bis 30 Minuten. Ihr Chauffeur kann Sie auch direkt ins Médoc bringen, 30 km nordwestlich, oder nach Saint-Émilion, 40 km östlich.",
+        "es": "El aeropuerto está a 12 km del centro y el trayecto dura entre 20 y 30 minutos. Su chófer también puede llevarlo directamente al Médoc, a 30 km al noroeste, o a Saint-Émilion, a 40 km al este."
+      }
+    },
+    {
+      "q": {
+        "fr": "Le prix est-il connu avant la réservation ?",
+        "en": "Do I know the price before booking?",
+        "de": "Kenne ich den Preis vor der Buchung?",
+        "es": "¿Conozco el precio antes de reservar?"
+      },
+      "a": {
+        "fr": "Oui. Le tarif est fixe et vous est communiqué avant la réservation. Il ne change pas en fonction de la circulation ou de l'itinéraire emprunté.",
+        "en": "Yes. The fare is fixed and confirmed before you book. It does not change with traffic or with the route taken.",
+        "de": "Ja. Der Preis ist fest und wird Ihnen vor der Buchung mitgeteilt. Er ändert sich nicht durch Verkehr oder die gewählte Strecke.",
+        "es": "Sí. La tarifa es fija y se le comunica antes de reservar. No cambia según el tráfico ni la ruta."
+      }
+    },
+    {
+      "q": {
+        "fr": "Les dégustations sont-elles comprises dans les excursions viticoles ?",
+        "en": "Are tastings included in the wine excursions?",
+        "de": "Sind Verkostungen in den Weinausflügen enthalten?",
+        "es": "¿Las catas están incluidas en las excursiones de vino?"
+      },
+      "a": {
+        "fr": "Oui. Dans le Médoc, l'excursion comprend des visites et dégustations dans deux crus classés 1855. À Saint-Émilion, les dégustations dans deux propriétés classées sont organisées selon vos préférences. La demi-journée à Sauternes comprend des dégustations à Sauternes et Barsac.",
+        "en": "Yes. The Médoc excursion includes tours and tastings at two 1855 classified growths. In Saint-Émilion, tastings at two classified estates are arranged to suit your preferences. The Sauternes half day includes tastings in Sauternes and Barsac.",
+        "de": "Ja. Der Ausflug ins Médoc umfasst Besichtigungen und Verkostungen bei zwei klassifizierten Gewächsen von 1855. In Saint-Émilion richten sich die Verkostungen auf zwei klassifizierten Weingütern nach Ihren Wünschen. Der halbe Tag in Sauternes umfasst Verkostungen in Sauternes und Barsac.",
+        "es": "Sí. La excursión al Médoc incluye visitas y catas en dos grands crus clasificados en 1855. En Saint-Émilion, las catas en dos propiedades clasificadas se organizan según sus preferencias. El medio día en Sauternes incluye catas en Sauternes y Barsac."
+      }
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "slug": "cannes",
+  "source": "chauffeur-prive-cannes",
+  "airport": "Nice-Côte d’Azur (NCE)",
+  "nearby": [
+    "antibes",
+    "saint-paul-de-vence",
+    "eze-village"
+  ],
+  "price": [
+    "400",
+    "450",
+    "350",
+    "480",
+    "380"
+  ],
+  "frTitles": [
+    "Îles de Lérins, dépose au Vieux-Port",
+    "Grasse, capitale du parfum",
+    "Mougins, village des gastronomes",
+    "Corniche d’Or et massif de l’Estérel",
+    "Soirée Croisette & Casino"
+  ],
+  "frTeasers": [
+    "Dépose au quai Laubeuf, quinze minutes de traversée vers Sainte-Marguerite et son fort royal, ou Saint-Honorat et l’abbaye où les moines cultivent la vigne. Le véhicule vous attend au retour.",
+    "À 17 km de la Croisette, les maisons Fragonard, Molinard et Galimard ouvrent leurs ateliers : création de votre parfum sur mesure, visite des champs de rose de mai en saison.",
+    "À 8 km de Cannes, le village circulaire où Picasso vécut ses quinze dernières années. Dîner dans l’une de ses tables réputées, musée d’Art classique, retour de nuit sans contrainte.",
+    "De Théoule-sur-Mer à Saint-Raphaël, 30 km de route littorale entre les roches rouges de l’Estérel et la Méditerranée. Arrêts au cap du Dramont et à Agay, déjeuner les pieds dans l’eau.",
+    "Dîner à La Palme d’Or ou sur une plage privée de la Croisette, puis Casino Barrière Le Croisette. Dépose au tapis, véhicule en attente toute la soirée, retour à votre villa ou hôtel."
+  ],
+  "frDurations": [
+    "Demi-journée",
+    "Demi-journée",
+    "Soirée",
+    "Demi-journée",
+    "Soirée"
+  ],
+  "frIntro": "Cannes est une ville compacte mais saturée dès qu'un événement majeur s'y installe. La Croisette devient piétonne, les parkings sont pleins, les VTC classiques débordés. Un chauffeur privé à Cannes connaît les accès alternatifs, les dépose-minutes et les horaires de fermeture des rues. Amani Limousines vous conduit partout à Cannes et dans ses environs, en Mercedes, au tarif fixe convenu avant votre arrivée.",
+  "name": {
+    "en": "Cannes",
+    "de": "Cannes",
+    "es": "Cannes"
+  },
+  "country": {
+    "en": "France",
+    "de": "Frankreich",
+    "es": "Francia"
+  },
+  "airportTransfer": {
+    "fr": "Cannes est à 27 km de l'aéroport Nice-Côte d'Azur (NCE). Comptez 30 à 45 minutes par l'A8 selon le trafic. Depuis Cannes, Antibes est à 11 km et Saint-Tropez à 90 km par la côte.",
+    "en": "Cannes is 27 km from Nice Côte d'Azur Airport (NCE). The drive on the A8 takes 30 to 45 minutes, depending on traffic. From Cannes, Antibes is 11 km away and Saint-Tropez 90 km along the coast.",
+    "de": "Cannes liegt 27 km vom Flughafen Nizza-Côte d'Azur (NCE) entfernt. Die Fahrt über die A8 dauert je nach Verkehr 30 bis 45 Minuten. Von Cannes sind es 11 km nach Antibes und 90 km entlang der Küste nach Saint-Tropez.",
+    "es": "Cannes está a 27 km del aeropuerto de Niza-Costa Azul (NCE). El trayecto por la A8 dura entre 30 y 45 minutos, según el tráfico. Desde Cannes, Antibes está a 11 km y Saint-Tropez a 90 km por la costa."
+  },
+  "intro": {
+    "fr": [
+      "Cannes est une ville compacte, mais **saturée dès qu'un événement majeur s'y installe**. La Croisette devient piétonne, les parkings sont pleins, les VTC classiques débordés. Un chauffeur privé à Cannes connaît les accès alternatifs, les dépose-minutes et les horaires de fermeture des rues. Amani Limousines vous conduit partout à Cannes et dans ses environs, en Mercedes, au tarif fixe convenu avant votre arrivée. Vous savez donc à l'avance ce que coûtera chaque trajet, quelle que soit l'affluence en ville.",
+      "Les environs de Cannes sont accessibles en peu de temps. Mougins est à 8 km, et Grasse à **17 km de la Croisette**, avec les ateliers de Fragonard, Molinard et Galimard. Au Vieux-Port, le chauffeur vous dépose au quai Laubeuf pour les îles de Lérins, à quinze minutes de bateau, puis vous attend au retour. Vers l'ouest, la Corniche d'Or longe l'Estérel sur 30 km jusqu'à Saint-Raphaël. Le soir, le véhicule reste disponible pendant votre dîner sur la Croisette ou au casino. Il vous ramène ensuite à votre hôtel ou à votre villa."
+    ],
+    "en": [
+      "Cannes is a small town, but **it fills up the moment a major event arrives**. The Croisette is closed to cars, car parks are full and ride-hailing drivers cannot keep up. A private chauffeur in Cannes knows the alternative routes, the drop-off points and the times when streets close. Amani Limousines drives you anywhere in Cannes and the surrounding area in a Mercedes, at a fixed price agreed before you arrive. You know the cost of each journey in advance, however busy the town is.",
+      "Much of the area around Cannes is close by. Mougins is 8 km away, and Grasse is **17 km from the Croisette**, with the Fragonard, Molinard and Galimard perfume houses. At the Old Port, your chauffeur drops you at Quai Laubeuf for the fifteen-minute crossing to the Lérins Islands and waits for your return. To the west, the Corniche d'Or follows the red rocks of the Esterel for 30 km to Saint-Raphaël. In the evening, the car stays with you during dinner on the Croisette or at the casino. Then it takes you back to your hotel or villa."
+    ],
+    "de": [
+      "Cannes ist eine kleine Stadt. Sobald eine große Veranstaltung stattfindet, **ist sie jedoch völlig überlastet**. Die Croisette wird zur Fußgängerzone, die Parkhäuser sind voll und die üblichen Fahrdienste ausgebucht. Ein Privatchauffeur in Cannes kennt die Ausweichrouten, die Haltezonen und die Zeiten, zu denen Straßen gesperrt werden. Amani Limousines fährt Sie überallhin in Cannes und Umgebung, im Mercedes und zu einem Festpreis, den wir vor Ihrer Ankunft vereinbaren. So kennen Sie die Kosten jeder Fahrt im Voraus, auch wenn die Stadt voll ist.",
+      "Die Umgebung von Cannes ist schnell erreichbar. Mougins liegt 8 km entfernt, Grasse **17 km von der Croisette** mit den Parfümhäusern Fragonard, Molinard und Galimard. Am Alten Hafen setzt Ihr Chauffeur Sie am Quai Laubeuf ab. Von dort dauert die Überfahrt zu den Lérins-Inseln fünfzehn Minuten, und der Wagen wartet bei Ihrer Rückkehr. Im Westen führt die Corniche d'Or 30 km am roten Fels des Esterel entlang bis Saint-Raphaël. Abends bleibt der Wagen während Ihres Essens an der Croisette oder Ihres Casinobesuchs verfügbar und bringt Sie danach zurück ins Hotel oder in Ihre Villa."
+    ],
+    "es": [
+      "Cannes es una ciudad pequeña, pero **se satura en cuanto llega un gran evento**. La Croisette se vuelve peatonal, los estacionamientos se llenan y los servicios de transporte por aplicación no alcanzan. Un chófer privado en Cannes conoce los accesos alternativos, los puntos de ascenso y descenso y los horarios de cierre de las calles. Amani Limousines lo lleva a cualquier punto de Cannes y sus alrededores, en Mercedes y con una tarifa fija acordada antes de su llegada. Usted conoce de antemano el costo de cada trayecto, aunque la ciudad esté llena.",
+      "Los alrededores de Cannes quedan cerca. Mougins está a 8 km y Grasse a **17 km de la Croisette**, con las casas de perfume Fragonard, Molinard y Galimard. En el Puerto Viejo, el chófer lo deja en el muelle Laubeuf para cruzar en quince minutos a las islas de Lérins, y lo espera a su regreso. Hacia el oeste, la Corniche d'Or bordea las rocas rojas del Esterel durante 30 km hasta Saint-Raphaël. Por la noche, el vehículo permanece disponible mientras usted cena en la Croisette o visita el casino. Después lo lleva de vuelta a su hotel o villa."
+    ]
+  },
+  "experiences": [
+    {
+      "title": {
+        "en": "Lérins Islands, drop-off at the Old Port",
+        "de": "Lérins-Inseln, Abfahrt am Alten Hafen",
+        "es": "Islas de Lérins, salida desde el Puerto Viejo"
+      },
+      "teaser": {
+        "en": "Drop-off at Quai Laubeuf, then a fifteen-minute crossing to Sainte-Marguerite and its royal fort, or to Saint-Honorat, where the monks of the abbey grow vines. The car is waiting when you return.",
+        "de": "Sie steigen am Quai Laubeuf aus. In fünfzehn Minuten bringt Sie das Boot nach Sainte-Marguerite mit seiner königlichen Festung oder nach Saint-Honorat, wo die Mönche der Abtei Wein anbauen. Bei Ihrer Rückkehr wartet der Wagen auf Sie.",
+        "es": "Lo dejamos en el muelle Laubeuf. En quince minutos de travesía llega a Sainte-Marguerite y su fuerte real, o a Saint-Honorat, donde los monjes de la abadía cultivan la vid. El vehículo lo espera a su regreso."
+      },
+      "duration": {
+        "en": "Half day",
+        "de": "Halber Tag",
+        "es": "Medio día"
+      }
+    },
+    {
+      "title": {
+        "en": "Grasse, the perfume capital",
+        "de": "Grasse, Hauptstadt des Parfums",
+        "es": "Grasse, capital del perfume"
+      },
+      "teaser": {
+        "en": "Grasse is 17 km from the Croisette. The Fragonard, Molinard and Galimard houses open their workshops, where you can create your own perfume. In season, you can visit the May rose fields.",
+        "de": "Grasse liegt 17 km von der Croisette entfernt. Die Häuser Fragonard, Molinard und Galimard öffnen ihre Werkstätten, und Sie können dort Ihr eigenes Parfum kreieren. In der Saison besuchen Sie die Felder der Mairose.",
+        "es": "Grasse está a 17 km de la Croisette. Las casas Fragonard, Molinard y Galimard abren sus talleres, donde usted puede crear su propio perfume. En temporada, se visitan los campos de rosa de mayo."
+      },
+      "duration": {
+        "en": "Half day",
+        "de": "Halber Tag",
+        "es": "Medio día"
+      }
+    },
+    {
+      "title": {
+        "en": "Mougins, a village for food lovers",
+        "de": "Mougins, das Dorf der Feinschmecker",
+        "es": "Mougins, el pueblo de los gastrónomos"
+      },
+      "teaser": {
+        "en": "Mougins is 8 km from Cannes. Picasso spent his last fifteen years in this circular village. Dinner at one of its well-known restaurants, the Museum of Classical Art, and a late drive home with no time limit.",
+        "de": "Mougins liegt 8 km von Cannes entfernt. In dem runden Dorf verbrachte Picasso seine letzten fünfzehn Lebensjahre. Abendessen in einem der bekannten Restaurants, das Museum für klassische Kunst und eine Rückfahrt in der Nacht ohne Zeitdruck.",
+        "es": "Mougins está a 8 km de Cannes. Picasso pasó sus últimos quince años en este pueblo de trazado circular. Cena en uno de sus restaurantes reconocidos, visita al Museo de Arte Clásico y regreso de noche sin horario fijo."
+      },
+      "duration": {
+        "en": "Evening",
+        "de": "Abend",
+        "es": "Noche"
+      }
+    },
+    {
+      "title": {
+        "en": "Corniche d'Or and the Esterel massif",
+        "de": "Corniche d'Or und Esterel-Massiv",
+        "es": "Corniche d'Or y macizo del Esterel"
+      },
+      "teaser": {
+        "en": "From Théoule-sur-Mer to Saint-Raphaël, 30 km of coast road run between the red rocks of the Esterel and the Mediterranean. Stops at Cap du Dramont and Agay, with lunch by the water.",
+        "de": "Von Théoule-sur-Mer bis Saint-Raphaël führt die Küstenstraße 30 km zwischen den roten Felsen des Esterel und dem Mittelmeer entlang. Halt am Cap du Dramont und in Agay, Mittagessen direkt am Wasser.",
+        "es": "De Théoule-sur-Mer a Saint-Raphaël, la carretera costera recorre 30 km entre las rocas rojas del Esterel y el Mediterráneo. Paradas en el cabo Dramont y en Agay, con almuerzo frente al mar."
+      },
+      "duration": {
+        "en": "Half day",
+        "de": "Halber Tag",
+        "es": "Medio día"
+      }
+    },
+    {
+      "title": {
+        "en": "Evening on the Croisette & casino",
+        "de": "Abend an der Croisette & Casino",
+        "es": "Noche en la Croisette y casino"
+      },
+      "teaser": {
+        "en": "Dinner at La Palme d'Or or on a private beach on the Croisette, then the Casino Barrière Le Croisette. Drop-off at the entrance, the car on standby all evening, and a ride back to your villa or hotel.",
+        "de": "Abendessen im La Palme d'Or oder an einem Privatstrand der Croisette, danach das Casino Barrière Le Croisette. Ankunft direkt am Eingang, der Wagen wartet den ganzen Abend und bringt Sie zurück in Ihre Villa oder Ihr Hotel.",
+        "es": "Cena en La Palme d'Or o en una playa privada de la Croisette, y después el Casino Barrière Le Croisette. Lo dejamos en la entrada, el vehículo lo espera toda la noche y lo lleva de vuelta a su villa u hotel."
+      },
+      "duration": {
+        "en": "Evening",
+        "de": "Abend",
+        "es": "Noche"
+      }
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "fr": "Combien de temps dure le trajet entre l'aéroport de Nice et Cannes ?",
+        "en": "How long is the drive from Nice Airport to Cannes?",
+        "de": "Wie lange dauert die Fahrt vom Flughafen Nizza nach Cannes?",
+        "es": "¿Cuánto dura el trayecto del aeropuerto de Niza a Cannes?"
+      },
+      "a": {
+        "fr": "Cannes est à 27 km de l'aéroport Nice-Côte d'Azur. Le trajet par l'A8 prend 30 à 45 minutes selon le trafic. Le tarif est fixe et convenu avant votre arrivée.",
+        "en": "Cannes is 27 km from Nice Côte d'Azur Airport. The drive on the A8 takes 30 to 45 minutes, depending on traffic. The price is fixed and agreed before you arrive.",
+        "de": "Cannes liegt 27 km vom Flughafen Nizza-Côte d'Azur entfernt. Die Fahrt über die A8 dauert je nach Verkehr 30 bis 45 Minuten. Der Preis ist fest und wird vor Ihrer Ankunft vereinbart.",
+        "es": "Cannes está a 27 km del aeropuerto de Niza-Costa Azul. El trayecto por la A8 dura entre 30 y 45 minutos, según el tráfico. La tarifa es fija y se acuerda antes de su llegada."
+      }
+    },
+    {
+      "q": {
+        "fr": "Comment se déplacer à Cannes pendant un grand événement ?",
+        "en": "How do I get around Cannes during a major event?",
+        "de": "Wie komme ich während einer großen Veranstaltung in Cannes voran?",
+        "es": "¿Cómo moverse por Cannes durante un gran evento?"
+      },
+      "a": {
+        "fr": "Pendant les grands événements, la Croisette devient piétonne et les parkings sont pleins. Nos chauffeurs connaissent les accès alternatifs, les dépose-minutes et les horaires de fermeture des rues. Ils vous déposent au plus près de votre destination.",
+        "en": "During major events, the Croisette is closed to cars and car parks are full. Our chauffeurs know the alternative routes, the drop-off points and the times when streets close. They drop you as close as possible to where you need to be.",
+        "de": "Bei großen Veranstaltungen wird die Croisette zur Fußgängerzone, und die Parkhäuser sind voll. Unsere Chauffeure kennen die Ausweichrouten, die Haltezonen und die Sperrzeiten der Straßen. Sie setzen Sie so nah wie möglich an Ihrem Ziel ab.",
+        "es": "Durante los grandes eventos, la Croisette se vuelve peatonal y los estacionamientos se llenan. Nuestros chóferes conocen los accesos alternativos, los puntos de ascenso y descenso y los horarios de cierre de las calles. Lo dejan lo más cerca posible de su destino."
+      }
+    },
+    {
+      "q": {
+        "fr": "Peut-on visiter les environs de Cannes avec chauffeur ?",
+        "en": "Can I visit the area around Cannes with a chauffeur?",
+        "de": "Kann ich die Umgebung von Cannes mit Chauffeur besuchen?",
+        "es": "¿Se pueden visitar los alrededores de Cannes con chófer?"
+      },
+      "a": {
+        "fr": "Oui. Mougins est à 8 km, Grasse à 17 km de la Croisette, Antibes à 11 km et Saint-Tropez à 90 km par la côte. Nous proposons aussi la Corniche d'Or jusqu'à Saint-Raphaël et la dépose au port pour les îles de Lérins.",
+        "en": "Yes. Mougins is 8 km away, Grasse 17 km from the Croisette, Antibes 11 km and Saint-Tropez 90 km along the coast. We also offer the Corniche d'Or drive to Saint-Raphaël and drop-off at the port for the Lérins Islands.",
+        "de": "Ja. Mougins liegt 8 km entfernt, Grasse 17 km von der Croisette, Antibes 11 km und Saint-Tropez 90 km entlang der Küste. Wir bieten auch die Fahrt über die Corniche d'Or bis Saint-Raphaël und die Abfahrt am Hafen zu den Lérins-Inseln an.",
+        "es": "Sí. Mougins está a 8 km, Grasse a 17 km de la Croisette, Antibes a 11 km y Saint-Tropez a 90 km por la costa. También ofrecemos el recorrido por la Corniche d'Or hasta Saint-Raphaël y el traslado al puerto para ir a las islas de Lérins."
+      }
+    }
+  ]
+}

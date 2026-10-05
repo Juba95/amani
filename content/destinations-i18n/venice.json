@@ -9,28 +9,28 @@
     "es": "Italia"
   },
   "airportTransfer": {
-    "de": "Der Flughafen Venedig-Marco Polo (VCE) liegt 13 km nördlich der Lagune. Ihr Chauffeur bringt Sie in 20 bis 25 Minuten zum Piazzale Roma. Von dort fahren Wassertaxis und Vaporetti weiter zu Ihrem Hotel. Auf Wunsch organisieren wir ein privates Wassertaxi, das Sie direkt am Bootssteg Ihres Palazzo absetzt. Vom Flughafen Treviso (TSF) sind es etwa 40 Minuten.",
-    "es": "El aeropuerto de Venecia-Marco Polo (VCE) está a 13 km al norte de la laguna. Su chófer le lleva en 20 a 25 minutos hasta el Piazzale Roma, donde taxis acuáticos y vaporetti continúan el trayecto hasta su hotel. Si lo desea, coordinamos un taxi acuático privado que le deja directamente en el embarcadero de su palazzo. Desde el aeropuerto de Treviso (TSF), calcule unos 40 minutos."
+    "de": "Der Flughafen Venedig-Marco Polo (VCE) liegt 13 km nördlich der Lagune. Ihr Chauffeur bringt Sie in 20 bis 25 Minuten zum Piazzale Roma. Dort übernehmen Wassertaxis und Vaporetti die Fahrt zu Ihrem Hotel. Auf Wunsch organisieren wir ein privates Wassertaxi, das Sie direkt am Bootssteg Ihres Palazzo absetzt. Vom Flughafen Treviso (TSF) brauchen Sie etwa 40 Minuten.",
+    "es": "El aeropuerto de Venecia-Marco Polo (VCE) está a 13 km al norte de la laguna. Su chofer lo lleva al Piazzale Roma en 20 a 25 minutos, y desde allí los taxis acuáticos y los vaporetti continúan el trayecto hasta su hotel. Si lo desea, coordinamos un taxi acuático privado para llegar directamente al embarcadero de su palazzo. Desde Treviso (TSF), calcule 40 minutos."
   },
   "intro": {
     "de": [
-      "Venedig ist eine Stadt ohne Autos. Man bewegt sich zu Fuß oder mit dem Boot, und deshalb muss die Anreise zwischen Flughafen, Piazzale Roma und Boot genau abgestimmt sein. Ihr **Privatchauffeur in Venedig** übernimmt diese Organisation: Er holt Sie am Flughafen Marco Polo ab, stimmt sich mit dem Wassertaxi ab und kümmert sich um das Gepäck. Danach steht er Ihnen auf dem Festland zur Verfügung, etwa für Fahrten nach Mestre, zu den Villen an der Brenta oder in die Dolomiten.",
-      "Von Venedig aus erreichen Sie das ganze Veneto. **Verona mit seiner Arena** liegt eine Stunde und fünfzehn Minuten entfernt. Dazu kommen Padua mit der Scrovegni-Kapelle, die Villen Palladios entlang der Brenta und die Prosecco-Hügel zwischen Conegliano und Valdobbiadene, die zum UNESCO-Welterbe gehören. Während der Biennale, der Filmfestspiele oder des Karnevals sind viele Zufahrten eingeschränkt. Ihr Chauffeur kennt die Regelungen und spart Ihnen viel Zeit."
+      "Venedig ist einzigartig und verlangt gute Planung. Die Stadt hat keine Straßen für Autos, man bewegt sich zu Fuß oder auf dem Wasser. Alles beginnt deshalb mit einem reibungslosen Ablauf zwischen Flughafen, Piazzale Roma und Boot. Ihr **Privatchauffeur in Venedig** kümmert sich um diese Ankunft: Abholung in Marco Polo, Abstimmung mit dem Wassertaxi, Gepäck. Danach steht er Ihnen auf dem Festland zur Verfügung, für Mestre, die Villen an der Brenta oder die Weiterfahrt in die Dolomiten.",
+      "Von Venedig aus erreichen Sie ganz Venetien. **Verona mit seiner Arena** liegt eine Stunde und fünfzehn Minuten entfernt. Dazu kommen Padua mit der Scrovegni-Kapelle, die Villen Palladios entlang der Brenta und die Prosecco-Hügel zwischen Conegliano und Valdobbiadene, die zum UNESCO-Welterbe gehören. Während der Biennale, der Filmfestspiele oder des Karnevals ist der Zugang zur Stadt oft eingeschränkt. Ihr Chauffeur kennt die Regeln und spart Ihnen viel Zeit."
     ],
     "es": [
-      "Venecia es una ciudad sin coches: se recorre a pie o en barco, y por eso la llegada exige una coordinación precisa entre el aeropuerto, el Piazzale Roma y la embarcación. Su **chófer privado en Venecia** se encarga de todo. Le recoge en Marco Polo, coordina el taxi acuático y gestiona el equipaje. Después sigue a su disposición en tierra firme para ir a Mestre, a las villas del Brenta o hacia los Dolomitas.",
-      "Desde Venecia se llega a todo el Véneto. **Verona y su anfiteatro** están a una hora y cuarto. También quedan cerca Padua y la capilla de los Scrovegni, las villas de Palladio a orillas del Brenta y las colinas del prosecco entre Conegliano y Valdobbiadene, Patrimonio de la Humanidad de la UNESCO. Durante la Bienal, la Mostra de cine o el Carnaval, el acceso a muchas zonas está restringido. Su chófer conoce las normas y le ahorra mucho tiempo."
+      "Venecia es única y exige una buena organización. Es una ciudad peatonal construida sobre el agua, así que todo empieza con una logística precisa entre el aeropuerto, el Piazzale Roma y su embarcación. Su **chofer privado en Venecia** se encarga de esa llegada: recepción en Marco Polo, coordinación del taxi acuático y manejo del equipaje. Después sigue a su disposición en tierra firme para ir a Mestre, a las villas del Brenta o hacia los Dolomitas.",
+      "Venecia es el punto de partida para recorrer todo el Véneto. **Verona y su arena** están a una hora y cuarto. Cerca quedan Padua y la capilla de los Scrovegni, las villas de Palladio a orillas del Brenta y las colinas del prosecco entre Conegliano y Valdobbiadene, declaradas Patrimonio de la Humanidad por la UNESCO. Durante la Bienal, el Festival de Cine o el Carnaval, el acceso a la ciudad tiene restricciones. Su chofer se ocupa de ellas y usted ahorra mucho tiempo."
     ]
   },
   "experiences": [
     {
       "title": {
-        "de": "Prosecco-Hügel bei Valdobbiadene",
+        "de": "Prosecco-Hügel, Valdobbiadene",
         "es": "Colinas del prosecco, Valdobbiadene"
       },
       "teaser": {
-        "de": "Eine Stunde von Venedig entfernt liegen die Weinberge von Conegliano und Valdobbiadene, UNESCO-Welterbe. Sie verkosten Prosecco Superiore direkt bei den Winzern, fahren die Panoramastraße durch die Hügel und essen in einer Osteria im Dorf zu Mittag. Am Abend sind Sie zurück am Piazzale Roma.",
-        "es": "A una hora de Venecia están las colinas de Conegliano y Valdobbiadene, Patrimonio de la UNESCO. Catas de prosecco superiore con los propios viticultores, la carretera panorámica entre viñedos y comida en una osteria de pueblo. Regreso al Piazzale Roma al final del día."
+        "de": "Eine Stunde von Venedig entfernt liegen die Weinberge von Conegliano-Valdobbiadene, UNESCO-Welterbe. Sie probieren Prosecco Superiore direkt bei den Winzern, fahren die Panoramastraße durch die Hügel und essen in einer Osteria im Dorf zu Mittag. Am frühen Abend sind Sie zurück am Piazzale Roma.",
+        "es": "A una hora de Venecia están las colinas de Conegliano-Valdobbiadene, Patrimonio de la UNESCO. Degustación de prosecco superiore con los productores, la ruta panorámica entre viñedos y almuerzo en una osteria de pueblo. Regreso al Piazzale Roma al final del día."
       },
       "duration": {
         "de": "Ganzer Tag",
@@ -43,8 +43,8 @@
         "es": "Villas de Palladio en el Brenta"
       },
       "teaser": {
-        "de": "Zwischen Venedig und Padua stehen die Sommersitze des venezianischen Adels. Dazu gehören die Villa Foscari, genannt „La Malcontenta“, und die Villa Pisani in Stra mit Fresken von Tiepolo. Eine Architekturroute entlang des Kanals.",
-        "es": "Entre Venecia y Padua están las residencias de verano de la nobleza veneciana: la Villa Foscari, conocida como «La Malcontenta», y la Villa Pisani en Stra, con frescos de Tiepolo. Una ruta de arquitectura a lo largo del canal."
+        "de": "Zwischen Venedig und Padua stehen die Sommerresidenzen des venezianischen Adels. Dazu gehören die Villa Foscari, genannt „La Malcontenta“, und die Villa Pisani in Stra mit Fresken von Tiepolo. Eine Architekturroute entlang des Kanals.",
+        "es": "Entre Venecia y Padua están las residencias de verano de la nobleza veneciana: la Villa Foscari, llamada «La Malcontenta», y la Villa Pisani en Stra, con frescos de Tiepolo. Un recorrido de arquitectura a lo largo del canal."
       },
       "duration": {
         "de": "Ganzer Tag",
@@ -54,11 +54,11 @@
     {
       "title": {
         "de": "Verona, Julia und die Arena",
-        "es": "Verona, Julieta y el anfiteatro"
+        "es": "Verona, Julieta y la arena"
       },
       "teaser": {
-        "de": "120 km westlich liegt die Stadt von Romeo und Julia. Sie sehen die römische Arena, die Piazza delle Erbe und das Castelvecchio. Im Sommer können Sie abends eine Oper in der Arena besuchen. Ihr Chauffeur fährt Sie in der Nacht zurück nach Venedig.",
-        "es": "A 120 km al oeste está la ciudad de Romeo y Julieta, con su anfiteatro romano, la Piazza delle Erbe y el Castelvecchio. En verano puede asistir a una noche de ópera en el anfiteatro. Su chófer le lleva de vuelta a Venecia de madrugada."
+        "de": "120 km westlich liegt die Stadt von Romeo und Julia, mit der römischen Arena, der Piazza delle Erbe und dem Castelvecchio. Im Sommer können Sie eine Opernaufführung in der Arena besuchen. Ihr Chauffeur bringt Sie danach nachts sicher nach Venedig zurück.",
+        "es": "A 120 km al oeste está la ciudad de Romeo y Julieta: la arena romana, la Piazza delle Erbe y el Castelvecchio. En verano puede asistir a una noche de ópera en la arena, y su chofer lo lleva de vuelta a Venecia de madrugada."
       },
       "duration": {
         "de": "Ganzer Tag",
@@ -71,8 +71,8 @@
         "es": "Padua y la capilla de los Scrovegni"
       },
       "teaser": {
-        "de": "In Padua, 40 km entfernt, sind die Fresken Giottos zu sehen, mit denen sich die europäische Malerei verändert hat. Außerdem die Basilika des heiligen Antonius und das Caffè Pedrocchi. Der Eintritt in die Kapelle wird im Voraus für eine feste Uhrzeit gebucht. Ihr Chauffeur plant den Tag um diesen Termin.",
-        "es": "A 40 km están los frescos de Giotto que cambiaron la pintura occidental, la basílica de San Antonio y el Caffè Pedrocchi. La entrada a la capilla se reserva con antelación para una hora fija, y su chófer organiza el día en torno a ella."
+        "de": "In 40 km Entfernung sehen Sie die Fresken Giottos, die die westliche Malerei verändert haben, dazu die Basilika des heiligen Antonius und das Caffè Pedrocchi. Der Eintritt in die Kapelle ist nur mit vorab gebuchtem Zeitfenster möglich. Ihr Chauffeur plant den Tag rund um diesen Termin.",
+        "es": "A 40 km están los frescos de Giotto que cambiaron la pintura occidental, la basílica de San Antonio y el Caffè Pedrocchi. La entrada a la capilla requiere reservar un horario con anticipación, y su chofer organiza el día en función de esa hora."
       },
       "duration": {
         "de": "Halber Tag",
@@ -81,12 +81,12 @@
     },
     {
       "title": {
-        "de": "Tagesausflug in die Dolomiten nach Cortina d’Ampezzo",
+        "de": "Tagesausflug in die Dolomiten, Cortina d’Ampezzo",
         "es": "Excursión a los Dolomitas, Cortina d’Ampezzo"
       },
       "teaser": {
-        "de": "160 km nördlich der Lagune beginnen die Felstürme und Bergseen der Dolomiten. Auf dem Programm stehen Cortina, der Misurinasee und der Giau-Pass. Für das Mittagessen ist ein Tisch in einer Berghütte reserviert.",
-        "es": "A 160 km al norte de la laguna están las torres de roca y los lagos de montaña de los Dolomitas: Cortina, el lago de Misurina y el paso de Giau. Una jornada alpina con comida reservada en un refugio de alta montaña."
+        "de": "160 km nördlich ragen die Felstürme der Dolomiten auf, dazwischen liegen Bergseen. Auf dem Programm stehen Cortina, der Misurinasee und der Passo Giau. Ein Tag in den Alpen mit Start an der Lagune, das Mittagessen in einer Berghütte ist reserviert.",
+        "es": "A 160 km al norte están las torres de roca dolomítica y los lagos de montaña: Cortina, el lago de Misurina y el paso de Giau. Una jornada en los Alpes con salida desde la laguna y almuerzo reservado en un refugio de altura."
       },
       "duration": {
         "de": "Ganzer Tag",
@@ -97,12 +97,12 @@
   "faq": [
     {
       "q": {
-        "de": "Wie funktioniert ein Transfer nach Venedig, wenn dort keine Autos fahren?",
-        "es": "¿Cómo funciona un traslado a Venecia, una ciudad sin coches?"
+        "de": "Wie funktioniert ein Transfer in das autofreie Venedig?",
+        "es": "¿Cómo funciona un traslado a Venecia, una ciudad sin autos?"
       },
       "a": {
-        "de": "Ihr Chauffeur fährt Sie in 20 bis 25 Minuten vom Flughafen Marco Polo zum Piazzale Roma. Weiter kommt man mit dem Auto nicht. Auf Wunsch organisieren wir ein privates Wassertaxi vom Bootssteg des Flughafens bis zu Ihrem Hotel. Um Ihr Gepäck kümmern wir uns auf der ganzen Strecke.",
-        "es": "Su chófer le lleva desde Marco Polo hasta el Piazzale Roma, el último punto accesible en coche, en 20 a 25 minutos. Si lo desea, coordinamos un taxi acuático privado desde el embarcadero del aeropuerto hasta su hotel, y nos ocupamos del equipaje durante todo el trayecto."
+        "de": "Ihr Chauffeur fährt Sie in 20 bis 25 Minuten von Marco Polo zum Piazzale Roma. Weiter kommt man mit dem Auto nicht. Auf Wunsch organisieren wir ein privates Wassertaxi vom Bootssteg des Flughafens bis zu Ihrem Hotel. Um das Gepäck kümmern wir uns auf der ganzen Strecke.",
+        "es": "Su chofer lo lleva de Marco Polo al Piazzale Roma, el último punto al que se llega en auto, en 20 a 25 minutos. Si lo desea, coordinamos un taxi acuático privado desde el embarcadero del aeropuerto hasta su hotel, y nos ocupamos del equipaje durante todo el trayecto."
       }
     },
     {
@@ -111,18 +111,18 @@
         "es": "¿Ofrecen traslados entre Venecia y las estaciones de los Dolomitas?"
       },
       "a": {
-        "de": "Ja. Nach Cortina d’Ampezzo brauchen Sie vom Piazzale Roma oder vom Flughafen Marco Polo etwa 2 Stunden, zum Festpreis. Im Winter sind unsere Fahrzeuge für die Berge ausgerüstet. Der Chauffeur passt die Fahrzeiten an die Straßenverhältnisse an.",
-        "es": "Sí. Cortina d’Ampezzo está a unas 2 horas del Piazzale Roma o del aeropuerto Marco Polo, con precio cerrado. En invierno nuestros vehículos están equipados para la montaña y el chófer ajusta los horarios al estado de las carreteras."
+        "de": "Ja. Nach Cortina d’Ampezzo fahren Sie vom Piazzale Roma oder vom Flughafen Marco Polo etwa 2 Stunden, zum Festpreis. Im Winter haben unsere Fahrzeuge Bergausrüstung, und der Chauffeur passt die Abfahrtszeit an die Straßenverhältnisse an.",
+        "es": "Sí. Cortina d’Ampezzo está a unas 2 horas del Piazzale Roma o del aeropuerto Marco Polo, con precio fijo. En invierno nuestros vehículos están equipados para la montaña y el chofer ajusta los horarios según el estado de las carreteras."
       }
     },
     {
       "q": {
         "de": "Sollte ich während des Karnevals oder der Filmfestspiele früher buchen?",
-        "es": "¿Conviene reservar antes durante el Carnaval o la Mostra de Venecia?"
+        "es": "¿Conviene reservar con más anticipación durante el Carnaval o el Festival de Cine de Venecia?"
       },
       "a": {
-        "de": "Ja, das empfehlen wir dringend. Während des Karnevals, der Biennale und der Filmfestspiele sind die Abholzeiten am Piazzale Roma und die Wassertaxis stark gefragt. Buchen Sie mindestens 72 Stunden im Voraus, damit Ihre Uhrzeit gesichert ist.",
-        "es": "Sí, es muy recomendable. Durante el Carnaval, la Bienal y la Mostra hay mucha demanda de horarios de recogida en el Piazzale Roma y de taxis acuáticos. Reserve con al menos 72 horas de antelación para asegurar su horario."
+        "de": "Unbedingt. Während des Karnevals, der Biennale und der Filmfestspiele sind die Abholzeiten am Piazzale Roma und die Wassertaxis sehr gefragt. Buchen Sie mindestens 72 Stunden im Voraus, damit Ihre Wunschzeit sicher ist.",
+        "es": "Sí, es muy recomendable. Durante el Carnaval, la Bienal y el Festival de Cine, los horarios de recogida en el Piazzale Roma y los taxis acuáticos tienen mucha demanda. Reserve con al menos 72 horas de anticipación para asegurar su horario."
       }
     }
   ]

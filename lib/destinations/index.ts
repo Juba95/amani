@@ -18,6 +18,7 @@ import { CITIES as DACH_NORDICS } from './regions/dach-nordics';
 import { CITIES as ITALY } from './regions/italy';
 import { CITIES as IBERIA } from './regions/iberia';
 import { CITIES as ALPS_ATTRACTIONS } from './regions/alps-attractions';
+import { CITIES as FRANCE_CITIES } from './regions/france-cities';
 
 export type { Destination, DestExperience } from './types';
 
@@ -28,7 +29,16 @@ export const ALL_DESTINATIONS: Destination[] = [
   ...ITALY,
   ...IBERIA,
   ...ALPS_ATTRACTIONS,
+  ...FRANCE_CITIES,
 ];
+
+/**
+ * Destinations publiées en français et en anglais : tout le registre sauf les
+ * entrées qui n'existent que pour porter les traductions.
+ */
+export const PUBLISHED_DESTINATIONS: Destination[] = ALL_DESTINATIONS.filter(
+  (d) => !d.translationOnly,
+);
 
 const BY_SLUG = new Map<string, Destination>(ALL_DESTINATIONS.map((d) => [d.slug, d]));
 
@@ -62,7 +72,7 @@ const COUNTRY_ISO: Record<string, string> = {
 
 export function groupByCountryIso(locale: 'fr' | 'en') {
   const out: Record<string, { name: string; cities: { slug: string; name: string }[] }> = {};
-  for (const d of ALL_DESTINATIONS) {
+  for (const d of PUBLISHED_DESTINATIONS) {
     const iso = COUNTRY_ISO[d.country.en];
     if (!iso) continue;
     if (!out[iso]) out[iso] = { name: d.country[locale], cities: [] };

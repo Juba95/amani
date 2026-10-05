@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import SEOLayoutEN from '@/components/SEOLayoutEN';
 import { DestinationDetail } from '@/components/DestinationViews';
-import { ALL_DESTINATIONS, getDestination } from '@/lib/destinations';
+import { PUBLISHED_DESTINATIONS, getDestination } from '@/lib/destinations';
 
 const BASE = 'https://www.amani-limousines.com';
 
@@ -11,8 +11,15 @@ function metaDescription(paragraphs: string[]): string {
   return text.length > 158 ? `${text.slice(0, 155).trimEnd()}…` : text;
 }
 
+/**
+ * Seules les villes listées par generateStaticParams sont servies. Sans cela,
+ * Next rend aussi les slugs hors liste à la demande — et les entrées qui
+ * n'existent que pour la traduction ressortiraient en français.
+ */
+export const dynamicParams = false;
+
 export function generateStaticParams() {
-  return ALL_DESTINATIONS.map((d) => ({ slug: d.slug }));
+  return PUBLISHED_DESTINATIONS.map((d) => ({ slug: d.slug }));
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {

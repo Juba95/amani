@@ -1,0 +1,205 @@
+{
+  "slug": "paris",
+  "source": "chauffeur-prive-paris",
+  "airport": "Roissy-Charles-de-Gaulle (CDG) · Orly (ORY) · Le Bourget (LBG)",
+  "nearby": [
+    "versailles-ville",
+    "fontainebleau-ville",
+    "giverny-village",
+    "chartres"
+  ],
+  "price": [
+    "450",
+    "790",
+    "490",
+    "850",
+    "390"
+  ],
+  "frTitles": [
+    "Shopping rue du Faubourg Saint-Honoré",
+    "Fontainebleau & Vaux-le-Vicomte",
+    "Chantilly, château et Grandes Écuries",
+    "Reims, cathédrale des sacres",
+    "Soirée gastronomique & Seine"
+  ],
+  "frTeasers": [
+    "Hermès au 24 Faubourg, avenue Montaigne, place Vendôme : votre chauffeur vous dépose devant chaque maison, garde vos achats à bord et vous attend entre chaque adresse.",
+    "À 60 km au sud de Paris, deux chefs-d’œuvre en une journée : le château de François Ier et celui de Nicolas Fouquet, qui inspira Versailles. Déjeuner à Barbizon.",
+    "À 50 minutes au nord de Paris, le domaine des princes de Condé : le musée Condé et sa collection de peintures, les Grandes Écuries, la crème Chantilly à sa source.",
+    "À 145 km à l’est de Paris, la cathédrale gothique où furent sacrés trente-trois rois de France, les vitraux de Chagall et la ville art déco reconstruite après 1918.",
+    "Dépose devant votre table étoilée — Le Cinq, Arpège ou l’adresse de votre choix — puis embarquement privé au port Debilly pour une croisière sur la Seine. Le véhicule vous attend au débarcadère."
+  ],
+  "frDurations": [
+    "Demi-journée",
+    "Journée complète",
+    "Demi-journée",
+    "Journée complète",
+    "Soirée"
+  ],
+  "frIntro": "Paris est une ville où le temps de trajet peut basculer d'une demi-heure à deux heures selon l'heure et l'itinéraire. Un chauffeur privé à Paris connaît ces variations, les contourne et vous livre à l'heure. Amani Limousines opère dans toute l'Île-de-France depuis 2012 : aéroports, palaces, sièges sociaux, événements. Tarifs fixes, flotte Mercedes, disponibilité sept jours sur sept.",
+  "name": {
+    "en": "Paris",
+    "de": "Paris",
+    "es": "París"
+  },
+  "country": {
+    "en": "France",
+    "de": "Frankreich",
+    "es": "Francia"
+  },
+  "airportTransfer": {
+    "fr": "Roissy-Charles-de-Gaulle (CDG) est à 25 km du centre de Paris, soit 45 à 70 minutes de trajet selon l'heure. Orly (ORY) est à 18 km au sud, à 30 à 50 minutes. Le Bourget (LBG), terminal d'aviation d'affaires, est à 15 km, soit environ 25 minutes.",
+    "en": "Charles de Gaulle Airport (CDG) is 25 km from central Paris, a drive of 45 to 70 minutes depending on the time of day. Orly (ORY) is 18 km south of the city, 30 to 50 minutes away. Le Bourget (LBG), the business aviation airport, is 15 km out and takes about 25 minutes.",
+    "de": "Der Flughafen Charles de Gaulle (CDG) liegt 25 km vom Pariser Zentrum entfernt. Die Fahrt dauert je nach Uhrzeit 45 bis 70 Minuten. Orly (ORY) liegt 18 km südlich, die Fahrzeit beträgt 30 bis 50 Minuten. Le Bourget (LBG) ist der Flughafen für Geschäftsflüge, 15 km entfernt und in etwa 25 Minuten erreichbar.",
+    "es": "El aeropuerto Charles de Gaulle (CDG) está a 25 km del centro de París, a 45 o 70 minutos según la hora. Orly (ORY) está a 18 km al sur, a 30 o 50 minutos. Le Bourget (LBG), la terminal de aviación de negocios, está a 15 km, a unos 25 minutos."
+  },
+  "intro": {
+    "fr": [
+      "À Paris, un même trajet peut prendre une demi-heure ou deux heures selon l'heure et l'itinéraire. Ces variations, un chauffeur privé à Paris les connaît, les contourne et vous dépose à l'heure. Amani Limousines opère dans toute l'Île-de-France **depuis 2012** : aéroports, palaces, sièges sociaux, événements. Les tarifs sont fixes. La flotte est composée de Mercedes, et le service est disponible sept jours sur sept. Vous arrivez de l'étranger sans connaître la ville ? Votre chauffeur s'occupe du trajet, des bagages et de l'attente. Vous gardez la tête à votre programme.",
+      "Au-delà des transferts, Amani Limousines propose cinq sorties avec chauffeur. Dans Paris, une demi-journée de shopping relie le Faubourg Saint-Honoré, l'avenue Montaigne et la place Vendôme, et vos achats restent à bord. Le soir, le chauffeur vous dépose devant une table étoilée, puis au port Debilly pour une croisière privée sur la Seine. Hors de la ville, Chantilly est à 50 minutes au nord, Fontainebleau et Vaux-le-Vicomte à 60 km au sud. **Reims est à 145 km à l'est**, avec la cathédrale où furent sacrés trente-trois rois de France. Chaque sortie dure une soirée, une demi-journée ou une journée."
+    ],
+    "en": [
+      "In Paris, the same trip can take half an hour or two hours, depending on the time of day and the route. That variation is familiar to a private chauffeur in Paris, who works around it and gets you there on time. Amani Limousines has operated across the Île-de-France region **since 2012**, serving airports, palace hotels, company headquarters and events. Rates are fixed. The fleet is Mercedes, and the service runs seven days a week. If you are arriving from abroad and do not know the city, your chauffeur handles the route, the luggage and the waiting. You can focus on your plans.",
+      "Beyond transfers, Amani Limousines offers five chauffeured outings. In the city, a half-day shopping tour links Rue du Faubourg Saint-Honoré, Avenue Montaigne and Place Vendôme, and your purchases stay on board. In the evening, the chauffeur drops you at a Michelin-starred restaurant, then at Port Debilly for a private cruise on the Seine. Outside Paris, Chantilly is 50 minutes north, while Fontainebleau and Vaux-le-Vicomte are 60 km south. **Reims is 145 km east**, with the cathedral where thirty-three French kings were crowned. Each outing lasts an evening, a half day or a full day."
+    ],
+    "de": [
+      "In Paris kann dieselbe Strecke eine halbe Stunde oder zwei Stunden dauern, je nach Uhrzeit und Route. Diese Schwankungen kennt ein Privatchauffeur in Paris. Er umfährt sie und bringt Sie pünktlich ans Ziel. Amani Limousines ist **seit 2012** in der gesamten Île-de-France im Einsatz: an Flughäfen, Palasthotels, Firmensitzen und bei Veranstaltungen. Die Preise sind fest. Die Flotte besteht aus Mercedes-Fahrzeugen, und der Service ist sieben Tage die Woche verfügbar. Wer aus dem Ausland anreist und die Stadt nicht kennt, überlässt dem Chauffeur Route, Gepäck und Wartezeit. So bleibt der Kopf frei für das eigene Programm.",
+      "Neben Transfers bietet Amani Limousines fünf Ausflüge mit Chauffeur an. In der Stadt verbindet ein halbtägiger Einkaufsbummel die Rue du Faubourg Saint-Honoré, die Avenue Montaigne und die Place Vendôme. Ihre Einkäufe bleiben im Wagen. Abends setzt der Chauffeur Sie vor einem Sternerestaurant ab und danach am Port Debilly, wo eine private Bootsfahrt auf der Seine beginnt. Außerhalb von Paris liegt Chantilly 50 Minuten nördlich, Fontainebleau und Vaux-le-Vicomte liegen 60 km südlich. **Reims liegt 145 km östlich**, mit der Kathedrale, in der dreiunddreißig französische Könige gekrönt wurden. Die Ausflüge dauern einen Abend, einen halben oder einen ganzen Tag."
+    ],
+    "es": [
+      "En París, un mismo trayecto puede durar media hora o dos horas según la hora y la ruta. Esas variaciones las conoce un chófer privado en París, que las evita y lo lleva a destino a tiempo. Amani Limousines opera en toda la región de Isla de Francia **desde 2012**: aeropuertos, hoteles palacio, sedes corporativas y eventos. Las tarifas son fijas. La flota es de vehículos Mercedes y el servicio está disponible los siete días de la semana. Si usted llega del extranjero y no conoce la ciudad, el chófer se encarga de la ruta, del equipaje y de la espera. Usted se concentra en su agenda.",
+      "Además de los traslados, Amani Limousines ofrece cinco salidas con chófer. En la ciudad, una media jornada de compras recorre la Rue du Faubourg Saint-Honoré, la avenida Montaigne y la plaza Vendôme, y sus compras quedan a bordo. De noche, el chófer lo deja frente a un restaurante con estrella Michelin y luego en el puerto Debilly para un crucero privado por el Sena. Fuera de París, Chantilly está a 50 minutos al norte; Fontainebleau y Vaux-le-Vicomte, a 60 km al sur. **Reims está a 145 km al este**, con la catedral donde fueron coronados treinta y tres reyes de Francia. Cada salida dura una noche, media jornada o una jornada completa."
+    ]
+  },
+  "experiences": [
+    {
+      "title": {
+        "en": "Shopping on Rue du Faubourg Saint-Honoré",
+        "de": "Einkaufen in der Rue du Faubourg Saint-Honoré",
+        "es": "Compras en la Rue du Faubourg Saint-Honoré"
+      },
+      "teaser": {
+        "en": "Hermès at 24 Faubourg, Avenue Montaigne, Place Vendôme: your chauffeur drops you at the door of each house, keeps your purchases in the car and waits for you between addresses.",
+        "de": "Hermès in der Rue du Faubourg Saint-Honoré 24, die Avenue Montaigne, die Place Vendôme: Ihr Chauffeur hält direkt vor jedem Geschäft, bewahrt Ihre Einkäufe im Wagen auf und wartet zwischen den Adressen auf Sie.",
+        "es": "Hermès en el número 24 del Faubourg, la avenida Montaigne, la plaza Vendôme: su chófer lo deja en la puerta de cada casa, guarda sus compras en el vehículo y lo espera entre una dirección y otra."
+      },
+      "duration": {
+        "en": "Half day",
+        "de": "Halber Tag",
+        "es": "Media jornada"
+      }
+    },
+    {
+      "title": {
+        "en": "Fontainebleau & Vaux-le-Vicomte",
+        "de": "Fontainebleau & Vaux-le-Vicomte",
+        "es": "Fontainebleau y Vaux-le-Vicomte"
+      },
+      "teaser": {
+        "en": "Two masterpieces in one day, 60 km south of Paris: the château of Francis I and the château of Nicolas Fouquet, which inspired Versailles. Lunch in Barbizon.",
+        "de": "Zwei Meisterwerke an einem Tag, 60 km südlich von Paris: das Schloss von Franz I. und das Schloss von Nicolas Fouquet, das Vorbild für Versailles war. Mittagessen in Barbizon.",
+        "es": "Dos obras maestras en un día, a 60 km al sur de París: el castillo de Francisco I y el de Nicolas Fouquet, que inspiró Versalles. Almuerzo en Barbizon."
+      },
+      "duration": {
+        "en": "Full day",
+        "de": "Ganzer Tag",
+        "es": "Jornada completa"
+      }
+    },
+    {
+      "title": {
+        "en": "Chantilly, Château and Great Stables",
+        "de": "Chantilly, Schloss und Große Stallungen",
+        "es": "Chantilly, castillo y Grandes Caballerizas"
+      },
+      "teaser": {
+        "en": "The estate of the Princes of Condé, 50 minutes north of Paris: the Condé Museum and its painting collection, the Great Stables, and Chantilly cream where it was born.",
+        "de": "Das Anwesen der Fürsten von Condé liegt 50 Minuten nördlich von Paris. Dort warten das Musée Condé mit seiner Gemäldesammlung, die Großen Stallungen und die Crème Chantilly an ihrem Ursprungsort.",
+        "es": "La propiedad de los príncipes de Condé está a 50 minutos al norte de París: el museo Condé y su colección de pintura, las Grandes Caballerizas y la crema chantillí en su lugar de origen."
+      },
+      "duration": {
+        "en": "Half day",
+        "de": "Halber Tag",
+        "es": "Media jornada"
+      }
+    },
+    {
+      "title": {
+        "en": "Reims, Cathedral of the Coronations",
+        "de": "Reims, Krönungskathedrale",
+        "es": "Reims, la catedral de las coronaciones"
+      },
+      "teaser": {
+        "en": "Reims is 145 km east of Paris. It has the Gothic cathedral where thirty-three French kings were crowned, stained glass by Chagall, and an Art Deco town rebuilt after 1918.",
+        "de": "Reims liegt 145 km östlich von Paris. Hier stehen die gotische Kathedrale, in der dreiunddreißig französische Könige gekrönt wurden, und die Kirchenfenster von Chagall. Die Stadt wurde nach 1918 im Art-déco-Stil wiederaufgebaut.",
+        "es": "Reims está a 145 km al este de París. Tiene la catedral gótica donde fueron coronados treinta y tres reyes de Francia, los vitrales de Chagall y una ciudad art déco reconstruida después de 1918."
+      },
+      "duration": {
+        "en": "Full day",
+        "de": "Ganzer Tag",
+        "es": "Jornada completa"
+      }
+    },
+    {
+      "title": {
+        "en": "Fine Dining & the Seine",
+        "de": "Gourmetabend & Seine",
+        "es": "Cena gastronómica y el Sena"
+      },
+      "teaser": {
+        "en": "Your chauffeur drops you at your Michelin-starred table, whether Le Cinq, Arpège or the restaurant of your choice, then takes you to Port Debilly to board a private cruise on the Seine. The car waits for you at the landing.",
+        "de": "Ihr Chauffeur bringt Sie zu Ihrem Sternerestaurant, etwa Le Cinq, Arpège oder ein Haus Ihrer Wahl, und anschließend zum Port Debilly, wo Sie zu einer privaten Fahrt auf der Seine an Bord gehen. Der Wagen wartet am Anleger auf Sie.",
+        "es": "Su chófer lo deja frente a su restaurante con estrella Michelin, ya sea Le Cinq, Arpège o el de su elección, y luego lo lleva al puerto Debilly para embarcar en un crucero privado por el Sena. El vehículo lo espera en el muelle."
+      },
+      "duration": {
+        "en": "Evening",
+        "de": "Abend",
+        "es": "Noche"
+      }
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "fr": "Combien de temps dure le trajet entre les aéroports et le centre de Paris ?",
+        "en": "How long does the drive from the airports to central Paris take?",
+        "de": "Wie lange dauert die Fahrt von den Flughäfen ins Pariser Zentrum?",
+        "es": "¿Cuánto dura el trayecto entre los aeropuertos y el centro de París?"
+      },
+      "a": {
+        "fr": "Roissy-Charles-de-Gaulle est à 25 km du centre, soit 45 à 70 minutes selon l'heure. Orly est à 18 km au sud, à 30 à 50 minutes. Le Bourget, réservé à l'aviation d'affaires, est à 15 km, soit environ 25 minutes.",
+        "en": "Charles de Gaulle is 25 km from the city center, 45 to 70 minutes depending on the time of day. Orly is 18 km south, 30 to 50 minutes away. Le Bourget, the business aviation airport, is 15 km out, about 25 minutes.",
+        "de": "Charles de Gaulle liegt 25 km vom Zentrum entfernt, die Fahrt dauert je nach Uhrzeit 45 bis 70 Minuten. Orly liegt 18 km südlich und ist 30 bis 50 Minuten entfernt. Le Bourget, der Flughafen für Geschäftsflüge, liegt 15 km entfernt, die Fahrt dauert etwa 25 Minuten.",
+        "es": "Charles de Gaulle está a 25 km del centro, a 45 o 70 minutos según la hora. Orly está a 18 km al sur, a 30 o 50 minutos. Le Bourget, dedicado a la aviación de negocios, está a 15 km, a unos 25 minutos."
+      }
+    },
+    {
+      "q": {
+        "fr": "Le chauffeur peut-il m'attendre pendant mes achats ou mon dîner ?",
+        "en": "Can the chauffeur wait for me while I shop or have dinner?",
+        "de": "Kann der Chauffeur während meines Einkaufs oder Abendessens warten?",
+        "es": "¿Puede el chófer esperarme mientras hago compras o ceno?"
+      },
+      "a": {
+        "fr": "Oui. Pendant la demi-journée de shopping, il vous dépose devant chaque maison, garde vos achats à bord et vous attend entre chaque adresse. Le soir, le véhicule vous attend au débarcadère du port Debilly après la croisière.",
+        "en": "Yes. On the half-day shopping tour, he drops you at each house, keeps your purchases on board and waits between addresses. In the evening, the car waits for you at the Port Debilly landing after the cruise.",
+        "de": "Ja. Beim halbtägigen Einkaufsbummel hält er vor jedem Geschäft, bewahrt Ihre Einkäufe im Wagen auf und wartet zwischen den Adressen. Am Abend wartet der Wagen nach der Bootsfahrt am Anleger des Port Debilly.",
+        "es": "Sí. Durante la media jornada de compras, lo deja frente a cada casa, guarda sus compras a bordo y lo espera entre una dirección y otra. De noche, el vehículo lo espera en el muelle del puerto Debilly después del crucero."
+      }
+    },
+    {
+      "q": {
+        "fr": "Les tarifs sont-ils fixes et le service est-il disponible tous les jours ?",
+        "en": "Are rates fixed, and is the service available every day?",
+        "de": "Sind die Preise fest, und ist der Service täglich verfügbar?",
+        "es": "¿Las tarifas son fijas y el servicio está disponible todos los días?"
+      },
+      "a": {
+        "fr": "Oui. Amani Limousines applique des tarifs fixes et opère sept jours sur sept dans toute l'Île-de-France, avec une flotte Mercedes. Les sorties hors de Paris vont jusqu'à Reims, à 145 km à l'est.",
+        "en": "Yes. Amani Limousines charges fixed rates and operates seven days a week across the Île-de-France region with a Mercedes fleet. Outings beyond Paris reach as far as Reims, 145 km east.",
+        "de": "Ja. Amani Limousines arbeitet mit festen Preisen und ist sieben Tage die Woche in der gesamten Île-de-France im Einsatz, mit einer Mercedes-Flotte. Ausflüge außerhalb von Paris führen bis nach Reims, 145 km östlich.",
+        "es": "Sí. Amani Limousines trabaja con tarifas fijas y opera los siete días de la semana en toda la región de Isla de Francia, con una flota Mercedes. Las salidas fuera de París llegan hasta Reims, a 145 km al este."
+      }
+    }
+  ]
+}

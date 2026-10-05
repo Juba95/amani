@@ -9,17 +9,17 @@
     "es": "Países Bajos"
   },
   "airportTransfer": {
-    "de": "Der Flughafen Amsterdam-Schiphol (AMS) liegt 18 km südwestlich des Zentrums. Bis zum Museumplein oder zum Grachtengürtel sind Sie 25 bis 35 Minuten unterwegs. Ihr Chauffeur erwartet Sie mit Namensschild in der Ankunftshalle und verfolgt Ihren Flug in Echtzeit.",
-    "es": "El aeropuerto de Ámsterdam-Schiphol (AMS) está a 18 km al suroeste del centro. Hasta el Museumplein o el cinturón de canales hay que calcular entre 25 y 35 minutos. Su chófer le espera en la sala de llegadas con un cartel con su nombre y sigue su vuelo en tiempo real."
+    "de": "Der Flughafen Amsterdam-Schiphol (AMS) liegt 18 km südwestlich des Zentrums. Bis zum Museumplein oder zum Grachtengürtel brauchen Sie 25 bis 35 Minuten. Ihr Chauffeur empfängt Sie in der Ankunftshalle mit einem Namensschild und verfolgt Ihren Flug in Echtzeit.",
+    "es": "El aeropuerto de Ámsterdam-Schiphol (AMS) está a 18 km al suroeste del centro. Para llegar al Museumplein o al cinturón de canales, calcule entre 25 y 35 minutos. Su chófer lo recibe en la sala de llegadas con un cartel con su nombre y sigue su vuelo en tiempo real."
   },
   "intro": {
     "de": [
-      "Amsterdam, die Hauptstadt der Niederlande, gleicht einem Museum unter freiem Himmel. Ihr Grachtengürtel aus dem 17. Jahrhundert gehört zum UNESCO-Welterbe und zieht sich zwischen Kaufmannshäusern und Backsteinbrücken durch die Altstadt. Ihr **Privatchauffeur in Amsterdam** bringt Sie im Mercedes oder im geräumigen Van vom Rijksmuseum ins Jordaan-Viertel, vom Geschäftsviertel Zuidas bis an die Ufer des IJ. Ob Transfer nach Schiphol, Buchung auf Stundenbasis oder Fahrt nach Rotterdam und Den Haag: Jede Fahrt wird zum Festpreis bestätigt. Und Ihr Chauffeur weiß, wie man in einer weitgehend autofreien Innenstadt ans Ziel kommt.",
-      "Zugleich ist Amsterdam der praktischste Ausgangspunkt für Ausflüge in die Niederlande. Die **Windmühlen der Zaanse Schans** erreichen Sie in fünfundzwanzig Minuten. Haarlem und die Blumenfelder der Bollenstreek liegen weniger als eine halbe Stunde entfernt, Giethoorn mit seinen autofreien Kanälen anderthalb Stunden. Im Frühling verlangt der Keukenhof eine genaue Planung: früh losfahren, möglichst nah an den Eingängen aussteigen. Darum kümmert sich Ihr Chauffeur, Sie müssen an nichts denken."
+      "Amsterdam ist die Hauptstadt der Niederlande und ein Museum unter freiem Himmel. Der Grachtengürtel aus dem 17. Jahrhundert steht auf der UNESCO-Welterbeliste und zieht sich zwischen Kaufmannshäusern und Backsteinbrücken durch die Stadt. Ihr **Privatchauffeur in Amsterdam** fährt Sie im Mercedes oder im großen Van vom Rijksmuseum ins Jordaan-Viertel, vom Geschäftsviertel Zuidas an die Ufer des IJ. Ob Transfer nach Schiphol, Buchung auf Stundenbasis oder Fahrt nach Rotterdam und Den Haag: Jede Fahrt wird zum Festpreis bestätigt. Ihr Chauffeur kennt die Zufahrten in einer Stadt, die zu großen Teilen Fußgängerzone ist.",
+      "Für Ausflüge in die Niederlande ist Amsterdam der praktischste Ausgangspunkt. Die **Windmühlen von Zaanse Schans** erreichen Sie in fünfundzwanzig Minuten. Nach Haarlem und zu den Blumenfeldern der Bollenstreek ist es weniger als eine halbe Stunde, nach Giethoorn mit seinen autofreien Kanälen anderthalb Stunden. Im Frühling verlangt der Keukenhof eine genaue Planung, also frühe Abfahrt und Halt möglichst nah am Eingang. Darum kümmert sich Ihr Chauffeur, Sie müssen nichts davon im Kopf behalten."
     ],
     "es": [
-      "Capital de los Países Bajos, Ámsterdam es un museo al aire libre. Su cinturón de canales del siglo XVII, declarado Patrimonio de la Humanidad por la UNESCO, discurre entre casas de comerciantes y puentes de ladrillo. Su **chófer privado en Ámsterdam** le lleva del Rijksmuseum al barrio del Jordaan, del distrito financiero de Zuidas a los muelles del IJ, en berlina Mercedes o en furgoneta de gran capacidad. Traslados a Schiphol, servicio por horas, viajes a Róterdam o La Haya: cada trayecto se confirma a precio cerrado. Y su chófer conoce bien los accesos de una ciudad en gran parte peatonal.",
-      "Ámsterdam es además el punto de partida más cómodo para recorrer los Países Bajos. Los **molinos de Zaanse Schans** quedan a veinticinco minutos. Haarlem y los campos de flores de la Bollenstreek, a menos de media hora; Giethoorn y sus canales sin coches, a hora y media. En primavera, el parque de Keukenhof exige una logística precisa, con salida temprana y bajada lo más cerca posible de las entradas. Su chófer se ocupa de todo para que usted no tenga que pensar en ello."
+      "Ámsterdam es la capital de los Países Bajos y una ciudad museo al aire libre. Su cinturón de canales del siglo XVII, declarado Patrimonio de la Humanidad por la UNESCO, recorre la ciudad entre casas de comerciantes y puentes de ladrillo. Su **chófer privado en Ámsterdam** lo lleva del Rijksmuseum al barrio del Jordaan, del distrito de negocios de Zuidas a los muelles del IJ, en sedán Mercedes o en van de gran capacidad. Traslados a Schiphol, servicio por horas, viajes a Róterdam o La Haya: cada trayecto se confirma a precio fijo. Su chófer conoce los accesos de una ciudad en gran parte peatonal.",
+      "Ámsterdam es además el punto de partida más práctico para recorrer los Países Bajos. Los **molinos de Zaanse Schans** están a veinticinco minutos. Haarlem y los campos de flores de la Bollenstreek, a menos de media hora; Giethoorn y sus canales sin autos, a una hora y media. En primavera, el parque de Keukenhof exige una logística precisa, con salida temprana y descenso lo más cerca posible de las entradas. Su chófer se encarga de todo y usted no tiene que pensar en ello."
     ]
   },
   "experiences": [
@@ -29,12 +29,12 @@
         "es": "Keukenhof y los campos de tulipanes"
       },
       "teaser": {
-        "de": "Von Mitte März bis Mitte Mai öffnet 35 km von Amsterdam der größte Blumenpark der Welt: sieben Millionen Zwiebelblumen auf 32 Hektar. Frühe Abfahrt, um dem Andrang zuvorzukommen, mit einem Abstecher durch die bunten Felder der Bollenstreek zwischen Lisse und Hillegom.",
-        "es": "De mediados de marzo a mediados de mayo abre, a 35 km de Ámsterdam, el mayor parque floral del mundo: siete millones de bulbos en 32 hectáreas. Salida temprana para evitar las aglomeraciones y desvío por los campos de colores de la Bollenstreek, entre Lisse y Hillegom."
+        "de": "Von Mitte März bis Mitte Mai öffnet 35 km von Amsterdam der größte Blumenpark der Welt: sieben Millionen Zwiebeln auf 32 Hektar. Frühe Abfahrt, damit Sie dem Andrang zuvorkommen, und ein Abstecher zu den bunten Feldern der Bollenstreek zwischen Lisse und Hillegom.",
+        "es": "De mediados de marzo a mediados de mayo abre, a 35 km de Ámsterdam, el parque floral más grande del mundo: siete millones de bulbos en 32 hectáreas. Salida temprana para evitar las multitudes y desvío por los campos de colores de la Bollenstreek, entre Lisse y Hillegom."
       },
       "duration": {
-        "de": "Halbtags",
-        "es": "Media jornada"
+        "de": "Halber Tag",
+        "es": "Medio día"
       }
     },
     {
@@ -43,12 +43,12 @@
         "es": "Zaanse Schans, Volendam y Marken"
       },
       "teaser": {
-        "de": "Erst die noch arbeitenden Windmühlen der Zaanse Schans, dann der Fischerhafen von Volendam und die ehemalige Insel Marken, alles weniger als 30 km nördlich von Amsterdam. Käsereien, Holzschuhwerkstätten und Holzhäuser: Holland wie im 17. Jahrhundert, an einem einzigen Tag.",
-        "es": "Primero los molinos de viento en funcionamiento de Zaanse Schans, después el puerto pesquero de Volendam y la antigua isla de Marken, todo a menos de 30 km al norte de Ámsterdam. Queserías, talleres de zuecos y casas de madera: la Holanda del siglo XVII en un solo día."
+        "de": "Zuerst die Windmühlen von Zaanse Schans, die noch in Betrieb sind, dann der Fischerhafen von Volendam und die ehemalige Insel Marken. Alles liegt weniger als 30 km nördlich von Amsterdam. Käsereien, Holzschuhwerkstätten und Holzhäuser: das Holland des 17. Jahrhunderts an einem Tag.",
+        "es": "Primero los molinos de viento de Zaanse Schans, que siguen funcionando, luego el puerto pesquero de Volendam y la antigua isla de Marken, todo a menos de 30 km al norte de Ámsterdam. Queserías, talleres de zuecos y casas de madera: la Holanda del siglo XVII en un solo día."
       },
       "duration": {
-        "de": "Ganztags",
-        "es": "Jornada completa"
+        "de": "Ganzer Tag",
+        "es": "Día completo"
       }
     },
     {
@@ -57,12 +57,12 @@
         "es": "Giethoorn, la Venecia del Norte"
       },
       "teaser": {
-        "de": "120 km nordöstlich liegt mitten im Nationalpark Weerribben-Wieden ein autofreies Dorf voller Kanäle und Holzbrücken. Im eigenen Boot geht es an reetgedeckten Bauernhäusern vorbei, mittags essen Sie am Wasser, am späten Nachmittag fahren Sie zurück.",
-        "es": "A 120 km al noreste, en pleno parque nacional de Weerribben-Wieden, un pueblo sin coches surcado por canales y puentes de madera. Paseo en barca privada entre granjas con tejado de paja, almuerzo junto al agua y regreso a última hora de la tarde."
+        "de": "120 km nordöstlich liegt im Nationalpark Weerribben-Wieden ein autofreies Dorf voller Kanäle und Holzbrücken. Mit dem privaten Boot geht es vorbei an reetgedeckten Bauernhäusern, Mittagessen gibt es am Wasser. Rückkehr am späten Nachmittag.",
+        "es": "A 120 km al noreste, dentro del parque nacional de Weerribben-Wieden, hay un pueblo sin autos atravesado por canales y puentes de madera. Recorrido en bote privado entre granjas con techo de paja y almuerzo a la orilla del agua. Regreso al final de la tarde."
       },
       "duration": {
-        "de": "Ganztags",
-        "es": "Jornada completa"
+        "de": "Ganzer Tag",
+        "es": "Día completo"
       }
     },
     {
@@ -71,25 +71,25 @@
         "es": "Rijksmuseum y Van Gogh con estilo"
       },
       "teaser": {
-        "de": "Ihr Chauffeur setzt Sie am Museumplein ab: Rembrandts Nachtwache, Van Goghs Sonnenblumen und danach die Säle der Meister des Goldenen Zeitalters. Zwischen den Stationen wartet er auf Sie. Tickets ohne Anstehen und ein privater Guide auf Anfrage.",
-        "es": "Le dejamos en el Museumplein para ver La ronda de noche de Rembrandt y Los girasoles de Van Gogh, y después las salas de los maestros del Siglo de Oro. Su chófer le espera entre una visita y otra. Entradas sin colas y guía privado bajo petición."
+        "de": "Halt am Museumplein für Rembrandts Nachtwache und Van Goghs Sonnenblumen, danach die Säle der Meister des Goldenen Zeitalters. Ihr Chauffeur wartet zwischen den Stationen. Tickets ohne Anstehen und eine private Führung auf Anfrage.",
+        "es": "Descenso en el Museumplein para ver La ronda de noche de Rembrandt y Los girasoles de Van Gogh, y después las salas de los maestros del Siglo de Oro. Su chófer espera entre cada parada. Entradas sin fila y guía privado a solicitud."
       },
       "duration": {
-        "de": "Halbtags",
-        "es": "Media jornada"
+        "de": "Halber Tag",
+        "es": "Medio día"
       }
     },
     {
       "title": {
         "de": "Abend an den Grachten",
-        "es": "Velada en los canales"
+        "es": "Noche en los canales"
       },
       "teaser": {
-        "de": "Abendessen im Jordaan oder in einem der Sternerestaurants der Stadt, etwa De Kas oder Ciel Bleu, danach eine private Bootsfahrt über die beleuchteten Grachten. Der Wagen wartet an jedem Anleger und bringt Sie bequem zurück ins Hotel.",
-        "es": "Cena en el Jordaan o en uno de los restaurantes con estrella de la ciudad, como De Kas o Ciel Bleu, y después un crucero privado por los canales iluminados. El vehículo le espera en cada muelle y le devuelve a su hotel sin complicaciones."
+        "de": "Abendessen im Jordaan oder in einem der Sternerestaurants der Stadt wie De Kas oder Ciel Bleu, danach eine private Bootsfahrt auf den beleuchteten Grachten. Das Fahrzeug wartet an jedem Anleger und bringt Sie bequem zurück ins Hotel.",
+        "es": "Cena en el Jordaan o en uno de los restaurantes con estrella de la ciudad, como De Kas o Ciel Bleu, y después un crucero privado por los canales iluminados. El vehículo lo espera en cada muelle y lo devuelve a su hotel sin complicaciones."
       },
       "duration": {
-        "de": "Abends",
+        "de": "Abend",
         "es": "Noche"
       }
     }
@@ -97,32 +97,32 @@
   "faq": [
     {
       "q": {
-        "de": "Was kostet ein Transfer vom Flughafen Schiphol ins Amsterdamer Zentrum?",
+        "de": "Was kostet ein Transfer vom Flughafen Schiphol ins Zentrum von Amsterdam?",
         "es": "¿Cuánto cuesta un traslado entre el aeropuerto de Schiphol y el centro de Ámsterdam?"
       },
       "a": {
-        "de": "Der private Transfer zwischen Amsterdam-Schiphol (AMS) und dem Zentrum wird zu einem Festpreis abgerechnet, den Sie bei der Buchung erfahren. Inbegriffen sind der Empfang mit Namensschild in der Ankunftshalle, die Flugverfolgung in Echtzeit und bei Verspätung 60 Minuten kostenlose Wartezeit.",
-        "es": "El traslado privado entre Ámsterdam-Schiphol (AMS) y el centro de Ámsterdam se cobra a precio cerrado, que se le comunica al reservar. Incluye la recepción en la sala de llegadas con cartel nominativo, el seguimiento del vuelo en tiempo real y 60 minutos de espera gratuitos en caso de retraso."
+        "de": "Der private Transfer zwischen Amsterdam-Schiphol (AMS) und dem Zentrum von Amsterdam kostet einen Festpreis, den wir Ihnen bei der Buchung nennen. Inbegriffen sind der Empfang in der Ankunftshalle mit Namensschild, die Flugverfolgung in Echtzeit und bei Verspätung 60 Minuten kostenlose Wartezeit.",
+        "es": "El traslado privado entre Ámsterdam-Schiphol (AMS) y el centro de Ámsterdam tiene un precio fijo que se le comunica al reservar. Incluye la recepción en la sala de llegadas con cartel nominativo, el seguimiento del vuelo en tiempo real y 60 minutos de espera sin costo en caso de retraso."
       }
     },
     {
       "q": {
-        "de": "Kann man mit dem Auto ins Amsterdamer Zentrum fahren?",
-        "es": "¿Se puede llegar en coche al centro de Ámsterdam?"
+        "de": "Kann man mit dem Auto ins Zentrum von Amsterdam fahren?",
+        "es": "¿Se puede llegar en auto al centro de Ámsterdam?"
       },
       "a": {
-        "de": "Die Altstadt ist weitgehend Fußgängerzone, und der Verkehr ist streng geregelt. Unsere Chauffeure kennen jedoch die erlaubten Haltepunkte, die Hotels, Museen und Anlegestellen am nächsten liegen. Sie steigen wenige Meter vor Ihrem Ziel aus, nie am anderen Ende des Viertels.",
-        "es": "El casco histórico es en gran parte peatonal y la circulación está muy regulada. Aun así, nuestros chóferes conocen los puntos de bajada autorizados más cercanos a hoteles, museos y muelles. Le dejamos a pocos metros de su destino, nunca en la otra punta del barrio."
+        "de": "Die Altstadt ist zu großen Teilen Fußgängerzone, und der Verkehr ist streng geregelt. Unsere Chauffeure kennen aber die zugelassenen Haltepunkte, die Hotels, Museen und Anlegestellen am nächsten liegen. Sie steigen wenige Meter vor Ihrem Ziel aus, nie am anderen Ende des Viertels.",
+        "es": "El centro histórico es en gran parte peatonal y la circulación está muy regulada, pero nuestros chóferes conocen los puntos de descenso autorizados más cercanos a hoteles, museos y muelles. Usted baja a pocos metros de su destino, nunca en el otro extremo del barrio."
       }
     },
     {
       "q": {
-        "de": "Können Sie einen ganztägigen Ausflug außerhalb Amsterdams organisieren?",
-        "es": "¿Pueden organizar una excursión de un día fuera de Ámsterdam?"
+        "de": "Können Sie einen ganztägigen Ausflug außerhalb von Amsterdam organisieren?",
+        "es": "¿Pueden organizar un día completo fuera de Ámsterdam?"
       },
       "a": {
-        "de": "Ja. Keukenhof, die Zaanse Schans, Giethoorn, Den Haag oder Rotterdam lassen sich als Tagesausflug mit Hin- und Rückfahrt ab Amsterdam zum Festpreis besuchen. Route und Zeiten legen wir vor der Abfahrt gemeinsam mit Ihnen fest. Unterwegs können Sie sie jederzeit ändern.",
-        "es": "Sí. Keukenhof, Zaanse Schans, Giethoorn, La Haya o Róterdam se pueden visitar en una excursión de ida y vuelta desde Ámsterdam, a precio cerrado. El itinerario y los horarios se acuerdan con usted antes de salir, y pueden modificarse sobre la marcha."
+        "de": "Ja. Keukenhof, Zaanse Schans, Giethoorn, Den Haag oder Rotterdam besuchen Sie als Tagesausflug mit Hin- und Rückfahrt ab Amsterdam, zum Festpreis. Route und Zeiten legen wir vor der Abfahrt mit Ihnen fest. Unterwegs können Sie sie noch ändern.",
+        "es": "Sí. Keukenhof, Zaanse Schans, Giethoorn, La Haya o Róterdam se visitan en un día, ida y vuelta desde Ámsterdam, a precio fijo. El itinerario y los horarios se acuerdan con usted antes de salir, y puede cambiarlos durante el recorrido."
       }
     }
   ]

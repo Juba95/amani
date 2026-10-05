@@ -11,6 +11,7 @@ import {
 
 import de from '@/locales/de.json';
 import es from '@/locales/es.json';
+import { withRegionalVariants } from '@/lib/hreflang';
 
 const BASE = 'https://www.amani-limousines.com';
 const UI: Record<TranslatedLocale, any> = { de, es };
@@ -32,6 +33,13 @@ function isTranslated(lang: string): lang is TranslatedLocale {
   return (TRANSLATED_LOCALES as readonly string[]).includes(lang);
 }
 
+/**
+ * Seules les villes listées par generateStaticParams sont servies. Sans cela,
+ * Next rend aussi les slugs hors liste à la demande — et les entrées qui
+ * n'existent que pour la traduction ressortiraient en français.
+ */
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return TRANSLATED_LOCALES.map((lang) => ({ lang }));
 }
@@ -43,13 +51,13 @@ export function generateMetadata({ params }: { params: { lang: string } }): Meta
     robots: { index: true, follow: true },
     alternates: {
       canonical: `${BASE}/${params.lang}/destinations`,
-      languages: {
+      languages: withRegionalVariants({
         fr: `${BASE}/destinations`,
         en: `${BASE}/en/destinations`,
         de: `${BASE}/de/destinations`,
         es: `${BASE}/es/destinations`,
         'x-default': `${BASE}/en/destinations`,
-      },
+      }),
     },
   };
 }

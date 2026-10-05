@@ -9,17 +9,17 @@
     "es": "Suiza"
   },
   "airportTransfer": {
-    "de": "Der Flughafen Genf-Cointrin (GVA) liegt 5 km nordwestlich des Zentrums. Bis zur Seepromenade und ins Bankenviertel sind es rund 15 Minuten, im Berufsverkehr etwas länger. Ihr Chauffeur erwartet Sie mit einem Namensschild in der Ankunftshalle und verfolgt Ihren Flug in Echtzeit.",
-    "es": "El aeropuerto de Ginebra-Cointrin (GVA) está a 5 km al noroeste del centro. Hasta la orilla del lago y el distrito bancario se tarda unos 15 minutos, algo más en hora punta. Su chófer le espera en la sala de llegadas con un cartel con su nombre y sigue su vuelo en tiempo real."
+    "de": "Der Flughafen Genf-Cointrin (GVA) liegt 5 km nordwestlich des Zentrums. Bis zur Seepromenade und zum Bankenviertel brauchen Sie etwa 15 Minuten, im Berufsverkehr etwas länger. Ihr Chauffeur erwartet Sie mit Namensschild in der Ankunftshalle und verfolgt Ihren Flug in Echtzeit.",
+    "es": "El aeropuerto de Ginebra-Cointrin (GVA) está a 5 km al noroeste del centro. El trayecto hasta la ribera del lago y el distrito bancario dura unos 15 minutos, algo más en horas pico. Su chófer lo espera en la sala de llegadas con un cartel con su nombre y sigue su vuelo en tiempo real."
   },
   "intro": {
     "de": [
-      "Genf ist europäischer Sitz der Vereinten Nationen und Welthauptstadt der Haute Horlogerie. Zwischen See und Salève liegen die Seepromenade, der Jet d’eau und die Rue du Rhône. Ihr **Privatchauffeur in Genf** fährt Sie zum Palais des Nations und zu den internationalen Organisationen, zu den Privatbanken an der Corraterie, zu den Uhrenmanufakturen und den Kliniken des Kantons. Zur Wahl stehen Mercedes-Limousinen und großräumige Vans. Den Festpreis bestätigen wir bei der Buchung, Diskretion ist selbstverständlich, und auf Wunsch spricht Ihr Chauffeur zwei Sprachen.",
-      "Genf ist außerdem einer der besten Ausgangspunkte für die Alpen. **Chamonix und der Mont Blanc** liegen eine Stunde entfernt. Im Osten ziehen sich die Weinterrassen des Lavaux und das Schloss Chillon am Genfersee entlang, auf französischer Seite wartet Annecy mit seinem See. Bei einer Tagesbuchung verbindet Ihr Chauffeur Pässe, Weinberge und Seeufer, ohne dass Sie selbst ans Steuer müssen. Die Route wird individuell geplant, mit Fotostopps und vorab reservierten Tischen."
+      "Genf ist europäischer Sitz der Vereinten Nationen und Welthauptstadt der hohen Uhrmacherkunst. Zwischen See und Salève liegen die Seepromenade, der Jet d’eau und die Rue du Rhône. Ihr **Privatchauffeur in Genf** fährt Sie zum Palais des Nations und zu den internationalen Organisationen, zu den Privatbanken an der Corraterie, zu den Uhrenmanufakturen und den Kliniken des Kantons. Zur Wahl stehen Mercedes-Limousinen und große Vans. Den Festpreis erhalten Sie bei der Buchung. Diskretion ist selbstverständlich, zweisprachige Chauffeure gibt es auf Anfrage.",
+      "Von Genf aus erreichen Sie die Alpen besonders gut. **Chamonix und der Mont Blanc** sind eine Stunde entfernt. Östlich am Genfersee liegen die Weinterrassen des Lavaux und das Schloss Chillon, auf der französischen Seite Annecy mit seinem See. Wenn Sie den Chauffeur für einen ganzen Tag buchen, verbindet er Pässe, Weinberge und Seeufer, und Sie fassen kein Lenkrad an. Die Route planen wir nach Ihren Wünschen, mit Fotostopps und reservierten Tischen."
     ],
     "es": [
-      "Ginebra es la sede europea de las Naciones Unidas y la capital mundial de la alta relojería. Entre el lago y el Salève se extienden la bahía, el Jet d’eau y la rue du Rhône. Su **chófer privado en Ginebra** le lleva al Palacio de las Naciones y a los organismos internacionales, a los bancos privados de la Corraterie, a las manufacturas relojeras y a las clínicas del cantón. Disponemos de berlinas Mercedes y furgonetas de gran capacidad. El precio es fijo y se confirma al reservar, la discreción es total y, si lo desea, el chófer puede ser bilingüe.",
-      "Ginebra es también uno de los mejores puntos de partida hacia los Alpes. **Chamonix y el Mont Blanc** quedan a una hora. Hacia el este, las terrazas de Lavaux y el castillo de Chillon bordean el lago Lemán; del lado francés se encuentran Annecy y su lago. Con un servicio por días, su chófer encadena puertos de montaña, viñedos y orillas sin que usted tenga que conducir. Itinerario a medida, paradas para fotos y mesas reservadas con antelación."
+      "Ginebra es la sede europea de las Naciones Unidas y la capital mundial de la alta relojería. Entre el lago y el monte Salève están la ribera, el Jet d’Eau y la rue du Rhône. Su **chófer privado en Ginebra** lo lleva al Palacio de las Naciones y a los organismos internacionales, a los bancos privados de la Corraterie, a las manufacturas relojeras y a las clínicas del cantón. Disponemos de sedanes Mercedes y vans de gran capacidad, con precio fijo confirmado al reservar. La discreción es total y, si lo solicita, el chófer habla dos idiomas.",
+      "Ginebra es también una de las mejores puertas de entrada a los Alpes. **Chamonix y el Mont Blanc** están a una hora. Hacia el este, a orillas del lago Lemán, quedan los viñedos en terrazas de Lavaux y el castillo de Chillon; del lado francés, Annecy y su lago. Si contrata el servicio por día completo, su chófer recorre puertos de montaña, viñedos y riberas mientras usted descansa. Diseñamos el itinerario a su medida, con paradas para fotos y mesas reservadas."
     ]
   },
   "experiences": [
@@ -29,11 +29,11 @@
         "es": "Chamonix y el Mont Blanc"
       },
       "teaser": {
-        "de": "85 km von Genf entfernt liegt die Hauptstadt des Alpinismus am Fuß des höchsten Bergs Westeuropas. Mit der Seilbahn geht es auf die Aiguille du Midi auf 3 842 Metern, mit der Montenvers-Bahn zum Mer de Glace. Mittagessen mit Blick auf die Drus. Der Grenzübertritt erfolgt ohne Formalitäten.",
-        "es": "A 85 km de Ginebra, la capital del alpinismo al pie del techo de Europa occidental. El teleférico de la Aiguille du Midi sube a 3842 metros y el tren de Montenvers lleva al Mar de Hielo. Almuerzo frente a los Drus. El paso de frontera no requiere trámites."
+        "de": "85 km von Genf entfernt liegt die Hauptstadt des Alpinismus am Fuß des höchsten Bergs Europas. Mit der Seilbahn geht es auf die Aiguille du Midi auf 3842 Metern, mit der Montenvers-Bahn zum Mer de Glace. Mittagessen mit Blick auf die Drus. Der Grenzübertritt ist problemlos.",
+        "es": "A 85 km de Ginebra está la capital del alpinismo, al pie de la cumbre más alta de Europa. El teleférico sube a la Aiguille du Midi, a 3842 metros, y el tren de Montenvers lleva al glaciar Mer de Glace. Almuerzo frente a los Drus. El paso de frontera no requiere trámites."
       },
       "duration": {
-        "de": "Ganztägig",
+        "de": "Ganzer Tag",
         "es": "Día completo"
       }
     },
@@ -43,11 +43,11 @@
         "es": "Lavaux y la Riviera de Vaud"
       },
       "teaser": {
-        "de": "Zwischen Lausanne und Vevey fallen die Weinterrassen des Lavaux, UNESCO-Welterbe, steil zum Genfersee ab. Bei einem Winzer in Épesses oder Saint-Saphorin probieren Sie Chasselas. Danach geht es zu Chaplin’s World in Corsier und zum Schloss Chillon.",
-        "es": "Entre Lausana y Vevey, las terrazas de Lavaux, Patrimonio de la Humanidad de la UNESCO, descienden hasta el lago Lemán. Cata de chasselas con un viticultor de Épesses o Saint-Saphorin y, después, Chaplin’s World en Corsier y el castillo de Chillon."
+        "de": "Die Weinterrassen des Lavaux sind UNESCO-Welterbe und fallen zwischen Lausanne und Vevey steil zum Genfersee ab. Bei einem Winzer in Epesses oder Saint-Saphorin probieren Sie Chasselas. Danach besuchen Sie Chaplin’s World in Corsier und das Schloss Chillon.",
+        "es": "Las terrazas de Lavaux, Patrimonio de la Humanidad de la UNESCO, bajan hasta el lago Lemán entre Lausana y Vevey. Degustación de vino chasselas con un viticultor de Épesses o Saint-Saphorin y, después, Chaplin’s World en Corsier y el castillo de Chillon."
       },
       "duration": {
-        "de": "Ganztägig",
+        "de": "Ganzer Tag",
         "es": "Día completo"
       }
     },
@@ -57,11 +57,11 @@
         "es": "Annecy, la Venecia de los Alpes"
       },
       "teaser": {
-        "de": "45 km südlich von Genf: die Kanäle des Thiou, der Palais de l’Île und das türkisfarbene Wasser des saubersten Sees Europas. Mittagessen in der Altstadt oder in einem der Sternerestaurants von Veyrier-du-Lac. Zurück geht es über den Col de la Croisette.",
-        "es": "A 45 km al sur de Ginebra se encuentran los canales del Thiou, el Palais de l’Île y las aguas turquesa del lago más limpio de Europa. Almuerzo en el casco antiguo o en los restaurantes con estrella de Veyrier-du-Lac. El regreso se hace por el puerto de la Croisette."
+        "de": "45 km südlich von Genf: die Kanäle des Thiou, der Palais de l’Île und das türkisfarbene Wasser des saubersten Sees Europas. Mittagessen in der Altstadt oder in einem Sternerestaurant in Veyrier-du-Lac. Zurück geht es über den Col de la Croisette.",
+        "es": "A 45 km al sur de Ginebra están los canales del Thiou, el Palais de l’Île y las aguas turquesa del lago más limpio de Europa. Almuerzo en el casco antiguo o en uno de los restaurantes con estrella Michelin de Veyrier-du-Lac. El regreso es por el puerto de la Croisette."
       },
       "duration": {
-        "de": "Halbtägig oder ganztägig",
+        "de": "Halber oder ganzer Tag",
         "es": "Medio día o día completo"
       }
     },
@@ -71,25 +71,25 @@
         "es": "Montreux y el castillo de Chillon"
       },
       "teaser": {
-        "de": "Am Ostufer des Genfersees entlang nach Montreux, vorbei an blühenden Uferpromenaden und der Statue von Freddie Mercury. Dann die Festung Chillon auf ihrem Felsen, die Byron berühmt gemacht hat. Auf dem Rückweg halten Sie in Vevey und in den Weinbergen des Lavaux.",
-        "es": "La orilla este del lago Lemán hasta Montreux, con sus paseos floridos y la estatua de Freddie Mercury. Luego, la fortaleza de Chillon sobre su roca, que Byron hizo inmortal. A la vuelta, paradas en Vevey y en los viñedos de Lavaux."
+        "de": "Am Ostufer des Genfersees entlang bis Montreux, mit blühenden Uferpromenaden und der Statue von Freddie Mercury. Dann folgt die Festung Chillon auf ihrem Felsen, die Byron in einem Gedicht verewigt hat. Auf dem Rückweg halten Sie in Vevey und in den Weinbergen des Lavaux.",
+        "es": "La orilla este del lago Lemán hasta Montreux, con sus paseos llenos de flores y la estatua de Freddie Mercury. Luego, la fortaleza de Chillon sobre su roca, que Byron inmortalizó en un poema. De regreso, paradas en Vevey y en los viñedos de Lavaux."
       },
       "duration": {
-        "de": "Ganztägig",
+        "de": "Ganzer Tag",
         "es": "Día completo"
       }
     },
     {
       "title": {
-        "de": "Genf und die Uhrmacherkunst, Abend an der Seepromenade",
-        "es": "Ginebra relojera y velada junto al lago"
+        "de": "Uhrmacherstadt Genf und ein Abend an der Seepromenade",
+        "es": "La Ginebra relojera y una noche junto al lago"
       },
       "teaser": {
-        "de": "Das Patek Philippe Museum, die Boutiquen der Rue du Rhône und auf Wunsch ein Termin in einer Manufaktur. Abends essen Sie an der Seepromenade, etwa im Bayview, im Il Lago oder in der Altstadt. An jeder Station wartet der Wagen auf Sie.",
-        "es": "El Patek Philippe Museum, las boutiques de la rue du Rhône y, si lo desea, una visita concertada a una manufactura. Después, cena junto a la bahía: Bayview, Il Lago o el casco antiguo. El vehículo le espera en cada parada."
+        "de": "Das Patek Philippe Museum, die Uhrengeschäfte der Rue du Rhône und auf Anfrage ein Termin in einer Manufaktur. Danach essen Sie am Seeufer zu Abend, im Bayview, im Il Lago oder in der Altstadt. Das Fahrzeug wartet an jeder Station auf Sie.",
+        "es": "El Patek Philippe Museum, las boutiques de la rue du Rhône y, si lo desea, una visita concertada a una manufactura. Después, cena a orillas del lago: Bayview, Il Lago o el casco antiguo. El vehículo lo espera en cada parada."
       },
       "duration": {
-        "de": "Halbtägig oder abends",
+        "de": "Halber Tag oder Abend",
         "es": "Medio día o noche"
       }
     }
@@ -97,32 +97,32 @@
   "faq": [
     {
       "q": {
-        "de": "Was kostet ein Transfer zwischen dem Flughafen Genf-Cointrin und dem Stadtzentrum?",
+        "de": "Was kostet ein Transfer vom Flughafen Genf-Cointrin ins Stadtzentrum?",
         "es": "¿Cuánto cuesta un traslado entre el aeropuerto de Ginebra-Cointrin y el centro de la ciudad?"
       },
       "a": {
-        "de": "Für den privaten Transfer zwischen Genf-Cointrin (GVA) und dem Genfer Zentrum gilt ein Festpreis, den wir Ihnen bei der Buchung nennen. Inbegriffen sind der Empfang mit Namensschild in der Ankunftshalle, die Flugverfolgung in Echtzeit und 60 Minuten kostenlose Wartezeit bei Verspätung.",
-        "es": "El traslado privado entre Ginebra-Cointrin (GVA) y el centro de Ginebra tiene un precio fijo que le comunicamos al reservar. Incluye la recepción en la sala de llegadas con cartel con su nombre, el seguimiento del vuelo en tiempo real y 60 minutos de espera gratuita en caso de retraso."
+        "de": "Der private Transfer zwischen Genf-Cointrin (GVA) und dem Genfer Zentrum hat einen Festpreis, den Sie bei der Buchung erhalten. Im Preis sind der Empfang mit Namensschild in der Ankunftshalle, die Flugverfolgung in Echtzeit und bei Verspätung 60 Minuten kostenlose Wartezeit enthalten.",
+        "es": "El traslado privado entre Ginebra-Cointrin (GVA) y el centro de Ginebra tiene un precio fijo, que se le indica al reservar. Incluye la recepción en la sala de llegadas con un cartel con su nombre, el seguimiento del vuelo en tiempo real y 60 minutos de espera sin costo en caso de retraso."
       }
     },
     {
       "q": {
-        "de": "Bieten Sie Transfers von Genf in die Skigebiete an?",
-        "es": "¿Hacen traslados a las estaciones de esquí desde Ginebra?"
+        "de": "Fahren Sie auch von Genf in die Skigebiete?",
+        "es": "¿Ofrecen traslados desde Ginebra a las estaciones de esquí?"
       },
       "a": {
-        "de": "Ja. Genf ist das Tor zu den Alpen. Regelmäßig fahren wir nach Chamonix, Megève, Courchevel, Verbier, Crans-Montana oder über Täsch nach Zermatt. Die Fahrzeuge sind wintertauglich ausgerüstet und haben Platz für Skier. Den Festpreis erhalten Sie im Voraus, unabhängig vom Wetter.",
-        "es": "Sí. Ginebra es la puerta de entrada a los Alpes y viajamos con frecuencia a Chamonix, Megève, Courchevel, Verbier, Crans-Montana o Zermatt, vía Täsch. Los vehículos están equipados para el invierno y tienen maletero apto para esquís. El precio es fijo y se lo comunicamos de antemano, haga el tiempo que haga."
+        "de": "Ja. Genf ist das Tor zu den Alpen. Wir fahren regelmäßig nach Chamonix, Megève, Courchevel, Verbier, Crans-Montana und über Täsch nach Zermatt. Unsere Fahrzeuge sind wintertauglich ausgerüstet und haben Platz für Skier. Den Festpreis nennen wir Ihnen im Voraus, unabhängig vom Wetter.",
+        "es": "Sí. Ginebra es la puerta de entrada a los Alpes y viajamos con frecuencia a Chamonix, Megève, Courchevel, Verbier, Crans-Montana y Zermatt, vía Täsch. Los vehículos están equipados para el invierno y tienen espacio para esquís. El precio es fijo y se lo comunicamos con anticipación, haga el tiempo que haga."
       }
     },
     {
       "q": {
-        "de": "Kann Ihr Chauffeur auch grenzüberschreitende Fahrten nach Frankreich übernehmen?",
-        "es": "¿Puede su chófer hacer trayectos transfronterizos a Francia?"
+        "de": "Kann Ihr Chauffeur auch Fahrten über die Grenze nach Frankreich übernehmen?",
+        "es": "¿Su chófer puede hacer trayectos transfronterizos a Francia?"
       },
       "a": {
-        "de": "Ja. Genf ist fast vollständig von französischem Gebiet umgeben, und Fahrten nach Chamonix, Annecy, Évian, Divonne oder Lyon gehören bei uns zum Alltag. Grenzüberschreitende Fahrten bieten wir im Voraus zum Festpreis an, mit einem Fahrzeug, das in beiden Ländern zugelassen ist.",
-        "es": "Sí. Ginebra está prácticamente rodeada por la frontera francesa, y Chamonix, Annecy, Évian, Divonne o Lyon forman parte de nuestros trayectos habituales. Los viajes transfronterizos se presupuestan de antemano a precio fijo, con un vehículo autorizado para circular en ambos países."
+        "de": "Ja. Genf ist fast ganz von französischem Gebiet umgeben. Chamonix, Annecy, Évian, Divonne und Lyon gehören zu unseren üblichen Strecken. Grenzüberschreitende Fahrten bieten wir im Voraus zum Festpreis an, mit einem Fahrzeug, das in beiden Ländern zugelassen ist.",
+        "es": "Sí. Ginebra está rodeada casi por completo por territorio francés, y Chamonix, Annecy, Évian, Divonne y Lyon son trayectos habituales para nosotros. Los viajes transfronterizos se cotizan por adelantado a precio fijo, con un vehículo autorizado para circular en ambos países."
       }
     }
   ]

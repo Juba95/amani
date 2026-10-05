@@ -20,7 +20,7 @@
 import fs from 'fs';
 import path from 'path';
 import type { Destination } from './types';
-import { getDestination } from './index';
+import { ALL_DESTINATIONS, getDestination } from './index';
 
 export type DestLocale = 'fr' | 'en' | 'de' | 'es';
 
@@ -65,13 +65,20 @@ export function translatedSlugs(locale: TranslatedLocale): string[] {
   } catch {
     return [];
   }
-  return files
+  const fromFiles = files
     .map((f) => f.replace(/\.json$/, ''))
     .filter((slug) => {
       const i18n = readI18n(slug);
       return Boolean(i18n?.name?.[locale]) && Boolean(getDestination(slug));
-    })
-    .sort();
+    });
+
+  // Les villes à page dédiée n'ont pas de fichier : elles sont traduites dans
+  // le registre lui-même.
+  const inline = ALL_DESTINATIONS
+    .filter((d) => d.translationOnly && d.name[locale])
+    .map((d) => d.slug);
+
+  return [...new Set([...fromFiles, ...inline])].sort();
 }
 
 /**
@@ -82,6 +89,9 @@ export function translatedSlugs(locale: TranslatedLocale): string[] {
 export function getTranslatedDestination(slug: string, locale: TranslatedLocale): Destination | null {
   const d = getDestination(slug);
   if (!d) return null;
+  // Les villes à page dédiée portent leurs traductions directement dans le
+  // registre (regions/france-cities.ts) : rien à fusionner.
+  if (d.translationOnly) return d.name[locale] ? d : null;
   const t = readI18n(slug);
   if (!t?.name?.[locale]) return null;
 
