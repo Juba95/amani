@@ -1,0 +1,129 @@
+{
+  "slug": "meribel",
+  "name": {
+    "de": "Méribel",
+    "es": "Méribel"
+  },
+  "country": {
+    "de": "Frankreich",
+    "es": "Francia"
+  },
+  "airportTransfer": {
+    "de": "Vom Flughafen Genf (GVA) sind es rund 180 km bis Méribel, rechnen Sie mit etwa 2 Stunden 30 Fahrtzeit. Ab Chambéry (CMF) sind es ungefähr 100 km und 1 Stunde 30. Ihr Chauffeur erwartet Sie mit Namensschild in der Ankunftshalle und verfolgt Ihren Flug in Echtzeit. Hinauf in den Ort geht es in einem wintertauglichen Allradfahrzeug mit Skiträger.",
+    "es": "El aeropuerto de Ginebra (GVA) está a unos 180 km de Méribel, lo que supone unas 2 h 30 de carretera. Desde Chambéry (CMF) son aproximadamente 100 km y 1 h 30. Su chófer le espera en la sala de llegadas con un cartel con su nombre, sigue su vuelo en tiempo real y le sube a la estación en un 4x4 equipado para el invierno, con portaesquís incluido."
+  },
+  "intro": {
+    "de": [
+      "Méribel wurde 1938 im Tal der Allues gegründet und gilt als das Chalet-Skigebiet schlechthin. Strenge Bauvorschriften schreiben Holz, Steinplatten und Naturstein vor, von Méribel Village über das Ortszentrum auf 1.450 Metern bis hinauf nach Mottaret. Ihr **Privatchauffeur in Méribel** fährt Sie zwischen den Weilern, der Chaudanne und den Wohnvierteln Belvédère oder Rond-Point hin und her. Er übernimmt die Transfers ab Genf oder Chambéry ebenso wie Ihre Abendtermine und lädt Ski und Gepäck für Sie ein.",
+      "Durch seine zentrale Lage ist Méribel der Schlüssel zu den **Drei Tälern**: auf der einen Seite Courchevel, auf der anderen Val Thorens, insgesamt 600 km zusammenhängende Pisten. Auch abseits der Piste gibt es viel zu tun. An den Bergkämmen beginnt der Nationalpark Vanoise, vom Altiport starten Rundflüge, und im Sommer wird das Tal zum Revier für Golfer, Trailläufer und Radfahrer auf Passstraßen. Ausflüge, Mittagessen auf der Hütte und Fahrten in die Nachbarorte organisiert Ihr Chauffeur auf Wunsch."
+    ],
+    "es": [
+      "Fundada en 1938 en el valle de Les Allues, Méribel es la estación de chalés por excelencia. Una normativa urbanística muy estricta impone la madera, la pizarra y la piedra, desde Méribel Village hasta Mottaret, pasando por el centro de la estación a 1.450 metros. Su **chófer privado en Méribel** le lleva entre las aldeas, La Chaudanne y las zonas residenciales de Belvédère o Rond-Point. También se ocupa de sus traslados desde Ginebra o Chambéry y de sus salidas nocturnas, y carga por usted esquís y equipaje.",
+      "Su posición central convierte a Méribel en la llave de los **Tres Valles**: Courchevel a un lado, Val Thorens al otro y 600 km de pistas conectadas. Fuera del esquí, el parque nacional de la Vanoise empieza en las crestas y el altipuerto ofrece vuelos panorámicos. En verano, el valle se llena de golfistas, corredores de montaña y ciclistas que suben puertos. Su chófer organiza excursiones, comidas en altura y trayectos a otras estaciones cuando lo necesite."
+    ]
+  },
+  "experiences": [
+    {
+      "title": {
+        "de": "Die Drei Täler auf der Straße",
+        "es": "Los Tres Valles por carretera"
+      },
+      "teaser": {
+        "de": "Vormittags Courchevel 1850 und La Croisette, nachmittags Val Thorens und die Cime Caron: das größte Skigebiet der Welt, vom Tal aus erlebt. Ein Tisch auf der Hütte ist reserviert, zurück in Méribel sind Sie bei Einbruch der Dämmerung.",
+        "es": "Courchevel 1850 y La Croisette por la mañana, Val Thorens y la Cime Caron por la tarde: el mayor dominio esquiable del mundo visto desde el fondo del valle. Comida en altura reservada y regreso a Méribel al anochecer."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "de": "Die Weiler von Les Allues und Méribel Village",
+        "es": "Las aldeas de Les Allues y Méribel Village"
+      },
+      "teaser": {
+        "de": "Talabwärts geht es durch Les Allues mit seinen alten Backöfen und Barockkapellen, zurück über Méribel Village und Le Raffort. So lernen Sie die echte savoyische Bauweise hinter dem Skiort kennen, ganz in Ihrem Tempo.",
+        "es": "Bajada por el valle a través de Les Allues, con sus hornos de pan y sus capillas barrocas, y subida de vuelta por Méribel Village y Le Raffort. La arquitectura saboyana auténtica que hay detrás de la estación, a su ritmo."
+      },
+      "duration": {
+        "de": "Halber Tag",
+        "es": "Medio día"
+      }
+    },
+    {
+      "title": {
+        "de": "Mittagessen am Berg in der Folie Douce oder im Clos Bernard",
+        "es": "Comida en altura en La Folie Douce o Le Clos Bernard"
+      },
+      "teaser": {
+        "de": "Ihr Chauffeur setzt Sie an der Chaudanne ab, von dort erreichen Sie die Bergrestaurants von Méribel: die ausgelassene Folie Douce oder den Clos Bernard mitten im Wald. Nach Pistenschluss holt er Skifahrer und Nichtskifahrer wieder ab.",
+        "es": "Le dejamos en La Chaudanne para llegar a los restaurantes de altura de Méribel, ya sea la animada Folie Douce o Le Clos Bernard en pleno bosque. Al cierre de las pistas, su chófer recoge a esquiadores y no esquiadores."
+      },
+      "duration": {
+        "de": "Halber Tag",
+        "es": "Medio día"
+      }
+    },
+    {
+      "title": {
+        "de": "Ausflug nach Annecy oder Chambéry",
+        "es": "Excursión a Annecy o Chambéry"
+      },
+      "teaser": {
+        "de": "Einen Tag ohne Schnee, dafür mit See oder Geschichte: Annecy mit seinen Kanälen oder Chambéry, die einstige Hauptstadt der Herzöge von Savoyen mit dem Elefantenbrunnen. Zum Abendessen sind Sie zurück im Skiort.",
+        "es": "Cambie la nieve por un día de lago o de patrimonio: Annecy y sus canales, o Chambéry, antigua capital de los duques de Saboya, con su fuente de los Elefantes. Regreso a la estación a tiempo para la cena."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "de": "Ein Abend in Méribel",
+        "es": "Una noche en Méribel"
+      },
+      "teaser": {
+        "de": "Abendessen im L’Ekrin im Hotel Le Kaïla, dem Sternerestaurant des Ortes, oder in einer exklusiv gemieteten Almhütte. Danach ein letztes Glas im Doron oder in der Folie Douce. Das Fahrzeug steht bereit, und niemand muss nachts selbst ans Steuer.",
+        "es": "Cena en L’Ekrin, en el hotel Le Kaïla, el restaurante con estrella Michelin de la estación, o en un chalé de montaña reservado en exclusiva. Después, una última copa en Le Doron o en La Folie Douce. El vehículo queda a su disposición y nadie tiene que conducir de noche para volver al chalé."
+      },
+      "duration": {
+        "de": "Abend",
+        "es": "Noche"
+      }
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "de": "Was kostet ein Transfer vom Flughafen Genf nach Méribel?",
+        "es": "¿Cuánto cuesta un traslado entre el aeropuerto de Ginebra y Méribel?"
+      },
+      "a": {
+        "de": "Für den privaten Transfer zwischen Genf (GVA) und Méribel gilt ein Festpreis, den wir bei der Buchung bestätigen. Darin enthalten sind der Empfang mit Namensschild in der Ankunftshalle, die Flugverfolgung in Echtzeit und bei Verspätung 60 Minuten kostenlose Wartezeit. Versteckte Schnee- oder Nachtzuschläge gibt es nicht.",
+        "es": "El traslado privado entre Ginebra (GVA) y Méribel tiene un precio cerrado, confirmado al reservar. Incluye la recepción en la sala de llegadas con cartel nominativo, el seguimiento del vuelo en tiempo real y 60 minutos de espera gratuita en caso de retraso. No hay recargos ocultos por nieve ni por horario nocturno."
+      }
+    },
+    {
+      "q": {
+        "de": "Nehmen Sie Skiausrüstung und sperriges Gepäck mit?",
+        "es": "¿Transportan material de esquí y equipaje voluminoso?"
+      },
+      "a": {
+        "de": "Ja. Unsere Vans und Allradfahrzeuge transportieren Ski, Snowboards, Skischuhe und großes Saisongepäck ohne Aufpreis, soweit der Platz im Fahrzeug reicht. Geben Sie bei der Buchung an, wie viele Paar Ski Sie dabeihaben. Wir wählen dann das passende Fahrzeug, bei Bedarf mit Skiträger oder verlängertem Kofferraum.",
+        "es": "Sí. Nuestras furgonetas y nuestros 4x4 llevan esquís, tablas de snowboard, botas y maletas de temporada sin coste adicional, dentro de la capacidad del vehículo. Indíquenos el número de pares al reservar y le asignaremos el vehículo adecuado, con portaesquís o maletero largo si hace falta."
+      }
+    },
+    {
+      "q": {
+        "de": "Fahren Sie abends auch nach Courchevel oder Val Thorens?",
+        "es": "¿Hacen trayectos a Courchevel o Val Thorens por la noche?"
+      },
+      "a": {
+        "de": "Ja. Sobald die Lifte schließen, verbindet nur noch die Straße die Täler. Wir übernehmen Fahrten zum Abendessen in Courchevel 1850, zu Abenden in Val Thorens und späte Rückfahrten nach Méribel, zu einem vorab vereinbarten Festpreis. Am Steuer sitzt ein Chauffeur, der jede Kehre der Tarentaise kennt.",
+        "es": "Sí. Cuando cierran los remontes, la carretera es la única conexión entre los valles. Nos encargamos de cenas en Courchevel 1850, noches en Val Thorens y regresos tardíos a Méribel, a un precio cerrado acordado de antemano y con un chófer que conoce cada curva de la Tarentaise."
+      }
+    }
+  ]
+}

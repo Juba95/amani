@@ -1,0 +1,129 @@
+{
+  "slug": "reims",
+  "name": {
+    "de": "Reims",
+    "es": "Reims"
+  },
+  "country": {
+    "de": "Frankreich",
+    "es": "Francia"
+  },
+  "airportTransfer": {
+    "de": "Vom Flughafen Paris-CDG nach Reims sind es rund 1 Std. 30 Min. (145 km über die A4). Ihr Chauffeur erwartet Sie in der Ankunftshalle und bringt Sie direkt vor Ihr Champagnerhaus oder Ihr Hotel. Der Bahnhof Champagne-Ardenne TGV liegt 10 km südwestlich, von dort ist Paris mit dem Zug in 45 Minuten erreichbar. Die Abholung am Bahnsteig wird in Echtzeit an Ihre Ankunft angepasst.",
+    "es": "Reims está a 1 h 30 aproximadamente del aeropuerto París-CDG (145 km por la A4). Su chófer le espera en la sala de llegadas y le deja frente a su casa de champán o su hotel. La estación Champagne-Ardenne TGV, a 10 km al suroeste, queda a 45 minutos de París en tren. La recogida en el andén se ajusta en tiempo real a su llegada."
+  },
+  "intro": {
+    "de": [
+      "In Reims wurden dreiunddreißig französische Könige gekrönt. Die Stadt besitzt eine gotische Kathedrale, die zum UNESCO-Welterbe gehört, die Basilika Saint-Remi, Art-déco-Fassaden aus der Zeit des Wiederaufbaus und die Keller der bedeutendsten Champagnerhäuser. Ihr **Privatchauffeur in Reims** verbindet Paris und seine Flughäfen, den Bahnhof Champagne-Ardenne TGV und die Häuser Veuve Clicquot, Ruinart, Taittinger oder Pommery, in einer Mercedes-Limousine oder einem Premium-Van. Festpreise, Pünktlichkeit und Diskretion.",
+      "Reims ist der natürliche Ausgangspunkt der **Touristischen Champagnerstraße**. Dazu gehören die Montagne de Reims mit ihren Grand-Cru-Dörfern Verzenay, Bouzy und Ambonnay, das dreißig Minuten entfernte Épernay mit der Avenue de Champagne und Hautvillers, wo Dom Pérignon begraben liegt. Ihr Chauffeur fährt Sie von einer reservierten Verkostung zur nächsten. Sie probieren ganz nach Belieben und kehren anschließend ohne jede Sorge zu Ihrem Hotel oder Zug zurück."
+    ],
+    "es": [
+      "En Reims fueron coronados treinta y tres reyes de Francia. La ciudad reúne una catedral gótica declarada Patrimonio de la Humanidad por la UNESCO, la basílica de Saint-Remi, fachadas art déco de la reconstrucción y las bodegas de las mayores casas de champán. Su **chófer privado en Reims** le lleva entre París y sus aeropuertos, la estación Champagne-Ardenne TGV y las casas Veuve Clicquot, Ruinart, Taittinger o Pommery, en berlina Mercedes o furgoneta premium. Precios cerrados, puntualidad y discreción.",
+      "Reims es el punto de partida natural de la **ruta turística del Champán**. Por delante tiene la Montagne de Reims con sus pueblos grand cru, Verzenay, Bouzy y Ambonnay, además de Épernay y su avenue de Champagne, a treinta minutos, y Hautvillers, donde descansa Dom Pérignon. Su chófer le lleva de una cata reservada a la siguiente. Usted prueba cuanto quiera y después vuelve a su hotel o a su tren sin ninguna preocupación."
+    ]
+  },
+  "experiences": [
+    {
+      "title": {
+        "de": "Die großen Champagnerhäuser",
+        "es": "Las grandes casas de champán"
+      },
+      "teaser": {
+        "de": "Ruinart, Veuve Clicquot, Taittinger und Pommery: Kreidekeller aus gallorömischer Zeit, die zum UNESCO-Welterbe zählen, und Prestige-Cuvées, mit vorab reservierten Besichtigungen und Verkostungen. Zwischen zwei Kellern gibt es ein Mittagessen, bei dem jeder Gang auf einen Champagner abgestimmt ist.",
+        "es": "Ruinart, Veuve Clicquot, Taittinger y Pommery: las galerías de creta galorromanas, declaradas Patrimonio de la Humanidad por la UNESCO, y las cuvées de prestigio, con visitas y catas reservadas de antemano. Entre dos bodegas, un almuerzo con maridaje de platos y champanes."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "de": "Montagne de Reims und Grand-Cru-Dörfer",
+        "es": "Montagne de Reims y pueblos grand cru"
+      },
+      "teaser": {
+        "de": "Verzenay mit seinem Leuchtturm inmitten der Weinberge, dazu Bouzy und Ambonnay. Unabhängige Winzer empfangen Sie auf ihrem Gut. Unterwegs blicken Sie über ein Meer aus Rebstöcken, verkosten in kleinem Kreis und fahren auf dem Rückweg an der Windmühle von Verzenay vorbei.",
+        "es": "Verzenay y su faro entre los viñedos, Bouzy, Ambonnay y los viticultores independientes que le reciben en su finca. Vistas sobre un mar de cepas, catas reservadas a pocos visitantes y regreso por el molino de Verzenay."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "de": "Épernay und Hautvillers",
+        "es": "Épernay y Hautvillers"
+      },
+      "teaser": {
+        "de": "Zuerst die Avenue de Champagne mit renommierten Häusern wie Moët & Chandon und Perrier-Jouët. Danach geht es in das Dorf Hautvillers zur Abteikirche, in der Dom Pérignon begraben liegt, hoch über den Weinhängen, die zum UNESCO-Welterbe gehören.",
+        "es": "Primero la avenue de Champagne y sus casas de prestigio, como Moët & Chandon y Perrier-Jouët. Después, el pueblo de Hautvillers y la iglesia abacial donde descansa Dom Pérignon, sobre las laderas declaradas Patrimonio de la Humanidad por la UNESCO."
+      },
+      "duration": {
+        "de": "Halber Tag",
+        "es": "Medio día"
+      }
+    },
+    {
+      "title": {
+        "de": "Krönungsstadt und Art déco",
+        "es": "El Reims de las coronaciones y del art déco"
+      },
+      "teaser": {
+        "de": "Die Kathedrale mit ihren Chagall-Fenstern, das Palais du Tau und die Basilika Saint-Remi. Anschließend sehen Sie die Art-déco-Fassaden der wiederaufgebauten Innenstadt und die Carnegie-Bibliothek, bevor Sie in den Markthallen Halles du Boulingrin Halt machen.",
+        "es": "La catedral y sus vidrieras de Chagall, el palacio del Tau y la basílica de Saint-Remi. Luego, las fachadas art déco del centro reconstruido y la biblioteca Carnegie, con una parada en el mercado cubierto de Boulingrin."
+      },
+      "duration": {
+        "de": "Halber Tag",
+        "es": "Medio día"
+      }
+    },
+    {
+      "title": {
+        "de": "Genießerabend in der Champagne",
+        "es": "Velada gastronómica en Champaña"
+      },
+      "teaser": {
+        "de": "Abendessen in den besten Restaurants der Region, etwa in der Assiette Champenoise der Familie Lallement oder im Royal Champagne in Champillon. Ihr Chauffeur setzt Sie vor der Tür ab und bringt Sie spät am Abend zurück zu Ihrem Hotel, wo auch immer es liegt.",
+        "es": "Cena en las grandes mesas de la región, como L'Assiette Champenoise de la familia Lallement o el Royal Champagne en Champillon. Su chófer le deja en la puerta del restaurante y le lleva de vuelta por la noche a su hotel, esté donde esté."
+      },
+      "duration": {
+        "de": "Abend",
+        "es": "Noche"
+      }
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "de": "Was kostet ein Transfer von Paris oder Paris-CDG nach Reims?",
+        "es": "¿Cuánto cuesta un traslado entre París o París-CDG y Reims?"
+      },
+      "a": {
+        "de": "Der Transfer von Paris-CDG nach Reims (145 km, etwa 1 Std. 30 Min.) wird zu einem Festpreis berechnet, den wir bei der Buchung bestätigen. Flugüberwachung und Wartezeit sind inbegriffen. Ab der Pariser Innenstadt sollten Sie mit rund 1 Std. 45 Min. rechnen. Der Preis bleibt unabhängig vom Verkehr gleich.",
+        "es": "El traslado París-CDG → Reims (145 km, 1 h 30 aproximadamente) tiene un precio cerrado, confirmado en el momento de la reserva, con seguimiento del vuelo y tiempo de espera incluidos. Desde el centro de París, calcule unas 1 h 45. La tarifa no cambia, haya el tráfico que haya."
+      }
+    },
+    {
+      "q": {
+        "de": "Können Sie Besichtigungen und Verkostungen in den Champagnerhäusern organisieren?",
+        "es": "¿Pueden organizar visitas y catas en las casas de champán?"
+      },
+      "a": {
+        "de": "Ja. Die großen Häuser empfangen Besucher nur nach Voranmeldung. Wir stimmen die Besuchszeiten auf Ihre Route ab und empfehlen Ihnen gern auch kleinere, weniger bekannte unabhängige Winzer. Ihr Chauffeur fährt, Sie verkosten ganz unbeschwert.",
+        "es": "Sí. Las grandes casas solo reciben con cita previa. Coordinamos los horarios de visita con su itinerario y podemos sugerirle viticultores independientes más discretos. Su chófer conduce y usted cata con total libertad."
+      }
+    },
+    {
+      "q": {
+        "de": "Reicht ein Tag für Reims und Épernay?",
+        "es": "¿Basta un día para conocer Reims y Épernay?"
+      },
+      "a": {
+        "de": "Bei guter Planung schaffen Sie an einem Tag die Kathedrale, ein großes Champagnerhaus in Reims und die Avenue de Champagne in Épernay. Die beiden Orte liegen dreißig Minuten voneinander entfernt. Wenn Sie zusätzlich die Montagne de Reims oder Winzer in den Dörfern besuchen möchten, planen Sie zwei Tage ein. Das Programm stellen wir gemeinsam mit Ihnen zusammen.",
+        "es": "Un día bien organizado permite ver la catedral, una gran casa en Reims y la avenue de Champagne en Épernay, a treinta minutos una de otra. Si quiere añadir la Montagne de Reims o viticultores de los pueblos, cuente con dos días. Preparamos el programa con usted."
+      }
+    }
+  ]
+}

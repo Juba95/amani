@@ -1,0 +1,129 @@
+{
+  "slug": "saint-paul-de-vence",
+  "name": {
+    "de": "Saint-Paul-de-Vence",
+    "es": "Saint-Paul-de-Vence"
+  },
+  "country": {
+    "de": "Frankreich",
+    "es": "Francia"
+  },
+  "airportTransfer": {
+    "de": "Der Flughafen Nizza Côte d’Azur (NCE) liegt 20 km südöstlich von Saint-Paul-de-Vence. Über das Var-Tal und La Colle-sur-Loup brauchen Sie 25 bis 30 Minuten. Ihr Chauffeur erwartet Sie mit Namensschild in der Ankunftshalle. Da das Dorf vollständig autofrei ist, bringt er Sie so nah wie möglich an die Stadtmauer.",
+    "es": "El aeropuerto de Niza Costa Azul (NCE) está a 20 km al sureste de Saint-Paul-de-Vence. Por el valle del Var y La Colle-sur-Loup, el trayecto dura entre 25 y 30 minutos. Su chófer le espera en la sala de llegadas con un cartel con su nombre. Como el pueblo es totalmente peatonal, le deja lo más cerca posible de las murallas."
+  },
+  "intro": {
+    "de": [
+      "Saint-Paul-de-Vence ist ein befestigtes Dorf hoch über dem Meer, mit den Alpen im Rücken. Chagall, Prévert und Montand fanden hier Zuflucht. In jeder Gasse gibt es eine Galerie, auf der Place du Jeu de Boules wird Pétanque gespielt, und die Mauern aus der Zeit Franz’ I. stehen bis heute vollständig. Ihr **Privatchauffeur in Saint-Paul-de-Vence** bringt Sie an die Tore des autofreien Dorfes, fährt Sie zur Colombe d’Or und zu den Hotels in den Hügeln und verbindet Sie in dreißig Minuten zum Festpreis mit dem Flughafen Nizza.",
+      "Gleich außerhalb des Dorfes zeigt die **Fondation Maeght** Werke von Giacometti, Miró und Calder in ihren Pinienhainen. In Vence steht die Rosenkranzkapelle, die Matisse von Grund auf selbst entworfen hat. Durch die Schlucht des Loup gelangt man nach Tourrettes-sur-Loup, dem Veilchendorf. Ihr Chauffeur plant Tage rund um Kunst und Bergdörfer, reserviert die Tische und bringt Sie zum Sonnenuntergang zurück an die Stadtmauer."
+    ],
+    "es": [
+      "Saint-Paul-de-Vence es un pueblo amurallado colgado entre el mar y los Alpes. Aquí encontraron refugio Chagall, Prévert y Montand. Hay galerías de arte en cada callejuela, partidas de petanca en la plaza del Jeu de Boules y unas murallas de la época de Francisco I que siguen intactas. Su **chófer privado en Saint-Paul-de-Vence** le deja a las puertas del pueblo peatonal, le lleva a la Colombe d’Or y a los hoteles de las colinas, y le conecta con el aeropuerto de Niza en treinta minutos, a precio cerrado.",
+      "En los alrededores, la **Fundación Maeght** expone a Giacometti, Miró y Calder entre jardines de pinos. Vence conserva la capilla del Rosario, diseñada por completo por Matisse. Las gargantas del Loup llevan hasta Tourrettes-sur-Loup, el pueblo de las violetas. Su chófer organiza jornadas de arte y pueblos encaramados, con mesa reservada y regreso a las murallas a la hora del atardecer."
+    ]
+  },
+  "experiences": [
+    {
+      "title": {
+        "de": "Fondation Maeght und die Galerien des Dorfes",
+        "es": "Fundación Maeght y las galerías del pueblo"
+      },
+      "teaser": {
+        "de": "Das Miró-Labyrinth, der Giacometti-Hof und die Sammlungen der schönsten Stiftung für moderne Kunst in Europa. Danach die Galerien an der Stadtmauer und Chagalls Grab auf dem kleinen Friedhof. Ein ganzer Tag mitten in der Kunst.",
+        "es": "El laberinto de Miró, el patio de los Giacometti y las colecciones de la fundación de arte moderno más bella de Europa. Después, las galerías de las murallas y la tumba de Chagall en el pequeño cementerio. Un día entero dentro del arte."
+      },
+      "duration": {
+        "de": "Ganztägig",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "de": "Vence und die Matisse-Kapelle",
+        "es": "Vence y la capilla de Matisse"
+      },
+      "teaser": {
+        "de": "Zehn Minuten entfernt liegt die Rosenkranzkapelle, die Matisse für sein Meisterwerk hielt. Fenster, Keramiken und Messgewänder stammen alle von ihm. Anschließend die Altstadt von Vence mit ihrer Kathedrale und dem Chagall-Mosaik. Sakrale Kunst und schattige Plätze.",
+        "es": "A diez minutos está la capilla del Rosario, que Matisse consideraba su obra maestra. Vidrieras, cerámicas y casullas salieron de su mano. Luego, el casco antiguo de Vence, con su catedral y su mosaico de Chagall. Arte sacro y plazas a la sombra."
+      },
+      "duration": {
+        "de": "Halbtägig",
+        "es": "Medio día"
+      }
+    },
+    {
+      "title": {
+        "de": "Loup-Schlucht und Tourrettes",
+        "es": "Gargantas del Loup y Tourrettes"
+      },
+      "teaser": {
+        "de": "Die Straße durch die Loup-Schlucht, die Wasserfälle am Saut du Loup und Gourdon, das wie ein Adlerhorst auf 760 Metern thront. Danach Tourrettes-sur-Loup mit seinen Veilchen-Confiserien. Auf der Rückfahrt reicht der Blick über die gesamte Küste.",
+        "es": "La carretera de las gargantas del Loup, las cascadas del Saut du Loup y Gourdon, encaramado como un nido de águila a 760 metros. Después, Tourrettes-sur-Loup y sus dulces de violeta. A la vuelta, vistas sobre toda la costa."
+      },
+      "duration": {
+        "de": "Halbtägig",
+        "es": "Medio día"
+      }
+    },
+    {
+      "title": {
+        "de": "Renoir in Cagnes und am Meer",
+        "es": "Renoir en Cagnes y la costa"
+      },
+      "teaser": {
+        "de": "Auf dem Anwesen Les Collettes malte Renoir seine letzten Lebensjahre zwischen tausendjährigen Olivenbäumen. Weiter geht es nach Haut-de-Cagnes mit seinem Grimaldi-Schloss, dann zum Fischessen in Cros-de-Cagnes. Die andere Seite der Kunst an der Côte d’Azur.",
+        "es": "En la finca Les Collettes pintó Renoir sus últimos años, entre olivos milenarios. Luego, Haut-de-Cagnes y su castillo Grimaldi, y un almuerzo de pescado en Cros-de-Cagnes. La otra cara del arte de la Costa Azul."
+      },
+      "duration": {
+        "de": "Halbtägig",
+        "es": "Medio día"
+      }
+    },
+    {
+      "title": {
+        "de": "Abendessen in der Colombe d’Or",
+        "es": "Cena en la Colombe d’Or"
+      },
+      "teaser": {
+        "de": "Das legendärste Restaurant der Küste, in dem Picasso und Matisse mit Bildern bezahlten. Sie essen auf der Terrasse unter dem Léger und spazieren danach über die beleuchtete Stadtmauer. Ihr Chauffeur setzt Sie an den Toren ab und bringt Sie spät in der Nacht zurück ins Hotel.",
+        "es": "La mesa más mítica de la costa, donde Picasso y Matisse pagaban con cuadros. Cena en la terraza bajo el Léger y paseo por las murallas iluminadas. Su chófer le deja a las puertas del pueblo y le devuelve al hotel de noche."
+      },
+      "duration": {
+        "de": "Abend",
+        "es": "Noche"
+      }
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "de": "Darf man mit dem Auto nach Saint-Paul-de-Vence hineinfahren?",
+        "es": "¿Se puede entrar en coche en Saint-Paul-de-Vence?"
+      },
+      "a": {
+        "de": "Nein, innerhalb der Stadtmauer ist das Dorf vollständig autofrei. Ihr Chauffeur setzt Sie so nah wie möglich an den Toren ab, wartet in der Nähe und holt Sie zur vereinbarten Zeit an derselben Stelle wieder ab. Gerade abends ist das praktisch, denn dann sind die öffentlichen Parkplätze meist belegt.",
+        "es": "No, el interior de las murallas es totalmente peatonal. Su chófer le deja lo más cerca posible de las puertas, espera en las inmediaciones y vuelve a recogerle en el mismo punto a la hora acordada. Por la noche resulta muy práctico, porque los aparcamientos públicos suelen estar llenos."
+      }
+    },
+    {
+      "q": {
+        "de": "Was kostet ein Transfer zwischen dem Flughafen Nizza und Saint-Paul-de-Vence?",
+        "es": "¿Cuánto cuesta un traslado entre el aeropuerto de Niza y Saint-Paul-de-Vence?"
+      },
+      "a": {
+        "de": "Der private Transfer ab Nizza Côte d’Azur (20 km, 25 bis 30 Minuten) wird zu einem Festpreis berechnet, den wir bei der Buchung bestätigen. Empfang in der Ankunftshalle und Flugüberwachung sind inbegriffen. Wir fahren auch die Hotels in den Hügeln an, in Saint-Paul, La Colle-sur-Loup und Vence.",
+        "es": "El traslado privado desde Niza Costa Azul (20 km, de 25 a 30 minutos) tiene un precio cerrado, confirmado al reservar. Incluye recepción en la sala de llegadas y seguimiento del vuelo. También damos servicio a los hoteles de las colinas: Saint-Paul, La Colle-sur-Loup y Vence."
+      }
+    },
+    {
+      "q": {
+        "de": "Lassen sich Saint-Paul-de-Vence, die Fondation Maeght und Vence an einem Tag verbinden?",
+        "es": "¿Se pueden combinar Saint-Paul-de-Vence, la Fundación Maeght y Vence en un mismo día?"
+      },
+      "a": {
+        "de": "Ja, und zwar ganz entspannt, denn alle drei Orte liegen höchstens zehn Minuten voneinander entfernt. Ein typischer Tag: vormittags die Fondation, mittags Essen im Dorf, nachmittags die Matisse-Kapelle. Ihr Chauffeur richtet das Tempo nach Ihren Wünschen, einen festen Zeitplan gibt es nicht.",
+        "es": "Sí, y con mucha holgura: los tres lugares están a menos de diez minutos entre sí. Un día tipo combina la Fundación por la mañana, el almuerzo en el pueblo y la capilla de Matisse por la tarde. Su chófer adapta el ritmo a lo que usted prefiera, sin horarios impuestos."
+      }
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "slug": "aix-en-provence",
+  "name": {
+    "de": "Aix-en-Provence",
+    "es": "Aix-en-Provence"
+  },
+  "country": {
+    "de": "Frankreich",
+    "es": "Francia"
+  },
+  "airportTransfer": {
+    "de": "Der Flughafen Marseille-Provence (MRS) liegt 30 km südwestlich von Aix. Bis zum Cours Mirabeau sind es 25 bis 30 Minuten. Wir fahren auch den Bahnhof Aix TGV an, 15 Minuten vom Zentrum entfernt. Von dort erreichen Sie Paris in drei Stunden. Wir empfangen Sie mit Namensschild und verfolgen Ihren Flug oder Zug in Echtzeit.",
+    "es": "El aeropuerto de Marsella-Provenza (MRS) está a 30 km al suroeste de Aix, a unos 25 o 30 minutos del Cours Mirabeau. También cubrimos la estación de Aix TGV, a 15 minutos del centro. Desde allí, París queda a tres horas en tren. Le recibimos con un cartel con su nombre y seguimos su vuelo o su tren en tiempo real."
+  },
+  "intro": {
+    "de": [
+      "Aix-en-Provence ist eine Stadt des Wassers und der Kunst, die rund um ihre Brunnen gewachsen ist. Hier finden Sie den Cours Mirabeau, die Stadtpalais des Mazarin-Viertels und das Atelier von Cézanne, im Hintergrund erhebt sich die Montagne Sainte-Victoire. Ihr **Privatchauffeur in Aix-en-Provence** verbindet den Flughafen Marseille-Provence, den Bahnhof Aix TGV, die Landhäuser der Umgebung und die Firmensitze im Gewerbegebiet La Duranne. Sie reisen in einer Mercedes-Limousine oder einem Premium-Van, zum Festpreis und stets pünktlich.",
+      "Aix ist auch der eleganteste Ausgangspunkt für Ausflüge in die Provence. Der **Luberon mit Gordes und Lourmarin** liegt 45 Minuten entfernt. Dazu kommen die Weinberge der Sainte-Victoire und von Palette, Cassis mit seinen Calanques sowie Marseille und das MuCEM in 30 Minuten. Während des Opernfestivals im Juli bringt Ihr Chauffeur Sie so nah wie möglich an die Spielstätten und holt Sie auch spät in der Nacht wieder ab. Ihnen bleibt nur noch der Applaus."
+    ],
+    "es": [
+      "Aix-en-Provence es una ciudad de agua y de arte que creció alrededor de sus fuentes. Aquí están el Cours Mirabeau, las mansiones del barrio Mazarin y el taller de Cézanne, con la montaña Sainte-Victoire al fondo. Su **chófer privado en Aix-en-Provence** le lleva entre el aeropuerto de Marsella-Provenza, la estación de Aix TGV, las casas de campo de los alrededores y las sedes empresariales de La Duranne. Viaja en un sedán Mercedes o en una furgoneta premium, con precio cerrado y total puntualidad.",
+      "Aix es también la base más elegante para recorrer la Provenza. El **Luberon de Gordes y Lourmarin** queda a cuarenta y cinco minutos. Muy cerca están los viñedos de la Sainte-Victoire y de Palette, Cassis y sus calas, y Marsella con el MuCEM, a treinta minutos. Durante el festival de ópera de julio, su chófer le deja lo más cerca posible de los teatros y le recoge de madrugada. A usted solo le queda aplaudir."
+    ]
+  },
+  "experiences": [
+    {
+      "title": {
+        "de": "Dörfer des Luberon",
+        "es": "Pueblos del Luberon"
+      },
+      "teaser": {
+        "de": "Gordes, das an seiner Felswand hängt, die Abtei Sénanque mit ihren Lavendelfeldern in der Saison, die Ockerfelsen von Roussillon, Lourmarin und sein Schloss. Mittagessen auf einer Dorfterrasse. Die Route richtet sich nach dem Licht und nach Ihren Wünschen.",
+        "es": "Gordes colgado de su acantilado, la abadía de Sénanque con sus lavandas en temporada, los ocres de Roussillon, Lourmarin y su castillo. Almuerzo en la terraza de un pueblo, con una ruta que se adapta a la luz y a sus preferencias."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "de": "Sainte-Victoire und Cézannes Weinberge",
+        "es": "Sainte-Victoire y los viñedos de Cézanne"
+      },
+      "teaser": {
+        "de": "Der Berg, den Cézanne hundertmal gemalt hat, und die Route du Tholonet. Danach Weinproben auf den Gütern der Appellation Sainte-Victoire und im winzigen Anbaugebiet Palette. Das Atelier des Malers besuchen Sie zum Auftakt oder zum Abschluss.",
+        "es": "La montaña que Cézanne pintó cien veces y la carretera del Tholonet. Después, catas en las bodegas de la denominación Sainte-Victoire y en el diminuto viñedo de Palette. El taller del pintor, para abrir o cerrar el día."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "de": "Cassis und die Route des Crêtes",
+        "es": "Cassis y la Route des Crêtes"
+      },
+      "teaser": {
+        "de": "Der Hafen von Cassis und eine Bootsfahrt zu den Calanques von En-Vau und Port-Pin. Anschließend führt die Route des Crêtes über die höchsten Meeresklippen Frankreichs bis nach La Ciotat. Zum Mittagessen ein Weißwein aus Cassis.",
+        "es": "El puerto de Cassis y un paseo en barco hasta las calas de En-Vau y Port-Pin. Después, la Route des Crêtes recorre los acantilados marinos más altos de Francia hasta La Ciotat. Con el almuerzo, un vino blanco de Cassis."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "de": "Marseille, MuCEM und Vieux-Port",
+        "es": "Marsella, el MuCEM y el Vieux-Port"
+      },
+      "teaser": {
+        "de": "Nur 30 Minuten von Aix entfernt: das MuCEM und das Fort Saint-Jean, das Viertel Le Panier, Notre-Dame-de-la-Garde und die Corniche Kennedy. Bouillabaisse oder ein Sternerestaurant mit Meerblick. Am frühen Abend sind Sie zurück in Aix.",
+        "es": "A treinta minutos de Aix: el MuCEM y el fuerte de Saint-Jean, el barrio de Le Panier, Notre-Dame-de-la-Garde y la Corniche Kennedy. Bullabesa o un restaurante con estrella frente al mar. Vuelta a Aix a primera hora de la noche."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "de": "Abend in Aix und Festival",
+        "es": "Velada en Aix y festival"
+      },
+      "teaser": {
+        "de": "Abendessen in den Gourmetrestaurants der Altstadt, etwa bei Mickaël Féval oder auf den Terrassen des Mazarin-Viertels. Danach bringt Ihr Chauffeur Sie zur Oper ins Grand Théâtre de Provence oder ins Archevêché. Die Rückfahrt zu Ihrem Landhaus oder Hotel ist auch spät in der Nacht gesichert.",
+        "es": "Cena en las mesas gastronómicas del casco antiguo, como Mickaël Féval o las terrazas del barrio Mazarin. Después, su chófer le deja en el Grand Théâtre de Provence o en el Archevêché para la ópera. La vuelta de madrugada a su casa de campo u hotel está garantizada."
+      },
+      "duration": {
+        "de": "Abend",
+        "es": "Noche"
+      }
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "de": "Was kostet ein Transfer zwischen dem Flughafen Marseille-Provence und Aix-en-Provence?",
+        "es": "¿Cuánto cuesta un traslado entre el aeropuerto de Marsella-Provenza y Aix-en-Provence?"
+      },
+      "a": {
+        "de": "Der private Transfer zwischen Marseille-Provence (MRS) und Aix (30 km, 25 bis 30 Minuten) kostet einen Festpreis, den wir Ihnen bei der Buchung bestätigen. Inbegriffen sind der Empfang mit Namensschild in der Ankunftshalle, die Flugverfolgung in Echtzeit und kostenlose Wartezeit bei Verspätung.",
+        "es": "El traslado privado entre Marsella-Provenza (MRS) y Aix (30 km, de 25 a 30 minutos) tiene un precio cerrado que le confirmamos al reservar. Incluye recibimiento en la sala de llegadas con un cartel con su nombre, seguimiento del vuelo en tiempo real y espera sin coste en caso de retraso."
+      }
+    },
+    {
+      "q": {
+        "de": "Fahren Sie auch die Landhäuser und Weingüter rund um Aix an?",
+        "es": "¿Llegan a las casas de campo y fincas de los alrededores de Aix?"
+      },
+      "a": {
+        "de": "Ja. Ob Villa Gallici, Château de la Gaude oder ein Gut in Le Tholonet oder Puyricard: Wir holen Sie an jeder Adresse im Umland von Aix ab und bringen Sie dorthin. Im Sommer und während des Festivals ist auch die wochenweise Buchung eines Fahrzeugs mit Chauffeur möglich.",
+        "es": "Sí. Villa Gallici, Château de la Gaude o una finca en Le Tholonet o Puyricard: le recogemos y le dejamos en cualquier dirección de la campiña de Aix. En verano y durante el festival también ofrecemos coche con chófer a disposición por semanas."
+      }
+    },
+    {
+      "q": {
+        "de": "Sollte ich während des Festivals von Aix im Juli im Voraus buchen?",
+        "es": "¿Conviene reservar con antelación durante el festival de Aix en julio?"
+      },
+      "a": {
+        "de": "Ja, unbedingt. Im Juli ist die Nachfrage am höchsten, und die Altstadt ist größtenteils Fußgängerzone. Buchen Sie mindestens 72 Stunden im Voraus. Ihr Chauffeur kennt die zugelassenen Haltepunkte nahe den Spielstätten und übernimmt auch Rückfahrten nach Mitternacht.",
+        "es": "Sí, sin duda. En julio la demanda alcanza su punto máximo y gran parte del casco antiguo es peatonal. Reserve con al menos 72 horas de antelación. Su chófer conoce los puntos de bajada autorizados más cercanos a los teatros y le lleva de vuelta también después de medianoche."
+      }
+    }
+  ]
+}

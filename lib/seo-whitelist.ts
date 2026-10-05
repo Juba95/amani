@@ -14,6 +14,7 @@
  * ─────────────────────────────────────────────────────────────────────────────
  */
 
+import { translatedSlugs } from './destinations/i18n';
 import { getDestination } from '@/lib/destinations';
 
 /**
@@ -248,7 +249,15 @@ export function shouldIndex(locale: Locale, slug: string = ''): boolean {
   // FR et EN : vérifier dans la whitelist dédiée
   if (locale === 'fr') return FR_INDEXED_SLUGS.has(slug);
   if (locale === 'en') return EN_INDEXED_SLUGS.has(slug);
-  // DE, ES, AR et ZH : la homepage + les pages natives listées ci-dessus
+  // DE et ES : la homepage, les pages natives, et les destinations traduites
+  // (couverture partielle — le registre i18n fait foi).
+  if (locale === 'de' || locale === 'es') {
+    if (slug === 'destinations') return true;
+    if (slug.startsWith('destinations/')) {
+      return translatedSlugs(locale).includes(slug.slice('destinations/'.length));
+    }
+  }
+  // AR et ZH : la homepage + les pages natives listées ci-dessus
   return AR_ZH_INDEXED_SLUGS.has(slug) || PER_LOCALE_EXTRA_SLUGS[locale].has(slug);
 }
 

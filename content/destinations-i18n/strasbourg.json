@@ -1,0 +1,129 @@
+{
+  "slug": "strasbourg",
+  "name": {
+    "de": "Straßburg",
+    "es": "Estrasburgo"
+  },
+  "country": {
+    "de": "Frankreich",
+    "es": "Francia"
+  },
+  "airportTransfer": {
+    "de": "Der Flughafen Straßburg-Entzheim (SXB) liegt 12 km südwestlich des Zentrums. Bis zur Place Kléber oder ins Viertel Petite France sind es 15 bis 20 Minuten. Ihr Chauffeur verfolgt Ihren Flug in Echtzeit und erwartet Sie mit einem Namensschild in der Ankunftshalle.",
+    "es": "El aeropuerto de Estrasburgo-Entzheim (SXB) está a 12 km al suroeste del centro. Hasta la plaza Kléber o el barrio de la Petite France hay entre 15 y 20 minutos de trayecto. Su chófer sigue su vuelo en tiempo real y le espera en la sala de llegadas con un cartel con su nombre."
+  },
+  "intro": {
+    "de": [
+      "Straßburg ist Sitz europäischer Institutionen und zugleich das Herz des Elsass. Hier stehen das Münster aus rosa Sandstein und die Fachwerkgassen der Petite France nur wenige Minuten vom Europäischen Parlament entfernt. Ihr **Privatchauffeur in Straßburg** fährt Sie vom Parlament bis zu den Winstubs der Krutenau, in einer Mercedes-Limousine oder einem geräumigen Van. Wir übernehmen Transfers von Flughafen und Bahnhof, stundenweise Buchungen sowie grenzüberschreitende Fahrten nach Kehl, Baden-Baden oder Frankfurt. Jede Fahrt wird im Voraus geplant und zum Festpreis berechnet. Ihr Chauffeur kennt die Stadt und ihre Zufahrten.",
+      "Straßburg eignet sich außerdem gut als Ausgangspunkt für das Elsass. Die **Elsässische Weinstraße** beginnt dreißig Minuten vom Zentrum, Colmar und die Hohkönigsburg erreichen Sie in weniger als einer Stunde. Auf der anderen Rheinseite liegen Baden-Baden und der Schwarzwald. Im Dezember verlangt der Weihnachtsmarkt, der älteste Frankreichs, eine genaue Planung. Ihr Chauffeur setzt Sie so nah wie möglich an den Fußgängerzonen ab, wartet auf Sie und bringt Sie auch spät in der Nacht problemlos zurück."
+    ],
+    "es": [
+      "Estrasburgo es sede de instituciones europeas y la gran ciudad de Alsacia. Su catedral de arenisca rosa y las callejuelas de casas con entramado de madera de la Petite France quedan a pocos minutos del Parlamento Europeo. Su **chófer privado en Estrasburgo** le lleva del Parlamento a las winstubs del barrio de la Krutenau, en una berlina Mercedes o en una furgoneta de gran capacidad. Ofrecemos traslados al aeropuerto y a la estación, servicio por horas y trayectos transfronterizos a Kehl, Baden-Baden o Fráncfort. Cada desplazamiento se organiza con antelación y a precio cerrado. Su chófer conoce bien la ciudad y sus accesos.",
+      "Estrasburgo es también el mejor punto de partida para recorrer Alsacia. La **Ruta de los Vinos de Alsacia** empieza a treinta minutos del centro, y Colmar o el castillo del Haut-Kœnigsbourg están a menos de una hora. Al otro lado del Rin, Alemania pone a su alcance Baden-Baden y la Selva Negra. En diciembre, el mercado navideño, el más antiguo de Francia, exige una logística precisa. Su chófer le deja lo más cerca posible de las zonas peatonales, le espera y le devuelve al hotel de noche sin complicaciones."
+    ]
+  },
+  "experiences": [
+    {
+      "title": {
+        "de": "Elsässische Weinstraße",
+        "es": "Ruta de los Vinos de Alsacia"
+      },
+      "teaser": {
+        "de": "Obernai, Ribeauvillé, Riquewihr und Eguisheim: 170 km Weinberge am Fuß der Vogesen. Sie verkosten Riesling und Gewürztraminer bei renommierten Weingütern, Ihr Chauffeur übernimmt das Fahren. Mittagessen in einer Winstub im Dorf.",
+        "es": "Obernai, Ribeauvillé, Riquewihr y Eguisheim: 170 km de viñedos al pie de los Vosgos. Cata de riesling y gewurztraminer en grandes bodegas mientras su chófer conduce. Almuerzo en una winstub de pueblo."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "de": "Colmar und Klein-Venedig",
+        "es": "Colmar y la Pequeña Venecia"
+      },
+      "teaser": {
+        "de": "70 km südlich von Straßburg liegt die elsässischste Stadt des Elsass. Zu sehen sind das Musée Unterlinden mit dem Isenheimer Altar, die Kanäle von Klein-Venedig und das Kopfhaus. Rückfahrt über Eguisheim.",
+        "es": "A 70 km al sur de Estrasburgo se encuentra la ciudad más alsaciana de Alsacia. Museo Unterlinden con el retablo de Isenheim, los canales de la Pequeña Venecia y la Casa de las Cabezas. Regreso por Eguisheim."
+      },
+      "duration": {
+        "de": "Halber Tag",
+        "es": "Medio día"
+      }
+    },
+    {
+      "title": {
+        "de": "Hohkönigsburg",
+        "es": "Castillo del Haut-Kœnigsbourg"
+      },
+      "teaser": {
+        "de": "55 Minuten von Straßburg entfernt überragt die von Kaiser Wilhelm II. restaurierte Burg die elsässische Ebene aus 757 Metern Höhe. Gut kombinierbar mit Schlettstadt und seiner Humanistischen Bibliothek oder der Adlerwarte in Kintzheim.",
+        "es": "A 55 minutos de Estrasburgo, la fortaleza restaurada por el káiser Guillermo II domina la llanura de Alsacia desde 757 metros de altitud. Puede combinarse con Sélestat y su Biblioteca Humanista o con el centro de rapaces de Kintzheim."
+      },
+      "duration": {
+        "de": "Halber Tag",
+        "es": "Medio día"
+      }
+    },
+    {
+      "title": {
+        "de": "Baden-Baden, Thermen und Casino",
+        "es": "Baden-Baden, termas y casino"
+      },
+      "teaser": {
+        "de": "Der eleganteste Kurort Deutschlands liegt 60 km von Straßburg entfernt: Caracalla-Therme, das Kurhaus mit seinem Casino aus der Belle Époque, die Lichtentaler Allee. Der Grenzübertritt erfolgt ohne Formalitäten, die Rückfahrt in der Nacht ist gesichert.",
+        "es": "A 60 km de Estrasburgo está la ciudad balneario más elegante de Alemania: las termas de Caracalla, el Kurhaus con su casino Belle Époque y la avenida Lichtentaler Allee. El paso de frontera no requiere trámites y el regreso nocturno está garantizado."
+      },
+      "duration": {
+        "de": "Tag oder Abend",
+        "es": "Día o noche"
+      }
+    },
+    {
+      "title": {
+        "de": "Gourmetabend in Straßburg",
+        "es": "Velada gastronómica en Estrasburgo"
+      },
+      "teaser": {
+        "de": "Ihr Chauffeur setzt Sie direkt vor dem Restaurant ab, ob Au Crocodile, Buerehiesel oder eine Winstub Ihrer Wahl. Danach geht es zum beleuchteten Münster und an den Quais entlang. Der Wagen wartet auf Sie und bringt Sie bequem ins Hotel zurück.",
+        "es": "Su chófer le deja en la puerta del restaurante: Au Crocodile, Buerehiesel o la winstub que usted elija. Después, recorrido por la catedral iluminada y los muelles. El vehículo le espera y le lleva de vuelta al hotel sin complicaciones."
+      },
+      "duration": {
+        "de": "Abend",
+        "es": "Noche"
+      }
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "de": "Was kostet ein Transfer vom Flughafen Straßburg-Entzheim ins Stadtzentrum?",
+        "es": "¿Cuánto cuesta un traslado entre el aeropuerto de Estrasburgo-Entzheim y el centro de la ciudad?"
+      },
+      "a": {
+        "de": "Der private Transfer zwischen Straßburg-Entzheim (SXB) und dem Straßburger Zentrum wird zu einem Festpreis berechnet, den Sie bei der Buchung erfahren. Im Preis enthalten sind der Empfang in der Ankunftshalle mit Namensschild, die Flugverfolgung in Echtzeit und 60 Minuten kostenlose Wartezeit bei Verspätung.",
+        "es": "El traslado privado entre Estrasburgo-Entzheim (SXB) y el centro de Estrasburgo tiene un precio cerrado que se le comunica al reservar. Incluye la recepción en la sala de llegadas con cartel nominativo, el seguimiento del vuelo en tiempo real y 60 minutos de espera gratuita en caso de retraso."
+      }
+    },
+    {
+      "q": {
+        "de": "Fährt Ihr Chauffeur auch grenzüberschreitend nach Deutschland oder in die Schweiz?",
+        "es": "¿Puede su chófer realizar trayectos transfronterizos a Alemania o Suiza?"
+      },
+      "a": {
+        "de": "Ja. Von Straßburg aus fahren wir regelmäßig nach Kehl, Baden-Baden, Frankfurt, Stuttgart oder Basel. Für grenzüberschreitende Fahrten erhalten Sie vorab ein Angebot zum Festpreis. Das Fahrzeug ist in allen durchfahrenen Ländern zugelassen.",
+        "es": "Sí. Desde Estrasburgo realizamos con frecuencia trayectos a Kehl, Baden-Baden, Fráncfort, Stuttgart o Basilea. Los trayectos transfronterizos se presupuestan con antelación a precio cerrado, con un vehículo autorizado para circular en todos los países por los que pasa."
+      }
+    },
+    {
+      "q": {
+        "de": "Wie früh sollte man während des Straßburger Weihnachtsmarkts buchen?",
+        "es": "¿Con cuánta antelación hay que reservar durante el mercado navideño de Estrasburgo?"
+      },
+      "a": {
+        "de": "Von Ende November bis Ende Dezember ist die Nachfrage sehr hoch, und die Innenstadt ist teilweise für den Verkehr gesperrt. Wir empfehlen, mindestens 72 Stunden im Voraus zu buchen. Ihr Chauffeur kennt die zugelassenen Haltepunkte, die den Fußgängerzonen am nächsten liegen.",
+        "es": "Desde finales de noviembre hasta finales de diciembre la demanda es muy alta y el centro está parcialmente cerrado al tráfico. Recomendamos reservar con al menos 72 horas de antelación. Su chófer conoce los puntos de bajada autorizados más cercanos a las zonas peatonales."
+      }
+    }
+  ]
+}

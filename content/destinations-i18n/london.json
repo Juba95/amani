@@ -1,0 +1,129 @@
+{
+  "slug": "london",
+  "name": {
+    "de": "London",
+    "es": "Londres"
+  },
+  "country": {
+    "de": "Vereinigtes Königreich",
+    "es": "Reino Unido"
+  },
+  "airportTransfer": {
+    "de": "Der Flughafen Heathrow (LHR) liegt 25 km westlich der Londoner Innenstadt. Je nach Verkehr brauchen Sie 45 bis 60 Minuten bis nach Mayfair oder Knightsbridge. Ihr Chauffeur verfolgt Ihren Flug in Echtzeit und erwartet Sie in der Ankunftshalle mit einem Namensschild.",
+    "es": "El aeropuerto de Heathrow (LHR) está a 25 km al oeste del centro de Londres. Según el tráfico, el trayecto hasta Mayfair o Knightsbridge dura entre 45 y 60 minutos. Su chófer sigue el vuelo en tiempo real y le espera en la sala de llegadas con un cartel con su nombre."
+  },
+  "intro": {
+    "de": [
+      "London ist der wichtigste Finanzplatz Europas und eine Hauptstadt mit vielen Gesichtern. Hier liegen die City und Canary Wharf, die Paläste von Westminster und Buckingham, die Theater des West End und die Auktionshäuser von St James’s. Ihr **Privatchauffeur in London** bedient alle fünf Flughäfen, die Bahnhöfe St Pancras und Paddington, Firmensitze ebenso wie die großen Hotels in Mayfair. Zur Verfügung stehen Premium-Limousinen und Vans zu Festpreisen, die bei der Buchung bestätigt werden. Unsere Chauffeure kennen den Londoner Verkehr und die City-Maut-Zone genau.",
+      "Neben den Transfers ist London der ideale Ausgangspunkt für die schönsten Tagesausflüge Englands. **Schloss Windsor** liegt 40 km entfernt, Oxford mit seinen Colleges erreichen Sie in einer Stunde und fünfzehn Minuten. Im Westen warten Stonehenge und Bath, für die Cotswolds sollten Sie einen ganzen Tag einplanen. Bei stundenweiser Buchung fährt Ihr Chauffeur Sie von Geschäftsterminen zu den Boutiquen der Bond Street und weiter zum Abendessen in Covent Garden. Ein Taxi müssen Sie nie suchen: Der Wagen wartet auf Sie, jede Etappe ist geplant."
+    ],
+    "es": [
+      "Primera plaza financiera de Europa y capital de muchas caras, Londres reúne la City y Canary Wharf, los palacios de Westminster y Buckingham, los teatros del West End y las casas de subastas de St James’s. Su **chófer privado en Londres** cubre los cinco aeropuertos, las estaciones de St Pancras y Paddington, las sedes corporativas y los grandes hoteles de Mayfair. Ofrecemos sedanes y vans premium con precio fijo confirmado al reservar. Nuestros chóferes conocen bien el tráfico londinense y la zona de peaje urbano.",
+      "Más allá de los traslados, Londres es el mejor punto de partida para las excursiones más bonitas de Inglaterra. El **castillo de Windsor** está a 40 km y Oxford, con sus colleges, a una hora y cuarto. Hacia el oeste quedan Stonehenge y Bath; los Cotswolds merecen un día entero. Con el servicio por horas, su chófer le lleva de una reunión de negocios a las tiendas de Bond Street y luego a cenar en Covent Garden. No tendrá que buscar un taxi en ningún momento: el vehículo le espera y cada parada está planificada."
+    ]
+  },
+  "experiences": [
+    {
+      "title": {
+        "de": "Schloss Windsor und Eton",
+        "es": "Castillo de Windsor y Eton"
+      },
+      "teaser": {
+        "de": "40 km westlich von London steht die älteste bewohnte Königsresidenz der Welt, mit den State Apartments, der St George’s Chapel und der Wachablösung. Danach geht es über die Themse nach Eton zum berühmten College, zurück über den Long Walk.",
+        "es": "A 40 km al oeste de Londres se alza la residencia real habitada más antigua del mundo: los Apartamentos de Estado, la capilla de San Jorge y el cambio de guardia. Después se cruza el Támesis hasta Eton y su college, con regreso por el Long Walk."
+      },
+      "duration": {
+        "de": "Halbtags",
+        "es": "Medio día"
+      }
+    },
+    {
+      "title": {
+        "de": "Stonehenge und Bath",
+        "es": "Stonehenge y Bath"
+      },
+      "teaser": {
+        "de": "Zuerst der 4.500 Jahre alte Steinkreis auf der Salisbury Plain, dann das georgianische Bath mit den Römischen Thermen, dem Royal Crescent und der Abtei. Zwei UNESCO-Welterbestätten an einem Tag, das Mittagessen ist reserviert, am Abend sind Sie zurück im Hotel.",
+        "es": "Primero el círculo de piedras de Salisbury Plain, con 4.500 años de antigüedad. Luego Bath, la ciudad georgiana: termas romanas, Royal Crescent y abadía. Dos sitios Patrimonio de la Humanidad de la UNESCO en un día, almuerzo reservado y regreso al hotel por la tarde."
+      },
+      "duration": {
+        "de": "Ganztags",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "de": "Oxford und Blenheim Palace",
+        "es": "Oxford y Blenheim Palace"
+      },
+      "teaser": {
+        "de": "90 km nordwestlich liegt die Universitätsstadt der „träumenden Türme“: Christ Church, die Bodleian Library, die Radcliffe Camera. Dazu kommt Blenheim Palace, Geburtsort Churchills und barockes Meisterwerk inmitten eines Parks von Capability Brown.",
+        "es": "A 90 km al noroeste, la ciudad universitaria de las «agujas soñadoras»: Christ Church, la Bodleian Library, la Radcliffe Camera. Se completa con Blenheim Palace, lugar de nacimiento de Churchill y obra maestra barroca rodeada de un parque diseñado por Capability Brown."
+      },
+      "duration": {
+        "de": "Ganztags",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "de": "Ein Tag in den Cotswolds",
+        "es": "Un día en los Cotswolds"
+      },
+      "teaser": {
+        "de": "Bibury mit den Cottages der Arlington Row, Bourton-on-the-Water, Stow-on-the-Wold: Die Dörfer aus honigfarbenem Stein liegen zwei Stunden von London entfernt. Die Route ist flexibel, das Mittagessen gibt es in einem historischen Pub, Fotostopps machen Sie, wann immer Sie möchten.",
+        "es": "Bibury y las casitas de Arlington Row, Bourton-on-the-Water, Stow-on-the-Wold: los pueblos de piedra dorada a dos horas de Londres. Itinerario flexible, almuerzo en un pub histórico y paradas para fotos cuando usted quiera."
+      },
+      "duration": {
+        "de": "Ganztags",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "de": "Abend im West End und in Mayfair",
+        "es": "Noche en el West End y Mayfair"
+      },
+      "teaser": {
+        "de": "Ihr Chauffeur setzt Sie vor Ihrem Theater im West End oder Ihrem Restaurant ab, etwa The Ritz, Sketch oder Core by Clare Smyth. Danach folgt eine Fahrt vorbei am beleuchteten Westminster und an der Tower Bridge. Der Wagen bleibt für Sie bereit, die Rückfahrt ins Hotel erfolgt ohne Wartezeit.",
+        "es": "Le dejamos en la puerta de su teatro del West End o de su restaurante, ya sea The Ritz, Sketch o Core by Clare Smyth. Después, un recorrido por Westminster y Tower Bridge iluminados. El vehículo queda a su disposición y vuelve al hotel sin esperas."
+      },
+      "duration": {
+        "de": "Abends",
+        "es": "Noche"
+      }
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "de": "Was kostet ein Transfer zwischen Heathrow und der Londoner Innenstadt?",
+        "es": "¿Cuánto cuesta un traslado entre Heathrow y el centro de Londres?"
+      },
+      "a": {
+        "de": "Der private Transfer zwischen Heathrow (LHR) und der Londoner Innenstadt wird zu einem Festpreis abgerechnet, den wir bei der Buchung bestätigen. Inbegriffen sind der Empfang in der Ankunftshalle mit Namensschild, die Flugverfolgung in Echtzeit und bei Verspätung 60 Minuten kostenlose Wartezeit.",
+        "es": "El traslado privado entre Heathrow (LHR) y el centro de Londres tiene un precio fijo, confirmado al reservar. Incluye la recepción en la sala de llegadas con cartel nominativo, el seguimiento del vuelo en tiempo real y 60 minutos de espera gratuita en caso de retraso."
+      }
+    },
+    {
+      "q": {
+        "de": "Fahren Sie alle fünf Londoner Flughäfen und den Bahnhof St Pancras an?",
+        "es": "¿Cubren los cinco aeropuertos de Londres y la estación de St Pancras?"
+      },
+      "a": {
+        "de": "Ja. Heathrow, Gatwick, Stansted, Luton und London City bedienen wir zum Festpreis, ebenso St Pancras International für den Eurostar. Ihr Chauffeur richtet die Abholung nach der tatsächlichen Ankunftszeit von Flug oder Zug. Bei angemessener Verspätung fällt kein Aufpreis an.",
+        "es": "Sí. Heathrow, Gatwick, Stansted, Luton y London City tienen precio fijo, igual que St Pancras International para el Eurostar. Su chófer ajusta la recogida a la hora real de llegada del vuelo o del tren, sin recargo si el retraso es razonable."
+      }
+    },
+    {
+      "q": {
+        "de": "Sind die City-Maut und die ULEZ-Gebühr in Ihren Londoner Preisen enthalten?",
+        "es": "¿Están incluidos el peaje urbano y la zona ULEZ en sus tarifas en Londres?"
+      },
+      "a": {
+        "de": "Ja. Der bei der Buchung bestätigte Preis umfasst die City-Maut (Congestion Charge), die ULEZ-Gebühr und alle Parkkosten der Fahrt. Im Fahrzeug wird kein Aufpreis verlangt: Der bestätigte Betrag ist der Betrag, den wir berechnen.",
+        "es": "Sí. El precio confirmado al reservar incluye el peaje urbano (Congestion Charge), la tasa de la zona ULEZ y los gastos de aparcamiento del trayecto. A bordo no se le pedirá ningún suplemento: el importe confirmado es el importe facturado."
+      }
+    }
+  ]
+}

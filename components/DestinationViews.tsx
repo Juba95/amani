@@ -13,7 +13,19 @@ import {
   type Destination,
 } from '@/lib/destinations';
 
-type DestLocale = 'fr' | 'en';
+type DestLocale = 'fr' | 'en' | 'de' | 'es';
+
+/**
+ * Lit un champ localisé avec repli sur l'anglais. L'allemand et l'espagnol ne
+ * couvrent qu'une partie des villes : les routes ne sont générées que pour les
+ * villes traduites, mais le repli évite une page blanche si un champ manque.
+ */
+function L(o: { fr: string; en: string; de?: string; es?: string }, l: DestLocale): string {
+  return o[l] ?? o.en;
+}
+function LA(o: { fr: string[]; en: string[]; de?: string[]; es?: string[] }, l: DestLocale): string[] {
+  return o[l] ?? o.en;
+}
 
 const T = {
   fr: {
@@ -64,6 +76,55 @@ const T = {
     hubIntro:
       'From Paris to the European capitals, from alpine resorts to Mediterranean shores: a private chauffeur, a premium vehicle and a fixed price, wherever you go.',
   },
+
+  de: {
+    base: '/de/destinations',
+    h1: (city: string) => `Privatchauffeur in ${city}`,
+    airportTag: 'Flughafentransfer',
+    airportTitle: (city: string) => `Flughafen ${city} — Privattransfer`,
+    expTag: 'Erlebnisse',
+    expTitle: (city: string) => `5 Erlebnisse mit Ihrem Chauffeur in ${city}`,
+    expIntro:
+      'Über den reinen Transfer hinaus wird Ihr Chauffeur zum Schlüssel für die Region — private Routen, Festpreise, das Fahrzeug wartet bei jeder Etappe.',
+    from: 'Ab',
+    faqTag: 'Häufige Fragen',
+    faqTitle: (city: string) => `Privatchauffeur ${city} — Ihre Fragen`,
+    nearbyTag: 'Städte in der Nähe',
+    nearbyTitle: 'Setzen Sie Ihre Reise fort',
+    ctaTitle: 'Buchen Sie Ihren Chauffeur',
+    ctaSub: 'Bestätigung innerhalb von 30 Minuten · Festpreis vorab genannt',
+    book: 'Angebot anfordern',
+    call: '+33 6 87 16 97 47',
+    allDest: 'Alle Ziele',
+    hubTag: 'Ziele',
+    hubH1: 'Privatchauffeur in ganz Europa',
+    hubIntro:
+      'Von Paris bis in die europäischen Hauptstädte, von den Alpenorten bis ans Mittelmeer: ein Privatchauffeur, ein Premiumfahrzeug und ein Festpreis, wohin Sie auch fahren.',
+  },
+  es: {
+    base: '/es/destinations',
+    h1: (city: string) => `Chófer privado en ${city}`,
+    airportTag: 'Traslado al aeropuerto',
+    airportTitle: (city: string) => `Aeropuerto de ${city} — traslado privado`,
+    expTag: 'Experiencias',
+    expTitle: (city: string) => `5 experiencias con su chófer en ${city}`,
+    expIntro:
+      'Más allá del traslado, su chófer se convierte en la llave de la región: itinerarios privados, precios cerrados y el vehículo a su disposición en cada parada.',
+    from: 'Desde',
+    faqTag: 'Preguntas frecuentes',
+    faqTitle: (city: string) => `Chófer privado ${city} — sus preguntas`,
+    nearbyTag: 'Ciudades cercanas',
+    nearbyTitle: 'Continúe su itinerario',
+    ctaTitle: 'Reserve su chófer',
+    ctaSub: 'Confirmación en menos de 30 minutos · Precio cerrado comunicado por adelantado',
+    book: 'Solicitar presupuesto',
+    call: '+33 6 87 16 97 47',
+    allDest: 'Todos los destinos',
+    hubTag: 'Destinos',
+    hubH1: 'Chófer privado en toda Europa',
+    hubIntro:
+      'De París a las capitales europeas, de las estaciones alpinas a las costas mediterráneas: un chófer privado, un vehículo premium y un precio cerrado, vaya donde vaya.',
+  },
 };
 
 /** Rend un texte dont les segments **entre doubles astérisques** passent en <strong>. */
@@ -79,7 +140,7 @@ function Strong({ text }: { text: string }) {
 function Price({ price, locale }: { price: string; locale: DestLocale }) {
   return (
     <b className="font-serif text-base text-gray-900 font-normal">
-      {locale === 'fr' ? `${price} €` : `€${price}`}
+      {locale === 'en' ? `€${price}` : `${price} €`}
     </b>
   );
 }
@@ -106,7 +167,7 @@ export function DestinationDetail({ d, locale }: { d: Destination; locale: DestL
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Amani Limousines', item: BASE_URL },
       { '@type': 'ListItem', position: 2, name: locale === 'fr' ? 'Destinations' : 'Destinations', item: `${BASE_URL}${t.base}` },
-      { '@type': 'ListItem', position: 3, name: d.name[locale], item: `${BASE_URL}${t.base}/${d.slug}` },
+      { '@type': 'ListItem', position: 3, name: L(d.name, locale), item: `${BASE_URL}${t.base}/${d.slug}` },
     ],
   };
 
@@ -115,8 +176,8 @@ export function DestinationDetail({ d, locale }: { d: Destination; locale: DestL
     '@type': 'FAQPage',
     mainEntity: d.faq.map((f) => ({
       '@type': 'Question',
-      name: f.q[locale],
-      acceptedAnswer: { '@type': 'Answer', text: f.a[locale] },
+      name: L(f.q, locale),
+      acceptedAnswer: { '@type': 'Answer', text: L(f.a, locale) },
     })),
   };
 
@@ -134,13 +195,13 @@ export function DestinationDetail({ d, locale }: { d: Destination; locale: DestL
       {/* Hero : pays + h1 + image (si générée) + intro */}
       <section className="pt-36 pb-12 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
-          <p className="tag">{d.country[locale]}</p>
-          <h1 className="heading mt-3">{t.h1(d.name[locale])}</h1>
+          <p className="tag">{L(d.country, locale)}</p>
+          <h1 className="heading mt-3">{t.h1(L(d.name, locale))}</h1>
           {cityImage && (
             <div className="relative aspect-[3/2] sm:aspect-[21/9] rounded-lg overflow-hidden mt-8">
               <Image
                 src={cityImage}
-                alt={`${d.name[locale]} — ${d.country[locale]}`}
+                alt={`${L(d.name, locale)} — ${L(d.country, locale)}`}
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 896px"
@@ -154,7 +215,7 @@ export function DestinationDetail({ d, locale }: { d: Destination; locale: DestL
             </div>
           )}
           <div className="mt-6 space-y-5">
-            {d.intro[locale].map((p, i) => (
+            {LA(d.intro, locale).map((p, i) => (
               <p key={i} className="sf text-stone-600 leading-relaxed">
                 <Strong text={p} />
               </p>
@@ -169,10 +230,10 @@ export function DestinationDetail({ d, locale }: { d: Destination; locale: DestL
           <p className="tag">{t.airportTag}</p>
           <div className="card mt-4">
             <h2 className="font-serif text-lg text-gray-900">
-              {d.airport ?? t.airportTitle(d.name[locale])}
+              {d.airport ?? t.airportTitle(L(d.name, locale))}
             </h2>
             <p className="sf text-sm text-stone-600 leading-relaxed mt-2">
-              {d.airportTransfer[locale]}
+              {L(d.airportTransfer, locale)}
             </p>
           </div>
         </div>
@@ -216,7 +277,7 @@ export function DestinationDetail({ d, locale }: { d: Destination; locale: DestL
       <section className="py-14 px-6 md:px-10 bg-white">
         <div className="max-w-4xl mx-auto">
           <p className="tag">{t.expTag}</p>
-          <h2 className="heading mt-2">{t.expTitle(d.name[locale])}</h2>
+          <h2 className="heading mt-2">{t.expTitle(L(d.name, locale))}</h2>
           <p className="sf text-stone-500 mt-4 mb-10 leading-relaxed">{t.expIntro}</p>
           <div className="space-y-4">
             {d.experiences.map((e, i) => {
@@ -227,8 +288,8 @@ export function DestinationDetail({ d, locale }: { d: Destination; locale: DestL
                     {['I', 'II', 'III', 'IV', 'V'][i]}
                   </span>
                   <div className="flex-1">
-                    <h3 className="font-serif text-lg text-gray-900">{e.title[locale]}</h3>
-                    <p className="sf text-sm text-stone-600 leading-relaxed mt-1">{e.teaser[locale]}</p>
+                    <h3 className="font-serif text-lg text-gray-900">{L(e.title, locale)}</h3>
+                    <p className="sf text-sm text-stone-600 leading-relaxed mt-1">{L(e.teaser, locale)}</p>
                     {detail && (
                       <span className="inline-block mt-2 font-sans text-[0.65rem] font-bold tracking-[0.12em] uppercase"
                         style={{ color: '#6d5a30' }}>
@@ -237,7 +298,7 @@ export function DestinationDetail({ d, locale }: { d: Destination; locale: DestL
                     )}
                   </div>
                   <div className="shrink-0 text-left sm:text-right font-sans text-xs text-stone-400">
-                    <span className="block">{e.duration[locale]}</span>
+                    <span className="block">{L(e.duration, locale)}</span>
                     <span className="block mt-0.5">
                       {t.from} <Price price={e.price} locale={locale} />
                     </span>
@@ -263,12 +324,12 @@ export function DestinationDetail({ d, locale }: { d: Destination; locale: DestL
       <section className="py-14 px-6 md:px-10 bg-warm-50">
         <div className="max-w-4xl mx-auto">
           <p className="tag">{t.faqTag}</p>
-          <h2 className="heading mt-2 mb-8">{t.faqTitle(d.name[locale])}</h2>
+          <h2 className="heading mt-2 mb-8">{t.faqTitle(L(d.name, locale))}</h2>
           <div className="space-y-4">
             {d.faq.map((f) => (
               <div key={f.q.en} className="card">
-                <h3 className="font-serif text-lg text-gray-900">{f.q[locale]}</h3>
-                <p className="sf text-sm text-stone-600 leading-relaxed mt-2">{f.a[locale]}</p>
+                <h3 className="font-serif text-lg text-gray-900">{L(f.q, locale)}</h3>
+                <p className="sf text-sm text-stone-600 leading-relaxed mt-2">{L(f.a, locale)}</p>
               </div>
             ))}
           </div>
@@ -293,7 +354,7 @@ export function DestinationDetail({ d, locale }: { d: Destination; locale: DestL
                     {firstExp && (
                       <Link href={`${t.base}/${n.slug}/${firstExp.slug}`}
                         className="block font-sans text-xs text-stone-500 hover:text-gold-500 mt-2 transition-colors">
-                        → {firstExp.title[locale]}
+                        → {L(firstExp.title, locale)}
                       </Link>
                     )}
                   </div>
@@ -308,7 +369,7 @@ export function DestinationDetail({ d, locale }: { d: Destination; locale: DestL
       {countrySisters.length > 0 && (
         <section className="py-14 px-6 md:px-10 bg-warm-50">
           <div className="max-w-4xl mx-auto">
-            <p className="tag">{d.country[locale]}</p>
+            <p className="tag">{L(d.country, locale)}</p>
             <h2 className="heading mt-2 mb-4">
               {locale === 'fr'
                 ? `Chauffeur privé en ${d.country.fr} — nos autres destinations`
@@ -326,7 +387,7 @@ export function DestinationDetail({ d, locale }: { d: Destination; locale: DestL
                   href={`${t.base}/${n.slug}`}
                   className="font-sans text-sm px-5 py-2.5 rounded-full border border-warm-200 bg-white text-stone-600 hover:border-stone-500 hover:text-gray-900 transition-colors"
                 >
-                  {n.name[locale]}
+                  {L(n.name, locale)}
                 </Link>
               ))}
               <Link
@@ -367,6 +428,13 @@ export function DestinationDetail({ d, locale }: { d: Destination; locale: DestL
 }
 
 /** Destinations phares illustrées (slugs du registre disposant d'une photo). */
+const HUB_SUBTITLE: Record<DestLocale, string> = {
+  fr: 'Chauffeur privé',
+  en: 'Private chauffeur',
+  de: 'Privatchauffeur',
+  es: 'Chófer privado',
+};
+
 const HUB_HIGHLIGHTS: { slug: string; img: string; label: { fr: string; en: string } }[] = [
   { slug: 'versailles-ville', img: '/images/home/versailles.jpg', label: { fr: 'Versailles', en: 'Versailles' } },
   { slug: 'giverny-village', img: '/images/home/giverny.jpg', label: { fr: 'Giverny', en: 'Giverny' } },
@@ -375,16 +443,27 @@ const HUB_HIGHLIGHTS: { slug: string; img: string; label: { fr: string; en: stri
   { slug: 'tours', img: '/images/home/chambord.jpg', label: { fr: 'Châteaux de la Loire', en: 'Loire Valley' } },
 ];
 
-export function DestinationsHub({ locale, children }: { locale: DestLocale; children?: React.ReactNode }) {
+export function DestinationsHub({
+  locale,
+  children,
+  destinations,
+}: {
+  locale: DestLocale;
+  children?: React.ReactNode;
+  /** Sous-ensemble à lister. Par défaut tout le registre (français, anglais). */
+  destinations?: Destination[];
+}) {
   const t = T[locale];
+  const list = destinations ?? ALL_DESTINATIONS;
+  const inScope = new Set(list.map((d) => d.slug));
 
   // Groupement par pays, dans l'ordre d'apparition du registre
   const byCountry = new Map<string, Destination[]>();
-  for (const d of ALL_DESTINATIONS) {
-    const key = d.country[locale];
-    const list = byCountry.get(key) ?? [];
-    list.push(d);
-    byCountry.set(key, list);
+  for (const d of list) {
+    const key = L(d.country, locale);
+    const group = byCountry.get(key) ?? [];
+    group.push(d);
+    byCountry.set(key, group);
   }
 
   return (
@@ -407,16 +486,16 @@ export function DestinationsHub({ locale, children }: { locale: DestLocale; chil
       {/* Destinations phares illustrées */}
       <section className="pb-14 px-6 md:px-10 bg-white">
         <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-          {HUB_HIGHLIGHTS.map((h) => (
+          {HUB_HIGHLIGHTS.filter((h) => inScope.has(h.slug)).map((h) => (
             <Link key={h.slug} href={`${t.base}/${h.slug}`}
               className="group relative aspect-[3/4] rounded-md overflow-hidden hover:-translate-y-1 transition-transform">
-              <Image src={h.img} alt={h.label[locale]} fill sizes="(max-width:640px) 45vw, 220px" quality={65}
+              <Image src={h.img} alt={L(h.label, locale)} fill sizes="(max-width:640px) 45vw, 220px" quality={65}
                 className="object-cover group-hover:scale-105 transition-transform duration-500" />
               <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, rgba(0,0,0,.05) 35%, rgba(0,0,0,.78))' }} />
               <div className="absolute bottom-0 left-0 right-0 p-4">
-                <h3 className="font-serif text-lg text-white">{h.label[locale]}</h3>
+                <h3 className="font-serif text-lg text-white">{L(h.label, locale)}</h3>
                 <p className="font-sans text-[0.6rem] tracking-[0.12em] uppercase text-white/75">
-                  {locale === 'en' ? 'Private chauffeur' : 'Chauffeur privé'}
+                  {HUB_SUBTITLE[locale]}
                 </p>
               </div>
             </Link>
@@ -436,7 +515,7 @@ export function DestinationsHub({ locale, children }: { locale: DestLocale; chil
                       href={`${t.base}/${d.slug}`}
                       className="sf text-sm text-stone-600 hover:text-gray-900 transition-colors"
                     >
-                      {d.name[locale]}
+                      {L(d.name, locale)}
                     </Link>
                   </li>
                 ))}

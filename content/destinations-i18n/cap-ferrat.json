@@ -1,0 +1,129 @@
+{
+  "slug": "cap-ferrat",
+  "name": {
+    "de": "Saint-Jean-Cap-Ferrat",
+    "es": "Saint-Jean-Cap-Ferrat"
+  },
+  "country": {
+    "de": "Frankreich",
+    "es": "Francia"
+  },
+  "airportTransfer": {
+    "de": "Der Flughafen Nizza-Côte d’Azur (NCE) liegt rund 15 km von Saint-Jean-Cap-Ferrat entfernt. Über die untere Corniche brauchen Sie je nach Verkehr 25 bis 35 Minuten. Ihr Chauffeur empfängt Sie mit Namensschild in der Ankunftshalle. Er verfolgt Ihren Flug in Echtzeit und passt die Abholung entsprechend an.",
+    "es": "El aeropuerto de Niza-Costa Azul (NCE) está a unos 15 km de Saint-Jean-Cap-Ferrat. Por la corniche inferior, el trayecto dura entre 25 y 35 minutos según el tráfico. Su chófer le recibe en la sala de llegadas con un cartel con su nombre y sigue su vuelo en tiempo real para ajustar la recogida."
+  },
+  "intro": {
+    "de": [
+      "Saint-Jean-Cap-Ferrat ist die begehrteste Halbinsel der Côte d’Azur. Hier stehen hundertjährige Villen, die Gärten der Villa Ephrussi de Rothschild und ein Küstenweg mit Blick auf die Bucht von Villefranche. Ihr **Privatchauffeur in Saint-Jean-Cap-Ferrat** fährt Sie mit einer Mercedes-Limousine oder einem Van zum Grand-Hôtel du Cap-Ferrat, zur Voile d’Or und zu den Privatresidenzen der Halbinsel. Wir übernehmen Flughafentransfers und stundenweise Buchungen. Die Zugangsdaten für Villentore klären wir vorab. Jede Fahrt ist vorbereitet, zum Festpreis.",
+      "Vom Cap aus ist alles nah. Monaco erreichen Sie über die mittlere Corniche in zwanzig Minuten, dazu kommen Nizza mit seiner Promenade und Èze hoch über dem Meer. Beaulieu mit der Villa Kérylos liegt fünf Minuten entfernt. Im Sommer kümmert sich Ihr Chauffeur um die **Zufahrt zu Stränden und Restaurants am Wasser**, etwa Paloma Beach oder Club de la Voile, Wartezeit inklusive. Außerhalb der Saison kehrt auf der Halbinsel eine Ruhe ein, wie sie nur wenige Orte an der Riviera bieten."
+    ],
+    "es": [
+      "Saint-Jean-Cap-Ferrat es la península más codiciada de la Costa Azul. Reúne villas centenarias, los jardines de la Villa Ephrussi de Rothschild y un sendero costero frente a la bahía de Villefranche. Su **chófer privado en Saint-Jean-Cap-Ferrat** da servicio al Grand-Hôtel du Cap-Ferrat, a La Voile d’Or y a las residencias privadas de la península, en berlina Mercedes o en van. Ofrecemos traslados al aeropuerto y servicio por horas, y los accesos a las villas se confirman de antemano. Cada trayecto se prepara con antelación y a precio cerrado.",
+      "Desde el Cap todo queda cerca. Mónaco está a veinte minutos por la corniche intermedia, y también están Niza con su paseo marítimo y Èze, colgada sobre el mar. Beaulieu y su Villa Kérylos quedan a cinco minutos. En verano, su chófer se ocupa del **acceso a playas y restaurantes junto al mar**, como Paloma Beach o el Club de la Voile, con la espera incluida. Fuera de temporada, la península recupera una calma que pocos lugares de la Riviera pueden ofrecer."
+    ]
+  },
+  "experiences": [
+    {
+      "title": {
+        "de": "Monaco am Abend",
+        "es": "Mónaco de noche"
+      },
+      "teaser": {
+        "de": "Zwanzig Minuten vom Cap entfernt liegt das ganze Fürstentum. Sie essen im Louis XV oder im Grill des Hôtel de Paris, besuchen das Casino de Monte-Carlo und fahren nachts über die untere Corniche zurück. Das Fahrzeug wartet vor jeder Adresse.",
+        "es": "A veinte minutos del Cap, todo el Principado: cena en Le Louis XV o en Le Grill del Hôtel de Paris, el Casino de Monte-Carlo y regreso nocturno por la corniche inferior. El vehículo le espera frente a cada dirección."
+      },
+      "duration": {
+        "de": "Abend",
+        "es": "Noche"
+      }
+    },
+    {
+      "title": {
+        "de": "Die drei Corniches",
+        "es": "Las tres corniches"
+      },
+      "teaser": {
+        "de": "Untere, mittlere und obere Corniche zwischen Nizza und Menton: Èze Village, der Aussichtspunkt von La Turbie mit dem Tropaeum Alpium, Roquebrune-Cap-Martin. Fotostopps über der Bucht von Villefranche. Die Route richtet sich nach Ihrem Tempo.",
+        "es": "Corniche inferior, intermedia y superior entre Niza y Menton: Èze Village, el mirador de La Turbie con su Trofeo de Augusto y Roquebrune-Cap-Martin. Paradas para fotos sobre la bahía de Villefranche, con un itinerario adaptado a su ritmo."
+      },
+      "duration": {
+        "de": "Halber Tag",
+        "es": "Medio día"
+      }
+    },
+    {
+      "title": {
+        "de": "Saint-Paul-de-Vence und das Hinterland",
+        "es": "Saint-Paul-de-Vence y el interior"
+      },
+      "teaser": {
+        "de": "Zuerst das Künstlerdorf und die Fondation Maeght, dann Vence mit der Matisse-Kapelle. Auf dem Rückweg folgt Tourrettes-sur-Loup. Mittagessen in der Colombe d’Or nach Reservierung, während Ihr Chauffeur Parken und Zeitplan übernimmt.",
+        "es": "El pueblo de artistas y la Fondation Maeght, después Vence y su capilla Matisse, y Tourrettes-sur-Loup a la vuelta. Almuerzo en La Colombe d’Or con reserva, mientras su chófer se encarga del aparcamiento y los horarios."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "de": "Sanremo und die italienische Riviera",
+        "es": "San Remo y la Riviera italiana"
+      },
+      "teaser": {
+        "de": "Ohne Grenzformalitäten geht es nach Ligurien. Freitags lockt der Markt von Ventimiglia, dazu kommen Sanremo mit seinem Jugendstil-Casino und Dolceacqua mit der mittelalterlichen Brücke, die Monet gemalt hat. Zurück fahren Sie bei Sonnenuntergang über die obere Corniche.",
+        "es": "Un paso de frontera sin trámites hacia Liguria: el mercado de Ventimiglia los viernes, San Remo y su casino de estilo Liberty, Dolceacqua y el puente medieval que pintó Monet. Regreso por la corniche superior al atardecer."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "de": "Villa Ephrussi de Rothschild und Rundfahrt über die Halbinsel",
+        "es": "Villa Ephrussi de Rothschild y vuelta a la península"
+      },
+      "teaser": {
+        "de": "Die rosafarbene Villa der Baronin Béatrice und ihre neun Themengärten, danach der Hafen von Saint-Jean, die Pointe Saint-Hospice und ein Tisch am Wasser. Ein halber Tag, ganz der Halbinsel gewidmet.",
+        "es": "La villa rosa de la baronesa Béatrice y sus nueve jardines temáticos, después el puerto de Saint-Jean, la punta de Saint-Hospice y una mesa junto al mar. Medio día dedicado por completo a la península."
+      },
+      "duration": {
+        "de": "Halber Tag",
+        "es": "Medio día"
+      }
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "de": "Was kostet ein Transfer zwischen dem Flughafen Nizza und Saint-Jean-Cap-Ferrat?",
+        "es": "¿Cuánto cuesta un traslado entre el aeropuerto de Niza y Saint-Jean-Cap-Ferrat?"
+      },
+      "a": {
+        "de": "Der private Transfer zwischen Nizza-Côte d’Azur (NCE) und Saint-Jean-Cap-Ferrat kostet einen Festpreis, den wir bei der Buchung bestätigen. Inbegriffen sind der Empfang mit Namensschild in der Ankunftshalle, die Flugverfolgung in Echtzeit und kostenlose Wartezeit bei Verspätung.",
+        "es": "El traslado privado entre Niza-Costa Azul (NCE) y Saint-Jean-Cap-Ferrat tiene un precio cerrado, confirmado al reservar. Incluye la recepción en la sala de llegadas con cartel nominativo, el seguimiento del vuelo en tiempo real y tiempo de espera gratuito en caso de retraso."
+      }
+    },
+    {
+      "q": {
+        "de": "Fahren Sie die Privatvillen der Halbinsel direkt an?",
+        "es": "¿Pueden llegar directamente a las villas privadas de la península?"
+      },
+      "a": {
+        "de": "Ja. Nennen Sie uns bei der Buchung die genaue Adresse und die Zugangshinweise, also Tor, Hausmeister oder Code. Ihr Chauffeur setzt Sie direkt vor dem Anwesen ab und holt Sie dort wieder ab. Das gilt auch für die engen Straßen der Pointe Saint-Hospice, für die wir ein passendes Fahrzeug einsetzen.",
+        "es": "Sí. Indíquenos al reservar la dirección exacta y las instrucciones de acceso: portón, guarda o código. Su chófer le deja y le recoge delante de la propiedad, también en las calles estrechas de la punta de Saint-Hospice, con un vehículo del tamaño adecuado."
+      }
+    },
+    {
+      "q": {
+        "de": "Bieten Sie Transfers während des Grand Prix von Monaco an?",
+        "es": "¿Realizan traslados durante el Gran Premio de Mónaco?"
+      },
+      "a": {
+        "de": "Ja. Ende Mai ist die Nachfrage allerdings enorm, und einige Straßen im Fürstentum sind täglich mehrere Stunden gesperrt. Buchen Sie mindestens zwei Wochen im Voraus. Ihr Chauffeur kennt die Umfahrungen und die zugelassenen Haltepunkte, die der Strecke am nächsten liegen.",
+        "es": "Sí, aunque a finales de mayo la demanda es altísima y varias calles del Principado cierran durante horas cada día. Reserve con al menos dos semanas de antelación. Su chófer conoce las rutas alternativas y los puntos de bajada autorizados más cercanos al circuito."
+      }
+    }
+  ]
+}

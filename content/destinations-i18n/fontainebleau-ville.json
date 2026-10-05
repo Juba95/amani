@@ -1,0 +1,129 @@
+{
+  "slug": "fontainebleau-ville",
+  "name": {
+    "de": "Fontainebleau",
+    "es": "Fontainebleau"
+  },
+  "country": {
+    "de": "Frankreich",
+    "es": "Francia"
+  },
+  "airportTransfer": {
+    "de": "Der Flughafen Paris-Orly (ORY) liegt 55 km nordwestlich von Fontainebleau, die Fahrt dauert etwa 50 Minuten. Vom Flughafen Paris-Charles de Gaulle (CDG) sind es 85 km und rund 1 Stunde 10 Minuten. Ihr Chauffeur empfängt Sie mit einem Namensschild und verfolgt Ihren Flug in Echtzeit.",
+    "es": "El aeropuerto de París-Orly (ORY) está a 55 km al noroeste de Fontainebleau, a unos 50 minutos en coche. Desde París-Charles de Gaulle (CDG), a 85 km, el trayecto es de alrededor de 1 h 10 min. Su chófer le espera con un cartel con su nombre y sigue su vuelo en tiempo real."
+  },
+  "intro": {
+    "de": [
+      "Vierunddreißig Herrscher, von Franz I. bis Napoleon, haben im Schloss Fontainebleau residiert. Seine Prunkgemächer und der Abschiedshof liegen inmitten eines sagenumwobenen Waldes, das Ensemble gehört zum UNESCO-Welterbe. Ihr **Privatchauffeur in Fontainebleau** fährt Sie zum Schloss, durch die Stadt und zu Ihren Terminen: Transfers ab Paris und von den Flughäfen, Buchung für einen ganzen Tag, Festpreise. Mercedes-Limousinen und Vans, englischsprachige Chauffeure auf Anfrage.",
+      "Fontainebleau ist ein **Ausflug in den Wald südlich von Paris**. Dazu gehören der Wald mit seinen Kletterfelsen, das Künstlerdorf Barbizon, das nahe Schloss Vaux-le-Vicomte und im Osten das mittelalterliche Provins. Bei einer Tagesbuchung verbindet Ihr Chauffeur Schlösser, Malerdörfer und Wald, oder er übernimmt Hin- und Rückfahrt von der Hauptstadt."
+    ],
+    "es": [
+      "Treinta y cuatro soberanos, de Francisco I a Napoleón, residieron en el castillo de Fontainebleau. Sus aposentos reales y el patio de los Adioses se encuentran en medio de un bosque legendario, y el conjunto es Patrimonio de la Humanidad de la UNESCO. Su **chófer privado en Fontainebleau** le lleva al castillo, por la ciudad y a sus citas: traslados desde París y los aeropuertos, servicio por día completo y precios cerrados. Berlinas Mercedes y furgonetas, chóferes de habla inglesa bajo petición.",
+      "Fontainebleau es una **escapada al bosque al sur de París**. Está el bosque con sus rocas de escalada, el pueblo de artistas de Barbizon, el cercano castillo de Vaux-le-Vicomte y, hacia el este, la ciudad medieval de Provins. Con el servicio por día completo, su chófer enlaza castillos, pueblos de pintores y bosque, o se encarga de la ida y vuelta desde la capital."
+    ]
+  },
+  "experiences": [
+    {
+      "title": {
+        "de": "Schloss Fontainebleau",
+        "es": "Castillo de Fontainebleau"
+      },
+      "teaser": {
+        "de": "Die großen Prunkgemächer, die Galerie Franz I., der Abschiedshof und die Gärten. Ihr Chauffeur setzt Sie direkt am Eingang ab und wartet während Ihres Besuchs.",
+        "es": "Los grandes aposentos, la galería de Francisco I, el patio de los Adioses y los jardines. Su chófer le deja lo más cerca posible y le espera durante la visita."
+      },
+      "duration": {
+        "de": "Halber Tag",
+        "es": "Medio día"
+      }
+    },
+    {
+      "title": {
+        "de": "Vaux-le-Vicomte",
+        "es": "Vaux-le-Vicomte"
+      },
+      "teaser": {
+        "de": "Das Schloss von Fouquet stand Modell für Versailles. Dazu die Gärten von Le Nôtre und im Sommer die Kerzenabende. Ein Tag für Kulturerbe und französische Gartenkunst.",
+        "es": "El castillo de Fouquet, que sirvió de modelo a Versalles, con sus jardines de Le Nôtre y las veladas a la luz de las velas en verano. Un día de patrimonio y jardines a la francesa."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "de": "Barbizon und der Wald",
+        "es": "Barbizon y el bosque"
+      },
+      "teaser": {
+        "de": "Das Malerdorf Barbizon, der Wald von Fontainebleau mit seinen Felsen und die Schluchten von Apremont. Ein Tag mit Natur und Kunst südlich von Paris.",
+        "es": "El pueblo de pintores de Barbizon, el bosque de Fontainebleau y sus rocas, las gargantas de Apremont. Un día de naturaleza y arte al sur de París."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "de": "Das mittelalterliche Provins",
+        "es": "Provins medieval"
+      },
+      "teaser": {
+        "de": "Die mittelalterliche Stadt Provins, UNESCO-Welterbe, mit ihren Stadtmauern, dem Tour César und den unterirdischen Gängen. Ein Kulturtag in der Stadt der Champagnemessen.",
+        "es": "La ciudad medieval de Provins, Patrimonio de la Humanidad, con sus murallas, la torre César y sus galerías subterráneas. Un día de patrimonio en la ciudad de las ferias de Champaña."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "de": "Abend in Fontainebleau",
+        "es": "Velada en Fontainebleau"
+      },
+      "teaser": {
+        "de": "Abendessen in der Kaiserstadt, das beleuchtete Schloss, die Ruhe am Waldrand. Das Fahrzeug steht Ihnen den ganzen Abend zur Verfügung.",
+        "es": "Cena en la ciudad imperial, el castillo iluminado, la calma del linde del bosque. Vehículo a su disposición toda la velada."
+      },
+      "duration": {
+        "de": "Abend",
+        "es": "Velada"
+      }
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "de": "Lässt sich Fontainebleau als Tagesausflug von Paris aus besuchen?",
+        "es": "¿Se puede visitar Fontainebleau en una excursión de un día desde París?"
+      },
+      "a": {
+        "de": "Ja, Fontainebleau liegt eine Stunde von Paris entfernt. Bei einer Tagesbuchung bringt Ihr Chauffeur Sie zum Schloss, kombiniert den Besuch mit Vaux-le-Vicomte oder Barbizon und fährt Sie am Abend zurück, zum Festpreis.",
+        "es": "Sí, Fontainebleau está a una hora de París. Con el servicio por día completo, su chófer le lleva al castillo, lo combina con Vaux-le-Vicomte o Barbizon y le devuelve por la noche, a precio cerrado."
+      }
+    },
+    {
+      "q": {
+        "de": "Wartet der Chauffeur während der Schlossbesichtigung?",
+        "es": "¿Espera el chófer durante la visita al castillo?"
+      },
+      "a": {
+        "de": "Ja. Ihr Chauffeur setzt Sie so nah wie möglich ab, wartet während Ihres Besuchs und holt Sie zur vereinbarten Zeit wieder ab, zum Festpreis.",
+        "es": "Sí. Su chófer le deja lo más cerca posible, espera durante la visita y le recoge a la hora acordada, a precio cerrado."
+      }
+    },
+    {
+      "q": {
+        "de": "Sprechen Ihre Chauffeure Englisch?",
+        "es": "¿Sus chóferes hablan inglés?"
+      },
+      "a": {
+        "de": "Ja, englischsprachige Chauffeure stehen auf Anfrage zur Verfügung. Je nach Verfügbarkeit sind auch weitere Sprachen möglich.",
+        "es": "Sí, hay chóferes de habla inglesa disponibles bajo petición, y también otros idiomas según disponibilidad."
+      }
+    }
+  ]
+}

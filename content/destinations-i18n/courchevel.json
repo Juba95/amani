@@ -1,0 +1,129 @@
+{
+  "slug": "courchevel",
+  "name": {
+    "de": "Courchevel",
+    "es": "Courchevel"
+  },
+  "country": {
+    "de": "Frankreich",
+    "es": "Francia"
+  },
+  "airportTransfer": {
+    "de": "Der Flughafen Genf (GVA) liegt rund 190 km von Courchevel entfernt. Je nach Straßenverhältnissen sollten Sie 2 Std. 30 bis 2 Std. 45 Fahrzeit einplanen. Ab Chambéry (CMF) sind es etwa 110 km und gut 1 Std. 45. Für Ankünfte per Lufttaxi oder Hubschrauber verfügt der Ort zudem über einen eigenen Altiport (CVF). Ihr Chauffeur empfängt Sie mit Namensschild, verfolgt Ihren Flug in Echtzeit und fährt ein wintertauglich ausgerüstetes Allradfahrzeug.",
+    "es": "El aeropuerto de Ginebra (GVA) está a unos 190 km de Courchevel. Según el estado de la carretera, el trayecto dura entre 2 h 30 y 2 h 45. Desde Chambéry (CMF) son unos 110 km y alrededor de 1 h 45. La estación cuenta además con su propio altipuerto (CVF) para llegadas en avioneta taxi o helicóptero. Su chófer le recibe con un cartel con su nombre, sigue su vuelo en tiempo real y conduce un vehículo 4x4 totalmente equipado para el invierno."
+  },
+  "intro": {
+    "de": [
+      "Courchevel liegt auf 1.850 Metern im Herzen der Drei Täler (Les 3 Vallées) und gilt als exklusivster Skiort der französischen Alpen. Dazu gehören Palasthotels mit fünf Sternen, Sterneküche, die Boutiquen der Croisette und Pisten, die mit legendärer Sorgfalt präpariert werden. Ihr **Privatchauffeur in Courchevel** übernimmt die Transfers ab Genf, Lyon oder Chambéry, die Fahrten zwischen den Ortsteilen 1850, Moriond, Village und Le Praz sowie Ihre Abende. Sie reisen in einem beheizten Premium-Allradfahrzeug, um Ski und Gepäck kümmert sich Ihr Chauffeur.",
+      "Von Courchevel aus starten Sie direkt ins größte zusammenhängende Skigebiet der Welt: **Les 3 Vallées** mit 600 Pistenkilometern bis nach Méribel und Val Thorens. Abseits der Piste warten die Saulire mit ihrem Panorama über die Vanoise, der berühmteste Altiport der Alpen und die Spas der Palasthotels. Im Sommer kommen legendäre Pässe und hochgelegene Bergseen hinzu. Ihr Chauffeur verbindet Mittagessen am Berg, Termine und späte Heimfahrten nahtlos. Um den Schnee müssen Sie sich nie kümmern."
+    ],
+    "es": [
+      "A 1.850 metros de altitud, en pleno corazón de Los Tres Valles (Les 3 Vallées), Courchevel es la estación más exclusiva de los Alpes franceses. Tiene hoteles palacio de cinco estrellas, restaurantes con estrellas Michelin, las boutiques de La Croisette y pistas preparadas con un esmero legendario. Su **chófer privado en Courchevel** se encarga de los traslados desde Ginebra, Lyon o Chambéry, de los trayectos entre los distintos núcleos (1850, Moriond, Village, Le Praz) y de sus salidas nocturnas. Viajará en un 4x4 premium con calefacción, y del equipaje y los esquís se ocupa él.",
+      "Courchevel da acceso al mayor dominio esquiable conectado del mundo: **Les 3 Vallées**, con 600 km de pistas que llegan hasta Méribel y Val Thorens. Fuera de las pistas están La Saulire y su panorámica sobre la Vanoise, el altipuerto más famoso de los Alpes y los spas de los hoteles palacio. En verano, puertos de montaña legendarios y lagos de altura. Su chófer enlaza almuerzos en la montaña, citas y regresos de madrugada. La nieve nunca será un problema para usted."
+    ]
+  },
+  "experiences": [
+    {
+      "title": {
+        "de": "Mittagessen am Berg in Sternerestaurants",
+        "es": "Almuerzo de altura en mesas con estrella"
+      },
+      "teaser": {
+        "de": "Ihr Chauffeur setzt Sie an den Liften ab, von wo aus Sie Le 1947 im Cheval Blanc, Le Montgomerie oder ein Bergrestaurant im Cap Horn erreichen. Danach wartet er auf Sie und bringt Sie mit den Ski an Bord zurück zu Ihrem Chalet.",
+        "es": "Le dejamos al pie de los remontes para llegar a Le 1947 en el Cheval Blanc, a Le Montgomerie o a una mesa de altura del Cap Horn. Su chófer espera y le lleva de vuelta al chalet, con los esquís cargados a bordo."
+      },
+      "duration": {
+        "de": "Halbtags",
+        "es": "Medio día"
+      }
+    },
+    {
+      "title": {
+        "de": "Rundfahrt durch die Ortsteile von Courchevel",
+        "es": "Recorrido por los núcleos de Courchevel"
+      },
+      "teaser": {
+        "de": "Von Saint-Bon nach Le Praz mit seinen olympischen Sprungschanzen von 1992, weiter nach Courchevel Village, Moriond und 1850. Jeder Ortsteil hat seinen eigenen Charakter. Fotostopps, die Boutiquen der Croisette und eine heiße Schokolade mit Blick auf die Saulire.",
+        "es": "De Saint-Bon a Le Praz y sus trampolines olímpicos de 1992, y después Courchevel Village, Moriond y 1850. Cada nivel tiene su propio carácter. Paradas para fotos, las boutiques de La Croisette y un chocolate caliente frente a La Saulire."
+      },
+      "duration": {
+        "de": "Halbtags",
+        "es": "Medio día"
+      }
+    },
+    {
+      "title": {
+        "de": "Tagesausflug nach Val Thorens und Méribel",
+        "es": "Excursión de un día a Val Thorens y Méribel"
+      },
+      "teaser": {
+        "de": "Die Drei Täler einmal von der Straße aus: zuerst Méribel mit seinen Holzchalets, dann Val Thorens, mit 2.300 Metern der höchstgelegene Skiort Europas. Mittagessen am Berg, Rückkehr nach Courchevel am späten Nachmittag.",
+        "es": "Los Tres Valles vistos desde la carretera: primero Méribel y sus chalets de madera, después Val Thorens, la estación más alta de Europa, a 2.300 metros. Almuerzo en altura y regreso a Courchevel al final del día."
+      },
+      "duration": {
+        "de": "Ganztägig",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "de": "Ausflug nach Annecy und an den See",
+        "es": "Escapada a Annecy y su lago"
+      },
+      "teaser": {
+        "de": "Zwei Autostunden entfernt liegt das Venedig der Alpen mit Altstadt, Kanälen und den Ufern des saubersten Sees Europas. Mittagessen direkt am Wasser. Zurück geht es je nach Jahreszeit durch die Arly-Schlucht oder über die Autobahn.",
+        "es": "A dos horas por carretera está la Venecia de los Alpes: casco antiguo, canales y las orillas del lago más limpio de Europa. Almuerzo junto al agua. La vuelta se hace por las gargantas del Arly o por la autopista, según la temporada."
+      },
+      "duration": {
+        "de": "Ganztägig",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "de": "Ein Abend in Courchevel 1850",
+        "es": "Una noche en Courchevel 1850"
+      },
+      "teaser": {
+        "de": "Abendessen im Chabichou, im Sarkara oder im Restaurant Ihres Palasthotels, danach das Nachtleben von Courchevel: das Bagatelle oder die diskreten Clubs der Croisette. Das Fahrzeug bleibt zu Ihrer Verfügung, zurück zum Chalet geht es zu jeder Stunde.",
+        "es": "Cena en Le Chabichou, en Sarkara o en el restaurante de su hotel palacio, y después la noche de Courchevel: Bagatelle o los discretos locales de La Croisette. El vehículo queda a su disposición y le lleva de vuelta al chalet a cualquier hora."
+      },
+      "duration": {
+        "de": "Abend",
+        "es": "Noche"
+      }
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "de": "Was kostet ein Transfer vom Flughafen Genf nach Courchevel?",
+        "es": "¿Cuánto cuesta un traslado entre el aeropuerto de Ginebra y Courchevel?"
+      },
+      "a": {
+        "de": "Für den privaten Transfer zwischen Genf (GVA) und Courchevel gilt ein Festpreis, den wir Ihnen bei der Buchung nennen. Die Verkehrslage ändert daran nichts. Im Preis enthalten sind der Empfang in der Ankunftshalle mit Namensschild, die Flugverfolgung in Echtzeit und 60 Minuten kostenlose Wartezeit bei Verspätung.",
+        "es": "El traslado privado entre Ginebra (GVA) y Courchevel tiene un precio cerrado, que se le comunica al reservar y no varía con el tráfico. Incluye la recepción en la sala de llegadas con cartel nominativo, el seguimiento del vuelo en tiempo real y 60 minutos de espera gratuita en caso de retraso."
+      }
+    },
+    {
+      "q": {
+        "de": "Sind Ihre Fahrzeuge für die Auffahrt nach Courchevel im Winter ausgerüstet?",
+        "es": "¿Están sus vehículos preparados para subir a Courchevel en invierno?"
+      },
+      "a": {
+        "de": "Ja. Von November bis April setzen wir auf der Strecke nach Courchevel ausschließlich Allradfahrzeuge oder Fahrzeuge mit Winterreifen und Schneeketten ein. Am Steuer sitzen Chauffeure, die die Straßen der Tarentaise gut kennen. Ski, Snowboards und sperriges Gepäck nehmen wir im Rahmen der Fahrzeugkapazität ohne Aufpreis mit.",
+        "es": "Sí. De noviembre a abril solo asignamos a la carretera de Courchevel vehículos 4x4 o equipados con neumáticos de nieve y cadenas, conducidos por chóferes que conocen bien las carreteras de la Tarentaise. Esquís, tablas de snowboard y equipaje voluminoso viajan sin coste adicional, dentro de la capacidad del vehículo."
+      }
+    },
+    {
+      "q": {
+        "de": "Übernehmen Sie auch Fahrten zwischen den Ortsteilen von Courchevel und nach Méribel?",
+        "es": "¿Pueden hacer trayectos entre los núcleos de Courchevel y hacia Méribel?"
+      },
+      "a": {
+        "de": "Selbstverständlich. Wir verbinden Le Praz, Courchevel Village, Moriond und 1850 für Ihre Abendessen, Skikurse oder Termine und fahren Sie auch nach Méribel, Val Thorens oder La Tania. Bei Buchung auf Stundenbasis steht das Fahrzeug den ganzen Tag oder den ganzen Abend vor Ihrer Tür bereit.",
+        "es": "Por supuesto. Conectamos Le Praz, Courchevel Village, Moriond y 1850 para sus cenas, clases de esquí o citas, y le llevamos por carretera a Méribel, Val Thorens o La Tania. Con el servicio por horas, el vehículo le espera en la puerta todo el día o toda la noche."
+      }
+    }
+  ]
+}

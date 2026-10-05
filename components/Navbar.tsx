@@ -139,6 +139,16 @@ const NATIVE_TO_EN: Record<string, string> = {
 };
 
 function getLocalizedPath(pathname: string, targetLocale: string): string {
+  // Pages destination : on reste sur la même ville quand elle est traduite.
+  // La liste des villes traduites vit côté serveur ; ici on tente l'URL et la
+  // page renvoie une 404 propre si la traduction n'existe pas.
+  const destMatch = pathname.match(/^(?:\/(?:en|de|es))?\/destinations(?:\/([a-z0-9-]+))?$/);
+  if (destMatch) {
+    const slug = destMatch[1] ? `/${destMatch[1]}` : '';
+    if (targetLocale === 'fr') return `/destinations${slug}`;
+    return `/${targetLocale}/destinations${slug}`;
+  }
+
   // AR, ZH, ES et DE → page native équivalente si elle existe, sinon homepage
   if (targetLocale === 'ar' || targetLocale === 'zh' || targetLocale === 'es' || targetLocale === 'de') {
     return TO_NATIVE[targetLocale][pathname] ?? `/${targetLocale}`;

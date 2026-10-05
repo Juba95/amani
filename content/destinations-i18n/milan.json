@@ -1,0 +1,129 @@
+{
+  "slug": "milan",
+  "name": {
+    "de": "Mailand",
+    "es": "Milán"
+  },
+  "country": {
+    "de": "Italien",
+    "es": "Italia"
+  },
+  "airportTransfer": {
+    "de": "Der Flughafen Mailand-Malpensa (MXP) liegt 50 km nordwestlich des Zentrums. Bis zum Dom oder ins Viertel Brera sind es 50 Minuten bis eine Stunde. Linate (LIN) liegt 7 km östlich und ist in 20 Minuten erreicht, Bergamo-Orio al Serio (BGY) in etwa 50 Minuten. Empfang in der Ankunftshalle mit Namensschild und Flugüberwachung sind inbegriffen.",
+    "es": "El aeropuerto de Milán-Malpensa (MXP) está a 50 km al noroeste del centro: calcule entre 50 minutos y una hora hasta el Duomo o el barrio de Brera. Linate (LIN), a 7 km al este, queda a 20 minutos, y Bérgamo-Orio al Serio (BGY), a unos 50 minutos. Incluye recibimiento en la sala de llegadas con cartel nominativo y seguimiento del vuelo."
+  },
+  "intro": {
+    "de": [
+      "Mailand ist das wirtschaftliche Zentrum Italiens. Hier stehen der Dom mit seinen Marmorterrassen, die Scala, Leonardos Abendmahl und das Modeviertel Quadrilatero della Moda. Ihr **Privatchauffeur in Mailand** fährt Sie zu den Konzernzentralen in Porta Nuova, zu den Messehallen der Fiera in Rho, zu Modenschauen und Kliniken ebenso wie zu den besten Restaurants der Stadt. Zur Verfügung stehen Premium-Limousinen und Vans, zu Festpreisen und mit absoluter Diskretion. Genau das erwartet eine anspruchsvolle Geschäftskundschaft.",
+      "Von Mailand aus erreichen Sie auch die Lombardei und ihre Seen: **den Comer See in weniger als einer Stunde**, Bellagio und die Villa d’Este, den Lago Maggiore mit den Borromäischen Inseln, die Weinberge der Franciacorta. Während der Fashion Week oder des Salone del Mobile steigt die Nachfrage sprunghaft an, und die Logistik entscheidet über den Tag. Ihr Chauffeur fährt die Adressen präzise nacheinander an, wartet an jeder Station und reagiert sofort, wenn sich Ihr Terminplan ändert."
+    ],
+    "es": [
+      "Milán es la capital económica de Italia: el Duomo y sus terrazas de mármol, la Scala, la Última Cena de Leonardo y el cuadrilátero de la moda. Su **chófer privado en Milán** le lleva a las sedes corporativas de Porta Nuova, a los pabellones de la feria de Rho, a desfiles y clínicas, y también a las mejores mesas del centro. Sedanes y furgonetas premium, precios cerrados y total discreción. Es lo que espera una clientela de negocios exigente.",
+      "Desde Milán se llega también a Lombardía y sus lagos: **el lago de Como a menos de una hora**, Bellagio y Villa d’Este, el lago Mayor y las islas Borromeas, los viñedos de Franciacorta. Durante la Fashion Week o el Salone del Mobile la demanda se dispara y la logística pasa a ser decisiva. Su chófer encadena las direcciones con precisión, le espera entre una parada y otra y se adapta en tiempo real a los cambios de agenda."
+    ]
+  },
+  "experiences": [
+    {
+      "title": {
+        "de": "Comer See und Bellagio",
+        "es": "Lago de Como y Bellagio"
+      },
+      "teaser": {
+        "de": "50 km von Mailand entfernt liegt der eleganteste der italienischen Seen. Zuerst Como mit seiner Kathedrale, dann das Ufer von Cernobbio und schließlich Bellagio an der Spitze der Landzunge. Mittagessen am Wasser, auf Wunsch eine private Bootsfahrt, Rückkehr am Abend.",
+        "es": "A 50 km de Milán está el más elegante de los lagos italianos. Como y su catedral, la orilla de Cernobbio y, por último, Bellagio en la punta del promontorio. Almuerzo junto al agua, crucero privado opcional y regreso por la tarde."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "de": "Borromäische Inseln ab Stresa",
+        "es": "Islas Borromeas desde Stresa"
+      },
+      "teaser": {
+        "de": "Der Lago Maggiore liegt eine Stunde von Mailand. In Stresa geht es an Bord, zuerst zur Isola Bella mit ihrem Barockpalast, dann zum Mittagessen auf die Isola dei Pescatori. Für die Rückfahrt wartet Ihr Chauffeur am Anleger.",
+        "es": "El lago Mayor, a una hora de Milán. En Stresa se embarca hacia Isola Bella y su palacio barroco, y después a Isola dei Pescatori para almorzar. Su chófer le espera en el muelle para el regreso."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "de": "Franciacorta, die Schaumweine der Lombardei",
+        "es": "Franciacorta, los espumosos de Lombardía"
+      },
+      "teaser": {
+        "de": "Zwischen Brescia und dem Iseosee wachsen die großen Schaumweine Italiens. Kellerbesichtigungen, Verkostungen bei Ca’ del Bosco oder Bellavista, Mittagessen mit Blick auf den See. Sie probieren, Ihr Chauffeur fährt.",
+        "es": "Entre Brescia y el lago de Iseo se encuentra la tierra de los grandes espumosos italianos. Visitas a bodegas, catas en Ca’ del Bosco o Bellavista y almuerzo frente al lago. Usted cata, su chófer conduce."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "de": "Shopping im Modeviertel",
+        "es": "Compras en el cuadrilátero de la moda"
+      },
+      "teaser": {
+        "de": "Via Montenapoleone, Via della Spiga, Galleria Vittorio Emanuele II: Sie buchen den Wagen stundenweise und werden vor jeder Boutique abgesetzt. Ihre Einkäufe bleiben im gesicherten Kofferraum. Auf Wunsch geht es weiter zum Outlet in Serravalle.",
+        "es": "Via Montenapoleone, Via della Spiga, Galleria Vittorio Emanuele II: servicio por horas con parada en la puerta de cada tienda y maletero seguro para sus compras. Si lo desea, puede ampliarse hasta los outlets de Serravalle."
+      },
+      "duration": {
+        "de": "Halber Tag",
+        "es": "Medio día"
+      }
+    },
+    {
+      "title": {
+        "de": "Abend in der Scala und in Brera",
+        "es": "Velada en la Scala y Brera"
+      },
+      "teaser": {
+        "de": "Ihr Chauffeur setzt Sie für Oper oder Ballett direkt vor dem Teatro alla Scala ab. Danach folgt ein spätes Abendessen in Brera oder an den Navigli. Der Wagen wartet am Ausgang und bringt Sie ohne Umstände ins Hotel zurück.",
+        "es": "Le dejamos ante el Teatro alla Scala para la ópera o el ballet, y después cena en Brera o en los Navigli. El vehículo le espera a la salida para volver al hotel sin preocupaciones."
+      },
+      "duration": {
+        "de": "Abend",
+        "es": "Noche"
+      }
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "de": "Was kostet ein Transfer zwischen Malpensa und der Mailänder Innenstadt?",
+        "es": "¿Cuánto cuesta un traslado entre Malpensa y el centro de Milán?"
+      },
+      "a": {
+        "de": "Der private Transfer zwischen Malpensa (MXP) und der Mailänder Innenstadt wird zu einem Festpreis berechnet, den wir bei der Buchung bestätigen. Empfang mit Namensschild, Flugüberwachung und kostenlose Wartezeit bei Verspätung sind inbegriffen. Auch Linate und Bergamo-Orio al Serio fahren wir zum Festpreis an.",
+        "es": "El traslado privado entre Malpensa (MXP) y el centro de Milán tiene un precio cerrado, que se confirma al reservar. Incluye recibimiento con cartel nominativo, seguimiento del vuelo y espera gratuita en caso de retraso. Linate y Bérgamo-Orio al Serio también se cubren con precio cerrado."
+      }
+    },
+    {
+      "q": {
+        "de": "Wie früh sollte ich während der Fashion Week oder des Salone del Mobile buchen?",
+        "es": "¿Con cuánta antelación conviene reservar durante la Fashion Week o el Salone del Mobile?"
+      },
+      "a": {
+        "de": "In diesen Wochen sind die Fahrzeuge mit Chauffeur in Mailand weitgehend ausgebucht. Wir empfehlen, mindestens eine Woche im Voraus zu buchen, damit die Verfügbarkeit gesichert ist. Das gilt besonders für ganztägige Buchungen zwischen Modenschauen, Showrooms und der Fiera in Rho.",
+        "es": "En esas semanas la oferta de vehículos con chófer en Milán se agota. Recomendamos reservar con al menos una semana de antelación para asegurar la disponibilidad, sobre todo si necesita el servicio por días entre desfiles, showrooms y la feria de Rho."
+      }
+    },
+    {
+      "q": {
+        "de": "Können Sie einen Tagesausflug von Mailand an den Comer See organisieren?",
+        "es": "¿Pueden organizar una excursión de un día al lago de Como desde Milán?"
+      },
+      "a": {
+        "de": "Selbstverständlich. Como, Cernobbio, Bellagio oder die Villa del Balbianello lassen sich von Mailand aus an einem Tag besuchen, zum Festpreis und auf Wunsch mit privater Bootsfahrt. Die Route legen wir vor der Abfahrt gemeinsam mit Ihnen fest, und unterwegs lässt sie sich jederzeit anpassen.",
+        "es": "Por supuesto. Como, Cernobbio, Bellagio o Villa del Balbianello pueden visitarse en un día desde Milán, con precio cerrado y crucero privado opcional. El itinerario se acuerda con usted antes de salir y puede modificarse sobre la marcha."
+      }
+    }
+  ]
+}

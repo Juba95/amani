@@ -1,0 +1,85 @@
+import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
+import Navbar from '@/components/Navbar';
+import { CTA, Footer } from '@/components/CTAFooter';
+import { DestinationDetail } from '@/components/DestinationViews';
+import {
+  getTranslatedDestination,
+  translatedSlugs,
+  TRANSLATED_LOCALES,
+  type TranslatedLocale,
+} from '@/lib/destinations/i18n';
+
+import de from '@/locales/de.json';
+import es from '@/locales/es.json';
+
+const BASE = 'https://www.amani-limousines.com';
+const UI: Record<TranslatedLocale, any> = { de, es };
+
+const META: Record<TranslatedLocale, { title: (c: string) => string }> = {
+  de: { title: (c) => `Privatchauffeur ${c} — Luxustransfers & Erlebnisse | Amani Limousines` },
+  es: { title: (c) => `Chófer privado en ${c} — traslados de lujo y experiencias | Amani Limousines` },
+};
+
+function isTranslated(lang: string): lang is TranslatedLocale {
+  return (TRANSLATED_LOCALES as readonly string[]).includes(lang);
+}
+
+function metaDescription(paragraphs: string[]): string {
+  const text = (paragraphs[0] ?? '').replace(/\*\*/g, '');
+  return text.length > 158 ? `${text.slice(0, 155).trimEnd()}…` : text;
+}
+
+export function generateStaticParams() {
+  return TRANSLATED_LOCALES.flatMap((lang) =>
+    translatedSlugs(lang).map((slug) => ({ lang, slug })),
+  );
+}
+
+export function generateMetadata({ params }: { params: { lang: string; slug: string } }): Metadata {
+  if (!isTranslated(params.lang)) return {};
+  const d = getTranslatedDestination(params.slug, params.lang);
+  if (!d) return {};
+  const name = d.name[params.lang] ?? d.name.en;
+
+  // Les hreflang ne listent que les langues où la page existe réellement :
+  // le français et l'anglais couvrent les 297 villes, l'allemand et l'espagnol
+  // seulement celles qui sont traduites.
+  const languages: Record<string, string> = {
+    fr: `${BASE}/destinations/${d.slug}`,
+    en: `${BASE}/en/destinations/${d.slug}`,
+    'x-default': `${BASE}/en/destinations/${d.slug}`,
+  };
+  for (const l of TRANSLATED_LOCALES) {
+    if (getTranslatedDestination(d.slug, l)) languages[l] = `${BASE}/${l}/destinations/${d.slug}`;
+  }
+
+  return {
+    title: META[params.lang].title(name),
+    description: metaDescription(d.intro[params.lang] ?? d.intro.en),
+    robots: { index: true, follow: true },
+    alternates: { canonical: `${BASE}/${params.lang}/destinations/${d.slug}`, languages },
+  };
+}
+
+export default function TranslatedDestinationPage({
+  params,
+}: {
+  params: { lang: string; slug: string };
+}) {
+  if (!isTranslated(params.lang)) notFound();
+  const d = getTranslatedDestination(params.slug, params.lang);
+  if (!d) notFound();
+  const t = UI[params.lang];
+
+  return (
+    <div className="min-h-screen bg-white text-gray-900">
+      <Navbar t={t} locale={params.lang} />
+      <main>
+        <DestinationDetail d={d} locale={params.lang} />
+      </main>
+      <CTA t={t} />
+      <Footer t={t} locale={params.lang} />
+    </div>
+  );
+}

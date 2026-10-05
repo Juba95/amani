@@ -1,0 +1,129 @@
+{
+  "slug": "zurich",
+  "name": {
+    "de": "Zürich",
+    "es": "Zúrich"
+  },
+  "country": {
+    "de": "Schweiz",
+    "es": "Suiza"
+  },
+  "airportTransfer": {
+    "de": "Der Flughafen Zürich-Kloten (ZRH) liegt 12 km nördlich des Zentrums. Außerhalb der Stoßzeiten sind Sie in etwa 20 Minuten an der Bahnhofstrasse oder am Paradeplatz. Ihr Chauffeur erwartet Sie mit Namensschild in der Ankunftshalle und verfolgt Ihren Flug, damit die Abholzeit stets passt.",
+    "es": "El aeropuerto de Zúrich-Kloten (ZRH) está a 12 km al norte del centro. Fuera de las horas punta, se tarda unos 20 minutos en llegar a la Bahnhofstrasse o a la Paradeplatz. Su chófer le espera en la sala de llegadas con un cartel con su nombre y sigue su vuelo para ajustar la hora de recogida."
+  },
+  "intro": {
+    "de": [
+      "Zürich ist der wichtigste Finanzplatz der Schweiz und zugleich die größte Stadt des Landes. Hier liegen die Bankzentralen am Paradeplatz, die Geschäfte der Bahnhofstrasse und die mittelalterlichen Gassen des Niederdorfs an der Limmat dicht beieinander. Ihr **Privatchauffeur in Zürich** begleitet Sie zu Verwaltungsratssitzungen, Roadshows und Klinikterminen, ebenso zu einem Abend im Opernhaus oder im Dolder Grand. Sie fahren in Premium-Limousinen und Vans, mit Schweizer Pünktlichkeit und zu Festpreisen, die vorab feststehen. Unsere Chauffeure sprechen Deutsch und Englisch.",
+      "Von Zürich aus ist die ganze Schweiz mit dem Auto erreichbar. Zum **Rheinfall**, dem wasserreichsten Wasserfall Europas, sind es 45 Minuten, nach Luzern an den Vierwaldstättersee eine Stunde. Auch das Jungfraujoch und die Gipfel des Berner Oberlands lassen sich gut an einem Tag besuchen. Ihr Chauffeur plant die Route, besorgt Tickets für Panoramazüge, reserviert Tische in Bergrestaurants und bringt Sie zurück ins Hotel, wann immer es Ihnen passt."
+    ],
+    "es": [
+      "Primera plaza financiera de Suiza y ciudad más grande del país, Zúrich reúne las sedes bancarias de la Paradeplatz, las tiendas de la Bahnhofstrasse y las callejuelas medievales del Niederdorf, a orillas del río Limmat. Su **chófer privado en Zúrich** le acompaña a consejos de administración, roadshows y citas médicas en clínicas, y también a una velada en la Ópera o en el Dolder Grand. Sedanes y vans premium, puntualidad suiza y precios fijos confirmados de antemano. Nuestros chóferes hablan inglés y alemán.",
+      "Desde Zúrich, toda Suiza queda al alcance por carretera. Las **cataratas del Rin**, las más caudalosas de Europa, están a 45 minutos. Lucerna y su lago, a una hora. El Jungfraujoch y las cumbres del Oberland bernés se visitan en una excursión de un día. Su chófer diseña el itinerario, se ocupa de los billetes de los trenes panorámicos y de las reservas en restaurantes de montaña, y le devuelve al hotel sin horarios que le aten."
+    ]
+  },
+  "experiences": [
+    {
+      "title": {
+        "de": "Rheinfall und Stein am Rhein",
+        "es": "Cataratas del Rin y Stein am Rhein"
+      },
+      "teaser": {
+        "de": "45 km nördlich von Zürich stürzen unterhalb von Schloss Laufen 600 m³ Wasser pro Sekunde in die Tiefe. Boote fahren bis zum Felsen in der Mitte. Danach geht es nach Stein am Rhein mit seinen bemalten Fassaden aus dem 16. Jahrhundert direkt am Rhein.",
+        "es": "A 45 km al norte de Zúrich, 600 m³ de agua por segundo caen a los pies del castillo de Laufen. Hay barcas que llegan hasta la roca central. Después, Stein am Rhein y sus fachadas pintadas del siglo XVI, junto al Rin."
+      },
+      "duration": {
+        "de": "Halber Tag",
+        "es": "Medio día"
+      }
+    },
+    {
+      "title": {
+        "de": "Luzern und der Pilatus",
+        "es": "Lucerna y el monte Pilatus"
+      },
+      "teaser": {
+        "de": "Eine Stunde von Zürich entfernt: die Kapellbrücke, die bemalte Altstadt und der Vierwaldstättersee. Hinauf auf den Pilatus fahren Sie mit der steilsten Zahnradbahn der Welt (48 %), hinunter mit der Panorama-Seilbahn.",
+        "es": "A una hora de Zúrich, el puente de la Capilla, el casco antiguo de fachadas pintadas y el lago de los Cuatro Cantones. Subida al Pilatus en el tren cremallera más empinado del mundo (48 %) y bajada en teleférico panorámico."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "de": "Jungfraujoch, Top of Europe",
+        "es": "Jungfraujoch, el Top of Europe"
+      },
+      "teaser": {
+        "de": "Die Fahrt führt über Interlaken nach Grindelwald. Von dort bringen Sie der Eiger Express und die Jungfraubahn zum höchstgelegenen Bahnhof Europas auf 3.454 Metern. Oben warten der Eispalast, die Sphinx-Terrasse und der Aletschgletscher. Ihr Chauffeur kümmert sich um Tickets und Anschlüsse.",
+        "es": "Carretera hasta Grindelwald pasando por Interlaken y, desde allí, el Eiger Express y el tren de la Jungfrau hasta la estación más alta de Europa, a 3.454 metros. Arriba esperan el Palacio de Hielo, la terraza de la Esfinge y el glaciar Aletsch. Su chófer se ocupa de los billetes y los enlaces."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "de": "Appenzell und das Käseland",
+        "es": "Appenzell y la tierra del queso"
+      },
+      "teaser": {
+        "de": "90 Minuten östlich liegt das Dorf mit den bemalten Fassaden am Fuß des Alpsteins. Sie besuchen die Schaukäserei in Stein und probieren Appenzeller. Danach geht es hinauf zur Ebenalp, je nach Saison mit einem Halt am Seealpsee.",
+        "es": "A 90 minutos hacia el este, el pueblo de fachadas pintadas al pie del macizo del Alpstein. Visita a la quesería de demostración de Stein y degustación de Appenzeller. Después, subida al Ebenalp y, según la temporada, parada en el lago Seealpsee."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "de": "Ein Abend in Zürich, vom Niederdorf bis zum Dolder",
+        "es": "Una noche en Zúrich, del Niederdorf al Dolder"
+      },
+      "teaser": {
+        "de": "Abendessen in der Kronenhalle unter den Chagall-Bildern, im Pavillon des Baur au Lac oder in einem der Lokale in Zürich-West. Anschließend bieten sich die beleuchteten Seequais an. Sie werden vor jeder Tür abgesetzt, das Fahrzeug steht den ganzen Abend bereit.",
+        "es": "Cena en la Kronenhalle bajo los cuadros de Chagall, en el Pavillon del Baur au Lac o en algún local de Zürich-West, y luego un paseo por los muelles iluminados del lago. Le dejamos en cada puerta y el vehículo queda a su disposición toda la noche."
+      },
+      "duration": {
+        "de": "Abend",
+        "es": "Noche"
+      }
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "de": "Was kostet ein Transfer zwischen dem Flughafen Zürich-Kloten und der Innenstadt?",
+        "es": "¿Cuánto cuesta un traslado entre el aeropuerto de Zúrich-Kloten y el centro de la ciudad?"
+      },
+      "a": {
+        "de": "Der private Transfer zwischen Zürich-Kloten (ZRH) und der Zürcher Innenstadt wird zu einem Festpreis abgerechnet, den wir bei der Buchung bestätigen. Inbegriffen sind der Empfang mit Namensschild in der Ankunftshalle, die Flugverfolgung in Echtzeit und bei Verspätung 60 Minuten kostenlose Wartezeit.",
+        "es": "El traslado privado entre Zúrich-Kloten (ZRH) y el centro de Zúrich tiene un precio fijo, confirmado al reservar. Incluye recibimiento en la sala de llegadas con cartel nominativo, seguimiento del vuelo en tiempo real y 60 minutos de espera gratuita en caso de retraso."
+      }
+    },
+    {
+      "q": {
+        "de": "Bieten Sie Fahrzeuge mit Chauffeur auf Stundenbasis für Geschäftsreisen in Zürich an?",
+        "es": "¿Ofrecen servicio de chófer por horas para viajes de negocios en Zúrich?"
+      },
+      "a": {
+        "de": "Ja. Die Buchung auf Stunden- oder Tagesbasis ist in Zürich unser meistgefragtes Angebot. Ihr Chauffeur fährt Sie zwischen Paradeplatz, Zürich-West, Opfikon und dem Circle am Flughafen hin und her, wartet zwischen den Terminen und reagiert sofort auf Änderungen in Ihrem Kalender.",
+        "es": "Sí. La contratación por horas o por día completo es nuestro servicio más solicitado en Zúrich. Su chófer le lleva de la Paradeplatz a Zürich-West, Opfikon o The Circle, junto al aeropuerto, le espera entre reunión y reunión y se adapta en tiempo real a los cambios de agenda."
+      }
+    },
+    {
+      "q": {
+        "de": "Fahren Sie auch nach St. Moritz, Davos oder in andere Ferienorte Graubündens?",
+        "es": "¿Realizan traslados a St. Moritz, Davos o las estaciones de los Grisones?"
+      },
+      "a": {
+        "de": "Ja. Ab Zürich oder dem Flughafen erreichen Sie St. Moritz in rund 2,5 Stunden, Davos in 2 Stunden und Flims-Laax in 1 Stunde 45 Minuten. Unsere Fahrzeuge sind wintertauglich ausgerüstet, der Festpreis gilt unabhängig von den Straßenverhältnissen. Während des Weltwirtschaftsforums in Davos verstärken wir unseren Service, eine frühzeitige Buchung ist dann erforderlich.",
+        "es": "Sí. Desde Zúrich o el aeropuerto llegamos a St. Moritz en unas 2 horas y media, a Davos en 2 horas y a Flims-Laax en 1 hora y 45 minutos. Los vehículos están equipados para el invierno y el precio es fijo sea cual sea el estado de las carreteras. Durante el Foro de Davos reforzamos el servicio, con reserva anticipada."
+      }
+    }
+  ]
+}

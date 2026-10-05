@@ -1,0 +1,129 @@
+{
+  "slug": "antibes",
+  "name": {
+    "de": "Antibes",
+    "es": "Antibes"
+  },
+  "country": {
+    "de": "Frankreich",
+    "es": "Francia"
+  },
+  "airportTransfer": {
+    "de": "Der Flughafen Nizza Côte d’Azur (NCE) liegt 22 km östlich von Antibes. Über die A8 sind Sie in 25 bis 30 Minuten in der Altstadt von Antibes oder am Cap. Ihr Chauffeur erwartet Sie in der Ankunftshalle mit einem Namensschild und verfolgt Ihren Flug in Echtzeit. Er bringt Sie zu Ihrem Hotel, Ihrer Villa oder direkt an den Liegeplatz Ihrer Yacht.",
+    "es": "El aeropuerto de Niza Costa Azul (NCE) está a 22 km al este de Antibes. Por la A8 se tarda entre 25 y 30 minutos hasta el casco antiguo de Antibes o el Cabo. Su chófer le recibe en la sala de llegadas con un cartel con su nombre y sigue su vuelo en tiempo real. Después le lleva a su hotel, a su villa o directamente al pantalán de su yate."
+  },
+  "intro": {
+    "de": [
+      "Antibes liegt zwischen Nizza und Cannes. Die Stadt hat eine von Wällen umgebene Altstadt, das Picasso-Museum im Château Grimaldi und den provenzalischen Markt am Cours Masséna. Dazu kommt Port Vauban, der größte Yachthafen Europas, in dem die größten Yachten der Welt festmachen. Ihr **Privatchauffeur in Antibes** verbindet den Flughafen Nizza, die Stege am Quai des Milliardaires, die Villen am Cap und die Luxushotels an der Croisette. Sie fahren in einer Mercedes-Limousine oder einem Premium-Van, zum Festpreis.",
+      "Das **Cap d’Antibes** bietet Pinienwälder, den Küstenpfad von Tire-Poil und die Legenden rund um das Hotel Eden-Roc. In Juan-les-Pins gibt jeden Sommer das Festival Jazz à Juan den Takt vor. Eine halbe Stunde landeinwärts liegen Biot mit seinen Glasbläsereien, Vallauris mit den Keramiken von Picasso und Saint-Paul-de-Vence mit seinen Galerien. Ihr Chauffeur koordiniert Crews, Hafenaufenthalte und Abende mit der Diskretion, die an dieser Küste erwartet wird."
+    ],
+    "es": [
+      "Antibes está entre Niza y Cannes. La ciudad reúne las murallas de su casco antiguo, el museo Picasso del castillo Grimaldi y el mercado provenzal del Cours Masséna. También tiene Port Vauban, el mayor puerto deportivo de Europa, donde amarran los yates más grandes del mundo. Su **chófer privado en Antibes** conecta el aeropuerto de Niza, los pantalanes del Quai des Milliardaires, las villas del Cabo y los grandes hoteles de la Croisette. Viaja en una berlina Mercedes o en una furgoneta premium, a precio cerrado.",
+      "El **cabo de Antibes** reúne pinares, el sendero costero de Tire-Poil y las leyendas del hotel Eden-Roc. Juan-les-Pins vive cada verano al ritmo del festival Jazz à Juan. A media hora hacia el interior se encuentran Biot y sus talleres de vidrio, Vallauris y sus cerámicas de Picasso, y Saint-Paul-de-Vence con sus galerías. Su chófer organiza tripulaciones, escalas y veladas con la discreción que se espera en esta costa."
+    ]
+  },
+  "experiences": [
+    {
+      "title": {
+        "de": "Rundfahrt um das Cap d’Antibes",
+        "es": "Vuelta al cabo de Antibes"
+      },
+      "teaser": {
+        "de": "Der Boulevard de Bacon mit Blick auf die Alpen, die Villa Eilenroc mit ihrem Rosengarten, der Leuchtturm La Garoupe mit seiner Seemannskapelle. Danach Mittagessen direkt am Wasser an der Plage Keller. Das Cap so, wie man es aus den Legenden kennt.",
+        "es": "El boulevard de Bacon con vistas a los Alpes, la villa Eilenroc y su rosaleda, el faro de la Garoupe y su capilla de marineros. Después, almuerzo junto al agua en la playa Keller. El Cabo tal como lo cuentan sus leyendas."
+      },
+      "duration": {
+        "de": "Halber Tag",
+        "es": "Media jornada"
+      }
+    },
+    {
+      "title": {
+        "de": "Picasso, von Grimaldi bis Vallauris",
+        "es": "Picasso, de Grimaldi a Vallauris"
+      },
+      "teaser": {
+        "de": "Das Picasso-Museum im Château Grimaldi, wo der Künstler 1946 arbeitete. Dann Vallauris mit seinen Keramikwerkstätten und dem Werk „Krieg und Frieden“. Sie besuchen einen aktiven Töpfer und fahren über die Bucht von Golfe-Juan zurück.",
+        "es": "El museo Picasso del castillo Grimaldi, donde el pintor trabajó en 1946. Luego Vallauris, sus talleres de cerámica y «La Guerra y la Paz». Parada en el taller de un alfarero en activo y regreso por la bahía de Golfe-Juan."
+      },
+      "duration": {
+        "de": "Halber Tag",
+        "es": "Media jornada"
+      }
+    },
+    {
+      "title": {
+        "de": "Saint-Paul-de-Vence und die Fondation Maeght",
+        "es": "Saint-Paul-de-Vence y la Fundación Maeght"
+      },
+      "teaser": {
+        "de": "Eine halbe Stunde von Antibes entfernt liegt das berühmteste Künstlerdorf Frankreichs. In der Colombe d’Or hängen Gemälde großer Meister, im Garten der Fondation Maeght stehen Skulpturen von Giacometti. Unterwegs halten Sie in Biot an der Glasbläserei.",
+        "es": "A media hora de Antibes está el pueblo de artistas más famoso de Francia. En la Colombe d’Or cuelgan cuadros de grandes maestros, y en el jardín de la Fundación Maeght esperan las esculturas de Giacometti. Por el camino, Biot y su taller de vidrio."
+      },
+      "duration": {
+        "de": "Halber Tag",
+        "es": "Media jornada"
+      }
+    },
+    {
+      "title": {
+        "de": "Cannes und die Lérins-Inseln",
+        "es": "Cannes y las islas de Lérins"
+      },
+      "teaser": {
+        "de": "Die Croisette und das Altstadtviertel Le Suquet. Danach eine Überfahrt von fünfzehn Minuten nach Sainte-Marguerite, mit dem Fort des Mannes mit der eisernen Maske und türkisfarbenem Wasser. Alternativ besuchen Sie die Abtei von Lérins, deren Mönche Wein anbauen. Ihr Chauffeur wartet am alten Hafen.",
+        "es": "La Croisette y el barrio antiguo de Le Suquet. Después, quince minutos de travesía hasta Sainte-Marguerite, con el fuerte del Hombre de la Máscara de Hierro y sus aguas turquesa. Otra opción es la abadía de Lérins y el vino que elaboran sus monjes. Su chófer le espera en el puerto viejo."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Jornada completa"
+      }
+    },
+    {
+      "title": {
+        "de": "Abend in Juan-les-Pins",
+        "es": "Velada en Juan-les-Pins"
+      },
+      "teaser": {
+        "de": "Abendessen mit Blick auf die Bucht, etwa im Les Pêcheurs am Cap oder in La Passagère im Hotel Belles Rives, wo einst Fitzgerald lebte. Anschließend ein Konzert unter Pinien während Jazz à Juan oder ein Besuch im Casino. Spät in der Nacht geht es zurück zu Ihrer Villa oder Yacht.",
+        "es": "Cena frente a la bahía, en Les Pêcheurs, en el Cabo, o en La Passagère del hotel Belles Rives, donde vivió Fitzgerald. Después, concierto bajo los pinos durante Jazz à Juan, o el casino. Regreso de madrugada a su villa o a su yate."
+      },
+      "duration": {
+        "de": "Abend",
+        "es": "Noche"
+      }
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "de": "Was kostet ein Transfer vom Flughafen Nizza nach Antibes oder zum Cap d’Antibes?",
+        "es": "¿Cuánto cuesta un traslado entre el aeropuerto de Niza y Antibes o el cabo de Antibes?"
+      },
+      "a": {
+        "de": "Der private Transfer zwischen Nizza Côte d’Azur (NCE) und Antibes (22 km, 25 bis 30 Minuten) wird zu einem Festpreis berechnet, den wir bei der Buchung bestätigen. Das gilt auch für die Villen am Cap. Empfang in der Ankunftshalle, Flugverfolgung und Wartezeit bei Verspätung sind inbegriffen.",
+        "es": "El traslado privado entre Niza Costa Azul (NCE) y Antibes (22 km, de 25 a 30 minutos) tiene un precio cerrado, confirmado al reservar. Lo mismo vale para las villas del Cabo. Incluye recibimiento en la sala de llegadas, seguimiento del vuelo y espera en caso de retraso."
+      }
+    },
+    {
+      "q": {
+        "de": "Betreuen Sie auch Yachtcrews und Gäste in Port Vauban?",
+        "es": "¿Atienden a tripulaciones y pasajeros de yates en Port Vauban?"
+      },
+      "a": {
+        "de": "Ja, täglich. Wir setzen Sie so nah wie möglich an den Stegen ab, auch am Quai des Milliardaires. Wir koordinieren Crewwechsel zwischen Hafen und Flughafen und übernehmen mit dem Van Proviant- und Technikfahrten. Die Rechnung kann an die Managementgesellschaft oder den Central Agent gehen.",
+        "es": "Sí, a diario. Le dejamos lo más cerca posible de los pantalanes, también en el Quai des Milliardaires. Coordinamos las rotaciones de tripulación entre puerto y aeropuerto y hacemos en furgoneta los recados de aprovisionamiento y de material técnico. Podemos facturar a la empresa gestora o al central agent."
+      }
+    },
+    {
+      "q": {
+        "de": "Muss ich während der Filmfestspiele von Cannes oder Jazz à Juan im Voraus buchen?",
+        "es": "¿Hay que reservar con antelación durante el Festival de Cannes o Jazz à Juan?"
+      },
+      "a": {
+        "de": "Ja. Im Mai und Juli ist die Nachfrage an der Küste am höchsten, und es herrscht dichter Verkehr. Buchen Sie am besten eine Woche im Voraus. Unsere Preise bleiben trotz Stau fest, und Ihr Chauffeur kennt die reservierten Zufahrten und die Ausweichrouten.",
+        "es": "Sí. En mayo y julio la demanda en la costa llega a su máximo y el tráfico es denso. Lo ideal es reservar con una semana de antelación. Nuestros precios no cambian aunque haya atascos, y su chófer conoce los accesos reservados y las rutas alternativas."
+      }
+    }
+  ]
+}

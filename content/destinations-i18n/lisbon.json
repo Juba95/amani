@@ -1,0 +1,129 @@
+{
+  "slug": "lisbon",
+  "name": {
+    "de": "Lissabon",
+    "es": "Lisboa"
+  },
+  "country": {
+    "de": "Portugal",
+    "es": "Portugal"
+  },
+  "airportTransfer": {
+    "de": "Der Flughafen Humberto Delgado (LIS) liegt 7 km nördlich des Zentrums. Bis in den Chiado, das Bairro Alto oder nach Belém brauchen Sie je nach Verkehr 15 bis 25 Minuten. Ihr Chauffeur verfolgt Ihren Flug in Echtzeit und erwartet Sie mit Namensschild in der Ankunftshalle.",
+    "es": "El aeropuerto Humberto Delgado (LIS) está a 7 km al norte del centro. Llegar al Chiado, al Bairro Alto o a Belém lleva entre 15 y 25 minutos, según el tráfico. Su chófer sigue el vuelo en tiempo real y le espera en la sala de llegadas con un cartel con su nombre."
+  },
+  "intro": {
+    "de": [
+      "Lissabon liegt auf sieben Hügeln am Tejo. Azulejos, gelbe Straßenbahnen und Miradouros mit Blick über die Flussmündung prägen das Stadtbild. Ihr **Privatchauffeur in Lissabon** kennt die steilen Gassen der Alfama, die Zufahrten nach Belém und die Restaurants an der Avenida da Liberdade. Er übernimmt Flughafentransfers und stundenweise Fahrten und setzt Sie so nah wie möglich an den Fußgängerzonen ab. Zur Verfügung stehen Mercedes-Limousinen und Vans zu vorab bestätigten Festpreisen, auf Wunsch mit englischsprachigem Chauffeur.",
+      "Von Lissabon aus erreichen Sie die schönsten Ausflugsziele der Estremadura. **Sintra mit seinen Palästen**, Cascais und die Küste von Estoril sowie das Cabo da Roca, der westlichste Punkt des europäischen Festlands, liegen alle weniger als eine Stunde entfernt. Buchen Sie den Wagen für einen ganzen Tag, verbindet Ihr Chauffeur das Heiligtum von Fátima, die Weingüter um Colares und einen Fado-Abend miteinander. Im Stadtverkehr der Hauptstadt verlieren Sie dabei keine Zeit."
+    ],
+    "es": [
+      "Lisboa se levanta sobre siete colinas a orillas del Tajo, entre azulejos, tranvías amarillos y miradouros abiertos al estuario. Su **chófer privado en Lisboa** conoce las callejuelas empinadas de la Alfama, los accesos a Belém y los restaurantes de la Avenida da Liberdade. Se ocupa de traslados al aeropuerto y servicios por horas, y le deja lo más cerca posible de las zonas peatonales. Disponemos de berlinas Mercedes y furgonetas, con precios cerrados confirmados de antemano y chóferes de habla inglesa bajo petición.",
+      "Lisboa es también el punto de partida de las grandes excursiones por Estremadura. **Sintra y sus palacios**, Cascais y la costa de Estoril o el cabo da Roca, el punto más occidental de la Europa continental, quedan a menos de una hora. Con el servicio por día completo, su chófer enlaza el santuario de Fátima, las bodegas de la zona de Colares y una cena con fado. Así no pierde tiempo en el tráfico de la capital."
+    ]
+  },
+  "experiences": [
+    {
+      "title": {
+        "de": "Sintra, Paläste und Quinta da Regaleira",
+        "es": "Sintra, palacios y Quinta da Regaleira"
+      },
+      "teaser": {
+        "de": "30 km westlich von Lissabon liegt die romantische Hügellandschaft, die zum UNESCO-Welterbe gehört. Auf dem Programm stehen der Palácio da Pena, die Quinta da Regaleira mit ihrem Initiationsbrunnen und das Cabo da Roca über dem Atlantik. Vor der Rückfahrt essen Sie in Sintra zu Mittag.",
+        "es": "A 30 km al oeste de Lisboa se encuentra la sierra romántica declarada Patrimonio de la Humanidad por la UNESCO. Verá el Palacio da Pena, la Quinta da Regaleira con su pozo iniciático y el cabo da Roca frente al Atlántico. Almuerzo en Sintra antes del regreso."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "de": "Belém und das Lissabon der Entdeckungen",
+        "es": "Belém y la Lisboa de los Descubrimientos"
+      },
+      "teaser": {
+        "de": "Das Hieronymus-Kloster, der Torre de Belém und das Denkmal der Entdeckungen. Dazwischen gibt es Pastéis de Nata in der Konditorei Pastéis de Belém. Sie werden vor jeder Sehenswürdigkeit abgesetzt, der Wagen wartet.",
+        "es": "El Monasterio de los Jerónimos, la Torre de Belém y el Monumento a los Descubrimientos, con una parada para probar los pastéis de nata de Pastéis de Belém. Le dejamos en la puerta de cada lugar y el vehículo le espera."
+      },
+      "duration": {
+        "de": "Halber Tag",
+        "es": "Medio día"
+      }
+    },
+    {
+      "title": {
+        "de": "Fátima und die Klöster",
+        "es": "Fátima y los monasterios"
+      },
+      "teaser": {
+        "de": "130 km nördlich liegt das Heiligtum von Fátima. Danach besuchen Sie die gotischen Klöster von Batalha und Alcobaça, beide UNESCO-Welterbe. Auf Wunsch führt die Rückfahrt über das mittelalterliche Städtchen Óbidos.",
+        "es": "A 130 km al norte, el santuario de Fátima y, después, los monasterios góticos de Batalha y Alcobaça, Patrimonio de la Humanidad. Si lo desea, el regreso puede pasar por el pueblo medieval de Óbidos."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "de": "Cascais und die Küste von Estoril",
+        "es": "Cascais y la costa de Estoril"
+      },
+      "teaser": {
+        "de": "Über die Küstenstraße Marginal geht es nach Cascais, weiter zum wilden Strand von Guincho und zur Boca do Inferno. Nach einem Fischessen mit Meerblick fahren Sie durch die Serra de Sintra zurück.",
+        "es": "La carretera costera Marginal hasta Cascais, la playa salvaje de Guincho y la Boca do Inferno. Comida de pescado frente al océano y regreso por la sierra de Sintra."
+      },
+      "duration": {
+        "de": "Halber Tag",
+        "es": "Medio día"
+      }
+    },
+    {
+      "title": {
+        "de": "Fado-Abend und Miradouros",
+        "es": "Noche de fado y miradouros"
+      },
+      "teaser": {
+        "de": "Bei Sonnenuntergang besuchen Sie die Aussichtspunkte der Alfama. Es folgt ein Abendessen mit Fado in einem traditionellen Lokal und zum Schluss der Blick auf die beleuchtete Brücke des 25. April. Der Wagen steht den ganzen Abend für Sie bereit.",
+        "es": "Los miradores de la Alfama al caer la tarde, cena con espectáculo de fado en una casa tradicional y, para terminar, el puente 25 de Abril iluminado. El vehículo queda a su disposición toda la noche."
+      },
+      "duration": {
+        "de": "Abend",
+        "es": "Noche"
+      }
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "de": "Was kostet ein Transfer vom Flughafen Lissabon ins Stadtzentrum?",
+        "es": "¿Cuánto cuesta un traslado entre el aeropuerto de Lisboa y el centro?"
+      },
+      "a": {
+        "de": "Der private Transfer zwischen dem Flughafen Humberto Delgado (LIS) und dem Zentrum von Lissabon kostet einen Festpreis, der bei der Buchung bestätigt wird. Inbegriffen sind der Empfang mit Namensschild in der Ankunftshalle, die Flugverfolgung und bei Verspätung 60 Minuten kostenlose Wartezeit.",
+        "es": "El traslado privado entre el aeropuerto Humberto Delgado (LIS) y el centro de Lisboa tiene un precio cerrado, que se confirma al reservar. Incluye la recepción en la sala de llegadas con cartel nominativo, el seguimiento del vuelo y 60 minutos de espera gratuita en caso de retraso."
+      }
+    },
+    {
+      "q": {
+        "de": "Kann man Sintra mit einem Privatchauffeur als Tagesausflug besuchen?",
+        "es": "¿Se puede visitar Sintra en un día con chófer privado?"
+      },
+      "a": {
+        "de": "Ja. Sintra liegt 30 km von Lissabon entfernt. Bei einer Tagesbuchung bringt Sie Ihr Chauffeur so nah wie möglich an den Palácio da Pena und die Quinta da Regaleira und wartet vor Ort. Gern fährt er anschließend weiter nach Cascais oder zum Cabo da Roca.",
+        "es": "Sí. Sintra está a 30 km de Lisboa. Con el servicio por día completo, su chófer le deja lo más cerca posible del Palacio da Pena y de la Quinta da Regaleira y le espera allí. Si lo desea, puede continuar hasta Cascais o el cabo da Roca."
+      }
+    },
+    {
+      "q": {
+        "de": "Sprechen Ihre Chauffeure in Lissabon Englisch?",
+        "es": "¿Sus chóferes en Lisboa hablan inglés?"
+      },
+      "a": {
+        "de": "Ja. Englischsprachige Chauffeure stehen auf Anfrage bei der Buchung zur Verfügung, andere Sprachen je nach Verfügbarkeit. Geben Sie Ihren Wunsch bitte bei der Bestellung an.",
+        "es": "Sí. Puede solicitar un chófer de habla inglesa al reservar, y también otros idiomas según disponibilidad. Indique su preferencia al hacer el pedido."
+      }
+    }
+  ]
+}

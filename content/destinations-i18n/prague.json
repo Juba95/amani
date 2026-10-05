@@ -1,0 +1,129 @@
+{
+  "slug": "prague",
+  "name": {
+    "de": "Prag",
+    "es": "Praga"
+  },
+  "country": {
+    "de": "Tschechien",
+    "es": "Chequia"
+  },
+  "airportTransfer": {
+    "de": "Der Flughafen Prag-Václav-Havel (PRG) liegt 17 km westlich des Zentrums. Bis zum Altstädter Ring oder auf die Kleinseite brauchen Sie 25 bis 35 Minuten. Ihr Chauffeur erwartet Sie mit Namensschild in der Ankunftshalle und verfolgt Ihren Flug in Echtzeit.",
+    "es": "El aeropuerto de Praga-Václav Havel (PRG) está a 17 km al oeste del centro. Hasta la plaza de la Ciudad Vieja o Malá Strana se tardan entre 25 y 35 minutos. Su chófer le espera en la sala de llegadas con un cartel con su nombre y sigue su vuelo en tiempo real."
+  },
+  "intro": {
+    "de": [
+      "Prag, die Stadt der hundert Türme, hat die Karlsbrücke, die Astronomische Uhr und eine gewaltige Burg hoch über der Moldau. Ihr **Privatchauffeur in Prag** bringt Sie vom Flughafen Václav Havel zu den Hotels der Altstadt und fährt Sie auf die Kleinseite, ins jüdische Viertel Josefov oder zu den Konzertsälen des Rudolfinums. Unterwegs sind Sie in einer Mercedes-Limousine oder einem großen Van. Transfers gibt es zum Festpreis, Fahrzeuge auch stundenweise. Unsere Chauffeure kennen die Kopfsteinpflastergassen und die zufahrtsbeschränkten Bereiche der historischen Innenstadt.",
+      "Auch jenseits der Hauptstadt lohnt sich Böhmen für Tagesausflüge. **Karlsbad mit seinen Kolonnaden** erreichen Sie in weniger als zwei Stunden, im Süden liegt das UNESCO-Welterbe Krumau, und bis zur Burg Karlštejn sind es vierzig Minuten. Im Winter finden auf dem Altstädter Ring die Weihnachtsmärkte statt, dann setzt Sie Ihr Chauffeur so nah wie möglich an den Fußgängerzonen ab. Im Sommer plant er die Zeiten so, dass Sie dem Gedränge auf der Karlsbrücke entgehen."
+    ],
+    "es": [
+      "Praga, la ciudad de las cien torres, reúne el puente de Carlos, el reloj astronómico y un castillo enorme que domina el Moldava. Su **chófer privado en Praga** le lleva del aeropuerto Václav Havel a los hoteles de la Ciudad Vieja y le acerca a Malá Strana, al barrio judío de Josefov o a las salas de concierto del Rudolfinum, en berlina Mercedes o en furgoneta de gran capacidad. Los traslados tienen precio cerrado y el vehículo también se contrata por horas. Nuestros chóferes conocen bien los callejones empedrados y las zonas de acceso restringido del casco histórico.",
+      "Fuera de la capital, Bohemia ofrece excursiones de día muy agradecidas. **Karlovy Vary y sus columnatas termales** quedan a menos de dos horas, Český Krumlov, Patrimonio de la Humanidad, está al sur, y el castillo de Karlštejn, a cuarenta minutos. En invierno, los mercados navideños de la plaza de la Ciudad Vieja obligan a dejarle lo más cerca posible de las zonas peatonales. En verano, su chófer ajusta los horarios para evitar las aglomeraciones del puente de Carlos."
+    ]
+  },
+  "experiences": [
+    {
+      "title": {
+        "de": "Prager Burg und Kleinseite",
+        "es": "Castillo de Praga y Malá Strana"
+      },
+      "teaser": {
+        "de": "Ihr Chauffeur setzt Sie oben auf dem Hradschin ab: Veitsdom, Goldenes Gässchen, Palais Lobkowicz. Zu Fuß geht es dann hinunter über die Kleinseite zur Nikolauskirche. Am Fuß des Hügels wartet Ihr Wagen.",
+        "es": "Le dejamos en lo alto de la colina de Hradčany: catedral de San Vito, Callejón del Oro, palacio Lobkowicz. Después baja a pie por Malá Strana hasta la iglesia de San Nicolás. Su vehículo le espera al pie de la colina."
+      },
+      "duration": {
+        "de": "Halber Tag",
+        "es": "Medio día"
+      }
+    },
+    {
+      "title": {
+        "de": "Krumau, das Juwel Südböhmens",
+        "es": "Český Krumlov, joya de Bohemia del Sur"
+      },
+      "teaser": {
+        "de": "Die kleine UNESCO-Stadt liegt 170 km südlich von Prag in einer Schleife der Moldau. Renaissanceschloss, Barocktheater und unversehrte mittelalterliche Gassen. Mittagessen auf einer Terrasse am Fluss, Rückfahrt am Abend.",
+        "es": "A 170 km al sur de Praga, esta pequeña ciudad Patrimonio de la Humanidad se acurruca en un meandro del Moldava. Castillo renacentista, teatro barroco y callejuelas medievales intactas. Almuerzo en una terraza junto al río y regreso por la tarde."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "de": "Kurstadt Karlsbad",
+        "es": "Karlovy Vary, ciudad balneario"
+      },
+      "teaser": {
+        "de": "130 km westlich liegt der berühmteste Kurort Böhmens mit Mühlbrunnkolonnade, heißen Quellen und dem Grandhotel Pupp. Sie probieren das Quellwasser und gönnen sich eine Pause im Teesalon. Zurück geht es über Waldstraßen.",
+        "es": "A 130 km al oeste se encuentra el balneario más célebre de Bohemia: la columnata del Molino, las fuentes termales y el Grandhotel Pupp. Probará el agua de manantial y hará una pausa en un salón de té. La vuelta se hace por carreteras entre bosques."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "de": "Burg Karlštejn und Mittelböhmen",
+        "es": "Castillo de Karlštejn y Bohemia Central"
+      },
+      "teaser": {
+        "de": "Nur 40 Minuten von Prag entfernt steht die gotische Festung, die Karl IV. zum Schutz der Kronjuwelen errichten ließ. Kombinieren lässt sich der Besuch mit dem Park von Průhonice oder einem Weinkeller in Mělník, wo die Moldau in die Elbe mündet.",
+        "es": "A 40 minutos de Praga se alza la fortaleza gótica que Carlos IV mandó construir para custodiar las joyas de la corona. Puede combinarla con los jardines de Průhonice o con una bodega en Mělník, donde el Moldava desemboca en el Elba."
+      },
+      "duration": {
+        "de": "Halber Tag",
+        "es": "Medio día"
+      }
+    },
+    {
+      "title": {
+        "de": "Prager Abend: Oper und Altstadt",
+        "es": "Noche en Praga: ópera y Ciudad Vieja"
+      },
+      "teaser": {
+        "de": "Ihr Chauffeur bringt Sie zum Nationaltheater oder zum Rudolfinum. Danach essen Sie im La Degustation oder im Field, beide mit Michelin-Stern, und fahren anschließend an der beleuchteten Karlsbrücke und Burg vorbei. Der Wagen steht den ganzen Abend bereit.",
+        "es": "Le dejamos ante el Teatro Nacional o el Rudolfinum. Después, cena en La Degustation o en Field, dos restaurantes con estrella Michelin, y un recorrido por el puente de Carlos y el castillo iluminados. El vehículo queda a su disposición toda la noche."
+      },
+      "duration": {
+        "de": "Abend",
+        "es": "Noche"
+      }
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "de": "Was kostet ein Transfer vom Flughafen Prag-Václav-Havel ins Stadtzentrum?",
+        "es": "¿Cuánto cuesta un traslado entre el aeropuerto de Praga-Václav Havel y el centro?"
+      },
+      "a": {
+        "de": "Der private Transfer zwischen dem Flughafen Václav Havel (PRG) und der Prager Innenstadt kostet einen Festpreis, den wir bei der Buchung bestätigen. Inbegriffen sind der Empfang mit Namensschild in der Ankunftshalle, die Flugverfolgung in Echtzeit und kostenlose Wartezeit bei Verspätung.",
+        "es": "El traslado privado entre el aeropuerto Václav Havel (PRG) y el centro de Praga tiene un precio cerrado que se confirma al reservar. Incluye la recepción en la sala de llegadas con cartel nominativo, el seguimiento del vuelo en tiempo real y tiempo de espera gratuito si hay retraso."
+      }
+    },
+    {
+      "q": {
+        "de": "Fahren Sie auch Langstrecken von Prag nach Wien oder Budapest?",
+        "es": "¿Hacen trayectos de larga distancia de Praga a Viena o Budapest?"
+      },
+      "a": {
+        "de": "Ja. Von Prag nach Wien sind es etwa 3,5 Stunden, nach Budapest rund 5 Stunden. Zwischenstopps sind auf Wunsch möglich, etwa in Brünn, Bratislava oder am Neusiedler See. Jede Fahrt zwischen den Hauptstädten wird vorab zum Festpreis angeboten, in einem Fahrzeug mit Zulassung für alle durchfahrenen Länder.",
+        "es": "Sí. De Praga a Viena se tarda unas 3 horas y media, y a Budapest unas 5 horas. Podemos parar donde lo desee, por ejemplo en Brno, Bratislava o el lago Neusiedl. Cada trayecto entre capitales se presupuesta de antemano a precio cerrado, en un vehículo autorizado para circular por todos los países del recorrido."
+      }
+    },
+    {
+      "q": {
+        "de": "Kann man in Prag mit Euro bezahlen, oder braucht man Tschechische Kronen?",
+        "es": "¿Se puede pagar en euros en Praga o hacen falta coronas checas?"
+      },
+      "a": {
+        "de": "Landeswährung ist die Tschechische Krone (CZK). Unsere Leistungen rechnen wir in Euro ab, zum Festpreis und vorab per Karte zahlbar. Für Einkäufe vor Ort nennt Ihnen Ihr Chauffeur gern seriöse Wechselstuben im Zentrum.",
+        "es": "La moneda local es la corona checa (CZK). Nuestros servicios se facturan en euros, a precio cerrado y con pago anticipado por tarjeta. Para sus compras en la ciudad, su chófer le indicará con gusto casas de cambio fiables en el centro."
+      }
+    }
+  ]
+}

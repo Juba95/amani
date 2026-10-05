@@ -1,0 +1,129 @@
+{
+  "slug": "chartres",
+  "name": {
+    "de": "Chartres",
+    "es": "Chartres"
+  },
+  "country": {
+    "de": "Frankreich",
+    "es": "Francia"
+  },
+  "airportTransfer": {
+    "de": "Der Flughafen Paris-Orly (ORY) liegt 75 km nordöstlich von Chartres, die Fahrt dauert etwa 1 Stunde. Vom Flughafen Paris-Charles de Gaulle (CDG) sind es 110 km, rechnen Sie mit 1 Stunde 30 Minuten. Ihr Chauffeur erwartet Sie mit Namensschild in der Ankunftshalle und verfolgt Ihren Flug in Echtzeit.",
+    "es": "El aeropuerto de París-Orly (ORY) está a 75 km al noreste de Chartres: calcule 1 hora de trayecto. Desde París-Charles de Gaulle (CDG), a 110 km, cuente con 1 hora y 30 minutos. Su chófer le recibe con un cartel con su nombre y sigue su vuelo en tiempo real."
+  },
+  "intro": {
+    "de": [
+      "Chartres erhebt sich über der Ebene der Beauce und ist vor allem für seine gotische Kathedrale bekannt. Sie gehört zum UNESCO-Welterbe, berühmt sind ihre Glasfenster aus dem 13. Jahrhundert und das sogenannte Chartres-Blau. Ihr **Privatchauffeur in Chartres** bringt Sie in die Altstadt, zur Kathedrale und zu Ihren Terminen. Wir bieten Transfers von Paris oder den Flughäfen sowie ganztägige Buchungen zu Festpreisen an. Gefahren wird in Mercedes-Limousinen und Vans, englischsprachige Chauffeure auf Anfrage.",
+      "Chartres ist ein klassischer **Ausflug südlich von Paris**. Die Hauptstadt liegt eine Stunde entfernt. Das Tal der Eure mit seinen Mühlen beginnt gleich vor der Stadt, und auch die Schlösser von Maintenon und Anet sind gut erreichbar. Bei einer Tagesbuchung verbindet Ihr Chauffeur Kathedrale, Dörfer der Beauce und Schlösser. Er kann Sie aber ebenso für eine private Besichtigung in Paris abholen und abends wieder zurückbringen."
+    ],
+    "es": [
+      "Chartres se alza sobre la llanura de la Beauce y debe su fama a la catedral gótica, declarada Patrimonio de la Humanidad por la UNESCO. Sus vidrieras del siglo XIII y el célebre azul de Chartres atraen a visitantes de todo el mundo. Su **chófer privado en Chartres** le lleva al centro histórico, a la catedral y a sus citas. Ofrecemos traslados desde París o los aeropuertos y servicio por jornada completa, siempre a precio cerrado. Disponemos de berlinas Mercedes y furgonetas, con chóferes de habla inglesa bajo petición.",
+      "Chartres es una **escapada al sur de París**. La capital queda a una hora. El valle del Eure y sus molinos están muy cerca, y los castillos de Maintenon y Anet, a poca distancia. Con el servicio por jornada completa, su chófer enlaza la catedral, los pueblos de la Beauce y los castillos. También puede recogerle en París para una visita privada y devolverle allí al final del día."
+    ]
+  },
+  "experiences": [
+    {
+      "title": {
+        "de": "Kathedrale von Chartres",
+        "es": "Catedral de Chartres"
+      },
+      "teaser": {
+        "de": "Die Kathedrale mit ihren Glasfenstern aus dem 13. Jahrhundert, die Krypta, das Labyrinth und die Altstadt an der Eure. Ihr Chauffeur setzt Sie direkt vor Ort ab, danach geht es zu Fuß durch die Stadt des Lichts.",
+        "es": "La catedral y sus vidrieras del siglo XIII, la cripta, el laberinto y el casco antiguo a orillas del Eure. Su chófer le deja lo más cerca posible y usted recorre a pie la ciudad de la luz."
+      },
+      "duration": {
+        "de": "Halber Tag",
+        "es": "Media jornada"
+      }
+    },
+    {
+      "title": {
+        "de": "Chartres ab Paris",
+        "es": "Chartres desde París"
+      },
+      "teaser": {
+        "de": "Ein Tagesausflug aus der Hauptstadt mit Kathedrale, Altstadt und Mittagessen. Am Abend sind Sie zurück in Paris. Die private Alternative zum Zug.",
+        "es": "Una excursión de un día desde la capital: la catedral, el casco antiguo y el almuerzo, con regreso por la tarde. Una alternativa privada al tren."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Jornada completa"
+      }
+    },
+    {
+      "title": {
+        "de": "Eure-Tal und Schlösser",
+        "es": "Valle del Eure y castillos"
+      },
+      "teaser": {
+        "de": "Schloss Maintenon mit seinem Aquädukt, das Tal der Eure mit seinen Mühlen und die Dörfer der Beauce. Ein Tag zwischen Kulturerbe und Landschaft.",
+        "es": "El castillo de Maintenon y su acueducto, el valle del Eure con sus molinos y los pueblos de la Beauce. Un día entre patrimonio y campo."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Jornada completa"
+      }
+    },
+    {
+      "title": {
+        "de": "Chartres en Lumières",
+        "es": "Chartres en Lumières"
+      },
+      "teaser": {
+        "de": "Bei Einbruch der Dunkelheit werden Kathedrale und Baudenkmäler mit großformatigen Projektionen angestrahlt. Dazu ein Abendessen in der Stadt. Ein stimmungsvoller Abend, von April bis Oktober.",
+        "es": "Un festival de proyecciones monumentales que ilumina la catedral y los monumentos al caer la noche, con cena en la ciudad. Una velada mágica, de abril a octubre."
+      },
+      "duration": {
+        "de": "Abend",
+        "es": "Velada"
+      }
+    },
+    {
+      "title": {
+        "de": "Abend in Chartres",
+        "es": "Noche en Chartres"
+      },
+      "teaser": {
+        "de": "Abendessen in der Altstadt an der Eure, über der Ebene die beleuchtete Kathedrale, danach ein Glas in ruhiger Umgebung. Das Fahrzeug steht den ganzen Abend für Sie bereit.",
+        "es": "Cena en el casco antiguo junto al Eure, con la catedral iluminada sobre la llanura, y después una copa tranquila. El vehículo queda a su disposición toda la noche."
+      },
+      "duration": {
+        "de": "Abend",
+        "es": "Velada"
+      }
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "de": "Kann man Chartres als Tagesausflug von Paris aus besuchen?",
+        "es": "¿Se puede visitar Chartres en una excursión de un día desde París?"
+      },
+      "a": {
+        "de": "Ja, Chartres liegt eine Stunde von Paris entfernt. Bei einer Tagesbuchung fährt Ihr Chauffeur Sie zur Kathedrale, organisiert Besichtigung und Mittagessen und bringt Sie am Abend zurück. Alles zum Festpreis.",
+        "es": "Sí, Chartres está a una hora de París. Con el servicio por jornada completa, su chófer le lleva a la catedral, organiza la visita y el almuerzo, y le devuelve a París por la tarde, a precio cerrado."
+      }
+    },
+    {
+      "q": {
+        "de": "Was ist Chartres en Lumières?",
+        "es": "¿Qué es Chartres en Lumières?"
+      },
+      "a": {
+        "de": "Ein nächtliches Festival, das von April bis Oktober die Kathedrale und weitere Baudenkmäler mit eindrucksvollen Projektionen beleuchtet. Ihr Chauffeur bringt Sie hin und wartet mit dem Fahrzeug, solange Sie möchten.",
+        "es": "Es un festival nocturno que, de abril a octubre, ilumina la catedral y otros monumentos con proyecciones espectaculares. Su chófer le acompaña durante la velada y el vehículo le espera mientras tanto."
+      }
+    },
+    {
+      "q": {
+        "de": "Sprechen Ihre Chauffeure Englisch?",
+        "es": "¿Sus chóferes hablan inglés?"
+      },
+      "a": {
+        "de": "Ja, englischsprachige Chauffeure stehen auf Anfrage zur Verfügung. Weitere Sprachen je nach Verfügbarkeit.",
+        "es": "Sí, hay chóferes de habla inglesa disponibles bajo petición, y también otros idiomas según disponibilidad."
+      }
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "slug": "brussels",
+  "name": {
+    "de": "Brüssel",
+    "es": "Bruselas"
+  },
+  "country": {
+    "de": "Belgien",
+    "es": "Bélgica"
+  },
+  "airportTransfer": {
+    "de": "Der Flughafen Brüssel-Zaventem (BRU) liegt 12 km nordöstlich der Innenstadt. Bis zur Grand-Place oder ins Europaviertel brauchen Sie je nach Verkehr 20 bis 35 Minuten. Ihr Chauffeur empfängt Sie in der Ankunftshalle mit einem Namensschild und verfolgt Ihren Flug in Echtzeit. Vom Flughafen Brüssel-Süd Charleroi (CRL), 50 km entfernt, sind es 50 bis 60 Minuten.",
+    "es": "El aeropuerto de Bruselas-Zaventem (BRU) está a 12 km al noreste del centro. Para llegar a la Grand-Place o al barrio europeo, calcule entre 20 y 35 minutos según el tráfico. Su chófer le espera en la sala de llegadas con un cartel con su nombre y sigue su vuelo en tiempo real. Desde Bruselas-Sur Charleroi (CRL), a 50 km, el trayecto dura de 50 a 60 minutos."
+  },
+  "intro": {
+    "de": [
+      "Brüssel ist Hauptstadt Belgiens und der Europäischen Union. Hier liegen die barocke Grand-Place, Jugendstilhäuser und die Institutionen des Schuman-Viertels dicht beieinander. Ihr **Privatchauffeur in Brüssel** fährt Sie zu EU-Gipfeln, zur NATO, zu den Hotels am Sablon und in die Sternerestaurants der Stadt. Wir bieten Flughafen- und Eurostar-Transfers, stundenweise Buchung und Festpreise, die vorab bestätigt werden. Zur Wahl stehen Mercedes-Limousinen und Vans, die Chauffeure sprechen Französisch und Englisch.",
+      "Von Brüssel aus erreichen Sie die **flämischen Kunststädte** bequem. Brügge, Gent und Antwerpen liegen jeweils weniger als eine Stunde entfernt, das Schlachtfeld von Waterloo zwanzig Minuten. Bei ganztägiger Buchung verbindet Ihr Chauffeur Termine in den Institutionen, Geschäftsessen und Kulturausflüge. Sie arbeiten oder ruhen sich unterwegs aus."
+    ],
+    "es": [
+      "Bruselas es la capital de Bélgica y de la Unión Europea. En pocas calles conviven la Grand-Place barroca, las casas modernistas y las instituciones del barrio Schuman. Su **chófer privado en Bruselas** le lleva a las cumbres europeas, a la OTAN, a los hoteles del Sablon y a los restaurantes con estrella de la ciudad. Ofrecemos traslados al aeropuerto y a la estación del Eurostar, servicio por horas y precios cerrados confirmados de antemano. Disponemos de berlinas y furgonetas Mercedes, con chóferes que hablan francés e inglés.",
+      "Bruselas es la puerta de entrada a las **ciudades de arte flamencas**. Brujas, Gante y Amberes quedan a menos de una hora, y el campo de batalla de Waterloo, a veinte minutos. Si contrata el servicio por un día completo, su chófer enlaza reuniones institucionales, cenas de negocios y salidas culturales. Usted trabaja o descansa a bordo."
+    ]
+  },
+  "experiences": [
+    {
+      "title": {
+        "de": "Tagesausflug nach Brügge",
+        "es": "Brujas en un día"
+      },
+      "teaser": {
+        "de": "100 km entfernt liegt das Venedig des Nordens mit Belfried, Grachten, dem Marktplatz und dem Beginenhof. Zum Mittagessen gibt es Muscheln, zurück geht es durch die flämische Landschaft.",
+        "es": "A 100 km se encuentra la Venecia del Norte: el campanario, los canales, la plaza del Markt y el beaterio. Almuerzo de mejillones y regreso por la campiña flamenca."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "de": "Gent, die mittelalterliche Stadt",
+        "es": "Gante, ciudad medieval"
+      },
+      "teaser": {
+        "de": "Die Burg der Grafen von Flandern, die Kais der Graslei, die Kathedrale St. Bavo mit dem Genter Altar der Brüder van Eyck. Ein Ausflug über 55 km mit Mittagessen in der Altstadt.",
+        "es": "El castillo de los Condes, los muelles del Graslei, la catedral de San Bavón y el Cordero Místico de los Van Eyck. Una escapada a 55 km con almuerzo en el centro."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "de": "Waterloo und der Löwenhügel",
+        "es": "Waterloo y la colina del León"
+      },
+      "teaser": {
+        "de": "Nur 20 km entfernt: das Schlachtfeld von 1815, der Rundblick vom Löwenhügel und das Memorial. Ein halber Tag Geschichte vor den Toren Brüssels.",
+        "es": "A 20 km, el campo de batalla de 1815, la vista panorámica desde la colina del León y el Memorial. Media jornada de historia a las puertas de Bruselas."
+      },
+      "duration": {
+        "de": "Halber Tag",
+        "es": "Media jornada"
+      }
+    },
+    {
+      "title": {
+        "de": "Brüssel im Jugendstil",
+        "es": "Bruselas modernista"
+      },
+      "teaser": {
+        "de": "Die Horta-Häuser, die zum UNESCO-Welterbe gehören, das Viertel um die Teiche von Ixelles und die Galeries Saint-Hubert. Ihr Chauffeur hält direkt vor jedem Ort und wartet auf Sie.",
+        "es": "Las casas de Horta, Patrimonio de la Humanidad de la UNESCO, el barrio de los estanques de Ixelles y las galerías Saint-Hubert. El chófer le deja ante cada lugar y el vehículo le espera."
+      },
+      "duration": {
+        "de": "Halber Tag",
+        "es": "Media jornada"
+      }
+    },
+    {
+      "title": {
+        "de": "Gourmetabend",
+        "es": "Velada gastronómica"
+      },
+      "teaser": {
+        "de": "Abendessen in einem Sternerestaurant am Sablon oder in einer traditionsreichen Brasserie, danach die beleuchtete Grand-Place und ein letztes Glas in einem Estaminet, einer typisch belgischen Kneipe. Das Fahrzeug steht den ganzen Abend bereit.",
+        "es": "Cena en un restaurante con estrella del Sablon o en una brasserie histórica, paseo por la Grand-Place iluminada y una última copa en un estaminet, la taberna tradicional belga. El vehículo queda a su disposición toda la noche."
+      },
+      "duration": {
+        "de": "Abend",
+        "es": "Noche"
+      }
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "de": "Was kostet ein Transfer zwischen dem Flughafen Brüssel und der Innenstadt?",
+        "es": "¿Cuánto cuesta un traslado entre el aeropuerto de Bruselas y el centro?"
+      },
+      "a": {
+        "de": "Der private Transfer zwischen Brüssel-Zaventem (BRU) und der Innenstadt wird zum Festpreis berechnet, den wir bei der Buchung bestätigen. Inbegriffen sind der Empfang in der Ankunftshalle, die Flugverfolgung und bei Verspätung 60 Minuten kostenlose Wartezeit.",
+        "es": "El traslado privado entre Bruselas-Zaventem (BRU) y el centro tiene un precio cerrado, confirmado al reservar. Incluye recepción en la sala de llegadas, seguimiento del vuelo y 60 minutos de espera gratuita en caso de retraso."
+      }
+    },
+    {
+      "q": {
+        "de": "Bieten Sie einen Service für die EU-Institutionen an?",
+        "es": "¿Ofrecen servicio para las instituciones europeas?"
+      },
+      "a": {
+        "de": "Ja. Wir übernehmen Transfers und stundenweise Buchungen für Gipfeltreffen, Delegationen und Termine im Europaviertel und bei der NATO. Unsere Chauffeure sind mit Protokoll und Sicherheitsvorgaben vertraut. Ein Firmenkonto ist möglich.",
+        "es": "Sí. Realizamos traslados y servicios por horas para cumbres, delegaciones y citas en el barrio europeo y en la OTAN, con chóferes acostumbrados al protocolo y a las normas de seguridad. Disponemos de cuenta corporativa."
+      }
+    },
+    {
+      "q": {
+        "de": "Sprechen Ihre Chauffeure in Brüssel Englisch?",
+        "es": "¿Sus chóferes en Bruselas hablan inglés?"
+      },
+      "a": {
+        "de": "Ja, unsere Chauffeure sprechen Französisch und Englisch. Andere Sprachen sind auf Anfrage und je nach Verfügbarkeit möglich.",
+        "es": "Sí, nuestros chóferes hablan francés e inglés. Otros idiomas son posibles bajo petición, según disponibilidad."
+      }
+    }
+  ]
+}

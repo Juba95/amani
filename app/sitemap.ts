@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { FR_INDEXED_SLUGS, EN_INDEXED_SLUGS, AR_ZH_INDEXED_SLUGS, PER_LOCALE_EXTRA_SLUGS } from '@/lib/seo-whitelist';
 import { ALL_DESTINATIONS } from '@/lib/destinations';
+import { translatedSlugs, TRANSLATED_LOCALES } from '@/lib/destinations/i18n';
 import { getAllExperienceDetailParams } from '@/lib/experience-details';
 
 const BASE = 'https://www.amani-limousines.com';
@@ -164,6 +165,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       { url: `${BASE}/destinations/${p.slug}/${p.exp}`,    lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
       { url: `${BASE}/en/destinations/${p.slug}/${p.exp}`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     );
+  }
+
+  // ── Destinations traduites (DE + ES) ───────────────────────────────────────
+  // Couverture partielle assumée : seules les villes présentes dans
+  // content/destinations-i18n ont une page dans ces langues.
+  for (const locale of TRANSLATED_LOCALES) {
+    const slugs = translatedSlugs(locale);
+    if (slugs.length === 0) continue;
+    entries.push({
+      url: `${BASE}/${locale}/destinations`,
+      lastModified: now, changeFrequency: 'weekly', priority: 0.8,
+    });
+    for (const slug of slugs) {
+      entries.push({
+        url: `${BASE}/${locale}/destinations/${slug}`,
+        lastModified: now, changeFrequency: 'monthly', priority: 0.7,
+      });
+    }
   }
 
   // ── Homepages DE + ES + AR + ZH ─────────────────────────────────────────────

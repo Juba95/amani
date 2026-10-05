@@ -1,0 +1,129 @@
+{
+  "slug": "giverny-village",
+  "name": {
+    "de": "Giverny",
+    "es": "Giverny"
+  },
+  "country": {
+    "de": "Frankreich",
+    "es": "Francia"
+  },
+  "airportTransfer": {
+    "de": "Der Flughafen Paris-Charles de Gaulle (CDG) liegt 80 km östlich von Giverny, die Fahrt dauert etwa 1 Std. 15 Min. Von Rouen, 70 km westlich, rechnen Sie mit 1 Std. Ihr Chauffeur empfängt Sie mit einem Namensschild und verfolgt Ihren Flug in Echtzeit.",
+    "es": "El aeropuerto de París-Charles de Gaulle (CDG) está a 80 km al este de Giverny: calcule 1 h 15 min de trayecto. Desde Ruan, a 70 km al oeste, el viaje dura 1 h. Su chófer le recibe con un cartel con su nombre y sigue su vuelo en tiempo real."
+  },
+  "intro": {
+    "de": [
+      "Giverny liegt an der Seine und gilt als Dorf des Impressionismus. Hier stehen Claude Monets Haus und Gärten, der Seerosenteich und die japanische Brücke, die ihn zu seinen berühmtesten Bildern inspirierten. Ihr **Privatchauffeur in Giverny** fährt Sie zu Monets Haus, zum Musée des impressionnismes und zu Ihrem Hotel. Wir bieten Transfers ab Paris oder Rouen und Tagesbuchungen zu Festpreisen an. Gefahren wird in Mercedes-Limousinen und Vans, englischsprachige Chauffeure auf Anfrage.",
+      "Giverny ist das Herz der **impressionistischen Seine**. Vernon mit seinen Fachwerkhäusern erreichen Sie in fünf Minuten, Schloss Bizy liegt ganz in der Nähe. Weiter westlich wartet Rouen mit der Kathedrale, die Monet mehrfach gemalt hat. Bei einer Tagesbuchung verbindet Ihr Chauffeur Malergärten, Dörfer an der Seine und Kunststädte. Oder er übernimmt die Hin- und Rückfahrt ab Paris, damit Sie nicht auf Reisebusse angewiesen sind."
+    ],
+    "es": [
+      "A orillas del Sena, Giverny es el pueblo del impresionismo. Aquí se encuentran la casa y los jardines de Claude Monet, el estanque de los nenúfares y el puente japonés que inspiraron sus cuadros más conocidos. Su **chófer privado en Giverny** le lleva a la casa de Monet, al Musée des impressionnismes y a su hotel. Ofrecemos traslados desde París o Ruan y servicio por jornada completa, siempre a precio cerrado. Berlinas Mercedes y furgonetas, con chóferes que hablan inglés bajo petición.",
+      "Giverny es el corazón del **Sena impresionista**. Vernon y sus casas con entramado de madera quedan a cinco minutos, y el castillo de Bizy está muy cerca. Al oeste se encuentra Ruan, con la catedral que Monet pintó en varias ocasiones. Con un servicio por jornada completa, su chófer enlaza jardines de pintores, pueblos del Sena y ciudades de arte. También puede encargarse de la ida y vuelta desde París para que no dependa de los autocares."
+    ]
+  },
+  "experiences": [
+    {
+      "title": {
+        "de": "Monets Haus und Gärten",
+        "es": "Casa y jardines de Monet"
+      },
+      "teaser": {
+        "de": "Das Wohnhaus von Claude Monet, der Blumengarten, der Seerosenteich und die japanische Brücke. Wir setzen Sie direkt am Eingang ab, Ihr Chauffeur wartet während der Besichtigung.",
+        "es": "La casa de Claude Monet, el jardín de flores, el estanque de los nenúfares y el puente japonés. Le dejamos lo más cerca posible y su chófer le espera durante la visita."
+      },
+      "duration": {
+        "de": "Halber Tag",
+        "es": "Media jornada"
+      }
+    },
+    {
+      "title": {
+        "de": "Giverny ab Paris",
+        "es": "Giverny desde París"
+      },
+      "teaser": {
+        "de": "Ein Tagesausflug aus der Hauptstadt: Monets Haus, das Musée des impressionnismes und ein Mittagessen, abends zurück. Die private Alternative zu den Reisebussen.",
+        "es": "Una excursión de un día desde la capital: la casa de Monet, el Musée des impressionnismes y un almuerzo, con regreso por la tarde. La alternativa privada a los autocares."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Jornada completa"
+      }
+    },
+    {
+      "title": {
+        "de": "Giverny und Rouen",
+        "es": "Giverny y Ruan"
+      },
+      "teaser": {
+        "de": "Vormittags Monets Gärten, nachmittags die Kathedrale von Rouen, die er malte, und die Altstadt. Ein Tag auf den Spuren des Impressionismus.",
+        "es": "Por la mañana, los jardines de Monet. Por la tarde, la catedral de Ruan que él pintó y el casco antiguo. Un día tras los pasos del impresionismo."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Jornada completa"
+      }
+    },
+    {
+      "title": {
+        "de": "Seinetal",
+        "es": "Valle del Sena"
+      },
+      "teaser": {
+        "de": "Vernon und seine Fachwerkhäuser, Schloss La Roche-Guyon, die Flussschleifen der Seine und die Malerdörfer. Ein Tag mit Natur und Geschichte entlang des Flusses.",
+        "es": "Vernon y sus casas con entramado de madera, el castillo de La Roche-Guyon, los meandros del Sena y los pueblos de pintores. Una jornada de naturaleza y patrimonio junto al río."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Jornada completa"
+      }
+    },
+    {
+      "title": {
+        "de": "Ausflug ins Grüne",
+        "es": "Escapada al campo"
+      },
+      "teaser": {
+        "de": "Mittagessen in einem Gasthaus in Giverny, danach das Dorf und seine Gärten abseits des Andrangs und die ruhige Seine. Ein ländlicher Halbtag fern von Paris.",
+        "es": "Almuerzo en un mesón de Giverny, el pueblo y sus jardines lejos de las multitudes y el Sena en calma. Media jornada en el campo, lejos de París."
+      },
+      "duration": {
+        "de": "Halber Tag",
+        "es": "Media jornada"
+      }
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "de": "Kann man Giverny an einem Tag von Paris aus besuchen?",
+        "es": "¿Se puede visitar Giverny en un día desde París?"
+      },
+      "a": {
+        "de": "Ja, Giverny liegt 1 Std. 15 Min. von Paris entfernt. Bei einer Tagesbuchung bringt Sie Ihr Chauffeur zu Monets Gärten, organisiert Besichtigung und Mittagessen und fährt Sie abends zurück, zum Festpreis.",
+        "es": "Sí, Giverny está a 1 h 15 min de París. Con un servicio por jornada completa, su chófer le lleva a los jardines de Monet, organiza la visita y el almuerzo y le devuelve por la tarde, a precio cerrado."
+      }
+    },
+    {
+      "q": {
+        "de": "Ist Monets Haus das ganze Jahr geöffnet?",
+        "es": "¿La casa de Monet abre todo el año?"
+      },
+      "a": {
+        "de": "Haus und Gärten sind von April bis Anfang November geöffnet. Bei Ihrer Buchung beraten wir Sie gern, zu welcher Jahres- und Uhrzeit der Andrang am geringsten ist.",
+        "es": "La casa y los jardines abren de abril a principios de noviembre. Al hacer su reserva le aconsejamos sobre las mejores fechas y horarios para evitar las aglomeraciones."
+      }
+    },
+    {
+      "q": {
+        "de": "Sprechen Ihre Chauffeure Englisch?",
+        "es": "¿Sus chóferes hablan inglés?"
+      },
+      "a": {
+        "de": "Ja, englischsprachige Chauffeure stehen auf Anfrage bereit. Weitere Sprachen sind je nach Verfügbarkeit möglich.",
+        "es": "Sí, disponemos de chóferes que hablan inglés bajo petición. Otros idiomas son posibles según disponibilidad."
+      }
+    }
+  ]
+}

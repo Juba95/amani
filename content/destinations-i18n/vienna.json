@@ -1,0 +1,129 @@
+{
+  "slug": "vienna",
+  "name": {
+    "de": "Wien",
+    "es": "Viena"
+  },
+  "country": {
+    "de": "Österreich",
+    "es": "Austria"
+  },
+  "airportTransfer": {
+    "de": "Der Flughafen Wien-Schwechat (VIE) liegt 18 km südöstlich des Zentrums. Bis zum Ring oder zum Stephansdom brauchen Sie 25 bis 30 Minuten. Ihr Chauffeur erwartet Sie mit Namensschild in der Ankunftshalle und verfolgt Ihren Flug, damit die Abholzeit stimmt.",
+    "es": "El aeropuerto de Viena-Schwechat (VIE) está a 18 km al sureste del centro, a unos 25 o 30 minutos del Ring o de la catedral de San Esteban. Su chófer le espera en la sala de llegadas con un cartel con su nombre y sigue su vuelo para ajustar la hora de recogida."
+  },
+  "intro": {
+    "de": [
+      "Am Wiener Ring reihen sich die Bauten der einstigen Kaiserstadt aneinander: Staatsoper, Hofburg, die beiden Museen am Maria-Theresien-Platz und das Burgtheater. Ihr **Privatchauffeur in Wien** fährt Sie zu Palais und Konzertsälen, zu den internationalen Organisationen an der Donau und zu den traditionsreichen Kaffeehäusern der Innenstadt wie Sacher, Central oder Demel. Wir bieten Flughafentransfers zum Festpreis und stundenweise Buchung für Ihre Termine, dazu Premium-Limousinen und Vans mit diskreten Chauffeuren.",
+      "Von Wien aus erreichen Sie viele Ziele in alle Richtungen. **Die Wachau mit ihren Weinterrassen** liegt eine Stunde entfernt, ebenso lohnen das Stift Melk und der Neusiedler See. Bratislava ist kaum sechzig Kilometer weit. Von Mai bis September folgen die Abende bei den Konzerten in Schönbrunn aufeinander, und die Rückfahrt in der Nacht ist gesichert. Im Dezember setzt Ihr Chauffeur Sie so nah wie möglich am Christkindlmarkt auf dem Rathausplatz ab."
+    ],
+    "es": [
+      "Antigua capital imperial, Viena reúne a lo largo del Ring la Ópera Estatal, el Hofburg, los dos museos gemelos de María Teresa y el Burgtheater. Su **chófer privado en Viena** le lleva a palacios y salas de conciertos, a las sedes de los organismos internacionales junto al Danubio y a los cafés históricos del centro, como el Sacher, el Central o el Demel. Ofrecemos traslados al aeropuerto a precio fijo, servicio por horas para sus citas, berlinas y furgonetas premium con chóferes discretos.",
+      "Desde Viena, Austria se recorre en todas direcciones. **El valle de Wachau y sus viñedos en terrazas** quedan a una hora, igual que la abadía de Melk o el lago Neusiedl. Bratislava está a apenas sesenta kilómetros. Entre mayo y septiembre, las noches de concierto en Schönbrunn se suceden y la vuelta de madrugada está garantizada. En diciembre, su chófer le deja lo más cerca posible de los mercados navideños de la Rathausplatz."
+    ]
+  },
+  "experiences": [
+    {
+      "title": {
+        "de": "Schönbrunn und das kaiserliche Wien",
+        "es": "Schönbrunn y la Viena imperial"
+      },
+      "teaser": {
+        "de": "Das Sommerschloss der Habsburger mit Gloriette und Schlosspark, danach Hofburg, Kapuzinergruft und eine Fahrt über den gesamten Ring. Dazwischen eine Mehlspeise bei Demel oder im Café Sacher. Den Ablauf bestimmen Sie.",
+        "es": "El palacio de verano de los Habsburgo, la Glorieta y sus jardines, y después el Hofburg, la Cripta Imperial y el Ring completo. Una pausa para un dulce en Demel o en el Café Sacher, con un itinerario que se adapta a su ritmo."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "de": "Wachau und Stift Melk",
+        "es": "Valle de Wachau y abadía de Melk"
+      },
+      "teaser": {
+        "de": "Eine Stunde westlich liegen zwischen Melk und Krems die Weinterrassen, die zum UNESCO-Welterbe gehören. Sie besuchen das barocke Stift, Dürnstein mit seinem blauen Kirchturm und probieren Grünen Veltliner bei einem Winzer hoch über der Donau.",
+        "es": "A una hora al oeste, entre Melk y Krems, se extienden los viñedos en terrazas declarados Patrimonio de la Humanidad por la UNESCO. La abadía barroca, Dürnstein y su torre azul, y una cata de grüner veltliner con un viticultor de las laderas del Danubio."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Día completo"
+      }
+    },
+    {
+      "title": {
+        "de": "Bratislava, ein Ausflug an der Donau",
+        "es": "Bratislava, escapada por el Danubio"
+      },
+      "teaser": {
+        "de": "Nur 60 km von Wien entfernt liegt die slowakische Hauptstadt mit ihrer Burg über der Donau, der Altstadt und dem Michaelertor. Zwei Hauptstädte an einem Tag: Das bieten nur wenige Städte in Europa.",
+        "es": "A 60 km de Viena, la capital eslovaca, con su castillo sobre el Danubio, el casco antiguo y la puerta de San Miguel. Dos capitales en un solo día, algo que pocas ciudades europeas permiten."
+      },
+      "duration": {
+        "de": "Halber Tag",
+        "es": "Media jornada"
+      }
+    },
+    {
+      "title": {
+        "de": "Abend in der Oper oder im Musikverein",
+        "es": "Velada en la Ópera o en el Musikverein"
+      },
+      "teaser": {
+        "de": "Wir bringen Sie vor die Staatsoper oder zum Goldenen Saal des Musikvereins. Vor oder nach der Vorstellung essen Sie im Steirereck oder im Zum Schwarzen Kameel. Der Wagen wartet und fährt Sie anschließend direkt ins Hotel.",
+        "es": "Le dejamos ante la Ópera Estatal o la Sala Dorada del Musikverein. Puede cenar antes o después de la función en el Steirereck o en Zum Schwarzen Kameel, y el vehículo le espera para devolverle de inmediato a su hotel."
+      },
+      "duration": {
+        "de": "Abend",
+        "es": "Noche"
+      }
+    },
+    {
+      "title": {
+        "de": "Neusiedler See und die Weingüter des Burgenlands",
+        "es": "Lago Neusiedl y viñedos de Burgenland"
+      },
+      "teaser": {
+        "de": "50 Minuten südöstlich liegt der Steppensee, der zum UNESCO-Welterbe zählt. In Rust nisten Störche auf den Dächern, und hier entsteht der edelsüße Ruster Ausbruch. Mittagessen am Wasser, Besuch in Familienkellern, Rückfahrt über Eisenstadt und Schloss Esterházy.",
+        "es": "A 50 minutos al sureste, el lago estepario declarado Patrimonio de la Humanidad, Rust y sus nidos de cigüeña, y los grandes vinos dulces de Ruster Ausbruch. Almuerzo junto al agua y bodegas familiares, con regreso por Eisenstadt y el palacio Esterházy."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Día completo"
+      }
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "de": "Was kostet ein Transfer vom Flughafen Wien-Schwechat in die Innenstadt?",
+        "es": "¿Cuánto cuesta un traslado entre el aeropuerto de Viena-Schwechat y el centro?"
+      },
+      "a": {
+        "de": "Der private Transfer zwischen Wien-Schwechat (VIE) und der Wiener Innenstadt kostet einen Festpreis, den wir bei der Buchung bestätigen. Inbegriffen sind der Empfang mit Namensschild in der Ankunftshalle, die Flugverfolgung in Echtzeit und kostenlose Wartezeit bei Verspätung.",
+        "es": "El traslado privado entre Viena-Schwechat (VIE) y el centro de Viena tiene un precio fijo, confirmado al reservar. Incluye recibimiento en la sala de llegadas con cartel nominativo, seguimiento del vuelo en tiempo real y espera gratuita en caso de retraso."
+      }
+    },
+    {
+      "q": {
+        "de": "Bieten Sie direkte Fahrten von Wien nach Bratislava oder Budapest an?",
+        "es": "¿Ofrecen trayectos directos de Viena a Bratislava o a Budapest?"
+      },
+      "a": {
+        "de": "Ja. Nach Bratislava sind es etwa 50 Minuten, nach Budapest 2 Stunden 30 über die Autobahn. Für diese Fahrten zwischen den Hauptstädten erhalten Sie vorab ein Angebot zum Festpreis. Autobahnvignetten und Fahrgenehmigungen übernehmen wir.",
+        "es": "Sí. Bratislava queda a unos 50 minutos y Budapest a 2 h 30 por autopista. Estos trayectos entre capitales se presupuestan con antelación a precio fijo, y nosotros nos ocupamos de las viñetas de autopista y de los permisos de circulación."
+      }
+    },
+    {
+      "q": {
+        "de": "Kann ich über den Flughafen Wien anreisen, wenn ich nach Bratislava möchte?",
+        "es": "¿Puede el aeropuerto de Viena servir de puerta de entrada para una estancia en Bratislava?"
+      },
+      "a": {
+        "de": "Selbstverständlich. Wien-Schwechat liegt rund fünfzig Kilometer von Bratislava entfernt und hat deutlich mehr Langstreckenverbindungen als der slowakische Flughafen. Ihr Chauffeur holt Sie am VIE ab und bringt Sie in weniger als einer Stunde zum Festpreis ins Zentrum von Bratislava.",
+        "es": "Por supuesto. Viena-Schwechat está a unos cincuenta kilómetros de Bratislava y ofrece muchas más conexiones de largo recorrido que el aeropuerto eslovaco. Su chófer le recibe en VIE y le deja en el centro de Bratislava en menos de una hora, a precio fijo."
+      }
+    }
+  ]
+}

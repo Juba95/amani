@@ -1,0 +1,129 @@
+{
+  "slug": "versailles-ville",
+  "name": {
+    "de": "Versailles",
+    "es": "Versalles"
+  },
+  "country": {
+    "de": "Frankreich",
+    "es": "Francia"
+  },
+  "airportTransfer": {
+    "de": "Der Flughafen Paris-Orly (ORY) liegt 25 km südöstlich von Versailles, die Fahrt dauert 30 bis 40 Minuten. Vom Flughafen Paris-Charles de Gaulle (CDG) in 50 km Entfernung sind es 50 Minuten bis eine Stunde. Ihr Chauffeur erwartet Sie mit einem Namensschild und verfolgt Ihren Flug in Echtzeit.",
+    "es": "El aeropuerto de París-Orly (ORY) está a 25 km al sureste de Versalles: el trayecto dura entre 30 y 40 minutos. Desde París-Charles de Gaulle (CDG), a 50 km, calcule de 50 minutos a 1 hora. Su chófer le recibe con un cartel con su nombre y sigue su vuelo en tiempo real."
+  },
+  "intro": {
+    "de": [
+      "Versailles liegt direkt vor den Toren von Paris und beherbergt das berühmteste Schloss der Welt: den Palast des Sonnenkönigs mit dem Spiegelsaal und den barocken Gärten, die zum UNESCO-Welterbe gehören. Ihr **Privatchauffeur in Versailles** fährt Sie zum Schloss, durch die Königsstadt und zu Ihren Terminen. Wir bieten Transfers von Paris und den Flughäfen sowie ganztägige Buchungen, jeweils zum Festpreis. Zur Wahl stehen Mercedes-Limousinen und Vans, englischsprachige Chauffeure auf Anfrage.",
+      "Versailles ist das **königliche Glanzstück der Île-de-France**. Im Park stehen das Trianon und der Weiler der Königin. Paris ist zwanzig Minuten entfernt, die Schlösser Rambouillet und Breteuil liegen ganz in der Nähe. Bei einer Tagesbuchung setzt Ihr Chauffeur Sie so nah wie möglich am Eingangstor ab und wartet, während Sie das Schloss besichtigen. Danach geht es weiter in die Stadt oder nach Paris, ohne dass Sie sich um einen Parkplatz kümmern müssen."
+    ],
+    "es": [
+      "A las puertas de París, Versalles alberga el castillo más famoso del mundo: el palacio del Rey Sol, con la Galería de los Espejos y sus jardines a la francesa declarados Patrimonio de la Humanidad por la UNESCO. Su **chófer privado en Versalles** le lleva al palacio, a la ciudad real y a sus citas de trabajo. Ofrecemos traslados desde París y los aeropuertos y servicio por días completos, siempre a precio fijo. Disponemos de berlinas Mercedes y furgonetas, con chóferes de habla inglesa bajo petición.",
+      "Versalles es la **joya real de la Isla de Francia**. En el parque se encuentran el Trianón y la aldea de la Reina. París queda a veinte minutos y los castillos de Rambouillet y Breteuil están muy cerca. Si contrata el servicio por un día completo, su chófer le deja lo más cerca posible de la verja, le espera durante la visita y le lleva del palacio a la ciudad o a la capital sin que tenga que preocuparse por aparcar."
+    ]
+  },
+  "experiences": [
+    {
+      "title": {
+        "de": "Schloss Versailles",
+        "es": "Palacio de Versalles"
+      },
+      "teaser": {
+        "de": "Der Spiegelsaal, die Prunkgemächer und die Gärten von Le Nôtre. Ihr Chauffeur setzt Sie so nah wie möglich am Tor ab und wartet während Ihrer privaten Führung.",
+        "es": "La Galería de los Espejos, los grandes aposentos y los jardines de Le Nôtre. Su chófer le deja lo más cerca posible de la verja y le espera durante su visita privada."
+      },
+      "duration": {
+        "de": "Halber Tag",
+        "es": "Media jornada"
+      }
+    },
+    {
+      "title": {
+        "de": "Trianon und Weiler der Königin",
+        "es": "Trianón y aldea de la Reina"
+      },
+      "teaser": {
+        "de": "Das Grand und das Petit Trianon, der Weiler von Marie Antoinette und die Gärten des Anwesens. Ein Tag im privaten Rückzugsort der Königsfamilie, abseits der Besuchermassen.",
+        "es": "El Gran y el Pequeño Trianón, la aldea de María Antonieta y los jardines de la finca. Un día en el refugio íntimo de la realeza, lejos de las multitudes."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Jornada completa"
+      }
+    },
+    {
+      "title": {
+        "de": "Versailles und Paris",
+        "es": "Versalles y París"
+      },
+      "teaser": {
+        "de": "Vormittags das Schloss, nachmittags Paris und seine Sehenswürdigkeiten, nur zwanzig Minuten entfernt. Königliche Pracht und Hauptstadt an einem Tag, der Chauffeur wartet jeweils auf Sie.",
+        "es": "El palacio por la mañana y París con sus monumentos por la tarde, a solo veinte minutos. Un día que une el esplendor real y la capital, con el chófer a su disposición."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Jornada completa"
+      }
+    },
+    {
+      "title": {
+        "de": "Königsschlösser der Île-de-France",
+        "es": "Castillos reales de la Isla de Francia"
+      },
+      "teaser": {
+        "de": "Rambouillet mit seiner Molkerei, Breteuil mit seinen Gärten und weitere königliche Anwesen der Umgebung. Ein Kulturtag im Umland von Paris.",
+        "es": "Rambouillet y su lechería, Breteuil y sus jardines, y otras fincas reales de los alrededores. Una jornada de patrimonio en el entorno de París."
+      },
+      "duration": {
+        "de": "Ganzer Tag",
+        "es": "Jornada completa"
+      }
+    },
+    {
+      "title": {
+        "de": "Abend in Versailles",
+        "es": "Noche en Versalles"
+      },
+      "teaser": {
+        "de": "Abendessen im Viertel Saint-Louis, die ruhige Königsstadt bei Nacht, im Sommer die nächtlichen Wasserspiele und das Feuerwerk. Das Fahrzeug steht Ihnen den ganzen Abend zur Verfügung.",
+        "es": "Cena en el barrio de Saint-Louis, la ciudad real en calma y, en verano, las fuentes nocturnas y los fuegos artificiales. Vehículo a su disposición toda la noche."
+      },
+      "duration": {
+        "de": "Abend",
+        "es": "Noche"
+      }
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "de": "Wartet der Chauffeur während der Schlossbesichtigung?",
+        "es": "¿El chófer espera durante la visita al palacio?"
+      },
+      "a": {
+        "de": "Ja. Bei einer Stunden- oder Tagesbuchung setzt Ihr Chauffeur Sie so nah wie möglich am Tor ab, wartet während Ihres Besuchs und holt Sie zur vereinbarten Zeit wieder ab, zum Festpreis.",
+        "es": "Sí. Con el servicio a disposición, su chófer le deja lo más cerca posible de la verja, le espera durante la visita y le recoge a la hora acordada, a precio fijo."
+      }
+    },
+    {
+      "q": {
+        "de": "Lassen sich Versailles und Paris an einem Tag verbinden?",
+        "es": "¿Se pueden combinar Versalles y París en un mismo día?"
+      },
+      "a": {
+        "de": "Ja, Paris ist nur zwanzig Minuten entfernt. Bei einer Tagesbuchung fährt Ihr Chauffeur Sie vormittags zum Schloss und nachmittags in die Hauptstadt, zum Festpreis.",
+        "es": "Sí, París está a veinte minutos. Con el servicio por un día completo, su chófer le lleva al palacio por la mañana y a la capital por la tarde, a precio fijo."
+      }
+    },
+    {
+      "q": {
+        "de": "Sprechen Ihre Chauffeure Englisch?",
+        "es": "¿Sus chóferes hablan inglés?"
+      },
+      "a": {
+        "de": "Ja, englischsprachige Chauffeure sind auf Anfrage verfügbar. Je nach Verfügbarkeit sind auch andere Sprachen möglich.",
+        "es": "Sí, hay chóferes de habla inglesa disponibles bajo petición, y también otros idiomas según disponibilidad."
+      }
+    }
+  ]
+}

@@ -6,22 +6,30 @@
  * ─────────────────────────────────────────────────────────────────────────────
  */
 
+/**
+ * Texte localisé. Le français et l'anglais sont rédigés dans les fichiers
+ * région ; l'allemand et l'espagnol viennent de la couche i18n et ne sont
+ * présents que sur les villes traduites — d'où les champs optionnels.
+ */
+export type LocalizedText = { fr: string; en: string; de?: string; es?: string };
+export type LocalizedList = { fr: string[]; en: string[]; de?: string[]; es?: string[] };
+
 export interface DestExperience {
-  title: { fr: string; en: string };
-  teaser: { fr: string; en: string };
-  duration: { fr: string; en: string };
+  title: LocalizedText;
+  teaser: LocalizedText;
+  duration: LocalizedText;
   price: string; // prix indicatif en euros, nombre seul sans € (ex: "590")
 }
 
 export interface Destination {
   slug: string;                    // ex 'london', 'geneva', 'milan'
-  name: { fr: string; en: string };
-  country: { fr: string; en: string };
+  name: LocalizedText;
+  country: LocalizedText;
   region: string;                  // clé du fichier région (ex 'france', 'italy')
   airport?: string;                // ex 'Heathrow (LHR)'
-  airportTransfer: { fr: string; en: string };  // phrase factuelle distance/temps aéroport→centre
-  intro: { fr: string[]; en: string[] };        // 2 paragraphes de 60-90 mots chacun (**gras** supporté)
+  airportTransfer: LocalizedText;  // phrase factuelle distance/temps aéroport→centre
+  intro: LocalizedList;        // 2 paragraphes de 60-90 mots chacun (**gras** supporté)
   experiences: DestExperience[];   // exactement 5
-  faq: { q: { fr: string; en: string }; a: { fr: string; en: string } }[];  // 3 questions
+  faq: { q: LocalizedText; a: LocalizedText }[];  // 3 questions
   nearby: string[];                // 2-4 slugs de villes proches (maillage interne)
 }
