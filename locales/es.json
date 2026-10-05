@@ -422,6 +422,12 @@
       "Aviación privada"
     ]
   },
+  "reassurance": {
+    "vtc": "Operador VTC con licencia",
+    "insurance": "Responsabilidad civil asegurada",
+    "fixed_price": "Precios fijos, todo incluido",
+    "cancellation": "Cancelación gratuita hasta 24 h antes"
+  },
   "cta": {
     "title": "Contacte con",
     "title_em": "nuestro equipo",
@@ -457,6 +463,14 @@
       "Política de privacidad"
     ],
     "copyright": "© 2026 AMANI LIMOUSINES — SERVICIO PREMIUM DE CHÓFER PRIVADO | FRANCIA Y EUROPA"
+  },
+  "company": {
+    "title": "La sociedad",
+    "legal": "Amani Limousines — SASU francesa, inscrita en París desde 2016",
+    "siren": "SIREN",
+    "siret": "SIRET",
+    "vat": "NIF intracomunitario",
+    "rcs": "Registro mercantil"
   },
   "routes": {
     "popular": [

@@ -152,7 +152,7 @@ export default function Hero({ t, onSearch, from, to, setFrom, setTo, loading = 
   return (
     // min-h-svh (et non 100vh) : sur mobile la barre d'URL ne pousse plus le
     // formulaire hors de l'écran.
-    <section className="hero-tight relative min-h-svh flex items-center px-5 sm:px-6 md:px-10 lg:px-16 pt-[5.25rem] pb-8 sm:pt-24 sm:pb-10 md:pt-28 md:pb-16 overflow-hidden">
+    <section className="hero-tight relative flex items-center px-5 sm:px-6 md:px-10 lg:px-16 pt-2 pb-8 sm:pt-3 sm:pb-10 md:pt-4 md:pb-16 overflow-hidden min-h-[calc(100svh-8rem)] sm:min-h-[calc(100svh-7rem)] md:min-h-[calc(100svh-7.5rem)]">
       {/* ── Photo background (Paris) ── */}
       <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
         <Image

@@ -422,6 +422,12 @@
       "Privatluftfahrt"
     ]
   },
+  "reassurance": {
+    "vtc": "Lizenzierter VTC-Betrieb",
+    "insurance": "Betriebshaftpflicht versichert",
+    "fixed_price": "Festpreise, alles inklusive",
+    "cancellation": "Kostenlose Stornierung bis 24 Std. vorher"
+  },
   "cta": {
     "title": "Kontaktieren Sie",
     "title_em": "unser Team",
@@ -457,6 +463,14 @@
       "Datenschutzerklärung"
     ],
     "copyright": "© 2026 AMANI LIMOUSINES — EXKLUSIVER CHAUFFEURSERVICE | FRANKREICH & EUROPA"
+  },
+  "company": {
+    "title": "Das Unternehmen",
+    "legal": "Amani Limousines — französische SASU, seit 2016 in Paris eingetragen",
+    "siren": "SIREN",
+    "siret": "SIRET",
+    "vat": "USt-IdNr.",
+    "rcs": "Handelsregister"
   },
   "routes": {
     "popular": [

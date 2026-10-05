@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Navbar from '@/components/Navbar';
 import Hero, { type SearchOptions } from '@/components/Hero';
+import ReassuranceBar from '@/components/ReassuranceBar';
 import VehicleShowcase from '@/components/VehicleShowcase';
 import ServicesGrid from '@/components/ServicesGrid';
 import WhyUs from '@/components/WhyUs';
@@ -75,6 +76,9 @@ export default function HomeClient({ countries }: { countries: Record<string, Ma
   return (
     <main className="min-h-screen bg-white text-gray-900">
       <Navbar t={t} locale={locale} />
+
+      {/* Réassurance : premier bloc visible, avant même le formulaire de devis */}
+      <ReassuranceBar t={t} locale={locale} />
 
       {/* Hero with booking form → redirects to /devis */}
       <Hero

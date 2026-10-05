@@ -482,6 +482,15 @@ export function CTA({ t }: CTAProps) {
   );
 }
 
+// Identifiants légaux affichés dans le pied de page. Ils doivent rester
+// identiques à ceux de app/mentions-legales/page.tsx, qui fait référence.
+const COMPANY_IDS: { key: string; value: string }[] = [
+  { key: 'siren', value: '821 665 395' },
+  { key: 'siret', value: '821 665 395 00025' },
+  { key: 'vat',   value: 'FR90 821 665 395' },
+  { key: 'rcs',   value: '821 665 395 R.C.S. Paris' },
+];
+
 interface FooterProps {
   t: any;
   locale?: string;
@@ -557,6 +566,29 @@ export function Footer({ t, locale = 'fr' }: FooterProps) {
           </div>
         ))}
       </footer>
+      {/* Bloc société : les identifiants qui prouvent qu'Amani est une société
+          déclarée, visibles sans avoir à ouvrir les mentions légales. Le capital
+          social n'y figure pas — il est dans les mentions légales, qui font foi. */}
+      <div className="px-6 md:px-10 py-6"
+        style={{ background: '#f5f2ed', borderTop: '1px solid #ece9e3' }}>
+        <div className="max-w-6xl mx-auto">
+          <p className="font-sans text-[0.62rem] font-semibold tracking-[0.16em] uppercase text-gold-400">
+            {t?.company?.title ?? 'La société'}
+          </p>
+          <p className="font-sans text-[0.72rem] text-stone-600 font-light mt-2">
+            {t?.company?.legal ?? 'Amani Limousines — SASU immatriculée au RCS de Paris depuis 2016'}
+          </p>
+          <dl className="mt-3 flex flex-wrap gap-x-7 gap-y-1.5 font-sans text-[0.68rem]">
+            {COMPANY_IDS.map(({ key, value }) => (
+              <div key={key} className="flex items-baseline gap-1.5" dir="ltr">
+                <dt className="text-stone-400">{t?.company?.[key] ?? key.toUpperCase()}</dt>
+                <dd className="text-stone-600 tabular-nums">{value}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </div>
+
       {/* Pre-footer : liens institutionnels compacts */}
       <div className="px-6 py-4 flex flex-wrap justify-center gap-x-7 gap-y-2"
         style={{ background: '#f5f2ed', borderTop: '1px solid #ece9e3' }}>

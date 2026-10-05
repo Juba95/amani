@@ -422,6 +422,12 @@
       "私人航空"
     ]
   },
+  "reassurance": {
+    "vtc": "持牌 VTC 运营商",
+    "insurance": "已投保专业责任险",
+    "fixed_price": "固定价格 全部含税",
+    "cancellation": "出发前 24 小时免费取消"
+  },
   "cta": {
     "title": "联系",
     "title_em": "我们的团队",
@@ -497,6 +503,14 @@
       "隐私政策"
     ],
     "copyright": "© 2026 AMANI LIMOUSINES — 法国及欧洲豪华私人司机服务"
+  },
+  "company": {
+    "title": "公司信息",
+    "legal": "Amani Limousines — 法国 SASU 公司，2016 年于巴黎注册",
+    "siren": "SIREN",
+    "siret": "SIRET",
+    "vat": "增值税号",
+    "rcs": "商业登记"
   },
   "about": {
     "tag": "关于我们",

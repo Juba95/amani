@@ -422,6 +422,12 @@
       "Aviation privée"
     ]
   },
+  "reassurance": {
+    "vtc": "Licence VTC",
+    "insurance": "Assurés en RC professionnelle",
+    "fixed_price": "Prix fixes, tout compris",
+    "cancellation": "Annulation gratuite jusqu'à 24 h avant"
+  },
   "cta": {
     "title": "Contactez",
     "title_em": "notre équipe",
@@ -457,6 +463,14 @@
       "Politique de confidentialité"
     ],
     "copyright": "© 2026 AMANI LIMOUSINES — SERVICE DE CHAUFFEUR PRIVÉ DE PRESTIGE | FRANCE & EUROPE"
+  },
+  "company": {
+    "title": "La société",
+    "legal": "Amani Limousines — SASU immatriculée au RCS de Paris depuis 2016",
+    "siren": "SIREN",
+    "siret": "SIRET",
+    "vat": "TVA intracommunautaire",
+    "rcs": "RCS"
   },
   "routes": {
     "popular": [
