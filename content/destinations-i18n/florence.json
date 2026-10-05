@@ -9,17 +9,17 @@
     "es": "Italia"
   },
   "airportTransfer": {
-    "de": "Der Flughafen Florenz-Peretola „Amerigo Vespucci“ (FLR) liegt nur 6 km nordwestlich des Zentrums. Bis zum Dom oder zum Ponte Vecchio brauchen Sie 15 bis 20 Minuten. Viele Reisende landen auch in Pisa (PSA), 80 km entfernt; dann sollten Sie mit 1 Stunde Fahrzeit rechnen. Empfang in der Ankunftshalle mit Namensschild und Flugüberwachung sind inbegriffen.",
-    "es": "El aeropuerto de Florencia-Peretola «Amerigo Vespucci» (FLR) está a solo 6 km al noroeste del centro. En 15 o 20 minutos llega al Duomo o al Ponte Vecchio. Muchos viajeros aterrizan también en Pisa (PSA), a 80 km: en ese caso, calcule 1 hora de trayecto. Incluye recibimiento en la sala de llegadas con cartel nominativo y seguimiento del vuelo."
+    "de": "Der Flughafen Florenz-Peretola „Amerigo Vespucci“ (FLR) liegt nur 6 km nordwestlich der Innenstadt. Zum Dom oder zum Ponte Vecchio brauchen Sie 15 bis 20 Minuten. Viele Reisende landen auch in Pisa (PSA), 80 km entfernt: Dann dauert die Fahrt etwa eine Stunde. Wir empfangen Sie in der Ankunftshalle mit Namensschild und verfolgen Ihren Flug, beides ist im Preis enthalten.",
+    "es": "El aeropuerto de Florencia-Peretola «Amerigo Vespucci» (FLR) está a solo 6 km al noroeste del centro. Hasta el Duomo o el Ponte Vecchio se tarda entre 15 y 20 minutos. Muchos viajeros llegan también por Pisa (PSA), a 80 km: en ese caso, calcule una hora de trayecto. Le recibimos en la sala de llegadas con un cartel con su nombre, y el seguimiento del vuelo está incluido."
   },
   "intro": {
     "de": [
-      "Florenz gilt als Wiege der Renaissance. Auf wenigen hundert Metern liegen hier Brunelleschis Dom, die Uffizien, Michelangelos David und der Ponte Vecchio. Die Altstadt ist größtenteils Fußgängerzone und unterliegt einer streng kontrollierten ZTL, einer Zone mit beschränktem Verkehr. Ihr **Privatchauffeur in Florenz** kennt jede zugelassene Zufahrt. Er bringt Sie so nah wie möglich an Ihr Hotel oder die Museen, pünktlich zu Ihren reservierten Einlasszeiten.",
-      "Vor allem aber ist Florenz der Ausgangspunkt für eine ganze Region. **Das Chianti beginnt direkt vor den Toren der Stadt.** Siena und San Gimignano erreichen Sie in einer Stunde, Pisa und Lucca ebenfalls. Bei einer ganztägigen Buchung stellt Ihr Chauffeur die passende Route durch die Toskana zusammen: Weingüter, Bergdörfer, Sternerestaurants auf dem Land. Sie schauen derweil einfach aus dem Fenster."
+      "In Florenz begann die Renaissance. Brunelleschis Dom, die Uffizien, Michelangelos David und der Ponte Vecchio liegen nur wenige hundert Meter voneinander entfernt. Die Altstadt ist weitgehend Fußgängerzone und hat eine streng kontrollierte ZTL, eine Zone mit beschränkter Zufahrt. Ihr **Privatchauffeur in Florenz** kennt jede erlaubte Zufahrt. Er setzt Sie so nah wie möglich an Ihrem Hotel oder den Museen ab, pünktlich zu Ihren reservierten Einlasszeiten.",
+      "Florenz ist vor allem der Ausgangspunkt für die ganze Toskana. **Das Chianti beginnt direkt vor der Stadt.** Siena und San Gimignano erreichen Sie in einer Stunde, Pisa und Lucca ebenfalls. Wenn Sie den Wagen für einen ganzen Tag buchen, stellt Ihr Chauffeur die Route nach Ihren Wünschen zusammen: Weingüter, Hügeldörfer, Sterneküche auf dem Land. Sie schauen sich die Landschaft an, er fährt."
     ],
     "es": [
-      "Cuna del Renacimiento, Florencia reúne en unos pocos cientos de metros el Duomo de Brunelleschi, los Uffizi, el David de Miguel Ángel y el Ponte Vecchio. El centro es en gran parte peatonal y está sujeto a una ZTL estricta, una zona de tráfico limitado. Su **chófer privado en Florencia** conoce cada acceso autorizado. Le deja lo más cerca posible de su hotel o de los museos, a la hora exacta de sus entradas reservadas.",
-      "Pero Florencia es sobre todo la puerta de una región entera. **El Chianti empieza a las afueras de la ciudad.** Siena y San Gimignano quedan a una hora, y Pisa y Lucca, también. Con el servicio por día completo, su chófer diseña la ruta toscana que mejor le encaje: bodegas, pueblos en lo alto de las colinas, restaurantes con estrella en pleno campo. Usted solo tiene que mirar el paisaje."
+      "Florencia es la cuna del Renacimiento. El Duomo de Brunelleschi, los Uffizi, el David de Miguel Ángel y el Ponte Vecchio están a pocos cientos de metros unos de otros. El centro es en gran parte peatonal y tiene una ZTL, una zona de tráfico limitado con controles estrictos. Su **chófer privado en Florencia** conoce cada acceso autorizado. Le deja lo más cerca posible de su hotel o de los museos, a la hora exacta de sus entradas reservadas.",
+      "Florencia es sobre todo la puerta de toda la Toscana. **El Chianti empieza a las afueras de la ciudad.** Siena y San Gimignano están a una hora, y Pisa y Lucca también. Si contrata el vehículo por un día completo, su chófer prepara la ruta toscana a su medida: bodegas, pueblos en lo alto de las colinas, restaurantes con estrella en el campo. Usted mira el paisaje y él conduce."
     ]
   },
   "experiences": [
@@ -29,8 +29,8 @@
         "es": "Chianti Classico: la ruta de las bodegas"
       },
       "teaser": {
-        "de": "Greve, Panzano, Castellina und Radda: Die Straße des Gallo Nero führt durch Zypressen und Olivenhaine. Zwei Verkostungen auf historischen Weingütern, Mittagessen beim berühmten Metzger von Panzano oder in einer Fattoria. Sie probieren, Ihr Chauffeur fährt.",
-        "es": "Greve, Panzano, Castellina y Radda: la carretera del Gallo Nero entre cipreses y olivares. Dos catas en fincas históricas y almuerzo en la carnicería más célebre de Panzano o en una fattoria. Usted cata, su chófer conduce."
+        "de": "Greve, Panzano, Castellina und Radda: Die Straße des Gallo Nero führt durch Zypressen und Olivenhaine. Zwei Verkostungen auf historischen Weingütern, Mittagessen beim bekannten Metzger von Panzano oder in einer Fattoria. Sie probieren, Ihr Chauffeur fährt.",
+        "es": "Greve, Panzano, Castellina y Radda: la carretera del Gallo Nero entre cipreses y olivares. Dos catas en bodegas históricas y almuerzo en la carnicería más famosa de Panzano o en una fattoria. Usted prueba los vinos, su chófer conduce."
       },
       "duration": {
         "de": "Ganzer Tag",
@@ -43,8 +43,8 @@
         "es": "Siena y San Gimignano"
       },
       "teaser": {
-        "de": "Die zwei mittelalterlichen Glanzstücke der Toskana an einem Tag. Zuerst die Piazza del Campo und der Dom von Siena, dann die vierzehn Türme von San Gimignano im Abendlicht. Ein Halt in Monteriggioni ist auf Wunsch möglich.",
-        "es": "Las dos joyas medievales de la Toscana en un solo día. Primero la Piazza del Campo y el Duomo de Siena; después, las catorce torres de San Gimignano al atardecer. Parada opcional en Monteriggioni."
+        "de": "Die zwei bekanntesten mittelalterlichen Städte der Toskana an einem Tag. Zuerst die Piazza del Campo und der Dom in Siena, dann die vierzehn Türme von San Gimignano bei Sonnenuntergang. Ein Halt in Monteriggioni ist auf Wunsch möglich.",
+        "es": "Las dos ciudades medievales más conocidas de la Toscana en un día. Primero la Piazza del Campo y el Duomo de Siena, después las catorce torres de San Gimignano al atardecer. Parada opcional en Monteriggioni."
       },
       "duration": {
         "de": "Ganzer Tag",
@@ -57,8 +57,8 @@
         "es": "Val d’Orcia, Pienza y Montalcino"
       },
       "teaser": {
-        "de": "Die Toskana, wie man sie von Bildern kennt, als UNESCO-Welterbe geschützt: sanfte Hügel, die Zypressen von San Quirico, Pecorino aus Pienza und Brunello aus Montalcino. Ein Tag für Fotografen und Genießer, zwei Stunden südlich von Florenz.",
-        "es": "El paisaje toscano por antonomasia, Patrimonio de la Humanidad: colinas onduladas, los cipreses de San Quirico, el pecorino de Pienza y el brunello de Montalcino. Una jornada para la cámara y para la mesa, a dos horas al sur de Florencia."
+        "de": "Die typische Landschaft der Toskana, von der UNESCO als Welterbe geschützt: sanfte Hügel, die Zypressen von San Quirico, Pecorino aus Pienza und Brunello aus Montalcino. Ein Tag zum Fotografieren und Genießen, zwei Stunden südlich von Florenz.",
+        "es": "El paisaje toscano por excelencia, Patrimonio de la Humanidad de la UNESCO: colinas onduladas, los cipreses de San Quirico, el pecorino de Pienza y el brunello de Montalcino. Un día para hacer fotos y comer bien, a dos horas al sur de Florencia."
       },
       "duration": {
         "de": "Ganzer Tag",
@@ -71,8 +71,8 @@
         "es": "Pisa y Lucca"
       },
       "teaser": {
-        "de": "Die Piazza dei Miracoli mit dem Schiefen Turm, danach das weniger bekannte Lucca mit seinen baumbestandenen Stadtmauern, der Piazza dell’Anfiteatro und dem Geburtshaus Puccinis. Zwei Städte, die sich gut ergänzen, eine Stunde von Florenz entfernt.",
-        "es": "La Piazza dei Miracoli y su torre inclinada; después, la discreta Lucca, con sus murallas arboladas, la Piazza dell’Anfiteatro y la casa natal de Puccini. Dos ciudades que se complementan, a una hora de Florencia."
+        "de": "Die Piazza dei Miracoli mit dem Schiefen Turm, danach das ruhigere Lucca mit seiner baumbestandenen Stadtmauer, der Piazza dell’Anfiteatro und Puccinis Geburtshaus. Zwei Städte, die sich gut ergänzen, eine Stunde von Florenz entfernt.",
+        "es": "La Piazza dei Miracoli y su torre inclinada, y después la discreta Lucca: murallas con árboles, la Piazza dell’Anfiteatro y la casa natal de Puccini. Dos ciudades que se complementan, a una hora de Florencia."
       },
       "duration": {
         "de": "Ganzer Tag",
@@ -82,11 +82,11 @@
     {
       "title": {
         "de": "Abend im Oltrarno und auf dem Piazzale Michelangelo",
-        "es": "Tarde en el Oltrarno y el Piazzale Michelangelo"
+        "es": "Noche en el Oltrarno y el Piazzale Michelangelo"
       },
       "teaser": {
-        "de": "Sonnenuntergang über der Stadt vom Piazzale Michelangelo aus, danach Abendessen im Handwerkerviertel Oltrarno, rund um Santo Spirito und San Frediano. Sie werden vor jeder Adresse abgesetzt, und der Wagen steht den ganzen Abend für Sie bereit.",
-        "es": "La puesta de sol sobre la ciudad desde el Piazzale Michelangelo y, después, cena en el Oltrarno de los artesanos, entre Santo Spirito y San Frediano. Le dejamos en la puerta de cada sitio y el vehículo queda a su disposición toda la noche."
+        "de": "Sonnenuntergang über der Stadt vom Piazzale Michelangelo aus. Danach Abendessen im Oltrarno, dem Viertel der Handwerker, rund um Santo Spirito und San Frediano. Wir setzen Sie vor jeder Adresse ab, der Wagen steht den ganzen Abend für Sie bereit.",
+        "es": "La puesta de sol sobre la ciudad desde el Piazzale Michelangelo. Después, cena en el Oltrarno, el barrio de los artesanos, entre Santo Spirito y San Frediano. Le dejamos en la puerta de cada sitio y el vehículo queda a su disposición toda la noche."
       },
       "duration": {
         "de": "Abend",
@@ -97,12 +97,12 @@
   "faq": [
     {
       "q": {
-        "de": "Was kostet ein Transfer vom Flughafen Florenz ins Stadtzentrum?",
+        "de": "Was kostet ein Transfer vom Flughafen Florenz in die Innenstadt?",
         "es": "¿Cuánto cuesta un traslado entre el aeropuerto de Florencia y el centro?"
       },
       "a": {
-        "de": "Der private Transfer zwischen Peretola (FLR) und der Innenstadt von Florenz wird zum Festpreis abgerechnet, den wir bei der Buchung bestätigen. Empfang mit Namensschild, Flugüberwachung und kostenlose Wartezeit bei Verspätung sind inbegriffen. Auch Pisa (PSA) und Bologna (BLQ) fahren wir zum Festpreis an.",
-        "es": "El traslado privado entre Peretola (FLR) y el centro de Florencia tiene un precio cerrado, que se confirma al reservar. Incluye recibimiento con cartel nominativo, seguimiento del vuelo y espera sin coste en caso de retraso. También cubrimos Pisa (PSA) y Bolonia (BLQ) con precio cerrado."
+        "de": "Der private Transfer zwischen Peretola (FLR) und der Florentiner Innenstadt hat einen Festpreis, den wir bei der Buchung bestätigen. Empfang mit Namensschild, Flugverfolgung und kostenlose Wartezeit bei Verspätung sind inbegriffen. Auch Pisa (PSA) und Bologna (BLQ) bedienen wir zum Festpreis.",
+        "es": "El traslado privado entre Peretola (FLR) y el centro de Florencia tiene un precio cerrado, que confirmamos al reservar. Incluye recepción con cartel con su nombre, seguimiento del vuelo y espera sin coste en caso de retraso. También cubrimos Pisa (PSA) y Bolonia (BLQ) a precio cerrado."
       }
     },
     {
@@ -111,18 +111,18 @@
         "es": "¿Puede su chófer entrar en la ZTL de Florencia?"
       },
       "a": {
-        "de": "Ja. Unsere Fahrzeuge mit Chauffeur verfügen über NCC-Genehmigungen für die Florentiner ZTL. Wir setzen Sie so nah wie möglich an Ihrem Hotel, den Uffizien oder der Accademia ab. Die reinen Fußgängerstraßen rund um den Dom bleiben dabei tabu.",
-        "es": "Sí. Nuestros vehículos con chófer cuentan con licencia NCC para la ZTL florentina. Le dejamos lo más cerca posible de su hotel, de los Uffizi o de la Accademia, respetando las calles exclusivamente peatonales que rodean el Duomo."
+        "de": "Ja. Unsere Fahrzeuge mit Chauffeur haben NCC-Genehmigungen für die Florentiner ZTL. Wir setzen Sie so nah wie möglich an Ihrem Hotel, den Uffizien oder der Accademia ab. Die reinen Fußgängerstraßen rund um den Dom bleiben dabei tabu.",
+        "es": "Sí. Nuestros vehículos con chófer tienen permisos NCC para la ZTL florentina. Le dejamos lo más cerca posible de su hotel, de los Uffizi o de la Accademia, respetando las calles exclusivamente peatonales que rodean el Duomo."
       }
     },
     {
       "q": {
-        "de": "Können Sie eine mehrtägige Rundreise durch die Toskana ab Florenz organisieren?",
-        "es": "¿Pueden organizar un recorrido de varios días por la Toscana desde Florencia?"
+        "de": "Können Sie eine mehrtägige Toskana-Reise ab Florenz organisieren?",
+        "es": "¿Pueden organizar un circuito de varios días por la Toscana desde Florencia?"
       },
       "a": {
-        "de": "Ja. Wir planen Routen von zwei bis fünf Tagen, etwa durchs Chianti, das Val d’Orcia oder an die tyrrhenische Küste. Vom ersten bis zum letzten Tag fährt Sie derselbe Chauffeur. Hotels und Restaurants reservieren wir in Abstimmung mit Ihrem Concierge.",
-        "es": "Sí. Diseñamos itinerarios de dos a cinco días por el Chianti, el Val d’Orcia o la costa del Tirreno, con el mismo chófer del primer al último día. Reservamos hoteles y restaurantes en coordinación con su servicio de conserjería."
+        "de": "Ja. Wir planen Reisen von zwei bis fünf Tagen, etwa ins Chianti, ins Val d’Orcia oder an die tyrrhenische Küste. Vom ersten bis zum letzten Tag haben Sie denselben Chauffeur. Hotels und Restaurants reservieren wir in Abstimmung mit Ihrem Concierge.",
+        "es": "Sí. Preparamos itinerarios de dos a cinco días por el Chianti, el Val d’Orcia o la costa del Tirreno. Tendrá el mismo chófer del primer al último día. Reservamos hoteles y restaurantes en coordinación con su conserjería."
       }
     }
   ]

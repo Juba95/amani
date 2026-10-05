@@ -76,7 +76,10 @@ Règles :
 - Les noms de lieux prennent leur forme usuelle dans la langue cible (Mailand en allemand, Milán en espagnol ; Genf / Ginebra ; Florenz / Florencia).
 - Le balisage **gras** du texte source doit se retrouver dans la traduction, sur l'équivalent sémantique.
 - L'expression « chauffeur privé » doit apparaître une fois dans les paragraphes d'introduction, à proximité du nom de la ville : « Privatchauffeur in Mailand », « chófer privado en Milán ».
-- Interdits : « niché au cœur de », « incontournable », « véritable », « unique », « laissez-vous », les tirets cadratins, les listes de trois adjectifs, toute phrase commençant par un participe présent. En allemand, pas de « Tauchen Sie ein ». En espagnol, pas de « sumérjase ».
+- Emploie les verbes simples. En allemand « ist », « hat », « liegt » plutôt que « gilt als », « fungiert als », « dient als », « stellt dar ». En espagnol « es », « está », « tiene » plutôt que « se alza », « sirve como », « constituye un », « se erige ».
+- Interdits en allemand : Tauchen Sie ein, gilt als, fungiert als, dient als, atemberaubend, malerisch, unvergesslich, legendär, Juwel, Perle, Herzstück, im Herzen, Zeugnis, wegweisend, nicht nur … sondern auch.
+- Interdits en espagnol : sumérjase, se alza, sirve como, constituye un, espectacular, impresionante, emblemático, pintoresco, inolvidable, joya, encanto, idílico, en el corazón, testimonio, no solo … sino también.
+- Interdits dans les deux langues : les tirets cadratins, les listes de trois adjectifs, toute phrase commençant par un participe présent ou un gérondif, les formules de supériorité creuses.
 - Varie la longueur des phrases. Un rédacteur humain alterne court et long.
 
 Réponds UNIQUEMENT par l'objet JSON demandé, sans texte avant ni après, sans bloc de code.`;
