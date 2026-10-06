@@ -13,17 +13,10 @@ import {
 import de from '@/locales/de.json';
 import es from '@/locales/es.json';
 import { withRegionalVariants } from '@/lib/hreflang';
+import { DEDICATED_PAGES } from '@/lib/destinations/dedicated-pages';
 
 const BASE = 'https://www.amani-limousines.com';
 
-/** Villes dont les versions française et anglaise vivent sur une page dédiée. */
-const DEDICATED_PAGES: Record<string, { fr: string; en: string }> = {
-  paris: { fr: '/chauffeur-prive-paris', en: '/en/private-chauffeur-paris' },
-  nice: { fr: '/chauffeur-prive-nice', en: '/en/private-chauffeur-paris' },
-  cannes: { fr: '/chauffeur-prive-cannes', en: '/en/private-chauffeur-paris' },
-  'saint-tropez': { fr: '/chauffeur-prive-saint-tropez', en: '/en/private-chauffeur-paris' },
-  bordeaux: { fr: '/chauffeur-prive-bordeaux', en: '/en/private-chauffeur-bordeaux' },
-};
 const UI: Record<TranslatedLocale, any> = { de, es };
 
 const META: Record<TranslatedLocale, { title: (c: string) => string }> = {

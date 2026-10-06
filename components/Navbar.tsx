@@ -14,6 +14,9 @@ import {
   pageHref,
   transfersMenu,
 } from '@/lib/nav-i18n';
+import { PAGE_LOCALES, SITE_PAGES } from '@/lib/site-page-slugs';
+import { DEDICATED_PAGES } from '@/lib/destinations/dedicated-pages';
+import { TRANSLATED_CITY_SLUGS } from '@/lib/destinations/translated-slugs.generated';
 
 const LANGS: { code: Locale; label: string; flag: string }[] = [
   { code: 'fr', label: 'Français', flag: '🇫🇷' },
@@ -147,13 +150,68 @@ const NATIVE_TO_EN: Record<string, string> = {
   '/zh/mandarin-chauffeur':      '/en/mandarin-speaking-chauffeur-paris',
 };
 
+/**
+ * Index des douze pages de service : chaque adresse connue — française,
+ * anglaise, ou /<langue>/<slug> — renvoie à la même prestation. Le sélecteur
+ * de langue garde ainsi la page au lieu de retomber sur l'accueil.
+ *
+ * On suppose que les quatre langues du gabarit ont les douze pages ; c'est le
+ * cas aujourd'hui et generateStaticParams ne publie que celles qui existent.
+ */
+const SERVICE_BY_PATH = new Map<string, (typeof SITE_PAGES)[number]>();
+for (const page of SITE_PAGES) {
+  SERVICE_BY_PATH.set(page.fr, page);
+  SERVICE_BY_PATH.set(page.en, page);
+  for (const l of PAGE_LOCALES) SERVICE_BY_PATH.set(`/${l}/${page.slug}`, page);
+}
+
+/** Langues ayant des pages destination. L'arabe et le chinois n'en ont pas. */
+const DEST_LOCALES = ['fr', 'en', 'de', 'es'];
+
+/** Page dédiée française ou anglaise → ville du registre traduit. */
+const DEDICATED_TO_CITY = new Map<string, string>();
+for (const [city, paths] of Object.entries(DEDICATED_PAGES)) {
+  DEDICATED_TO_CITY.set(paths.fr, city);
+  // /en/private-chauffeur-paris sert de page anglaise à plusieurs villes :
+  // la première l'emporte, les autres n'ont pas de page anglaise propre.
+  if (!DEDICATED_TO_CITY.has(paths.en)) DEDICATED_TO_CITY.set(paths.en, city);
+}
+
 function getLocalizedPath(pathname: string, targetLocale: string): string {
+  // Pages de service : on reste sur la même prestation.
+  const service = SERVICE_BY_PATH.get(pathname);
+  if (service) {
+    if (targetLocale === 'fr') return service.fr;
+    if (targetLocale === 'en') return service.en;
+    return `/${targetLocale}/${service.slug}`;
+  }
+
+  // Page SEO dédiée (/chauffeur-prive-paris) → la ville correspondante en
+  // allemand et en espagnol, plutôt que l'accueil.
+  const dedicatedCity = DEDICATED_TO_CITY.get(pathname);
+  if (dedicatedCity && (targetLocale === 'de' || targetLocale === 'es')) {
+    return `/${targetLocale}/destinations/${dedicatedCity}`;
+  }
+
   // Pages destination : on reste sur la même ville quand elle est traduite.
   // La liste des villes traduites vit côté serveur ; ici on tente l'URL et la
   // page renvoie une 404 propre si la traduction n'existe pas.
   const destMatch = pathname.match(/^(?:\/(?:en|de|es))?\/destinations(?:\/([a-z0-9-]+))?$/);
   if (destMatch) {
-    const slug = destMatch[1] ? `/${destMatch[1]}` : '';
+    // L'arabe et le chinois n'ont pas de destinations : retour à leur accueil
+    // plutôt qu'une adresse qui n'existe pas.
+    if (!DEST_LOCALES.includes(targetLocale)) return `/${targetLocale}`;
+    const city = destMatch[1];
+    // Paris, Nice, Cannes, Saint-Tropez et Bordeaux n'existent en français et
+    // en anglais que sur leur page dédiée : /destinations/paris est une 404.
+    const dedicated = city ? DEDICATED_PAGES[city] : undefined;
+    if (dedicated && (targetLocale === 'fr' || targetLocale === 'en')) return dedicated[targetLocale];
+    // 35 villes sur 297 sont traduites : pour les autres, l'allemand et
+    // l'espagnol renvoient au hub plutôt qu'à une ville qui n'existe pas.
+    if (city && (targetLocale === 'de' || targetLocale === 'es') && !TRANSLATED_CITY_SLUGS.has(city)) {
+      return `/${targetLocale}/destinations`;
+    }
+    const slug = city ? `/${city}` : '';
     if (targetLocale === 'fr') return `/destinations${slug}`;
     return `/${targetLocale}/destinations${slug}`;
   }

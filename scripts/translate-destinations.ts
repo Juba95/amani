@@ -25,6 +25,7 @@
  */
 
 import fs from 'node:fs';
+import { execFileSync } from 'node:child_process';
 import path from 'node:path';
 import Anthropic from '@anthropic-ai/sdk';
 import { ALL_DESTINATIONS, getDestination } from '../lib/destinations';
@@ -245,6 +246,11 @@ async function main() {
   console.log(`\n${tally.ok} générées · ${tally.skip} ignorées · ${tally.fail} en échec`);
   console.log(`Jetons : ${inTokens.toLocaleString('fr-FR')} en entrée, ${outTokens.toLocaleString('fr-FR')} en sortie`);
   if (cost !== null) console.log(`Coût : ${cost.toFixed(2)} $ (~${(cost * 0.92).toFixed(2)} €)`);
+
+  // Le sélecteur de langue lit la liste des villes traduites côté client :
+  // elle doit suivre le contenu, sinon il propose des pages inexistantes.
+  execFileSync('npx', ['tsx', path.resolve(__dirname, 'gen-translated-slugs.ts')], { stdio: 'inherit' });
+
   if (tally.fail) process.exit(1);
 }
 
