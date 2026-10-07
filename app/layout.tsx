@@ -24,6 +24,10 @@ export const metadata: Metadata = {
   description:
     'Service de chauffeur privé haut de gamme. Transferts aéroports CDG, Orly, Le Bourget. Déplacements partout en France et en Europe. Berlines Mercedes, vans VIP, convois. Disponible 24h/24.',
   metadataBase: new URL('https://www.amani-limousines.com'),
+  // Propriété Google Search Console. Posée ici plutôt que sur la seule page
+  // d'accueil : la racine redirige vers /en, et Google doit trouver la balise
+  // là où il atterrit.
+  verification: { google: '8aX_0OgPRyH9lTw7_yiYmOlWRNqYOcI9mb05A1GYtBc' },
   alternates: {
     canonical: '/',
     languages: withRegionalVariants({
