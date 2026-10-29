@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Logo from '@/components/Logo';
 import MailtoLink from '@/components/MailtoLink';
+import Accreditations from '@/components/Accreditations';
 
 // ── Liens footer par locale ──────────────────────────────────────────────────
 // ── Colonnes du footer par locale (titre + liens) ───────────────────────────
@@ -629,6 +630,9 @@ export function Footer({ t, locale = 'fr' }: FooterProps) {
           </div>
         </div>
       </div>
+
+      {/* Labels & organisations professionnelles, sur toutes les pages */}
+      <Accreditations locale={locale} variant="footer" />
 
       <footer
         dir={rtl ? 'rtl' : 'ltr'}

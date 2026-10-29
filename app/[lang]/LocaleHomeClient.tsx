@@ -5,6 +5,7 @@ import { useParams } from 'next/navigation';
 import Navbar from '@/components/Navbar';
 import Hero, { type SearchOptions } from '@/components/Hero';
 import ReassuranceBar from '@/components/ReassuranceBar';
+import Accreditations from '@/components/Accreditations';
 import VehicleShowcase from '@/components/VehicleShowcase';
 import ServicesGrid from '@/components/ServicesGrid';
 import WhyUs from '@/components/WhyUs';
@@ -121,6 +122,9 @@ export default function LocaleHomeClient({ countries }: { countries: Record<stri
         countries={countries}
         locale={locale}
       />
+
+      {/* Labels & organisations professionnelles */}
+      <Accreditations locale={locale} />
 
       {/* À propos — Lounes (traduit) */}
       <AboutSection t={t} />

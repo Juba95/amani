@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import Navbar from '@/components/Navbar';
 import Hero, { type SearchOptions } from '@/components/Hero';
 import ReassuranceBar from '@/components/ReassuranceBar';
+import Accreditations from '@/components/Accreditations';
 import VehicleShowcase from '@/components/VehicleShowcase';
 import ServicesGrid from '@/components/ServicesGrid';
 import WhyUs from '@/components/WhyUs';
@@ -95,6 +96,9 @@ export default function HomeClient({ countries }: { countries: Record<string, Ma
 
       {/* Preuve sociale */}
       <SocialProofStrip locale="fr" />
+
+      {/* Labels & organisations professionnelles */}
+      <Accreditations locale="fr" />
 
       {/* À propos — Lounes */}
       <AboutSection t={t} />
