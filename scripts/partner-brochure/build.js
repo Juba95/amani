@@ -82,7 +82,7 @@ const L = {
     kicker: 'Partnerkonditionen 2026', title: 'Privatchauffeure für Reisebüros, Hotels und Concierge-Dienste',
     lead: 'Seit 2016 betreut Amani Limousines Reisende von der Ankunft in Paris an und während ihres gesamten Aufenthalts in Frankreich und Europa. Dieses Dokument enthält unsere Preise und die Bedingungen unserer Partnerschaft.',
     commitTitle: 'Unsere Leistungen', commit: ['Professionelle, mehrsprachige Chauffeure', 'Festpreise, bei der Buchung bestätigt', 'Flugüberwachung ohne Aufpreis', 'Ein fester Ansprechpartner, rund um die Uhr', 'Eine Antwort innerhalb von 30 Minuten', 'Neue Mercedes und Premiumfahrzeuge'],
-    ratesTitle: 'Partnerpreise · Paris & Île-de-France', cols: ['Fahrzeug', 'Fahrgäste', 'Flughafentransfer Paris', 'Stadttransfer', 'Stundenmiete', 'Darüber hinaus, pro km'],
+    ratesTitle: 'Partnerpreise · Paris & Île-de-France', cols: ['Fahrzeug', 'Fahrgäste', 'Flughafen\u00ADtransfer Paris', 'Stadt\u00ADtransfer', 'Stunden\u00ADmiete', 'Darüber hin\u00ADaus, pro km'],
     pax: (p, b) => `${p} Pers. · ${b} Koffer`, from: 'ab', perh: '/ Stunde',
     notes: ['Flughafentransfer: Festpreis zwischen CDG, Orly, Le Bourget oder Beauvais und Paris oder den angrenzenden Vororten.', 'Stadttransfer: Mindestpreis in Paris und der Île-de-France. Darüber hinaus wird pro Kilometer abgerechnet.', `Stundenmiete: mindestens ${MIN_H} Stunden, Chauffeur und Fahrzeug stehen Ihren Kunden zur Verfügung.`, VAT === 'HT' ? 'Alle Preise zuzüglich MwSt., Maut und Kraftstoff inklusive.' : 'Alle Preise inklusive MwSt., Maut und Kraftstoff.'],
     destTitle: 'Reiseziele', dest: [['Paris & Île-de-France', 'Versailles, Giverny, Disneyland, Fontainebleau'], ['Skiorte der Alpen', 'Courchevel, Val Thorens, Méribel, Megève, Chamonix'], ["Côte d'Azur", 'Nizza, Cannes, Monaco, Antibes'], ['Saint-Tropez & Provence', 'Saint-Tropez, Marseille, Aix-en-Provence'], ['Bordeaux & Weinregionen', 'Bordeaux, Champagne, Burgund, Cognac'], ['Normandie & Loire', 'Mont-Saint-Michel, Deauville, Loire-Schlösser']],
@@ -113,7 +113,7 @@ function html(l) {
   // Grille partenaires fournie par Amani (Paris & Île-de-France), distincte des prix publics du site.
   const rows = PARTNER.map((v) => `<tr>
     <td class="veh">${v.img ? `<img src="${img(v.img)}">` : '<i class="noimg"></i>'}<span>${v.name[l] || v.name.en}</span></td>
-    <td>${t.pax(v.pax, v.bags)}</td><td class="p">${t.eur(v.airport)}</td>
+    <td class="pax">${t.pax(v.pax, v.bags)}</td><td class="p">${t.eur(v.airport)}</td>
     <td class="p">${t.eur(v.city)}</td>
     <td class="p">${t.eur(v.hourly)} <small>${t.perh}</small></td><td class="p">${t.perkm(v.km)}</td></tr>`).join('');
   return `<!doctype html><html lang="${l}"><head><meta charset="utf-8"><style>
@@ -133,11 +133,15 @@ function html(l) {
   .commit{display:grid;grid-template-columns:1fr 1fr;gap:3mm 8mm;margin-top:8mm;padding:6mm 7mm;background:#faf8f5;border-left:2px solid #a8894e}
   .commit div{font-size:10pt} .commit div:before{content:"✓  ";color:#a8894e}
   h2{font-size:18pt;margin:2mm 0 5mm}
-  table{width:100%;border-collapse:collapse}
-  th:first-child{width:38%} th{font-size:7.5pt;letter-spacing:.08em;text-transform:uppercase;color:#a8894e;font-weight:normal;text-align:left;padding:0 2mm 2.5mm;border-bottom:1px solid #a8894e}
+  /* Largeurs fixes : passagers et bagages tiennent sur une ligne dans les 4 langues,
+     le nom du véhicule passe sur deux lignes si besoin. */
+  table{width:100%;border-collapse:collapse;table-layout:fixed}
+  th:nth-child(1){width:31%} th:nth-child(2){width:19%} th:nth-child(3){width:13%} th:nth-child(4){width:12%} th:nth-child(5){width:14%} th:nth-child(6){width:11%}
+  th{hyphens:manual}
+  th{font-size:7pt;letter-spacing:.05em;text-transform:uppercase;color:#a8894e;font-weight:normal;text-align:left;padding:0 1.5mm 2.5mm;border-bottom:1px solid #a8894e}
   td{padding:2.2mm 2mm;border-bottom:1px solid #ebe6dc;font-size:9pt;vertical-align:middle}
-  td.p{font-weight:600;white-space:nowrap} td small{font-weight:normal;color:#5f5a52;font-size:7.5pt}
-  td.veh{display:flex;align-items:center;gap:2.5mm;font-family:DMS,serif;font-size:9.5pt;white-space:nowrap}
+  td.p{font-weight:600;white-space:nowrap} td.pax{white-space:nowrap;font-size:8pt} td small{font-weight:normal;color:#5f5a52;font-size:7.5pt}
+  td.veh{display:flex;align-items:center;gap:2.5mm;font-family:DMS,serif;font-size:9.5pt;line-height:1.25}
   td.veh img,td.veh i.noimg{width:19mm;height:9mm;object-fit:contain;flex:none;display:inline-block}
   .notes{margin-top:5mm;font-size:8.5pt;line-height:1.55;color:#5f5a52} .notes p{margin:0 0 1.5mm}
   .dest{display:grid;grid-template-columns:repeat(3,1fr);gap:4mm}
