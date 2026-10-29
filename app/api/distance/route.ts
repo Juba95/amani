@@ -1,10 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { estimateDistanceKm, estimateDurationMin, formatDuration } from '@/lib/geo-estimate';
+import { osmRoute } from '@/lib/osm-route';
 
 /**
  * POST /api/distance
  * Calcule la distance et la durée entre deux adresses via Google Maps Distance Matrix API.
- * Fallback sur une estimation si la clé API est absente.
+ * Sans clé (ou si Google échoue) : itinéraire OpenStreetMap/OSRM, puis en dernier
+ * recours une estimation à vol d'oiseau.
  *
  * Body: { origin: string, destination: string }
  * Response: { km: number, duration: string, durationMin: number }
@@ -22,15 +24,7 @@ export async function POST(req: NextRequest) {
   const apiKey = process.env.GOOGLE_MAPS_API_KEY;
 
   // ── Fallback si pas de clé Google ──────────────────────────────────────────
-  if (!apiKey) {
-    const fallbackKm = estimateDistanceKm(origin, destination);
-    return NextResponse.json({
-      km: fallbackKm,
-      duration: formatDuration(estimateDurationMin(fallbackKm)),
-      durationMin: estimateDurationMin(fallbackKm),
-      source: 'estimate',
-    });
-  }
+  if (!apiKey) return fallback(origin, destination);
 
   // ── Appel Google Distance Matrix ───────────────────────────────────────────
   try {
@@ -62,14 +56,32 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ km, duration, durationMin, source: 'google' });
 
   } catch (err) {
-    // En cas d'erreur Google → fallback estimation
+    // En cas d'erreur Google → itinéraire OpenStreetMap, puis estimation
     console.error('Google Distance Matrix error:', err);
-    const fallbackKm = estimateDistanceKm(origin, destination);
-    return NextResponse.json({
-      km: fallbackKm,
-      duration: formatDuration(estimateDurationMin(fallbackKm)),
-      durationMin: estimateDurationMin(fallbackKm),
-      source: 'estimate',
-    });
+    return fallback(origin, destination);
   }
+}
+
+async function fallback(origin: string, destination: string) {
+  try {
+    const osm = await osmRoute(origin, destination);
+    if (osm) {
+      return NextResponse.json({
+        km: osm.km,
+        duration: formatDuration(osm.durationMin),
+        durationMin: osm.durationMin,
+        source: 'osm',
+      });
+    }
+  } catch (err) {
+    console.error('OSM route error:', err);
+  }
+
+  const fallbackKm = estimateDistanceKm(origin, destination);
+  return NextResponse.json({
+    km: fallbackKm,
+    duration: formatDuration(estimateDurationMin(fallbackKm)),
+    durationMin: estimateDurationMin(fallbackKm),
+    source: 'estimate',
+  });
 }

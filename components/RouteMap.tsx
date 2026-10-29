@@ -115,6 +115,8 @@ export default function RouteMap({ from, to, distance, duration, visible }: Rout
         L.marker(toCoord, { icon: makeIcon(shortTo) }).addTo(map);
 
         // Route polyline
+        let bounds = L.latLngBounds([fromCoord, toCoord]);
+        let padding: [number, number] = [60, 60];
         if (routeCoords && routeCoords.length > 1) {
           const polyline = L.polyline(routeCoords, {
             color: '#c9a84c',
@@ -122,10 +124,18 @@ export default function RouteMap({ from, to, distance, duration, visible }: Rout
             opacity: 0.85,
           });
           polyline.addTo(map);
-          map.fitBounds(polyline.getBounds(), { padding: [40, 40] });
-        } else {
-          map.fitBounds([fromCoord, toCoord], { padding: [60, 60] });
+          bounds = polyline.getBounds();
+          padding = [40, 40];
         }
+        const fit = () => {
+          map.invalidateSize();
+          map.fitBounds(bounds, { padding });
+        };
+        fit();
+        // Le conteneur peut encore changer de taille (CSS Leaflet chargé après coup,
+        // mise en page) : sans recalage, la carte restait centrée sur la Manche.
+        requestAnimationFrame(fit);
+        setTimeout(() => { if (!cancelled && mapInstanceRef.current === map) fit(); }, 400);
 
         if (!cancelled) setStatus('ready');
       } catch {
