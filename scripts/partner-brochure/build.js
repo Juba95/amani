@@ -39,7 +39,7 @@ const PARTNER = [
   { name: NM('Mercedes EQV', 'Mercedes EQV'), img: '/vehicles/mercedes-classe-v.png', pax: 7, bags: 6, airport: 140, city: 100, hourly: 100, km: 3 },
   { name: NM('Mercedes S-Class', 'Mercedes Classe S', 'Mercedes S-Klasse', 'Mercedes Clase S'), img: '/vehicles/mercedes-classe-s.png', pax: 3, bags: 2, airport: 190, city: 110, hourly: 110, km: 4 },
   { name: NM('Mercedes EQS', 'Mercedes EQS'), img: '/vehicles/mercedes-eqe.png', pax: 3, bags: 2, airport: 190, city: 110, hourly: 110, km: 4 },
-  { name: NM('BMW i7', 'BMW i7'), img: null, pax: 3, bags: 2, airport: 190, city: 110, hourly: 110, km: 4 },
+  { name: NM('BMW i7', 'BMW i7'), img: '/vehicles/bmw-i7.png', pax: 3, bags: 2, airport: 190, city: 110, hourly: 110, km: 4 },
   { name: NM('Mercedes V-Class VIP', 'Mercedes Classe V VIP', 'Mercedes V-Klasse VIP', 'Mercedes Clase V VIP'), img: '/vehicles/mercedes-classe-v.png', pax: 7, bags: 6, airport: 300, city: 260, hourly: 140, km: 4 },
   { name: NM('Range Rover', 'Range Rover'), img: '/vehicles/range-rover.png', pax: 4, bags: 3, airport: 350, city: 250, hourly: 150, km: 5 },
   { name: NM('Mercedes G-Class', 'Mercedes Classe G', 'Mercedes G-Klasse', 'Mercedes Clase G'), img: '/vehicles/mercedes-classe-g.png', pax: 4, bags: 3, airport: 350, city: 250, hourly: 150, km: 5 },
