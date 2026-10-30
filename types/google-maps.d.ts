@@ -13,6 +13,8 @@ declare namespace google {
       interface AutocompleteOptions {
         types?: string[];
         componentRestrictions?: { country: string | string[] };
+        bounds?: { south: number; west: number; north: number; east: number };
+        strictBounds?: boolean;
         fields?: string[];
       }
       interface PlaceResult {

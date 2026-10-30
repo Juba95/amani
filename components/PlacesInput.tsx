@@ -111,7 +111,10 @@ export default function PlacesInput({
         inputRef.current,
         {
           types: ['geocode', 'establishment'],
-          componentRestrictions: { country: ['fr', 'be', 'ch', 'lu', 'mc'] },
+          // Toute l'Europe : Google limite componentRestrictions à 5 pays, on
+          // restreint donc à un rectangle Islande → Chypre, Portugal → Finlande.
+          bounds: { south: 34.5, west: -25, north: 71.5, east: 45 },
+          strictBounds: true,
           fields: ['formatted_address', 'name', 'geometry'],
         }
       );
