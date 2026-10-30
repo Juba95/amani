@@ -93,6 +93,9 @@ export default function BookingResults({
 
   const disposal = mode === 'disposal';
   const airport = !disposal && isAirportTransfer(from, to);
+  // Le forfait aéroport n'a de sens que pour un trajet d'Île-de-France ; au-delà
+  // le prix au kilomètre l'emporte et le badge serait trompeur (Roissy → Maastricht).
+  const airportFlat = airport && distance <= 80;
   const selected = VEHICLES.find((v) => v.id === selectedVehicle);
   // En mise à disposition, la distance n'entre pas dans le calcul.
   const priceOf = (v: (typeof VEHICLES)[number]) =>
@@ -135,7 +138,7 @@ export default function BookingResults({
                 <span className="sf text-sm text-gray-700">{to}</span>
               </>
             )}
-            {airport && (
+            {airportFlat && (
               <span className="sf text-[0.6rem] px-2.5 py-1 rounded-full font-medium uppercase tracking-wider"
                 style={{ background: 'rgba(138,115,64,0.1)', color: '#8a7340' }}>
                 {t?.booking?.airport_badge || '✈ Forfait aéroport'}

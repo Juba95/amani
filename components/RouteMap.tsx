@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { expandAddress, EUROPE_VIEWBOX } from '@/lib/geo-aliases';
+import { geocode as geocodeAddress } from '@/lib/geocode';
 
 interface RouteMapProps {
   from: string;
@@ -56,13 +56,11 @@ export default function RouteMap({ from, to, distance, duration, visible, labels
 
         if (cancelled || !mapRef.current) return;
 
-        // Geocode with Nominatim (OpenStreetMap, free, no key)
+        // Même géocodage que le calcul du prix (lieux fixes, Nominatim, Photon)
         const geocode = async (address: string): Promise<[number, number]> => {
-          const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(expandAddress(address))}&format=json&limit=1&accept-language=fr&viewbox=${EUROPE_VIEWBOX}&bounded=1`;
-          const res = await fetch(url);
-          const data = await res.json();
-          if (!data?.[0]) throw new Error(`Adresse introuvable : ${address}`);
-          return [parseFloat(data[0].lat), parseFloat(data[0].lon)];
+          const coord = await geocodeAddress(address);
+          if (!coord) throw new Error(`Adresse introuvable : ${address}`);
+          return coord;
         };
 
         const [fromCoord, toCoord] = await Promise.all([geocode(from), geocode(to)]);
