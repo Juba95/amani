@@ -94,6 +94,8 @@ export default function BookingResults({
   // En mise à disposition, la distance n'entre pas dans le calcul.
   const priceOf = (v: (typeof VEHICLES)[number]) =>
     disposal ? calculateDisposalPrice(v, hours) : calculatePrice(v, distance, airport);
+  // Du moins cher au plus cher pour ce trajet ; à prix égal, l'ordre de la flotte.
+  const sortedVehicles = [...VEHICLES].sort((a, b) => priceOf(a) - priceOf(b));
   const hoursLabel = `${hours} ${t?.booking?.hour_short || 'h'}`;
 
   const goToReservation = () => {
@@ -161,7 +163,7 @@ export default function BookingResults({
 
           {/* Vehicle cards — with images */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
-            {VEHICLES.map((v) => {
+            {sortedVehicles.map((v) => {
               const info = VEHICLE_INFO[v.id];
               const vehicleT = t?.fleet?.vehicles?.[v.nameKey];
               const price = priceOf(v);
@@ -188,7 +190,7 @@ export default function BookingResults({
                       alt={name}
                       fill
                       sizes="112px"
-                      className="object-cover"
+                      className="object-contain"
                       quality={60}
                     />
                   </div>
@@ -252,7 +254,7 @@ export default function BookingResults({
                     alt={VEHICLE_INFO[selected.id]?.name || selected.nameKey}
                     fill
                     sizes="80px"
-                    className="object-cover"
+                    className="object-contain"
                     quality={60}
                   />
                 </div>

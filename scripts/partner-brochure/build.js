@@ -46,7 +46,7 @@ const PARTNER = [
   { name: NM('Mercedes Sprinter VIP 8 seats', 'Mercedes Sprinter VIP 8 places', 'Mercedes Sprinter VIP 8 Plätze', 'Mercedes Sprinter VIP 8 plazas'), img: '/vehicles/mercedes-sprinter.png', pax: 8, bags: 8, airport: 450, city: 410, hourly: 180, km: 5 },
   { name: NM('Mercedes Sprinter 15 seats', 'Mercedes Sprinter 15 places', 'Mercedes Sprinter 15 Plätze', 'Mercedes Sprinter 15 plazas'), img: '/vehicles/mercedes-sprinter-15.png', pax: 15, bags: 15, airport: SPRINTER15.airport, city: SPRINTER15.city, hourly: 150, km: 5 },
   { name: NM('Mercedes Sprinter 19 seats', 'Mercedes Sprinter 19 places', 'Mercedes Sprinter 19 Plätze', 'Mercedes Sprinter 19 plazas'), img: '/vehicles/mercedes-sprinter-vip-19.png', pax: 19, bags: 19, airport: SPRINTER19.airport, city: SPRINTER19.city, hourly: 150, km: 5 },
-  { name: NM('Mercedes Tourismo 50 seats', 'Mercedes Tourismo 50 places', 'Mercedes Tourismo 50 Plätze', 'Mercedes Tourismo 50 plazas'), img: '/vehicles/mercedes-tourismo.jpg', pax: 50, bags: 50, airport: 650, city: 610, hourly: 200, km: 5 },
+  { name: NM('Mercedes Tourismo 50 seats', 'Mercedes Tourismo 50 places', 'Mercedes Tourismo 50 Plätze', 'Mercedes Tourismo 50 plazas'), img: '/vehicles/mercedes-tourismo.png', pax: 50, bags: 50, airport: 650, city: 610, hourly: 200, km: 5 },
 ];
 
 const NAMES = {};
