@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { expandAddress, EUROPE_VIEWBOX } from '@/lib/geo-aliases';
 
 interface RouteMapProps {
   from: string;
@@ -8,9 +9,10 @@ interface RouteMapProps {
   distance: number | null;
   duration: string | null;
   visible: boolean;
+  labels?: { loading?: string; error?: string };
 }
 
-export default function RouteMap({ from, to, distance, duration, visible }: RouteMapProps) {
+export default function RouteMap({ from, to, distance, duration, visible, labels }: RouteMapProps) {
   const mapRef = useRef<HTMLDivElement>(null);
   const mapInstanceRef = useRef<any>(null);
   const [status, setStatus] = useState<'idle' | 'loading' | 'ready' | 'error'>('idle');
@@ -56,12 +58,7 @@ export default function RouteMap({ from, to, distance, duration, visible }: Rout
 
         // Geocode with Nominatim (OpenStreetMap, free, no key)
         const geocode = async (address: string): Promise<[number, number]> => {
-          // Les adresses choisies dans l'autocomplétion Google finissent par le pays
-          // (« Amsterdam, Pays-Bas ») ; une saisie libre sans virgule reste en France.
-          const query = address.includes(',') || /france|paris|cdg|orly|bourget|roissy|défense|versailles/i.test(address)
-            ? address
-            : `${address}, France`;
-          const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(query)}&format=json&limit=1&accept-language=fr&viewbox=-25,71.5,45,34.5`;
+          const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(expandAddress(address))}&format=json&limit=1&accept-language=fr&viewbox=${EUROPE_VIEWBOX}&bounded=1`;
           const res = await fetch(url);
           const data = await res.json();
           if (!data?.[0]) throw new Error(`Adresse introuvable : ${address}`);
@@ -168,14 +165,14 @@ export default function RouteMap({ from, to, distance, duration, visible }: Rout
         <div className="absolute inset-0 bg-warm-50 flex flex-col items-center justify-center gap-3 z-[1000]">
           <div className="w-5 h-5 border-2 rounded-full animate-spin"
             style={{ borderColor: 'rgba(201,168,76,0.2)', borderTopColor: '#c9a84c' }} />
-          <p className="font-sans text-[0.7rem] text-stone-400 tracking-wide">Chargement de la carte…</p>
+          <p className="font-sans text-[0.7rem] text-stone-400 tracking-wide">{labels?.loading || 'Chargement de la carte…'}</p>
         </div>
       )}
 
       {/* Error overlay */}
       {status === 'error' && (
         <div className="absolute inset-0 bg-warm-50 flex items-center justify-center z-[1000]">
-          <p className="font-sans text-[0.7rem] text-stone-400">Carte temporairement indisponible</p>
+          <p className="font-sans text-[0.7rem] text-stone-400">{labels?.error || 'Carte temporairement indisponible'}</p>
         </div>
       )}
 

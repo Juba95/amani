@@ -79,12 +79,15 @@ interface BookingResultsProps {
   mode?: 'transfer' | 'disposal';
   /** Nombre d'heures réservées en mise à disposition. */
   hours?: number;
+  /** Sur /devis le bloc est le titre de la page (h1) ; sur l'accueil, un h2. */
+  pageTitle?: boolean;
 }
 
 export default function BookingResults({
   t, from, to, distance, duration, selectedVehicle, onSelect, resultsRef,
-  mode = 'transfer', hours = 4,
+  mode = 'transfer', hours = 4, pageTitle = false,
 }: BookingResultsProps) {
+  const Heading = pageTitle ? 'h1' : 'h2';
   const router = useRouter();
   const formatPrice = (p: number) => Math.round(p).toLocaleString('fr-FR') + ' €';
 
@@ -118,9 +121,9 @@ export default function BookingResults({
           <p className="tag mb-2">
             {disposal ? (t?.booking?.disposal_tag || 'Votre mise à disposition') : (t?.booking?.tag || 'Votre devis')}
           </p>
-          <h2 className="heading mb-2">
+          <Heading className="heading mb-2">
             {t?.booking?.title || 'Choisissez votre'} <em>{t?.booking?.title_em || 'véhicule'}</em>
-          </h2>
+          </Heading>
           <p className="sf text-sm text-stone-500 mb-8">{t?.booking?.fixed_price || 'Prix fixe, tout compris'}</p>
 
           {/* Route bar */}
@@ -135,7 +138,7 @@ export default function BookingResults({
             {airport && (
               <span className="sf text-[0.6rem] px-2.5 py-1 rounded-full font-medium uppercase tracking-wider"
                 style={{ background: 'rgba(138,115,64,0.1)', color: '#8a7340' }}>
-                ✈ Forfait aéroport
+                {t?.booking?.airport_badge || '✈ Forfait aéroport'}
               </span>
             )}
             {disposal && (
@@ -158,7 +161,8 @@ export default function BookingResults({
 
           {/* Route map — sans objet en mise à disposition (pas de destination) */}
           {!disposal && (
-            <RouteMap from={from} to={to} distance={distance} duration={duration} visible={true} />
+            <RouteMap from={from} to={to} distance={distance} duration={duration} visible={true}
+              labels={{ loading: t?.booking?.map_loading, error: t?.booking?.map_error }} />
           )}
 
           {/* Vehicle cards — with images */}
@@ -224,7 +228,7 @@ export default function BookingResults({
                     <p className="sf text-[0.6rem] text-stone-400 mt-0.5">
                       {disposal
                         ? `${v.hourlyPrice} ${t?.booking?.per_hour || '€/h'} × ${hoursLabel}`
-                        : 'prix fixe'}
+                        : (t?.booking?.fixed_short || 'prix fixe')}
                     </p>
                   </div>
                 </div>

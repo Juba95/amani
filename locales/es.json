@@ -410,7 +410,11 @@
     "disposal_duration": "Duración",
     "hour_short": "h",
     "per_hour": "€/h",
-    "hours_label": "horas"
+    "hours_label": "horas",
+    "airport_badge": "✈ Tarifa fija aeropuerto",
+    "fixed_short": "precio fijo",
+    "map_loading": "Cargando el mapa…",
+    "map_error": "Mapa no disponible temporalmente"
   },
   "trust": {
     "items": [

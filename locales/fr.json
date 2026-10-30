@@ -410,7 +410,11 @@
     "disposal_duration": "Durée",
     "hour_short": "h",
     "per_hour": "€/h",
-    "hours_label": "heures"
+    "hours_label": "heures",
+    "airport_badge": "✈ Forfait aéroport",
+    "fixed_short": "prix fixe",
+    "map_loading": "Chargement de la carte…",
+    "map_error": "Carte temporairement indisponible"
   },
   "trust": {
     "items": [

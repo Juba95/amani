@@ -410,7 +410,11 @@
     "disposal_duration": "Dauer",
     "hour_short": "Std.",
     "per_hour": "€/Std.",
-    "hours_label": "Stunden"
+    "hours_label": "Stunden",
+    "airport_badge": "✈ Flughafen-Pauschale",
+    "fixed_short": "Festpreis",
+    "map_loading": "Karte wird geladen…",
+    "map_error": "Karte vorübergehend nicht verfügbar"
   },
   "trust": {
     "items": [

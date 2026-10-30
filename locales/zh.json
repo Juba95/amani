@@ -410,7 +410,11 @@
     "disposal_duration": "时长",
     "hour_short": "小时",
     "per_hour": "€/小时",
-    "hours_label": "小时"
+    "hours_label": "小时",
+    "airport_badge": "✈ 机场固定价",
+    "fixed_short": "固定价格",
+    "map_loading": "地图加载中…",
+    "map_error": "地图暂时无法显示"
   },
   "trust": {
     "items": [

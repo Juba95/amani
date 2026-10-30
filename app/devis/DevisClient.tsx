@@ -39,31 +39,10 @@ function DevisContent() {
   useEffect(() => { window.scrollTo(0, 0); }, []);
 
   return (
-    <div className="min-h-screen bg-white text-gray-900">
+    <div className="min-h-screen bg-warm-50 text-gray-900">
       <Navbar t={t} locale={lang} />
 
       <main className="pt-24">
-        {/* Header */}
-        <section className="py-8 px-6 md:px-10 bg-white">
-          <div className="max-w-4xl mx-auto text-center">
-            <p className="tag mb-2">
-              {lang === 'en' ? 'Your quote' : 'Votre devis'}
-            </p>
-            <h1 className="heading">
-              {lang === 'en' ? (
-                <>Choose your <em>vehicle</em></>
-              ) : (
-                <>Choisissez votre <em>véhicule</em></>
-              )}
-            </h1>
-            <p className="sf text-stone-500 mt-3 text-sm">
-              {lang === 'en'
-                ? 'Fixed price, all-inclusive — select the vehicle that suits you.'
-                : 'Prix fixe tout compris — sélectionnez le véhicule qui vous convient.'}
-            </p>
-          </div>
-        </section>
-
         {/* Results */}
         <BookingResults
           t={t}
@@ -76,6 +55,7 @@ function DevisContent() {
           resultsRef={{ current: null }}
           mode={mode}
           hours={hours}
+          pageTitle
         />
       </main>
 

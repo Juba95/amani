@@ -5,6 +5,8 @@
  * villes et renvoyait 35 km pour Louvres → Le Havre).
  */
 
+import { expandAddress, EUROPE_VIEWBOX } from '@/lib/geo-aliases';
+
 const USER_AGENT = 'AmaniLimousines/1.0 (+https://www.amani-limousines.com)';
 const TIMEOUT_MS = 6000;
 
@@ -26,7 +28,9 @@ async function geocode(address: string): Promise<Coord | null> {
   if (geoCache.has(key)) return geoCache.get(key)!;
 
   const url = new URL('https://nominatim.openstreetmap.org/search');
-  url.searchParams.set('q', address);
+  url.searchParams.set('q', expandAddress(address));
+  url.searchParams.set('viewbox', EUROPE_VIEWBOX);
+  url.searchParams.set('bounded', '1');
   url.searchParams.set('format', 'json');
   url.searchParams.set('limit', '1');
   url.searchParams.set('accept-language', 'fr');

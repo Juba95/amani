@@ -410,7 +410,11 @@
     "disposal_duration": "المدة",
     "hour_short": "س",
     "per_hour": "€/س",
-    "hours_label": "ساعات"
+    "hours_label": "ساعات",
+    "airport_badge": "✈ سعر ثابت للمطار",
+    "fixed_short": "سعر ثابت",
+    "map_loading": "جارٍ تحميل الخريطة…",
+    "map_error": "الخريطة غير متاحة مؤقتًا"
   },
   "trust": {
     "items": [

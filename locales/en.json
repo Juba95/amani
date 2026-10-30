@@ -410,7 +410,11 @@
     "disposal_duration": "Duration",
     "hour_short": "h",
     "per_hour": "€/h",
-    "hours_label": "hours"
+    "hours_label": "hours",
+    "airport_badge": "✈ Airport flat rate",
+    "fixed_short": "fixed price",
+    "map_loading": "Loading map…",
+    "map_error": "Map temporarily unavailable"
   },
   "trust": {
     "items": [

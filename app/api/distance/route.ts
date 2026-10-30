@@ -1,12 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { estimateDistanceKm, estimateDurationMin, formatDuration } from '@/lib/geo-estimate';
 import { osmRoute } from '@/lib/osm-route';
+import { knownRoute } from '@/lib/geo-aliases';
 
 /**
  * POST /api/distance
  * Calcule la distance et la durée entre deux adresses via Google Maps Distance Matrix API.
- * Sans clé (ou si Google échoue) : itinéraire OpenStreetMap/OSRM, puis en dernier
- * recours une estimation à vol d'oiseau.
+ * Sans clé (ou si Google échoue) : trajets connus, puis itinéraire
+ * OpenStreetMap/OSRM, puis en dernier recours une estimation à vol d'oiseau.
  *
  * Body: { origin: string, destination: string }
  * Response: { km: number, duration: string, durationMin: number }
@@ -63,6 +64,18 @@ export async function POST(req: NextRequest) {
 }
 
 async function fallback(origin: string, destination: string) {
+  // Trajets les plus demandés (CDG/Orly/Le Bourget ↔ Paris, La Défense…) :
+  // distances routières réelles, sans dépendre d'un géocodage.
+  const known = knownRoute(origin, destination);
+  if (known) {
+    return NextResponse.json({
+      km: known.km,
+      duration: formatDuration(known.minutes),
+      durationMin: known.minutes,
+      source: 'known',
+    });
+  }
+
   try {
     const osm = await osmRoute(origin, destination);
     if (osm) {
