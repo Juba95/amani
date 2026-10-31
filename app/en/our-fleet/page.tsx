@@ -51,7 +51,7 @@ const vehicles = [
     name: 'Mercedes S-Class Maybach',
     cat: 'Ultra-Prestige Saloon',
     pax: '3 passengers · 2 bags',
-    price: 'From €200',
+    price: 'From €250',
     img: '/vehicles/mercedes-classe-s-maybach.png',
     desc: 'The pinnacle of automotive luxury. The Maybach features an extended wheelbase, rear seats reclining to 43.5°, an integrated champagne cooler and superior sound insulation. Reserved for clients who demand absolute excellence.',
     eq: ['43.5° reclining seats', 'Champagne cooler', 'Privacy partition', 'Burmester® 4D', 'First-class ambiance'],

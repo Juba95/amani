@@ -52,10 +52,10 @@ export const VEHICLES: Vehicle[] = [
     nameKey: 'classe_s_maybach',
     image: '/vehicles/mercedes-classe-s-maybach.png',
     pax: 3, bags: 2,
-    basePrice: 200,        // Transfert ville Maybach
-    airportPrice: 400,     // Transfert aéroport Maybach
-    pricePerKm: 6.00,
-    hourlyPrice: 200,      // Mise à disposition (€/h)
+    basePrice: 250,        // Transfert ville Maybach
+    airportPrice: 450,     // Transfert aéroport Maybach
+    pricePerKm: 8.00,
+    hourlyPrice: 250,      // Mise à disposition (€/h)
   },
   {
     id: 'classe_v',
